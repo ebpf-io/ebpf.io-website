@@ -1,0 +1,54 @@
+$tablet: "screen and (max-width : 900px)";
+
+.footer {
+  padding: 96px 30px 61px 30px;
+
+  @media #{$tablet} {
+    padding: 48px 15px 30px 15px;
+  }
+
+  .items {
+    display: flex;
+    justify-content: center;
+
+    @media #{$tablet} {
+      flex-wrap: wrap;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+      font-size: 16px;
+      line-height: 20px;
+      color: #b6b6b6;
+      text-decoration: none;
+      font-weight: 700;
+
+      &:hover {
+        color: rgb(146, 146, 146);
+      }
+
+      @media #{$tablet} {
+        flex-direction: column;
+        margin-bottom: 41px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .icon {
+        margin-right: 26px;
+      }
+
+      .title {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #909090;
+      }
+    }
+  }
+}

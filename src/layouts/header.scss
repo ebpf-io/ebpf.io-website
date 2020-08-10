@@ -1,0 +1,149 @@
+$mobile: "screen and (max-width : 480px)";
+$tablet: "screen and (max-width : 900px)";
+
+.header-notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to left, #3a52dd, #3d93ff);
+  min-height: 49px;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  padding: 18px 40px 0 40px;
+
+  &.desktop {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &.mobile {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    &.desktop {
+      display: none;
+    }
+
+    &.mobile {
+      display: block;
+    }
+  }
+
+  .row {
+    flex: 1;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.headerLogoLink {
+  text-decoration: none;
+
+  iframe {
+    position: relative;
+    top: -2px;
+    margin-left: 20px;
+  }
+}
+
+@media #{$mobile} {
+  .headerLogoLink {
+    iframe {
+      display: block;
+      top: 0;
+      margin-top: 3px;
+      margin-left: 0;
+    }
+  }
+}
+
+.headerLogo {
+  width: 109.02px;
+  height: 38px;
+}
+
+.headerNav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  white-space: pre;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    strong {
+      color: #000;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      color: rgb(75, 75, 75);
+      strong {
+        color: #444;
+      }
+    }
+  }
+}
+
+button.callToAction,
+a.callToAction {
+  padding: 7px 15px;
+  background: #0a53a5;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background: #07468f;
+  }
+}
+button.contactUs,
+a.contactUs {
+  background: #674ea7;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background: #4b3680;
+  }
+}
+
+.header.desktop .headerNav {
+  flex-direction: row;
+
+  a {
+    margin-left: 40px;
+
+    &:first-child {
+      margin-left: 20px;
+    }
+  }
+}
+
+.header.mobile .headerNav {
+  margin-top: 10px;
+  flex-direction: column;
+  a {
+    margin-bottom: 15px;
+  }
+}
