@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
-import { unescape } from "lodash";
+import { unescape, shuffle } from "lodash";
 import { format, parse as parseDate } from "date-fns";
 import Slider from "infinite-react-carousel";
 
@@ -100,43 +100,58 @@ const Intro = () => (
 );
 
 class Videos extends React.Component {
-  render() {
-    const videos = [
-      "https://www.youtube.com/embed/mFxs3VXABPU?start=12&enablejsapi=1",
-      "https://www.youtube.com/embed/7pmXdG8-7WU?start=7&enablejsapi=1",
-      "https://www.youtube.com/embed/_Iq1xxNZOAo?start=45&enablejsapi=1",
-      "https://www.youtube.com/embed/U3PdyHlrG1o?start=7&enablejsapi=1",
-      "https://www.youtube.com/embed/ZYBXZFKPS28?start=0&enablejsapi=1",
-    ];
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      videos: [],
+    };
+  }
+
+  componentDidMount() {
+    this.setState({
+      videos: shuffle([
+        "https://www.youtube.com/embed/mFxs3VXABPU?start=12&enablejsapi=1",
+        "https://www.youtube.com/embed/7pmXdG8-7WU?start=7&enablejsapi=1",
+        "https://www.youtube.com/embed/_Iq1xxNZOAo?start=45&enablejsapi=1",
+        "https://www.youtube.com/embed/U3PdyHlrG1o?start=7&enablejsapi=1",
+        "https://www.youtube.com/embed/ZYBXZFKPS28?start=0&enablejsapi=1",
+      ]),
+    });
+  }
+
+  render() {
     return (
       <div className="videos-section">
         <h2>Featured eBPF Talk</h2>
-        <Slider
-          dots
-          arrows={false}
-          beforeChange={(oldIndex) => {
-            this.refs[`video-${videos[oldIndex]}`].contentWindow.postMessage(
-              '{"event":"command","func":"pauseVideo","args":""}',
-              "*"
-            );
-          }}
-        >
-          {videos.map((src) => {
-            return (
-              <div className="video-wrapper" key={src}>
-                <iframe
-                  ref={`video-${src}`}
-                  src={src}
-                  className="video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            );
-          })}
-        </Slider>
+        {this.state.videos.length > 0 && (
+          <Slider
+            dots
+            arrows={false}
+            beforeChange={(oldIndex) => {
+              const ref = `video-${this.state.videos[oldIndex]}`;
+              this.refs[ref].contentWindow.postMessage(
+                '{"event":"command","func":"pauseVideo","args":""}',
+                "*"
+              );
+            }}
+          >
+            {this.state.videos.map((src) => {
+              return (
+                <div className="video-wrapper" key={src}>
+                  <iframe
+                    ref={`video-${src}`}
+                    src={src}
+                    className="video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              );
+            })}
+          </Slider>
+        )}
       </div>
     );
   }
