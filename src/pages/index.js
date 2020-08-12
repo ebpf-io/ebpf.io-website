@@ -123,7 +123,7 @@ class Videos extends React.Component {
   render() {
     return (
       <div className="videos-section">
-        <h2>Featured eBPF Talk</h2>
+        <h2>Featured eBPF Talks</h2>
         {this.state.videos.length > 0 && (
           <Slider
             dots
