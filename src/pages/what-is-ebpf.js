@@ -198,7 +198,7 @@ class Description extends React.Component {
 
           <p>
             The following is an incomplete list of supported map types to given
-            an understanding of the diveristy in data structures. For various
+            an understanding of the diversity in data structures. For various
             map types, both a shared and a per-CPU variation is available.
           </p>
 
