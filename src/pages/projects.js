@@ -43,10 +43,10 @@ const RequirementsList = () => (
       words, a project would lose its purpose if the eBPF parts are removed.
     </li>
     <li>
-      In order to be listed as a major project as opposed to an emerging 
+      In order to be listed as a major project as opposed to an emerging
       project, the project must have more than 50 contributors, it must be
       activey maintained, and it must be used in production-like environments
-      with a signficant amount of users.
+      with a significant amount of users.
     </li>
     <li>
       The project must be open to collaboration and have a governance model
