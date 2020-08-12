@@ -102,21 +102,31 @@ const Intro = () => (
 class Videos extends React.Component {
   render() {
     const videos = [
-      "https://www.youtube.com/embed/mFxs3VXABPU?start=12",
-      "https://www.youtube.com/embed/7pmXdG8-7WU?start=7",
-      "https://www.youtube.com/embed/_Iq1xxNZOAo?start=45",
-      "https://www.youtube.com/embed/U3PdyHlrG1o?start=7",
-      "https://www.youtube.com/embed/ZYBXZFKPS28?start=0",
+      "https://www.youtube.com/embed/mFxs3VXABPU?start=12&enablejsapi=1",
+      "https://www.youtube.com/embed/7pmXdG8-7WU?start=7&enablejsapi=1",
+      "https://www.youtube.com/embed/_Iq1xxNZOAo?start=45&enablejsapi=1",
+      "https://www.youtube.com/embed/U3PdyHlrG1o?start=7&enablejsapi=1",
+      "https://www.youtube.com/embed/ZYBXZFKPS28?start=0&enablejsapi=1",
     ];
 
     return (
       <div className="videos-section">
         <h2>Featured eBPF Talk</h2>
-        <Slider dots>
+        <Slider
+          dots
+          arrows={false}
+          beforeChange={(oldIndex) => {
+            this.refs[`video-${videos[oldIndex]}`].contentWindow.postMessage(
+              '{"event":"command","func":"pauseVideo","args":""}',
+              "*"
+            );
+          }}
+        >
           {videos.map((src) => {
             return (
               <div className="video-wrapper" key={src}>
                 <iframe
+                  ref={`video-${src}`}
                   src={src}
                   className="video"
                   frameBorder="0"
