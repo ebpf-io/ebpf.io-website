@@ -224,14 +224,13 @@ const Outro = () => (
 class BlogRoll extends React.Component {
   feeds = [
     {
-      url:
-        "https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fwww.brendangregg.com%2Fblog%2Frss.xml",
+      url: "http%3A%2F%2Fwww.brendangregg.com%2Fblog%2Frss.xml",
       author: "Brendan Gregg",
       filterBy: (post) => post.title.toLowerCase().includes("bpf"),
     },
     {
       url:
-        "https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffetchrss.com%2Frss%2F5f326ba08a93f8883b8b45675f326d238a93f8b34b8b4567.xml",
+        "http%3A%2F%2Ffetchrss.com%2Frss%2F5f326ba08a93f8883b8b45675f326d238a93f8b34b8b4567.xml",
       author: null,
       filterBy: (post) =>
         post.title.toLowerCase().includes("bpf") &&
@@ -239,8 +238,7 @@ class BlogRoll extends React.Component {
           "https://facebookmicrosites.github.io/bpf/blog/2018/08/31/welcome.html",
     },
     {
-      url:
-        "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcilium.io%2Fblog%2Frss.xml",
+      url: "https%3A%2F%2Fcilium.io%2Fblog%2Frss.xml",
       author: "Cilium authors",
       filterBy: (post) =>
         post.categories.some((category) =>
@@ -248,14 +246,12 @@ class BlogRoll extends React.Component {
         ),
     },
     {
-      url:
-        "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fqmonnet.github.io%2Fwhirl-offload%2Ffeed.xml",
+      url: "https%3A%2F%2Fqmonnet.github.io%2Fwhirl-offload%2Ffeed.xml",
       author: "Quentin Monnet",
       filterBy: (post) => post.title.toLowerCase().includes("bpf"),
     },
     {
-      url:
-        "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fpchaigno.github.io%2Ffeed.xml",
+      url: "https%3A%2F%2Fpchaigno.github.io%2Ffeed.xml",
       author: "Paul Chaignon",
       filterBy: (post) => post.title.toLowerCase().includes("bpf"),
     },
@@ -270,9 +266,11 @@ class BlogRoll extends React.Component {
   }
 
   componentDidMount() {
+    const apiUrl = "https://api.rss2json.com/v1/api.json";
+    const apiKey = process.env.RSS2JSON_API_KEY;
     Promise.all(
       this.feeds.map((feed) =>
-        fetch(feed.url)
+        fetch(`${apiUrl}?api_key=${apiKey}&rss_url=${feed.url}`)
           .then((r) => r.json())
           .then((post) => ({ feed, post }))
       )
