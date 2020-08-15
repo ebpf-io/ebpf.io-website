@@ -342,7 +342,7 @@ class Description extends React.Component {
             eBPF programs cannot access arbitrary kernel memory directly. Access
             to data and data structures that lie outside of the context of the
             program must be accessed via eBPF helpers. This guarantees
-            consistent data access and and makes any such access subject to the
+            consistent data access and makes any such access subject to the
             privileges of the eBPF program, e.g. an eBPF program running is
             allowed to modify the data of certain data structures if the
             modification can be guaranteed to be safe. An eBPF program cannot
