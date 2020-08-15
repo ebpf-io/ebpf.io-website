@@ -12,3 +12,13 @@
 5. make changes in: pages/index.js for landing page, or posts/ folder for blog posts
 6. everytime you save, localhost:8000 will auto-reload with new preview
 7. commit all your new changes to a branch, and submit the PR
+
+
+## Local development
+
+You can use `-p` to set the custom port and `-H` to set the custom host like beblow. Find more from [gatsbyjs document](https://www.gatsbyjs.com/docs/gatsby-cli/)
+
+```bash
+yarn run develop -p 8080 -H 0.0.0.0
+```
+
