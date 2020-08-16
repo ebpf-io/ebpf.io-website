@@ -180,9 +180,9 @@ class Description extends React.Component {
           <p>
             The Just-in-Time (JIT) compilation step translates the generic
             bytecode of the program into the machine specific instruction set to
-            optimize execution speed of the program. This makes eBPF programs
-            run at equivalent efficiency as natively compiled kernel code or
-            code loaded as kernel module.
+            optimize execution speed of the program. This makes eBPF programs run
+            as efficiently as natively compiled kernel code or as code loaded as
+            a kernel module.
           </p>
 
           <h3>Maps</h3>
@@ -236,10 +236,10 @@ class Description extends React.Component {
           <h3>Tail &amp; Function Calls</h3>
           <p>
             eBPF programs are composable with the concept of tail and function
-            calls. Function calls allow to define and call functions within an
-            eBPF program. Tail calls can call and execute another eBPF program
-            and replace the execution context, similar to how the execve()
-            system call operates for regular processes.
+            calls. Function calls allow defining and calling functions within
+            an eBPF program. Tail calls can call and execute another eBPF
+            program and replace the execution context, similar to how the
+            execve() system call operates for regular processes.
           </p>
           <img src={require("../assets/tailcall.png")} />
 
@@ -249,11 +249,11 @@ class Description extends React.Component {
           </p>
 
           <p>
-            eBPF is an incredibly powerful technology and now running at the
-            heart of many critical software infrastructure components. During
-            the development of eBPF, the safety of eBPF was the most crucial
-            aspect when eBPF was considered for inclusion into the Linux kernel.
-            eBPF safety is ensured through several layers:
+            eBPF is an incredibly powerful technology and now runs at the heart
+            of many critical software infrastructure components. During the
+            development of eBPF, the safety of eBPF was the most crucial aspect
+            when eBPF was considered for inclusion into the Linux kernel. eBPF
+            safety is ensured through several layers:
           </p>
 
           <h4>Required Privileges</h4>
@@ -291,7 +291,7 @@ class Description extends React.Component {
             </li>
             <li>
               Programs must fit within the size requirements of the system. It
-              is not possible to load arbitrarily big eBPF programs.
+              is not possible to load arbitrarily large eBPF programs.
             </li>
             <li>
               Program must have a finite complexity. The verifier will evaluate
@@ -303,8 +303,8 @@ class Description extends React.Component {
 
           <h4>Hardening</h4>
           <p>
-            Upon successful completion of the verification. The eBPF program is
-            going through a hardening process subject to whether the program is
+            Upon successful completion of the verification, the eBPF program
+            runs through a hardening process according to whether the program is
             loaded from a privileged or unprivileged process. This step
             includes:
           </p>
@@ -413,10 +413,10 @@ class Description extends React.Component {
 
           <h3>eBPF's impact on the Linux Kernel</h3>
           <p>
-            Now let’s return back to eBPF. In order to understand the
-            programmability impact of eBPF on the Linux kernel, it helps to have
-            a high-level understanding of the architecture of the Linux kernel
-            and how it interacts with applications and the hardware.
+            Now let’s return to eBPF. In order to understand the programmability
+            impact of eBPF on the Linux kernel, it helps to have a high-level
+            understanding of the architecture of the Linux kernel and how it
+            interacts with applications and the hardware.
           </p>
 
           <img src={require("../assets/kernel_arch.png")} />
@@ -470,11 +470,11 @@ class Description extends React.Component {
           </table>
 
           <p>
-            With eBPF, a new option is available that allows to reprogram the
-            behavior of the Linux kernel without requiring changes to kernel
-            source code or load a kernel module. In many ways, this is very
-            similar to how JavaScript and other scripting languages allowed to
-            unlock evolution for systems which had become hard or expensive to
+            With eBPF, a new option is available that allows for reprogramming
+            the behavior of the Linux kernel without requiring changes to kernel
+            source code or loading a kernel module. In many ways, this is very
+            similar to how JavaScript and other scripting languages unlocked the
+            evolution of systems which had become difficult or expensive to
             change.
           </p>
 
