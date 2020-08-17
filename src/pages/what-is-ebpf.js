@@ -579,6 +579,11 @@ class Description extends React.Component {
           <h4>Generic</h4>
           <ul>
             <Reference
+              link="https://kccnceu20.sched.com/event/ZemQ/ebpf-and-kubernetes-little-helper-minions-for-scaling-microservices-daniel-borkmann-cilium"
+              name="eBPF and Kubernetes: Little Helper Minions for Scaling Microservices"
+              description="Daniel Borkmann, KubeCon EU, Aug 2020"
+            />
+            <Reference
               link="https://www.infoq.com/presentations/facebook-google-bpf-linux-kernel/"
               slides="https://docs.google.com/presentation/d/1AcB4x7JCWET0ysDr0gsX-EIdQSTyBtmi6OAW7bE0jm0"
               name="eBPF - Rethinking the Linux Kernel"
@@ -692,6 +697,11 @@ class Description extends React.Component {
               link="https://opensource.googleblog.com/2016/11/cilium-networking-and-security.html"
               name="Cilium, BPF and XDP"
               description="Google Open Source Blog, Nov 2016"
+            />
+            <Reference
+              link="https://lwn.net/Kernel/Index/#Berkeley_Packet_Filter"
+              name="Archive of various articles on BPF"
+              description="LWN, since Apr 2011"
             />
           </ul>
         </div>
