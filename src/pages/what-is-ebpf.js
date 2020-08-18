@@ -657,6 +657,15 @@ class Description extends React.Component {
             />
           </ul>
 
+          <h4>Hubble</h4>
+	  <ul>
+            <Reference
+              link="https://static.sched.com/hosted_files/kccnceu20/1b/Aug19-Hubble-eBPF_Based_Observability_for_Kubernetes_Sebastian_Wicki.pdf"
+              name="Hubble - eBPF Based Observability for Kubernetes"
+              description="Sebastian Wicki, KubeCon EU, Aug 2020"
+            />
+	  </ul>
+
           <h3>Books</h3>
           <ul>
             <Reference
