@@ -127,7 +127,6 @@ class Videos extends React.Component {
         {this.state.videos.length > 0 && (
           <Slider
             dots
-            arrows={false}
             beforeChange={(oldIndex) => {
               const ref = `video-${this.state.videos[oldIndex]}`;
               this.refs[ref].contentWindow.postMessage(
@@ -135,6 +134,8 @@ class Videos extends React.Component {
                 "*"
               );
             }}
+            prevArrow={<div>←</div>}
+            nextArrow={<div>→</div>}
           >
             {this.state.videos.map((src) => {
               return (

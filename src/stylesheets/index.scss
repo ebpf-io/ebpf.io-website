@@ -249,6 +249,35 @@ code {
   }
 }
 
+.carousel-arrow.custom {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  z-index: 40;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+
+  &.carousel-prev {
+    left: 0;
+    text-align: left;
+  }
+
+  &.carousel-next {
+    right: 0;
+    text-align: right;
+  }
+
+  &:hover {
+    color: #999;
+  }
+}
+
 .videos-section {
   position: relative;
   h2 {
@@ -280,16 +309,9 @@ code {
   .video {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 80px;
+    width: calc(100% - 160px);
     height: 100%;
-  }
-
-  .video-carousel-arrow {
-    position: absolute;
-    top: 50%;
-    z-index: 30;
-    color: red;
   }
 }
 
