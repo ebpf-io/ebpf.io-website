@@ -2,6 +2,7 @@
 
 # ebpf.io Website
 
+This is the source code for the website [ebpf.io](https://www.ebpf.io). For more information, see the [contribute](https://ebpf.io/contribute) page.
 
 ## How to contribute
 
