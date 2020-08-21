@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 import "../stylesheets/index.scss";
 
@@ -511,6 +512,7 @@ const ProjectDescriptions = () => (
 
 const Page = () => (
   <div className="page-wrapper page-projects">
+    <Helmet title="eBPF / Projects" />
     <ProjectDescriptions />
     <div className="projects-title">FAQ</div>
     <h3>Add your project</h3>
