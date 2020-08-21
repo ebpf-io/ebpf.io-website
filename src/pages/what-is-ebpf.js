@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 import "../stylesheets/index.scss";
 
@@ -733,6 +734,7 @@ const Section = ({ icon, iconWidth, iconHeight, title, text, style }) => (
 
 const Page = () => (
   <div className="page-wrapper page-what-is-ebpf">
+    <Helmet title="eBPF / What is eBPF" />
     <Description />
   </div>
 );

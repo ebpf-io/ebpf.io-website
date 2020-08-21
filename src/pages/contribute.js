@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 import "../stylesheets/index.scss";
 
@@ -18,6 +19,7 @@ const Section = ({
 
 const Page = () => (
   <div className="page-wrapper page-contribute">
+    <Helmet title="eBPF / Contribute" />
     <Title />
     <p>
       eBPF consists of many communities including the eBPF runtime in the Linux
