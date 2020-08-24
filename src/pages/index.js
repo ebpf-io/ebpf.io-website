@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "gatsby-link";
+import Layout from "../layouts";
+import { Link } from "gatsby";
 import { unescape, shuffle } from "lodash";
 import { format, parse as parseDate } from "date-fns";
 import Slider from "infinite-react-carousel";
@@ -326,7 +327,7 @@ class BlogRoll extends React.Component {
                     target="_blank"
                   >
                     <span className="blog-roll-date">
-                      {format(post.pubDate, "MMM D, YYYY")}
+                      {format(post.pubDate, "MMM d, yyyy")}
                     </span>{" "}
                     <span className="blog-roll-title">
                       <u>{unescape(post.title)}</u>{" "}
@@ -344,15 +345,17 @@ class BlogRoll extends React.Component {
 }
 
 const IndexPage = () => (
-  <div className="page-wrapper page-index">
-    <Title />
-    <Buttons />
-    <Intro />
-    <Sections />
-    <Videos />
-    <BlogRoll />
-    <Outro />
-  </div>
+  <Layout>
+    <div className="page-wrapper page-index">
+      <Title />
+      <Buttons />
+      <Intro />
+      <Sections />
+      <Videos />
+      <BlogRoll />
+      <Outro />
+    </div>
+  </Layout>
 );
 
 export default IndexPage;

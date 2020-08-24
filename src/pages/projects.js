@@ -1,5 +1,6 @@
-import React from "react";
 import Helmet from "react-helmet";
+import Layout from "../layouts";
+import React from "react";
 
 import "../stylesheets/index.scss";
 
@@ -511,17 +512,19 @@ const ProjectDescriptions = () => (
 );
 
 const Page = () => (
-  <div className="page-wrapper page-projects">
-    <Helmet title="eBPF / Projects" />
-    <ProjectDescriptions />
-    <div className="projects-title">FAQ</div>
-    <h3>Add your project</h3>
-    <HowToList />
-    <h3>Are you maintaining a listed project?</h3>
-    <YouMaintain />
-    <h3>Requirements for a project to be listed</h3>
-    <RequirementsList />
-  </div>
+  <Layout>
+    <div className="page-wrapper page-projects">
+      <Helmet title="eBPF / Projects" />
+      <ProjectDescriptions />
+      <div className="projects-title">FAQ</div>
+      <h3>Add your project</h3>
+      <HowToList />
+      <h3>Are you maintaining a listed project?</h3>
+      <YouMaintain />
+      <h3>Requirements for a project to be listed</h3>
+      <RequirementsList />
+    </div>
+  </Layout>
 );
 
 export default Page;

@@ -7,7 +7,6 @@ module.exports = {
     siteUrl: "https://www.ebpf.io"
   },
   plugins: [
-    `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-catch-links",
     "gatsby-plugin-netlify",
@@ -131,7 +130,8 @@ module.exports = {
                 }
               }
             `,
-            output: "/blog/rss.xml"
+            output: "/blog/rss.xml",
+            title: "eBPF.io / Blog"
           }
         ]
       }

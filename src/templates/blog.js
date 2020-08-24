@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "gatsby-link";
+import { graphql, Link } from "gatsby";
 import Helmet from "react-helmet";
 
 import { BlogPost } from "./blog-post";
@@ -8,8 +8,8 @@ import "../stylesheets/blog.scss"; // add some style if you want!
 
 const NavLink = props => <Link to={props.url}>{props.text}</Link>;
 
-export default function BlogIndex({ data, pathContext }) {
-  const { group, index, first, last } = pathContext;
+export default function BlogIndex({ data, pageContext }) {
+  const { group, index, first, last } = pageContext;
   const prevUrl = index - 1 == 1 ? "" : (index - 1).toString();
   const nextUrl = (index + 1).toString();
   return (
