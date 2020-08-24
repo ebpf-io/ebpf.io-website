@@ -48,8 +48,18 @@ const createMetaPage = ({
   });
 };
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      html: String
+    }
+  `
+  createTypes(typeDefs);
+}
+
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
 

@@ -1,11 +1,10 @@
 import React from "react";
-import Link from "gatsby-link";
-import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
 
 import "../stylesheets/blog.scss"; // add some style if you want!
 
-export default function TagsItem({ data, pathContext }) {
-  const { type, items } = pathContext;
+export default function TagsItem({ pageContext }) {
+  const { type, items } = pageContext;
   return (
     <div className="tags-list section">
       <h1 className="tags-list-title">

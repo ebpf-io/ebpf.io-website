@@ -1,13 +1,14 @@
 import React from "react";
 import Helmet from "react-helmet";
-import Link from "gatsby-link";
-import { format } from "date-fns";
+import Layout from "../layouts";
+import { graphql, Link } from "gatsby";
+import { format, parseISO } from "date-fns";
 import parseHtml from "../../scripts/parse-html";
 
 import "../stylesheets/blog.scss";
 
 export const formatPostDate = post =>
-  format(post.frontmatter.date, "MMMM D, YYYY");
+  format(parseISO(post.frontmatter.date), "MMMM d, yyyy");
 
 const windowPopup = ev => {
   ev.preventDefault();
@@ -39,42 +40,44 @@ export const BlogPost = ({ post, full }) => {
   const html = full ? mainHtml : previewHtml;
 
   return (
-    <div className="blog-post" key={post.id}>
-      <header className="blog-header">
-        <div className="blog-meta">
-          <span className="blog-date">{formatPostDate(post)}</span>
-        </div>
-        <h1 className="blog-title">
-          {full ? (
-            post.frontmatter.title
-          ) : (
-            <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+    <Layout>
+      <div className="blog-post" key={post.id}>
+        <header className="blog-header">
+          <div className="blog-meta">
+            <span className="blog-date">{formatPostDate(post)}</span>
+          </div>
+          <h1 className="blog-title">
+            {full ? (
+              post.frontmatter.title
+            ) : (
+              <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+            )}
+          </h1>
+          {categories.length > 0 && (
+            <div className="blog-post-categories">
+              {categories.map((category, i) => (
+                <span className="blog-post-category" key={category}>
+                  <a href={`/blog/categories/${category}`}>{category}</a>
+                </span>
+              ))}
+            </div>
           )}
-        </h1>
-        {categories.length > 0 && (
-          <div className="blog-post-categories">
-            {categories.map((category, i) => (
-              <span className="blog-post-category" key={category}>
-                <a href={`/blog/categories/${category}`}>{category}</a>
+        </header>
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+        {full && tags.length > 0 && (
+          <div className="blog-post-tags">
+            {tags.map((tag, i) => (
+              <span className="blog-post-tag" key={tag}>
+                <a href={`/blog/tags/${tag}`}>{tag}</a>
               </span>
             ))}
           </div>
         )}
-      </header>
-      <div
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-      {full && tags.length > 0 && (
-        <div className="blog-post-tags">
-          {tags.map((tag, i) => (
-            <span className="blog-post-tag" key={tag}>
-              <a href={`/blog/tags/${tag}`}>{tag}</a>
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
+      </div>
+    </Layout>
   );
 };
 
