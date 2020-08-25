@@ -616,6 +616,11 @@ class Description extends React.Component {
           <h4>Cilium</h4>
           <ul>
             <Reference
+              link="https://linuxplumbersconf.org/event/7/contributions/674/"
+              name="Kubernetes Service Load-Balancing at Scale with BPF & XDP"
+              description="Daniel Borkmann & Martynas Pumputis, Linux Plumbers, Aug 2020"
+            />
+	    <Reference
               link="https://www.youtube.com/watch?v=bIRwSIwNHC0"
               slides="https://docs.google.com/presentation/d/1cZJ-pcwB9WG88wzhDm2jxQY4Sh8adYg0-N3qWQ8593I/edit#slide=id.g7055f48ba8_0_0"
               name="Liberating Kubernetes from kube-proxy and iptables"
