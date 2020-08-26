@@ -1,4 +1,5 @@
 import Helmet from "react-helmet";
+import Link from "gatsby-link";
 import Layout from "../layouts";
 import React from "react";
 
@@ -79,7 +80,6 @@ const Page = () => (
         You will find information on how to get involved on each project website
         directly.
       </p>
-
       <h2>Contribute to ebpf.io</h2>
       <p>
         Do you have a writing talent? Are you good with diagrams? The content of the
@@ -87,12 +87,10 @@ const Page = () => (
         href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
         Attribution 4.0 International License</a>. If you want to get involved,
         visit the <a href="https://github.com/cilium/ebpf.io">GitHub
-        repository</a>.  Make sure to also join the <a
-        href="https://cilium.herokuapp.com/">#ebpf Slack channel</a> to get in
+        repository</a>.  Make sure to also join the <Link to="/slack">#ebpf Slack channel</Link> to get in
         touch with the team working on the documentation.  Share what you have
         learned by improving the documentation or write additional tutorials.
       </p>
-
     </div>
   </Layout>
 );

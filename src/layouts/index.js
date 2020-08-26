@@ -25,11 +25,11 @@ const HeaderDesktop = () => (
     <nav className="headerNav">
       <Link to="/what-is-ebpf">What is eBPF?</Link>
       <Link to="/projects">Projects</Link>
-      <a href="https://cilium.herokuapp.com/">Slack</a>
+      <Link to="/slack">Slack</Link>
       <Link to="/contribute">Contribute</Link>
-      <a href="https://www.cilium.io">
+      <Link to="/enterprise">
         <img src={require("../assets/cilium_logo.png")} height="50px" />
-      </a>
+      </Link>
     </nav>
   </div>
 );
@@ -65,11 +65,11 @@ class HeaderMobile extends React.Component {
           <nav className="headerNav">
             <Link to="/what-is-ebpf">What is eBPF?</Link>
             <Link to="/projects">Projects</Link>
-            <a href="https://cilium.herokuapp.com/">Slack</a>
+            <Link to="/slack">Slack</Link>
             <Link to="/contribute">Contribute</Link>
-            <a href="https://www.cilium.io">
+            <Link to="/enterprise">
               <img src={require("../assets/cilium_logo.png")} height="50px" />
-            </a>
+            </Link>
           </nav>
         )}
       </div>

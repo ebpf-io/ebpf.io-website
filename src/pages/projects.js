@@ -1,4 +1,5 @@
 import Helmet from "react-helmet";
+import Link from "gatsby-link";
 import Layout from "../layouts";
 import React from "react";
 
@@ -9,7 +10,7 @@ const YouMaintain = () => (
     <li>
       If you are maintaining one of the listed projects and would like to adjust
       the content. Get in touch on{" "}
-      <a href="https://cilium.herokuapp.com/">Slack</a> or open a pull request
+      <Link to="/slack">Slack</Link> or open a pull request
       directly.
     </li>
   </ul>
@@ -29,7 +30,7 @@ const HowToList = () => (
     <li>
       The pull request will be reviewed by the community and merged by one of
       the maintainers. If you have any questions, feel free to ask on{" "}
-      <a href="https://cilium.herokuapp.com/">Slack</a>.
+      <Link to="/slack">Slack</Link>.
     </li>
   </ol>
 );
@@ -147,9 +148,9 @@ const ProjectDescriptions = () => (
         </a>
         <div className="project-description">
           <p>
-            <a href="https://cilium.io">
+            <Link to="/enterprise">
               <b>Website</b>
-            </a>{" "}
+            </Link>{" "}
             |{" "}
             <a href="https://github.com/cilium/cilium">
               <b>GitHub</b>
@@ -424,9 +425,9 @@ const ProjectDescriptions = () => (
         </a>
         <div className="project-description">
           <p>
-            <a href="https://cilium.io/">
+            <Link to="/enterprise">
               <b>Website</b>
-            </a>{" "}
+            </Link>{" "}
             |{" "}
             <a href="https://github.com/cilium/hubble">
               <b>GitHub</b>

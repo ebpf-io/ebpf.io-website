@@ -208,9 +208,9 @@ const Outro = () => (
           <td>
             <ul>
               <li>
-                <a href="https://cilium.herokuapp.com/">
+                <Link to="/slack">
                   Join the #ebpf Slack community
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="/contribute">Learn how to contribute</a>
