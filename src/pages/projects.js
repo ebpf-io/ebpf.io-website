@@ -514,7 +514,16 @@ const ProjectDescriptions = () => (
 const Page = () => (
   <Layout>
     <div className="page-wrapper page-projects">
-      <Helmet title="eBPF - List of projects using eBPF" />
+      <Helmet
+        title="eBPF - List of projects using eBPF"
+
+        meta={[
+          {
+            name: "description",
+            content: "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
+          },
+        ]}
+      />
       <ProjectDescriptions />
       <div className="projects-title">FAQ</div>
       <h3>Add your project</h3>

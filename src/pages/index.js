@@ -348,7 +348,16 @@ class BlogRoll extends React.Component {
 const IndexPage = () => (
   <Layout>
     <div className="page-wrapper page-index">
-      <Helmet title="eBPF - Introduction & Community Resources" />
+      <Helmet
+        title="eBPF - Introduction & Community Resources"
+
+        meta={[
+          {
+            name: "description",
+            content: "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
+          },
+        ]}
+      />
       <Title />
       <Buttons />
       <Intro />
