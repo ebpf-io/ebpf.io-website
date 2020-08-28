@@ -21,7 +21,7 @@ const Section = ({
 const Page = () => (
   <Layout>
     <div className="page-wrapper page-contribute">
-      <Helmet title="eBPF / Contribute" />
+      <Helmet title="How to contribute to eBPF?" />
       <Title />
       <p>
         eBPF consists of many communities including the eBPF runtime in the Linux

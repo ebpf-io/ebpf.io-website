@@ -621,7 +621,7 @@ class Description extends React.Component {
               name="Kubernetes Service Load-Balancing at Scale with BPF & XDP"
               description="Daniel Borkmann & Martynas Pumputis, Linux Plumbers, Aug 2020"
             />
-	    <Reference
+            <Reference
               link="https://www.youtube.com/watch?v=bIRwSIwNHC0"
               slides="https://docs.google.com/presentation/d/1cZJ-pcwB9WG88wzhDm2jxQY4Sh8adYg0-N3qWQ8593I/edit#slide=id.g7055f48ba8_0_0"
               name="Liberating Kubernetes from kube-proxy and iptables"
@@ -741,7 +741,7 @@ const Section = ({ icon, iconWidth, iconHeight, title, text, style }) => (
 const Page = () => (
   <Layout>
     <div className="page-wrapper page-what-is-ebpf">
-      <Helmet title="eBPF / What is eBPF" />
+      <Helmet title="What is eBPF? An Introduction and Deep Dive into the eBPF Technology" />
       <Description />
     </div>
   </Layout>

@@ -514,7 +514,7 @@ const ProjectDescriptions = () => (
 const Page = () => (
   <Layout>
     <div className="page-wrapper page-projects">
-      <Helmet title="eBPF / Projects" />
+      <Helmet title="eBPF - List of projects using eBPF" />
       <ProjectDescriptions />
       <div className="projects-title">FAQ</div>
       <h3>Add your project</h3>

@@ -1,3 +1,4 @@
+import Helmet from "react-helmet";
 import React from "react";
 import Layout from "../layouts";
 import { Link } from "gatsby";
@@ -347,6 +348,7 @@ class BlogRoll extends React.Component {
 const IndexPage = () => (
   <Layout>
     <div className="page-wrapper page-index">
+      <Helmet title="eBPF - Introduction & Community Resources" />
       <Title />
       <Buttons />
       <Intro />
