@@ -507,6 +507,31 @@ const ProjectDescriptions = () => (
           </p>
         </div>
       </div>
+
+    <div className="project-box">
+      <a name="tracee" />
+      <div className="project-major-title">Tracee</div>
+      <div className="project-minor-title">Dynamic Security Event Tracing</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/aquasecurity/tracee"
+        >
+          <img src="https://github.com/aquasecurity/tracee/blob/master/images/tracee.png" />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/aquasecurity/tracee">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Tracee is a lightweight, efficient and easy-to-use tool for dynamically detecting security events from systems, containers, and pods. 
+            Written in Go and leveraging the power of eBPF, Tracee allows you to trace system events, detect suspicious behavior, and capture forensic insights.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 );
