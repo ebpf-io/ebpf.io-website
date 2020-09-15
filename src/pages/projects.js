@@ -507,6 +507,7 @@ const ProjectDescriptions = () => (
           </p>
         </div>
       </div>
+    </div>
 
     <div className="project-box">
       <a name="tracee" />
@@ -533,6 +534,7 @@ const ProjectDescriptions = () => (
         </div>
       </div>
     </div>
+
   </div>
 );
 
