@@ -519,7 +519,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/aquasecurity/tracee"
         >
-          <img src="https://github.com/aquasecurity/tracee/blob/master/images/tracee.png" />
+          <img src="https://raw.githubusercontent.com/aquasecurity/tracee/master/images/tracee.png" />
         </a>
         <div className="project-description">
           <p>
