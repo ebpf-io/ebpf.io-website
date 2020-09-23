@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 const CallForPapers = () => (
-  <Layout>
+  <Layout isBannerHidden>
     <div className="page-wrapper">
       <img className="main-logo" src={require("../assets/logo-big.png")} />
       <h1 style={{textAlign: 'center'}}>
@@ -30,9 +30,9 @@ const CallForPapers = () => (
       </p>
       <p>Confirmed keynote speakers include:</p>
       <ul>
-        <li>Alexei Starovoitov (Co-Maintainer eBPF, Facebook)</li>
+        <li>Alexei Starovoitov (Co-maintainer eBPF, Facebook)</li>
         <li>Brendan Gregg (Author of “BPF Performance Tools“, Lead performance engineer, Netflix)</li>
-        <li>Daniel Borkmann (Co-maintainter eBPF, Isovalent)</li>
+        <li>Daniel Borkmann (Co-maintainer eBPF, Isovalent)</li>
         <li>David Miller (Linux Kernel Networking Maintainer, Red Hat)</li>
         <li>KP Singh (Kernel Runtime Security, Google)</li>
         <li>Kris Nova (Chief Open Source Advocate, Sysdig)</li>
@@ -72,14 +72,14 @@ const CallForPapers = () => (
       <h2>Dates to Remember:</h2>
       <ul>
         <li>CFP Opens: Wednesday, September 23</li>
-        <li>CFP Closes: Wednesday, October 14 at 11:59 PDT</li>
         <li>Registration opens: Wednesday, September 23</li>
+        <li>CFP Closes: Wednesday, October 14 at 11:59 PDT</li>
         <li>CFP Notifications: on or before Friday, October 16</li>
         <li>Session Recordings Completed: Sunday, October 25th at 11:59 PDT</li>
         <li>Event Date: October 28 and 29th, 2020, 9am-12pm PDT; 4pm-7pm GMT</li>
       </ul>
       <p>
-        If you have any questions, please contact <a href="mailto:neela@isovalent.com">neela@isovalent.com</a>
+        If you have any questions please ask them on <a href="https://cilium.herokuapp.com/">the eBPF Slack</a> (you'll see a channel for eBPF Summit).
       </p>
     </div>
 

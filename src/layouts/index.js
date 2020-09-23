@@ -10,10 +10,7 @@ import "./menu-icon.scss";
 
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
-      <b>Note:</b> ebpf.io has just been launched. If you believe that
-      information, a link, or a project is missing, it is very unlikely to be
-      deliberate. We simply have not gotten around to adding it yet. Feel free
-      to <a href="https://github.com/cilium/ebpf.io">open a pull request</a>.
+    <strong>eBPF Summit 2020 - Virtual - Oct 28-29, 2020</strong> - CFP and Registration now open. <a href="/ebpf-summit-2020-cfp" style={{color: '#947927'}}>Click here</a>.
   </div>
 )
 
@@ -95,7 +92,7 @@ const FooterDesktop = () => (
   </div>
 );
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, isBannerHidden }) => (
   <div>
     <Helmet
       title="eBPF"
@@ -116,7 +113,7 @@ const TemplateWrapper = ({ children }) => (
         },
       ]}
     />
-    <InfoDisclaimer />
+    {!isBannerHidden && <InfoDisclaimer />}
     <HeaderDesktop />
     <HeaderMobile />
     <div>{children}</div>
