@@ -1,3 +1,4 @@
+import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 import { Link } from "gatsby";
@@ -5,6 +6,23 @@ import { Link } from "gatsby";
 const CallForPapers = () => (
   <Layout isBannerHidden>
     <div className="page-wrapper">
+      <Helmet
+        title="eBPF Summit 2020, Call For Proposals"
+        meta={[
+          {name: "name", content: "eBPF"},
+          {name: "description", content: "October 28-29th"},
+          {name: "og:type", content: "website"},
+          {name: "og:url", content: "https://ebpf.io/ebpf-summit-2020-cfp/"},
+          {name: "og:title", content: "eBPF Summit 2020, Call For Proposals"},
+          {name: "og:description", content: "October 28-29th"},
+          {name: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "twitter:card", content: "summary"},
+          {name: "twitter:url", content: "https://ebpf.io/ebpf-summit-2020-cfp/"},
+          {name: "twitter:title", content: "eBPF Summit 2020, Call For Proposals"},
+          {name: "twitter:description", content: "October 28-29th"},
+          {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+        ]}
+      />
       <img className="main-logo" src={require("../assets/logo-big.png")} />
       <h1 style={{textAlign: 'center'}}>
         eBPF Summit
