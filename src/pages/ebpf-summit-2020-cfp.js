@@ -78,7 +78,7 @@ const CallForPapers = () => (
     </div>
 
     <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSf0lb-UitAnoSjjZh3tSwAH-Li2XBr_ENFbnFm_nSHc818uSA/viewform?embedded=true"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeNUo-TrAVRAjMdjB62A48CtHarC1AexWZpTQskvTyNOoSqaw/viewform?embedded=true"
       width="100%"
       height="1590"
       frameBorder="0"
