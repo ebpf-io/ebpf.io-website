@@ -79,7 +79,7 @@ const CallForPapers = () => (
         <li>Event Date: October 28 and 29th, 2020, 9am-12pm PDT; 4pm-7pm GMT</li>
       </ul>
       <p>
-        If you have any questions please ask them on the eBPF Slack (you'll see a channel for eBPF Summit).
+        If you have any questions please ask them on <a href="https://cilium.herokuapp.com/">the eBPF Slack</a> (you'll see a channel for eBPF Summit).
       </p>
     </div>
 
