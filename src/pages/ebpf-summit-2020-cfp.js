@@ -28,9 +28,9 @@ const CallForPapers = () => (
       />
       <img className="main-logo" src={require("../assets/logo-big.png")} />
       <h1 style={{textAlign: 'center'}}>
-        eBPF Summit
+        eBPF Summit&nbsp;
         <br />
-        Oct 28-29th
+        Oct 28-29th&nbsp;
         <br />
         Call For Proposals
       </h1>
