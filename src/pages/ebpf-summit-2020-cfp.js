@@ -19,7 +19,7 @@ const CallForPapers = () => (
           {name: "og:title", content: pageMetaTitle},
           {name: "og:description", content: pageMetaDescription},
           {name: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
-          {name: "twitter:card", content: "summary"},
+          {name: "twitter:card", content: "summary_large_image"},
           {name: "twitter:url", content: "https://ebpf.io/ebpf-summit-2020-cfp/"},
           {name: "twitter:title", content: pageMetaTitle},
           {name: "twitter:description", content: pageMetaDescription},
