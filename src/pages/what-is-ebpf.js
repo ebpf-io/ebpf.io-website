@@ -741,7 +741,16 @@ const Section = ({ icon, iconWidth, iconHeight, title, text, style }) => (
 const Page = () => (
   <Layout>
     <div className="page-wrapper page-what-is-ebpf">
-      <Helmet title="What is eBPF? An Introduction and Deep Dive into the eBPF Technology" />
+      <Helmet
+        title="What is eBPF? An Introduction and Deep Dive into the eBPF Technology"
+
+        meta={[
+          {
+            name: "description",
+            content: "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
+          },
+        ]}
+      />
       <Description />
     </div>
   </Layout>

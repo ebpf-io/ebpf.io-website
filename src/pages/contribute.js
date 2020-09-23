@@ -21,7 +21,16 @@ const Section = ({
 const Page = () => (
   <Layout>
     <div className="page-wrapper page-contribute">
-      <Helmet title="How to contribute to eBPF?" />
+      <Helmet
+        title="How to contribute to eBPF?"
+
+        meta={[
+          {
+            name: "description",
+            content: "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
+          },
+        ]}
+      />
       <Title />
       <p>
         eBPF consists of many communities including the eBPF runtime in the Linux
