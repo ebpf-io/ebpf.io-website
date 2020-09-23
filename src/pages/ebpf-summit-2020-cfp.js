@@ -11,36 +11,35 @@ const CallForPapers = () => (
         <br />
         Oct 28-29th
         <br />
-        Call For Papers
+        Call For Proposals
       </h1>
       <p>
-        We’re excited to announce that the call for papers is now open for the inaugural eBPF Summit,
+        We’re excited to announce that the call for proposals is now open for the inaugural eBPF Summit,
         a virtual event, targeted at DevOps, platform architects and developers, to be held October 28-29,
-        2020. The summit is offered at no cost, and will include keynotes from those leading
-        the open source eBPF community and from eBPF power-users like Netflix, Facebook, Datadog,
-        and Google as well as user lightning talks. Participants will have a chance to ask questions
-        of the speakers and chat with peers on a Slack forum. We’re inviting eBPF users,
-        contributors and community members to participate in this gathering.
+        2020. The summit is offered at no cost, and will include keynotes from those leading the open source eBPF
+        community including eBPF power-users as well as user lightning talks. Participants will have a chance to ask
+        questions to the speakers and chat with peers on a Slack forum. We’re inviting eBPF users,
+        contributors and community members to participate in this virtual gathering.
       </p>
       <h2>About the eBPF Summit:</h2>
       <p>
-        eBPF is quickly becoming one of the most talked about technologies in our industry - enabling
-        a new generation of networking, tracing, observability and security. The eBPF Summit is targeted
-        at users and potential users of this groundbreaking technology - both those looking at
-        leveraging eBPF directly and via one of the projects leveraging eBPF (e.g. BPFTrace, Cilium,
-        Falco etc.).
+        eBPF is quickly becoming one of the most talked about technologies in our industry - enabling a new generation
+        of networking, tracing, observability and security infrastructure. The eBPF Summit is targeted
+        at users and potential users of this groundbreaking technology - both those looking at leveraging eBPF directly
+        or via one of the projects leveraging eBPF (e.g. bpftrace, Cilium, Falco etc.).
       </p>
       <p>Confirmed keynote speakers include:</p>
       <ul>
-        <li>Brendan Gregg (Author of “BPF Performance Tools“, Lead performance engineer, Netflix)</li>
-        <li>Zang Li (Cilium Core team Maintainer, Google)</li>
         <li>Alexei Starovoitov (Co-Maintainer eBPF, Facebook)</li>
-        <li>Kris Nova (Chief Open Source Advocate, Sysdig)</li>
-        <li>David Miller (Linux Kernel Networking Maintainer, RedHat)</li>
+        <li>Brendan Gregg (Author of “BPF Performance Tools“, Lead performance engineer, Netflix)</li>
         <li>Daniel Borkmann (Co-maintainter eBPF, Isovalent)</li>
+        <li>David Miller (Linux Kernel Networking Maintainer, Red Hat)</li>
+        <li>KP Singh (Kernel Runtime Security, Google)</li>
+        <li>Kris Nova (Chief Open Source Advocate, Sysdig)</li>
+        <li>Laurent Bernaille (Staff Engineer, Datadog)</li>
         <li>Liz Rice (VP, Open Source Engineering, Aqua)</li>
-        <li>Laurent Bernaille (Staff Engineer at Datadog)</li>
         <li>Thomas Graf (Co-founder of the Cilium project, Isovalent)</li>
+        <li>Zang Li (Cilium Core team Maintainer, Google)</li>
       </ul>
       <h2>eBPF User Lightning Talks:</h2>
       <p>
@@ -62,7 +61,7 @@ const CallForPapers = () => (
         <li>Application profiling and tracing with eBPF</li>
         <li>System and application monitoring with eBPF</li>
         <li>Unlocking new levels of observability with eBPF</li>
-        <li>Advancements in the eBPF runtime</li>
+        <li>Advancements in the eBPF core infrastructure and libraries</li>
         <li>eBPF community related topics</li>
       </ul>
       <h2>Registration:</h2>
