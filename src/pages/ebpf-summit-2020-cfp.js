@@ -44,7 +44,7 @@ const CallForPapers = () => (
       </ul>
       <h2>eBPF User Lightning Talks</h2>
       <p>
-        Users are invited to <Link to="/submit-proposal" className="main-button">submit talks</Link> describing
+        Users are invited to submit talks describing
         how they are using eBPF and eBPF-based open
         source projects to solve real world problems. To be clear, you do not have to be writing
         raw eBPF programs yourself to speak, we expect many speakers to be leveraging eBPF via derivative
@@ -76,6 +76,16 @@ const CallForPapers = () => (
         If you have any questions, please contact <a href="mailto:neela@isovalent.com">neela@isovalent.com</a>
       </p>
     </div>
+
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSf0lb-UitAnoSjjZh3tSwAH-Li2XBr_ENFbnFm_nSHc818uSA/viewform?embedded=true"
+      width="100%"
+      height="1590"
+      frameBorder="0"
+      marginHeight="0"
+      marginWidth="0"
+      style={{marginTop: 48}}
+    >Loading…</iframe>
   </Layout>
 );
 
