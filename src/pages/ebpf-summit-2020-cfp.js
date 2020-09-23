@@ -55,19 +55,26 @@ const CallForPapers = () => (
       </p>
       <h2>Suggested Topics:</h2>
       <ul>
-        <li>Debugging applications in production</li>
-        <li>Zero trust / network policies</li>
-        <li>Network connectivity and load balancing</li>
-        <li>Multi-cluster networking</li>
-        <li>Tracing and profiling</li>
-        <li>Troubleshooting connectivity issues</li>
-        <li>Security flow audits and incident investigation</li>
+        <li>Using eBPF to troubleshoot application and system performance</li>
+        <li>Applying eBPF to implement zero trust, runtime security, network policy</li>
+        <li>Tackling infrastructure scalability challenges with eBPF</li>
+        <li>Applying eBPF to networking and load-balancing</li>
+        <li>Application profiling and tracing with eBPF</li>
+        <li>System and application monitoring with eBPF</li>
+        <li>Unlocking new levels of observability with eBPF</li>
+        <li>Advancements in the eBPF runtime</li>
+        <li>eBPF community related topics</li>
       </ul>
+      <h2>Registration:</h2>
+      <p>
+        The summit is open to everyone free of charge. To sign up for the event, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWBrtQzSDxgFb2yMoa2tePapMibKeGaHLHDd70xNJzzVMX5g/viewform?embedded=true">registration form</a>.
+        You will receive information on how to join the summit prior to the event.
+      </p>
       <h2>Dates to Remember:</h2>
       <ul>
         <li>CFP Opens: Wednesday, September 23</li>
         <li>CFP Closes: Wednesday, October 14 at 11:59 PDT</li>
-        <li>Registration opens: Wednesday Oct</li>
+        <li>Registration opens: Wednesday, September 23</li>
         <li>CFP Notifications: on or before Friday, October 16</li>
         <li>Session Recordings Completed: Sunday, October 25th at 11:59 PDT</li>
         <li>Event Date: October 28 and 29th, 2020, 9am-12pm PDT; 4pm-7pm GMT</li>
