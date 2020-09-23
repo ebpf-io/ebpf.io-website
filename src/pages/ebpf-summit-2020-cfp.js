@@ -42,7 +42,7 @@ const CallForPapers = () => (
         <li>Laurent Bernaille (Staff Engineer at Datadog)</li>
         <li>Thomas Graf (Co-founder of the Cilium project, Isovalent)</li>
       </ul>
-      <h2>eBPF User Lightning Talks</h2>
+      <h2>eBPF User Lightning Talks:</h2>
       <p>
         Users are invited to submit talks describing
         how they are using eBPF and eBPF-based open
