@@ -3,7 +3,7 @@ import Layout from "../layouts";
 import React from "react";
 import { Link } from "gatsby";
 const pageMetaTitle = 'eBPF Summit 2020 - Call For Proposals'
-const pageMetaDescription = 'October 28-29th'
+const pageMetaDescription = 'We’re excited to announce that the call for proposals is now open for the inaugural eBPF Summit, a virtual event, to be held October 28-29, 2020'
 
 const CallForPapers = () => (
   <Layout isBannerHidden>
