@@ -4,6 +4,9 @@ import React from "react";
 
 import "../stylesheets/index.scss";
 
+const pageMetaTitle = 'What is eBPF? An Introduction and Deep Dive into the eBPF Technology'
+const pageMetaDescription = 'A detailed step by step introduction to the eBPF technology with lots of references for further reading.'
+
 const windowGlobal = typeof window !== "undefined" && window;
 
 const Reference = ({ slides, video, link, name, description }) => (
@@ -742,13 +745,22 @@ const Page = () => (
   <Layout>
     <div className="page-wrapper page-what-is-ebpf">
       <Helmet
-        title="What is eBPF? An Introduction and Deep Dive into the eBPF Technology"
+        title={pageMetaTitle}
 
         meta={[
-          {
-            name: "description",
-            content: "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
-          },
+          {name: "title", content: pageMetaTitle},
+          {name: "description", content: pageMetaDescription},
+          {name: "keywords", content: "ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, documentation"},
+          {name: "og:type", content: "website"},
+          {name: "og:url", content: "https://ebpf.io/what-is-ebpf/"},
+          {name: "og:title", content: pageMetaTitle},
+          {name: "og:description", content: pageMetaDescription},
+          {name: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "twitter:card", content: "summary_large_image"},
+          {name: "twitter:url", content: "https://ebpf.io/"},
+          {name: "twitter:title", content: pageMetaTitle},
+          {name: "twitter:description", content: pageMetaDescription},
+          {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
         ]}
       />
       <Description />

@@ -4,6 +4,9 @@ import React from "react";
 
 import "../stylesheets/index.scss";
 
+const pageMetaTitle = 'eBPF Projects Directory'
+const pageMetaDescription = 'A directory of eBPF-based open source projects'
+
 const YouMaintain = () => (
   <ul className="projects-requirements-list">
     <li>
@@ -515,13 +518,22 @@ const Page = () => (
   <Layout>
     <div className="page-wrapper page-projects">
       <Helmet
-        title="eBPF - List of projects using eBPF"
+        title={pageMetaTitle}
 
         meta={[
-          {
-            name: "description",
-            content: "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
-          },
+          {name: "title", content: pageMetaTitle},
+          {name: "description", content: pageMetaDescription},
+          {name: "keywords", content: "ebpf, bpf, projects, directory, open source"},
+          {name: "og:type", content: "website"},
+          {name: "og:url", content: "https://ebpf.io/contribute/"},
+          {name: "og:title", content: pageMetaTitle},
+          {name: "og:description", content: pageMetaDescription},
+          {name: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "twitter:card", content: "summary_large_image"},
+          {name: "twitter:url", content: "https://ebpf.io/projects/"},
+          {name: "twitter:title", content: pageMetaTitle},
+          {name: "twitter:description", content: pageMetaDescription},
+          {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
         ]}
       />
       <ProjectDescriptions />
