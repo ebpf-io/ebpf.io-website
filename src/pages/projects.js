@@ -523,6 +523,7 @@ const Page = () => (
         meta={[
           {name: "title", content: pageMetaTitle},
           {name: "description", content: pageMetaDescription},
+          {name: "keywords", content: "ebpf, bpf, projects, directory, open source"},
           {name: "og:type", content: "website"},
           {name: "og:url", content: "https://ebpf.io/contribute/"},
           {name: "og:title", content: pageMetaTitle},

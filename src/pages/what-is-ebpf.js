@@ -750,6 +750,7 @@ const Page = () => (
         meta={[
           {name: "title", content: pageMetaTitle},
           {name: "description", content: pageMetaDescription},
+          {name: "keywords", content: "ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, documentation"},
           {name: "og:type", content: "website"},
           {name: "og:url", content: "https://ebpf.io/what-is-ebpf/"},
           {name: "og:title", content: pageMetaTitle},

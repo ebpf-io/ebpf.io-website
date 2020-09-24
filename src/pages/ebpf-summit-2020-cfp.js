@@ -14,6 +14,7 @@ const CallForPapers = () => (
           {name: "name", content: "eBPF"},
           {name: "title", content: pageMetaTitle},
           {name: "description", content: pageMetaDescription},
+          {name: "keywords", content: "ebpf, bpf, summit, conference, event"},
           {name: "og:type", content: "website"},
           {name: "og:url", content: "https://ebpf.io/ebpf-summit-2020-cfp/"},
           {name: "og:title", content: pageMetaTitle},

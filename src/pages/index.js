@@ -357,6 +357,7 @@ const IndexPage = () => (
         meta={[
           {name: "title", content: pageMetaTitle},
           {name: "description", content: pageMetaDescription},
+          {name: "keywords", content: "ebpf, bpf, xdp, introduction, tutorial, documentation, deep dive, community"},
           {name: "og:type", content: "website"},
           {name: "og:url", content: "https://ebpf.io/"},
           {name: "og:title", content: pageMetaTitle},
