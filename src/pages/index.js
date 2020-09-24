@@ -6,6 +6,9 @@ import { unescape, shuffle } from "lodash";
 import { format, parse as parseDate } from "date-fns";
 import Slider from "infinite-react-carousel";
 
+const pageMetaTitle = 'eBPF - Introduction, Tutorials & Community Resources'
+const pageMetaDescription = 'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+
 import "../stylesheets/index.scss";
 
 const tracingText = `
@@ -349,13 +352,21 @@ const IndexPage = () => (
   <Layout>
     <div className="page-wrapper page-index">
       <Helmet
-        title="eBPF - Introduction & Community Resources"
+        title={pageMetaTitle}
 
         meta={[
-          {
-            name: "description",
-            content: "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
-          },
+          {name: "title", content: pageMetaTitle},
+          {name: "description", content: pageMetaDescription},
+          {name: "og:type", content: "website"},
+          {name: "og:url", content: "https://ebpf.io/"},
+          {name: "og:title", content: pageMetaTitle},
+          {name: "og:description", content: pageMetaDescription},
+          {name: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "twitter:card", content: "summary_large_image"},
+          {name: "twitter:url", content: "https://ebpf.io/"},
+          {name: "twitter:title", content: pageMetaTitle},
+          {name: "twitter:description", content: pageMetaDescription},
+          {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
         ]}
       />
       <Title />
