@@ -668,6 +668,331 @@ code {
   }
 }
 
+.summit-page-wrapper {
+}
+
+.summit-header {
+  max-width: 1290px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 13px;
+  padding: 0 110px;
+
+  & .summit-header-logo {
+    height: 29px;
+  }
+
+  & .summit-header-nav {
+    & a {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .summit-link {
+      color: #2B6FFC;
+      text-decoration: none;
+      transition: color 200ms;
+
+      &:hover {
+        color: #034FDB;
+      }
+    }
+
+    & .summit-button {
+      width: 132px;
+      height: 32px;
+      font-weight: 500;
+      line-height: 32px;
+      color: #034FDB;
+      border-color: #0079FC;
+
+      &:hover {
+        color: #2B6FFC;
+        border-color: #2B6FFC;
+      }
+    }
+  }
+}
+
+.summit-hero {
+}
+
+.summit-hero-wrapper {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 120px 410px 80px 110px;
+  color: white;
+
+  & .summit-date {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  & .summit-date-divider {
+    margin: 0 30px;
+  }
+
+  & h1 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 64px;
+  }
+
+  & .summit-call-for-proposals {
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: .7;
+  }
+
+  & .summit-buttons {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  & .summit-hero-p1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+
+  & .summit-hero-p2 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+
+.summit-about {
+  padding: 70px 0;
+  text-align: center;
+  background-color: #FAFAFA;
+
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-size: 28px;
+    color: #0C2044;
+  }
+
+  & p {
+    max-width: 660px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #3C3C3C;
+  }
+}
+
+.summit-speakers {
+  padding-top: 0;
+  padding-bottom: 68px;
+  text-align: center;
+  background-color: #FAFAFA;
+
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 28px;
+    color: #0C2044;
+  }
+
+  & .summit-speakers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 26px;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  & .summit-speaker-card {
+    & img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 13px;
+    }
+
+    & h3 {
+      margin-top: 0;
+      margin-bottom: 3px;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #3C3C3C;
+    }
+
+    & p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 300;
+      color: #3C3C3C;
+    }
+  }
+}
+
+.summit-columns {
+  max-width: 1290px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 90px;
+  padding: 76px 88px 200px 114px;
+  background-color: white;
+}
+
+.summit-user-talks {
+  margin-bottom: 77px;
+
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 23px;
+    font-size: 26px;
+    color: #0C2044;
+  }
+
+  & p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #3C3C3C;
+  }
+}
+
+.summit-dates {
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-size: 26px;
+    color: #0C2044;
+  }
+
+  & .summit-dates-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 30px;
+    row-gap: 20px;
+    align-items: baseline;
+
+    & h4 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 700;
+    }
+
+    & p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 300;
+      color: #3C3C3C;
+    }
+  }
+}
+
+.summit-topics {
+  margin-bottom: 72px;
+
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-size: 26px;
+    color: #0C2044;
+  }
+
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  & li {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #3C3C3C;
+  }
+}
+
+.summit-registration {
+  margin-top: -42px;
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #0C2044;
+  }
+
+  & p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #3C3C3C;
+  }
+}
+
+.summit-button {
+  width: 160px;
+  height: 41px;
+  border: 1px solid #2B6FFC;
+  box-sizing: border-box;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 3px;
+  color: #034FDB;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 200ms;
+
+  &:hover {
+    color: #2B6FFC;
+  }
+}
+
+.summit-guest-button {
+  margin-right: 38px;
+  color: white;
+  background-color: #2B6FFC;
+
+  &:hover {
+    color: white;
+    background-color: #034FDB;
+  }
+}
+
+.summit-link {
+  color: #2B6FFC;
+  text-decoration: none;
+  transition: color 200ms;
+
+  &:hover {
+    color: #034FDB;
+  }
+}
+
+.summit-calendar {
+  margin-left: 11px;
+}
+
 @media #{$tablet} {
   h1 {
     font-size: 40px;
