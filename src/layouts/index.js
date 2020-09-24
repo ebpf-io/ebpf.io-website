@@ -92,7 +92,7 @@ const FooterDesktop = () => (
   </div>
 );
 
-const TemplateWrapper = ({ children, isBannerHidden }) => (
+const TemplateWrapper = ({ children, isBannerHidden, isDesktopHeaderHidden }) => (
   <div>
     <Helmet
       title="eBPF"
@@ -114,7 +114,7 @@ const TemplateWrapper = ({ children, isBannerHidden }) => (
       ]}
     />
     {!isBannerHidden && <InfoDisclaimer />}
-    <HeaderDesktop />
+    {!isDesktopHeaderHidden && <HeaderDesktop />}
     <HeaderMobile />
     <div>{children}</div>
     <FooterDesktop />
