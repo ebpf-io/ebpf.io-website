@@ -112,7 +112,11 @@ const HeaderDesktop = () => (
 );
 
 const Hero = () => (
-  <div className="summit-hero" style={{background: `linear-gradient(89.77deg, #0E1C3E 0.87%, rgba(13, 16, 43, 0.68) 100.48%), url(${require("../assets/summit-2020/hero-bg.jpg")}`}}>
+  <div className="summit-hero" style={{
+    background: `linear-gradient(89.77deg, #0E1C3E 0.87%, rgba(13, 16, 43, 0.68) 100.48%), url(${require("../assets/summit-2020/hero-bg.jpg")}`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+  }}>
     <div className="summit-hero-wrapper">
       <p className="summit-date">
         <span>October  28-29th, 2020</span>
