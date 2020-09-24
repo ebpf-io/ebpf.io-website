@@ -271,6 +271,20 @@ const CallForPapers = () => (
           <Registration />
         </div>
       </div>
+      <div style={{display: 'flex', justifyContent: 'center', marginTop: -116, width: '100%'}}>
+        <a
+          className="summit-button summit-guest-button"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeWBrtQzSDxgFb2yMoa2tePapMibKeGaHLHDd70xNJzzVMX5g/viewform?embedded=true"
+        >
+          Register
+        </a>
+        <a
+          className="summit-button"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeNUo-TrAVRAjMdjB62A48CtHarC1AexWZpTQskvTyNOoSqaw/viewform?embedded=true"
+        >
+          Submit Talk Proposal
+        </a>
+      </div>
     </div>
   </Layout>
 );
