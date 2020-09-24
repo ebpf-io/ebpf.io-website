@@ -105,7 +105,7 @@ const HeaderDesktop = () => (
         className="summit-button"
         href="https://docs.google.com/forms/d/e/1FAIpQLSeWBrtQzSDxgFb2yMoa2tePapMibKeGaHLHDd70xNJzzVMX5g/viewform?embedded=true"
       >
-        Guest Registration
+        Register
       </a>
     </nav>
   </div>
