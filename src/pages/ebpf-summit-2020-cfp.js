@@ -181,7 +181,7 @@ const UserTalks = () => (
   <div className="summit-user-talks">
     <h2>eBPF User Lightning Talks</h2>
     <p>
-      Users are invited to submit talks describing how they are using eBPF and eBPF-based open source projects to solve real world problems. To be clear, you do not have to be writing raw eBPF programs yourself to speak, we expect many speakers to be leveraging eBPF via derivative projects (see list here: https://ebpf.io/projects). Lightning talks will be 5 minutes in length (plus time for Q&A) and can be pre-recorded or delivered live based on the speaker’s preference. We do ask that regardless of the delivery that the speaker is present to answer questions and interact with the community.
+      Users are invited to submit talks describing how they are using eBPF and eBPF-based open source projects to solve real world problems. To be clear, you do not have to be writing raw eBPF programs yourself to speak, we expect many speakers to be leveraging eBPF via derivative projects (see list <a href="https://ebpf.io/projects">here</a>). Lightning talks will be 5 minutes in length (plus time for Q&A) and can be pre-recorded or delivered live based on the speaker’s preference. We do ask that regardless of the delivery that the speaker is present to answer questions and interact with the community.
     </p>
   </div>
 );
