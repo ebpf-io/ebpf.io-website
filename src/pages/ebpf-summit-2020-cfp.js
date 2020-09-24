@@ -2,7 +2,7 @@ import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 import { Link } from "gatsby";
-const pageMetaTitle = 'eBPF Summit 2020, Call For Proposals'
+const pageMetaTitle = 'eBPF Summit 2020 - Call For Proposals'
 const pageMetaDescription = 'October 28-29th'
 
 const CallForPapers = () => (
@@ -18,12 +18,12 @@ const CallForPapers = () => (
           {name: "og:url", content: "https://ebpf.io/ebpf-summit-2020-cfp/"},
           {name: "og:title", content: pageMetaTitle},
           {name: "og:description", content: pageMetaDescription},
-          {name: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "og:image", content: 'https://ebpf.io' + require("../assets/summit_logo.png")},
           {name: "twitter:card", content: "summary_large_image"},
           {name: "twitter:url", content: "https://ebpf.io/ebpf-summit-2020-cfp/"},
           {name: "twitter:title", content: pageMetaTitle},
           {name: "twitter:description", content: pageMetaDescription},
-          {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/summit_logo.png")},
         ]}
       />
       <img className="main-logo" src={require("../assets/logo-big.png")} />
