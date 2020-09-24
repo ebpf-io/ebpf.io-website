@@ -128,13 +128,13 @@ const Hero = () => (
           className="summit-button summit-guest-button"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeWBrtQzSDxgFb2yMoa2tePapMibKeGaHLHDd70xNJzzVMX5g/viewform?embedded=true"
         >
-          Guest Registration
+          Register
         </a>
         <a
           className="summit-button"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeNUo-TrAVRAjMdjB62A48CtHarC1AexWZpTQskvTyNOoSqaw/viewform?embedded=true"
         >
-          Speaker Registration
+          Submit Talk Proposal
         </a>
       </div>
       <p className="summit-hero-p1">
