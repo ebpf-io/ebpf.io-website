@@ -4,6 +4,9 @@ import React from "react";
 
 import "../stylesheets/index.scss";
 
+const pageMetaTitle = 'How to contribute to eBPF'
+const pageMetaDescription = 'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.'
+
 const Title = () => <div className="contribute-title">How to Contribute to eBPF</div>;
 
 const Section = ({
@@ -22,13 +25,21 @@ const Page = () => (
   <Layout>
     <div className="page-wrapper page-contribute">
       <Helmet
-        title="How to contribute to eBPF?"
+        title={pageMetaTitle}
 
         meta={[
-          {
-            name: "description",
-            content: "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
-          },
+          {name: "title", content: pageMetaTitle},
+          {name: "description", content: pageMetaDescription},
+          {name: "og:type", content: "website"},
+          {name: "og:url", content: "https://ebpf.io/contribute/"},
+          {name: "og:title", content: pageMetaTitle},
+          {name: "og:description", content: pageMetaDescription},
+          {name: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "twitter:card", content: "summary_large_image"},
+          {name: "twitter:url", content: "https://ebpf.io/"},
+          {name: "twitter:title", content: pageMetaTitle},
+          {name: "twitter:description", content: pageMetaDescription},
+          {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
         ]}
       />
       <Title />
