@@ -230,7 +230,7 @@ const Registration = () => (
       The summit is open to everyone free of charge. To sign up for the event, please fill out this <a className="summit-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeWBrtQzSDxgFb2yMoa2tePapMibKeGaHLHDd70xNJzzVMX5g/viewform?embedded=true">Registration Form</a>. You will receive information on how to join the summit prior to the event.
     </p>
     <p>
-      If you have any questions please ask them on <a href="https://cilium.herokuapp.com/" className="summit-link">the eBPF Slack</a>(you'll see a channel for eBPF Summit).
+     If you have any questions please ask them on <a href="https://cilium.herokuapp.com/" className="summit-link">the eBPF Slack</a>. There is a #ebpf-summit channel dedicated for this event.
     </p>
   </div>
 );
@@ -245,11 +245,11 @@ const CallForPapers = () => (
           {name: "title", content: pageMetaTitle},
           {name: "description", content: pageMetaDescription},
           {name: "keywords", content: "ebpf, bpf, summit, conference, event"},
-          {name: "og:type", content: "website"},
-          {name: "og:url", content: "https://ebpf.io/ebpf-summit-2020-cfp/"},
-          {name: "og:title", content: pageMetaTitle},
-          {name: "og:description", content: pageMetaDescription},
-          {name: "og:image", content: 'https://ebpf.io' + require("../assets/summit_logo.png")},
+          {prefix: "og: http://ogp.me/ns#", name: "og:type", content: "website"},
+          {prefix: "og: http://ogp.me/ns#", name: "og:url", content: "https://ebpf.io/ebpf-summit-2020-cfp/"},
+          {prefix: "og: http://ogp.me/ns#", name: "og:title", content: pageMetaTitle},
+          {prefix: "og: http://ogp.me/ns#", name: "og:description", content: pageMetaDescription},
+          {prefix: "og: http://ogp.me/ns#", name: "og:image", content: 'https://ebpf.io' + require("../assets/summit_logo.png")},
           {name: "twitter:card", content: "summary_large_image"},
           {name: "twitter:url", content: "https://ebpf.io/ebpf-summit-2020-cfp/"},
           {name: "twitter:title", content: pageMetaTitle},
