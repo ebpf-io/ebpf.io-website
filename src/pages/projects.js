@@ -521,14 +521,12 @@ const Page = () => (
         title={pageMetaTitle}
 
         meta={[
-          {name: "title", content: pageMetaTitle},
-          {name: "description", content: pageMetaDescription},
           {name: "keywords", content: "ebpf, bpf, projects, directory, open source"},
-          {name: "og:type", content: "website"},
-          {name: "og:url", content: "https://ebpf.io/contribute/"},
-          {name: "og:title", content: pageMetaTitle},
-          {name: "og:description", content: pageMetaDescription},
-          {name: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "type", property: "og:type", content: "website"},
+          {name: "url", property: "og:url", content: "https://ebpf.io/contribute/"},
+          {name: "title", property: "og:title", content: pageMetaTitle},
+          {name: "description", property: "og:description", content: pageMetaDescription},
+          {name: "image", property: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
           {name: "twitter:card", content: "summary_large_image"},
           {name: "twitter:url", content: "https://ebpf.io/projects/"},
           {name: "twitter:title", content: pageMetaTitle},
