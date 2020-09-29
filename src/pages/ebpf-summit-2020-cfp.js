@@ -270,7 +270,7 @@ const CallForPapers = () => (
           <Registration />
         </div>
       </div>
-      <div style={{display: 'flex', justifyContent: 'center', marginTop: -116, width: '100%'}}>
+      <div className="summit-registration-buttons">
         <a
           className="summit-button summit-guest-button"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeWBrtQzSDxgFb2yMoa2tePapMibKeGaHLHDd70xNJzzVMX5g/viewform?embedded=true"

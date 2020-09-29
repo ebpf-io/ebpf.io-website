@@ -807,7 +807,6 @@ code {
   & .summit-speakers-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     row-gap: 26px;
     max-width: 1024px;
     margin: 0 auto;
@@ -993,6 +992,13 @@ code {
   margin-left: 11px;
 }
 
+.summit-registration-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -116px;
+}
+
 @media #{$tablet} {
   h1 {
     font-size: 40px;
@@ -1016,5 +1022,107 @@ code {
 
   .toc {
     float: none !important;
+  }
+}
+
+@media #{$tablet} {
+  .summit-hero-wrapper {
+    padding: 40px;
+
+    & .summit-date {
+      margin-bottom: 20px;
+    }
+
+    & h1 {
+      margin-bottom: 20px;
+      line-height: 1;
+    }
+
+    & .summit-call-for-proposals {
+      margin-bottom: 20px;
+    }
+  }
+
+  .summit-about {
+    padding: 40px;
+  }
+
+  .summit-speakers {
+    padding-bottom: 40px;
+
+    & .summit-speakers-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 0 40px;
+    }
+  }
+
+  .summit-columns {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .summit-user-talks {
+    margin-bottom: 20px;
+  }
+
+  .summit-dates {
+    padding-bottom: 20px;
+  }
+
+  .summit-registration-buttons {
+    margin-top: 0;
+  }
+}
+
+@media #{$mobile} {
+  .summit-hero-wrapper {
+    padding: 20px;
+
+    & .summit-date {
+      font-size: 12px;
+
+      & .summit-date-divider {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+
+    & .summit-hero-p1 {
+      font-size: 16px;
+    }
+
+    & .summit-hero-p2 {
+      font-size: 12px;
+    }
+  }
+
+  .summit-about {
+    padding: 20px;
+  }
+
+  .summit-speakers {
+    padding-bottom: 20px;
+
+    & .summit-speakers-container {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 20px;
+    }
+  }
+
+  .summit-columns {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .summit-user-talks {
+    margin-bottom: 20px;
+  }
+
+  .summit-dates {
+    padding-bottom: 20px;
+  }
+
+  .summit-registration-buttons {
+    margin-top: 0;
   }
 }
