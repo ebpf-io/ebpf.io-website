@@ -289,7 +289,7 @@ class BlogRoll extends React.Component {
                 ...post,
                 pubDate: parseDate(
                   post.pubDate,
-                  "yyyy-MM-dd hh:mm:ss",
+                  "yyyy-MM-dd HH:mm:ss",
                   new Date()
                 ),
                 author: post.author || feed.author,
