@@ -132,9 +132,9 @@ class Description extends React.Component {
           <h3>How are eBPF programs written?</h3>
           <p>
             In a lot of scenarios, eBPF is not used directly but indirectly via
-            projects like <a href="/project#cilium">Cilium</a>,{" "}
-            <a href="/projects#bcc">bcc</a>, or{" "}
-            <a href="/projects#bpftrace">bpftrace</a> which provide an
+            projects like <a href="/projects/#cilium">Cilium</a>,{" "}
+            <a href="/projects/#bcc">bcc</a>, or{" "}
+            <a href="/projects/#bpftrace">bpftrace</a> which provide an
             abstraction on top of eBPF and do not require to write programs
             directly but instead offer the ability to specify intent-based
             definitions which are then implemented with eBPF.
