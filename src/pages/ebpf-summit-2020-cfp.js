@@ -80,7 +80,7 @@ const speakers = [
   },
   {
     avatarSrc: require("../assets/summit-2020/tomas-graf.png"),
-    name: "Tomas Graf",
+    name: "Thomas Graf",
     descriptions: [
       "Co-founder of the Cilium Project,",
       "Isovalent"
