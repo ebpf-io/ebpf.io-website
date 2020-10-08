@@ -71,6 +71,14 @@ const speakers = [
     ]
   },
   {
+    avatarSrc: require("../assets/summit-2020/tabitha-sable.png"),
+    name: "Tabitha Sable",
+    descriptions: [
+      "Systems Security Engineer,",
+      "Datadog"
+    ]
+  },
+  {
     avatarSrc: require("../assets/summit-2020/tomas-graf.png"),
     name: "Tomas Graf",
     descriptions: [
