@@ -1126,7 +1126,7 @@ code {
       padding: 0 20px;
 
       & .summit-speaker-card {
-        width: 180px;
+        max-width: 180px;
       }
 
       & .summit-speaker-card:last-child {
