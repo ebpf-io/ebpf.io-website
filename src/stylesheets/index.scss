@@ -817,6 +817,10 @@ code {
     max-width: 640px;
     margin: 26px auto;
     justify-content: space-between;
+
+    & .summit-speaker-card {
+      width: 212px;
+    }
   }
 
   & .summit-speaker-card {
