@@ -812,6 +812,13 @@ code {
     margin: 0 auto;
   }
 
+  & .summit-speakers-extra-container {
+    display: flex;
+    max-width: 640px;
+    margin: 26px auto;
+    justify-content: space-between;
+  }
+
   & .summit-speaker-card {
     & img {
       display: block;
@@ -1054,6 +1061,10 @@ code {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       padding: 0 40px;
     }
+
+    & .summit-speakers-extra-container {
+      max-width: 480px;
+    }
   }
 
   .summit-columns {
@@ -1106,6 +1117,21 @@ code {
     & .summit-speakers-container {
       grid-template-columns: 1fr 1fr;
       padding: 0 20px;
+    }
+
+    & .summit-speakers-extra-container {
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: auto;
+      padding: 0 20px;
+
+      & .summit-speaker-card {
+        width: 180px;
+      }
+
+      & .summit-speaker-card:last-child {
+        margin-top: 20px;
+      }
     }
   }
 

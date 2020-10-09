@@ -176,6 +176,14 @@ const Speakers = () => (
   <div className="summit-speakers">
     <h2>Confirmed Keynote Speakers</h2>
     <div className="summit-speakers-container">
+      {speakers.splice(0, 8).map(({ avatarSrc, name, descriptions }) => <SpeakerCard
+        avatarSrc={avatarSrc}
+        name={name}
+        descriptions={descriptions}
+      />)}
+    </div>
+
+    <div className="summit-speakers-extra-container">
       {speakers.map(({ avatarSrc, name, descriptions }) => <SpeakerCard
         avatarSrc={avatarSrc}
         name={name}
