@@ -1067,7 +1067,11 @@ code {
     }
 
     & .summit-speakers-extra-container {
-      max-width: 480px;
+      max-width: 572px;
+
+      .summit-speaker-card {
+        width: 200px;
+      }
     }
   }
 
@@ -1154,5 +1158,25 @@ code {
 
   .summit-registration-buttons {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .summit-speakers {
+    & .summit-speakers-extra-container {
+      .summit-speaker-card {
+        width: 166px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .summit-speakers {
+    & .summit-speakers-extra-container {
+      .summit-speaker-card {
+        width: 140px;
+      }
+    }
   }
 }
