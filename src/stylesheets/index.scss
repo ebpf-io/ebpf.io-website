@@ -669,345 +669,320 @@ code {
 }
 
 .summit-page-wrapper {
-}
-
-.summit-header {
-  max-width: 1290px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: 13px;
-  padding: 0 110px;
-
-  & .summit-header-logo {
-    height: 29px;
-  }
-
-  & .summit-header-nav {
-    & a {
-      font-size: 13px;
-      font-weight: 600;
-    }
-
-    .summit-link {
-      color: #2B6FFC;
-      text-decoration: none;
-      transition: color 200ms;
-
-      &:hover {
-        color: #034FDB;
-      }
-    }
-
-    & .summit-button {
-      width: 132px;
-      height: 32px;
-      font-weight: 500;
-      line-height: 32px;
-      color: #034FDB;
-      border-color: #0079FC;
-
-      &:hover {
-        color: #2B6FFC;
-        border-color: #2B6FFC;
+  --root-grid: auto minmax(0, 1280px) auto;
+  --root-padding-x: 100px;
+  background-color: #ffffff;
+  & > .summit-info {
+    grid-column: span 3;
+    display: grid;
+    place-content: center;
+    height: 64px;
+    background-color: #ffe100;
+    & > .link {
+      cursor: pointer;
+      & > .logo {
+        height: 37px;
       }
     }
   }
-}
-
-.summit-hero {
-}
-
-.summit-hero-wrapper {
-  max-width: 1290px;
-  margin: 0 auto;
-  padding: 120px 410px 80px 110px;
-  color: white;
-
-  & .summit-date {
-    margin-top: 0;
-    margin-bottom: 6px;
-    font-size: 14px;
-  }
-
-  & .summit-date-divider {
-    margin: 0 30px;
-  }
-
-  & h1 {
-    margin-top: 0;
-    margin-bottom: 6px;
-    font-size: 64px;
-  }
-
-  & .summit-call-for-proposals {
-    margin-top: 0;
-    margin-bottom: 21px;
-    font-size: 24px;
-    font-weight: 700;
-    opacity: .7;
-  }
-
-  & .summit-buttons {
-    display: flex;
-    margin-bottom: 35px;
-  }
-
-  & .summit-hero-p1 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 300;
-  }
-
-  & .summit-hero-p2 {
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
-  }
-}
-
-.summit-about {
-  padding: 70px 0;
-  text-align: center;
-  background-color: #FAFAFA;
-
-  & h2 {
-    margin-top: 0;
-    margin-bottom: 21px;
-    font-size: 28px;
-    color: #0C2044;
-  }
-
-  & p {
-    max-width: 660px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 300;
-    color: #3C3C3C;
-  }
-}
-
-.summit-speakers {
-  padding-top: 0;
-  padding-bottom: 68px;
-  text-align: center;
-  background-color: #FAFAFA;
-
-  & h2 {
-    margin-top: 0;
-    margin-bottom: 48px;
-    font-size: 28px;
-    color: #0C2044;
-  }
-
-  & .summit-speakers-container {
+  & > .summit-hero {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 26px;
-    max-width: 860px;
-    margin: 0 auto;
-  }
-
-  & .summit-speakers-extra-container {
-    display: flex;
-    max-width: 640px;
-    margin: 26px auto;
-    justify-content: space-between;
-
-    & .summit-speaker-card {
-      width: 212px;
+    grid-template-columns: var(--root-grid);
+    background-image: var(--background-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    & > .wrapper {
+      grid-column: 2;
+      display: grid;
+      row-gap: 28px;
+      align-content: center;
+      padding: 100px var(--root-padding-x);
+      & > .title {
+        margin: 0;
+        line-height: 84px;
+        font-size: 72px;
+        font-weight: 700;
+        color: #ffffff;
+        & > .logo {
+          vertical-align: bottom;
+          height: 85px;
+        }
+      }
+      & > .meta {
+        margin: 0;
+        line-height: 28px;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: #d5d5d5;
+        & > .divider {
+          display: inline-block;
+          margin-left: 20px;
+          margin-right: 20px;
+          border: none;
+          width: 2px;
+          height: 20px;
+          background-color: #4385f5;
+        }
+      }
+      & > .description {
+        margin: 0;
+        max-width: 635px;
+        line-height: 44px;
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
+      & > .buttons {
+        display: grid;
+        column-gap: 25px;
+        grid-auto-flow: column;
+        justify-content: start;
+        & > .button {
+          display: grid;
+          place-content: center;
+          height: 40px;
+          line-height: 21px;
+          font-size: 18px;
+          font-weight: 500;
+          text-transform: capitalize;
+          text-decoration: none;
+          border-radius: 3px;
+          cursor: pointer;
+          &.type--register {
+            width: 200px;
+            color: #333333;
+            background: #ffe100;
+          }
+          &.type--join {
+            width: 252px;
+            color: #4385f5;
+            background: #f0ecec;
+          }
+        }
+      }
     }
   }
-
-  & .summit-speaker-card {
-    & img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 13px;
-    }
-
-    & h3 {
-      margin-top: 0;
-      margin-bottom: 3px;
-      font-size: 16px;
-      line-height: 16px;
-      font-weight: 400;
-      color: #3C3C3C;
-    }
-
-    & p {
-      margin: 0;
-      font-size: 12px;
-      line-height: 14px;
-      font-weight: 300;
-      color: #3C3C3C;
-    }
-  }
-}
-
-.summit-columns {
-  max-width: 1290px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 90px;
-  padding: 76px 88px 200px 114px;
-  background-color: white;
-}
-
-.summit-user-talks {
-  margin-bottom: 77px;
-
-  & h2 {
-    margin-top: 0;
-    margin-bottom: 23px;
-    font-size: 26px;
-    color: #0C2044;
-  }
-
-  & p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 300;
-    color: #3C3C3C;
-  }
-}
-
-.summit-dates {
-  & h2 {
-    margin-top: 0;
-    margin-bottom: 29px;
-    font-size: 26px;
-    color: #0C2044;
-  }
-
-  & .summit-dates-container {
+  & > .summit-about {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    column-gap: 30px;
-    row-gap: 20px;
-    align-items: baseline;
-
-    & h4 {
-      margin: 0;
-      font-size: 16px;
-      line-height: 26px;
-      font-weight: 700;
+    grid-template-columns: var(--root-grid);
+    background-color: #f3f3f3;
+    & > .wrapper {
+      grid-column: 2;
+      display: grid;
+      row-gap: 25px;
+      justify-items: center;
+      align-content: center;
+      padding: 80px var(--root-padding-x);
+      & > .title {
+        margin: 0;
+        line-height: 42px;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        color: #333333;
+      }
+      & > .description {
+        margin: 0;
+        width: 100%;
+        max-width: 668px;
+        line-height: 30px;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #333333;
+      }
     }
-
-    & p {
-      margin: 0;
-      font-size: 16px;
-      line-height: 26px;
-      font-weight: 300;
-      color: #3C3C3C;
+  }
+  & > .summit-keynotes {
+    display: grid;
+    grid-template-columns: var(--root-grid);
+    & > .wrapper {
+      grid-column: 2;
+      display: grid;
+      row-gap: 38px;
+      padding: 80px var(--root-padding-x);
+      & > .title {
+        margin: 0;
+        line-height: 42px;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+        color: #333333;
+      }
+      & > .list {
+        --gap: 38px;
+        & > .wrapper {
+          margin: calc(var(--gap) / 2 * -1);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          & > .summit-speaker-card {
+            --height: 154px;
+            --padding: 14px;
+            --image-size: calc(var(--height) - var(--padding) * 2);
+            margin: calc(var(--gap) / 2);
+            flex-grow: 0;
+            min-width: 0;
+            display: grid;
+            column-gap: 22px;
+            grid-template-columns: var(--image-size) 1fr;
+            align-items: center;
+            width: calc((100% - var(--gap) * 3) / 3);
+            height: var(--height);
+            padding: var(--padding);
+            background: #252424;
+            border-radius: 3px;
+            cursor: pointer;
+            & > .avatar {
+              position: relative;
+              width: var(--image-size);
+              height: var(--image-size);
+              &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                box-shadow: 0 0 0 1px #ffe100 inset;
+              }
+              & > .image {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+            & > .section {
+              display: grid;
+              row-gap: 8px;
+              & > .title {
+                margin: 0;
+                line-height: 20px;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: #ffe100;
+              }
+              & > .description {
+                margin: 0;
+                line-height: 20px;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
     }
   }
-}
-
-.summit-topics {
-  margin-bottom: 72px;
-
-  & h2 {
-    margin-top: 0;
-    margin-bottom: 29px;
-    font-size: 26px;
-    color: #0C2044;
+  & > .summit-agenda {
+    display: grid;
+    grid-template-columns: var(--root-grid);
+    background-image: var(--background-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    & > .wrapper {
+      grid-column: 2;
+      display: grid;
+      row-gap: 25px;
+      justify-items: center;
+      padding: 80px var(--root-padding-x);
+      & > .title {
+        margin: 0;
+        line-height: 42px;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
+      & > .list {
+        display: grid;
+        row-gap: 80px;
+        max-width: 668px;
+        & > .section {
+          display: grid;
+          row-gap: 16px;
+          & > .title {
+            margin: 0;
+            line-height: 48px;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: #ffffff;
+          }
+          & > .list {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: auto 1fr;
+            padding-left: 16px;
+            & > .row {
+              display: contents;
+              & > .time {
+                line-height: 48px;
+                font-size: 18px;
+                font-weight: 300;
+                text-transform: capitalize;
+                color: #ffe100;
+              }
+              & > .description {
+                line-height: 48px;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: capitalize;
+                color: #bababa;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-
-  & ul {
-    margin: 0;
-    padding: 0;
+  & > .summit-footer {
+    display: grid;
+    grid-template-columns: var(--root-grid);
+    & > .wrapper {
+      grid-column: 2;
+      display: grid;
+      row-gap: 25px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: center;
+      height: 76px;
+      padding-left: var(--root-padding-x);
+      padding-right: var(--root-padding-x);
+      & > .link {
+        justify-self: start;
+        cursor: pointer;
+        & > .logo {
+          height: 32px;
+        }
+      }
+      & > .copyright {
+        justify-self: center;
+        margin: 0;
+        line-height: 24px;
+        font-size: 14px;
+        color: #333333;
+      }
+      & > .share-list {
+        justify-self: end;
+        display: grid;
+        column-gap: 50px;
+        grid-auto-flow: column;
+        & > .link {
+          cursor: pointer;
+          & > .icon {
+            --size: 20px;
+            width: var(--size);
+            height: var(--size);
+          }
+        }
+      }
+    }
   }
-
-  & li {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300;
-    color: #3C3C3C;
-  }
-}
-
-.summit-registration {
-  margin-top: -42px;
-  & h2 {
-    margin-top: 0;
-    margin-bottom: 25px;
-    font-size: 26px;
-    color: #0C2044;
-  }
-
-  & p {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 300;
-    color: #3C3C3C;
-  }
-}
-
-.summit-button {
-  width: 160px;
-  height: 41px;
-  border: 1px solid #2B6FFC;
-  box-sizing: border-box;
-  font-size: 13px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  border-radius: 3px;
-  color: #034FDB;
-  background-color: white;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  transition: all 200ms;
-
-  &:hover {
-    color: #2B6FFC;
-  }
-}
-
-.summit-guest-button {
-  margin-right: 38px;
-  color: white;
-  background-color: #2B6FFC;
-
-  &:hover {
-    color: white;
-    background-color: #034FDB;
-  }
-}
-
-.summit-link {
-  color: #2B6FFC;
-  text-decoration: none;
-  transition: color 200ms;
-
-  &:hover {
-    color: #034FDB;
-  }
-}
-
-.summit-calendar {
-  margin-left: 11px;
-}
-
-.summit-registration-buttons {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: -116px;
 }
 
 @media #{$tablet} {
@@ -1037,122 +1012,9 @@ code {
 }
 
 @media #{$tablet} {
-  .summit-hero-wrapper {
-    padding: 40px;
 
-    & .summit-date {
-      margin-bottom: 20px;
-    }
-
-    & h1 {
-      margin-bottom: 20px;
-      line-height: 1;
-    }
-
-    & .summit-call-for-proposals {
-      margin-bottom: 20px;
-    }
-  }
-
-  .summit-about {
-    padding: 40px;
-  }
-
-  .summit-speakers {
-    padding-bottom: 40px;
-
-    & .summit-speakers-container {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      padding: 0 40px;
-    }
-
-    & .summit-speakers-extra-container {
-      max-width: 480px;
-    }
-  }
-
-  .summit-columns {
-    grid-template-columns: 1fr;
-    padding: 40px;
-  }
-
-  .summit-user-talks {
-    margin-bottom: 20px;
-  }
-
-  .summit-dates {
-    padding-bottom: 20px;
-  }
-
-  .summit-registration-buttons {
-    margin-top: 0;
-  }
 }
 
 @media #{$mobile} {
-  .summit-hero-wrapper {
-    padding: 20px;
 
-    & .summit-date {
-      font-size: 12px;
-
-      & .summit-date-divider {
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-    }
-
-    & .summit-hero-p1 {
-      font-size: 16px;
-    }
-
-    & .summit-hero-p2 {
-      font-size: 12px;
-    }
-  }
-
-  .summit-about {
-    padding: 20px;
-  }
-
-  .summit-speakers {
-    padding-bottom: 20px;
-
-    & .summit-speakers-container {
-      grid-template-columns: 1fr 1fr;
-      padding: 0 20px;
-    }
-
-    & .summit-speakers-extra-container {
-      justify-content: center;
-      flex-wrap: wrap;
-      max-width: auto;
-      padding: 0 20px;
-
-      & .summit-speaker-card {
-        width: 180px;
-      }
-
-      & .summit-speaker-card:last-child {
-        margin-top: 20px;
-      }
-    }
-  }
-
-  .summit-columns {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-
-  .summit-user-talks {
-    margin-bottom: 20px;
-  }
-
-  .summit-dates {
-    padding-bottom: 20px;
-  }
-
-  .summit-registration-buttons {
-    margin-top: 0;
-  }
 }
