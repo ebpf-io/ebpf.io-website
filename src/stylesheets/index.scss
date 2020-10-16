@@ -670,51 +670,94 @@ code {
 
 .summit-page-wrapper {
   --root-grid: auto minmax(0, 1280px) auto;
-  --root-padding-x: 100px;
+  --root-padding-x: 16px;
+  font-family: "Roboto", sans-serif;
   background-color: #ffffff;
+  @media (min-width: 1024px) {
+    --root-padding-x: 100px;
+  }
   & > .summit-info {
     grid-column: span 3;
+    position: relative;
     display: grid;
     place-content: center;
-    height: 64px;
+    height: 68px;
     background-color: #ffe100;
+    transition: .2s ease-in;
+    @media (min-width: 1024px) {
+      height: 64px;
+    }
+    &:hover {
+      opacity: .8;
+    }
     & > .link {
       cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
       & > .logo {
         height: 37px;
       }
     }
   }
   & > .summit-hero {
+    position: relative;
     display: grid;
     grid-template-columns: var(--root-grid);
-    background-image: var(--background-image);
-    background-position: center;
+    background-image: var(--background-image-mobile), linear-gradient(90deg, #111010 0%, #424242 100%);
+    background-position: left 50% bottom -690px, center;
     background-repeat: no-repeat;
+    @media (min-width: 1024px) {
+      background-image: var(--background-image);
+      background-position: center;
+    }
     & > .wrapper {
       grid-column: 2;
       display: grid;
       row-gap: 28px;
       align-content: center;
-      padding: 100px var(--root-padding-x);
+      padding: 50px var(--root-padding-x);
+      @media (min-width: 1024px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
       & > .title {
         margin: 0;
-        line-height: 84px;
-        font-size: 72px;
+        line-height: 42px;
+        font-size: 36px;
         font-weight: 700;
         color: #ffffff;
+        @media (min-width: 1024px) {
+          line-height: 84px;
+          font-size: 72px;
+        }
         & > .logo {
           vertical-align: bottom;
-          height: 85px;
+          height: 48px;
+          transform: translateY(-.05em);
+          @media (min-width: 1024px) {
+            height: 85px;
+            transform: translateY(-.1em);
+          }
         }
       }
       & > .meta {
-        margin: 0;
-        line-height: 28px;
-        font-size: 24px;
-        font-weight: 500;
-        text-transform: capitalize;
-        color: #d5d5d5;
+        & > .item {
+          line-height: 30px;
+          font-size: 18px;
+          font-weight: 500;
+          white-space: nowrap;
+          color: #d5d5d5;
+          @media (min-width: 1024px) {
+            line-height: 28px;
+            font-size: 24px;
+          }
+        }
         & > .divider {
           display: inline-block;
           margin-left: 20px;
@@ -728,36 +771,61 @@ code {
       & > .description {
         margin: 0;
         max-width: 635px;
-        line-height: 44px;
-        font-size: 24px;
-        text-transform: capitalize;
+        line-height: 30px;
+        font-size: 16px;
         color: #ffffff;
+        @media (min-width: 1024px) {
+          line-height: 44px;
+          font-size: 24px;
+        }
+      }
+      & > .space {
+        height: 150px;
+        @media (min-width: 1024px) {
+          display: none;
+        }
       }
       & > .buttons {
         display: grid;
-        column-gap: 25px;
-        grid-auto-flow: column;
-        justify-content: start;
+        row-gap: 20px;
+        @media (min-width: 1024px) {
+          column-gap: 25px;
+          grid-auto-flow: column;
+          justify-content: start;
+        }
         & > .button {
           display: grid;
           place-content: center;
           height: 40px;
-          line-height: 21px;
-          font-size: 18px;
+          line-height: 19px;
+          font-size: 16px;
           font-weight: 500;
-          text-transform: capitalize;
           text-decoration: none;
           border-radius: 3px;
+          transition: .2s ease-in;
           cursor: pointer;
+          @media (min-width: 1024px) {
+            line-height: 21px;
+            font-size: 18px;
+          }
+          &:hover {
+            opacity: .8;
+          }
           &.type--register {
-            width: 200px;
+            width: 100%;
             color: #333333;
-            background: #ffe100;
+            background-color: #ffe100;
+            @media (min-width: 1024px) {
+              width: 200px;
+            }
           }
           &.type--join {
-            width: 252px;
+            width: 100%;
             color: #4385f5;
-            background: #f0ecec;
+            background-color: #f0ecec;
+            @media (min-width: 1024px) {
+              width: 252px;
+            }
           }
         }
       }
@@ -770,17 +838,26 @@ code {
     & > .wrapper {
       grid-column: 2;
       display: grid;
-      row-gap: 25px;
+      row-gap: 12px;
       justify-items: center;
       align-content: center;
-      padding: 80px var(--root-padding-x);
+      padding: 50px var(--root-padding-x);
+      @media (min-width: 1024px) {
+        row-gap: 25px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
       & > .title {
         margin: 0;
-        line-height: 42px;
-        font-size: 36px;
+        line-height: 35px;
+        font-size: 30px;
         font-weight: 700;
         text-align: center;
         color: #333333;
+        @media (min-width: 1024px) {
+          line-height: 42px;
+          font-size: 36px;
+        }
       }
       & > .description {
         margin: 0;
@@ -788,7 +865,6 @@ code {
         max-width: 668px;
         line-height: 30px;
         font-size: 16px;
-        text-transform: capitalize;
         color: #333333;
       }
     }
@@ -799,41 +875,89 @@ code {
     & > .wrapper {
       grid-column: 2;
       display: grid;
-      row-gap: 38px;
-      padding: 80px var(--root-padding-x);
+      row-gap: 34px;
+      padding: 50px var(--root-padding-x);
+      @media (min-width: 1024px) {
+        row-gap: 38px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
       & > .title {
         margin: 0;
         line-height: 42px;
-        font-size: 36px;
+        font-size: 35px;
         font-weight: 700;
         text-align: center;
-        text-transform: capitalize;
         color: #333333;
       }
       & > .list {
-        --gap: 38px;
-        & > .wrapper {
-          margin: calc(var(--gap) / 2 * -1);
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          & > .summit-speaker-card {
+        --gap: 16px;
+        display: grid;
+        gap: var(--gap);
+        @media (min-width: 1024px) {
+          --gap: 38px;
+          grid-template-columns: repeat(6, minmax(0, 1fr));
+          grid-auto-flow: dense;
+        }
+        & > .summit-speaker-card {
+          --popup-indent: 10px;
+          --grid-column-end: auto;
+          --border-radius: 3px;
+          display: contents;
+          @media (min-width: 1024px) {
+            &:nth-of-type(3n+1):nth-last-of-type(1) {
+              --grid-column-end: 5;
+            }
+            &:nth-of-type(3n+1):nth-last-of-type(2) {
+              --grid-column-end: 4;
+            }
+          }
+          & > .section {
             --height: 154px;
             --padding: 14px;
             --image-size: calc(var(--height) - var(--padding) * 2);
-            margin: calc(var(--gap) / 2);
-            flex-grow: 0;
+            position: relative;
             min-width: 0;
             display: grid;
             column-gap: 22px;
             grid-template-columns: var(--image-size) 1fr;
             align-items: center;
-            width: calc((100% - var(--gap) * 3) / 3);
             height: var(--height);
             padding: var(--padding);
-            background: #252424;
-            border-radius: 3px;
-            cursor: pointer;
+            background-color: #252424;
+            border-radius: var(--border-radius);
+            @media (min-width: 1024px) {
+              grid-column: span 2 / var(--grid-column-end);
+            }
+            &.is-selectable {
+              cursor: pointer;
+              &:hover {
+                & > .avatar {
+                  opacity: .8;
+                  transition: .2s ease-in;
+                }
+                & > .section {
+                  opacity: .8;
+                  transition: .2s ease-in;
+                }
+                & > .corner {
+                  opacity: .8;
+                  transition: .2s ease-in;
+                }
+              }
+            }
+            &.is-selected {
+              &::before {
+                content: "";
+                margin-top: calc(var(--border-radius) * -1);
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 100%;
+                height: calc(var(--popup-indent) + var(--border-radius) * 2);
+                background-color: inherit;
+              }
+            }
             & > .avatar {
               position: relative;
               width: var(--image-size);
@@ -862,15 +986,55 @@ code {
                 line-height: 20px;
                 font-size: 16px;
                 font-weight: 700;
-                text-transform: capitalize;
                 color: #ffe100;
               }
               & > .description {
                 margin: 0;
                 line-height: 20px;
                 font-size: 14px;
-                text-transform: capitalize;
                 color: #ffffff;
+              }
+            }
+            & > .corner {
+              position: absolute;
+              right: 8px;
+              bottom: 8px;
+              user-select: none;
+            }
+          }
+          & > .popup {
+            grid-column: 1 / -1;
+            margin-top: calc(var(--popup-indent) - var(--gap));
+            display: grid;
+            gap: 16px;
+            grid-template-columns: 1fr auto;
+            grid-auto-flow: dense;
+            border: 3px solid #111010;
+            padding: 28px;
+            background-color: #ffffff;
+            border-radius: var( --border-radius);
+            & > .title {
+              grid-column: 1;
+              margin: 0;
+              line-height: 24px;
+              font-size: 24px;
+            }
+            & > .description {
+              grid-column: 1;
+              margin: 0;
+              line-height: 24px;
+              font-size: 16px;
+            }
+            & > .button {
+              grid-column: 2;
+              display: flex;
+              place-items: center;
+              border: none;
+              background-color: transparent;
+              transition: .2s ease-in;
+              cursor: pointer;
+              &:hover {
+                opacity: .8;
               }
             }
           }
@@ -881,61 +1045,211 @@ code {
   & > .summit-agenda {
     display: grid;
     grid-template-columns: var(--root-grid);
-    background-image: var(--background-image);
+    background-image: var(--background-image-mobile), linear-gradient(90deg, #111010 0%, #424242 100%);
     background-position: center;
-    background-repeat: no-repeat;
+    @media (min-width: 1024px) {
+      background-image: var(--background-image);
+      background-repeat: no-repeat;
+    }
     & > .wrapper {
       grid-column: 2;
       display: grid;
       row-gap: 25px;
       justify-items: center;
-      padding: 80px var(--root-padding-x);
+      padding: 50px var(--root-padding-x);
+      @media (min-width: 1024px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
       & > .title {
         margin: 0;
-        line-height: 42px;
-        font-size: 36px;
+        line-height: 35px;
+        font-size: 30px;
         font-weight: 700;
         text-align: center;
-        text-transform: capitalize;
         color: #ffffff;
+        @media (min-width: 1024px) {
+          line-height: 42px;
+          font-size: 36px;
+        }
       }
       & > .list {
         display: grid;
-        row-gap: 80px;
+        row-gap: 45px;
+        width: 100%;
         max-width: 668px;
+        @media (min-width: 1024px) {
+          row-gap: 80px;
+        }
         & > .section {
           display: grid;
           row-gap: 16px;
           & > .title {
             margin: 0;
-            line-height: 48px;
-            font-size: 24px;
+            line-height: 30px;
+            font-size: 20px;
             font-weight: 700;
-            text-transform: capitalize;
             color: #ffffff;
+            @media (min-width: 1024px) {
+              line-height: 48px;
+              font-size: 24px;
+            }
           }
           & > .list {
             display: grid;
-            gap: 16px;
+            column-gap: 8px;
+            row-gap: 16px;
             grid-template-columns: auto 1fr;
             padding-left: 16px;
             & > .row {
               display: contents;
               & > .time {
-                line-height: 48px;
-                font-size: 18px;
+                line-height: 36px;
+                font-size: 16px;
                 font-weight: 300;
-                text-transform: capitalize;
+                font-variant-numeric: proportional-nums;
                 color: #ffe100;
+                @media (min-width: 1024px) {
+                  line-height: 48px;
+                  font-size: 18px;
+                }
               }
               & > .description {
-                line-height: 48px;
-                font-size: 18px;
+                line-height: 36px;
+                font-size: 16px;
                 font-weight: 500;
-                text-transform: capitalize;
                 color: #bababa;
+                @media (min-width: 1024px) {
+                  line-height: 48px;
+                  font-size: 18px;
+                }
               }
             }
+          }
+        }
+      }
+    }
+  }
+  & > .summit-lightning-talks {
+    display: grid;
+    grid-template-columns: var(--root-grid);
+    & > .wrapper {
+      grid-column: 2;
+      display: grid;
+      row-gap: 25px;
+      align-items: center;
+      padding: 80px var(--root-padding-x) 56px;
+      & > .title {
+        margin: 0;
+        font-weight: 700;
+        text-align: center;
+        color: #333333;
+        font-size: 30px;
+        line-height: 35px;
+        @media (min-width: 1024px) {
+          font-size: 36px;
+          line-height: 42px;
+        }
+      }
+      & > .button {
+        justify-self: center;
+        display: grid;
+        place-content: center;
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #e3e3e3;
+        background-color: #333333;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 110px;
+        text-decoration: none;
+        transition: .2s ease-in;
+        cursor: pointer;
+        @media (min-width: 1024px) {
+          margin-top: 0;
+        }
+        &:hover {
+          opacity: .8;
+        }
+      }
+      & > .carousel {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 668px;
+        outline: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      & .slider-list:focus,
+      .slider-slide:focus,
+      .slider-frame:focus {
+        outline: none;
+      }
+      & .slider-control-centerleft {
+        left: calc(50% - 50px) !important;
+        top: calc(100% + 50px) !important;
+        @media (min-width: 1024px) {
+          top: 50% !important;
+          left: -50px !important;
+        }
+      }
+      & .slider-control-centerright {
+        right: calc(50% - 50px) !important;
+        top: calc(100% + 50px) !important;
+        @media (min-width: 1024px) {
+          top: 50% !important;
+          right: -50px !important;
+        }
+      }
+      & .slider-prev {
+        display: block;
+        transition: .2s ease-in;
+        cursor: pointer;
+        &:hover {
+          opacity: .8;
+        }
+      }
+      & .slider-next {
+        display: block;
+        transition: .2s ease-in;
+        cursor: pointer;
+        &:hover {
+          opacity: .8;
+        }
+      }
+      & .slide {
+        position: relative;
+        & > h3, h4, p {
+          margin: 0;
+          color: #333333;
+        }
+        & > .slide-title {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 700;
+          @media (min-width: 1024px) {
+            font-size: 24px;
+            line-height: 40px;
+          }
+        }
+        & > .slide-subtitle {
+          margin-top: 0;
+          font-size: 18px;
+          line-height: 34px;
+          font-weight: 700;
+          @media (min-width: 1024px) {
+            margin-top: 5px;
+          }
+        }
+        & > .slide-description {
+          margin-top: 10px;
+          font-size: 16px;
+          line-height: 30px;
+          @media (min-width: 1024px) {
+            margin-top: 30px;
           }
         }
       }
@@ -947,33 +1261,53 @@ code {
     & > .wrapper {
       grid-column: 2;
       display: grid;
-      row-gap: 25px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      align-items: center;
-      height: 76px;
-      padding-left: var(--root-padding-x);
-      padding-right: var(--root-padding-x);
+      row-gap: 28px;
+      justify-items: center;
+      padding: 54px var(--root-padding-x);
+      @media (min-width: 1024px) {
+        columng-gap: 25px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-items: start;
+        align-items: center;
+        height: 76px;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
       & > .link {
-        justify-self: start;
+        transition: .2s ease-in;
         cursor: pointer;
+        @media (min-width: 1024px) {
+          justify-self: start;
+        }
+        &:hover {
+          opacity: .8;
+        }
         & > .logo {
           height: 32px;
         }
       }
       & > .copyright {
-        justify-self: center;
         margin: 0;
         line-height: 24px;
         font-size: 14px;
         color: #333333;
+        @media (min-width: 1024px) {
+          justify-self: center;
+        }
       }
       & > .share-list {
-        justify-self: end;
         display: grid;
         column-gap: 50px;
         grid-auto-flow: column;
+        @media (min-width: 1024px) {
+          justify-self: end;
+        }
         & > .link {
+          transition: .2s ease-in;
           cursor: pointer;
+          &:hover {
+            opacity: .8;
+          }
           & > .icon {
             --size: 20px;
             width: var(--size);
