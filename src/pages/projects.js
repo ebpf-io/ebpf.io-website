@@ -531,8 +531,7 @@ const ProjectDescriptions = () => (
             </a>{" "}
           </p>
           <p>
-            Tracee is a lightweight, efficient and easy-to-use tool for dynamically detecting security events from systems, containers, and pods. 
-            Written in Go and leveraging the power of eBPF, Tracee allows you to trace system events, detect suspicious behavior, and capture forensic insights.
+          Tracee uses eBPF technology to detect and filter operating system events, helping you expose security insights, detect suspicious behavior, and capture forensic indicators. 
           </p>
         </div>
       </div>
