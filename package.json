@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Isovalent Inc.",
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.24.47",
     "gatsby-cli": "^2.12.87",
     "gatsby-link": "^2.4.13",
@@ -27,6 +28,7 @@
     "gatsby-transformer-remark": "^2.8.28",
     "infinite-react-carousel": "^1.2.11",
     "lodash": "^4.17.20",
+    "nuka-carousel": "^4.7.1",
     "prismjs": "^1.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
