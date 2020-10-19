@@ -1000,10 +1000,11 @@ const LightningTalksSchedule = () => (
   </div>
 )
 
-const CaruselSlide = ({ showPopup, isPopupShown, name, title, description, hasPopup }) => {
+const CaruselSlide = ({ showPopup, isPopupShown, name, popupTitle, title, description, hasPopup }) => {
   return <div className="slide" onClick={showPopup}>
     <h3 className="slide-title">{ name }</h3>
     <h4 className="slide-subtitle">{ title }</h4>
+    <h4 className="slide-subtitle">{ popupTitle }</h4>
 
     <div className="slide-description">
       { description }
@@ -1117,6 +1118,7 @@ const Carusel = () => {
           key={idx}
           name={slide.name}
           title={slide.title}
+          popupTitle={slide.popupTitle}
           showPopup={showPopup}
           isPopupShown={isPopupShown}
           hasPopup={!!slide.popupDescription}
