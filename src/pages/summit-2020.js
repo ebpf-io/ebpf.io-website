@@ -1086,7 +1086,7 @@ const Carusel = () => {
     style={{background: `URL(${require('../assets/summit-2020/lightning-talks-bg.png')}), linear-gradient(90deg, #C1C1C1 -0.82%, #F3F3F3 98.52%)`}}
   >
     <div className="wrapper">
-      <h2 className="title">Lightning Talks Abstracts</h2>
+      <h2 className="title">Lightning Talk Abstracts</h2>
 
       <Carousel
         beforeSlide={hidePopup}
