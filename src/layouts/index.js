@@ -10,7 +10,7 @@ import "./menu-icon.scss";
 
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
-    <strong>eBPF Summit 2020 - Virtual - Oct 28-29, 2020</strong> - CFP and Registration now open. <a href="/summit-2020" style={{color: '#947927'}}>Click here</a>.
+    <strong>eBPF Summit 2020 - Virtual - Oct 28-29, 2020</strong> - Registration now open. <a href="/summit-2020" style={{color: '#947927'}}>Click here</a>.
   </div>
 )
 
