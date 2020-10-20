@@ -66,7 +66,7 @@ const speakers = [
       avatarSrc: require("../assets/summit-2020/kris-nova.jpg"),
       id: "kris-nova",
       name: "Kris Nova",
-      description: "Chief Open Source Advocate, Sysdig"
+      description: "Software Engineer & Open Source Advocate"
     }
   },
   {
@@ -139,6 +139,13 @@ const speakers = [
       id: "tomas-graf",
       name: "Thomas Graf",
       description: "Co-creator of the Cilium Project, Isovalent"
+    },
+    about: {
+      title: "The Future of eBPF-based Networking and Security",
+
+      description: [
+        <>The future of Networking and Security is based on eBPF. How will this new world look like? There is a massive potential of evolution in the infrastructure space ahead of us as we tap further into the powers of eBPF.  We'll explore what is already possible today and what is yet to come as eBPF-based projects continue to evolve and provide benefits to the ecosystem.</>,
+      ]
     }
   },
   {
@@ -414,6 +421,11 @@ const lightningTalks = [
     title: "Securing Kubernetes Clusters with DevSecOps and GitLab",
     name: "Sam White",
     organization: "GitLab"
+  },
+  {
+    title: "From Managed Kubernetes to App Platform: 1.5 Years of Cilium Usage at DigitalOcean",
+    name: "Timo Reinmann",
+    organization: "DigitalOcean",
   },
 
   {
