@@ -6,7 +6,7 @@ import Carousel from "nuka-carousel";
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
 import "../stylesheets/index.scss";
-const pageMetaTitle = 'eBPF Summit 2020 - Call For Proposals'
+const pageMetaTitle = 'eBPF Summit 2020'
 const pageMetaDescription = 'We’re excited to announce that the call for proposals is now open for the inaugural eBPF Summit, a virtual event, to be held October 28-29, 2020'
 const speakers = [
   {
