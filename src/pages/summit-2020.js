@@ -3,6 +3,8 @@ import cn from "classnames";
 import Helmet from "react-helmet";
 import { Link } from "gatsby";
 import Carousel from "nuka-carousel";
+import { useLocation } from '@reach/router';
+import queryString from 'query-string';
 import "../stylesheets/index.scss";
 const pageMetaTitle = 'eBPF Summit 2020 - Call For Proposals'
 const pageMetaDescription = 'We’re excited to announce that the call for proposals is now open for the inaugural eBPF Summit, a virtual event, to be held October 28-29, 2020'
@@ -10,6 +12,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/alexey-starovoitov.jpg"),
+      id: "alexey-starovoitov",
       name: "Alexei Starovoitov",
       description: "Co-maintainer eBPF, Facebook"
     },
@@ -29,6 +32,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/brendan-gregg.jpg"),
+      id: "brendan-gregg",
       name: "Brendan Gregg",
       description: "Author of “BPF Performance Tools“, Lead Performance Engineer, Netflix"
     }
@@ -36,6 +40,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/daniel-borkmann.jpg"),
+      id: "daniel-borkmann",
       name: "Daniel Borkmann",
       description: "Co-maintainer eBPF, Isovalent"
     },
@@ -51,6 +56,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/david-miller.jpg"),
+      id: "david-miller",
       name: "David Miller",
       description: "Linux Kernel Networking Maintainer, Red Hat"
     }
@@ -58,6 +64,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/kris-nova.jpg"),
+      id: "kris-nova",
       name: "Kris Nova",
       description: "Chief Open Source Advocate, Sysdig"
     }
@@ -65,6 +72,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/kp-singh.jpg"),
+      id: "kp-singh",
       name: "KP Singh",
       description: "Kernel Runtime Security, Google"
     },
@@ -80,6 +88,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/laurent-bernaille.jpg"),
+      id: "laurent-bernaille",
       name: "Laurent Bernaille",
       description: "Staff Engineer, Datadog"
     },
@@ -95,6 +104,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/liz-rice.jpg"),
+      id: "liz-rice",
       name: "Liz Rice",
       description: "VP, Open Source Engineering, Aqua"
     },
@@ -110,6 +120,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/tabitha-sable.jpg"),
+      id: "tabitha-sable",
       name: "Tabitha Sable",
       description: "Systems Security Engineer, Datadog"
     },
@@ -125,6 +136,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/tomas-graf.jpg"),
+      id: "tomas-graf",
       name: "Thomas Graf",
       description: "Co-creator of the Cilium Project, Isovalent"
     }
@@ -132,6 +144,7 @@ const speakers = [
   {
     card: {
       avatarSrc: require("../assets/summit-2020/zang-li.jpg"),
+      id: "zang-li",
       name: "Zang Li",
       description: "Cilium Core Team Maintainer, Google"
     },
@@ -140,7 +153,7 @@ const speakers = [
       title: "Kubernetes Network Policy Logging with eBPF",
 
       description: [
-        <>In Kubernetes, micro-segmentation is achieved through network policies which specify how pods are allowed to communicate with one another. This is a must for the security-conscious customers, such as financial institutions. However, being able to enforce the policy alone is not enough. Customers want to have more visibility on what traffic is denied, what traffic is allowed and by which policy for auditing, monitoring and troubleshooting purposes. In this talk, we will show how to build Kubernetes network policy logging with eBPF and Cilium. The power of eBPF allows us not only to enforce the network policies on the connections in the kernel, but also to pass the connection information as well as the policy decisions made to the user space. We can then process the information asynchronously in the user space, such as correlating the policy actions to pod, namespace and policy names. Due to the ephemeral nature of IP addresses in Kubernetes, these annotations are needed to generate meaningful logs to users. With eBPF, we are able to achieve this policy enforcement visibility with the minimal impact on the system's computing resources.</>
+        <>In Kubernetes, micro-segmentation is achieved through network policy which specifies how pods are allowed to communicate with one another.  Policy visibility is a key requirement for many Kubernetes customers who use network policy to secure their cluster.  In this talk, Zang will show how Google built Kubernetes network policy logging with eBPF and how the policy visibility is achieved efficiently.</>
       ]
     }
   },
@@ -302,6 +315,12 @@ const lightningTalks = [
   },
 
   {
+    title: 'Building a Secure and Maintainable PaaS',
+    name: 'Bradley Whitfield',
+    organization: 'Capital One',
+  },
+
+  {
     title: "eBPF at Adobe",
     name: "Brandon Cook",
     organization: "Adobe"
@@ -363,7 +382,7 @@ const lightningTalks = [
 
   {
     title: "Traffic Control the Rabbit with Rust using RedBPF",
-    name: "LOU Xun",
+    name: "Lou Xun",
     organization: "CCP Games"
   },
 
@@ -412,7 +431,7 @@ const lightningTalks = [
 
 const slides = [
   {
-    name: 'LOU Xun',
+    name: 'Lou Xun',
     title: 'CCP Games',
 
     description: <>
@@ -821,7 +840,7 @@ const About = () => (
   </div>
 );
 
-const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescription, idx, isSelected, setSelectedCardIdx }) => {
+const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescription, id, idx, isSelected, setSelectedCardIdx }) => {
   const hasPopupContent = aboutTitle && aboutDescription.length > 0
 
   const toggleSelectedCardIdx = useCallback(
@@ -834,8 +853,33 @@ const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescriptio
     [isSelected, idx]
   )
 
+  const cardRef = useRef(null)
+  const location = useLocation()
+
+  useEffect(
+    () => {
+      const cardElement = cardRef.current
+
+      if(!cardElement || !location) {
+        return
+      }
+
+      const {speaker} = queryString.parse(location.search);
+
+      if(speaker === id) {
+        if(hasPopupContent) {
+          setSelectedCardIdx(idx)
+        }
+
+        cardElement.scrollIntoView()
+      }
+    },
+
+    [hasPopupContent, id, idx, location],
+  )
+
   return <div className="summit-speaker-card">
-    <div className={cn('section', {'is-selectable': hasPopupContent, 'is-selected': isSelected})} onClick={toggleSelectedCardIdx}>
+    <div className={cn('section', {'is-selectable': hasPopupContent, 'is-selected': isSelected})} onClick={toggleSelectedCardIdx} ref={cardRef}>
       <div className="avatar">
         <img alt={name} className="image" src={avatarSrc} />
       </div>
@@ -874,6 +918,7 @@ const Keynotes = () => {
           aboutTitle={about?.title}
           aboutDescription={about?.description}
           key={idx}
+          id={card.id}
           idx={idx}
           isSelected={idx === selectedCardIdx}
           setSelectedCardIdx={setSelectedCardIdx}
