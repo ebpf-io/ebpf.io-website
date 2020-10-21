@@ -429,6 +429,12 @@ const lightningTalks = [
   },
 
   {
+    title: "Past, present, and future of Cilium and Hubble at Palantir",
+    name: "Vlad Ungureanu",
+    organization: "Palantir"
+  },
+
+  {
     title: "bpfbox: Simple Precise Process Confinement with KRSI and eBPF",
     name: "William Findlay",
     organization: "Carleton University"
