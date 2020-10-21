@@ -639,6 +639,20 @@ const slides = [
     </>
   },
   {
+    name: 'Vlad Ungureanu',
+    title: 'Palantir',
+
+    description: <>
+      <p>In this talk, Vlad will present the reasons Palantir choose Cilium as their CNI plugin for their ephemeral Kubernetes infrastructure, how their InfoSec team uses Hubble for monitoring workloads, and their future plans for injecting authentication material...</p>
+    </>,
+
+    popupTitle: 'Past, present, and future of Cilium and Hubble at Palantir',
+
+    popupDescription: <>
+      <p>In this talk, Vlad will present the reasons Palantir choose Cilium as their CNI plugin for their ephemeral Kubernetes infrastructure, how their InfoSec team uses Hubble for monitoring workloads, and their future plans for injecting authentication material at the network layer for workloads using Cilium.</p>
+    </>
+  },
+  {
     name: 'William Findlay',
     title: 'Carleton University',
 
