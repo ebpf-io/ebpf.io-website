@@ -172,18 +172,22 @@ const agenda = [
 
     schedule: [
       {
-        time: "09:05 - 09:10",
-        title: "Welcome: 5 min",
+        time: <>&nbsp;&nbsp;9am - 09:10</>,
+        title: <>Welcome: 10 min</>,
       },
 
       {
         time: "09:10 - 09:30",
-        title: "Liz Rice (Intro workshop)",
+        title: <><i>A beginner’s guide to eBPF programming</i><br/>Liz&nbsp;Rice</>,
+
+        description: <>
+          <p>You’ve heard about eBPF as an exciting technology that opens up a world of new observability, security and networking capabilities. But how do you write eBPF programs? In this talk Liz will show you how to get started so you can run your own custom code in the Linux kernel - or even if you don’t plan to write eBPF yourself, it will help you understand how the technology works.</p>
+        </>
       },
 
       {
         time: "09:30 - 09:50",
-        title: "Daniel Borkmann",
+        title: <><i>BPF as a fundamentally better dataplane</i><br/>Daniel&nbsp;Borkmann</>,
 
         description: <>
           <p>BPF is seeing a rapid pace of development in the Linux kernel and tremendous adoption and growth in the user space landscape. Use cases often span the networking, tracing and security space, but their boundaries are blurred and do reach beyond these subsystems. This talk provides a deep dive on why BPF is a fundamental shift compared to more traditional kernel subsystems and why it is the best tool for the job in terms of performance, scalability, and operations in the age of containerization. We'll also dive into a few examples of recent kernel advancements from the BPF subsystem.</p>
@@ -192,22 +196,21 @@ const agenda = [
 
       {
         time: "09:50 - 09:55",
-        title: "Break",
+        title: <>Break</>,
       },
 
       {
         time: "09:55 - 10:20",
-        title: "Laurent Bernaille / Tabitha Sable",
+        title: <><i>Our eBPF journey at Datadog</i><br/>Laurent&nbsp;Bernaille and Tabitha&nbsp;Sable</>,
 
         description: <>
-          <h5>Our eBPF journey at Datadog</h5>
           <p>As large-scale Kubernetes end-users, Datadog has grown through many technical challenges of running thousands of nodes and tens of thousands of pods. eBPF has been key to scaling our networking, and promises further improvements. Additionally, eBPF is providing the means to build new capabilities in our products. Laurent and Tabitha will share some of this history, thoughts on Datadog's current utilization of eBPF, and hopes for the future.</p>
         </>
       },
 
       {
         time: "10:20 - 10:40",
-        title: "KP Singh",
+        title: <><i>Security Auditing and Enforcement using eBPF</i><br/>KP&nbsp;Singh</>,
 
         description: <>
           <p>The BPF Linux Security Module unleashes the power of eBPF to the world of Linux Security by providing a unified interface for access control and auditing. The talk goes through the motivations behind developing a BPF based LSM, showcases some of the ways in which it is used at Google and provides some insights and updates on upcoming features that users can leverage.</p>
@@ -216,12 +219,12 @@ const agenda = [
 
       {
         time: "10:40 - 11:00",
-        title: "David Miller",
+        title: <><i>The Future of eBPF in the Linux Kernel</i><br/>David&nbsp;Miller</>,
       },
 
       {
         time: "11:00 - 11:05",
-        title: "Break",
+        title: <>Break</>,
       },
 
       {
@@ -231,7 +234,7 @@ const agenda = [
 
       {
         time: "12:20 - 12:30",
-        title: "Closing comments",
+        title: <>Closing comments</>,
       },
     ]
   },
@@ -241,16 +244,15 @@ const agenda = [
 
     schedule: [
       {
-        time: "09:05 - 09:10",
-        title: "Welcome: 5 min",
+        time: <>&nbsp;&nbsp;9am - 09:10</>,
+        title: <>Welcome: 10 min</>,
       },
 
       {
         time: "09:10 - 09:30",
-        title: "Alexei Starovoitov",
+        title: <><i>Safe programs. The foundation of BPF</i><br/>Alexei&nbsp;Starovoitov</>,
 
         description: <>
-          <h5>Safe programs. The foundation of BPF</h5>
           <p>Everything runs in the cloud. The cloud is built on the linux kernel.</p>
           <p>Extending the linux kernel is not an easy task: One mistake and the monolithic kernel will crash taking down the cloud. When bugs are finally fixed the reboot of the large cloud will take a long time.</p>
           <p>BPF is the kernel programming model that lets developers extend the kernel safely and add features to the live system without reboot.</p>
@@ -261,32 +263,40 @@ const agenda = [
 
       {
         time: "09:30 - 09:50",
-        title: "Kris Nova",
+        title: <><i>Simplifying eBPF in 2020</i><br/>Kris&nbsp;Nova</>,
       },
 
       {
         time: "09:50 - 09:55",
-        title: "Break",
+        title: <>Break</>,
       },
 
       {
         time: "09:55 - 10:15",
-        title: "Brendan Gregg",
+        title: <><i>Performance wins with BPF: getting started</i><br/>Brendan&nbsp;Gregg</>,
       },
 
       {
         time: "10:15 - 10:35",
-        title: "Zang Li",
+        title: <><i>Kubernetes Network Policy Logging with eBPF</i><br/>Zang&nbsp;Li</>,
+
+        description: <>
+          <p>In Kubernetes, micro-segmentation is achieved through network policy which specifies how pods are allowed to communicate with one another. Policy visibility is a key requirement for many Kubernetes customers who use network policy to secure their cluster. In this talk, Zang will show how Google built Kubernetes network policy logging with eBPF and how the policy visibility is achieved efficiently.</p>
+        </>
       },
 
       {
         time: "10:35 - 10:55",
-        title: "Thomas Graf",
+        title: <><i>The Future of eBPF-based Networking and Security</i><br/>Thomas&nbsp;Graf</>,
+
+        description: <>
+          <p>The future of Networking and Security is based on eBPF. How will this new world look like? There is a massive potential of evolution in the infrastructure space ahead of us as we tap further into the powers of eBPF. We'll explore what is already possible today and what is yet to come as eBPF-based projects continue to evolve and provide benefits to the ecosystem.</p>
+        </>
       },
 
       {
         time: "10:55 - 11:00",
-        title: "Break",
+        title: <>Break</>,
       },
 
       {
@@ -296,7 +306,7 @@ const agenda = [
 
       {
         time: "12:15 - 12:30",
-        title: "Closing comments",
+        title: <>Closing comments</>,
       },
     ]
   }
@@ -1078,7 +1088,7 @@ const LightningTalksSchedule = () => (
 )
 
 const CaruselSlide = ({ showPopup, isPopupShown, name, popupTitle, title, description, hasPopup }) => {
-  return <div className="slide" onClick={showPopup}>
+  return <div className="slide" onClick={hasPopup ? showPopup : null}>
     <h3 className="slide-title">{ name }</h3>
     <h4 className="slide-subtitle">{ title }</h4>
     <h4 className="slide-subtitle">{ popupTitle }</h4>

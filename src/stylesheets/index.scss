@@ -1104,6 +1104,7 @@ html.smooth-scroll {
         & > .section {
           display: grid;
           row-gap: 12px;
+          align-content: start;
           & > .title {
             margin: 0;
             line-height: 30px;
@@ -1118,7 +1119,7 @@ html.smooth-scroll {
           & > .list {
             display: grid;
             column-gap: 8px;
-            row-gap: 8px;
+            row-gap: 12px;
             grid-template-columns: auto 1fr;
             & > .row {
               display: contents;
@@ -1129,7 +1130,6 @@ html.smooth-scroll {
                 font-variant-numeric: proportional-nums;
                 color: #ffe100;
                 @media (min-width: 1024px) {
-                  line-height: 48px;
                   font-size: 18px;
                 }
               }
@@ -1140,7 +1140,6 @@ html.smooth-scroll {
                 font-weight: 500;
                 color: #bababa;
                 @media (min-width: 1024px) {
-                  line-height: 48px;
                   font-size: 18px;
                 }
                 & > .link {
