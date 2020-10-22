@@ -172,7 +172,7 @@ const agenda = [
 
     schedule: [
       {
-        time: <>&nbsp;&nbsp;9am - 09:10</>,
+        time: <>09:00 - 09:10</>,
         title: <>Welcome: 10 min</>,
       },
 
@@ -244,7 +244,7 @@ const agenda = [
 
     schedule: [
       {
-        time: <>&nbsp;&nbsp;9am - 09:10</>,
+        time: <>09:00 - 09:10</>,
         title: <>Welcome: 10 min</>,
       },
 
