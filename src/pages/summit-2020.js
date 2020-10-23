@@ -3,9 +3,11 @@ import cn from "classnames";
 import Helmet from "react-helmet";
 import { Link } from "gatsby";
 import Carousel from "nuka-carousel";
+import ModalVideo from "react-modal-video";
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
 import "../stylesheets/index.scss";
+import "../../node_modules/react-modal-video/scss/modal-video.scss";
 const pageMetaTitle = 'eBPF Summit 2020'
 const pageMetaDescription = 'Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, platform architects, and developers. To be held October 28-29, 2020.'
 const speakers = [
@@ -64,7 +66,7 @@ const speakers = [
     about: {
       title: "Demystifying eBPF",
 
-      description: [
+       description: [
         <></>,
       ]
     }
@@ -258,7 +260,7 @@ const agenda = [
 
       {
         time: "09:30 - 09:50",
-        title: <><i>Simplifying eBPF in 2020</i><br/>Kris&nbsp;Nova</>,
+        title: <><i>Demystifying eBPF</i><br/>Kris&nbsp;Nova</>,
       },
 
       {
@@ -311,7 +313,8 @@ const lightningTalks = [
   {
     title: "Using BCC and bpftrace with Performance Co-Pilot",
     name: "Andreas Gerstmayr",
-    organization: "Red Hat"
+    organization: "Red Hat",
+    videoId: 'hm5ygaJh5iw',
   },
 
   {
@@ -323,7 +326,8 @@ const lightningTalks = [
   {
     title: "Zero instrumentation monitoring with your first steps in eBPF",
     name: "Beatriz Martínez",
-    organization: "Isovalent"
+    organization: "Isovalent",
+    videoId: "nDWmTU5iOpE",
   },
 
   {
@@ -335,13 +339,15 @@ const lightningTalks = [
   {
     title: "eBPF at Adobe",
     name: "Brandon Cook",
-    organization: "Adobe"
+    organization: "Adobe",
+    videoId: "ike2IDC9xtw",
   },
 
   {
     title: "How and When You Should Measure CPU Overhead of eBPF Programs",
     name: "Bryce Kahle",
-    organization: "Datadog"
+    organization: "Datadog",
+    videoId: "W5gG-Svh_bg",
   },
 
   {
@@ -353,7 +359,8 @@ const lightningTalks = [
   {
     title: "Can eBPF save us from the data deluge? A case for file filtering in eBPF",
     name: "Giulia Frascaria",
-    organization: "Vrije Universiteit Amsterdam"
+    organization: "Vrije Universiteit Amsterdam",
+    videoId: "OwxCwSyP2N4",
   },
 
   {
@@ -365,7 +372,8 @@ const lightningTalks = [
   {
     title: "Steering connections to sockets with BPF socket lookup hook",
     name: "Jakub Sitnicki",
-    organization: "Cloudflare"
+    organization: "Cloudflare",
+    videoId: "Hw1yRAmNz28",
   },
 
   {
@@ -377,7 +385,8 @@ const lightningTalks = [
   {
     title: "Enabling eBPF super powers on ARM64 with Cilium",
     name: "Jianlin Lv",
-    organization: "Arm"
+    organization: "Arm",
+    videoId: "hdUywxvsYKI",
   },
 
   {
@@ -389,7 +398,8 @@ const lightningTalks = [
   {
     title: "Debugging the eBPF Virtual Machine",
     name: "Lorenzo Fontana",
-    organization: "Sysdig"
+    organization: "Sysdig",
+    videoId: "m03dIt2i7CQ",
   },
 
   {
@@ -401,7 +411,8 @@ const lightningTalks = [
   {
     title: "Implementation of Hardware Breakpoint in BCC",
     name: "Manali Shukla",
-    organization: "Cisco Systems India"
+    organization: "Cisco Systems India",
+    videoId: "C3rfcZMiWvo",
   },
 
   {
@@ -413,25 +424,29 @@ const lightningTalks = [
   {
     title: "Identity Aware Threat Detection and Network Monitoring by using eBPF",
     name: "Natalia Reka Ivanko",
-    organization: "Isovalent"
+    organization: "Isovalent",
+    videoId: "wkFQ1H0GI88",
   },
 
   {
     title: "Scaling a multi-tenant k8s cluster in a Telco",
     name: "Pablo Moncada",
-    organization: "MasMovil"
+    organization: "MasMovil",
+    videoId: "o6kNhmuOeMY",
   },
 
   {
     title: "The tale of Smokey and the Crypto Bandits",
     name: "Ramiro Berrelleza",
-    organization: "Okteto"
+    organization: "Okteto",
+    videoId: "KP0yWWzMN70",
   },
 
   {
     title: "Securing Kubernetes Clusters with DevSecOps and GitLab",
     name: "Sam White",
-    organization: "GitLab"
+    organization: "GitLab",
+    videoId: "adelo4XyNf0",
   },
   {
     title: "From Managed Kubernetes to App Platform: 1.5 Years of Cilium Usage at DigitalOcean",
@@ -448,13 +463,15 @@ const lightningTalks = [
   {
     title: "bpfbox: Simple Precise Process Confinement with KRSI and eBPF",
     name: "William Findlay",
-    organization: "Carleton University"
+    organization: "Carleton University",
+    videoId: "GZ7qutLXDY4",
   },
 
   {
     title: "eBPF in LINE",
     name: "Yutaro Hayakawa",
-    organization: "LINE Corporation"
+    organization: "LINE Corporation",
+    videoId: "yiQ9muH8IGg",
   },
 ]
 
@@ -1078,19 +1095,35 @@ const Agenda = () => (
   </div>
 );
 
-const LightningTalksSchedule = () => (
-  <div className="summit-lightning-talks-schedule" id="lightning-talks">
+const LightningTalksSchedule = () => {
+  const [modalVideo, setModalVideo] = useState(null)
+  const closeModalVideo = useCallback(() => setModalVideo(null), [])
+  const showModalVideo = useCallback(video => setModalVideo(video), [])
+
+  return <div
+    className="summit-lightning-talks-schedule"
+    id="lightning-talks"
+  >
     <div className="wrapper">
       <h2 className="title">Lightning Talks</h2>
 
       <div className="table">
-        <div className="captions" aria-hidden>
-          <div className="cell">Title</div>
+        <div
+          className="captions"
+          aria-hidden
+        >
+          <div className="cell"><span>Title <span className="prompt">*click to see video preview</span></span></div>
           <div className="cell">Speaker</div>
         </div>
 
-        {lightningTalks.map(({ title, name, organization }, idx) => <div className="row" key={idx}>
-          <div className="cell"><span className="caption">Title</span>{title}</div>
+        {lightningTalks.map(({ title, name, organization, videoId }, idx) => <div
+          className="row"
+          key={idx}
+        >
+          <div className="cell" onClick={!!videoId ? () => showModalVideo(videoId) : null}>
+            <span className="caption">Title</span>
+            <span className={cn({'link': !!videoId})}>{title}</span>
+          </div>
 
           <div className="cell">
             <span className="caption">Speaker</span>
@@ -1099,8 +1132,10 @@ const LightningTalksSchedule = () => (
         </div>)}
       </div>
     </div>
+
+    <ModalVideo channel='youtube' isOpen={modalVideo !== null} videoId={modalVideo} onClose={closeModalVideo} />
   </div>
-)
+}
 
 const CaruselSlide = ({ showPopup, isPopupShown, name, popupTitle, title, description, hasPopup }) => {
   return <div className="slide" onClick={hasPopup ? showPopup : null}>
