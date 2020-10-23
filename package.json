@@ -33,6 +33,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-modal-video": "^1.2.6",
     "react-popover": "^0.5.10",
     "react-refresh": "^0.8.3"
   },

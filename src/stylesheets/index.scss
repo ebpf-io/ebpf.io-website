@@ -1282,6 +1282,10 @@ html.smooth-scroll {
               font-weight: 700;
               color: #333333;
               background-color: #b2b2b2;
+              & .prompt {
+                font-size: 12px;
+                font-style: italic;
+              }
             }
           }
         }
@@ -1316,6 +1320,15 @@ html.smooth-scroll {
             & > .caption {
               @media (min-width: 1024px) {
                 display: none;
+              }
+            }
+            & > .link {
+              text-decoration: none;
+              color: #4385F5;
+              transition: .2s ease-in;
+              cursor: pointer;
+              &:hover {
+                opacity: .8;
               }
             }
           }
