@@ -473,6 +473,12 @@ const lightningTalks = [
     organization: "LINE Corporation",
     videoId: "yiQ9muH8IGg",
   },
+
+  {
+    title: "Debugging Go in prod using eBPF",
+    name: "Zain Asgar",
+    organization: "Pixie"
+  },
 ]
 
 const slides = [
