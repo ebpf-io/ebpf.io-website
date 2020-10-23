@@ -55,18 +55,18 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/david-miller.jpg"),
-      id: "david-miller",
-      name: "David Miller",
-      description: "Linux Kernel Networking Maintainer, Red Hat"
-    }
-  },
-  {
-    card: {
       avatarSrc: require("../assets/summit-2020/kris-nova.jpg"),
       id: "kris-nova",
       name: "Kris Nova",
       description: "Software Engineer & Open Source Advocate"
+    },
+
+    about: {
+      title: "Demystifying eBPF",
+
+      description: [
+        <></>,
+      ]
     }
   },
   {
@@ -218,22 +218,17 @@ const agenda = [
       },
 
       {
-        time: "10:40 - 11:00",
-        title: <><i>The Future of eBPF in the Linux Kernel</i><br/>David&nbsp;Miller</>,
-      },
-
-      {
-        time: "11:00 - 11:05",
+        time: "10:40 - 10:45",
         title: <>Break</>,
       },
 
       {
-        time: "11:05 - 12:20",
+        time: "10:45 - 12:00",
         title: <>Lightning talks <Link className="link" to="#lightning-talks">see below</Link></>,
       },
 
       {
-        time: "12:20 - 12:30",
+        time: "12:00 - 12:10",
         title: <>Closing comments</>,
       },
     ]
