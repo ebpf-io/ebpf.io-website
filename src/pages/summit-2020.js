@@ -414,7 +414,7 @@ const lightningTalks = [
     organization: "Cisco Systems India",
     videoId: "C3rfcZMiWvo",
   },
-  
+
   {
     title: "North-South Load Balancing of Kubernetes Services with eBPF/XDP",
     name: "Martynas Pumputis",
@@ -777,9 +777,9 @@ const slides = [
       <p>Kubernetes service load balancing has relied far too long on netfilter and iptables - two technologies which carry legacy accumulated over 20 years of development grounded in a more traditional networking environment that is typically far smaller...</p>
     </>,
 
-     popupTitle: 'North-South Load Balancing of Kubernetes Services with eBPF/XDP',
+    popupTitle: 'North-South Load Balancing of Kubernetes Services with eBPF/XDP',
 
-     popupDescription: <>
+    popupDescription: <>
       <p>Kubernetes service load balancing has relied far too long on netfilter and iptables - two technologies which carry legacy accumulated over 20 years of development grounded in a more traditional networking environment that is typically far smaller and more static than your average Kubernetes cluster. In this talk, the audience will learn how Cilium leverages eBPF/XDP to replace both to implement load balancing of Kubernetes services. The implementation not only improves scalability of service load balancing, but also brings new features, such as DSR or consistent hashing.</p>
     </>
   },
