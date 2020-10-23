@@ -405,6 +405,12 @@ const lightningTalks = [
   },
 
   {
+    title: "North-South Load Balancing of Kubernetes Services with eBPF/XDP",
+    name: "Martynas Pumputis",
+    organization: "Isovalent",
+  },
+
+  {
     title: "Identity Aware Threat Detection and Network Monitoring by using eBPF",
     name: "Natalia Reka Ivanko",
     organization: "Isovalent"
@@ -744,6 +750,20 @@ const slides = [
     popupDescription: <>
       <p>Hardware breakpoint is an interesting feature, known as memory breakpoint provides an elegant mechanism to monitor memory access or instruction executions. Such monitoring is vital in debugging the system for data corruption. It can be used to understand memory access patterns and fine-tune the system for optimal performance. This mechanism is provided by hardware breakpoint registers in several processors. The biggest convenience of using the hardware debug registers is that it causes no alteration in normal execution of kernel  when used, and have no runtime impact.</p>
       <p>BCC is a toolkit used to create frontend programs which can be used to perform kernel and user level tracing. Though BCC uses kprobe, uprobes etc. to do the tracing, it doesn't incorporate hardware breakpoint functionality available in kernel.  So, we are proposing to implement hardware breakpoint infra for BCC,  which can be used to watch symbols and provides other hardware breakpoint functionalities breakpoints.</p>
+    </>
+  },
+  {
+    name: 'Martynas Pumputis',
+    title: 'Isovalent',
+
+    description: <>
+      <p>Kubernetes service load balancing has relied far too long on netfilter and iptables - two technologies which carry legacy accumulated over 20 years of development grounded in a more traditional networking environment that is typically far smaller...</p>
+    </>,
+
+    popupTitle: 'North-South Load Balancing of Kubernetes Services with eBPF/XDP',
+
+    popupDescription: <>
+      <p>Kubernetes service load balancing has relied far too long on netfilter and iptables - two technologies which carry legacy accumulated over 20 years of development grounded in a more traditional networking environment that is typically far smaller and more static than your average Kubernetes cluster. In this talk, the audience will learn how Cilium leverages eBPF/XDP to replace both to implement load balancing of Kubernetes services. The implementation not only improves scalability of service load balancing, but also brings new features, such as DSR or consistent hashing.</p>
     </>
   },
   {
