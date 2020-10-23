@@ -456,6 +456,12 @@ const lightningTalks = [
     name: "Yutaro Hayakawa",
     organization: "LINE Corporation"
   },
+
+  {
+    title: "Debugging Go in prod using eBPF",
+    name: "Zain Asgar",
+    organization: "Pixie"
+  },
 ]
 
 const slides = [
