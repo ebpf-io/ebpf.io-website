@@ -416,7 +416,7 @@ const lightningTalks = [
   {
     title: "Implementation of Hardware Breakpoint in BCC",
     name: "Manali Shukla",
-    organization: "Cisco Systems India",
+    organization: "Cisco",
     videoId: "C3rfcZMiWvo",
   },
 
@@ -767,7 +767,7 @@ const slides = [
   },
   {
     name: 'Manali Shukla',
-    title: 'Cisco Systems India',
+    title: 'Cisco',
 
     description: <>
       <p>Hardware breakpoint is an interesting feature, known as memory breakpoint provides an elegant mechanism to monitor memory access or instruction executions.  Such monitoring is vital in debugging the system for data corruption. It can be used to understand...</p>
