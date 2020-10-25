@@ -473,7 +473,7 @@ const lightningTalks = [
   },
 
   {
-    title: "eBPF in LINE",
+    title: "eBPF at LINE's Private Cloud",
     name: "Yutaro Hayakawa",
     organization: "LINE Corporation",
     videoId: "yiQ9muH8IGg",
@@ -800,14 +800,14 @@ const slides = [
 
     description: <>
       <p>LINE is one of the most famous messaging services in Asian countries like Japan, Taiwan, Thailand, and Indonesia, accommodating 185 million global MAU and 3Tbps+ network traffic in total.</p>
-      <p>In this talk, we'll introduce two topics regarding eBPF in LINE's O...</p>
+      <p>In this talk, we'll introduce two topics regarding eBPF at LINE's OpenStack-based private cloud infrastructure...</p>
     </>,
 
-    popupTitle: 'eBPF in LINE',
+    popupTitle: 'eBPF at LINE\'s Private Cloud',
 
     popupDescription: <>
       <p>LINE is one of the most famous messaging services in Asian countries like Japan, Taiwan, Thailand, and Indonesia, accommodating 185 million global MAU and 3Tbps+ network traffic in total.</p>
-      <p>In this talk, we'll introduce two topics regarding eBPF in LINE's OpenStack-based private cloud infrastructure.</p>
+      <p>In this talk, we'll introduce two topics regarding eBPF at LINE's OpenStack-based private cloud infrastructure.</p>
       <p>The first use case is the XDP-based L4 load balancer we have developed since 2016. It is already becoming one of the fundamental features of our service. We'll introduce our scale, deployment, and integration with other cloud components.</p>
       <p>As a second use case, we'll introduce a brand new tracing tool called ipftrace (https://github.com/YutaroHayakawa/ipftrace2) we develop to investigate the complicated Linux kernel network datapath bahevior. We have applied this tool to investigate the strange performance degradation of our SRv6 + VRF based hypervisor network and found the bug in TSO/GSO handling. Through this effort, we've got significant performance gain.</p>
     </>
