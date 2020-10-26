@@ -64,7 +64,7 @@ const speakers = [
     card: {
       avatarSrc: require("../assets/summit-2020/kris-nova.jpg"),
       id: "kris-nova",
-      name: "Kris Nova",
+      name: "Kris Nóva",
       description: "Software Engineer & Open Source Advocate"
     },
 
@@ -72,7 +72,7 @@ const speakers = [
       title: "Demystifying eBPF",
 
        description: [
-        <></>,
+        <>Join Kris Nóva for an informal hackers look at eBPF. It will be a high level overview of the technology, what it is, and where it's going. There will be plenty of time for questions and answers afterwards.</>,
       ]
     }
   },
