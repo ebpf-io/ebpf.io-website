@@ -212,7 +212,7 @@ const Outro = () => (
           <td>
             <ul>
               <li>
-                <a href="https://cilium.herokuapp.com/">
+                <a href="/slack">
                   Join the #ebpf Slack community
                 </a>
               </li>
