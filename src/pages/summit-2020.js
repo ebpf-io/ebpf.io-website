@@ -319,7 +319,7 @@ const lightningTalks = [
     title: "Using BCC and bpftrace with Performance Co-Pilot",
     name: "Andreas Gerstmayr",
     organization: "Red Hat",
-    videoId: 'hm5ygaJh5iw',
+    videoId: "hm5ygaJh5iw",
   },
 
   {
@@ -336,9 +336,10 @@ const lightningTalks = [
   },
 
   {
-    title: 'Building a Secure and Maintainable PaaS',
-    name: 'Bradley Whitfield',
-    organization: 'Capital One',
+    title: "Building a Secure and Maintainable PaaS",
+    name: "Bradley Whitfield",
+    organization: "Capital One",
+    videoId: "k12N5lq1Gas",
   },
 
   {
