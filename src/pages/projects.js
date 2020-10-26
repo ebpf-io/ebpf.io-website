@@ -12,7 +12,7 @@ const YouMaintain = () => (
     <li>
       If you are maintaining one of the listed projects and would like to adjust
       the content. Get in touch on{" "}
-      <a href="https://cilium.herokuapp.com/">Slack</a> or open a pull request
+      <a href="/slack">Slack</a> or open a pull request
       directly.
     </li>
   </ul>
@@ -32,7 +32,7 @@ const HowToList = () => (
     <li>
       The pull request will be reviewed by the community and merged by one of
       the maintainers. If you have any questions, feel free to ask on{" "}
-      <a href="https://cilium.herokuapp.com/">Slack</a>.
+      <a href="/slack">Slack</a>.
     </li>
   </ol>
 );

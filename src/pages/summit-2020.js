@@ -908,7 +908,7 @@ const Hero = () => (
 
         <a
           className="button type--join"
-          href="https://cilium.herokuapp.com"
+          href="/slack"
         >
           Join eBPF Summit Slack
         </a>
