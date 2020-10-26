@@ -425,6 +425,7 @@ const lightningTalks = [
     title: "North-South Load Balancing of Kubernetes Services with eBPF/XDP",
     name: "Martynas Pumputis",
     organization: "Isovalent",
+    videoId: "GNePX4Sw6uA",
   },
 
   {
