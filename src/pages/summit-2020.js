@@ -207,7 +207,7 @@ const agenda = [
       },
 
       {
-        time: "09:55 - 10:20",
+        time: "09:55 - 10:15",
         title: <><i>Our eBPF Journey at Datadog</i><br/>Laurent&nbsp;Bernaille and Tabitha&nbsp;Sable</>,
 
         description: <>
@@ -216,7 +216,7 @@ const agenda = [
       },
 
       {
-        time: "10:20 - 10:40",
+        time: "10:15 - 10:35",
         title: <><i>Security Auditing and Enforcement using eBPF</i><br/>KP&nbsp;Singh</>,
 
         description: <>
@@ -225,12 +225,12 @@ const agenda = [
       },
 
       {
-        time: "10:40 - 10:45",
+        time: "10:35 - 10:40",
         title: <>Break</>,
       },
 
       {
-        time: "10:45 - 12:00",
+        time: "10:40 - 12:00",
         title: <>Lightning talks <Link className="link" to="#lightning-talks">see below</Link></>,
       },
 
