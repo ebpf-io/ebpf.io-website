@@ -456,7 +456,7 @@ const lightningTalks = [
   },
   {
     title: "From Managed Kubernetes to App Platform: 1.5 Years of Cilium Usage at DigitalOcean",
-    name: "Timo Reinmann",
+    name: "Timo Reimann",
     organization: "DigitalOcean",
   },
 
