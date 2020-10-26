@@ -9,7 +9,7 @@ import queryString from 'query-string';
 import "../stylesheets/index.scss";
 import "../../node_modules/react-modal-video/scss/modal-video.scss";
 const pageMetaTitle = 'eBPF Summit 2020'
-const pageMetaDescription = 'Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, platform architects, and developers. To be held October 28-29, 2020.'
+const pageMetaDescription = 'Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers. To be held October 28-29, 2020.'
 const speakers = [
   {
     card: {
@@ -894,7 +894,7 @@ const Hero = () => (
       </div>
 
       <p className="description">
-        Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, platform architects, and developers.
+        Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers.
       </p>
 
       <div className="space" />
