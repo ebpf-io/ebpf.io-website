@@ -921,8 +921,10 @@ const Hero = () => (
 const About = () => (
   <div className="summit-about">
     <div className="wrapper">
-      <h2 className="title">eBPF Summit</h2>
-      <p className="description">eBPF is quickly becoming one of the most talked about technologies in our industry - enabling a new generation of networking, tracing, observability and security infrastructure. The eBPF Summit is targeted at users and potential users of this groundbreaking technology - both those looking at leveraging eBPF directly or via one of the projects leveraging eBPF (e.g. bpftrace, Cilium, Falco, etc.)</p>
+      <h2 className="title">How to join</h2>
+      <p className="description">The best way to watch the presentations is via Zoom. You will want to <a href="https://zoom.us/download" target="_blank">download the Zoom client</a> if you don't have it already, and then simply join the following links at 9AM PDT / 5PM GMT / 6 PM CET on Wednesday:<br /><strong>Day 1</strong>: <a href="https://us02web.zoom.us/j/82562539536">https://us02web.zoom.us/j/82562539536</a><br /><strong>Day 2</strong>: <a href="https://us02web.zoom.us/j/87524264130">https://us02web.zoom.us/j/87524264130</a>.</p>
+      <p className="description">We will also be streaming the eBPF Summit onto YouTube.<br /><strong>Day 1's</strong> YouTube Stream can be accessed from <a href="https://youtu.be/1GSgyvn4N7E">https://youtu.be/1GSgyvn4N7E</a> while<br /><strong>Day 2</strong> can be accessed here: <a href="https://youtu.be/jw8tEPP6jwQ">https://youtu.be/jw8tEPP6jwQ</a> (Note the video quality will not be as good, there can be lag due to buffering etc.)</p>
+      <p className="description">Regardless of which option you choose, you will want to log onto <a href="https://ebpf.io/slack">the eBPF Summit Slack channel</a> to participate in Q&A, polls and other fun.</p>
     </div>
   </div>
 );
