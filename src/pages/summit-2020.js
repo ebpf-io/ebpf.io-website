@@ -179,12 +179,12 @@ const agenda = [
 
     schedule: [
       {
-        time: <>09:00 - 09:10</>,
+        time: <>09:00 - 09:15</>,
         title: <>Welcome</>,
       },
 
       {
-        time: "09:10 - 09:30",
+        time: "09:15 - 09:35",
         title: <><i>A Beginner’s Guide to eBPF Programming</i><br/>Liz&nbsp;Rice</>,
 
         description: <>
@@ -193,7 +193,7 @@ const agenda = [
       },
 
       {
-        time: "09:30 - 09:50",
+        time: "09:35 - 09:55",
         title: <><i>BPF as a Fundamentally Better Dataplane</i><br/>Daniel&nbsp;Borkmann</>,
 
         description: <>
@@ -202,12 +202,12 @@ const agenda = [
       },
 
       {
-        time: "09:50 - 09:55",
+        time: "09:55 - 10:00",
         title: <>Break</>,
       },
 
       {
-        time: "09:55 - 10:15",
+        time: "10:00 - 10:20",
         title: <><i>Our eBPF Journey at Datadog</i><br/>Laurent&nbsp;Bernaille and Tabitha&nbsp;Sable</>,
 
         description: <>
@@ -216,7 +216,7 @@ const agenda = [
       },
 
       {
-        time: "10:15 - 10:35",
+        time: "10:20 - 10:40",
         title: <><i>Security Auditing and Enforcement using eBPF</i><br/>KP&nbsp;Singh</>,
 
         description: <>
@@ -225,17 +225,17 @@ const agenda = [
       },
 
       {
-        time: "10:35 - 10:40",
+        time: "10:40 - 10:45",
         title: <>Break</>,
       },
 
       {
-        time: "10:40 - 12:00",
+        time: "10:45 - 12:05",
         title: <>Lightning talks <Link className="link" to="#lightning-talks">see below</Link></>,
       },
 
       {
-        time: "12:00 - 12:10",
+        time: "12:05 - 12:15",
         title: <>Closing comments</>,
       },
     ]
