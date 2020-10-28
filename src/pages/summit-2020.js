@@ -928,9 +928,11 @@ const About = () => (
   <div className="summit-about">
     <div className="wrapper">
       <h2 className="title">How to join</h2>
-      <p className="description">The best way to watch the presentations is via Zoom. You will want to <a href="https://zoom.us/download" target="_blank">download the Zoom client</a> if you don't have it already, and then simply join using the following links at 9AM PDT / 4PM GMT / 5PM CET:<br /><strong>Day 1, Wednesday Oct 28th</strong>: <a href="https://us02web.zoom.us/j/82562539536">https://us02web.zoom.us/j/82562539536</a><br /><strong>Day 2, Thursday Oct 29th</strong>: <a href="https://us02web.zoom.us/j/87524264130">https://us02web.zoom.us/j/87524264130</a></p>
-      <p className="description">The eBPF Summit will also be streamed on Youtube. Note the video quality will not be as good, there can be lag due to buffering etc.<br /><strong>Day 1 stream:</strong> <a href="https://youtu.be/1GSgyvn4N7E">https://youtu.be/1GSgyvn4N7E</a><br /><strong>Day 2 stream:</strong> <a href="https://youtu.be/jw8tEPP6jwQ">https://youtu.be/jw8tEPP6jwQ</a></p>
-      <p className="description">Regardless of which option you choose, you will want to log onto <a href="https://ebpf.io/slack">the eBPF Summit Slack channel</a> to participate in Q&A, polls and other fun.</p>
+      <p className="description">Streams start  9AM PDT / 4PM GMT / 5PM CET</p>
+      <p className="description">The feedback from Day 1 was that video quality was better on the YouTube Stream vs. the Zoom stream for many attendees (Note that YouTube adds a small lag vs. Zoom).</p>
+      <p className="description"><strong>YouTube Day 2 Stream:</strong> <a href="https://youtu.be/jw8tEPP6jwQ">https://youtu.be/jw8tEPP6jwQ</a><br /><strong>Zoom Day 2 Stream:</strong> <a href="https://us02web.zoom.us/j/87524264130">https://us02web.zoom.us/j/87524264130</a></p>
+      <p className="description">Regardless of which option you choose, you will want to log onto the eBPF Summit Slack channel to participate in Q&A, polls and other fun. Note: If you missed some or all of Day 1, replay is available for 24hrs here:</p>
+      <p className="description"><strong>Day 1 replay:</strong> <a href="https://youtu.be/1GSgyvn4N7E">https://youtu.be/1GSgyvn4N7E</a></p>
     </div>
   </div>
 );
