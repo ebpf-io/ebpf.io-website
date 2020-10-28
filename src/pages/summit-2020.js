@@ -415,6 +415,12 @@ const lightningTalks = [
   },
 
   {
+    title: "Global Gaming Infrastructure with Cilium",
+    name: "Luan Guimarães",
+    organization: "Wildlife Studios"
+  },
+
+  {
     title: "Implementation of Hardware Breakpoint in BCC",
     name: "Manali Shukla",
     organization: "Cisco",
