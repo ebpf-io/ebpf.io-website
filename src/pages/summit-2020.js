@@ -69,10 +69,10 @@ const speakers = [
     },
 
     about: {
-      title: "Demystifying eBPF",
+      title: "Kernel tracing in production with Falco",
 
        description: [
-        <>Join Kris Nóva for an informal hackers look at eBPF. It will be a high level overview of the technology, what it is, and where it's going. There will be plenty of time for questions and answers afterwards.</>,
+        <>Join Kris Nóva as we look at how Falco uses eBPF for kernel tracing. The constraints of running Kubernetes in GKE left the Falco project without the ability to run a kernel module. See how we dynamically load a BPF probe at runtime bypass this constraint.</>,
       ]
     }
   },
@@ -265,7 +265,7 @@ const agenda = [
 
       {
         time: "09:30 - 09:50",
-        title: <><i>Demystifying eBPF</i><br/>Kris&nbsp;Nova</>,
+        title: <><i>Kernel tracing in production with Falco</i><br/>Kris&nbsp;Nova</>,
       },
 
       {
