@@ -490,7 +490,8 @@ const lightningTalks = [
   {
     title: "Debugging Go in Prod using eBPF",
     name: "Zain Asgar",
-    organization: "Pixie"
+    organization: "Pixie",
+    videoId: "IGLs_Om6DG8",
   },
 ]
 
