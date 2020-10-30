@@ -8,12 +8,6 @@ import "./header.scss";
 import "./index.css";
 import "./menu-icon.scss";
 
-const InfoDisclaimer = () => (
-  <div className="introDisclaimer">
-    <strong>eBPF Summit 2020 - Virtual - Oct 28-29, 2020</strong> - Registration now open. <a href="/summit-2020" style={{color: '#947927'}}>Click here</a>.
-  </div>
-)
-
 const HeaderDesktop = () => (
   <div className="header desktop">
     <Link to="/" className="headerLogoLink">
@@ -92,7 +86,7 @@ const FooterDesktop = () => (
   </div>
 );
 
-const TemplateWrapper = ({ children, isBannerHidden, isDesktopHeaderHidden }) => (
+const TemplateWrapper = ({ children, isDesktopHeaderHidden }) => (
   <div>
     <Helmet
       title="eBPF"
@@ -113,7 +107,6 @@ const TemplateWrapper = ({ children, isBannerHidden, isDesktopHeaderHidden }) =>
         },
       ]}
     />
-    {!isBannerHidden && <InfoDisclaimer />}
     {!isDesktopHeaderHidden && <HeaderDesktop />}
     <HeaderMobile />
     <div>{children}</div>
