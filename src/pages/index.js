@@ -2,7 +2,8 @@ import Helmet from "react-helmet";
 import React from "react";
 import Layout from "../layouts";
 import { Link } from "gatsby";
-import { unescape, shuffle } from "lodash";
+import stringSimilarity from "string-similarity";
+import { unescape, uniq, shuffle } from "lodash";
 import { format, parse as parseDate } from "date-fns";
 import Slider from "infinite-react-carousel";
 
@@ -261,6 +262,11 @@ class BlogRoll extends React.Component {
       author: "Paul Chaignon",
       filterBy: (post) => post.title.toLowerCase().includes("bpf"),
     },
+    {
+      url: "https%3A%2F%2Fnakryiko.com%2Fatom.xml",
+      author: "Andrii Nakryiko",
+      filterBy: (post) => post.title.toLowerCase().includes("bpf") || post.title.toLowerCase().includes("btf"),
+    },
   ];
 
   constructor(props) {
@@ -282,7 +288,14 @@ class BlogRoll extends React.Component {
       )
     )
       .then((results) => {
-        return results.reduce((acc, { feed, post: { items } }) => {
+        results.map((result) => {
+          if(result.post.status !== 'ok') {
+            console.error(`Feed ${result.post.feed.url} is temporary unavailable`)
+          }
+        });
+        return results
+          .filter((result) => result.post.status === 'ok')
+          .reduce((acc, { feed, post: { items } }) => {
           return acc.concat(
             items
               .map((post) => ({
@@ -304,8 +317,26 @@ class BlogRoll extends React.Component {
         }, []);
       })
       .then((posts) => {
-        posts.sort((a, b) => b.pubDate - a.pubDate);
-        return posts;
+        let uniqPosts = posts;
+        posts.forEach((initialPost) => {
+          uniqPosts.forEach((resultPost, idx) => {
+            /*
+              If two posts have same author, come from different websites and have similar titles — remove the second
+              one. Website check is necessary in case of such posts like "eBPF Summit Day 1 Recap" and
+              "eBPF Summit Day 2 Recap". Because within a single website uniqueness is controlled manually by editors
+              and thus posts with similar titles are rarely added on occasion.
+            */
+            if(
+              (initialPost.author || '').toLowerCase() === (resultPost.author || '').toLowerCase() &&
+              new URL(initialPost.link).host !== new URL(resultPost.link).host &&
+              stringSimilarity.compareTwoStrings(initialPost.title, resultPost.title) >= 0.75
+            ) {
+              uniqPosts.splice(idx, 1)
+            }
+          });
+        });
+        uniqPosts.sort((a, b) => b.pubDate - a.pubDate);
+        return uniqPosts;
       })
       .then((posts) => {
         this.setState({ posts });

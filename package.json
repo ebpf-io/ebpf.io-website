@@ -35,7 +35,8 @@
     "react-helmet": "^6.1.0",
     "react-modal-video": "^1.2.6",
     "react-popover": "^0.5.10",
-    "react-refresh": "^0.8.3"
+    "react-refresh": "^0.8.3",
+    "string-similarity": "^4.0.2"
   },
   "keywords": [
     "gatsby"
