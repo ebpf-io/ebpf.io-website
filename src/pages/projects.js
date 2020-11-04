@@ -266,7 +266,7 @@ const ProjectDescriptions = () => (
               <b>Mailing List</b>
             </a>{" "}
             |{" "}
-            <a href="https://patchwork.ozlabs.org/project/netdev/list/?series=&submitter=&state=&q=&archive=&delegate=77147">
+            <a href="https://patchwork.kernel.org/project/netdevbpf/list/?delegate=121173">
               <b>Patches</b>
             </a>{" "}
             |{" "}
