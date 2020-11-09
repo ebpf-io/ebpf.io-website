@@ -122,6 +122,10 @@ class Videos extends React.Component {
         "https://www.youtube.com/embed/_Iq1xxNZOAo?start=45&enablejsapi=1",
         "https://www.youtube.com/embed/U3PdyHlrG1o?start=7&enablejsapi=1",
         "https://www.youtube.com/embed/ZYBXZFKPS28?start=0&enablejsapi=1",
+        "https://www.youtube.com/embed/AV8xY318rtc?start=7&enablejsapi=1",
+        "https://www.youtube.com/embed/Qhm1Zn_BNi4?start=8&enablejsapi=1",
+        "https://www.youtube.com/embed/slBAYUDABDA?start=3&enablejsapi=1",
+        "https://www.youtube.com/embed/wyfhjr_ufag?start=6&enablejsapi=1",
       ]),
     });
   }
@@ -132,7 +136,6 @@ class Videos extends React.Component {
         <h2>Featured eBPF Talks</h2>
         {this.state.videos.length > 0 && (
           <Slider
-            dots
             beforeChange={(oldIndex) => {
               const ref = `video-${this.state.videos[oldIndex]}`;
               this.refs[ref].contentWindow.postMessage(
