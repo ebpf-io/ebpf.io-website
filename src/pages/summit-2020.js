@@ -895,24 +895,25 @@ const Hero = () => (
       </h1>
 
       <div className="meta">
-        <span className="item">October 28-29th, 2020</span>
-        <hr className="divider" />
+        {/* <span className="item" style={{textDecoration: "line-through"}}>October 28-29th, 2020</span> */}
+        {/* <hr className="divider" /> */}
         <span className="item">A Free Virtual Event</span>
       </div>
 
       <p className="description">
-        Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers.
+        eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers <b>has ended</b>.<br/>
+        Thank you for joining us!
       </p>
 
       <div className="space" />
 
       <div className="buttons">
-        <a
+        {/* <a
           className="button type--register"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeWBrtQzSDxgFb2yMoa2tePapMibKeGaHLHDd70xNJzzVMX5g/viewform?embedded=true"
         >
           Register
-        </a>
+        </a> */}
 
         <a
           className="button type--join"
@@ -925,7 +926,7 @@ const Hero = () => (
   </header>
 );
 
-const About = () => (
+const AboutOld = () => (
   <div className="summit-about">
     <div className="wrapper">
       <h2 className="title">How to join</h2>
@@ -937,6 +938,18 @@ const About = () => (
     </div>
   </div>
 );
+
+const About = () => (
+  <div className="summit-about">
+    <div className="wrapper">
+      <h2 className="title">Talks</h2>
+      <p className="description">Video recordings of each talk from eBPF Summit will be available on the <a href="https://www.youtube.com/channel/UCJFUxkVQTBJh3LD1wYBWvuQ/featured">eBPF YouTube channel</a>. Subscribe to be notified on release!</p>
+      <p className="description"><strong>Day 1 replay:</strong> <a href="https://youtu.be/1GSgyvn4N7E">https://youtu.be/1GSgyvn4N7E</a></p>
+      <p className="description"><strong>Day 2 replay:</strong> <a href="https://youtu.be/jw8tEPP6jwQ">https://youtu.be/jw8tEPP6jwQ</a></p>
+    </div>
+  </div>
+);
+
 
 const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescription, id, idx, isSelected, setSelectedCardIdx }) => {
   const hasPopupContent = aboutTitle && aboutDescription.length > 0
@@ -1145,9 +1158,10 @@ const LightningTalksSchedule = () => {
           className="row"
           key={idx}
         >
-          <div className="cell" onClick={!!videoId ? () => showModalVideo(videoId) : null}>
+          {/* <div className="cell" onClick={!!videoId ? () => showModalVideo(videoId) : null}> */}
+          <div className="cell">
             <span className="caption">Title</span>
-            <span className={cn({'link': !!videoId})}>{title}</span>
+            <span>{title}</span>
           </div>
 
           <div className="cell">
@@ -1287,12 +1301,12 @@ const Carusel = () => {
         />)}
       </Carousel>
 
-      <a
+      {/* <a
         className="button"
         href="https://docs.google.com/forms/d/e/1FAIpQLSeWBrtQzSDxgFb2yMoa2tePapMibKeGaHLHDd70xNJzzVMX5g/viewform?embedded=true"
       >
         Register
-      </a>
+      </a> */}
 
       {isPopupShown && <CaruselPopup close={hidePopup} slideIndex={slideIndex} />}
     </div>
