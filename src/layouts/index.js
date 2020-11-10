@@ -10,7 +10,7 @@ import "./menu-icon.scss";
 
 const InfoDisclaimer = () => (		
   <div className="introDisclaimer">		
-    <strong>eBPF Summit keynote and lightning talk videos are available.</strong> <a href="/summit-2020" style={{color: '#947927'}}>Watch Now!</a>.
+    <strong>eBPF Summit keynote and lightning talk videos are available.</strong> <a href="/summit-2020" style={{color: '#947927'}}>Watch Now!</a>
   </div>		
 )
 
