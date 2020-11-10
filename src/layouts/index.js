@@ -8,6 +8,12 @@ import "./header.scss";
 import "./index.css";
 import "./menu-icon.scss";
 
+const InfoDisclaimer = () => (		
+  <div className="introDisclaimer">		
+    <strong>eBPF Summit keynote and lightning talk videos are available.</strong> <a href="/summit-2020" style={{color: '#947927'}}>Watch Now!</a>.
+  </div>		
+)
+
 const HeaderDesktop = () => (
   <div className="header desktop">
     <Link to="/" className="headerLogoLink">
@@ -107,6 +113,7 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden }) => (
         },
       ]}
     />
+    <InfoDisclaimer />
     {!isDesktopHeaderHidden && <HeaderDesktop />}
     <HeaderMobile />
     <div>{children}</div>
