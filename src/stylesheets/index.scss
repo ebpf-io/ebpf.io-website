@@ -1096,6 +1096,10 @@ html.smooth-scroll {
         color: #ffffff;
       }
       & > .list {
+        a.dark-link {
+          text-decoration: none;
+          color: #508CF1;
+        }
         margin-top: 25px;
         position: relative;
         display: grid;
@@ -1149,6 +1153,15 @@ html.smooth-scroll {
                 & > .link {
                   text-decoration: none;
                   color: #4385F5;
+                  transition: .2s ease-in;
+                  cursor: pointer;
+                  &:hover {
+                    opacity: .8;
+                  }
+                }
+                & > .dark-link {
+                  text-decoration: none;
+                  color: #508CF1;
                   transition: .2s ease-in;
                   cursor: pointer;
                   &:hover {

@@ -184,21 +184,27 @@ const agenda = [
       },
 
       {
+        author: <span>Liz&nbsp;Rice</span>,
         time: "09:15 - 09:35",
-        title: <><i>A Beginner’s Guide to eBPF Programming</i><br/>Liz&nbsp;Rice</>,
+        title: <i>A Beginner’s Guide to eBPF Programming</i>,
 
         description: <>
           <p>You’ve heard about eBPF as an exciting technology that opens up a world of new observability, security and networking capabilities. But how do you write eBPF programs? In this talk Liz will show you how to get started so you can run your own custom code in the Linux kernel - or even if you don’t plan to write eBPF yourself, it will help you understand how the technology works.</p>
-        </>
+        </>,
+
+        videoId: "lrSExTfS-iQ"
       },
 
       {
+        author: <span>Daniel&nbsp;Borkmann</span>,
         time: "09:35 - 09:55",
-        title: <><i>BPF as a Fundamentally Better Dataplane</i><br/>Daniel&nbsp;Borkmann</>,
+        title: <i>BPF as a Fundamentally Better Dataplane</i>,
 
         description: <>
           <p>BPF is seeing a rapid pace of development in the Linux kernel and tremendous adoption and growth in the user space landscape. Use cases often span the networking, tracing and security space, but their boundaries are blurred and do reach beyond these subsystems. This talk provides a deep dive on why BPF is a fundamental shift compared to more traditional kernel subsystems and why it is the best tool for the job in terms of performance, scalability, and operations in the age of containerization. We'll also dive into a few examples of recent kernel advancements from the BPF subsystem.</p>
         </>,
+
+        videoId: "Qhm1Zn_BNi4"
       },
 
       {
@@ -207,21 +213,27 @@ const agenda = [
       },
 
       {
+        author: <span>Laurent&nbsp;Bernaille and Tabitha&nbsp;Sable</span>,
         time: "10:00 - 10:20",
-        title: <><i>Our eBPF Journey at Datadog</i><br/>Laurent&nbsp;Bernaille and Tabitha&nbsp;Sable</>,
+        title: <i>Our eBPF Journey at Datadog</i>,
 
         description: <>
           <p>As large-scale Kubernetes end-users, Datadog has grown through many technical challenges of running thousands of nodes and tens of thousands of pods. eBPF has been key to scaling our networking, and promises further improvements. Additionally, eBPF is providing the means to build new capabilities in our products. Laurent and Tabitha will share some of this history, thoughts on Datadog's current utilization of eBPF, and hopes for the future.</p>
-        </>
+        </>,
+
+        videoId: "6mTVuZUHLBg"
       },
 
       {
+        author: <span>KP&nbsp;Singh</span>,
         time: "10:20 - 10:40",
-        title: <><i>Security Auditing and Enforcement using eBPF</i><br/>KP&nbsp;Singh</>,
+        title: <i>Security Auditing and Enforcement using eBPF</i>,
 
         description: <>
           <p>The BPF Linux Security Module unleashes the power of eBPF to the world of Linux Security by providing a unified interface for access control and auditing. The talk goes through the motivations behind developing a BPF based LSM, showcases some of the ways in which it is used at Google and provides some insights and updates on upcoming features that users can leverage.</p>
         </>,
+
+        videoId: "XFJw37Vwzcc"
       },
 
       {
@@ -231,7 +243,7 @@ const agenda = [
 
       {
         time: "10:45 - 12:05",
-        title: <>Lightning talks <Link className="link" to="#lightning-talks">see below</Link></>,
+        title: <>Lightning talks <Link className="dark-link" to="#lightning-talks">see below</Link></>,
       },
 
       {
@@ -251,8 +263,9 @@ const agenda = [
       },
 
       {
+        author: <span>Alexei&nbsp;Starovoitov</span>,
         time: "09:10 - 09:30",
-        title: <><i>Safe Programs. The Foundation of BPF</i><br/>Alexei&nbsp;Starovoitov</>,
+        title: <i>Safe Programs. The Foundation of BPF</i>,
 
         description: <>
           <p>Everything runs in the cloud. The cloud is built on the linux kernel.</p>
@@ -260,12 +273,16 @@ const agenda = [
           <p>BPF is the kernel programming model that lets developers extend the kernel safely and add features to the live system without reboot.</p>
           <p>The verifier ensures safety of the BPF programs, but it's not just the verifier.</p>
           <p>The accelerating trend in the BPF universe is BPF Type Format and its use in safe argument matching, pointer dereferences, exception tables, and program portability from 64-bit x86 to 32-bit arm. Safety is a foundation.</p>
-        </>
+        </>,
+
+        videoId: "AV8xY318rtc"
       },
 
       {
+        author: <span>Kris&nbsp;Nova</span>,
         time: "09:30 - 09:50",
-        title: <><i>Kernel tracing in production with Falco</i><br/>Kris&nbsp;Nova</>,
+        title: <i>Kernel tracing in production with Falco</i>,
+        videoId: "6E-xA0ZjIGM"
       },
 
       {
@@ -274,26 +291,34 @@ const agenda = [
       },
 
       {
+        author: <span>Brendan&nbsp;Gregg</span>,
         time: "09:55 - 10:15",
-        title: <><i>Performance Wins with BPF: Getting Started</i><br/>Brendan&nbsp;Gregg</>,
+        title: <i>Performance Wins with BPF: Getting Started</i>,
+        videoId: "wyfhjr_ufag"
       },
 
       {
+        author: <span>Zang&nbsp;Li</span>,
         time: "10:15 - 10:35",
-        title: <><i>Kubernetes Network Policy Logging with eBPF</i><br/>Zang&nbsp;Li</>,
+        title: <i>Kubernetes Network Policy Logging with eBPF</i>,
 
         description: <>
           <p>In Kubernetes, micro-segmentation is achieved through network policy which specifies how pods are allowed to communicate with one another. Policy visibility is a key requirement for many Kubernetes customers who use network policy to secure their cluster. In this talk, Zang will show how Google built Kubernetes network policy logging with eBPF and how the policy visibility is achieved efficiently.</p>
-        </>
+        </>,
+
+        videoId: "oLS25ztnlMk"
       },
 
       {
+        author: <span>Thomas&nbsp;Graf</span>,
         time: "10:35 - 10:55",
-        title: <><i>The Future of eBPF-based Networking and Security</i><br/>Thomas&nbsp;Graf</>,
+        title: <i>The Future of eBPF-based Networking and Security</i>,
 
         description: <>
           <p>The future of Networking and Security is based on eBPF. How will this new world look like? There is a massive potential of evolution in the infrastructure space ahead of us as we tap further into the powers of eBPF. We'll explore what is already possible today and what is yet to come as eBPF-based projects continue to evolve and provide benefits to the ecosystem.</p>
-        </>
+        </>,
+
+        videoId: "slBAYUDABDA"
       },
 
       {
@@ -303,7 +328,7 @@ const agenda = [
 
       {
         time: "11:00 - 12:15",
-        title: <>Lightning talks <Link className="link" to="#lightning-talks">see below</Link></>,
+        title: <>Lightning talks <Link className="dark-link" to="#lightning-talks">see below</Link></>,
       },
 
       {
@@ -319,179 +344,188 @@ const lightningTalks = [
     title: "Using BCC and bpftrace with Performance Co-Pilot",
     name: "Andreas Gerstmayr",
     organization: "Red Hat",
-    videoId: "hm5ygaJh5iw",
+    videoId: "XmMVhvjmD9I",
   },
 
   {
     title: "Containers and BPF: twagent Story",
     name: "Andrey Ignatov",
-    organization: "Facebook"
+    organization: "Facebook",
+    videoId: "lO0dYHl3I8Y"
   },
 
   {
     title: "Zero Instrumentation Monitoring with Your First Steps in eBPF",
     name: "Beatriz Martínez",
     organization: "Isovalent",
-    videoId: "nDWmTU5iOpE",
+    videoId: "GaY2d8e-gk0",
   },
 
   {
     title: "Building a Secure and Maintainable PaaS",
     name: "Bradley Whitfield",
     organization: "Capital One",
-    videoId: "k12N5lq1Gas",
+    videoId: "hwOpCKBaJ-w",
   },
 
   {
     title: "eBPF at Adobe",
     name: "Brandon Cook",
     organization: "Adobe",
-    videoId: "ike2IDC9xtw",
+    videoId: "7UQ2CU6UEGY",
   },
 
   {
     title: "How and When You Should Measure CPU Overhead of eBPF Programs",
     name: "Bryce Kahle",
     organization: "Datadog",
-    videoId: "W5gG-Svh_bg",
+    videoId: "b0TxKiGMWpI",
   },
 
   {
     title: "Building a Behavioral Knowledge Graph using eBPF",
     name: "Dinesh Venkatesan + Aditi Bhatnagar",
-    organization: "Microsoft"
+    organization: "Microsoft",
+    videoId: "Sun0bWGVl_o"
   },
 
   {
     title: "Can eBPF Save Us from the Data Deluge? A Case for File Filtering in eBPF",
     name: "Giulia Frascaria",
     organization: "Vrije Universiteit Amsterdam",
-    videoId: "OwxCwSyP2N4",
+    videoId: "qEtDoHWYrhA",
   },
 
   {
     title: "Tracing and Detecting Malware using eBPF",
     name: "Itay Shakury",
-    organization: "Aqua Security"
+    organization: "Aqua Security",
+    videoId: "UD7bF6nWagQ"
   },
 
   {
     title: "Steering Connections to Sockets with BPF Socket Lookup Hook",
     name: "Jakub Sitnicki",
     organization: "Cloudflare",
-    videoId: "Hw1yRAmNz28",
+    videoId: "vCJ8kDYI8ZE",
   },
 
   {
     title: "Building rbperf, a Ruby BPF Profiler",
     name: "Javier Honduvilla Coto",
-    organization: "Facebook"
+    organization: "Facebook",
+    videoId: "oeGom1zl0a8"
   },
 
   {
     title: "Enabling eBPF Super Powers on ARM64 with Cilium",
     name: "Jianlin Lv",
     organization: "Arm",
-    videoId: "hdUywxvsYKI",
+    videoId: "Sk_Kn-1pWt8",
   },
 
   {
     title: "How to Ship BPF with Your Go project",
     name: "Lorenz Bauer",
-    organization: "Cloudflare"
+    organization: "Cloudflare",
+    videoId: "lijS-0da5U8"
   },
 
   {
     title: "Debugging the eBPF Virtual Machine",
     name: "Lorenzo Fontana",
     organization: "Sysdig",
-    videoId: "m03dIt2i7CQ",
+    videoId: "W6rgaghycFI",
   },
 
   {
     title: "Traffic Control the Rabbit with Rust using RedBPF",
     name: "Lou Xun",
-    organization: "CCP Games"
+    organization: "CCP Games",
+    videoId: "s-Tn-xjUnPE"
   },
 
   {
     title: "Global Gaming Infrastructure with Cilium",
     name: "Luan Guimarães",
-    organization: "Wildlife Studios"
+    organization: "Wildlife Studios",
+    videoId: "_1t3bXzptP0"
   },
 
   {
     title: "Implementation of Hardware Breakpoint in BCC",
     name: "Manali Shukla",
     organization: "Cisco",
-    videoId: "C3rfcZMiWvo",
+    videoId: "Nw-tTmxIHUA",
   },
 
   {
     title: "North-South Load Balancing of Kubernetes Services with eBPF/XDP",
     name: "Martynas Pumputis",
     organization: "Isovalent",
-    videoId: "GNePX4Sw6uA",
+    videoId: "XN3mJF7g8dQ",
   },
 
   {
     title: "Identity Aware Threat Detection and Network Monitoring by using eBPF",
     name: "Natalia Reka Ivanko",
     organization: "Isovalent",
-    videoId: "wkFQ1H0GI88",
+    videoId: "JQZQwR57Lmg",
   },
 
   {
     title: "Scaling a Multi-Tenant k8s Cluster in a Telco",
     name: "Pablo Moncada",
     organization: "MasMovil",
-    videoId: "o6kNhmuOeMY",
+    videoId: "JH3pcmhNEHA",
   },
 
   {
     title: "The Tale of Smokey and the Crypto Bandits",
     name: "Ramiro Berrelleza",
     organization: "Okteto",
-    videoId: "KP0yWWzMN70",
+    videoId: "tplv3Hjjv2Q",
   },
 
   {
     title: "Securing Kubernetes Clusters with DevSecOps and GitLab",
     name: "Sam White",
     organization: "GitLab",
-    videoId: "adelo4XyNf0",
+    videoId: "kwQ0ooO3UM8",
   },
   {
     title: "From Managed Kubernetes to App Platform: 1.5 Years of Cilium Usage at DigitalOcean",
     name: "Timo Reimann",
     organization: "DigitalOcean",
+    videoId: "xez34h7EY3A"
   },
 
   {
     title: "Past, Present, and Future of Cilium and Hubble at Palantir",
     name: "Vlad Ungureanu",
-    organization: "Palantir"
+    organization: "Palantir",
+    videoId: "3K5WJ_h5PhI"
   },
 
   {
     title: "bpfbox: Simple Precise Process Confinement with KRSI and eBPF",
     name: "William Findlay",
     organization: "Carleton University",
-    videoId: "GZ7qutLXDY4",
+    videoId: "evHw9QHElNE",
   },
 
   {
     title: "eBPF at LINE's Private Cloud",
     name: "Yutaro Hayakawa",
     organization: "LINE Corporation",
-    videoId: "yiQ9muH8IGg",
+    videoId: "cxfVpBYlol4",
   },
 
   {
     title: "Debugging Go in Prod using eBPF",
     name: "Zain Asgar",
     organization: "Pixie",
-    videoId: "IGLs_Om6DG8",
+    videoId: "Q7mqIB7eatQ",
   },
 ]
 
@@ -1075,7 +1109,7 @@ const AgendaItemPopup = ({ description, hidePopup }) => {
   </div>
 }
 
-const AgendaItem = ({ description, time, title }) => {
+const AgendaItem = ({ author, description, showVideo, time, title }) => {
   const [isPopupShown, setIsPopupShown] = useState(false)
   const showPopup = useCallback(() => setIsPopupShown(true), [])
   const hidePopup = useCallback(() => setIsPopupShown(false), [])
@@ -1084,7 +1118,14 @@ const AgendaItem = ({ description, time, title }) => {
     <dt className="time">{time}</dt>
 
     <dd className="description">
-      {title}
+      <span className={cn({'dark-link': !!showVideo})} onClick={showVideo}>
+        {title}
+      </span>
+
+      {!!author && <>
+        <br/>
+        {author}
+      </>}
 
       {description && <>
         <div
@@ -1101,8 +1142,12 @@ const AgendaItem = ({ description, time, title }) => {
   </dl>
 }
 
-const Agenda = () => (
-  <div
+const Agenda = () => {
+  const [modalVideo, setModalVideo] = useState(null)
+  const closeModalVideo = useCallback(() => setModalVideo(null), [])
+  const showModalVideo = useCallback(video => setModalVideo(video), [])
+
+  return <div
     id="agenda"
     className="summit-agenda"
 
@@ -1116,13 +1161,18 @@ const Agenda = () => (
       <p className="note">All times are in PDT time zone</p>
 
       <div className="list">
-        {agenda.map(( item, idx ) => <section className="section" key={idx}>
+        {agenda.map((item, idx) => <section
+          className="section"
+          key={idx}
+        >
           <h3 className="title">{item.title}</h3>
 
           <div className="list">
-            {item.schedule.map(({ description, time, title }, idx) => <AgendaItem
+            {item.schedule.map(({ author, description, time, title, videoId }, idx) => <AgendaItem
+              author={author}
               description={description}
               key={idx}
+              showVideo={!!videoId ? () => showModalVideo(videoId) : null}
               time={time}
               title={title}
             />)}
@@ -1130,8 +1180,10 @@ const Agenda = () => (
         </section>)}
       </div>
     </div>
+
+    <ModalVideo channel='youtube' isOpen={modalVideo !== null} videoId={modalVideo} onClose={closeModalVideo} />
   </div>
-);
+};
 
 const LightningTalksSchedule = () => {
   const [modalVideo, setModalVideo] = useState(null)
@@ -1158,10 +1210,9 @@ const LightningTalksSchedule = () => {
           className="row"
           key={idx}
         >
-          {/* <div className="cell" onClick={!!videoId ? () => showModalVideo(videoId) : null}> */}
-          <div className="cell">
+          <div className="cell" onClick={!!videoId ? () => showModalVideo(videoId) : null}>
             <span className="caption">Title</span>
-            <span>{title}</span>
+            <span className={cn({'link': !!videoId})}>{title}</span>
           </div>
 
           <div className="cell">
