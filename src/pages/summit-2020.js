@@ -944,8 +944,8 @@ const About = () => (
     <div className="wrapper">
       <h2 className="title">Talks</h2>
       <p className="description">Video recordings of each talk from eBPF Summit will be available on the <a href="https://www.youtube.com/channel/UCJFUxkVQTBJh3LD1wYBWvuQ/featured">eBPF YouTube channel</a>. Subscribe to be notified on release!</p>
-      <p className="description"><strong>Day 1 replay:</strong> <a href="https://youtu.be/1GSgyvn4N7E">https://youtu.be/1GSgyvn4N7E</a></p>
-      <p className="description"><strong>Day 2 replay:</strong> <a href="https://youtu.be/jw8tEPP6jwQ">https://youtu.be/jw8tEPP6jwQ</a></p>
+      <p className="description"><strong>Day 1:</strong> <a href="https://youtu.be/1GSgyvn4N7E">watch full replay</a>, <a href="https://cilium.io/blog/2020/10/28/ebpf-summit-day-1">recap</a></p>
+      <p className="description"><strong>Day 2:</strong> <a href="https://youtu.be/jw8tEPP6jwQ">watch full replay</a>, <a href="https://cilium.io/blog/2020/10/29/ebpf-summit-day-2">recap</a></p>
     </div>
   </div>
 );
