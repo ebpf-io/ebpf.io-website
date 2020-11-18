@@ -28,7 +28,9 @@ const speakers = [
         <>BPF is the kernel programming model that lets developers extend the kernel safely and add features to the live system without reboot.</>,
         <>The verifier ensures safety of the BPF programs, but it's not just the verifier.</>,
         <>The accelerating trend in the BPF universe is BPF Type Format and its use in safe argument matching, pointer dereferences, exception tables, and program portability from 64-bit x86 to 32-bit arm. Safety is a foundation.</>,
-      ]
+      ],
+
+      videoId: "AV8xY318rtc"
     }
   },
   {
@@ -41,7 +43,8 @@ const speakers = [
 
     about: {
       title: "Performance Wins with BPF: Getting Started",
-      description: [<></>]
+      description: [<></>],
+      videoId: "wyfhjr_ufag"
     }
   },
   {
@@ -57,7 +60,10 @@ const speakers = [
 
       description: [
         <>BPF is seeing a rapid pace of development in the Linux kernel and tremendous adoption and growth in the user space landscape. Use cases often span the networking, tracing and security space, but their boundaries are blurred and do reach beyond these subsystems. This talk provides a deep dive on why BPF is a fundamental shift compared to more traditional kernel subsystems and why it is the best tool for the job in terms of performance, scalability, and operations in the age of containerization. We'll also dive into a few examples of recent kernel advancements from the BPF subsystem.</>,
-      ]
+      ],
+
+      slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Keynote-Daniel_Borkmann-BPF_as_a_fundamentally_better_dataplane.pdf",
+      videoId: "Qhm1Zn_BNi4"
     }
   },
   {
@@ -71,9 +77,11 @@ const speakers = [
     about: {
       title: "Kernel tracing in production with Falco",
 
-       description: [
+      description: [
         <>Join Kris Nóva as we look at how Falco uses eBPF for kernel tracing. The constraints of running Kubernetes in GKE left the Falco project without the ability to run a kernel module. See how we dynamically load a BPF probe at runtime bypass this constraint.</>,
-      ]
+      ],
+
+      videoId: "6E-xA0ZjIGM"
     }
   },
   {
@@ -89,7 +97,9 @@ const speakers = [
 
       description: [
         <>The BPF Linux Security Module unleashes the power of eBPF to the world of Linux Security by providing a unified interface for access control and auditing. The talk goes through the motivations behind developing a BPF based LSM, showcases some of the ways in which it is used at Google and provides some insights and updates on upcoming features that users can leverage.</>,
-      ]
+      ],
+
+      videoId: "XFJw37Vwzcc"
     }
   },
   {
@@ -105,7 +115,9 @@ const speakers = [
 
       description: [
         <>As large-scale Kubernetes end-users, Datadog has grown through many technical challenges of running thousands of nodes and tens of thousands of pods. eBPF has been key to scaling our networking, and promises further improvements. Additionally, eBPF is providing the means to build new capabilities in our products. Laurent and Tabitha will share some of this history, thoughts on Datadog's current utilization of eBPF, and hopes for the future.</>,
-      ]
+      ],
+
+      videoId: "6mTVuZUHLBg"
     }
   },
   {
@@ -121,7 +133,10 @@ const speakers = [
 
       description: [
         <>You’ve heard about eBPF as an exciting technology that opens up a world of new observability, security and networking capabilities. But how do you write eBPF programs? In this talk Liz will show you how to get started so you can run your own custom code in the Linux kernel - or even if you don’t plan to write eBPF yourself, it will help you understand how the technology works.</>,
-      ]
+      ],
+
+      slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Keynote-Liz_Rice-A_Beginner_Guide_to_eBPF_programming.pdf",
+      videoId: "lrSExTfS-iQ"
     }
   },
   {
@@ -137,7 +152,9 @@ const speakers = [
 
       description: [
         <>As large-scale Kubernetes end-users, Datadog has grown through many technical challenges of running thousands of nodes and tens of thousands of pods. eBPF has been key to scaling our networking, and promises further improvements. Additionally, eBPF is providing the means to build new capabilities in our products. Laurent and Tabitha will share some of this history, thoughts on Datadog's current utilization of eBPF, and hopes for the future.</>,
-      ]
+      ],
+
+      videoId: "6mTVuZUHLBg"
     }
   },
   {
@@ -147,12 +164,16 @@ const speakers = [
       name: "Thomas Graf",
       description: "Co-creator of the Cilium Project, Isovalent"
     },
+
     about: {
       title: "The Future of eBPF-based Networking and Security",
 
       description: [
         <>The future of Networking and Security is based on eBPF. How will this new world look like? There is a massive potential of evolution in the infrastructure space ahead of us as we tap further into the powers of eBPF.  We'll explore what is already possible today and what is yet to come as eBPF-based projects continue to evolve and provide benefits to the ecosystem.</>,
-      ]
+      ],
+
+      slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Keynote-Thomas_Graf-The_Future_of_eBPFbased_Networking_and_Security.pdf",
+      videoId: "slBAYUDABDA"
     }
   },
   {
@@ -168,7 +189,9 @@ const speakers = [
 
       description: [
         <>In Kubernetes, micro-segmentation is achieved through network policy which specifies how pods are allowed to communicate with one another.  Policy visibility is a key requirement for many Kubernetes customers who use network policy to secure their cluster.  In this talk, Zang will show how Google built Kubernetes network policy logging with eBPF and how the policy visibility is achieved efficiently.</>
-      ]
+      ],
+
+      videoId: "oLS25ztnlMk"
     }
   },
 ]
@@ -185,6 +208,7 @@ const agenda = [
 
       {
         author: <span>Liz&nbsp;Rice</span>,
+        slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Keynote-Liz_Rice-A_Beginner_Guide_to_eBPF_programming.pdf",
         time: "09:15 - 09:35",
         title: <i>A Beginner’s Guide to eBPF Programming</i>,
 
@@ -197,6 +221,7 @@ const agenda = [
 
       {
         author: <span>Daniel&nbsp;Borkmann</span>,
+        slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Keynote-Daniel_Borkmann-BPF_as_a_fundamentally_better_dataplane.pdf",
         time: "09:35 - 09:55",
         title: <i>BPF as a Fundamentally Better Dataplane</i>,
 
@@ -311,6 +336,7 @@ const agenda = [
 
       {
         author: <span>Thomas&nbsp;Graf</span>,
+        slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Keynote-Thomas_Graf-The_Future_of_eBPFbased_Networking_and_Security.pdf",
         time: "10:35 - 10:55",
         title: <i>The Future of eBPF-based Networking and Security</i>,
 
@@ -341,6 +367,7 @@ const agenda = [
 
 const lightningTalks = [
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Andreas_Gerstmayr-Using_BCC_and_bpftrace_with_Performance_CoPilot.pdf",
     title: "Using BCC and bpftrace with Performance Co-Pilot",
     name: "Andreas Gerstmayr",
     organization: "Red Hat",
@@ -348,6 +375,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Andrey_Ignatov-Containers_and_BPF_twagent_story.pdf",
     title: "Containers and BPF: twagent Story",
     name: "Andrey Ignatov",
     organization: "Facebook",
@@ -355,6 +383,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Beatriz_Martinez-Zero_instrumentation_monitoring_with_your_first_steps_in_eBPF.pdf",
     title: "Zero Instrumentation Monitoring with Your First Steps in eBPF",
     name: "Beatriz Martínez",
     organization: "Isovalent",
@@ -362,6 +391,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Bradley_Whitfield-Building_a_Secure_and_Maintainable_PaaS.pdf",
     title: "Building a Secure and Maintainable PaaS",
     name: "Bradley Whitfield",
     organization: "Capital One",
@@ -376,6 +406,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Bryce_Kahle-How_and_When_You_Should_Measure_CPU_Overhead_of_eBPF_Programs.pdf",
     title: "How and When You Should Measure CPU Overhead of eBPF Programs",
     name: "Bryce Kahle",
     organization: "Datadog",
@@ -390,6 +421,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Giulia_Frascaria-Can_eBPF_save_us_from_the_Data_Deluge.pdf",
     title: "Can eBPF Save Us from the Data Deluge? A Case for File Filtering in eBPF",
     name: "Giulia Frascaria",
     organization: "Vrije Universiteit Amsterdam",
@@ -404,6 +436,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Jakub_Sitnicki-Steering_connections_to_sockets_with_BPF_socke_lookup_hook.pdf",
     title: "Steering Connections to Sockets with BPF Socket Lookup Hook",
     name: "Jakub Sitnicki",
     organization: "Cloudflare",
@@ -411,6 +444,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Javier_Honduvilla_Coto-rbperf_Understanding_Ruby_with_BPF.pdf",
     title: "Building rbperf, a Ruby BPF Profiler",
     name: "Javier Honduvilla Coto",
     organization: "Facebook",
@@ -418,6 +452,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Jianlin_Lv-Enabling eBPF_Super_Powers_on_ARM64_with_Cilium.pdf",
     title: "Enabling eBPF Super Powers on ARM64 with Cilium",
     name: "Jianlin Lv",
     organization: "Arm",
@@ -425,6 +460,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Lorenz_Bauer-How_to_ship_BPF_with_your_Go_project.pdf",
     title: "How to Ship BPF with Your Go project",
     name: "Lorenz Bauer",
     organization: "Cloudflare",
@@ -432,6 +468,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Lorenzo_Fontana-Debugging_the_BPF_Virtual_Machine.pdf",
     title: "Debugging the eBPF Virtual Machine",
     name: "Lorenzo Fontana",
     organization: "Sysdig",
@@ -439,6 +476,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Xun_Lou-Traffic_Control_the_Rabbit_with_Rust_using_RedBPF.pdf",
     title: "Traffic Control the Rabbit with Rust using RedBPF",
     name: "Lou Xun",
     organization: "CCP Games",
@@ -453,6 +491,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Manali_Shukla-Hardware_Breakpoint_implementation_in_BCC.pdf",
     title: "Implementation of Hardware Breakpoint in BCC",
     name: "Manali Shukla",
     organization: "Cisco",
@@ -460,6 +499,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Martynas_Pumputis-North_South_Load_Balancing_of_Kubernetes_Services_with_eBPF_XDP.pdf",
     title: "North-South Load Balancing of Kubernetes Services with eBPF/XDP",
     name: "Martynas Pumputis",
     organization: "Isovalent",
@@ -467,6 +507,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Natalia_Reka_Ivanko-Identity_Aware_Threat_Detection_and_Network_Monitoring_by_using_eBPF.pdf",
     title: "Identity Aware Threat Detection and Network Monitoring by using eBPF",
     name: "Natalia Reka Ivanko",
     organization: "Isovalent",
@@ -474,6 +515,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Pablo_Moncada-Scaling_a_Multi_Tenant_k8s_Cluster_in_a_Telco.pdf",
     title: "Scaling a Multi-Tenant k8s Cluster in a Telco",
     name: "Pablo Moncada",
     organization: "MasMovil",
@@ -481,6 +523,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Ramiro_Berrelleza-The_Tale_of_Smokey_and_the_Crypto_Bandits.pdf",
     title: "The Tale of Smokey and the Crypto Bandits",
     name: "Ramiro Berrelleza",
     organization: "Okteto",
@@ -494,6 +537,7 @@ const lightningTalks = [
     videoId: "kwQ0ooO3UM8",
   },
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Timo_Reimann-Managed_Kubernetes_to_App_Platform_Years_of_Cilium_Usage_at_DigitalOcean.pdf",
     title: "From Managed Kubernetes to App Platform: 1.5 Years of Cilium Usage at DigitalOcean",
     name: "Timo Reimann",
     organization: "DigitalOcean",
@@ -508,6 +552,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Wiliam_Findlay-bpfbox_Simple_Precise_Process_Confinement_with_ebpf_and_KRSI.pdf",
     title: "bpfbox: Simple Precise Process Confinement with KRSI and eBPF",
     name: "William Findlay",
     organization: "Carleton University",
@@ -515,6 +560,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Yutaro_Hayakawa-eBPF_at_LINE_Private_Cloud.pdf",
     title: "eBPF at LINE's Private Cloud",
     name: "Yutaro Hayakawa",
     organization: "LINE Corporation",
@@ -522,6 +568,7 @@ const lightningTalks = [
   },
 
   {
+    slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Zain_Asgar-Debugging_Go_in_Prod_using_eBPF.pdf",
     title: "Debugging Go in Prod using eBPF",
     name: "Zain Asgar",
     organization: "Pixie",
@@ -985,7 +1032,7 @@ const About = () => (
 );
 
 
-const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescription, id, idx, isSelected, setSelectedCardIdx }) => {
+const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescription, id, idx, isSelected, setSelectedCardIdx, showVideo, slidesLink }) => {
   const hasPopupContent = aboutTitle && aboutDescription.length > 0
 
   const toggleSelectedCardIdx = useCallback(
@@ -1023,6 +1070,17 @@ const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescriptio
     [hasPopupContent, id, idx, location],
   )
 
+  const showVideoAndClosePopup = useCallback(
+    () => {
+      if(!!showVideo) {
+        resetSelectedCardIdx()
+        showVideo()
+      }
+    },
+
+    [showVideo, resetSelectedCardIdx],
+  )
+
   return <div className="summit-speaker-card">
     <div className={cn('section', {'is-selectable': hasPopupContent, 'is-selected': isSelected})} onClick={toggleSelectedCardIdx} ref={cardRef}>
       <div className="avatar">
@@ -1038,8 +1096,18 @@ const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescriptio
     </div>
 
     {isSelected && <div className="popup">
-      <h4 className="title">{aboutTitle}</h4>
+      <h4 className={cn('title', {'link': !!showVideo})} onClick={showVideoAndClosePopup}>{aboutTitle}</h4>
       {aboutDescription.map((description, idx) => <p className="description" key={idx}>{description}</p>)}
+
+      {!!slidesLink && <a className="download-link" href={slidesLink}>
+        <img
+          alt="PDF download icon"
+          src={require('../assets/pdf-file.svg')}
+          width={18}
+        />
+
+        View slides
+      </a>}
 
       <button aria-label="Close" className="button" onClick={resetSelectedCardIdx} type="button">
         <img alt="Close" aria-hidden className="icon" src={require("../assets/summit-2020/icon-close.svg")} />
@@ -1050,6 +1118,9 @@ const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescriptio
 
 const Keynotes = () => {
   const [selectedCardIdx, setSelectedCardIdx] = useState(null)
+  const [modalVideo, setModalVideo] = useState(null)
+  const closeModalVideo = useCallback(() => setModalVideo(null), [])
+  const showModalVideo = useCallback(video => setModalVideo(video), [])
 
   return <div className="summit-keynotes">
     <div className="wrapper">
@@ -1067,13 +1138,17 @@ const Keynotes = () => {
           idx={idx}
           isSelected={idx === selectedCardIdx}
           setSelectedCardIdx={setSelectedCardIdx}
+          showVideo={!!about.videoId ? () => showModalVideo(about.videoId) : null}
+          slidesLink={about?.slidesLink}
         />)}
       </div>
     </div>
+
+    <ModalVideo channel='youtube' isOpen={modalVideo !== null} videoId={modalVideo} onClose={closeModalVideo} />
   </div>
 };
 
-const AgendaItemPopup = ({ description, hidePopup }) => {
+const AgendaItemPopup = ({ description, hidePopup, slidesLink }) => {
   const popupRef = useRef(null)
 
   useEffect(
@@ -1103,13 +1178,20 @@ const AgendaItemPopup = ({ description, hidePopup }) => {
   return <div className="popup" ref={popupRef}>
     <div className="description">{description}</div>
 
+    {!!slidesLink && <div className="agenda-popup-bottom-links">
+      <a className="download-link" href={slidesLink} target="_blank">
+        <img alt="PDF download icon" src={require('../assets/pdf-file.svg')} width={22} />
+        View slides
+      </a>
+    </div>}
+
     <button aria-label="Close" className="button" onClick={hidePopup} type="button">
       <img alt="Close" aria-hidden className="icon" src={require("../assets/summit-2020/icon-close.svg")} />
     </button>
   </div>
 }
 
-const AgendaItem = ({ author, description, showVideo, time, title }) => {
+const AgendaItem = ({ author, description, showVideo, slidesLink, time, title }) => {
   const [isPopupShown, setIsPopupShown] = useState(false)
   const showPopup = useCallback(() => setIsPopupShown(true), [])
   const hidePopup = useCallback(() => setIsPopupShown(false), [])
@@ -1136,7 +1218,7 @@ const AgendaItem = ({ author, description, showVideo, time, title }) => {
           {isPopupShown && <div className="triangle" />}
         </div>
 
-        {isPopupShown && <AgendaItemPopup description={description} hidePopup={hidePopup} />}
+        {isPopupShown && <AgendaItemPopup description={description} hidePopup={hidePopup} slidesLink={slidesLink} />}
       </>}
     </dd>
   </dl>
@@ -1168,11 +1250,12 @@ const Agenda = () => {
           <h3 className="title">{item.title}</h3>
 
           <div className="list">
-            {item.schedule.map(({ author, description, time, title, videoId }, idx) => <AgendaItem
+            {item.schedule.map(({ author, description, slidesLink, time, title, videoId }, idx) => <AgendaItem
               author={author}
               description={description}
               key={idx}
               showVideo={!!videoId ? () => showModalVideo(videoId) : null}
+              slidesLink={slidesLink}
               time={time}
               title={title}
             />)}
@@ -1202,17 +1285,30 @@ const LightningTalksSchedule = () => {
           className="captions"
           aria-hidden
         >
-          <div className="cell"><span>Title <span className="prompt">*click to see video preview</span></span></div>
+          <div className="cell"><span>Title <span className="prompt">*click to see video replay</span></span></div>
           <div className="cell">Speaker</div>
         </div>
 
-        {lightningTalks.map(({ title, name, organization, videoId }, idx) => <div
+        {lightningTalks.map(({ slidesLink, title, name, organization, videoId }, idx) => <div
           className="row"
           key={idx}
         >
-          <div className="cell" onClick={!!videoId ? () => showModalVideo(videoId) : null}>
+          <div className="cell">
             <span className="caption">Title</span>
-            <span className={cn({'link': !!videoId})}>{title}</span>
+
+            <div className="title">
+              <span className={cn({'link': !!videoId})}  onClick={!!videoId ? () => showModalVideo(videoId) : null}>
+                {title}
+              </span>
+
+              {!!slidesLink && <a className="download-link" href={slidesLink}>
+                <img
+                  alt="PDF download icon"
+                  src={require('../assets/pdf-file.svg')}
+                  width={18}
+                />
+              </a>}
+            </div>
           </div>
 
           <div className="cell">
