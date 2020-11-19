@@ -28,6 +28,7 @@
     "gatsby-transformer-remark": "^2.8.28",
     "infinite-react-carousel": "^1.2.11",
     "lodash": "^4.17.20",
+    "node-html-parser": "^2.0.0",
     "nuka-carousel": "^4.7.1",
     "prismjs": "^1.21.0",
     "react": "^16.13.1",
