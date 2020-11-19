@@ -55,9 +55,10 @@ and kernel discussions, everyone should find a good read or two!
   ![eBee, the eBPF mascot](logo.png)
 
 * [**Isovalent**](https://www.isovalent.com/), the company behind
-  [Cilium](https://cilium.io/), home of one of the eBPF maintainers, and one of
-  the biggest eBPF contributor and consumer, **announced its $29M Series A
-  financing round backed by Andreessen Horowitz, Google, and Cisco**. Here are
+  [Cilium](https://cilium.io/), home of eBPF co-maintainer Daniel Borkmann, and
+  one of the biggest users of and contributors to eBPF, **announced its $29M
+  Series A financing round backed by Andreessen Horowitz, Google, and Cisco**.
+  Here are
   the [announcement from the Cilium community](https://cilium.io/blog/2020/11/10/ebpf-future-of-networking/),
   the [TechCrunch interview](https://techcrunch.com/2020/11/10/with-29m-in-funding-isovalent-launches-its-cloud-native-networking-and-security-platform-based-on-ebpf-and-cilium/),
   or the [post on a16z's blog](https://a16z.com/2020/11/10/investing-in-isovalent/).
@@ -72,7 +73,7 @@ and kernel discussions, everyone should find a good read or two!
 
 ## New Resources
 
-### Blog Posts
+### Blog Posts, Presentations
 
 * [_How eBPF Turns Linux into a Programmable Kernel_](https://thenewstack.io/how-ebpf-turns-linux-into-a-programmable-kernel/),
   from Joab Jackson.  
@@ -98,6 +99,17 @@ and kernel discussions, everyone should find a good read or two!
   and extra data copying) and provides increased performance. Andrii, who
   implemented this new buffer, describes its concepts, its advantages and its
   usage in this article.
+
+* [_BPF Tales, or Why Did I Recompile the Kernel to Average Some Numbers?_](https://web.archive.org/web/20201119174631/https://s3.amazonaws.com/v2-s3-prod-accelevents/8d6e1098-b444-4a4c-80dc-9c16a790858f_OSSEUpresentation.pdf),
+  from Giulia Frascaria.  
+  eBPF programs often aggregate data in the kernel before sending metrics to
+  user space, to help users trace programs. In this work, eBPF runs instead at
+  the boundary between compute and storage nodes in a datacenter, to apply
+  filter-reduce operations on the data to transfer, and to overcome the gap
+  between storage hardware and network bandwidths. This work was also the
+  object of
+  [a lightning talk](https://www.youtube.com/watch?v=jw8tEPP6jwQ&t=7492s)
+  during the eBPF Summit.
 
 * [_Full body HTTP request/responses tracing using eBPF_](https://blog.pixielabs.ai/ebpf-http-tracing/),
   from Zain Asgar.  
@@ -284,8 +296,9 @@ process include:
 ## Credits
 
 eBPF Updates are brought to you by the [Cilium project](https://cilium.io).
-This report was produced by Quentin Monnet, with contributions from Daniel
-Borkmann. Thanks to the Cilium team for the reviews.
+This report was produced by Quentin Monnet
+(Isovalent), with significant contributions from Daniel Borkmann. Thanks to
+Cilium engineering team for input and reviews.
 
-If you would like to submit contributions for the next reports, please reach
-out [on Slack](https://ebpf.io/slack/), on the `#ebpf-news` channel!
+If you would like to submit contributions for the next report, please submit
+them via the `#ebpf-news` channel on the [eBPF Slack](https://ebpf.io/slack/).
