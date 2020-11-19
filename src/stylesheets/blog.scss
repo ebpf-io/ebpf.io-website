@@ -1,4 +1,19 @@
+$tablet: "screen and (max-width : 900px)";
+
+.news-title {
+  max-width: 1015px;
+  margin: 92px auto 0;
+  padding: 0 40px;
+  font-size: 46px;
+
+  @media #{$tablet} {
+    font-size: 38px;
+  }
+}
+
 .blog-posts {
+  margin-top: 48px;
+
   .blog-post {
     margin-bottom: 34px;
 
@@ -14,8 +29,8 @@
 }
 
 .blog-post {
-  max-width: 800px;
-  padding: 0 20px;
+  max-width: 1015px;
+  padding: 0 40px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -82,20 +97,32 @@
   }
 
   .blog-title {
-    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 26px;
-    line-height: 36px;
+    line-height: 48px;
     font-weight: 700;
     //font-family: Montserrat, sans-serif;
     color: #000;
+    text-decoration: underline;
 
     a {
       text-decoration: none;
+      vertical-align: middle;
       color: #000;
 
       &:hover {
         color: #444;
       }
+    }
+
+    & > img {
+      margin-right: 14px;
+      vertical-align: middle;
+    }
+
+    @media #{$tablet} {
+      font-size: 32px;
     }
   }
 
@@ -134,7 +161,7 @@
   }
 
   .blog-post-tags {
-    margin-top: 25px;
+    margin-bottom: 20px;
 
     .blog-post-tag {
       margin-right: 10px;
@@ -194,13 +221,13 @@
     h2 {
       font-size: 20px;
       line-height: 32px;
-      font-size: 600;
+      font-weight: 600;
     }
 
     h3 {
       font-size: 18px;
       line-height: 28px;
-      font-size: 600;
+      font-weight: 600;
     }
 
     ul,
@@ -348,7 +375,7 @@
 
   .command {
     white-space: nowrap;
-    margin-bottom: none;
+    margin-bottom: 0;
 
     &:before {
       content: "$ ";

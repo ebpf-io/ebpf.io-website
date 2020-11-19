@@ -1,5 +1,6 @@
 const path = require("path");
 const createPaginatedPages = require("gatsby-paginate");
+const _ = require('lodash');
 
 const createMetaPage = ({
   type,
@@ -10,7 +11,7 @@ const createMetaPage = ({
   pathPrefix
 }) => {
   const itemTemplate = path.resolve(itemPageTemplate);
-  const listTamplate = path.resolve(listPageTemplate);
+  const listTemplate = path.resolve(listPageTemplate);
 
   const map = {};
   const items = [];
@@ -29,7 +30,7 @@ const createMetaPage = ({
 
   createPage({
     path: `${pathPrefix}/`,
-    component: listTamplate,
+    component: listTemplate,
     context: { type, items }
   });
 
@@ -61,7 +62,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
+  const postTemplate = path.resolve(`src/templates/post.js`);
 
   return graphql(`
     {
@@ -90,39 +91,50 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
     const { edges } = result.data.allMarkdownRemark;
+    const allowedCategories = ['update', 'blog post']
+
+    edges.forEach(({ node }) => {
+      node.frontmatter.categories.forEach(category => {
+        if(!allowedCategories.includes(category.toLowerCase())) {
+          return Promise.reject(`Category - ${category} is not allowed in the posts`);
+        }
+      })
+    })
 
     createPaginatedPages({
       createPage,
       edges,
-      pageTemplate: path.resolve(`src/templates/blog.js`),
-      paginatePost: "/blog", // old field. not remove
-      pathPrefix: "/blog", // new field. not remove
+      pageTemplate: path.resolve(`src/templates/news.js`),
+      paginatePost: "/news", // old field. not remove
+      pathPrefix: "/news", // new field. not remove
       pageLength: 8
-    });
-
-    createMetaPage({
-      createPage,
-      edges,
-      type: "tags",
-      listPageTemplate: path.resolve(`src/templates/categories.js`),
-      itemPageTemplate: path.resolve(`src/templates/category.js`),
-      pathPrefix: "/blog/tags"
-    });
-
-    createMetaPage({
-      createPage,
-      edges,
-      type: "categories",
-      listPageTemplate: path.resolve(`src/templates/categories.js`),
-      itemPageTemplate: path.resolve(`src/templates/category.js`),
-      pathPrefix: "/blog/categories"
     });
 
     edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: blogPostTemplate,
+        component: postTemplate,
         context: {}
+      });
+    });
+
+    const tags = _(edges)
+      .map((item) => _.get(item, ['node', 'frontmatter', 'tags'], []))
+      .flatten()
+      .map((item) => item.toLowerCase().replace(' ', '-'))
+      .uniq()
+      .value();
+
+    tags.forEach(tag => {
+      const filteredEdges = edges.filter(({ node }) => node.frontmatter.tags.map(tag => tag.toLowerCase().replace(' ', '-')).includes(tag))
+
+      createPaginatedPages({
+        createPage,
+        edges: filteredEdges,
+        pageTemplate: path.resolve(`src/templates/news.js`),
+        paginatePost: `/news/tags/${tag}`, // old field. not remove
+        pathPrefix: `/news/tags/${tag}`, // new field. not remove
+        pageLength: 8
       });
     });
 
