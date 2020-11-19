@@ -1,5 +1,5 @@
 ---
-path: "/news/ebpf-updates"
+path: "/news/ebpf-updates-intro"
 date: "2020-11-19T10:00:00.000Z"
 title: "eBPF Updates #1"
 categories:
@@ -14,10 +14,10 @@ tags:
 
 Curious people, eBPF aficionados, kernel hackers, welcome! The eBPF Updates aim
 to be a regular publication providing news on the latest resources and
-developments in the eBPF world. This report is the first of the series,
-although it is in fact a reviving of the former
-[BPF Updates](https://cilium.io/blog/tags/bpf-updates) that once came out on
-Cilium's blog.
+developments in the eBPF world. This report is the first of the series. We will
+focus on the latest news over October and November 2020. From new tutorials to
+academic research and kernel discussions, everyone should find a good read or
+two!
 
 {{/preview}}
 
@@ -37,33 +37,33 @@ and kernel discussions, everyone should find a good read or two!
 
 ## Important News
 
-* The <https://ebpf.io/> website, hosting this post, launched this summer. It
+* The **<https://ebpf.io/>** website, hosting this post, launched this summer. It
   is a gateway to the eBPF world. Browse and learn about the basics, the use
   cases, the existing projects, get started or dive deeper into eBPF. If you
   landed on the current page without browsing the rest of the website, remember
   to plan a visit!
 
-* The eBPF Summit, first of its kind, took place at the end of October 2020.
+* The **eBPF Summit**, first of its kind, took place at the end of October 2020.
   The agenda and the links to the video are available on
   [the page of the Summit](https://ebpf.io/summit-2020/).
   There are also recaps available for
   [day 1](https://cilium.io/blog/2020/10/28/ebpf-summit-day-1) and
   [day 2](https://cilium.io/blog/2020/10/29/ebpf-summit-day-2).
   The bee mascot, representing all use cases for eBPF, was baptized during the
-  Summit: Please meet eBee!
+  Summit: Please meet **eBee**!
 
   ![eBee, the eBPF mascot](logo.png)
 
-* [Isovalent](https://www.isovalent.com/), the company behind
+* [**Isovalent**](https://www.isovalent.com/), the company behind
   [Cilium](https://cilium.io/), home of one of the eBPF maintainers, and one of
-  the biggest eBPF contributor and consumer, announced its $29M Series A
-  financing round backed by Andreessen Horowitz, Google, and Cisco. Here are
+  the biggest eBPF contributor and consumer, **announced its $29M Series A
+  financing round backed by Andreessen Horowitz, Google, and Cisco**. Here are
   the [announcement from the Cilium community](https://cilium.io/blog/2020/11/10/ebpf-future-of-networking/),
   the [TechCrunch interview](https://techcrunch.com/2020/11/10/with-29m-in-funding-isovalent-launches-its-cloud-native-networking-and-security-platform-based-on-ebpf-and-cilium/),
   or the [post on a16z's blog](https://a16z.com/2020/11/10/investing-in-isovalent/).
 
-* The same day, Cilium itself released
-  [version 1.9](https://cilium.io/blog/2020/11/10/cilium-19) of its software.
+* The same day, **Cilium** itself **released
+  [version 1.9](https://cilium.io/blog/2020/11/10/cilium-19)** of its software.
   The prominent new features include Maglev load-balancing, deny policies,
   support for virtual or baremetal machines, OpenShift support, mutual TLS
   (mTLS) automation for Hubble, a bandwidth manager, and eBPF node-local
@@ -86,7 +86,7 @@ and kernel discussions, everyone should find a good read or two!
   packet filters lineage, before concluding with some programming advice.
 
 * [_Inspecting python tools using eBPF_](https://devopsspiral.com/articles/linux/bcc-tools/),
-  from Michał Wcisło  
+  from Michał Wcisło.  
   To trace Python-based programs such as Ansible, this tutorial introduces a
   number of tools from the bcc project.
 
@@ -202,8 +202,8 @@ and kernel discussions, everyone should find a good read or two!
 
 ## The Kernel Side
 
-Andrii Nakryiko has been nominated as the third eBPF maintainer,
-congratulations!
+Andrii Nakryiko has been nominated as the third eBPF maintainer to help out on
+the eBPF tooling side, congratulations!
 ([link](https://lore.kernel.org/bpf/CAEf4BzYnFFgJhvRW6oSa+xCZs0oPH26W7hLofyhk5_v6ip25NQ@mail.gmail.com/t/#u))
 
 Here are some highlights from the first
@@ -285,7 +285,7 @@ process include:
 
 eBPF Updates are brought to you by the [Cilium project](https://cilium.io).
 This report was produced by Quentin Monnet, with contributions from Daniel
-Borkmann. Reviews are due to XXX.
+Borkmann. Thanks to the Cilium team for the reviews.
 
 If you would like to submit contributions for the next reports, please reach
-out [on Slack](https://ebpf.io/slack/), on the #ebpf channel!
+out [on Slack](https://ebpf.io/slack/), on the `#ebpf-news` channel!
