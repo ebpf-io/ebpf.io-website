@@ -263,10 +263,7 @@ class BlogRoll extends React.Component {
     {
       url: "https%3A%2F%2Fpchaigno.github.io%2Ffeed.xml",
       author: "Paul Chaignon",
-      filterBy: (post) =>
-        post.categories.some((category) =>
-          category.toLowerCase().includes("bpf")
-        ),
+      filterBy: (post) => post.title.toLowerCase().includes("bpf"),
     },
     {
       url: "https%3A%2F%2Fnakryiko.com%2Fatom.xml",

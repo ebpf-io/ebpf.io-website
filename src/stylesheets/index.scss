@@ -1036,38 +1036,12 @@ html.smooth-scroll {
               margin: 0;
               line-height: 24px;
               font-size: 24px;
-              &.link {
-                color: #508CF1;
-                transition: .2s ease-in;
-                cursor: pointer;
-                &:hover {
-                  opacity: .8;
-                }
-              }
             }
             & > .description {
               grid-column: 1;
               margin: 0;
               line-height: 24px;
               font-size: 16px;
-            }
-            & > .download-link {
-              grid-column: 1;
-              line-height: 24px;
-              font-size: 16px;
-              font-weight: 500;
-              text-decoration: none;
-              color: #508CF1;
-              transition: .2s ease-in;
-              cursor: pointer;
-              &:hover {
-                opacity: .8;
-              }
-              & > img {
-                margin-right: 6px;
-                vertical-align: sub;
-                display: inline-block;
-              }
             }
             & > .button {
               grid-column: 2;
@@ -1122,10 +1096,6 @@ html.smooth-scroll {
         color: #ffffff;
       }
       & > .list {
-        a.dark-link {
-          text-decoration: none;
-          color: #508CF1;
-        }
         margin-top: 25px;
         position: relative;
         display: grid;
@@ -1185,29 +1155,6 @@ html.smooth-scroll {
                     opacity: .8;
                   }
                 }
-                & .dark-link {
-                  text-decoration: none;
-                  color: #508CF1;
-                  transition: .2s ease-in;
-                  cursor: pointer;
-                  &:hover {
-                    opacity: .8;
-                  }
-                }
-                & .download-link {
-                  display: flex;
-                  align-items: center;
-                  text-decoration: none;
-                  color: #508CF1;
-                  transition: .2s ease-in;
-                  cursor: pointer;
-                  &:hover {
-                    opacity: .8;
-                  }
-                  & > img {
-                    margin-right: 6px;
-                  }
-                }
                 & > .more-button {
                   vertical-align: middle;
                   margin-left: 4px;
@@ -1241,14 +1188,15 @@ html.smooth-scroll {
                   z-index: 1;
                   left: 0;
                   right: 0;
-                  padding: 24px 40px 24px 24px;
+                  display: grid;
+                  column-gap: 16px;
+                  grid-template-columns: 1fr auto;
+                  align-items: start;
+                  padding: 24px;
                   background-color: #ffffff;
                   border-radius: 3px;
                   @media (min-width: 1024px) {
                     margin-top: 0;
-                  }
-                  & > .agenda-popup-bottom-links {
-                    margin-top: 18px;
                   }
                   & > .description {
                     margin: 0;
@@ -1274,9 +1222,6 @@ html.smooth-scroll {
                     }
                   }
                   & > .button {
-                    position: absolute;
-                    top: 24px;
-                    right: 24px;
                     display: flex;
                     place-items: center;
                     border: none;
@@ -1381,45 +1326,13 @@ html.smooth-scroll {
                 display: none;
               }
             }
-            & > .title {
-
-            }
-            & .link {
+            & > .link {
               text-decoration: none;
               color: #4385F5;
               transition: .2s ease-in;
               cursor: pointer;
               &:hover {
                 opacity: .8;
-              }
-            }
-            & .download-link {
-              margin-left: 6px;
-              text-decoration: none;
-              transition: .2s ease-in;
-              cursor: pointer;
-              &:hover {
-                opacity: .8;
-              }
-              & > img {
-                vertical-align: sub;
-              }
-            }
-            & .slides-link {
-              text-decoration: none;
-              color: #4385F5;
-              font-size: 12px;
-              width: 68px;
-              transition: .2s ease-in;
-              cursor: pointer;
-              &:hover {
-                opacity: .8;
-              }
-
-              @media (max-width: 768px) {
-                margin-top: 12px;
-                font-size: 14px;
-                width: 72px;
               }
             }
           }

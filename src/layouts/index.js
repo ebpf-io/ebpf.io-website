@@ -8,10 +8,10 @@ import "./header.scss";
 import "./index.css";
 import "./menu-icon.scss";
 
-const InfoDisclaimer = () => (		
-  <div className="introDisclaimer">		
+const InfoDisclaimer = () => (
+  <div className="introDisclaimer">
     <strong>eBPF Summit keynote and lightning talk videos are available.</strong> <a href="/summit-2020" style={{color: '#947927'}}>Watch Now!</a>
-  </div>		
+  </div>
 )
 
 const HeaderDesktop = () => (
@@ -20,8 +20,8 @@ const HeaderDesktop = () => (
       <img className="headerLogo" src={require("../assets/logo.png")} width="109px" height="38px" />
     </Link>
     <nav className="headerNav">
-      <Link to="/news">News</Link>
       <Link to="/what-is-ebpf">What is eBPF?</Link>
+      <Link to="/news">News</Link>
       <Link to="/projects">Projects</Link>
       <a href="/slack">Slack</a>
       <Link to="/contribute">Contribute</Link>
@@ -61,8 +61,8 @@ class HeaderMobile extends React.Component {
         </div>
         {opened && (
           <nav className="headerNav">
-            <Link to="/news">News</Link>
             <Link to="/what-is-ebpf">What is eBPF?</Link>
+            <Link to="/news">News</Link>
             <Link to="/projects">Projects</Link>
             <a href="/slack">Slack</a>
             <Link to="/contribute">Contribute</Link>
@@ -80,11 +80,11 @@ const FooterDesktop = () => (
   <div className="footer desktop">
     <div className="section">
       <div className="items">
-        <Link to="/news" className="item">
-          News
-        </Link>
         <Link to="/what-is-ebpf" className="item">
           What is eBPF?
+        </Link>
+        <Link to="/news" className="item">
+          News
         </Link>
         <Link to="/projects" className="item">
           Projects
