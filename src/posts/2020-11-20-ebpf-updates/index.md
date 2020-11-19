@@ -2,6 +2,8 @@
 path: "/news/ebpf-updates-intro"
 date: "2020-11-19T10:00:00.000Z"
 title: "eBPF Updates #1"
+tags:
+  - _
 categories:
   - Update
 ---
