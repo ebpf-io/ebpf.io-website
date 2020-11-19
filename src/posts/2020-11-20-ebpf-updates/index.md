@@ -1,7 +1,7 @@
 ---
 path: "/news/ebpf-updates"
 date: "2020-11-19T10:00:00.000Z"
-title: "eBPF Updates"
+title: "eBPF Updates #1"
 categories:
   - Update
 tags:
@@ -75,23 +75,23 @@ and kernel discussions, everyone should find a good read or two!
 ### Blog Posts
 
 * [_How eBPF Turns Linux into a Programmable Kernel_](https://thenewstack.io/how-ebpf-turns-linux-into-a-programmable-kernel/),
-  from Joab Jackson.
+  from Joab Jackson.  
   This is a high-level introduction to eBPF and to the role it plays in the
   Linux ecosystem, based after talks from KubeCon and DockerCon.
 
 * [_BPF, XDP, Packet Filters and UDP_](https://fly.io/blog/bpf-xdp-packet-filters-and-udp/),
-  from Thomas Ptacek.
+  from Thomas Ptacek.  
   This post is another introduction to eBPF and XDP, from a very different
-  angle. It provides historical context and вЂњ_more than you wanted to know_вЂќ on
+  angle. It provides historical context and “more than you wanted to know” on
   packet filters lineage, before concluding with some programming advice.
 
 * [_Inspecting python tools using eBPF_](https://devopsspiral.com/articles/linux/bcc-tools/),
-  from MichaЕ‚ WcisЕ‚o.
+  from Michał Wcisło  
   To trace Python-based programs such as Ansible, this tutorial introduces a
   number of tools from the bcc project.
 
 * [_BPF ring buffer_](https://nakryiko.com/posts/bpf-ringbuf/),
-  from Andrii Nakryiko.
+  from Andrii Nakryiko.  
   eBPF programs have been able to use the perf buffer to stream data to user
   space for some time. A new structure, the BPF ring buffer, addresses some
   shortcomings of the perf buffer (memory overhead, data ordering, wasted work
@@ -100,20 +100,20 @@ and kernel discussions, everyone should find a good read or two!
   usage in this article.
 
 * [_Full body HTTP request/responses tracing using eBPF_](https://blog.pixielabs.ai/ebpf-http-tracing/),
-  from Zain Asgar.
+  from Zain Asgar.  
   This is the second part of a series of posts explaining how to trace
   applications with eBPF, and this one focuses on extracting the body of HTTP
   traffic with programs attached to kprobes and uprobes.
 
 * [_Fuzzing for eBPF JIT bugs in the Linux kernel_](https://scannell.me/fuzzing-for-ebpf-jit-bugs-in-the-linux-kernel/),
-  from Simon Scannell.
+  from Simon Scannell.  
   Fuzzing tools are very helpful to discover bugs in software, and the eBPF
   subsystem is no exception. This write-up details the architecture and the
   generator used to build such a fuzzer, and explains how it let to the
   discovery of a kernel vulnerability. The kernel has been patched since then.
 
 * [_BPF binaries: BTF, CO-RE, and the future of BPF perf tools_](http://www.brendangregg.com/blog/2020-11-04/bpf-co-re-btf-libbpf.html),
-  from Brendan Gregg.
+  from Brendan Gregg.  
   Without entering too much into the technical details, Brendan exposes the
   principles of BTF (BPF Type Format) and CO-RE (Compile-Once, Run-Everywhere),
   which are two eBPF features enabling a far greater portability for eBPF
@@ -122,18 +122,18 @@ and kernel discussions, everyone should find a good read or two!
   of use cases.
 
 * [_What is eBPF and How Does it Work?_](https://gravitational.com/blog/what-is-ebpf/),
-  from Virag Mody.
+  from Virag Mody.  
   Part technical introduction, part tutorial, this article explains how eBPF
   works and how to leverage some of the bcc tools to monitor SSH sessions.
 
 * [_eBPF: Put the Kubernetes Data Plane in the Kernel_](https://thenewstack.io/ebpf-put-the-kubernetes-data-plane-in-the-kernel/),
-  from Joab Jackson.
+  from Joab Jackson.  
   Built on talks from the eBPF Summit, this post presents the motivations for
   implementing the Kubernetes dataplane with eBPF. Performance and scalability,
   network policies and observability are the most prominent gains.
 
 * [_eBPF - The Future of Networking & Security_](https://cilium.io/blog/2020/11/10/ebpf-future-of-networking/),
-  from Thomas Graf.
+  from Thomas Graf.  
   A summary of the recent evolution of networking: SDN, containers and
   Kubernetes, and the rise of eBPF. Cilium is emphasized as the ideal solution
   to bring eBPF-based networking, observability, and security to the
@@ -142,14 +142,14 @@ and kernel discussions, everyone should find a good read or two!
 ### Academic Research
 
 * [_Specification and verification in the field: Applying formal methods to BPF just-in-time compilers in the Linux kernel_](https://unsat.cs.washington.edu/papers/nelson-jitterbug.pdf),
-  from Luke Nelson _et al._
+  from Luke Nelson _et al._  
   Using a framework call Jitterbug, the authors have applied formal methods to
   the eBPF Just-In-Time (JIT) compilers in the kernel. They developed a new JIT
   compiler for 32-bit RISC-V, and found a number of bugs and optimizations in
   other JIT compilers, which made their way into the Linux kernel.
 
 * [_hXDP: Efficient Software Packet Processing on FPGA NICs_](https://arxiv.org/pdf/2010.14145.pdf),
-  from Marco Spaziani Brunella _et al._
+  from Marco Spaziani Brunella _et al._  
   hXDP is an eBPF hardware offload implementation for FPGA-based NICs. Through
   hardware functions, some additional compiler work, and custom optimizations,
   it achieves great performance, while leaving some space on the device for
@@ -158,13 +158,13 @@ and kernel discussions, everyone should find a good read or two!
   of the paper, by Paul Chaignon.
 
 * [_A Black-box Monitoring Approach to Measure Microservices Runtime Performance_](https://dl.acm.org/doi/10.1145/3418899),
-  from Rolando Brondolin _et al._
+  from Rolando Brondolin _et al._  
   This article presents the research works done with
   [DEEP-mon](https://github.com/necst/DEEP-mon), an eBPF-based monitoring tool
   to measure power consumption and performance of Docker containers.
 
 * [_xBGP: When You Can't Wait for the IETF and Vendors_](https://pluginized-protocols.org/xbgp/2020/11/05/xbgp-paper.html),
-  from Thomas Wirtgen _et al._
+  from Thomas Wirtgen _et al._  
   xBGP is a vendor-neutral API exposing the key data structures and functions
   for a BGP implementation, and where eBPF programs are used as plugins to add
   new BGP features. To demonstrate the feasibility, the authors implemented
@@ -190,11 +190,11 @@ and kernel discussions, everyone should find a good read or two!
 ### Sandbox and Experiments
 
 * [Liz Rice's _Beginner's Guide to eBPF_](https://github.com/lizrice/ebpf-beginners)
-  is a simple вЂњHello WorldвЂќ eBPF program demonstrated during conferences and
+  is a simple “Hello World” eBPF program demonstrated during conferences and
   designed to help newcomers familiarize themselves with eBPF.
 
 * [greeter-bpf](https://github.com/fujita/greeter-bpf) is an implementation of
-  a gRPC GreeterServer in eBPF вЂњjust for funвЂќ, but actually for benchmarks,
+  a gRPC GreeterServer in eBPF “just for fun”, but actually for benchmarks,
   too.
 
 * [rbperf](https://github.com/facebookexperimental/rbperf/) is an
@@ -211,7 +211,7 @@ Here are some highlights from the first
 for the 5.11 cycle:
 
 - Extend BTF infrastructure in the kernel to support loading and validation of
-  вЂњsplit BTF objectsвЂќ. This is a prerequisite for generating BTF for kernel
+  “split BTF objects”. This is a prerequisite for generating BTF for kernel
   modules.
   (Andrii Nakryiko,
   [link](https://lore.kernel.org/bpf/20201105043402.2530976-1-andrii@kernel.org/t/#u))
@@ -268,7 +268,7 @@ a few weeks ago.
 
 In other news, development for the Linux networking (netdev) and eBPF
 subsystems moved their Patchwork instance (for patch tracking) from Ozlabs to a
-new вЂњ[Netdev + BPF](https://patchwork.kernel.org/project/netdevbpf/list/)вЂќ
+new “[Netdev + BPF](https://patchwork.kernel.org/project/netdevbpf/list/)”
 instance managed by the kernel community. The advantages obtained in the
 process include:
 

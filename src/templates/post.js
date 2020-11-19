@@ -45,6 +45,7 @@ export const Post = ({ post, full }) => {
   return (
     <div className="blog-post" key={post.id}>
       <header className="blog-header">
+        <span className="blog-date">{formatPostDate(post)}</span>
         <h1 className="blog-title">
           <img
             alt="Title icon"
