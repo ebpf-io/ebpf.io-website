@@ -83,6 +83,7 @@ export default function Template({ data }) {
   const pageMetaTitle = `eBPF - ${post.frontmatter.title}`
   const pageMetaDescription = previewDescription
   const pageLink = `https://ebpf.io${post.frontmatter.path}`
+  const pageMetaImageUrl = 'https://ebpf.io' + require("../assets/ogimage-news.png")
   return (
     <Layout>
       <div className="blog-post-container">
@@ -96,12 +97,12 @@ export default function Template({ data }) {
             {name: "title", property: "og:title", content: pageMetaTitle},
             {name: "description", property: "og:description", content: pageMetaDescription},
             {name: "description", content: pageMetaDescription},
-            {name: "image", property: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+            {name: "image", property: "og:image", content: pageMetaImageUrl},
             {name: "twitter:card", content: "summary_large_image"},
             {name: "twitter:url", content: pageLink},
             {name: "twitter:title", content: pageMetaTitle},
             {name: "twitter:description", content: pageMetaDescription},
-            {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+            {name: "twitter:image", content: pageMetaImageUrl},
           ]}
         />
         <Post full post={post} />
