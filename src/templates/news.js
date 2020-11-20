@@ -15,6 +15,7 @@ export default function NewsIndex({ data, pageContext }) {
   const nextUrl = (index + 1).toString();
   const pageMetaTitle = 'eBPF - News and updates'
   const pageMetaDescription = 'The latest news, updates and articles covering eBPF and related topics.'
+  const pageMetaImageUrl = 'https://ebpf.io' + require("../assets/ogimage-news.png")
   return (
     <Layout>
       <div className="blog-posts">
@@ -28,12 +29,12 @@ export default function NewsIndex({ data, pageContext }) {
             {name: "title", property: "og:title", content: pageMetaTitle},
             {name: "description", property: "og:description", content: pageMetaDescription},
             {name: "description", content: pageMetaDescription},
-            {name: "image", property: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+            {name: "image", property: "og:image", content: pageMetaImageUrl},
             {name: "twitter:card", content: "summary_large_image"},
             {name: "twitter:url", content: "https://ebpf.io/news"},
             {name: "twitter:title", content: pageMetaTitle},
             {name: "twitter:description", content: pageMetaDescription},
-            {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+            {name: "twitter:image", content: pageMetaImageUrl},
           ]}
         >
           <link
