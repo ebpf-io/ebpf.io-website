@@ -35,16 +35,15 @@ and kernel discussions, everyone should find a good read or two!
 
 ## Important News
 
-* The **<https://ebpf.io/>** website, hosting this post, launched this summer. It
-  is a gateway to the eBPF world. Browse and learn about the basics, the use
-  cases, the existing projects, get started or dive deeper into eBPF. If you
-  landed on the current page without browsing the rest of the website, remember
-  to plan a visit!
+* The **[ebpf.io](https://ebpf.io/)** website, hosting this post, launched this
+  summer. It is a gateway to the eBPF world. Browse and learn about the basics,
+  the use cases, the existing projects, get started or dive deeper into eBPF.
+  If you landed on the current page without browsing the rest of the website,
+  remember to plan a visit!
 
-* The **eBPF Summit**, first of its kind, took place at the end of October 2020.
-  The agenda and the links to the video are available on
-  [the page of the Summit](https://ebpf.io/summit-2020/).
-  There are also recaps available for
+* The **[eBPF Summit](https://ebpf.io/summit-2020/)**, first of its kind, took
+  place at the end of October 2020. The agenda and the links to the videos are
+  available on the page of the Summit. There are also recaps available for
   [day 1](https://cilium.io/blog/2020/10/28/ebpf-summit-day-1) and
   [day 2](https://cilium.io/blog/2020/10/29/ebpf-summit-day-2).
   The bee mascot, representing all use cases for eBPF, was baptized during the
@@ -212,9 +211,10 @@ and kernel discussions, everyone should find a good read or two!
 
 ## The Kernel Side
 
-Andrii Nakryiko has been nominated as the third eBPF maintainer to help out on
-the eBPF tooling side, congratulations!
-([link](https://lore.kernel.org/bpf/CAEf4BzYnFFgJhvRW6oSa+xCZs0oPH26W7hLofyhk5_v6ip25NQ@mail.gmail.com/t/#u))
+Andrii Nakryiko
+[has been nominated](https://lore.kernel.org/bpf/CAEf4BzYnFFgJhvRW6oSa+xCZs0oPH26W7hLofyhk5_v6ip25NQ@mail.gmail.com/t/#u)
+as the third eBPF maintainer to help out on the eBPF tooling side.
+Congratulations!
 
 Here are some highlights from the first
 [pull request for the bpf-next tree](https://lore.kernel.org/bpf/20201114020819.29584-1-daniel@iogearbox.net/t/#u)
@@ -233,9 +233,9 @@ for the 5.11 cycle:
   [link](https://lore.kernel.org/bpf/20201111031213.25109-1-alexei.starovoitov@gmail.com/t/#u))
 
 - Implement a new map type `BPF_MAP_TYPE_TASK_STORAGE`, providing local storage
-  for `task_struct` for the eBPF LSM. This also result in the addition of three
-  new eBPF helpers: `bpf_task_storage_get()`, `bpf_task_storage_delete()`, and
-  `bpf_get_current_task_btf()`.
+  for `task_struct` for the eBPF LSM. This also results in the addition of
+  three new eBPF helpers: `bpf_task_storage_get()`,
+  `bpf_task_storage_delete()`, and `bpf_get_current_task_btf()`.
   (KP Singh,
   [link](https://lore.kernel.org/bpf/20201106103747.2780972-1-kpsingh@chromium.org/t/#u))
 
@@ -294,9 +294,8 @@ process include:
 ## Credits
 
 eBPF Updates are brought to you by the [Cilium project](https://cilium.io).
-This report was produced by Quentin Monnet
-(Isovalent), with significant contributions from Daniel Borkmann. Thanks to
-Cilium engineering team for input and reviews.
+This report was produced by Quentin Monnet (Isovalent). Thanks to Cilium
+engineering team for input and reviews.
 
 If you would like to submit contributions for the next report, please submit
-them via the `#ebpf-news` channel on the [eBPF Slack](https://ebpf.io/slack/).
+them via **the `#ebpf-news` channel on [eBPF Slack](https://ebpf.io/slack/)**.
