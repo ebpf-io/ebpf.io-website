@@ -141,8 +141,8 @@ module.exports = {
                 }
               }
             `,
-            output: "/blog/rss.xml",
-            title: "eBPF.io / Blog"
+            output: "/news/rss.xml",
+            title: "eBPF.io / News"
           }
         ]
       }
