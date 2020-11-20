@@ -8,24 +8,25 @@ import "./header.scss";
 import "./index.css";
 import "./menu-icon.scss";
 
-const InfoDisclaimer = () => (		
-  <div className="introDisclaimer">		
+const InfoDisclaimer = () => (
+  <div className="introDisclaimer">
     <strong>eBPF Summit keynote and lightning talk videos are available.</strong> <a href="/summit-2020" style={{color: '#947927'}}>Watch Now!</a>
-  </div>		
+  </div>
 )
 
 const HeaderDesktop = () => (
   <div className="header desktop">
     <Link to="/" className="headerLogoLink">
-      <img className="headerLogo" src={require("../assets/logo.png")} />
+      <img className="headerLogo" src={require("../assets/logo.png")} width="109px" height="38px" />
     </Link>
     <nav className="headerNav">
       <Link to="/what-is-ebpf">What is eBPF?</Link>
+      <Link to="/news">News</Link>
       <Link to="/projects">Projects</Link>
       <a href="/slack">Slack</a>
       <Link to="/contribute">Contribute</Link>
       <a href="https://www.cilium.io">
-        <img src={require("../assets/cilium_logo.png")} height="50px" />
+        <img src={require("../assets/cilium_logo.png")} width="46px" height="50px" />
       </a>
     </nav>
   </div>
@@ -47,7 +48,7 @@ class HeaderMobile extends React.Component {
       <div className="header mobile">
         <div className="row">
           <Link to="/" className="headerLogoLink">
-            <img className="headerLogo" src={require("../assets/logo.png")} />
+            <img className="headerLogo" src={require("../assets/logo.png")} width="109px" height="38px" />
           </Link>
           <div
             className={`menu-icon ${opened && "open"}`}
@@ -61,6 +62,7 @@ class HeaderMobile extends React.Component {
         {opened && (
           <nav className="headerNav">
             <Link to="/what-is-ebpf">What is eBPF?</Link>
+            <Link to="/news">News</Link>
             <Link to="/projects">Projects</Link>
             <a href="/slack">Slack</a>
             <Link to="/contribute">Contribute</Link>
@@ -80,6 +82,9 @@ const FooterDesktop = () => (
       <div className="items">
         <Link to="/what-is-ebpf" className="item">
           What is eBPF?
+        </Link>
+        <Link to="/news" className="item">
+          News
         </Link>
         <Link to="/projects" className="item">
           Projects

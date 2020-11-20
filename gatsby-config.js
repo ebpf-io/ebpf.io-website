@@ -12,6 +12,17 @@ module.exports = {
     "gatsby-plugin-netlify",
     "gatsby-plugin-nprogress",
     {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        base64Width: 20,
+        forceBase64Format: `png`,
+        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+        stripMetadata: true,
+        defaultQuality: 50,
+        failOnError: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-96283704-3",
