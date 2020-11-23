@@ -982,8 +982,7 @@ const Hero = () => (
       </div>
 
       <p className="description">
-        eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers <b>has ended</b>.<br/>
-        Thank you for joining us!
+        eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers now available <strong>on demand</strong>.<br/>
       </p>
 
       <div className="space" />
@@ -1022,9 +1021,9 @@ const AboutOld = () => (
 
 const About = () => (
   <div className="summit-about">
-    <div className="wrapper">
-      <h2 className="title">Talks</h2>
-      <p className="description">Video recordings of each talk from eBPF Summit will be available on the <a href="https://www.youtube.com/channel/UCJFUxkVQTBJh3LD1wYBWvuQ/featured">eBPF YouTube channel</a>. Subscribe to be notified on release!</p>
+    <div className="wrapper" style={{textAlign: 'center'}}>
+      <h2 className="title">eBPF Summit On Demand</h2>
+      <p className="description">Watch the eBPF Summit in it's entirety or scroll down to the Agenda and Lighting Talk sections below to find links for each individual talk.</p>
       <p className="description"><strong>Day 1:</strong> <a href="https://youtu.be/1GSgyvn4N7E">watch full replay</a>, <a href="https://cilium.io/blog/2020/10/28/ebpf-summit-day-1">recap</a></p>
       <p className="description"><strong>Day 2:</strong> <a href="https://youtu.be/jw8tEPP6jwQ">watch full replay</a>, <a href="https://cilium.io/blog/2020/10/29/ebpf-summit-day-2">recap</a></p>
     </div>
