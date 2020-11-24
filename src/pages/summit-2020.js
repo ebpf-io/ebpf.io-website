@@ -1098,15 +1098,22 @@ const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescriptio
       <h4 className={cn('title', {'link': !!showVideo})} onClick={showVideoAndClosePopup}>{aboutTitle}</h4>
       {aboutDescription.map((description, idx) => <p className="description" key={idx}>{description}</p>)}
 
-      {!!slidesLink && <a className="download-link" href={slidesLink}>
-        <img
-          alt="PDF download icon"
-          src={require('../assets/pdf-file.svg')}
-          width={18}
-        />
+      <div className="video-slides-container">
+        {!!showVideo && <button className="download-link video-button" onClick={showVideoAndClosePopup}>
+          <img alt="Show video icon" src={require('../assets/youtube-icon.svg')} width={18} />
+          Watch full replay
+        </button>}
 
-        View slides
-      </a>}
+        {!!slidesLink && <a className="download-link" href={slidesLink}>
+          <img
+            alt="PDF download icon"
+            src={require('../assets/pdf-file.svg')}
+            width={18}
+          />
+
+          View slides
+        </a>}
+      </div>
 
       <button aria-label="Close" className="button" onClick={resetSelectedCardIdx} type="button">
         <img alt="Close" aria-hidden className="icon" src={require("../assets/summit-2020/icon-close.svg")} />
@@ -1147,8 +1154,17 @@ const Keynotes = () => {
   </div>
 };
 
-const AgendaItemPopup = ({ description, hidePopup, slidesLink }) => {
+const AgendaItemPopup = ({ description, hidePopup, showVideo, slidesLink }) => {
   const popupRef = useRef(null)
+
+  const showVideoAndClosePopup = useCallback(
+    () => {
+      hidePopup();
+      showVideo();
+    },
+
+    [],
+  )
 
   useEffect(
     () => {
@@ -1177,12 +1193,17 @@ const AgendaItemPopup = ({ description, hidePopup, slidesLink }) => {
   return <div className="popup" ref={popupRef}>
     <div className="description">{description}</div>
 
-    {!!slidesLink && <div className="agenda-popup-bottom-links">
-      <a className="download-link" href={slidesLink} target="_blank">
+    <div className="agenda-popup-bottom-links">
+      {!!showVideo && <button className="download-link video-button" onClick={showVideoAndClosePopup}>
+        <img alt="Show video icon" src={require('../assets/youtube-icon.svg')} width={18} />
+        Watch full replay
+      </button>}
+
+      {!!slidesLink && <a className="download-link" href={slidesLink} target="_blank">
         <img alt="PDF download icon" src={require('../assets/pdf-file.svg')} width={22} />
         View slides
-      </a>
-    </div>}
+      </a>}
+    </div>
 
     <button aria-label="Close" className="button" onClick={hidePopup} type="button">
       <img alt="Close" aria-hidden className="icon" src={require("../assets/summit-2020/icon-close.svg")} />
@@ -1217,7 +1238,12 @@ const AgendaItem = ({ author, description, showVideo, slidesLink, time, title })
           {isPopupShown && <div className="triangle" />}
         </div>
 
-        {isPopupShown && <AgendaItemPopup description={description} hidePopup={hidePopup} slidesLink={slidesLink} />}
+        {isPopupShown && <AgendaItemPopup
+          description={description}
+          hidePopup={hidePopup}
+          showVideo={showVideo}
+          slidesLink={slidesLink}
+        />}
       </>}
     </dd>
   </dl>
@@ -1299,6 +1325,10 @@ const LightningTalksSchedule = () => {
               <span className={cn({'link': !!videoId})}  onClick={!!videoId ? () => showModalVideo(videoId) : null}>
                 {title}
               </span>
+
+              {!!videoId && <button className="video-button" onClick={!!videoId ? () => showModalVideo(videoId) : null}>
+                <img alt="Show video icon" src={require('../assets/youtube-icon.svg')} width={18} />
+              </button>}
 
               {!!slidesLink && <a className="download-link" href={slidesLink}>
                 <img
