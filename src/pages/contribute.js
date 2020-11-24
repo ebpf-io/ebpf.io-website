@@ -68,7 +68,7 @@ const Page = () => (
         to additional hooks, adding new program types, improvements to the eBPF
         verifier, adding JIT support for additional CPU architectures, extending
         the set of BPF helpers, adding new test cases to BPF's test infrastructure,
-        or improvements to bpftool and libbpf. See <a href="/projects#kernel">Linux
+        or improvements to bpftool and libbpf. See <a href="/projects#linux-kernel">Linux
         kernel eBPF runtime</a> for additional details.
       </p>
 
