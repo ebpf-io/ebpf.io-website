@@ -444,6 +444,24 @@ code {
   }
 }
 
+.projects-common-title {
+  position: relative;
+  padding-top: 8px;
+
+  & > .anchor {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity .2s ease-in;
+    transform: translateX(-100%);
+    padding-right: 4px;
+  }
+
+  &:hover > .anchor {
+    opacity: 1;
+  }
+}
+
 .page-projects {
   .projects-title {
     margin-top: 92px;
@@ -459,7 +477,9 @@ code {
 
   .project-major-title {
     margin-top: 20px;
+    margin-bottom: 0;
     font-size: 46px;
+    line-height: 22px;
     font-weight: 700;
 
     @media #{$tablet} {
@@ -488,6 +508,7 @@ code {
     margin-top: 0px;
     margin-bottom: 20px;
     padding: 40px;
+    padding-top: 32px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 

@@ -1,3 +1,4 @@
+import cn from "classnames";
 import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
@@ -61,13 +62,45 @@ const RequirementsList = () => (
   </ul>
 );
 
+const Title = ({ className, header = 'h2', title }) => {
+  const titleNormalized = title.toLowerCase().replace(' ', '-')
+
+  const children = <>
+    <a aria-label={`${title} permalink`} className="anchor" href={`#${titleNormalized}`}>
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        height="24"
+        version="1.1"
+        viewBox="0 0 16 16"
+        width="24"
+      >
+        <path
+          fillRule="evenodd"
+          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+        />
+      </svg>
+    </a>
+    { title }
+  </>
+
+  if(header === 'h3') {
+    return <h3 className={cn(className, 'projects-common-title')} id={titleNormalized}>
+      {children}
+    </h3>
+  }
+
+  return <h2 className={cn(className, 'projects-common-title')} id={titleNormalized}>
+    {children}
+  </h2>
+}
+
 const ProjectDescriptions = () => (
   <div className="project-descriptions">
-    <div className="projects-title">Major Projects</div>
+    <Title className="projects-title" title="Major Projects" />
 
     <div className="project-box">
-      <a name="bcc" />
-      <div className="project-major-title">bcc</div>
+      <Title className="project-major-title" header="h3" title="bcc" />
       <div className="project-minor-title">
         Toolkit and library for efficient BPF-based kernel tracing
       </div>
@@ -98,8 +131,7 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
-      <a name="bpftrace" />
-      <div className="project-major-title">bpftrace</div>
+      <Title className="project-major-title" header="h3" title="bpftrace" />
       <div className="project-minor-title">
         High-level tracing language for Linux eBPF
       </div>
@@ -135,8 +167,7 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
-      <a name="cilium" />
-      <div className="project-major-title">Cilium</div>
+      <Title className="project-major-title" header="h3" title="Cilium" />
       <div className="project-minor-title">
         eBPF-based Networking, Security, and Observability
       </div>
@@ -170,8 +201,7 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
-      <a name="falco" />
-      <div className="project-major-title">Falco</div>
+      <Title className="project-major-title" header="h3" title="Falco" />
       <div className="project-minor-title">Cloud Native Runtime Security</div>
       <div className="project-body">
         <a
@@ -202,9 +232,9 @@ const ProjectDescriptions = () => (
         </div>
       </div>
     </div>
+
     <div className="project-box">
-      <a name="katran" />
-      <div className="project-major-title">Katran</div>
+      <Title className="project-major-title" header="h3" title="Katran" />
       <div className="project-minor-title">
         A high performance layer 4 load balancer
       </div>
@@ -238,11 +268,10 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
-    <div className="projects-title">Core Infrastructure</div>
+    <Title className="projects-title" header="h2" title="Core Infrastructure" />
 
     <div className="project-box">
-      <a name="kernel" />
-      <div className="project-major-title">Linux Kernel</div>
+      <Title className="project-major-title" header="h3" title="Linux Kernel" />
       <div className="project-minor-title">eBPF Runtime</div>
       <div className="project-body">
         <a
@@ -289,8 +318,7 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
-      <a name="llvm" />
-      <div className="project-major-title">LLVM Compiler</div>
+      <Title className="project-major-title" header="h3" title="LLVM Compiler" />
       <div className="project-minor-title">eBPF Backend</div>
       <div className="project-body">
         <a className="project-logo" target="_blank" href="https://llvm.org/">
@@ -320,7 +348,7 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
-    <div className="projects-title">eBPF Libraries</div>
+    <Title className="projects-title" header="h2" title="eBPF Libraries" />
 
     <div className="project-box">
       <a name="golang" />
@@ -409,11 +437,10 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
-    <div className="projects-title">Emerging Projects</div>
+    <Title className="projects-title" header="h2" title="Emerging Projects" />
 
     <div className="project-box">
-      <a name="hubble" />
-      <div className="project-major-title">Hubble</div>
+      <Title className="project-major-title" header="h3" title="Hubble" />
       <div className="project-minor-title">
         Network, Service &amp; Security Observability for Kubernetes using eBPF
       </div>
@@ -447,8 +474,7 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
-      <a name="kubectl-trace" />
-      <div className="project-major-title">kubectl trace</div>
+      <Title className="project-major-title" header="h3" title="kubectl trace" />
       <div className="project-minor-title">
         Schedule bpftrace programs on your Kubernetes cluster
       </div>
@@ -479,8 +505,7 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
-      <a name="ply" />
-      <div className="project-major-title">ply</div>
+      <Title className="project-major-title" header="h3" title="ply" />
       <div className="project-minor-title">A dynamic tracer for Linux</div>
       <div className="project-body">
         <a
@@ -513,8 +538,7 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
-      <a name="tracee" />
-      <div className="project-major-title">Tracee</div>
+      <Title className="project-major-title" header="h3" title="Tracee" />
       <div className="project-minor-title">Dynamic Security Event Tracing</div>
       <div className="project-body">
         <a
@@ -561,7 +585,7 @@ const Page = () => (
         ]}
       />
       <ProjectDescriptions />
-      <div className="projects-title">FAQ</div>
+      <Title className="projects-title" header="h2" title="FAQ" />
       <h3>Add your project</h3>
       <HowToList />
       <h3>Are you maintaining a listed project?</h3>
