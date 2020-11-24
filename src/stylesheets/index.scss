@@ -446,7 +446,6 @@ code {
 
 .projects-common-title {
   position: relative;
-  padding-top: 8px;
 
   & > .anchor {
     position: absolute;
@@ -455,6 +454,11 @@ code {
     transition: opacity .2s ease-in;
     transform: translateX(-100%);
     padding-right: 4px;
+
+    svg {
+      vertical-align: top;
+      margin-top: 90%;
+    }
   }
 
   &:hover > .anchor {
@@ -476,10 +480,10 @@ code {
   }
 
   .project-major-title {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 0;
     font-size: 46px;
-    line-height: 22px;
+    line-height: 64px;
     font-weight: 700;
 
     @media #{$tablet} {
@@ -493,7 +497,6 @@ code {
   }
 
   .project-minor-title {
-    margin-top: 20px;
     font-size: 22px;
     font-weight: 500;
     padding-bottom: 20px;
