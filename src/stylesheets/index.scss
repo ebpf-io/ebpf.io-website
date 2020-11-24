@@ -1051,22 +1051,46 @@ html.smooth-scroll {
               line-height: 24px;
               font-size: 16px;
             }
-            & > .download-link {
+            & > .video-slides-container {
               grid-column: 1;
-              line-height: 24px;
-              font-size: 16px;
-              font-weight: 500;
-              text-decoration: none;
-              color: #508CF1;
-              transition: .2s ease-in;
-              cursor: pointer;
-              &:hover {
-                opacity: .8;
-              }
-              & > img {
-                margin-right: 6px;
-                vertical-align: sub;
+              display: grid;
+              grid-auto-flow: row;
+              row-gap: 8px;
+              justify-content: start;
+              align-items: center;
+              column-gap: 6px;
+              & > .video-button {
                 display: inline-block;
+                height: 100%;
+                transition: .2s ease-in;
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                &:hover {
+                  opacity: .8;
+                }
+                & > img {
+                  display: inline-block;
+                  vertical-align: sub;
+                }
+              }
+              & > .download-link {
+                display: block;
+                line-height: 24px;
+                font-size: 16px;
+                font-weight: 500;
+                text-decoration: none;
+                color: #508CF1;
+                transition: .2s ease-in;
+                cursor: pointer;
+                &:hover {
+                  opacity: .8;
+                }
+                & > img {
+                  margin-right: 6px;
+                  vertical-align: sub;
+                  display: inline-block;
+                }
               }
             }
             & > .button {
@@ -1194,20 +1218,6 @@ html.smooth-scroll {
                     opacity: .8;
                   }
                 }
-                & .download-link {
-                  display: flex;
-                  align-items: center;
-                  text-decoration: none;
-                  color: #508CF1;
-                  transition: .2s ease-in;
-                  cursor: pointer;
-                  &:hover {
-                    opacity: .8;
-                  }
-                  & > img {
-                    margin-right: 6px;
-                  }
-                }
                 & > .more-button {
                   vertical-align: middle;
                   margin-left: 4px;
@@ -1248,7 +1258,44 @@ html.smooth-scroll {
                     margin-top: 0;
                   }
                   & > .agenda-popup-bottom-links {
+                    display: grid;
+                    grid-auto-flow: row;
+                    row-gap: 8px;
+                    justify-content: start;
+                    align-items: center;
+                    column-gap: 6px;
                     margin-top: 18px;
+                    & > .video-button {
+                      display: inline-block;
+                      height: 100%;
+                      transition: .2s ease-in;
+                      cursor: pointer;
+                      border: none;
+                      background: transparent;
+                      &:hover {
+                        opacity: .8;
+                      }
+                      & > img {
+                        display: inline-block;
+                        vertical-align: sub;
+                      }
+                    }
+                    & .download-link {
+                      display: flex;
+                      align-items: center;
+                      text-decoration: none;
+                      color: #508CF1;
+                      transition: .2s ease-in;
+                      font-size: 16px;
+                      font-weight: 500;
+                      cursor: pointer;
+                      &:hover {
+                        opacity: .8;
+                      }
+                      & > img {
+                        margin-right: 6px;
+                      }
+                    }
                   }
                   & > .description {
                     margin: 0;
@@ -1382,27 +1429,41 @@ html.smooth-scroll {
               }
             }
             & > .title {
-
-            }
-            & .link {
-              text-decoration: none;
-              color: #4385F5;
-              transition: .2s ease-in;
-              cursor: pointer;
-              &:hover {
-                opacity: .8;
+              & > .link {
+                text-decoration: none;
+                color: #4385F5;
+                transition: .2s ease-in;
+                cursor: pointer;
+                &:hover {
+                  opacity: .8;
+                }
               }
-            }
-            & .download-link {
-              margin-left: 6px;
-              text-decoration: none;
-              transition: .2s ease-in;
-              cursor: pointer;
-              &:hover {
-                opacity: .8;
+              & > .video-button {
+                margin-left: 6px;
+                display: inline-block;
+                transition: .2s ease-in;
+                height: 100%;
+                cursor: pointer;
+                border: none;
+                background: transparent;
+                &:hover {
+                  opacity: .8;
+                }
+                & > img {
+                  vertical-align: sub;
+                }
               }
-              & > img {
-                vertical-align: sub;
+              & > .download-link {
+                margin-left: 6px;
+                text-decoration: none;
+                transition: .2s ease-in;
+                cursor: pointer;
+                &:hover {
+                  opacity: .8;
+                }
+                & > img {
+                  vertical-align: sub;
+                }
               }
             }
             & .slides-link {
