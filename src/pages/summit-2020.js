@@ -117,7 +117,7 @@ const speakers = [
         <>As large-scale Kubernetes end-users, Datadog has grown through many technical challenges of running thousands of nodes and tens of thousands of pods. eBPF has been key to scaling our networking, and promises further improvements. Additionally, eBPF is providing the means to build new capabilities in our products. Laurent and Tabitha will share some of this history, thoughts on Datadog's current utilization of eBPF, and hopes for the future.</>,
       ],
 
-      videoId: "6mTVuZUHLBg"
+      videoId: "6nlv_VCsjpQ"
     }
   },
   {
@@ -154,7 +154,7 @@ const speakers = [
         <>As large-scale Kubernetes end-users, Datadog has grown through many technical challenges of running thousands of nodes and tens of thousands of pods. eBPF has been key to scaling our networking, and promises further improvements. Additionally, eBPF is providing the means to build new capabilities in our products. Laurent and Tabitha will share some of this history, thoughts on Datadog's current utilization of eBPF, and hopes for the future.</>,
       ],
 
-      videoId: "6mTVuZUHLBg"
+      videoId: "6nlv_VCsjpQ"
     }
   },
   {
@@ -246,7 +246,7 @@ const agenda = [
           <p>As large-scale Kubernetes end-users, Datadog has grown through many technical challenges of running thousands of nodes and tens of thousands of pods. eBPF has been key to scaling our networking, and promises further improvements. Additionally, eBPF is providing the means to build new capabilities in our products. Laurent and Tabitha will share some of this history, thoughts on Datadog's current utilization of eBPF, and hopes for the future.</p>
         </>,
 
-        videoId: "6mTVuZUHLBg"
+        videoId: "6nlv_VCsjpQ"
       },
 
       {
