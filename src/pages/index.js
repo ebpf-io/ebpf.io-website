@@ -270,6 +270,11 @@ class BlogRoll extends React.Component {
       author: "Andrii Nakryiko",
       filterBy: (post) => post.title.toLowerCase().includes("bpf") || post.title.toLowerCase().includes("btf"),
     },
+    {
+      url: "https%3A%2F%2Fen.pingcap.com%2Fblog%2Findex.xml",
+      author: "Wenbo Zhang",
+      filterBy: (post) => post.title.toLowerCase().includes("bpf"),
+    }
   ];
 
   constructor(props) {
