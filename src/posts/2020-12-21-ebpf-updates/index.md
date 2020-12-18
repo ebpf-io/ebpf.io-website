@@ -123,9 +123,9 @@ growing every day.
 * [_Cilium & eBPF - From Device to Service-Centric Networking_](https://docs.google.com/presentation/d/1cB4rJcdxTolIIUy5IEcb9iiUJHlMNmyT7c5eYY9D5LU/edit?usp=sharing),
   from Thomas Graf.  
   Presented at NAG (Network Architecture Geeks) Cafe in December. Thomas
-  outlines how eBPF allows to to build powerful service-centric networking
-  models and how to evolve awway from the old device-centric networking model
-  to better meet requirements of containers and cloud-native environments.
+  outlines how eBPF allows to build powerful service-centric networking models
+  and how to evolve away from the old device-centric networking model to meet
+  requirements of containers and cloud-native environments.
 
 * [_Building an Esoteric Filesystem Tracing Tool with eBPF_](https://suchakra.wordpress.com/2020/11/20/building-an-esoteric-filesystem-tracing-tool-with-ebpf/),
   from Suchakra Sharma.  
@@ -160,7 +160,7 @@ growing every day.
 
 * [_Weight support for Cilium's eBPF-based Maglev impementation_](https://github.com/cilium/cilium/pull/13943),
   from Fankaixi Li.  
-  A new PR from an engineer at ByteDance (TikTok) popped up, adding weight
+  A new PR by a software engineer at ByteDance (TikTok) popped up, adding weight
   support to the eBPF-based Maglev implementation in Cilium. The feature is
   still being discussed but should land soon.
 
