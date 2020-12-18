@@ -13,7 +13,7 @@ export default function NewsIndex({ data, pageContext }) {
   const { group, index, first, last } = pageContext;
   const prevUrl = index - 1 == 1 ? "" : (index - 1).toString();
   const nextUrl = (index + 1).toString();
-  const pageMetaTitle = 'eBPF - News and updates'
+  const pageMetaTitle = 'eBPF - Blog'
   const pageMetaDescription = 'The latest news, updates and articles covering eBPF and related topics.'
   const pageMetaImageUrl = 'https://ebpf.io' + require("../assets/ogimage-news.png")
   return (
