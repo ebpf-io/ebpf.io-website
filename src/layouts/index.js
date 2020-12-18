@@ -21,7 +21,7 @@ const HeaderDesktop = () => (
     </Link>
     <nav className="headerNav">
       <Link to="/what-is-ebpf">What is eBPF?</Link>
-      <Link to="/news">Blog</Link>
+      <Link to="/blog">Blog</Link>
       <Link to="/projects">Projects</Link>
       <a href="/slack">Slack</a>
       <Link to="/contribute">Contribute</Link>
@@ -62,7 +62,7 @@ class HeaderMobile extends React.Component {
         {opened && (
           <nav className="headerNav">
             <Link to="/what-is-ebpf">What is eBPF?</Link>
-            <Link to="/news">Blog</Link>
+            <Link to="/blog">Blog</Link>
             <Link to="/projects">Projects</Link>
             <a href="/slack">Slack</a>
             <Link to="/contribute">Contribute</Link>
@@ -83,7 +83,7 @@ const FooterDesktop = () => (
         <Link to="/what-is-ebpf" className="item">
           What is eBPF?
         </Link>
-        <Link to="/news" className="item">
+        <Link to="/blog" className="item">
           Blog
         </Link>
         <Link to="/projects" className="item">

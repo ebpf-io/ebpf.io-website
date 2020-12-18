@@ -104,9 +104,9 @@ exports.createPages = ({ actions, graphql }) => {
     createPaginatedPages({
       createPage,
       edges,
-      pageTemplate: path.resolve(`src/templates/news.js`),
-      paginatePost: "/news", // old field. not remove
-      pathPrefix: "/news", // new field. not remove
+      pageTemplate: path.resolve(`src/templates/blog.js`),
+      paginatePost: "/blog", // old field. not remove
+      pathPrefix: "/blog", // new field. not remove
       pageLength: 8
     });
 
@@ -131,9 +131,9 @@ exports.createPages = ({ actions, graphql }) => {
       createPaginatedPages({
         createPage,
         edges: filteredEdges,
-        pageTemplate: path.resolve(`src/templates/news.js`),
-        paginatePost: `/news/tags/${tag}`, // old field. not remove
-        pathPrefix: `/news/tags/${tag}`, // new field. not remove
+        pageTemplate: path.resolve(`src/templates/blog.js`),
+        paginatePost: `/blog/tags/${tag}`, // old field. not remove
+        pathPrefix: `/blog/tags/${tag}`, // new field. not remove
         pageLength: 8
       });
     });
