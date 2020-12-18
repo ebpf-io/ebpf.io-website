@@ -59,6 +59,14 @@ Readers from Brazil may be interested in the [eBPF Brasil](https://ebpfbr.org/)
 website, which aims at gathering, translating, and sharing knowledge about
 eBPF.
 
+## Community
+
+eBPF was named as one of the 5 technologies to watch in 2021 by CNCF TOC chair
+[Liz Rice](https://twitter.com/lizrice) and the eBPF community just keeps on
+growing every day.
+
+![](community.png)
+
 ## New Resources
 
 ### Blog Posts, Presentations
@@ -73,6 +81,13 @@ eBPF.
   detailed list follows. At last, eBPF makes it possible to quickly develop
   tools to instrument new parts of the kernel, without the need to go through a
   longer process to upstream new attach points.
+
+* [_How to mitigate Kubernetes CVE-2020-8554 with eBPF_](https://cilium.io/blog/2020/12/11/kube-proxy-free-cve-mitigation)
+  from Jed Salazar.  
+  CVE-2020-8554 represents a MITM attack in Kubernetes where the ExternalIP
+  service feature can be used to attack a workload and redirect egress network
+  traffic from a unsuspecting pod to another destination. In this blog, Jed
+  describes how Cilium is able to mitigate this attack with eBPF.
 
 * [_Making BPF easy with libbpf and Zig_](https://cmd.com/blog/making-bpf-easy-with-libbpf-and-zig/),
   from Matt Knight.  
@@ -105,6 +120,13 @@ eBPF.
   [the bcc tools](https://github.com/iovisor/bcc/blob/34cada17f798b8e00268d1ba4a4a8d765b948532/examples/tracing/hello_fields.py).
   A nice read if you just got started with eBPF.
 
+* [_Cilium & eBPF - From Device to Service-Centric Networking_](https://docs.google.com/presentation/d/1cB4rJcdxTolIIUy5IEcb9iiUJHlMNmyT7c5eYY9D5LU/edit?usp=sharing),
+  from Thomas Graf.  
+  Presented at NAG (Network Architecture Geeks) Cafe in December. Thomas
+  outlines how eBPF allows to to build powerful service-centric networking
+  models and how to evolve awway from the old device-centric networking model
+  to better meet requirements of containers and cloud-native environments.
+
 * [_Building an Esoteric Filesystem Tracing Tool with eBPF_](https://suchakra.wordpress.com/2020/11/20/building-an-esoteric-filesystem-tracing-tool-with-ebpf/),
   from Suchakra Sharma.  
   This post has a focus on the read-ahead mechanism in the Linux kernel. After
@@ -135,6 +157,12 @@ eBPF.
   Video of the presentation may be available in the future from
   [the page of the conference](https://lac2020.sciencesconf.org/), if it gets
   uploaded.
+
+* [_Weight support for Cilium's eBPF-based Maglev impementation_](https://github.com/cilium/cilium/pull/13943),
+  from Fankaixi Li.  
+  A new PR from an engineer at ByteDance (TikTok) popped up, adding weight
+  support to the eBPF-based Maglev implementation in Cilium. The feature is
+  still being discussed but should land soon.
 
 * [_Primer: How XDP and eBPF Speed Network Traffic via the Linux Kernel_](https://thenewstack.io/primer-how-xdp-and-ebpf-speed-network-traffic-via-the-linux-kernel/),
   from Jack Wallen.  
@@ -210,6 +238,20 @@ eBPF.
   id for goroutines or use uretprobes. But the article demonstrates that a
   large part of eBPF's tracing capabilities remain available for Go
   applications.
+
+* [_NRE Labs v1.3.0 - Kata Containers, Cilium, cRPD!_](https://nrelabs.io/2020/12/nre-labs-v1.3.0-kata-containers-cilium-crpd/),
+  from Matt Oswalt.  
+  [NRE Labs](https://nrelabs.io/about/) has released a nice blog post with some
+  updates on new technology brought in and eBPF is among the highlights.
+
+  > I had been tracking the Cilium project for a few months prior, and have
+  > been pretty impressed with not only their work, but also with the entire
+  > eBPF community, and the focus on simpler, safer, and more performant
+  > architectures that are made possible with BPF. I decided to give Cilium a
+  > go, and haven’t looked back.
+
+  More details on the motiviation and how eBPF is used can be found in the blog
+  post.
 
 * [_Adding BPF target support to the Rust compiler_](https://confused.ai/posts/rust-bpf-target),
   from Alessandro Decina.  
