@@ -200,7 +200,7 @@ const Sections = () => (
 
 const BlogLatest = ({posts}) => (
   <div className="blog-latest">
-    <h2>eBPF Maintainers Blog</h2>
+    <h2>Latest Blog Posts</h2>
     <div className="blog-posts">
       {posts.map(({node: post}) => <Post key={post.id} post={post} />)}
     </div>
@@ -360,7 +360,7 @@ class BlogRoll extends React.Component {
   render() {
     return (
       <div className="blog-roll-section">
-        <h2>Featured eBPF Blogs</h2>
+        <h2>Featured eBPF Community Blogs</h2>
         {this.state.posts.length === 0 && (
           <div className="blog-roll-loading">Loading...</div>
         )}
