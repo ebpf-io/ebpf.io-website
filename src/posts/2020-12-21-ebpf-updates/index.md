@@ -62,7 +62,7 @@ eBPF.
 ## Community
 
 eBPF was named as one of the 5 technologies to watch in 2021 by CNCF TOC chair
-[Liz Rice](https://twitter.com/lizrice) and the eBPF community just keeps on
+[Liz Rice](https://twitter.com/lizrice), and the eBPF community just keeps on
 growing every day.
 
 ![](community.png)
@@ -82,13 +82,6 @@ growing every day.
   tools to instrument new parts of the kernel, without the need to go through a
   longer process to upstream new attach points.
 
-* [_How to mitigate Kubernetes CVE-2020-8554 with eBPF_](https://cilium.io/blog/2020/12/11/kube-proxy-free-cve-mitigation)
-  from Jed Salazar.  
-  CVE-2020-8554 represents a MITM attack in Kubernetes where the ExternalIP
-  service feature can be used to attack a workload and redirect egress network
-  traffic from a unsuspecting pod to another destination. In this blog, Jed
-  describes how Cilium is able to mitigate this attack with eBPF.
-
 * [_Making BPF easy with libbpf and Zig_](https://cmd.com/blog/making-bpf-easy-with-libbpf-and-zig/),
   from Matt Knight.  
   The [Zig](https://ziglang.org) programming language is used to create and
@@ -98,6 +91,16 @@ growing every day.
   compiling from Zig, which aims at competing with C while offering some newer
   features, may open new perspectives. The code is available
   [on GitHub](https://github.com/mattnite/zig-bpf-intro).
+
+* [Weight support for Cilium's eBPF-based Maglev load balancer implementation](https://github.com/cilium/cilium/pull/13943),
+  from Fankaixi Li.  
+  A new pull request by a software engineer at ByteDance (TikTok) popped up,
+  adding weight support to the eBPF-based
+  [Maglev implementation in Cilium](https://cilium.io/blog/2020/11/10/cilium-19#maglev).
+  Maglev provides consistent hashing for high-availability scenarios, and
+  balance packets to the same backends even if they arrive at different load
+  balancing nodes. The feature adds the possibility to assign weights to favor
+  some backends. It is still being discussed, but should land soon.
 
 * [_Beyond the Buzzword: BPF’s Unexpected Role in Kubernetes_](https://kccncna20.sched.com/event/ekDR/beyond-the-buzzword-bpfs-unexpected-role-in-kubernetes-andrew-randall-alban-crequy-kinvolk),
   from Andrew Randall and Alban Crequy.  
@@ -119,13 +122,6 @@ growing every day.
   simple “Hello, World!” example extracted from
   [the bcc tools](https://github.com/iovisor/bcc/blob/34cada17f798b8e00268d1ba4a4a8d765b948532/examples/tracing/hello_fields.py).
   A nice read if you just got started with eBPF.
-
-* [_Cilium & eBPF - From Device to Service-Centric Networking_](https://docs.google.com/presentation/d/1cB4rJcdxTolIIUy5IEcb9iiUJHlMNmyT7c5eYY9D5LU/edit?usp=sharing),
-  from Thomas Graf.  
-  Presented at NAG (Network Architecture Geeks) Cafe in December. Thomas
-  outlines how eBPF allows to build powerful service-centric networking models
-  and how to evolve away from the old device-centric networking model to meet
-  requirements of containers and cloud-native environments.
 
 * [_Building an Esoteric Filesystem Tracing Tool with eBPF_](https://suchakra.wordpress.com/2020/11/20/building-an-esoteric-filesystem-tracing-tool-with-ebpf/),
   from Suchakra Sharma.  
@@ -157,12 +153,6 @@ growing every day.
   Video of the presentation may be available in the future from
   [the page of the conference](https://lac2020.sciencesconf.org/), if it gets
   uploaded.
-
-* [_Weight support for Cilium's eBPF-based Maglev impementation_](https://github.com/cilium/cilium/pull/13943),
-  from Fankaixi Li.  
-  A new PR by a software engineer at ByteDance (TikTok) popped up, adding weight
-  support to the eBPF-based Maglev implementation in Cilium. The feature is
-  still being discussed but should land soon.
 
 * [_Primer: How XDP and eBPF Speed Network Traffic via the Linux Kernel_](https://thenewstack.io/primer-how-xdp-and-ebpf-speed-network-traffic-via-the-linux-kernel/),
   from Jack Wallen.  
@@ -201,6 +191,14 @@ growing every day.
   [Dockerfile](https://github.com/pluginized-protocols/libxbgp/blob/master/misc/Dockerfile_xbgp)
   packaging all the required elements.
 
+* [_Cilium & eBPF - From Device to Service-Centric Networking_](https://docs.google.com/presentation/d/1cB4rJcdxTolIIUy5IEcb9iiUJHlMNmyT7c5eYY9D5LU/edit?usp=sharing),
+  from Thomas Graf.  
+  In this presentation at the NAG (Network Architecture Geeks) Cafe in
+  December, Thomas outlines how eBPF allows to build powerful service-centric
+  networking models and how to evolve away from the old device-centric
+  networking architecture to meet requirements of containers and cloud-native
+  environments.
+
 * [_Integrating an eBPF-based firewall into the TezEdge node with multipass validations_](https://medium.com/simplestaking/integrating-an-ebpf-based-firewall-into-the-tezedge-node-with-multipass-validations-769d4c6ccd93),
   from Juraj Selep.  
   TezEdge peer-to-peer nodes validate blocks for the decentralized
@@ -219,6 +217,15 @@ growing every day.
   good support. After comparing bcc-based and libbpf-based tracing tools in
   terms of features and memory footprint, the author provide a list of tools
   and invocation patterns they use to analyze I/O performance.
+
+* [_How to mitigate Kubernetes CVE-2020-8554 with eBPF_](https://cilium.io/blog/2020/12/11/kube-proxy-free-cve-mitigation)
+  from Jed Salazar.  
+  [CVE-2020-8554](https://github.com/kubernetes/kubernetes/issues/97076)
+  represents a MITM (Man-in-the-middle) attack in Kubernetes where the
+  ExternalIP service feature can be used to attack a workload and redirect
+  egress network traffic from a unsuspecting Pod to another destination. In
+  this blog, Jed describes how Cilium is able to mitigate this attack with
+  eBPF.
 
 * [_Tips and Tricks for Writing Linux BPF Applications with libbpf_](https://pingcap.com/blog/tips-and-tricks-for-writing-linux-bpf-applications-with-libbpf),
   from Wenbo Zhang.  
@@ -239,20 +246,6 @@ growing every day.
   large part of eBPF's tracing capabilities remain available for Go
   applications.
 
-* [_NRE Labs v1.3.0 - Kata Containers, Cilium, cRPD!_](https://nrelabs.io/2020/12/nre-labs-v1.3.0-kata-containers-cilium-crpd/),
-  from Matt Oswalt.  
-  [NRE Labs](https://nrelabs.io/about/) has released a nice blog post with some
-  updates on new technology brought in and eBPF is among the highlights.
-
-  > I had been tracking the Cilium project for a few months prior, and have
-  > been pretty impressed with not only their work, but also with the entire
-  > eBPF community, and the focus on simpler, safer, and more performant
-  > architectures that are made possible with BPF. I decided to give Cilium a
-  > go, and haven’t looked back.
-
-  More details on the motiviation and how eBPF is used can be found in the blog
-  post.
-
 * [_Adding BPF target support to the Rust compiler_](https://confused.ai/posts/rust-bpf-target),
   from Alessandro Decina.  
   eBPF bytecode can be compiled from C with Clang/LLVM's backend. Other
@@ -265,11 +258,20 @@ growing every day.
   versions of rustc and cargo already. The linker is available
   [on GitHub](https://github.com/alessandrod/bpf-linker).
 
+* [_NRE Labs v1.3.0 - Kata Containers, Cilium, cRPD!_](https://nrelabs.io/2020/12/nre-labs-v1.3.0-kata-containers-cilium-crpd/),
+  from Matt Oswalt.  
+  [NRE Labs](https://nrelabs.io/about/) has released a blog post with updates
+  on new technology brought in, and eBPF is among the highlights. They praise
+  the Cilium project and the entire eBPF community, lauding “_the focus on
+  simpler, safer, and more performant architectures that are made possible with
+  BPF_”. The article details the motivations to switch to eBPF and Cilium, and
+  observes that “_It works great_”.
+
 ### Software Projects
 
-* The [Golang library](https://github.com/cilium/ebpf) for manipulating eBPF
-  objects started tagging releases, and v0.3.0 was released end of November
-  2020.
+* The [Golang library](https://github.com/cilium/ebpf) from Cloudflare and
+  Cilium for manipulating eBPF objects started tagging releases, and v0.3.0 was
+  released end of November 2020.
 
 ### Sandbox and Experiments
 
