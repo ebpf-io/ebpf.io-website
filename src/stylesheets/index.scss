@@ -1767,6 +1767,30 @@ html.smooth-scroll {
   }
 }
 
+.blog-latest {
+  position: relative;
+
+  h2 {
+    margin-top: 60px;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  & > .blog-posts {
+    margin-top: 28px;
+
+    & > .blog-post {
+      & > .blog-header {
+        & > .blog-title {
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
 @media #{$tablet} {
   h1 {
     font-size: 40px;

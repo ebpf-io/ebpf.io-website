@@ -1,11 +1,12 @@
 import Helmet from "react-helmet";
 import React from "react";
 import Layout from "../layouts";
-import { Link } from "gatsby";
+import { graphql, Link } from 'gatsby'
 import stringSimilarity from "string-similarity";
 import { unescape, uniq, shuffle } from "lodash";
 import { format, parse as parseDate } from "date-fns";
 import Slider from "infinite-react-carousel";
+import { Post } from "../templates/post";
 
 const pageMetaTitle = 'eBPF - Introduction, Tutorials & Community Resources'
 const pageMetaDescription = 'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
@@ -197,6 +198,15 @@ const Sections = () => (
   </div>
 );
 
+const BlogLatest = ({posts}) => (
+  <div className="blog-latest">
+    <h2>eBPF Maintainers Blog</h2>
+    <div className="blog-posts">
+      {posts.map(({node: post}) => <Post key={post.id} post={post} />)}
+    </div>
+  </div>
+)
+
 const Outro = () => (
   <div className="intro">
     <p>
@@ -382,8 +392,8 @@ class BlogRoll extends React.Component {
   }
 }
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = ({data}) => {
+  return <Layout>
     <div className="page-wrapper page-index">
       <Helmet
         title={pageMetaTitle}
@@ -407,10 +417,35 @@ const IndexPage = () => (
       <Intro />
       <Sections />
       <Videos />
+      <BlogLatest posts={data.allMarkdownRemark.edges} />
       <BlogRoll />
       <Outro />
     </div>
   </Layout>
-);
+};
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 2
+    ) {
+      edges {
+        node {
+          html
+          id
+          excerpt
+          frontmatter {
+            categories
+            date
+            path
+            title
+            tags
+          }
+        }
+      }
+    }
+  }
+`;
