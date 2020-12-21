@@ -83,7 +83,7 @@ export default function Template({ data }) {
   const pageMetaTitle = `eBPF - ${post.frontmatter.title}`
   const pageMetaDescription = previewDescription
   const pageLink = `https://ebpf.io${post.frontmatter.path}`
-  const pageMetaImageUrl = 'https://ebpf.io' + require("../assets/ogimage-news.png")
+  const pageMetaImageUrl = 'https://ebpf.io' + require("../assets/ogimage-blog.png")
   return (
     <Layout>
       <div className="blog-post-container">
