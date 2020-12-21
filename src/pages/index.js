@@ -7,6 +7,7 @@ import { unescape, uniq, shuffle } from "lodash";
 import { format, parse as parseDate } from "date-fns";
 import Slider from "infinite-react-carousel";
 import { Post } from "../templates/post";
+import { TitleWithAnchor } from "../common/TitleWithAnchor";
 
 const pageMetaTitle = 'eBPF - Introduction, Tutorials & Community Resources'
 const pageMetaDescription = 'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
@@ -54,7 +55,7 @@ data required and by generating histograms and similar data structures at the
 source of the event instead of relying on the export of samples.
 `;
 
-const Title = () => (
+const MainTitle = () => (
   <hgroup>
     <img className="main-logo" src={require("../assets/logo-big.png")} />
   </hgroup>
@@ -134,7 +135,9 @@ class Videos extends React.Component {
   render() {
     return (
       <div className="videos-section">
-        <h2>Featured eBPF Talks</h2>
+        <TitleWithAnchor className="common-title-container" headerClassName="common-title">
+          Featured eBPF Talks
+        </TitleWithAnchor>
         {this.state.videos.length > 0 && (
           <Slider
             beforeChange={(oldIndex) => {
@@ -200,7 +203,9 @@ const Sections = () => (
 
 const BlogLatest = ({posts}) => (
   <div className="blog-latest">
-    <h2>Latest Blog Posts</h2>
+    <TitleWithAnchor className="common-title-container" headerClassName="common-title">
+      Latest Blog Posts
+    </TitleWithAnchor>
     <div className="blog-posts">
       {posts.map(({node: post}) => <Post key={post.id} post={post} />)}
     </div>
@@ -360,7 +365,9 @@ class BlogRoll extends React.Component {
   render() {
     return (
       <div className="blog-roll-section">
-        <h2>Featured eBPF Community Blogs</h2>
+        <TitleWithAnchor  className="common-title-container" headerClassName="common-title">
+          Featured eBPF Community Blogs
+        </TitleWithAnchor>
         {this.state.posts.length === 0 && (
           <div className="blog-roll-loading">Loading...</div>
         )}
@@ -412,7 +419,7 @@ const IndexPage = ({data}) => {
           {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
         ]}
       />
-      <Title />
+      <MainTitle />
       <Buttons />
       <Intro />
       <Sections />
