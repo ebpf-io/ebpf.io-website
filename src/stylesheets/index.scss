@@ -444,6 +444,33 @@ code {
   }
 }
 
+.common-title-container {
+  text-align: center;
+
+  .common-title {
+    position: relative;
+    display: inline-block;
+
+    & > .anchor {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      transition: opacity .2s ease-in;
+      transform: translateX(-100%);
+      padding-right: 4px;
+
+      svg {
+        vertical-align: top;
+        margin-top: 20%;
+      }
+    }
+
+    &:hover > .anchor {
+      opacity: 1;
+    }
+  }
+}
+
 .projects-common-title {
   position: relative;
 
