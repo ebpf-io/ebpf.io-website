@@ -12,6 +12,14 @@ module.exports = {
     "gatsby-plugin-netlify",
     "gatsby-plugin-nprogress",
     {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en',
+        prefixDefault: false,
+        useLangKeyLayout: false
+      }
+    },
+    {
       resolve: `gatsby-plugin-sharp`,
       options: {
         base64Width: 20,
