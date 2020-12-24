@@ -80,7 +80,6 @@ $lg: "screen and (max-width : 1024px)";
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  overflow: hidden;
   white-space: pre;
 
   a {
@@ -105,6 +104,83 @@ $lg: "screen and (max-width : 1024px)";
 
   & > .languageSelect {
     margin-left: 40px;
+    position: relative;
+    & > .button {
+      appearance: none;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        color: rgb(75, 75, 75);
+      }
+      &:focus {
+        outline: none;
+        &:focus-visible {
+          outline: 1px dotted;
+          outline: 5px auto -webkit-focus-ring-color;
+        }
+      }
+    }
+    & > .list {
+      margin-top: 8px;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      border: 1px solid #000;
+      padding: 6px;
+      border-radius: 2px;
+      background: #fff;
+      transition: all .2s ease-in;
+      &:not(.is-shown) {
+        visibility: hidden;
+        opacity: 0;
+      }
+      &.is-shown {
+        visibility: visible;
+        opacity: 1;
+      }
+      & > .button {
+        appearance: none;
+        position: relative;
+        display: block;
+        padding: 6px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+        background: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          color: rgb(75, 75, 75);
+        }
+        &:focus {
+          outline: none;
+          &:focus-visible {
+            outline: 1px dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+          }
+        }
+        &.selected {
+          &::before {
+            content: "";
+            margin-top: -2px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 4px;
+            height: 4px;
+            background: currentColor;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
   }
 
   @media #{$lg} {
@@ -117,6 +193,13 @@ $lg: "screen and (max-width : 1024px)";
     & > .languageSelect {
       margin-left: 0;
       margin-bottom: 15px;
+      & > .list {
+        margin-top: 15px;
+        position: static;
+        &:not(.is-shown) {
+          display: none;
+        }
+      }
     }
   }
 }

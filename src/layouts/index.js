@@ -8,14 +8,26 @@ import "./header.scss";
 import "./index.css";
 import "./menu-icon.scss";
 
+const languages = {
+  '/'      : 'English',
+  '/zh-cn/': 'Chinese',
+}
+
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
     <strong>eBPF Summit keynote and lightning talk videos are available.</strong> <a href="/summit-2020" style={{color: '#947927'}}>Watch Now!</a>
   </div>
 )
 
-const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => (
-  <div className="header desktop">
+const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
+  const [isLangMenuShown, setIsLangMenuShown] = useState(false)
+
+  const setLang = useCallback(lang => {
+    setLanguage(lang)
+    setIsLangMenuShown(false)
+  }, [setLanguage, setIsLangMenuShown])
+
+  return <div className="header desktop">
     <Link
       to={language}
       className="headerLogoLink"
@@ -33,10 +45,13 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => (
       <Link to="/projects">Projects</Link>
       <a href="/slack">Slack</a>
       <Link to="/contribute">Contribute</Link>
-      {hasLanguage && <select className="languageSelect" value={language} onChange={setLanguage}>
-        <option value="/">English</option>
-        <option value="/zh-cn/">Chinese</option>
-      </select>}
+      {hasLanguage && <div className="languageSelect">
+        <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{languages[language]} <span className="triangle">▾</span></button>
+        <div className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
+          <button className={`button${language === '/' ? ' selected' : ''}`} onClick={() => setLang('/')} type="button">English</button>
+          <button className={`button${language === '/zh-cn/' ? ' selected' : ''}`} onClick={() => setLang('/zh-cn/')} type="button">Chinese</button>
+        </div>
+      </div>}
       <a href="https://www.cilium.io">
         <img
           src={require("../assets/cilium_logo.png")}
@@ -46,11 +61,17 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => (
       </a>
     </nav>
   </div>
-);
+};
 
 const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleIsOpen = useCallback(() => setIsOpen(!isOpen), [isOpen, setIsOpen]);
+  const [isLangMenuShown, setIsLangMenuShown] = useState(false)
+
+  const setLang = useCallback(lang => {
+    setLanguage(lang)
+    setIsLangMenuShown(false)
+  }, [setLanguage, setIsLangMenuShown])
 
   return (
     <div className="header mobile">
@@ -74,10 +95,13 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
           <Link to="/projects">Projects</Link>
           <a href="/slack">Slack</a>
           <Link to="/contribute">Contribute</Link>
-          {hasLanguage && <select className="languageSelect" value={language} onChange={setLanguage}>
-            <option value="/">English</option>
-            <option value="/zh-cn/">Chinese</option>
-          </select>}
+          {hasLanguage && <div className="languageSelect">
+            <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{languages[language]} <span className="triangle">▾</span></button>
+            <div className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
+              <button className={`button${language === '/' ? ' selected' : ''}`} onClick={() => setLang('/')} type="button">English</button>
+              <button className={`button${language === '/zh-cn/' ? ' selected' : ''}`} onClick={() => setLang('/zh-cn/')} type="button">Chinese</button>
+            </div>
+          </div>}
           <a href="https://www.cilium.io">
             <img src={require("../assets/cilium_logo.png")} height="50px" />
           </a>
@@ -144,10 +168,10 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden }) => {
     [],
   );
 
-  const setLang = event => {
-    setLanguage(event.target.value);
-    localStorage.setItem('language', event.target.value);
-    navigate(window.location.pathname.replace(language, event.target.value));
+  const setLang = lang => {
+    setLanguage(lang);
+    localStorage.setItem('language', lang);
+    navigate(window.location.pathname.replace(language, lang));
   };
 
   return <div>
