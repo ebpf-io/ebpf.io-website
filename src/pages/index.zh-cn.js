@@ -1,61 +1,41 @@
-import Helmet from "react-helmet";
 import React from "react";
-import Layout from "../layouts";
-import { graphql, Link } from 'gatsby'
-import stringSimilarity from "string-similarity";
-import { unescape, uniq, shuffle } from "lodash";
+import Link from "gatsby-link";
+import { unescape, shuffle } from "lodash";
 import { format, parse as parseDate } from "date-fns";
 import Slider from "infinite-react-carousel";
+import Layout from "../layouts";
+import { graphql } from "gatsby";
 import { Post } from "../templates/post";
-import { TitleWithAnchor } from "../common/TitleWithAnchor";
+import Helmet from "react-helmet";
+
+import "../stylesheets/index.scss";
 
 const pageMetaTitle = 'eBPF - Introduction, Tutorials & Community Resources'
 const pageMetaDescription = 'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
 
-import "../stylesheets/index.scss";
-
 const tracingText = `
-The ability to attach eBPF programs to trace points as well as kernel and user
-application probe points allows unprecedented visibility into the runtime
-behavior of applications and the system itself. By giving introspection
-abilities to both the application and system side, both views can be combined,
-allowing powerful and unique insights to troubleshoot system performance
-problems.  Advanced statistical data structures allow to extract meaningful
-visibility data in an efficient manner, without requiring the export of vast
-amounts of sampling data as typically done by similar systems.
+加载eBPF程序到跟踪点以及内核和用户应用程序探测点的能力，为应用程序和系统本身的运行时行为带来了前所未有的可视化展示。
+通过同时为应用程序和系统端提供内省功能，并将这两个视图组合在一起，从而为排查系统性能问题带来强大而独特的诊断能力。
+高级统计数据结构， 是用一种高效的方式，提取有意义的可视化数据，而不需要导出大量的抽样数据，这通常是其他类似系统的实现方式。
 `;
 
 const securityText = `
-Building on the foundation of seeing and understanding all system calls and
-combining that with a packet and socket-level view of all networking operations
-allows for revolutionary new approaches to securing systems. While aspects of
-system call filtering, network-level filtering, and process context tracing
-have typically been handled by completely independent systems, eBPF allows for
-combining the visibility and control of all aspects to create security systems
-operating on more context with better level of control.
+基于查看和理解所有系统调用进行构建，并将其与所有网络操作涉及的网络包和套接字级视图相结合，可以带来革命性的新方法来保护系统。
+虽然执行系统调用过滤、网络层面过滤和进程上下文跟踪的各个方面通常都是由完全独立的系统处理的，但eBPF允许将所有方面的可视化和控制能力结合起来，以创建基于更多上下文、具有更好控制级别的安全系统。
 `;
 
 const networkingText = `
-The combination of programmability and efficiency makes eBPF a natural fit for
-all packet processing requirements of networking solutions. The programmability
-of eBPF enables adding additional protocol parsers and easily program any
-forwarding logic to meet changing requirements without ever leaving the packet
-processing context of the Linux kernel. The efficiency provided by the JIT
-compiler provides execution performance close to that of natively compiled
-in-kernel code.
+通过结合可编程性和有效性，使eBPF天然满足网络解决方案的所有数据包处理的要求。
+eBPF的可编程性使其能够添加额外的协议解析器，并且可以轻松地编写任意转发逻辑来满足不断变化的需求，而无需离开Linux内核处理网络包的上下文。
+JIT编译器带来的高效性，使得eBPF执行性能接近于原生编译的内核代码。
 `;
 
 const monitoringText = `
-Instead of relying on static counters and gauges exposed by the operating
-system, eBPF enables the collection & in-kernel aggregation of custom metrics
-and generation of visibility events based on a wide range of possible sources.
-This extends the depth of visibility that can be achieved as well as reduces
-the overall system overhead significantly by only collecting the visibility
-data required and by generating histograms and similar data structures at the
-source of the event instead of relying on the export of samples.
+与依赖于操作系统提供的静态计数器和计量器不同，eBPF支持自定义指标的收集和内核聚合的能力，并基于广泛的可能来源生成可视化事件。
+通过只收集所需的可视化数据，在事件来源处生成直方图和类似的数据结构，而不是依赖样本的导出，这样可以扩展能够实现的可视化深度，并显著降低系统的总体开销。
 `;
 
-const MainTitle = () => (
+const Title = () => (
   <hgroup>
     <img className="main-logo" src={require("../assets/logo-big.png")} />
   </hgroup>
@@ -64,10 +44,10 @@ const MainTitle = () => (
 const Buttons = () => (
   <h1 className="main-buttons">
     <Link to="/what-is-ebpf" className="main-button">
-      What is eBPF?
+      什么是eBPF？
     </Link>
     <Link to="/projects" className="main-button">
-      Projects
+      项目列表
     </Link>
   </h1>
 );
@@ -83,26 +63,16 @@ const Section = ({ icon, iconWidth, iconHeight, title, text, ...props }) => (
 const Intro = () => (
   <div className="intro">
     <p>
-      The Linux kernel has always been an ideal place to implement
-      monitoring/observability, networking, and security. Unfortunately this was
-      often impractical as it required changing kernel source code or loading
-      kernel modules, and resulted in layers of abstractions stacked on top of
-      each other. eBPF is a revolutionary technology that can run sandboxed
-      programs in the Linux kernel without changing kernel source code or
-      loading kernel modules.
+      Linux内核一直是实现监控/可观察性、网络和安全的理想环境。
+      不幸的是，这往往是不切实际的，因为它需要改变内核源代码或加载内核模块，并导致生成互相层叠在一起的抽象层。
+      eBPF是一项革命性的技术，它可以在不更改内核源代码或不加载内核模块的情况下，在Linux内核中运行沙盒程序。
     </p>
     <p>
-      By making the Linux kernel programmable, infrastructure software can
-      leverage existing layers, making them more intelligent and feature-rich
-      without continuing to add additional layers of complexity to the system or
-      compromising execution efficiency and safety.
+      为了实现Linux内核的可编程性，基础架构软件可以利用现有的层次，使它们更加智能、功能更加丰富，而不是继续给系统增加额外的复杂度或降低执行效率和安全性。
     </p>
     <img src={require("../assets/go.png")} />
     <p>
-      eBPF has resulted in the development of a completely new generation of
-      software able to reprogram the behavior the Linux kernel and even apply
-      logic across multiple subsystems which were traditionally completely
-      independent.
+      eBPF引领了全新一代软件的开发能力，这些软件能够对Linux内核的行为进行二次编程，甚至可以应用在传统上完全独立的多个子系统，跨系统地实现相关逻辑。
     </p>
   </div>
 );
@@ -124,10 +94,6 @@ class Videos extends React.Component {
         "https://www.youtube.com/embed/_Iq1xxNZOAo?start=45&enablejsapi=1",
         "https://www.youtube.com/embed/U3PdyHlrG1o?start=7&enablejsapi=1",
         "https://www.youtube.com/embed/ZYBXZFKPS28?start=0&enablejsapi=1",
-        "https://www.youtube.com/embed/AV8xY318rtc?start=7&enablejsapi=1",
-        "https://www.youtube.com/embed/Qhm1Zn_BNi4?start=8&enablejsapi=1",
-        "https://www.youtube.com/embed/slBAYUDABDA?start=3&enablejsapi=1",
-        "https://www.youtube.com/embed/wyfhjr_ufag?start=6&enablejsapi=1",
       ]),
     });
   }
@@ -135,11 +101,11 @@ class Videos extends React.Component {
   render() {
     return (
       <div className="videos-section">
-        <TitleWithAnchor className="common-title-container" headerClassName="common-title">
-          Featured eBPF Talks
-        </TitleWithAnchor>
+        <h2>eBPF专题演讲</h2>
         {this.state.videos.length > 0 && (
           <Slider
+            dots
+            arrows={false}
             beforeChange={(oldIndex) => {
               const ref = `video-${this.state.videos[oldIndex]}`;
               this.refs[ref].contentWindow.postMessage(
@@ -147,8 +113,6 @@ class Videos extends React.Component {
                 "*"
               );
             }}
-            prevArrow={<div>←</div>}
-            nextArrow={<div>→</div>}
           >
             {this.state.videos.map((src) => {
               return (
@@ -175,25 +139,25 @@ const Sections = () => (
   <div className="main-sections" style={{ marginTop: "30px" }}>
     <div className="main-sections-left">
       <Section
-        title="Security"
+        title="安全"
         icon={require("../assets/intro_security.png")}
         text={securityText}
       />
       <Section
-        title="Networking"
+        title="网络"
         icon={require("../assets/intro_networking.png")}
         text={networkingText}
       />
     </div>
     <div className="main-sections-right">
       <Section
-        title="Tracing & Profiling"
+        title="追踪 & 分析"
         icon={require("../assets/intro_tracing.png")}
         text={tracingText}
       />
       <Section
         style={{ marginTop: "45px" }}
-        title="Observability & Monitoring"
+        title="观测 & 监控"
         icon={require("../assets/intro_observability.png")}
         text={monitoringText}
       />
@@ -201,42 +165,40 @@ const Sections = () => (
   </div>
 );
 
-const BlogLatest = ({posts}) => (
+const BlogLatest = ({ posts }) => (
   <div className="blog-latest">
-    <TitleWithAnchor className="common-title-container" headerClassName="common-title">
-      Latest Blog Posts
-    </TitleWithAnchor>
+    <h2>Latest Blog Posts</h2>
     <div className="blog-posts">
       {posts.map(({node: post}) => <Post key={post.id} post={post} />)}
     </div>
   </div>
-)
+);
 
 const Outro = () => (
   <div className="intro">
     <p>
-      To learn more about eBPF and its use cases:
+      了解更多关于eBPF及其用户案例：
       <table width="100%">
         <tr>
           <td>
             <ul>
               <li>
-                <a href="/what-is-ebpf">What is eBPF?</a>
+                <a href="/what-is-ebpf">什么是eBPF？</a>
               </li>
               <li>
-                <a href="/projects">List of eBPF-powered projects</a>
+                <a href="/projects">使用ebpf的项目列表</a>
               </li>
             </ul>
           </td>
           <td>
             <ul>
               <li>
-                <a href="/slack">
-                  Join the #ebpf Slack community
+                <a href="https://cilium.herokuapp.com/">
+                  加入 #ebpf Slack社区
                 </a>
               </li>
               <li>
-                <a href="/contribute">Learn how to contribute</a>
+                <a href="/contribute">学习如何作出贡献</a>
               </li>
             </ul>
           </td>
@@ -249,21 +211,23 @@ const Outro = () => (
 class BlogRoll extends React.Component {
   feeds = [
     {
-      url: "http%3A%2F%2Fwww.brendangregg.com%2Fblog%2Frss.xml",
+      url:
+        "https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fwww.brendangregg.com%2Fblog%2Frss.xml",
       author: "Brendan Gregg",
       filterBy: (post) => post.title.toLowerCase().includes("bpf"),
     },
     {
       url:
-        "http%3A%2F%2Ffetchrss.com%2Frss%2F5f326ba08a93f8883b8b45675f326d238a93f8b34b8b4567.xml",
+        "https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffetchrss.com%2Frss%2F5f326ba08a93f8883b8b45675f326d238a93f8b34b8b4567.xml",
       author: null,
       filterBy: (post) =>
         post.title.toLowerCase().includes("bpf") &&
         post.link !==
-          "https://facebookmicrosites.github.io/bpf/blog/2018/08/31/welcome.html",
+        "https://facebookmicrosites.github.io/bpf/blog/2018/08/31/welcome.html",
     },
     {
-      url: "https%3A%2F%2Fcilium.io%2Fblog%2Frss.xml",
+      url:
+        "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcilium.io%2Fblog%2Frss.xml",
       author: "Cilium authors",
       filterBy: (post) =>
         post.categories.some((category) =>
@@ -271,19 +235,16 @@ class BlogRoll extends React.Component {
         ),
     },
     {
-      url: "https%3A%2F%2Fqmonnet.github.io%2Fwhirl-offload%2Ffeed.xml",
+      url:
+        "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fqmonnet.github.io%2Fwhirl-offload%2Ffeed.xml",
       author: "Quentin Monnet",
       filterBy: (post) => post.title.toLowerCase().includes("bpf"),
     },
     {
-      url: "https%3A%2F%2Fpchaigno.github.io%2Ffeed.xml",
+      url:
+        "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fpchaigno.github.io%2Ffeed.xml",
       author: "Paul Chaignon",
       filterBy: (post) => post.title.toLowerCase().includes("bpf"),
-    },
-    {
-      url: "https%3A%2F%2Fnakryiko.com%2Fatom.xml",
-      author: "Andrii Nakryiko",
-      filterBy: (post) => post.title.toLowerCase().includes("bpf") || post.title.toLowerCase().includes("btf"),
     },
   ];
 
@@ -296,31 +257,22 @@ class BlogRoll extends React.Component {
   }
 
   componentDidMount() {
-    const apiUrl = "https://api.rss2json.com/v1/api.json";
-    const apiKey = process.env.RSS2JSON_API_KEY;
     Promise.all(
       this.feeds.map((feed) =>
-        fetch(`${apiUrl}?api_key=${apiKey}&rss_url=${feed.url}`)
+        fetch(feed.url)
           .then((r) => r.json())
           .then((post) => ({ feed, post }))
       )
     )
       .then((results) => {
-        results.map((result) => {
-          if(result.post.status !== 'ok') {
-            console.error(`Feed ${result.post.feed.url} is temporary unavailable`)
-          }
-        });
-        return results
-          .filter((result) => result.post.status === 'ok')
-          .reduce((acc, { feed, post: { items } }) => {
+        return results.reduce((acc, { feed, post: { items } }) => {
           return acc.concat(
             items
               .map((post) => ({
                 ...post,
                 pubDate: parseDate(
                   post.pubDate,
-                  "yyyy-MM-dd HH:mm:ss",
+                  "yyyy-MM-dd hh:mm:ss",
                   new Date()
                 ),
                 author: post.author || feed.author,
@@ -335,26 +287,8 @@ class BlogRoll extends React.Component {
         }, []);
       })
       .then((posts) => {
-        let uniqPosts = posts;
-        posts.forEach((initialPost) => {
-          uniqPosts.forEach((resultPost, idx) => {
-            /*
-              If two posts have same author, come from different websites and have similar titles — remove the second
-              one. Website check is necessary in case of such posts like "eBPF Summit Day 1 Recap" and
-              "eBPF Summit Day 2 Recap". Because within a single website uniqueness is controlled manually by editors
-              and thus posts with similar titles are rarely added on occasion.
-            */
-            if(
-              (initialPost.author || '').toLowerCase() === (resultPost.author || '').toLowerCase() &&
-              new URL(initialPost.link).host !== new URL(resultPost.link).host &&
-              stringSimilarity.compareTwoStrings(initialPost.title, resultPost.title) >= 0.75
-            ) {
-              uniqPosts.splice(idx, 1)
-            }
-          });
-        });
-        uniqPosts.sort((a, b) => b.pubDate - a.pubDate);
-        return uniqPosts;
+        posts.sort((a, b) => b.pubDate - a.pubDate);
+        return posts;
       })
       .then((posts) => {
         this.setState({ posts });
@@ -365,9 +299,7 @@ class BlogRoll extends React.Component {
   render() {
     return (
       <div className="blog-roll-section">
-        <TitleWithAnchor  className="common-title-container" headerClassName="common-title">
-          Featured eBPF Community Blogs
-        </TitleWithAnchor>
+        <h2>eBPF专题博文</h2>
         {this.state.posts.length === 0 && (
           <div className="blog-roll-loading">Loading...</div>
         )}
@@ -399,8 +331,8 @@ class BlogRoll extends React.Component {
   }
 }
 
-const IndexPage = ({data}) => {
-  return <Layout>
+const IndexPage = ({ data }) => (
+  <Layout>
     <div className="page-wrapper page-index">
       <Helmet
         title={pageMetaTitle}
@@ -419,7 +351,7 @@ const IndexPage = ({data}) => {
           {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
         ]}
       />
-      <MainTitle />
+      <Title />
       <Buttons />
       <Intro />
       <Sections />
@@ -429,12 +361,12 @@ const IndexPage = ({data}) => {
       <Outro />
     </div>
   </Layout>
-};
+);
 
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query CNIndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 2

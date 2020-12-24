@@ -1,5 +1,6 @@
 $mobile: "screen and (max-width : 480px)";
 $tablet: "screen and (max-width : 900px)";
+$lg: "screen and (max-width : 1024px)";
 
 .header-notification {
   display: flex;
@@ -101,6 +102,23 @@ $tablet: "screen and (max-width : 900px)";
       }
     }
   }
+
+  & > .languageSelect {
+    margin-left: 40px;
+  }
+
+  @media #{$lg} {
+    & > .languageSelect {
+      margin-left: 30px;
+    }
+  }
+
+  @media #{$tablet} {
+    & > .languageSelect {
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 button.callToAction,
@@ -136,6 +154,12 @@ a.contactUs {
 
     &:first-child {
       margin-left: 20px;
+    }
+  }
+
+  @media #{$lg} {
+    a {
+      margin-left: 30px;
     }
   }
 }
