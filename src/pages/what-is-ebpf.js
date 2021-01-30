@@ -722,6 +722,16 @@ class Description extends React.Component {
               name="Archive of various articles on BPF"
               description="LWN, since Apr 2011"
             />
+            <Reference
+              link="https://blog.cloudflare.com/tag/ebpf/"
+              name="Various articles on BPF by Cloudflare"
+              description="Cloudflare, since March 2018"
+            />
+            <Reference
+              link="https://facebookmicrosites.github.io/bpf/blog/"
+              name="Various articles on BPF by Facebook"
+              description="Facebook, since August 2018"
+            />
           </ul>
         </div>
       </React.Fragment>
