@@ -62,8 +62,10 @@ exports.createSchemaCustomization = ({ actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage, createRedirect } = actions;
   // "Country" must start with a capital letter
+  createRedirect({ fromPath: '/', force: true, toPath: '/fr-fr/', Country: 'fr' });
   createRedirect({ fromPath: '/', force: true, toPath: '/zh-cn/', Country: 'cn' });
   // "Language" must start with a capital letter
+  createRedirect({ fromPath: '/', force: true, toPath: '/fr-fr/', Language: 'fr' });
   createRedirect({ fromPath: '/', force: true, toPath: '/zh-cn/', Language: 'zh' });
   const postTemplate = path.resolve(`src/templates/post.js`);
 
