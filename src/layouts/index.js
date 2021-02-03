@@ -10,6 +10,7 @@ import "./menu-icon.scss";
 
 const languages = {
   '/'      : 'English',
+  '/fr-fr/': 'Français',
   '/zh-cn/': '简体中文',
 }
 
@@ -49,6 +50,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
         <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{languages[language]} <span className="triangle">▾</span></button>
         <div className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
           <button className={`button${language === '/' ? ' selected' : ''}`} onClick={() => setLang('/')} type="button">English</button>
+          <button className={`button${language === '/fr-fr/' ? ' selected' : ''}`} onClick={() => setLang('/fr-fr/')} type="button">Français</button>
           <button className={`button${language === '/zh-cn/' ? ' selected' : ''}`} onClick={() => setLang('/zh-cn/')} type="button">简体中文</button>
         </div>
       </div>}
@@ -99,6 +101,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
             <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{languages[language]} <span className="triangle">▾</span></button>
             <div className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
               <button className={`button${language === '/' ? ' selected' : ''}`} onClick={() => setLang('/')} type="button">English</button>
+              <button className={`button${language === '/fr-fr/' ? ' selected' : ''}`} onClick={() => setLang('/fr-fr/')} type="button">French</button>
               <button className={`button${language === '/zh-cn/' ? ' selected' : ''}`} onClick={() => setLang('/zh-cn/')} type="button">Chinese</button>
             </div>
           </div>}
@@ -139,7 +142,9 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden }) => {
         return;
       }
 
-      return window.location.pathname === '/' || window.location.pathname.includes('/zh-cn/');
+      return window.location.pathname === '/' ||
+            window.location.pathname.includes('/fr-fr/') ||
+            window.location.pathname.includes('/zh-cn/');
     },
 
     [],
@@ -153,11 +158,21 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden }) => {
         return;
       }
 
-      const mainPage = window.location.pathname === '/' || window.location.pathname.includes('/zh-cn/');
+      const mainPage = window.location.pathname === '/' ||
+            window.location.pathname.includes('/fr-fr/') ||
+            window.location.pathname.includes('/zh-cn/');
 
       if(mainPage) {
-        localStorage.setItem('language', window.location.pathname.includes('/zh-cn/') ? '/zh-cn/' : '/');
-        setLanguage(window.location.pathname.includes('/zh-cn/') ? '/zh-cn/' : '/');
+          if (window.location.pathname.includes('/fr-fr/')) {
+              localStorage.setItem('language', '/fr-fr/');
+              setLanguage('/fr-fr/');
+          } else if (window.location.pathname.includes('/zh-cn/')) {
+              localStorage.setItem('language', '/zh-cn/');
+              setLanguage('/zh-cn/');
+          } else {
+              localStorage.setItem('language', '/');
+              setLanguage('/');
+          }
       }
 
       if(!mainPage) {
