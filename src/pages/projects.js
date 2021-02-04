@@ -266,6 +266,10 @@ const ProjectDescriptions = () => (
               <b>Patches</b>
             </a>{" "}
             |{" "}
+            <a href="https://travis-ci.com/github/kernel-patches/bpf/pull_requests">
+              <b>CI</b>
+            </a>{" "}
+            |{" "}
             <a href="https://www.kernel.org/doc/html/latest/bpf/">
               <b>Docs</b>
             </a>{" "}
