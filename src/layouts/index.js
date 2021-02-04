@@ -8,11 +8,25 @@ import "./header.scss";
 import "./index.css";
 import "./menu-icon.scss";
 
-const languages = {
-  '/'      : 'English',
-  '/fr-fr/': 'Français',
-  '/zh-cn/': '简体中文',
-}
+const languages = [
+  {
+    code: '/',
+    name: 'English',
+  },
+  {
+    code: '/fr-fr/',
+    name: 'Français',
+  },
+  {
+    code: '/zh-cn/',
+    name: '简体中文',
+  },
+].sort( (a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1 );
+
+const getLanguageName = (languageCode) => {
+  return !languageCode ? '' :
+        languages.find( ({code}) => code === languageCode ).name;
+};
 
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
@@ -27,6 +41,11 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
     setLanguage(lang)
     setIsLangMenuShown(false)
   }, [setLanguage, setIsLangMenuShown])
+
+  const languageButtons = [];
+  for (let l of languages) {
+    languageButtons.push(<button className={`button${language === l.code ? ' selected' : ''}`} onClick={() => setLang(`${l.code}`)} type="button">{l.name}</button>);
+  }
 
   return <div className="header desktop">
     <Link
@@ -47,11 +66,9 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
       <a href="/slack">Slack</a>
       <Link to="/contribute">Contribute</Link>
       {hasLanguage && <div className="languageSelect">
-        <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{languages[language]} <span className="triangle">▾</span></button>
+        <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
         <div className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
-          <button className={`button${language === '/' ? ' selected' : ''}`} onClick={() => setLang('/')} type="button">English</button>
-          <button className={`button${language === '/fr-fr/' ? ' selected' : ''}`} onClick={() => setLang('/fr-fr/')} type="button">Français</button>
-          <button className={`button${language === '/zh-cn/' ? ' selected' : ''}`} onClick={() => setLang('/zh-cn/')} type="button">简体中文</button>
+          {languageButtons}
         </div>
       </div>}
       <a href="https://www.cilium.io">
@@ -98,11 +115,9 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
           <a href="/slack">Slack</a>
           <Link to="/contribute">Contribute</Link>
           {hasLanguage && <div className="languageSelect">
-            <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{languages[language]} <span className="triangle">▾</span></button>
+            <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
             <div className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
-              <button className={`button${language === '/' ? ' selected' : ''}`} onClick={() => setLang('/')} type="button">English</button>
-              <button className={`button${language === '/fr-fr/' ? ' selected' : ''}`} onClick={() => setLang('/fr-fr/')} type="button">French</button>
-              <button className={`button${language === '/zh-cn/' ? ' selected' : ''}`} onClick={() => setLang('/zh-cn/')} type="button">Chinese</button>
+              {languageButtons}
             </div>
           </div>}
           <a href="https://www.cilium.io">
