@@ -14,25 +14,28 @@ const pageMetaTitle = 'eBPF - Introduction, Tutorials & Community Resources'
 const pageMetaDescription = 'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
 
 const tracingText = `
-加载eBPF程序到跟踪点以及内核和用户应用程序探测点的能力，为应用程序和系统本身的运行时行为带来了前所未有的可视化展示。
-通过同时为应用程序和系统端提供内省功能，并将这两个视图组合在一起，从而为排查系统性能问题带来强大而独特的诊断能力。
-高级统计数据结构， 是用一种高效的方式，提取有意义的可视化数据，而不需要导出大量的抽样数据，这通常是其他类似系统的实现方式。
-`;
+eBPF 程序能够加载到 trace points、内核及用户空间应用程序中的 probe points，
+这种能力使我们对应用程序的运行时行为（runtime behavior）和系统本身
+（system itself）提供了史无前例的可观测性。应用端和系统端的这种观测能力相结合，
+能在排查系统性能问题时提供强大的能力和独特的信息。BPF 使用了很多高级数据结构，
+因此能非常高效地导出有意义的可观测数据，而不是像很多同类系统一样导出海量的原始采样数据。`;
 
 const securityText = `
-基于查看和理解所有系统调用进行构建，并将其与所有网络操作涉及的网络包和套接字级视图相结合，可以带来革命性的新方法来保护系统。
-虽然执行系统调用过滤、网络层面过滤和进程上下文跟踪的各个方面通常都是由完全独立的系统处理的，但eBPF允许将所有方面的可视化和控制能力结合起来，以创建基于更多上下文、具有更好控制级别的安全系统。
-`;
+观测和理解所有的系统调用的能力，以及在 packet 层和 socket 层审视所有的网络操作的能力，
+这两者相结合，为系统安全提供了革命性的新方法。
+以前，系统调用过滤、网络层过滤和进程上下文跟踪是在完全独立的系统中完成的；
+eBPF 的出现统一了可观测性和各层面的控制能力，使我们有更加丰富的上下文和更精细的控制能力，
+因而能创建更加安全的系统。`;
 
 const networkingText = `
-通过结合可编程性和有效性，使eBPF天然满足网络解决方案的所有数据包处理的要求。
-eBPF的可编程性使其能够添加额外的协议解析器，并且可以轻松地编写任意转发逻辑来满足不断变化的需求，而无需离开Linux内核处理网络包的上下文。
-JIT编译器带来的高效性，使得eBPF执行性能接近于原生编译的内核代码。
-`;
+eBPF 的两大特色 —— 可编程和高性能 —— 使它能满足所有的网络包处理需求。
+可编程意味着无需离开内核中的包处理上下文，就能添加额外的协议解析器或任何转发逻辑，
+以满足不断变化的需求。高性能的 JIT 编译器使 eBPF 程序能达到几乎与原生编译的内核态代码一样的执行性能。`;
 
 const monitoringText = `
-与依赖于操作系统提供的静态计数器和计量器不同，eBPF支持自定义指标的收集和内核聚合的能力，并基于广泛的可能来源生成可视化事件。
-通过只收集所需的可视化数据，在事件来源处生成直方图和类似的数据结构，而不是依赖样本的导出，这样可以扩展能够实现的可视化深度，并显著降低系统的总体开销。
+相比于操作系统提供的静态计数器（counters、gauges），eBPF 能在内核中收集和聚合自定义 metric，
+并能从不同数据源来生成可观测数据。这既扩展了可观测性的深度，也显著减少了整体系统开销，
+因为现在可以选择只收集需要的数据，并且后者是直方图或类似的格式，而非原始采样数据。
 `;
 
 const Title = () => (
@@ -44,7 +47,7 @@ const Title = () => (
 const Buttons = () => (
   <h1 className="main-buttons">
     <Link to="/what-is-ebpf" className="main-button">
-      什么是eBPF？
+      eBPF 是什么？
     </Link>
     <Link to="/projects" className="main-button">
       项目列表
@@ -63,16 +66,21 @@ const Section = ({ icon, iconWidth, iconHeight, title, text, ...props }) => (
 const Intro = () => (
   <div className="intro">
     <p>
-      Linux内核一直是实现监控/可观察性、网络和安全的理想环境。
-      不幸的是，这往往是不切实际的，因为它需要改变内核源代码或加载内核模块，并导致生成互相层叠在一起的抽象层。
-      eBPF是一项革命性的技术，它可以在不更改内核源代码或不加载内核模块的情况下，在Linux内核中运行沙盒程序。
+      Linux 内核一直是实现监控/可观测性、网络和安全功能的理想地方。
+      不过很多情况下这并非易事，因为这些工作需要修改内核源码或加载内核模块，
+      最终实现形式是在已有的层层抽象之上叠加新的抽象。
+      eBPF 是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），
+      而无需修改内核源码或者加载内核模块。
     </p>
     <p>
-      为了实现Linux内核的可编程性，基础架构软件可以利用现有的层次，使它们更加智能、功能更加丰富，而不是继续给系统增加额外的复杂度或降低执行效率和安全性。
+      将 Linux 内核变成可编程之后，就能基于现有的（而非增加新的）抽象层来打造更加智能、
+      功能更加丰富的基础设施软件，而不会增加系统的复杂度，也不会牺牲执行效率和安全性。
     </p>
     <img src={require("../assets/go.png")} />
     <p>
-      eBPF引领了全新一代软件的开发能力，这些软件能够对Linux内核的行为进行二次编程，甚至可以应用在传统上完全独立的多个子系统，跨系统地实现相关逻辑。
+      eBPF 催生了一种全新的软件开发方式。基于这种方式，我们不仅能对内核行为进行
+      编程，甚至还能编写跨多个子系统的处理逻辑，而传统上这些子系统是完全独立、
+      无法用一套逻辑来处理的。
     </p>
   </div>
 );
@@ -101,7 +109,7 @@ class Videos extends React.Component {
   render() {
     return (
       <div className="videos-section">
-        <h2>eBPF专题演讲</h2>
+        <h2>eBPF 相关演讲</h2>
         {this.state.videos.length > 0 && (
           <Slider
             dots
@@ -151,7 +159,7 @@ const Sections = () => (
     </div>
     <div className="main-sections-right">
       <Section
-        title="追踪 & 分析"
+        title="跟踪 & 性能分析"
         icon={require("../assets/intro_tracing.png")}
         text={tracingText}
       />
@@ -167,7 +175,7 @@ const Sections = () => (
 
 const BlogLatest = ({ posts }) => (
   <div className="blog-latest">
-    <h2>Latest Blog Posts</h2>
+    <h2>最新博客</h2>
     <div className="blog-posts">
       {posts.map(({node: post}) => <Post key={post.id} post={post} />)}
     </div>
@@ -177,16 +185,16 @@ const BlogLatest = ({ posts }) => (
 const Outro = () => (
   <div className="intro">
     <p>
-      了解更多关于eBPF及其用户案例：
+      更多 eBPF 信息及使用案例：
       <table width="100%">
         <tr>
           <td>
             <ul>
               <li>
-                <a href="/what-is-ebpf">什么是eBPF？</a>
+                <a href="/what-is-ebpf">eBPF 是什么？</a>
               </li>
               <li>
-                <a href="/projects">使用ebpf的项目列表</a>
+                <a href="/projects">使用 eBPF 的项目列表</a>
               </li>
             </ul>
           </td>
@@ -194,11 +202,11 @@ const Outro = () => (
             <ul>
               <li>
                 <a href="https://cilium.herokuapp.com/">
-                  加入 #ebpf Slack社区
+                  加入 #ebpf Slack 社区
                 </a>
               </li>
               <li>
-                <a href="/contribute">学习如何作出贡献</a>
+                <a href="/contribute">贡献指南</a>
               </li>
             </ul>
           </td>
@@ -299,7 +307,7 @@ class BlogRoll extends React.Component {
   render() {
     return (
       <div className="blog-roll-section">
-        <h2>eBPF专题博文</h2>
+        <h2>eBPF 相关文章</h2>
         {this.state.posts.length === 0 && (
           <div className="blog-roll-loading">Loading...</div>
         )}
