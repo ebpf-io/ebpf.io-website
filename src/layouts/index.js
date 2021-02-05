@@ -10,7 +10,7 @@ import "./menu-icon.scss";
 
 const languages = {
   '/'      : 'English',
-  '/zh-cn/': 'Chinese',
+  '/zh-cn/': '简体中文',
 }
 
 const InfoDisclaimer = () => (
@@ -49,7 +49,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
         <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{languages[language]} <span className="triangle">▾</span></button>
         <div className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
           <button className={`button${language === '/' ? ' selected' : ''}`} onClick={() => setLang('/')} type="button">English</button>
-          <button className={`button${language === '/zh-cn/' ? ' selected' : ''}`} onClick={() => setLang('/zh-cn/')} type="button">Chinese</button>
+          <button className={`button${language === '/zh-cn/' ? ' selected' : ''}`} onClick={() => setLang('/zh-cn/')} type="button">简体中文</button>
         </div>
       </div>}
       <a href="https://www.cilium.io">
