@@ -620,6 +620,12 @@ class Description extends React.Component {
           <h4>Cilium</h4>
           <ul>
             <Reference
+              link="https://www.youtube.com/watch?v=PJY-rN1EsVw"
+              slides="https://fosdem.org/2021/schedule/event/containers_ebpf_kernel/attachments/slides/4358/export/events/attachments/containers_ebpf_kernel/slides/4358/Advanced_BPF_Kernel_Features_for_the_Container_Age_FOSDEM.pdf"
+              name="Advanced BPF Kernel Features for the Container Age"
+              description="Daniel Borkmann, FOSDEM, Feb 2021"
+            />
+	    <Reference
               link="https://linuxplumbersconf.org/event/7/contributions/674/"
               name="Kubernetes Service Load-Balancing at Scale with BPF & XDP"
               description="Daniel Borkmann & Martynas Pumputis, Linux Plumbers, Aug 2020"
