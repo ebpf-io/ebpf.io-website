@@ -25,6 +25,7 @@ export default class Videos extends React.Component {
         "https://www.youtube.com/embed/Qhm1Zn_BNi4?start=8&enablejsapi=1",
         "https://www.youtube.com/embed/slBAYUDABDA?start=3&enablejsapi=1",
         "https://www.youtube.com/embed/wyfhjr_ufag?start=6&enablejsapi=1",
+        "https://www.youtube.com/embed/PJY-rN1EsVw?start=6&enablejsapi=1",
       ]),
     });
   }
