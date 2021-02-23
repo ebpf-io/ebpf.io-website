@@ -1,2 +1,2 @@
-/news/rss.xml /blog/rss.xml
-/news /blog
+# Redirect all pages under /news/ to the equivalent path under /blog/
+/news/* /blog/:splat

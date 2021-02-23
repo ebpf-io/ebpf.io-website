@@ -1,5 +1,5 @@
 ---
-path: "/news/ebpf-updates-2021-02"
+path: "/blog/ebpf-updates-2021-02"
 date: "2021-02-23T10:00:00.000Z"
 title: "eBPF Updates #4: In-Memory Loads Detection, Debugging QUIC, Local CI Runs, MTU Checks, but No Pancakes"
 tags:

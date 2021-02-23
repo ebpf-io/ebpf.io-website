@@ -63,7 +63,7 @@ export const Post = ({ post, full }) => {
           <div className="blog-post-tags">
             {tags.map((tag, i) => tag !== '_' && (
               <span className="blog-post-tag" key={tag}>
-              <a href={`/news/tags/${tag.toLowerCase().replace(' ', '-')}`}>{tag}</a>
+              <a href={`/blog/tags/${tag.toLowerCase().replace(' ', '-')}`}>{tag}</a>
             </span>
             ))}
           </div>

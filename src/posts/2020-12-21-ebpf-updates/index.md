@@ -1,5 +1,5 @@
 ---
-path: "/news/ebpf-updates-2020-12"
+path: "/blog/ebpf-updates-2020-12"
 date: "2020-12-18T10:00:00.000Z"
 title: "eBPF Updates #2: eBPF with Zig, libbpf-bootstrap, Rust Linker, BTF in Kernel Modules, Cgroup-Based Memory Accounting"
 tags:
