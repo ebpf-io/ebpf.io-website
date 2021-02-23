@@ -25,13 +25,13 @@ export default function NewsIndex({ data, pageContext }) {
           meta={[
             {name: "keywords", content: "ebpf, bpf, news, updates, blog"},
             {name: "type", property: "og:type", content: "website"},
-            {name: "url", property: "og:url", content: "https://ebpf.io/news"},
+            {name: "url", property: "og:url", content: "https://ebpf.io/blog"},
             {name: "title", property: "og:title", content: pageMetaTitle},
             {name: "description", property: "og:description", content: pageMetaDescription},
             {name: "description", content: pageMetaDescription},
             {name: "image", property: "og:image", content: pageMetaImageUrl},
             {name: "twitter:card", content: "summary_large_image"},
-            {name: "twitter:url", content: "https://ebpf.io/news"},
+            {name: "twitter:url", content: "https://ebpf.io/blog"},
             {name: "twitter:title", content: pageMetaTitle},
             {name: "twitter:description", content: pageMetaDescription},
             {name: "twitter:image", content: pageMetaImageUrl},
@@ -41,7 +41,7 @@ export default function NewsIndex({ data, pageContext }) {
             rel="alternate"
             type="application/rss+xml"
             title="RSS Feed"
-            href="/news/rss.xml"
+            href="/blog/rss.xml"
           />
         </Helmet>
 
@@ -50,10 +50,10 @@ export default function NewsIndex({ data, pageContext }) {
         ))}
         <div className="prev-next-links blog-post">
           <div className="prev-link">
-            {!first && <NavLink url={`/news/${prevUrl}`} text="« Newer Posts" />}
+            {!first && <NavLink url={`/blog/${prevUrl}`} text="« Newer Posts" />}
           </div>
           <div className="next-link">
-            {!last && <NavLink url={`/news/${nextUrl}`} text="Older Posts »" />}
+            {!last && <NavLink url={`/blog/${nextUrl}`} text="Older Posts »" />}
           </div>
         </div>
       </div>
