@@ -92,8 +92,8 @@ held online, and included several presentations related to eBPF.
   presentation, and the video and slides have not been uploaded yet as of this
   writing].
 
-And then here are some resources published over the last week, independent from
-FOSDEM.
+And then here are some resources published over the last weeks, independent
+from FOSDEM.
 
 <!--2020-12-17-->
 * [_Running eBPF and Perf in Docker for Mac_](https://petermalmgren.com/docker-mac-bpf-perf/),
