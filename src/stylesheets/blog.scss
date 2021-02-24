@@ -178,6 +178,26 @@ $tablet: "screen and (max-width : 900px)";
     }
   }
 
+  .blog-toc {
+    summary {
+      font-size: 16px;
+      line-height: 28px;
+      color: #474747;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: #5f4b0f;
+      }
+    }
+  }
+
   .blog-post-content {
     font-size: 16px;
     line-height: 25px;
