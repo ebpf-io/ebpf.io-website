@@ -32,6 +32,57 @@ const windowPopup = ev => {
   );
 };
 
+class TableOfContents extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      toc: [],
+    };
+  }
+
+  getTocId(element) {
+    return element.id
+      ? element.id
+      : element.textContent
+        .toLowerCase()
+        .replace(/ /g, "-")
+        .replace(/[^a-z0-9\-]/g, "");
+  }
+
+  componentDidMount() {
+    const toc = [];
+    document.querySelectorAll(".blog-post-content > h2, .blog-post-content > h3").forEach((h) => {
+      h.id = this.getTocId(h);
+      toc.push(h);
+    });
+    this.setState({ toc });
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <details className="blog-toc" open>
+          <summary>Table of Contents</summary>
+          <ul>
+          {
+            this.state.toc.map((item) => {
+              const level = +item.tagName[1] - 2;
+              const style = { paddingLeft: `${20 * level}px` };
+              let className = "toc-item";
+              return (
+                <li className={className} style={style}>
+                  <a href={`#${item.id}`}>{item.textContent}</a>
+                </li>
+              );
+            })
+          }
+          </ul>
+        </details>
+      </React.Fragment>
+    );
+  }
+}
+
 export const Post = ({ post, full }) => {
   const tags = post.frontmatter.tags || [];
   const { hasPreview, previewHtml, mainHtml, previewDescription } = parseHtml(post);
@@ -69,6 +120,7 @@ export const Post = ({ post, full }) => {
           </div>
         )}
       </header>
+      {full && (<TableOfContents />)}
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
