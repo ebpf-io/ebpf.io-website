@@ -510,7 +510,7 @@ const ProjectDescriptions = () => (
 
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Tracee</TitleWithAnchor>
-      <div className="project-minor-title">Dynamic Security Event Tracing</div>
+      <div className="project-minor-title">Linux Runtime Security and Forensics using eBPF</div>
       <div className="project-body">
         <a
           className="project-logo"
