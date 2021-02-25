@@ -120,7 +120,7 @@ export const Post = ({ post, full }) => {
           </div>
         )}
       </header>
-      {full && (<TableOfContents />)}
+      {full && !(post.frontmatter.toc === false) && (<TableOfContents />)}
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
@@ -173,6 +173,7 @@ export const pageQuery = graphql`
         date
         path
         title
+        toc
       }
     }
   }
