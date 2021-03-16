@@ -270,6 +270,10 @@ const ProjectDescriptions = () => (
               <b>CI</b>
             </a>{" "}
             |{" "}
+            <a href="https://docs.google.com/spreadsheets/d/1LfrDXZ9-fdhvPEp_LHkxAMYyxxpwBXjywWa0AejEveU/edit#gid=0">
+              <b>Office Hours</b>
+            </a>{" "}
+	    |{" "}
             <a href="https://www.kernel.org/doc/html/latest/bpf/">
               <b>Docs</b>
             </a>{" "}
