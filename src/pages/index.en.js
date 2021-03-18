@@ -81,7 +81,7 @@ const Intro = () => (
     <img src={require("../assets/go.png")} />
     <p>
       eBPF has resulted in the development of a completely new generation of
-      software able to reprogram the behavior the Linux kernel and even apply
+      software able to reprogram the behavior of the Linux kernel and even apply
       logic across multiple subsystems which were traditionally completely
       independent.
     </p>
