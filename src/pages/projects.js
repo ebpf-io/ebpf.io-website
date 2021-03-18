@@ -308,6 +308,14 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/llvm/llvm-project/">
               <b>GitHub</b>
             </a>{" "}
+            |{" "}
+            <a href="https://reviews.llvm.org/search/query/ABG0ZPUPkDGb/#R">
+              <b>Patches</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://bugs.llvm.org/buglist.cgi?quicksearch=bpf">
+              <b>Bugtracker</b>
+            </a>{" "}
           </p>
           <p>
             The LLVM compiler infrastructure contains the eBPF backend required
