@@ -97,7 +97,7 @@ class Description extends React.Component {
           <p>
             eBPF.io is a place for everybody to learn and collaborate on the
             topic of eBPF. eBPF is an open community and everybody can
-            particpate and share. Whether you want to read a first introduction
+            participate and share. Whether you want to read a first introduction
             to eBPF, find further reading material or make your first steps to
             becoming contributors to major eBPF projects, eBPF.io will help you
             along the way.
@@ -202,7 +202,7 @@ class Description extends React.Component {
           <img src={require("../assets/map_architecture.png")} />
 
           <p>
-            The following is an incomplete list of supported map types to given
+            The following is an incomplete list of supported map types to give
             an understanding of the diversity in data structures. For various
             map types, both a shared and a per-CPU variation is available.
           </p>
@@ -327,7 +327,7 @@ class Description extends React.Component {
               <b>Mitigation against Spectre:</b> Under speculation CPUs may
               mispredict branches and leave observable side effects that could
               be extracted through a side channel. To name a few examples: eBPF
-              programs mask memory access in order redirect access under
+              programs mask memory access in order to redirect access under
               transient instructions to controlled areas, the verifier also
               follows program paths accessible only under speculative execution
               and the JIT compiler emits Retpolines in case tail calls cannot be
