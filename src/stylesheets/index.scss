@@ -471,7 +471,8 @@ code {
   }
 }
 
-.projects-common-title {
+.projects-common-title,
+.contribute-common-title {
   position: relative;
 
   & > .anchor {
@@ -490,6 +491,14 @@ code {
 
   &:hover > .anchor {
     opacity: 1;
+  }
+}
+
+.contribute-common-title {
+  & > .anchor {
+    svg {
+      margin-top: 60%;
+    }
   }
 }
 

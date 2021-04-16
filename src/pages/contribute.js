@@ -1,6 +1,7 @@
 import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
+import { TitleWithAnchor } from "../common/TitleWithAnchor";
 
 import "../stylesheets/index.scss";
 
@@ -51,7 +52,7 @@ const Page = () => (
         how you can get involved and contribute to the community.
       </p>
 
-      <h2>Contribute to the eBPF runtime in the Linux kernel</h2>
+      <TitleWithAnchor headerClassName="contribute-common-title">Contribute to the eBPF runtime in the Linux kernel</TitleWithAnchor>
       <p>
         The Linux kernel community is maintaining separate <a
         href="https://git.kernel.org/?q=BPF+Group">Git trees</a> for the eBPF
@@ -72,7 +73,7 @@ const Page = () => (
         kernel eBPF runtime</a> for additional details.
       </p>
 
-      <h2>Contribute to an eBPF project</h2>
+      <TitleWithAnchor headerClassName="contribute-common-title">Contribute to an eBPF project</TitleWithAnchor>
       <p>
         The list of eBPF-based projects is long and growing. It will be simple to
         find a project that sparks interest. Check out the <a
@@ -85,7 +86,7 @@ const Page = () => (
         provide a great opportunity to get hands-on quickly.
       </p>
 
-      <h2>Contribute to the eBPF development toolchains</h2>
+      <TitleWithAnchor headerClassName="contribute-common-title">Contribute to the eBPF development toolchains</TitleWithAnchor>
       <p>
         Even though the Linux kernel provides minimal libraries and APIs to use
         eBPF directly, the majority of projects leverage an eBPF development
@@ -99,7 +100,7 @@ const Page = () => (
         directly.
       </p>
 
-      <h2>Contribute to ebpf.io</h2>
+      <TitleWithAnchor headerClassName="contribute-common-title">Contribute to ebpf.io</TitleWithAnchor>
       <p>
         Do you have a writing talent? Are you good with diagrams? The content of the
         ebpf.io website is licensed under a <a
