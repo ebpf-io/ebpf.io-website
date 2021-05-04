@@ -459,11 +459,41 @@ discussed in the previous issues made their way into the latest stable version
 of Linux.
 
 As for the 5.13 release, the time frame covered by this post covers all its
-development cycle. The pull requests below all target that version. As usual,
-the description only contains a few highlights. Follow the links to the PRs to
-see the full list of changes.
+development cycle. There were five pull requests from the bpf-next tree, sent
+on
+[March 10th](https://lore.kernel.org/bpf/20210310015401.14607-1-alexei.starovoitov@gmail.com/),
+[March 25th](https://lore.kernel.org/bpf/20210325040508.92541-1-alexei.starovoitov@gmail.com/),
+[April 1st](https://lore.kernel.org/bpf/20210401233121.65221-1-alexei.starovoitov@gmail.com/),
+[April 24th](https://lore.kernel.org/bpf/20210424022459.16039-1-alexei.starovoitov@gmail.com/), and
+[April 27th](https://lore.kernel.org/bpf/20210427233740.22238-1-daniel@iogearbox.net/).
+As usual, the list below only contains a few highlights—Follow the links above
+to see the full list of changes involved in those pull requests. Here, we broke
+down the changes into categories.
 
-[First pull request for the bpf-next tree](https://lore.kernel.org/bpf/20210310015401.14607-1-alexei.starovoitov@gmail.com/):
+### Core
+
+* Support **calling kernel functions from eBPF programs**. This feature has
+  some similarities with eBPF helper functions, which are compiled as part of
+  the kernel and can be called from eBPF programs. But instead of writing
+  dedicated functions, this is about calling pre-existing function from the
+  kernel. This does not apply to _any_ function: a list of allowed functions is
+  maintained in the kernel for each eBPF program type.
+
+  A crucial difference with eBPF helpers is that kernel functions that can be
+  called are _not_ bounded to a fixed ABI contract. This means that they remain
+  free to evolve, even if this breaks existing eBPF programs. BTF is what
+  makes this possible.
+
+  The motivation behind this set is to reuse some code portions from the
+  kernel, in particular for those eBPF programs that override specific kernel
+  operations (`BPF_PROG_TYPE_STRUCT_OPS`), like TCP congestion control. Several
+  related functions are
+  [marked as allowed](https://lore.kernel.org/bpf/20210325015124.1543397-1-kafai@fb.com/t/#mbe914ced14b35921b471345b58905f962baf1905)
+  for eBPF programs overriding TCP congestion control.
+  <span style="white-space: nowrap;">(Martin KaFai Lau,
+  [link](https://lore.kernel.org/bpf/20210325015124.1543397-1-kafai@fb.com/t/#u))</span>
+
+### XDP
 
 * Make the `bpf_redirect_map()` helper faster by turning it internally into a
   map operation, to access it immediately instead of traversing a
@@ -473,12 +503,58 @@ see the full list of changes.
   <span style="white-space: nowrap;">(Björn Töpel,
   [link](https://lore.kernel.org/bpf/20210308112907.559576-1-bjorn.topel@gmail.com/t/#u))</span>
 
+* For all drivers implementing XDP, move the drop error path for `XDP_REDIRECT`
+  to devmap. This should help implement better queue overflow handling, and
+  represents a step towards the addition of an XDP hook on the transmit queue.
+  <span style="white-space: nowrap;">(Lorenzo Bianconi,
+  [link](https://lore.kernel.org/bpf/ed670de24f951cfd77590decf0229a0ad7fd12f6.1615201152.git.lorenzo@kernel.org/t/#u))</span>
+
+* Improve AF\_XDP selftests and program loading. AF\_XDP sockets need a XDP
+  program to filter the packets to redirect to user space. But when multiple
+  AF\_XDP sockets (“xdpsock” instances) are running on a single interface and
+  one of them is terminated, the XDP program would be automatically unloaded,
+  thus rendering the other sockets unable to operate. Besides improving the
+  selftests, this PR addresses the issue by making libbpf use eBPF “links” to
+  properly reference the XDP programs and make them persistent.
+  <span style="white-space: nowrap;">(Maciej Fijalkowski,
+  [link](https://lore.kernel.org/bpf/20210329224316.17793-1-maciej.fijalkowski@intel.com/t/#u))</span>
+
+* Convert “cpumap” (for redirecting packets to specific CPUs with XDP) to use
+  `netif_receive_skb_list()`, which allows to receive a bulk of socket buffers,
+  thus improving i-cache usage. This results in a performance improvement of
+  about 15% on a test with the `xdp_redirect_cpu` kernel sample program.
+  <span style="white-space: nowrap;">(Lorenzo Bianconi,
+  [link](https://lore.kernel.org/bpf/c729f83e5d7482d9329e0f165bdbe5adcefd1510.1619169700.git.lorenzo@kernel.org/t/))</span>
+
+### eBPF Helper functions
+
+* Add a new helper function **`bpf_for_each_map_elem()`** to iterate and run a
+  callback eBPF function with a given context on all elements of a map. This
+  requires BTF information, and targets arrays, hash maps, LRU hash maps, and
+  their per-CPU derivatives.
+  <span style="white-space: nowrap;">(Yonghong Song,
+  [link](https://lore.kernel.org/bpf/20210225073309.4119708-1-yhs@fb.com/t/#u))</span>
+
+* Implement a new **`bpf_snprintf()`** helper, with a behavior close to the classic
+  `snprintf()` function. The signature differs a little:
+
+  ```c
+  bpf_snprintf(char *str, u32 str_size, const char *fmt, u64 *data, u32 data_len)`
+  ```
+
+  Format specifiers `%s` or `%p` are available, among others. The validation of
+  the format string is performed by the verifier.
+  <span style="white-space: nowrap;">(Florent Revest,
+  [link](https://lore.kernel.org/bpf/20210419155243.1632274-1-revest@chromium.org/t/#u))</span>
+
+### Miscellaneous
+
 * Add support for floating point types (float and double) in BTF. The objective
   is to help load programs with BTF information on the s390 architecture.
   <span style="white-space: nowrap;">(Ilya Leoshkevich,
   [link](https://lore.kernel.org/bpf/20210226202256.116518-1-iii@linux.ibm.com/t/#u))</span>
 
-* Document the various sub-commands for the `bpf()` system call (map
+* **Document the various sub-commands for the `bpf()` system call** (map
   operations, program load, object pinning, and so on). This documentation is
   added to
   [the UAPI header file](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/linux/bpf.h?id=f89271f09f589b8e9f98a9d3373d4868d3e668a5#n96),
@@ -503,38 +579,6 @@ see the full list of changes.
   <span style="white-space: nowrap;">(Song Liu,
   [link](https://lore.kernel.org/bpf/20210225234319.336131-1-songliubraving@fb.com/t/#u))</span>
 
-* Add a new helper function `bpf_for_each_map_elem()` to iterate and run a
-  callback eBPF function with a given context on all elements of a map. This
-  requires BTF information, and targets arrays, hash maps, LRU hash maps, and
-  their per-CPU derivatives.
-  <span style="white-space: nowrap;">(Yonghong Song,
-  [link](https://lore.kernel.org/bpf/20210225073309.4119708-1-yhs@fb.com/t/#u))</span>
-
-A [second pull request](https://lore.kernel.org/bpf/20210325040508.92541-1-alexei.starovoitov@gmail.com/)
-came in a few weeks later.
-
-* Update libbpf to support static linking of multiple ELF files containing eBPF
-  bytecode. This is a huge step forwards for building modular programs. There
-  is no resolution of external symbols across files as of this set (but see
-  fourth bpf-next pull request below), which means that it is not possible yet
-  to define functions or variables compiled to one object file and to reuse
-  them from the code stored in another object file. What is possible is to have
-  several programs in separate object files, or to have programs in one object
-  file and map definitions in another one, and to combine those distinct files
-  into a single one. The new linker is added to libbpf and can be called from
-  dedicated functions from the library, or with the new bpftool command
-  `bpftool gen object <output-file> <input_file>...`.
-  <span style="white-space: nowrap;">(Andrii Nakryiko,
-  [link](https://lore.kernel.org/bpf/20210318194036.3521577-1-andrii@kernel.org/t/#u))</span>
-
-* For all drivers implementing XDP, move the drop error path for `XDP_REDIRECT`
-  to devmap. This should help implement better queue overflow handling, and
-  represents a step towards the addition of an XDP hook on the transmit queue.
-  <span style="white-space: nowrap;">(Lorenzo Bianconi,
-  [link](https://lore.kernel.org/bpf/ed670de24f951cfd77590decf0229a0ad7fd12f6.1615201152.git.lorenzo@kernel.org/t/#u))</span>
-
-[Third pull request](https://lore.kernel.org/bpf/20210401233121.65221-1-alexei.starovoitov@gmail.com/):
-
 * Add UDP support to socket maps (“sockmaps”). Only TCP was supported so far.
   The use case that motivated the change is the need for an efficient solution
   to proxy connections over AF\_UNIX sockets for thousands of services
@@ -542,69 +586,14 @@ came in a few weeks later.
   <span style="white-space: nowrap;">(Cong Wang,
   [link](https://lore.kernel.org/bpf/20210331023237.41094-1-xiyou.wangcong@gmail.com/t/#u))</span>
 
-* Improve AF\_XDP selftests and program loading. AF\_XDP sockets need a XDP
-  program to filter the packets to redirect to user space. But when multiple
-  AF\_XDP sockets (“xdpsock” instances) are running on a single interface and
-  one of them is terminated, the XDP program would be automatically unloaded,
-  thus rendering the other sockets unable to operate. Besides improving the
-  selftests, this PR addresses the issue by making libbpf use eBPF “links” to
-  properly reference the XDP programs and make them persistent.
-  <span style="white-space: nowrap;">(Maciej Fijalkowski,
-  [link](https://lore.kernel.org/bpf/20210329224316.17793-1-maciej.fijalkowski@intel.com/t/#u))</span>
-
-* Support calling kernel functions from eBPF programs. This feature has some
-  similarities with eBPF helper functions, which are compiled as part of the
-  kernel and can be called from eBPF programs. But instead of writing dedicated
-  functions, this is about calling pre-existing function from the kernel. This
-  does not apply to _any_ function: a list of allowed functions is
-  maintained in the kernel for each eBPF program type.
-
-  A crucial difference with eBPF helpers is that kernel functions that can be
-  called are _not_ bounded to a fixed ABI contract. This means that they remain
-  free to evolve, even if this breaks existing eBPF programs. BTF is what
-  makes this possible.
-
-  The motivation behind this set is to reuse some code portions from the
-  kernel, in particular for those eBPF programs that override specific kernel
-  operations (`BPF_PROG_TYPE_STRUCT_OPS`), like TCP congestion control. Several
-  related functions are
-  [marked as allowed](https://lore.kernel.org/bpf/20210325015124.1543397-1-kafai@fb.com/t/#mbe914ced14b35921b471345b58905f962baf1905)
-  for eBPF programs overriding TCP congestion control.
-  <span style="white-space: nowrap;">(Martin KaFai Lau,
-  [link](https://lore.kernel.org/bpf/20210325015124.1543397-1-kafai@fb.com/t/#u))</span>
-
 * Extend batch map operations (lookup, update, delete) to LPM (_Longest Prefix
   Match_) maps.
   <span style="white-space: nowrap;">(Pedro Tammela,
   [link](https://lore.kernel.org/bpf/20210323025058.315763-1-pctammela@gmail.com/t/#u))</span>
 
-[Fourth one](https://lore.kernel.org/bpf/20210424022459.16039-1-alexei.starovoitov@gmail.com/):
-
-* Extend libbpf's static linker to support extern resolution of global symbols:
-  global variables, eBPF sub-programs, and maps defined with BTF information.
-  This is a direct follow-up of the patch set included in the second bpf-next
-  pull request for the cycle, as described above. Andrii still intends to
-  address a few follow-up issues, but this set already makes the linker fully
-  able to combine variables, maps and sub-programs from several object files
-  into a single eBPF program to load into the kernel.
-  <span style="white-space: nowrap;">(Andrii Nakryiko,
-  [link](https://lore.kernel.org/bpf/20210423181348.1801389-1-andrii@kernel.org/t/#u))</span>
-
-* Implement a new `bpf_snprintf()` helper, with a behavior close to the classic
-  `snprintf()` function. The signature differs a little:
-
-  ```c
-  bpf_snprintf(char *str, u32 str_size, const char *fmt, u64 *data, u32 data_len)`
-  ```
-
-  Format specifiers `%s` or `%p` are available, among others. The validation of
-  the format string is performed by the verifier.
-  <span style="white-space: nowrap;">(Florent Revest,
-  [link](https://lore.kernel.org/bpf/20210419155243.1632274-1-revest@chromium.org/t/#u))</span>
-
-And at last comes
-[the fifth and final pull request from bpf-next](https://lore.kernel.org/bpf/20210427233740.22238-1-daniel@iogearbox.net/)
-for the 5.13 cycle.
+* Extend batch map operations (lookup, update, delete) to per-CPU array maps.
+  <span style="white-space: nowrap;">(Pedro Tammela,
+  [link](https://lore.kernel.org/bpf/20210424214510.806627-1-pctammela@mojatatu.com/t/#u))</span>
 
 * Allow to detach and re-attach to eBPF links trampolines associated to
   programs of certain types (for tracing or from the eBPF LSM in particular).
@@ -613,16 +602,21 @@ for the 5.13 cycle.
   <span style="white-space: nowrap;">(Jiri Olsa,
   [link](https://lore.kernel.org/bpf/20210414195147.1624932-1-jolsa@kernel.org/t/#u))</span>
 
-* Convert “cpumap” (for redirecting packets to specific CPUs with XDP) to use
-  `netif_receive_skb_list()`, which allows to receive a bulk of socket buffers,
-  thus improving i-cache usage. This results in a performance improvement of
-  about 15% on a test with the `xdp_redirect_cpu` kernel sample program.
-  <span style="white-space: nowrap;">(Lorenzo Bianconi,
-  [link](https://lore.kernel.org/bpf/c729f83e5d7482d9329e0f165bdbe5adcefd1510.1619169700.git.lorenzo@kernel.org/t/))</span>
+### Tools
 
-* Extend batch map operations (lookup, update, delete) to per-CPU array maps.
-  <span style="white-space: nowrap;">(Pedro Tammela,
-  [link](https://lore.kernel.org/bpf/20210424214510.806627-1-pctammela@mojatatu.com/t/#u))</span>
+* Update libbpf to support **static linking** of multiple ELF files containing
+  eBPF bytecode. This is a huge step forwards for building modular programs.
+  The new linker added to libbpf supports extern resolution of global symbols,
+  which means that global variables, eBPF sub-programs (functions), and maps
+  defined with (or without) BTF information can all be compiled individually
+  into multiple, separate object files, and then assembled by libbpf into a
+  single object file. One can achieve this by calling dedicated functions from
+  the library, or with the new bpftool command
+  `bpftool gen object <output-file> <input_file>...`.
+  A few follow-up issues are still under work.
+  <span style="white-space: nowrap;">(Andrii Nakryiko,
+  [link (static linker)](https://lore.kernel.org/bpf/20210318194036.3521577-1-andrii@kernel.org/t/#u),
+  [link (extern resolution)](https://lore.kernel.org/bpf/20210423181348.1801389-1-andrii@kernel.org/t/#u))</span>
 
 ## Community
 
