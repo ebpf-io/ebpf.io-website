@@ -1,6 +1,6 @@
 ---
 path: "/blog/ebpf-updates-2021-05"
-date: "2021-05-03T10:00:00.000Z"
+date: "2021-05-04T10:00:00.000Z"
 title: "eBPF Updates #5: CNCF Proposals, Kinvolk Acquired, eCHO, the Cost of Tail Calls, Systemd Features, Reverse Debugging, Static Linking"
 toc: true
 tags:
@@ -197,6 +197,11 @@ Updates!
   on eBPF. New Relic concludes by presenting how
   Pixie, its open source observability platform for Kubernetes, leverages eBPF
   to extract richer information.
+
+<!--2021-05-04-->
+* [_Gathering insights on Kubernetes applications, services, and network traffic with Pixie_](https://aws.amazon.com/blogs/opensource/gathering-insights-on-kubernetes-applications-services-and-network-traffic-with-pixie/).  
+  Directly related to the previous item, Pixie is also the object of a new
+  partnership between New Relic and AWS, and even applied to join the CNCF.
 
 ### Deep Dives
 
@@ -407,8 +412,9 @@ Updates!
   out, and adds support for attaching programs to kprobes, kretprobes, or
   tracepoints out of the box.
 
-* [ipftrace2 v0.2.0](https://github.com/YutaroHayakawa/ipftrace2/releases/tag/v0.2.0)
-  was released and revived the support for tracing the journey of network
+* [ipftrace2 v0.3.0](https://github.com/YutaroHayakawa/ipftrace2/releases/tag/v0.3.0)
+  was released and now relies on the new static linker from libbpf. A few weeks
+  earlier, the tool had revived the support for tracing the journey of network
   packets in kernel module functions, thanks to BTF for modules.
 
 ### Software Demos and Experiments
