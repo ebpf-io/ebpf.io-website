@@ -44,6 +44,10 @@ Updates!
   core focus of Cilium is to provide networking and security for cloud-native
   environments and its goals align well with those of the Foundation.
 
+  At the same time, the project is finalizing its version 1.10, for which it
+  just tagged a
+  [release candidate](https://github.com/cilium/cilium/releases/tag/v1.10.0-rc1).
+
 <!--2021-02-24-->
 * [_Sysdig contributes Falco's kernel module, eBPF probe, and libraries to the CNCF_](https://sysdig.com/blog/sysdig-contributes-falco-kernel-ebpf-cncf/).  
   This contribution is a commitment provide and keep those components as open
@@ -99,10 +103,15 @@ Updates!
 
 * [_eCHO - eBPF & Cilium Office Hours_](https://github.com/isovalent/echo).  
   This is a new series of livestream episodes about, you guessed it, eBPF and
-  Cilium. The first episode aired on the 16th of April, and the recording can
-  be found [on YouTube](https://youtu.be/80OYrzS1dCA). You can suggest topics
-  for discussions on the GitHub repository. Make sure you do not miss the next
-  episode!
+  Cilium. The first three episodes have aired already:
+
+  * [Episode 1: Intro to Cilium](https://youtu.be/80OYrzS1dCA)
+  * [Episode 2: Intro to Hubble](https://youtu.be/hD2iJUyIXQw)
+  * [Episode 3: Wireguard](https://youtu.be/-awkPi3D60E)
+
+  You can suggest topics for discussions on
+  [the GitHub tracker](https://github.com/isovalent/eCHO/issues). A new episode
+  streams every Friday, make sure you attend the next one!
 
 ## New Resources
 
@@ -206,14 +215,12 @@ Updates!
 * [_Comparing SystemTap and bpftrace_](https://lwn.net/Articles/852112/),
   <span style="white-space: nowrap;">from Emanuele Rocca.</span>  
   SystemTap and bpftrace are tools to dynamically instrument the kernel or
-  user applications on Linux, and inspect them in a variety of ways. While
-  bpftrace uses eBPF, SystemTap is older and compiles its scripts into
-  kernel modules.
-  programs attached to different probes. This post from LWN.net exposes the
-  differences between the two tools in terms of installation procedure, program
-  structure, and features. As one could expect, using kernel modules is
-  ultimately more powerful, but producing eBPF programs with eBPF is faster and
-  simpler to use.
+  user applications on Linux. While bpftrace uses eBPF programs, SystemTap is
+  older and compiles its scripts into kernel modules. This post from LWN.net
+  exposes the differences between the two tools in terms of installation
+  procedure, program structure, and features. As one could expect, using kernel
+  modules is ultimately more powerful, but eBPF makes for a faster and
+  easier-to-use tracing tool.
 
 <!--2021-04-22-->
 * [_Toward signed BPF programs_](https://lwn.net/SubscriberLink/853489/2916fbd97c95c700/),
@@ -223,10 +230,10 @@ Updates!
   the system would only accept authorized eBPF programs. The mechanism is
   compared with the one in place for kernel modules, but signing eBPF programs
   is more complex (due to the relocations and map creations). The
-  proposal currently under review solves this with a special eBPF program of a
-  new type, which would be allowed to run `bpf()` and `close()` system calls
-  and would load other eBPF programs from within the kernel. The work is still
-  in progress.
+  proposal currently under review solves this with a new program type, which
+  allows a special eBPF program to run `bpf()` and `close()` system calls to
+  load other eBPF programs from within the kernel. The work is still in
+  progress.
 
 <!--2021-03-11-->
 * [_What is vmlinux.h?_](https://www.grant.pizza/blog/vmlinux-header/),
@@ -248,12 +255,11 @@ Updates!
       moment. Those iterators are hooked on various objects in the kernel (for
       example, among many others: tasks, eBPF programs or maps, active TCP
       connections). Pinned to the eBPF virtual file system, they can be dumped
-      (simply with `cat`) to iterate over the selected objects and print a
-      number of information about them. This is very similar to what
-      procfs already offers, although more flexible. It is even possible
-      to preload
+      (simply with `cat`) to iterate over the selected objects and process
+      information to print about them. This is very similar to what procfs
+      already offers, although more flexible. It is even possible to preload
       and attach some iterators at boot time, so that listing eBPF programs and
-      maps is available at all times. Bpftool, BCC tools, bpftrace, and perf
+      maps is available at all times. BCC tools, bpftrace, bpftool, and perf
       all have support for iterators (at various degrees of progress).
     * [_Capturing network traffic in an eXpress Data Path_](https://devconfcz2021.sched.com/event/gmNT/capturing-network-traffic-in-an-express-data-path)
       ([slides](https://static.sched.com/hosted_files/devconfcz2021/ab/Capturing-network-traffic-in-an-eXpress-Data-Path.pdf)),
@@ -265,11 +271,11 @@ Updates!
       hooks that eBPF programs can use to attach to the entry and the exit of
       functions, including other eBPF programs, and inspects the packets before
       and after they are processed by the XDP program. The tool provides a
-      command-line interface, and also led to the improvement of a component of
-      the PcapNG capture format. WireShark v3.4.0 and older can already
-      benefit from those changes, with new filters to show packets for which
-      the XDP program returned a specific action code or packets coming
-      from a specific interface queue.
+      command-line interface, and also led to improvements of the PcapNG
+      capture format. WireShark v3.4.0 and newer can already benefit from those
+      changes, with new filters to show packets for which the XDP program
+      returned a specific action code or packets coming from a specific
+      interface queue.
     * [_Always present type information thanks to BPF: BTF_](https://devconfcz2021.sched.com/event/gmLF/always-present-type-information-thanks-to-bpf-btf),
       ([video](https://www.youtube.com/watch?v=fX6_xHldTjU&list=PLU1vS0speL2YQ9WXMnY-glVErAIsTsSAl&index=16),
       [slides](http://vger.kernel.org/~acme/bpf/devconf.cz-2021-Always-present-type-information-thanks-to-BPF-BTF/)),
@@ -393,6 +399,8 @@ Updates!
 
 * The Cilium community is proud to
   [take part in this year's Google Summer of Code](https://summerofcode.withgoogle.com/organizations/4940468447608832/).
+  The application period is now closed and accepted projects will be announced
+  on May 17th.
 
 * The Go library
   [cilium/ebpf v0.5.0](https://github.com/cilium/ebpf/releases/tag/v0.5.0) is
@@ -482,11 +490,11 @@ see the full list of changes.
   <span style="white-space: nowrap;">(Joe Stringer,
   [link](https://lore.kernel.org/bpf/20210302171947.2268128-1-joe@cilium.io/t/#u))</span>
 
-* Extend test runs (`BPF_PROG_TEST_RUN`) to test programs of type
-  `BPF_PROG_TYPE_SK_LOOKUP`, to be able to test them and evaluate their
-  performance. This recent program type
-  helps selecting a socket for new TCP or UDP flows and overcomes some of the
-  `bind()` limitations in specific use cases.
+* Add support for the `BPF_PROG_TEST_RUN` subcommand to programs of type
+  `BPF_PROG_TYPE_SK_LOOKUP`, to be able to “test-run” them and evaluate their
+  performance. This recent program type helps selecting a socket for new TCP or
+  UDP flows and overcomes some of the `bind()` limitations in specific use
+  cases.
   <span style="white-space: nowrap;">(Lorenz Bauer,
   [link](https://lore.kernel.org/bpf/20210303101816.36774-1-lmb@cloudflare.com/t/#u))</span>
 
@@ -496,8 +504,9 @@ see the full list of changes.
   [link](https://lore.kernel.org/bpf/20210225234319.336131-1-songliubraving@fb.com/t/#u))</span>
 
 * Add a new helper function `bpf_for_each_map_elem()` to iterate and run a
-  callback function with a given context on all elements of a map. The helper
-  targets arrays, hash maps, LRU hash maps, and their per-CPU derivatives.
+  callback eBPF function with a given context on all elements of a map. This
+  requires BTF information, and targets arrays, hash maps, LRU hash maps, and
+  their per-CPU derivatives.
   <span style="white-space: nowrap;">(Yonghong Song,
   [link](https://lore.kernel.org/bpf/20210225073309.4119708-1-yhs@fb.com/t/#u))</span>
 
@@ -550,16 +559,15 @@ came in a few weeks later.
   does not apply to _any_ function: a list of allowed functions is
   maintained in the kernel for each eBPF program type.
 
-  The motivation is to reuse some code portions from the kernel, in particular
-  for those eBPF programs that override specific kernel operations
-  (`BPF_PROG_TYPE_STRUCT_OPS`), like TCP congestion control.
-
   A crucial difference with eBPF helpers is that kernel functions that can be
   called are _not_ bounded to a fixed ABI contract. This means that they remain
   free to evolve, even if this breaks existing eBPF programs. BTF is what
   makes this possible.
 
-  Several functions directly related to TCP congestion control are
+  The motivation behind this set is to reuse some code portions from the
+  kernel, in particular for those eBPF programs that override specific kernel
+  operations (`BPF_PROG_TYPE_STRUCT_OPS`), like TCP congestion control. Several
+  related functions are
   [marked as allowed](https://lore.kernel.org/bpf/20210325015124.1543397-1-kafai@fb.com/t/#mbe914ced14b35921b471345b58905f962baf1905)
   for eBPF programs overriding TCP congestion control.
   <span style="white-space: nowrap;">(Martin KaFai Lau,
@@ -641,7 +649,7 @@ This leads to critical gains.
 
 eBPF Updates are brought to you by the [Cilium project](https://cilium.io).
 This report was produced by Quentin Monnet (Isovalent).
-Thanks to Cilium engineering team for input and reviews.
+Thanks to Cilium engineering team (Paul Chaignon in particular) for input and reviews.
 And many thanks to all the contributors to the eBPF community and ecosystem,
 who generated the contents listed in this post!
 
