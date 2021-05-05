@@ -37,12 +37,12 @@ Updates!
   (_Cloud Native Computing Foundation_) at the Incubation level. If the
   proposal is accepted, there should be very little change to development
   models or governance, already fully open and following open-source best
-  practice. From proposal overview, a number of users looking to build large
-  projects on Cilium have requested a donation to a foundation, to get the final
-  piece of insurance on the commitment to open source. The CNCF was naturally
-  considered, as the
-  core focus of Cilium is to provide networking and security for cloud-native
-  environments and its goals align well with those of the Foundation.
+  practice. Why do this? A number of users looking to build large projects on
+  Cilium have requested a donation to a foundation, to get the final piece of
+  insurance on the commitment to open source. The CNCF was naturally
+  considered, as the core focus of Cilium is to provide networking and security
+  for cloud-native environments and its goals align well with those of the
+  Foundation.
 
   At the same time, the project is finalizing its version 1.10, for which it
   just tagged a
@@ -63,8 +63,8 @@ Updates!
 
   Nearly at the same time, the maintainers of the Falco submitted a proposal
   for [CNCF graduation](https://github.com/cncf/toc/pull/641), which would
-  represent a marker of health and maturity for the project. And Sysdig, the
-  company behind Falco,
+  represent a marker of health and maturity for the project. Additionally
+  Sysdig, the company behind Falco,
   [raised a $188 million Series F](https://news.crunchbase.com/news/sysdigs-valuation-hits-1-19b-after-188m-series-f/)
   at a $1.19 billion valuation.
 
@@ -109,7 +109,8 @@ Updates!
   * [Episode 2: Intro to Hubble](https://youtu.be/hD2iJUyIXQw)
   * [Episode 3: Wireguard](https://youtu.be/-awkPi3D60E)
 
-  You can suggest topics for discussions on
+  You can easily add a show to your calendar from the link above, and you can
+  even suggest topics for discussions on
   [the GitHub tracker](https://github.com/isovalent/eCHO/issues). A new episode
   streams every Friday, make sure you attend the next one!
 
