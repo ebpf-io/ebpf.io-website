@@ -457,6 +457,37 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">KubeArmor</TitleWithAnchor>
+      <div className="project-minor-title">Container-aware Runtime Security Enforcement System</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/accuknox/KubeArmor"
+        >
+          <img src={require("../assets/projects-logos/kubearmor.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+	    <a href="https://kubearmor.com">
+	      <b>Website</b>
+	    </a>{" "}
+	    |{" "}
+            <a href="https://github.com/accuknox/KubeArmor">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+	  KubeArmor is a container-aware runtime security enforcement system that 
+	  restricts the behavior (such as process execution, file access, networking
+	  operation, and resource utilization) of containers at the system level,
+	  using LSMs and eBPF.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">kubectl trace</TitleWithAnchor>
       <div className="project-minor-title">
         Schedule bpftrace programs on your Kubernetes cluster
@@ -539,37 +570,6 @@ const ProjectDescriptions = () => (
           </p>
           <p>
           Tracee uses eBPF technology to detect and filter operating system events, helping you expose security insights, detect suspicious behavior, and capture forensic indicators. 
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">KubeArmor</TitleWithAnchor>
-      <div className="project-minor-title">Container-aware Runtime Security Enforcement System</div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/accuknox/KubeArmor"
-        >
-          <img src={require("../assets/projects-logos/kubearmor.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-	    <a href="https://kubearmor.com">
-	      <b>Website</b>
-	    </a>{" "}
-	    |{" "}
-            <a href="https://github.com/accuknox/KubeArmor">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-	  KubeArmor a container-aware runtime security enforcement system that 
-	  restricts the behavior (such as process execution, file access, networking
-	  operation, and resource utilization) of containers at the system level
-	  using LSMs and eBPF.
           </p>
         </div>
       </div>
