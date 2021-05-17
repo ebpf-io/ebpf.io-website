@@ -584,7 +584,8 @@ class Description extends React.Component {
           <h4>Generic</h4>
           <ul>
             <Reference
-              link="https://kccnceu20.sched.com/event/ZemQ/ebpf-and-kubernetes-little-helper-minions-for-scaling-microservices-daniel-borkmann-cilium"
+              link="https://www.youtube.com/watch?v=99jUcLt3rSk"
+	      slides="https://kccnceu20.sched.com/event/ZemQ/ebpf-and-kubernetes-little-helper-minions-for-scaling-microservices-daniel-borkmann-cilium"
               name="eBPF and Kubernetes: Little Helper Minions for Scaling Microservices"
               description="Daniel Borkmann, KubeCon EU, Aug 2020"
             />
@@ -626,7 +627,8 @@ class Description extends React.Component {
               description="Daniel Borkmann, FOSDEM, Feb 2021"
             />
 	    <Reference
-              link="https://linuxplumbersconf.org/event/7/contributions/674/"
+              link="https://www.youtube.com/watch?v=UkvxPyIJAko&t=21s"
+	      slides="https://linuxplumbersconf.org/event/7/contributions/674/attachments/568/1002/plumbers_2020_cilium_load_balancer.pdf"
               name="Kubernetes Service Load-Balancing at Scale with BPF & XDP"
               description="Daniel Borkmann & Martynas Pumputis, Linux Plumbers, Aug 2020"
             />
