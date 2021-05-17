@@ -4,7 +4,7 @@ import React from "react";
 
 import "../stylesheets/index.scss";
 
-const pageMetaTitle = 'What is eBPF? An Introduction and Deep Dive into the eBPF Technology'
+const pageMetaTitle = 'What is extended Berkeley Packet Filter (eBPF)? An Introduction and Deep Dive into the eBPF Technology'
 const pageMetaDescription = 'A detailed step by step introduction to the eBPF technology with lots of references for further reading.'
 
 const windowGlobal = typeof window !== "undefined" && window;
