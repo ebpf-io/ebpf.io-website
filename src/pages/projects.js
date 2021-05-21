@@ -348,6 +348,9 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/iovisor/gobpf">
               <b>gobpf</b>
             </a>{" "}
+            <a href="https://github.com/aquasecurity/libbpfgo">
+              <b>libbpfgo</b>
+            </a>{" "}
           </p>
           <p>
             <a href="https://github.com/cilium/ebpf">eBPF</a> is designed as a
