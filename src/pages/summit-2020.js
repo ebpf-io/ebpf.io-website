@@ -1516,12 +1516,12 @@ const CallForPapers = () => (
         {property: "og:url", name: "url", content: "https://ebpf.io/summit-2020/"},
         {property: "og:title", name: "title", content: pageMetaTitle},
         {property: "og:description", name: "description", content: pageMetaDescription},
-        {property: "og:image", name: "image", content: 'https://ebpf.io' + require("../assets/summit_logo.png")},
+        {property: "og:image", name: "image", content: 'https://ebpf.io' + require("../assets/summit-2020/summit_logo.png")},
         {name: "twitter:card", content: "summary_large_image"},
         {name: "twitter:url", content: "https://ebpf.io/summit-2020/"},
         {name: "twitter:title", content: pageMetaTitle},
         {name: "twitter:description", content: pageMetaDescription},
-        {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/summit_logo.png")},
+        {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/summit-2020/summit_logo.png")},
       ]}
     />
     <Info />
