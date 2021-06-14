@@ -40,7 +40,8 @@ const Hero = () => (
       </div>
 
       <p className="description">
-        eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for pre-registration. We will open the Call For Papers (CFP) soon.<br/>
+        eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for pre-registration.<br/>
+        Interested in speaking at eBPF Summit? The <a target="_blank" href="https://sessionize.com/ebpf-summit-2021/">Call For Papers</a> is open until July 2nd!
       </p>
 
       <div className="space" />
