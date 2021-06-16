@@ -120,9 +120,9 @@ const Sections = () => (
 
 const Outro = () => (
   <div className="intro">
-    <p>
-      To learn more about eBPF and its use cases:
-      <table width="100%">
+    <p>To learn more about eBPF and its use cases:</p>
+    <table width="100%">
+      <tbody>
         <tr>
           <td>
             <ul>
@@ -147,8 +147,8 @@ const Outro = () => (
             </ul>
           </td>
         </tr>
-      </table>
-    </p>
+      </tbody>
+    </table>
   </div>
 );
 

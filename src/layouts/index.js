@@ -30,12 +30,13 @@ const getLanguageName = (languageCode) => {
 
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
-    <strong>eBPF Summit keynote and lightning talk videos are available.</strong> <a href="/summit-2020" style={{color: '#947927'}}>Watch Now!</a>
+    <a href="/summit-2021" style={{color: '#947927'}}>Pre-register now</a> for <strong>eBPF Summit 2021</strong> on August 18-19
   </div>
 )
 
 const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
   const [isLangMenuShown, setIsLangMenuShown] = useState(false)
+  const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false)
 
   const setLang = useCallback(lang => {
     setLanguage(lang)
@@ -44,7 +45,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
 
   const languageButtons = [];
   for (let l of languages) {
-    languageButtons.push(<button className={`button${language === l.code ? ' selected' : ''}`} onClick={() => setLang(`${l.code}`)} type="button">{l.name}</button>);
+    languageButtons.push(<button key={l.name} className={`button${language === l.code ? ' selected' : ''}`} onClick={() => setLang(`${l.code}`)} type="button">{l.name}</button>);
   }
 
   return <div className="header desktop">
@@ -63,14 +64,31 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
       <Link to="/what-is-ebpf">What is eBPF?</Link>
       <Link to="/blog">Blog</Link>
       <Link to="/projects">Projects</Link>
+      <span className="languageSelect">
+        <button className="button" onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)} type="button">Conferences <span className="triangle">▾</span></button>
+        <span className={`list${isConferencesMenuShown ? ' is-shown' : ''}`}>
+          <strong>eBPF Summit</strong>
+          <Link className="link" to="/summit-2021">2021</Link>
+          <Link className="link" to="/summit-2020">2020</Link>
+          <strong>Linux Plumbers</strong>
+          <a target="_blank" className="link" href="https://lore.kernel.org/bpf/6d225920-9ecc-ef24-2bf8-848ca86c7fb0@iogearbox.net/">2021</a>
+          <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/7/sessions/91/#all">2020</a>
+          <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/4/sessions/62/#20190911">2019</a>
+          <a target="_blank" className="link" href="http://vger.kernel.org/lpc-bpf2018.html">2018</a>
+          <a target="_blank" className="link" href="https://blog.linuxplumbersconf.org/2017/ocw/events/LPC2017/schedule.html#day_2017_09_15">2017</a>
+          <strong>bpfconf</strong>
+          <a target="_blank" className="link" href="https://lore.kernel.org/bpf/60997079.1c69fb81.77f3f.a045@mx.google.com/">2021</a>
+          <a target="_blank" className="link" href="http://vger.kernel.org/bpfconf2019.html">2019</a>
+        </span>
+      </span>
       <a href="/slack">Slack</a>
       <Link to="/contribute">Contribute</Link>
-      {hasLanguage && <div className="languageSelect">
+      {hasLanguage && <span className="languageSelect">
         <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
-        <div className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
+        <span className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
           {languageButtons}
-        </div>
-      </div>}
+        </span>
+      </span>}
       <a href="https://www.cilium.io">
         <img
           src={require("../assets/cilium_logo.png")}
@@ -86,11 +104,17 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleIsOpen = useCallback(() => setIsOpen(!isOpen), [isOpen, setIsOpen]);
   const [isLangMenuShown, setIsLangMenuShown] = useState(false)
+  const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false)
 
   const setLang = useCallback(lang => {
     setLanguage(lang)
     setIsLangMenuShown(false)
   }, [setLanguage, setIsLangMenuShown])
+
+  const languageButtons = [];
+  for (let l of languages) {
+    languageButtons.push(<button key={l.name} className={`button${language === l.code ? ' selected' : ''}`} onClick={() => setLang(`${l.code}`)} type="button">{l.name}</button>);
+  }
 
   return (
     <div className="header mobile">
@@ -112,14 +136,31 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
           <Link to="/what-is-ebpf">What is eBPF?</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/projects">Projects</Link>
+          <span className="languageSelect">
+            <button className="button" onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)} type="button">Conferences <span className="triangle">▾</span></button>
+            <span className={`list${isConferencesMenuShown ? ' is-shown' : ''}`}>
+              <strong>eBPF Summit</strong>
+              <Link className="link" to="/summit-2021">2021</Link>
+              <Link className="link" to="/summit-2020">2020</Link>
+              <strong>Linux Plumbers</strong>
+              <a target="_blank" className="link" href="https://lore.kernel.org/bpf/6d225920-9ecc-ef24-2bf8-848ca86c7fb0@iogearbox.net/">2021</a>
+              <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/7/sessions/91/#all">2020</a>
+              <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/4/sessions/62/#20190911">2019</a>
+              <a target="_blank" className="link" href="http://vger.kernel.org/lpc-bpf2018.html">2018</a>
+              <a target="_blank" className="link" href="https://blog.linuxplumbersconf.org/2017/ocw/events/LPC2017/schedule.html#day_2017_09_15">2017</a>
+              <strong>bpfconf</strong>
+              <a target="_blank" className="link" href="https://lore.kernel.org/bpf/60997079.1c69fb81.77f3f.a045@mx.google.com/">2021</a>
+              <a target="_blank" className="link" href="http://vger.kernel.org/bpfconf2019.html">2019</a>
+            </span>
+          </span>
           <a href="/slack">Slack</a>
           <Link to="/contribute">Contribute</Link>
-          {hasLanguage && <div className="languageSelect">
+          {hasLanguage && <span className="languageSelect">
             <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
-            <div className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
+            <span className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
               {languageButtons}
-            </div>
-          </div>}
+            </span>
+          </span>}
           <a href="https://www.cilium.io">
             <img src={require("../assets/cilium_logo.png")} height="50px" />
           </a>
@@ -165,7 +206,7 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden }) => {
     [],
   );
 
-  const [language, setLanguage] = useState();
+  const [language, setLanguage] = useState('/');
 
   useEffect(
     () => {
@@ -233,7 +274,7 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden }) => {
 };
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.node,
 };
 
 export default TemplateWrapper;

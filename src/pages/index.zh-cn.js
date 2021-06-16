@@ -102,9 +102,9 @@ const Sections = () => (
 
 const Outro = () => (
   <div className="intro">
-    <p>
-      更多 eBPF 信息及使用案例：
-      <table width="100%">
+    <p>更多 eBPF 信息及使用案例：</p>
+    <table width="100%">
+      <tbody>
         <tr>
           <td>
             <ul>
@@ -129,8 +129,8 @@ const Outro = () => (
             </ul>
           </td>
         </tr>
-      </table>
-    </p>
+      </tbody>
+    </table>
   </div>
 );
 

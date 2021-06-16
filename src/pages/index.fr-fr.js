@@ -127,9 +127,9 @@ const Sections = () => (
 
 const Outro = () => (
   <div className="intro">
-    <p>
-      Pour en apprendre plus sur eBPF et ses applications :
-      <table width="100%">
+    <p>Pour en apprendre plus sur eBPF et ses applications:</p>
+    <table width="100%">
+      <tbody>
         <tr>
           <td>
             <ul>
@@ -154,8 +154,8 @@ const Outro = () => (
             </ul>
           </td>
         </tr>
-      </table>
-    </p>
+      </tbody>
+    </table>
   </div>
 );
 
