@@ -438,40 +438,44 @@ class Description extends React.Component {
           </p>
 
           <table>
-            <tr>
-              <th width="50%">Native Support</th>
-              <th width="50%">Kernel Module</th>
-            </tr>
-            <tr>
-              <td>
-                <ol>
-                  <tr>
-                    <li>
-                      Change kernel source code and convince the Linux kernel
-                      community that the change is required.
-                    </li>
-                    <li>
-                      Wait several years for the new kernel version to become a
-                      commodity.
-                    </li>
-                  </tr>
-                </ol>
-              </td>
-              <td>
-                <ol>
-                  <tr>
-                    <li>Write a kernel module</li>
-                    <li>
-                      Fix it up regularly, as every kernel release may break it
-                    </li>
-                    <li>
-                      Risk corrupting your Linux kernel due to lack of security
-                      boundaries
-                    </li>
-                  </tr>
-                </ol>
-              </td>
-            </tr>
+            <thead>
+              <tr>
+                <th width="50%">Native Support</th>
+                <th width="50%">Kernel Module</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ol>
+                    <tr>
+                      <li>
+                        Change kernel source code and convince the Linux kernel
+                        community that the change is required.
+                      </li>
+                      <li>
+                        Wait several years for the new kernel version to become a
+                        commodity.
+                      </li>
+                    </tr>
+                  </ol>
+                </td>
+                <td>
+                  <ol>
+                    <tr>
+                      <li>Write a kernel module</li>
+                      <li>
+                        Fix it up regularly, as every kernel release may break it
+                      </li>
+                      <li>
+                        Risk corrupting your Linux kernel due to lack of security
+                        boundaries
+                      </li>
+                    </tr>
+                  </ol>
+                </td>
+              </tr>
+            </tbody>
           </table>
 
           <p>

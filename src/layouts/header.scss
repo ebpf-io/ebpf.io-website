@@ -130,6 +130,7 @@ $lg: "screen and (max-width : 1024px)";
       position: absolute;
       left: 0;
       top: 100%;
+      display: block;
       border: 1px solid #000;
       padding: 6px;
       border-radius: 2px;
@@ -177,6 +178,30 @@ $lg: "screen and (max-width : 1024px)";
             height: 4px;
             background: currentColor;
             border-radius: 50%;
+          }
+        }
+      }
+      & > .link {
+        appearance: none;
+        position: relative;
+        display: block;
+        padding: 6px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: right;
+        background: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          color: rgb(75, 75, 75);
+        }
+        &:focus {
+          outline: none;
+          &:focus-visible {
+            outline: 1px dotted;
+            outline: 5px auto -webkit-focus-ring-color;
           }
         }
       }

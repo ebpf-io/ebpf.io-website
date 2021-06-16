@@ -973,13 +973,9 @@ const Hero = () => (
         <img alt="eBPF" className="logo" src={require("../assets/summit-2020/eBPF-logo-white.svg")} />
         {' '}
         Summit
+        <br />
+        2020
       </h1>
-
-      <div className="meta">
-        {/* <span className="item" style={{textDecoration: "line-through"}}>October 28-29th, 2020</span> */}
-        {/* <hr className="divider" /> */}
-        <span className="item">A Free Virtual Event</span>
-      </div>
 
       <p className="description">
         eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers now available <strong>on demand</strong>.<br/>
@@ -1022,8 +1018,8 @@ const AboutOld = () => (
 const About = () => (
   <div className="summit-about">
     <div className="wrapper" style={{textAlign: 'center'}}>
-      <h2 className="title">eBPF Summit On Demand</h2>
-      <p className="description">Watch the eBPF Summit in it's entirety or scroll down to the Agenda and Lighting Talk sections below to find links for each individual talk.</p>
+      <h2 className="title">eBPF Summit 2020 On Demand</h2>
+      <p className="description">Watch the eBPF Summit in its entirety or scroll down to the Agenda and Lighting Talk sections below to find links for each individual talk.</p>
       <p className="description"><strong>Day 1:</strong> <a href="https://youtu.be/1GSgyvn4N7E">watch full replay</a>, <a href="https://cilium.io/blog/2020/10/28/ebpf-summit-day-1">recap</a></p>
       <p className="description"><strong>Day 2:</strong> <a href="https://youtu.be/jw8tEPP6jwQ">watch full replay</a>, <a href="https://cilium.io/blog/2020/10/29/ebpf-summit-day-2">recap</a></p>
     </div>
