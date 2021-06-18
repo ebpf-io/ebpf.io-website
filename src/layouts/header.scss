@@ -181,6 +181,13 @@ $lg: "screen and (max-width : 1024px)";
           }
         }
       }
+      & > strong {
+        margin-bottom: 1ex;
+        display: inline-block;
+      }
+      & > strong:not(:first-child) {
+        margin-top: 1ex;
+      }
       & > .link {
         appearance: none;
         position: relative;
