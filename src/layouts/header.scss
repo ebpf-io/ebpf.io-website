@@ -158,7 +158,7 @@ $lg: "screen and (max-width : 1024px)";
         border: none;
         cursor: pointer;
         &:hover {
-          color: #5f4b0f;
+          background-color: #fff1cc;
         }
         &:focus {
           outline: none;
@@ -181,6 +181,13 @@ $lg: "screen and (max-width : 1024px)";
           }
         }
       }
+      & > strong {
+        margin-bottom: 1ex;
+        display: inline-block;
+      }
+      & > strong:not(:first-child) {
+        margin-top: 1ex;
+      }
       & > .link {
         appearance: none;
         position: relative;
@@ -190,12 +197,13 @@ $lg: "screen and (max-width : 1024px)";
         text-decoration: none;
         font-weight: 600;
         font-size: 14px;
-        text-align: right;
         background: none;
         border: none;
         cursor: pointer;
+        margin-left: 0;
+        padding-left: 40px;
         &:hover {
-          color: rgb(75, 75, 75);
+          background-color: #fff1cc;
         }
         &:focus {
           outline: none;
