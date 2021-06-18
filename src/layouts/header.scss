@@ -95,7 +95,7 @@ $lg: "screen and (max-width : 1024px)";
     }
 
     &:hover {
-      color: #5f4b0f;
+      color: rgb(75, 75, 75);
       strong {
         color: #444;
       }
@@ -115,7 +115,7 @@ $lg: "screen and (max-width : 1024px)";
       border: none;
       cursor: pointer;
       &:hover {
-        color: #5f4b0f;
+        color: rgb(75, 75, 75);
       }
       &:focus {
         outline: none;
@@ -158,7 +158,7 @@ $lg: "screen and (max-width : 1024px)";
         border: none;
         cursor: pointer;
         &:hover {
-          background-color: #fff1cc;
+          color: rgb(75, 75, 75);
         }
         &:focus {
           outline: none;
@@ -181,13 +181,6 @@ $lg: "screen and (max-width : 1024px)";
           }
         }
       }
-      & > strong {
-        margin-bottom: 1ex;
-        display: inline-block;
-      }
-      & > strong:not(:first-child) {
-        margin-top: 1ex;
-      }
       & > .link {
         appearance: none;
         position: relative;
@@ -197,13 +190,12 @@ $lg: "screen and (max-width : 1024px)";
         text-decoration: none;
         font-weight: 600;
         font-size: 14px;
+        text-align: right;
         background: none;
         border: none;
         cursor: pointer;
-        margin-left: 0;
-        padding-left: 40px;
         &:hover {
-          background-color: #fff1cc;
+          color: rgb(75, 75, 75);
         }
         &:focus {
           outline: none;
@@ -226,11 +218,28 @@ $lg: "screen and (max-width : 1024px)";
     & > .languageSelect {
       margin-left: 0;
       margin-bottom: 15px;
+      & > .button {
+        width: 100%;
+      }
       & > .list {
         margin-top: 15px;
         position: static;
+        border: none;
+        text-align: center;
         &:not(.is-shown) {
           display: none;
+        }
+        & > strong {
+          &:nth-of-type(n+2) {
+            display: block;
+            margin-top: 8px;
+          }
+        }
+        & > .button,
+        & > .link {
+          margin: 0;
+          width: 100%;
+          text-align: center;
         }
       }
     }
