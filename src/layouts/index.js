@@ -77,7 +77,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
           <a target="_blank" className="link" href="http://vger.kernel.org/lpc-bpf2018.html">2018</a>
           <a target="_blank" className="link" href="https://blog.linuxplumbersconf.org/2017/ocw/events/LPC2017/schedule.html#day_2017_09_15">2017</a>
           <strong>bpfconf (LSF/MM/BPF)</strong>
-          <a target="_blank" className="link" href="https://lore.kernel.org/bpf/60997079.1c69fb81.77f3f.a045@mx.google.com/">2021</a>
+          <a target="_blank" className="link" href="https://lore.kernel.org/bpf/60997079.1c69fb81.77f3f.a045@mx.google.com/">2021 CFP</a>
           <a target="_blank" className="link" href="http://vger.kernel.org/bpfconf2019.html">2019</a>
         </span>
       </span>
