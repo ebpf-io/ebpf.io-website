@@ -201,6 +201,8 @@ $lg: "screen and (max-width : 1024px)";
         background: none;
         border: none;
         cursor: pointer;
+        margin-left: 0;
+        padding-left: 40px;
         &:hover {
           background-color: #fff1cc;
         }
