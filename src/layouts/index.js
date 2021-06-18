@@ -70,7 +70,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
           <strong>eBPF Summit</strong>
           <Link className="link" to="/summit-2021">2021 CFP</Link>
           <Link className="link" to="/summit-2020">2020</Link>
-          <strong>Linux Plumbers eBPF Track</strong>
+          <strong>eBPF Track (LPC)</strong>
           <a target="_blank" className="link" href="https://lore.kernel.org/bpf/6d225920-9ecc-ef24-2bf8-848ca86c7fb0@iogearbox.net/">2021 CFP</a>
           <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/7/sessions/91/#all">2020</a>
           <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/4/sessions/62/#20190911">2019</a>
@@ -142,7 +142,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
               <strong>eBPF Summit</strong>
               <Link className="link" to="/summit-2021">2021</Link>
               <Link className="link" to="/summit-2020">2020</Link>
-              <strong>Linux Plumbers eBPF Track</strong>
+              <strong>eBPF Track (LPC)</strong>
               <a target="_blank" className="link" href="https://lore.kernel.org/bpf/6d225920-9ecc-ef24-2bf8-848ca86c7fb0@iogearbox.net/">2021</a>
               <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/7/sessions/91/#all">2020</a>
               <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/4/sessions/62/#20190911">2019</a>
