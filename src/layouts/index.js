@@ -30,7 +30,7 @@ const getLanguageName = (languageCode) => {
 
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
-    <a href="/summit-2021" style={{color: '#947927'}}>Pre-register now</a> for <strong>eBPF Summit 2021</strong> on August 18-19
+    <a href="/summit-2021" style={{color: '#947927'}}>Register now</a> for <strong>eBPF Summit 2021</strong> on <strong>August 18-19, 2021</strong> (<a style={{color: '#947927'}} href="https://sessionize.com/ebpf-summit-2021/">CFP</a> open until July 23)
   </div>
 )
 
@@ -68,7 +68,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
         <button className="button" onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)} type="button">Conferences <span className="triangle">▾</span></button>
         <span className={`list${isConferencesMenuShown ? ' is-shown' : ''}`}>
           <strong>eBPF Summit</strong>
-          <Link className="link" to="/summit-2021">2021 CFP</Link>
+          <Link className="link" to="/summit-2021">2021</Link>
           <Link className="link" to="/summit-2020">2020</Link>
           <strong>eBPF Track (LPC)</strong>
           <a target="_blank" className="link" href="https://lore.kernel.org/bpf/6d225920-9ecc-ef24-2bf8-848ca86c7fb0@iogearbox.net/">2021 CFP</a>
