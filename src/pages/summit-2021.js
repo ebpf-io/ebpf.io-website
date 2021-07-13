@@ -9,7 +9,7 @@ import queryString from 'query-string';
 import "../stylesheets/index.scss";
 import "../../node_modules/react-modal-video/scss/modal-video.scss";
 const pageMetaTitle = 'eBPF Summit 2021'
-const pageMetaDescription = 'Register now for the eBPF Summit 2021, a virtual event, targeted at DevOps, SecOps, platform architects, and developers. To be held August 18-19, 2021.'
+const pageMetaDescription = 'Register now for the eBPF Summit 2021, Aug 18-19, 2021, a free virtual event for DevOps, SRE, SecOps, and developers.'
 const speakers = [
   {
     card: {
@@ -272,7 +272,7 @@ const Agenda = () => {
     <div className="wrapper">
       <h2 className="title">Agenda</h2>
 
-      <p className="note">Comming soon!</p>
+      <p className="note">Coming soon!</p>
 
     </div>
   </div>
