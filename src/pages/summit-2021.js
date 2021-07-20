@@ -235,7 +235,7 @@ const Keynotes = () => {
 
   return <div className="summit-keynotes">
     <div className="wrapper">
-      <h2 className="title">Featured Speakers</h2>
+      <h2 className="title" id="featured-speakers">Featured Speakers</h2>
 
       <div className="list">
         {speakers.map(({ card, about }, idx) => <SpeakerCard
@@ -281,11 +281,11 @@ const Agenda = () => {
 const About1 = () => (
   <div className="summit-about">
     <div className="wrapper" style={{textAlign: 'center', 'padding-bottom': '30px'}}>
-      <h2 className="title">Information</h2>
+      <h2 className="title" id="information">Information</h2>
       <p className="description">
         Back by popular demand, we’re excited to announce the eBPF Summit 2021. eBPF is quickly becoming one of the most talked about technologies in our industry - enabling a new generation of networking, observability and security tools. The eBPF Summit brings together end-user and the eBPF developer community for two days of exciting content all around eBPF. Just like last year, we will hear from both end-users sharing their experience using eBPF as well as developers actively working on eBPF and eBPF projects.
       </p>
-      <h2 className="title">Topics</h2>
+      <h2 className="title" id="topics">Topics</h2>
     <div style={{'overflow': 'hidden', textAlign: 'left', 'padding-bottom': '0px'}}>
       <div style={{'width': '50%', 'float': 'left'}}>
       <ul>
@@ -315,7 +315,7 @@ const About1 = () => (
 const About2 = () => (
   <div className="summit-about">
     <div className="wrapper" style={{textAlign: 'center', 'padding-bottom': '30px'}}>
-      <h2 className="title">Last year's eBPF Summit</h2>
+      <h2 className="title" id="last-year">Last year's eBPF Summit</h2>
       <p className="description">
         <a href="https://ebpf.io/summit-2020">eBPF Summit 2020</a> featured <b>2940 Registrations</b>, <b>2 Days</b>, <b>10 Keynotes</b>, <b>28 talks</b>, and <b>28 companies</b>. Many different perspectives were covered from kernel maintainers working on eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities.
       </p>
@@ -342,7 +342,7 @@ const About3 = () => (
 const Registration = () => (
   <div className="summit-about">
     <div className="wrapper" style={{textAlign: 'center'}}>
-      <h2 className="title">Registration</h2>
+      <h2 className="title" id="registration">Registration</h2>
       <a name="register" />
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true" width="840" height="2454" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
