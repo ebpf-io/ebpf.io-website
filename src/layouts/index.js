@@ -30,7 +30,7 @@ const getLanguageName = (languageCode) => {
 
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
-    <a href="/summit-2021" style={{color: '#947927'}}>Register now</a> for <strong>eBPF Summit 2021</strong> on <strong>August 18-19, 2021</strong> (<a style={{color: '#947927'}} href="https://sessionize.com/ebpf-summit-2021/">CFP</a> open until July 23)
+    <a href="/summit-2021" style={{color: '#947927'}}>Register now</a> for <strong>eBPF Summit 2021</strong> on <strong>August 18-19, 2021</strong>
   </div>
 )
 
