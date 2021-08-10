@@ -37,6 +37,7 @@ const InfoDisclaimer = () => (
 const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
   const [isLangMenuShown, setIsLangMenuShown] = useState(false)
   const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false)
+  const [isAboutMenuShown, setIsAboutMenuShown] = useState(false)
 
   const setLang = useCallback(lang => {
     setLanguage(lang)
@@ -82,7 +83,16 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
         </span>
       </span>
       <a href="/slack">Slack</a>
-      <Link to="/contribute">Contribute</Link>
+      <span className="languageSelect about">
+        <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">About <span className="triangle">▾</span></button>
+        <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
+          <Link className="link" to="/members">Members</Link>
+          <Link className="link" to="/governing-board">Governing board</Link>
+          <Link className="link" to="/steering-committee">eBPF Steering Committee</Link>
+          <Link className="link" to="/charter">Charter</Link>
+          <Link className="link" to="/contribute">How to Contribute</Link>
+        </span>
+      </span>
       {hasLanguage && <span className="languageSelect">
         <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
         <span className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
@@ -103,8 +113,9 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
 const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleIsOpen = useCallback(() => setIsOpen(!isOpen), [isOpen, setIsOpen]);
-  const [isLangMenuShown, setIsLangMenuShown] = useState(false)
-  const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false)
+  const [isLangMenuShown, setIsLangMenuShown] = useState(false);
+  const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false);
+  const [isAboutMenuShown, setIsAboutMenuShown] = useState(false);
 
   const setLang = useCallback(lang => {
     setLanguage(lang)
@@ -155,6 +166,16 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
           </span>
           <a href="/slack">Slack</a>
           <Link to="/contribute">Contribute</Link>
+          <span className="languageSelect about">
+            <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">About <span className="triangle">▾</span></button>
+            <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
+              <Link className="link" to="/members">Members</Link>
+              <Link className="link" to="/governing-board">Governing board</Link>
+              <Link className="link" to="/steering-committee">eBPF Steering Committee</Link>
+              <Link className="link" to="/charter">Charter</Link>
+              <Link className="link" to="/contribute">How to Contribute</Link>
+            </span>
+          </span>
           {hasLanguage && <span className="languageSelect">
             <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
             <span className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
