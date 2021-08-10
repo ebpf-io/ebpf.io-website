@@ -71,27 +71,19 @@ class Description extends React.Component {
         <div className="what-is-ebpf-description" ref="content">
           <h1>eBPF Documentation</h1>
           <h2>What is eBPF?</h2>
-          <p>
-            The Linux kernel has always been an ideal place to implement
-            monitoring/observability, networking, and security. Unfortunately
-            this was often impractical as it required changing kernel source
-            code or loading kernel modules, and resulted in layers of
-            abstractions stacked on top of each other. eBPF is a revolutionary
-            technology that can run sandboxed programs in the Linux kernel
-            without changing kernel source code or loading kernel modules. By
-            making the Linux kernel programmable, infrastructure software can
-            leverage existing layers, making them more intelligent and
-            feature-rich without continuing to add additional layers of
-            complexity to the system.
-          </p>
-          <p>
-            eBPF has resulted in the development of a completely new generation
-            of tooling in areas such as networking, security, application
-            profiling/tracing and performance troubleshooting that no longer
-            rely on existing kernel functionality but instead actively reprogram
-            runtime behavior without compromising execution efficiency or
-            safety.
-          </p>
+    <p>
+      eBPF is a revolutionary technology with origins in the Linux kernel that can run sandboxed programs in an operating system kernel. It is used to safely and efficiently extend the capabilities of the kernel without requiring to change kernel source code or load kernel modules.
+    </p>
+    <p>
+      Historically, the operating system has always been an ideal place to implement observability, security, and networking functionality due to the kernel’s privileged ability to oversee and control the entire system. At the same time, an operating system kernel is hard to evolve due to its central role and high requirement towards stability and security. The rate of innovation at the operating system level has thus traditionally been lower compared to functionality implemented outside of the operating system.
+    </p>
+    <img src={require("../assets/go.png")} />
+    <p>
+      eBPF changes this formula fundamentally. By allowing to run sandboxed programs within the operating system, application developers can run eBPF programs to add additional capabilities to the operating system at runtime. The operating system then guarantees safety and execution efficiency as if natively compiled with the aid of a Just-In-Time (JIT) compiler and verification engine. This has led to a wave of eBPF-based projects covering a wide array of use cases, including next-generation networking, observability, and security functionality.
+    </p>
+    <p>
+      Today, eBPF is used extensively to drive a wide variety of use cases: Providing high-performance networking and load-balancing in modern data centers and cloud native environments, extracting fine-grained security observability data at low overhead, helping application developers trace applications, providing insights for performance troubleshooting, preventive application and container runtime security enforcement, and much more. The possibilities are endless, and the innovation that eBPF is unlocked has only just begun.
+    </p>
 
           <h3>What is eBPF.io?</h3>
           <p>
