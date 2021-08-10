@@ -105,6 +105,10 @@ $lg: "screen and (max-width : 1024px)";
   & > .languageSelect {
     margin-left: 40px;
     position: relative;
+    &.about .list .link{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     & > .button {
       appearance: none;
       color: #000;
@@ -226,6 +230,11 @@ $lg: "screen and (max-width : 1024px)";
     & > .languageSelect {
       margin-left: 0;
       margin-bottom: 15px;
+      & > .button {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
       & > .list {
         margin-top: 15px;
         position: static;
@@ -265,7 +274,7 @@ a.contactUs {
 .header.desktop .headerNav {
   flex-direction: row;
 
-  a {
+  > a {
     margin-left: 40px;
 
     &:first-child {
