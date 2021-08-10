@@ -165,7 +165,6 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
             </span>
           </span>
           <a href="/slack">Slack</a>
-          <Link to="/contribute">Contribute</Link>
           <span className="languageSelect about">
             <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">About <span className="triangle">▾</span></button>
             <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
