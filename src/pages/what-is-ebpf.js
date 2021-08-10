@@ -77,7 +77,7 @@ class Description extends React.Component {
     <p>
       Historically, the operating system has always been an ideal place to implement observability, security, and networking functionality due to the kernel’s privileged ability to oversee and control the entire system. At the same time, an operating system kernel is hard to evolve due to its central role and high requirement towards stability and security. The rate of innovation at the operating system level has thus traditionally been lower compared to functionality implemented outside of the operating system.
     </p>
-    <img src={require("../assets/go.png")} />
+    <img src={require("../assets/overview.png")} />
     <p>
       eBPF changes this formula fundamentally. By allowing to run sandboxed programs within the operating system, application developers can run eBPF programs to add additional capabilities to the operating system at runtime. The operating system then guarantees safety and execution efficiency as if natively compiled with the aid of a Just-In-Time (JIT) compiler and verification engine. This has led to a wave of eBPF-based projects covering a wide array of use cases, including next-generation networking, observability, and security functionality.
     </p>
@@ -149,7 +149,7 @@ class Description extends React.Component {
             section provides an introduction into the available development
             toolchains.
           </p>
-          <img src={require("../assets/loader.png")} />
+          <img src={require("../assets/go.png")} />
           <p>
             As the program is loaded into the Linux kernel, it passes through
             two steps before being attached to the requested hook:
@@ -160,6 +160,7 @@ class Description extends React.Component {
             The verification step ensures that the eBPF program is safe to run.
             It validates that the program meets several conditions, for example:
           </p>
+          <img src={require("../assets/loader.png")} />
           <ul>
             <li>
               The process loading the eBPF program holds the required
