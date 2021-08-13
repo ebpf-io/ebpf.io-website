@@ -266,7 +266,7 @@ const ProjectDescriptions = () => (
               <b>Patches</b>
             </a>{" "}
             |{" "}
-            <a href="https://travis-ci.com/github/kernel-patches/bpf/pull_requests">
+            <a href="https://github.com/kernel-patches/bpf/pulls">
               <b>CI</b>
             </a>{" "}
             |{" "}
