@@ -406,6 +406,10 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/redsift/redbpf">
               <b>redbpf</b>
             </a>{" "}
+            |{" "}
+            <a href="https://github.com/alessandrod/aya">
+              <b>Aya</b>
+            </a>{" "}
           </p>
           <p>
             <a href="https://github.com/libbpf/libbpf-rs">libbpf-rs</a> is a
@@ -414,7 +418,10 @@ const ProjectDescriptions = () => (
             allows to write 'compile once run everywhere' (CO-RE) eBPF programs.{" "}
             <a href="https://github.com/redsift/redbpf">redbpf</a> is a Rust
             eBPF toolchain that contains a collection of Rust libraries to work
-            with eBPF programs.
+            with eBPF programs.{" "}
+            <a href="https://github.com/alessandrod/aya">Aya</a> is an eBPF
+            library for the Rust programming language, built with a focus
+            on developer experience and operability. 
           </p>
         </div>
       </div>
