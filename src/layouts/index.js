@@ -191,7 +191,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
 }
 
 const FooterDesktop = ({path}) => {
-  const isIndexPage = path === '/';
+  const isIndexPage = path === '/' || path === '/fr-fr/' || path === '/zh-cn/';
   return (
   <div className="footer desktop">
     <div className="section">
