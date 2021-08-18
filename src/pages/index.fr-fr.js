@@ -159,8 +159,8 @@ const Outro = () => (
   </div>
 );
 
-const IndexPage = ({ data }) => {
-  return <Layout>
+const IndexPage = ({ data, location: {pathname} }) => {
+  return <Layout path={pathname}>
     <div className="page-wrapper page-index">
       <HelmetBlock />
       <MainTitle />
