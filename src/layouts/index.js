@@ -213,8 +213,8 @@ const FooterDesktop = ({path}) => {
         <div className="copyright">
           <p>Copyright © 2021 The Linux Foundation® . All rights reserved.</p> 
           <p>The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our Trademark
-          Usage page. Linux is a registered trademark of Linus Torvalds. Privacy
-          Policy and Terms of Use.</p>
+          Usage page. Linux is a registered trademark of Linus Torvalds. <a href="https://www.linuxfoundation.org/privacy" target="_blank" rel="noopener noreferrer">Privacy
+          Policy</a> and <a href="https://www.linuxfoundation.org/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a>.</p>
         </div>
       }
     </div>
