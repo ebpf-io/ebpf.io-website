@@ -30,7 +30,7 @@ const getLanguageName = (languageCode) => {
 
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
-    <a href="/summit-2021" style={{color: '#947927'}}>Register now</a> for <strong>eBPF Summit 2021</strong> on <strong>August 18-19, 2021</strong>
+    <strong>eBPF Summit 2021 videos are available: </strong> <a target="_blank" href="https://www.youtube.com/c/eBPFCiliumCommunity" style={{color: '#947927'}}>Watch Now!</a>
   </div>
 )
 
