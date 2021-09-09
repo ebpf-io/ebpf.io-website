@@ -86,9 +86,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
       <span className="languageSelect about">
         <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">About <span className="triangle">▾</span></button>
         <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
-          <Link className="link" to="/members">Members</Link>
-          {/* <Link className="link" to="/governing-board">Governing board</Link>
-          <Link className="link" to="/steering-committee">eBPF Steering Committee</Link> */}
+          <Link className="link" to="/foundation">Governance</Link>
           <Link className="link" to="/charter">Charter</Link>
           <Link className="link" to="/contribute">How to Contribute</Link>
         </span>
@@ -168,9 +166,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
           <span className="languageSelect about">
             <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">About <span className="triangle">▾</span></button>
             <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
-              <Link className="link" to="/members">Members</Link>
-              {/* <Link className="link" to="/governing-board">Governing board</Link>
-              <Link className="link" to="/steering-committee">eBPF Steering Committee</Link> */}
+              <Link className="link" to="/foundation">Governance</Link>
               <Link className="link" to="/charter">Charter</Link>
               <Link className="link" to="/contribute">How to Contribute</Link>
             </span>
