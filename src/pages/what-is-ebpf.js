@@ -580,12 +580,6 @@ class Description extends React.Component {
           <h3>Talks</h3>
           <h4>Generic</h4>
           <ul>
-            <Reference
-              link="https://www.usenix.org/conference/lisa21/presentation/gregg-bpf"
-	      slides="https://www.usenix.org/system/files/lisa21_slides_gregg_bpf.pdf"
-              name="BPF Internals"
-              description="Brendan Gregg, USENIX LISA, Jun 2021"
-            />
 	    <Reference
               link="https://www.youtube.com/watch?v=99jUcLt3rSk"
 	      slides="https://kccnceu20.sched.com/event/ZemQ/ebpf-and-kubernetes-little-helper-minions-for-scaling-microservices-daniel-borkmann-cilium"
@@ -619,6 +613,21 @@ class Description extends React.Component {
               link="https://www.youtube.com/watch?v=mFxs3VXABPU"
               name="The ubiquity but also the necessity of eBPF as a technology"
               description="David S. Miller, Kernel Recipes, Oct 2019"
+            />
+          </ul>
+          <h4>Deep Dives</h4>
+          <ul>
+            <Reference
+              link="https://www.youtube.com/watch?v=6N30Yp5f9c4"
+	      slides="/summit-2021-slides/eBPF_Summit_2021-Keynote-Daniel_Borkmann-BPF_and_Spectre.pdf"
+              name="BPF and Spectre: Mitigating transient execution attacks"
+              description="Daniel Borkmann, eBPF Summit, Aug 2021"
+            />
+	    <Reference
+              link="https://www.usenix.org/conference/lisa21/presentation/gregg-bpf"
+	      slides="https://www.usenix.org/system/files/lisa21_slides_gregg_bpf.pdf"
+              name="BPF Internals"
+              description="Brendan Gregg, USENIX LISA, Jun 2021"
             />
           </ul>
           <h4>Cilium</h4>
