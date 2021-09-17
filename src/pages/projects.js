@@ -52,7 +52,7 @@ const RequirementsList = () => (
     <li>
       In order to be listed as a major project as opposed to an emerging
       project, the project must have more than 50 contributors, it must be
-      activey maintained, and it must be used in production-like environments
+      actively maintained, and it must be used in production-like environments
       with a significant amount of users.
     </li>
     <li>
