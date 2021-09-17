@@ -442,6 +442,35 @@ const ProjectDescriptions = () => (
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
 
     <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">eBPF for Windows</TitleWithAnchor>
+      <div className="project-minor-title">
+        eBPF Runtime for Windows
+      </div>
+      <div className="project-body">
+        <!-- no logo exists yet -->
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://microsoft.github.io/ebpf-for-windows/">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="href="https://github.com/microsoft/ebpf-for-windows">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            The eBPF for Windows project is a work-in-progress that allows using
+            existing eBPF toolchains and APIs familiar in the eBPF ecosystem to
+            be used on top of Windows. That is, this project takes existing eBPF
+            projects as submodules and adds the layer in between to make them
+            run on top of Windows.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Hubble</TitleWithAnchor>
       <div className="project-minor-title">
         Network, Service &amp; Security Observability for Kubernetes using eBPF
