@@ -453,7 +453,7 @@ const ProjectDescriptions = () => (
               <b>Website</b>
             </a>{" "}
             |{" "}
-            <a href="href="https://github.com/microsoft/ebpf-for-windows">
+            <a href="https://github.com/microsoft/ebpf-for-windows">
               <b>GitHub</b>
             </a>{" "}
           </p>
