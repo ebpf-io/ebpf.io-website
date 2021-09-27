@@ -447,8 +447,6 @@ const ProjectDescriptions = () => (
         eBPF Runtime for Windows
       </div>
       <div className="project-body">
-        <!-- no logo exists yet -->
-        </a>
         <div className="project-description">
           <p>
             <a href="https://microsoft.github.io/ebpf-for-windows/">
