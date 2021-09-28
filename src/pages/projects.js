@@ -453,7 +453,7 @@ const ProjectDescriptions = () => (
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">eBPF for Windows</TitleWithAnchor>
       <div className="project-minor-title">
-        eBPF Runtime for Windows
+        eBPF Runtime
       </div>
       <div className="project-body">
         <div className="project-description">
