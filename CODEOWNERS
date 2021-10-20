@@ -4,4 +4,4 @@
 # These owners will be the default owners for everything in
 # the repo unless a later match takes precedence, and
 # will be requested for review when someone opens a pull request.
-*       @4ast @anakryiko @brendangregg @borkmann @dthaler @joestringer @sinkap @lmb @tgraf
+*       @cilium/ebpf-bsc
