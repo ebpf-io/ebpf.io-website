@@ -387,6 +387,10 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/libbpf/libbpf">
               <b>libbpf</b>
             </a>{" "}
+            |{" "}
+            <a href="https://github.com/xdp-project/xdp-tools">
+              <b>libxdp</b>
+            </a>{" "}
             Emerging:
           </p>
           <p>
@@ -401,6 +405,14 @@ const ProjectDescriptions = () => (
             many existing gaps with BCC as a library. It also supports important
             features not available in BCC such as global variables and BPF
             skeletons.
+          </p>
+          <p>
+            <a href="https://github.com/xdp-project/xdp-tools">libxdp</a> is an
+            XDP-specific library that sits on top of libbpf and implements a
+            couple of XDP features: it supports loading of multiple programs to
+            run in sequence on the same interface, and it contains helper
+            functions for configuring AF_XDP sockets as well as reading and
+            writing packets from these sockets.
           </p>
         </div>
       </div>
