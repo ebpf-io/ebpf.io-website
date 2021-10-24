@@ -129,6 +129,20 @@ const Outro = () => (
             </ul>
           </td>
         </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>
+                <a href="https://www.ebpf.top">
+                  深入浅出 eBPF（中文博客）
+                </a>
+              </li>
+            </ul>
+          </td>
+          <td>
+           &nbsp;
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>
