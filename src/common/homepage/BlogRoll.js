@@ -46,6 +46,14 @@ export default class BlogRoll extends React.Component {
       author: "Andrii Nakryiko",
       filterBy: (post) => post.title.toLowerCase().includes("bpf") || post.title.toLowerCase().includes("btf"),
     },
+    {
+      url: "https%3A%2F%2Ffntlnz.wtf%2Findex.xml",
+      author: "Lorenzo Fontana",
+      filterBy: (post) =>
+        post.categories.some((category) =>
+          category.toLowerCase().includes("bpf")
+        ),
+    },
   ];
 
   constructor(props) {
