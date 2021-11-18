@@ -345,9 +345,6 @@ const ProjectDescriptions = () => (
               <b>ebpf</b>
             </a>{" "}
             |{" "}
-            <a href="https://github.com/iovisor/gobpf">
-              <b>gobpf</b>
-            </a>{" "}
             <a href="https://github.com/aquasecurity/libbpfgo">
               <b>libbpfgo</b>
             </a>{" "}
@@ -356,14 +353,11 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/cilium/ebpf">eBPF</a> is designed as a
             pure Go library that provides utilities for loading, compiling, and
             debugging eBPF programs. It has minimal external dependencies and is
-            intended to be used in long running processes. The{" "}
-            <a href="https://github.com/iovisor/gobpf">gobpf</a> is a CGo-based
-            library which provides Go bindings for the BCC framework as well as
-            low-level routines to load and use eBPF programs from ELF files.
+            intended to be used in long running processes.
             <a href="https://github.com/aquasecurity/libbpfgo">libbpfgo</a> is a
-            Go wrapper around libbpf. It supports BPF CO-RE and its goal is to 
-            be a complete implementation of libbpf APIs. It uses CGo to call 
-            into linked versions of libbpf. 
+            Go wrapper around libbpf. It supports BPF CO-RE and its goal is to
+            be a complete implementation of libbpf APIs. It uses CGo to call
+            into linked versions of libbpf.
           </p>
         </div>
       </div>
