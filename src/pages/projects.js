@@ -348,6 +348,14 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/microsoft/ebpf-for-windows">
               <b>GitHub</b>
             </a>{" "}
+            |{" "}
+            <a href="https://github.com/microsoft/ebpf-for-windows/discussions/427">
+              <b>Office Hours</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://slack.com/app_redirect?channel=ebpf-for-windows">
+              <b>Slack Channel</b>
+            </a>{" "}
           </p>
           <p>
             The eBPF for Windows project is a work-in-progress that allows using
