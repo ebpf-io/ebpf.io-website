@@ -490,6 +490,8 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/iovisor/gobpf">gobpf</a> is a CGo-based
             library which provides Go bindings for the BCC framework as well as
             low-level routines to load and use eBPF programs from ELF files.
+          </p>
+          <p>
             <a href="https://github.com/aquasecurity/libbpfgo">libbpfgo</a> is a
             Go wrapper around libbpf. It supports BPF CO-RE and its goal is to 
             be a complete implementation of libbpf APIs. It uses CGo to call 
