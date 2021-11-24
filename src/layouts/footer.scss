@@ -3,6 +3,10 @@ $mobile: "screen and (max-width : 480px)";
 
 .footer {
   padding: 96px 30px 61px 30px;
+  max-width: 1015px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #b6b6b6;
 
   @media #{$tablet} {
     padding: 48px 15px 30px 15px;
@@ -46,6 +50,16 @@ $mobile: "screen and (max-width : 480px)";
         font-weight: 700;
         color: #909090;
       }
+    }
+  }
+
+  .copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+
+    p {
+      margin-top: 10px;
     }
   }
 }

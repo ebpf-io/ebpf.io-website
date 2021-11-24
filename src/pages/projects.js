@@ -64,7 +64,7 @@ const RequirementsList = () => (
 
 const ProjectDescriptions = () => (
   <div className="project-descriptions">
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">Major Projects</TitleWithAnchor>
+    <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Major)</TitleWithAnchor>
 
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">bcc</TitleWithAnchor>
@@ -235,7 +235,7 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">Core Infrastructure</TitleWithAnchor>
+    <TitleWithAnchor headerClassName="projects-title projects-common-title">Core Infrastructure (Major)</TitleWithAnchor>
 
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Linux Kernel</TitleWithAnchor>
@@ -266,7 +266,7 @@ const ProjectDescriptions = () => (
               <b>Patches</b>
             </a>{" "}
             |{" "}
-            <a href="https://travis-ci.com/github/kernel-patches/bpf/pull_requests">
+            <a href="https://github.com/kernel-patches/bpf/pulls">
               <b>CI</b>
             </a>{" "}
             |{" "}
@@ -331,6 +331,8 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
+    <TitleWithAnchor headerClassName="projects-title projects-common-title">Core Infrastructure (Emerging)</TitleWithAnchor>
+
     <TitleWithAnchor headerClassName="projects-title projects-common-title" className="projects-title">eBPF Libraries</TitleWithAnchor>
 
     <div className="project-box">
@@ -341,6 +343,7 @@ const ProjectDescriptions = () => (
         </div>
         <div className="project-description">
           <p>
+            Major:
             <a href="https://github.com/cilium/ebpf">
               <b>ebpf</b>
             </a>{" "}
@@ -348,15 +351,25 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/iovisor/gobpf">
               <b>gobpf</b>
             </a>{" "}
+            Emerging:
+            <a href="https://github.com/aquasecurity/libbpfgo">
+              <b>libbpfgo</b>
+            </a>{" "}
           </p>
           <p>
             <a href="https://github.com/cilium/ebpf">eBPF</a> is designed as a
             pure Go library that provides utilities for loading, compiling, and
             debugging eBPF programs. It has minimal external dependencies and is
-            intended to be used in long running processes. The{" "}
+            intended to be used in long running processes.
+          </p>
+          <p>
             <a href="https://github.com/iovisor/gobpf">gobpf</a> is a CGo-based
             library which provides Go bindings for the BCC framework as well as
             low-level routines to load and use eBPF programs from ELF files.
+            <a href="https://github.com/aquasecurity/libbpfgo">libbpfgo</a> is a
+            Go wrapper around libbpf. It supports BPF CO-RE and its goal is to 
+            be a complete implementation of libbpf APIs. It uses CGo to call 
+            into linked versions of libbpf. 
           </p>
         </div>
       </div>
@@ -370,9 +383,11 @@ const ProjectDescriptions = () => (
         </div>
         <div className="project-description">
           <p>
+            Major:
             <a href="https://github.com/libbpf/libbpf">
               <b>libbpf</b>
             </a>{" "}
+            Emerging:
           </p>
           <p>
             libbpf is a C/C++ based library which is maintained as part of the
@@ -399,6 +414,7 @@ const ProjectDescriptions = () => (
         </div>
         <div className="project-description">
           <p>
+            Major:
             <a href="https://github.com/libbpf/libbpf-rs">
               <b>libbpf-rs</b>
             </a>{" "}
@@ -406,7 +422,7 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/redsift/redbpf">
               <b>redbpf</b>
             </a>{" "}
-	    |{" "}
+            Emerging:
             <a href="https://github.com/aya-rs/aya">
               <b>Aya</b>
             </a>{" "}
@@ -415,7 +431,9 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/libbpf/libbpf-rs">libbpf-rs</a> is a
             safe, idiomatic, and opinionated wrapper API around libbpf written
             in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin)
-            allows to write 'compile once run everywhere' (CO-RE) eBPF programs.{" "}
+            allows to write 'compile once run everywhere' (CO-RE) eBPF programs.
+          </p>
+          <p>
             <a href="https://github.com/redsift/redbpf">redbpf</a> is a Rust
             eBPF toolchain that contains a collection of Rust libraries to work
             with eBPF programs.{" "}
@@ -428,7 +446,7 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">Emerging Projects</TitleWithAnchor>
+    <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
 
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Hubble</TitleWithAnchor>

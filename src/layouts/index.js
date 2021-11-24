@@ -30,7 +30,7 @@ const getLanguageName = (languageCode) => {
 
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
-    <a href="/summit-2021" style={{color: '#947927'}}>Register now</a> for <strong>eBPF Summit 2021</strong> on <strong>August 18-19, 2021</strong>
+    <strong>eBPF Summit 2021 videos are available: </strong> <a target="_blank" href="https://www.youtube.com/c/eBPFCiliumCommunity" style={{color: '#947927'}}>Watch Now!</a>
   </div>
 )
 
@@ -72,7 +72,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
           <Link className="link" to="/summit-2021">2021</Link>
           <Link className="link" to="/summit-2020">2020</Link>
           <strong>eBPF Track (LPC)</strong>
-          <a target="_blank" className="link" href="https://lore.kernel.org/bpf/6d225920-9ecc-ef24-2bf8-848ca86c7fb0@iogearbox.net/">2021 CFP</a>
+          <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/11/sessions/120/#all">2021</a>
           <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/7/sessions/91/#all">2020</a>
           <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/4/sessions/62/#20190911">2019</a>
           <a target="_blank" className="link" href="http://vger.kernel.org/lpc-bpf2018.html">2018</a>
@@ -86,9 +86,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
       <span className="languageSelect about">
         <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">About <span className="triangle">▾</span></button>
         <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
-          <Link className="link" to="/members">Members</Link>
-          {/* <Link className="link" to="/governing-board">Governing board</Link>
-          <Link className="link" to="/steering-committee">eBPF Steering Committee</Link> */}
+          <Link className="link" to="/foundation">Governance</Link>
           <Link className="link" to="/charter">Charter</Link>
           <Link className="link" to="/contribute">How to Contribute</Link>
         </span>
@@ -168,9 +166,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
           <span className="languageSelect about">
             <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">About <span className="triangle">▾</span></button>
             <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
-              <Link className="link" to="/members">Members</Link>
-              {/* <Link className="link" to="/governing-board">Governing board</Link>
-              <Link className="link" to="/steering-committee">eBPF Steering Committee</Link> */}
+              <Link className="link" to="/foundation">Governance</Link>
               <Link className="link" to="/charter">Charter</Link>
               <Link className="link" to="/contribute">How to Contribute</Link>
             </span>
@@ -190,7 +186,9 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
   );
 }
 
-const FooterDesktop = () => (
+const FooterDesktop = ({path}) => {
+  const isIndexPage = path === '/' || path === '/fr-fr/' || path === '/zh-cn/';
+  return (
   <div className="footer desktop">
     <div className="section">
       <div className="items">
@@ -207,11 +205,19 @@ const FooterDesktop = () => (
           Contribute
         </Link>
       </div>
+      {isIndexPage && 
+        <div className="copyright">
+          <p>Copyright © 2021 The Linux Foundation® . All rights reserved.</p> 
+          <p>The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage" target="_blank" rel="noopener noreferrer">Trademark Usage</a> page. Linux is a registered trademark of Linus Torvalds. <a href="https://www.linuxfoundation.org/privacy" target="_blank" rel="noopener noreferrer">Privacy
+          Policy</a> and <a href="https://www.linuxfoundation.org/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a>.</p>
+        </div>
+      }
     </div>
   </div>
 );
+  }
 
-const TemplateWrapper = ({ children, isDesktopHeaderHidden }) => {
+const TemplateWrapper = ({ children, isDesktopHeaderHidden, path }) => {
   const hasLanguage = useMemo(
     () => {
       if(typeof window === 'undefined') {
@@ -289,7 +295,7 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden }) => {
     {!isDesktopHeaderHidden && <HeaderDesktop language={language} hasLanguage={hasLanguage} setLanguage={setLang} />}
     <HeaderMobile language={language} hasLanguage={hasLanguage} setLanguage={setLang} />
     <div>{children}</div>
-    <FooterDesktop />
+    <FooterDesktop path={path} />
   </div>
 };
 
