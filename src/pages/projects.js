@@ -353,7 +353,7 @@ const ProjectDescriptions = () => (
               <b>Office Hours</b>
             </a>{" "}
             |{" "}
-            <a href="https://slack.com/app_redirect?channel=ebpf-for-windows">
+            <a href="https://cilium.slack.com/archives/C0210QTK2MV">
               <b>Slack Channel</b>
             </a>{" "}
           </p>
