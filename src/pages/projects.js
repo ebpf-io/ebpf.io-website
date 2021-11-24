@@ -235,6 +235,130 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
+    <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Hubble</TitleWithAnchor>
+      <div className="project-minor-title">
+        Network, Service &amp; Security Observability for Kubernetes using eBPF
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/cilium/hubble"
+        >
+          <img src={require("../assets/hubble-no-text.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://cilium.io/">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/cilium/hubble">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Hubble is a fully distributed networking and security observability
+            platform for cloud native workloads. It is built on top of Cilium
+            and eBPF to enable deep visibility into the communication and
+            behavior of services as well as the networking infrastructure in a
+            completely transparent manner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">kubectl trace</TitleWithAnchor>
+      <div className="project-minor-title">
+        Schedule bpftrace programs on your Kubernetes cluster
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/iovisor/kubectl-trace"
+        >
+          <img src={require("../assets/projects-logos/kubectl_trace2.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/iovisor/kubectl-trace">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            kubectl-trace is a kubectl plugin that allows for scheduling the
+            execution of bpftrace(8) programs in Kubernetes clusters.
+            kubectl-trace does not require installation of any components
+            directly onto a Kubernetes cluster in order to execute bpftrace
+            programs. When pointed to a cluster, it schedules a temporary job
+            called trace-runner that executes bpftrace.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">ply</TitleWithAnchor>
+      <div className="project-minor-title">A dynamic tracer for Linux</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/iovisor/ply"
+        >
+          <img src={require("../assets/projects-logos/ply.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://wkz.github.io/ply/">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/iovisor/ply">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            ply is a dynamic tracer for Linux which is built upon eBPF. It has
+            been designed with embedded systems in mind, is written in C and all
+            that ply needs to run is libc and a modern Linux kernel with eBPF
+            support, meaning, it does not depend on LLVM for its program
+            generation. It has a C-like syntax for writing scripts and is
+            heavily inspired by awk(1) and dtrace(1).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Tracee</TitleWithAnchor>
+      <div className="project-minor-title">Linux Runtime Security and Forensics using eBPF</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/aquasecurity/tracee"
+        >
+          <img src={require("../assets/projects-logos/tracee.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/aquasecurity/tracee">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+          Tracee uses eBPF technology to detect and filter operating system events, helping you expose security insights, detect suspicious behavior, and capture forensic indicators. 
+          </p>
+        </div>
+      </div>
+    </div>
+
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Core Infrastructure (Major)</TitleWithAnchor>
 
     <div className="project-box">
@@ -438,131 +562,6 @@ const ProjectDescriptions = () => (
         </div>
       </div>
     </div>
-
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Hubble</TitleWithAnchor>
-      <div className="project-minor-title">
-        Network, Service &amp; Security Observability for Kubernetes using eBPF
-      </div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/cilium/hubble"
-        >
-          <img src={require("../assets/hubble-no-text.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://cilium.io/">
-              <b>Website</b>
-            </a>{" "}
-            |{" "}
-            <a href="https://github.com/cilium/hubble">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            Hubble is a fully distributed networking and security observability
-            platform for cloud native workloads. It is built on top of Cilium
-            and eBPF to enable deep visibility into the communication and
-            behavior of services as well as the networking infrastructure in a
-            completely transparent manner.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">kubectl trace</TitleWithAnchor>
-      <div className="project-minor-title">
-        Schedule bpftrace programs on your Kubernetes cluster
-      </div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/iovisor/kubectl-trace"
-        >
-          <img src={require("../assets/projects-logos/kubectl_trace2.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://github.com/iovisor/kubectl-trace">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            kubectl-trace is a kubectl plugin that allows for scheduling the
-            execution of bpftrace(8) programs in Kubernetes clusters.
-            kubectl-trace does not require installation of any components
-            directly onto a Kubernetes cluster in order to execute bpftrace
-            programs. When pointed to a cluster, it schedules a temporary job
-            called trace-runner that executes bpftrace.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">ply</TitleWithAnchor>
-      <div className="project-minor-title">A dynamic tracer for Linux</div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/iovisor/ply"
-        >
-          <img src={require("../assets/projects-logos/ply.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://wkz.github.io/ply/">
-              <b>Website</b>
-            </a>{" "}
-            |{" "}
-            <a href="https://github.com/iovisor/ply">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            ply is a dynamic tracer for Linux which is built upon eBPF. It has
-            been designed with embedded systems in mind, is written in C and all
-            that ply needs to run is libc and a modern Linux kernel with eBPF
-            support, meaning, it does not depend on LLVM for its program
-            generation. It has a C-like syntax for writing scripts and is
-            heavily inspired by awk(1) and dtrace(1).
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Tracee</TitleWithAnchor>
-      <div className="project-minor-title">Linux Runtime Security and Forensics using eBPF</div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/aquasecurity/tracee"
-        >
-          <img src={require("../assets/projects-logos/tracee.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://github.com/aquasecurity/tracee">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-          Tracee uses eBPF technology to detect and filter operating system events, helping you expose security insights, detect suspicious behavior, and capture forensic indicators. 
-          </p>
-        </div>
-      </div>
-    </div>
-
   </div>
 );
 
