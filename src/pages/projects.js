@@ -38,7 +38,7 @@ const HowToList = () => (
   </ol>
 );
 
-const RequirementsList = () => (
+const EmergingRequirementsList = () => (
   <ul className="projects-requirements-list">
     <li>
       The project must be open source. All source code must be licensed under an
@@ -50,14 +50,25 @@ const RequirementsList = () => (
       words, a project would lose its purpose if the eBPF parts are removed.
     </li>
     <li>
-      In order to be listed as a major project as opposed to an emerging
-      project, the project must have more than 50 contributors, it must be
-      actively maintained, and it must be used in production-like environments
-      with a significant amount of users.
-    </li>
-    <li>
       The project must be open to collaboration and have a governance model
       following open-source best-practices.
+    </li>
+  </ul>
+);
+
+const MajorRequirementsList = () => (
+  <ul className="projects-requirements-list">
+    <li>
+      The project must have more than 50 contributors.
+    </li>
+    <li>
+      The project must be actively maintained.
+    </li>
+    <li>
+      The project must be used in production-like environments
+      with a significant amount of users. Since this information may not
+      be easily discoverable from a link to the project, such information
+      should be included in the pull request description.
     </li>
   </ul>
 );
@@ -695,7 +706,16 @@ const Page = () => (
       <h3>Are you maintaining a listed project?</h3>
       <YouMaintain />
       <h3>Requirements for a project to be listed</h3>
-      <RequirementsList />
+      <p>
+        Projects can be listed on this page as "Major" or "Emerging".  The requirements for
+        being listed as "Emerging" are:
+      </p>
+      <EmergingRequirementsList />
+      <p> 
+        In order to be listed as a "Major" project, a project must meet all of the
+        requirements above, plus:
+      </p>
+      <MajorRequirementsList />
     </div>
   </Layout>
 );
