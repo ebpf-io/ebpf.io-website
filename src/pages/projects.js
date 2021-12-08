@@ -423,6 +423,9 @@ const ProjectDescriptions = () => (
               <b>redbpf</b>
             </a>{" "}
             Emerging:
+            <a href="https://github.com/aya-rs/aya">
+              <b>Aya</b>
+            </a>{" "}
           </p>
           <p>
             <a href="https://github.com/libbpf/libbpf-rs">libbpf-rs</a> is a
@@ -434,6 +437,12 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/redsift/redbpf">redbpf</a> is a Rust
             eBPF toolchain that contains a collection of Rust libraries to work
             with eBPF programs.
+          </p>
+          <p>
+            <a href="https://github.com/aya-rs/aya">Aya</a> is an eBPF
+            library built with a focus on operability and developer experience.
+            It allows for both eBPF programs and their userspace programs
+            to be written in Rust.
           </p>
         </div>
       </div>
