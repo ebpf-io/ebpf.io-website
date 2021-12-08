@@ -97,13 +97,6 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
           {languageButtons}
         </span>
       </span>}
-      <a href="https://www.cilium.io">
-        <img
-          src={require("../assets/cilium_logo.png")}
-          width="46px"
-          height="50px"
-        />
-      </a>
     </nav>
   </div>
 };
@@ -177,9 +170,6 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
               {languageButtons}
             </span>
           </span>}
-          <a href="https://www.cilium.io">
-            <img src={require("../assets/cilium_logo.png")} height="50px" />
-          </a>
         </nav>
       )}
     </div>
