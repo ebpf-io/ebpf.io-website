@@ -114,6 +114,9 @@ const Outro = () => (
               <li>
                 <a href="/projects">使用 eBPF 的项目列表</a>
               </li>
+              <li>
+                <a href="https://www.ebpf.top">深入浅出 eBPF（中文博客）</a>
+              </li>
             </ul>
           </td>
           <td>
@@ -127,20 +130,6 @@ const Outro = () => (
                 <a href="/contribute">贡献指南</a>
               </li>
             </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <ul>
-              <li>
-                <a href="https://www.ebpf.top">
-                  深入浅出 eBPF（中文博客）
-                </a>
-              </li>
-            </ul>
-          </td>
-          <td>
-           &nbsp;
           </td>
         </tr>
       </tbody>

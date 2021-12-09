@@ -123,6 +123,9 @@ const Outro = () => (
               <li>
                 <a href="/projects">List of eBPF-powered projects</a>
               </li>
+              <li>
+                <a href="https://www.ebpf.top">Head First eBPF (Chinese)</a>
+              </li>
             </ul>
           </td>
           <td>
