@@ -52,7 +52,7 @@ const RequirementsList = () => (
     <li>
       In order to be listed as a major project as opposed to an emerging
       project, the project must have more than 50 contributors, it must be
-      activey maintained, and it must be used in production-like environments
+      actively maintained, and it must be used in production-like environments
       with a significant amount of users.
     </li>
     <li>
@@ -64,7 +64,7 @@ const RequirementsList = () => (
 
 const ProjectDescriptions = () => (
   <div className="project-descriptions">
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">Major Projects</TitleWithAnchor>
+    <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Major)</TitleWithAnchor>
 
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">bcc</TitleWithAnchor>
@@ -235,7 +235,7 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">Core Infrastructure</TitleWithAnchor>
+    <TitleWithAnchor headerClassName="projects-title projects-common-title">Core Infrastructure (Major)</TitleWithAnchor>
 
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Linux Kernel</TitleWithAnchor>
@@ -331,6 +331,43 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
+    <TitleWithAnchor headerClassName="projects-title projects-common-title">Core Infrastructure (Emerging)</TitleWithAnchor>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">eBPF for Windows</TitleWithAnchor>
+      <div className="project-minor-title">
+        eBPF Runtime
+      </div>
+      <div className="project-body">
+        <div className="project-description">
+          <p>
+            <a href="https://microsoft.github.io/ebpf-for-windows/">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/microsoft/ebpf-for-windows">
+              <b>GitHub</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/microsoft/ebpf-for-windows/discussions/427">
+              <b>Office Hours</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://cilium.slack.com/archives/C0210QTK2MV">
+              <b>Slack Channel</b>
+            </a>{" "}
+          </p>
+          <p>
+            The eBPF for Windows project is a work-in-progress that allows using
+            existing eBPF toolchains and APIs familiar in the eBPF ecosystem to
+            be used on top of Windows. That is, this project takes existing eBPF
+            projects as submodules and adds the layer in between to make them
+            run on top of Windows.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <TitleWithAnchor headerClassName="projects-title projects-common-title" className="projects-title">eBPF Libraries</TitleWithAnchor>
 
     <div className="project-box">
@@ -341,22 +378,26 @@ const ProjectDescriptions = () => (
         </div>
         <div className="project-description">
           <p>
+            Major:
             <a href="https://github.com/cilium/ebpf">
               <b>ebpf</b>
             </a>{" "}
-            |{" "}
-            <a href="https://github.com/iovisor/gobpf">
-              <b>gobpf</b>
+            Emerging:
+            <a href="https://github.com/aquasecurity/libbpfgo">
+              <b>libbpfgo</b>
             </a>{" "}
           </p>
           <p>
             <a href="https://github.com/cilium/ebpf">eBPF</a> is designed as a
             pure Go library that provides utilities for loading, compiling, and
             debugging eBPF programs. It has minimal external dependencies and is
-            intended to be used in long running processes. The{" "}
-            <a href="https://github.com/iovisor/gobpf">gobpf</a> is a CGo-based
-            library which provides Go bindings for the BCC framework as well as
-            low-level routines to load and use eBPF programs from ELF files.
+            intended to be used in long running processes.
+          </p>
+          <p>
+            <a href="https://github.com/aquasecurity/libbpfgo">libbpfgo</a> is a
+            Go wrapper around libbpf. It supports BPF CO-RE and its goal is to
+            be a complete implementation of libbpf APIs. It uses CGo to call
+            into linked versions of libbpf.
           </p>
         </div>
       </div>
@@ -370,9 +411,11 @@ const ProjectDescriptions = () => (
         </div>
         <div className="project-description">
           <p>
+            Major:
             <a href="https://github.com/libbpf/libbpf">
               <b>libbpf</b>
             </a>{" "}
+            Emerging:
           </p>
           <p>
             libbpf is a C/C++ based library which is maintained as part of the
@@ -399,6 +442,7 @@ const ProjectDescriptions = () => (
         </div>
         <div className="project-description">
           <p>
+            Major:
             <a href="https://github.com/libbpf/libbpf-rs">
               <b>libbpf-rs</b>
             </a>{" "}
@@ -406,21 +450,33 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/redsift/redbpf">
               <b>redbpf</b>
             </a>{" "}
+            Emerging:
+            <a href="https://github.com/aya-rs/aya">
+              <b>Aya</b>
+            </a>{" "}
           </p>
           <p>
             <a href="https://github.com/libbpf/libbpf-rs">libbpf-rs</a> is a
             safe, idiomatic, and opinionated wrapper API around libbpf written
             in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin)
-            allows to write 'compile once run everywhere' (CO-RE) eBPF programs.{" "}
+            allows to write 'compile once run everywhere' (CO-RE) eBPF programs.
+          </p>
+          <p>
             <a href="https://github.com/redsift/redbpf">redbpf</a> is a Rust
             eBPF toolchain that contains a collection of Rust libraries to work
             with eBPF programs.
+          </p>
+          <p>
+            <a href="https://github.com/aya-rs/aya">Aya</a> is an eBPF
+            library built with a focus on operability and developer experience.
+            It allows for both eBPF programs and their userspace programs
+            to be written in Rust.
           </p>
         </div>
       </div>
     </div>
 
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">Emerging Projects</TitleWithAnchor>
+    <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
 
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Hubble</TitleWithAnchor>
@@ -451,6 +507,37 @@ const ProjectDescriptions = () => (
             and eBPF to enable deep visibility into the communication and
             behavior of services as well as the networking infrastructure in a
             completely transparent manner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">KubeArmor</TitleWithAnchor>
+      <div className="project-minor-title">Container-aware Runtime Security Enforcement System</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/accuknox/KubeArmor"
+        >
+          <img src={require("../assets/projects-logos/kubearmor.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+	    <a href="https://kubearmor.com">
+	      <b>Website</b>
+	    </a>{" "}
+	    |{" "}
+            <a href="https://github.com/accuknox/KubeArmor">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+	  KubeArmor is a container-aware runtime security enforcement system that 
+	  restricts the behavior (such as process execution, file access, networking
+	  operation, and resource utilization) of containers at the system level,
+	  using LSMs and eBPF.
           </p>
         </div>
       </div>
