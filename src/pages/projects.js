@@ -389,12 +389,12 @@ const ProjectDescriptions = () => (
         </div>
         <div className="project-description">
           <p>
-            Major:{" "}
+            <b>Major:</b>{" "}
             <a href="https://github.com/cilium/ebpf">
               <b>ebpf</b>
             </a>
-            <br>
-            Emerging:{" "}
+            <br />
+            <b>Emerging:</b>{" "}
             <a href="https://github.com/aquasecurity/libbpfgo">
               <b>libbpfgo</b>
             </a>{" "}
@@ -423,12 +423,12 @@ const ProjectDescriptions = () => (
         </div>
         <div className="project-description">
           <p>
-            Major:{" "}
+            <b>Major:</b>{" "}
             <a href="https://github.com/libbpf/libbpf">
               <b>libbpf</b>
             </a>
-            <br>
-            Emerging:{" "}
+            <br />
+            <b>Emerging:</b>{" "}
           </p>
           <p>
             libbpf is a C/C++ based library which is maintained as part of the
@@ -455,7 +455,7 @@ const ProjectDescriptions = () => (
         </div>
         <div className="project-description">
           <p>
-            Major:{" "}
+            <b>Major:</b>{" "}
             <a href="https://github.com/libbpf/libbpf-rs">
               <b>libbpf-rs</b>
             </a>{" "}
@@ -463,8 +463,8 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/redsift/redbpf">
               <b>redbpf</b>
             </a>
-            <br>
-            Emerging:{" "}
+            <br />
+            <b>Emerging:</b>{" "}
             <a href="https://github.com/aya-rs/aya">
               <b>Aya</b>
             </a>{" "}
