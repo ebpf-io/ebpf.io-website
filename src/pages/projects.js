@@ -313,7 +313,7 @@ const ProjectDescriptions = () => (
               <b>Patches</b>
             </a>{" "}
             |{" "}
-            <a href="https://bugs.llvm.org/buglist.cgi?quicksearch=bpf">
+            <a href="https://github.com/llvm/llvm-project/labels/backend:BPF">
               <b>Bugtracker</b>
             </a>{" "}
           </p>
