@@ -631,6 +631,29 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">BumbleBee</TitleWithAnchor>
+      <div className="project-minor-title">OCI compliant eBPF tooling</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://bumblebee.io"
+        >
+          <img src={require("../assets/projects-logos/bumblebee.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/solo-io/bumblebee">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+          BumbleBee simplifies building eBPF tools and allows you to package, distribute, and run them anywhere. Just focus on the eBPF portion of your code and BumbleBee automates away the boilerplate, including the userspace code.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
