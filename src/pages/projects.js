@@ -575,6 +575,40 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">L3AF</TitleWithAnchor>
+      <div className="project-minor-title">Complete lifecycle management of eBPF programs</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://l3af.io"
+        >
+          <img src={require("../assets/projects-logos/l3af.svg")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://l3af.io">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/l3af-project">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            L3AF is a platform to launch and manage eBPF programs in
+            distributed environments. L3AF empowers users to compose multiple
+            eBPF programs together to solve unique problems in different
+            environments. Using the APIs provided by L3AF, these eBPF programs
+            can be reconfigured, updated, inspected, and reordered on-the-fly.
+            L3AF also provides configurable metrics for the eBPF programs it
+            has launched.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">ply</TitleWithAnchor>
       <div className="project-minor-title">A dynamic tracer for Linux</div>
       <div className="project-body">
