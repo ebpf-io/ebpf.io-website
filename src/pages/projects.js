@@ -733,7 +733,7 @@ const ProjectDescriptions = () => (
             </a>{" "}
           </p>
           <p>
-          BumbleBee simplifies building eBPF tools and allows you to package, distribute, and run them anywhere. Just focus on the eBPF portion of your code and BumbleBee automates away the boilerplate, including the userspace code.
+          BumbleBee simplifies building eBPF tools and allows you to package, distribute, and run eBPF programs using OCI images. Just focus on the eBPF portion of your code and BumbleBee automates away the boilerplate, including the userspace code.
           </p>
         </div>
       </div>
