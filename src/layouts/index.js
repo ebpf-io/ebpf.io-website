@@ -88,6 +88,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
         <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
           <Link className="link" to="/foundation">Governance</Link>
           <Link className="link" to="/charter">Charter</Link>
+          <Link className="link" to="https://github.com/ebpf-io/bsc/blob/master/minutes.md">BSC Meeting Minutes</Link>
           <Link className="link" to="/contribute">How to Contribute</Link>
         </span>
       </span>
@@ -161,6 +162,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
             <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
               <Link className="link" to="/foundation">Governance</Link>
               <Link className="link" to="/charter">Charter</Link>
+              <Link className="link" to="https://github.com/ebpf-io/bsc/blob/master/minutes.md">BSC Meeting Minutes</Link>
               <Link className="link" to="/contribute">How to Contribute</Link>
             </span>
           </span>
