@@ -84,7 +84,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
       </span>
       <a href="/slack">Slack</a>
       <span className="languageSelect about">
-        <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">About <span className="triangle">▾</span></button>
+        <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">Foundation <span className="triangle">▾</span></button>
         <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
           <Link className="link" to="/foundation">Governance</Link>
           <Link className="link" to="/charter">Charter</Link>
@@ -157,7 +157,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
           </span>
           <a href="/slack">Slack</a>
           <span className="languageSelect about">
-            <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">About <span className="triangle">▾</span></button>
+            <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">Foundation <span className="triangle">▾</span></button>
             <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
               <Link className="link" to="/foundation">Governance</Link>
               <Link className="link" to="/charter">Charter</Link>
