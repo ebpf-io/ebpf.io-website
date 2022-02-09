@@ -56,7 +56,7 @@ const Buttons = () => (
       What is eBPF?
     </Link>
     <Link to="/projects" className="main-button">
-      Projects
+      Landscape
     </Link>
   </h1>
 );
@@ -121,7 +121,7 @@ const Outro = () => (
                 <a href="/what-is-ebpf">What is eBPF?</a>
               </li>
               <li>
-                <a href="/projects">List of eBPF-powered projects</a>
+                <a href="/projects">eBPF Landscape</a>
               </li>
             </ul>
           </td>

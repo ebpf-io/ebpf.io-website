@@ -5,7 +5,7 @@ import { TitleWithAnchor } from "../common/TitleWithAnchor";
 
 import "../stylesheets/index.scss";
 
-const pageMetaTitle = 'eBPF Projects Directory'
+const pageMetaTitle = 'eBPF Landscape'
 const pageMetaDescription = 'A directory of eBPF-based open source projects'
 
 const YouMaintain = () => (
@@ -675,7 +675,7 @@ const Page = () => (
         title={pageMetaTitle}
 
         meta={[
-          {name: "keywords", content: "ebpf, bpf, projects, directory, open source"},
+          {name: "keywords", content: "ebpf, bpf, landscape, directory, open source"},
           {name: "type", property: "og:type", content: "website"},
           {name: "url", property: "og:url", content: "https://ebpf.io/contribute/"},
           {name: "title", property: "og:title", content: pageMetaTitle},
