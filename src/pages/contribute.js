@@ -77,11 +77,10 @@ const Page = () => (
       <p>
         The list of eBPF-based projects is long and growing. It will be simple to
         find a project that sparks interest. Check out the <a
-        href="/projects">list of eBPF projects</a> to see an overview of all
-        projects.
+        href="/projects">eBPF landscape</a> to see an overview of eBPF-based projects.
       </p>
       <p>
-        Many of the listed eBPF projects maintain a list of <code>good-first-issue</code>-labeled
+        Many of the listed eBPF-based projects maintain a list of <code>good-first-issue</code>-labeled
         tasks which are scoped to not require extensive project specific knowledge and
         provide a great opportunity to get hands-on quickly.
       </p>
