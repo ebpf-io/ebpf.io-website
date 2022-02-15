@@ -427,8 +427,6 @@ const ProjectDescriptions = () => (
             <a href="https://github.com/libbpf/libbpf">
               <b>libbpf</b>
             </a>
-            <br />
-            <b>Emerging:</b>{" "}
           </p>
           <p>
             libbpf is a C/C++ based library which is maintained as part of the
