@@ -246,6 +246,38 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Calico</TitleWithAnchor>
+      <div className="project-minor-title">
+        Cloud Native Runtime Security
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/projectcalico/calico"
+        >
+          <img src={require("../assets/projects-logos/calico.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://www.tigera.io/project-calico/">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/projectcalico/calico">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Calico is a widely adopted, battle-tested open source
+            networking and network security solution for Kubernetes,
+            virtual machines, and bare-metal workloads.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Core Infrastructure (Major)</TitleWithAnchor>
 
     <div className="project-box">
