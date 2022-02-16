@@ -64,7 +64,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
     <nav className="headerNav">
       <Link to="/what-is-ebpf">What is eBPF?</Link>
       <Link to="/blog">Blog</Link>
-      <Link to="/projects">Landscape</Link>
+      <Link to="/projects">Project Landscape</Link>
       <span className="languageSelect">
         <button className="button" onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)} type="button">Conferences <span className="triangle">▾</span></button>
         <span className={`list${isConferencesMenuShown ? ' is-shown' : ''}`}>
@@ -138,7 +138,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
         <nav className="headerNav">
           <Link to="/what-is-ebpf">What is eBPF?</Link>
           <Link to="/blog">Blog</Link>
-          <Link to="/projects">Landscape</Link>
+          <Link to="/projects">Project Landscape</Link>
           <span className="languageSelect">
             <button className="button" onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)} type="button">Conferences <span className="triangle">▾</span></button>
             <span className={`list${isConferencesMenuShown ? ' is-shown' : ''}`}>
@@ -191,7 +191,7 @@ const FooterDesktop = ({path}) => {
           Blog
         </Link>
         <Link to="/projects" className="item">
-          Landscape
+          Project Landscape
         </Link>
         <Link to="/contribute" className="item">
           Contribute

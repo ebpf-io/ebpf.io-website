@@ -5,7 +5,7 @@ import { TitleWithAnchor } from "../common/TitleWithAnchor";
 
 import "../stylesheets/index.scss";
 
-const pageMetaTitle = 'eBPF Landscape'
+const pageMetaTitle = 'eBPF Project Landscape'
 const pageMetaDescription = 'A directory of eBPF-based open source projects'
 
 const YouMaintain = () => (
