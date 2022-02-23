@@ -5,7 +5,7 @@ import { TitleWithAnchor } from "../common/TitleWithAnchor";
 
 import "../stylesheets/index.scss";
 
-const pageMetaTitle = 'eBPF Landscape'
+const pageMetaTitle = 'eBPF Project Landscape'
 const pageMetaDescription = 'A directory of eBPF-based open source projects'
 
 const YouMaintain = () => (
@@ -700,6 +700,12 @@ const Page = () => (
           {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
         ]}
       />
+      <p>
+        This page lists a number of open source projects that use eBPF
+        as the underlying core technology.  These projects are not under
+        the <a href="/foundation">eBPF Foundation</a> but are listed here
+        as a survey of the eBPF project landscape today.
+      </p>
       <ProjectDescriptions />
       <TitleWithAnchor headerClassName="projects-title projects-common-title">FAQ</TitleWithAnchor>
       <h3>Add your project</h3>
