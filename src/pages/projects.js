@@ -350,6 +350,9 @@ const ProjectDescriptions = () => (
         eBPF Runtime
       </div>
       <div className="project-body">
+	<a className="project-logo" target="_blank" href="https://github.com/microsoft/ebpf-for-windows">
+          <img src={require("../assets/projects-logos/eBPF for Windows logo.png")} />
+	</a>
         <div className="project-description">
           <p>
             <a href="https://microsoft.github.io/ebpf-for-windows/">
