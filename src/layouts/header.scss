@@ -148,6 +148,7 @@ $lg: "screen and (max-width : 1024px)";
       &.is-shown {
         visibility: visible;
         opacity: 1;
+        z-index: 10;
       }
       & > .button {
         appearance: none;
@@ -293,7 +294,10 @@ a.contactUs {
 .header.mobile .headerNav {
   margin-top: 10px;
   flex-direction: column;
-  a {
+  a:not(.link), button {
     margin-bottom: 15px;
+  }
+  a, span {
+    margin-left: 0;
   }
 }
