@@ -12,9 +12,9 @@ const CharterPage = ({ location: {pathname} }) => {
         title={pageMetaTitle}
 
         meta={[
-          {name: "keywords", content: "ebpf, bpf, contribute, getting started, community"},
+          {name: "keywords", content: "ebpf, bpf, charter, community"},
           {name: "type", property: "og:type", content: "website"},
-          {name: "url", property: "og:url", content: "https://ebpf.io/contribute/"},
+          {name: "url", property: "og:url", content: "https://ebpf.io/charter/"},
           {name: "title", property: "og:title", content: pageMetaTitle},
           {name: "description", property: "og:description", content: pageMetaDescription},
           {name: "image", property: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
@@ -246,11 +246,11 @@ const CharterPage = ({ location: {pathname} }) => {
         <li>Any trademarks relating to the Directed Fund or the Technical Projects<a href="#clarification-1"><sup>1</sup></a> , including
         without limitation any mark relating to any conformance program, must be transferred to
         and held by LF Projects, LLC or the Linux Foundation and available for use pursuant to
-        LF Projects, LLC’s trademark usage policy, available at <a href="www.lfprojects.org/trademarks/" target="_blank" rel="noopener noreferrer">www.lfprojects.org/trademarks/</a>.</li>
+        LF Projects, LLC’s trademark usage policy, available at <a href="https://www.lfprojects.org/trademarks/" target="_blank" rel="noopener noreferrer">https://www.lfprojects.org/trademarks/</a>.</li>
       </ol>
       <h2>9) Antitrust Guidelines</h2>
       <ol>
-        <li>All Members must abide by The Linux Foundation’s Antitrust Policy available at <a href="http://www.linuxfoundation.org/antitrust-policy" target="_blank" rel="noopener noreferrer">http://www.linuxfoundation.org/antitrust-policy</a>.</li>
+        <li>All Members must abide by The Linux Foundation’s Antitrust Policy available at <a href="https://www.linuxfoundation.org/antitrust-policy/" target="_blank" rel="noopener noreferrer">https://www.linuxfoundation.org/antitrust-policy</a>.</li>
         <li>All Members must encourage open participation from any organization able to meet the
         membership requirements, regardless of competitive interests. Put another way, the
         Governing Board will not seek to exclude any member based on any criteria,
