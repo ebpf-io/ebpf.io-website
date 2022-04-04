@@ -30,7 +30,7 @@ $lg: "screen and (max-width : 1024px)";
     display: none;
   }
 
-  @media #{$tablet} {
+  @media #{$lg} {
     &.desktop {
       display: none;
     }
@@ -106,8 +106,8 @@ $lg: "screen and (max-width : 1024px)";
     margin-left: 40px;
     position: relative;
     &.about .list .link{
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 8px;
+      padding-right: 8px;
     }
     & > .button {
       appearance: none;
@@ -132,7 +132,8 @@ $lg: "screen and (max-width : 1024px)";
     & > .list {
       margin-top: 8px;
       position: absolute;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       top: 100%;
       display: block;
       border: 1px solid #000;
