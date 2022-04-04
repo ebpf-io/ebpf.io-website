@@ -681,6 +681,54 @@ code {
   }
 }
 
+.page-charter {
+  font-size: 20px;
+  line-height: 30px;
+
+  .charter-title {
+    text-align: center;
+    margin-top: 83px;
+    margin-bottom: 15px;
+    font-size: 46px;
+    line-height: 64px;
+    color: #000;
+    font-weight: 700;
+  }
+
+  .charter-description {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 18px;
+  }
+
+  > h2 {
+    font-size: 24px;
+    > span {
+      font-weight: 400;
+    }
+  }
+
+  > ol {
+    list-style-type: lower-alpha;
+    > li {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+    ol {
+      list-style-type: lower-roman;
+      > li {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .charter-clarification {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #cfcfcf;
+  }
+}
+
 .not-found-wrapper {
   width: 100%;
   max-width: 400px;
@@ -1867,6 +1915,17 @@ html.smooth-scroll {
     & .summit-speakers-extra-container {
       .summit-speaker-card {
         width: 166px;
+      }
+    }
+  }
+
+  .page-charter {
+    overflow-wrap: break-word;
+    font-size: 18px;
+    > ol > li {
+      margin-left: 20px;
+      ol > li {
+        margin-left: 12px;
       }
     }
   }
