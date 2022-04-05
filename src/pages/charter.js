@@ -2,8 +2,8 @@ import Layout from "../layouts";
 import React from 'react'
 import { Helmet } from "react-helmet";
 
-const pageMetaTitle = 'The eBPF Foundation Charter'
-const pageMetaDescription = 'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+const pageMetaTitle = 'eBPF Foundation Charter'
+const pageMetaDescription = 'Charter of the eBPF Foundation'
 
 const CharterPage = ({ location: {pathname} }) => {
   return <Layout path={pathname}>
@@ -282,7 +282,8 @@ const CharterPage = ({ location: {pathname} }) => {
         receipts each year and 6% of the Directed Fund’s gross receipts each year over
         $1,000,000.</li>
       </ol>
-      <h2>12) General Rules and Operations. <span>The Directed Fund activities must:</span></h2>
+      <h2>12) General Rules and Operations.</h2>
+      <p>The Directed Fund activities must:</p>
       <ol>
         <li>engage in the work of the project in a professional manner consistent with maintaining a
         cohesive community, while also maintaining the goodwill and esteem of The Linux
