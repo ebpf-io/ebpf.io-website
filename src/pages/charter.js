@@ -180,7 +180,7 @@ const CharterPage = ({ location: {pathname} }) => {
       Related Companies. While normally members will serve two-year terms, the BSC will set
       initial term length so as to stagger elections.</p>  
         <li>One representative of any Member may observe meetings of the BSC. Any committers
-        from a BSC Project may observe meetings of the BSC. The BSC may change this at any
+        from a Technical Project may observe meetings of the BSC. The BSC may change this at any
         point in time, including: (a) opening meetings to a broader community; (b) holding closed
         meetings; and (c) holding meetings open to the public.</li>
         <li>The BSC may approve a project lifecycle policy that will address the incubation, archival
