@@ -368,6 +368,41 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">hBPF</TitleWithAnchor>
+      <div className="project-minor-title">
+        hBPF - eBPF in hardware
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/rprinz08/hBPF"
+        >
+          <img src={require("../assets/projects-logos/hbpf.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://www.min.at/hbpf/">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/rprinz08/hBPF">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            An extended Berkley Packet Filter CPU implemented in hardware on
+            FPGA. In contrast to classic HDL languages like Verilog or VHDL, 
+            Migen/LiteX (both based on Python) where used. Supports custom
+            extensions to 'call' opcode and includes full test suite for each
+            opcode for included emulator and simulator as well as for included
+            hardware targets.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <TitleWithAnchor headerClassName="projects-title projects-common-title" className="projects-title">eBPF Libraries</TitleWithAnchor>
 
     <div className="project-box">
@@ -477,41 +512,6 @@ const ProjectDescriptions = () => (
     </div>
 
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">hBPF</TitleWithAnchor>
-      <div className="project-minor-title">
-        hBPF - eBPF in hardware
-      </div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/rprinz08/hBPF"
-        >
-          <img src={require("../assets/projects-logos/hbpf.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://www.min.at/hbpf/">
-              <b>Website</b>
-            </a>{" "}
-            |{" "}
-            <a href="https://github.com/rprinz08/hBPF">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            An extended Berkley Packet Filter CPU implemented in hardware on
-            FPGA. In contrast to classic HDL languages like Verilog or VHDL, 
-            Migen/LiteX (both based on Python) where used. Supports custom
-            extensions to 'call' opcode and includes full test suite for each
-            opcode for included emulator and simulator as well as for included
-            hardware targets.
-          </p>
-        </div>
-      </div>
-    </div>
 
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Hubble</TitleWithAnchor>
