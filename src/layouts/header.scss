@@ -231,17 +231,20 @@ $lg: "screen and (max-width : 1024px)";
   @media #{$tablet} {
     & > .languageSelect {
       margin-left: 0;
-      margin-bottom: 15px;
       & > .button {
         display: flex;
         width: 100%;
         justify-content: center;
       }
       & > .list {
-        margin-top: 15px;
+        transform: translateX(0);
         position: static;
+        &.is-shown {
+          margin-bottom: 15px;
+        }
         &:not(.is-shown) {
           display: none;
+          margin-top: 15px;
         }
       }
     }
