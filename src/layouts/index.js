@@ -87,15 +87,6 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
         </span>
       </span>
       <a href="/slack">Slack</a>
-      <span className="languageSelect about">
-        <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">Foundation <span className="triangle">▾</span></button>
-        <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
-          <Link className="link" to="/foundation">Governance</Link>
-          <Link className="link" to="/charter">Charter</Link>
-          <Link className="link" to="https://github.com/ebpf-io/bsc/blob/master/minutes.md">BSC Meeting Minutes</Link>
-          <Link className="link" to="/contribute">How to Contribute</Link>
-        </span>
-      </span>
       {hasLanguage && <span className="languageSelect">
         <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
         <span className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
@@ -161,15 +152,6 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
             </span>
           </span>
           <a href="/slack">Slack</a>
-          <span className="languageSelect about">
-            <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">Foundation <span className="triangle">▾</span></button>
-            <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
-              <Link className="link" to="/foundation">Governance</Link>
-              <Link className="link" to="/charter">Charter</Link>
-              <Link className="link" to="https://github.com/ebpf-io/bsc/blob/master/minutes.md">BSC Meeting Minutes</Link>
-              <Link className="link" to="/contribute">How to Contribute</Link>
-            </span>
-          </span>
           {hasLanguage && <span className="languageSelect">
             <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
             <span className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
