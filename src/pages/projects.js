@@ -246,6 +246,43 @@ const ProjectDescriptions = () => (
       </div>
     </div>
 
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Pixie</TitleWithAnchor>
+      <div className="project-minor-title">
+        Scriptable observability for Kubernetes
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/pixie-io/pixie"
+        >
+          <img src={require("../assets/projects-logos/pixie.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://px.dev">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/pixie-io/pixie">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Pixie is an open source observability tool for Kubernetes
+            applications. Pixie uses eBPF to automatically capture
+            telemetry data without the need for manual instrumentation.
+
+            Developers can use Pixie to view the high-level state of
+            their cluster (service maps, cluster resources, application traffic)
+            and also drill-down into more detailed views (pod state, flame graphs,
+            individual full body application requests).
+          </p>
+        </div>
+      </div>
+    </div>
+
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Core Infrastructure (Major)</TitleWithAnchor>
 
     <div className="project-box">
