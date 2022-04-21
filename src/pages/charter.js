@@ -32,7 +32,7 @@ const CharterPage = ({ location: {pathname} }) => {
         <li>The purpose of the eBPF Foundation (the “Directed Fund”) is to raise, budget and spend
         funds in support of various open source, open data and/or open standards projects relating
         to eBPF technologies, including infrastructure and support initiatives related thereto
-        (each project, a “Technical Project”). The governance of each Technical Project is as set
+        (each project, a “Technical Project” as defined in Section 9). The governance of each Technical Project is as set
         forth in the applicable charter for each Technical Project.</li>
         <li>The Directed Fund supports the Technical Projects. Except with respect to the operation
         of the BSC (as defined below), the Directed Fund operates under the guidance of the
@@ -143,11 +143,11 @@ const CharterPage = ({ location: {pathname} }) => {
             overall technical vision for the community;</li>
             <li>making recommendations to the Governing Board of resource priorities for Technical
             Projects;</li>
-            <li>defining the minimal requirements of eBPF runtime projects and “eBPF Projects”;</li>
+            <li>defining the minimal requirements of Technical Projects;</li>
             <li>communicating on behalf of the eBPF community;</li>
             <li>establishing and overseeing committees focused on driving the mission of the eBPF
             Foundation including eBPF community events;</li>
-            <li>creating, maintaining and amending project lifecycle procedures and processes; and</li>
+            <li>creating, maintaining and amending Technical Project lifecycle procedures and processes; and</li>
             <li>such other matters related to the technical role of the BSC as may be communicated
             to the BSC by the Governing Board.</li>
           </ol>
@@ -183,7 +183,7 @@ const CharterPage = ({ location: {pathname} }) => {
         from a Technical Project may observe meetings of the BSC. The BSC may change this at any
         point in time, including: (a) opening meetings to a broader community; (b) holding closed
         meetings; and (c) holding meetings open to the public.</li>
-        <li>The BSC may approve a project lifecycle policy that will address the incubation, archival
+        <li>The BSC may approve a Technical Project lifecycle policy that will address the incubation, archival
         and other stages and requirements of Technical Projects.</li>
         <li>The BSC representatives will elect a chair to preside over meetings, ensure minutes are
         taken and drive the BSC agenda with input from the BSC representatives.</li>
@@ -243,12 +243,27 @@ const CharterPage = ({ location: {pathname} }) => {
       </ol>
       <h2>8) Trademarks</h2>
       <ol>
-        <li>Any trademarks relating to the Directed Fund or the Technical Projects<a href="#clarification-1"><sup>1</sup></a> , including
+        <li>Any trademarks relating to the Directed Fund or the Technical Projects, including
         without limitation any mark relating to any conformance program, must be transferred to
         and held by LF Projects, LLC or the Linux Foundation and available for use pursuant to
         LF Projects, LLC’s trademark usage policy, available at <a href="https://www.lfprojects.org/trademarks/" target="_blank" rel="noopener noreferrer">https://www.lfprojects.org/trademarks/</a>.</li>
       </ol>
-      <h2>9) Antitrust Guidelines</h2>
+      <h2>9) Technical Projects</h2>
+      <ol>
+        <li>A Technical Project is defined as being an open source project that meets the following criteria.
+          <ol>
+            <li>It must meet the Trademarks requirement in Section 8.</li>
+            <li>It must accept the eBPF Foundation as its primary governance structure. For example,
+                the applicable oversight body of the Technical Project agrees to send any budget
+                requests to the eBPF Foundation and to abide by requirements and recommendations
+                from the eBPF Foundation.
+            </li>
+            <li>The BSC must have voted to accept the project as being a Technical Project consistent
+                with the mission and scope of the eBPF Foundation.
+            </li>
+          </ol>
+      </ol>
+      <h2>10) Antitrust Guidelines</h2>
       <ol>
         <li>All Members must abide by The Linux Foundation’s Antitrust Policy available at <a href="https://www.linuxfoundation.org/antitrust-policy/" target="_blank" rel="noopener noreferrer">https://www.linuxfoundation.org/antitrust-policy</a>.</li>
         <li>All Members must encourage open participation from any organization able to meet the
@@ -257,7 +272,7 @@ const CharterPage = ({ location: {pathname} }) => {
         requirements or reasons other than those that are reasonable and applied on a
         non-discriminatory basis to all members.</li>
       </ol> 
-      <h2>10) Budget</h2>
+      <h2>11) Budget</h2>
       <ol>
         <li>The Governing Board will approve an annual budget and never commit to spend in
         excess of funds raised. The budget and the purposes to which it is applied must be
@@ -272,7 +287,7 @@ const CharterPage = ({ location: {pathname} }) => {
         Directed Fund, The Linux Foundation will coordinate with the Governing Board to
         address gap funding requirements.</li>
       </ol>
-      <h2>11) General & Administrative Expenses</h2>
+      <h2>12) General & Administrative Expenses</h2>
       <ol>
         <li>The Linux Foundation will have custody of and final authority over the usage of any fees,
         funds and other cash receipts.</li>
@@ -282,7 +297,7 @@ const CharterPage = ({ location: {pathname} }) => {
         receipts each year and 6% of the Directed Fund’s gross receipts each year over
         $1,000,000.</li>
       </ol>
-      <h2>12) General Rules and Operations.</h2>
+      <h2>13) General Rules and Operations.</h2>
       <p>The Directed Fund activities must:</p>
       <ol>
         <li>engage in the work of the project in a professional manner consistent with maintaining a
@@ -295,14 +310,11 @@ const CharterPage = ({ location: {pathname} }) => {
         <li>operate under such rules and procedures as may be approved by the Governing Board and
         confirmed by The Linux Foundation.</li>
       </ol>
-      <h2>13) Amendments</h2>
+      <h2>14) Amendments</h2>
       <ol>
         <li>This Charter may be amended by a 70% vote of the entire Governing Board and BSC,
         subject to approval by The Linux Foundation.</li>
       </ol>
-
-      <p className="charter-clarification" id="clarification-1"><sup>1</sup> For clarity, a project that the BSC determines qualifies as a “eBPF Project” but that is not otherwise hosted or
-      supported by the Linux Foundation is not required to transfer its trademark in order to qualify as a “eBPF Project”.</p>
     </div>
   </Layout>
 }
