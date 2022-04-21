@@ -154,33 +154,32 @@ const CharterPage = ({ location: {pathname} }) => {
         </li>
         <li>The voting members of the BSC consist of:
         <ol>
-          <li>Two representatives (the “Kernel Representatives”) from the group of eBPF Linux
-          kernel maintainers (as specified in the maintainer file). The Kernel Representatives
-          will not be employed by the same Company or by Related Companies.</li>
-          <li>One representative (each a “eBPF Runtime Representative”) for each additional
-          open-source eBPF runtime implementation. Each eBPF Runtime Representative will
-          be nominated and elected by the applicable oversight body of each eBPF runtime,
-          with nominations and elections subject to approval by the BSC. Nominees need to be
-          active contributors to the applicable eBPF runtime.</li>
-          <li>Up to two representatives (“Additional Project Representatives”) from additional
-          open source projects that are important to the eBPF ecosystem, as determined by the
-          BSC. Each Additional Project Representative need to be an active contributor to one
-          of these additional projects. The Additional Project Representatives will not be
-          employed by the same Company or by Related Companies. Each Additional Project
-          Representative must be nominated and elected by the BSC.</li>
-          <li>Up to three representatives with maintainer status (“Maintainer Representatives”) of
-          major eBPF Foundation projects as approved by the BSC. Maintainer Representatives
-          are nominated and elected by the applicable oversight body of each major eBPF
-          Foundation project, with nominations and elections subject to approval by the BSC.
-          No more than one Maintainer Representative may be employed by any one company
-          or group of Related Companies.</li>
+          <li>Two Linux Kernel representatives from the group of eBPF Linux
+          kernel maintainers (as specified in the Linux eBPF maintainer file). The Linux Kernel representatives
+          must not be employed by the same Company or by Related Companies.</li>
+
+          <li>Up to two representatives from other open source eBPF runtime implementations.
+          Each “eBPF Runtime Representative” will represent a different eBPF runtime chosen
+          by the BSC, and must be an active contributor to that eBPF runtime.</li>
+
+          <li>Up to three Technical Project representatives. Each Technical Project
+          Representative candidate must be an active contributor to a different Technical Project
+          chosen by the BSC.</li>
+
+          <li>Up to two eBPF Landscape Project representatives. Each eBPF Landscape Project Representative
+          candidate must be an active contributor to a different eBPF Landscape Project chosen by the BSC.</li>
         </ol>
         </li>
       <p>There can be at most two representatives on the BSC employed by the same company or by
       Related Companies. While normally members will serve two-year terms, the BSC will set
       initial term length so as to stagger elections.</p>  
+        <p>Representatives from each project (Linux kernel, other runtimes, etc.) are nominated
+           and elected by the applicable oversight body (such as the set of eBPF maintainers),
+           of the project. All elected representatives are subject to ratification by the BSC which
+           is responsible for ensuring the affiliation limitations above across the set of all
+           representatives.</p>
         <li>One representative of any Member may observe meetings of the BSC. Any committers
-        from a Technical Project may observe meetings of the BSC. The BSC may change this at any
+        from a BSC Project may observe meetings of the BSC. The BSC may change this at any
         point in time, including: (a) opening meetings to a broader community; (b) holding closed
         meetings; and (c) holding meetings open to the public.</li>
         <li>The BSC may approve a project lifecycle policy that will address the incubation, archival
