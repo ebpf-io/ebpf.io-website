@@ -37,7 +37,6 @@ const InfoDisclaimer = () => (
 const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
   const [isLangMenuShown, setIsLangMenuShown] = useState(false)
   const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false)
-  const [isAboutMenuShown, setIsAboutMenuShown] = useState(false)
 
   const setLang = useCallback(lang => {
     setLanguage(lang)
