@@ -276,7 +276,7 @@ const ProjectDescriptions = () => (
 
             Developers can use Pixie to view the high-level state of
             their cluster (service maps, cluster resources, application traffic)
-            and also drill-down into more detailed views (pod state, flame graphs,
+            and also drill down into more detailed views (pod state, flame graphs,
             individual full body application requests).
           </p>
         </div>
