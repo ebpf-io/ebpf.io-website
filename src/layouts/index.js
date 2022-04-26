@@ -72,9 +72,10 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
           <Link className="link" to="/summit-2021">2021</Link>
           <Link className="link" to="/summit-2020">2020</Link>
           <strong>Cloud Native eBPF Day</strong>
-          <a target="_blank" className="link" href="https://events.linuxfoundation.org/cloud-native-ebpf-day-europe/program/cfp/">2022 CFP</a>
+          <a target="_blank" className="link" href="https://events.linuxfoundation.org/cloud-native-ebpf-day-europe/program/schedule/">2022</a>
           <a target="_blank" className="link" href="https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/schedule/">2021</a>
           <strong>eBPF Track (LPC)</strong>
+          <a target="_blank" className="link" href="https://lore.kernel.org/bpf/cd33ca74-aec9-ff57-97d5-55d8b908b0ba@iogearbox.net/">2022 CFP</a>
           <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/11/sessions/120/#all">2021</a>
           <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/7/sessions/91/#all">2020</a>
           <a target="_blank" className="link" href="https://linuxplumbersconf.org/event/4/sessions/62/#20190911">2019</a>
