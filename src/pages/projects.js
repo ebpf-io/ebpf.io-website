@@ -78,37 +78,6 @@ const ProjectDescriptions = () => (
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Major)</TitleWithAnchor>
 
     <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">bcc</TitleWithAnchor>
-      <div className="project-minor-title">
-        Toolkit and library for efficient BPF-based kernel tracing
-      </div>
-      <div className="project-body">
-        <a
-          href="https://github.com/iovisor/bcc"
-          target="_blank"
-          className="project-logo"
-        >
-          <img src={require("../assets/projects-logos/bcc.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://github.com/iovisor/bcc" target="_blank">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            BCC is a toolkit for creating efficient kernel tracing and
-            manipulation programs built upon eBPF, and includes several useful
-            command-line tools and examples. BCC eases writing of eBPF programs
-            for kernel instrumentation in C, includes a wrapper around LLVM, and
-            front-ends in Python and Lua. It also provides a high-level library
-            for direct integration into applications.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">bpftrace</TitleWithAnchor>
       <div className="project-minor-title">
         High-level tracing language for Linux eBPF
@@ -521,6 +490,37 @@ const ProjectDescriptions = () => (
             library built with a focus on operability and developer experience.
             It allows for both eBPF programs and their userspace programs
             to be written in Rust.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">bcc</TitleWithAnchor>
+      <div className="project-minor-title">
+        Toolkit and library for efficient BPF-based kernel tracing
+      </div>
+      <div className="project-body">
+        <a
+          href="https://github.com/iovisor/bcc"
+          target="_blank"
+          className="project-logo"
+        >
+          <img src={require("../assets/projects-logos/bcc.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/iovisor/bcc" target="_blank">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            BCC is a toolkit for creating efficient kernel tracing and
+            manipulation programs built upon eBPF, and includes several useful
+            command-line tools and examples. BCC eases writing of eBPF programs
+            for kernel instrumentation in C, includes a wrapper around LLVM, and
+            front-ends in Python and Lua. It also provides a high-level library
+            for direct integration into applications.
           </p>
         </div>
       </div>
