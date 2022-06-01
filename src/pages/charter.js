@@ -174,7 +174,7 @@ const CharterPage = ({ location: {pathname} }) => {
       Related Companies. While normally members will serve two-year terms, the BSC will set
       initial term length so as to stagger elections.</p>  
         <p>Representatives from each project (Linux kernel, other runtimes, etc.) are nominated
-           and elected by the applicable oversight body (such as the set of eBPF maintainers),
+           by the applicable oversight body, such as the set of maintainers or similar.
            of the project. All elected representatives are subject to ratification by the BSC which
            is responsible for ensuring the affiliation limitations above across the set of all
            representatives.</p>
