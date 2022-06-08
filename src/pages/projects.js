@@ -775,6 +775,34 @@ const ProjectDescriptions = () => (
         </div>
       </div>
     </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Tetragon</TitleWithAnchor>
+      <div className="project-minor-title">eBPF-based Security Observability &amp; Runtime Enforcement</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/cilium/tetragon"
+        >
+          <img src={require("../assets/projects-logos/tetragon.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/cilium/tetragon">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Tetragon provides eBPF-based transparent security observability combined with real-time runtime enforcement.
+            The deep visibility is achieved without requiring application changes and is provided at low overhead thanks
+            to smart Linux in-kernel filtering and aggregation logic built directly into the eBPF-based kernel-level collector.
+            The embedded runtime enforcement layer is capable of performing access control on kernel functions,
+            system calls and at other enforcement levels.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
