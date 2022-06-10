@@ -529,6 +529,30 @@ const ProjectDescriptions = () => (
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
 
     <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">BumbleBee</TitleWithAnchor>
+      <div className="project-minor-title">OCI compliant eBPF tooling</div>
+      <div className="project-body">
+        <a
+            className="project-logo"
+            target="_blank"
+            href="https://bumblebee.io"
+        >
+          <img src={require("../assets/projects-logos/bumblebee.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/solo-io/bumblebee">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            BumbleBee simplifies building eBPF tools and allows you to package, distribute, and run eBPF programs using OCI images. It allows you to just focus on the eBPF portion of your code and BumbleBee automates away the boilerplate, including the userspace code.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">eCapture</TitleWithAnchor>
       <div className="project-minor-title">SSL/TLS capture tool using eBPF</div>
       <div className="project-body">
@@ -773,30 +797,6 @@ const ProjectDescriptions = () => (
           </p>
           <p>
           Tracee uses eBPF technology to detect and filter operating system events, helping you expose security insights, detect suspicious behavior, and capture forensic indicators. 
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">BumbleBee</TitleWithAnchor>
-      <div className="project-minor-title">OCI compliant eBPF tooling</div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://bumblebee.io"
-        >
-          <img src={require("../assets/projects-logos/bumblebee.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://github.com/solo-io/bumblebee">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-          BumbleBee simplifies building eBPF tools and allows you to package, distribute, and run eBPF programs using OCI images. It allows you to just focus on the eBPF portion of your code and BumbleBee automates away the boilerplate, including the userspace code.
           </p>
         </div>
       </div>
