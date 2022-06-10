@@ -529,6 +529,32 @@ const ProjectDescriptions = () => (
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
 
     <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">eCapture</TitleWithAnchor>
+      <div className="project-minor-title">SSL/TLS capture tool using eBPF</div>
+      <div className="project-body">
+        <a
+            className="project-logo"
+            target="_blank"
+            href="https://github.com/ehids/ecapture"
+        >
+          <img src={require("../assets/projects-logos/ecapture-logo.png")} alt="ehids/eCapture project"/>
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/ehids/ecapture" target="_blank">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            eCapture is a tool that can capture plaintext without a CA certificate. It supports TLS encryption libraries such as openssl/gnutls/nspr etc. The userspace code is written in Go and uses cilium/ebpf. It can work on Linux Kernel 4.18 and later, and supports CO-RE features.
+
+            At the same time, it also works without BTF.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Hubble</TitleWithAnchor>
       <div className="project-minor-title">
         Network, Service &amp; Security Observability for Kubernetes using eBPF
