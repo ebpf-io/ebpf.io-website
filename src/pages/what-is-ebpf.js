@@ -94,6 +94,13 @@ class Description extends React.Component {
             becoming contributors to major eBPF projects, eBPF.io will help you
             along the way.
           </p>
+          <h3>What is the bee named?</h3>
+          <p>
+            The bee is the official logo for eBPF. At the first eBPF Summit
+            there was a vote taken and the bee was named <b>eBee</b>.
+            (For details on acceptable uses of the logo, please see the 
+            Linux Foundation <a href="https://linuxfoundation.org/brand-guidelines/">Brand Guidelines</a>.) 
+          </p>
           <h2>Introduction to eBPF</h2>
           <p>
             The following chapters are a quick introduction into eBPF. If you
