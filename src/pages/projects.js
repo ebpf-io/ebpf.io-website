@@ -529,30 +529,6 @@ const ProjectDescriptions = () => (
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
 
     <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">BumbleBee</TitleWithAnchor>
-      <div className="project-minor-title">OCI compliant eBPF tooling</div>
-      <div className="project-body">
-        <a
-            className="project-logo"
-            target="_blank"
-            href="https://bumblebee.io"
-        >
-          <img src={require("../assets/projects-logos/bumblebee.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://github.com/solo-io/bumblebee">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            BumbleBee simplifies building eBPF tools and allows you to package, distribute, and run eBPF programs using OCI images. It allows you to just focus on the eBPF portion of your code and BumbleBee automates away the boilerplate, including the userspace code.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">eCapture</TitleWithAnchor>
       <div className="project-minor-title">SSL/TLS capture tool using eBPF</div>
       <div className="project-body">
@@ -573,136 +549,6 @@ const ProjectDescriptions = () => (
             eCapture is a tool that can capture plaintext without a CA certificate. It supports TLS encryption libraries such as openssl/gnutls/nspr etc. The userspace code is written in Go and uses cilium/ebpf. It can work on Linux Kernel 4.18 and later, and supports CO-RE features.
 
             At the same time, it also works without BTF.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Hubble</TitleWithAnchor>
-      <div className="project-minor-title">
-        Network, Service &amp; Security Observability for Kubernetes using eBPF
-      </div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/cilium/hubble"
-        >
-          <img src={require("../assets/hubble-no-text.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://cilium.io/">
-              <b>Website</b>
-            </a>{" "}
-            |{" "}
-            <a href="https://github.com/cilium/hubble">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            Hubble is a fully distributed networking and security observability
-            platform for cloud native workloads. It is built on top of Cilium
-            and eBPF to enable deep visibility into the communication and
-            behavior of services as well as the networking infrastructure in a
-            completely transparent manner.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">KubeArmor</TitleWithAnchor>
-      <div className="project-minor-title">Container-aware Runtime Security Enforcement System</div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/accuknox/KubeArmor"
-        >
-          <img src={require("../assets/projects-logos/kubearmor.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-	    <a href="https://kubearmor.com">
-	      <b>Website</b>
-	    </a>{" "}
-	    |{" "}
-            <a href="https://github.com/accuknox/KubeArmor">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-	  KubeArmor is a container-aware runtime security enforcement system that 
-	  restricts the behavior (such as process execution, file access, networking
-	  operation, and resource utilization) of containers at the system level,
-	  using LSMs and eBPF.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">kubectl trace</TitleWithAnchor>
-      <div className="project-minor-title">
-        Schedule bpftrace programs on your Kubernetes cluster
-      </div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/iovisor/kubectl-trace"
-        >
-          <img src={require("../assets/projects-logos/kubectl_trace2.png")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://github.com/iovisor/kubectl-trace">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            kubectl-trace is a kubectl plugin that allows for scheduling the
-            execution of bpftrace(8) programs in Kubernetes clusters.
-            kubectl-trace does not require installation of any components
-            directly onto a Kubernetes cluster in order to execute bpftrace
-            programs. When pointed to a cluster, it schedules a temporary job
-            called trace-runner that executes bpftrace.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">L3AF</TitleWithAnchor>
-      <div className="project-minor-title">Complete lifecycle management of eBPF programs</div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://l3af.io"
-        >
-          <img src={require("../assets/projects-logos/l3af.svg")} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://l3af.io">
-              <b>Website</b>
-            </a>{" "}
-            |{" "}
-            <a href="https://github.com/l3af-project">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            L3AF is a platform to launch and manage eBPF programs in
-            distributed environments. L3AF empowers users to compose multiple
-            eBPF programs together to solve unique problems in different
-            environments. Using the APIs provided by L3AF, these eBPF programs
-            can be reconfigured, updated, inspected, and reordered on-the-fly.
-            L3AF also provides configurable metrics for the eBPF programs it
-            has launched.
           </p>
         </div>
       </div>
@@ -746,6 +592,147 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Hubble</TitleWithAnchor>
+      <div className="project-minor-title">
+        Network, Service &amp; Security Observability for Kubernetes using eBPF
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/cilium/hubble"
+        >
+          <img src={require("../assets/hubble-no-text.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://cilium.io/">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/cilium/hubble">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Hubble is a fully distributed networking and security observability
+            platform for cloud native workloads. It is built on top of Cilium
+            and eBPF to enable deep visibility into the communication and
+            behavior of services as well as the networking infrastructure in a
+            completely transparent manner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Tracee</TitleWithAnchor>
+      <div className="project-minor-title">Linux Runtime Security and Forensics using eBPF</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/aquasecurity/tracee"
+        >
+          <img src={require("../assets/projects-logos/tracee.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/aquasecurity/tracee">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+          Tracee uses eBPF technology to detect and filter operating system events, helping you expose security insights, detect suspicious behavior, and capture forensic indicators. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">kubectl trace</TitleWithAnchor>
+      <div className="project-minor-title">
+        Schedule bpftrace programs on your Kubernetes cluster
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/iovisor/kubectl-trace"
+        >
+          <img src={require("../assets/projects-logos/kubectl_trace2.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/iovisor/kubectl-trace">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            kubectl-trace is a kubectl plugin that allows for scheduling the
+            execution of bpftrace(8) programs in Kubernetes clusters.
+            kubectl-trace does not require installation of any components
+            directly onto a Kubernetes cluster in order to execute bpftrace
+            programs. When pointed to a cluster, it schedules a temporary job
+            called trace-runner that executes bpftrace.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Tetragon</TitleWithAnchor>
+      <div className="project-minor-title">eBPF-based Security Observability &amp; Runtime Enforcement</div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/cilium/tetragon"
+        >
+          <img src={require("../assets/projects-logos/tetragon.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/cilium/tetragon">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Tetragon provides eBPF-based transparent security observability combined with real-time runtime enforcement.
+            The deep visibility is achieved without requiring application changes and is provided at low overhead thanks
+            to smart Linux in-kernel filtering and aggregation logic built directly into the eBPF-based kernel-level collector.
+            The embedded runtime enforcement layer is capable of performing access control on kernel functions,
+            system calls and at other enforcement levels.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">BumbleBee</TitleWithAnchor>
+      <div className="project-minor-title">OCI compliant eBPF tooling</div>
+      <div className="project-body">
+        <a
+            className="project-logo"
+            target="_blank"
+            href="https://bumblebee.io"
+        >
+          <img src={require("../assets/projects-logos/bumblebee.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://github.com/solo-io/bumblebee">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            BumbleBee simplifies building eBPF tools and allows you to package, distribute, and run eBPF programs using OCI images. It allows you to just focus on the eBPF portion of your code and BumbleBee automates away the boilerplate, including the userspace code.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">ply</TitleWithAnchor>
       <div className="project-minor-title">A dynamic tracer for Linux</div>
       <div className="project-body">
@@ -779,56 +766,70 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Tracee</TitleWithAnchor>
-      <div className="project-minor-title">Linux Runtime Security and Forensics using eBPF</div>
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">KubeArmor</TitleWithAnchor>
+      <div className="project-minor-title">Container-aware Runtime Security Enforcement System</div>
       <div className="project-body">
         <a
           className="project-logo"
           target="_blank"
-          href="https://github.com/aquasecurity/tracee"
+          href="https://github.com/accuknox/KubeArmor"
         >
-          <img src={require("../assets/projects-logos/tracee.png")} />
+          <img src={require("../assets/projects-logos/kubearmor.png")} />
         </a>
         <div className="project-description">
           <p>
-            <a href="https://github.com/aquasecurity/tracee">
+	    <a href="https://kubearmor.com">
+	      <b>Website</b>
+	    </a>{" "}
+	    |{" "}
+            <a href="https://github.com/accuknox/KubeArmor">
               <b>GitHub</b>
             </a>{" "}
           </p>
           <p>
-          Tracee uses eBPF technology to detect and filter operating system events, helping you expose security insights, detect suspicious behavior, and capture forensic indicators. 
+	  KubeArmor is a container-aware runtime security enforcement system that 
+	  restricts the behavior (such as process execution, file access, networking
+	  operation, and resource utilization) of containers at the system level,
+	  using LSMs and eBPF.
           </p>
         </div>
       </div>
     </div>
 
     <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Tetragon</TitleWithAnchor>
-      <div className="project-minor-title">eBPF-based Security Observability &amp; Runtime Enforcement</div>
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">L3AF</TitleWithAnchor>
+      <div className="project-minor-title">Complete lifecycle management of eBPF programs</div>
       <div className="project-body">
         <a
           className="project-logo"
           target="_blank"
-          href="https://github.com/cilium/tetragon"
+          href="https://l3af.io"
         >
-          <img src={require("../assets/projects-logos/tetragon.png")} />
+          <img src={require("../assets/projects-logos/l3af.svg")} />
         </a>
         <div className="project-description">
           <p>
-            <a href="https://github.com/cilium/tetragon">
+            <a href="https://l3af.io">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/l3af-project">
               <b>GitHub</b>
             </a>{" "}
           </p>
           <p>
-            Tetragon provides eBPF-based transparent security observability combined with real-time runtime enforcement.
-            The deep visibility is achieved without requiring application changes and is provided at low overhead thanks
-            to smart Linux in-kernel filtering and aggregation logic built directly into the eBPF-based kernel-level collector.
-            The embedded runtime enforcement layer is capable of performing access control on kernel functions,
-            system calls and at other enforcement levels.
+            L3AF is a platform to launch and manage eBPF programs in
+            distributed environments. L3AF empowers users to compose multiple
+            eBPF programs together to solve unique problems in different
+            environments. Using the APIs provided by L3AF, these eBPF programs
+            can be reconfigured, updated, inspected, and reordered on-the-fly.
+            L3AF also provides configurable metrics for the eBPF programs it
+            has launched.
           </p>
         </div>
       </div>
     </div>
+
   </div>
 );
 
