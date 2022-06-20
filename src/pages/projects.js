@@ -528,6 +528,13 @@ const ProjectDescriptions = () => (
 
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
 
+    <div align="center">
+      <p>
+        The ordering of emerging applications is based on the number of Github
+        stars (high to low), updated on a quaterly basis.
+      </p>
+    </div>
+
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">eCapture</TitleWithAnchor>
       <div className="project-minor-title">SSL/TLS capture tool using eBPF</div>
