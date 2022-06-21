@@ -529,7 +529,7 @@ const ProjectDescriptions = () => (
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
 
     <div align="center">
-      <p>
+      <p style={{marginBottom: '20px'}}>
         The ordering of emerging applications is based on the number of Github
         stars (high to low), updated on a quaterly basis.
       </p>
