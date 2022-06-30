@@ -69,6 +69,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
         <button className="button" onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)} type="button">Conferences <span className="triangle">▾</span></button>
         <span className={`list${isConferencesMenuShown ? ' is-shown' : ''}`}>
           <strong>eBPF Summit</strong>
+          <a target="_blank" className="link" href="https://sessionize.com/ebpf-summit-2022/">2022 CFP</a>
           <Link className="link" to="/summit-2021">2021</Link>
           <Link className="link" to="/summit-2020">2020</Link>
           <strong>Cloud Native eBPF Day</strong>
@@ -139,6 +140,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
             <button className="button" onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)} type="button">Conferences <span className="triangle">▾</span></button>
             <span className={`list${isConferencesMenuShown ? ' is-shown' : ''}`}>
               <strong>eBPF Summit</strong>
+              <a target="_blank" className="link" href="https://sessionize.com/ebpf-summit-2022/">2022 CFP</a>
               <Link className="link" to="/summit-2021">2021</Link>
               <Link className="link" to="/summit-2020">2020</Link>
               <strong>Cloud Native eBPF Day</strong>
