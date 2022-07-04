@@ -87,15 +87,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
         </span>
       </span>
       <a href="/slack">Slack</a>
-      <span className="languageSelect about">
-        <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">Foundation <span className="triangle">▾</span></button>
-        <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
-          <Link className="link" to="/foundation">Governance</Link>
-          <Link className="link" to="/charter">Charter</Link>
-          <Link className="link" to="https://github.com/ebpf-io/bsc/blob/master/minutes.md">BSC Meeting Minutes</Link>
-          <Link className="link" to="/contribute">How to Contribute</Link>
-        </span>
-      </span>
+      <a href="https://www.ebpf.foundation">Foundation</a>
       {hasLanguage && <span className="languageSelect">
         <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
         <span className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
@@ -165,15 +157,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
             </span>
           </span>
           <a href="/slack">Slack</a>
-          <span className="languageSelect about">
-            <button className="button" onClick={() => setIsAboutMenuShown(!isAboutMenuShown)} type="button">Foundation <span className="triangle">▾</span></button>
-            <span className={`list${isAboutMenuShown ? ' is-shown' : ''}`}>
-              <Link className="link" to="/foundation">Governance</Link>
-              <Link className="link" to="/charter">Charter</Link>
-              <Link className="link" to="https://github.com/ebpf-io/bsc/blob/master/minutes.md">BSC Meeting Minutes</Link>
-              <Link className="link" to="/contribute">How to Contribute</Link>
-            </span>
-          </span>
+          <a href="https://www.ebpf.foundation">Foundation</a>
           {hasLanguage && <span className="languageSelect">
             <button className="button" onClick={() => setIsLangMenuShown(!isLangMenuShown)} type="button">{getLanguageName(language)} <span className="triangle">▾</span></button>
             <span className={`list${isLangMenuShown ? ' is-shown' : ''}`}>
@@ -207,9 +191,7 @@ const FooterDesktop = ({path}) => {
       </div>
       {isIndexPage && 
         <div className="copyright">
-          <p>Copyright © 2021 The Linux Foundation® . All rights reserved.</p> 
-          <p>The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage" target="_blank" rel="noopener noreferrer">Trademark Usage</a> page. Linux is a registered trademark of Linus Torvalds. <a href="https://www.linuxfoundation.org/privacy" target="_blank" rel="noopener noreferrer">Privacy
-          Policy</a> and <a href="https://www.linuxfoundation.org/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a>.</p>
+          <p>Copyright © 2022 Authors of ebpf.io. All rights reserved.</p> 
         </div>
       }
     </div>

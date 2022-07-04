@@ -862,8 +862,8 @@ const Page = () => (
       />
       <p>
         This page lists a number of open source projects that use eBPF
-        as the underlying core technology.  These projects are not under
-        the <a href="/foundation">eBPF Foundation</a> but are listed here
+        as the underlying core technology.  These projects are not necessarily under
+        the <a href="https://www.ebpf.foundation">eBPF Foundation</a> but are listed here
         as a survey of the eBPF project landscape today.
       </p>
       <ProjectDescriptions />
