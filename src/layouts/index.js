@@ -193,7 +193,7 @@ const FooterDesktop = ({path}) => {
       </div>
       {isIndexPage && 
         <div className="copyright">
-          <p>Copyright © 2022 Authors of ebpf.io. All rights reserved.</p> 
+          <p>Copyright © Authors of ebpf.io. All rights reserved.</p> 
         </div>
       }
     </div>
