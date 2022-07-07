@@ -32,19 +32,32 @@ const getLanguageName = (languageCode) => {
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
     <img
-      src="images/bg-2.png"
+      src="images/bg-1.png"
       className="introDisclaimer-image image-right"
       alt=""
       aria-hidden
     />
     <img
-      src="images/bg-1.png"
+      src="images/bg-2.png"
       className="introDisclaimer-image image-left"
       alt=""
       aria-hidden
     />
-    <strong>eBPF summit 2022&nbsp;</strong>{" "}
-    <span className="mobile-hidden">(28-29 September)</span>
+    <img
+      src="images/bg-1-md.png"
+      className="introDisclaimer-image-md image-right"
+      alt=""
+      aria-hidden
+    />
+    <img
+      src="images/bg-2-md.png"
+      className="introDisclaimer-image-md image-left"
+      alt=""
+      aria-hidden
+    />
+    <div className="text-wrapper">
+      <strong>eBPF summit 2022&nbsp;</strong> <span>(28-29 September)</span>
+    </div>
     <a
       className="introDisclaimer-button"
       href="https://www.ebpf.io/summit-2022"
