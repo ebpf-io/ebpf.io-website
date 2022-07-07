@@ -75,12 +75,83 @@ code {
 
 .introDisclaimer {
   width: 100%;
+  overflow: hidden;
   box-sizing: border-box;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(265.86deg, #ffe41a -14.77%, #ff9533 150.53%);
+  position: relative;
+
+  @media #{$tablet} {
+    font-size: 18px;
+  }
+
+  @media (max-width: 414px) {
+    font-size: 16px;
+  }
+}
+.introDisclaimer-image {
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+.image-right {
+  right: 0;
+  @media (max-width: 1240px) {
+    right: -10rem;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.image-left {
+  left: 0;
+  @media (max-width: 1240px) {
+    left: -15rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.introDisclaimer-button {
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-left: 1.5rem;
+  border: none;
+  background-color: black;
+  color: white;
   font-size: 16px;
-  display: inline-block;
-  background-color: #fff1cc;
+  line-height: 1;
+  font-weight: 700;
+  text-decoration: none;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 8px 14px;
+    margin-left: 1rem;
+  }
+
+  @media (max-width: 414px) {
+    padding: 8px 10px;
+    margin-left: 0.75rem;
+  }
+
+  &:hover {
+    background-color: #2e2d2d;
+  }
+}
+
+.mobile-hidden {
+  @media (max-width: 738px) {
+    display: none;
+  }
 }
 
 .intro {
@@ -455,7 +526,7 @@ code {
       position: absolute;
       left: 0;
       opacity: 0;
-      transition: opacity .2s ease-in;
+      transition: opacity 0.2s ease-in;
       transform: translateX(-100%);
       padding-right: 4px;
 
@@ -479,7 +550,7 @@ code {
     position: absolute;
     left: 0;
     opacity: 0;
-    transition: opacity .2s ease-in;
+    transition: opacity 0.2s ease-in;
     transform: translateX(-100%);
     padding-right: 4px;
 
@@ -750,12 +821,12 @@ html.smooth-scroll {
     place-content: center;
     height: 68px;
     background-color: #ffe100;
-    transition: .2s ease-in;
+    transition: 0.2s ease-in;
     @media (min-width: 1024px) {
       height: 64px;
     }
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
     & > .link {
       cursor: pointer;
@@ -776,11 +847,13 @@ html.smooth-scroll {
     position: relative;
     display: grid;
     grid-template-columns: var(--root-grid);
-    background-image: var(--background-image-mobile), linear-gradient(90deg, #111010 0%, #424242 100%);
+    background-image: var(--background-image-mobile),
+      linear-gradient(90deg, #111010 0%, #424242 100%);
     background-position: center;
     background-repeat: no-repeat;
     @media (min-width: 1024px) {
-      background-image: var(--background-image), linear-gradient(90deg, #111010 0%, #424242 100%);
+      background-image: var(--background-image),
+        linear-gradient(90deg, #111010 0%, #424242 100%);
       background-position: center;
     }
     & > .wrapper {
@@ -806,10 +879,10 @@ html.smooth-scroll {
         & > .logo {
           vertical-align: bottom;
           height: 48px;
-          transform: translateY(-.05em);
+          transform: translateY(-0.05em);
           @media (min-width: 1024px) {
             height: 85px;
-            transform: translateY(-.1em);
+            transform: translateY(-0.1em);
           }
         }
       }
@@ -869,14 +942,14 @@ html.smooth-scroll {
           font-weight: 500;
           text-decoration: none;
           border-radius: 3px;
-          transition: .2s ease-in;
+          transition: 0.2s ease-in;
           cursor: pointer;
           @media (min-width: 1024px) {
             line-height: 21px;
             font-size: 18px;
           }
           &:hover {
-            opacity: .8;
+            opacity: 0.8;
           }
           &.type--register {
             width: 100%;
@@ -935,7 +1008,7 @@ html.smooth-scroll {
         color: #333333;
 
         a {
-          color: #4385F5;
+          color: #4385f5;
         }
       }
     }
@@ -977,10 +1050,10 @@ html.smooth-scroll {
           --border-radius: 3px;
           @media (min-width: 1024px) {
             grid-column: span 2 / var(--grid-column-end);
-            &:nth-of-type(3n+1):nth-last-of-type(1) {
+            &:nth-of-type(3n + 1):nth-last-of-type(1) {
               --grid-column-end: 5;
             }
-            &:nth-of-type(3n+1):nth-last-of-type(2) {
+            &:nth-of-type(3n + 1):nth-last-of-type(2) {
               --grid-column-end: 4;
             }
           }
@@ -1001,23 +1074,23 @@ html.smooth-scroll {
             &.is-selectable {
               cursor: pointer;
               & > .avatar {
-                transition: .2s ease-in;
+                transition: 0.2s ease-in;
               }
               & > .section {
-                transition: .2s ease-in;
+                transition: 0.2s ease-in;
               }
               & > .corner {
-                transition: .2s ease-in;
+                transition: 0.2s ease-in;
               }
               &:hover {
                 & > .avatar {
-                  opacity: .8;
+                  opacity: 0.8;
                 }
                 & > .section {
-                  opacity: .8;
+                  opacity: 0.8;
                 }
                 & > .corner {
-                  opacity: .8;
+                  opacity: 0.8;
                 }
               }
             }
@@ -1090,18 +1163,18 @@ html.smooth-scroll {
             border: 3px solid #111010;
             padding: 28px;
             background-color: #ffffff;
-            border-radius: var( --border-radius);
+            border-radius: var(--border-radius);
             & > .title {
               grid-column: 1;
               margin: 0;
               line-height: 24px;
               font-size: 24px;
               &.link {
-                color: #508CF1;
-                transition: .2s ease-in;
+                color: #508cf1;
+                transition: 0.2s ease-in;
                 cursor: pointer;
                 &:hover {
-                  opacity: .8;
+                  opacity: 0.8;
                 }
               }
             }
@@ -1122,12 +1195,12 @@ html.smooth-scroll {
               & > .video-button {
                 display: inline-block;
                 height: 100%;
-                transition: .2s ease-in;
+                transition: 0.2s ease-in;
                 border: none;
                 background: transparent;
                 cursor: pointer;
                 &:hover {
-                  opacity: .8;
+                  opacity: 0.8;
                 }
                 & > img {
                   display: inline-block;
@@ -1140,11 +1213,11 @@ html.smooth-scroll {
                 font-size: 16px;
                 font-weight: 500;
                 text-decoration: none;
-                color: #508CF1;
-                transition: .2s ease-in;
+                color: #508cf1;
+                transition: 0.2s ease-in;
                 cursor: pointer;
                 &:hover {
-                  opacity: .8;
+                  opacity: 0.8;
                 }
                 & > img {
                   margin-right: 6px;
@@ -1159,10 +1232,10 @@ html.smooth-scroll {
               place-items: center;
               border: none;
               background-color: transparent;
-              transition: .2s ease-in;
+              transition: 0.2s ease-in;
               cursor: pointer;
               &:hover {
-                opacity: .8;
+                opacity: 0.8;
               }
             }
           }
@@ -1173,7 +1246,8 @@ html.smooth-scroll {
   & > .summit-agenda {
     display: grid;
     grid-template-columns: var(--root-grid);
-    background-image: var(--background-image-mobile), linear-gradient(90deg, #111010 0%, #424242 100%);
+    background-image: var(--background-image-mobile),
+      linear-gradient(90deg, #111010 0%, #424242 100%);
     background-position: center;
     @media (min-width: 1024px) {
       background-image: var(--background-image);
@@ -1208,7 +1282,7 @@ html.smooth-scroll {
       & > .list {
         a.dark-link {
           text-decoration: none;
-          color: #508CF1;
+          color: #508cf1;
         }
         margin-top: 25px;
         position: relative;
@@ -1262,20 +1336,20 @@ html.smooth-scroll {
                 }
                 & > .link {
                   text-decoration: none;
-                  color: #4385F5;
-                  transition: .2s ease-in;
+                  color: #4385f5;
+                  transition: 0.2s ease-in;
                   cursor: pointer;
                   &:hover {
-                    opacity: .8;
+                    opacity: 0.8;
                   }
                 }
                 & .dark-link {
                   text-decoration: none;
-                  color: #508CF1;
-                  transition: .2s ease-in;
+                  color: #508cf1;
+                  transition: 0.2s ease-in;
                   cursor: pointer;
                   &:hover {
-                    opacity: .8;
+                    opacity: 0.8;
                   }
                 }
                 & > .more-button {
@@ -1285,7 +1359,7 @@ html.smooth-scroll {
                   display: inline-block;
                   border-left: 4px solid transparent;
                   border-right: 4px solid transparent;
-                  border-top: 6px solid #4385F5;
+                  border-top: 6px solid #4385f5;
                   cursor: pointer;
                   &::before {
                     content: "";
@@ -1328,12 +1402,12 @@ html.smooth-scroll {
                     & > .video-button {
                       display: inline-block;
                       height: 100%;
-                      transition: .2s ease-in;
+                      transition: 0.2s ease-in;
                       cursor: pointer;
                       border: none;
                       background: transparent;
                       &:hover {
-                        opacity: .8;
+                        opacity: 0.8;
                       }
                       & > img {
                         display: inline-block;
@@ -1344,13 +1418,13 @@ html.smooth-scroll {
                       display: flex;
                       align-items: center;
                       text-decoration: none;
-                      color: #508CF1;
-                      transition: .2s ease-in;
+                      color: #508cf1;
+                      transition: 0.2s ease-in;
                       font-size: 16px;
                       font-weight: 500;
                       cursor: pointer;
                       &:hover {
-                        opacity: .8;
+                        opacity: 0.8;
                       }
                       & > img {
                         margin-right: 6px;
@@ -1388,10 +1462,10 @@ html.smooth-scroll {
                     place-items: center;
                     border: none;
                     background-color: transparent;
-                    transition: .2s ease-in;
+                    transition: 0.2s ease-in;
                     cursor: pointer;
                     &:hover {
-                      opacity: .8;
+                      opacity: 0.8;
                     }
                   }
                 }
@@ -1491,23 +1565,23 @@ html.smooth-scroll {
             & > .title {
               & > .link {
                 text-decoration: none;
-                color: #4385F5;
-                transition: .2s ease-in;
+                color: #4385f5;
+                transition: 0.2s ease-in;
                 cursor: pointer;
                 &:hover {
-                  opacity: .8;
+                  opacity: 0.8;
                 }
               }
               & > .video-button {
                 margin-left: 6px;
                 display: inline-block;
-                transition: .2s ease-in;
+                transition: 0.2s ease-in;
                 height: 100%;
                 cursor: pointer;
                 border: none;
                 background: transparent;
                 &:hover {
-                  opacity: .8;
+                  opacity: 0.8;
                 }
                 & > img {
                   vertical-align: sub;
@@ -1516,10 +1590,10 @@ html.smooth-scroll {
               & > .download-link {
                 margin-left: 6px;
                 text-decoration: none;
-                transition: .2s ease-in;
+                transition: 0.2s ease-in;
                 cursor: pointer;
                 &:hover {
-                  opacity: .8;
+                  opacity: 0.8;
                 }
                 & > img {
                   vertical-align: sub;
@@ -1528,13 +1602,13 @@ html.smooth-scroll {
             }
             & .slides-link {
               text-decoration: none;
-              color: #4385F5;
+              color: #4385f5;
               font-size: 12px;
               width: 68px;
-              transition: .2s ease-in;
+              transition: 0.2s ease-in;
               cursor: pointer;
               &:hover {
-                opacity: .8;
+                opacity: 0.8;
               }
 
               @media (max-width: 768px) {
@@ -1584,12 +1658,12 @@ html.smooth-scroll {
         cursor: pointer;
         margin-top: 110px;
         text-decoration: none;
-        transition: .2s ease-in;
+        transition: 0.2s ease-in;
         @media (min-width: 1024px) {
           margin-top: 0;
         }
         &:hover {
-          opacity: .8;
+          opacity: 0.8;
         }
       }
       & > .carousel {
@@ -1624,38 +1698,40 @@ html.smooth-scroll {
       }
       & .slider-prev {
         display: block;
-        transition: .2s ease-in;
+        transition: 0.2s ease-in;
         cursor: pointer;
         &:hover {
-          opacity: .8;
+          opacity: 0.8;
         }
       }
       & .slider-next {
         display: block;
-        transition: .2s ease-in;
+        transition: 0.2s ease-in;
         cursor: pointer;
         &:hover {
-          opacity: .8;
+          opacity: 0.8;
         }
       }
       & .more-button {
         position: absolute;
         bottom: 0;
         left: calc(50% - 8px);
-        transition: .2s ease-in;
+        transition: 0.2s ease-in;
         cursor: pointer;
         width: 16px;
         height: 10px;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
-        border-top: 10px solid #4385F5;
+        border-top: 10px solid #4385f5;
         &:hover {
-          opacity: .8;
+          opacity: 0.8;
         }
       }
       & .slide {
         padding-bottom: 10px;
-        & > h3, h4, p {
+        & > h3,
+        h4,
+        p {
           margin: 0;
           color: #333333;
         }
@@ -1740,16 +1816,18 @@ html.smooth-scroll {
           border: none;
           cursor: pointer;
           background: none;
-          transition: .2s ease-in;
-          &:hover::before, &:hover::after {
-            opacity: .8;
+          transition: 0.2s ease-in;
+          &:hover::before,
+          &:hover::after {
+            opacity: 0.8;
           }
           @media (min-width: 1024px) {
             top: 30px;
             right: 30px;
           }
         }
-        & > .close-button::before, .close-button::after {
+        & > .close-button::before,
+        .close-button::after {
           content: "";
           display: block;
           width: 26px;
@@ -1790,10 +1868,10 @@ html.smooth-scroll {
       padding-left: var(--root-padding-x);
       padding-right: var(--root-padding-x);
       & > .link {
-        transition: .2s ease-in;
+        transition: 0.2s ease-in;
         cursor: pointer;
         &:hover {
-          opacity: .8;
+          opacity: 0.8;
         }
         & > .logo {
           height: 32px;
@@ -1855,11 +1933,9 @@ html.smooth-scroll {
 }
 
 @media #{$tablet} {
-
 }
 
 @media #{$mobile} {
-
 }
 
 @media screen and (max-width: 413px) {
