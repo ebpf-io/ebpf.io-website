@@ -49,7 +49,7 @@ const InfoDisclaimer = () => (
       className="introDisclaimer-button"
       href="https://www.ebpf.io/summit-2022"
     >
-      Learn More
+      Register Now!
     </a>
   </div>
 );
