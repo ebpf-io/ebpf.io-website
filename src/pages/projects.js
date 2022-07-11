@@ -804,6 +804,42 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Merbridge</TitleWithAnchor>
+      <div className="project-minor-title">
+        Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge.
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/merbridge/merbridge"
+        >
+          <img src={require("../assets/projects-logos/merbridge.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://merbridge.io">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/merbridge/merbridge">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Merbridge is designed to make traffic interception
+            and forwarding more efficient for service mesh. 
+            With Merbridge, developers can use eBPF instead of 
+            iptables to accelerate their service mesh without any 
+            additional operations or code changes.
+            Currently, Merbridge already supports Istio,
+            Linkerd, and Kuma.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">L3AF</TitleWithAnchor>
       <div className="project-minor-title">Complete lifecycle management of eBPF programs</div>
       <div className="project-body">
