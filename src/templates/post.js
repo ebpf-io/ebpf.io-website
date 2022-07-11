@@ -1,9 +1,12 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Layout from "../layouts";
-import { graphql, Link } from "gatsby";
+import {  graphql, Link } from "gatsby";
 import { format, parseISO } from "date-fns";
 import parseHtml from "../../scripts/parse-html";
+
+import newsIcon from '../assets/news-icon.svg';
+import blogPostIcon from '../assets/blog-post-icon.svg';
 
 import "../stylesheets/blog.scss";
 
@@ -100,7 +103,7 @@ export const Post = ({ post, full }) => {
         <h1 className="blog-title">
           <img
             alt="Title icon"
-            src={post.frontmatter.categories[0].toLowerCase() === 'update' ? require('../assets/news-icon.svg') : require('../assets/blog-post-icon.svg')}
+            src={post.frontmatter.categories[0].toLowerCase() === 'update' ? newsIcon : blogPostIcon}
             width={24}
             height={24}
           />
@@ -129,13 +132,13 @@ export const Post = ({ post, full }) => {
   );
 };
 
-export default function Template({ data }) {
+const Template =({ data }) => {
   const { markdownRemark: post } = data;
   const { previewDescription } = parseHtml(post);
   const pageMetaTitle = `eBPF - ${post.frontmatter.title}`
   const pageMetaDescription = previewDescription
   const pageLink = `https://ebpf.io${post.frontmatter.path}`
-  const pageMetaImageUrl = 'https://ebpf.io' + require("../assets/ogimage-blog.png")
+  const pageMetaImageUrl = 'https://ebpf.io' + '/images/ogimage-blog.png'
   return (
     <Layout>
       <div className="blog-post-container">
@@ -162,6 +165,8 @@ export default function Template({ data }) {
     </Layout>
   );
 }
+
+export default Template;
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {

@@ -1,6 +1,7 @@
 $mobile: "screen and (max-width : 480px)";
 $tablet: "screen and (max-width : 900px)";
 $lg: "screen and (max-width : 1024px)";
+$xl: "screen and (max-width : 1280px)";
 
 .header-notification {
   display: flex;
@@ -219,6 +220,16 @@ $lg: "screen and (max-width : 1024px)";
           }
         }
       }
+    }
+  }
+
+  @media #{$xl} {
+    a {
+      font-size: 16px;
+    }
+
+    .languageSelect > .button {
+      font-size: 16px;
     }
   }
 

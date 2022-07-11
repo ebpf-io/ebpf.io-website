@@ -14,12 +14,12 @@ export default function () {
       {name: "url", property: "og:url", content: "https://ebpf.io/"},
       {name: "title", property: "og:title", content: pageMetaTitle},
       {name: "description", property: "og:description", content: pageMetaDescription},
-      {name: "image", property: "og:image", content: 'https://ebpf.io' + require("../../assets/ogimage.png")},
+      {name: "image", property: "og:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
       {name: "twitter:card", content: "summary_large_image"},
       {name: "twitter:url", content: "https://ebpf.io/"},
       {name: "twitter:title", content: pageMetaTitle},
       {name: "twitter:description", content: pageMetaDescription},
-      {name: "twitter:image", content: 'https://ebpf.io' + require("../../assets/ogimage.png")},
+      {name: "twitter:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
     ]}
   />
 };

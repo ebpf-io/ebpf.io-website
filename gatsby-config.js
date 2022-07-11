@@ -40,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        precision: 8
-      }
+        implementation: require("node-sass"),
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -80,22 +80,14 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        logo: "./src/favicon.png",
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: true,
-          favicons: true,
-          firefox: true,
-          twitter: true,
-          yandex: true,
-          windows: true
-        }
-      }
+        name: 'ebpf-site',
+        short_name: 'ebpf',
+        start_url: '/',
+        display: 'minimal-ui',
+        icon: './src/favicon.png',
+      },
     },
     {
       resolve: `gatsby-plugin-feed`,
