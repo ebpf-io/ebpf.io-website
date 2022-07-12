@@ -121,9 +121,8 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
             <a
               target="_blank"
               className="link"
-              href="https://sessionize.com/ebpf-summit-2022/"
-            >
-              2022 CFP
+              href="https://ebpf.io/summit-2022/">
+              2022
             </a>
             <Link className="link" to="/summit-2021">
               2021
@@ -296,9 +295,8 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
               <a
                 target="_blank"
                 className="link"
-                href="https://sessionize.com/ebpf-summit-2022/"
-              >
-                2022 CFP
+                href="https://ebpf.io/summit-2022/">
+                2022
               </a>
               <Link className="link" to="/summit-2021">
                 2021
