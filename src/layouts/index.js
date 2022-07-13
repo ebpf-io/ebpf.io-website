@@ -31,13 +31,38 @@ const getLanguageName = (languageCode) => {
 
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
-    <strong>eBPF Summit 2021 videos are available: </strong>{" "}
+    <img
+      src="images/bg-1.png"
+      className="introDisclaimer-image image-right"
+      alt=""
+      aria-hidden
+    />
+    <img
+      src="images/bg-2.png"
+      className="introDisclaimer-image image-left"
+      alt=""
+      aria-hidden
+    />
+    <img
+      src="images/bg-1-md.png"
+      className="introDisclaimer-image-md image-right"
+      alt=""
+      aria-hidden
+    />
+    <img
+      src="images/bg-2-md.png"
+      className="introDisclaimer-image-md image-left"
+      alt=""
+      aria-hidden
+    />
+    <div className="text-wrapper">
+      <strong>eBPF summit 2022&nbsp;</strong> <span>(28-29 September)</span>
+    </div>
     <a
-      target="_blank"
-      href="https://www.youtube.com/c/eBPFCiliumCommunity"
-      style={{ color: "#947927" }}
+      className="introDisclaimer-button"
+      href="https://www.ebpf.io/summit-2022"
     >
-      Watch Now!
+      Register Now!
     </a>
   </div>
 );
@@ -82,6 +107,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
       <nav className="headerNav">
         <Link to="/what-is-ebpf">What is eBPF?</Link>
         <Link to="/blog">Blog</Link>
+
         <span className="languageSelect">
           <button
             className="button"
@@ -94,11 +120,12 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
             <Link className="link" to="/applications">
               Applications
             </Link>
-            <Link className="link" to="/infrastructures">
+            <Link className="link" to="/infrastructure">
               Infrastructure
             </Link>
           </span>
         </span>
+
         <span className="languageSelect">
           <button
             className="button"
@@ -112,9 +139,9 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
             <a
               target="_blank"
               className="link"
-              href="https://sessionize.com/ebpf-summit-2022/"
+              href="https://ebpf.io/summit-2022/"
             >
-              2022 CFP
+              2022
             </a>
             <Link className="link" to="/summit-2021">
               2021
@@ -271,7 +298,6 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
         <nav className="headerNav">
           <Link to="/what-is-ebpf">What is eBPF?</Link>
           <Link to="/blog">Blog</Link>
-
           <span className="languageSelect">
             <button
               className="button"
@@ -284,12 +310,11 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
               <Link className="link" to="/applications">
                 Applications
               </Link>
-              <Link className="link" to="/infrastructures">
+              <Link className="link" to="/infrastructure">
                 Infrastructure
               </Link>
             </span>
           </span>
-
           <span className="languageSelect">
             <button
               className="button"
@@ -305,9 +330,9 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
               <a
                 target="_blank"
                 className="link"
-                href="https://sessionize.com/ebpf-summit-2022/"
+                href="https://ebpf.io/summit-2022/"
               >
-                2022 CFP
+                2022
               </a>
               <Link className="link" to="/summit-2021">
                 2021
@@ -424,8 +449,8 @@ const FooterDesktop = ({ path }) => {
           <Link to="/blog" className="item">
             Blog
           </Link>
-          <Link to="/applications" className="item">
-            Application Landscape
+          <Link to="/projects" className="item">
+            Project Landscape
           </Link>
           <Link to="/contribute" className="item">
             Contribute
