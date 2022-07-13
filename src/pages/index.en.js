@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../layouts";
-import { graphql, Link } from 'gatsby'
+import { graphql, Link } from "gatsby";
 import BlogLatest from "../common/homepage/BlogLatest";
 import BlogRoll from "../common/homepage/BlogRoll";
 import HelmetBlock from "../common/homepage/Helmet";
@@ -55,7 +55,7 @@ const Buttons = () => (
     <Link to="/what-is-ebpf" className="main-button">
       What is eBPF?
     </Link>
-    <Link to="/projects" className="main-button">
+    <Link to="/applications" className="main-button">
       Project Landscape
     </Link>
   </h1>
@@ -64,17 +64,41 @@ const Buttons = () => (
 const Intro = () => (
   <div className="intro">
     <p>
-      eBPF is a revolutionary technology with origins in the Linux kernel that can run sandboxed programs in an operating system kernel. It is used to safely and efficiently extend the capabilities of the kernel without requiring to change kernel source code or load kernel modules.
+      eBPF is a revolutionary technology with origins in the Linux kernel that
+      can run sandboxed programs in an operating system kernel. It is used to
+      safely and efficiently extend the capabilities of the kernel without
+      requiring to change kernel source code or load kernel modules.
     </p>
     <p>
-      Historically, the operating system has always been an ideal place to implement observability, security, and networking functionality due to the kernel’s privileged ability to oversee and control the entire system. At the same time, an operating system kernel is hard to evolve due to its central role and high requirement towards stability and security. The rate of innovation at the operating system level has thus traditionally been lower compared to functionality implemented outside of the operating system.
+      Historically, the operating system has always been an ideal place to
+      implement observability, security, and networking functionality due to the
+      kernel’s privileged ability to oversee and control the entire system. At
+      the same time, an operating system kernel is hard to evolve due to its
+      central role and high requirement towards stability and security. The rate
+      of innovation at the operating system level has thus traditionally been
+      lower compared to functionality implemented outside of the operating
+      system.
     </p>
     <img src={require("../assets/overview.png")} />
     <p>
-      eBPF changes this formula fundamentally. By allowing to run sandboxed programs within the operating system, application developers can run eBPF programs to add additional capabilities to the operating system at runtime. The operating system then guarantees safety and execution efficiency as if natively compiled with the aid of a Just-In-Time (JIT) compiler and verification engine. This has led to a wave of eBPF-based projects covering a wide array of use cases, including next-generation networking, observability, and security functionality.
+      eBPF changes this formula fundamentally. By allowing to run sandboxed
+      programs within the operating system, application developers can run eBPF
+      programs to add additional capabilities to the operating system at
+      runtime. The operating system then guarantees safety and execution
+      efficiency as if natively compiled with the aid of a Just-In-Time (JIT)
+      compiler and verification engine. This has led to a wave of eBPF-based
+      projects covering a wide array of use cases, including next-generation
+      networking, observability, and security functionality.
     </p>
     <p>
-      Today, eBPF is used extensively to drive a wide variety of use cases: Providing high-performance networking and load-balancing in modern data centers and cloud native environments, extracting fine-grained security observability data at low overhead, helping application developers trace applications, providing insights for performance troubleshooting, preventive application and container runtime security enforcement, and much more. The possibilities are endless, and the innovation that eBPF is unlocked has only just begun.
+      Today, eBPF is used extensively to drive a wide variety of use cases:
+      Providing high-performance networking and load-balancing in modern data
+      centers and cloud native environments, extracting fine-grained security
+      observability data at low overhead, helping application developers trace
+      applications, providing insights for performance troubleshooting,
+      preventive application and container runtime security enforcement, and
+      much more. The possibilities are endless, and the innovation that eBPF is
+      unlocked has only just begun.
     </p>
   </div>
 );
@@ -128,9 +152,7 @@ const Outro = () => (
           <td>
             <ul>
               <li>
-                <a href="/slack">
-                  Join the #ebpf Slack community
-                </a>
+                <a href="/slack">Join the #ebpf Slack community</a>
               </li>
               <li>
                 <a href="/contribute">Learn how to contribute</a>
@@ -143,20 +165,25 @@ const Outro = () => (
   </div>
 );
 
-const IndexPage = ({ data, location: {pathname} }) => {
-  return <Layout path={pathname}>
-    <div className="page-wrapper page-index">
-      <HelmetBlock />
-      <MainTitle />
-      <Buttons />
-      <Intro />
-      <Sections />
-      <Videos title="Featured eBPF Talks" />
-      <BlogLatest title="Latest Blog Posts" posts={data.allMarkdownRemark.edges} />
-      <BlogRoll title="Featured eBPF Community Blogs"/>
-      <Outro />
-    </div>
-  </Layout>
+const IndexPage = ({ data, location: { pathname } }) => {
+  return (
+    <Layout path={pathname}>
+      <div className="page-wrapper page-index">
+        <HelmetBlock />
+        <MainTitle />
+        <Buttons />
+        <Intro />
+        <Sections />
+        <Videos title="Featured eBPF Talks" />
+        <BlogLatest
+          title="Latest Blog Posts"
+          posts={data.allMarkdownRemark.edges}
+        />
+        <BlogRoll title="Featured eBPF Community Blogs" />
+        <Outro />
+      </div>
+    </Layout>
+  );
 };
 
 export default IndexPage;
