@@ -141,7 +141,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
             <a
               target="_blank"
               className="link"
-              href="https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/schedule/"
+              href="https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/"
             >
               2021
             </a>
@@ -315,7 +315,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
               <a
                 target="_blank"
                 className="link"
-                href="https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/schedule/"
+                href="https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/"
               >
                 2021
               </a>
