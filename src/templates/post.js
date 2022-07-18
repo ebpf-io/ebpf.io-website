@@ -10,7 +10,7 @@ import blogPostIcon from '../assets/blog-post-icon.svg';
 
 import "../stylesheets/blog.scss";
 
-export const formatPostDate = post =>
+const formatPostDate = post =>
   format(parseISO(post.frontmatter.date), "MMMM d, yyyy");
 
 const windowPopup = ev => {
