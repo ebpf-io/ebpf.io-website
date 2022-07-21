@@ -122,7 +122,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
               target="_blank"
               className="link"
               href="https://ebpf.io/summit-2022/">
-              2022
+              2022 CFP
             </a>
             <Link className="link" to="/summit-2021">
               2021
@@ -134,16 +134,23 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
             <a
               target="_blank"
               className="link"
+              href="https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/cfp/"
+            >
+              2022 (NA) CFP
+            </a>
+	    <a
+              target="_blank"
+              className="link"
               href="https://events.linuxfoundation.org/cloud-native-ebpf-day-europe/program/schedule/"
             >
-              2022
+              2022 (EU)
             </a>
             <a
               target="_blank"
               className="link"
               href="https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/"
             >
-              2021
+              2021 (NA)
             </a>
             <strong>eBPF Track (LPC)</strong>
             <a
@@ -296,7 +303,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
                 target="_blank"
                 className="link"
                 href="https://ebpf.io/summit-2022/">
-                2022
+                2022 CFP
               </a>
               <Link className="link" to="/summit-2021">
                 2021
@@ -308,16 +315,23 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
               <a
                 target="_blank"
                 className="link"
+                href="https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/cfp/"
+              >
+                2022 (NA) CFP
+              </a>
+              <a
+                target="_blank"
+                className="link"
                 href="https://events.linuxfoundation.org/cloud-native-ebpf-day-europe/program/schedule/"
               >
-                2022
+                2022 (EU)
               </a>
               <a
                 target="_blank"
                 className="link"
                 href="https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/"
               >
-                2021
+                2021 (NA)
               </a>
               <strong>eBPF Track (LPC)</strong>
               <a
