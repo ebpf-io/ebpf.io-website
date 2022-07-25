@@ -111,16 +111,7 @@ const ProjectDescriptions = () => (
     </TitleWithAnchor>
 
     <div className="project-box">
-      <TitleWithAnchor
-        headerClassName="project-major-title projects-common-title"
-        headerTag="h3"
-      >
-        bcc
-      </TitleWithAnchor>
-      <div className="project-minor-title">
-        Toolkit and library for efficient BPF-based kernel tracing
-      </div>
-      <div className="project-body">
+      <div className="project-aside">
         <a
           href="https://github.com/iovisor/bcc"
           target="_blank"
@@ -128,20 +119,80 @@ const ProjectDescriptions = () => (
         >
           <img src={require("../assets/projects-logos/bcc.png")} />
         </a>
-        <div className="project-description">
-          <p>
-            <a href="https://github.com/iovisor/bcc" target="_blank">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            BCC is a toolkit for creating efficient kernel tracing and
-            manipulation programs built upon eBPF, and includes several useful
-            command-line tools and examples. BCC eases writing of eBPF programs
-            for kernel instrumentation in C, includes a wrapper around LLVM, and
-            front-ends in Python and Lua. It also provides a high-level library
-            for direct integration into applications.
-          </p>
+        <TitleWithAnchor
+          headerClassName="project-major-title projects-common-title"
+          headerTag="h3"
+        >
+          bcc
+        </TitleWithAnchor>
+        <div className="project-minor-title">
+          Toolkit and library for efficient BPF-based kernel tracing
+        </div>
+      </div>
+      <div className="project-body">
+        <p>
+          <strong>BCC</strong> is a toolkit for creating efficient kernel
+          tracing and manipulation programs built upon eBPF, and includes
+          several useful command-line tools and examples. BCC eases writing of
+          eBPF programs for kernel instrumentation in C, includes a wrapper
+          around LLVM, and front-ends in Python and Lua. It also provides a
+          high-level library for direct integration into applications.
+        </p>
+
+        <div className="project-links-container">
+          <a
+            className="project-link"
+            href="https://github.com/iovisor/bcc"
+            target="_blank"
+          >
+            <img src={require("../assets/github-icon.svg")} />
+            <b>GitHub</b>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <div className="project-aside">
+        <a
+          href="https://github.com/cilium/cilium"
+          target="_blank"
+          className="project-logo"
+        >
+          <img src={require("../assets/projects-logos/cilium-with-text.png")} />
+        </a>
+        <TitleWithAnchor
+          headerClassName="project-major-title projects-common-title"
+          headerTag="h3"
+        >
+          Cilium
+        </TitleWithAnchor>
+        <div className="project-minor-title">
+          eBPF-based Networking, Security, and Observability
+        </div>
+      </div>
+      <div className="project-body">
+        <p>
+          <strong>Cilium</strong> is an open source project that provides
+          eBPF-powered networking, security and observability. It has been
+          specifically designed from the ground up to bring the advantages of
+          eBPF to the world of Kubernetes and to address the new scalability,
+          security and visibility requirements of container workloads.
+        </p>
+
+        <div className="project-links-container">
+          <a
+            className="project-link"
+            href="https://github.com/cilium/cilium"
+            target="_blank"
+          >
+            <img src={require("../assets/github-icon.svg")} />
+            <b>GitHub</b>
+          </a>
+          <a className="project-link" href="https://cilium.io" target="_blank">
+            <img src={require("../assets/website-icon.svg")} />
+            <b>Website</b>
+          </a>
         </div>
       </div>
     </div>

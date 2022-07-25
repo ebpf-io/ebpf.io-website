@@ -675,50 +675,99 @@ code {
   .project-major-title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 46px;
-    line-height: 64px;
-    font-weight: 700;
+    height: 0;
+    visibility: hidden;
 
     @media #{$tablet} {
       font-size: 30px;
       flex-direction: column;
 
-      .project-description > p:first-child {
+      & > p:first-child {
         text-align: center;
       }
     }
   }
 
   .project-minor-title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
-    padding-bottom: 20px;
+    line-height: 1.5;
+    margin-top: 28px;
 
     @media #{$tablet} {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 
   .project-box {
-    border: 1px solid #e2e2e2;
+    border: 2px solid #f2f2f2;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     padding: 40px;
-    padding-top: 32px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
   }
 
   .project-body {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
 
     @media #{$tablet} {
       flex-direction: column;
 
-      .project-description > p:first-child {
+      & > p:first-child {
         text-align: center;
       }
     }
+  }
+
+  .project-links-container {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+
+    & > a {
+      margin-left: 24px;
+    }
+
+    & > a:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .project-link {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1a1a1a;
+    position: relative;
+
+    & > b {
+      margin-left: 8px;
+    }
+
+    &:hover {
+      color: #ffe100;
+    }
+  }
+
+  .project-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+    border-right: 2px solid #f2f2f2;
   }
 
   .project-content-wrapper {
@@ -734,8 +783,7 @@ code {
 
   .project-logo img {
     display: block;
-    width: 130px;
-    margin-right: 20px;
+    width: 260px;
   }
 
   .projects-how-to-list-title {
