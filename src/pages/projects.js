@@ -2,7 +2,29 @@ import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 import { TitleWithAnchor } from "../common/TitleWithAnchor";
-
+import bccLogo from '../assets/projects-logos/bcc.png';
+import bpftraceLogo from '../assets/projects-logos/bpftrace-logo.jpeg';
+import ciliumNoTextLogo from '../assets/cilium-no-text.png';
+import falcoLogo from '../assets/projects-logos/falco.png';
+import katranLogo from '../assets/projects-logos/katran.png';
+import linuxLogo from '../assets/projects-logos/linux.png';
+import llvm2Logo from '../assets/projects-logos/llvm2.png';
+import ebpfLogo from '../assets/projects-logos/ebpf-windows-logo.png';
+import hbpfLogo from '../assets/projects-logos/hbpf.png';
+import goLangLogo from '../assets/projects-logos/golang.png';
+import cppLogo from '../assets/projects-logos/cpp.png';
+import rustLogo from '../assets/projects-logos/rust.png';
+import ecaptureLogo from '../assets/projects-logos/ecapture-logo.png';
+import pixieLogo from '../assets/projects-logos/pixie.png';
+import hubbleNoTextLogo from '../assets/hubble-no-text.png';
+import traceeLogo from '../assets/projects-logos/tracee.png';
+import kubectlLogo from '../assets/projects-logos/kubectl_trace2.png';
+import tetragonLogo from '../assets/projects-logos/tetragon.png';
+import bumblebeeLogo from '../assets/projects-logos/bumblebee.png';
+import plyLogo from '../assets/projects-logos/ply.png';
+import kubearmorLogo from '../assets/projects-logos/kubearmor.png';
+import l3afLogo from '../assets/projects-logos/l3af.svg';
+import merbridge from "../assets/projects-logos/merbridge.png";
 import "../stylesheets/index.scss";
 
 const pageMetaTitle = 'eBPF Project Landscape'
@@ -88,7 +110,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           className="project-logo"
         >
-          <img src={require("../assets/projects-logos/bcc.png")} />
+          <img src={bccLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -119,7 +141,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/cilium/cilium"
         >
-          <img src={require("../assets/cilium-no-text.png")} />
+          <img src={ciliumNoTextLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -154,7 +176,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           className="project-logo"
         >
-          <img src={require("../assets/projects-logos/bpftrace-logo.jpeg")} />
+          <img src={bpftraceLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -187,7 +209,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/falcosecurity/falco"
         >
-          <img src={require("../assets/projects-logos/falco.png")} />
+          <img src={falcoLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -222,7 +244,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/facebookincubator/katran"
         >
-          <img src={require("../assets/projects-logos/katran.png")} />
+          <img src={katranLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -257,7 +279,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://www.kernel.org/"
         >
-          <img src={require("../assets/projects-logos/linux.png")} />
+          <img src={linuxLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -308,7 +330,7 @@ const ProjectDescriptions = () => (
       <div className="project-minor-title">eBPF Backend</div>
       <div className="project-body">
         <a className="project-logo" target="_blank" href="https://llvm.org/">
-          <img src={require("../assets/projects-logos/llvm2.png")} />
+          <img src={llvm2Logo} />
         </a>
         <div className="project-description">
           <p>
@@ -351,7 +373,7 @@ const ProjectDescriptions = () => (
       </div>
       <div className="project-body">
 	<a className="project-logo" target="_blank" href="https://github.com/microsoft/ebpf-for-windows">
-          <img src={require("../assets/projects-logos/eBPF for Windows logo.png")} />
+          <img src={ebpfLogo} />
 	</a>
         <div className="project-description">
           <p>
@@ -393,7 +415,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/rprinz08/hBPF"
         >
-          <img src={require("../assets/projects-logos/hbpf.png")} />
+          <img src={hbpfLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -423,7 +445,7 @@ const ProjectDescriptions = () => (
       <a name="golang" />
       <div className="project-body">
         <div className="project-logo">
-          <img src={require("../assets/projects-logos/golang.png")} />
+          <img src={goLangLogo} />
         </div>
         <div className="project-description">
           <p>
@@ -457,7 +479,7 @@ const ProjectDescriptions = () => (
       <a name="cpp" />
       <div className="project-body">
         <div className="project-logo">
-          <img src={require("../assets/projects-logos/cpp.png")} />
+          <img src={cppLogo} />
         </div>
         <div className="project-description">
           <p>
@@ -487,7 +509,7 @@ const ProjectDescriptions = () => (
       <a name="rust" />
       <div className="project-body">
         <div className="project-logo">
-          <img src={require("../assets/projects-logos/rust.png")} />
+          <img src={rustLogo} />
         </div>
         <div className="project-description">
           <p>
@@ -537,7 +559,7 @@ const ProjectDescriptions = () => (
             target="_blank"
             href="https://github.com/ehids/ecapture"
         >
-          <img src={require("../assets/projects-logos/ecapture-logo.png")} alt="ehids/eCapture project"/>
+          <img src={ecaptureLogo} alt="ehids/eCapture project"/>
         </a>
         <div className="project-description">
           <p>
@@ -565,7 +587,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/pixie-io/pixie"
         >
-          <img src={require("../assets/projects-logos/pixie.png")} />
+          <img src={pixieLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -602,7 +624,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/cilium/hubble"
         >
-          <img src={require("../assets/hubble-no-text.png")} />
+          <img src={hubbleNoTextLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -634,7 +656,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/aquasecurity/tracee"
         >
-          <img src={require("../assets/projects-logos/tracee.png")} />
+          <img src={traceeLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -660,7 +682,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/iovisor/kubectl-trace"
         >
-          <img src={require("../assets/projects-logos/kubectl_trace2.png")} />
+          <img src={kubectlLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -689,7 +711,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/cilium/tetragon"
         >
-          <img src={require("../assets/projects-logos/tetragon.png")} />
+          <img src={tetragonLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -717,7 +739,7 @@ const ProjectDescriptions = () => (
             target="_blank"
             href="https://bumblebee.io"
         >
-          <img src={require("../assets/projects-logos/bumblebee.png")} />
+          <img src={bumblebeeLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -741,7 +763,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/iovisor/ply"
         >
-          <img src={require("../assets/projects-logos/ply.png")} />
+          <img src={plyLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -774,7 +796,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/accuknox/KubeArmor"
         >
-          <img src={require("../assets/projects-logos/kubearmor.png")} />
+          <img src={kubearmorLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -807,7 +829,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/merbridge/merbridge"
         >
-          <img src={require("../assets/projects-logos/merbridge.png")} />
+          <img src={merbridge} />
         </a>
         <div className="project-description">
           <p>
@@ -841,7 +863,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://l3af.io"
         >
-          <img src={require("../assets/projects-logos/l3af.svg")} />
+          <img src={l3afLogo} />
         </a>
         <div className="project-description">
           <p>
@@ -881,12 +903,12 @@ const Page = () => (
           {name: "url", property: "og:url", content: "https://ebpf.io/contribute/"},
           {name: "title", property: "og:title", content: pageMetaTitle},
           {name: "description", property: "og:description", content: pageMetaDescription},
-          {name: "image", property: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "image", property: "og:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
           {name: "twitter:card", content: "summary_large_image"},
           {name: "twitter:url", content: "https://ebpf.io/projects/"},
           {name: "twitter:title", content: pageMetaTitle},
           {name: "twitter:description", content: pageMetaDescription},
-          {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "twitter:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
         ]}
       />
       <p>

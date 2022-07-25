@@ -8,7 +8,11 @@ import MainTitle from "../common/homepage/MainTitle";
 import Section from "../common/homepage/Section";
 import Videos from "../common/homepage/Videos";
 import "../stylesheets/index.scss";
-
+import security from '../assets/intro_security.png';
+import networking from '../assets/intro_networking.png'
+import tracing from '../assets/intro_tracing.png';
+import observability from '../assets/intro_observability.png';
+import overview from '../assets/overview.png';
 const tracingText = `
 The ability to attach eBPF programs to trace points as well as kernel and user
 application probe points allows unprecedented visibility into the runtime
@@ -69,7 +73,7 @@ const Intro = () => (
     <p>
       Historically, the operating system has always been an ideal place to implement observability, security, and networking functionality due to the kernel’s privileged ability to oversee and control the entire system. At the same time, an operating system kernel is hard to evolve due to its central role and high requirement towards stability and security. The rate of innovation at the operating system level has thus traditionally been lower compared to functionality implemented outside of the operating system.
     </p>
-    <img src={require("../assets/overview.png")} />
+    <img src={overview} />
     <p>
       eBPF changes this formula fundamentally. By allowing to run sandboxed programs within the operating system, application developers can run eBPF programs to add additional capabilities to the operating system at runtime. The operating system then guarantees safety and execution efficiency as if natively compiled with the aid of a Just-In-Time (JIT) compiler and verification engine. This has led to a wave of eBPF-based projects covering a wide array of use cases, including next-generation networking, observability, and security functionality.
     </p>
@@ -84,25 +88,25 @@ const Sections = () => (
     <div className="main-sections-left">
       <Section
         title="Security"
-        icon={require("../assets/intro_security.png")}
+        icon={security}
         text={securityText}
       />
       <Section
         title="Networking"
-        icon={require("../assets/intro_networking.png")}
+        icon={networking}
         text={networkingText}
       />
     </div>
     <div className="main-sections-right">
       <Section
         title="Tracing & Profiling"
-        icon={require("../assets/intro_tracing.png")}
+        icon={tracing}
         text={tracingText}
       />
       <Section
         style={{ marginTop: "45px" }}
         title="Observability & Monitoring"
-        icon={require("../assets/intro_observability.png")}
+        icon={observability}
         text={monitoringText}
       />
     </div>

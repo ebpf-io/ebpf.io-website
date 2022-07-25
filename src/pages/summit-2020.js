@@ -8,12 +8,31 @@ import { useLocation } from '@reach/router';
 import queryString from 'query-string';
 import "../stylesheets/index.scss";
 import "../../node_modules/react-modal-video/scss/modal-video.scss";
+import ebpfLogo from '../assets/summit-2020/eBPF-logo.png';
+import ebpfWhiteLogo from '../assets/summit-2020/eBPF-logo-white.svg';
+import alexeiStarovoitov from '../assets/summit-2020/alexey-starovoitov.jpg';
+import danielBorkmann from '../assets/summit-2020/daniel-borkmann.jpg';
+import brendanGregg from '../assets/summit-2020/brendan-gregg.jpg';
+import krisNova from '../assets/summit-2020/kris-nova.jpg';
+import kpSingh from '../assets/summit-2020/kp-singh.jpg';
+import laurentBernaille from '../assets/summit-2020/laurent-bernaille.jpg';
+import lizRice from '../assets/summit-2020/liz-rice.jpg';
+import tabithaSable from '../assets/summit-2020/tabitha-sable.jpg';
+import thomasGraf from '../assets/summit-2020/tomas-graf.jpg';
+import zangLi from '../assets/summit-2020/zang-li.jpg';
+import cornerIcon from '../assets/summit-2020/icon-corner.svg';
+import youtubeIcon from '../assets/youtube-icon.svg';
+import pdfIcon from '../assets/pdf-file.svg';
+import closeIcon from '../assets/summit-2020/icon-close.svg';
+import sliderPrev from '../assets/summit-2020/slider-prev.svg';
+import sliderNext from '../assets/summit-2020/slider-next.svg';
+import ebpfGrayLogo from '../assets/summit-2020/eBPF-logo-gray.svg';
 const pageMetaTitle = 'eBPF Summit 2020'
 const pageMetaDescription = 'Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers. To be held October 28-29, 2020.'
 const speakers = [
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/alexey-starovoitov.jpg"),
+      avatarSrc: alexeiStarovoitov,
       id: "alexey-starovoitov",
       name: "Alexei Starovoitov",
       description: "Co-maintainer eBPF, Facebook"
@@ -35,7 +54,7 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/brendan-gregg.jpg"),
+      avatarSrc: brendanGregg,
       id: "brendan-gregg",
       name: "Brendan Gregg",
       description: "Author of “BPF Performance Tools“, Lead Performance Engineer, Netflix"
@@ -49,7 +68,7 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/daniel-borkmann.jpg"),
+      avatarSrc: danielBorkmann,
       id: "daniel-borkmann",
       name: "Daniel Borkmann",
       description: "Co-maintainer eBPF, Isovalent"
@@ -68,7 +87,7 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/kris-nova.jpg"),
+      avatarSrc: krisNova,
       id: "kris-nova",
       name: "Kris Nóva",
       description: "Software Engineer & Open Source Advocate"
@@ -86,7 +105,7 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/kp-singh.jpg"),
+      avatarSrc: kpSingh,
       id: "kp-singh",
       name: "KP Singh",
       description: "Kernel Runtime Security, Google"
@@ -104,7 +123,7 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/laurent-bernaille.jpg"),
+      avatarSrc: laurentBernaille,
       id: "laurent-bernaille",
       name: "Laurent Bernaille",
       description: "Staff Engineer, Datadog"
@@ -122,7 +141,7 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/liz-rice.jpg"),
+      avatarSrc: lizRice,
       id: "liz-rice",
       name: "Liz Rice",
       description: "VP, Open Source Engineering, Aqua"
@@ -141,7 +160,7 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/tabitha-sable.jpg"),
+      avatarSrc: tabithaSable,
       id: "tabitha-sable",
       name: "Tabitha Sable",
       description: "Systems Security Engineer, Datadog"
@@ -159,7 +178,7 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/tomas-graf.jpg"),
+      avatarSrc: thomasGraf,
       id: "tomas-graf",
       name: "Thomas Graf",
       description: "Co-creator of the Cilium Project, Isovalent"
@@ -178,7 +197,7 @@ const speakers = [
   },
   {
     card: {
-      avatarSrc: require("../assets/summit-2020/zang-li.jpg"),
+      avatarSrc: zangLi,
       id: "zang-li",
       name: "Zang Li",
       description: "Cilium Core Team Maintainer, Google"
@@ -954,7 +973,7 @@ const slides = [
 const Info = () => (
   <div className="summit-info">
     <Link to="/" className="link">
-      <img alt="eBPF logo" className="logo" src={require("../assets/summit-2020/eBPF-logo.png")} />
+      <img alt="eBPF logo" className="logo" src={ebpfLogo} />
     </Link>
   </div>
 );
@@ -964,13 +983,13 @@ const Hero = () => (
     className="summit-hero"
 
     style={{
-      '--background-image': `URL("${require("../assets/summit-2020/hero-background.svg")}")`,
-      '--background-image-mobile': `URL("${require("../assets/summit-2020/hero-background-mobile.svg")}")`,
+      '--background-image': `url("/images/summit-2020/hero-background.svg")`,
+      '--background-image-mobile': `url("/images/summit-2020/hero-background-mobile.svg")`,
     }}
   >
     <div className="wrapper">
       <h1 className="title">
-        <img alt="eBPF" className="logo" src={require("../assets/summit-2020/eBPF-logo-white.svg")} />
+        <img alt="eBPF" className="logo" src={ebpfWhiteLogo} />
         {' '}
         Summit
         <br />
@@ -1087,7 +1106,7 @@ const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescriptio
         <p className="description">{description}</p>
       </div>
 
-      {!isSelected && hasPopupContent && <img alt="" aria-hidden className="corner" src={require("../assets/summit-2020/icon-corner.svg")} />}
+      {!isSelected && hasPopupContent && <img alt="" aria-hidden className="corner" src={cornerIcon} />}
     </div>
 
     {isSelected && <div className="popup">
@@ -1096,14 +1115,14 @@ const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescriptio
 
       <div className="video-slides-container">
         {!!showVideo && <button className="download-link video-button" onClick={showVideoAndClosePopup}>
-          <img alt="Show video icon" src={require('../assets/youtube-icon.svg')} width={18} />
+          <img alt="Show video icon" src={youtubeIcon} width={18} />
           Watch full replay
         </button>}
 
         {!!slidesLink && <a className="download-link" href={slidesLink}>
           <img
             alt="PDF download icon"
-            src={require('../assets/pdf-file.svg')}
+            src={pdfIcon}
             width={18}
           />
 
@@ -1112,7 +1131,7 @@ const SpeakerCard = ({ avatarSrc, name, description, aboutTitle, aboutDescriptio
       </div>
 
       <button aria-label="Close" className="button" onClick={resetSelectedCardIdx} type="button">
-        <img alt="Close" aria-hidden className="icon" src={require("../assets/summit-2020/icon-close.svg")} />
+        <img alt="Close" aria-hidden className="icon" src={closeIcon} />
       </button>
     </div>}
   </div>
@@ -1191,18 +1210,18 @@ const AgendaItemPopup = ({ description, hidePopup, showVideo, slidesLink }) => {
 
     <div className="agenda-popup-bottom-links">
       {!!showVideo && <button className="download-link video-button" onClick={showVideoAndClosePopup}>
-        <img alt="Show video icon" src={require('../assets/youtube-icon.svg')} width={18} />
+        <img alt="Show video icon" src={youtubeIcon} width={18} />
         Watch full replay
       </button>}
 
       {!!slidesLink && <a className="download-link" href={slidesLink} target="_blank">
-        <img alt="PDF download icon" src={require('../assets/pdf-file.svg')} width={22} />
+        <img alt="PDF download icon" src={pdfIcon} width={22} />
         View slides
       </a>}
     </div>
 
     <button aria-label="Close" className="button" onClick={hidePopup} type="button">
-      <img alt="Close" aria-hidden className="icon" src={require("../assets/summit-2020/icon-close.svg")} />
+      <img alt="Close" aria-hidden className="icon" src={closeIcon} />
     </button>
   </div>
 }
@@ -1255,8 +1274,8 @@ const Agenda = () => {
     className="summit-agenda"
 
     style={{
-      '--background-image': `URL("${require("../assets/summit-2020/agenda-background.svg")}")`,
-      '--background-image-mobile': `URL("${require("../assets/summit-2020/agenda-background-mobile.svg")}")`,
+      '--background-image': `url("/images/summit-2020/agenda-background.svg")`,
+      '--background-image-mobile': `url("/images/summit-2020/agenda-background-mobile.svg")`,
     }}
   >
     <div className="wrapper">
@@ -1323,13 +1342,13 @@ const LightningTalksSchedule = () => {
               </span>
 
               {!!videoId && <button className="video-button" onClick={!!videoId ? () => showModalVideo(videoId) : null}>
-                <img alt="Show video icon" src={require('../assets/youtube-icon.svg')} width={18} />
+                <img alt="Show video icon" src={youtubeIcon} width={18} />
               </button>}
 
               {!!slidesLink && <a className="download-link" href={slidesLink}>
                 <img
                   alt="PDF download icon"
-                  src={require('../assets/pdf-file.svg')}
+                  src={pdfIcon}
                   width={18}
                 />
               </a>}
@@ -1431,7 +1450,7 @@ const Carusel = () => {
 
   return <div
     className="summit-carusel"
-    style={{background: `URL(${require('../assets/summit-2020/lightning-talks-bg.png')}), linear-gradient(90deg, #C1C1C1 -0.82%, #F3F3F3 98.52%)`}}
+    style={{background: `url('/images/summit-2020/lightning-talks-bg.png'), linear-gradient(90deg, #C1C1C1 -0.82%, #F3F3F3 98.52%)`}}
   >
     <div className="wrapper">
       <h2 className="title">Lightning Talk Abstracts</h2>
@@ -1449,14 +1468,14 @@ const Carusel = () => {
           alt="Prev slider"
           className="slider-prev"
           onClick={previousSlide}
-          src={require('../assets/summit-2020/slider-prev.svg')}
+          src={sliderPrev}
         />}
 
         renderCenterRightControls={({ nextSlide }) => <img
           alt="Next slider"
           className="slider-next"
           onClick={nextSlide}
-          src={require("../assets/summit-2020/slider-next.svg")}
+          src={sliderNext}
         />}
 
         wrapAround
@@ -1489,7 +1508,7 @@ const Footer = () => (
   <footer className="summit-footer">
     <div className="wrapper">
       <Link to="/" className="link">
-        <img alt="eBPF logo" className="logo" src={require("../assets/summit-2020/eBPF-logo-gray.svg")} />
+        <img alt="eBPF logo" className="logo" src={ebpfGrayLogo} />
       </Link>
     </div>
   </footer>
@@ -1512,12 +1531,12 @@ const CallForPapers = () => (
         {property: "og:url", name: "url", content: "https://ebpf.io/summit-2020/"},
         {property: "og:title", name: "title", content: pageMetaTitle},
         {property: "og:description", name: "description", content: pageMetaDescription},
-        {property: "og:image", name: "image", content: 'https://ebpf.io' + require("../assets/summit-2020/summit_logo.png")},
+        {property: "og:image", name: "image", content: 'https://ebpf.io' + "/images/summit-2020/summit_logo.png"},
         {name: "twitter:card", content: "summary_large_image"},
         {name: "twitter:url", content: "https://ebpf.io/summit-2020/"},
         {name: "twitter:title", content: pageMetaTitle},
         {name: "twitter:description", content: pageMetaDescription},
-        {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/summit-2020/summit_logo.png")},
+        {name: "twitter:image", content: 'https://ebpf.io' +  "/images/summit-2020/summit_logo.png"},
       ]}
     />
     <Info />

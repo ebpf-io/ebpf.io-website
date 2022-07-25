@@ -9,6 +9,12 @@ import Section from "../common/homepage/Section";
 import Videos from "../common/homepage/Videos";
 import "../stylesheets/index.scss";
 
+import security from '../assets/intro_security.png';
+import networking from '../assets/intro_networking.png'
+import tracing from '../assets/intro_tracing.png';
+import observability from '../assets/intro_observability.png';
+import overview from '../assets/overview.png';
+
 const tracingText = `
 La possibilité d'attacher des programmes eBPF sur des « trace points » et des
 « probe points », que ce soit dans le noyau ou dans les applications
@@ -86,7 +92,7 @@ const Intro = () => (
       d'abstraction, mais sans compromettre l'efficacité ou la sureté du
       système.
     </p>
-    <img src={require("../assets/go.png")} />
+    <img src={overview} />
     <p>
       eBPF a conduit au développement d'une nouvelle génération d'applications,
       capables de reprogrammer le noyau Linux, et même de mettre en œuvre une
@@ -101,24 +107,24 @@ const Sections = () => (
     <div className="main-sections-left">
       <Section
         title="Sécurité"
-        icon={require("../assets/intro_security.png")}
+        icon={security}
         text={securityText}
       />
       <Section
         title="Réseau"
-        icon={require("../assets/intro_networking.png")}
+        icon={networking}
         text={networkingText}
       />
     </div>
     <div className="main-sections-right">
       <Section
         title="Traçage et profilage"
-        icon={require("../assets/intro_tracing.png")}
+        icon={tracing}
         text={tracingText}
       />
       <Section
         title="Observabilité et supervision"
-        icon={require("../assets/intro_observability.png")}
+        icon={observability}
         text={monitoringText}
       />
     </div>

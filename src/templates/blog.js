@@ -15,7 +15,7 @@ export default function NewsIndex({ data, pageContext }) {
   const nextUrl = (index + 1).toString();
   const pageMetaTitle = 'eBPF - Blog'
   const pageMetaDescription = 'The latest news, updates and articles covering eBPF and related topics.'
-  const pageMetaImageUrl = 'https://ebpf.io' + require("../assets/ogimage-blog.png")
+  const pageMetaImageUrl = 'https://ebpf.io' + '/images/ogimage-blog.png'
   return (
     <Layout>
       <div className="blog-posts">
