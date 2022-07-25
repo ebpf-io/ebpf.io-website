@@ -24,6 +24,7 @@ import bumblebeeLogo from '../assets/projects-logos/bumblebee.png';
 import plyLogo from '../assets/projects-logos/ply.png';
 import kubearmorLogo from '../assets/projects-logos/kubearmor.png';
 import l3afLogo from '../assets/projects-logos/l3af.svg';
+import merbridge from "../assets/projects-logos/merbridge.png";
 import "../stylesheets/index.scss";
 
 const pageMetaTitle = 'eBPF Project Landscape'
@@ -130,6 +131,40 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Cilium</TitleWithAnchor>
+      <div className="project-minor-title">
+        eBPF-based Networking, Security, and Observability
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/cilium/cilium"
+        >
+          <img src={require("../assets/cilium-no-text.png")} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://cilium.io">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/cilium/cilium">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Cilium is an open source project that provides eBPF-powered
+            networking, security and observability. It has been specifically
+            designed from the ground up to bring the advantages of eBPF to the
+            world of Kubernetes and to address the new scalability, security and
+            visibility requirements of container workloads.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">bpftrace</TitleWithAnchor>
       <div className="project-minor-title">
         High-level tracing language for Linux eBPF
@@ -160,40 +195,6 @@ const ProjectDescriptions = () => (
             scripts to eBPF bytecode and makes use of BCC as a library for
             interacting with the Linux eBPF subsystem as well as existing Linux
             tracing capabilities and attachment points.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="project-box">
-      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Cilium</TitleWithAnchor>
-      <div className="project-minor-title">
-        eBPF-based Networking, Security, and Observability
-      </div>
-      <div className="project-body">
-        <a
-          className="project-logo"
-          target="_blank"
-          href="https://github.com/cilium/cilium"
-        >
-          <img src={ciliumNoTextLogo} />
-        </a>
-        <div className="project-description">
-          <p>
-            <a href="https://cilium.io">
-              <b>Website</b>
-            </a>{" "}
-            |{" "}
-            <a href="https://github.com/cilium/cilium">
-              <b>GitHub</b>
-            </a>{" "}
-          </p>
-          <p>
-            Cilium is an open source project that provides eBPF-powered
-            networking, security and observability. It has been specifically
-            designed from the ground up to bring the advantages of eBPF to the
-            world of Kubernetes and to address the new scalability, security and
-            visibility requirements of container workloads.
           </p>
         </div>
       </div>
@@ -549,13 +550,6 @@ const ProjectDescriptions = () => (
 
     <TitleWithAnchor headerClassName="projects-title projects-common-title">Applications (Emerging)</TitleWithAnchor>
 
-    <div align="center">
-      <p style={{marginBottom: '20px'}}>
-        The ordering of emerging applications is based on the number of Github
-        stars (high to low), updated on a quaterly basis.
-      </p>
-    </div>
-
     <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">eCapture</TitleWithAnchor>
       <div className="project-minor-title">SSL/TLS capture tool using eBPF</div>
@@ -825,6 +819,42 @@ const ProjectDescriptions = () => (
     </div>
 
     <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">Merbridge</TitleWithAnchor>
+      <div className="project-minor-title">
+        Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge.
+      </div>
+      <div className="project-body">
+        <a
+          className="project-logo"
+          target="_blank"
+          href="https://github.com/merbridge/merbridge"
+        >
+          <img src={merbridge} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://merbridge.io">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/merbridge/merbridge">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            Merbridge is designed to make traffic interception
+            and forwarding more efficient for service mesh. 
+            With Merbridge, developers can use eBPF instead of 
+            iptables to accelerate their service mesh without any 
+            additional operations or code changes.
+            Currently, Merbridge already supports Istio,
+            Linkerd, and Kuma.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
       <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">L3AF</TitleWithAnchor>
       <div className="project-minor-title">Complete lifecycle management of eBPF programs</div>
       <div className="project-body">
@@ -883,9 +913,10 @@ const Page = () => (
       />
       <p>
         This page lists a number of open source projects that use eBPF
-        as the underlying core technology.  These projects are not necessarily under
+        as the underlying core technology. These projects are not necessarily under
         the <a href="https://www.ebpf.foundation">eBPF Foundation</a> but are listed here
-        as a survey of the eBPF project landscape today.
+        as a survey of the eBPF project landscape today. The ordering of applications is
+	based on the number of Github stars (high to low), updated on a quaterly basis.
       </p>
       <ProjectDescriptions />
       <TitleWithAnchor headerClassName="projects-title projects-common-title">FAQ</TitleWithAnchor>
