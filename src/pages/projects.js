@@ -141,7 +141,7 @@ const ProjectDescriptions = () => (
           target="_blank"
           href="https://github.com/cilium/cilium"
         >
-          <img src={require("../assets/cilium-no-text.png")} />
+          <img src={ciliumNoTextLogo} />
         </a>
         <div className="project-description">
           <p>
