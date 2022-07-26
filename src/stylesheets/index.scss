@@ -662,7 +662,7 @@ code {
     margin-top: 128px;
     margin-bottom: 56px;
     font-size: 46px;
-    line-height: 64px;
+    line-height: 1.125;
     font-weight: 700;
 
     &.faq-title {
@@ -673,6 +673,12 @@ code {
       font-size: 38px;
       margin-top: 80px;
       margin-bottom: 40px;
+    }
+
+    @media #{$mobile} {
+      font-size: 32px;
+      margin-top: 60px;
+      margin-bottom: 20px;
     }
   }
 

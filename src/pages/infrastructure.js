@@ -11,6 +11,8 @@ import hbpfLogo from '../assets/projects-logos/hbpf.svg';
 import golangLogo from '../assets/projects-logos/golang.svg';
 import rustLogo from '../assets/projects-logos/rust.svg';
 import cppLogo from '../assets/projects-logos/cpp.svg';
+import gccLogo from '../assets/projects-logos/gcc.svg';
+
 import "../stylesheets/index.scss";
 import { Hero } from "../common/projects/Hero";
 import { ProjectCard } from "../common/projects/ProjectCard";
@@ -60,6 +62,20 @@ const majorProjects = [
       {label: 'GitHub', url: 'https://github.com/llvm/llvm-project/'},
       {label: 'Patches', url: 'https://reviews.llvm.org/search/query/ABG0ZPUPkDGb/#R'},
       {label: 'Bugtracker', url: 'https://github.com/llvm/llvm-project/labels/backend:BPF'},    
+    ],
+  },
+  {
+    logoUrl: 'https://llvm.org/',
+    name: 'LLVM Compiler',
+    logo: gccLogo,
+    title: 'eBPF Backend',
+    description: `The <strong>GCC</strong> compiler comes with an eBPF backend starting from GCC 10. Up to that point, LLVM has been the only compiler which supports generating eBPF ELF files. The GCC port is roughly equivalent to the LLVM eBPF support. There are some missing bits of functionality but the GCC community is working to close these gaps over time. GCC also contains eBPF binutils as well as eBPF gdb support for debugging of eBPF code that is traditionally consumed by the Linux kernel. Included as part of this is an eBPF simulator for gdb.`,
+    urls: [
+      {label: 'Git repo', url: 'https://gcc.gnu.org/git.html'},
+      {label: 'Website', url: 'https://gcc.gnu.org/'},
+      {label: 'Mailing list', url: 'https://gcc.gnu.org/lists.html'},
+      {label: 'Bugtracker', url: 'https://gcc.gnu.org/bugzilla/'},
+      {label: 'Docs', url: 'https://gcc.gnu.org/onlinedocs/gcc/eBPF-Options.html'},
     ],
   },
 ]
