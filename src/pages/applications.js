@@ -22,7 +22,7 @@ import bumblebeeLogo from '../assets/projects-logos/bumblebee.svg';
 import plyLogo from '../assets/projects-logos/ply.svg';
 import kubeArmorLogo from '../assets/projects-logos/kubearmor.svg';
 import l3afLogo from '../assets/projects-logos/l3af.svg'
-import merbridgeLogo from '../assets/projects-logos/merbridge.png';
+import merbridgeLogo from '../assets/projects-logos/merbridge.svg';
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =

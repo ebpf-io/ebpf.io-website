@@ -26,6 +26,10 @@ const icons = {
   'Bugtracker': bugtracker,
 }
 
+const Logo = ({logo, logoSize}) => (
+  <img src={logo} width={logoSize === 'md' ? 260 : 130}  height={logoSize === 'md' ? 80 : 130}/>
+)
+
 export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, majorUrls, emergingUrls, logoSize = 'md' }) => (
   <li className="project-box" key={name}>
     <div className="project-aside">
@@ -40,9 +44,9 @@ export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, maj
         target="_blank"
         className={cn("project-logo", `project-logo-${logoSize}`)}
       >
-        <img src={logo} />
+       <Logo logo={logo} logoSize={logoSize}/>
       </a> : <div className={cn("project-logo", `project-logo-${logoSize}`)}>
-        <img src={logo} />
+        <Logo logo={logo} logoSize={logoSize}/>
       </div>}
       {title && <div className="project-minor-title">
         {title}
