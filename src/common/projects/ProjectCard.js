@@ -10,6 +10,7 @@ import patchesIcon from './assets/patches-icon.svg';
 import docsIcon from './assets/docs-icon.svg';
 import officeHoursIcon from './assets/office-hours-icon.svg';
 import slackChannelIcon from './assets/slack-channel-icon.svg';
+import bugtracker from './assets/bugtracker-icon.svg';
 import cn from 'classnames';
 
 const icons = {
@@ -22,6 +23,7 @@ const icons = {
   Docs: docsIcon,
   'Office hours': officeHoursIcon,
   'Slack channel': slackChannelIcon,
+  'Bugtracker': bugtracker,
 }
 
 export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, majorUrls, emergingUrls, logoSize = 'md' }) => (

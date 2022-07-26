@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby";
 import cn from "classnames";
-import background from './assets/hero-bg.svg';
 export const Hero = ({title}) => {
   const types = [
     { name: "Applications", url: "/applications" },
@@ -9,9 +8,12 @@ export const Hero = ({title}) => {
   ];
 
   return (
-    <div className="projects-hero">
-      <img src={background} alt="" aria-hidden width={1600} height={300} />
-      <h1>{title}</h1>
+    <> 
+      <div className="projects-hero">
+        <div className="projects-inner">
+          <h1>{title}</h1>
+        </div>
+      </div>
       <div className="projects-buttons">
         {types.map(({ name, url }, index) => {
           return (
@@ -28,6 +30,8 @@ export const Hero = ({title}) => {
           );
         })}
       </div>
-    </div>
+   
+    </>
+
   );
 };

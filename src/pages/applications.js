@@ -290,7 +290,7 @@ const ProjectDescriptions = () => (
     </TitleWithAnchor>
 
     <div align="center">
-      <p style={{ marginBottom: "20px", fontSize: '20px', textAlign: 'left' }}>
+      <p style={{ marginBottom: "20px", fontSize: '20px', textAlign: 'left', lineHeight: '1.625' }}>
         The ordering of emerging applications is based on the number of Github
         stars (high to low), updated on a quaterly basis.
       </p>
@@ -306,46 +306,46 @@ const ProjectDescriptions = () => (
 
 const Page = () => (
   <Layout>
-    <div className="page-projects">
-      <Helmet
-        title={pageMetaTitle}
-        meta={[
-          {
-            name: "keywords",
-            content: "ebpf, bpf, landscape, directory, open source",
-          },
-          { name: "type", property: "og:type", content: "website" },
-          {
-            name: "url",
-            property: "og:url",
-            content: "https://ebpf.io/contribute/",
-          },
-          { name: "title", property: "og:title", content: pageMetaTitle },
-          {
-            name: "description",
-            property: "og:description",
-            content: pageMetaDescription,
-          },
-          {
-            name: "image",
-            property: "og:image",
-            content: "https://ebpf.io" + '/images/ogimage.png',
-          },
-          { name: "twitter:card", content: "summary_large_image" },
-          { name: "twitter:url", content: "https://ebpf.io/projects/" },
-          { name: "twitter:title", content: pageMetaTitle },
-          { name: "twitter:description", content: pageMetaDescription },
-          {
-            name: "twitter:image",
-            content: "https://ebpf.io" + '/images/ogimage.png',
-          },
-        ]}
-      />
+    <Helmet
+      title={pageMetaTitle}
+      meta={[
+        {
+          name: "keywords",
+          content: "ebpf, bpf, landscape, directory, open source",
+        },
+        { name: "type", property: "og:type", content: "website" },
+        {
+          name: "url",
+          property: "og:url",
+          content: "https://ebpf.io/contribute/",
+        },
+        { name: "title", property: "og:title", content: pageMetaTitle },
+        {
+          name: "description",
+          property: "og:description",
+          content: pageMetaDescription,
+        },
+        {
+          name: "image",
+          property: "og:image",
+          content: "https://ebpf.io" + '/images/ogimage.png',
+        },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:url", content: "https://ebpf.io/projects/" },
+        { name: "twitter:title", content: pageMetaTitle },
+        { name: "twitter:description", content: pageMetaDescription },
+        {
+          name: "twitter:image",
+          content: "https://ebpf.io" + '/images/ogimage.png',
+        },
+      ]}
+    />
       <Hero title="Applications" />
-      <div className="project-content-wrapper">
-        <ProjectDescriptions />
-        <FAQ/>
-      </div>
+      <div className="page-projects">
+        <div className="project-content-wrapper">
+          <ProjectDescriptions />
+          <FAQ/>
+        </div>
     </div>
   </Layout>
 );
