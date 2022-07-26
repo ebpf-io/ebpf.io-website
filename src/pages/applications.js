@@ -290,7 +290,7 @@ const ProjectDescriptions = () => (
     </TitleWithAnchor>
 
     <div align="center">
-      <p style={{ marginBottom: "20px" }}>
+      <p style={{ marginBottom: "20px", fontSize: '20px', textAlign: 'left' }}>
         The ordering of emerging applications is based on the number of Github
         stars (high to low), updated on a quaterly basis.
       </p>
