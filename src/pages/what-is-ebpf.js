@@ -3,7 +3,20 @@ import Layout from "../layouts";
 import React from "react";
 
 import "../stylesheets/index.scss";
-
+import overview from '../assets/overview.png';
+import syscallHook from '../assets/syscall_hook.png';
+import hookOverview from '../assets/hook_overview.png';
+import clang from '../assets/clang.png';
+import go from '../assets/go.png';
+import loader from '../assets/loader.png';
+import mapArchitecture from '../assets/map_architecture.png';
+import helper from '../assets/helper.png';
+import tailcall from '../assets/tailcall.png';
+import geocities from '../assets/geocities.png';
+import kernelArch from '../assets/kernel_arch.png';
+import bcc from '../assets/bcc.png';
+import bpfTrace from '../assets/bpftrace.png';
+import libbpf from '../assets/libbpf.png';
 const pageMetaTitle = 'What is eBPF? An Introduction and Deep Dive into the eBPF Technology'
 const pageMetaDescription = 'A detailed step by step introduction to the eBPF technology with lots of references for further reading.'
 
@@ -77,7 +90,7 @@ class Description extends React.Component {
     <p>
       Historically, the operating system has always been an ideal place to implement observability, security, and networking functionality due to the kernel’s privileged ability to oversee and control the entire system. At the same time, an operating system kernel is hard to evolve due to its central role and high requirement towards stability and security. The rate of innovation at the operating system level has thus traditionally been lower compared to functionality implemented outside of the operating system.
     </p>
-    <img src={require("../assets/overview.png")} />
+    <img src={overview} />
     <p>
       eBPF changes this formula fundamentally. By allowing to run sandboxed programs within the operating system, application developers can run eBPF programs to add additional capabilities to the operating system at runtime. The operating system then guarantees safety and execution efficiency as if natively compiled with the aid of a Just-In-Time (JIT) compiler and verification engine. This has led to a wave of eBPF-based projects covering a wide array of use cases, including next-generation networking, observability, and security functionality.
     </p>
@@ -120,13 +133,13 @@ class Description extends React.Component {
             system calls, function entry/exit, kernel tracepoints, network
             events, and several others.
           </p>
-          <img src={require("../assets/syscall_hook.png")} />
+          <img src={syscallHook} />
           <p>
             If a predefined hook does not exist for a particular need, it is
             possible to create a kernel probe (kprobe) or user probe (uprobe) to
             attach eBPF programs almost anywhere in kernel or user applications.
           </p>
-          <img src={require("../assets/hook_overview.png")} />
+          <img src={hookOverview} />
 
           <h3>How are eBPF programs written?</h3>
           <p>
@@ -138,7 +151,7 @@ class Description extends React.Component {
             directly but instead offer the ability to specify intent-based
             definitions which are then implemented with eBPF.
           </p>
-          <img src={require("../assets/clang.png")} />
+          <img src={clang} />
           <p>
             If no higher-level abstraction exists, programs need to be written
             directly. The Linux kernel expects eBPF programs to be loaded in the
@@ -156,7 +169,7 @@ class Description extends React.Component {
             section provides an introduction into the available development
             toolchains.
           </p>
-          <img src={require("../assets/go.png")} />
+          <img src={go} />
           <p>
             As the program is loaded into the Linux kernel, it passes through
             two steps before being attached to the requested hook:
@@ -167,7 +180,7 @@ class Description extends React.Component {
             The verification step ensures that the eBPF program is safe to run.
             It validates that the program meets several conditions, for example:
           </p>
-          <img src={require("../assets/loader.png")} />
+          <img src={loader} />
           <ul>
             <li>
               The process loading the eBPF program holds the required
@@ -199,7 +212,7 @@ class Description extends React.Component {
             programs as well as from applications in user space via a system
             call.
           </p>
-          <img src={require("../assets/map_architecture.png")} />
+          <img src={mapArchitecture} />
 
           <p>
             The following is an incomplete list of supported map types to give
@@ -224,7 +237,7 @@ class Description extends React.Component {
             can make function calls into helper functions, a well-known and
             stable API offered by the kernel.
           </p>
-          <img src={require("../assets/helper.png")} />
+          <img src={helper} />
 
           <p>
             The set of available helper calls is constantly evolving. Examples
@@ -246,7 +259,7 @@ class Description extends React.Component {
             program and replace the execution context, similar to how the
             execve() system call operates for regular processes.
           </p>
-          <img src={require("../assets/tailcall.png")} />
+          <img src={tailcall} />
 
           <h3>eBPF Safety</h3>
           <p>
@@ -367,7 +380,7 @@ class Description extends React.Component {
             technology has replaced a vast majority of applications written in
             languages requiring compilation. What enabled this evolution?
           </p>
-          <img src={require("../assets/geocities.png")} />
+          <img src={geocities} />
 
           <p>
             The short-answer is programmability with the introduction of
@@ -424,7 +437,7 @@ class Description extends React.Component {
             interacts with applications and the hardware.
           </p>
 
-          <img src={require("../assets/kernel_arch.png")} />
+          <img src={kernelArch} />
 
           <p>
             The main purpose of the Linux kernel is to abstract the hardware or
@@ -506,7 +519,7 @@ class Description extends React.Component {
             the python program will generate the eBPF bytecode and load it into
             the kernel.
           </p>
-          <img src={require("../assets/bcc.png")} />
+          <img src={bcc} />
 
           <h4>bpftrace</h4>
           <p>
@@ -518,7 +531,7 @@ class Description extends React.Component {
             tracepoints. The bpftrace language is inspired by awk, C and predecessor
 	    tracers such as DTrace and SystemTap.
           </p>
-          <img src={require("../assets/bpftrace.png")} />
+          <img src={bpfTrace} />
 
           <h4>eBPF Go Library</h4>
           <p>
@@ -528,7 +541,7 @@ class Description extends React.Component {
             writing a higher level language and then use the clang/LLVM compiler
             to compile to eBPF bytecode.
           </p>
-          <img src={require("../assets/go.png")} />
+          <img src={go} />
 
           <h4>libbpf C/C++ Library</h4>
           <p>
@@ -538,7 +551,7 @@ class Description extends React.Component {
             interaction with the BPF system call by providing easy to use
             library APIs for applications.
           </p>
-          <img src={require("../assets/libbpf.png")} />
+          <img src={libbpf} />
 
           <h2>Further Reading</h2>
           <p>
@@ -790,12 +803,12 @@ const Page = () => (
           {name: "url", property: "og:url", content: "https://ebpf.io/what-is-ebpf/"},
           {name: "title", property: "og:title", content: pageMetaTitle},
           {name: "description", property: "og:description", content: pageMetaDescription},
-          {name: "image", property: "og:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "image", property: "og:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
           {name: "twitter:card", content: "summary_large_image"},
           {name: "twitter:url", content: "https://ebpf.io/"},
           {name: "twitter:title", content: pageMetaTitle},
           {name: "twitter:description", content: pageMetaDescription},
-          {name: "twitter:image", content: 'https://ebpf.io' + require("../assets/ogimage.png")},
+          {name: "twitter:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
         ]}
       />
       <Description />

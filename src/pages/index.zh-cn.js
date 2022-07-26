@@ -9,6 +9,12 @@ import Section from "../common/homepage/Section";
 import Videos from "../common/homepage/Videos";
 import "../stylesheets/index.scss";
 
+import security from '../assets/intro_security.png';
+import networking from '../assets/intro_networking.png'
+import tracing from '../assets/intro_tracing.png';
+import observability from '../assets/intro_observability.png';
+import go from '../assets/go.png';
+
 const tracingText = `
 eBPF 程序能够加载到 trace points、内核及用户空间应用程序中的 probe points，
 这种能力使我们对应用程序的运行时行为（runtime behavior）和系统本身
@@ -62,7 +68,7 @@ const Intro = () => (
       内核变成可编程之后，就能基于现有的（而非增加新的）抽象层来打造更加智能、
       功能更加丰富的基础设施软件，而不会增加系统的复杂度，也不会牺牲执行效率和安全性。
     </p>
-    <img src={require("../assets/go.png")} />
+    <img src={go} />
     <p>
       eBPF 催生了一种全新的软件开发方式。基于这种方式，我们不仅能对内核行为进行
       编程，甚至还能编写跨多个子系统的处理逻辑，而传统上这些子系统是完全独立、
@@ -76,25 +82,25 @@ const Sections = () => (
     <div className="main-sections-left">
       <Section
         title="安全"
-        icon={require("../assets/intro_security.png")}
+        icon={security}
         text={securityText}
       />
       <Section
         title="网络"
-        icon={require("../assets/intro_networking.png")}
+        icon={networking}
         text={networkingText}
       />
     </div>
     <div className="main-sections-right">
       <Section
         title="跟踪 & 性能分析"
-        icon={require("../assets/intro_tracing.png")}
+        icon={tracing}
         text={tracingText}
       />
       <Section
         style={{ marginTop: "45px" }}
         title="观测 & 监控"
-        icon={require("../assets/intro_observability.png")}
+        icon={observability}
         text={monitoringText}
       />
     </div>

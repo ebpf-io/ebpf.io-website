@@ -7,6 +7,7 @@ import "./footer.scss";
 import "./header.scss";
 import "./index.css";
 import "./menu-icon.scss";
+import logo from '../assets/logo.png';
 
 const languages = [
   {
@@ -32,25 +33,25 @@ const getLanguageName = (languageCode) => {
 const InfoDisclaimer = () => (
   <div className="introDisclaimer">
     <img
-      src="images/bg-1.png"
+      src="/images/bg-1.png"
       className="introDisclaimer-image image-right"
       alt=""
       aria-hidden
     />
     <img
-      src="images/bg-2.png"
+      src="/images/bg-2.png"
       className="introDisclaimer-image image-left"
       alt=""
       aria-hidden
     />
     <img
-      src="images/bg-1-md.png"
+      src="/images/bg-1-md.png"
       className="introDisclaimer-image-md image-right"
       alt=""
       aria-hidden
     />
     <img
-      src="images/bg-2-md.png"
+      src="/images/bg-2-md.png"
       className="introDisclaimer-image-md image-left"
       alt=""
       aria-hidden
@@ -99,7 +100,7 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
       <Link to={language} className="headerLogoLink">
         <img
           className="headerLogo"
-          src={require("../assets/logo.png")}
+          src={logo}
           width="109px"
           height="38px"
         />
@@ -290,7 +291,7 @@ const HeaderMobile = ({ language, hasLanguage, setLanguage }) => {
         <Link to={language} className="headerLogoLink">
           <img
             className="headerLogo"
-            src={require("../assets/logo.png")}
+            src={logo}
             width="109px"
             height="38px"
           />
