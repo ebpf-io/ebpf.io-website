@@ -656,15 +656,34 @@ code {
 .page-projects {
   max-width: 1600px;
   margin: 0 auto;
+
   .projects-title {
-    margin-top: 92px;
-    margin-bottom: 20px;
+    margin-top: 128px;
+    margin-bottom: 56px;
     font-size: 46px;
     line-height: 64px;
     font-weight: 700;
 
+    &.faq-title {
+      text-align: center;
+    }
+
     @media #{$tablet} {
       font-size: 38px;
+    }
+  }
+
+  .projects-container {
+    max-width: 1008px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.625;
+
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 125%;
     }
   }
 
@@ -808,7 +827,7 @@ code {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding-right: 40px;
     border-right: 2px solid #f2f2f2;
   }
@@ -851,9 +870,10 @@ code {
     color: #000;
   }
   .projects-how-to-list {
-    font-size: 16px;
-    line-height: 30px;
-
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.625;
+    
     li {
       margin-bottom: 11px;
       &:last-child {
@@ -870,8 +890,9 @@ code {
     color: #000;
   }
   .projects-requirements-list {
-    font-size: 16px;
-    line-height: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.625;
 
     li {
       margin-bottom: 11px;

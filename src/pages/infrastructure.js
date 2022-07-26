@@ -4,13 +4,13 @@ import React from "react";
 
 import { TitleWithAnchor } from "../common/TitleWithAnchor";
 import { FAQ } from "../common/projects/Faq";
-import linuxLogo from '../assets/projects-logos/linux.png';
-import llvmLogo from '../assets/projects-logos/llvm2.png';
-import ebpfForWindowsLogo from '../assets/projects-logos/ebpf-for-windows-logo.png';
-import hbpfLogo from '../assets/projects-logos/hbpf.png';
-import golangLogo from '../assets/projects-logos/golang.png';
-import rustLogo from '../assets/projects-logos/rust.png';
-import cppLogo from '../assets/projects-logos/cpp.png';
+import linuxLogo from '../assets/projects-logos/linux.svg';
+import llvmLogo from '../assets/projects-logos/llvm.svg';
+import ebpfForWindowsLogo from '../assets/projects-logos/ebpf-windows.svg';
+import hbpfLogo from '../assets/projects-logos/hbpf.svg';
+import golangLogo from '../assets/projects-logos/golang.svg';
+import rustLogo from '../assets/projects-logos/rust.svg';
+import cppLogo from '../assets/projects-logos/cpp.svg';
 import "../stylesheets/index.scss";
 import { Hero } from "../common/projects/Hero";
 import { ProjectCard } from "../common/projects/ProjectCard";
@@ -227,7 +227,7 @@ const Page = () => (
           {
             name: "image",
             property: "og:image",
-            content: "https://ebpf.io" + require("../assets/ogimage.png"),
+            content: "https://ebpf.io" + '/images/ogimage.png',
           },
           { name: "twitter:card", content: "summary_large_image" },
           { name: "twitter:url", content: "https://ebpf.io/projects/" },
@@ -235,11 +235,11 @@ const Page = () => (
           { name: "twitter:description", content: pageMetaDescription },
           {
             name: "twitter:image",
-            content: "https://ebpf.io" + require("../assets/ogimage.png"),
+            content: "https://ebpf.io" + '/images/ogimage.png',
           },
         ]}
       />
-      <Hero />
+      <Hero title="Infrastructure" />
       <div className="project-content-wrapper">
         <ProjectDescriptions />
         <FAQ/>

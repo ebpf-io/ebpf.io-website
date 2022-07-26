@@ -7,21 +7,22 @@ import "../stylesheets/index.scss";
 import { FAQ } from "../common/projects/Faq";
 import { ProjectCard } from "../common/projects/ProjectCard";
 import { Hero } from "../common/projects/Hero";
-import bccLogo from "../assets/projects-logos/bcc.png";
-import ciliumLogo from "../assets/projects-logos/cilium-with-text.png";
-import bpftraceLogo from '../assets/projects-logos/bpftrace-logo.jpeg';
-import falcoLogo from '../assets/projects-logos/falco.png';
-import katranLogo from '../assets/projects-logos/katran.png';
-import ecaptureLogo from "../assets/projects-logos/ecapture-logo.png";
-import pixieLogo from '../assets/projects-logos/pixie.png';
-import hubbleLogo from '../assets/hubble-no-text.png';
-import kubectlTraceLogo from '../assets/projects-logos/kubectl_trace2.png';
-import traceeLogo from '../assets/projects-logos/tracee.png';
-import tetragonLogo from '../assets/projects-logos/tetragon.png';
-import bumblebeeLogo from '../assets/projects-logos/bumblebee.png';
-import plyLogo from '../assets/projects-logos/ply.png';
-import kubeArmorLogo from '../assets/projects-logos/kubearmor.png';
+import bccLogo from "../assets/projects-logos/bcc.svg";
+import ciliumLogo from "../assets/projects-logos/cilium-with-text.svg";
+import bpftraceLogo from '../assets/projects-logos/bpftrace.svg';
+import falcoLogo from '../assets/projects-logos/falco.svg';
+import katranLogo from '../assets/projects-logos/katran.svg';
+import ecaptureLogo from "../assets/projects-logos/ecapture.svg";
+import pixieLogo from '../assets/projects-logos/pixie.svg';
+import hubbleLogo from '../assets/projects-logos/hubble.svg';
+import kubectlTraceLogo from '../assets/projects-logos/kubectl_trace.svg';
+import traceeLogo from '../assets/projects-logos/tracee.svg';
+import tetragonLogo from '../assets/projects-logos/tetragon.svg';
+import bumblebeeLogo from '../assets/projects-logos/bumblebee.svg';
+import plyLogo from '../assets/projects-logos/ply.svg';
+import kubeArmorLogo from '../assets/projects-logos/kubearmor.svg';
 import l3afLogo from '../assets/projects-logos/l3af.svg'
+import merbridgeLogo from '../assets/projects-logos/merbridge.png';
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -245,6 +246,17 @@ const emergingProjects = [
     ],
   },
   {
+    logoUrl: 'https://github.com/merbridge/merbridge',
+    name: 'Merbridge',
+    logo: merbridgeLogo,
+    title: 'Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge.',
+    description: `<strong>Merbridge</strong> is designed to make traffic interception and forwarding more efficient for service mesh. With Merbridge, developers can use eBPF instead of iptables to accelerate their service mesh without any additional operations or code changes. Currently, Merbridge already supports Istio, Linkerd, and Kuma.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/merbridge/merbridge'},
+      {label: 'Website', url: 'https://merbridge.io/'},
+    ],
+  },
+  {
     logoUrl: 'https://github.com/l3af-project',
     name: 'L3AF',
     logo: l3afLogo,
@@ -317,7 +329,7 @@ const Page = () => (
           {
             name: "image",
             property: "og:image",
-            content: "https://ebpf.io" + require("../assets/ogimage.png"),
+            content: "https://ebpf.io" + '/images/ogimage.png',
           },
           { name: "twitter:card", content: "summary_large_image" },
           { name: "twitter:url", content: "https://ebpf.io/projects/" },
@@ -325,11 +337,11 @@ const Page = () => (
           { name: "twitter:description", content: pageMetaDescription },
           {
             name: "twitter:image",
-            content: "https://ebpf.io" + require("../assets/ogimage.png"),
+            content: "https://ebpf.io" + '/images/ogimage.png',
           },
         ]}
       />
-      <Hero />
+      <Hero title="Applications" />
       <div className="project-content-wrapper">
         <ProjectDescriptions />
         <FAQ/>
