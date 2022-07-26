@@ -206,8 +206,8 @@ and kernel discussions, everyone should find a good read or two!
   a gRPC GreeterServer in eBPF “just for fun”, but actually for benchmarks,
   too.
 
-* [rbperf](https://github.com/facebookexperimental/rbperf/) is an
-  experimental eBPF-based Ruby Profiler.
+* [rbperf](https://github.com/javierhonduco/rbperf/) is an eBPF-based Ruby CPU
+  profiler and tracer.
 
 ## The Kernel Side
 
