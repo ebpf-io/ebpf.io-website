@@ -884,6 +884,10 @@ code {
 
     img {
       display: block;
+
+      @media #{$mobile} {
+        max-width: 100%;   
+      }
     }
   }
 

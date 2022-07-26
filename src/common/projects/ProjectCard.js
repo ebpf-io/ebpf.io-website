@@ -28,7 +28,7 @@ const icons = {
 }
 
 const Logo = ({logo, logoSize}) => (
-  <img style={{ maxWidth: '100%'}} src={logo} width={logoSize === 'md' ? 260 : 130}  height={logoSize === 'md' ? 80 : 130}/>
+  <img src={logo} width={logoSize === 'md' ? 260 : 130}  height={logoSize === 'md' ? 80 : 130}/>
 )
 
 export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, majorUrls, emergingUrls, logoSize = 'md' }) => (
