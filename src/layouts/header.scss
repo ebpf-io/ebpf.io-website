@@ -221,6 +221,12 @@ $xl: "screen and (max-width : 1280px)";
         }
       }
     }
+
+    &.projects {
+      .link {
+        padding-left: 10px;
+      }
+    }
   }
 
   @media #{$xl} {
