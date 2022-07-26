@@ -21,6 +21,7 @@ export const Hero = ({title}) => {
               className={cn(
                 "projects-button",
               )}
+              partiallyActive={true}
               activeClassName="active-button"
               key={index}
               to={url}
