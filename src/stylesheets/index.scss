@@ -644,6 +644,10 @@ code {
       border: 1px solid #f2f2f2;
       transition: background-color 0.2s ease;
 
+      @media #{$mobile} {
+        width: 85%;
+      }
+
       &.active-button {
         background-color: #ffe100;
         border: 1px solid #ffe100;
