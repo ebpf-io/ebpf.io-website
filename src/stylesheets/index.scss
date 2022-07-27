@@ -617,6 +617,12 @@ code {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 24px;
+
+  @media #{$mobile} {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   a {
     font-weight: 600;
     font-size: 20px;

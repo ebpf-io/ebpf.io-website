@@ -249,7 +249,7 @@ const emergingProjects = [
     logoUrl: 'https://github.com/merbridge/merbridge',
     name: 'Merbridge',
     logo: merbridgeLogo,
-    title: 'Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge.',
+    title: 'Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge',
     description: `<strong>Merbridge</strong> is designed to make traffic interception and forwarding more efficient for service mesh. With Merbridge, developers can use eBPF instead of iptables to accelerate their service mesh without any additional operations or code changes. Currently, Merbridge already supports Istio, Linkerd, and Kuma.`,
     urls: [
       {label: 'GitHub', url: 'https://github.com/merbridge/merbridge'},
