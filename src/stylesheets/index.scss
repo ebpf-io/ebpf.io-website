@@ -7,6 +7,29 @@ $mobile: "screen and (max-width : 480px)";
 $tablet: "screen and (max-width : 900px)";
 $desktop: "screen and (min-width : 1280px)";
 
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  flex-shrink: 0;
+}
+
+main {
+  margin-bottom: 128px;
+  flex-grow: 1;
+}
+
 .page-wrapper img {
   width: 100%;
 }

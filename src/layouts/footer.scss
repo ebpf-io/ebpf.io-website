@@ -1,23 +1,191 @@
 $tablet: "screen and (max-width : 900px)";
 $mobile: "screen and (max-width : 480px)";
 
-.footer {
-  padding: 96px 30px 61px 30px;
-  max-width: 1015px;
+footer {
+  min-height: 336px;
+  max-width: 100%;
+  background-color: #fafafa;
+  padding: 56px 0 36px;
+}
+
+.language-select {
+  margin-left: 40px;
+  position: relative;
+  &.about .list .link {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  & > .button {
+    appearance: none;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      color: #5f4b0f;
+    }
+    &:focus {
+      outline: none;
+      &:focus-visible {
+        outline: 1px dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+      }
+    }
+  }
+  & > .list {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    bottom: -100%;
+    display: block;
+    box-shadow: 0px 1px 8px rgba(20, 26, 31, 0.2);
+    padding: 20px;
+    background: #fff;
+    transition: all 0.2s ease-in;
+    &:not(.is-shown) {
+      visibility: hidden;
+      opacity: 0;
+    }
+    &.is-shown {
+      visibility: visible;
+      opacity: 1;
+      z-index: 10;
+    }
+    & > .button {
+      appearance: none;
+      position: relative;
+      display: block;
+      padding: 6px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: left;
+      background: none;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: #fff1cc;
+      }
+      &:focus {
+        outline: none;
+        &:focus-visible {
+          outline: 1px dotted;
+          outline: 5px auto -webkit-focus-ring-color;
+        }
+      }
+      &.selected {
+        &::before {
+          content: "";
+          margin-top: -2px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 4px;
+          height: 4px;
+          background: currentColor;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.footer-container {
+  max-width: 1216px;
   margin-left: auto;
   margin-right: auto;
-  color: #b6b6b6;
 
-  @media #{$tablet} {
-    padding: 48px 15px 30px 15px;
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 14px;
+    padding-top: 36px;
+    margin-top: 56px;
+    border-top: 1px solid #f2f2f2;
+
+    .legal-container {
+      color: #1a1a1a;
+      display: flex;
+      justify-content: space-between;
+
+      & > a {
+        color: #1a1a1a;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          color: #ffe100;
+        }
+      }
+
+      .legal-item {
+        margin-right: 28px;
+      }
+    }
   }
 
-  .items {
+  .footer-items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
 
     @media #{$tablet} {
       flex-wrap: wrap;
+    }
+
+    .item-title {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #808080;
+      letter-spacing: 0.02em;
+      font-size: 14px;
+    }
+
+    .items-list {
+      margin-top: 0;
+    }
+
+    .item-link {
+      list-style: none;
+      margin-left: 0;
+      margin-top: 24px;
+
+      &:first-of-type {
+        margin-top: 28px;
+      }
+
+      a {
+        color: #1a1a1a;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        &:hover {
+          color: #ffe100;
+        }
+      }
+    }
+
+    .social-container {
+      display: flex;
+      flex-wrap: wrap;
+
+      .social-link {
+        margin-right: 14px;
+        color: #1a1a1a;
+
+        &:hover {
+          color: #ffe100;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
 
     .item {
@@ -50,16 +218,6 @@ $mobile: "screen and (max-width : 480px)";
         font-weight: 700;
         color: #909090;
       }
-    }
-  }
-
-  .copyright {
-    margin-top: 30px;
-    font-size: 14px;
-    text-align: center;
-
-    p {
-      margin-top: 10px;
     }
   }
 }
