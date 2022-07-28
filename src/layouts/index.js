@@ -138,7 +138,10 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
             onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)}
             type='button'
           >
-            Conferences <span className='triangle'>▾</span>
+            Conferences
+            <div
+              className={`triangle${isConferencesMenuShown ? " is-shown" : ""}`}
+            />
           </button>
           <span className={`list${isConferencesMenuShown ? " is-shown" : ""}`}>
             <strong>eBPF Summit</strong>
@@ -244,7 +247,10 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
             onClick={() => setIsCommunityMenuShown(!isCommunityMenuShown)}
             type='button'
           >
-            Community <span className='triangle'>▾</span>
+            Community
+            <span
+              className={`triangle${isCommunityMenuShown ? " is-shown" : ""}`}
+            />
           </button>
           <span className={`list${isCommunityMenuShown ? " is-shown" : ""}`}>
             <Link className='menu-item' to='/slack'>
@@ -284,10 +290,10 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
 
 const HeaderMobile = ({ language }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleIsOpen = useCallback(() => setIsOpen(!isOpen), [
-    isOpen,
-    setIsOpen,
-  ]);
+  const toggleIsOpen = useCallback(
+    () => setIsOpen(!isOpen),
+    [isOpen, setIsOpen]
+  );
   const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false);
   const [isCommunityMenuShown, setIsCommunityMenuShown] = useState(false);
 
@@ -314,7 +320,12 @@ const HeaderMobile = ({ language }) => {
               onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)}
               type='button'
             >
-              Conferences <span className='triangle'>▾</span>
+              Conferences{" "}
+              <span
+                className={`triangle${
+                  isConferencesMenuShown ? " is-shown" : ""
+                }`}
+              />
             </button>
             <span
               className={`list${isConferencesMenuShown ? " is-shown" : ""}`}
@@ -423,7 +434,10 @@ const HeaderMobile = ({ language }) => {
               onClick={() => setIsCommunityMenuShown(!isCommunityMenuShown)}
               type='button'
             >
-              Community <span className='triangle'>▾</span>
+              Community
+              <span
+                className={`triangle${isCommunityMenuShown ? " is-shown" : ""}`}
+              />
             </button>
             <span className={`list${isCommunityMenuShown ? " is-shown" : ""}`}>
               <Link className='menu-item' to='/slack'>
@@ -496,18 +510,20 @@ const FooterDesktop = ({ path, language, hasLanguage, setLanguage }) => {
           <Link to={language} className='menu-logo--link'>
             <img className='menu-logo' src={logo} width='122px' height='42px' />
           </Link>
-          {footerItems.map(({ title, items }, index) => (
-            <ul className='items-list' key={index}>
-              <span className='item-title'>{title}</span>
-              {items.map(({ name, linkUrl, target }, index) => (
-                <li className='item-link' key={index}>
-                  <Link to={linkUrl} target={target || ""}>
-                    {name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          ))}
+          <div className='items-container'>
+            {footerItems.map(({ title, items }, index) => (
+              <ul className='items-list' key={index}>
+                <span className='item-title'>{title}</span>
+                {items.map(({ name, linkUrl, target }, index) => (
+                  <li className='item-link' key={index}>
+                    <Link to={linkUrl} target={target || ""}>
+                      {name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
           <div className='social-container'>
             {footerIcons.map(({ icon: Icon, linkUrl }, index) => (
               <a
@@ -532,18 +548,21 @@ const FooterDesktop = ({ path, language, hasLanguage, setLanguage }) => {
             </Link>
           </div>
           {hasLanguage && (
-            <span className='language-select'>
+            <div className='language-select'>
               <button
                 className='button'
                 onClick={() => setIsLangMenuShown(!isLangMenuShown)}
                 type='button'
               >
-                {getLanguageName(language)} <span className='triangle'>▾</span>
+                {getLanguageName(language)}
+                <span
+                  className={`triangle${isLangMenuShown ? " is-shown" : ""}`}
+                />
               </button>
               <span className={`list${isLangMenuShown ? " is-shown" : ""}`}>
                 {languageButtons}
               </span>
-            </span>
+            </div>
           )}
         </div>
       </div>
@@ -606,8 +625,7 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden, path }) => {
         title='eBPF'
         link={[
           {
-            href:
-              "https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap",
+            href: "https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap",
             rel: "stylesheet",
           },
         ]}

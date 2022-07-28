@@ -3,13 +3,12 @@ $mobile: "screen and (max-width : 480px)";
 
 footer {
   min-height: 336px;
-  max-width: 100%;
+  width: 100%;
   background-color: #fafafa;
   padding: 56px 0 36px;
 }
 
 .language-select {
-  margin-left: 40px;
   position: relative;
   &.about .list .link {
     padding-left: 8px;
@@ -24,6 +23,9 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
       color: #5f4b0f;
     }
@@ -32,6 +34,16 @@ footer {
       &:focus-visible {
         outline: 1px dotted;
         outline: 5px auto -webkit-focus-ring-color;
+      }
+    }
+    .triangle {
+      background: no-repeat center url("../assets/arrow.svg");
+      width: 16px;
+      height: 16px;
+      margin-left: 4px;
+
+      &.is-shown {
+        transform: rotate(180deg);
       }
     }
   }
@@ -96,6 +108,7 @@ footer {
 
 .footer-container {
   max-width: 1216px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 
@@ -132,9 +145,23 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
 
     @media #{$tablet} {
-      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .items-container {
+      display: flex;
+      justify-content: space-between;
+      width: 55%;
+
+      @media #{$tablet} {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
     }
 
     .item-title {
@@ -156,6 +183,10 @@ footer {
 
       &:first-of-type {
         margin-top: 28px;
+      }
+
+      @media (max-width: 640px) {
+        font-size: 14px;
       }
 
       a {
