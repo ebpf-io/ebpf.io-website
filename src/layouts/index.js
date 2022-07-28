@@ -516,9 +516,13 @@ const FooterDesktop = ({ path, language, hasLanguage, setLanguage }) => {
                 <span className='item-title'>{title}</span>
                 {items.map(({ name, linkUrl, target }, index) => (
                   <li className='item-link' key={index}>
-                    <Link to={linkUrl} target={target || ""}>
-                      {name}
-                    </Link>
+                    {linkUrl.startsWith("/") ? (
+                      <Link to={linkUrl}>{name}</Link>
+                    ) : (
+                      <a href={linkUrl} target={target}>
+                        {name}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
