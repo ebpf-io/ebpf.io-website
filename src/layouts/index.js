@@ -241,7 +241,7 @@ const InfoDisclaimer = () => (
 const HeaderDesktop = ({ language }) => (
   <header className='header desktop'>
     <Link to={language} className='menu-logo-link'>
-      <img className='menu-logo' src={logo} width='122px' height='42px' />
+      <img className='menu-logo' src={logo} width={122} height={42} />
     </Link>
     <nav className='header-nav'>
       <Link to='/what-is-ebpf'>What is eBPF?</Link>
@@ -265,7 +265,13 @@ const HeaderMobile = ({ language }) => {
     <div className='header mobile'>
       <div className='row'>
         <Link to={language} className='headerLogoLink'>
-          <img className='headerLogo' src={logo} width='109px' height='38px' />
+          <img
+            className='headerLogo'
+            src={logo}
+            width={109}
+            height={38}
+            alt='eBPF logo'
+          />
         </Link>
         <div className={`menu-icon ${isOpen && "open"}`} onClick={toggleIsOpen}>
           <span />
@@ -318,7 +324,7 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
       <div className='footer-container desktop'>
         <div className='footer-items'>
           <Link to={language} className='menu-logo--link'>
-            <img className='menu-logo' src={logo} width='122px' height='42px' />
+            <img className='menu-logo' src={logo} width={122} height={42} />
           </Link>
           <div className='social-container'>
             {footerIcons.map(({ icon: Icon, linkUrl }, index) => (

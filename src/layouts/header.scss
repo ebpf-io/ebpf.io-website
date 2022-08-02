@@ -126,7 +126,11 @@ $xl: "screen and (max-width : 1280px)";
     }
 
     .items-list {
-      margin-top: 0;
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
 
     .item-link {
@@ -134,7 +138,7 @@ $xl: "screen and (max-width : 1280px)";
       margin-left: 0;
       margin-top: 20px;
 
-      &:first-of-type {
+      &:first-child {
         margin-top: 0;
       }
 
@@ -153,14 +157,22 @@ $xl: "screen and (max-width : 1280px)";
           color: #ffe100;
         }
       }
+    }
 
-      .subitem-link {
-        list-style: none;
-        margin-left: 40px;
-        margin-top: 20px;
+    .subitem-link {
+      list-style: none;
+      margin-left: 40px;
+      margin-top: 20px;
 
-        a {
-          font-size: 14px !important;
+      a {
+        color: #1a1a1a;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+        &:hover {
+          color: #ffe100;
         }
       }
     }

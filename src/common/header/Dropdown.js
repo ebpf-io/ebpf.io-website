@@ -30,14 +30,16 @@ const LanguageDropdown = ({ title, items }) => {
       </button>
       <div className={`list${isOpen ? " is-shown" : ""}`}>
         {items.map(({ title, linkUrl, linkTarget, subitems }, index) => (
-          <ul className='item-link' key={index}>
+          <ul className='items-list' key={index}>
             {linkUrl ? (
-              <CustomLink text={title} url={linkUrl} target={linkTarget} />
+              <li className='item-link'>
+                <CustomLink text={title} url={linkUrl} target={linkTarget} />
+              </li>
             ) : (
-              <span className='item-title'>{title}</span>
+              <li className='item-link item-title'>{title}</li>
             )}
             {subitems?.map(({ name, linkUrl, linkTarget }, index) => (
-              <li className='item-link subitem-link' key={index}>
+              <li className='subitem-link' key={index}>
                 <CustomLink text={name} url={linkUrl} target={linkTarget} />
               </li>
             ))}
