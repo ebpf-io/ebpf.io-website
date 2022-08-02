@@ -53,6 +53,10 @@ $xl: "screen and (max-width : 1280px)";
 .select {
   margin-left: 40px;
   position: relative;
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
+  }
   & > .button {
     appearance: none;
     color: #000;
@@ -109,6 +113,50 @@ $xl: "screen and (max-width : 1280px)";
       opacity: 1;
       z-index: 10;
     }
+    .item-title {
+      font-weight: 700;
+    }
+
+    .items-list {
+      margin-top: 0;
+    }
+
+    .item-link {
+      list-style: none;
+      margin-left: 0;
+      margin-top: 20px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      @media (max-width: 640px) {
+        font-size: 14px;
+      }
+
+      a {
+        color: #1a1a1a;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+        &:hover {
+          color: #ffe100;
+        }
+      }
+
+      .subitem-link {
+        list-style: none;
+        margin-left: 40px;
+        margin-top: 20px;
+
+        a {
+          font-size: 14px !important;
+        }
+      }
+    }
+
     & > .button {
       appearance: none;
       position: relative;

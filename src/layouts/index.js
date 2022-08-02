@@ -3,6 +3,8 @@ import "prismjs/themes/prism.css";
 import PropTypes from "prop-types";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Helmet from "react-helmet";
+import Dropdown from "../common/header/Dropdown.js";
+import LanguageDropdown from "../common/footer/LanguageDropdown.js";
 import "./footer.scss";
 import "./header.scss";
 import "./index.css";
@@ -14,6 +16,122 @@ import RedditIcon from "../assets/reddit.inline.svg";
 import StackOverFlowIcon from "../assets/stackoverflow.inline.svg";
 import TwitterIcon from "../assets/twitter.inline.svg";
 import GitIcon from "../assets/git.inline.svg";
+
+const conferencesItems = [
+  {
+    title: "eBPF Summit",
+    subitems: [
+      {
+        name: "2022 CFP",
+        linkUrl: "https://ebpf.io/summit-2022/",
+        linkTarget: "_blank",
+      },
+      {
+        name: "2021",
+        linkUrl: "/summit-2021",
+      },
+      {
+        name: "2020",
+        linkUrl: "/summit-2020",
+      },
+    ],
+  },
+  {
+    title: "Cloud Native eBPF Day",
+    subitems: [
+      {
+        name: "2022 (NA) CFP",
+        linkUrl:
+          "https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/cfp/",
+        linkTarget: "_blank",
+      },
+      {
+        name: "2022 (EU)",
+        linkUrl:
+          "https://events.linuxfoundation.org/cloud-native-ebpf-day-europe/program/schedule/",
+        linkTarget: "_blank",
+      },
+      {
+        name: "2021 (NA)",
+        linkUrl:
+          "https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/",
+        linkTarget: "_blank",
+      },
+    ],
+  },
+  {
+    title: "eBPF Track (LPC)",
+    subitems: [
+      {
+        name: "2022 CFP",
+        linkUrl:
+          "https://lore.kernel.org/bpf/cd33ca74-aec9-ff57-97d5-55d8b908b0ba@iogearbox.net/",
+        linkTarget: "_blank",
+      },
+      {
+        name: "2021",
+        linkUrl: "https://linuxplumbersconf.org/event/11/sessions/120/#all",
+        linkTarget: "_blank",
+      },
+      {
+        name: "2020",
+        linkUrl: "https://linuxplumbersconf.org/event/7/sessions/91/#all",
+        linkTarget: "_blank",
+      },
+      {
+        name: "2019",
+        linkUrl: "https://linuxplumbersconf.org/event/4/sessions/62/#20190911",
+        linkTarget: "_blank",
+      },
+      {
+        name: "2018",
+        linkUrl: "http://vger.kernel.org/lpc-bpf2018.html",
+        linkTarget: "_blank",
+      },
+      {
+        name: "2017",
+        linkUrl:
+          "https://blog.linuxplumbersconf.org/2017/ocw/events/LPC2017/schedule.html#day_2017_09_15",
+        linkTarget: "_blank",
+      },
+    ],
+  },
+  {
+    title: "bpfconf (LSF/MM/BPF)",
+    subitems: [
+      {
+        name: "2022",
+        linkUrl: "http://vger.kernel.org/bpfconf2022.html",
+        linkTarget: "_blank",
+      },
+      {
+        name: "2019",
+        linkUrl: "http://vger.kernel.org/bpfconf2019.html",
+        linkTarget: "_blank",
+      },
+    ],
+  },
+];
+
+const communityItems = [
+  { title: "Slack", linkUrl: "/slack" },
+  {
+    title: "Stack Overflow",
+    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf",
+    linkTarget: "_blank",
+  },
+  {
+    title: "Reddit",
+    linkUrl: "https://www.reddit.com/r/eBPF/",
+    linkTarget: "_blank",
+  },
+  {
+    title: "Newsletter",
+    linkUrl: "https://cilium.io/newsletter/",
+    linkTarget: "_blank",
+  },
+  { title: "Contribute", linkUrl: "/contributing" },
+];
 
 const languages = [
   {
@@ -119,7 +237,7 @@ const InfoDisclaimer = () => (
   </div>
 );
 
-const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
+const HeaderDesktop = ({ language }) => {
   const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false);
   const [isCommunityMenuShown, setIsCommunityMenuShown] = useState(false);
 
@@ -132,157 +250,19 @@ const HeaderDesktop = ({ language, hasLanguage, setLanguage }) => {
         <Link to='/what-is-ebpf'>What is eBPF?</Link>
         <Link to='/blog'>Blog</Link>
         <Link to='/projects'>Project Landscape</Link>
-        <span className='select'>
-          <button
-            className='button'
-            onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)}
-            type='button'
-          >
-            Conferences
-            <div
-              className={`triangle${isConferencesMenuShown ? " is-shown" : ""}`}
-            />
-          </button>
-          <span className={`list${isConferencesMenuShown ? " is-shown" : ""}`}>
-            <strong>eBPF Summit</strong>
-            <a
-              target='_blank'
-              className='link'
-              href='https://ebpf.io/summit-2022/'
-            >
-              2022 CFP
-            </a>
-            <Link className='link' to='/summit-2021'>
-              2021
-            </Link>
-            <Link className='link' to='/summit-2020'>
-              2020
-            </Link>
-            <strong>Cloud Native eBPF Day</strong>
-            <a
-              target='_blank'
-              className='link'
-              href='https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/cfp/'
-            >
-              2022 (NA) CFP
-            </a>
-            <a
-              target='_blank'
-              className='link'
-              href='https://events.linuxfoundation.org/cloud-native-ebpf-day-europe/program/schedule/'
-            >
-              2022 (EU)
-            </a>
-            <a
-              target='_blank'
-              className='link'
-              href='https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/'
-            >
-              2021 (NA)
-            </a>
-            <strong>eBPF Track (LPC)</strong>
-            <a
-              target='_blank'
-              className='link'
-              href='https://lore.kernel.org/bpf/cd33ca74-aec9-ff57-97d5-55d8b908b0ba@iogearbox.net/'
-            >
-              2022 CFP
-            </a>
-            <a
-              target='_blank'
-              className='link'
-              href='https://linuxplumbersconf.org/event/11/sessions/120/#all'
-            >
-              2021
-            </a>
-            <a
-              target='_blank'
-              className='link'
-              href='https://linuxplumbersconf.org/event/7/sessions/91/#all'
-            >
-              2020
-            </a>
-            <a
-              target='_blank'
-              className='link'
-              href='https://linuxplumbersconf.org/event/4/sessions/62/#20190911'
-            >
-              2019
-            </a>
-            <a
-              target='_blank'
-              className='link'
-              href='http://vger.kernel.org/lpc-bpf2018.html'
-            >
-              2018
-            </a>
-            <a
-              target='_blank'
-              className='link'
-              href='https://blog.linuxplumbersconf.org/2017/ocw/events/LPC2017/schedule.html#day_2017_09_15'
-            >
-              2017
-            </a>
-            <strong>bpfconf (LSF/MM/BPF)</strong>
-            <a
-              target='_blank'
-              className='link'
-              href='http://vger.kernel.org/bpfconf2022.html'
-            >
-              2022
-            </a>
-            <a
-              target='_blank'
-              className='link'
-              href='http://vger.kernel.org/bpfconf2019.html'
-            >
-              2019
-            </a>
-          </span>
-        </span>
+        <Dropdown
+          isOpen={isConferencesMenuShown}
+          setIsOpen={setIsConferencesMenuShown}
+          title='Conferences'
+          items={conferencesItems}
+        />
         <a href='https://www.ebpf.foundation'>Foundation</a>
-        <span className='select'>
-          <button
-            className='button'
-            onClick={() => setIsCommunityMenuShown(!isCommunityMenuShown)}
-            type='button'
-          >
-            Community
-            <span
-              className={`triangle${isCommunityMenuShown ? " is-shown" : ""}`}
-            />
-          </button>
-          <span className={`list${isCommunityMenuShown ? " is-shown" : ""}`}>
-            <Link className='menu-item' to='/slack'>
-              Slack
-            </Link>
-            <a
-              target='_blank'
-              className='menu-item'
-              href='https://stackoverflow.com/questions/tagged/ebpf'
-            >
-              Stack Overflow
-            </a>
-            <a
-              target='_blank'
-              className='menu-item'
-              href='https://www.reddit.com/r/eBPF/'
-            >
-              r/eBPF
-            </a>
-            <a
-              target='_blank'
-              className='menu-item'
-              href='https://cilium.io/newsletter/'
-            >
-              Newsletter
-            </a>
-
-            <Link className='menu-item' to='/contribute'>
-              Contributing
-            </Link>
-          </span>
-        </span>
+        <Dropdown
+          isOpen={isCommunityMenuShown}
+          setIsOpen={setIsCommunityMenuShown}
+          title='Community'
+          items={communityItems}
+        />
       </nav>
     </header>
   );
@@ -314,162 +294,20 @@ const HeaderMobile = ({ language }) => {
           <Link to='/what-is-ebpf'>What is eBPF?</Link>
           <Link to='/blog'>Blog</Link>
           <Link to='/projects'>Project Landscape</Link>
-          <span className='select'>
-            <button
-              className='button'
-              onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)}
-              type='button'
-            >
-              Conferences
-              <span
-                className={`triangle${
-                  isConferencesMenuShown ? " is-shown" : ""
-                }`}
-              />
-            </button>
-            <span
-              className={`list${isConferencesMenuShown ? " is-shown" : ""}`}
-            >
-              <strong>eBPF Summit</strong>
-              <a
-                target='_blank'
-                className='link'
-                href='https://ebpf.io/summit-2022/'
-              >
-                2022 CFP
-              </a>
-              <Link className='link' to='/summit-2021'>
-                2021
-              </Link>
-              <Link className='link' to='/summit-2020'>
-                2020
-              </Link>
-              <strong>Cloud Native eBPF Day</strong>
-              <a
-                target='_blank'
-                className='link'
-                href='https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/cfp/'
-              >
-                2022 (NA) CFP
-              </a>
-              <a
-                target='_blank'
-                className='link'
-                href='https://events.linuxfoundation.org/cloud-native-ebpf-day-europe/program/schedule/'
-              >
-                2022 (EU)
-              </a>
-              <a
-                target='_blank'
-                className='link'
-                href='https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/'
-              >
-                2021 (NA)
-              </a>
-              <strong>eBPF Track (LPC)</strong>
-              <a
-                target='_blank'
-                className='link'
-                href='https://lore.kernel.org/bpf/cd33ca74-aec9-ff57-97d5-55d8b908b0ba@iogearbox.net/'
-              >
-                2022 CFP
-              </a>
-              <a
-                target='_blank'
-                className='link'
-                href='https://linuxplumbersconf.org/event/11/sessions/120/#all'
-              >
-                2021
-              </a>
-              <a
-                target='_blank'
-                className='link'
-                href='https://linuxplumbersconf.org/event/7/sessions/91/#all'
-              >
-                2020
-              </a>
-              <a
-                target='_blank'
-                className='link'
-                href='https://linuxplumbersconf.org/event/4/sessions/62/#20190911'
-              >
-                2019
-              </a>
-              <a
-                target='_blank'
-                className='link'
-                href='http://vger.kernel.org/lpc-bpf2018.html'
-              >
-                2018
-              </a>
-              <a
-                target='_blank'
-                className='link'
-                href='https://blog.linuxplumbersconf.org/2017/ocw/events/LPC2017/schedule.html#day_2017_09_15'
-              >
-                2017
-              </a>
-              <strong>bpfconf (LSF/MM/BPF)</strong>
-              <a
-                target='_blank'
-                className='link'
-                href='http://vger.kernel.org/bpfconf2022.html'
-              >
-                2022
-              </a>
-              <a
-                target='_blank'
-                className='link'
-                href='http://vger.kernel.org/bpfconf2019.html'
-              >
-                2019
-              </a>
-            </span>
-          </span>
+          <Dropdown
+            isOpen={isConferencesMenuShown}
+            setIsOpen={setIsConferencesMenuShown}
+            title='Conferences'
+            items={conferencesItems}
+          />
           <a href='/slack'>Slack</a>
           <a href='https://www.ebpf.foundation'>Foundation</a>
-          <span className='select'>
-            <button
-              className='button'
-              onClick={() => setIsCommunityMenuShown(!isCommunityMenuShown)}
-              type='button'
-            >
-              Community
-              <span
-                className={`triangle${isCommunityMenuShown ? " is-shown" : ""}`}
-              />
-            </button>
-            <span className={`list${isCommunityMenuShown ? " is-shown" : ""}`}>
-              <Link className='menu-item' to='/slack'>
-                Slack
-              </Link>
-              <a
-                target='_blank'
-                className='menu-item'
-                href='https://stackoverflow.com/questions/tagged/ebpf'
-              >
-                Stack Overflow
-              </a>
-              <a
-                target='_blank'
-                className='menu-item'
-                href='https://www.reddit.com/r/eBPF/'
-              >
-                r/eBPF
-              </a>
-              <a
-                target='_blank'
-                className='menu-item'
-                href='https://cilium.io/newsletter/'
-              >
-                Newsletter
-              </a>
-
-              <Link className='menu-item' to='/contribute'>
-                Contributing
-              </Link>
-            </span>
-          </span>
+          <Dropdown
+            isOpen={isCommunityMenuShown}
+            setIsOpen={setIsCommunityMenuShown}
+            title='Community'
+            items={communityItems}
+          />
         </nav>
       )}
     </div>
@@ -478,8 +316,6 @@ const HeaderMobile = ({ language }) => {
 
 const FooterDesktop = ({ path, language, hasLanguage, setLanguage }) => {
   const [isLangMenuShown, setIsLangMenuShown] = useState(false);
-
-  const isIndexPage = path === "/" || path === "/fr-fr/" || path === "/zh-cn/";
 
   const setLang = useCallback(
     (lang) => {
@@ -552,21 +388,13 @@ const FooterDesktop = ({ path, language, hasLanguage, setLanguage }) => {
             </Link>
           </div>
           {hasLanguage && (
-            <div className='language-select'>
-              <button
-                className='button'
-                onClick={() => setIsLangMenuShown(!isLangMenuShown)}
-                type='button'
-              >
-                {getLanguageName(language)}
-                <span
-                  className={`triangle${isLangMenuShown ? " is-shown" : ""}`}
-                />
-              </button>
-              <span className={`list${isLangMenuShown ? " is-shown" : ""}`}>
-                {languageButtons}
-              </span>
-            </div>
+            <LanguageDropdown
+              isOpen={isLangMenuShown}
+              setIsOpen={setIsLangMenuShown}
+              languageButtons={languageButtons}
+              language={language}
+              getLanguageName={getLanguageName}
+            />
           )}
         </div>
       </div>
