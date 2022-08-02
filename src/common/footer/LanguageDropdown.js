@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import useClickOutside from "../../hooks/useClickOutside";
 
 const getFlagLink = (language) => {
   switch (language) {
@@ -11,31 +12,38 @@ const getFlagLink = (language) => {
   }
 };
 
-const LanguageDropdown = ({
-  languageButtons,
-  isOpen,
-  setIsOpen,
-  language,
-  getLanguageName,
-}) => (
-  <div
-    className={`language-select ${
-      isOpen ? "visible opacity-100" : "invisible opacity-0"
-    }`}
-    onMouseEnter={() => setIsOpen(true)}
-    onMouseLeave={() => setIsOpen(false)}
-    onTouchStart={() => setIsOpen(true)}
-    onTouchEnd={() => setIsOpen(false)}
-  >
-    <button className='button' type='button'>
-      <img src={getFlagLink(language)} className='flag' alt={language} />
-      {getLanguageName(language)}
-      <span className='triangle is-shown' />
-    </button>
-    <span className={`list${isOpen ? " is-shown" : ""}`}>
-      {languageButtons}
-    </span>
-  </div>
-);
+const LanguageDropdown = ({ languageButtons, language, getLanguageName }) => {
+  const dropdownRef = useRef(null);
+  const buttonRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleDropdownOutsideClick = () => {
+    setIsOpen(false);
+  };
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useClickOutside([dropdownRef, buttonRef], handleDropdownOutsideClick);
+
+  return (
+    <div className='language-select'>
+      <button
+        className='button'
+        ref={buttonRef}
+        onClick={handleOpen}
+        type='button'
+      >
+        <img src={getFlagLink(language)} className='flag' alt={language} />
+        {getLanguageName(language)}
+        <span className={`triangle${isOpen ? " is-shown" : ""}`} />
+      </button>
+      <div className={`list${isOpen ? " is-shown" : ""}`}>
+        {languageButtons}
+      </div>
+    </div>
+  );
+};
 
 export default LanguageDropdown;

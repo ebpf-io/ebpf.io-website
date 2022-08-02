@@ -58,6 +58,7 @@ footer {
       width: 16px;
       height: 16px;
       margin-left: 4px;
+      transition: all 0.4s ease;
 
       &.is-shown {
         transform: rotate(180deg);

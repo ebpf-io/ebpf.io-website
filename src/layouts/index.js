@@ -237,36 +237,21 @@ const InfoDisclaimer = () => (
   </div>
 );
 
-const HeaderDesktop = ({ language }) => {
-  const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false);
-  const [isCommunityMenuShown, setIsCommunityMenuShown] = useState(false);
-
-  return (
-    <header className='header desktop'>
-      <Link to={language} className='menu-logo-link'>
-        <img className='menu-logo' src={logo} width='122px' height='42px' />
-      </Link>
-      <nav className='header-nav'>
-        <Link to='/what-is-ebpf'>What is eBPF?</Link>
-        <Link to='/blog'>Blog</Link>
-        <Link to='/projects'>Project Landscape</Link>
-        <Dropdown
-          isOpen={isConferencesMenuShown}
-          setIsOpen={setIsConferencesMenuShown}
-          title='Conferences'
-          items={conferencesItems}
-        />
-        <a href='https://www.ebpf.foundation'>Foundation</a>
-        <Dropdown
-          isOpen={isCommunityMenuShown}
-          setIsOpen={setIsCommunityMenuShown}
-          title='Community'
-          items={communityItems}
-        />
-      </nav>
-    </header>
-  );
-};
+const HeaderDesktop = ({ language }) => (
+  <header className='header desktop'>
+    <Link to={language} className='menu-logo-link'>
+      <img className='menu-logo' src={logo} width='122px' height='42px' />
+    </Link>
+    <nav className='header-nav'>
+      <Link to='/what-is-ebpf'>What is eBPF?</Link>
+      <Link to='/blog'>Blog</Link>
+      <Link to='/projects'>Project Landscape</Link>
+      <Dropdown title='Conferences' items={conferencesItems} />
+      <a href='https://www.ebpf.foundation'>Foundation</a>
+      <Dropdown title='Community' items={communityItems} />
+    </nav>
+  </header>
+);
 
 const HeaderMobile = ({ language }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -274,8 +259,6 @@ const HeaderMobile = ({ language }) => {
     () => setIsOpen(!isOpen),
     [isOpen, setIsOpen]
   );
-  const [isConferencesMenuShown, setIsConferencesMenuShown] = useState(false);
-  const [isCommunityMenuShown, setIsCommunityMenuShown] = useState(false);
 
   return (
     <div className='header mobile'>
@@ -294,27 +277,17 @@ const HeaderMobile = ({ language }) => {
           <Link to='/what-is-ebpf'>What is eBPF?</Link>
           <Link to='/blog'>Blog</Link>
           <Link to='/projects'>Project Landscape</Link>
-          <Dropdown
-            isOpen={isConferencesMenuShown}
-            setIsOpen={setIsConferencesMenuShown}
-            title='Conferences'
-            items={conferencesItems}
-          />
+          <Dropdown title='Conferences' items={conferencesItems} />
           <a href='/slack'>Slack</a>
           <a href='https://www.ebpf.foundation'>Foundation</a>
-          <Dropdown
-            isOpen={isCommunityMenuShown}
-            setIsOpen={setIsCommunityMenuShown}
-            title='Community'
-            items={communityItems}
-          />
+          <Dropdown title='Community' items={communityItems} />
         </nav>
       )}
     </div>
   );
 };
 
-const FooterDesktop = ({ path, language, hasLanguage, setLanguage }) => {
+const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
   const [isLangMenuShown, setIsLangMenuShown] = useState(false);
 
   const setLang = useCallback(

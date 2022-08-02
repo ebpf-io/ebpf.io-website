@@ -53,6 +53,8 @@ $xl: "screen and (max-width : 1280px)";
 .select {
   margin-left: 40px;
   position: relative;
+  display: flex;
+  align-items: center;
 
   @media (max-width: 1024px) {
     margin-left: 0;
@@ -87,6 +89,7 @@ $xl: "screen and (max-width : 1280px)";
       width: 10px;
       height: 16px;
       margin-left: 8px !important;
+      transition: all 0.4s ease;
 
       &.is-shown {
         transform: rotate(180deg);
