@@ -1,7 +1,6 @@
-import { Link } from "gatsby";
 import React, { useRef, useState } from "react";
 import useClickOutside from "../../hooks/useClickOutside";
-import CustomLink from "../Link";
+import CustomLink from "../CustomLink";
 
 const LanguageDropdown = ({ title, items }) => {
   const dropdownRef = useRef(null);

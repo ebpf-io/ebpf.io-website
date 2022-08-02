@@ -3,6 +3,7 @@ import "prismjs/themes/prism.css";
 import PropTypes from "prop-types";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Helmet from "react-helmet";
+import CustomLink from "../common/CustomLink.js";
 import Dropdown from "../common/header/Dropdown.js";
 import LanguageDropdown from "../common/footer/LanguageDropdown.js";
 import "./footer.scss";
@@ -337,13 +338,7 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
                 <span className='item-title'>{title}</span>
                 {items.map(({ name, linkUrl, target }, index) => (
                   <li className='item-link' key={index}>
-                    {linkUrl.startsWith("/") ? (
-                      <Link to={linkUrl}>{name}</Link>
-                    ) : (
-                      <a href={linkUrl} target={target}>
-                        {name}
-                      </a>
-                    )}
+                    <CustomLink text={name} url={linkUrl} target={target} />
                   </li>
                 ))}
               </ul>
