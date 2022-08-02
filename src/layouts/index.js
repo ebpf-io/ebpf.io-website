@@ -326,15 +326,15 @@ const FooterDesktop = ({ path, language, hasLanguage, setLanguage }) => {
   );
 
   const languageButtons = [];
-  for (let l of languages) {
+  for (let language of languages) {
     languageButtons.push(
       <button
-        key={l.name}
-        className={`button${language === l.code ? " selected" : ""}`}
-        onClick={() => setLang(`${l.code}`)}
+        key={language.name}
+        className={`button${language === language.code ? " selected" : ""}`}
+        onClick={() => setLang(`${language.code}`)}
         type='button'
       >
-        {l.name}
+        <span>{language.name}</span>
       </button>
     );
   }
@@ -346,6 +346,18 @@ const FooterDesktop = ({ path, language, hasLanguage, setLanguage }) => {
           <Link to={language} className='menu-logo--link'>
             <img className='menu-logo' src={logo} width='122px' height='42px' />
           </Link>
+          <div className='social-container'>
+            {footerIcons.map(({ icon: Icon, linkUrl }, index) => (
+              <a
+                className='social-link'
+                target='_blank'
+                key={index}
+                href={linkUrl}
+              >
+                <Icon />
+              </a>
+            ))}
+          </div>
           <div className='items-container'>
             {footerItems.map(({ title, items }, index) => (
               <ul className='items-list' key={index}>
@@ -362,18 +374,6 @@ const FooterDesktop = ({ path, language, hasLanguage, setLanguage }) => {
                   </li>
                 ))}
               </ul>
-            ))}
-          </div>
-          <div className='social-container'>
-            {footerIcons.map(({ icon: Icon, linkUrl }, index) => (
-              <a
-                className='social-link'
-                target='_blank'
-                key={index}
-                href={linkUrl}
-              >
-                <Icon />
-              </a>
             ))}
           </div>
         </div>

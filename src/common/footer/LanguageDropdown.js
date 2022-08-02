@@ -1,5 +1,16 @@
 import React from "react";
 
+const getFlagLink = (language) => {
+  switch (language) {
+    case "/":
+      return "/images/english.svg";
+    case "/fr-fr/":
+      return "/images/french.svg";
+    case "/zh-cn/":
+      return "/images/chinese.svg";
+  }
+};
+
 const LanguageDropdown = ({
   languageButtons,
   isOpen,
@@ -17,6 +28,7 @@ const LanguageDropdown = ({
     onTouchEnd={() => setIsOpen(false)}
   >
     <button className='button' type='button'>
+      <img src={getFlagLink(language)} className='flag' alt={language} />
       {getLanguageName(language)}
       <span className='triangle is-shown' />
     </button>
