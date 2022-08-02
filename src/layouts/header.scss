@@ -104,6 +104,11 @@ $xl: "screen and (max-width : 1280px)";
     padding: 20px;
     background: #fff;
     transition: all 0.2s ease-in;
+
+    @media (max-width: 1024px) {
+      margin-top: 0;
+    }
+
     &:not(.is-shown) {
       visibility: hidden;
       opacity: 0;
