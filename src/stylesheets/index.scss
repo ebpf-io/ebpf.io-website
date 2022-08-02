@@ -206,6 +206,18 @@ code {
     width: 100%;
     display: block;
   }
+
+  table {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+
+    @media #{$mobile} {
+      li {
+        margin-left: 20px;
+      }
+    }
+  }
 }
 
 .toc {
@@ -282,9 +294,9 @@ code {
     text-decoration: none;
     white-space: pre;
 
-    @media #{$tablet} {
-      font-size: 14px;
-      line-height: 24px;
+    @media #{$mobile} {
+      font-size: 20px;
+      line-height: 28px;
     }
 
     &.main-button {
@@ -293,6 +305,20 @@ code {
       margin-right: 16px;
       color: #000;
       background-color: #ffd966ff;
+
+      @media (max-width: 810px) {
+        margin-right: 0;
+      }
+
+      &:not(:first-child) {
+        @media (max-width: 810px) {
+          margin-top: 16px;
+        }
+      }
+
+      @media #{$mobile} {
+        width: 100%;
+      }
     }
   }
 }

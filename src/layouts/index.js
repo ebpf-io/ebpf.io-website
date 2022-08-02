@@ -320,7 +320,7 @@ const HeaderMobile = ({ language }) => {
               onClick={() => setIsConferencesMenuShown(!isConferencesMenuShown)}
               type='button'
             >
-              Conferences{" "}
+              Conferences
               <span
                 className={`triangle${
                   isConferencesMenuShown ? " is-shown" : ""

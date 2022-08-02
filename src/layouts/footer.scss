@@ -10,10 +10,6 @@ footer {
 
 .language-select {
   position: relative;
-  &.about .list .link {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
   & > .button {
     appearance: none;
     color: #000;
@@ -26,6 +22,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
     &:hover {
       color: #5f4b0f;
     }
@@ -79,8 +76,9 @@ footer {
       background: none;
       border: none;
       cursor: pointer;
+      transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
       &:hover {
-        background-color: #fff1cc;
+        color: #ffe100;
       }
       &:focus {
         outline: none;
@@ -130,6 +128,7 @@ footer {
         color: #1a1a1a;
         text-decoration: none;
         cursor: pointer;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
         &:hover {
           color: #ffe100;
         }
@@ -195,6 +194,7 @@ footer {
         cursor: pointer;
         font-weight: 600;
         font-size: 16px;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
         &:hover {
           color: #ffe100;
         }
@@ -208,6 +208,7 @@ footer {
       .social-link {
         margin-right: 14px;
         color: #1a1a1a;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
         &:hover {
           color: #ffe100;
@@ -229,6 +230,7 @@ footer {
       color: #b6b6b6;
       text-decoration: none;
       font-weight: 700;
+      transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
       &:hover {
         color: rgb(146, 146, 146);
