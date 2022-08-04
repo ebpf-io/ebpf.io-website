@@ -131,7 +131,11 @@ const communityItems = [
     linkUrl: "https://cilium.io/newsletter/",
     linkTarget: "_blank",
   },
-  { title: "Contribute", linkUrl: "/contributing" },
+  {
+    title: "Contribute",
+    linkUrl: "https://ebpf.foundation/contribute/",
+    linkTarget: "_blank",
+  },
 ];
 
 const languages = [
