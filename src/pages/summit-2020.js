@@ -464,7 +464,7 @@ const lightningTalks = [
 
   {
     slidesLink: "/summit-2020-slides/eBPF_Summit_2020-Lightning-Javier_Honduvilla_Coto-rbperf_Understanding_Ruby_with_BPF.pdf",
-    title: "Building rbperf, a Ruby BPF Profiler",
+    title: "rbperf: Understanding Ruby with BPF",
     name: "Javier Honduvilla Coto",
     organization: "Facebook",
     videoId: "oeGom1zl0a8"
