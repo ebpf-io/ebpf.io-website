@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import useClickOutside from "../../hooks/useClickOutside";
 import CustomLink from "../CustomLink";
 
-const LanguageDropdown = ({ title, items }) => {
+const Dropdown = ({ title, items }) => {
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -39,9 +39,11 @@ const LanguageDropdown = ({ title, items }) => {
               <li className='item-link item-title'>{title}</li>
             )}
             {subitems?.map(({ name, linkUrl, linkTarget }, index) => (
-              <li className='subitem-link' key={index}>
-                <CustomLink text={name} url={linkUrl} target={linkTarget} />
-              </li>
+              <ul key={index}>
+                <li className='subitem-link'>
+                  <CustomLink text={name} url={linkUrl} target={linkTarget} />
+                </li>
+              </ul>
             ))}
           </ul>
         ))}
@@ -50,4 +52,4 @@ const LanguageDropdown = ({ title, items }) => {
   );
 };
 
-export default LanguageDropdown;
+export default Dropdown;
