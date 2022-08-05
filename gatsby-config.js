@@ -3,8 +3,9 @@ const parseHtml = require("./scripts/parse-html");
 module.exports = {
   siteMetadata: {
     title: `eBPF`,
-    description: "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
-    siteUrl: "https://www.ebpf.io"
+    description:
+      "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
+    siteUrl: "https://www.ebpf.io",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -12,12 +13,35 @@ module.exports = {
     "gatsby-plugin-netlify",
     "gatsby-plugin-nprogress",
     {
-      resolve: 'gatsby-plugin-i18n',
+      resolve: "gatsby-plugin-svgr-svgo",
       options: {
-        langKeyDefault: 'en',
+        inlineSvgOptions: [
+          {
+            test: /\.inline.svg$/,
+            svgoConfig: {
+              plugins: [
+                {
+                  name: "preset-default",
+                  params: {
+                    overrides: {
+                      removeViewBox: false,
+                    },
+                  },
+                },
+                "prefixIds",
+              ],
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "en",
         prefixDefault: false,
-        useLangKeyLayout: false
-      }
+        useLangKeyLayout: false,
+      },
     },
     {
       resolve: `gatsby-plugin-sharp`,
@@ -34,8 +58,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-96283704-3",
-        head: false
-      }
+        head: false,
+      },
     },
     {
       resolve: `gatsby-plugin-sass`,
@@ -47,8 +71,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/posts`,
-        name: "posts"
-      }
+        name: "posts",
+      },
     },
     {
       resolve: "gatsby-transformer-remark",
@@ -65,28 +89,28 @@ module.exports = {
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: "language-"
-            }
+              classPrefix: "language-",
+            },
           },
           "gatsby-remark-copy-linked-files",
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 700
-            }
+              maxWidth: 700,
+            },
           },
-          `gatsby-remark-responsive-iframe`
-        ]
-      }
+          `gatsby-remark-responsive-iframe`,
+        ],
+      },
     },
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: 'ebpf-site',
-        short_name: 'ebpf',
-        start_url: '/',
-        display: 'minimal-ui',
-        icon: './src/favicon.png',
+        name: "ebpf-site",
+        short_name: "ebpf",
+        start_url: "/",
+        display: "minimal-ui",
+        icon: "./src/favicon.png",
       },
     },
     {
@@ -107,7 +131,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 const { hasPreview, previewHtml, mainHtml } = parseHtml(
                   edge.node
                 );
@@ -115,7 +139,7 @@ module.exports = {
                   description: previewHtml,
                   url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
                   guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  custom_elements: [{ "content:encoded": mainHtml }]
+                  custom_elements: [{ "content:encoded": mainHtml }],
                 });
               });
             },
@@ -142,10 +166,10 @@ module.exports = {
               }
             `,
             output: "/blog/rss.xml",
-            title: "eBPF.io / Blog"
-          }
-        ]
-      }
-    }
-  ]
+            title: "eBPF.io / Blog",
+          },
+        ],
+      },
+    },
+  ],
 };
