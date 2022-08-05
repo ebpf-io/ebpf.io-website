@@ -54,6 +54,14 @@ export default class BlogRoll extends React.Component {
           category.toLowerCase().includes("bpf")
         ),
     },
+    {
+      url: "https%3A%2F%2Farthurchiao.art%2Ffeed.xml",
+      author: "Arthur Chiao",
+      filterBy: (post) =>
+        post.categories.some((category) =>
+          category.toLowerCase().includes("bpf")
+        ),
+    },
   ];
 
   constructor(props) {
