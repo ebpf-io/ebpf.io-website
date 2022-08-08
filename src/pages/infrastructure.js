@@ -8,14 +8,12 @@ import linuxLogo from '../assets/projects-logos/linux.svg';
 import llvmLogo from '../assets/projects-logos/llvm.svg';
 import ebpfForWindowsLogo from '../assets/projects-logos/ebpf-windows.svg';
 import hbpfLogo from '../assets/projects-logos/hbpf.svg';
-import golangLogo from '../assets/projects-logos/golang.svg';
-import rustLogo from '../assets/projects-logos/rust.svg';
-import cppLogo from '../assets/projects-logos/cpp.svg';
 import gccLogo from '../assets/projects-logos/gcc.svg';
 
 import "../stylesheets/index.scss";
 import { Hero } from "../common/projects/Hero";
 import { ProjectCard } from "../common/projects/ProjectCard";
+import Libraries from "../common/projects/Libraries";
 
 const pageMetaTitle = "eBPF Core Infrastructure Landscape";
 const pageMetaDescription = "A directory of eBPF-based core infrastructure";
@@ -66,9 +64,9 @@ const majorProjects = [
   },
   {
     logoUrl: 'https://llvm.org/',
-    name: 'LLVM Compiler',
+    name: 'GCC compiler',
     logo: gccLogo,
-    title: 'eBPF Backend',
+    title: 'GNU Compiler Collection',
     description: `The <strong>GCC</strong> compiler comes with an eBPF backend starting from GCC 10. Up to that point, LLVM has been the only compiler which supports generating eBPF ELF files. The GCC port is roughly equivalent to the LLVM eBPF support. There are some missing bits of functionality but the GCC community is working to close these gaps over time. GCC also contains eBPF binutils as well as eBPF gdb support for debugging of eBPF code that is traditionally consumed by the Linux kernel. Included as part of this is an eBPF simulator for gdb.`,
     urls: [
       {label: 'Git repo', url: 'https://gcc.gnu.org/git.html'},
@@ -116,105 +114,28 @@ const emergingProjects = [
   },
 ]
 
-const ebpfLibraries = [
-  {
-    logo: golangLogo,
-    name: 'golang',
-    majorUrls: [
-      {label: 'eBPF', url: 'https://github.com/cilium/ebpf'},
-    ],
-    emergingUrls: [
-      {label: 'libbpfgo', url: 'https://github.com/aquasecurity/libbpfgo'},
-    ],
-    description: `<p>
-    <a href="https://github.com/cilium/ebpf">eBPF</a> is designed as a
-    pure Go library that provides utilities for loading, compiling, and
-    debugging eBPF programs. It has minimal external dependencies and is
-    intended to be used in long running processes.
-  </p>
-  <p>
-    <a href="https://github.com/aquasecurity/libbpfgo">libbpfgo</a> is a
-    Go wrapper around libbpf. It supports BPF CO-RE and its goal is to
-    be a complete implementation of libbpf APIs. It uses CGo to call
-    into linked versions of libbpf.
-  </p>`,
-  },
-  {
-    logo: cppLogo,
-    name: 'cpp',
-    majorUrls: [
-      {label: 'libbpf', url: 'https://github.com/libbpf/libbpf'},
-    ],
-    description: `libbpf is a C/C++ based library which is maintained as part of the
-    upstream Linux kernel. It contains an eBPF loader which takes over
-    processing LLVM generated eBPF ELF files for loading into the
-    kernel. <a href="https://facebookmicrosites.github.io/bpf/blog/2020/02/20/bcc-to-libbpf-howto-guide.html">
-      libbpf</a> received a major boost in capabilities and sophistication and closed
-    many existing gaps with BCC as a library. It also supports important
-    features not available in BCC such as global variables and BPF
-    skeletons.`,
-  },
-  {
-    logo: rustLogo,
-    name: 'rust',
-    majorUrls: [
-      {label: 'libbpf-rs', url: 'https://github.com/libbpf/libbpf-rs'},
-      {label: 'redbpf', url: 'https://github.com/redsift/redbpf'},
-    ],
-    emergingUrls: [
-      {label: 'Aya', url: 'https://github.com/aya-rs/aya'},
-    ],
-    description: `<p>
-    <a href="https://github.com/libbpf/libbpf-rs">libbpf-rs</a> is a
-    safe, idiomatic, and opinionated wrapper API around libbpf written
-    in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin)
-    allows to write 'compile once run everywhere' (CO-RE) eBPF programs.
-  </p>
-  <p>
-    <a href="https://github.com/redsift/redbpf">redbpf</a> is a Rust
-    eBPF toolchain that contains a collection of Rust libraries to work
-    with eBPF programs.
-  </p>
-  <p>
-    <a href="https://github.com/aya-rs/aya">Aya</a> is an eBPF library
-    built with a focus on operability and developer experience. It
-    allows for both eBPF programs and their userspace programs to be
-    written in Rust.
-  </p>`,
-  },
-]
 const ProjectDescriptions = () => (
   <div className="project-descriptions">
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">
-      Major
+    <TitleWithAnchor headerClassName="projects-title projects-common-title" className="projects-wrapper-title" >
+      Major Infrastructure
     </TitleWithAnchor>
     <ul>
-      {majorProjects.map((project) => (
-        <ProjectCard key={project.name} {...project} logoSize="sm" />
+      {majorProjects.map((project, index) => (
+        <ProjectCard key={index} {...project} logoSize="sm" />
       ))}
     </ul>
 
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">
+    <TitleWithAnchor headerClassName="projects-title projects-common-title" className="projects-wrapper-title" >
       Emerging
     </TitleWithAnchor>
 
     <ul>
-      {emergingProjects.map((project) => (
-        <ProjectCard key={project.name} {...project} logoSize="sm" />
-      ))}
-    </ul>
-
-    <TitleWithAnchor
-      headerClassName="projects-title projects-common-title"
-      className="projects-title"
-    >
-      eBPF Libraries
-    </TitleWithAnchor>
-    <ul>
-      {ebpfLibraries.map((project, index) => (
+      {emergingProjects.map((project, index) => (
         <ProjectCard key={index} {...project} logoSize="sm" />
       ))}
     </ul>
+
+    <Libraries/>
   </div>
 );
 

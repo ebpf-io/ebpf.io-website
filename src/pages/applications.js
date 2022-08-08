@@ -276,8 +276,8 @@ const emergingProjects = [
 
 const ProjectDescriptions = () => (
   <div className="project-descriptions">
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">
-      Major
+    <TitleWithAnchor className="projects-wrapper-title" headerClassName="projects-title projects-common-title">
+      Major Applications
     </TitleWithAnchor>
     <ul className="projects-list">
       {majorProjects.map((item) => (
@@ -285,7 +285,7 @@ const ProjectDescriptions = () => (
       ))}
     </ul>
 
-    <TitleWithAnchor headerClassName="projects-title projects-common-title">
+    <TitleWithAnchor className="projects-wrapper-title" headerClassName="projects-title projects-common-title">
       Emerging
     </TitleWithAnchor>
 
@@ -297,8 +297,8 @@ const ProjectDescriptions = () => (
     </div>
 
     <ul className="projects-list">
-      {emergingProjects.map((item) => (
-        <ProjectCard {...item} key={item.name}/>
+      {emergingProjects.map((item, index) => (
+        <ProjectCard {...item} key={index}/>
       ))}
     </ul>
   </div>
