@@ -5,6 +5,7 @@ import {  graphql } from "gatsby";
 
 import "../stylesheets/blog.scss";
 import Post from "../common/blog-post/Post";
+import parseHtml from "../../scripts/parse-html";
 
 const Template =({ data }) => {
   const { markdownRemark: post } = data;
