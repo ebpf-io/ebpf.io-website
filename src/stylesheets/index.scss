@@ -657,6 +657,10 @@ code {
     margin: 0;
     font-size: 56px;
     line-height: 1.125;
+
+    @media #{$tablet} {
+      font-size: 40px;
+    }
   }
 }
 
@@ -804,6 +808,11 @@ code {
 
     @media #{$tablet} {
       flex-direction: column;
+      padding: 32px;
+    }
+
+    @media #{$mobile} {
+      padding: 24px;
     }
   }
 
@@ -1086,9 +1095,12 @@ code {
   }
 
   .libraries-items-wrapper {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 32px;
+    padding: 0 32px 32px;
+
+    @media #{$mobile} {
+      padding: 0 24px 24px;
+    
+    }
   }
 
   .libraries-item-label {
