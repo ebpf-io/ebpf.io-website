@@ -5,6 +5,7 @@ $microservices-scheme-width: 1276;
 
 $mobile: "screen and (max-width : 480px)";
 $tablet: "screen and (max-width : 900px)";
+$desktop-mini: "screen and (max-width : 1279px)";
 $desktop: "screen and (min-width : 1280px)";
 
 html,
@@ -1004,6 +1005,15 @@ code {
     list-style: none;
     padding-left: 0;
     column-gap: 36px;
+    row-gap: 36px;
+
+    @media #{$desktop-mini} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media #{$tablet} {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .libraries-card {
