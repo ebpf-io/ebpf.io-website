@@ -25,6 +25,7 @@ import plyLogo from '../assets/projects-logos/ply.png';
 import kubearmorLogo from '../assets/projects-logos/kubearmor.png';
 import l3afLogo from '../assets/projects-logos/l3af.svg';
 import merbridge from "../assets/projects-logos/merbridge.png";
+import loxiLBLogo from "../assets/projects-logos/loxilb.png";
 import "../stylesheets/index.scss";
 
 const pageMetaTitle = 'eBPF Project Landscape'
@@ -883,6 +884,36 @@ const ProjectDescriptions = () => (
             can be reconfigured, updated, inspected, and reordered on-the-fly.
             L3AF also provides configurable metrics for the eBPF programs it
             has launched.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="project-box">
+      <TitleWithAnchor headerClassName="project-major-title projects-common-title" headerTag="h3">LoxiLB</TitleWithAnchor>
+      <div className="project-minor-title">
+        eBPF based cloud-native load-balancer for 5G Edge
+      </div>
+      <div className="project-body">
+        <a className="project-logo" target="_blank" href="https://github.com/loxilb-io">
+                <img src={loxiLBLogo} />
+        </a>
+        <div className="project-description">
+          <p>
+            <a href="https://www.loxilb.io/">
+              <b>Website</b>
+            </a>{" "}
+            |{" "}
+            <a href="https://github.com/loxilb-io">
+              <b>GitHub</b>
+            </a>{" "}
+          </p>
+          <p>
+            LoxiLB is an open-source cloud-native "external" service load-balancer
+            for cloud-native 5G/edge workloads written from scratch using eBPF
+            as its core-engine and based on Go Language.
+            LoxiLB turns Kubernetes network load balancing for 5G/Edge services into high speed,
+            flexible and programmable LB services.
           </p>
         </div>
       </div>
