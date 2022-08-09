@@ -133,8 +133,7 @@ const communityItems = [
   },
   {
     title: "Contribute",
-    linkUrl: "https://ebpf.foundation/contribute/",
-    linkTarget: "_blank",
+    linkUrl: "/contribute",
   },
 ];
 
@@ -252,8 +251,8 @@ const HeaderDesktop = ({ language }) => (
       <Link to='/blog'>Blog</Link>
       <Link to='/projects'>Project Landscape</Link>
       <Dropdown title='Conferences' items={conferencesItems} />
-      <a href='https://www.ebpf.foundation'>Foundation</a>
       <Dropdown title='Community' items={communityItems} />
+      <a href='https://www.ebpf.foundation'>Foundation</a>
     </nav>
   </header>
 );
@@ -290,8 +289,8 @@ const HeaderMobile = ({ language }) => {
           <Link to='/projects'>Project Landscape</Link>
           <Dropdown title='Conferences' items={conferencesItems} />
           <a href='/slack'>Slack</a>
-          <a href='https://www.ebpf.foundation'>Foundation</a>
           <Dropdown title='Community' items={communityItems} />
+          <a href='https://www.ebpf.foundation'>Foundation</a>
         </nav>
       )}
     </div>
