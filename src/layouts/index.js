@@ -198,7 +198,7 @@ const footerIcons = [
   { icon: SlackIcon, linkUrl: "https://ebpf.io/slack" },
   {
     icon: StackOverFlowIcon,
-    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf",
+    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
   },
   { icon: RedditIcon, linkUrl: "https://www.reddit.com/r/eBPF/" },
 ];
