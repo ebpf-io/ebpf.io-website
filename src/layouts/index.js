@@ -118,16 +118,16 @@ const communityItems = [
   { title: "Slack", linkUrl: "/slack" },
   {
     title: "Stack Overflow",
-    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf",
+    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
     linkTarget: "_blank",
   },
   {
-    title: "Reddit",
+    title: "r/eBPF",
     linkUrl: "https://www.reddit.com/r/eBPF/",
     linkTarget: "_blank",
   },
   {
-    title: "Newsletter",
+    title: "eCHO News",
     linkUrl: "https://cilium.io/newsletter/",
     linkTarget: "_blank",
   },
