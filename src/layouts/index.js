@@ -23,7 +23,7 @@ const conferencesItems = [
     title: "eBPF Summit",
     subitems: [
       {
-        name: "2022 CFP",
+        name: "2022",
         linkUrl: "https://ebpf.io/summit-2022/",
         linkTarget: "_blank",
       },
@@ -41,9 +41,9 @@ const conferencesItems = [
     title: "Cloud Native eBPF Day",
     subitems: [
       {
-        name: "2022 (NA) CFP",
+        name: "2022 (NA)",
         linkUrl:
-          "https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/cfp/",
+          "https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/",
         linkTarget: "_blank",
       },
       {
@@ -64,9 +64,9 @@ const conferencesItems = [
     title: "eBPF Track (LPC)",
     subitems: [
       {
-        name: "2022 CFP",
+        name: "2022",
         linkUrl:
-          "https://lore.kernel.org/bpf/cd33ca74-aec9-ff57-97d5-55d8b908b0ba@iogearbox.net/",
+          "https://lpc.events/event/16/sessions/131/#20220912",
         linkTarget: "_blank",
       },
       {
