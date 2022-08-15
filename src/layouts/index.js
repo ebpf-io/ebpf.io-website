@@ -43,9 +43,9 @@ const conferencesItems = [
     title: "Cloud Native eBPF Day",
     subitems: [
       {
-        name: "2022 (NA) CFP",
+        name: "2022 (NA)",
         linkUrl:
-          "https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/cfp/",
+          "https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/",
         linkTarget: "_blank",
       },
       {
