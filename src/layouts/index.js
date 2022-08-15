@@ -24,17 +24,17 @@ const conferencesItems = [
     subitems: [
       {
         name: "2022",
-        linkUrl: "/summit-2022",
+        linkUrl: "https://ebpf.io/summit-2022/",
         linkTarget: "_blank",
       },
       {
         name: "2021",
-        linkUrl: "/summit-2021",
+        linkUrl: "https://ebpf.io/summit-2021/",
         linkTarget: "_blank",
       },
       {
         name: "2020",
-        linkUrl: "/summit-2020",
+        linkUrl: "https://ebpf.io/summit-2020/",
         linkTarget: "_blank",
       },
     ],
