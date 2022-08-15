@@ -23,9 +23,8 @@ const conferencesItems = [
     title: "eBPF Summit",
     subitems: [
       {
-        name: "2022 CFP",
-        linkUrl: "https://ebpf.io/summit-2022/",
-        linkTarget: "_blank",
+        name: "2022",
+        linkUrl: "/summit-2022",
       },
       {
         name: "2021",
@@ -64,9 +63,8 @@ const conferencesItems = [
     title: "eBPF Track (LPC)",
     subitems: [
       {
-        name: "2022 CFP",
-        linkUrl:
-          "https://lore.kernel.org/bpf/cd33ca74-aec9-ff57-97d5-55d8b908b0ba@iogearbox.net/",
+        name: "2022",
+        linkUrl: "https://lpc.events/event/16/sessions/131/#all",
         linkTarget: "_blank",
       },
       {
