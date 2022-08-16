@@ -8,31 +8,22 @@ export const Hero = ({title}) => {
   ];
 
   return (
-    <> 
-      <div className="projects-hero">
-        <div className="projects-inner">
-          <h1>{title}</h1>
-        </div>
-      </div>
-      <div className="projects-buttons">
-        {types.map(({ name, url }, index) => {
-          return (
-            <Link
-              className={cn(
-                "projects-button",
-              )}
-              partiallyActive={true}
-              activeClassName="active-button"
-              key={index}
-              to={url}
-            >
-              {name}
-            </Link>
-          );
-        })}
-      </div>
-   
-    </>
-
+    <div className="projects-buttons">
+      {types.map(({ name, url }, index) => {
+        return (
+          <Link
+            className={cn(
+              "projects-button",
+            )}
+            partiallyActive={true}
+            activeClassName="active-button"
+            key={index}
+            to={url}
+          >
+            {name}
+          </Link>
+        );
+      })}
+    </div>
   );
 };

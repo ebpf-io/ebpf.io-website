@@ -24,7 +24,7 @@ const majorProjects = [
     name: 'Linux Kernel',
     logo: linuxLogo,
     title: 'eBPF Runtime',
-    description: `The <strong>Linux kernel</strong> contains the eBPF runtime required to run eBPF
+    description: `The Linux kernel contains the eBPF runtime required to run eBPF
     programs. It implements the bpf(2) system call for interacting with
     programs, maps, BTF and various attachment points where eBPF
     programs can be executed from. The kernel contains a eBPF verifier
@@ -47,7 +47,7 @@ const majorProjects = [
     name: 'LLVM Compiler',
     logo: llvmLogo,
     title: 'eBPF Backend',
-    description: `The <strong>LLVM</strong> compiler infrastructure contains the eBPF backend required
+    description: `The LLVM compiler infrastructure contains the eBPF backend required
     to translate programs written in a C-like syntax to eBPF
     instructions. LLVM generates eBPF ELF files which contain program
     code, map descriptions, relocation information and BTF meta data.
@@ -67,7 +67,7 @@ const majorProjects = [
     name: 'GCC compiler',
     logo: gccLogo,
     title: 'GNU Compiler Collection',
-    description: `The <strong>GCC</strong> compiler comes with an eBPF backend starting from GCC 10. Up to that point, LLVM has been the only compiler which supports generating eBPF ELF files. The GCC port is roughly equivalent to the LLVM eBPF support. There are some missing bits of functionality but the GCC community is working to close these gaps over time. GCC also contains eBPF binutils as well as eBPF gdb support for debugging of eBPF code that is traditionally consumed by the Linux kernel. Included as part of this is an eBPF simulator for gdb.`,
+    description: `The GCC compiler comes with an eBPF backend starting from GCC 10. Up to that point, LLVM has been the only compiler which supports generating eBPF ELF files. The GCC port is roughly equivalent to the LLVM eBPF support. There are some missing bits of functionality but the GCC community is working to close these gaps over time. GCC also contains eBPF binutils as well as eBPF gdb support for debugging of eBPF code that is traditionally consumed by the Linux kernel. Included as part of this is an eBPF simulator for gdb.`,
     urls: [
       {label: 'Git repo', url: 'https://gcc.gnu.org/git.html'},
       {label: 'Website', url: 'https://gcc.gnu.org/'},
@@ -84,7 +84,7 @@ const emergingProjects = [
     name: 'eBPF for Windows',
     logo: ebpfForWindowsLogo,
     title: 'eBPF Runtime',
-    description: `The <strong>eBPF for Windows</strong> project is a work-in-progress that allows using
+    description: `The eBPF for Windows project is a work-in-progress that allows using
     existing eBPF toolchains and APIs familiar in the eBPF ecosystem to
     be used on top of Windows. That is, this project takes existing eBPF
     projects as submodules and adds the layer in between to make them
@@ -116,7 +116,7 @@ const emergingProjects = [
 
 const ProjectDescriptions = () => (
   <div className="project-descriptions">
-    <TitleWithAnchor headerClassName="projects-title projects-common-title" className="projects-wrapper-title" >
+    <TitleWithAnchor headerClassName="projects-title" className="projects-wrapper-title" >
       Major Infrastructure
     </TitleWithAnchor>
     <ul>
@@ -125,7 +125,7 @@ const ProjectDescriptions = () => (
       ))}
     </ul>
 
-    <TitleWithAnchor headerClassName="projects-title projects-common-title" className="projects-wrapper-title" >
+    <TitleWithAnchor headerClassName="projects-title" className="projects-wrapper-title" >
       Emerging
     </TitleWithAnchor>
 

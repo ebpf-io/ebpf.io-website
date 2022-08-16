@@ -9,7 +9,7 @@ import { ProjectCard } from "../common/projects/ProjectCard";
 import { Hero } from "../common/projects/Hero";
 import bccLogo from "../assets/projects-logos/bcc.svg";
 import ciliumLogo from "../assets/projects-logos/cilium-with-text.svg";
-import bpftraceLogo from '../assets/projects-logos/bpftrace.svg';
+import bpftraceLogo from '../assets/projects-logos/bpftrace.jpg';
 import falcoLogo from '../assets/projects-logos/falco.svg';
 import katranLogo from '../assets/projects-logos/katran.svg';
 import ecaptureLogo from "../assets/projects-logos/ecapture.svg";
@@ -17,7 +17,7 @@ import pixieLogo from '../assets/projects-logos/pixie.svg';
 import hubbleLogo from '../assets/projects-logos/hubble.svg';
 import kubectlTraceLogo from '../assets/projects-logos/kubectl_trace.svg';
 import traceeLogo from '../assets/projects-logos/tracee.svg';
-import tetragonLogo from '../assets/projects-logos/tetragon.svg';
+import tetragonLogo from '../assets/projects-logos/tetragon.jpg';
 import bumblebeeLogo from '../assets/projects-logos/bumblebee.svg';
 import plyLogo from '../assets/projects-logos/ply.svg';
 import kubeArmorLogo from '../assets/projects-logos/kubearmor.svg';
@@ -34,7 +34,7 @@ const majorProjects = [
     name: 'bcc',
     logo: bccLogo,
     title: 'Toolkit and library for efficient BPF-based kernel tracing',
-    description: `<strong>BCC</strong> is a toolkit for creating efficient kernel
+    description: `BCC is a toolkit for creating efficient kernel
     tracing and manipulation programs built upon eBPF, and includes
     several useful command-line tools and examples. BCC eases writing of
     eBPF programs for kernel instrumentation in C, includes a wrapper
@@ -49,7 +49,7 @@ const majorProjects = [
     name: 'Cilium',
     logo: ciliumLogo,
     title: 'eBPF-based Networking, Security, and Observability',
-    description: `<strong>Cilium</strong> is an open source project that provides
+    description: `Cilium is an open source project that provides
     eBPF-powered networking, security and observability. It has been
     specifically designed from the ground up to bring the advantages of
     eBPF to the world of Kubernetes and to address the new scalability,
@@ -64,7 +64,7 @@ const majorProjects = [
     name: 'bpftrace',
     logo: bpftraceLogo,
     title: 'High-level tracing language for Linux eBPF',
-    description: `<strong>bpftrace</strong> is a high-level tracing language for Linux eBPF. Its
+    description: `bpftrace is a high-level tracing language for Linux eBPF. Its
     language is inspired by awk and C, and predecessor tracers such as
     DTrace and SystemTap. bpftrace uses LLVM as a backend to compile
     scripts to eBPF bytecode and makes use of BCC as a library for
@@ -80,7 +80,7 @@ const majorProjects = [
     name: 'Falco',
     logo: falcoLogo,
     title: 'Cloud Native Runtime Security',
-    description: `<strong>Falco</strong> is a behavioral activity monitor designed to detect anomalous
+    description: `Falco is a behavioral activity monitor designed to detect anomalous
     activity in applications. Falco audits a system at the Linux kernel
     layer with the help of eBPF. It enriches gathered data with other
     input streams such as container runtime metrics and Kubernetes
@@ -96,7 +96,7 @@ const majorProjects = [
     name: 'Katran',
     logo: katranLogo,
     title: 'A high performance layer 4 load balancer',
-    description: `<strong>Katran</strong> is a C++ library and eBPF program to build a high-performance
+    description: `Katran is a C++ library and eBPF program to build a high-performance
     layer 4 load balancing forwarding plane. Katran leverages the XDP
     infrastructure from the Linux kernel to provide an in-kernel
     facility for fast packet processing. Its performance scales linearly
@@ -115,7 +115,7 @@ const emergingProjects = [
     name: 'eCapture',
     logo: ecaptureLogo,
     title: 'SSL/TLS capture tool using eBPF',
-    description: `<strong>eCapture</strong> is a tool that can capture plaintext without a CA
+    description: `eCapture is a tool that can capture plaintext without a CA
     certificate. It supports TLS encryption libraries such as
     openssl/gnutls/nspr etc. The userspace code is written in Go and
     uses cilium/ebpf. It can work on Linux Kernel 4.18 and later, and
@@ -130,7 +130,7 @@ const emergingProjects = [
     name: 'Pixie',
     logo: pixieLogo,
     title: 'Scriptable observability for Kubernetes',
-    description: `<strong>Pixie</strong> is an open source observability tool for Kubernetes
+    description: `Pixie is an open source observability tool for Kubernetes
     applications. Pixie uses eBPF to automatically capture telemetry
     data without the need for manual instrumentation. Developers can use
     Pixie to view the high-level state of their cluster (service maps,
@@ -147,7 +147,7 @@ const emergingProjects = [
     name: 'Hubble',
     logo: hubbleLogo,
     title: 'Network, Service & Security Observability for Kubernetes using eBPF',
-    description: `<strong>Hubble</strong> is a fully distributed networking and security observability
+    description: `Hubble is a fully distributed networking and security observability
     platform for cloud native workloads. It is built on top of Cilium
     and eBPF to enable deep visibility into the communication and
     behavior of services as well as the networking infrastructure in a
@@ -162,7 +162,7 @@ const emergingProjects = [
     name: 'Tracee',
     logo: traceeLogo,
     title: 'Linux Runtime Security and Forensics using eBPF',
-    description: `<strong>Tracee</strong> uses eBPF technology to detect and filter operating system
+    description: `Tracee uses eBPF technology to detect and filter operating system
     events, helping you expose security insights, detect suspicious
     behavior, and capture forensic indicators.`,
     urls: [
@@ -174,7 +174,7 @@ const emergingProjects = [
     name: 'kubectl trace',
     logo: kubectlTraceLogo,
     title: 'Schedule bpftrace programs on your Kubernetes cluster',
-    description: `<strong>kubectl-trace</strong> is a kubectl plugin that allows for scheduling the
+    description: `kubectl-trace is a kubectl plugin that allows for scheduling the
     execution of bpftrace(8) programs in Kubernetes clusters.
     kubectl-trace does not require installation of any components
     directly onto a Kubernetes cluster in order to execute bpftrace
@@ -189,7 +189,7 @@ const emergingProjects = [
     name: 'Tetragon',
     logo: tetragonLogo,
     title: 'eBPF-based Security Observability & Runtime Enforcement',
-    description: `<strong>Tetragon</strong> provides eBPF-based transparent security observability
+    description: `Tetragon provides eBPF-based transparent security observability
     combined with real-time runtime enforcement. The deep visibility is
     achieved without requiring application changes and is provided at
     low overhead thanks to smart Linux in-kernel filtering and
@@ -206,7 +206,7 @@ const emergingProjects = [
     name: 'BumbleBee',
     logo: bumblebeeLogo,
     title: 'OCI compliant eBPF tooling',
-    description: `<strong>BumbleBee</strong> simplifies building eBPF tools and allows you to package,
+    description: `BumbleBee simplifies building eBPF tools and allows you to package,
     distribute, and run eBPF programs using OCI images. It allows you to
     just focus on the eBPF portion of your code and BumbleBee automates
     away the boilerplate, including the userspace code.`,
@@ -220,7 +220,7 @@ const emergingProjects = [
     name: 'ply',
     logo: plyLogo,
     title: 'A dynamic tracer for Linux',
-    description: `<strong>ply</strong> is a dynamic tracer for Linux which is built upon eBPF. It has
+    description: `ply is a dynamic tracer for Linux which is built upon eBPF. It has
     been designed with embedded systems in mind, is written in C and all
     that ply needs to run is libc and a modern Linux kernel with eBPF
     support, meaning, it does not depend on LLVM for its program
@@ -236,7 +236,7 @@ const emergingProjects = [
     name: 'KubeArmor',
     logo: kubeArmorLogo,
     title: 'Container-aware Runtime Security Enforcement System',
-    description: `<strong>KubeArmor</strong> is a container-aware runtime security enforcement system
+    description: `KubeArmor is a container-aware runtime security enforcement system
     that restricts the behavior (such as process execution, file access,
     networking operation, and resource utilization) of containers at the
     system level, using LSMs and eBPF.`,
@@ -250,7 +250,7 @@ const emergingProjects = [
     name: 'Merbridge',
     logo: merbridgeLogo,
     title: 'Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge',
-    description: `<strong>Merbridge</strong> is designed to make traffic interception and forwarding more efficient for service mesh. With Merbridge, developers can use eBPF instead of iptables to accelerate their service mesh without any additional operations or code changes. Currently, Merbridge already supports Istio, Linkerd, and Kuma.`,
+    description: `Merbridge is designed to make traffic interception and forwarding more efficient for service mesh. With Merbridge, developers can use eBPF instead of iptables to accelerate their service mesh without any additional operations or code changes. Currently, Merbridge already supports Istio, Linkerd, and Kuma.`,
     urls: [
       {label: 'GitHub', url: 'https://github.com/merbridge/merbridge'},
       {label: 'Website', url: 'https://merbridge.io/'},
@@ -261,7 +261,7 @@ const emergingProjects = [
     name: 'L3AF',
     logo: l3afLogo,
     title: 'Complete lifecycle management of eBPF programs',
-    description: `<strong>L3AF</strong> is a platform to launch and manage eBPF programs in distributed
+    description: `L3AF is a platform to launch and manage eBPF programs in distributed
     environments. L3AF empowers users to compose multiple eBPF programs
     together to solve unique problems in different environments. Using
     the APIs provided by L3AF, these eBPF programs can be reconfigured,
@@ -276,7 +276,7 @@ const emergingProjects = [
 
 const ProjectDescriptions = () => (
   <div className="project-descriptions">
-    <TitleWithAnchor className="projects-wrapper-title" headerClassName="projects-title projects-common-title">
+    <TitleWithAnchor className="projects-wrapper-title" headerClassName="projects-title">
       Major Applications
     </TitleWithAnchor>
     <ul className="projects-list">
@@ -285,7 +285,7 @@ const ProjectDescriptions = () => (
       ))}
     </ul>
 
-    <TitleWithAnchor className="projects-wrapper-title" headerClassName="projects-title projects-common-title">
+    <TitleWithAnchor className="projects-wrapper-title" headerClassName="projects-title">
       Emerging
     </TitleWithAnchor>
 

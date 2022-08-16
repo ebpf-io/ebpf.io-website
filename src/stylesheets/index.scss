@@ -613,6 +613,7 @@ code {
 .projects-common-title,
 .contribute-common-title {
   position: relative;
+  margin: 0;
 
   & > .anchor {
     position: absolute;
@@ -633,66 +634,46 @@ code {
   }
 }
 
-.projects-hero {
-
-  .projects-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 64px;
-    padding-bottom: 44px;
-  }
- 
-
-  img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    min-width: 1600px;
-    transform: translate(-50%, -50%);
-  }
-
-  h1 {
-    margin: 0;
-    font-size: 56px;
-    line-height: 1.125;
-
-    @media #{$tablet} {
-      font-size: 40px;
-    }
-  }
-}
-
 .projects-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
-  @media #{$mobile} {
+  @media #{$tablet} {
     flex-direction: column;
     align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media #{$mobile} {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   
   a {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 36px;
+    line-height: 1.5;
     padding: 18px 28px;
     text-decoration: none;
 
     @media #{$tablet} {
-      font-size: 18px;
+      font-size: 32px;
       padding: 14px 24px;
-      line-height: 24px;
+    }
+
+    @media #{$mobile} {
+      font-size: 28px;
     }
 
     &.projects-button {
-      width: 190px;
       text-align: center;
-      color: #000;
-      background-color: #fafafa;
-      border: 1px solid #f2f2f2;
+      color: #808080;
+      background-color: #ffffff;
+      border-bottom: 2px solid #f2f2f2;
       transition: background-color 0.2s ease;
 
       @media #{$mobile} {
@@ -700,8 +681,8 @@ code {
       }
 
       &.active-button {
-        background-color: #ffe100;
-        border: 1px solid #ffe100;
+        color: #1A1A1A;
+        border-bottom: 2px solid #ffe100;
       }
     }
   }
@@ -724,15 +705,16 @@ code {
     margin-bottom: 40px;
 
     &:first-child {
-      margin-top: 64px;
+      margin-top: 0;
     }
   }
 
   .projects-title {
     margin: 0;
-    font-size: 46px;
+    font-size: 44px;
     line-height: 1.125;
     font-weight: 700;
+    margin-left: -24px;
 
     &.faq-title {
       text-align: center;
@@ -764,6 +746,11 @@ code {
       font-weight: 700;
       font-size: 24px;
       line-height: 125%;
+      margin-top: 48px;
+
+      @media #{$tablet} {
+        margin-top: 32px;
+      }
     }
   }
 
@@ -788,13 +775,12 @@ code {
   }
 
   .project-minor-title {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 1.5;
-    margin-top: 28px;
 
     @media #{$tablet} {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 
@@ -802,25 +788,41 @@ code {
     border: 2px solid #f2f2f2;
     margin-top: 0px;
     margin-bottom: 32px;
-    padding: 40px;
+    padding: 28px 40px 40px;
     display: flex;
+    flex-direction: column;
     margin-left: 0;
 
     @media #{$tablet} {
       flex-direction: column;
-      padding: 32px;
+      padding: 24px 28px 28px;
     }
 
     @media #{$mobile} {
-      padding: 24px;
+      padding: 20px 24px 24px;
     }
+  }
+
+  .project-inner {
+    display: flex;
+    margin-top: 16px;
+    align-items: flex-start;
+
+    @media #{$tablet} {
+      flex-direction: column;
+    }
+  }
+
+  .projects-common-title {
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 700;
   }
 
   .project-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 40px;
 
     p {
       font-size: 18px;
@@ -829,7 +831,7 @@ code {
 
     @media #{$tablet} {
       flex-direction: column;
-      padding-left: 0;
+      margin-top: 28px;
 
       & > p:first-child {
         text-align: center;
@@ -873,7 +875,7 @@ code {
   .project-description {
     font-size: 18px;
     line-height: 1.625;
-    margin-top: 28px;
+    
 
     > p:not(:last-child) {
       margin-bottom: 28px;
@@ -890,7 +892,7 @@ code {
   }
 
   .project-links-container {
-    margin-top: 24px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -923,15 +925,7 @@ code {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding-right: 40px;
-    border-right: 2px solid #f2f2f2;
-
-    @media #{$tablet} {
-      padding-right: 0;
-      border-right: none;
-      border-bottom: 2px solid #f2f2f2;
-      padding-bottom: 30px;
-    }
+    margin-right: 40px;
   }
 
   .project-content-wrapper {
@@ -946,17 +940,6 @@ code {
   }
 
   .project-logo {
-    &.project-logo-md {
-      img {
-        width: 260px;
-      }
-    }
-
-    &.project-logo-sm {
-      img {
-        width: 130px;
-      }
-    }
 
     img {
       display: block;
@@ -981,7 +964,8 @@ code {
     line-height: 1.625;
     
     li {
-      margin-bottom: 11px;
+      margin-bottom: 14px;
+      margin-left: 24px;
       &:last-child {
         margin-bottom: 0;
       }
@@ -1001,7 +985,8 @@ code {
     line-height: 1.625;
 
     li {
-      margin-bottom: 11px;
+      margin-bottom: 14px;
+      margin-left: 24px;
       &:last-child {
         margin-bottom: 0;
       }
