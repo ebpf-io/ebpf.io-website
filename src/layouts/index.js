@@ -18,6 +18,17 @@ import StackOverFlowIcon from "../assets/stackoverflow.inline.svg";
 import TwitterIcon from "../assets/twitter.inline.svg";
 import GitIcon from "../assets/git.inline.svg";
 
+const projectsItems = [
+  {
+    title: "Applications",
+    linkUrl: "/applications",
+  },
+  {
+    title: "Infrastructure",
+    linkUrl: "/infrastructure",
+  },
+];
+
 const conferencesItems = [
   {
     title: "eBPF Summit",
@@ -250,7 +261,7 @@ const HeaderDesktop = ({ language }) => (
     <nav className='header-nav'>
       <Link to='/what-is-ebpf'>What is eBPF?</Link>
       <Link to='/blog'>Blog</Link>
-      <Link to='/projects'>Project Landscape</Link>
+      <Dropdown title='Project Landscape' items={projectsItems} />
       <Dropdown title='Conferences' items={conferencesItems} />
       <Dropdown title='Community' items={communityItems} />
       <a href='https://www.ebpf.foundation'>Foundation</a>

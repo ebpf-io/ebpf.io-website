@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../layouts";
-import { graphql, Link } from 'gatsby'
+import { graphql, Link } from "gatsby";
 import BlogLatest from "../common/homepage/BlogLatest";
 import BlogRoll from "../common/homepage/BlogRoll";
 import HelmetBlock from "../common/homepage/Helmet";
@@ -59,12 +59,13 @@ const Intro = () => (
     <p>
       Linux 内核一直是实现监控/可观测性、网络和安全功能的理想地方。
       不过很多情况下这并非易事，因为这些工作需要修改内核源码或加载内核模块，
-      最终实现形式是在已有的层层抽象之上叠加新的抽象。
-      eBPF 是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），
+      最终实现形式是在已有的层层抽象之上叠加新的抽象。 eBPF
+      是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），
       而无需修改内核源码或者加载内核模块。
     </p>
     <p>
-      将 Linux 内核变成可编程之后，就能基于现有的（而非增加新的）抽象层来打造更加智能、
+      将 Linux
+      内核变成可编程之后，就能基于现有的（而非增加新的）抽象层来打造更加智能、
       功能更加丰富的基础设施软件，而不会增加系统的复杂度，也不会牺牲执行效率和安全性。
     </p>
     <img src={go} />
@@ -118,7 +119,7 @@ const Outro = () => (
                 <a href="/what-is-ebpf">eBPF 是什么？</a>
               </li>
               <li>
-                <a href="/projects">使用 eBPF 的项目列表</a>
+                <a href="/applications">使用 eBPF 的项目列表</a>
               </li>
               <li>
                 <a href="https://www.ebpf.top">深入浅出 eBPF（中文博客）</a>
@@ -128,9 +129,7 @@ const Outro = () => (
           <td>
             <ul>
               <li>
-                <a href="/slack">
-                  加入 #ebpf Slack 社区
-                </a>
+                <a href="/slack">加入 #ebpf Slack 社区</a>
               </li>
               <li>
                 <a href="/contribute">贡献指南</a>
@@ -143,20 +142,22 @@ const Outro = () => (
   </div>
 );
 
-const IndexPage = ({ data, location: {pathname} }) => {
-  return <Layout path={pathname}>
-    <div className="page-wrapper page-index">
-      <HelmetBlock />
-      <MainTitle />
-      <Buttons />
-      <Intro />
-      <Sections />
-      <Videos title="eBPF 相关演讲" />
-      <BlogLatest title="最新博客" posts={data.allMarkdownRemark.edges} />
-      <BlogRoll title="eBPF 相关文章" />
-      <Outro />
-    </div>
-  </Layout>
+const IndexPage = ({ data, location: { pathname } }) => {
+  return (
+    <Layout path={pathname}>
+      <div className="page-wrapper page-index">
+        <HelmetBlock />
+        <MainTitle />
+        <Buttons />
+        <Intro />
+        <Sections />
+        <Videos title="eBPF 相关演讲" />
+        <BlogLatest title="最新博客" posts={data.allMarkdownRemark.edges} />
+        <BlogRoll title="eBPF 相关文章" />
+        <Outro />
+      </div>
+    </Layout>
+  );
 };
 
 export default IndexPage;

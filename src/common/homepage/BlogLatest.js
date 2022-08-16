@@ -1,5 +1,5 @@
 import React from "react";
-import { Post } from "../../templates/post";
+import Post from "../blog-post/Post";
 import { TitleWithAnchor } from "../TitleWithAnchor";
 
 export default function ({title, posts}) {

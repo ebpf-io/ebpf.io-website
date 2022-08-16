@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../layouts";
-import { graphql, Link } from 'gatsby'
+import { graphql, Link } from "gatsby";
 import BlogLatest from "../common/homepage/BlogLatest";
 import BlogRoll from "../common/homepage/BlogRoll";
 import HelmetBlock from "../common/homepage/Helmet";
@@ -76,14 +76,13 @@ const Buttons = () => (
 const Intro = () => (
   <div className="intro">
     <p>
-      Le noyau Linux a toujours été l'endroit idéal pour implémenter les
-      aspects inspection/supervision, réseau, et sécurité du système.
-      Malheureusement, la nécessité de changer le code du noyau ou de charger
-      des modules rend la tâche contraignante, et revient souvent à empiler les
-      couches d'abstraction. eBPF est une technologie révolutionnaire
-      permettant d'exécuter des programmes au sein du noyau Linux, dans un
-      environnement confiné, sans changer le code source du noyau ni charger de
-      modules.
+      Le noyau Linux a toujours été l'endroit idéal pour implémenter les aspects
+      inspection/supervision, réseau, et sécurité du système. Malheureusement,
+      la nécessité de changer le code du noyau ou de charger des modules rend la
+      tâche contraignante, et revient souvent à empiler les couches
+      d'abstraction. eBPF est une technologie révolutionnaire permettant
+      d'exécuter des programmes au sein du noyau Linux, dans un environnement
+      confiné, sans changer le code source du noyau ni charger de modules.
     </p>
     <p>
       Grâce à cette capacité à programmer le noyau, les composants logiciels
@@ -143,7 +142,7 @@ const Outro = () => (
                 <a href="/what-is-ebpf">Comprendre eBPF</a>
               </li>
               <li>
-                <a href="/projects">Liste de projets basés sur eBPF</a>
+                <a href="/applications">Liste de projets basés sur eBPF</a>
               </li>
               <li>
                 <a href="https://www.ebpf.top">Plonger la tête la première dans eBPF (Chinois)</a>
@@ -153,9 +152,7 @@ const Outro = () => (
           <td>
             <ul>
               <li>
-                <a href="/slack">
-                  Rejoindre la communauté #ebpf sur Slack
-                </a>
+                <a href="/slack">Rejoindre la communauté #ebpf sur Slack</a>
               </li>
               <li>
                 <a href="/contribute">Comment contribuer</a>
@@ -168,20 +165,25 @@ const Outro = () => (
   </div>
 );
 
-const IndexPage = ({ data, location: {pathname} }) => {
-  return <Layout path={pathname}>
-    <div className="page-wrapper page-index">
-      <HelmetBlock />
-      <MainTitle />
-      <Buttons />
-      <Intro />
-      <Sections />
-      <Videos title="Découvrir eBPF en vidéo" />
-      <BlogLatest title="Les derniers articles du blog" posts={data.allMarkdownRemark.edges} />
-      <BlogRoll title="Sélection d'articles de blogs par la communauté eBPF" />
-      <Outro />
-    </div>
-  </Layout>
+const IndexPage = ({ data, location: { pathname } }) => {
+  return (
+    <Layout path={pathname}>
+      <div className="page-wrapper page-index">
+        <HelmetBlock />
+        <MainTitle />
+        <Buttons />
+        <Intro />
+        <Sections />
+        <Videos title="Découvrir eBPF en vidéo" />
+        <BlogLatest
+          title="Les derniers articles du blog"
+          posts={data.allMarkdownRemark.edges}
+        />
+        <BlogRoll title="Sélection d'articles de blogs par la communauté eBPF" />
+        <Outro />
+      </div>
+    </Layout>
+  );
 };
 
 export default IndexPage;
