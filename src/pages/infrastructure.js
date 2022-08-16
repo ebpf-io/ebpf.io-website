@@ -63,14 +63,14 @@ const majorProjects = [
     ],
   },
   {
-    logoUrl: 'https://llvm.org/',
+    logoUrl: 'https://gcc.gnu.org/',
     name: 'GCC compiler',
     logo: gccLogo,
-    title: 'GNU Compiler Collection',
+    title: 'eBPF Backend',
     description: `The GCC compiler comes with an eBPF backend starting from GCC 10. Up to that point, LLVM has been the only compiler which supports generating eBPF ELF files. The GCC port is roughly equivalent to the LLVM eBPF support. There are some missing bits of functionality but the GCC community is working to close these gaps over time. GCC also contains eBPF binutils as well as eBPF gdb support for debugging of eBPF code that is traditionally consumed by the Linux kernel. Included as part of this is an eBPF simulator for gdb.`,
     urls: [
-      {label: 'Git repo', url: 'https://gcc.gnu.org/git.html'},
       {label: 'Website', url: 'https://gcc.gnu.org/'},
+      {label: 'Git repo', url: 'https://gcc.gnu.org/git.html'},
       {label: 'Mailing list', url: 'https://gcc.gnu.org/lists.html'},
       {label: 'Bugtracker', url: 'https://gcc.gnu.org/bugzilla/'},
       {label: 'Docs', url: 'https://gcc.gnu.org/onlinedocs/gcc/eBPF-Options.html'},
