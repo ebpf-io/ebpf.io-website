@@ -105,9 +105,9 @@ const Page = () => (
         ebpf.io website is licensed under a <a
         href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
         Attribution 4.0 International License</a>. If you want to get involved,
-        visit the <a href="https://github.com/cilium/ebpf.io">GitHub
+        visit the <a href="https://github.com/ebpf-io/ebpf.io-website">GitHub
         repository</a>.  Make sure to also join the <a
-        href="/slack">#ebpf Slack channel</a> to get in
+        href="/slack">#ebpf-website Slack channel</a> to get in
         touch with the team working on the documentation.  Share what you have
         learned by improving the documentation or write additional tutorials.
       </p>

@@ -34,17 +34,19 @@ const conferencesItems = [
     title: "eBPF Summit",
     subitems: [
       {
-        name: "2022 CFP",
+        name: "2022",
         linkUrl: "https://ebpf.io/summit-2022/",
         linkTarget: "_blank",
       },
       {
         name: "2021",
-        linkUrl: "/summit-2021",
+        linkUrl: "https://ebpf.io/summit-2021/",
+        linkTarget: "_blank",
       },
       {
         name: "2020",
-        linkUrl: "/summit-2020",
+        linkUrl: "https://ebpf.io/summit-2020/",
+        linkTarget: "_blank",
       },
     ],
   },
@@ -52,9 +54,9 @@ const conferencesItems = [
     title: "Cloud Native eBPF Day",
     subitems: [
       {
-        name: "2022 (NA) CFP",
+        name: "2022 (NA)",
         linkUrl:
-          "https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/cfp/",
+          "https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/",
         linkTarget: "_blank",
       },
       {
@@ -75,9 +77,8 @@ const conferencesItems = [
     title: "eBPF Track (LPC)",
     subitems: [
       {
-        name: "2022 CFP",
-        linkUrl:
-          "https://lore.kernel.org/bpf/cd33ca74-aec9-ff57-97d5-55d8b908b0ba@iogearbox.net/",
+        name: "2022",
+        linkUrl: "https://lpc.events/event/16/sessions/131/#all",
         linkTarget: "_blank",
       },
       {
@@ -129,23 +130,22 @@ const communityItems = [
   { title: "Slack", linkUrl: "/slack" },
   {
     title: "Stack Overflow",
-    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf",
+    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
     linkTarget: "_blank",
   },
   {
-    title: "Reddit",
+    title: "r/eBPF",
     linkUrl: "https://www.reddit.com/r/eBPF/",
     linkTarget: "_blank",
   },
   {
-    title: "Newsletter",
+    title: "eCHO News",
     linkUrl: "https://cilium.io/newsletter/",
     linkTarget: "_blank",
   },
   {
     title: "Contribute",
-    linkUrl: "https://ebpf.foundation/contribute/",
-    linkTarget: "_blank",
+    linkUrl: "/contribute",
   },
 ];
 
@@ -210,7 +210,7 @@ const footerIcons = [
   { icon: SlackIcon, linkUrl: "https://ebpf.io/slack" },
   {
     icon: StackOverFlowIcon,
-    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf",
+    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
   },
   { icon: RedditIcon, linkUrl: "https://www.reddit.com/r/eBPF/" },
 ];
@@ -263,8 +263,8 @@ const HeaderDesktop = ({ language }) => (
       <Link to='/blog'>Blog</Link>
       <Dropdown title='Project Landscape' items={projectsItems} />
       <Dropdown title='Conferences' items={conferencesItems} />
-      <a href='https://www.ebpf.foundation'>Foundation</a>
       <Dropdown title='Community' items={communityItems} />
+      <a href='https://www.ebpf.foundation'>Foundation</a>
     </nav>
   </header>
 );
@@ -301,8 +301,8 @@ const HeaderMobile = ({ language }) => {
           <Link to='/projects'>Project Landscape</Link>
           <Dropdown title='Conferences' items={conferencesItems} />
           <a href='/slack'>Slack</a>
-          <a href='https://www.ebpf.foundation'>Foundation</a>
           <Dropdown title='Community' items={communityItems} />
+          <a href='https://www.ebpf.foundation'>Foundation</a>
         </nav>
       )}
     </div>

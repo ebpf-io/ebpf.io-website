@@ -23,6 +23,7 @@ import plyLogo from '../assets/projects-logos/ply.svg';
 import kubeArmorLogo from '../assets/projects-logos/kubearmor.svg';
 import l3afLogo from '../assets/projects-logos/l3af.svg'
 import merbridgeLogo from '../assets/projects-logos/merbridge.svg';
+import loxiLBLogo from "../assets/projects-logos/loxilb.png";
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -270,6 +271,17 @@ const emergingProjects = [
     urls: [
       {label: 'GitHub', url: 'https://github.com/l3af-project'},
       {label: 'Website', url: 'https://l3af.io'},
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/loxilb-io',
+    name: 'LoxiLB',
+    logo: loxiLBLogo,
+    title: 'eBPF based cloud-native load-balancer for 5G Edge',
+    description: `LoxiLB is an open-source cloud-native "external" service load-balancer for cloud-native 5G/edge workloads written from scratch using eBPF as its core-engine and based on Go Language. LoxiLB turns Kubernetes network load balancing for 5G/Edge services into high speed, flexible and programmable LB services.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/loxilb-io'},
+      {label: 'Website', url: 'https://www.loxilb.io/'},
     ],
   },
 ]
