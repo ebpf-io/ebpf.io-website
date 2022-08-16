@@ -29,6 +29,14 @@ footer {
 main {
   margin-bottom: 128px;
   flex-grow: 1;
+
+  @media #{$tablet} {
+    margin-bottom: 80px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 64px;
+  }
 }
 
 .page-wrapper img {
