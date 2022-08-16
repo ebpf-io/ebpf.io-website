@@ -24,6 +24,7 @@ import kubeArmorLogo from '../assets/projects-logos/kubearmor.svg';
 import l3afLogo from '../assets/projects-logos/l3af.svg'
 import merbridgeLogo from '../assets/projects-logos/merbridge.svg';
 import loxiLBLogo from "../assets/projects-logos/loxilb.png";
+import pwruLogo from "../assets/projects-logos/pwru.png";
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -214,6 +215,16 @@ const emergingProjects = [
     urls: [
       {label: 'GitHub', url: 'https://github.com/solo-io/bumblebee'},
       {label: 'Website', url: 'https://bumblebee.io/'},
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/cilium/pwru',
+    name: 'pwru',
+    logo: pwruLogo,
+    title: 'eBPF-based Linux kernel network packet tracer',
+    description: 'pwru is an eBPF-based tool for tracing network packets in the Linux kernel with advanced filtering capabilities. It allows fine-grained introspection of kernel state to facilitate debugging network connectivity issues.',
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/cilium/pwru'},
     ],
   },
   {
