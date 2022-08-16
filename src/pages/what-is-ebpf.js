@@ -109,7 +109,8 @@ class Description extends React.Component {
           </p>
           <h3>What is the bee named?</h3>
           <p>
-            The bee is the official logo for eBPF. At the first eBPF Summit
+            The bee is the official logo for eBPF and was originally created
+            by Vadim Shchekoldin. At the first eBPF Summit
             there was a vote taken and the bee was named <b>eBee</b>.
             (For details on acceptable uses of the logo, please see the 
             Linux Foundation <a href="https://linuxfoundation.org/brand-guidelines/">Brand Guidelines</a>.) 
