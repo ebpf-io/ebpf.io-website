@@ -4,6 +4,7 @@ import golangLogo from './assets/golang.svg';
 import rustLogo from './assets/rust.svg';
 import cppLogo from './assets/cpp.svg';
 import cn from 'classnames';
+import { TitleWithAnchor } from '../TitleWithAnchor';
 
 const items = [
   {
@@ -97,7 +98,7 @@ const Libraries = () => {
   return (
     <div className="libraries-container">
       <div className="libraries-inner">
-        <h2>eBPF Libraries</h2>
+        <TitleWithAnchor headerClassName="projects-title" className="projects-wrapper-title" >eBPF Libraries</TitleWithAnchor>
         <ul className='libraries-list'>
           {items.map((item) => (
             <LibraryCard {...item} key={item.name}/>

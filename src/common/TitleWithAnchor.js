@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 
-export const TitleWithAnchor = ({ className, children, headerClassName, headerTag = 'h2' }) => {
-  const id = children.toLowerCase().replace(/ /g, '-')
+export const TitleWithAnchor = ({ className, children, headerClassName, anchor, headerTag = 'h2' }) => {
+  const id = anchor || children.toLowerCase().replace(/ /g, '-')
 
   const normalizedChildren = <Fragment>
     <a aria-label={`${ children } permalink`} className="anchor" href={`#${ id }`}>

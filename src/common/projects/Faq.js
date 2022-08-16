@@ -63,7 +63,7 @@ const MajorRequirementsList = () => (
 
 export const FAQ = () => (
   <div className="projects-container">
-    <TitleWithAnchor headerClassName="projects-title faq-title">
+    <TitleWithAnchor anchor="faq" headerClassName="projects-title faq-title">
       Frequently Asked Questions
     </TitleWithAnchor>
     <h3>Add your project</h3>

@@ -715,6 +715,11 @@ code {
     &:first-child {
       margin-top: 0;
     }
+
+    @media #{$tablet} {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   .projects-title {
@@ -728,6 +733,11 @@ code {
       text-align: center;
       margin-top: 112px;
       margin-bottom: 56px;
+
+      @media #{$tablet} {
+        margin-top: 80px;
+        margin-bottom: 40px;
+      }
     }
 
     @media #{$tablet} {
@@ -737,9 +747,11 @@ code {
     }
 
     @media #{$mobile} {
+      display: flex;
       font-size: 32px;
       margin-top: 60px;
       margin-bottom: 20px;
+      margin-left: 0;
     }
   }
 
@@ -825,6 +837,14 @@ code {
     font-size: 36px;
     line-height: 1.5;
     font-weight: 700;
+
+    @media #{$tablet} {
+      font-size: 28px;
+    }
+
+    @media #{$mobile} {
+      font-size: 24px;
+    }
   }
 
   .project-body {
@@ -997,6 +1017,20 @@ code {
       margin-left: 24px;
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+  }
+
+  .libraries-inner {
+    h2 {
+      margin-top: 112px;
+
+      @media #{$tablet} {
+        margin-top: 80px;
+      }
+
+      @media #{$mobile} {
+        margin-top: 60px;
       }
     }
   }
