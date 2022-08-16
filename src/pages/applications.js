@@ -171,21 +171,6 @@ const emergingProjects = [
     ],
   },
   {
-    logoUrl: 'https://github.com/iovisor/kubectl-trace',
-    name: 'kubectl trace',
-    logo: kubectlTraceLogo,
-    title: 'Schedule bpftrace programs on your Kubernetes cluster',
-    description: `kubectl-trace is a kubectl plugin that allows for scheduling the
-    execution of bpftrace(8) programs in Kubernetes clusters.
-    kubectl-trace does not require installation of any components
-    directly onto a Kubernetes cluster in order to execute bpftrace
-    programs. When pointed to a cluster, it schedules a temporary job
-    called trace-runner that executes bpftrace.`,
-    urls: [
-      {label: 'GitHub', url: 'https://github.com/iovisor/kubectl-trace'},
-    ],
-  },
-  {
     logoUrl: 'https://github.com/cilium/tetragon',
     name: 'Tetragon',
     logo: tetragonLogo,
@@ -200,6 +185,21 @@ const emergingProjects = [
     other enforcement levels.`,
     urls: [
       {label: 'GitHub', url: 'https://github.com/cilium/tetragon'},
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/iovisor/kubectl-trace',
+    name: 'kubectl trace',
+    logo: kubectlTraceLogo,
+    title: 'Schedule bpftrace programs on your Kubernetes cluster',
+    description: `kubectl-trace is a kubectl plugin that allows for scheduling the
+    execution of bpftrace(8) programs in Kubernetes clusters.
+    kubectl-trace does not require installation of any components
+    directly onto a Kubernetes cluster in order to execute bpftrace
+    programs. When pointed to a cluster, it schedules a temporary job
+    called trace-runner that executes bpftrace.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/iovisor/kubectl-trace'},
     ],
   },
   {
