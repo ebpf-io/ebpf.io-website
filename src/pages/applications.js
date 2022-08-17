@@ -108,6 +108,23 @@ const majorProjects = [
       {label: 'Website', url: 'https://engineering.fb.com/open-source/open-sourcing-katran-a-scalable-network-load-balancer/'},
     ],
   },
+  {
+    logoUrl: 'https://github.com/pixie-io/pixie',
+    name: 'Pixie',
+    logo: pixieLogo,
+    title: 'Scriptable observability for Kubernetes',
+    description: `Pixie is an open source observability tool for Kubernetes
+    applications. Pixie uses eBPF to automatically capture telemetry
+    data without the need for manual instrumentation. Developers can use
+    Pixie to view the high-level state of their cluster (service maps,
+    cluster resources, application traffic) and also drill down into
+    more detailed views (pod state, flame graphs, individual full body
+    application requests).`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/pixie-io/pixie'},
+      {label: 'Website', url: 'https://px.dev'},
+    ],
+  },
 ]
 
 const emergingProjects = [
@@ -124,23 +141,6 @@ const emergingProjects = [
     BTF.`,
     urls: [
       {label: 'GitHub', url: 'https://github.com/ehids/ecapture'},
-    ],
-  },
-  {
-    logoUrl: 'https://github.com/pixie-io/pixie',
-    name: 'Pixie',
-    logo: pixieLogo,
-    title: 'Scriptable observability for Kubernetes',
-    description: `Pixie is an open source observability tool for Kubernetes
-    applications. Pixie uses eBPF to automatically capture telemetry
-    data without the need for manual instrumentation. Developers can use
-    Pixie to view the high-level state of their cluster (service maps,
-    cluster resources, application traffic) and also drill down into
-    more detailed views (pod state, flame graphs, individual full body
-    application requests).`,
-    urls: [
-      {label: 'GitHub', url: 'https://github.com/pixie-io/pixie'},
-      {label: 'Website', url: 'https://px.dev'},
     ],
   },
   {
