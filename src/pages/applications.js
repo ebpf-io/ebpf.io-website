@@ -298,16 +298,8 @@ const ProjectDescriptions = () => (
     </ul>
 
     <TitleWithAnchor className="projects-wrapper-title" headerClassName="projects-title">
-      Emerging
+      Emerging Applications
     </TitleWithAnchor>
-
-    <div align="center">
-      <p style={{ marginBottom: "20px", fontSize: '20px', textAlign: 'left', lineHeight: '1.625' }}>
-        The ordering of emerging applications is based on the number of Github
-        stars (high to low), updated on a quaterly basis.
-      </p>
-    </div>
-
     <ul className="projects-list">
       {emergingProjects.map((item, index) => (
         <ProjectCard {...item} key={index}/>
