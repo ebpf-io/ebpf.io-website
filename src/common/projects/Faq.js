@@ -20,7 +20,8 @@ const HowToList = () => (
     <li>
       Open a <a href="https://github.com/cilium/ebpf.io">pull request</a> and
       provide the required information. Use one of the already listed projects
-      as a template.
+      as a template. The ordering of applications is based on the number of
+      Github stars (high to low), updated on a quaterly basis.
     </li>
     <li>
       The pull request will be reviewed by the community and merged by one of
@@ -66,6 +67,13 @@ export const FAQ = () => (
     <TitleWithAnchor anchor="faq" headerClassName="projects-title faq-title">
       Frequently Asked Questions
     </TitleWithAnchor>
+    <h3>Are these projects under the eBPF Foundation?</h3>
+    <ul>
+      <li>This page lists a number of open source projects that use eBPF as the
+	underlying core technology. These projects are <b>not</b> under
+	the <a href="https://www.ebpf.foundation">eBPF Foundation</a> but are
+	listed here as a survey of the eBPF project landscape today.</li>
+    </ul>
     <h3>Add your project</h3>
     <HowToList />
     <h3>Are you maintaining a listed project?</h3>

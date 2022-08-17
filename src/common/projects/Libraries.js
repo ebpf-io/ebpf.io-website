@@ -24,7 +24,7 @@ const items = [
     ]
   },
   {
-    name: 'C++',
+    name: 'C/C++',
     logo: cppLogo,
     libraries: [
       {

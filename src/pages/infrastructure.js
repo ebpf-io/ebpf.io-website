@@ -35,11 +35,11 @@ const majorProjects = [
     urls: [
       {label: 'Git trees', url: 'https://git.kernel.org/?q=BPF+Group'},
       {label: 'Website', url: 'https://www.kernel.org/'},
-      {label: 'Mailing list', url: 'https://lore.kernel.org/bpf/'},
-      {label: 'CI', url: 'https://github.com/kernel-patches/bpf/pulls'},
       {label: 'Patches', url: 'https://patchwork.kernel.org/project/netdevbpf/list/?delegate=121173'},
+      {label: 'Mailing list', url: 'https://lore.kernel.org/bpf/'},
+      {label: 'Office hours', url: 'https://docs.google.com/spreadsheets/d/1LfrDXZ9-fdhvPEp_LHkxAMYyxxpwBXjywWa0AejEveU/edit#gid=0'},
+      {label: 'CI', url: 'https://github.com/kernel-patches/bpf/pulls'},
       {label: 'Docs', url: 'https://www.kernel.org/doc/html/latest/bpf/'},
-      {label: 'Office hours', url: 'https://docs.google.com/spreadsheets/d/1LfrDXZ9-fdhvPEp_LHkxAMYyxxpwBXjywWa0AejEveU/edit#gid=0'}
     ],
   },
   {
@@ -56,21 +56,21 @@ const majorProjects = [
     The LLVM project also contains additional developer tools such as an
     eBPF object file disassembler.`,
     urls: [
-      {label: 'Website', url: 'https://llvm.org/'},
       {label: 'GitHub', url: 'https://github.com/llvm/llvm-project/'},
+      {label: 'Website', url: 'https://llvm.org/'},
       {label: 'Patches', url: 'https://reviews.llvm.org/search/query/ABG0ZPUPkDGb/#R'},
       {label: 'Bugtracker', url: 'https://github.com/llvm/llvm-project/labels/backend:BPF'},    
     ],
   },
   {
     logoUrl: 'https://gcc.gnu.org/',
-    name: 'GCC compiler',
+    name: 'GCC Compiler',
     logo: gccLogo,
     title: 'eBPF Backend',
     description: `The GCC compiler comes with an eBPF backend starting from GCC 10. Up to that point, LLVM has been the only compiler which supports generating eBPF ELF files. The GCC port is roughly equivalent to the LLVM eBPF support. There are some missing bits of functionality but the GCC community is working to close these gaps over time. GCC also contains eBPF binutils as well as eBPF gdb support for debugging of eBPF code that is traditionally consumed by the Linux kernel. Included as part of this is an eBPF simulator for gdb.`,
     urls: [
-      {label: 'Website', url: 'https://gcc.gnu.org/'},
       {label: 'Git repo', url: 'https://gcc.gnu.org/git.html'},
+      {label: 'Website', url: 'https://gcc.gnu.org/'},
       {label: 'Mailing list', url: 'https://gcc.gnu.org/lists.html'},
       {label: 'Bugtracker', url: 'https://gcc.gnu.org/bugzilla/'},
       {label: 'Docs', url: 'https://gcc.gnu.org/onlinedocs/gcc/eBPF-Options.html'},
@@ -90,8 +90,8 @@ const emergingProjects = [
     projects as submodules and adds the layer in between to make them
     run on top of Windows.`,
     urls: [
-      {label: 'Website', url: 'https://microsoft.github.io/ebpf-for-windows/'},
       {label: 'GitHub', url: 'https://github.com/microsoft/ebpf-for-windows'},
+      {label: 'Website', url: 'https://microsoft.github.io/ebpf-for-windows/'},
       {label: 'Office hours', url: 'https://github.com/microsoft/ebpf-for-windows/discussions/427'},
       {label: 'Slack channel', url: 'https://cilium.slack.com/archives/C0210QTK2MV'},    
     ],
@@ -108,8 +108,8 @@ const emergingProjects = [
     opcode for included emulator and simulator as well as for included
     hardware targets.`,
     urls: [
-      {label: 'Website', url: 'https://www.min.at/hbpf/'},
       {label: 'GitHub', url: 'https://github.com/rprinz08/hBPF'},   
+      {label: 'Website', url: 'https://www.min.at/hbpf/'},
     ],
   },
 ]
@@ -126,9 +126,8 @@ const ProjectDescriptions = () => (
     </ul>
 
     <TitleWithAnchor headerClassName="projects-title" className="projects-wrapper-title" >
-      Emerging
+      Emerging Infrastructure
     </TitleWithAnchor>
-
     <ul>
       {emergingProjects.map((project, index) => (
         <ProjectCard key={index} {...project} logoSize="sm" />
