@@ -139,8 +139,8 @@ const communityItems = [
     linkTarget: "_blank",
   },
   {
-    title: "eCHO News",
-    linkUrl: "https://cilium.io/newsletter/",
+    title: "eCHO",
+    linkUrl: "https://github.com/isovalent/eCHO ",
     linkTarget: "_blank",
   },
   {
