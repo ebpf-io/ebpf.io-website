@@ -15,7 +15,7 @@ The content on our blog consists of:
 Other topics are welcome, but it needs to have a direct link to the eBPF community. We accept content from anyone and external links are welcome.
 
 ## Content ##
-The CNCF blog audience is developers, IT operators, and eBPF and open source enthusiasts. Keep this in mind as you develop your blog content.
+The ebpf.io blog audience is developers, IT operators, and eBPF and open source enthusiasts. Keep this in mind as you develop your blog content.
 
 Some things to think about:
 * Posts must be vendor-neutral. The post may mention a vendor’s name as it relates to specific open source projects, project deployments, adoption paths, their hosting of an in-person event or speaking at an event, or other indications of meaningful participation in the community, but it shouldn’t feel like an advertisement for your services or company. We do not accept announcements or press releases to the ebpf.io blog.
