@@ -260,10 +260,10 @@ const HeaderDesktop = ({ language }) => (
     </Link>
     <nav className='header-nav'>
       <Link to='/what-is-ebpf'>What is eBPF?</Link>
-      <Link to='/blog'>Blog</Link>
       <Dropdown title='Project Landscape' items={projectsItems} />
       <Dropdown title='Conferences' items={conferencesItems} />
       <Dropdown title='Community' items={communityItems} />
+      <Link to='/blog'>Blog</Link>
       <a href='https://www.ebpf.foundation'>Foundation</a>
     </nav>
   </header>
@@ -297,11 +297,11 @@ const HeaderMobile = ({ language }) => {
       {isOpen && (
         <nav className='header-nav'>
           <Link to='/what-is-ebpf'>What is eBPF?</Link>
-          <Link to='/blog'>Blog</Link>
           <Link to='/projects'>Project Landscape</Link>
           <Dropdown title='Conferences' items={conferencesItems} />
           <a href='/slack'>Slack</a>
           <Dropdown title='Community' items={communityItems} />
+          <Link to='/blog'>Blog</Link>
           <a href='https://www.ebpf.foundation'>Foundation</a>
         </nav>
       )}
