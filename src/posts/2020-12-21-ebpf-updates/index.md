@@ -3,7 +3,7 @@ path: "/blog/ebpf-updates-2020-12"
 date: "2020-12-18T10:00:00.000Z"
 title: "eBPF Updates #2: eBPF with Zig, libbpf-bootstrap, Rust Linker, BTF in Kernel Modules, Cgroup-Based Memory Accounting"
 tags:
-  - _
+  - Update
 categories:
   - Update
 ---
@@ -38,19 +38,21 @@ The calls for participation (CFPs) for the devrooms for
 [FOSDEM 2021](https://fosdem.org/2021/) (online event) are open. Some of the
 devrooms have hosted multiple talks about eBPF over the last year. In
 particular:
-  * The SDN devroom ([CFP](https://mdr78.github.io/2020/12/01/fosdem-cfp.html))
-    accepts submissions until the 20th of December 2020.
-  * The Containers devroom
-    ([CFP](https://discuss.linuxcontainers.org/t/fosdem-2021-containers-devroom-call-for-papers/9625))
-    accepts submissions until the 22th of December 2020.
+
+- The SDN devroom ([CFP](https://mdr78.github.io/2020/12/01/fosdem-cfp.html))
+  accepts submissions until the 20th of December 2020.
+- The Containers devroom
+  ([CFP](https://discuss.linuxcontainers.org/t/fosdem-2021-containers-devroom-call-for-papers/9625))
+  accepts submissions until the 22th of December 2020.
 
 Recent start-up acquisitions highlight the growing adoption and the maturity of
 eBPF:
-* [Flowmill](https://www.flowmill.com/), offering a solution for network
+
+- [Flowmill](https://www.flowmill.com/), offering a solution for network
   observability relying on eBPF,
   [has been acquired](https://techcrunch.com/2020/11/24/splunk-acquires-network-observability-service-flowmill/)
   by [Splunk](https://www.splunk.com/en_us/newsroom/press-releases/2020/splunk-to-acquire-network-performance-monitoring-leader-flowmill.html).
-* [Pixie Labs](https://pixielabs.ai/), which uses eBPF for visibility in
+- [Pixie Labs](https://pixielabs.ai/), which uses eBPF for visibility in
   Kubernetes,
   [has been acquired](https://techcrunch.com/2020/12/10/new-relic-acquires-kubernetes-observability-platform-pixie-labs/)
   by [New Relic](https://blog.newrelic.com/product-news/pixie-developer-first-observability/).
@@ -71,7 +73,7 @@ growing every day.
 
 ### Blog Posts, Presentations
 
-* [_The Top Reasons Why You Should Give eBPF a Chance_](https://blog.container-solutions.com/the-top-reasons-why-you-should-give-ebpf-a-chance),
+- [_The Top Reasons Why You Should Give eBPF a Chance_](https://blog.container-solutions.com/the-top-reasons-why-you-should-give-ebpf-a-chance),
   from Lucas Severo Alves.  
   Several factors are responsible for eBPF's success and should make readers
   consider learning about, or using, this technology. This post cites its
@@ -82,7 +84,7 @@ growing every day.
   tools to instrument new parts of the kernel, without the need to go through a
   longer process to upstream new attach points.
 
-* [_Making BPF easy with libbpf and Zig_](https://cmd.com/blog/making-bpf-easy-with-libbpf-and-zig/),
+- [_Making BPF easy with libbpf and Zig_](https://cmd.com/blog/making-bpf-easy-with-libbpf-and-zig/),
   from Matt Knight.  
   The [Zig](https://ziglang.org) programming language is used to create and
   handle a simple eBPF program in this tutorial, both for the user space loader
@@ -92,7 +94,7 @@ growing every day.
   features, may open new perspectives. The code is available
   [on GitHub](https://github.com/mattnite/zig-bpf-intro).
 
-* [Weight support for Cilium's eBPF-based Maglev load balancer implementation](https://github.com/cilium/cilium/pull/13943),
+- [Weight support for Cilium's eBPF-based Maglev load balancer implementation](https://github.com/cilium/cilium/pull/13943),
   from Fankaixi Li.  
   A new pull request by a software engineer at ByteDance (TikTok) popped up,
   adding weight support to the eBPF-based
@@ -102,7 +104,7 @@ growing every day.
   balancing nodes. The feature adds the possibility to assign weights to favor
   some backends. It is still being discussed, but should land soon.
 
-* [_Beyond the Buzzword: BPF’s Unexpected Role in Kubernetes_](https://kccncna20.sched.com/event/ekDR/beyond-the-buzzword-bpfs-unexpected-role-in-kubernetes-andrew-randall-alban-crequy-kinvolk),
+- [_Beyond the Buzzword: BPF’s Unexpected Role in Kubernetes_](https://kccncna20.sched.com/event/ekDR/beyond-the-buzzword-bpfs-unexpected-role-in-kubernetes-andrew-randall-alban-crequy-kinvolk),
   from Andrew Randall and Alban Crequy.  
   After a high-level overview of eBPF, this presentation depicts the landscape
   of the projects gravitating around this technology. The authors explain that
@@ -115,7 +117,7 @@ growing every day.
   platform, such as Cilium/Hubble for network and observability or BPFd for
   running bcc scripts in containers.
 
-* [_TIL: eBPF is awesome_](https://filipnikolovski.com/posts/ebpf/),
+- [_TIL: eBPF is awesome_](https://filipnikolovski.com/posts/ebpf/),
   from Filip Nikolovski.  
   We all agree on this! This post is a gentle introduction to eBPF. A bit of
   history, some details on the core infrastructure and its components, and a
@@ -123,7 +125,7 @@ growing every day.
   [the bcc tools](https://github.com/iovisor/bcc/blob/34cada17f798b8e00268d1ba4a4a8d765b948532/examples/tracing/hello_fields.py).
   A nice read if you just got started with eBPF.
 
-* [_Building an Esoteric Filesystem Tracing Tool with eBPF_](https://suchakra.wordpress.com/2020/11/20/building-an-esoteric-filesystem-tracing-tool-with-ebpf/),
+- [_Building an Esoteric Filesystem Tracing Tool with eBPF_](https://suchakra.wordpress.com/2020/11/20/building-an-esoteric-filesystem-tracing-tool-with-ebpf/),
   from Suchakra Sharma.  
   This post has a focus on the read-ahead mechanism in the Linux kernel. After
   providing a refresher on how read-ahead works, Suchakra explains in details
@@ -134,7 +136,7 @@ growing every day.
   Once, Run Everywhere). The last section details the benefits of the latter
   version and the motivations to port tools to libbpf.
 
-* [_eXpress Data Path Kernel Objects for Real-Time Audio Streaming Optimization_](https://lac2020.sciencesconf.org/data/proceedings.pdf#section*.12) (PDF),
+- [_eXpress Data Path Kernel Objects for Real-Time Audio Streaming Optimization_](https://lac2020.sciencesconf.org/data/proceedings.pdf#section*.12) (PDF),
   from Christoph Kuhr and Alexander Carôt.  
   Focusing on audio packet processing, this work aims at facilitating the set
   up of a rehearsal environment for conducted orchestras via the Internet with
@@ -154,14 +156,14 @@ growing every day.
   [the page of the conference](https://lac2020.sciencesconf.org/), if it gets
   uploaded.
 
-* [_Primer: How XDP and eBPF Speed Network Traffic via the Linux Kernel_](https://thenewstack.io/primer-how-xdp-and-ebpf-speed-network-traffic-via-the-linux-kernel/),
+- [_Primer: How XDP and eBPF Speed Network Traffic via the Linux Kernel_](https://thenewstack.io/primer-how-xdp-and-ebpf-speed-network-traffic-via-the-linux-kernel/),
   from Jack Wallen.  
   There is a resolute focus on XDP in this article which describes how this
   eBPF hook can speed up network traffic on Linux. This is followed by a simple
   tutorial, where bcc is used to attach a XDP program and to track UDP packets
   sent to a given port.
 
-* [_Building BPF applications with libbpf-boostrap_](https://nakryiko.com/posts/libbpf-bootstrap/),
+- [_Building BPF applications with libbpf-boostrap_](https://nakryiko.com/posts/libbpf-bootstrap/),
   from Andrii Nakryiko.  
   You want to start developing an eBPF application, but you feel intimidated by
   libbpf's complexity or lack of documentation? You _must_ have a look at
@@ -177,7 +179,7 @@ growing every day.
   involved. This is a long read, but well worth it if you want to program
   applications working with eBPF.
 
-* [_A first xBGP plugin_](https://pluginized-protocols.org/xbgp/2020/11/29/xbgp-hello.html),
+- [_A first xBGP plugin_](https://pluginized-protocols.org/xbgp/2020/11/29/xbgp-hello.html),
   from Thomas Wirtgen.  
   As a follow-up from the link to the paper for xBGP in the previous issue of
   these _eBPF Updates_, this is the introduction of a first eBPF-based xBGP
@@ -191,7 +193,7 @@ growing every day.
   [Dockerfile](https://github.com/pluginized-protocols/libxbgp/blob/master/misc/Dockerfile_xbgp)
   packaging all the required elements.
 
-* [_Cilium & eBPF - From Device to Service-Centric Networking_](https://docs.google.com/presentation/d/1cB4rJcdxTolIIUy5IEcb9iiUJHlMNmyT7c5eYY9D5LU/edit?usp=sharing),
+- [_Cilium & eBPF - From Device to Service-Centric Networking_](https://docs.google.com/presentation/d/1cB4rJcdxTolIIUy5IEcb9iiUJHlMNmyT7c5eYY9D5LU/edit?usp=sharing),
   from Thomas Graf.  
   In this presentation at the NAG (Network Architecture Geeks) Cafe in
   December, Thomas outlines how eBPF allows to build powerful service-centric
@@ -199,7 +201,7 @@ growing every day.
   networking architecture to meet requirements of containers and cloud-native
   environments.
 
-* [_Integrating an eBPF-based firewall into the TezEdge node with multipass validations_](https://medium.com/simplestaking/integrating-an-ebpf-based-firewall-into-the-tezedge-node-with-multipass-validations-769d4c6ccd93),
+- [_Integrating an eBPF-based firewall into the TezEdge node with multipass validations_](https://medium.com/simplestaking/integrating-an-ebpf-based-firewall-into-the-tezedge-node-with-multipass-validations-769d4c6ccd93),
   from Juraj Selep.  
   TezEdge peer-to-peer nodes validate blocks for the decentralized
   [Tezos](https://en.wikipedia.org/wiki/Tezos) blockchain, providing smart
@@ -211,14 +213,14 @@ growing every day.
   “multipass validation” scheme that aims at detecting erroneous blocks as soon
   as possible. Note that the eBPF programs are written in Rust.
 
-* [_Why We Switched from bcc-tools to libbpf-tools for BPF Performance Analysis_](https://en.pingcap.com/blog/why-we-switched-from-bcc-tools-to-libbpf-tools-for-bpf-performance-analysis),
+- [_Why We Switched from bcc-tools to libbpf-tools for BPF Performance Analysis_](https://en.pingcap.com/blog/why-we-switched-from-bcc-tools-to-libbpf-tools-for-bpf-performance-analysis),
   from Wenbo Zhang.  
   Another article on the benefits brought by CO-RE, for which libbpf provides
   good support. After comparing bcc-based and libbpf-based tracing tools in
   terms of features and memory footprint, the author provide a list of tools
   and invocation patterns they use to analyze I/O performance.
 
-* [_How to mitigate Kubernetes CVE-2020-8554 with eBPF_](https://cilium.io/blog/2020/12/11/kube-proxy-free-cve-mitigation)
+- [_How to mitigate Kubernetes CVE-2020-8554 with eBPF_](https://cilium.io/blog/2020/12/11/kube-proxy-free-cve-mitigation)
   from Jed Salazar.  
   [CVE-2020-8554](https://github.com/kubernetes/kubernetes/issues/97076)
   represents a MITM (Man-in-the-middle) attack in Kubernetes where the
@@ -227,14 +229,14 @@ growing every day.
   this blog, Jed describes how Cilium is able to mitigate this attack with
   eBPF.
 
-* [_Tips and Tricks for Writing Linux BPF Applications with libbpf_](https://pingcap.com/blog/tips-and-tricks-for-writing-linux-bpf-applications-with-libbpf),
+- [_Tips and Tricks for Writing Linux BPF Applications with libbpf_](https://pingcap.com/blog/tips-and-tricks-for-writing-linux-bpf-applications-with-libbpf),
   from Wenbo Zhang.  
   This is a collection of hints about libbpf, to make it easier to write
   applications or to get better performance. The article contains several hints
   related to the use of eBPF “skeletons” generated by bpftool, eBPF maps, eBPF
   global variables, or pointers dereferencing.
 
-* [_BPF and Go: Modern forms of introspection in Linux_](https://medium.com/bumble-tech/bpf-and-go-modern-forms-of-introspection-in-linux-6b9802682223),
+- [_BPF and Go: Modern forms of introspection in Linux_](https://medium.com/bumble-tech/bpf-and-go-modern-forms-of-introspection-in-linux-6b9802682223),
   from Marko Kevac.  
   This long read contains two parts. The first one is a good introduction, in
   terms of context and history, to eBPF. The second part focuses on the
@@ -246,7 +248,7 @@ growing every day.
   large part of eBPF's tracing capabilities remain available for Go
   applications.
 
-* [_Adding BPF target support to the Rust compiler_](https://confused.ai/posts/rust-bpf-target),
+- [_Adding BPF target support to the Rust compiler_](https://confused.ai/posts/rust-bpf-target),
   from Alessandro Decina.  
   eBPF bytecode can be compiled from C with Clang/LLVM's backend. Other
   languages, and Rust in particular, use the same toolchain. Compiling Rust
@@ -258,7 +260,7 @@ growing every day.
   versions of rustc and cargo already. The linker is available
   [on GitHub](https://github.com/alessandrod/bpf-linker).
 
-* [_NRE Labs v1.3.0 - Kata Containers, Cilium, cRPD!_](https://nrelabs.io/2020/12/nre-labs-v1.3.0-kata-containers-cilium-crpd/),
+- [_NRE Labs v1.3.0 - Kata Containers, Cilium, cRPD!_](https://nrelabs.io/2020/12/nre-labs-v1.3.0-kata-containers-cilium-crpd/),
   from Matt Oswalt.  
   [NRE Labs](https://nrelabs.io/about/) has released a blog post with updates
   on new technology brought in, and eBPF is among the highlights. They praise
@@ -269,22 +271,22 @@ growing every day.
 
 ### Software Projects
 
-* The [Golang library](https://github.com/cilium/ebpf) from Cloudflare and
+- The [Golang library](https://github.com/cilium/ebpf) from Cloudflare and
   Cilium for manipulating eBPF objects started tagging releases, and v0.3.0 was
   released end of November 2020.
 
 ### Sandbox and Experiments
 
-* [_bpf: a Zig BPF library_](https://github.com/mattnite/bpf) aims at providing
+- [_bpf: a Zig BPF library_](https://github.com/mattnite/bpf) aims at providing
   the same features as libbpf, but using the Zig programming language.
 
 ## The Kernel Side
 
-* Support for libbpf in iproute2 landed.
+- Support for libbpf in iproute2 landed.
   (Hangbin Liu,
   [link](https://lore.kernel.org/bpf/07bc85b3-3ae0-eaa5-e8a5-921dbd4a4e4f@gmail.com/t/#u))
 
-* Amazon's ENA device got support for XDP redirect (`XDP_REDIRECT` action).
+- Amazon's ENA device got support for XDP redirect (`XDP_REDIRECT` action).
   (Shay Agroskin,
   [link](https://lore.kernel.org/netdev/1606344708-11100-1-git-send-email-akiyano@amazon.com/t/#u))
 
@@ -292,20 +294,20 @@ Here are some highlights from the second
 [pull request for the bpf-next tree](https://lore.kernel.org/bpf/20201204021936.85653-1-alexei.starovoitov@gmail.com/)
 for the 5.11 cycle:
 
-* Support BTF in kernel modules, thus making BTF-powered raw tracepoints or
+- Support BTF in kernel modules, thus making BTF-powered raw tracepoints or
   tracing hooks (fentry/fexit/fmod_ret/LSM) available for modules. CO-RE also
   becomes available for programs attached to hooks in modules.
   (Andrii Nakryiko,
   [link](https://lore.kernel.org/netdev/20201203204634.1325171-1-andrii@kernel.org/t/#u))
 
-* Add a new socket option `SO_PREFER_BUSY_POLL` to switch to a new “heavy
+- Add a new socket option `SO_PREFER_BUSY_POLL` to switch to a new “heavy
   traffic” busy-polling mode, to enforce the use of busy-polling even on heavy
   loaded NAPI contexts where it might otherwise be prevented. Also allow
   busy-polling to be performed on XDP sockets.
   (Björn Töpel,
   [link](https://lore.kernel.org/bpf/20201130185205.196029-1-bjorn.topel@gmail.com/t/#u))
 
-* Add a new helper `bpf_ima_inode_hash()` to get the IMA (Integrity Measurement
+- Add a new helper `bpf_ima_inode_hash()` to get the IMA (Integrity Measurement
   Architecture) hash of an inode, which can be useful when using eBPF in a LSM
   (Linux Security Module) for fingerprinting files. One example use case is to
   get and store fingerprints of executable files when they are executed, and to
@@ -313,7 +315,7 @@ for the 5.11 cycle:
   (KP Singh,
   [link](https://lore.kernel.org/bpf/20201124151210.1081188-1-kpsingh@chromium.org/t/#u))
 
-* Add a new helper `bpf_bprm_opts_set()` for use with eBPF in a LSM, to update
+- Add a new helper `bpf_bprm_opts_set()` for use with eBPF in a LSM, to update
   certain bits of the `struct linux_binprm` for a process. The only accessible
   bit at the moment is the `secureexec` bit, which can (indirectly) disable the
   use of certain environment variables like `LD_PRELOAD` for the dynamic
@@ -321,7 +323,7 @@ for the 5.11 cycle:
   (KP Singh,
   [link](https://lore.kernel.org/bpf/20201117232929.2156341-1-kpsingh@chromium.org/t/#u))
 
-* Switch from memlock rlimit accounting to cgroup-based memory for the kernel
+- Switch from memlock rlimit accounting to cgroup-based memory for the kernel
   memory used by eBPF objects. The rlimit had a number of downsides (refer to
   the cover letter linked below for details), and the cgroup-based accounting
   will be more flexible, while allowing a better control and offering easier
@@ -331,13 +333,13 @@ for the 5.11 cycle:
   (Roman Gushchin,
   [link](https://lore.kernel.org/bpf/20201201215900.3569844-1-guro@fb.com/t/#u))
 
-* Allow `bpf_getsockopt()` and `bpf_setsockopt()` helpers from
+- Allow `bpf_getsockopt()` and `bpf_setsockopt()` helpers from
   `BPF_CGROUP_INET4_BIND` and `BPF_CGROUP_INET6_BIND` attach hooks, so that the
   listener sockets attached to cgroups can pre-populate some options as needed.
   (Stanislav Fomichev,
   [link](https://lore.kernel.org/bpf/20201202172516.3483656-1-sdf@google.com/t/#u))
 
-* Add a new helper `bpf_ktime_get_coarse_ns()` to get a timestamp using the
+- Add a new helper `bpf_ktime_get_coarse_ns()` to get a timestamp using the
   `CLOCK_MONOTONIC_COARSE`, which is less accurate but more performant than
   `CLOCK_MONOTONIC` used by `bpf_ktime_get_ns()`.
   (Dmitrii Banshchikov,
@@ -347,18 +349,18 @@ This was followed by
 [a third pull request](https://lore.kernel.org/bpf/20201214214316.20642-1-daniel@iogearbox.net/),
 for the same tree and cycle, and for which you will find the highlights below:
 
-* Expose `bpf_sk_storage_get()` and `bpf_sk_storage_delete()` helpers to
+- Expose `bpf_sk_storage_get()` and `bpf_sk_storage_delete()` helpers to
   iterator programs so that such an eBPF iterator can, for example, initialize
   or delete selected values from a socket local storage.
   (Florent Revest,
   [link](https://lore.kernel.org/bpf/20201204113609.1850150-3-revest@google.com/t/#u))
 
-* Add AF\_XDP selftests based on veth devices, for both SKB and native modes,
+- Add AF_XDP selftests based on veth devices, for both SKB and native modes,
   as part of the eBPF selftests suite.
   (Weqaar Janjua,
   [link](https://lore.kernel.org/bpf/20201207215333.11586-1-weqaar.a.janjua@intel.com/t/#u))
 
-* Update libbpf function `bpf_program__set_attach_target()` so it supports
+- Update libbpf function `bpf_program__set_attach_target()` so it supports
   finding BTF-based kernel attach targets (such as fentry, fexit, BTF-based
   tracepoints, etc.). Like for other hooks, the attach points can be passed
   through the ELF section name where the eBPF program is placed, with the
@@ -366,13 +368,13 @@ for the same tree and cycle, and for which you will find the highlights below:
   (Andrii Nakryiko,
   [link](https://lore.kernel.org/bpf/20201211215825.3646154-1-andrii@kernel.org/t/#u))
 
-* Permit pointers on stack for helper calls in the verifier, if the user has
+- Permit pointers on stack for helper calls in the verifier, if the user has
   sufficient permissions. This addresses an issue where the verifier would
   wrongly reject some programs.
   (Yonghong Song,
   [link](https://lore.kernel.org/bpf/20201210013348.943623-1-yhs@fb.com/t/#u))
 
-* Add new libbpf API function to retrieve an eBPF ring buffer epoll file
+- Add new libbpf API function to retrieve an eBPF ring buffer epoll file
   descriptor. This is to help with the migration from perf buffer to eBPF ring
   buffer.
   (Brendan Jackman,

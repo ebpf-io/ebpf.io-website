@@ -4,7 +4,7 @@ date: "2021-02-23T10:00:00.000Z"
 title: "eBPF Updates #4: In-Memory Loads Detection, Debugging QUIC, Local CI Runs, MTU Checks, but No Pancakes"
 toc: true
 tags:
-  - _
+  - Update
 categories:
   - Update
 ---
@@ -30,11 +30,12 @@ pancakes.
 ## New Resources
 
 <!--2021-02-07-->
+
 Besides pancakes and Valentine's Day, early February is also marked by one of
 the biggest events centered on open-source: FOSDEM! This year's edition was
 held online, and included several presentations related to eBPF.
 
-* [_Advanced BPF kernel features for the container age_](https://fosdem.org/2021/schedule/event/containers_ebpf_kernel/),
+- [_Advanced BPF kernel features for the container age_](https://fosdem.org/2021/schedule/event/containers_ebpf_kernel/),
   from Daniel Borkmann.  
   eBPF is in a unique position to efficiently process and steer packets at
   different steps of their travel through the stack. Cilium relies on it to
@@ -46,22 +47,22 @@ held online, and included several presentations related to eBPF.
   Time) rate-limiting for Pods. Recommended if you want to learn more on
   advanced networking features entirely implemented with eBPF.
 
-* [_hXDP: Efficient Software Packet Processing on FPGA NICs_](https://fosdem.org/2021/schedule/event/sdn_hxdp_fpga/),
+- [_hXDP: Efficient Software Packet Processing on FPGA NICs_](https://fosdem.org/2021/schedule/event/sdn_hxdp_fpga/),
   from Marco Spaziani Brunella.  
   hXDP is an eBPF hardware offload implementation for FPGA-based NICs. Through
   hardware functions, some additional compiler work, and custom optimizations,
   it achieves great performance. Latest work include working on a higher-end
   platform, and trying to implement eight processing cores instead of one.
 
-* [_Networking Performances in the Linux Kernel, Getting the most out of the Hardware_](https://fosdem.org/2021/schedule/event/network_performance_in_kernel/),
+- [_Networking Performances in the Linux Kernel, Getting the most out of the Hardware_](https://fosdem.org/2021/schedule/event/network_performance_in_kernel/),
   from Maxime Chevallier.  
   Definitely centered on networking, this presentation follows the path of
   packets through the low-level mechanisms involved in the hardware and in the
   Linux stack. There is not much about eBPF itself, but the last section of the
-  talk helps understand how XDP and AF\_XDP complement the other networking
+  talk helps understand how XDP and AF_XDP complement the other networking
   components in the kernel.
 
-* [_Monitoring MariaDB Server with bpftrace on Linux_](https://fosdem.org/2021/schedule/event/mariadb_bpftrace/),
+- [_Monitoring MariaDB Server with bpftrace on Linux_](https://fosdem.org/2021/schedule/event/mariadb_bpftrace/),
   from Valerii Kravchuk.  
   This presentation is both an introduction to bpftrace itself and to its
   application to MariaDB tracing. The objective is to add uprobes, get stack
@@ -71,7 +72,7 @@ held online, and included several presentations related to eBPF.
   Valerii also covered the topic in
   [a series of posts on his blog](https://mysqlentomologist.blogspot.com/2021/01/playing-with-recent-bpftrace-and.html).
 
-* [_Seccomp Notify on Kubernetes_](https://fosdem.org/2021/schedule/event/containers_k8s_seccomp_notify/),
+- [_Seccomp Notify on Kubernetes_](https://fosdem.org/2021/schedule/event/containers_k8s_seccomp_notify/),
   from Alban Crequy.  
   This talk demonstrates how to use seccomp notify to proxy some system
   calls—including `bpf()`— to the container manager, from an unprivileged
@@ -84,11 +85,11 @@ held online, and included several presentations related to eBPF.
   and
   [the `bpf()` use case](https://people.kernel.org/brauner/the-seccomp-notifier-cranking-up-the-crazy-with-bpf).
 
-* [*Deploying eBPF, XDP & AF\_XDP for Cloud Native*](https://fosdem.org/2021/schedule/event/sdn_ebpf_afxdp/),
+- [_Deploying eBPF, XDP & AF_XDP for Cloud Native_](https://fosdem.org/2021/schedule/event/sdn_ebpf_afxdp/),
   from Dave Cremins and Gary Loughnane.  
-  As per the abstract, “*This talk will cover an introduction to AF\_XDP, why it
+  As per the abstract, “_This talk will cover an introduction to AF_XDP, why it
   is suited to cloud native microservices, how it can be deployed today and the
-  deployment challenges as well as their solutions.*” [We could not attend the
+  deployment challenges as well as their solutions._” [We could not attend the
   presentation, and the video and slides have not been uploaded yet as of this
   writing].
 
@@ -96,7 +97,8 @@ And then here are some resources published over the last weeks, independent
 from FOSDEM.
 
 <!--2020-12-17-->
-* [_Running eBPF and Perf in Docker for Mac_](https://petermalmgren.com/docker-mac-bpf-perf/),
+
+- [_Running eBPF and Perf in Docker for Mac_](https://petermalmgren.com/docker-mac-bpf-perf/),
   from Peter Malmgren.  
   Perf and eBPF tools are handy tools to trace processes and to pin down the
   origin of a performance bottleneck. Motivated by the need to identify the
@@ -105,7 +107,8 @@ from FOSDEM.
   to run them in the container.
 
 <!--2021-01-11-->
-* [_Debugging QUIC with H2O and QLog_](https://www.fastly.com/blog/debugging-quic-with-h2o-and-qlog),
+
+- [_Debugging QUIC with H2O and QLog_](https://www.fastly.com/blog/debugging-quic-with-h2o-and-qlog),
   from Toru Maesaka.  
   The H2O HTTP server deployed by Fastly has a built-in event tracing
   infrastructure, powered by eBPF or DTrace depending on the platform. This
@@ -115,7 +118,8 @@ from FOSDEM.
   in user space.
 
 <!--2021-01-25-->
-* [_eBPF & the future of osquery on Linux_](https://medium.com/fleetdm/ebpf-the-future-of-osquery-on-linux-c9f33726e84d) (video),
+
+- [_eBPF & the future of osquery on Linux_](https://medium.com/fleetdm/ebpf-the-future-of-osquery-on-linux-c9f33726e84d) (video),
   from Zach Wasserman.  
   Osquery has been relying on the Audit subsystem in Linux to provide system
   visibility, which is powerful but comes with some drawbacks. For example, it
@@ -125,7 +129,8 @@ from FOSDEM.
   with “a potential to dramatically increase scope of observability”.
 
 <!--2021-01-27-->
-* [_eBPF Tools: An Overview of Falco, Inspektor Gadget, Hubble and Cilium_](https://thenewstack.io/ebpf-tools-an-overview-of-falco-inspektor-gadget-hubble-and-cilium/),
+
+- [_eBPF Tools: An Overview of Falco, Inspektor Gadget, Hubble and Cilium_](https://thenewstack.io/ebpf-tools-an-overview-of-falco-inspektor-gadget-hubble-and-cilium/),
   from Lucas Severo Alves.  
   Here is an introduction to each of the four eBPF-based tools mentioned in the
   title, accompanied with example use cases. All these tools focus on
@@ -134,7 +139,8 @@ from FOSDEM.
   security, tracing, visibility, and networking.
 
 <!--2021-02-03-->
-* [_Datadog On eBPF_](https://www.youtube.com/watch?v=58KtGtpn0_g) (video),
+
+- [_Datadog On eBPF_](https://www.youtube.com/watch?v=58KtGtpn0_g) (video),
   from Lee Avital, Guillaume Fournier and Ara Pulido.  
   Various aspects of eBPF are covered in this presentation. After introducing
   the basics, Datadog discusses technical details related to their workflow: Is
@@ -143,7 +149,8 @@ from FOSDEM.
   monitoring and runtime security.
 
 <!--2021-02-09-->
-* [_A Beginner's Guide to eBPF with Go_](https://web.archive.org/web/20210216233137/https://files.gotocon.com/uploads/slides/conference_39/1688/original/Beginners%20guide%20to%20eBPF%20with%20Go.pdf) (PDF),
+
+- [_A Beginner's Guide to eBPF with Go_](https://web.archive.org/web/20210216233137/https://files.gotocon.com/uploads/slides/conference_39/1688/original/Beginners%20guide%20to%20eBPF%20with%20Go.pdf) (PDF),
   from Liz Rice.  
   Learn how to program with eBPF and Go with this accessible tutorial. After a
   reminder of the basics of eBPF, this presentation focuses on a simple tracing
@@ -152,7 +159,8 @@ from FOSDEM.
   before showing how to recreate the bpftrace command previously introduced.
 
 <!--2021-02-15-->
-* [_Using eBPF to uncover in-memory loading_](https://blog.tofile.dev/2021/02/15/ebpf-01.html),
+
+- [_Using eBPF to uncover in-memory loading_](https://blog.tofile.dev/2021/02/15/ebpf-01.html),
   from Pat H.  
   Tracing with eBPF can be adapted to nearly any use case. In this post,
   programs are attached to trace the calls to `dup2()`, `write()` and `read()`,
@@ -165,14 +173,14 @@ from FOSDEM.
 
 ### Software Projects
 
-* The new <https://editor.cilium.io/> is a NetworkPolicy editor, introduced by
+- The new <https://editor.cilium.io/> is a NetworkPolicy editor, introduced by
   the Cilium community as an easy and interactive way to learn, create,
   visualize, and share Kubernetes NetworkPolicies. It provides an intuitive
   overview of some of the features that Cilium implements with eBPF. More
   details are available in
   [the editor's announcement](https://cilium.io/blog/2021/02/10/network-policy-editor).
 
-* [Tracee version 0.5.0](https://github.com/aquasecurity/tracee/discussions/563)
+- [Tracee version 0.5.0](https://github.com/aquasecurity/tracee/discussions/563)
   is out. From a tracing command line tool, the project evolves into a runtime
   security solution and now encompasses tracee-ebpf—the command-line tool
   itself—and the libbpfgo library. It also includes tracee-rules, a “new rule
@@ -180,14 +188,14 @@ from FOSDEM.
   on built-in and user-defined 'signatures'”, which are defined in Open Policy
   Agent's Rego language or in Go.
 
-* [TCPDog](https://github.com/mehrdadrad/tcpdog) is a new tool to collect TCP
+- [TCPDog](https://github.com/mehrdadrad/tcpdog) is a new tool to collect TCP
   statistics with eBPF and to export them to an Elasticsearch or InfluxDB
   database. It can collect from all TCP-related kernel tracepoints at the same
   time, but the parameters to collect are configurable.
 
 ### Software: Demos and Experiments
 
-* Guardicore released [IPCDump](https://github.com/guardicore/IPCDump) for
+- Guardicore released [IPCDump](https://github.com/guardicore/IPCDump) for
   tracing interprocess communications on Linux, be it through pipes, FIFOs,
   signals, UNIX sockets, loopback-based networking, or pseudoterminals. It
   draws some inspiration from Windows's procmon. Internally, it uses the gobpf
@@ -196,19 +204,19 @@ from FOSDEM.
   for more details, with a few examples of tracing communication from Chrome
   events, or between processes like containerd and dockerd.
 
-* Liz Rice has published a set of
+- Liz Rice has published a set of
   [basic eBPF examples using libbpfgo](https://github.com/lizrice/libbpfgo-beginners).
   The eBPF program is trivial, the objective is to get familiar with
   [libbpfgo](https://github.com/aquasecurity/tracee/tree/main/libbpfgo), a set
   of bindings in Go to the libbpf C library.
 
-* [XDP minimal example](https://ruderich.org/simon/notes/xdp-minimal-example)
+- [XDP minimal example](https://ruderich.org/simon/notes/xdp-minimal-example)
   is a note from Peter Ruderich describing a small but standalone XDP example,
   with a few explanations and pointers. This is an interesting program to get
   started with XDP (but don't forget the
   [XDP tutorial](https://github.com/xdp-project/xdp-tutorial/)).
 
-* [BPF-UprobeDBG](https://github.com/pathtofile/bpf-uprobedbg) is a
+- [BPF-UprobeDBG](https://github.com/pathtofile/bpf-uprobedbg) is a
   proof-of-concept experiment showing how to send signals to a process from a
   uprobe tracing a function of that same process. If that process is being
   debugged in gdb for example, this will stop its execution and allow for close
@@ -219,7 +227,8 @@ from FOSDEM.
 ### Podcasts
 
 <!--2021-01-28-->
-* [_Break Things on Purpose_ | Mikolaj Pawlikowski, Engineering Lead at Bloomberg](https://www.gremlin.com/blog/podcast-break-things-on-purpose-mikolaj-pawlikowski-engineering-lead-at-bloomberg/#ebpf),
+
+- [_Break Things on Purpose_ | Mikolaj Pawlikowski, Engineering Lead at Bloomberg](https://www.gremlin.com/blog/podcast-break-things-on-purpose-mikolaj-pawlikowski-engineering-lead-at-bloomberg/#ebpf),
   interview from Jason Yee and Pat Higgins.  
   Centered on Chaos Engineering, this episode mentions eBPF as “a game changer”
   in terms of visibility. The technology uses small code snippets, has a low
@@ -230,7 +239,8 @@ Members of the Cilium community have been very active, and contributed to
 several podcasts on eBPF and Cilium over the last weeks:
 
 <!--2021-02-02-->
-* [Software Engineering Daily - _Cilium: Programmable Linux Networking with Dan Wendlant and Thomas Graf_](https://softwareengineeringdaily.com/2021/02/02/cilium-programmable-linux-networking-with-dan-wendlant-and-thomas-graf/),
+
+- [Software Engineering Daily - _Cilium: Programmable Linux Networking with Dan Wendlant and Thomas Graf_](https://softwareengineeringdaily.com/2021/02/02/cilium-programmable-linux-networking-with-dan-wendlant-and-thomas-graf/),
   interview from Jeff Meyerson.  
   Virtual machines, and then containers, have led to important changes on how
   applications are managed. In response, Thomas explains, network processing
@@ -238,7 +248,8 @@ several podcasts on eBPF and Cilium over the last weeks:
   comprehensive networking, visibility, and security at scale to clusters.
 
 <!--2021-02-02-->
-* [Software Engineering Radio, Episode 445 - _Thomas Graf on eBPF (extended Berkeley Packet Filter)_](https://www.se-radio.net/2021/02/episode-445-thomas-graf-on-ebpf-extended-berkeley-packet-filter/),
+
+- [Software Engineering Radio, Episode 445 - _Thomas Graf on eBPF (extended Berkeley Packet Filter)_](https://www.se-radio.net/2021/02/episode-445-thomas-graf-on-ebpf-extended-berkeley-packet-filter/),
   interview from Justin Beyer.  
   This episode focuses on eBPF itself, and explains how the technology can help
   with network processing to safely implement packet routing and network
@@ -246,7 +257,8 @@ several podcasts on eBPF and Cilium over the last weeks:
   or TCP congestion.
 
 <!--2021-02-08-->
-* [DiscoPosse Podcast, Episode 153 - _Kubernetes Networking and Security, and Building Business on Open Source with Isovalent Founder, Thomas Graf_](https://discopossepodcast.com/ep-153-kubernetes-networking-and-security-and-building-business-on-open-source-with-isovalent-founder-thomas-graf/),
+
+- [DiscoPosse Podcast, Episode 153 - _Kubernetes Networking and Security, and Building Business on Open Source with Isovalent Founder, Thomas Graf_](https://discopossepodcast.com/ep-153-kubernetes-networking-and-security-and-building-business-on-open-source-with-isovalent-founder-thomas-graf/),
   interview from Eric Wright.  
   Thomas comes back on the evolution on Linux networking and on some of the new
   challenges to solve in cloud deployments. He explains how eBPF is in a unique
@@ -257,7 +269,8 @@ several podcasts on eBPF and Cilium over the last weeks:
   builds its product on top of the Cilium open source project.
 
 <!--2021-02-10-->
-* [The Weekly Squeak - _eBPF Cloud Native computing with Neela Jacques of Isovalent_](https://www.youtube.com/watch?t=439&v=QrKt8PhAkiE),
+
+- [The Weekly Squeak - _eBPF Cloud Native computing with Neela Jacques of Isovalent_](https://www.youtube.com/watch?t=439&v=QrKt8PhAkiE),
   interview from Chris Chinchilla.  
   By operating from inside the kernel, eBPF offers unprecedented capabilities
   in terms of tracing and network processing. This allows Cilium and then
@@ -273,7 +286,7 @@ Here is a summary of the main changes included in the second
 [pull request for the bpf-next tree](https://lore.kernel.org/bpf/20210216001516.3248-1-daniel@iogearbox.net/t/#u)
 for the 5.12 cycle.
 
-* Add a script to run the eBPF CI locally. It was already possible to build and
+- Add a script to run the eBPF CI locally. It was already possible to build and
   run the eBPF selftests locally, but this script runs them on the same kernel
   image as the continuous integration frameworks that validates the patch sets
   on their submission. The objective is to have contributors run the selftests
@@ -283,7 +296,7 @@ for the 5.12 cycle.
   <span style="white-space: nowrap;">(KP Singh,
   [link](https://lore.kernel.org/bpf/20210204194544.3383814-1-kpsingh@kernel.org/t/#u))</span>
 
-* Support passing pointers to types with known size as arguments to a global
+- Support passing pointers to types with known size as arguments to a global
   function. The objective is to overcome the limit on the maximum number of
   allowed arguments for eBPF functions (five arguments): Additional arguments
   can be stored in a struct, and a pointer to this struct passed to the
@@ -294,7 +307,7 @@ for the 5.12 cycle.
   <span style="white-space: nowrap;">(Dmitrii Banshchikov,
   [link](https://lore.kernel.org/bpf/20210212205642.620788-1-me@ubique.spb.ru/t/#u))</span>
 
-* Add an eBPF iterator for `task_vma` which allows the user to generate
+- Add an eBPF iterator for `task_vma` which allows the user to generate
   information similar to what is available from /proc/pid/maps, but customized
   for their needs. For example, when a VMA (Virtual Memory Area) covers mixed
   2MB pages and 4kB pages, one use case is to indicate which address ranges are
@@ -302,14 +315,14 @@ for the 5.12 cycle.
   <span style="white-space: nowrap;">(Song Liu,
   [link](https://lore.kernel.org/bpf/20210212183107.50963-1-songliubraving@fb.com/t/#u))</span>
 
-* Allow `bpf_getsockopt()` and `bpf_setsockopt()` helpers from all
+- Allow `bpf_getsockopt()` and `bpf_setsockopt()` helpers from all
   `sock_addr`-related program hooks, so that listener sockets attached to
   cgroups can query or modify socket options as needed at the various available
   attach points.
   <span style="white-space: nowrap;">(Stanislav Fomichev,
   [link](https://lore.kernel.org/bpf/20210127232853.3753823-1-sdf@google.com/t/#u))</span>
 
-* In a set containing various improvements, Alexei adds a mechanism to prevent
+- In a set containing various improvements, Alexei adds a mechanism to prevent
   recursion on fentry/fexit programs (extendable to sleepable programs in the
   future). A recursion would occur, for example, when tracing a function called
   by an eBPF helper, with a program that would itself call that helper.
@@ -320,11 +333,11 @@ for the 5.12 cycle.
   <span style="white-space: nowrap;">(Alexei Starovoitov,
   [link](https://lore.kernel.org/bpf/20210210033634.62081-1-alexei.starovoitov@gmail.com/t/#u))</span>
 
-* Support the use of eBPF ring buffers for sleepable programs.
+- Support the use of eBPF ring buffers for sleepable programs.
   <span style="white-space: nowrap;">(KP Singh,
   [link](https://lore.kernel.org/bpf/20210204193622.3367275-1-kpsingh@kernel.org/t/#u))</span>
 
-* Extend the verifier to enable variable offset read and write access to the
+- Extend the verifier to enable variable offset read and write access to the
   eBPF program stack. For example, if a stack-allocated array is declared in a
   program, it becomes possible (under certain conditions) to read from or write
   to a cell at an index which is not statically known at compile and load time,
@@ -332,7 +345,7 @@ for the 5.12 cycle.
   <span style="white-space: nowrap;">(Andrei Matei,
   [link](https://lore.kernel.org/bpf/20210207011027.676572-1-andreimatei1@gmail.com/t/#u))</span>
 
-* Rework MTU handling in TC and XDP programs. MTU (Maximum Transmission Unit)
+- Rework MTU handling in TC and XDP programs. MTU (Maximum Transmission Unit)
   checks performed by the eBPF helpers would sometimes be too conservative in
   preventing growing the size of a packet, because they would not consider the
   possibility of a redirection and would look at the MTU for the wrong
@@ -342,19 +355,19 @@ for the 5.12 cycle.
   <span style="white-space: nowrap;">(Jesper Dangaard Brouer,
   [link](https://lore.kernel.org/bpf/161287779408.790810.15631860742170694244.stgit@firesoul/t/#u))</span>
 
-* Extend the `bpf_get_socket_cookie()` helper to make it available from tracing
+- Extend the `bpf_get_socket_cookie()` helper to make it available from tracing
   programs, including sleepable ones.
   <span style="white-space: nowrap;">(Florent Revest,
   [link](https://lore.kernel.org/bpf/20210210111406.785541-1-revest@chromium.org/t/#u))</span>
 
-* Clean up and slightly improve the performance for AF\_XDP sockets. Also add a
+- Clean up and slightly improve the performance for AF_XDP sockets. Also add a
   probe to libbpf (but it should be moved to libxdp in the future) to check
   what features the kernel supports, and pick the most efficient eBPF program
   to load from the library when setting up the socket.
   <span style="white-space: nowrap;">(Björn Töpel,
   [link](https://lore.kernel.org/bpf/20210122105351.11751-1-bjorn.topel@gmail.com/t/#u))</span>
 
-* Allow BTF to contain information on zero-sized .rodata ELF sections. Such
+- Allow BTF to contain information on zero-sized .rodata ELF sections. Such
   sections may be formed by certain read-only (`const`) initialized variables,
   that the compiler stores into the .rodata as global variables. Because the
   variable was not initially declared as global, there is no debug information
@@ -362,7 +375,7 @@ for the 5.12 cycle.
   <span style="white-space: nowrap;">(Yonghong Song,
   [link](https://lore.kernel.org/bpf/20210119153519.3901963-1-yhs@fb.com/t/#u))</span>
 
-* Improve XDP performance for the veth by allocating socket buffers in bulks
+- Improve XDP performance for the veth by allocating socket buffers in bulks
   for `ndo_xdp_xmit()`.
   <span style="white-space: nowrap;">(Lorenzo Bianconi,
   [link](https://lore.kernel.org/bpf/a14a30d3c06fff24e13f836c733d80efc0bd6eb5.1611957532.git.lorenzo@kernel.org/t/#u))</span>
@@ -432,22 +445,23 @@ generation and then of the JIT-compiler
 The new, one-million-state complexity limit should be flexible enough for most
 use cases, and in the end, programs have truly one bound: Your imagination!
 
-[^1]: The complexity limit was actually changed several times since
-  [the 32k value from its introduction in Linux 3.18](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=17a5267067f3c372fec9ffb798d6eaba6b5e6a4c):
-  it was raised to
-  [64k in Linux 4.7](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=07016151a446d25397b24588df4ed5cf777a69bb),
-  then to
-  [96k in Linux 4.12](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=3c2ce60bdd3d57051bf85615deec04a694473840),
-  again to
-  [128k in Linux 4.14](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=8e17c1b16277cba0e9426de6fe78817df378f45c),
-  and at last to
-  [1M in Linux 5.2](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=c04c0d2b968ac45d6ef020316808ef6c82325a82).
+[^1]:
+    The complexity limit was actually changed several times since
+    [the 32k value from its introduction in Linux 3.18](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=17a5267067f3c372fec9ffb798d6eaba6b5e6a4c):
+    it was raised to
+    [64k in Linux 4.7](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=07016151a446d25397b24588df4ed5cf777a69bb),
+    then to
+    [96k in Linux 4.12](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=3c2ce60bdd3d57051bf85615deec04a694473840),
+    again to
+    [128k in Linux 4.14](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=8e17c1b16277cba0e9426de6fe78817df378f45c),
+    and at last to
+    [1M in Linux 5.2](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=c04c0d2b968ac45d6ef020316808ef6c82325a82).
 
 ## Community
 
 The eBPF community keeps growing!
 
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">We have recently passed 2,000 members in the main <a href="https://twitter.com/hashtag/ebpf?src=hash&amp;ref_src=twsrc%5Etfw">#ebpf</a> slack channel. If you are interested in eBPF, the channel is a great start to chat with the community and get started.<br><br>Get your invite here:<a href="https://t.co/Geqq9RbKsx">https://t.co/Geqq9RbKsx</a> <a href="https://t.co/WieobQ3tKc">pic.twitter.com/WieobQ3tKc</a></p>&mdash; Thomas Graf (@tgraf__) <a href="https://twitter.com/tgraf__/status/1354808116106334209?ref_src=twsrc%5Etfw">January 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">We have recently passed 2,000 members in the main <a href="https://twitter.com/hashtag/ebpf?src=hash&amp;ref_src=twsrc%5Etfw">#ebpf</a> slack channel. If you are interested in eBPF, the channel is a great start to chat with the community and get started.<br><br>Get your invite here:<a href="https://t.co/Geqq9RbKsx">https://t.co/Geqq9RbKsx</a> <a href="https://t.co/WieobQ3tKc">pic.twitter.com/WieobQ3tKc</a></p>&mdash; Thomas Graf (@tgraf__) <a href="https://twitter.com/tgraf__/status/1354808116106334209?ref_src=twsrc%5Etfw">January 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">eBPF is so cool. Worth investing your time in learning it. This thing is X-ray vision.</p>&mdash; ⬜️🟥⬜️ (@PieCalculus) <a href="https://twitter.com/PieCalculus/status/1358891574374133763?ref_src=twsrc%5Etfw">February 8, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
