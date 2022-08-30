@@ -3,7 +3,7 @@ path: "/blog/ebpf-updates-2021-01"
 date: "2021-01-22T10:00:00.000Z"
 title: "eBPF Updates #3: Atomics Operations, Socket Options Retrieval, Syscall Tracing Benchmarks, eBPF in the Supply Chain"
 tags:
-  - _
+  - Update
 categories:
   - Update
 ---
@@ -35,11 +35,13 @@ issue of the eBPF Updates, and Happy New Year!
 Let's start with some news from companies working on and with eBPF.
 
 <!--2020-12-20-->
-* Microsoft is working on an eBPF-based monitoring tool for Linux:
+
+- Microsoft is working on an eBPF-based monitoring tool for Linux:
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">We&#39;re working on eBPF-based Sysmon for Linux that has same filtering and output schema (where applicable) as Sysmon For Windows. Shooting for a preview in February. <a href="https://t.co/l0BTkVXac1">pic.twitter.com/l0BTkVXac1</a></p>&mdash; Mark Russinovich (@markrussinovich) <a href="https://twitter.com/markrussinovich/status/1340737856201879552?ref_src=twsrc%5Etfw">December 20, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <!--2021-01-11-->
-* [_Isovalent Looks to Transform Container Networking With eBPF_](https://containerjournal.com/topics/container-networking/isovalent-container-networking-in-2021-using-ebpf/),
+
+- [_Isovalent Looks to Transform Container Networking With eBPF_](https://containerjournal.com/topics/container-networking/isovalent-container-networking-in-2021-using-ebpf/),
   from Mike Vizard.  
   This brief, high-level post focuses on the transformations that eBPF brings
   to container networking and, incidentally, how it led to the creation of
@@ -47,7 +49,8 @@ Let's start with some news from companies working on and with eBPF.
   environments in terms of networking, security, and observability.
 
 <!--2021-01-12-->
-* [Kubernetes Podcast - _Episode #133: Cilium, with Thomas Graf_](https://kubernetespodcast.com/episode/133-cilium/),
+
+- [Kubernetes Podcast - _Episode #133: Cilium, with Thomas Graf_](https://kubernetespodcast.com/episode/133-cilium/),
   from Craig Box and Adam Glick.  
   Interviewed by Craig and Adam, Thomas Graf recounts the advent of eBPF, and
   how it introduced a new paradigm for network processing at a time when the
@@ -59,13 +62,15 @@ Let's start with some news from companies working on and with eBPF.
   think you finally fixed networking?” Future will tell.
 
 <!--2021-01-18-->
-* Optimyze.cloud [announced in a tweet](https://twitter.com/OptimyzeCloud/status/1351203905850519557)
+
+- Optimyze.cloud [announced in a tweet](https://twitter.com/OptimyzeCloud/status/1351203905850519557)
   that they are working on a “_Full-system lightweight continuous profiling for
   Linux Kernel, C/C++, Rust, Golang, Python, JVM, PHP (with Ruby and Node
   planned for the future)_”, apparently based on eBPF.
 
 <!--2021-01-18-->
-* [_Securing Containerized Environments with eBPF_](https://www.tag-cyber.com/advisory/articles/securing-containerized-environments-with-ebpf),
+
+- [_Securing Containerized Environments with eBPF_](https://www.tag-cyber.com/advisory/articles/securing-containerized-environments-with-ebpf),
   from Adam LeWinter.  
   Following the transition from physical hardware to virtual machines, most
   workflows are now moving to containers. In this context, new challenges in
@@ -78,7 +83,8 @@ Let's start with some news from companies working on and with eBPF.
 ### Introductory Resources
 
 <!--2020-11-25-->
-* [_BPF: The future of configs_](https://blog.habets.se/2020/11/BPF-the-future-of-configs.html),
+
+- [_BPF: The future of configs_](https://blog.habets.se/2020/11/BPF-the-future-of-configs.html),
   from Thomas Habets.  
   While many presentations focus on introducing eBPF's technical aspects, this
   post takes a step back and describes why eBPF is “_such a big deal_”. For
@@ -90,7 +96,8 @@ Let's start with some news from companies working on and with eBPF.
   understand what is at stake with eBPF.
 
 <!--2020-12-11-->
-* [_Linux Networking - eBPF, XDP, DPDK, VPP - What does all that mean?_](https://media.ccc.de/v/vnog-4-linux-networking-ebpf-xdp-dpdk-vp),
+
+- [_Linux Networking - eBPF, XDP, DPDK, VPP - What does all that mean?_](https://media.ccc.de/v/vnog-4-linux-networking-ebpf-xdp-dpdk-vp),
   from Andree Toonk.  
   Definitely oriented towards networking, this video introduces several of the
   frameworks that have been used in the domain of fast networking over the last
@@ -102,7 +109,8 @@ Let's start with some news from companies working on and with eBPF.
   [on his blog](https://toonk.io/tag/networking/index.html).
 
 <!--2020-12-19-->
-* [_File Integrity Monitoring using eBPF_](https://www.devseccon.com/file-integrity-monitoring-using-ebpf-secadvent-day-19/),
+
+- [_File Integrity Monitoring using eBPF_](https://www.devseccon.com/file-integrity-monitoring-using-ebpf-secadvent-day-19/),
   from Sylvain Baubeau.  
   After a brief introduction to eBPF, this post explains how it can improve
   features such as _File Integrity Monitoring_ as implemented in the Datadog
@@ -112,7 +120,8 @@ Let's start with some news from companies working on and with eBPF.
   and over overall improvements to the feature.
 
 <!--2021-01-19-->
-* [_Introduction to eBPF_](https://oswalt.dev/2021/01/introduction-to-ebpf/),
+
+- [_Introduction to eBPF_](https://oswalt.dev/2021/01/introduction-to-ebpf/),
   from Matt Oswalt.  
   This high-level introduction—technical details are left out for follow-up
   posts—explains what eBPF is, how it augments the Linux operating system, and
@@ -128,7 +137,8 @@ Let's start with some news from companies working on and with eBPF.
 ### Deep Dives
 
 <!--2020-12-23-->
-* [Cilium documentation on _The Kubernetes Networking Guide_](https://k8s.networkop.co.uk/cni/cilium/),
+
+- [Cilium documentation on _The Kubernetes Networking Guide_](https://k8s.networkop.co.uk/cni/cilium/),
   from Michael Kashin.  
   _The Kubernetes Networking Guide_ aims at providing “_an overview of various
   Kubernetes networking components, with a focus on exactly how they implement
@@ -140,7 +150,8 @@ Let's start with some news from companies working on and with eBPF.
   eBPF.
 
 <!--2020-12-24-->
-* [_How to Trace Linux System Calls in Production with Minimal Impact on Performance_](https://pingcap.com/blog/how-to-trace-linux-system-calls-in-production-with-minimal-impact-on-performance),
+
+- [_How to Trace Linux System Calls in Production with Minimal Impact on Performance_](https://pingcap.com/blog/how-to-trace-linux-system-calls-in-production-with-minimal-impact-on-performance),
   from Wenbo Zhang.  
   The answer to the question in the title, as you can imagine, is eBPF. The
   post explains that strace is good to inspect system calls, but not usable in
@@ -152,19 +163,19 @@ Let's start with some news from companies working on and with eBPF.
 
 ### Software Projects
 
-* ipftrace2, a tool to track packets inside the Linux kernel,
+- ipftrace2, a tool to track packets inside the Linux kernel,
   [got a new v0.1.0 release](https://github.com/YutaroHayakawa/ipftrace2/releases/tag/v0.1.0),
   bringing new features such as support for writing extension module with C
   thanks to CO-RE, thus improving programmability and portability.
 
 ### Software: Sandbox and Experiments
 
-* [tc-skeleton](https://github.com/florianl/tc-skeleton) is a simple example
+- [tc-skeleton](https://github.com/florianl/tc-skeleton) is a simple example
   project to demonstrate how to load eBPF programs with
   [go-tc](https://github.com/florianl/go-tc), a work in progress version of tc
   (the Linux tool for traffic control) written in Go.
 
-* [lnetd-host-encap](https://github.com/cpmarvin/lnetd-ctl/tree/main/host-encap)
+- [lnetd-host-encap](https://github.com/cpmarvin/lnetd-ctl/tree/main/host-encap)
   is an experiment where an eBPF program encapsulate packets with MPLS headers.
 
 ## The Kernel Side
@@ -173,16 +184,17 @@ Below are some highlights for the first
 [pull request for the bpf-next tree](https://lore.kernel.org/bpf/20210116012922.17823-1-daniel@iogearbox.net/t/#u)
 for the 5.12 cycle:
 
-* Add atomic operations to eBPF. To that end, extend the eBPF instruction set
+- Add atomic operations to eBPF. To that end, extend the eBPF instruction set
   with a new `BPF_ATOMIC` mode modifier for the operation codes. Atomics come
   along with support for the x86-64 eBPF JIT (support for other JITs is left to
   developers more familiar with their architectures). Here is a summary of the
   new instructions:
-  * `atomic[64]_[fetch_]add`
-  * `atomic[64]_[fetch_]and`
-  * `atomic[64]_[fetch_]or`
-  * `atomic[64]_xchg`
-  * `atomic[64]_cmpxchg`
+
+  - `atomic[64]_[fetch_]add`
+  - `atomic[64]_[fetch_]and`
+  - `atomic[64]_[fetch_]or`
+  - `atomic[64]_xchg`
+  - `atomic[64]_cmpxchg`
 
   The motivation was to generate globally-unique cookies in eBPF programs, but
   these atomic operations are likely to prove useful to a number of other
@@ -190,14 +202,14 @@ for the 5.12 cycle:
   (Brendan Jackman,
   [link](https://lore.kernel.org/bpf/20210114181751.768687-1-jackmanb@google.com/t/#u))
 
-* Support for kernel module global variables (`__ksym` externs) in eBPF
+- Support for kernel module global variables (`__ksym` externs) in eBPF
   programs. This is a follow-up improvement on the recent support for BTF for
   kernel modules, to have BTF-powered raw tracepoints or tracing hooks
   available for modules.
   (Andrii Nakryiko,
   [link](https://lore.kernel.org/bpf/20210112075520.4103414-1-andrii@kernel.org/t/#u))
 
-* Generalize eBPF stackmap's [build-id](https://perf.wiki.kernel.org/index.php/Tutorial#Binary_identification_with_build-id)
+- Generalize eBPF stackmap's [build-id](https://perf.wiki.kernel.org/index.php/Tutorial#Binary_identification_with_build-id)
   retrieval and add support to have build-ids stored in mmap2 event for perf
   (This event generates an extended executable mmap record that contains enough
   additional information to uniquely identify shared mappings, see
@@ -205,18 +217,19 @@ for the 5.12 cycle:
   (Jiri Olsa,
   [link](https://lore.kernel.org/bpf/20210114134044.1418404-1-jolsa@kernel.org/t/#u))
 
-* Support retrieval of more `SOL_SOCKET` level options from `sock_addr` eBPF
+- Support retrieval of more `SOL_SOCKET` level options from `sock_addr` eBPF
   programs, to fill the gap between the list of options that `bpf_setsockopt()`
   can set and those that `bpf_getsockopt()` could retrieve. The concerned
   options are:
-  * `SO_MARK`
-  * `SO_PRIORITY`
-  * `SO_BINDTOIFINDEX` (also new for `bpf_setsockopt()`)
+
+  - `SO_MARK`
+  - `SO_PRIORITY`
+  - `SO_BINDTOIFINDEX` (also new for `bpf_setsockopt()`)
 
   (Daniel Borkmann,
   [link](https://lore.kernel.org/bpf/cba44439b801e5ddc1170e5be787f4dc93a2d7f9.1610406333.git.daniel@iogearbox.net/t/#u))
 
-* Improve out-of-tree cross-building for eBPF selftests. Although this adds no
+- Improve out-of-tree cross-building for eBPF selftests. Although this adds no
   new feature, it feels interesting to report because it should enable wider
   automated testing on ARM architectures. Selftests are, of course, an
   essential part of the eBPF ecosystem.
