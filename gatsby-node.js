@@ -147,6 +147,12 @@ exports.createPages = ({ actions, graphql }) => {
     });
 
     edges.forEach(({ node }) => {
+      const { path } = node.frontmatter;
+
+      if (!path) {
+        return;
+      }
+
       createPage({
         path: node.frontmatter.path,
         component: postTemplate,
