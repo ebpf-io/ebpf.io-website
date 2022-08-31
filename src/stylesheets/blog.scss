@@ -71,7 +71,7 @@ $tablet: "screen and (max-width : 900px)";
     }
   }
 
-  .blog-tags-and-date {
+  .blog-categories-and-date {
     display: flex;
     align-items: center;
 
@@ -86,7 +86,7 @@ $tablet: "screen and (max-width : 900px)";
       align-items: flex-end;
     }
 
-    .blog-post-tags {
+    .blog-post-categories {
       margin-left: 20px;
       display: flex;
       align-items: center;
@@ -95,7 +95,7 @@ $tablet: "screen and (max-width : 900px)";
         margin-top: 12px;
       }
 
-      .blog-post-tag {
+      .blog-post-category {
         margin-right: 10px;
         font-size: 15px;
         line-height: 15px;
@@ -257,38 +257,6 @@ $tablet: "screen and (max-width : 900px)";
       transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
     }
   }
-
-  .blog-post-categories {
-    font-size: 11px;
-    line-height: 20px;
-    font-weight: 700;
-
-    a {
-      display: inline-block;
-      padding: 0 7px;
-      border-radius: 3px;
-      color: #8d8d8d;
-      background-color: #eaeaea;
-      text-decoration: none;
-
-      &:hover {
-        color: #9c9c9c;
-        background-color: rgb(231, 231, 231);
-      }
-    }
-  }
-
-  .blog-post-categories {
-    margin-bottom: 25px;
-
-    .blog-post-category {
-      margin-right: 10px;
-      text-transform: uppercase;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }
 
 .blog-toc {
@@ -425,7 +393,7 @@ $tablet: "screen and (max-width : 900px)";
   }
 }
 
-.tags-list {
+.categories-list {
   max-width: 800px;
   padding: 0 40px !important;
   margin-top: 39px !important;
@@ -436,7 +404,7 @@ $tablet: "screen and (max-width : 900px)";
     margin-bottom: 30px;
   }
 
-  .tags-list-title {
+  .categories-list-title {
     margin-bottom: 25px;
     font-size: 14px;
     line-height: 24px;
@@ -454,14 +422,14 @@ $tablet: "screen and (max-width : 900px)";
     }
   }
 
-  .tags-post-date {
+  .categories-post-date {
     font-size: 12px;
     line-height: 24px;
     font-weight: 700;
     color: #8d8d8d;
   }
 
-  .tags-post-title {
+  .categories-post-title {
     font-size: 16px;
     line-height: 36px;
     font-weight: 700;

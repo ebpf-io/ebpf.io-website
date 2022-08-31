@@ -27,6 +27,7 @@ const TableOfContents = () => {
       });
     setToc(toc);
   });
+  console.log(toc);
 
   return (
     <Fragment>
@@ -50,7 +51,7 @@ const TableOfContents = () => {
 };
 
 const Post = ({ post, full }) => {
-  const tags = post.frontmatter.tags || [];
+  const categories = post.frontmatter.categories || [];
   const { hasPreview, previewHtml, mainHtml, previewDescription } =
     parseHtml(post);
 
@@ -60,20 +61,20 @@ const Post = ({ post, full }) => {
     <div className='blog-post' key={post.id}>
       <header className='blog-header'>
         <h1 className='blog-title'>{post.frontmatter.title}</h1>
-        <div className='blog-tags-and-date'>
+        <div className='blog-categories-and-date'>
           <span className='blog-date'>{formatPostDate(post)}</span>
-          {tags.length > 0 && (
-            <div className='blog-post-tags'>
-              {tags.map(
-                (tag, i) =>
-                  tag !== "_" && (
-                    <span className='blog-post-tag' key={tag}>
+          {categories.length > 0 && (
+            <div className='blog-post-categories'>
+              {categories.map(
+                (category, i) =>
+                  category !== "_" && (
+                    <span className='blog-post-category' key={category}>
                       <a
-                        href={`/blog/tags/${tag
+                        href={`/blog/categories/${category
                           .toLowerCase()
                           .replace(" ", "-")}`}
                       >
-                        {tag}
+                        {category}
                       </a>
                     </span>
                   )

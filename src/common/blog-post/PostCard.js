@@ -8,7 +8,7 @@ const formatPostDate = (post) =>
   format(parseISO(post.frontmatter.date), "MMMM d, yyyy");
 
 const PostCard = ({ post, full }) => {
-  const tags = post.frontmatter.tags || [];
+  const categories = post.frontmatter.categories || [];
   const { hasPreview, previewHtml, mainHtml, previewDescription } =
     parseHtml(post);
 
@@ -36,17 +36,24 @@ const PostCard = ({ post, full }) => {
           Read more
           <span className='link-triangle' />
         </a>
-        <div className='blog-tags-and-date'>
+        <div className='blog-categories-and-date'>
           <span className='blog-date'>{formatPostDate(post)}</span>
-          {tags.length > 0 && (
-            <div className='blog-post-tags'>
-              {tags.map(
-                (tag, i) =>
-                  tag !== "_" && (
-                    <span className='blog-post-tag' key={tag}>
-                      <a href={`/blog/tags/${createTags(tag)}`}>{tag}</a>
+          {categories.length > 0 && (
+            <div className='blog-post-categories'>
+              {categories.map(
+                (category, i) =>
+                  category !== "_" && (
+                    <span className='blog-post-category' key={category}>
+                      <a href={`/blog/categories/${createTags(category)}`}>
+                        {category}
+                      </a>
                     </span>
                   )
+              )}
+              {url && (
+                <span className='blog-post-category'>
+                  External
+                </span>
               )}
             </div>
           )}

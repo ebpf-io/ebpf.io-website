@@ -2,8 +2,6 @@
 path: "/blog/ebpf-updates-intro"
 date: "2020-11-20T10:00:00.000Z"
 title: "eBPF Updates #1: eBPF Summit Coverage, libbpf 0.2, BTF Developments, Bulk API for XDP, Local Task Storage for eBPF LSM"
-tags:
-  - Update
 categories:
   - Update
 ---

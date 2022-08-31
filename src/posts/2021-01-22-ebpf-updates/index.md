@@ -2,8 +2,6 @@
 path: "/blog/ebpf-updates-2021-01"
 date: "2021-01-22T10:00:00.000Z"
 title: "eBPF Updates #3: Atomics Operations, Socket Options Retrieval, Syscall Tracing Benchmarks, eBPF in the Supply Chain"
-tags:
-  - Update
 categories:
   - Update
 ---
