@@ -180,11 +180,19 @@ $tablet: "screen and (max-width : 900px)";
     }
   }
 
+  .blog-title-link {
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+    color: #1a1a1a;
+    text-decoration: none;
+    &:hover {
+      color: #ffe100;
+    }
+  }
+
   .blog-title {
     font-size: 28px;
     line-height: 1.5;
     font-weight: 700;
-    color: #000;
     margin: 0;
 
     @media (max-width: 1023px) {
