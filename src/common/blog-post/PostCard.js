@@ -21,7 +21,7 @@ const PostCard = ({ post, full }) => {
   return (
     <div className='blog-post-card' key={post.id}>
       <Link
-        className='blog-link'
+        className='blog-title-link'
         to={url || post.frontmatter.path}
         target={url ? "_blank" : null}
         rel={url ? "noopener noreferrer" : null}
