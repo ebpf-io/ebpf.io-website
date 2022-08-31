@@ -1,7 +1,6 @@
 const path = require("path");
 const createPaginatedPages = require("gatsby-paginate");
 const _ = require("lodash");
-const { createTags } = require("./src/utils/createTags");
 
 const createMetaPage = ({
   type,
@@ -163,14 +162,14 @@ exports.createPages = ({ actions, graphql }) => {
     const categories = _(edges)
       .map((item) => _.get(item, ["node", "frontmatter", "categories"], []))
       .flatten()
-      .map((item) => createTags(item))
+      .map((item) => slugify(item, {lower:true}))
       .uniq()
       .value();
 
     categories.forEach((category) => {
       const filteredEdges = edges.filter(({ node }) =>
         node.frontmatter.categories
-          .map((category) => createTags(category))
+          .map((category) => slugify(category, {lower:true}))
           .includes(category)
       );
 
