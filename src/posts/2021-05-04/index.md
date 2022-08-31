@@ -3,8 +3,6 @@ path: "/blog/ebpf-updates-2021-05"
 date: "2021-05-04T10:00:00.000Z"
 title: "eBPF Updates #5: CNCF Proposals, Kinvolk Acquired, eCHO, the Cost of Tail Calls, Systemd Features, Reverse Debugging, Static Linking"
 toc: true
-tags:
-  - Update
 categories:
   - Update
 ---

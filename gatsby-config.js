@@ -158,7 +158,6 @@ module.exports = {
                         date
                         path
                         title
-                        tags
                       }
                     }
                   }

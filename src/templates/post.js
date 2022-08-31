@@ -49,7 +49,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         categories
-        tags
         date
         path
         title

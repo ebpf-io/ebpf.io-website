@@ -107,7 +107,6 @@ exports.createPages = ({ actions, graphql }) => {
               externalUrl
               path
               title
-              tags
             }
           }
         }
@@ -125,6 +124,7 @@ exports.createPages = ({ actions, graphql }) => {
       "engineering",
       "security",
       "community",
+      "external"
     ];
 
     edges.forEach(({ node }) => {
@@ -160,24 +160,26 @@ exports.createPages = ({ actions, graphql }) => {
       });
     });
 
-    const tags = _(edges)
-      .map((item) => _.get(item, ["node", "frontmatter", "tags"], []))
+    const categories = _(edges)
+      .map((item) => _.get(item, ["node", "frontmatter", "categories"], []))
       .flatten()
       .map((item) => createTags(item))
       .uniq()
       .value();
 
-    tags.forEach((tag) => {
+    categories.forEach((category) => {
       const filteredEdges = edges.filter(({ node }) =>
-        node.frontmatter.tags.map((tag) => createTags(tag)).includes(tag)
+        node.frontmatter.categories
+          .map((category) => createTags(category))
+          .includes(category)
       );
 
       createPaginatedPages({
         createPage,
         edges: filteredEdges,
         pageTemplate: path.resolve(`src/templates/blog.js`),
-        paginatePost: `/blog/tags/${tag}`, // old field. not remove
-        pathPrefix: `/blog/tags/${tag}`, // new field. not remove
+        paginatePost: `/blog/categories/${category}`, // old field. not remove
+        pathPrefix: `/blog/categories/${category}`, // new field. not remove
         pageLength: 8,
       });
     });

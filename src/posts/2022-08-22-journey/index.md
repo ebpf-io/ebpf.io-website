@@ -2,8 +2,6 @@
 date: "2022-08-22T17:00:00.000Z"
 title: "Journey to libbpf 1.0"
 externalUrl: "https://nakryiko.com/posts/libbpf-v1/"
-tags:
-  - External
 categories:
   - Technology
 ---
