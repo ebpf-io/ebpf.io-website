@@ -41,6 +41,7 @@
     "react-modal-video": "^1.2.9",
     "react-popover": "^0.5.10",
     "react-refresh": "^0.14.0",
+    "slugify": "^1.6.5",
     "string-similarity": "^4.0.4"
   },
   "keywords": [

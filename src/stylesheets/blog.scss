@@ -103,20 +103,20 @@ $tablet: "screen and (max-width : 900px)";
         &:last-child {
           margin-right: 0;
         }
-
-        a {
+      }
+      
+      .blog-post-category-link {
           display: inline-block;
           padding: 10px 12px;
           border-radius: 18px;
           color: #999999;
           background-color: #f7f7f7;
           text-decoration: none;
+      }
 
-          &:hover {
-            color: #9c9c9c;
-            background-color: rgb(231, 231, 231);
-          }
-        }
+      a.blog-post-category-link:hover {
+          color: #9c9c9c;
+          background-color: rgb(231, 231, 231);
       }
     }
 

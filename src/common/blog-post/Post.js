@@ -1,5 +1,6 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import { format, parseISO } from "date-fns";
+import slugify from "slugify";
 
 import parseHtml from "../../../scripts/parse-html";
 
@@ -12,10 +13,7 @@ const TableOfContents = () => {
   const getTocId = (element) => {
     return element.id
       ? element.id
-      : element.textContent
-          .toLowerCase()
-          .replace(/ /g, "-")
-          .replace(/[^a-z0-9\-]/g, "");
+      : slugify(element.textContent, {replacement: '-', remove: /[^a-z0-9\-]/g, lower: true})
   };
 
   useEffect(() => {
@@ -27,26 +25,22 @@ const TableOfContents = () => {
       });
     setToc(toc);
   });
-  console.log(toc);
-
+  
   return (
-    <Fragment>
       <details className='blog-toc' open>
         <summary>Table of Contents</summary>
         <ul>
           {toc.map((item, index) => {
             const level = +item.tagName[1] - 2;
             const style = { paddingLeft: `${20 * level}px` };
-            let className = "toc-item";
             return (
-              <li className={className} style={style} key={index}>
+              <li className="toc-item" style={style} key={index}>
                 <a href={`#${item.id}`}>{item.textContent}</a>
               </li>
             );
           })}
         </ul>
       </details>
-    </Fragment>
   );
 };
 
@@ -55,7 +49,17 @@ const Post = ({ post, full }) => {
   const { hasPreview, previewHtml, mainHtml, previewDescription } =
     parseHtml(post);
 
-  const html = full ? mainHtml : hasPreview ? previewHtml : previewDescription;
+  let html = '';
+
+  if (full) {
+    html = mainHtml
+  } else {
+    if (hasPreview) {
+      html = previewHtml
+    } else {
+      html = previewDescription;
+    }
+  }
 
   return (
     <div className='blog-post' key={post.id}>
@@ -70,9 +74,7 @@ const Post = ({ post, full }) => {
                   category !== "_" && (
                     <span className='blog-post-category' key={category}>
                       <a
-                        href={`/blog/categories/${category
-                          .toLowerCase()
-                          .replace(" ", "-")}`}
+                        href={`/blog/categories/${slugify(category, {lower: true})}`}
                       >
                         {category}
                       </a>

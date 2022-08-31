@@ -1,8 +1,8 @@
 import React from "react";
 import { format, parseISO } from "date-fns";
+import slugify from "slugify";
 
 import parseHtml from "../../../scripts/parse-html";
-import { createTags } from "../../utils/createTags";
 
 const formatPostDate = (post) =>
   format(parseISO(post.frontmatter.date), "MMMM d, yyyy");
@@ -41,17 +41,17 @@ const PostCard = ({ post, full }) => {
           {categories.length > 0 && (
             <div className='blog-post-categories'>
               {categories.map(
-                (category, i) =>
+                (category, _) =>
                   category !== "_" && (
                     <span className='blog-post-category' key={category}>
-                      <a href={`/blog/categories/${createTags(category)}`}>
+                      <a className="blog-post-category-link" href={`/blog/categories/${slugify(category, {lower: true})}`}>
                         {category}
                       </a>
                     </span>
                   )
               )}
               {url && (
-                <span className='blog-post-category'>
+                <span className='blog-post-category blog-post-category-link'>
                   External
                 </span>
               )}
