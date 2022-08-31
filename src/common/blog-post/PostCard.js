@@ -1,8 +1,6 @@
 import React from "react";
 import { format, parseISO } from "date-fns";
 
-import { Link } from "gatsby";
-
 import parseHtml from "../../../scripts/parse-html";
 import { createTags } from "../../utils/createTags";
 
@@ -20,24 +18,24 @@ const PostCard = ({ post, full }) => {
 
   return (
     <div className='blog-post-card' key={post.id}>
-      <Link
+      <a
         className='blog-title-link'
-        to={url || post.frontmatter.path}
+        href={url || post.frontmatter.path}
         target={url ? "_blank" : null}
         rel={url ? "noopener noreferrer" : null}
       >
         <h2 className='blog-title'>{post.frontmatter.title}</h2>
-      </Link>
+      </a>
       <div className='blog-post-card-container'>
-        <Link
+        <a
           className='blog-link'
-          to={url || post.frontmatter.path}
+          href={url || post.frontmatter.path}
           target={url ? "_blank" : null}
           rel={url ? "noopener noreferrer" : null}
         >
           Read more
           <span className='link-triangle' />
-        </Link>
+        </a>
         <div className='blog-tags-and-date'>
           <span className='blog-date'>{formatPostDate(post)}</span>
           {tags.length > 0 && (
