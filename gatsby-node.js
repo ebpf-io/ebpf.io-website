@@ -1,6 +1,7 @@
 const path = require("path");
 const createPaginatedPages = require("gatsby-paginate");
 const _ = require("lodash");
+const slugify = require("slugify");
 
 const createMetaPage = ({
   type,
