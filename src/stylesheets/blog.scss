@@ -104,7 +104,7 @@ $tablet: "screen and (max-width : 900px)";
           margin-right: 0;
         }
       }
-      
+
       .blog-post-category-link {
           display: inline-block;
           padding: 10px 12px;
@@ -181,12 +181,7 @@ $tablet: "screen and (max-width : 900px)";
   }
 
   .blog-title-link {
-    transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-    color: #1a1a1a;
     text-decoration: none;
-    &:hover {
-      color: #ffe100;
-    }
   }
 
   .blog-title {
@@ -194,6 +189,16 @@ $tablet: "screen and (max-width : 900px)";
     line-height: 1.5;
     font-weight: 700;
     margin: 0;
+    background: #1a1a1a;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+
+    &:hover {
+      background: linear-gradient(87.89deg, #e69d00 0%, #e6b000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
     @media (max-width: 1023px) {
       font-size: 24px;
