@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { format, parseISO } from "date-fns";
 
 import parseHtml from "../../../scripts/parse-html";
@@ -6,56 +6,49 @@ import parseHtml from "../../../scripts/parse-html";
 const formatPostDate = (post) =>
   format(parseISO(post.frontmatter.date), "MMMM d, yyyy");
 
-class TableOfContents extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      toc: [],
-    };
-  }
+const TableOfContents = () => {
+  const [toc, setToc] = useState([]);
 
-  getTocId(element) {
+  const getTocId = (element) => {
     return element.id
       ? element.id
       : element.textContent
           .toLowerCase()
           .replace(/ /g, "-")
           .replace(/[^a-z0-9\-]/g, "");
-  }
+  };
 
-  componentDidMount() {
-    const toc = [];
+  useEffect(() => {
     document
       .querySelectorAll(".blog-post-content > h2, .blog-post-content > h3")
       .forEach((h) => {
-        h.id = this.getTocId(h);
+        h.id = getTocId(h);
         toc.push(h);
       });
-    this.setState({ toc });
-  }
+    setToc(toc);
+  });
+  console.log(toc);
 
-  render() {
-    return (
-      <Fragment>
-        <details className='blog-toc' open>
-          <summary>Table of Contents</summary>
-          <ul>
-            {this.state.toc.map((item) => {
-              const level = +item.tagName[1] - 2;
-              const style = { paddingLeft: `${20 * level}px` };
-              let className = "toc-item";
-              return (
-                <li className={className} style={style}>
-                  <a href={`#${item.id}`}>{item.textContent}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </details>
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      <details className='blog-toc' open>
+        <summary>Table of Contents</summary>
+        <ul>
+          {toc.map((item, index) => {
+            const level = +item.tagName[1] - 2;
+            const style = { paddingLeft: `${20 * level}px` };
+            let className = "toc-item";
+            return (
+              <li className={className} style={style} key={index}>
+                <a href={`#${item.id}`}>{item.textContent}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </details>
+    </Fragment>
+  );
+};
 
 const Post = ({ post, full }) => {
   const tags = post.frontmatter.tags || [];
