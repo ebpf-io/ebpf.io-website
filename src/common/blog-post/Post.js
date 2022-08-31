@@ -27,7 +27,6 @@ const TableOfContents = () => {
       });
     setToc(toc);
   });
-  console.log(toc);
 
   return (
     <Fragment>
