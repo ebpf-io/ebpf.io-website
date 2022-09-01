@@ -24,7 +24,7 @@ const PostCard = ({ post, full }) => {
         target={url ? "_blank" : null}
         rel={url ? "noopener noreferrer" : null}
       >
-        <h2 className='blog-title'>{post.frontmatter.title}</h2>
+        <h3 className='blog-title'>{post.frontmatter.title}</h3>
       </a>
       <div className='blog-post-card-container'>
         <a

@@ -107,6 +107,10 @@ exports.createPages = ({ actions, graphql }) => {
               externalUrl
               path
               title
+              isFeatured
+              ogImage {
+                publicURL
+              }
             }
           }
         }
@@ -119,10 +123,9 @@ exports.createPages = ({ actions, graphql }) => {
     const { edges } = result.data.allMarkdownRemark;
     const allowedCategories = [
       "update",
-      "blog post",
       "technology",
-      "engineering",
-      "security",
+      "how-to",
+      "release",
       "community",
       "external"
     ];
@@ -143,7 +146,7 @@ exports.createPages = ({ actions, graphql }) => {
       pageTemplate: path.resolve(`src/templates/blog.js`),
       paginatePost: "/blog", // old field. not remove
       pathPrefix: "/blog", // new field. not remove
-      pageLength: 8,
+      pageLength: 100,
     });
 
     edges.forEach(({ node }) => {
@@ -180,7 +183,7 @@ exports.createPages = ({ actions, graphql }) => {
         pageTemplate: path.resolve(`src/templates/blog.js`),
         paginatePost: `/blog/categories/${category}`, // old field. not remove
         pathPrefix: `/blog/categories/${category}`, // new field. not remove
-        pageLength: 8,
+        pageLength: 100,
       });
     });
 
