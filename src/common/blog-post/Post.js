@@ -17,14 +17,16 @@ const TableOfContents = () => {
   };
 
   useEffect(() => {
-    document
-      .querySelectorAll(".blog-post-content > h2, .blog-post-content > h3")
-      .forEach((h) => {
-        h.id = getTocId(h);
-        toc.push(h);
+    const headings = document
+    .querySelectorAll(".blog-post-content > h2, .blog-post-content > h3");
+    const items = [];
+    
+      headings.forEach((heading) => {
+        heading.id = getTocId(heading);
+        items.push(heading);
       });
-    setToc(toc);
-  });
+    setToc(items);
+  }, [toc, setToc]);
   
   return (
       <details className='blog-toc' open>
