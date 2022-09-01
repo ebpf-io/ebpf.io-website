@@ -71,6 +71,10 @@ $tablet: "screen and (max-width : 900px)";
     }
   }
 
+  .blog-title + .blog-categories-and-date {
+    margin-top: 16px;
+  }
+
   .blog-categories-and-date {
     display: flex;
     align-items: center;
