@@ -4,7 +4,6 @@ import Helmet from "react-helmet";
 import slugify from "slugify";
 
 import Layout from "../layouts";
-import FeaturedPostCard from "../common/blog-post/FeaturedPostCard";
 import PostCard from "../common/blog-post/PostCard";
 
 import "../stylesheets/blog.scss";
@@ -84,14 +83,15 @@ export default function NewsIndex({ data, pageContext }) {
           {featuredPost && 
           (<>
             <h2 className="posts-heading">Featured</h2>
-            <FeaturedPostCard post={featuredPost}/>
+            <PostCard post={featuredPost}/>
           </>)}
 
           <h2 className="posts-heading">Latest</h2>
           {group.filter((post) => post.node.frontmatter.isFeatured !== true).map(({ node: post }) => (
             <PostCard key={post.id} post={post} />
           ))}
-            <div className='prev-next-links blog-post'>
+          {/* TODO: add pagination */}
+            {/* <div className='prev-next-links blog-post'>
               <div className='prev-link'>
                 {!first && (
                   <NavLink url={`/blog/${prevUrl}`} text='« Newer Posts' />
@@ -100,7 +100,7 @@ export default function NewsIndex({ data, pageContext }) {
               <div className='next-link'>
                 {!last && <NavLink url={`/blog/${nextUrl}`} text='Older Posts »' />}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
