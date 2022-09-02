@@ -387,15 +387,14 @@ $tablet: "screen and (max-width : 900px)";
     line-height: 1.5;
     font-weight: 700;
     margin: 0;
-    background: #1a1a1a;
+    background: linear-gradient(87.89deg, #e69d00 0%, #e6b000 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color:rgba(0,0,0,1);
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
     &:hover {
-      background: linear-gradient(87.89deg, #e69d00 0%, #e6b000 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color:rgba(0,0,0,0);
     }
 
     @media (max-width: 1023px) {

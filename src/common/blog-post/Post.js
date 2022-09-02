@@ -13,7 +13,7 @@ const TableOfContents = () => {
   const getTocId = (element) => {
     return element.id
       ? element.id
-      : slugify(element.textContent, {replacement: '-', remove: /[^a-z0-9\-]/g, lower: true})
+      : slugify(element.textContent, {remove: /[^a-z0-9\-]/g, lower: true})
   };
 
   useEffect(() => {

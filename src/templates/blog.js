@@ -9,9 +9,7 @@ import PostCard from "../common/blog-post/PostCard";
 
 import "../stylesheets/blog.scss";
 
-const NavLink = (props) => {
-  <Link to={props.url}>{props.text}</Link>;
-};
+const NavLink = (props) => <Link to={props.url}>{props.text}</Link>;
 
 export default function NewsIndex({ data, pageContext }) {
   const { group, index, first, last } = pageContext;
