@@ -25,6 +25,7 @@ import l3afLogo from '../assets/projects-logos/l3af.svg'
 import merbridgeLogo from '../assets/projects-logos/merbridge.svg';
 import loxiLBLogo from "../assets/projects-logos/loxilb.png";
 import pwruLogo from "../assets/projects-logos/pwru.png";
+import pyroscopeLogo from '../assets/projects-logos/pyroscope.svg';
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -293,6 +294,23 @@ const emergingProjects = [
     urls: [
       {label: 'GitHub', url: 'https://github.com/loxilb-io'},
       {label: 'Website', url: 'https://www.loxilb.io/'},
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/pyroscope-io/pyroscope',
+    name: 'Pyroscope',
+    logo: pyroscopeLogo,
+    title: 'Continuous Profiling Platform',
+    description: `Pyroscope is an open source project centered around
+    continuous profiling, particularly in a Kubernetes context.
+    It leverages eBPF along with a custom storage engine
+    to offer system-wide continuous profiling with minimal overhead
+    as well as efficient storage and querying capabilities.
+    We support Linux 4.9 and up thanks to CO-RE and libbpf.
+    `,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/pyroscope-io/pyroscope'},
+      {label: 'Website', url: 'https://pyroscope.io/'},
     ],
   },
 ]
