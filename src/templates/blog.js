@@ -8,8 +8,6 @@ import PostCard from "../common/blog-post/PostCard";
 import "../stylesheets/blog.scss";
 import Categories from "../common/blog/Categories";
 
-const NavLink = (props) => <Link to={props.url}>{props.text}</Link>;
-
 export default function NewsIndex({ pageContext }) {
 
   const { group, index, first, last } = pageContext;
@@ -82,11 +80,11 @@ export default function NewsIndex({ pageContext }) {
             <div className='links-container'>
               <div className='prev-link'>
                 {!first && (
-                  <NavLink url={`/blog/${prevUrl}`} text='&lt; Previous' />
+                  <Link to={`/blog/${prevUrl}`}>&lt; Previous</Link>
                 )}
               </div>
               <div className='next-link'>
-                {!last && <NavLink url={`/blog/${nextUrl}`} text='Next &gt;' />}
+                {!last && <Link to={`/blog/${nextUrl}`}>Next &gt;</Link>}
               </div>
             </div>
           </div>
