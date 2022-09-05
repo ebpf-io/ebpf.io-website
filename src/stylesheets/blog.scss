@@ -38,14 +38,15 @@ main {margin-bottom: 0}
 }
 
 .posts-wrapper {
-  max-width: 968px;
+  min-width: 968px;
   border-left: 1px solid #e6e6e6;
   padding: 64px 0 112px 64px;
 
   @media (max-width: 1279px) {
     border: none;
     padding-left: 0;
-    max-width: 90%;
+    width: 90%;
+    min-width: 0;
     margin-left: auto;
     margin-right: auto;
   } 
@@ -159,29 +160,112 @@ main {margin-bottom: 0}
   }
 }
 
-.links-container {
+.pagination-wrapper {
   max-width: 1015px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 
-  a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1;
-    background: linear-gradient(87.89deg, #e69d00 0%, #e6b000 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: #1a1a1a;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  .pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
 
-    &:hover {
-      color: #ffffff00;
+    li {
+      margin: 0;
+
+      .pagination-page-and-break-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 100%;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+        margin: 0 16px;
+        background: #ffffffff;
+        color: #1a1a1a;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+
+        &:hover {
+          color: #ffffff;
+          background: linear-gradient(87.89deg, #FAAB00 0%, #EBBC00 100%);
+        }
+      }
+    }
+
+    .active-page-and-break-link {
+      color: #ffffff;
+      background: linear-gradient(87.89deg, #FAAB00 0%, #EBBC00 100%);
+    }
+
+    .pagination-link-wrapper {
+      list-style: none;
+      margin: 0;
+
+      .pagination-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1;
+        background: linear-gradient(87.89deg, #e69d00 0%, #e6b000 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: #1a1a1a;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+
+        &:hover {
+          color: #ffffff00;
+
+          .pagination-link + .link-triangle {
+            background-color: #ebc400;
+          }
+        }
+
+          .link-triangle {
+            width: 6px;
+            height: 9px;
+            margin-left: 8px;
+            background-color: #f5d400;
+            -webkit-mask-image: url("../assets/link.svg");
+            mask-image: url("../assets/link.svg");
+            transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+        }
+
+        .rotate-180 {
+          transform: rotate(180deg);
+          margin-left: 0;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .right {
+      margin-right: auto;
+    }
+
+    .left {
+      margin-left: auto;
+    }
+
+    .md-hidden {
+        @media (max-width: 767px) {
+        display: none;
+      }
     }
   }
+}
+
+.pagination-disabled {
+  opacity: 0;
+  visibility: hidden;
 }
 
 
@@ -199,8 +283,19 @@ main {margin-bottom: 0}
 .blog-post-card {
   border: 1px solid #e6e6e6;
   border-radius: 8px;
-  display: flex;
   overflow: hidden;
+  padding: 0;
+  width: 100%;
+  word-wrap: break-word;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+    @media (max-width: 1279px) {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
   @media (max-width: 1023px) {
     flex-direction: column;
@@ -230,21 +325,6 @@ main {margin-bottom: 0}
     max-width: 100%;
     min-height: 0;
   }
-}
-
-.blog-post-card {
-  padding: 0;
-  width: 100%;
-  word-wrap: break-word;
-  position: relative;
-  display: flex;
-  align-items: center;
-
-  @media (max-width: 1279px) {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  } 
 }
 
 .blog-post-card, .blog-post {
