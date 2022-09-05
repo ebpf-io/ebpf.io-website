@@ -114,7 +114,7 @@ main {margin-bottom: 0}
       align-items: center;
       justify-content: center;
       color: #666666;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 14px;
       line-height: 1;
       transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
@@ -192,6 +192,7 @@ main {margin-bottom: 0}
         font-weight: 500;
 
         &:hover {
+          cursor: pointer;
           color: #ffffff;
           background: linear-gradient(87.89deg, #FAAB00 0%, #EBBC00 100%);
         }
