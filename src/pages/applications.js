@@ -303,7 +303,7 @@ const emergingProjects = [
     title: 'Continuous Profiling Platform',
     description: `Pyroscope is an open source project centered around
     continuous profiling, particularly in a Kubernetes context.
-    It leverages eBPF along with a custom storage engine
+    It leverages eBPF as its core technology along with a custom storage engine
     to offer system-wide continuous profiling with minimal overhead
     as well as efficient storage and querying capabilities.
     We support Linux 4.9 and up thanks to CO-RE and libbpf.
