@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 
 import Layout from "../layouts";
@@ -7,12 +7,10 @@ import PostCard from "../common/blog-post/PostCard";
 
 import "../stylesheets/blog.scss";
 import Categories from "../common/blog/Categories";
+import Pagination from "../common/blog/Pagination";
 
 export default function NewsIndex({ pageContext }) {
-
-  const { group, index, first, last } = pageContext;
-  const prevUrl = index - 1 == 1 ? "" : (index - 1).toString();
-  const nextUrl = (index + 1).toString();
+  const { group, pathPrefix, pageCount } = pageContext;
   const pageMetaTitle = "eBPF - Blog";
   const pageMetaDescription =
     "The latest news, updates and articles covering eBPF and related topics.";
@@ -77,16 +75,7 @@ export default function NewsIndex({ pageContext }) {
           {group.filter((post) => post.node.frontmatter.isFeatured !== true).map(({ node: post }) => (
             <PostCard key={post.id} post={post} />
           ))}
-            <div className='links-container'>
-              <div className='prev-link'>
-                {!first && (
-                  <Link to={`/blog/${prevUrl}`}>&lt; Previous</Link>
-                )}
-              </div>
-              <div className='next-link'>
-                {!last && <Link to={`/blog/${nextUrl}`}>Next &gt;</Link>}
-              </div>
-            </div>
+          <Pagination currentPageIndex={pathPrefix} pageCount={pageCount} blogPageURL={pathPrefix} />
           </div>
         </div>
       </div>
