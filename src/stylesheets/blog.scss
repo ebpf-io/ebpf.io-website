@@ -185,7 +185,7 @@ main {margin-bottom: 0}
         border-radius: 100%;
         transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
         margin: 0 16px;
-        background: #ffffffff;
+        background: #ffffff00;
         color: #1a1a1a;
         font-size: 14px;
         line-height: 1;
@@ -198,10 +198,11 @@ main {margin-bottom: 0}
         }
       }
     }
-
-    .active-page-and-break-link {
-      color: #ffffff;
-      background: linear-gradient(87.89deg, #FAAB00 0%, #EBBC00 100%);
+    .selected {
+      a {
+        color: #ffffff;
+        background: linear-gradient(87.89deg, #FAAB00 0%, #EBBC00 100%);
+      }
     }
 
     .pagination-link-wrapper {
@@ -224,6 +225,7 @@ main {margin-bottom: 0}
 
         &:hover {
           color: #ffffff00;
+          cursor: pointer;
 
           .pagination-link + .link-triangle {
             background-color: #ebc400;
@@ -263,6 +265,7 @@ main {margin-bottom: 0}
     }
   }
 }
+
 
 .pagination-disabled {
   opacity: 0;

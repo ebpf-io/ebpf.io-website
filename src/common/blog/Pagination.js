@@ -36,7 +36,7 @@ const Pagination = ({ currentPageIndex, pageCount, blogPageURL }) => {
             }
             forcePage={currentPageIndex}
             pageCount={pageCount}
-            pageRangeDisplayed={5}
+            pageRangeDisplayed={2}
             marginPagesDisplayed={1}
             onPageChange={handlePageChange}
             />
