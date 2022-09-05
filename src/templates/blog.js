@@ -1,16 +1,17 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import Helmet from "react-helmet";
-import slugify from "slugify";
 
 import Layout from "../layouts";
 import PostCard from "../common/blog-post/PostCard";
 
 import "../stylesheets/blog.scss";
+import Categories from "../common/blog/Categories";
 
 const NavLink = (props) => <Link to={props.url}>{props.text}</Link>;
 
-export default function NewsIndex({ data, pageContext }) {
+export default function NewsIndex({ pageContext }) {
+
   const { group, index, first, last } = pageContext;
   const prevUrl = index - 1 == 1 ? "" : (index - 1).toString();
   const nextUrl = (index + 1).toString();
@@ -18,8 +19,16 @@ export default function NewsIndex({ data, pageContext }) {
   const pageMetaDescription =
     "The latest news, updates and articles covering eBPF and related topics.";
   const pageMetaImageUrl = "https://ebpf.io" + "/images/ogimage-blog.png";
-  const uniqueCategories = [...new Set(group.map(item => item.node.frontmatter.categories[0]))];
   const featuredPost = group.find((post) => post.node.frontmatter.isFeatured === true)?.node;
+
+  const uniqueCategories = [
+    "*",
+    "Update",
+    "Technology",
+    "How-To",
+    "Release",
+    "Community",
+  ];
 
   return (
     <Layout>
@@ -58,27 +67,7 @@ export default function NewsIndex({ data, pageContext }) {
             />
           </Helmet>
 
-          <div className="categories-wrapper">
-            <h2 className="categories-heading">Categories</h2>
-            <ul className="categories-item-list">
-              <li className='categories-item'>
-                <a className="categories-link" href='/blog/'>
-                  All posts
-                </a>
-              </li>
-                {uniqueCategories.map(
-                  (category, _) =>
-                    category !== "_" && (
-                      <li className='categories-item' key={category}>
-                        <a className="categories-link" href={`/blog/categories/${slugify(category, {lower: true})}`}>
-                          {category}
-                        </a>
-                      </li>
-                    )
-                )}
-            </ul>
-          </div>
-
+          <Categories categories={uniqueCategories}/>
           <div className="posts-wrapper">
           {featuredPost && 
           (<>
@@ -90,17 +79,16 @@ export default function NewsIndex({ data, pageContext }) {
           {group.filter((post) => post.node.frontmatter.isFeatured !== true).map(({ node: post }) => (
             <PostCard key={post.id} post={post} />
           ))}
-          {/* TODO: add pagination */}
-            {/* <div className='prev-next-links blog-post'>
+            <div className='links-container'>
               <div className='prev-link'>
                 {!first && (
-                  <NavLink url={`/blog/${prevUrl}`} text='« Newer Posts' />
+                  <NavLink url={`/blog/${prevUrl}`} text='&lt; Previous' />
                 )}
               </div>
               <div className='next-link'>
-                {!last && <NavLink url={`/blog/${nextUrl}`} text='Older Posts »' />}
+                {!last && <NavLink url={`/blog/${nextUrl}`} text='Next &gt;' />}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

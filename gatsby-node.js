@@ -146,7 +146,7 @@ exports.createPages = ({ actions, graphql }) => {
       pageTemplate: path.resolve(`src/templates/blog.js`),
       paginatePost: "/blog", // old field. not remove
       pathPrefix: "/blog", // new field. not remove
-      pageLength: 20,
+      pageLength: 10,
     });
 
     edges.forEach(({ node }) => {
@@ -183,7 +183,7 @@ exports.createPages = ({ actions, graphql }) => {
         pageTemplate: path.resolve(`src/templates/blog.js`),
         paginatePost: `/blog/categories/${category}`, // old field. not remove
         pathPrefix: `/blog/categories/${category}`, // new field. not remove
-        pageLength: 20,
+        pageLength: 10,
       });
     });
 
