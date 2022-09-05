@@ -75,11 +75,7 @@ const Post = ({ post, full }) => {
                 (category, i) =>
                   category !== "_" && (
                     <span className='blog-post-category' key={category}>
-                      <a
-                        href={`/blog/categories/${slugify(category, {lower: true})}`}
-                      >
                         {category}
-                      </a>
                     </span>
                   )
               )}
