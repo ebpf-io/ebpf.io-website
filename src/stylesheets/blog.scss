@@ -313,11 +313,6 @@ main {margin-bottom: 0}
     text-decoration: none;
     display: block;
     margin-bottom: 40px;
-    
-
-    & + .blog-title {
-
-    }
   }
 
   .blog-title {
@@ -343,6 +338,7 @@ main {margin-bottom: 0}
 
     @media (max-width: 1023px) {
       font-size: 24px;
+      max-width: 100%;
     }
 
     @media (max-width: 639px) {
@@ -402,6 +398,12 @@ main {margin-bottom: 0}
       mask-image: url("../assets/link.svg");
       transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
     }
+  }
+}
+
+.blog-header {
+  .blog-title {
+    max-width: 100%;
   }
 }
 
