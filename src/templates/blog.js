@@ -10,7 +10,6 @@ import Categories from "../common/blog/Categories";
 import Pagination from "../common/blog/Pagination";
 
 export default function NewsIndex({ pageContext }) {
-  console.log(pageContext)
   const { group, pathPrefix, pageCount, index } = pageContext;
   const pageMetaTitle = "eBPF - Blog";
   const pageMetaDescription =
