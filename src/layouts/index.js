@@ -127,7 +127,11 @@ const conferencesItems = [
 ];
 
 const communityItems = [
-  { title: "Slack", linkUrl: "/slack" },
+  {
+    title: "Slack",
+    linkUrl: "https://ebpf.io/slack",
+    linkTarget: "_blank",
+  },
   {
     title: "Stack Overflow",
     linkUrl: "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
