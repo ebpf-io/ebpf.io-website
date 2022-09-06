@@ -27,6 +27,7 @@ import loxiLBLogo from "../assets/projects-logos/loxilb.png";
 import pwruLogo from "../assets/projects-logos/pwru.png";
 import pyroscopeLogo from '../assets/projects-logos/pyroscope.svg';
 import wachyLogo from '../assets/projects-logos/wachy.png';
+import parcaLogo from "../assets/projects-logos/parca.svg";
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -131,6 +132,22 @@ const majorProjects = [
 ]
 
 const emergingProjects = [
+  {
+    logoUrl: 'https://github.com/parca-dev/parca',
+    name: 'Parca',
+    logo: parcaLogo,
+    title: 'Continuous Profiling Platform',
+    description: `Track memory, cpu, I/O bottlenecks broken down by method
+    name, class name, and  line number over time. Without complex overhead, in
+    any language or framework. Using Parca's UI the data can be globally
+    explored and analyzed using various visualizations to quickly and
+    efficiently identify bottlenecks in code. It uses eBPF to collect profiling
+    data and uses libbpf-go to interact with the kernel.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/parca-dev/parca'},
+      {label: 'Website', url: 'https://parca.dev'},
+    ],
+  },
   {
     logoUrl: 'https://github.com/pyroscope-io/pyroscope',
     name: 'Pyroscope',
