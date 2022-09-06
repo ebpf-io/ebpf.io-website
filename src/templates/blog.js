@@ -10,7 +10,8 @@ import Categories from "../common/blog/Categories";
 import Pagination from "../common/blog/Pagination";
 
 export default function NewsIndex({ pageContext }) {
-  const { group, pathPrefix, pageCount } = pageContext;
+  console.log(pageContext)
+  const { group, pathPrefix, pageCount, index } = pageContext;
   const pageMetaTitle = "eBPF - Blog";
   const pageMetaDescription =
     "The latest news, updates and articles covering eBPF and related topics.";
@@ -75,7 +76,7 @@ export default function NewsIndex({ pageContext }) {
           {group.filter((post) => post.node.frontmatter.isFeatured !== true).map(({ node: post }) => (
             <PostCard key={post.id} post={post} />
           ))}
-          <Pagination currentPageIndex={pathPrefix} pageCount={pageCount} blogPageURL={pathPrefix} />
+          <Pagination currentPageIndex={index-1} pageCount={pageCount} blogPageURL={pathPrefix} />
           </div>
         </div>
       </div>

@@ -196,13 +196,12 @@ main {margin-bottom: 0}
           color: #ffffff;
           background: linear-gradient(87.89deg, #FAAB00 0%, #EBBC00 100%);
         }
-      }
-    }
-    .selected {
-      a {
-        color: #ffffff;
-        background: linear-gradient(87.89deg, #FAAB00 0%, #EBBC00 100%);
-      }
+        
+        &.active-page-and-break-link {
+          color: #ffffff;
+          background: linear-gradient(87.89deg, #FAAB00 0%, #EBBC00 100%);
+        }
+      }  
     }
 
     .pagination-link-wrapper {
