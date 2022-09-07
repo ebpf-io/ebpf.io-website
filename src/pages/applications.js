@@ -131,6 +131,23 @@ const majorProjects = [
 
 const emergingProjects = [
   {
+    logoUrl: 'https://github.com/pyroscope-io/pyroscope',
+    name: 'Pyroscope',
+    logo: pyroscopeLogo,
+    title: 'Continuous Profiling Platform',
+    description: `Pyroscope is an open source project centered around
+    continuous profiling, particularly in a Kubernetes context.
+    It leverages eBPF as its core technology along with a custom storage engine
+    to offer system-wide continuous profiling with minimal overhead
+    as well as efficient storage and querying capabilities.
+    We support Linux 4.9 and up thanks to CO-RE and libbpf.
+    `,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/pyroscope-io/pyroscope'},
+      {label: 'Website', url: 'https://pyroscope.io/'},
+    ],
+  },
+  {
     logoUrl: 'https://github.com/ehids/ecapture',
     name: 'eCapture',
     logo: ecaptureLogo,
@@ -294,23 +311,6 @@ const emergingProjects = [
     urls: [
       {label: 'GitHub', url: 'https://github.com/loxilb-io'},
       {label: 'Website', url: 'https://www.loxilb.io/'},
-    ],
-  },
-  {
-    logoUrl: 'https://github.com/pyroscope-io/pyroscope',
-    name: 'Pyroscope',
-    logo: pyroscopeLogo,
-    title: 'Continuous Profiling Platform',
-    description: `Pyroscope is an open source project centered around
-    continuous profiling, particularly in a Kubernetes context.
-    It leverages eBPF as its core technology along with a custom storage engine
-    to offer system-wide continuous profiling with minimal overhead
-    as well as efficient storage and querying capabilities.
-    We support Linux 4.9 and up thanks to CO-RE and libbpf.
-    `,
-    urls: [
-      {label: 'GitHub', url: 'https://github.com/pyroscope-io/pyroscope'},
-      {label: 'Website', url: 'https://pyroscope.io/'},
     ],
   },
 ]
