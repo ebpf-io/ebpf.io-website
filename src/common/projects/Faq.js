@@ -18,7 +18,7 @@ const HowToList = () => (
       below.
     </li>
     <li>
-      Open a <a href="https://github.com/cilium/ebpf.io">pull request</a> and
+      Open a <a href="https://github.com/ebpf-io/ebpf.io">pull request</a> and
       provide the required information. Use one of the already listed projects
       as a template. The ordering of applications is based on the number of
       Github stars (high to low), updated on a quaterly basis.
@@ -89,5 +89,7 @@ export const FAQ = () => (
       the requirements above, plus:
     </p>
     <MajorRequirementsList />
+    <p></p>
+    <p></p>
   </div>
 )
