@@ -32,7 +32,7 @@
     "infinite-react-carousel": "^1.2.11",
     "lodash": "^4.17.21",
     "node-html-parser": "^5.3.3",
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.3",
     "nuka-carousel": "^4.7.1",
     "prismjs": "^1.28.0",
     "react": "^16.14.0",
