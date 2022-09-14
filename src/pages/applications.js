@@ -26,6 +26,7 @@ import merbridgeLogo from '../assets/projects-logos/merbridge.svg';
 import loxiLBLogo from "../assets/projects-logos/loxilb.png";
 import pwruLogo from "../assets/projects-logos/pwru.png";
 import pyroscopeLogo from '../assets/projects-logos/pyroscope.svg';
+import wachyLogo from '../assets/projects-logos/wachy.png';
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -259,6 +260,17 @@ const emergingProjects = [
     urls: [
       {label: 'GitHub', url: 'https://github.com/iovisor/ply'},
       {label: 'Website', url: 'https://wkz.github.io/ply/'},
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/rubrikinc/wachy',
+    name: 'wachy',
+    logo: wachyLogo,
+    title: 'UI for interactive eBPF-based userspace performance debugging',
+    description: `Wachy is a profiler that uses eBPF to trace arbitrary compiled binaries and functions at runtime. It aims to make eBPF uprobe-based debugging much easier to use by displaying traces in a UI next to the source code, and allowing interactive drilldown analysis.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/rubrikinc/wachy'},
+      {label: 'Website', url: 'https://rubrikinc.github.io/wachy/'},
     ],
   },
   {
