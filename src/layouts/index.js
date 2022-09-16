@@ -375,12 +375,6 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
         <div className='footer-bottom'>
           <div className='legal-container'>
             <span className='legal-item'>© 2022 eBPF</span>
-            <Link to='/' className='legal-item'>
-              Terms of Service
-            </Link>
-            <Link to='/' className='legal-item'>
-              Privacy Policy
-            </Link>
           </div>
           {hasLanguage && (
             <LanguageDropdown
