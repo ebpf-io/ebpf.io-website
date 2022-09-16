@@ -56,7 +56,7 @@ const conferencesItems = [
       {
         name: "2022 (NA)",
         linkUrl:
-          "https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/",
+          "https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/schedule/",
         linkTarget: "_blank",
       },
       {
