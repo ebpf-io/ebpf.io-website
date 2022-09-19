@@ -29,6 +29,7 @@ import pyroscopeLogo from '../assets/projects-logos/pyroscope.svg';
 import wachyLogo from '../assets/projects-logos/wachy.png';
 import parcaLogo from "../assets/projects-logos/parca.svg";
 import keplerLogo from '../assets/projects-logos/kepler.gif';
+import skywalkingLogo from '../assets/projects-logos/skywalking.png'
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -352,6 +353,21 @@ const emergingProjects = [
     urls: [
       {label: 'GitHub', url: 'https://github.com/sustainable-computing-io/kepler'},
       {label: 'Website', url: 'https://sustainable-computing.io'},
+    ],                                                                                                                                                                                          
+  },                                                                                                                                                                                            
+  {    
+    logoUrl: 'https://skywalking.apache.org/',
+    name: 'Apache SkyWalking',
+    logo: skywalkingLogo,
+    title: 'APM, Application Performance Monitoring System',
+    description: `Apache SkyWalking is an application performance monitor tool for distributed systems, 
+    especially designed for microservices, cloud native and container-based (Kubernetes) architectures.
+    SkyWalking Rover is an agent in the SkyWalking ecosystem, as a metrics collector and profiler 
+    powered by eBPF to diagnose CPU, I/O and L4/L7(TLS) network performance. Also, Rover provides add-on events for 
+    spans in the distributed tracing.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/apache/skywalking-rover'},
+      {label: 'Website', url: 'https://skywalking.apache.org/'},
     ],
   },
 ]
