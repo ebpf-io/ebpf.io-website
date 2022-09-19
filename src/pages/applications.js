@@ -30,7 +30,7 @@ import wachyLogo from '../assets/projects-logos/wachy.png';
 import parcaLogo from "../assets/projects-logos/parca.svg";
 import keplerLogo from '../assets/projects-logos/kepler.gif';
 import skywalkingLogo from '../assets/projects-logos/skywalking.png'
-import keplerLogo from '../assets/projects-logos/kepler.png';
+import keplerLogo from '../assets/projects-logos/kepler.gif';
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
