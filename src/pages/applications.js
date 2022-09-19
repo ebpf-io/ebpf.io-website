@@ -30,7 +30,7 @@ import wachyLogo from '../assets/projects-logos/wachy.png';
 import parcaLogo from "../assets/projects-logos/parca.svg";
 import skywalkingLogo from '../assets/projects-logos/skywalking.png'
 import pulsarLogo from '../assets/projects-logos/pulsar.png'
-
+import keplerLogo from '../assets/projects-logos/kepler.gif';
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -358,6 +358,19 @@ const emergingProjects = [
     urls: [
       {label: 'GitHub', url: 'https://github.com/loxilb-io'},
       {label: 'Website', url: 'https://www.loxilb.io/'},
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/sustainable-computing-io/kepler',
+    name: 'Kepler',
+    logo: keplerLogo,
+    title: 'Kubernetes-based Efficient Power Level Exporter',
+    description: `Kepler (Kubernetes-based Efficient Power Level Exporter) is a Prometheus exporter. 
+    It uses eBPF to probe CPU performance counters and Linux kernel tracepoints.
+    These data and stats from cgroup and sysfs are fed into ML models to estimate energy consumption by Pods.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/sustainable-computing-io/kepler'},
+      {label: 'Website', url: 'https://sustainable-computing.io'},
     ],
   },
   {
