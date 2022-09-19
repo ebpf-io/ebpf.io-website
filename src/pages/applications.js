@@ -29,6 +29,8 @@ import pyroscopeLogo from '../assets/projects-logos/pyroscope.svg';
 import wachyLogo from '../assets/projects-logos/wachy.png';
 import parcaLogo from "../assets/projects-logos/parca.svg";
 import skywalkingLogo from '../assets/projects-logos/skywalking.png'
+import pulsarLogo from '../assets/projects-logos/pulsar.png'
+
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -314,6 +316,21 @@ const emergingProjects = [
     urls: [
       {label: 'GitHub', url: 'https://github.com/merbridge/merbridge'},
       {label: 'Website', url: 'https://merbridge.io/'},
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/Exein-io/pulsar',
+    name: 'Pulsar',
+    logo: pulsarLogo,
+    title: 'A modular runtime security framework for the IoT',
+    description: `Pulsar is an event-driven framework for monitoring the activity 
+    of Linux devices. It allows you to collect runtime activity events from 
+    the Linux kernel through its modules and evaluate each event against your own 
+    set of security policies. Powered by eBPF and written in Rust, Pulsar is 
+    lightweight and safe by design.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/Exein-io/pulsar'},
+      {label: 'Website', url: 'https://pulsar.sh/'},
     ],
   },
   {
