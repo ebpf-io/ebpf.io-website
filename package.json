@@ -7,7 +7,7 @@
   "dependencies": {
     "@svgr/webpack": "^6.3.1",
     "classnames": "^2.3.1",
-    "gatsby": "^4.18.0",
+    "gatsby": "^4.23.0",
     "gatsby-cli": "^4.18.0",
     "gatsby-link": "^4.18.0",
     "gatsby-paginate": "^1.1.1",
