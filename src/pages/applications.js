@@ -31,6 +31,7 @@ import parcaLogo from "../assets/projects-logos/parca.svg";
 import skywalkingLogo from '../assets/projects-logos/skywalking.png'
 import pulsarLogo from '../assets/projects-logos/pulsar.png'
 import keplerLogo from '../assets/projects-logos/kepler.gif';
+import deepflowLogo from "../assets/projects-logos/deepflow.png";
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -319,14 +320,25 @@ const emergingProjects = [
     ],
   },
   {
+    logoUrl: 'https://github.com/deepflowys/deepflow',
+    name: 'DeepFlow',
+    logo: deepflowLogo,
+    title: 'Highly Automated Observability Platform powered by eBPF',
+    description: `DeepFlow is a highly automated observability platform built for cloud native developers. Based on eBPF, DeepFlow innovatively implements an automated distributed tracing mechanism: AutoTracing. Microservice processes, service mesh sidecars, and network interfaces along the way are included as tracing spans, for every distributed transaction, without any code instrumentation. DeepFlow can automatically generate golden RED metrics for any process in cloud native environment.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/deepflowys/deepflow'},
+      {label: 'Website', url: 'https://deepflow.yunshan.net/community.html'},
+    ],
+  },
+  {
     logoUrl: 'https://github.com/Exein-io/pulsar',
     name: 'Pulsar',
     logo: pulsarLogo,
     title: 'A modular runtime security framework for the IoT',
-    description: `Pulsar is an event-driven framework for monitoring the activity 
-    of Linux devices. It allows you to collect runtime activity events from 
-    the Linux kernel through its modules and evaluate each event against your own 
-    set of security policies. Powered by eBPF and written in Rust, Pulsar is 
+    description: `Pulsar is an event-driven framework for monitoring the activity
+    of Linux devices. It allows you to collect runtime activity events from
+    the Linux kernel through its modules and evaluate each event against your own
+    set of security policies. Powered by eBPF and written in Rust, Pulsar is
     lightweight and safe by design.`,
     urls: [
       {label: 'GitHub', url: 'https://github.com/Exein-io/pulsar'},
@@ -365,7 +377,7 @@ const emergingProjects = [
     name: 'Kepler',
     logo: keplerLogo,
     title: 'Kubernetes-based Efficient Power Level Exporter',
-    description: `Kepler (Kubernetes-based Efficient Power Level Exporter) is a Prometheus exporter. 
+    description: `Kepler (Kubernetes-based Efficient Power Level Exporter) is a Prometheus exporter.
     It uses eBPF to probe CPU performance counters and Linux kernel tracepoints.
     These data and stats from cgroup and sysfs are fed into ML models to estimate energy consumption by Pods.`,
     urls: [
@@ -378,10 +390,10 @@ const emergingProjects = [
     name: 'Apache SkyWalking',
     logo: skywalkingLogo,
     title: 'APM, Application Performance Monitoring System',
-    description: `Apache SkyWalking is an application performance monitor tool for distributed systems, 
+    description: `Apache SkyWalking is an application performance monitor tool for distributed systems,
     especially designed for microservices, cloud native and container-based (Kubernetes) architectures.
-    SkyWalking Rover is an agent in the SkyWalking ecosystem, as a metrics collector and profiler 
-    powered by eBPF to diagnose CPU, I/O and L4/L7(TLS) network performance. Also, Rover provides add-on events for 
+    SkyWalking Rover is an agent in the SkyWalking ecosystem, as a metrics collector and profiler
+    powered by eBPF to diagnose CPU, I/O and L4/L7(TLS) network performance. Also, Rover provides add-on events for
     spans in the distributed tracing.`,
     urls: [
       {label: 'GitHub', url: 'https://github.com/apache/skywalking-rover'},
