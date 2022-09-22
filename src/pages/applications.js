@@ -32,6 +32,7 @@ import skywalkingLogo from '../assets/projects-logos/skywalking.png'
 import pulsarLogo from '../assets/projects-logos/pulsar.png'
 import keplerLogo from '../assets/projects-logos/kepler.gif';
 import deepflowLogo from "../assets/projects-logos/deepflow.png";
+import inspektorGadgetLogo from "../assets/projects-logos/inspektor_gadget.png";
 
 const pageMetaTitle = "eBPF Applications Landscape";
 const pageMetaDescription =
@@ -241,6 +242,23 @@ const emergingProjects = [
     called trace-runner that executes bpftrace.`,
     urls: [
       {label: 'GitHub', url: 'https://github.com/iovisor/kubectl-trace'},
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/kinvolk/inspektor-gadget',
+    name: 'Inspektor Gadget',
+    logo: inspektorGadgetLogo,
+    title: 'Introspecting and debugging Kubernetes applications using eBPF "gadgets"',
+    description: `Inspektor Gadget is a collection of tools (or gadgets) to
+    debug and inspect Kubernetes resources and applications. It manages the
+    packaging, deployment and execution of eBPF programs in a Kubernetes
+    cluster, including many based on BCC tools, as well as some developed
+    specifically for use in Inspektor Gadget. It automatically maps low-level
+    kernel primitives to high-level Kubernetes resources, making it easier and
+    quicker to find the relevant information.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/kinvolk/inspektor-gadget'},
+      {label: 'Website', url: 'https://www.inspektor-gadget.io/'},
     ],
   },
   {
