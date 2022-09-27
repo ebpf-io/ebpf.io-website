@@ -2396,6 +2396,14 @@ html.smooth-scroll {
   gap: 32px;
   padding-top: 64px;
   padding-bottom: 128px;
+
+  @media #{$desktop-mini} {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  @media #{$tablet} {
+    display: block;
+  }
 }
 
 .case-studies-card {
@@ -2413,6 +2421,16 @@ html.smooth-scroll {
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
   }
 
+  @media #{$tablet} {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media #{$mobile} {
+    padding: 24px 12px 18px;
+  }
+
   .card-info {
     display: flex;
     flex: 1;
@@ -2426,13 +2444,21 @@ html.smooth-scroll {
     align-items: center;
   }
 
+  .card-description-wrapper {
+   max-height: 140px;
+    overflow: hidden;
+  }
+
   .card-description {
     margin-top: 24px;
-    flex: 1;
-    overflow: hidden;
     font-size: 20px;
     line-height: 150%;
     color: #141A1F;
+
+    @media #{$mobile} {
+      margin-top: 20px;
+      font-size: 18px;
+    }
   }
 
   .card-link {
@@ -2453,6 +2479,10 @@ html.smooth-scroll {
       content: '•';
       margin: 0 5px;
       color: #E6E6E6;
+    }
+
+    @media #{$mobile} {
+      font-size: 12px;
     }
   }
 }

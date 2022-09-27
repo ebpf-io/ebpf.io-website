@@ -339,11 +339,13 @@ const CaseCard = ({ logo, description, links }) => (
       <img src={logo} />
     </div>
     <div className="card-info">
-      <p className="card-description">
-        {description.map((item, i) =>
-          i === 0 ? <strong>{item}</strong> : <>{item}</>
-        )}
-      </p>
+      <div className="card-description-wrapper">
+        <p className="card-description">
+          {description.map((item, i) =>
+            i === 0 ? <strong>{item}</strong> : <>{item}</>
+          )}
+        </p>
+      </div>
       <div className="card-links">
         {links.map((item) => (
           <a className="card-link" href={item.href}>
@@ -364,7 +366,7 @@ const Page = () => (
         <p className="case-studies-description">
           Here are some of the organizations that are using eBPF in production.
           If you’re using eBPF and aren’t on this list, please submit a pull
-          request” PR should link to the page on github once it is created
+          request. PR should link to the page on github once it is created.
         </p>
         <div className="case-studies-wrapper">
           {cardsData.map((item, i) => (
