@@ -152,6 +152,10 @@ const communityItems = [
     title: "Contribute",
     linkUrl: "/contribute",
   },
+  {
+    title: "Case Studies",
+    linkUrl: "/case-studies",
+  },
 ];
 
 const languages = [
