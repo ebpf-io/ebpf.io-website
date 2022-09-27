@@ -31,7 +31,7 @@ const cardsData = [
     logo: Google,
     description: [
       "Google",
-      " uses eBPF for security auditing, packet processing, and performance monitoring in its data centers",
+      " uses eBPF for security auditing, packet processing, and performance monitoring",
     ],
     links: [
       {
