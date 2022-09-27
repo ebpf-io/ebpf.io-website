@@ -364,7 +364,7 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage, footerClassName }) 
                 {items.map(({ name, linkUrl, target }, index) => (
                   <ul key={index}>
                     <li className='item-link'>
-                      <CustomLink text={name} url={linkUrl} target={target} />
+                      <CustomLink url={linkUrl} target={target}>{name}</CustomLink>
                     </li>
                   </ul>
                 ))}

@@ -33,7 +33,7 @@ const Dropdown = ({ title, items }) => {
           <ul className='items-list' key={index}>
             {linkUrl ? (
               <li className='item-link'>
-                <CustomLink text={title} url={linkUrl} target={linkTarget} />
+                <CustomLink url={linkUrl} target={linkTarget}>{title}</CustomLink>
               </li>
             ) : (
               <li className='item-link item-title'>{title}</li>
@@ -41,7 +41,7 @@ const Dropdown = ({ title, items }) => {
             {subitems?.map(({ name, linkUrl, linkTarget }, index) => (
               <ul key={index}>
                 <li className='subitem-link'>
-                  <CustomLink text={name} url={linkUrl} target={linkTarget} />
+                  <CustomLink url={linkUrl} target={linkTarget}>{name}</CustomLink>
                 </li>
               </ul>
             ))}
