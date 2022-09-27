@@ -360,7 +360,7 @@ const Page = () => (
     <Helmet title="" />
     <div className="page-projects">
       <div className="project-content-wrapper">
-        <h1 className="projects-title faq-title">eBPF Case Studies</h1>
+        <h1 className="case-studies-title">eBPF Case Studies</h1>
         <p className="case-studies-description">
           Here are some of the organizations that are using eBPF in production.
           If you’re using eBPF and aren’t on this list, please submit a pull
