@@ -134,7 +134,8 @@ const communityItems = [
   },
   {
     title: "Stack Overflow",
-    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
+    linkUrl:
+      "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
     linkTarget: "_blank",
   },
   {
@@ -185,6 +186,7 @@ const footerItems = [
           "https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi",
         target: "_blank",
       },
+      { name: "Case Studies", linkUrl: "/case-studies" },
     ],
   },
   {
@@ -214,43 +216,44 @@ const footerIcons = [
   { icon: SlackIcon, linkUrl: "https://ebpf.io/slack" },
   {
     icon: StackOverFlowIcon,
-    linkUrl: "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
+    linkUrl:
+      "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
   },
   { icon: RedditIcon, linkUrl: "https://www.reddit.com/r/eBPF/" },
 ];
 
 const InfoDisclaimer = () => (
-  <div className='introDisclaimer'>
+  <div className="introDisclaimer">
     <img
-      src='/images/bg-1.png'
-      className='introDisclaimer-image image-right'
-      alt=''
+      src="/images/bg-1.png"
+      className="introDisclaimer-image image-right"
+      alt=""
       aria-hidden
     />
     <img
-      src='/images/bg-2.png'
-      className='introDisclaimer-image image-left'
-      alt=''
+      src="/images/bg-2.png"
+      className="introDisclaimer-image image-left"
+      alt=""
       aria-hidden
     />
     <img
-      src='/images/bg-1-md.png'
-      className='introDisclaimer-image-md image-right'
-      alt=''
+      src="/images/bg-1-md.png"
+      className="introDisclaimer-image-md image-right"
+      alt=""
       aria-hidden
     />
     <img
-      src='/images/bg-2-md.png'
-      className='introDisclaimer-image-md image-left'
-      alt=''
+      src="/images/bg-2-md.png"
+      className="introDisclaimer-image-md image-left"
+      alt=""
       aria-hidden
     />
-    <div className='text-wrapper'>
+    <div className="text-wrapper">
       <strong>eBPF summit 2022&nbsp;</strong> <span>(28-29 September)</span>
     </div>
     <a
-      className='introDisclaimer-button'
-      href='https://www.ebpf.io/summit-2022'
+      className="introDisclaimer-button"
+      href="https://www.ebpf.io/summit-2022"
     >
       Register Now!
     </a>
@@ -258,17 +261,17 @@ const InfoDisclaimer = () => (
 );
 
 const HeaderDesktop = ({ language }) => (
-  <header className='header desktop'>
-    <Link to={language} className='menu-logo-link'>
-      <img className='menu-logo' src={logo} width={122} height={42} />
+  <header className="header desktop">
+    <Link to={language} className="menu-logo-link">
+      <img className="menu-logo" src={logo} width={122} height={42} />
     </Link>
-    <nav className='header-nav'>
-      <Link to='/what-is-ebpf'>What is eBPF?</Link>
-      <Dropdown title='Project Landscape' items={projectsItems} />
-      <Dropdown title='Conferences' items={conferencesItems} />
-      <Dropdown title='Community' items={communityItems} />
-      <Link to='/blog'>Blog</Link>
-      <a href='https://www.ebpf.foundation'>Foundation</a>
+    <nav className="header-nav">
+      <Link to="/what-is-ebpf">What is eBPF?</Link>
+      <Dropdown title="Project Landscape" items={projectsItems} />
+      <Dropdown title="Conferences" items={conferencesItems} />
+      <Dropdown title="Community" items={communityItems} />
+      <Link to="/blog">Blog</Link>
+      <a href="https://www.ebpf.foundation">Foundation</a>
     </nav>
   </header>
 );
@@ -281,15 +284,15 @@ const HeaderMobile = ({ language }) => {
   );
 
   return (
-    <div className='header mobile'>
-      <div className='row'>
-        <Link to={language} className='headerLogoLink'>
+    <div className="header mobile">
+      <div className="row">
+        <Link to={language} className="headerLogoLink">
           <img
-            className='headerLogo'
+            className="headerLogo"
             src={logo}
             width={109}
             height={38}
-            alt='eBPF logo'
+            alt="eBPF logo"
           />
         </Link>
         <div className={`menu-icon ${isOpen && "open"}`} onClick={toggleIsOpen}>
@@ -299,14 +302,14 @@ const HeaderMobile = ({ language }) => {
         </div>
       </div>
       {isOpen && (
-        <nav className='header-nav'>
-          <Link to='/what-is-ebpf'>What is eBPF?</Link>
-          <Link to='/projects'>Project Landscape</Link>
-          <Dropdown title='Conferences' items={conferencesItems} />
-          <a href='/slack'>Slack</a>
-          <Dropdown title='Community' items={communityItems} />
-          <Link to='/blog'>Blog</Link>
-          <a href='https://www.ebpf.foundation'>Foundation</a>
+        <nav className="header-nav">
+          <Link to="/what-is-ebpf">What is eBPF?</Link>
+          <Link to="/projects">Project Landscape</Link>
+          <Dropdown title="Conferences" items={conferencesItems} />
+          <a href="/slack">Slack</a>
+          <Dropdown title="Community" items={communityItems} />
+          <Link to="/blog">Blog</Link>
+          <a href="https://www.ebpf.foundation">Foundation</a>
         </nav>
       )}
     </div>
@@ -331,7 +334,7 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
         key={language.name}
         className={`button${language === language.code ? " selected" : ""}`}
         onClick={() => setLang(`${language.code}`)}
-        type='button'
+        type="button"
       >
         <span>{language.name}</span>
       </button>
@@ -340,16 +343,16 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
 
   return (
     <footer>
-      <div className='footer-container desktop'>
-        <div className='footer-items'>
-          <Link to={language} className='menu-logo--link'>
-            <img className='menu-logo' src={logo} width={122} height={42} />
+      <div className="footer-container desktop">
+        <div className="footer-items">
+          <Link to={language} className="menu-logo--link">
+            <img className="menu-logo" src={logo} width={122} height={42} />
           </Link>
-          <div className='social-container'>
+          <div className="social-container">
             {footerIcons.map(({ icon: Icon, linkUrl }, index) => (
               <a
-                className='social-link'
-                target='_blank'
+                className="social-link"
+                target="_blank"
                 key={index}
                 href={linkUrl}
               >
@@ -357,13 +360,13 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
               </a>
             ))}
           </div>
-          <div className='items-container'>
+          <div className="items-container">
             {footerItems.map(({ title, items }, index) => (
-              <ul className='items-list' key={index}>
-                <li className='item-title'>{title}</li>
+              <ul className="items-list" key={index}>
+                <li className="item-title">{title}</li>
                 {items.map(({ name, linkUrl, target }, index) => (
                   <ul key={index}>
-                    <li className='item-link'>
+                    <li className="item-link">
                       <CustomLink text={name} url={linkUrl} target={target} />
                     </li>
                   </ul>
@@ -372,9 +375,9 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
             ))}
           </div>
         </div>
-        <div className='footer-bottom'>
-          <div className='legal-container'>
-            <span className='legal-item'>© 2022 eBPF</span>
+        <div className="footer-bottom">
+          <div className="legal-container">
+            <span className="legal-item">© 2022 eBPF</span>
           </div>
           {hasLanguage && (
             <LanguageDropdown
@@ -441,9 +444,9 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden, path }) => {
   };
 
   return (
-    <div className='page'>
+    <div className="page">
       <Helmet
-        title='eBPF'
+        title="eBPF"
         link={[
           {
             href: "https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap",

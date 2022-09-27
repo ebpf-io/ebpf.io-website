@@ -15,7 +15,7 @@ import Seznam from "../assets/case-studies/seznam.svg";
 import Trip from "../assets/case-studies/trip.svg";
 import Bell from "../assets/case-studies/bell.svg";
 import Wildlife from "../assets/case-studies/wildlife.svg";
-import CaptialOne from "../assets/case-studies/capital-one.svg";
+import CapitalOne from "../assets/case-studies/capital-one.svg";
 import Sky from "../assets/case-studies/sky.svg";
 import Apple from "../assets/case-studies/apple.svg";
 import Walmart from "../assets/case-studies/walmart.svg";
@@ -211,9 +211,9 @@ const cardsData = [
     ],
   },
   {
-    logo: CaptialOne,
+    logo: CapitalOne,
     description: [
-      "Captial One",
+      "Capital One",
       " uses eBPF to secure their cloud infrastructure",
     ],
     links: [
@@ -248,7 +248,7 @@ const cardsData = [
   },
   {
     logo: Walmart,
-    description: ["Apple", " uses eBPF for edge cloud load balancing"],
+    description: ["Walmart", " uses eBPF for edge cloud load balancing"],
     links: [
       {
         name: "Video 1",
@@ -339,16 +339,19 @@ const CaseCard = ({ logo, description, links }) => (
       <img src={logo} />
     </div>
     <div className="card-info">
-      <div className="card-description-wrapper">
-        <p className="card-description">
-          {description.map((item, i) =>
-            i === 0 ? <strong>{item}</strong> : <>{item}</>
-          )}
-        </p>
-      </div>
+      <p className="card-description">
+        {description.map((item, i) =>
+          i === 0 ? <strong>{item}</strong> : <>{item}</>
+        )}
+      </p>
       <div className="card-links">
         {links.map((item) => (
-          <a className="card-link" href={item.href}>
+          <a
+            className="card-link"
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {item.name}
           </a>
         ))}
