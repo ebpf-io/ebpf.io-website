@@ -6,9 +6,15 @@ footer {
   width: 100%;
   background-color: #fafafa;
   padding: 56px 0 36px;
+  margin-top: 120px;
+
+  @media (max-width: 768px) {
+    margin-top: 80px;
+  }
 
   @media (max-width: 530px) {
     padding: 36px 0 32px;
+    margin-top: 60px;
   }
 }
 

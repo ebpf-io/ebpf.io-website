@@ -27,7 +27,7 @@ export default function NewsIndex({ pageContext }) {
   ];
 
   return (
-    <Layout>
+    <Layout footerClassName="blog-footer">
       <div className="blog">
         <div className='blog-posts'>
           <Helmet

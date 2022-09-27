@@ -313,7 +313,7 @@ const HeaderMobile = ({ language }) => {
   );
 };
 
-const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
+const FooterDesktop = ({ language, hasLanguage, setLanguage, footerClassName }) => {
   const [isLangMenuShown, setIsLangMenuShown] = useState(false);
 
   const setLang = useCallback(
@@ -339,7 +339,7 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
   }
 
   return (
-    <footer>
+    <footer className={footerClassName}>
       <div className='footer-container desktop'>
         <div className='footer-items'>
           <Link to={language} className='menu-logo--link'>
@@ -391,7 +391,7 @@ const FooterDesktop = ({ language, hasLanguage, setLanguage }) => {
   );
 };
 
-const TemplateWrapper = ({ children, isDesktopHeaderHidden, path }) => {
+const TemplateWrapper = ({ children, isDesktopHeaderHidden, path, footerClassName }) => {
   const hasLanguage = useMemo(() => {
     if (typeof window === "undefined") {
       return;
@@ -467,6 +467,7 @@ const TemplateWrapper = ({ children, isDesktopHeaderHidden, path }) => {
       <HeaderMobile language={language} />
       <main>{children}</main>
       <FooterDesktop
+        footerClassName={footerClassName}
         path={path}
         language={language}
         hasLanguage={hasLanguage}
