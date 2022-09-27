@@ -31,9 +31,9 @@
     "gatsby-transformer-remark": "^5.23.1",
     "infinite-react-carousel": "^1.2.11",
     "lodash": "^4.17.21",
-    "node-html-parser": "^5.3.3",
+    "node-html-parser": "^6.1.1",
     "node-sass": "^7.0.3",
-    "nuka-carousel": "^4.7.1",
+    "nuka-carousel": "^5.4.0",
     "prismjs": "^1.29.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -60,7 +60,6 @@
   "devDependencies": {
     "date-fns": "^2.29.3",
     "prettier": "^2.7.1",
-    "slug": "^5.3.0",
     "to-markdown": "^3.1.1",
     "webpack": "^5.74.0",
     "xml2js": "^0.4.23"
