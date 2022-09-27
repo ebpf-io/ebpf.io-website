@@ -2377,11 +2377,19 @@ html.smooth-scroll {
       }
 
       & > .blog-header {
-        & > .blog-title {
+        & > .link .blog-title {
           font-size: 20px;
           font-weight: 500;
           text-decoration: underline;
+
+          &:hover {
+            color: #ffffff00;
+          }
         }
+      }
+
+      .blog-categories-and-date {
+        margin-top: 16px;
       }
     }
   }
