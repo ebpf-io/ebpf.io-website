@@ -3,32 +3,32 @@ import Layout from "../layouts";
 import React from "react";
 
 import "../stylesheets/index.scss";
-import Google from "../assets/case-studies/google.svg";
-import Netflix from "../assets/case-studies/netflix.svg";
-import Cloudflare from "../assets/case-studies/cloudflare.svg";
-import Meta from "../assets/case-studies/meta.svg";
-import Ikea from "../assets/case-studies/ikea.svg";
-import Android from "../assets/case-studies/android.svg";
-import Datadog from "../assets/case-studies/datadog.svg";
-import Alibaba from "../assets/case-studies/alibaba.svg";
-import Seznam from "../assets/case-studies/seznam.svg";
-import Trip from "../assets/case-studies/trip.svg";
-import Bell from "../assets/case-studies/bell.svg";
-import Wildlife from "../assets/case-studies/wildlife.svg";
-import CapitalOne from "../assets/case-studies/capital-one.svg";
-import Sky from "../assets/case-studies/sky.svg";
-import Apple from "../assets/case-studies/apple.svg";
-import Walmart from "../assets/case-studies/walmart.svg";
-import Palantir from "../assets/case-studies/palantir.svg";
-import Cruise from "../assets/case-studies/cruise.svg";
-import DigitalOcean from "../assets/case-studies/digital-ocean.svg";
-import Yahoo from "../assets/case-studies/yahoo.svg";
-import Bytedance from "../assets/case-studies/byte-dance.svg";
-import F5 from "../assets/case-studies/f5.svg";
+import Google from "../assets/case-studies/google.inline.svg";
+import Netflix from "../assets/case-studies/netflix.inline.svg";
+import Cloudflare from "../assets/case-studies/cloudflare.inline.svg";
+import Meta from "../assets/case-studies/meta.inline.svg";
+import Ikea from "../assets/case-studies/ikea.inline.svg";
+import Android from "../assets/case-studies/android.inline.svg";
+import Datadog from "../assets/case-studies/datadog.inline.svg";
+import Alibaba from "../assets/case-studies/alibaba.inline.svg";
+import Seznam from "../assets/case-studies/seznam.inline.svg";
+import Trip from "../assets/case-studies/trip.inline.svg";
+import Bell from "../assets/case-studies/bell.inline.svg";
+import Wildlife from "../assets/case-studies/wildlife.inline.svg";
+import CapitalOne from "../assets/case-studies/capital-one.inline.svg";
+import Sky from "../assets/case-studies/sky.inline.svg";
+import Apple from "../assets/case-studies/apple.inline.svg";
+import Walmart from "../assets/case-studies/walmart.inline.svg";
+import Palantir from "../assets/case-studies/palantir.inline.svg";
+import Cruise from "../assets/case-studies/cruise.inline.svg";
+import DigitalOcean from "../assets/case-studies/digital-ocean.inline.svg";
+import Yahoo from "../assets/case-studies/yahoo.inline.svg";
+import Bytedance from "../assets/case-studies/byte-dance.inline.svg";
+import F5 from "../assets/case-studies/f5.inline.svg";
 
 const cardsData = [
   {
-    logo: Google,
+    Logo: Google,
     description: [
       "Google",
       " uses eBPF for security auditing, packet processing, and performance monitoring",
@@ -53,7 +53,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Netflix,
+    Logo: Netflix,
     description: ["Netflix", " uses eBPF at scale for network insights"],
     links: [
       {
@@ -63,7 +63,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Cloudflare,
+    Logo: Cloudflare,
     description: [
       "Cloudflare",
       " uses eBPF through XDP for DDoS mitigation and load balancing",
@@ -80,7 +80,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Meta,
+    Logo: Meta,
     description: [
       "Meta",
       " uses eBPF to process and load balance every packet coming into their data centers",
@@ -109,7 +109,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Ikea,
+    Logo: Ikea,
     description: [
       "Ikea",
       " uses eBPF through Cilium for networking and load balancing in their private cloud",
@@ -122,7 +122,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Android,
+    Logo: Android,
     description: [
       "Android",
       " uses eBPF to monitor network usage, power, and memory profiling",
@@ -135,7 +135,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Datadog,
+    Logo: Datadog,
     description: [
       "Datadog",
       " uses eBPF for networking and security in their SaaS product",
@@ -148,7 +148,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Alibaba,
+    Logo: Alibaba,
     description: [
       "Alibaba",
       " uses eBPF through Cilium to provide networking in their cloud",
@@ -161,7 +161,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Seznam,
+    Logo: Seznam,
     description: ["Seznam", " uses eBPF for load balancing"],
     links: [
       {
@@ -171,7 +171,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Trip,
+    Logo: Trip,
     description: ["Trip.com", " uses eBPF for load balancing"],
     links: [
       {
@@ -181,7 +181,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Bell,
+    Logo: Bell,
     description: [
       "Bell",
       " Canada uses eBPF to moderize telco networking with SRv6",
@@ -198,7 +198,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Wildlife,
+    Logo: Wildlife,
     description: [
       "Wildlife Studios",
       " uses eBPF through Cilium for high performance game networking",
@@ -211,7 +211,7 @@ const cardsData = [
     ],
   },
   {
-    logo: CapitalOne,
+    Logo: CapitalOne,
     description: [
       "Capital One",
       " uses eBPF to secure their cloud infrastructure",
@@ -224,7 +224,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Sky,
+    Logo: Sky,
     description: ["Sky", " uses eBPF through Cilium for cloud networking"],
     links: [
       {
@@ -234,7 +234,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Apple,
+    Logo: Apple,
     description: [
       "Apple",
       " uses eBPF through Falco for kernel security monitoring",
@@ -247,7 +247,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Walmart,
+    Logo: Walmart,
     description: ["Walmart", " uses eBPF for edge cloud load balancing"],
     links: [
       {
@@ -261,7 +261,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Palantir,
+    Logo: Palantir,
     description: ["Palantir", " uses eBPF to debug networking problems"],
     links: [
       {
@@ -271,7 +271,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Cruise,
+    Logo: Cruise,
     description: ["Cruise", " uses eBPF to monitor GPU performance"],
     links: [
       {
@@ -281,7 +281,7 @@ const cardsData = [
     ],
   },
   {
-    logo: DigitalOcean,
+    Logo: DigitalOcean,
     description: ["Digital Ocean", " uses eBPF to monitor GPU performance"],
     links: [
       {
@@ -291,7 +291,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Yahoo,
+    Logo: Yahoo,
     description: [
       "Yahoo",
       " uses eBPF for load balancing and performance analysis",
@@ -308,7 +308,7 @@ const cardsData = [
     ],
   },
   {
-    logo: Bytedance,
+    Logo: Bytedance,
     description: ["Bytedance", " uses eBPF for system tracing"],
     links: [
       {
@@ -318,7 +318,7 @@ const cardsData = [
     ],
   },
   {
-    logo: F5,
+    Logo: F5,
     description: ["F5", " BIG-IP integration with Cilium VTEP feature"],
     links: [
       {
@@ -333,10 +333,10 @@ const cardsData = [
   },
 ];
 
-const CaseCard = ({ logo, description, links }) => (
+const CaseCard = ({ Logo, description, links }) => (
   <div className="case-studies-card">
     <div className="card-logo">
-      <img src={logo} />
+      <Logo />
     </div>
     <div className="card-info">
       <p className="card-description">
