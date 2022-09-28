@@ -29,10 +29,8 @@ import F5 from "../assets/case-studies/f5.inline.svg";
 const cardsData = [
   {
     Logo: Google,
-    description: [
-      "Google",
-      " uses eBPF for security auditing, packet processing, and performance monitoring",
-    ],
+    description:
+      "<strong>Google</strong> uses eBPF for security auditing, packet processing, and performance monitoring",
     links: [
       {
         name: "Video 1",
@@ -54,7 +52,8 @@ const cardsData = [
   },
   {
     Logo: Netflix,
-    description: ["Netflix", " uses eBPF at scale for network insights"],
+    description:
+      "<strong>Netflix</strong> uses eBPF at scale for network insights",
     links: [
       {
         name: "Blog",
@@ -64,10 +63,8 @@ const cardsData = [
   },
   {
     Logo: Cloudflare,
-    description: [
-      "Cloudflare",
-      " uses eBPF through XDP for DDoS mitigation and load balancing",
-    ],
+    description:
+      "<strong>Cloudflare</strong> uses eBPF through XDP for DDoS mitigation and load balancing",
     links: [
       {
         name: "Blog",
@@ -81,10 +78,8 @@ const cardsData = [
   },
   {
     Logo: Meta,
-    description: [
-      "Meta",
-      " uses eBPF to process and load balance every packet coming into their data centers",
-    ],
+    description:
+      "<strong>Meta</strong> uses eBPF to process and load balance every packet coming into their data centers",
     links: [
       {
         name: "Video",
@@ -110,10 +105,8 @@ const cardsData = [
   },
   {
     Logo: Ikea,
-    description: [
-      "Ikea",
-      " uses eBPF through Cilium for networking and load balancing in their private cloud",
-    ],
+    description:
+      "<strong>Ikea</strong> uses eBPF through Cilium for networking and load balancing in their private cloud",
     links: [
       {
         name: "Video",
@@ -123,10 +116,8 @@ const cardsData = [
   },
   {
     Logo: Android,
-    description: [
-      "Android",
-      " uses eBPF to monitor network usage, power, and memory profiling",
-    ],
+    description:
+      "<strong>Android</strong> uses eBPF to monitor network usage, power, and memory profiling",
     links: [
       {
         name: "Docs",
@@ -136,10 +127,8 @@ const cardsData = [
   },
   {
     Logo: Datadog,
-    description: [
-      "Datadog",
-      " uses eBPF for networking and security in their SaaS product",
-    ],
+    description:
+      "<strong>Datadog</strong> uses eBPF for networking and security in their SaaS product",
     links: [
       {
         name: "Video",
@@ -149,10 +138,8 @@ const cardsData = [
   },
   {
     Logo: Alibaba,
-    description: [
-      "Alibaba",
-      " uses eBPF through Cilium to provide networking in their cloud",
-    ],
+    description:
+      "<strong>Alibaba</strong> uses eBPF through Cilium to provide networking in their cloud",
     links: [
       {
         name: "Blog",
@@ -162,7 +149,7 @@ const cardsData = [
   },
   {
     Logo: Seznam,
-    description: ["Seznam", " uses eBPF for load balancing"],
+    description: "<strong>Seznam</strong> uses eBPF for load balancing",
     links: [
       {
         name: "Blog",
@@ -172,7 +159,7 @@ const cardsData = [
   },
   {
     Logo: Trip,
-    description: ["Trip.com", " uses eBPF for load balancing"],
+    description: "<strong>Trip.com</strong> uses eBPF for load balancing",
     links: [
       {
         name: "Blog",
@@ -182,10 +169,8 @@ const cardsData = [
   },
   {
     Logo: Bell,
-    description: [
-      "Bell",
-      " Canada uses eBPF to moderize telco networking with SRv6",
-    ],
+    description:
+      "<strong>Bell</strong> Canada uses eBPF to moderize telco networking with SRv6",
     links: [
       {
         name: "Video 1",
@@ -199,10 +184,8 @@ const cardsData = [
   },
   {
     Logo: Wildlife,
-    description: [
-      "Wildlife Studios",
-      " uses eBPF through Cilium for high performance game networking",
-    ],
+    description:
+      "<strong>Wildlife Studios</strong> uses eBPF through Cilium for high performance game networking",
     links: [
       {
         name: "Blog",
@@ -212,10 +195,8 @@ const cardsData = [
   },
   {
     Logo: CapitalOne,
-    description: [
-      "Capital One",
-      " uses eBPF to secure their cloud infrastructure",
-    ],
+    description:
+      "<strong>Capital One</strong> uses eBPF to secure their cloud infrastructure",
     links: [
       {
         name: "Video",
@@ -225,7 +206,8 @@ const cardsData = [
   },
   {
     Logo: Sky,
-    description: ["Sky", " uses eBPF through Cilium for cloud networking"],
+    description:
+      "<strong>Sky</strong> uses eBPF through Cilium for cloud networking",
     links: [
       {
         name: "Video",
@@ -235,10 +217,8 @@ const cardsData = [
   },
   {
     Logo: Apple,
-    description: [
-      "Apple",
-      " uses eBPF through Falco for kernel security monitoring",
-    ],
+    description:
+      "<strong>Apple</strong> uses eBPF through Falco for kernel security monitoring",
     links: [
       {
         name: "Video",
@@ -248,7 +228,8 @@ const cardsData = [
   },
   {
     Logo: Walmart,
-    description: ["Walmart", " uses eBPF for edge cloud load balancing"],
+    description:
+      "<strong>Walmart</strong> uses eBPF for edge cloud load balancing",
     links: [
       {
         name: "Video 1",
@@ -262,7 +243,8 @@ const cardsData = [
   },
   {
     Logo: Palantir,
-    description: ["Palantir", " uses eBPF to debug networking problems"],
+    description:
+      "<strong>Palantir</strong> uses eBPF to debug networking problems",
     links: [
       {
         name: "Video",
@@ -272,7 +254,7 @@ const cardsData = [
   },
   {
     Logo: Cruise,
-    description: ["Cruise", " uses eBPF to monitor GPU performance"],
+    description: "<strong>Cruise</strong> uses eBPF to monitor GPU performance",
     links: [
       {
         name: "Video",
@@ -282,7 +264,8 @@ const cardsData = [
   },
   {
     Logo: DigitalOcean,
-    description: ["Digital Ocean", " uses eBPF to monitor GPU performance"],
+    description:
+      "<strong>Digital Ocean</strong> uses eBPF to monitor GPU performance",
     links: [
       {
         name: "Video",
@@ -292,10 +275,8 @@ const cardsData = [
   },
   {
     Logo: Yahoo,
-    description: [
-      "Yahoo",
-      " uses eBPF for load balancing and performance analysis",
-    ],
+    description:
+      "<strong>Yahoo</strong> uses eBPF for load balancing and performance analysis",
     links: [
       {
         name: "Video 1",
@@ -309,7 +290,7 @@ const cardsData = [
   },
   {
     Logo: Bytedance,
-    description: ["Bytedance", " uses eBPF for system tracing"],
+    description: "<strong>Bytedance</strong> uses eBPF for system tracing",
     links: [
       {
         name: "Blog",
@@ -319,7 +300,8 @@ const cardsData = [
   },
   {
     Logo: F5,
-    description: ["F5", " BIG-IP integration with Cilium VTEP feature"],
+    description:
+      "<strong>F5</strong> BIG-IP integration with Cilium VTEP feature",
     links: [
       {
         name: "Video",
@@ -339,11 +321,10 @@ const CaseCard = ({ Logo, description, links }) => (
       <Logo />
     </div>
     <div className="card-info">
-      <p className="card-description">
-        {description.map((item, i) =>
-          i === 0 ? <strong>{item}</strong> : <>{item}</>
-        )}
-      </p>
+      <p
+        className="card-description"
+        dangerouslySetInnerHTML={{ __html: description }}
+      />
       <div className="card-links">
         {links.map((item) => (
           <a
