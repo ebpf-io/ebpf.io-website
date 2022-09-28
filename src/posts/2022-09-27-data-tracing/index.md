@@ -1,6 +1,6 @@
 ---
 date: "2022-09-27T17:00:00.000Z"
-title: "https://blogs.oracle.com/linux/post/kernel-data-centric-tracing"
+title: "Data-Centric Tracing"
 ogImage: ogimage.jpeg
 externalUrl: "https://blogs.oracle.com/linux/post/kernel-data-centric-tracing"
 categories:
