@@ -2361,12 +2361,35 @@ html.smooth-scroll {
     margin-top: 28px;
 
     & > .blog-post {
+      flex: 1;
+      max-width: 100%;
+      margin: 0;
+
+      &:first-child {
+        margin-right: 30px;
+      }
+
+      @media (max-width: 1279px) {
+        &:first-child {
+          margin-right: 0;
+          margin-bottom: 25px;
+        }
+      }
+
       & > .blog-header {
-        & > .blog-title {
+        & > .link .blog-title {
           font-size: 20px;
           font-weight: 500;
           text-decoration: underline;
+
+          &:hover {
+            color: #ffffff00;
+          }
         }
+      }
+
+      .blog-categories-and-date {
+        margin-top: 16px;
       }
     }
   }

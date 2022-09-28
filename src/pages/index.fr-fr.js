@@ -204,6 +204,7 @@ export const pageQuery = graphql`
             date
             path
             title
+            externalUrl
           }
         }
       }

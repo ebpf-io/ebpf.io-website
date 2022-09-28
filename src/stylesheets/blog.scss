@@ -494,10 +494,6 @@ main {
     color: #1a1a1a;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
-    &:hover {
-      color: #ffffff00;
-    }
-
     @media (max-width: 1239px) {
       max-width: none;
       width: 100%;
@@ -868,4 +864,8 @@ main {
       endColorstr="#B8B8B8",
       GradientType=0
     ); /* IE6-9 */
+}
+
+.blog-footer {
+  margin-top: 0;
 }

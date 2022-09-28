@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { format, parseISO } from "date-fns";
 import slugify from "slugify";
 
 import parseHtml from "../../../scripts/parse-html";
+import CustomLink from "../CustomLink";
 
 const formatPostDate = (post) =>
   format(parseISO(post.frontmatter.date), "MMMM d, yyyy");
@@ -63,10 +64,17 @@ const Post = ({ post, full }) => {
     }
   }
 
+  const Tag = full ? Fragment : CustomLink;
+
   return (
-    <div className='blog-post' key={post.id}>
+    <article className='blog-post' key={post.id}>
       <header className='blog-header'>
-        <h1 className='blog-title'>{post.frontmatter.title}</h1>
+        <Tag url={post.frontmatter.path || post.frontmatter.externalUrl} target={post.frontmatter.externalUrl ? '_blank' : null}>
+          <h1 className='blog-title'>
+            {post.frontmatter.title}
+          </h1>
+        </Tag>
+       
         <div className='blog-categories-and-date'>
           <span className='blog-date'>{formatPostDate(post)}</span>
           {categories.length > 0 && (
@@ -88,7 +96,7 @@ const Post = ({ post, full }) => {
         className='blog-post-content'
         dangerouslySetInnerHTML={{ __html: html }}
       />
-    </div>
+    </article>
   );
 };
 
