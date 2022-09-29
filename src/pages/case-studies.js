@@ -361,7 +361,6 @@ const Page = () => (
           <a href="https://github.com/ebpf-io/ebpf.io">
             please submit a pull request.
           </a>{" "}
-          PR should link to the page on github once it is created.
         </p>
         <div className="case-studies-wrapper">
           {cardsData.map((item, i) => (
