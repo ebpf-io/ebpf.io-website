@@ -357,8 +357,11 @@ const Page = () => (
         <h1 className="case-studies-title">eBPF Case Studies</h1>
         <p className="case-studies-description">
           Here are some of the organizations that are using eBPF in production.
-          If you’re using eBPF and aren’t on this list, please submit a pull
-          request. PR should link to the page on github once it is created.
+          If you’re using eBPF and aren’t on this list, 
+          <a href="https://github.com/ebpf-io/ebpf.io">
+            please submit a pull request.
+          </a>{" "}
+          PR should link to the page on github once it is created.
         </p>
         <div className="case-studies-wrapper">
           {cardsData.map((item, i) => (

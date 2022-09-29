@@ -149,12 +149,12 @@ const communityItems = [
     linkTarget: "_blank",
   },
   {
-    title: "Contribute",
-    linkUrl: "/contribute",
-  },
-  {
     title: "Case Studies",
     linkUrl: "/case-studies",
+  },
+  {
+    title: "Contribute",
+    linkUrl: "/contribute",
   },
 ];
 
@@ -184,13 +184,13 @@ const footerItems = [
     title: "Get started",
     items: [
       { name: "What is eBPF?", linkUrl: "/what-is-ebpf" },
+      { name: "Case Studies", linkUrl: "/case-studies" },
       {
         name: "eBPF Tech Talks",
         linkUrl:
           "https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi",
         target: "_blank",
       },
-      { name: "Case Studies", linkUrl: "/case-studies" },
     ],
   },
   {
