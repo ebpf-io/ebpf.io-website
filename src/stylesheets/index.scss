@@ -2474,7 +2474,7 @@ html.smooth-scroll {
     @media #{$mobile} {
       height: 25px;
 
-      img {
+      svg {
         height: 100%;
       }
     }
@@ -2494,11 +2494,19 @@ html.smooth-scroll {
   }
 
   .card-links {
-    margin-top: 28px;
+    margin-top: 22px;
+    overflow: hidden;
 
     @media #{$mobile} {
-      margin-top: 24px;
+      margin-top: 12px;
     }
+  }
+
+  .links-shift {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -16px;
   }
 
   .card-link {
@@ -2510,12 +2518,13 @@ html.smooth-scroll {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     transition: color 0.2s ease-in;
+    margin-top: 12px;
 
     &:hover {
       color: #4C4CFF;
     }
 
-    &:not(:last-child):after {
+    &:before {
       content: '•';
       margin: 0 5px;
       color: #E6E6E6;

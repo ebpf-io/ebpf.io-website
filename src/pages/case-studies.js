@@ -326,16 +326,18 @@ const CaseCard = ({ Logo, description, links }) => (
         dangerouslySetInnerHTML={{ __html: description }}
       />
       <div className="card-links">
-        {links.map((item) => (
-          <a
-            className="card-link"
-            href={item.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.name}
-          </a>
-        ))}
+        <div className="links-shift">
+          {links.map((item) => (
+            <a
+              className="card-link"
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   </div>
