@@ -660,7 +660,7 @@ code {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  
+
   a {
     font-weight: 600;
     font-size: 36px;
@@ -903,7 +903,7 @@ code {
   .project-description {
     font-size: 18px;
     line-height: 1.625;
-    
+
 
     > p:not(:last-child) {
       margin-bottom: 28px;
@@ -973,7 +973,7 @@ code {
       display: block;
 
       @media #{$mobile} {
-        max-width: 100%;   
+        max-width: 100%;
       }
     }
   }
@@ -990,7 +990,7 @@ code {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.625;
-    
+
     li {
       margin-bottom: 14px;
       margin-left: 24px;
@@ -1126,7 +1126,7 @@ code {
 
     @media #{$mobile} {
       padding: 0 24px 24px;
-    
+
     }
   }
 
@@ -2391,6 +2391,153 @@ html.smooth-scroll {
       .blog-categories-and-date {
         margin-top: 16px;
       }
+    }
+  }
+}
+
+.case-studies-title {
+  text-align: center;
+  margin-top: 82px;
+  margin-bottom: 24px;
+  font-size: 56px;
+  line-height: 112.5%;
+}
+
+.case-studies-description {
+  font-size: 20px;
+  line-height: 162.5%;
+  text-align: center;
+  color: #1A1A1A;
+  max-width: 675px;
+  margin: 0 auto;
+}
+
+.case-studies-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-auto-rows: 1fr;
+  width: 100%;
+  gap: 32px;
+  padding-top: 64px;
+  padding-bottom: 128px;
+
+  @media #{$desktop-mini} {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  @media #{$tablet} {
+    display: block;
+  }
+
+  @media #{$mobile} {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.case-studies-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 28px;
+  border-radius: 6px;
+  border: 1px solid #DBDBDB;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0);
+  transition: border 0.2s ease-in, box-shadow 0.2s ease-in;
+
+  &:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  @media #{$tablet} {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media #{$mobile} {
+    padding: 25px 20px 20px;
+  }
+
+  .card-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-logo {
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    @media #{$mobile} {
+      height: 25px;
+
+      svg {
+        height: 100%;
+      }
+    }
+  }
+
+  .card-description {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #141A1F;
+
+    @media #{$mobile} {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+
+  .card-links {
+    margin-top: 22px;
+    overflow: hidden;
+
+    @media #{$mobile} {
+      margin-top: 12px;
+    }
+  }
+
+  .links-shift {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -17px;
+  }
+
+  .links-shift-shorten {
+    @media screen and (max-width : 359px) {
+      width: 75%;
+    }
+  }
+
+  .card-link {
+    color: #1A1A1A;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in;
+    margin-top: 12px;
+
+    &:hover {
+      color: #4C4CFF;
+    }
+
+    &:before {
+      content: '•';
+      margin: 0 5px;
+      color: #E6E6E6;
+    }
+
+    @media #{$mobile} {
+      font-size: 12px;
     }
   }
 }
