@@ -2506,7 +2506,13 @@ html.smooth-scroll {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: -16px;
+    margin-left: -17px;
+  }
+
+  .links-shift-shorten {
+    @media screen and (max-width : 359px) {
+      width: 75%;
+    }
   }
 
   .card-link {

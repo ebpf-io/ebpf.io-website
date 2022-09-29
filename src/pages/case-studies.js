@@ -1,6 +1,7 @@
 import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
+import cn from "classnames";
 
 import "../stylesheets/index.scss";
 import Google from "../assets/case-studies/google.inline.svg";
@@ -326,7 +327,12 @@ const CaseCard = ({ Logo, description, links }) => (
         dangerouslySetInnerHTML={{ __html: description }}
       />
       <div className="card-links">
-        <div className="links-shift">
+        <div
+          className={cn(
+            "links-shift",
+            links.length >= 5 ? "links-shift-shorten" : null
+          )}
+        >
           {links.map((item) => (
             <a
               className="card-link"
