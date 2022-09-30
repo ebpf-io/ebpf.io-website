@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 import { TitleWithAnchor } from "../common/TitleWithAnchor";
@@ -25,23 +24,6 @@ const Section = ({
 const Page = () => (
   <Layout>
     <div className="page-wrapper page-contribute">
-      <Helmet
-        title={pageMetaTitle}
-
-        meta={[
-          {name: "keywords", content: "ebpf, bpf, contribute, getting started, community"},
-          {name: "type", property: "og:type", content: "website"},
-          {name: "url", property: "og:url", content: "https://ebpf.io/contribute/"},
-          {name: "title", property: "og:title", content: pageMetaTitle},
-          {name: "description", property: "og:description", content: pageMetaDescription},
-          {name: "image", property: "og:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
-          {name: "twitter:card", content: "summary_large_image"},
-          {name: "twitter:url", content: "https://ebpf.io/"},
-          {name: "twitter:title", content: pageMetaTitle},
-          {name: "twitter:description", content: pageMetaDescription},
-          {name: "twitter:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
-        ]}
-      />
       <Title />
       <p>
         eBPF consists of many communities including the eBPF runtime in the Linux
@@ -117,3 +99,28 @@ const Page = () => (
 );
 
 export default Page;
+
+export const Head = ({ location: pathname }) => (
+  <>
+    <title>{pageMetaTitle}</title>
+    <meta name='description' content={pageMetaDescription} />
+    <meta
+      name='keywords'
+      content='ebpf, bpf, contribute, getting started, community'
+    />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content={`https://ebpf.io/${pathname}`} />
+    <meta property='og:title' content={pageMetaTitle} />
+    <meta property='og:description' content={pageMetaDescription} />
+    <meta property='og:image' content='https://ebpf.io/images/ogimage.png' />
+    <meta property='og:type' content='website' />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:url' content={`https://ebpf.io/${pathname}`} />
+    <meta name='twitter:title' content={pageMetaTitle} />
+    <meta name='twitter:description' content={pageMetaDescription} />
+    <meta
+      property='twitter:image'
+      content='https://ebpf.io/images/ogimage.png'
+    />
+  </>
+);

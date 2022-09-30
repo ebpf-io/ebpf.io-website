@@ -3,7 +3,6 @@ import Layout from "../layouts";
 import { graphql, Link } from "gatsby";
 import BlogLatest from "../common/homepage/BlogLatest";
 import BlogRoll from "../common/homepage/BlogRoll";
-import HelmetBlock from "../common/homepage/Helmet";
 import MainTitle from "../common/homepage/MainTitle";
 import Section from "../common/homepage/Section";
 import Videos from "../common/homepage/Videos";
@@ -176,7 +175,6 @@ const IndexPage = ({ data, location: { pathname } }) => {
   return (
     <Layout path={pathname}>
       <div className="page-wrapper page-index">
-        <HelmetBlock />
         <MainTitle />
         <Buttons />
         <Intro />
@@ -218,3 +216,29 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = () => (
+  <>
+    <title>{pageMetaTitle}</title>
+    <meta name='description' content={pageMetaDescription} />
+    <meta
+      name='keywords'
+      content='ebpf, bpf, landscape, directory, open source'
+    />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='https://ebpf.io/' />
+    <meta property='og:title' content={pageMetaTitle} />
+    <meta property='og:description' content={pageMetaDescription} />
+    <meta property='og:image' content='https://ebpf.io/images/ogimage.png' />
+    <meta property='og:type' content='website' />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:url' content='https://ebpf.io/' />
+    <meta name='twitter:title' content={pageMetaTitle} />
+    <meta name='twitter:description' content={pageMetaDescription} />
+    <meta
+      property='twitter:image'
+      content='https://ebpf.io/images/ogimage.png'
+    />
+  </>
+);
+

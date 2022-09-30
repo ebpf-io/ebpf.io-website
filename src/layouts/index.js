@@ -2,7 +2,6 @@ import { Link, navigate } from "gatsby";
 import "prismjs/themes/prism.css";
 import PropTypes from "prop-types";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import Helmet from "react-helmet";
 import CustomLink from "../common/CustomLink.js";
 import Dropdown from "../common/header/Dropdown.js";
 import LanguageDropdown from "../common/footer/LanguageDropdown.js";
@@ -461,26 +460,6 @@ const TemplateWrapper = ({
 
   return (
     <div className="page">
-      <Helmet
-        title="eBPF"
-        link={[
-          {
-            href: "https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap",
-            rel: "stylesheet",
-          },
-        ]}
-        meta={[
-          {
-            name: "name",
-            content: "eBPF",
-          },
-          {
-            name: "description",
-            content:
-              "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
-          },
-        ]}
-      />
       <InfoDisclaimer />
       {!isDesktopHeaderHidden && <HeaderDesktop language={language} />}
       <HeaderMobile language={language} />

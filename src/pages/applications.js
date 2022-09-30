@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 import { TitleWithAnchor } from "../common/TitleWithAnchor";
@@ -444,48 +443,40 @@ const ProjectDescriptions = () => (
 
 const Page = () => (
   <Layout>
-    <Helmet
-      title={pageMetaTitle}
-      meta={[
-        {
-          name: "keywords",
-          content: "ebpf, bpf, landscape, directory, open source",
-        },
-        { name: "type", property: "og:type", content: "website" },
-        {
-          name: "url",
-          property: "og:url",
-          content: "https://ebpf.io/contribute/",
-        },
-        { name: "title", property: "og:title", content: pageMetaTitle },
-        {
-          name: "description",
-          property: "og:description",
-          content: pageMetaDescription,
-        },
-        {
-          name: "image",
-          property: "og:image",
-          content: "https://ebpf.io" + '/images/ogimage.png',
-        },
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:url", content: "https://ebpf.io/projects/" },
-        { name: "twitter:title", content: pageMetaTitle },
-        { name: "twitter:description", content: pageMetaDescription },
-        {
-          name: "twitter:image",
-          content: "https://ebpf.io" + '/images/ogimage.png',
-        },
-      ]}
-    />
-      <Hero title="Applications" />
-      <div className="page-projects">
-        <div className="project-content-wrapper">
-          <ProjectDescriptions />
-          <FAQ/>
-        </div>
+    <Hero title='Applications' />
+    <div className='page-projects'>
+      <div className='project-content-wrapper'>
+        <ProjectDescriptions />
+        <FAQ />
+      </div>
     </div>
   </Layout>
 );
 
 export default Page;
+
+export const Head = ({ location: pathname }) => (
+  <>
+    <title>{pageMetaTitle}</title>
+    <meta name='description' content={pageMetaDescription} />
+    <meta
+      name='keywords'
+      content='ebpf, bpf, landscape, directory, open source'
+    />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content={`https://ebpf.io/${pathname}`} />
+    <meta property='og:title' content={pageMetaTitle} />
+    <meta property='og:description' content={pageMetaDescription} />
+    <meta property='og:image' content='https://ebpf.io/images/ogimage.png' />
+    <meta property='og:type' content='website' />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:url' content={`https://ebpf.io/${pathname}`} />
+    <meta name='twitter:title' content={pageMetaTitle} />
+    <meta name='twitter:description' content={pageMetaDescription} />
+    <meta
+      property='twitter:image'
+      content='https://ebpf.io/images/ogimage.png'
+    />
+  </>
+);
+

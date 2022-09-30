@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 import cn from "classnames";
@@ -26,6 +25,10 @@ import DigitalOcean from "../assets/case-studies/digital-ocean.inline.svg";
 import Yahoo from "../assets/case-studies/yahoo.inline.svg";
 import Bytedance from "../assets/case-studies/byte-dance.inline.svg";
 import F5 from "../assets/case-studies/f5.inline.svg";
+
+// TODO: update when we have the data
+const pageMetaTitle = 'eBPF Case Studies'
+const pageMetaDescription = 'Learn how eBPF is used in different projects.'
 
 const cardsData = [
   {
@@ -351,7 +354,6 @@ const CaseCard = ({ Logo, description, links }) => (
 
 const Page = () => (
   <Layout>
-    <Helmet title="" />
     <div className="page-projects">
       <div className="project-content-wrapper">
         <h1 className="case-studies-title">eBPF Case Studies</h1>
@@ -373,3 +375,31 @@ const Page = () => (
 );
 
 export default Page;
+
+export const Head = ({ location: pathname }) => (
+  <>
+    <title>{pageMetaTitle}</title>
+    <meta name='description' content={pageMetaDescription} />
+    <meta
+      name='keywords'
+      content='ebpf, bpf, contribute, getting started, community'
+    />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content={`https://ebpf.io/${pathname}`} />
+    <meta property='og:title' content={pageMetaTitle} />
+    <meta property='og:description' content={pageMetaDescription} />
+    <meta property='og:image' content='https://ebpf.io/images/ogimage.png' />
+    <meta property='og:type' content='website' />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:url' content={`https://ebpf.io/${pathname}`} />
+    <meta name='twitter:title' content={pageMetaTitle} />
+    <meta name='twitter:description' content={pageMetaDescription} />
+    <meta
+      property='twitter:image'
+      content='https://ebpf.io/images/ogimage.png'
+    />
+  </>
+);
+
+
+

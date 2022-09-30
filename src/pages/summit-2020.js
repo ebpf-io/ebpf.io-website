@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import cn from "classnames";
-import Helmet from "react-helmet";
 import { Link } from "gatsby";
 import Carousel from "nuka-carousel";
 import ModalVideo from "react-modal-video";
@@ -1516,29 +1515,6 @@ const Footer = () => (
 
 const CallForPapers = () => (
   <div className="summit-page-wrapper">
-    <Helmet
-      htmlAttributes={{
-        class: 'smooth-scroll'
-      }}
-      title={pageMetaTitle}
-      link={[
-        {href: "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap", rel: "stylesheet"},
-      ]}
-      meta={[
-        {name: "name", content: "eBPF"},
-        {name: "keywords", content: "ebpf, bpf, summit, conference, event"},
-        {property: "og:type", name: "type", content: "website"},
-        {property: "og:url", name: "url", content: "https://ebpf.io/summit-2020/"},
-        {property: "og:title", name: "title", content: pageMetaTitle},
-        {property: "og:description", name: "description", content: pageMetaDescription},
-        {property: "og:image", name: "image", content: 'https://ebpf.io' + "/images/summit-2020/summit_logo.png"},
-        {name: "twitter:card", content: "summary_large_image"},
-        {name: "twitter:url", content: "https://ebpf.io/summit-2020/"},
-        {name: "twitter:title", content: pageMetaTitle},
-        {name: "twitter:description", content: pageMetaDescription},
-        {name: "twitter:image", content: 'https://ebpf.io' +  "/images/summit-2020/summit_logo.png"},
-      ]}
-    />
     <Info />
     <Hero />
     <About />
@@ -1551,3 +1527,28 @@ const CallForPapers = () => (
 );
 
 export default CallForPapers;
+
+export const Head = ({ location: pathname }) => (
+  <>
+    <title>{pageMetaTitle}</title>
+    <meta name='description' content={pageMetaDescription} />
+    <meta
+      name='keywords'
+      content='ebpf, bpf, summit, conference, event'
+    />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content={`https://ebpf.io/${pathname}`} />
+    <meta property='og:title' content={pageMetaTitle} />
+    <meta property='og:description' content={pageMetaDescription} />
+    <meta property='og:image' content='https://ebpf.io/images/summit-2020/summit_logo.png' />
+    <meta property='og:type' content='website' />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:url' content={`https://ebpf.io/${pathname}`} />
+    <meta name='twitter:title' content={pageMetaTitle} />
+    <meta name='twitter:description' content={pageMetaDescription} />
+    <meta
+      property='twitter:image'
+      content='https://ebpf.io/images/summit-2020/summit_logo.png'
+    />
+  </>
+);

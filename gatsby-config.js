@@ -8,7 +8,6 @@ module.exports = {
     siteUrl: "https://www.ebpf.io",
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     "gatsby-plugin-catch-links",
     "gatsby-plugin-netlify",
     "gatsby-plugin-nprogress",
