@@ -801,7 +801,7 @@ const Page = () => (
 
 export default Page;
 
-export const Head = ({ location: pathname }) => (
+export const Head = () => (
   <>
     <title>{pageMetaTitle}</title>
     <meta name='description' content={pageMetaDescription} />
@@ -810,13 +810,13 @@ export const Head = ({ location: pathname }) => (
       content='ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, documentation'
     />
     <meta property='og:type' content='website' />
-    <meta property='og:url' content={`https://ebpf.io/${pathname}`} />
+    <meta property='og:url' content='https://ebpf.io/what-is-ebpf' />
     <meta property='og:title' content={pageMetaTitle} />
     <meta property='og:description' content={pageMetaDescription} />
     <meta property='og:image' content='https://ebpf.io/images/ogimage.png' />
     <meta property='og:type' content='website' />
     <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:url' content={`https://ebpf.io/${pathname}`} />
+    <meta name='twitter:url' content='https://ebpf.io/what-is-ebpf' />
     <meta name='twitter:title' content={pageMetaTitle} />
     <meta name='twitter:description' content={pageMetaDescription} />
     <meta

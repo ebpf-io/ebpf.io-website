@@ -1528,7 +1528,7 @@ const CallForPapers = () => (
 
 export default CallForPapers;
 
-export const Head = ({ location: pathname }) => (
+export const Head = () => (
   <>
     <title>{pageMetaTitle}</title>
     <meta name='description' content={pageMetaDescription} />
@@ -1537,13 +1537,13 @@ export const Head = ({ location: pathname }) => (
       content='ebpf, bpf, summit, conference, event'
     />
     <meta property='og:type' content='website' />
-    <meta property='og:url' content={`https://ebpf.io/${pathname}`} />
+    <meta property='og:url' content='https://ebpf.io/summit-2020'/>
     <meta property='og:title' content={pageMetaTitle} />
     <meta property='og:description' content={pageMetaDescription} />
     <meta property='og:image' content='https://ebpf.io/images/summit-2020/summit_logo.png' />
     <meta property='og:type' content='website' />
     <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:url' content={`https://ebpf.io/${pathname}`} />
+    <meta name='twitter:url' content='https://ebpf.io/summit-2020' />
     <meta name='twitter:title' content={pageMetaTitle} />
     <meta name='twitter:description' content={pageMetaDescription} />
     <meta
