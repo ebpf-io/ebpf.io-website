@@ -12,6 +12,11 @@ import networking from '../assets/intro_networking.png'
 import tracing from '../assets/intro_tracing.png';
 import observability from '../assets/intro_observability.png';
 import overview from '../assets/overview.png';
+
+const pageMetaTitle = 'eBPF - Introduction, Tutorials & Community Resources';
+const pageMetaDescription =
+  'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.';
+  
 const tracingText = `
 The ability to attach eBPF programs to trace points as well as kernel and user
 application probe points allows unprecedented visibility into the runtime
