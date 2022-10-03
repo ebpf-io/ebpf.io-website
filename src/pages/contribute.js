@@ -3,9 +3,7 @@ import React from "react";
 import { TitleWithAnchor } from "../common/TitleWithAnchor";
 
 import "../stylesheets/index.scss";
-
-const pageMetaTitle = 'How to contribute to eBPF'
-const pageMetaDescription = 'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.'
+import SEO from "../common/SEO";
 
 const Title = () => <div className="contribute-title">How to Contribute to eBPF</div>;
 
@@ -100,27 +98,12 @@ const Page = () => (
 
 export default Page;
 
-export const Head = () => (
-  <>
-    <title>{pageMetaTitle}</title>
-    <meta name='description' content={pageMetaDescription} />
-    <meta
-      name='keywords'
-      content='ebpf, bpf, contribute, getting started, community'
-    />
-    <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://ebpf.io/contribute' />
-    <meta property='og:title' content={pageMetaTitle} />
-    <meta property='og:description' content={pageMetaDescription} />
-    <meta property='og:image' content='https://ebpf.io/images/ogimage.png' />
-    <meta property='og:type' content='website' />
-    <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:url' content='https://ebpf.io/contribute' />
-    <meta name='twitter:title' content={pageMetaTitle} />
-    <meta name='twitter:description' content={pageMetaDescription} />
-    <meta
-      property='twitter:image'
-      content='https://ebpf.io/images/ogimage.png'
-    />
-  </>
-);
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'How to contribute to eBPF',
+    description: 'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.',
+    slug: pathname,
+    keywords: 'ebpf, bpf, contribute, getting started, community',
+  }
+  return <SEO {...pageMetadata} />
+}

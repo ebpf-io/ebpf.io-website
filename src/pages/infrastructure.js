@@ -13,9 +13,8 @@ import "../stylesheets/index.scss";
 import { Hero } from "../common/projects/Hero";
 import { ProjectCard } from "../common/projects/ProjectCard";
 import Libraries from "../common/projects/Libraries";
+import SEO from "../common/SEO";
 
-const pageMetaTitle = "eBPF Core Infrastructure Landscape";
-const pageMetaDescription = "A directory of eBPF-based core infrastructure";
 
 const majorProjects = [
   {
@@ -151,27 +150,12 @@ const Page = () => (
 
 export default Page;
 
-export const Head = () => (
-  <>
-    <title>{pageMetaTitle}</title>
-    <meta name='description' content={pageMetaDescription} />
-    <meta
-      name='keywords'
-      content='ebpf, bpf, landscape, directory, open source'
-    />
-    <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://ebpf.io/infrastructure' />
-    <meta property='og:title' content={pageMetaTitle} />
-    <meta property='og:description' content={pageMetaDescription} />
-    <meta property='og:image' content='https://ebpf.io/images/ogimage.png' />
-    <meta property='og:type' content='website' />
-    <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:url' content='https://ebpf.io/infrastructure' />
-    <meta name='twitter:title' content={pageMetaTitle} />
-    <meta name='twitter:description' content={pageMetaDescription} />
-    <meta
-      property='twitter:image'
-      content='https://ebpf.io/images/ogimage.png'
-    />
-  </>
-);
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'eBPF Core Infrastructure Landscape',
+     description: 'A directory of eBPF-based core infrastructure',
+     slug: pathname,
+     keywords: 'ebpf, bpf, landscape, directory, open source',
+  }
+  return <SEO {...pageMetadata} />
+}

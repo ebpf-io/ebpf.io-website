@@ -6,6 +6,8 @@ import "../stylesheets/index.scss";
 import { FAQ } from "../common/projects/Faq";
 import { ProjectCard } from "../common/projects/ProjectCard";
 import { Hero } from "../common/projects/Hero";
+import SEO from "../common/SEO";
+
 import bccLogo from "../assets/projects-logos/bcc.svg";
 import ciliumLogo from "../assets/projects-logos/cilium-with-text.svg";
 import bpftraceLogo from '../assets/projects-logos/bpftrace.jpg';
@@ -32,10 +34,6 @@ import pulsarLogo from '../assets/projects-logos/pulsar.png'
 import keplerLogo from '../assets/projects-logos/kepler.gif';
 import deepflowLogo from "../assets/projects-logos/deepflow.png";
 import inspektorGadgetLogo from "../assets/projects-logos/inspektor_gadget.png";
-
-const pageMetaTitle = "eBPF Applications Landscape";
-const pageMetaDescription =
-  "A directory of eBPF-based open source applications";
 
 const majorProjects = [
   {
@@ -455,28 +453,13 @@ const Page = () => (
 
 export default Page;
 
-export const Head = () => (
-  <>
-    <title>{pageMetaTitle}</title>
-    <meta name='description' content={pageMetaDescription} />
-    <meta
-      name='keywords'
-      content='ebpf, bpf, landscape, directory, open source'
-    />
-    <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://ebpf.io/applications' />
-    <meta property='og:title' content={pageMetaTitle} />
-    <meta property='og:description' content={pageMetaDescription} />
-    <meta property='og:image' content='https://ebpf.io/images/ogimage.png' />
-    <meta property='og:type' content='website' />
-    <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:url' content='https://ebpf.io/applications' />
-    <meta name='twitter:title' content={pageMetaTitle} />
-    <meta name='twitter:description' content={pageMetaDescription} />
-    <meta
-      property='twitter:image'
-      content='https://ebpf.io/images/ogimage.png'
-    />
-  </>
-);
 
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'eBPF Applications Landscape',
+     description: 'A directory of eBPF-based open source applications',
+     slug: pathname,
+     keywords: 'ebpf, bpf, landscape, directory, open source',
+  }
+  return <SEO {...pageMetadata} />
+}

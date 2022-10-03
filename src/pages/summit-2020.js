@@ -26,8 +26,8 @@ import closeIcon from '../assets/summit-2020/icon-close.svg';
 import sliderPrev from '../assets/summit-2020/slider-prev.svg';
 import sliderNext from '../assets/summit-2020/slider-next.svg';
 import ebpfGrayLogo from '../assets/summit-2020/eBPF-logo-gray.svg';
-const pageMetaTitle = 'eBPF Summit 2020'
-const pageMetaDescription = 'Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers. To be held October 28-29, 2020.'
+import SEO from "../common/SEO";
+
 const speakers = [
   {
     card: {
@@ -1528,27 +1528,13 @@ const CallForPapers = () => (
 
 export default CallForPapers;
 
-export const Head = () => (
-  <>
-    <title>{pageMetaTitle}</title>
-    <meta name='description' content={pageMetaDescription} />
-    <meta
-      name='keywords'
-      content='ebpf, bpf, summit, conference, event'
-    />
-    <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://ebpf.io/summit-2020'/>
-    <meta property='og:title' content={pageMetaTitle} />
-    <meta property='og:description' content={pageMetaDescription} />
-    <meta property='og:image' content='https://ebpf.io/images/summit-2020/summit_logo.png' />
-    <meta property='og:type' content='website' />
-    <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:url' content='https://ebpf.io/summit-2020' />
-    <meta name='twitter:title' content={pageMetaTitle} />
-    <meta name='twitter:description' content={pageMetaDescription} />
-    <meta
-      property='twitter:image'
-      content='https://ebpf.io/images/summit-2020/summit_logo.png'
-    />
-  </>
-);
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'eBPF Summit 2020',
+     description: 'Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers. To be held October 28-29, 2020.',
+     slug: pathname,
+     ogImage: '/images/summit-2020/summit_logo.png',
+     keywords: 'ebpf, bpf, summit, conference, event',
+  }
+  return <SEO {...pageMetadata} />
+}

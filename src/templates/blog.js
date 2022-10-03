@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 
 import Layout from "../layouts";
 import PostCard from "../common/blog-post/PostCard";
+import SEO from "../common/SEO";
 
 import "../stylesheets/blog.scss";
 import Categories from "../common/blog/Categories";
@@ -54,34 +55,17 @@ export const pageQuery = graphql`
   }
 `;
 
-export const Head = () => {
-  const pageMetaTitle = "eBPF - Blog";
-  const pageMetaDescription =
-    "The latest news, updates and articles covering eBPF and related topics.";
-  const pageMetaImageUrl = "https://ebpf.io" + "/images/ogimage-blog.png";
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'eBPF - Blog',
+     description: 'The latest news, updates and articles covering eBPF and related topics.',
+     slug: pathname,
+     ogImage: '/images/ogimage-blog.png',
+     keywords: 'ebpf, bpf, news, updates, blog',
+     isBlogPage: true,
+  }
+  return <SEO {...pageMetadata} />
+}
 
-  return (
-  <>
-    <title>{pageMetaTitle}</title>
-    <meta name='description' content={pageMetaDescription} />
-    <meta
-      name='keywords'
-      content='ebpf, bpf, news, updates, blog'
-    />
-    <meta property='og:type' content='website' />
-    <meta property='og:url' content="https://ebpf.io/blog" />
-    <meta property='og:title' content={pageMetaTitle} />
-    <meta property='og:description' content={pageMetaDescription} />
-    <meta property='og:image' content={pageMetaImageUrl} />
-    <meta property='og:type' content='website' />
-    <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:url' content="https://ebpf.io/blog" />
-    <meta name='twitter:title' content={pageMetaTitle} />
-    <meta name='twitter:description' content={pageMetaDescription} />
-    <meta
-      property='twitter:image'
-      content={pageMetaImageUrl}
-    />
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/blog/rss.xml"></link>
-  </>
-);}
+
+

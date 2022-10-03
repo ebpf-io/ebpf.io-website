@@ -4,6 +4,7 @@ import {  graphql } from "gatsby";
 
 import "../stylesheets/blog.scss";
 import Post from "../common/blog-post/Post";
+import SEO from "../common/SEO";
 import parseHtml from "../../scripts/parse-html";
 
 
@@ -35,37 +36,20 @@ export const pageQuery = graphql`
   }
 `;
 
-export const Head = ({data: { markdownRemark: postData }}) => {
+export const Head = ({data: { markdownRemark: postData }, location: { pathname }}) => {
   const {
-     html, frontmatter: { title, path },
+     frontmatter: { title },
   } = postData;
   const { previewDescription } = parseHtml(postData);
-  const pageMetaTitle = `eBPF - ${title}`
-  const pageMetaDescription = previewDescription
-  const pageLink = `https://ebpf.io${path}`
-  const pageMetaImageUrl = 'https://ebpf.io' + '/images/ogimage-blog.png'
 
-  return (
-  <>
-    <title>{pageMetaTitle}</title>
-    <meta name='description' content={pageMetaDescription} />
-    <meta
-      name='keywords'
-      content='ebpf, bpf, news, updates, blog'
-    />
-    <meta property='og:type' content='website' />
-    <meta property='og:url' content={pageLink} />
-    <meta property='og:title' content={pageMetaTitle} />
-    <meta property='og:description' content={pageMetaDescription} />
-    <meta property='og:image' content={pageMetaImageUrl} />
-    <meta property='og:type' content='website' />
-    <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:url' content={pageLink} />
-    <meta name='twitter:title' content={pageMetaTitle} />
-    <meta name='twitter:description' content={pageMetaDescription} />
-    <meta
-      property='twitter:image'
-      content={pageMetaImageUrl}
-    />
-  </>
-);}
+  const pageMetadata = {
+    title:  `eBPF - ${title}`,
+    description: previewDescription,
+    slug: pathname,
+    keywords: 'ebpf, bpf, news, updates, blog',
+    ogImage: '/images/ogimage-blog.png',
+  }
+
+  return <SEO {...pageMetadata} />
+}
+

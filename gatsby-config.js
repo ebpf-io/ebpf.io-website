@@ -2,10 +2,11 @@ const parseHtml = require("./scripts/parse-html");
 
 module.exports = {
   siteMetadata: {
-    title: `eBPF`,
-    description:
+    siteTitle: `eBPF`,
+    siteDescription:
       "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
     siteUrl: "https://www.ebpf.io",
+    siteImage: '/images/ogimage.png',
   },
   plugins: [
     "gatsby-plugin-catch-links",
