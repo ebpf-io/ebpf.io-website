@@ -36,6 +36,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: process.env.GATSBY_DEFAULT_SITE_URL,
+      },
+    },
+    {
       resolve: "gatsby-plugin-i18n",
       options: {
         langKeyDefault: "en",

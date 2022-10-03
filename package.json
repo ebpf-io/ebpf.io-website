@@ -11,6 +11,7 @@
     "gatsby-cli": "^4.23.1",
     "gatsby-link": "^4.23.0",
     "gatsby-paginate": "^1.1.1",
+    "gatsby-plugin-canonical-urls": "^4.24.0",
     "gatsby-plugin-catch-links": "^4.23.0",
     "gatsby-plugin-feed": "^4.23.1",
     "gatsby-plugin-google-analytics": "^4.23.0",
