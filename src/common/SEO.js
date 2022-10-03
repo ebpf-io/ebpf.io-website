@@ -9,7 +9,6 @@ const SEO = ({
   preventIndexing,
   keywords,
   ogImage,
-  isBlogPage,
   children,
 }) => {
   const {
@@ -54,7 +53,6 @@ const SEO = ({
       <meta property="og:type" content="website" />
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      {isBlogPage && <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/blog/rss.xml"></link>}
       {children}
     </>
   );

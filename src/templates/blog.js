@@ -62,7 +62,7 @@ export const Head = ({location: { pathname }}) => {
      slug: pathname,
      ogImage: '/images/ogimage-blog.png',
      keywords: 'ebpf, bpf, news, updates, blog',
-     isBlogPage: true,
+     children: <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/blog/rss.xml"></link>
   }
   return <SEO {...pageMetadata} />
 }
