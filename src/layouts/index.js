@@ -259,7 +259,7 @@ const InfoDisclaimer = () => (
       className="introDisclaimer-button"
       href="https://www.ebpf.io/summit-2022"
     >
-      Register Now!
+      Watch Recordings
     </a>
   </div>
 );
