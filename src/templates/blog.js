@@ -60,7 +60,7 @@ export const Head = ({location: { pathname }}) => {
     title: 'eBPF - Blog',
      description: 'The latest news, updates and articles covering eBPF and related topics.',
      slug: pathname,
-     ogImage: '/images/ogimage-blog.png',
+     ogImage: '/images/ogimage-blog.jpg',
      keywords: 'ebpf, bpf, news, updates, blog',
      children: <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/blog/rss.xml"></link>
   }

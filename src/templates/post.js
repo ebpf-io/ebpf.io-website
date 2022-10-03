@@ -47,7 +47,7 @@ export const Head = ({data: { markdownRemark: postData }, location: { pathname }
     description: previewDescription,
     slug: pathname,
     keywords: 'ebpf, bpf, news, updates, blog',
-    ogImage: '/images/ogimage-blog.png',
+    ogImage: '/images/ogimage-blog.jpg',
   }
 
   return <SEO {...pageMetadata} />
