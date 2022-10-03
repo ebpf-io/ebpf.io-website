@@ -186,7 +186,7 @@ const footerItems = [
       { name: "What is eBPF?", linkUrl: "/what-is-ebpf" },
       { name: "Case Studies", linkUrl: "/case-studies" },
       {
-        name: "eBPF Tech Talks",
+        name: "Tech Talks",
         linkUrl:
           "https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi",
         target: "_blank",
