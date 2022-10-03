@@ -52,7 +52,7 @@ const SEO = ({
       <meta property="og:url" content={currentUrl} />
       <meta
         property="og:image"
-        content={ogImage?.startsWith('https') ? ogImage : currentImagePath}
+        content={currentImagePath}
       />
       <meta property="og:type" content="website" />
       {/* Twitter */}
