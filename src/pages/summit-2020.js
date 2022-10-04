@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import cn from "classnames";
-import Helmet from "react-helmet";
 import { Link } from "gatsby";
 import Carousel from "nuka-carousel";
 import ModalVideo from "react-modal-video";
@@ -27,8 +26,8 @@ import closeIcon from '../assets/summit-2020/icon-close.svg';
 import sliderPrev from '../assets/summit-2020/slider-prev.svg';
 import sliderNext from '../assets/summit-2020/slider-next.svg';
 import ebpfGrayLogo from '../assets/summit-2020/eBPF-logo-gray.svg';
-const pageMetaTitle = 'eBPF Summit 2020'
-const pageMetaDescription = 'Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers. To be held October 28-29, 2020.'
+import SEO from "../common/SEO";
+
 const speakers = [
   {
     card: {
@@ -1516,29 +1515,6 @@ const Footer = () => (
 
 const CallForPapers = () => (
   <div className="summit-page-wrapper">
-    <Helmet
-      htmlAttributes={{
-        class: 'smooth-scroll'
-      }}
-      title={pageMetaTitle}
-      link={[
-        {href: "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap", rel: "stylesheet"},
-      ]}
-      meta={[
-        {name: "name", content: "eBPF"},
-        {name: "keywords", content: "ebpf, bpf, summit, conference, event"},
-        {property: "og:type", name: "type", content: "website"},
-        {property: "og:url", name: "url", content: "https://ebpf.io/summit-2020/"},
-        {property: "og:title", name: "title", content: pageMetaTitle},
-        {property: "og:description", name: "description", content: pageMetaDescription},
-        {property: "og:image", name: "image", content: 'https://ebpf.io' + "/images/summit-2020/summit_logo.png"},
-        {name: "twitter:card", content: "summary_large_image"},
-        {name: "twitter:url", content: "https://ebpf.io/summit-2020/"},
-        {name: "twitter:title", content: pageMetaTitle},
-        {name: "twitter:description", content: pageMetaDescription},
-        {name: "twitter:image", content: 'https://ebpf.io' +  "/images/summit-2020/summit_logo.png"},
-      ]}
-    />
     <Info />
     <Hero />
     <About />
@@ -1551,3 +1527,14 @@ const CallForPapers = () => (
 );
 
 export default CallForPapers;
+
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'eBPF Summit 2020',
+     description: 'Registration is now open for the inaugural eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers. To be held October 28-29, 2020.',
+     slug: pathname,
+     ogImage: '/images/summit-2020/summit_logo.png',
+     keywords: 'ebpf, bpf, summit, conference, event',
+  }
+  return <SEO {...pageMetadata} />
+}

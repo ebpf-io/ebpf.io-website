@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 
@@ -14,9 +13,8 @@ import "../stylesheets/index.scss";
 import { Hero } from "../common/projects/Hero";
 import { ProjectCard } from "../common/projects/ProjectCard";
 import Libraries from "../common/projects/Libraries";
+import SEO from "../common/SEO";
 
-const pageMetaTitle = "eBPF Core Infrastructure Landscape";
-const pageMetaDescription = "A directory of eBPF-based core infrastructure";
 
 const majorProjects = [
   {
@@ -141,40 +139,6 @@ const ProjectDescriptions = () => (
 const Page = () => (
   <Layout>
     <div className="page-projects">
-      <Helmet
-        title={pageMetaTitle}
-        meta={[
-          {
-            name: "keywords",
-            content: "ebpf, bpf, landscape, directory, open source",
-          },
-          { name: "type", property: "og:type", content: "website" },
-          {
-            name: "url",
-            property: "og:url",
-            content: "https://ebpf.io/contribute/",
-          },
-          { name: "title", property: "og:title", content: pageMetaTitle },
-          {
-            name: "description",
-            property: "og:description",
-            content: pageMetaDescription,
-          },
-          {
-            name: "image",
-            property: "og:image",
-            content: "https://ebpf.io" + '/images/ogimage.png',
-          },
-          { name: "twitter:card", content: "summary_large_image" },
-          { name: "twitter:url", content: "https://ebpf.io/projects/" },
-          { name: "twitter:title", content: pageMetaTitle },
-          { name: "twitter:description", content: pageMetaDescription },
-          {
-            name: "twitter:image",
-            content: "https://ebpf.io" + '/images/ogimage.png',
-          },
-        ]}
-      />
       <Hero title="Infrastructure" />
       <div className="project-content-wrapper">
         <ProjectDescriptions />
@@ -185,3 +149,13 @@ const Page = () => (
 );
 
 export default Page;
+
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'eBPF Core Infrastructure Landscape',
+     description: 'A directory of eBPF-based core infrastructure',
+     slug: pathname,
+     keywords: 'ebpf, bpf, landscape, directory, open source',
+  }
+  return <SEO {...pageMetadata} />
+}

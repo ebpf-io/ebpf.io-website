@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 
@@ -17,8 +16,7 @@ import kernelArch from '../assets/kernel_arch.png';
 import bcc from '../assets/bcc.png';
 import bpfTrace from '../assets/bpftrace.png';
 import libbpf from '../assets/libbpf.png';
-const pageMetaTitle = 'What is eBPF? An Introduction and Deep Dive into the eBPF Technology'
-const pageMetaDescription = 'A detailed step by step introduction to the eBPF technology with lots of references for further reading.'
+import SEO from "../common/SEO";
 
 const windowGlobal = typeof window !== "undefined" && window;
 
@@ -795,26 +793,20 @@ const Section = ({ icon, iconWidth, iconHeight, title, text, style }) => (
 const Page = () => (
   <Layout>
     <div className="page-wrapper page-what-is-ebpf">
-      <Helmet
-        title={pageMetaTitle}
-
-        meta={[
-          {name: "keywords", content: "ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, documentation"},
-          {name: "type", property: "og:type", content: "website"},
-          {name: "url", property: "og:url", content: "https://ebpf.io/what-is-ebpf/"},
-          {name: "title", property: "og:title", content: pageMetaTitle},
-          {name: "description", property: "og:description", content: pageMetaDescription},
-          {name: "image", property: "og:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
-          {name: "twitter:card", content: "summary_large_image"},
-          {name: "twitter:url", content: "https://ebpf.io/"},
-          {name: "twitter:title", content: pageMetaTitle},
-          {name: "twitter:description", content: pageMetaDescription},
-          {name: "twitter:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
-        ]}
-      />
       <Description />
     </div>
   </Layout>
 );
 
 export default Page;
+
+
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'What is eBPF? An Introduction and Deep Dive into the eBPF Technology',
+     description: 'A detailed step by step introduction to the eBPF technology with lots of references for further reading.',
+     slug: pathname,
+     keywords: 'ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, documentation',
+  }
+  return <SEO {...pageMetadata} />
+}

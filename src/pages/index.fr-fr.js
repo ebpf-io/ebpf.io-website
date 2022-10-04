@@ -3,11 +3,11 @@ import Layout from "../layouts";
 import { graphql, Link } from "gatsby";
 import BlogLatest from "../common/homepage/BlogLatest";
 import BlogRoll from "../common/homepage/BlogRoll";
-import HelmetBlock from "../common/homepage/Helmet";
 import MainTitle from "../common/homepage/MainTitle";
 import Section from "../common/homepage/Section";
 import Videos from "../common/homepage/Videos";
 import "../stylesheets/index.scss";
+import SEO from "../common/SEO";
 
 import security from '../assets/intro_security.png';
 import networking from '../assets/intro_networking.png'
@@ -169,7 +169,6 @@ const IndexPage = ({ data, location: { pathname } }) => {
   return (
     <Layout path={pathname}>
       <div className="page-wrapper page-index">
-        <HelmetBlock />
         <MainTitle />
         <Buttons />
         <Intro />
@@ -211,3 +210,13 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'eBPF - Introduction, Tutorials & Community Resources',
+     slug: pathname,
+     keywords: 'ebpf, bpf, landscape, directory, open source',
+  }
+  return <SEO {...pageMetadata} />
+}
+

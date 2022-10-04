@@ -3,16 +3,18 @@ import Layout from "../layouts";
 import { graphql, Link } from "gatsby";
 import BlogLatest from "../common/homepage/BlogLatest";
 import BlogRoll from "../common/homepage/BlogRoll";
-import HelmetBlock from "../common/homepage/Helmet";
 import MainTitle from "../common/homepage/MainTitle";
 import Section from "../common/homepage/Section";
 import Videos from "../common/homepage/Videos";
 import "../stylesheets/index.scss";
+import SEO from "../common/SEO";
+
 import security from '../assets/intro_security.png';
 import networking from '../assets/intro_networking.png'
 import tracing from '../assets/intro_tracing.png';
 import observability from '../assets/intro_observability.png';
 import overview from '../assets/overview.png';
+  
 const tracingText = `
 The ability to attach eBPF programs to trace points as well as kernel and user
 application probe points allows unprecedented visibility into the runtime
@@ -176,7 +178,6 @@ const IndexPage = ({ data, location: { pathname } }) => {
   return (
     <Layout path={pathname}>
       <div className="page-wrapper page-index">
-        <HelmetBlock />
         <MainTitle />
         <Buttons />
         <Intro />
@@ -218,3 +219,13 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'eBPF - Introduction, Tutorials & Community Resources',
+     slug: pathname,
+     keywords: 'ebpf, bpf, landscape, directory, open source',
+  }
+  return <SEO {...pageMetadata} />
+}
+

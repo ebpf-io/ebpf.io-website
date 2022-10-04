@@ -3,17 +3,18 @@ import Layout from "../layouts";
 import { graphql, Link } from "gatsby";
 import BlogLatest from "../common/homepage/BlogLatest";
 import BlogRoll from "../common/homepage/BlogRoll";
-import HelmetBlock from "../common/homepage/Helmet";
 import MainTitle from "../common/homepage/MainTitle";
 import Section from "../common/homepage/Section";
 import Videos from "../common/homepage/Videos";
 import "../stylesheets/index.scss";
+import SEO from "../common/SEO";
 
 import security from '../assets/intro_security.png';
 import networking from '../assets/intro_networking.png'
 import tracing from '../assets/intro_tracing.png';
 import observability from '../assets/intro_observability.png';
 import go from '../assets/go.png';
+
 
 const tracingText = `
 eBPF 程序能够加载到 trace points、内核及用户空间应用程序中的 probe points，
@@ -146,7 +147,6 @@ const IndexPage = ({ data, location: { pathname } }) => {
   return (
     <Layout path={pathname}>
       <div className="page-wrapper page-index">
-        <HelmetBlock />
         <MainTitle />
         <Buttons />
         <Intro />
@@ -185,3 +185,13 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'eBPF - Introduction, Tutorials & Community Resources',
+     slug: pathname,
+     keywords: 'ebpf, bpf, landscape, directory, open source',
+  }
+  return <SEO {...pageMetadata} />
+}

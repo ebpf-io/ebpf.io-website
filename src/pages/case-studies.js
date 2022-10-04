@@ -1,9 +1,9 @@
-import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 import cn from "classnames";
 
 import "../stylesheets/index.scss";
+import SEO from "../common/SEO";
 import Google from "../assets/case-studies/google.inline.svg";
 import Netflix from "../assets/case-studies/netflix.inline.svg";
 import Cloudflare from "../assets/case-studies/cloudflare.inline.svg";
@@ -351,7 +351,6 @@ const CaseCard = ({ Logo, description, links }) => (
 
 const Page = () => (
   <Layout>
-    <Helmet title="" />
     <div className="page-projects">
       <div className="project-content-wrapper">
         <h1 className="case-studies-title">eBPF Case Studies</h1>
@@ -373,3 +372,15 @@ const Page = () => (
 );
 
 export default Page;
+
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    
+// TODO: update when we have the data
+    title: 'eBPF Case Studies',
+    description: 'Learn how eBPF is used in different projects.',
+    slug: pathname,
+    keywords: 'ebpf, bpf, contribute, getting started, community',
+  }
+  return <SEO {...pageMetadata} />
+}

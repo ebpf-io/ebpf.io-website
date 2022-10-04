@@ -1,12 +1,9 @@
-import Helmet from "react-helmet";
 import Layout from "../layouts";
 import React from "react";
 import { TitleWithAnchor } from "../common/TitleWithAnchor";
 
 import "../stylesheets/index.scss";
-
-const pageMetaTitle = 'How to contribute to eBPF'
-const pageMetaDescription = 'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.'
+import SEO from "../common/SEO";
 
 const Title = () => <div className="contribute-title">How to Contribute to eBPF</div>;
 
@@ -25,23 +22,6 @@ const Section = ({
 const Page = () => (
   <Layout>
     <div className="page-wrapper page-contribute">
-      <Helmet
-        title={pageMetaTitle}
-
-        meta={[
-          {name: "keywords", content: "ebpf, bpf, contribute, getting started, community"},
-          {name: "type", property: "og:type", content: "website"},
-          {name: "url", property: "og:url", content: "https://ebpf.io/contribute/"},
-          {name: "title", property: "og:title", content: pageMetaTitle},
-          {name: "description", property: "og:description", content: pageMetaDescription},
-          {name: "image", property: "og:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
-          {name: "twitter:card", content: "summary_large_image"},
-          {name: "twitter:url", content: "https://ebpf.io/"},
-          {name: "twitter:title", content: pageMetaTitle},
-          {name: "twitter:description", content: pageMetaDescription},
-          {name: "twitter:image", content: 'https://ebpf.io' + '/images/ogimage.png'},
-        ]}
-      />
       <Title />
       <p>
         eBPF consists of many communities including the eBPF runtime in the Linux
@@ -117,3 +97,13 @@ const Page = () => (
 );
 
 export default Page;
+
+export const Head = ({location: { pathname }}) => {
+  const pageMetadata = {
+    title: 'How to contribute to eBPF',
+    description: 'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.',
+    slug: pathname,
+    keywords: 'ebpf, bpf, contribute, getting started, community',
+  }
+  return <SEO {...pageMetadata} />
+}

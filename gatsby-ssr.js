@@ -26,4 +26,5 @@ exports.onRenderBody = (
       rel="stylesheet"
     />
   ]);
+  setHtmlAttributes({ lang: 'en', prefix: 'og: http://ogp.me/ns#' });
 };
