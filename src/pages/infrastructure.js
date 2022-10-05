@@ -98,7 +98,7 @@ const emergingProjects = [
   {
     name: 'uBPF',
     title: 'uBPF - Userspace eBPF Runtime',
-    description: `An extended Berkley Packet Filter runtime that permits execution of
+    description: `An eBPF runtime that permits execution of
     eBPF programs in user mode, with support for an interpreter as well as JIT
     compilation of eBPF programs on x86-64 and ARM64 architectures. This project
     supports running on Windows, macOS, and Linux platforms.`,
