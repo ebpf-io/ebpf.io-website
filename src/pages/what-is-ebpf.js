@@ -717,6 +717,11 @@ class Description extends React.Component {
 
           <h3>Books</h3>
           <ul>
+          <Reference
+              link="https://isovalent.com/data/liz-rice-what-is-ebpf.pdf"
+              name="What is eBPF?"
+              description="Liz Rice, O'Reilly, 2022"
+            />
             <Reference
               link="http://www.brendangregg.com/systems-performance-2nd-edition-book.html"
               name="Systems Performance: Enterprise and the Cloud, 2nd Edition"
