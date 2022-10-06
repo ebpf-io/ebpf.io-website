@@ -252,7 +252,7 @@ const InfoDisclaimer = () => (
       aria-hidden
     />
     <div className="text-wrapper">
-      <strong>eBPF summit 2022&nbsp;</strong> <span>(28-29 September)</span>
+      <strong>eBPF summit 2022&nbsp;</strong>
     </div>
     <a
       className="introDisclaimer-button"
