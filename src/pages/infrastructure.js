@@ -125,6 +125,14 @@ const emergingProjects = [
       {label: 'Website', url: 'https://www.min.at/hbpf/'},
     ],
   },
+  {
+    name: 'PREVAIL',
+    title: 'eBPF Verifier',
+    description: `A polynomial-time eBPF verifier supporting bounded loops  based on abstract interpretation.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/vbpf/ebpf-verifier'},   
+    ],
+  },
 ]
 
 const ProjectDescriptions = () => (
