@@ -83,7 +83,7 @@ export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, maj
               target="_blank"
               key={index}
             >
-              <img src={icons[label]}/>
+              <img src={icons[label]} width='26px' height='30px'/>
               <b>{label}</b>
             </a>
           ))}
