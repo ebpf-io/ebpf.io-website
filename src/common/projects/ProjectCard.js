@@ -6,6 +6,7 @@ import githubIcon from './assets/github-icon.svg';
 import mailingListIcon from './assets/mailing-list-icon.svg';
 import gitTreesIcon from './assets/git-trees-icon.svg';
 import ciIcon from  './assets/ci-icon.svg';
+import packageIcon from './assets/package-icon.svg';
 import patchesIcon from './assets/patches-icon.svg';
 import docsIcon from './assets/docs-icon.svg';
 import officeHoursIcon from './assets/office-hours-icon.svg';
@@ -25,6 +26,7 @@ const icons = {
   'Office hours': officeHoursIcon,
   'Slack channel': slackChannelIcon,
   'Bugtracker': bugtracker,
+  'Crate': packageIcon,
 }
 
 const Logo = ({ logo, name }) => (

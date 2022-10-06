@@ -8,6 +8,7 @@ import llvmLogo from '../assets/projects-logos/llvm.svg';
 import ebpfForWindowsLogo from '../assets/projects-logos/ebpf-windows.svg';
 import hbpfLogo from '../assets/projects-logos/hbpf.svg';
 import gccLogo from '../assets/projects-logos/gcc.svg';
+import rbpfLogo from '../assets/projects-logos/rbpf.svg';
 
 import "../stylesheets/index.scss";
 import { Hero } from "../common/projects/Hero";
@@ -92,6 +93,20 @@ const emergingProjects = [
       {label: 'Website', url: 'https://microsoft.github.io/ebpf-for-windows/'},
       {label: 'Office hours', url: 'https://github.com/microsoft/ebpf-for-windows/discussions/427'},
       {label: 'Slack channel', url: 'https://cilium.slack.com/archives/C0210QTK2MV'},    
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/qmonnet/rbpf/',
+    name: 'rbpf',
+    logo: rbpfLogo,
+    title: 'User Space eBPF Runtime',
+    description: `Running in user space, rbpf provides a cross-platform eBPF
+    interpreter and a JIT-compiler for x86-64, implemented in Rust. It was
+    initially a port of uBPF to Rust.`,
+    urls: [
+      {label: 'GitHub', url: 'https://github.com/qmonnet/rbpf/'},
+      {label: 'Crate', url: 'https://crates.io/crates/rbpf'},
+      {label: 'Docs', url: 'https://docs.rs/rbpf/latest/rbpf/'},
     ],
   },
   {
