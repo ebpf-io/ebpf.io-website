@@ -1,6 +1,7 @@
 import Layout from "../layouts";
 import React from "react";
 import { TitleWithAnchor } from "../common/TitleWithAnchor";
+import { graphql, useStaticQuery } from 'gatsby';
 
 import "../stylesheets/index.scss";
 import { FAQ } from "../common/projects/Faq";
@@ -10,7 +11,6 @@ import SEO from "../common/SEO";
 
 import bccLogo from "../assets/projects-logos/bcc.svg";
 import ciliumLogo from "../assets/projects-logos/cilium-with-text.svg";
-import bpftraceLogo from "../assets/projects-logos/bpftrace.webp";
 import falcoLogo from "../assets/projects-logos/falco.svg";
 import katranLogo from "../assets/projects-logos/katran.svg";
 import ecaptureLogo from "../assets/projects-logos/ecapture.svg";
@@ -18,406 +18,100 @@ import pixieLogo from "../assets/projects-logos/pixie.svg";
 import hubbleLogo from "../assets/projects-logos/hubble.svg";
 import kubectlTraceLogo from "../assets/projects-logos/kubectl_trace.svg";
 import traceeLogo from "../assets/projects-logos/tracee.svg";
-import tetragonLogo from "../assets/projects-logos/tetragon.webp";
 import bumblebeeLogo from "../assets/projects-logos/bumblebee.svg";
 import plyLogo from "../assets/projects-logos/ply.svg";
 import kubeArmorLogo from "../assets/projects-logos/kubearmor.svg";
 import l3afLogo from "../assets/projects-logos/l3af.svg";
 import merbridgeLogo from "../assets/projects-logos/merbridge.svg";
-import loxiLBLogo from "../assets/projects-logos/loxilb.webp";
-import pwruLogo from "../assets/projects-logos/pwru.webp";
 import pyroscopeLogo from "../assets/projects-logos/pyroscope.svg";
-import wachyLogo from "../assets/projects-logos/wachy.webp";
 import parcaLogo from "../assets/projects-logos/parca.svg";
-import skywalkingLogo from "../assets/projects-logos/skywalking.webp";
-import pulsarLogo from "../assets/projects-logos/pulsar.webp";
 import keplerLogo from "../assets/projects-logos/kepler.gif";
-import deepflowLogo from "../assets/projects-logos/deepflow.webp";
-import inspektorGadgetLogo from "../assets/projects-logos/inspektor_gadget.webp";
+import majorProjects from "../data/major-projects";
+import emergingProjects from "../data/emerging-projects";
 
-const majorProjects = [
-  {
-    logoUrl: "https://github.com/iovisor/bcc",
-    name: "bcc",
-    logo: bccLogo,
-    title: "Toolkit and library for efficient BPF-based kernel tracing",
-    description: `BCC is a toolkit for creating efficient kernel
-    tracing and manipulation programs built upon eBPF, and includes
-    several useful command-line tools and examples. BCC eases writing of
-    eBPF programs for kernel instrumentation in C, includes a wrapper
-    around LLVM, and front-ends in Python and Lua. It also provides a
-    high-level library for direct integration into applications.`,
-    urls: [{ label: "GitHub", url: "https://github.com/iovisor/bcc" }],
-  },
-  {
-    logoUrl: "https://github.com/cilium/cilium",
-    name: "Cilium",
-    logo: ciliumLogo,
-    title: "eBPF-based Networking, Security, and Observability",
-    description: `Cilium is an open source project that provides
-    eBPF-powered networking, security and observability. It has been
-    specifically designed from the ground up to bring the advantages of
-    eBPF to the world of Kubernetes and to address the new scalability,
-    security and visibility requirements of container workloads.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/cilium/cilium" },
-      { label: "Website", url: "https://cilium.io" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/iovisor/bpftrace",
-    name: "bpftrace",
-    logo: bpftraceLogo,
-    title: "High-level tracing language for Linux eBPF",
-    description: `bpftrace is a high-level tracing language for Linux eBPF. Its
-    language is inspired by awk and C, and predecessor tracers such as
-    DTrace and SystemTap. bpftrace uses LLVM as a backend to compile
-    scripts to eBPF bytecode and makes use of BCC as a library for
-    interacting with the Linux eBPF subsystem as well as existing Linux
-    tracing capabilities and attachment points.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/iovisor/bpftrace" },
-      { label: "Website", url: "https://bpftrace.org/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/falcosecurity/falco",
-    name: "Falco",
-    logo: falcoLogo,
-    title: "Cloud Native Runtime Security",
-    description: `Falco is a behavioral activity monitor designed to detect anomalous
-    activity in applications. Falco audits a system at the Linux kernel
-    layer with the help of eBPF. It enriches gathered data with other
-    input streams such as container runtime metrics and Kubernetes
-    metrics, and allows to continuously monitor and detect container,
-    application, host, and network activity.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/falcosecurity/falco" },
-      { label: "Website", url: "https://falco.org/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/facebookincubator/katran",
-    name: "Katran",
-    logo: katranLogo,
-    title: "A high performance layer 4 load balancer",
-    description: `Katran is a C++ library and eBPF program to build a high-performance
-    layer 4 load balancing forwarding plane. Katran leverages the XDP
-    infrastructure from the Linux kernel to provide an in-kernel
-    facility for fast packet processing. Its performance scales linearly
-    with the number of NIC's receive queues and it uses RSS friendly
-    encapsulation for forwarding to L7 load balancers.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/facebookincubator/katran" },
-      {
-        label: "Website",
-        url: "https://engineering.fb.com/open-source/open-sourcing-katran-a-scalable-network-load-balancer/",
-      },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/pixie-io/pixie",
-    name: "Pixie",
-    logo: pixieLogo,
-    title: "Scriptable observability for Kubernetes",
-    description: `Pixie is an open source observability tool for Kubernetes
-    applications. Pixie uses eBPF to automatically capture telemetry
-    data without the need for manual instrumentation. Developers can use
-    Pixie to view the high-level state of their cluster (service maps,
-    cluster resources, application traffic) and also drill down into
-    more detailed views (pod state, flame graphs, individual full body
-    application requests).`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/pixie-io/pixie" },
-      { label: "Website", url: "https://px.dev" },
-    ],
-  },
-];
+const ProjectDescriptions = () => {
+  const { tetragonLogo, loxiLBLogo, pwruLogo, wachyLogo, skywalkingLogo, pulsarLogo, deepflowLogo, inspektorGadgetLogo, bpftraceLogo } = useStaticQuery(graphql`
+  query {
+    tetragonLogo: file(relativePath: {regex: "/projects-logos/tetragon.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
+    loxiLBLogo: file(relativePath: {regex: "/projects-logos/loxilb.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
+    pwruLogo: file(relativePath: {regex: "/projects-logos/pwru.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
+    wachyLogo: file(relativePath: {regex: "/projects-logos/wachy.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
+    skywalkingLogo: file(relativePath: {regex: "/projects-logos/skywalking.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
+    pulsarLogo: file(relativePath: {regex: "/projects-logos/pulsar.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
+    deepflowLogo: file(relativePath: {regex: "/projects-logos/deepflow.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
+    inspektorGadgetLogo: file(relativePath: {regex: "/projects-logos/inspektor_gadget.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
+    bpftraceLogo: file(relativePath: {regex: "/projects-logos/bpftrace.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
+  }
+  `)
 
-const emergingProjects = [
-  {
-    logoUrl: "https://github.com/pyroscope-io/pyroscope",
-    name: "Pyroscope",
-    logo: pyroscopeLogo,
-    title: "Continuous Profiling Platform",
-    description: `Pyroscope is an open source project centered around
-    continuous profiling, particularly in a Kubernetes context.
-    It leverages eBPF as its core technology along with a custom storage engine
-    to offer system-wide continuous profiling with minimal overhead
-    as well as efficient storage and querying capabilities.
-    We support Linux 4.9 and up thanks to CO-RE and libbpf.
-    `,
-    urls: [
-      { label: "GitHub", url: "https://github.com/pyroscope-io/pyroscope" },
-      { label: "Website", url: "https://pyroscope.io/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/ehids/ecapture",
-    name: "eCapture",
-    logo: ecaptureLogo,
-    title: "SSL/TLS capture tool using eBPF",
-    description: `eCapture is a tool that can capture plaintext without a CA
-    certificate. It supports TLS encryption libraries such as
-    openssl/gnutls/nspr etc. The userspace code is written in Go and
-    uses cilium/ebpf. It can work on Linux Kernel 4.18 and later, and
-    supports CO-RE features. At the same time, it also works without
-    BTF.`,
-    urls: [{ label: "GitHub", url: "https://github.com/ehids/ecapture" }],
-  },
-  {
-    logoUrl: "https://github.com/parca-dev/parca",
-    name: "Parca",
-    logo: parcaLogo,
-    title: "Continuous Profiling Platform",
-    description: `Track memory, CPU, I/O bottlenecks broken down by method
-    name, class name, and line number over time. Without complex overhead, in
-    any language or framework. Using Parca's UI the data can be globally
-    explored and analyzed using various visualizations to quickly and
-    efficiently identify bottlenecks in code. Parca uses eBPF to collect
-    profiling data and uses libbpf-go to interact with the kernel.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/parca-dev/parca" },
-      { label: "Website", url: "https://parca.dev" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/cilium/hubble",
-    name: "Hubble",
-    logo: hubbleLogo,
-    title:
-      "Network, Service & Security Observability for Kubernetes using eBPF",
-    description: `Hubble is a fully distributed networking and security observability
-    platform for cloud native workloads. It is built on top of Cilium
-    and eBPF to enable deep visibility into the communication and
-    behavior of services as well as the networking infrastructure in a
-    completely transparent manner.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/cilium/hubble" },
-      { label: "Website", url: "https://cilium.io/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/aquasecurity/tracee",
-    name: "Tracee",
-    logo: traceeLogo,
-    title: "Linux Runtime Security and Forensics using eBPF",
-    description: `Tracee uses eBPF technology to detect and filter operating system
-    events, helping you expose security insights, detect suspicious
-    behavior, and capture forensic indicators.`,
-    urls: [{ label: "GitHub", url: "https://github.com/aquasecurity/tracee" }],
-  },
-  {
-    logoUrl: "https://github.com/cilium/tetragon",
-    name: "Tetragon",
-    logo: tetragonLogo,
-    title: "eBPF-based Security Observability & Runtime Enforcement",
-    description: `Tetragon provides eBPF-based transparent security observability
-    combined with real-time runtime enforcement. The deep visibility is
-    achieved without requiring application changes and is provided at
-    low overhead thanks to smart Linux in-kernel filtering and
-    aggregation logic built directly into the eBPF-based kernel-level
-    collector. The embedded runtime enforcement layer is capable of
-    performing access control on kernel functions, system calls and at
-    other enforcement levels.`,
-    urls: [{ label: "GitHub", url: "https://github.com/cilium/tetragon" }],
-  },
-  {
-    logoUrl: "https://github.com/iovisor/kubectl-trace",
-    name: "kubectl trace",
-    logo: kubectlTraceLogo,
-    title: "Schedule bpftrace programs on your Kubernetes cluster",
-    description: `kubectl-trace is a kubectl plugin that allows for scheduling the
-    execution of bpftrace(8) programs in Kubernetes clusters.
-    kubectl-trace does not require installation of any components
-    directly onto a Kubernetes cluster in order to execute bpftrace
-    programs. When pointed to a cluster, it schedules a temporary job
-    called trace-runner that executes bpftrace.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/iovisor/kubectl-trace" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/kinvolk/inspektor-gadget",
-    name: "Inspektor Gadget",
-    logo: inspektorGadgetLogo,
-    title:
-      'Introspecting and debugging Kubernetes applications using eBPF "gadgets"',
-    description: `Inspektor Gadget is a collection of tools (or gadgets) to
-    debug and inspect Kubernetes resources and applications. It manages the
-    packaging, deployment and execution of eBPF programs in a Kubernetes
-    cluster, including many based on BCC tools, as well as some developed
-    specifically for use in Inspektor Gadget. It automatically maps low-level
-    kernel primitives to high-level Kubernetes resources, making it easier and
-    quicker to find the relevant information.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/kinvolk/inspektor-gadget" },
-      { label: "Website", url: "https://www.inspektor-gadget.io/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/solo-io/bumblebee",
-    name: "BumbleBee",
-    logo: bumblebeeLogo,
-    title: "OCI compliant eBPF tooling",
-    description: `BumbleBee simplifies building eBPF tools and allows you to package,
-    distribute, and run eBPF programs using OCI images. It allows you to
-    just focus on the eBPF portion of your code and BumbleBee automates
-    away the boilerplate, including the userspace code.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/solo-io/bumblebee" },
-      { label: "Website", url: "https://bumblebee.io/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/cilium/pwru",
-    name: "pwru",
-    logo: pwruLogo,
-    title: "eBPF-based Linux kernel network packet tracer",
-    description:
-      "pwru is an eBPF-based tool for tracing network packets in the Linux kernel with advanced filtering capabilities. It allows fine-grained introspection of kernel state to facilitate debugging network connectivity issues.",
-    urls: [{ label: "GitHub", url: "https://github.com/cilium/pwru" }],
-  },
-  {
-    logoUrl: "https://github.com/iovisor/ply",
-    name: "ply",
-    logo: plyLogo,
-    title: "A dynamic tracer for Linux",
-    description: `ply is a dynamic tracer for Linux which is built upon eBPF. It has
-    been designed with embedded systems in mind, is written in C and all
-    that ply needs to run is libc and a modern Linux kernel with eBPF
-    support, meaning, it does not depend on LLVM for its program
-    generation. It has a C-like syntax for writing scripts and is
-    heavily inspired by awk(1) and dtrace(1).`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/iovisor/ply" },
-      { label: "Website", url: "https://wkz.github.io/ply/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/rubrikinc/wachy",
-    name: "wachy",
-    logo: wachyLogo,
-    title: "UI for interactive eBPF-based userspace performance debugging",
-    description: `Wachy is a profiler that uses eBPF to trace arbitrary compiled binaries and functions at runtime. It aims to make eBPF uprobe-based debugging much easier to use by displaying traces in a UI next to the source code, and allowing interactive drilldown analysis.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/rubrikinc/wachy" },
-      { label: "Website", url: "https://rubrikinc.github.io/wachy/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/accuknox/KubeArmor",
-    name: "KubeArmor",
-    logo: kubeArmorLogo,
-    title: "Container-aware Runtime Security Enforcement System",
-    description: `KubeArmor is a container-aware runtime security enforcement system
-    that restricts the behavior (such as process execution, file access,
-    networking operation, and resource utilization) of containers at the
-    system level, using LSMs and eBPF.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/accuknox/KubeArmor" },
-      { label: "Website", url: "https://kubearmor.com" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/merbridge/merbridge",
-    name: "Merbridge",
-    logo: merbridgeLogo,
-    title:
-      "Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge",
-    description: `Merbridge is designed to make traffic interception and forwarding more efficient for service mesh. With Merbridge, developers can use eBPF instead of iptables to accelerate their service mesh without any additional operations or code changes. Currently, Merbridge already supports Istio, Linkerd, and Kuma.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/merbridge/merbridge" },
-      { label: "Website", url: "https://merbridge.io/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/deepflowys/deepflow",
-    name: "DeepFlow",
-    logo: deepflowLogo,
-    title: "Highly Automated Observability Platform powered by eBPF",
-    description: `DeepFlow is a highly automated observability platform built for cloud native developers. Based on eBPF, DeepFlow innovatively implements an automated distributed tracing mechanism: AutoTracing. Microservice processes, service mesh sidecars, and network interfaces along the way are included as tracing spans, for every distributed transaction, without any code instrumentation. DeepFlow can automatically generate golden RED metrics for any process in cloud native environment.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/deepflowys/deepflow" },
-      { label: "Website", url: "https://deepflow.yunshan.net/community.html" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/Exein-io/pulsar",
-    name: "Pulsar",
-    logo: pulsarLogo,
-    title: "A modular runtime security framework for the IoT",
-    description: `Pulsar is an event-driven framework for monitoring the activity
-    of Linux devices. It allows you to collect runtime activity events from
-    the Linux kernel through its modules and evaluate each event against your own
-    set of security policies. Powered by eBPF and written in Rust, Pulsar is
-    lightweight and safe by design.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/Exein-io/pulsar" },
-      { label: "Website", url: "https://pulsar.sh/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/l3af-project",
-    name: "L3AF",
-    logo: l3afLogo,
-    title: "Complete lifecycle management of eBPF programs",
-    description: `L3AF is a platform to launch and manage eBPF programs in distributed
-    environments. L3AF empowers users to compose multiple eBPF programs
-    together to solve unique problems in different environments. Using
-    the APIs provided by L3AF, these eBPF programs can be reconfigured,
-    updated, inspected, and reordered on-the-fly. L3AF also provides
-    configurable metrics for the eBPF programs it has launched.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/l3af-project" },
-      { label: "Website", url: "https://l3af.io" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/loxilb-io",
-    name: "LoxiLB",
-    logo: loxiLBLogo,
-    title: "eBPF based cloud-native load-balancer for 5G Edge",
-    description: `LoxiLB is an open-source cloud-native "external" service load-balancer for cloud-native 5G/edge workloads written from scratch using eBPF as its core-engine and based on Go Language. LoxiLB turns Kubernetes network load balancing for 5G/Edge services into high speed, flexible and programmable LB services.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/loxilb-io" },
-      { label: "Website", url: "https://www.loxilb.io/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/sustainable-computing-io/kepler",
-    name: "Kepler",
-    logo: keplerLogo,
-    title: "Kubernetes-based Efficient Power Level Exporter",
-    description: `Kepler (Kubernetes-based Efficient Power Level Exporter) is a Prometheus exporter.
-    It uses eBPF to probe CPU performance counters and Linux kernel tracepoints.
-    These data and stats from cgroup and sysfs are fed into ML models to estimate energy consumption by Pods.`,
-    urls: [
-      {
-        label: "GitHub",
-        url: "https://github.com/sustainable-computing-io/kepler",
-      },
-      { label: "Website", url: "https://sustainable-computing.io" },
-    ],
-  },
-  {
-    logoUrl: "https://skywalking.apache.org/",
-    name: "Apache SkyWalking",
-    logo: skywalkingLogo,
-    title: "APM, Application Performance Monitoring System",
-    description: `Apache SkyWalking is an application performance monitor tool for distributed systems,
-    especially designed for microservices, cloud native and container-based (Kubernetes) architectures.
-    SkyWalking Rover is an agent in the SkyWalking ecosystem, as a metrics collector and profiler
-    powered by eBPF to diagnose CPU, I/O and L4/L7(TLS) network performance. Also, Rover provides add-on events for
-    spans in the distributed tracing.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/apache/skywalking-rover" },
-      { label: "Website", url: "https://skywalking.apache.org/" },
-    ],
-  },
-];
+  const logos = {
+    tetragonLogo,
+    loxiLBLogo,
+    pwruLogo,
+    wachyLogo,
+    skywalkingLogo,
+    pulsarLogo,
+    deepflowLogo,
+    inspektorGadgetLogo,
+    bpftraceLogo,
+    bccLogo,
+    l3afLogo,
+    bpftraceLogo,
+    ciliumLogo,
+    falcoLogo,
+    hubbleLogo,
+    keplerLogo,
+    ecaptureLogo,
+    kubectlTraceLogo,
+    traceeLogo,
+    merbridgeLogo,
+    plyLogo,
+    parcaLogo,
+    katranLogo,
+    kubeArmorLogo,
+    parcaLogo,
+    pyroscopeLogo,
+    pixieLogo,
+    bumblebeeLogo,
+  }
 
-const ProjectDescriptions = () => (
+  return (
   <div className="project-descriptions">
     <TitleWithAnchor
       className="projects-wrapper-title"
@@ -426,9 +120,11 @@ const ProjectDescriptions = () => (
       Major Applications
     </TitleWithAnchor>
     <ul className="projects-list">
-      {majorProjects.map((item) => (
-        <ProjectCard {...item} key={item.name} />
-      ))}
+      {majorProjects.map((item) => {
+        const logo = logos[item.logoName];
+        return (
+        <ProjectCard {...item} logo={logo} key={item.name} />
+      )})}
     </ul>
 
     <TitleWithAnchor
@@ -438,12 +134,14 @@ const ProjectDescriptions = () => (
       Emerging Applications
     </TitleWithAnchor>
     <ul className="projects-list">
-      {emergingProjects.map((item, index) => (
-        <ProjectCard {...item} key={index} />
-      ))}
+      {emergingProjects.map((item, index) => {
+        const logo = logos[item.logoName];
+        return (
+        <ProjectCard {...item} logo={logo} key={index} />
+      )})}
     </ul>
   </div>
-);
+)};
 
 const Page = () => (
   <Layout>

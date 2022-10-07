@@ -81,6 +81,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets`,
+        name: "images",
+      },
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
@@ -106,6 +113,9 @@ module.exports = {
             },
           },
           `gatsby-remark-responsive-iframe`,
+          `gatsby-plugin-image`,
+          `gatsby-plugin-sharp`,
+          `gatsby-transformer-sharp`, // Needed for dynamic images
         ],
       },
     },

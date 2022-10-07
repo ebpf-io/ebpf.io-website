@@ -951,6 +951,7 @@ code {
   .project-aside {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     justify-content: center;
     align-items: start;
     margin-right: 40px;
