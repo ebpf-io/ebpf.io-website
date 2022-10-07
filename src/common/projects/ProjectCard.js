@@ -12,6 +12,7 @@ import officeHoursIcon from './assets/office-hours-icon.svg';
 import slackChannelIcon from './assets/slack-channel-icon.svg';
 import bugtracker from './assets/bugtracker-icon.svg';
 import cn from 'classnames';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const icons = {
   Website: websiteIcon,
@@ -28,7 +29,8 @@ const icons = {
 }
 
 const Logo = ({ logo, name }) => (
-  <img src={logo} alt={name} loading="lazy" width={128} height={128} />
+    logo.childImageSharp ? <GatsbyImage image={getImage(logo)} loading='lazy' /> :
+    <img src={logo} alt={name} loading="lazy" width={128} height={128} />
 );
 
 export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, majorUrls, emergingUrls, logoSize = 'md' }) => (
