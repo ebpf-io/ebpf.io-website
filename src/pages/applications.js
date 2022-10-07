@@ -10,7 +10,7 @@ import SEO from "../common/SEO";
 
 import bccLogo from "../assets/projects-logos/bcc.svg";
 import ciliumLogo from "../assets/projects-logos/cilium-with-text.svg";
-import bpftraceLogo from "../assets/projects-logos/bpftrace.webp";
+import bpftraceLogo from "../assets/projects-logos/bpftrace.jpg";
 import falcoLogo from "../assets/projects-logos/falco.svg";
 import katranLogo from "../assets/projects-logos/katran.svg";
 import ecaptureLogo from "../assets/projects-logos/ecapture.svg";
@@ -18,22 +18,22 @@ import pixieLogo from "../assets/projects-logos/pixie.svg";
 import hubbleLogo from "../assets/projects-logos/hubble.svg";
 import kubectlTraceLogo from "../assets/projects-logos/kubectl_trace.svg";
 import traceeLogo from "../assets/projects-logos/tracee.svg";
-import tetragonLogo from "../assets/projects-logos/tetragon.webp";
+import tetragonLogo from "../assets/projects-logos/tetragon.jpg";
 import bumblebeeLogo from "../assets/projects-logos/bumblebee.svg";
 import plyLogo from "../assets/projects-logos/ply.svg";
 import kubeArmorLogo from "../assets/projects-logos/kubearmor.svg";
 import l3afLogo from "../assets/projects-logos/l3af.svg";
 import merbridgeLogo from "../assets/projects-logos/merbridge.svg";
-import loxiLBLogo from "../assets/projects-logos/loxilb.webp";
-import pwruLogo from "../assets/projects-logos/pwru.webp";
+import loxiLBLogo from "../assets/projects-logos/loxilb.jpg";
+import pwruLogo from "../assets/projects-logos/pwru.png";
 import pyroscopeLogo from "../assets/projects-logos/pyroscope.svg";
-import wachyLogo from "../assets/projects-logos/wachy.webp";
+import wachyLogo from "../assets/projects-logos/wachy.jpg";
 import parcaLogo from "../assets/projects-logos/parca.svg";
-import skywalkingLogo from "../assets/projects-logos/skywalking.webp";
-import pulsarLogo from "../assets/projects-logos/pulsar.webp";
+import skywalkingLogo from "../assets/projects-logos/skywalking.jpg";
+import pulsarLogo from "../assets/projects-logos/pulsar.png";
 import keplerLogo from "../assets/projects-logos/kepler.gif";
-import deepflowLogo from "../assets/projects-logos/deepflow.webp";
-import inspektorGadgetLogo from "../assets/projects-logos/inspektor_gadget.webp";
+import deepflowLogo from "../assets/projects-logos/deepflow.jpg";
+import inspektorGadgetLogo from "../assets/projects-logos/inspektor_gadget.png";
 
 const majorProjects = [
   {
