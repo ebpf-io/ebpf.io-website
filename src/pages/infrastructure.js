@@ -113,7 +113,7 @@ const emergingProjects = [
     logoUrl: 'https://github.com/rprinz08/hBPF',
     name: 'hBPF',
     logo: hbpfLogo,
-    title: 'hBPF - eBPF in hardware',
+    title: 'eBPF in Hardware',
     description: `An extended Berkley Packet Filter CPU implemented in hardware on
     FPGA. In contrast to classic HDL languages like Verilog or VHDL,
     Migen/LiteX (both based on Python) where used. Supports custom
