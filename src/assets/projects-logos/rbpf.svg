@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="349.447" width="349.447">
+  <defs>
+    <mask id="h">
+      <path fill="#fff" d="M-60-60H60V60H-60z"/>
+      <circle cx="0" id="a" cy="-40" r="3"/>
+      <use height="100%" width="100%" xlink:href="#a" transform="rotate(72)"/>
+      <use height="100%" width="100%" xlink:href="#a" transform="rotate(144)"/>
+      <use height="100%" width="100%" xlink:href="#a" transform="rotate(-144)"/>
+      <use height="100%" width="100%" xlink:href="#a" transform="rotate(-72)"/>
+    </mask>
+    <mask id="k">
+      <path fill="#fff" d="M-60-60H60V60H-60z"/>
+      <circle cx="0" id="b" cy="-40" r="3"/>
+      <use height="100%" width="100%" xlink:href="#b" transform="rotate(72)"/>
+      <use height="100%" width="100%" xlink:href="#b" transform="rotate(144)"/>
+      <use height="100%" width="100%" xlink:href="#b" transform="rotate(-144)"/>
+      <use height="100%" width="100%" xlink:href="#b" transform="rotate(-72)"/>
+    </mask>
+    <mask id="n">
+      <path fill="#fff" d="M-60-60H60V60H-60z"/>
+      <circle cx="0" id="c" cy="-40" r="3"/>
+      <use height="100%" width="100%" xlink:href="#c" transform="rotate(72)"/>
+      <use height="100%" width="100%" xlink:href="#c" transform="rotate(144)"/>
+      <use height="100%" width="100%" xlink:href="#c" transform="rotate(-144)"/>
+      <use height="100%" width="100%" xlink:href="#c" transform="rotate(-72)"/>
+    </mask>
+  </defs>
+  <g transform="translate(52.5 144.504)">
+    <path d="M-8.5-14.5h13c8 0 8 8 0 8h-13Zm-31 37h40v-11h-9v-8h10c11 0 5 19 14 19h25v-19h-6v2c0 8-9 7-10 2s-5-9-6-9c15-8 6-24-6-24h-47v11h10v26h-15z" fill="#231f1f" stroke="#231f1f" stroke-linejoin="round"/>
+    <g mask="url(#d)" stroke="#231f1f">
+      <circle r="43" fill="none" stroke-width="9"/>
+      <g fill="#231f1f">
+        <path id="e" fill-opacity="1" stroke-width="3" stroke-linejoin="round" stroke-opacity="1" d="m51 0-5-3v6z"/>
+        <use height="100%" width="100%" transform="rotate(11.25)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(22.5)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(33.75)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(45)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(56.25)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(67.5)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(78.75)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(90)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(101.25)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(112.5)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(123.75)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(135)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(146.25)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(157.5)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(168.75)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="scale(-1)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-168.75)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-157.5)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-146.25)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-135)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-123.75)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-112.5)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-101.25)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-90)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-78.75)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-67.5)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-56.25)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-45)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-33.75)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-22.5)" xlink:href="#e"/>
+        <use height="100%" width="100%" transform="rotate(-11.25)" xlink:href="#e"/>
+      </g>
+      <g fill="#231f1f">
+        <path id="f" fill-opacity="1" stroke-width="6" stroke-linejoin="round" stroke-opacity="1" d="m0-35 7-7H-7z"/>
+        <use height="100%" width="100%" transform="rotate(72)" xlink:href="#f"/>
+        <use height="100%" width="100%" transform="rotate(144)" xlink:href="#f"/>
+        <use height="100%" width="100%" transform="rotate(-144)" xlink:href="#f"/>
+        <use height="100%" width="100%" transform="rotate(-72)" xlink:href="#f"/>
+      </g>
+    </g>
+    <mask id="d">
+      <path fill="#fff" d="M-60-60H60V60H-60z"/>
+      <circle cx="0" r="3" cy="-40" id="g"/>
+      <use height="100%" width="100%" transform="rotate(72)" xlink:href="#g"/>
+      <use height="100%" width="100%" transform="rotate(144)" xlink:href="#g"/>
+      <use height="100%" width="100%" transform="rotate(-144)" xlink:href="#g"/>
+      <use height="100%" width="100%" transform="rotate(-72)" xlink:href="#g"/>
+    </mask>
+  </g>
+  <g stroke="#231f1f">
+    <path d="M99.482 179.443v11h10v26h-15v11h52c12 0 21-16 6-24 5.603-2.989 7.858-7.093 7.858-11.063 0-6.658-6.34-12.937-13.858-12.937zm26 11h13c8 0 8 8 0 8h-13zm0 18h13c8 0 8 8 0 8h-13z" fill="#231f1f" stroke-linejoin="round"/>
+    <g mask="url(#h)" transform="translate(133.982 204.943)">
+      <circle r="43" fill="none" stroke-width="9"/>
+      <g fill="#231f1f">
+        <path id="i" fill-opacity="1" stroke-width="3" stroke-linejoin="round" stroke-opacity="1" d="m51 0-5-3v6z"/>
+        <use transform="rotate(11.25)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(22.5)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(33.75)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(45)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(56.25)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(67.5)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(78.75)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(90)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(101.25)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(112.5)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(123.75)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(135)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(146.25)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(157.5)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(168.75)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="scale(-1)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-168.75)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-157.5)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-146.25)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-135)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-123.75)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-112.5)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-101.25)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-90)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-78.75)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-67.5)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-56.25)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-45)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-33.75)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-22.5)" xlink:href="#i" width="100%" height="100%"/>
+        <use transform="rotate(-11.25)" xlink:href="#i" width="100%" height="100%"/>
+      </g>
+      <g fill="#231f1f">
+        <path id="j" fill-opacity="1" stroke-width="6" stroke-linejoin="round" stroke-opacity="1" d="m0-35 7-7H-7z"/>
+        <use transform="rotate(72)" xlink:href="#j" width="100%" height="100%"/>
+        <use transform="rotate(144)" xlink:href="#j" width="100%" height="100%"/>
+        <use transform="rotate(-144)" xlink:href="#j" width="100%" height="100%"/>
+        <use transform="rotate(-72)" xlink:href="#j" width="100%" height="100%"/>
+      </g>
+    </g>
+  </g>
+  <g stroke="#231f1f">
+    <path d="M206.965 130.004h13c8 0 8 8 0 8h-13Zm34.857 4c.118-6.806-6.34-15-13.857-15h-47v11h10v26h-15v11h40v-11h-9v-8h21c7.562 0 13.744-7.435 13.857-14z" fill="#231f1f" stroke-linejoin="round"/>
+    <g mask="url(#k)" transform="translate(215.465 144.504)">
+      <circle r="43" fill="none" stroke-width="9"/>
+      <g fill="#231f1f">
+        <path id="l" fill="#231f1f" fill-opacity="1" stroke="#231f1f" stroke-width="3" stroke-linejoin="round" stroke-opacity="1" d="m51 0-5-3v6z"/>
+        <use transform="rotate(11.25)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(22.5)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(33.75)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(45)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(56.25)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(67.5)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(78.75)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(90)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(101.25)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(112.5)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(123.75)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(135)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(146.25)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(157.5)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(168.75)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="scale(-1)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-168.75)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-157.5)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-146.25)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-135)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-123.75)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-112.5)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-101.25)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-90)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-78.75)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-67.5)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-56.25)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-45)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-33.75)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-22.5)" xlink:href="#l" width="100%" height="100%"/>
+        <use transform="rotate(-11.25)" xlink:href="#l" width="100%" height="100%"/>
+      </g>
+      <g fill="#231f1f">
+        <path id="m" fill="#231f1f" fill-opacity="1" stroke="#231f1f" stroke-width="6" stroke-linejoin="round" stroke-opacity="1" d="m0-35 7-7H-7z"/>
+        <use transform="rotate(72)" xlink:href="#m" width="100%" height="100%"/>
+        <use transform="rotate(144)" xlink:href="#m" width="100%" height="100%"/>
+        <use transform="rotate(-144)" xlink:href="#m" width="100%" height="100%"/>
+        <use transform="rotate(-72)" xlink:href="#m" width="100%" height="100%"/>
+      </g>
+    </g>
+  </g>
+  <path d="M262.447 179.443v11h10v26h-15v11h40v-11h-9v-8h14.797v1.653h7.805V196.79h-7.805v1.652h-14.797v-8h42.35v-11z" fill="#231f1f" stroke="#231f1f" stroke-linejoin="round"/>
+  <g mask="url(#n)" stroke="#231f1f" transform="translate(296.947 204.943)">
+    <circle r="43" fill="none" stroke-width="9"/>
+    <g fill="#231f1f">
+      <path id="o" fill="#231f1f" fill-opacity="1" stroke="#231f1f" stroke-width="3" stroke-linejoin="round" stroke-opacity="1" d="M46-3v6l5-3z"/>
+      <use transform="rotate(11.25)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(22.5)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(33.75)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(45)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(56.25)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(67.5)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(78.75)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(90)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(101.25)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(112.5)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(123.75)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(135)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(146.25)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(157.5)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(168.75)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="scale(-1)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-168.75)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-157.5)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-146.25)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-135)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-123.75)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-112.5)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-101.25)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-90)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-78.75)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-67.5)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-56.25)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-45)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-33.75)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-22.5)" xlink:href="#o" width="100%" height="100%"/>
+      <use transform="rotate(-11.25)" xlink:href="#o" width="100%" height="100%"/>
+    </g>
+    <g fill="#231f1f">
+      <path id="p" fill="#231f1f" fill-opacity="1" stroke="#231f1f" stroke-width="6" stroke-linejoin="round" stroke-opacity="1" d="M7-42H-7l7 7z"/>
+      <use transform="rotate(72)" xlink:href="#p" width="100%" height="100%"/>
+      <use transform="rotate(144)" xlink:href="#p" width="100%" height="100%"/>
+      <use transform="rotate(-144)" xlink:href="#p" width="100%" height="100%"/>
+      <use transform="rotate(-72)" xlink:href="#p" width="100%" height="100%"/>
+    </g>
+  </g>
+</svg>
