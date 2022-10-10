@@ -35,7 +35,9 @@ const Logo = ({ logo, name }) => (
     <img src={logo} alt={name} loading="lazy" width={128} height={128} />
 );
 
-export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, majorUrls, emergingUrls, logoSize = 'md' }) => (
+export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, majorUrls, emergingUrls, logoSize = 'md' }) => {
+  const Tag  = logoUrl ? 'a' : 'div';
+  return (
   <li className="project-box" key={name}>
     <TitleWithAnchor
         headerClassName="projects-common-title"
@@ -47,19 +49,16 @@ export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, maj
         {title}
       </div>}
     <div className='project-inner'>
-      <div className="project-aside">
-      {logoUrl ? <a
-          href={logoUrl}
-          target="_blank"
-          className={cn("project-logo")}
-        >
-        <Logo logo={logo} name={name} logoSize={logoSize}/>
-        </a> : <div className={cn("project-logo")}>
+    {logo && logoUrl && <div className="project-aside">
+      <Tag
+        className={cn("project-logo")}
+        href={logoUrl}
+        target="_blank"
+      >
           <Logo logo={logo} name={name} logoSize={logoSize}/>
-        </div>}
-
-      </div>
-      <div className="project-body">
+        </Tag>
+      </div>}
+      <div className={cn("project-body")}>
       {(majorUrls || emergingUrls) && <div className='project-urls'>
         {majorUrls && <span>
             <span>Major:</span>{" "}
@@ -95,4 +94,4 @@ export const ProjectCard = ({ name, logo, logoUrl, title, description, urls, maj
       </div>
     </div>
   </li>
-);
+)};
