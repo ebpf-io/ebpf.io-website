@@ -279,6 +279,20 @@ const emergingProjects = [
       { label: "Website", url: "https://skywalking.apache.org/" },
     ],
   },
+  {
+    logoUrl: "https://github.com/eunomia-bpf/eunomia-bpf",
+    name: "eunomia-bpf",
+    logoName: 'eunomiaLogo',
+    title: "eBPF programs in a WASM module or JSON",
+    description: `Eunomia-bpf is a dynamic loading library, based on libbpf, and a compiler toolchain.
+    Eunomia-bpf simplifies building eBPF tools and allows you to package, distribute,
+    and run eBPF programs in JSON format or as a WASM module. With eunomia-bpf, you can write kernel eBPF code
+    and automatically expose your data from the kernel and interact with eBPF program in user space with a WASM runtime.`,
+    urls: [
+      { label: "GitHub", url: "https://github.com/eunomia-bpf/eunomia-bpf" },
+      { label: "Website", url: "https://eunomia-bpf.github.io/" },
+    ],
+  },
 ];
 
 export default emergingProjects;

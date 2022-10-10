@@ -30,7 +30,7 @@ import majorProjects from "../data/major-projects";
 import emergingProjects from "../data/emerging-projects";
 
 const ProjectDescriptions = () => {
-  const { tetragonLogo, loxiLBLogo, pwruLogo, wachyLogo, skywalkingLogo, pulsarLogo, deepflowLogo, inspektorGadgetLogo, bpftraceLogo } = useStaticQuery(graphql`
+  const { tetragonLogo, loxiLBLogo, pwruLogo, wachyLogo, skywalkingLogo, pulsarLogo, deepflowLogo, inspektorGadgetLogo, bpftraceLogo, eunomiaLogo } = useStaticQuery(graphql`
   query {
     tetragonLogo: file(relativePath: {regex: "/projects-logos/tetragon.png/"}) {
       childImageSharp {
@@ -77,6 +77,11 @@ const ProjectDescriptions = () => {
         gatsbyImageData(width: 128, quality: 95)
       }
     }
+    eunomiaLogo: file(relativePath: {regex: "/projects-logos/eunomia.png/"}) {
+      childImageSharp {
+        gatsbyImageData(width: 128, quality: 95)
+      }
+    }
   }
   `)
 
@@ -109,6 +114,7 @@ const ProjectDescriptions = () => {
     pyroscopeLogo,
     pixieLogo,
     bumblebeeLogo,
+    eunomiaLogo,
   }
 
   return (
