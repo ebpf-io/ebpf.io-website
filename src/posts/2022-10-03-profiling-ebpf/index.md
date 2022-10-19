@@ -2,7 +2,7 @@
 date: "2022-10-03T17:00:00.000Z"
 title: "Frederic Branczyk on Continuous Profiling Leveraging eBPF"
 ogImage: ogimage.jpeg
-externalUrl: ""
+externalUrl: "https://www.infoq.com/podcasts/continuous-profiling-leveraging-eBPF/"
 categories:
   - Technology
 ---
