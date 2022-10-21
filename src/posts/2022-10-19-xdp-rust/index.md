@@ -8,6 +8,6 @@ categories:
 
 {{preview}}
 
-Go throught this hands on walk through to understand how to build a basic load balancer in Rust
+Go through this hands-on walkthrough to understand how to build a basic load balancer in Rust.
 
 {{/preview}}
