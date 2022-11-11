@@ -4,7 +4,7 @@ title: "Highlights from the eBPF* Summit 2022"
 ogImage: ogimage.webp
 externalUrl: "https://www.intel.com/content/www/us/en/developer/articles/community/highlights-from-the-ebpf-summit-2022.html"
 categories:
-  - Technology
+  - Community
 ---
 
 {{preview}}
