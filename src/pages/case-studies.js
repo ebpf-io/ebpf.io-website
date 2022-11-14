@@ -26,6 +26,7 @@ import DigitalOcean from "../assets/case-studies/digital-ocean.inline.svg";
 import Yahoo from "../assets/case-studies/yahoo.inline.svg";
 import Bytedance from "../assets/case-studies/byte-dance.inline.svg";
 import F5 from "../assets/case-studies/f5.inline.svg";
+import LinkedIn from "../assets/case-studies/linkedin.inline.svg";
 
 const cardsData = [
   {
@@ -314,6 +315,17 @@ const cardsData = [
       },
     ],
   },
+  {
+    Logo: LinkedIn,
+    description:
+      "<strong>LinkedIn</strong> uses eBPF for Infrastructure Observability",
+    links: [
+      {
+        name: "Blog",
+        href: "https://engineering.linkedin.com/blog/2022/skyfall--ebpf-agent-for-infrastructure-observability",
+      },
+    ],
+  },
 ];
 
 const CaseCard = ({ Logo, description, links }) => (
@@ -373,14 +385,13 @@ const Page = () => (
 
 export default Page;
 
-export const Head = ({location: { pathname }}) => {
+export const Head = ({ location: { pathname } }) => {
   const pageMetadata = {
-    
-// TODO: update when we have the data
-    title: 'eBPF Case Studies',
-    description: 'Learn how eBPF is used in different projects.',
+    // TODO: update when we have the data
+    title: "eBPF Case Studies",
+    description: "Learn how eBPF is used in different projects.",
     slug: pathname,
-    keywords: 'ebpf, bpf, contribute, getting started, community',
-  }
-  return <SEO {...pageMetadata} />
-}
+    keywords: "ebpf, bpf, contribute, getting started, community",
+  };
+  return <SEO {...pageMetadata} />;
+};
