@@ -24,14 +24,14 @@ This made us wonder if we needed to rethink how we were talking about eBPF. Both
 
 Our take: eBPF is going to become ubiquitous, but the majority of software teams and companies are not going to need to worry about it. In this blog post, we’ll talk about the rise of eBPF, what eBPF is, why people might not think eBPF is “for them” (and they’re right!), and our vision for “eBPF inside.”
 
-# The Rise of eBPF
+## The Rise of eBPF
 eBPF has been around for 8 years and its predecessor, BPF, for almost 30 years. Ancient by developer standards. However, recently, there has been a massive rise in companies talking about eBPF, using eBPF, and buying solutions that use eBPF.
 
 Major players in monitoring, observability, networking, and security like Datadog, F5, VMware, and Cloudflare have rolled out eBPF based offerings in the last couple of years. Startups, our two companies Isovalent and Akita included, have come onto the scene with the sole purpose of leveraging eBPF in their solutions. There has even been the first acquisition (Seekret by Datadog) of an eBPF focused company.
 
 Open source projects are also sweetening to eBPF. The [eBPF Landscape](http://ebpf.io/landscape) has become crowded with over 40 projects ranging from continuous profiling to energy monitoring. eBPF has even become so important that Microsoft now has an [eBPF for Windows project](https://github.com/microsoft/ebpf-for-windows). How did this technology, previously familiar only to networking enthusiasts, reach such widespread dominance across so many use cases.
 
-# What is eBPF?
+## What is eBPF?
 
 eBPF powers faster networking, easier monitoring and observability, and stronger security. How can one technology make this all possible?
 
@@ -65,7 +65,7 @@ If security or “DevSecOps” is your concern, you might be worried about runni
 
 If all of this sounds too good to be true, you might be wondering what the catch is.
 
-# Invisible technology, visible benefits: a vision for “eBPF inside”
+## Invisible technology, visible benefits: a vision for “eBPF inside”
 
 The many developers who believe eBPF is “not for them” are right. eBPF is not for most developers _to program_. Most people also don’t write kernel modules, kernel patches, or container runtimes either - but they do massively consume and benefit from them. The same way most computers run with Intel chips, previously advertised with the “Intel Inside” sticker.
 
@@ -84,7 +84,7 @@ eBPF is now the underlying technology and there are so many projects and use cas
 
 When people say that eBPF is “not for them”. It is similar to a developer using Docker saying “cgroups are not for me”. They’re right, but there _is_ something for them that we’re not talking about. They may not interact with directly or code the underlying technology, but they do want its “magical” benefits.
 
-**eBPF will be for everyone, but we don’t expect everyone to know about it**
+## eBPF will be for everyone, but we don’t expect everyone to know about it
 
 The two of us know that eBPF is a powerful force that is transforming the software industry. We’ll know that it is successful not when all developers know about it, but when developers start demanding faster networking, effortless monitoring and observability, and easier-to-use security solutions. We believe that eBPF will have taken over when there’s a variety of products providing massive developer experience improvement over upstreaming code to the Linux kernel or writing Linux kernel modules.
 
