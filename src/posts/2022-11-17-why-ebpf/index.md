@@ -37,7 +37,7 @@ eBPF powers faster networking, easier monitoring and observability, and stronger
 
 Before we dive into the magic, let's first figure out what eBPF actually is. Pulling from [ebpf.io](https://ebpf.io/) gets us:
 
-    “eBPF is a revolutionary technology with origins in the Linux kernel that can run sandboxed programs in an operating system kernel. It is used to safely and efficiently extend the capabilities of the kernel without requiring to change kernel source code or load kernel modules.”
+> eBPF is a revolutionary technology with origins in the Linux kernel that can run sandboxed programs in an operating system kernel. It is used to safely and efficiently extend the capabilities of the kernel without requiring to change kernel source code or load kernel modules.
 
 But seeing how most people have never installed a kernel module, let alone looked at Linux source code, I don’t think this is getting us very far. What a lot of people do have experience with though is the web. In fact you are probably reading this on a web browser right now.
 
@@ -53,7 +53,7 @@ eBPF not only reduces the time it takes to have new features added to production
 
 All of this has unlocked many [new ways of doing things](https://ebpf.io/case-studies) across areas like networking, observability, and security. Going back to the ebpf.io website, we can find some that make sense:
 
-    “Providing high-performance networking and load-balancing in modern data centers and cloud native environments, extracting fine-grained security observability data at low overhead, helping application developers trace applications, providing insights for performance troubleshooting, preventive application and container runtime security enforcement, and much more.”
+> Providing high-performance networking and load-balancing in modern data centers and cloud native environments, extracting fine-grained security observability data at low overhead, helping application developers trace applications, providing insights for performance troubleshooting, preventive application and container runtime security enforcement, and much more.
 
 eBPF has become a general purpose compute engine within the Linux kernel that allows you to hook into, observe, and act upon anything happening in the kernel, kind of like a plug-in for your web browser.
 
