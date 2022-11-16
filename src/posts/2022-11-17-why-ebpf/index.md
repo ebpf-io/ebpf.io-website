@@ -2,6 +2,7 @@
 path: "/blog/ebpf-for-all"
 date: "2022-11-17T10:00:00.000Z"
 title: "Why eBPF for All Means People Don’t Need to Care about eBPF"
+ogImage: comic2.png
 toc: false
 categories:
   - Community
@@ -15,7 +16,7 @@ A couple months ago, the two of us got to talking about a phenomenon we both obs
 
 On the one hand, there are more eBPF-based products and companies than ever before, lighting operations and platform teams abuzz. On the other hand, if you ask the average developer, the term “eBPF” feels foreign and irrelevant to them.
 
-![Twitter poll showing people think eBPF is boring](poll.png)
+![Twitter poll showing people think eBPF is boring](poll.png =x250)
 
 Bill is a Community Pollinator at [Isovalent](https://isovalent.com/) and Jean is the founder and CEO of [Akita](https://www.akitasoftware.com/?utm_source=blog&utm_medium=link&utm_campaign=website_from_third_party_blog), both eBPF-powered companies. Both of us have been seeing massive shifts in the market, both among SaaS and subscription software buyers and investors, towards favoring eBPF. How could it be that a technology so much on the rise, for solid technical reasons, could be perceived as boring and irrelevant to much of the general developer population?
 
@@ -46,11 +47,11 @@ If you look at web pages from the 90s, they were flat static pages of informatio
 
 Javascript made the web programmable and that is exactly what eBPF is doing to the Linux kernel. Instead of having to wait years for a feature to be added to the Linux kernel and finally land in a vendor’s LTS release in production, new functionality can be added on the fly.
 
-![modifying the kernel can take years to get to user's hands](comic1.png)
+![modifying the kernel can take years to get to user's hands](comic1.png =x250)
 
 eBPF not only reduces the time it takes to have new features added to production workloads, in some cases, it even finally makes it possible. Because of the broad adoption of the Linux kernel across billions of devices, making changes is not taken lightly. For example, if you want a new way to observe your application and need to be able to pull that metric from the kernel, you have to first convince the kernel community that it is a good idea - and a good idea for everyone running Linux - then it can be implemented. With eBPF, you can now go from coding to observation without even having to reboot your machine.
 
-![eBPF can change kernel functionality immediatly](comic2.png)
+![eBPF can change kernel functionality immediatly](comic2.png =x250)
 
 All of this has unlocked many [new ways of doing things](https://ebpf.io/case-studies) across areas like networking, observability, and security. Going back to the ebpf.io website, we can find some that make sense:
 
@@ -60,7 +61,7 @@ eBPF has become a general purpose compute engine within the Linux kernel that al
 
 All of the gadgets are great, but just like on the web, if a screen takes more than 2 seconds to load, people will have already lost interest and moved back to Twitter. If eBPF slows down the kernel, it might not actually be worth the effort. Luckily, that is not the case. Since eBPF is running in the kernel, in most cases it is actually faster than running a program in user space because it is saving the context switching from kernel space to user space. In addition, eBPF is JIT compiled so it runs at near native execution speed. For example, when [Seznam.cz switched to eBPF based load balancing](https://cilium.io/blog/2022/04/12/cilium-standalone-L4LB-XDP/), they were able to double their packet throughput while also reducing their CPU usage 72x. Talk about being able to load pictures of cats very quickly!
 
-![cpu graph shows eBPF reduces load](cpu.png)
+![cpu graph shows eBPF reduces load](cpu.png =x250)
 
 If security or “DevSecOps” is your concern, you might be worried about running code in your kernel. First, eBPF programs by default can only be loaded by the root user. Hopefully you know who has root on your system and trust them, otherwise you have bigger problems than whether you should use eBPF or not. Second, eBPF has a verifier that all programs must pass before they can be run. The verifier ensures that the programs won’t crash the kernel and will safely run to completion. Security can’t be a second class citizen in the kernel and it isn’t with eBPF.
 
@@ -80,7 +81,7 @@ eBPF is now the underlying technology and there are so many projects and use cas
 
 * [Akita](https://docs.akita.software/docs?utm_source=blog&utm_medium=link&utm_campaign=docs_from_blog) uses eBPF to support drop-in monitoring and observability. Typically, software teams need to include libraries and/or instrument their code in order to get the metrics and logs for observability. Startup cost and the work involved in thoroughly instrumenting code are both barriers to teams having the degree of visibility they want in their own systems. Using eBPF, the Akita agent is able to passively watch network traffic, sending network packets back for processing to the Akita cloud. The Akita cloud then reconstructs API structure and behavior from these packets, making it possible to support “drop-in” monitoring that does not require code changes. Akita users need to know nothing about eBPF; it’s simply what Akita uses under the hood in order to support quick installation and provide instant API dashboards.
 
-![Akita Software overview graphs](akita.gif)
+![Akita Software overview graphs](akita.gif =x250)
 
 
 When people say that eBPF is “not for them”. It is similar to a developer using Docker saying “cgroups are not for me”. They’re right, but there _is_ something for them that we’re not talking about. They may not interact with directly or code the underlying technology, but they do want its “magical” benefits.
