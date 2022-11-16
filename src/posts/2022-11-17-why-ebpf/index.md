@@ -16,7 +16,7 @@ A couple months ago, the two of us got to talking about a phenomenon we both obs
 
 On the one hand, there are more eBPF-based products and companies than ever before, lighting operations and platform teams abuzz. On the other hand, if you ask the average developer, the term “eBPF” feels foreign and irrelevant to them.
 
-![Twitter poll showing people think eBPF is boring](poll.png =x250)
+<img src="poll.png" alt="Twitter poll showing people think eBPF is boring" width="250">
 
 Bill is a Community Pollinator at [Isovalent](https://isovalent.com/) and Jean is the founder and CEO of [Akita](https://www.akitasoftware.com/?utm_source=blog&utm_medium=link&utm_campaign=website_from_third_party_blog), both eBPF-powered companies. Both of us have been seeing massive shifts in the market, both among SaaS and subscription software buyers and investors, towards favoring eBPF. How could it be that a technology so much on the rise, for solid technical reasons, could be perceived as boring and irrelevant to much of the general developer population?
 
