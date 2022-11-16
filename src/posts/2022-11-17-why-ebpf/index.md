@@ -9,9 +9,10 @@ categories:
 ---
 
 November 4th, 2022
+
 Author: Jean Yang - Akita Software, Bill Mulligan - Isovalent
 
-# Why eBPF for All Means People Don’t Need to Care about eBPF
+## Why eBPF for All Means People Don’t Need to Care about eBPF
 A couple months ago, the two of us got to talking about a phenomenon we both observed.
 
 On the one hand, there are more eBPF-based products and companies than ever before, lighting operations and platform teams abuzz. On the other hand, if you ask the average developer, the term “eBPF” feels foreign and irrelevant to them.
