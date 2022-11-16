@@ -81,7 +81,7 @@ eBPF is now the underlying technology and there are so many projects and use cas
 
 * [Akita](https://docs.akita.software/docs?utm_source=blog&utm_medium=link&utm_campaign=docs_from_blog) uses eBPF to support drop-in monitoring and observability. Typically, software teams need to include libraries and/or instrument their code in order to get the metrics and logs for observability. Startup cost and the work involved in thoroughly instrumenting code are both barriers to teams having the degree of visibility they want in their own systems. Using eBPF, the Akita agent is able to passively watch network traffic, sending network packets back for processing to the Akita cloud. The Akita cloud then reconstructs API structure and behavior from these packets, making it possible to support “drop-in” monitoring that does not require code changes. Akita users need to know nothing about eBPF; it’s simply what Akita uses under the hood in order to support quick installation and provide instant API dashboards.
 
-<img src="akita.gif" alt="Akita Software overview graphs" width="350" class="center">
+<img src="akita.gif" alt="Akita Software overview graphs">
 
 When people say that eBPF is “not for them”. It is similar to a developer using Docker saying “cgroups are not for me”. They’re right, but there _is_ something for them that we’re not talking about. They may not interact with directly or code the underlying technology, but they do want its “magical” benefits.
 
