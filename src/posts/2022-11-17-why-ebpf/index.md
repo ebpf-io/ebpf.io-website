@@ -32,7 +32,7 @@ eBPF has been around for 8 years and its predecessor, BPF, for almost 30 years. 
 
 Major players in monitoring, observability, networking, and security like Datadog, F5, VMware, and Cloudflare have rolled out eBPF based offerings in the last couple of years. All of the major cloud providers have networking products based on eBPF, and startups, our two companies Isovalent and Akita included, have come onto the scene with the sole purpose of leveraging eBPF in their solutions. There has even been multiple acquisitions of eBPF focused companies (CMD and Optimyze by Elastic, Flowmill by Splunk, Kinvolk by Microsoft, Pixie by New Relic, and Seekret by Datadog).
 
-Open source projects are also sweetening to eBPF. The [eBPF Landscape](http://ebpf.io/landscape) has become crowded with over 40 projects ranging from continuous profiling to energy monitoring. eBPF has even become so important that Microsoft now has an [eBPF for Windows project](https://github.com/microsoft/ebpf-for-windows). How did this technology, previously familiar only to networking enthusiasts, reach such widespread dominance across so many use cases.
+Open source projects are also sweetening to eBPF. The [eBPF Landscape](http://ebpf.io/applications) has become crowded with over 40 projects ranging from continuous profiling to energy monitoring. eBPF has even become so important that Microsoft now has an [eBPF for Windows project](https://github.com/microsoft/ebpf-for-windows). How did this technology, previously familiar only to networking enthusiasts, reach such widespread dominance across so many use cases.
 
 ## What is eBPF?
 
