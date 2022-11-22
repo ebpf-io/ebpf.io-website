@@ -207,6 +207,17 @@ const emergingProjects = [
     ],
   },
   {
+    logoUrl: "https://github.com/kindlingproject/kindling",
+    name: "Kindling",
+    logoName: 'kindlingLogo',
+    title: "eBPF-based Cloud Native Monitoring & Profiling Tool",
+    description: `Kindling is a monitoring tool that aims to help users understand the execution behavior of programs from kernel space to user space to pinpoint the root cause of critical incidents. It can obtain L4/L7 network performance metrics and build service maps. Kindling implements a mechanism, Trace Profiling, that can display how each trace is executing on-CPU with thread-level flame graph, and how it is slowed down by off-CPU events with related metrics.`,
+    urls: [
+      { label: "GitHub", url: "https://github.com/kindlingproject/kindling" },
+      { label: "Website", url: "http://kindling.harmonycloud.cn" },
+    ],
+  },
+  {
     logoUrl: "https://github.com/Exein-io/pulsar",
     name: "Pulsar",
     logoName: 'pulsarLogo',
