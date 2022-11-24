@@ -8,11 +8,18 @@ categories:
   - Community
 ---
 
+{{preview}}
+
+On the one hand, there are more eBPF-based products and companies than ever before, lighting operations and platform teams abuzz. On the other hand, if you ask the average developer, the term “eBPF” feels foreign and irrelevant to them.
+
+{{/preview}}
+
 November 4th, 2022
 
 Author: Jean Yang - Akita Software, Bill Mulligan - Isovalent
 
 ## Why eBPF for All Means People Don’t Need to Care about eBPF
+
 A couple months ago, the two of us got to talking about a phenomenon we both observed.
 
 On the one hand, there are more eBPF-based products and companies than ever before, lighting operations and platform teams abuzz. On the other hand, if you ask the average developer, the term “eBPF” feels foreign and irrelevant to them.
@@ -23,11 +30,12 @@ Bill is a Community Pollinator at [Isovalent](https://isovalent.com/) and Jean i
 
 One clue came from a conversation Jean had with an Akita user a few months ago. The user said that the word “eBPF” had meant nothing to them until they started using Akita, after which it became synonymous with “drop-in” and “easy to integrate.”
 
-This made us wonder if we needed to rethink how we were talking about eBPF. Both of us had been thinking of eBPF front and center, as the technology that unlocks all kinds of magic for users. But from the users’ point of view, the main win is not the technology, but the magic! Our conversation led us to write this blog post, with the goal of helping developers get excited about the buzz around eBPF rather than afraid. 
+This made us wonder if we needed to rethink how we were talking about eBPF. Both of us had been thinking of eBPF front and center, as the technology that unlocks all kinds of magic for users. But from the users’ point of view, the main win is not the technology, but the magic! Our conversation led us to write this blog post, with the goal of helping developers get excited about the buzz around eBPF rather than afraid.
 
 Our take: eBPF is going to become ubiquitous, but the majority of software teams and companies are not going to need to worry about it. In this blog post, we’ll talk about the rise of eBPF, what eBPF is, why people might not think eBPF is “for them” (and they’re right!), and our vision for “eBPF inside.”
 
 ## The Rise of eBPF
+
 eBPF has been around for 8 years and its predecessor, BPF, for almost 30 years. Ancient by developer standards. However, recently, there has been a massive rise in companies talking about eBPF, using eBPF, and buying solutions that use eBPF.
 
 Major players in monitoring, observability, networking, and security like Datadog, F5, VMware, and Cloudflare have rolled out eBPF based offerings in the last couple of years. All of the major cloud providers have networking products based on eBPF, and startups, our two companies Isovalent and Akita included, have come onto the scene with the sole purpose of leveraging eBPF in their solutions. There has even been multiple acquisitions of eBPF focused companies (CMD and Optimyze by Elastic, Flowmill by Splunk, Kinvolk by Microsoft, Pixie by New Relic, and Seekret by Datadog).
@@ -44,7 +52,7 @@ Before we dive into the magic, let's first figure out what eBPF actually is. Pul
 
 But seeing how most people have never installed a kernel module, let alone looked at Linux source code, I don’t think this is getting us very far. What a lot of people do have experience with though is the web. In fact you are probably reading this on a web browser right now.
 
-If you look at web pages from the 90s, they were flat static pages of information to be consumed. Then along came Javascript which allowed us to make the browser interactive and programmable. Suddenly, we could have games, forms, checkout, and many more new ways to exchange information. This unlocked a whole wave of innovation because programmers could add the functionality they wanted directly to the webpage without having to wait for browsers to release their next version. 
+If you look at web pages from the 90s, they were flat static pages of information to be consumed. Then along came Javascript which allowed us to make the browser interactive and programmable. Suddenly, we could have games, forms, checkout, and many more new ways to exchange information. This unlocked a whole wave of innovation because programmers could add the functionality they wanted directly to the webpage without having to wait for browsers to release their next version.
 
 Javascript made the web programmable and that is exactly what eBPF is doing to the Linux kernel. Instead of having to wait years for a feature to be added to the Linux kernel and finally land in a vendor’s LTS release in production, new functionality can be added on the fly.
 
@@ -72,15 +80,15 @@ If all of this sounds too good to be true, you might be wondering what the catch
 
 The many developers who believe eBPF is “not for them” are right. eBPF is not for most developers _to program_. Most people also don’t write kernel modules, kernel patches, or container runtimes either - but they do massively consume and benefit from them. The same way most computers run with Intel chips, previously advertised with the “Intel Inside” sticker.
 
-Just like containers did for packaging up your code and its dependencies in a reproducible way, eBPF allows you to do things that are currently “too good to be true”. And eBPF is on a similar to becoming mainstream through better developer experience. 
+Just like containers did for packaging up your code and its dependencies in a reproducible way, eBPF allows you to do things that are currently “too good to be true”. And eBPF is on a similar to becoming mainstream through better developer experience.
 
 “Containers” are not real concept in the Linux kernel, they are actually just a flexible composition of building blocks like namespaces and cgroups. As a use case, they have actually been around for a very long time from things like Solaris zones and FreeBSD jails using cgroups and namespaces to isolate processes. However, containers didn’t really become popular until Docker came along and made a smooth interface that developers could easily grasp and use, seamlessly bundling up code and its dependencies into one portable package. Most developers have never touched cgroups or namespaces, but trillions of containers have been pushed into production. Today, containers are an invisible technology that provides the very visible benefit of easily allowing you to ship your code to production.
 
 eBPF is now the underlying technology and there are so many projects and use cases for it with very visible benefits:
 
-* For example, [Cilium](https://github.com/cilium/cilium) is cloud native networking, observability, and security platform that leverages eBPF to provide high speed high throughput networking with minimal operational overhead. Cilium doesn’t expect developers to code eBPF programs to control their network, instead it abstracts away eBPF and provides networking that just works - and works at scale. eBPF isn’t for users of Cilium, it is for Cilium itself.
+- For example, [Cilium](https://github.com/cilium/cilium) is cloud native networking, observability, and security platform that leverages eBPF to provide high speed high throughput networking with minimal operational overhead. Cilium doesn’t expect developers to code eBPF programs to control their network, instead it abstracts away eBPF and provides networking that just works - and works at scale. eBPF isn’t for users of Cilium, it is for Cilium itself.
 
-* [Akita](https://docs.akita.software/docs?utm_source=blog&utm_medium=link&utm_campaign=docs_from_blog) uses eBPF to support drop-in monitoring and observability. Typically, software teams need to include libraries and/or instrument their code in order to get the metrics and logs for observability. Startup cost and the work involved in thoroughly instrumenting code are both barriers to teams having the degree of visibility they want in their own systems. Using eBPF, the Akita agent is able to passively watch network traffic, sending network packets back for processing to the Akita cloud. The Akita cloud then reconstructs API structure and behavior from these packets, making it possible to support “drop-in” monitoring that does not require code changes. Akita users need to know nothing about eBPF; it’s simply what Akita uses under the hood in order to support quick installation and provide instant API dashboards.
+- [Akita](https://docs.akita.software/docs?utm_source=blog&utm_medium=link&utm_campaign=docs_from_blog) uses eBPF to support drop-in monitoring and observability. Typically, software teams need to include libraries and/or instrument their code in order to get the metrics and logs for observability. Startup cost and the work involved in thoroughly instrumenting code are both barriers to teams having the degree of visibility they want in their own systems. Using eBPF, the Akita agent is able to passively watch network traffic, sending network packets back for processing to the Akita cloud. The Akita cloud then reconstructs API structure and behavior from these packets, making it possible to support “drop-in” monitoring that does not require code changes. Akita users need to know nothing about eBPF; it’s simply what Akita uses under the hood in order to support quick installation and provide instant API dashboards.
 
 <img src="akita.gif" alt="Akita Software overview graphs">
 
