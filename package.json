@@ -29,7 +29,7 @@
     "gatsby-remark-prismjs": "^6.23.0",
     "gatsby-remark-responsive-iframe": "^5.23.0",
     "gatsby-source-filesystem": "^4.24.0",
-    "gatsby-transformer-remark": "^5.23.1",
+    "gatsby-transformer-remark": "^6.1.0",
     "gatsby-transformer-sharp": "^4.24.0",
     "infinite-react-carousel": "^1.2.11",
     "lodash": "^4.17.21",
