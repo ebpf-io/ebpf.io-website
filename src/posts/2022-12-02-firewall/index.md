@@ -9,6 +9,6 @@ categories:
 
 {{preview}}
 
-A walk through of the code and how the firewall works
+A walk through of the user and kernel space code and how the firewall works
 
 {{/preview}}
