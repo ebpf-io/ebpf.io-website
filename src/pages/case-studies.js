@@ -27,6 +27,7 @@ import Yahoo from "../assets/case-studies/yahoo.inline.svg";
 import Bytedance from "../assets/case-studies/byte-dance.inline.svg";
 import F5 from "../assets/case-studies/f5.inline.svg";
 import LinkedIn from "../assets/case-studies/linkedin.inline.svg";
+import NYT from "../assets/case-studies/nyt.inline.svg";
 
 const cardsData = [
   {
@@ -323,6 +324,17 @@ const cardsData = [
       {
         name: "Blog",
         href: "https://engineering.linkedin.com/blog/2022/skyfall--ebpf-agent-for-infrastructure-observability",
+      },
+    ],
+  },
+  {
+    Logo: NYT,
+    description:
+      "<strong>The New York Times</strong> uses eBPF for networking",
+    links: [
+      {
+        name: "Video",
+        href: "https://www.youtube.com/watch?v=qmrHONqsV2M&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D",
       },
     ],
   },
