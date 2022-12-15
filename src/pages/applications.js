@@ -27,10 +27,11 @@ import pyroscopeLogo from "../assets/projects-logos/pyroscope.svg";
 import parcaLogo from "../assets/projects-logos/parca.svg";
 import keplerLogo from "../assets/projects-logos/kepler.gif";
 import majorProjects from "../data/major-projects";
+import sysinternalsLogo from "../assets/projects-logos/sysinternals.svg";
 import emergingProjects from "../data/emerging-projects";
 
 const ProjectDescriptions = () => {
-  const { tetragonLogo, loxiLBLogo, pwruLogo, wachyLogo, skywalkingLogo, pulsarLogo, deepflowLogo, inspektorGadgetLogo, bpftraceLogo, eunomiaLogo, kindlingLogo, sysinternalsLogo } = useStaticQuery(graphql`
+  const { tetragonLogo, loxiLBLogo, pwruLogo, wachyLogo, skywalkingLogo, pulsarLogo, deepflowLogo, inspektorGadgetLogo, bpftraceLogo, eunomiaLogo, kindlingLogo } = useStaticQuery(graphql`
   query {
     tetragonLogo: file(relativePath: {regex: "/projects-logos/tetragon.png/"}) {
       childImageSharp {
@@ -87,11 +88,6 @@ const ProjectDescriptions = () => {
         gatsbyImageData(width: 128, quality: 95)
       }
     }
-    sysinternalsLogo: file(relativePath: {regex: "/projects-logos/sysinternals.svg/"}) {
-        childImageSharp {
-          gatsbyImageData(width: 128, quality: 95)
-        }
-      }    
   }
   `)
 
