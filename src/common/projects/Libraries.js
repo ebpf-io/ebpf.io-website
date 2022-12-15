@@ -164,7 +164,7 @@ const Libraries = () => {
         <TitleWithAnchor headerClassName="projects-title" className="projects-wrapper-title" >eBPF Auxiliary Libraries</TitleWithAnchor>
         <ul>
           {auxiliaryLibraries.map((item, index) => (
-            <AuxiliaryLibrariesCard {...item} logoSize="sm" key={index}/>
+            <AuxiliaryLibrariesCard {...item} key={index}/>
           ))}
         </ul>
       </div>
