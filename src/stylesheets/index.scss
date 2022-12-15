@@ -1146,6 +1146,59 @@ code {
     font-weight: 500;
     margin-top: 10px;
   }
+
+  .auxiliary-libraries-box {
+    border: 2px solid #f2f2f2;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    padding: 28px 40px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+
+    @media #{$tablet} {
+      flex-direction: column;
+      padding: 24px 28px 28px;
+    }
+
+    @media #{$mobile} {
+      padding: 20px 24px 24px;
+    }
+  }
+
+  .auxiliary-libraries-header {
+    display: flex;
+    flex-direction: column;
+    min-width: 295px;
+    padding-right: 48px;
+
+    @media #{$tablet} {
+      padding-right: 0;
+      min-width: 0;
+    }
+  }
+
+  .auxiliary-libraries-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 790px;
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    @media #{$tablet} {
+      flex-direction: column;
+      margin-top: 28px;
+
+      & > p:first-child {
+        text-align: center;
+      }
+    }
+  }
 }
 
 .page-contribute {
