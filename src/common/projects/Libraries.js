@@ -37,11 +37,6 @@ const ebpfLibraries = [
         name: 'libbpf',
         description: '<a href="https://github.com/libbpf/libbpf" target="_blank" rel="noreferrer noopener">libbpf</a> is a C/C++ based library which is maintained as part of the upstream Linux kernel. It contains an eBPF loader which takes over processing LLVM generated eBPF ELF files for loading into the kernel. libbpf received a major boost in capabilities and sophistication and closed many existing gaps with BCC as a library. It also supports important features not available in BCC such as global variables and BPF skeletons.'
       },
-      {
-        label: 'Emerging',
-        name: 'libxdp',
-        description: '<a href="https://github.com/xdp-project/xdp-tools" target="_blank" rel="noreferrer noopener">libxdp</a> is an XDP-specific library that sits on top of libbpf and implements a couple of XDP features: it supports loading of multiple programs to run in sequence on the same interface, and it contains helper functions for configuring AF_XDP sockets as well as reading and writing packets from these sockets.'
-      },
     ]
   },
   {
@@ -73,7 +68,7 @@ const auxiliaryLibraries = [
     title: 'Utilities for use with XD',
     description: 'libxdp is an XDP-specific library that sits on top of libbpf and implements a couple of XDP features: it supports loading of multiple programs to run in sequence on the same interface, and it contains helper functions for configuring AF_XDP sockets as well as reading and writing packets from these sockets.',
     urls: [
-      { label: 'GitHub', url: 'https://github.com/ebpf-io/ebpf.io-website/pull/237',},
+      { label: 'GitHub', url: 'https://github.com/xdp-project/xdp-tools',},
     ],
   },
 ];
