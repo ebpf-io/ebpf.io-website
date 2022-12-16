@@ -120,6 +120,27 @@ const emergingProjects = [
     ],
   },
   {
+    logoUrl: "https://github.com/Sysinternals/SysmonForLinux",
+    name: "Sysinternals Sysmon for Linux",
+    logoName: 'sysinternalsLogo',
+    title: "Security Observability",
+    description: `Sysmon for Linux is a tool that monitors and logs system activity including process lifetime, network 
+    connections, file system writes, and more. Sysmon works across reboots and supports advanced filtering to help identify
+    malicious activity as well as how intruders and malware operate on your network.`,
+    urls: [
+      { label: "GitHub", url: "https://github.com/Sysinternals/SysmonForLinux" },
+    ],
+  },
+  {
+    logoUrl: "https://github.com/cilium/pwru",
+    name: "pwru",
+    logoName: 'pwruLogo',
+    title: "eBPF-based Linux kernel network packet tracer",
+    description:
+      "pwru is an eBPF-based tool for tracing network packets in the Linux kernel with advanced filtering capabilities. It allows fine-grained introspection of kernel state to facilitate debugging network connectivity issues.",
+    urls: [{ label: "GitHub", url: "https://github.com/cilium/pwru" }],
+  },
+  {
     logoUrl: "https://github.com/solo-io/bumblebee",
     name: "BumbleBee",
     logoName: 'bumblebeeLogo',
@@ -132,15 +153,6 @@ const emergingProjects = [
       { label: "GitHub", url: "https://github.com/solo-io/bumblebee" },
       { label: "Website", url: "https://bumblebee.io/" },
     ],
-  },
-  {
-    logoUrl: "https://github.com/cilium/pwru",
-    name: "pwru",
-    logoName: 'pwruLogo',
-    title: "eBPF-based Linux kernel network packet tracer",
-    description:
-      "pwru is an eBPF-based tool for tracing network packets in the Linux kernel with advanced filtering capabilities. It allows fine-grained introspection of kernel state to facilitate debugging network connectivity issues.",
-    urls: [{ label: "GitHub", url: "https://github.com/cilium/pwru" }],
   },
   {
     logoUrl: "https://github.com/iovisor/ply",
@@ -156,17 +168,6 @@ const emergingProjects = [
     urls: [
       { label: "GitHub", url: "https://github.com/iovisor/ply" },
       { label: "Website", url: "https://wkz.github.io/ply/" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/rubrikinc/wachy",
-    name: "wachy",
-    logoName: 'wachyLogo',
-    title: "UI for interactive eBPF-based userspace performance debugging",
-    description: `Wachy is a profiler that uses eBPF to trace arbitrary compiled binaries and functions at runtime. It aims to make eBPF uprobe-based debugging much easier to use by displaying traces in a UI next to the source code, and allowing interactive drilldown analysis.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/rubrikinc/wachy" },
-      { label: "Website", url: "https://rubrikinc.github.io/wachy/" },
     ],
   },
   {
@@ -207,6 +208,17 @@ const emergingProjects = [
     ],
   },
   {
+    logoUrl: "https://github.com/rubrikinc/wachy",
+    name: "wachy",
+    logoName: 'wachyLogo',
+    title: "UI for interactive eBPF-based userspace performance debugging",
+    description: `Wachy is a profiler that uses eBPF to trace arbitrary compiled binaries and functions at runtime. It aims to make eBPF uprobe-based debugging much easier to use by displaying traces in a UI next to the source code, and allowing interactive drilldown analysis.`,
+    urls: [
+      { label: "GitHub", url: "https://github.com/rubrikinc/wachy" },
+      { label: "Website", url: "https://rubrikinc.github.io/wachy/" },
+    ],
+  },
+  {
     logoUrl: "https://github.com/kindlingproject/kindling",
     name: "Kindling",
     logoName: 'kindlingLogo',
@@ -233,33 +245,6 @@ const emergingProjects = [
     ],
   },
   {
-    logoUrl: "https://github.com/l3af-project",
-    name: "L3AF",
-    logoName: 'l3afLogo',
-    title: "Complete lifecycle management of eBPF programs",
-    description: `L3AF is a platform to launch and manage eBPF programs in distributed
-    environments. L3AF empowers users to compose multiple eBPF programs
-    together to solve unique problems in different environments. Using
-    the APIs provided by L3AF, these eBPF programs can be reconfigured,
-    updated, inspected, and reordered on-the-fly. L3AF also provides
-    configurable metrics for the eBPF programs it has launched.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/l3af-project" },
-      { label: "Website", url: "https://l3af.io" },
-    ],
-  },
-  {
-    logoUrl: "https://github.com/loxilb-io",
-    name: "LoxiLB",
-    logoName: 'loxiLBLogo',
-    title: "eBPF based cloud-native load-balancer for 5G Edge",
-    description: `LoxiLB is an open-source cloud-native "external" service load-balancer for cloud-native 5G/edge workloads written from scratch using eBPF as its core-engine and based on Go Language. LoxiLB turns Kubernetes network load balancing for 5G/Edge services into high speed, flexible and programmable LB services.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/loxilb-io" },
-      { label: "Website", url: "https://www.loxilb.io/" },
-    ],
-  },
-  {
     logoUrl: "https://github.com/sustainable-computing-io/kepler",
     name: "Kepler",
     logoName: 'keplerLogo',
@@ -273,6 +258,36 @@ const emergingProjects = [
         url: "https://github.com/sustainable-computing-io/kepler",
       },
       { label: "Website", url: "https://sustainable-computing.io" },
+    ],
+  },
+  {
+    logoUrl: "https://github.com/eunomia-bpf/eunomia-bpf",
+    name: "eunomia-bpf",
+    logoName: 'eunomiaLogo',
+    title: "eBPF programs in a WASM module or JSON",
+    description: `Eunomia-bpf is a dynamic loading library, based on libbpf, and a compiler toolchain.
+    Eunomia-bpf simplifies building eBPF tools and allows you to package, distribute,
+    and run eBPF programs in JSON format or as a WASM module. With eunomia-bpf, you can write kernel eBPF code
+    and automatically expose your data from the kernel and interact with eBPF program in user space with a WASM runtime.`,
+    urls: [
+      { label: "GitHub", url: "https://github.com/eunomia-bpf/eunomia-bpf" },
+      { label: "Website", url: "https://eunomia-bpf.github.io/" },
+    ],
+  },
+  {
+    logoUrl: "https://github.com/l3af-project",
+    name: "L3AF",
+    logoName: 'l3afLogo',
+    title: "Complete lifecycle management of eBPF programs",
+    description: `L3AF is a platform to launch and manage eBPF programs in distributed
+    environments. L3AF empowers users to compose multiple eBPF programs
+    together to solve unique problems in different environments. Using
+    the APIs provided by L3AF, these eBPF programs can be reconfigured,
+    updated, inspected, and reordered on-the-fly. L3AF also provides
+    configurable metrics for the eBPF programs it has launched.`,
+    urls: [
+      { label: "GitHub", url: "https://github.com/l3af-project" },
+      { label: "Website", url: "https://l3af.io" },
     ],
   },
   {
@@ -291,31 +306,16 @@ const emergingProjects = [
     ],
   },
   {
-    logoUrl: "https://github.com/eunomia-bpf/eunomia-bpf",
-    name: "eunomia-bpf",
-    logoName: 'eunomiaLogo',
-    title: "eBPF programs in a WASM module or JSON",
-    description: `Eunomia-bpf is a dynamic loading library, based on libbpf, and a compiler toolchain.
-    Eunomia-bpf simplifies building eBPF tools and allows you to package, distribute,
-    and run eBPF programs in JSON format or as a WASM module. With eunomia-bpf, you can write kernel eBPF code
-    and automatically expose your data from the kernel and interact with eBPF program in user space with a WASM runtime.`,
+    logoUrl: "https://github.com/loxilb-io",
+    name: "LoxiLB",
+    logoName: 'loxiLBLogo',
+    title: "eBPF based cloud-native load-balancer for 5G Edge",
+    description: `LoxiLB is an open-source cloud-native "external" service load-balancer for cloud-native 5G/edge workloads written from scratch using eBPF as its core-engine and based on Go Language. LoxiLB turns Kubernetes network load balancing for 5G/Edge services into high speed, flexible and programmable LB services.`,
     urls: [
-      { label: "GitHub", url: "https://github.com/eunomia-bpf/eunomia-bpf" },
-      { label: "Website", url: "https://eunomia-bpf.github.io/" },
+      { label: "GitHub", url: "https://github.com/loxilb-io" },
+      { label: "Website", url: "https://www.loxilb.io/" },
     ],
   },
-  {
-    logoUrl: "https://github.com/Sysinternals/SysmonForLinux",
-    name: "Sysinternals Sysmon for Linux",
-    logoName: 'sysinternalsLogo',
-    title: "Security Observability",
-    description: `Sysmon for Linux is a tool that monitors and logs system activity including process lifetime, network 
-    connections, file system writes, and more. Sysmon works across reboots and supports advanced filtering to help identify
-    malicious activity as well as how intruders and malware operate on your network.`,
-    urls: [
-      { label: "GitHub", url: "https://github.com/Sysinternals/SysmonForLinux" },
-    ],
-  },  
 ];
 
 export default emergingProjects;
