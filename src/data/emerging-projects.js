@@ -304,6 +304,18 @@ const emergingProjects = [
       { label: "Website", url: "https://eunomia-bpf.github.io/" },
     ],
   },
+  {
+    logoUrl: "https://github.com/Sysinternals/SysmonForLinux",
+    name: "Sysinternals Sysmon for Linux",
+    logoName: 'sysinternalsLogo',
+    title: "Security Observability",
+    description: `Sysmon for Linux is a tool that monitors and logs system activity including process lifetime, network 
+    connections, file system writes, and more. Sysmon works across reboots and supports advanced filtering to help identify
+    malicious activity as well as how intruders and malware operate on your network.`,
+    urls: [
+      { label: "GitHub", url: "https://github.com/Sysinternals/SysmonForLinux" },
+    ],
+  },  
 ];
 
 export default emergingProjects;
