@@ -65,7 +65,7 @@ const ebpfLibraries = [
 const auxiliaryLibraries = [
   {
     name: 'libxdp',
-    title: 'Utilities for use with XD',
+    title: 'Utilities for use with XDP',
     description: 'libxdp is an XDP-specific library that sits on top of libbpf and implements a couple of XDP features: it supports loading of multiple programs to run in sequence on the same interface, and it contains helper functions for configuring AF_XDP sockets as well as reading and writing packets from these sockets.',
     urls: [
       { label: 'GitHub', url: 'https://github.com/xdp-project/xdp-tools',},
@@ -133,9 +133,10 @@ const AuxiliaryLibrariesCard = ({name, title, description, urls}) => {
               className="project-link"
               href={url}
               target="_blank"
+              rel="noopener nofererrer"
               key={index}
             >
-              <img src={icons[label]} width='26px' height='30px'/>
+              <img src={icons[label]} width={26} height={30}/>
               <b>{label}</b>
             </a>
           ))}
