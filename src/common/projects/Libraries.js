@@ -133,7 +133,7 @@ const AuxiliaryLibrariesCard = ({name, title, description, urls}) => {
               className="project-link"
               href={url}
               target="_blank"
-              rel="noopener nofererrer"
+              rel="noopener noreferrer"
               key={index}
             >
               <img src={icons[label]} width={26} height={30}/>
