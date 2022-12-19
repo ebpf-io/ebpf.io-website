@@ -5,8 +5,13 @@ import rustLogo from './assets/rust.svg';
 import cppLogo from './assets/cpp.svg';
 import cn from 'classnames';
 import { TitleWithAnchor } from '../TitleWithAnchor';
+import githubIcon from './assets/github-icon.svg';
 
-const items = [
+const icons = {
+  GitHub: githubIcon,
+};
+
+const ebpfLibraries = [
   {
     name: 'Golang',
     logo: golangLogo,
@@ -32,11 +37,6 @@ const items = [
         name: 'libbpf',
         description: '<a href="https://github.com/libbpf/libbpf" target="_blank" rel="noreferrer noopener">libbpf</a> is a C/C++ based library which is maintained as part of the upstream Linux kernel. It contains an eBPF loader which takes over processing LLVM generated eBPF ELF files for loading into the kernel. libbpf received a major boost in capabilities and sophistication and closed many existing gaps with BCC as a library. It also supports important features not available in BCC such as global variables and BPF skeletons.'
       },
-      {
-        label: 'Emerging',
-        name: 'libxdp',
-        description: '<a href="https://github.com/xdp-project/xdp-tools" target="_blank" rel="noreferrer noopener">libxdp</a> is an XDP-specific library that sits on top of libbpf and implements a couple of XDP features: it supports loading of multiple programs to run in sequence on the same interface, and it contains helper functions for configuring AF_XDP sockets as well as reading and writing packets from these sockets.'
-      },
     ]
   },
   {
@@ -61,6 +61,17 @@ const items = [
     ]
   },
 ]
+
+const auxiliaryLibraries = [
+  {
+    name: 'libxdp',
+    title: 'Utilities for use with XDP',
+    description: 'libxdp is an XDP-specific library that sits on top of libbpf and implements a couple of XDP features: it supports loading of multiple programs to run in sequence on the same interface, and it contains helper functions for configuring AF_XDP sockets as well as reading and writing packets from these sockets.',
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/xdp-project/xdp-tools',},
+    ],
+  },
+];
 
 const LibraryItem = ({name, description, label, setSelected, selected, hasMultipleLibraries}) => {
   const handleClick = () => {
@@ -99,14 +110,57 @@ const LibraryCard = ({name, logo, libraries}) => {
     </li>
 )} 
 
+const AuxiliaryLibrariesCard = ({name, title, description, urls}) => {
+  return (
+<li className="auxiliary-libraries-box">
+    <div className='auxiliary-libraries-header'>
+      <TitleWithAnchor
+        headerClassName="projects-common-title"
+        headerTag="h3"
+      >
+        {name}
+      </TitleWithAnchor>
+        {title && <div className="project-minor-title">
+          {title}
+      </div>}
+    </div>
+    <div className='project-inner'>
+      <div className={cn("auxiliary-libraries-body")}>
+        <div className='project-description' dangerouslySetInnerHTML={{__html: description}}></div>
+        {urls && <div className="project-links-container">
+          {urls.map(({label, url}, index) => (
+            <a
+              className="project-link"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+            >
+              <img src={icons[label]} width={26} height={30}/>
+              <b>{label}</b>
+            </a>
+          ))}
+        </div>}
+      </div>
+    </div>
+  </li>
+  );
+};
+
 const Libraries = () => {
   return (
     <div className="libraries-container">
       <div className="libraries-inner">
         <TitleWithAnchor headerClassName="projects-title" className="projects-wrapper-title" >eBPF Libraries</TitleWithAnchor>
         <ul className='libraries-list'>
-          {items.map((item) => (
+          {ebpfLibraries.map((item) => (
             <LibraryCard {...item} key={item.name}/>
+          ))}
+        </ul>
+        <TitleWithAnchor headerClassName="projects-title" className="projects-wrapper-title" >eBPF Auxiliary Libraries</TitleWithAnchor>
+        <ul>
+          {auxiliaryLibraries.map((item, index) => (
+            <AuxiliaryLibrariesCard {...item} key={index}/>
           ))}
         </ul>
       </div>
