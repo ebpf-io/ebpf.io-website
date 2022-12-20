@@ -83,7 +83,7 @@ class Description extends React.Component {
           <h1>eBPF Documentation</h1>
           <h2>What is eBPF?</h2>
     <p>
-      eBPF (which is no longer an acronym for anything) is a revolutionary technology with origins in the Linux kernel that can run sandboxed programs in a privileged context such as the operating system kernel. It is used to safely and efficiently extend the capabilities of the kernel without requiring to change kernel source code or load kernel modules.
+      eBPF is a revolutionary technology with origins in the Linux kernel that can run sandboxed programs in a privileged context such as the operating system kernel. It is used to safely and efficiently extend the capabilities of the kernel without requiring to change kernel source code or load kernel modules.
     </p>
     <p>
       Historically, the operating system has always been an ideal place to implement observability, security, and networking functionality due to the kernel’s privileged ability to oversee and control the entire system. At the same time, an operating system kernel is hard to evolve due to its central role and high requirement towards stability and security. The rate of innovation at the operating system level has thus traditionally been lower compared to functionality implemented outside of the operating system.
@@ -104,6 +104,19 @@ class Description extends React.Component {
             to eBPF, find further reading material or make your first steps to
             becoming contributors to major eBPF projects, eBPF.io will help you
             along the way.
+          </p>
+	  <h3>What do eBPF and BPF stand for?</h3>
+          <p>
+            BPF originally stood for Berkeley Packet Filter, but now that eBPF 
+	    (extended BPF) can do so much more than packet filtering, the acronym no 
+	    longer makes sense. eBPF is now considered a standalone term that 
+	    doesn’t stand for anything.
+
+            In the Linux source code, the term BPF persists, and in tooling and
+	    in documentation, the terms BPF and eBPF are generally used interchangeably.
+
+            The original BPF is sometimes referred to as cBPF (classic BPF)
+	    to distinguish it from eBPF.
           </p>
           <h3>What is the bee named?</h3>
           <p>
