@@ -8,6 +8,7 @@ import LanguageDropdown from "../common/footer/LanguageDropdown.js";
 import "./footer.scss";
 import "./header.scss";
 import "./index.css";
+import "./fonts.css";
 import "./menu-icon.scss";
 
 import logo from "../assets/logo.png";
