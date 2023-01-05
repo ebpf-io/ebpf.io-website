@@ -70,6 +70,7 @@ const majorProjects = [
     urls: [
       {label: 'Git repo', url: 'https://gcc.gnu.org/git.html'},
       {label: 'Website', url: 'https://gcc.gnu.org/'},
+      {label: 'Compiler Explorer', url: 'https://godbolt.org/z/hWEW5jePs'},
       {label: 'Mailing list', url: 'https://gcc.gnu.org/lists.html'},
       {label: 'Bugtracker', url: 'https://gcc.gnu.org/bugzilla/'},
       {label: 'Docs', url: 'https://gcc.gnu.org/onlinedocs/gcc/eBPF-Options.html'},

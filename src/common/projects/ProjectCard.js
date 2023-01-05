@@ -25,6 +25,7 @@ const icons = {
   Patches: patchesIcon,
   Docs: docsIcon,
   'Office hours': officeHoursIcon,
+  'Compiler Explorer': websiteIcon,
   'Slack channel': slackChannelIcon,
   'Bugtracker': bugtracker,
   'Crate': packageIcon,
