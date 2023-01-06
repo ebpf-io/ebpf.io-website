@@ -112,6 +112,11 @@ const conferencesItems = [
     title: "bpfconf (LSF/MM/BPF)",
     subitems: [
       {
+        name: "2023 (CFP)",
+        linkUrl: "https://lore.kernel.org/bpf/Y7hDVliKq+PzY1yY@localhost.localdomain/",
+        linkTarget: "_blank",
+      },
+      {
         name: "2022",
         linkUrl: "http://vger.kernel.org/bpfconf2022.html",
         linkTarget: "_blank",
