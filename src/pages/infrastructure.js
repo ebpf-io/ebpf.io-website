@@ -57,8 +57,9 @@ const majorProjects = [
     urls: [
       {label: 'GitHub', url: 'https://github.com/llvm/llvm-project/'},
       {label: 'Website', url: 'https://llvm.org/'},
-      {label: 'Patches', url: 'https://reviews.llvm.org/search/query/ABG0ZPUPkDGb/#R'},
+      {label: 'Compiler Explorer', url: 'https://godbolt.org/z/1aoPjKxfG'},
       {label: 'Bugtracker', url: 'https://github.com/llvm/llvm-project/labels/backend:BPF'},    
+      {label: 'Patches', url: 'https://reviews.llvm.org/search/query/ABG0ZPUPkDGb/#R'},
     ],
   },
   {
@@ -71,8 +72,8 @@ const majorProjects = [
       {label: 'Git repo', url: 'https://gcc.gnu.org/git.html'},
       {label: 'Website', url: 'https://gcc.gnu.org/'},
       {label: 'Compiler Explorer', url: 'https://godbolt.org/z/hWEW5jePs'},
-      {label: 'Mailing list', url: 'https://gcc.gnu.org/lists.html'},
       {label: 'Bugtracker', url: 'https://gcc.gnu.org/bugzilla/'},
+      {label: 'Mailing list', url: 'https://gcc.gnu.org/lists.html'},
       {label: 'Docs', url: 'https://gcc.gnu.org/onlinedocs/gcc/eBPF-Options.html'},
     ],
   },
