@@ -7,6 +7,7 @@ import Dropdown from "../common/header/Dropdown.js";
 import LanguageDropdown from "../common/footer/LanguageDropdown.js";
 import "./footer.scss";
 import "./header.scss";
+import "./fonts.css";
 import "./index.css";
 import "./menu-icon.scss";
 
