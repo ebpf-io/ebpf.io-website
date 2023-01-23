@@ -17,17 +17,19 @@ const emergingProjects = [
     ],
   },
   {
-    logoUrl: "https://github.com/ehids/ecapture",
+    logoUrl: "https://github.com/gojue/ecapture",
     name: "eCapture",
     logoName: 'ecaptureLogo',
     title: "SSL/TLS capture tool using eBPF",
-    description: `eCapture is a tool that can capture plaintext without a CA
-    certificate. It supports TLS encryption libraries such as
-    openssl/gnutls/nspr etc. The userspace code is written in Go and
-    uses cilium/ebpf. It can work on Linux Kernel 4.18 and later, and
-    supports CO-RE features. At the same time, it also works without
-    BTF.`,
-    urls: [{ label: "GitHub", url: "https://github.com/ehids/ecapture" }],
+    description: `eCapture is a Go language-written tool that can capture HTTPS/TLS 
+    plaintext without a CA certificate. It supports TLS encryption libraries such as 
+    openssl, boringssl, gnutls, and nspr. It can run on x86_64 CPU architectures with 
+    Linux kernel 4.18 or higher, and aarch64 CPU architectures with Linux/Android 
+    kernel 5.5 or higher, supporting both CO-RE and non-CO-RE modes without BTF.`,
+    urls: [
+        { label: "GitHub", url: "https://github.com/gojue/ecapture" },
+        { label: "Website", url: "https://ecapture.cc/"},
+    ],
   },
   {
     logoUrl: "https://github.com/parca-dev/parca",
