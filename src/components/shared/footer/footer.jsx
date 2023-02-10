@@ -144,6 +144,7 @@ const Footer = () => (
                         theme="white"
                         to={to}
                         target={target || '_self'}
+                        rel={target ? 'noopener noreferrer' : null}
                       >
                         {text}
                       </Link>
@@ -185,11 +186,18 @@ const Footer = () => (
 
         <span className="text-sm text-gray-70 md:mt-6">
           The content of the{' '}
-          <Link className="font-medium" theme="white" to="/">
+          <Link className="!inline font-medium" theme="white" to="/">
             ebpf.io
           </Link>{' '}
           website is licensed under a{' '}
-          <Link theme="white" size="sm" to="https://creativecommons.org/licenses/by/4.0/">
+          <Link
+            className="!inline"
+            theme="white"
+            size="sm"
+            to="https://creativecommons.org/licenses/by/4.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Creative Commons Attribution 4.0 International License
           </Link>
           .

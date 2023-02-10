@@ -54,14 +54,17 @@ const headerMenu = [
           {
             text: '2022 (NA)',
             to: 'https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/schedule/',
+            target: '_blank',
           },
           {
             text: '2022 (EU)',
             to: 'https://events.linuxfoundation.org/cloud-native-ebpf-day-europe/program/schedule/',
+            target: '_blank',
           },
           {
             text: '2021 (NA)',
             to: 'https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/',
+            target: '_blank',
           },
         ],
       },
@@ -71,26 +74,32 @@ const headerMenu = [
           {
             text: '2022',
             to: 'https://lpc.events/event/16/sessions/131/#all',
+            target: '_blank',
           },
           {
             text: '2021',
             to: 'https://linuxplumbersconf.org/event/11/sessions/120/#all',
+            target: '_blank',
           },
           {
             text: '2020',
             to: 'https://linuxplumbersconf.org/event/7/sessions/91/#all',
+            target: '_blank',
           },
           {
             text: '2019',
             to: 'https://linuxplumbersconf.org/event/4/sessions/62/#20190911',
+            target: '_blank',
           },
           {
             text: '2018',
             to: 'http://vger.kernel.org/lpc-bpf2018.html',
+            target: '_blank',
           },
           {
             text: '2017',
             to: 'https://blog.linuxplumbersconf.org/2017/ocw/events/LPC2017/schedule.html#day_2017_09_15',
+            target: '_blank',
           },
         ],
       },
@@ -104,6 +113,7 @@ const headerMenu = [
           {
             text: '2019',
             to: 'http://vger.kernel.org/bpfconf2019.html',
+            target: '_blank',
           },
         ],
       },
@@ -119,14 +129,17 @@ const headerMenu = [
       {
         text: 'Stack Overflow',
         to: 'https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace',
+        target: '_blank',
       },
       {
         text: 'r/eBPF',
         to: 'https://www.reddit.com/r/eBPF/',
+        target: '_blank',
       },
       {
         text: 'eCHO',
         to: 'https://github.com/isovalent/eCHO',
+        target: '_blank',
       },
       {
         text: 'Case Studies',
