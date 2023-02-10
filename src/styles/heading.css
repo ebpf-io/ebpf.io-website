@@ -1,0 +1,24 @@
+@layer components {
+  .heading-11xl {
+    @apply font-sans text-11xl lg:text-10xl md:text-9xl sm:text-8xl xs:text-7xl;
+  }
+  .heading-10xl {
+    @apply font-sans text-10xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-5xl;
+  }
+
+  .heading-9xl {
+    @apply font-sans text-9xl lg:text-8xl md:text-7xl sm:text-6xl;
+  }
+
+  .heading-8xl {
+    @apply font-sans text-8xl lg:text-7xl md:text-6xl sm:text-5xl;
+  }
+
+  .heading-7xl {
+    @apply font-sans text-7xl lg:text-6xl md:text-5xl sm:text-4xl;
+  }
+
+  .heading-6xl {
+    @apply font-sans text-6xl lg:text-5xl md:text-4xl;
+  }
+}

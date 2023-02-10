@@ -1,0 +1,13 @@
+@layer components {
+  .container {
+    @apply mx-auto max-w-[1216px] lg:px-10 md:px-7 sm:px-4;
+  }
+
+  .container-sm {
+    @apply mx-auto max-w-[800px] lg:px-10 md:px-7 sm:px-4;
+  }
+
+  .not-container {
+    @apply mx-0 max-w-none px-0;
+  }
+}

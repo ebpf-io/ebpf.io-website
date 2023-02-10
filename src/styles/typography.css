@@ -1,0 +1,109 @@
+@layer components {
+  .prose-content {
+    @apply prose prose-headings:font-sans prose-headings:font-semibold prose-headings:leading-tight;
+
+    a {
+      @apply no-underline transition-colors duration-200;
+    }
+
+    ul,
+    ol {
+      > li {
+        &::marker {
+          @apply font-light text-black;
+        }
+      }
+    }
+
+    .table-wrapper {
+      @apply md:overflow-x-auto;
+    }
+
+    table {
+      @apply w-full border-hidden md:min-w-[500px];
+
+      th {
+        @apply border border-gray-80 bg-opacity-30 p-3.5 md:px-2;
+      }
+
+      td {
+        @apply border border-gray-80 p-3.5 md:px-2;
+      }
+    }
+
+    pre {
+      @apply !bg-black;
+
+      code {
+        text-shadow: unset !important;
+
+        @apply highlighted-code !text-base !text-white;
+      }
+    }
+
+    :not(pre) > code {
+      @apply !rounded-sm !border !border-[#E5E5E5] bg-[#FBFBFB] !px-1.5 !py-0.5 !font-normal !text-black;
+
+      &::before,
+      &::after {
+        @apply hidden;
+      }
+    }
+
+    iframe,
+    video {
+      @apply mx-auto rounded-md;
+    }
+  }
+
+  .prose-static {
+    @apply prose-base;
+
+    a:not(.gatsby-resp-image-link) {
+      @apply relative font-semibold before:absolute before:-bottom-0.5 before:left-0 before:h-0.5 before:w-full before:bg-primary-yellow hover:text-gray-40;
+    }
+
+    h2 {
+      @apply heading-7xl mb-5 mt-10;
+    }
+
+    h3 {
+      @apply mt-7 mb-4 text-3xl md:text-2xl;
+    }
+
+    h4 {
+      @apply mt-5 mb-3 text-xl md:text-xl;
+    }
+  }
+
+  .prose-blog {
+    @apply prose-lg md:prose-base;
+
+    > *:first-child {
+      @apply mt-0;
+    }
+
+    a:not(.gatsby-resp-image-link) {
+      @apply text-[#305fe8] hover:text-black;
+    }
+
+    h2 {
+      &:first-of-type {
+        @apply mt-0;
+      }
+
+      @apply mt-12 mb-5 text-[30px] md:mt-10 md:mb-4 md:text-5xl sm:text-4xl;
+    }
+
+    h3 {
+      @apply mt-7 mb-5 text-3xl md:mt-6 md:mb-4 md:text-2xl;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply font-medium;
+    }
+  }
+}

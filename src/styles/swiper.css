@@ -1,0 +1,46 @@
+.community {
+  .swiper {
+    --scrollbar-width: calc(100vw - 100%);
+    --padding-width: calc((100vw - 1216px - var(--scrollbar-width)) / 2);
+
+    padding-left: var(--padding-width);
+    padding-right: var(--padding-width);
+
+    @screen lg {
+      padding-left: calc(var(--padding-width) + 40px);
+      padding-right: calc(var(--padding-width) + 40px);
+    }
+
+    @media (max-width: 1216px) {
+      @apply px-10;
+    }
+
+    @screen md {
+      @apply px-7;
+    }
+
+    @screen sm {
+      @apply px-4;
+    }
+
+    .swiper-wrapper {
+      @apply flex;
+    }
+
+    .swiper-slide {
+      @apply h-auto w-[592px] lg:w-[458px] md:w-[712px] sm:w-full;
+    }
+
+    .swiper-slide:last-child {
+      margin-right: 0 !important;
+    }
+
+    iframe {
+      @apply rounded-lg lg:rounded-[3px];
+    }
+  }
+
+  .swiper-button-disabled {
+    @apply pointer-events-none bg-gray-30 hover:bg-gray-30;
+  }
+}

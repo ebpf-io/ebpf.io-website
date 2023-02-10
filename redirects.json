@@ -1,0 +1,42 @@
+[
+  {
+    "fromPath": "/summit-2020",
+    "toPath": "/summit-2020.html"
+  },
+  {
+    "fromPath": "/summit-2021",
+    "toPath": "/summit-2021.html"
+  },
+  {
+    "fromPath": "/summit-2022",
+    "toPath": "/summit-2022.html"
+  },
+  {
+    "fromPath": "/summit-2021-ctf",
+    "toPath": "/summit-2021-ctf.html"
+  },
+  {
+    "fromPath": "/host-a-watch-party",
+    "toPath": "/host-a-watch-party.html"
+  },
+  {
+    "fromPath": "/swag",
+    "toPath": "/swag.html"
+  },
+  {
+    "fromPath": "/news/*",
+    "toPath": "/blog/*"
+  },
+  {
+    "fromPath": "/projects",
+    "toPath": "/applications"
+  },
+  {
+    "fromPath": "/summit-2022/day-1/",
+    "toPath": "https://youtu.be/0YqF45Kaapo"
+  },
+  {
+    "fromPath": "/summit-2022/day-2/",
+    "toPath": "https://youtu.be/a3AwA1VdohU"
+  }
+]

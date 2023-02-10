@@ -1,0 +1,115 @@
+@layer base {
+  @font-face {
+    font-family: 'Elza';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/elza/elza-regular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Elza Fallback';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arial');
+    ascent-override: 102.87%;
+    descent-override: 22.82%;
+    line-gap-override: 0%;
+    size-adjust: 97.78%;
+  }
+
+  @font-face {
+    font-family: 'Elza';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/elza/elza-medium.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Elza Fallback';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Arial');
+    ascent-override: 102.53%;
+    descent-override: 22.52%;
+    line-gap-override: 0%;
+    size-adjust: 101.25%;
+  }
+
+  @font-face {
+    font-family: 'Elza';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/elza/elza-semibold.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Elza Fallback';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Arial Bold');
+    ascent-override: 110.27%;
+    descent-override: 24.07%;
+    line-gap-override: 0%;
+    size-adjust: 96.75%;
+  }
+
+  @font-face {
+    font-family: 'Elza Text';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/elza-text/elza-text-light.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Elza Text Fallback';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Arial');
+    ascent-override: 105.26%;
+    descent-override: 24.89%;
+    line-gap-override: 0%;
+    size-adjust: 101.63%;
+  }
+
+  @font-face {
+    font-family: 'Elza Text';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/elza-text/elza-text-medium.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Elza Text Fallback';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Arial');
+    ascent-override: 105.03%;
+    descent-override: 25.55%;
+    line-gap-override: 0%;
+    size-adjust: 106.47%;
+  }
+
+  @font-face {
+    font-family: 'Elza Text';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/elza-text/elza-text-semibold.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Elza Text Fallback';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Arial Bold');
+    ascent-override: 112.59%;
+    descent-override: 27.7%;
+    line-gap-override: 0%;
+    size-adjust: 101.35%;
+  }
+}

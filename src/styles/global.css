@@ -1,0 +1,25 @@
+@layer base {
+  body {
+    @apply min-w-[320px] font-text font-light leading-normal text-black antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer utilities {
+  .btn-black-hover {
+    background: radial-gradient(
+        90.75% 100% at 50% 100%,
+        rgba(255, 238, 153, 0.18) 0%,
+        rgba(255, 238, 153, 0) 100%
+      ),
+      #242424;
+  }
+}
+
+@layer components {
+  .with-white-primary-yellow-link {
+    a {
+      @apply relative font-semibold text-white transition-colors duration-200 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-primary-yellow after:ease-in-out hover:text-primary-yellow;
+    }
+  }
+}

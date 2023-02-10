@@ -1,9 +1,0 @@
-# Redirect all pages under /news/ to the equivalent path under /blog/
-/news/* /blog/:splat
-/projects/ /applications/
-
-/summit-2022/day-1/ https://youtu.be/0YqF45Kaapo 
-/summit-2022/day-2/ https://youtu.be/a3AwA1VdohU
-
-# It should be at the end of the file in order to keep redirects on top of it working
-/* https://ebpf-summit-2021.netlify.app/:splat 200

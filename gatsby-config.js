@@ -1,19 +1,110 @@
-const parseHtml = require("./scripts/parse-html");
+// Gatsby has dotenv by default
+// eslint-disable-next-line import/no-extraneous-dependencies
+require('dotenv').config();
+
+const wrapESMPlugin = (name) =>
+  function wrapESM(opts) {
+    return async (...args) => {
+      const mod = await import(name);
+      const plugin = mod.default(opts);
+      return plugin(...args);
+    };
+  };
 
 module.exports = {
+  flags: { DEV_SSR: process.env.GATSBY_DEV_SSR || false },
   siteMetadata: {
-    siteTitle: `eBPF`,
+    siteTitle: 'eBPF - Introduction, Tutorials & Community Resources',
     siteDescription:
-      "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.",
-    siteUrl: "https://www.ebpf.io",
-    siteImage: '/images/ogimage.jpg',
+      'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.',
+    siteImage: '/images/social-preview.jpg',
+    siteLanguage: 'en',
+    siteUrl: process.env.GATSBY_DEFAULT_SITE_URL || 'http://localhost:8000',
+    authorName: 'Pixel Point',
   },
   plugins: [
-    "gatsby-plugin-catch-links",
-    "gatsby-plugin-netlify",
-    "gatsby-plugin-nprogress",
     {
-      resolve: "gatsby-plugin-svgr-svgo",
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'static-pages',
+        path: `${__dirname}/content/static-pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'blog-posts',
+        path: `${__dirname}/content/blog-posts/`,
+      },
+    },
+    'gatsby-plugin-image',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          quality: 85,
+          placeholder: 'none',
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
+        mdxOptions: {
+          remarkPlugins: [
+            // Add GitHub Flavored Markdown (GFM) support
+            // eslint-disable-next-line global-require
+            require('remark-gfm'),
+          ],
+          rehypePlugins: [wrapESMPlugin('rehype-slug')],
+        },
+        gatsbyRemarkPlugins: [
+          'gatsby-remark-copy-linked-files',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 960,
+              quality: 85,
+              withWebp: true,
+              backgroundColor: 'white',
+              disableBgImageOnAlpha: true,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-video',
+            options: {
+              width: 860,
+              height: 'auto',
+              preload: 'auto',
+              controls: true,
+            },
+          },
+          'gatsby-remark-responsive-iframe',
+        ],
+      },
+    },
+    'gatsby-plugin-twitter',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'ebpf-site',
+        short_name: 'ebpf',
+        start_url: '/',
+        display: 'minimal-ui',
+        icon: 'src/images/favicon.png',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-svgr-svgo',
       options: {
         inlineSvgOptions: [
           {
@@ -21,14 +112,15 @@ module.exports = {
             svgoConfig: {
               plugins: [
                 {
-                  name: "preset-default",
+                  name: 'preset-default',
                   params: {
                     overrides: {
                       removeViewBox: false,
                     },
                   },
                 },
-                "prefixIds",
+                'prefixIds',
+                'removeDimensions',
               ],
             },
           },
@@ -36,99 +128,24 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-canonical-urls',
+      resolve: 'gatsby-plugin-i18n',
       options: {
-        siteUrl: 'https://ebpf.io',
-      },
-    },
-    {
-      resolve: "gatsby-plugin-i18n",
-      options: {
-        langKeyDefault: "en",
+        langKeyDefault: 'en',
         prefixDefault: false,
         useLangKeyLayout: false,
       },
     },
     {
-      resolve: `gatsby-plugin-sharp`,
+      resolve: 'gatsby-plugin-gatsby-cloud',
       options: {
-        base64Width: 20,
-        forceBase64Format: `png`,
-        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
-        stripMetadata: true,
-        defaultQuality: 50,
-        failOnError: true,
+        headers: {
+          '/fonts/*': ['Cache-Control: public, max-age=31536000, immutable'],
+        },
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-96283704-3",
-        head: false,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require("node-sass"),
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/posts`,
-        name: "posts",
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/assets`,
-        name: "images",
-      },
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          "gatsby-remark-autolink-headers",
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              // Class prefix for <pre> tags containing syntax highlighting;
-              // defaults to 'language-' (eg <pre class="language-js">).
-              // If your site loads Prism into the browser at runtime,
-              // (eg for use with libraries like react-live),
-              // you may use this to prevent Prism from re-processing syntax.
-              // This is an uncommon use-case though;
-              // If you're unsure, it's best to use the default value.
-              classPrefix: "language-",
-            },
-          },
-          "gatsby-remark-copy-linked-files",
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 700,
-            },
-          },
-          `gatsby-remark-responsive-iframe`,
-          `gatsby-plugin-image`,
-          `gatsby-plugin-sharp`,
-          `gatsby-transformer-sharp`, // Needed for dynamic images
-        ],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "ebpf-site",
-        short_name: "ebpf",
-        start_url: "/",
-        display: "minimal-ui",
-        icon: "./src/favicon.png",
-      },
-    },
+    'gatsby-alias-imports',
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -136,54 +153,70 @@ module.exports = {
           {
             site {
               siteMetadata {
-                title
-                description
+                title: siteTitle
+                description: siteDescription
                 siteUrl
-                site_url: siteUrl
               }
             }
           }
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map((edge) => {
-                const { hasPreview, previewHtml, mainHtml } = parseHtml(
-                  edge.node
-                );
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: previewHtml,
-                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  custom_elements: [{ "content:encoded": mainHtml }],
-                });
-              });
-            },
+            serialize: ({ query: { site, allMdx } }) =>
+              allMdx.nodes.map(({ frontmatter, fields: { html } }) => {
+                const { path, date, externalUrl, description } = frontmatter;
+                const url = externalUrl || site.siteMetadata.siteUrl + path;
+                return {
+                  ...frontmatter,
+                  description,
+                  date,
+                  url,
+                  guid: url,
+                  custom_elements: [{ 'content:encoded': html }],
+                };
+              }),
             query: `
               {
-                allMarkdownRemark(
-                  limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] }
+                allMdx(
+                  filter: {
+                    internal: { contentFilePath: { regex: "/content/blog-posts/((?!README).)*$/" } }
+                    fields: { isDraft: { in: false } }
+                  }
+                  limit: 20
+                  sort: { frontmatter: { date: DESC } }
                 ) {
-                  edges {
-                    node {
+                  nodes {
+                    fields {
                       html
-                      id
-                      frontmatter {
-                        categories
-                        date
-                        path
-                        title
-                      }
+                    }
+                    frontmatter {
+                      title
+                      description
+                      date
+                      externalUrl
+                      path
                     }
                   }
                 }
               }
             `,
-            output: "/blog/rss.xml",
-            title: "eBPF.io / Blog",
+            output: '/blog/rss.xml',
+            title: 'eBPF - The latest news, updates and articles covering eBPF and related topics.',
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: process.env.GATSBY_DEFAULT_SITE_URL,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-96283704-3',
+        head: false,
       },
     },
   ],
