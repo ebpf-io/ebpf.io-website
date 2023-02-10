@@ -33,7 +33,7 @@ const items = [
     review:
       'eBPF has resulted in a new generation of tooling that allows developers to easily diagnose problems, innovate quickly, and extend operating system functionality.',
     author: 'Mark Russinovich',
-    role: 'Chief Technology Officer at Microsoft Azure',
+    role: 'Chief Technology Officer at Microsoft Azure, 2021',
   },
   {
     logo: googleLogo,
@@ -41,7 +41,7 @@ const items = [
     review:
       'eBPF is the future of networking for the Linux kernel and Google is pleased to be part of the evolving standard it has created.',
     author: 'Chris DiBona',
-    role: 'Director of Open Source at Google',
+    role: 'Director of Open Source at Google, 2021',
   },
   {
     logo: isovalentLogo,
@@ -49,7 +49,7 @@ const items = [
     review:
       'Even though eBPF has already found its ways into the production stacks of countless enterprises, we are still at the beginning of the innovation curve that eBPF as a technology unlocks',
     author: 'Thomas Graf',
-    role: 'Chief Technology Officer at Isovalent',
+    role: 'Chief Technology Officer at Isovalent, 2021',
   },
   {
     company: 'Meta',
@@ -57,7 +57,7 @@ const items = [
     review:
       'For many years, eBPF has played a critical role in accelerating the kernel development. We’re excited to support the work of the eBPF community, enabling them to build the tools needed to power the next generation of Linux system development.',
     author: 'Chris Mason',
-    role: 'Kernel Maintainer and Engineering Director at Facebook',
+    role: 'Kernel Maintainer and Engineering Director at Facebook, 2021',
   },
   {
     logo: netflixLogo,
@@ -65,7 +65,7 @@ const items = [
     review:
       'eBPF is a new type of software that provides superpower capabilities, birthing an industry of networking, performance, and security technologies. Netflix has pioneered uses of eBPF for observability, providing insight into countless areas that were previously difficult or prohibitively expensive to instrument. eBPF has helped us lower application latency and find cost savings.',
     author: 'Brendan Gregg',
-    role: 'Senior performance engineer at Netflix',
+    role: 'Senior performance engineer at Netflix, 2021',
   },
 ];
 const Testimonials = () => {
