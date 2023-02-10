@@ -75,7 +75,7 @@ const socialLinks = [
   },
   {
     text: 'Slack',
-    to: 'https://ebpf.io/slack',
+    to: '/slack',
     icon: SlackIcon,
   },
   {
