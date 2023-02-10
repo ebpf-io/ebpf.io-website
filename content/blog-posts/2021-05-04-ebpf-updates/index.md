@@ -24,11 +24,11 @@ Updates!
 
 ## Important News
 
-{/_2021-04-12_/}
+{/*2021-04-12*/}
 
 - [Cilium applies to become a CNCF project](https://github.com/cncf/toc/pull/637).  
   The Cilium Community has sent a proposal to move the project into the CNCF
-  (_Cloud Native Computing Foundation_) at the Incubation level. If the
+  (*Cloud Native Computing Foundation*) at the Incubation level. If the
   proposal is accepted, there should be very little change to development
   models or governance, already fully open and following open-source best
   practice. Why do this? A number of users looking to build large projects on
@@ -41,9 +41,9 @@ Updates!
   At the same time, the project is finalizing its version 1.10, for which it
   just tagged a [release candidate](https://github.com/cilium/cilium/releases/tag/v1.10.0-rc1).
 
-{/_2021-02-24_/}
+{/*2021-02-24*/}
 
-- [_Sysdig contributes Falco's kernel module, eBPF probe, and libraries to the CNCF_](https://sysdig.com/blog/sysdig-contributes-falco-kernel-ebpf-cncf/).  
+- [*Sysdig contributes Falco's kernel module, eBPF probe, and libraries to the CNCF*](https://sysdig.com/blog/sysdig-contributes-falco-kernel-ebpf-cncf/).  
   This contribution is a commitment provide and keep those components as open
   source. The kernel module and eBPF probe component are roughly equivalent,
   and implement a system call capture framework in the Linux kernel, used by
@@ -62,9 +62,9 @@ Updates!
   [raised a $188 million Series F](https://news.crunchbase.com/news/sysdigs-valuation-hits-1-19b-after-188m-series-f/)
   at a $1.19 billion valuation.
 
-{/_2021-04-29_/}
+{/*2021-04-29*/}
 
-- [_Microsoft acquires Kinvolk_](https://kinvolk.io/blog/2021/04/microsoft-acquires-kinvolk/).  
+- [*Microsoft acquires Kinvolk*](https://kinvolk.io/blog/2021/04/microsoft-acquires-kinvolk/).  
   Launched in 2015, Kinvolk has been working on open source projects such as
   the Flatcar Container Linux distribution, Lokomotive, or Inspektor Gadget.
   The latter is a suite of eBPF-based tools for debugging and inspecting
@@ -73,20 +73,20 @@ Updates!
   referenced later in this document). The company is joining the Azure team,
   congratulations and best of luck for the future!
 
-{/_2021-04-06_/}
+{/*2021-04-06*/}
 
-- [_LPC 2021 Networking and BPF Track CFP_](https://lore.kernel.org/bpf/6d225920-9ecc-ef24-2bf8-848ca86c7fb0@iogearbox.net),
+- [*LPC 2021 Networking and BPF Track CFP*](https://lore.kernel.org/bpf/6d225920-9ecc-ef24-2bf8-848ca86c7fb0@iogearbox.net),
   on the development mailing list for eBPF.
   Just like the previous editions, the next Linux Plumbers Conference will have
-  a _Networking and BPF_ track. The call for participation is open until the
+  a *Networking and BPF* track. The call for participation is open until the
   **13th of August**. The conference itself was initially due to take place in
   Dublin, Ireland, from the 27th to the 29th of September 2021, but the
   organizers [recently announced](https://www.linuxplumbersconf.org/blog/2021/index.php/2021/04/30/linux-plumbers-goes-fully-virtual/)
   that it will be a fully virtual event instead.
 
-{/_2021-02-24_/}
+{/*2021-02-24*/}
 
-- [_libbpf: the road to v1.0_](https://lore.kernel.org/bpf/CAEf4BzZ+jJs7-HtjVLzcevmGf78PHxEsrk66FwKvy6FCsiU=nQ@mail.gmail.com/),
+- [*libbpf: the road to v1.0*](https://lore.kernel.org/bpf/CAEf4BzZ+jJs7-HtjVLzcevmGf78PHxEsrk66FwKvy6FCsiU=nQ@mail.gmail.com/),
   from Andrii Nakryiko.
   From a very basic library wrapping around the `bpf()` system call, libbpf has
   become the reference for handling eBPF objects and has grown to support all
@@ -96,7 +96,7 @@ Updates!
   announcement email also contains a link to a [file on Google Docs](https://docs.google.com/document/d/1UyjTZuPFWiPFyKk1tV5an11_iaRuec6U-ZESZ54nNTY/edit)
   to contribute and discuss ideas for this milestone.
 
-- [_eCHO - eBPF & Cilium Office Hours_](https://github.com/isovalent/echo).  
+- [*eCHO - eBPF & Cilium Office Hours*](https://github.com/isovalent/echo).  
   This is a new series of livestream episodes about, you guessed it, eBPF and
   Cilium. The first three episodes have aired already:
 
@@ -113,9 +113,9 @@ Updates!
 
 ### Introductory Material
 
-{/_2021-03-16_/}
+{/*2021-03-16*/}
 
-- [_eBPF and Kubernetes - What's the Deal?_](https://www.youtube.com/watch?v=ZyT4JB0Ugk8) (video),
+- [*eBPF and Kubernetes - What's the Deal?*](https://www.youtube.com/watch?v=ZyT4JB0Ugk8) (video),
   from Dawid Ziółkowski.
   eBPF can greatly improve networking for environment running with Kubernetes.
   After providing some elements of historical context, this presentation
@@ -123,9 +123,9 @@ Updates!
   introduces eBPF and Cilium, and explains how to leverage these tools to
   improve routing, observability, and network policies in clusters.
 
-{/_2021-03-04_/}
+{/*2021-03-04*/}
 
-- [_Getting Started with eBPF and Go_](https://networkop.co.uk/post/2021-03-ebpf-intro/),
+- [*Getting Started with eBPF and Go*](https://networkop.co.uk/post/2021-03-ebpf-intro/),
   from Michael Kashin.
   Have you tried working with Go and eBPF, and are you getting confused by the
   multiple libraries offering to help manage the programs and the maps?
@@ -137,10 +137,10 @@ Updates!
   [xdp-xconnect](https://github.com/networkop/xdp-xconnect), cross-connects
   different Linux interfaces and redirects packets with XDP.
 
-{/_Keep below the other eBPF/GO_/}
-{/_2021-03-18_/}
+{/*Keep below the other eBPF/GO*/}
+{/*2021-03-18*/}
 
-- [_Getting started with bpf and libbpfgo_](https://www.grant.pizza/blog/libbpf-beginners-part-one/),
+- [*Getting started with bpf and libbpfgo*](https://www.grant.pizza/blog/libbpf-beginners-part-one/),
   from Grant Seltzer.
   Another approach to writing a simple program and managing it in user space
   with Go, this time with the libbpfgo library which wraps around libbpf, and
@@ -148,9 +148,9 @@ Updates!
 
 ### In the Industry
 
-{/_2021-03-15_/}
+{/*2021-03-15*/}
 
-- [_Liz Rice: Following the ‘Superpower’ Promise of eBPF_](https://thenewstack.io/liz-rice-following-the-superpower-promise-of-ebpf/)
+- [*Liz Rice: Following the ‘Superpower’ Promise of eBPF*](https://thenewstack.io/liz-rice-following-the-superpower-promise-of-ebpf/)
   from Liz Rice.
   The chair of the CNCF's Technical Oversight Committee recently joined
   Isovalent to work on Cilium, described as “the most widely deployed eBPF
@@ -158,18 +158,18 @@ Updates!
   decision, and explains in what sense “eBPF is another transformational
   technology”, like Docker has been.
 
-{/_2021-02-24_/}
+{/*2021-02-24*/}
 
-- [_fledge.io brings eBPF to multi-cloud and edge_](https://www.fledge.io/2021/02/24/fledge-io-brings-ebpf-to-multi-cloud-and-edge/)
+- [*fledge.io brings eBPF to multi-cloud and edge*](https://www.fledge.io/2021/02/24/fledge-io-brings-ebpf-to-multi-cloud-and-edge/)
   from Pramodh Mallipatna.
   The solution proposes to help define, deploy, and manage geo-distributed
   applications that span multi-cloud and edge environments. It now uses eBPF
   programs to monitor the local CPU, disk, and network resources, as well as to
   gather and present richer application information in real time.
 
-{/_2021-02-25_/}
+{/*2021-02-25*/}
 
-- [_Linux Kernel insights with eBPF_](https://community.netdata.cloud/t/linux-kernel-insights-with-ebpf/992?hss_channel=tw-734637019306033152),
+- [*Linux Kernel insights with eBPF*](https://community.netdata.cloud/t/linux-kernel-insights-with-ebpf/992?hss_channel=tw-734637019306033152),
   from Manos Saratsis.
   Netdata is already using eBPF to some extent, but has more plans to leverage
   the technology and provide a variety of charts to visualize metrics on all
@@ -179,41 +179,41 @@ Updates!
   [released a few weeks later](https://www.netdata.cloud/blog/release-1-30-0/),
   seems to contain some of these changes.
 
-{/_2021-03_/}
+{/*2021-03*/}
 
 - [eBPF Integration for Pyroscope](https://pyroscope.io/docs/ebpf/).  
   Pyroscope, an open source continuous profiling platform, has got some
   integration with eBPF to provide efficient CPU profiling of the applications
   and the system itself.
 
-{/_2021-04-12_/}
+{/*2021-04-12*/}
 
-- [_Using eBPF and immudb to audit executed commands on a Linux server_](https://www.codenotary.com/blog/ebpf-linux-immudb/).  
+- [*Using eBPF and immudb to audit executed commands on a Linux server*](https://www.codenotary.com/blog/ebpf-linux-immudb/).  
   CodeNotary explains how to load an eBPF program with bpftrace to attach on
   uretprobes to capture shell commands, and to insert the collected data
   tamper-proof in immudb, the open source immutable database solution developed
   by the company.
 
-{/_2021-04-23_/}
+{/*2021-04-23*/}
 
-- [_New Relic : What Is eBPF and Why Does It Matter for Observability?_](https://www.marketscreener.com/quote/stock/NEW-RELIC-INC-19157128/news/New-Relic-nbsp-What-Is-eBPF-and-Why-Does-It-Matter-for-Observability-33050648/).  
+- [*New Relic : What Is eBPF and Why Does It Matter for Observability?*](https://www.marketscreener.com/quote/stock/NEW-RELIC-INC-19157128/news/New-Relic-nbsp-What-Is-eBPF-and-Why-Does-It-Matter-for-Observability-33050648/).  
   This introduction to eBPF includes a basic overview of its functioning,
   advantages, and limitations, as well as an overview of the main tools based
   on eBPF. New Relic concludes by presenting how
   Pixie, its open source observability platform for Kubernetes, leverages eBPF
   to extract richer information.
 
-{/_2021-05-04_/}
+{/*2021-05-04*/}
 
-- [_Gathering insights on Kubernetes applications, services, and network traffic with Pixie_](https://aws.amazon.com/blogs/opensource/gathering-insights-on-kubernetes-applications-services-and-network-traffic-with-pixie/).  
+- [*Gathering insights on Kubernetes applications, services, and network traffic with Pixie*](https://aws.amazon.com/blogs/opensource/gathering-insights-on-kubernetes-applications-services-and-network-traffic-with-pixie/).  
   Directly related to the previous item, Pixie is also the object of a new
   partnership between New Relic and AWS, and even applied to join the CNCF.
 
 ### Deep Dives
 
-{/_2021-03-04_/}
+{/*2021-03-04*/}
 
-- [_BPF meets io_uring_](https://lwn.net/Articles/847951/),
+- [*BPF meets io_uring*](https://lwn.net/Articles/847951/),
   from Jonathan Corbet.
   This article from LWN.net comments an RFC submitted to
   [the io-uring mailing list](https://lore.kernel.org/io-uring/cover.1613563964.git.asml.silence@gmail.com/t/#u)
@@ -223,9 +223,9 @@ Updates!
   previous operations in the ring, such as submitting other I/O operations or
   processing the next file in a list.
 
-{/_2021-04-13_/}
+{/*2021-04-13*/}
 
-- [_Comparing SystemTap and bpftrace_](https://lwn.net/Articles/852112/),
+- [*Comparing SystemTap and bpftrace*](https://lwn.net/Articles/852112/),
   from Emanuele Rocca.
   SystemTap and bpftrace are tools to dynamically instrument the kernel or
   user applications on Linux. While bpftrace uses eBPF programs, SystemTap is
@@ -235,9 +235,9 @@ Updates!
   modules is ultimately more powerful, but eBPF makes for a faster and
   easier-to-use tracing tool.
 
-{/_2021-04-22_/}
+{/*2021-04-22*/}
 
-- [_Toward signed BPF programs_](https://lwn.net/SubscriberLink/853489/2916fbd97c95c700/),
+- [*Toward signed BPF programs*](https://lwn.net/SubscriberLink/853489/2916fbd97c95c700/),
   from Jonathan Corbet.
   Another LWN.net article, this time on a recent proposal sent by Alexei
   Starovoitov in order to introduce support for signed eBPF programs, so that
@@ -249,9 +249,9 @@ Updates!
   load other eBPF programs from within the kernel. The work is still in
   progress.
 
-{/_2021-03-11_/}
+{/*2021-03-11*/}
 
-- [_What is vmlinux.h?_](https://www.grant.pizza/blog/vmlinux-header/),
+- [*What is vmlinux.h?*](https://www.grant.pizza/blog/vmlinux-header/),
   from Grant Seltzer.
   The vmlinux.h header is generated automatically and contains BTF information
   about the kernel itself. Modern eBPF programs may use this information to
@@ -259,12 +259,12 @@ Updates!
   [CO-RE](https://ebpf.io/blog/ebpf-updates-2020-12#did-you-know-co-re) being
   one of them.
 
-{/_2021-02-18/20_/}
+{/*2021-02-18/20*/}
 
 - [DevConf.CZ 2021](https://www.devconf.info/cz/) ([Schedule](https://devconfcz2021.sched.com/))
   hosted several talks related to eBPF, some of which are summarized below.
-  Sadly I could not find the videos _and_ slides for all presentations.
-  - [_eBPF Iterators_](https://devconfcz2021.sched.com/event/gmK5/ebpf-iterators)
+  Sadly I could not find the videos *and* slides for all presentations.
+  - [*eBPF Iterators*](https://devconfcz2021.sched.com/event/gmK5/ebpf-iterators)
     ([slides](https://static.sched.com/hosted_files/devconfcz2021/60/bpf-iterators.pdf)),
     from Jiri Olsa.
     This is possibly the only document on eBPF iterators we have at the
@@ -277,13 +277,13 @@ Updates!
     and attach some iterators at boot time, so that listing eBPF programs and
     maps is available at all times. BCC tools, bpftrace, bpftool, and perf
     all have support for iterators (at various degrees of progress).
-  - [_Capturing network traffic in an eXpress Data Path_](https://devconfcz2021.sched.com/event/gmNT/capturing-network-traffic-in-an-express-data-path)
+  - [*Capturing network traffic in an eXpress Data Path*](https://devconfcz2021.sched.com/event/gmNT/capturing-network-traffic-in-an-express-data-path)
     ([slides](https://static.sched.com/hosted_files/devconfcz2021/ab/Capturing-network-traffic-in-an-eXpress-Data-Path.pdf)),
     from Eelco Chaudron.
     How to inspect network packet with an XDP program attached to the
     interface, when only the `XDP_PASS` return code will pass packets to the
     stack and lead them to a path where tcpdump can see them? To answer this
-    question, xdpdump was developed. It relies on the _fentry_ and _fexit_
+    question, xdpdump was developed. It relies on the *fentry* and *fexit*
     hooks that eBPF programs can use to attach to the entry and the exit of
     functions, including other eBPF programs, and inspects the packets before
     and after they are processed by the XDP program. The tool provides a
@@ -292,11 +292,11 @@ Updates!
     changes, with new filters to show packets for which the XDP program
     returned a specific action code or packets coming from a specific
     interface queue.
-  - [_Always present type information thanks to BPF: BTF_](https://devconfcz2021.sched.com/event/gmLF/always-present-type-information-thanks-to-bpf-btf),
+  - [*Always present type information thanks to BPF: BTF*](https://devconfcz2021.sched.com/event/gmLF/always-present-type-information-thanks-to-bpf-btf),
     ([video](https://www.youtube.com/watch?v=fX6_xHldTjU&list=PLU1vS0speL2YQ9WXMnY-glVErAIsTsSAl&index=16),
     [slides](http://vger.kernel.org/~acme/bpf/devconf.cz-2021-Always-present-type-information-thanks-to-BPF-BTF/)),
     from Arnaldo Melo.
-    Recent eBPF features increasingly use BTF (_BPF Type Information_, a
+    Recent eBPF features increasingly use BTF (*BPF Type Information*, a
     format for storing debug information). But BTF is generic enough to be
     used by other applications as well. This presentation focuses on BTF and
     on the kind of kernel information it can help retrieve. Pahole, a tool
@@ -307,9 +307,9 @@ Updates!
     of use cases, from pretty-printing type information to extracting
     relevant tokens for kernel live patching.
 
-{/_2021-03-22_/}
+{/*2021-03-22*/}
 
-- [_The Cost of BPF Tail Calls_](https://pchaigno.github.io/ebpf/2021/03/22/cost-bpf-tail-calls.html),
+- [*The Cost of BPF Tail Calls*](https://pchaigno.github.io/ebpf/2021/03/22/cost-bpf-tail-calls.html),
   from Paul Chaignon.
   In order to better understand the overhead related to tail calls in eBPF
   programs (long jumps from one program to another, with no coming back), Paul
@@ -319,9 +319,9 @@ Updates!
   reintroduced some overhead. The post, nearly a scientific report, contains
   more details on the methodology and results.
 
-{/_2021-02-25_/}
+{/*2021-02-25*/}
 
-- [_Exploring a New Detection Evasion Technique on Linux_](https://codemuch.tech/2021/02/25/exploring-linux-evasion/),
+- [*Exploring a New Detection Evasion Technique on Linux*](https://codemuch.tech/2021/02/25/exploring-linux-evasion/),
   from Alan Cao.
   One of the use case for application monitoring with eBPF is to ensure the
   security of the system and to detect any mischievous process. Over the years,
@@ -333,9 +333,9 @@ Updates!
   the same time as itself, which would likely indicate a tentative to monitor.
   Limitations and possible mitigations are included in the post.
 
-{/_2021-04-01_/}
+{/*2021-04-01*/}
 
-- [_Examining Problematic Memory in C/C++ Applications with BPF, perf, and Memcheck_](https://doordash.engineering/2021/04/01/examining-problematic-memory-with-bpf-perf-and-memcheck/),
+- [*Examining Problematic Memory in C/C++ Applications with BPF, perf, and Memcheck*](https://doordash.engineering/2021/04/01/examining-problematic-memory-with-bpf-perf-and-memcheck/),
   from Filip Busic.
   This long post goes way beyond what one usually finds in introductions and
   tutorials. It explains how to simply trace memory leaks in applications with
@@ -346,9 +346,9 @@ Updates!
   read and to learn from. At last, a variety of example use cases, often
   involving flame graphs, show how to help troubleshoot memory issues.
 
-{/_2021-04-09_/}
+{/*2021-04-09*/}
 
-- [_Extending systemd Security Features with eBPF_](https://kinvolk.io/blog/2021/04/extending-systemd-security-features-with-ebpf/),
+- [*Extending systemd Security Features with eBPF*](https://kinvolk.io/blog/2021/04/extending-systemd-security-features-with-ebpf/),
   from Mauricio Vásquez Bernal.
   Two new systemd properties implemented through eBPF programs are in
   development, leveraging the oncoming support for eBPF programs written in C
@@ -357,7 +357,7 @@ Updates!
   The first one restricts the file system types that processes in a systemd
   unit can access. Setting `RestrictFileSystems=ext4`, for example, will
   prevent the processes to interact with the tmpfs, thanks to a program
-  attached to the eBPF LSM (_Linux Security Module_) and running on all
+  attached to the eBPF LSM (*Linux Security Module*) and running on all
   attempts to open files. The program checks for the presence of the magic
   number associated to the file system in a dedicated eBPF map.
 
@@ -366,9 +366,9 @@ Updates!
   not associated to one of the authorized interfaces listed in the dedicated
   eBPF map.
 
-{/_2021-04-22_/}
+{/*2021-04-22*/}
 
-- [_Using eBPF in Flatcar Container Linux_](https://kinvolk.io/blog/2021/04/using-ebpf-in-flatcar-container-linux/),
+- [*Using eBPF in Flatcar Container Linux*](https://kinvolk.io/blog/2021/04/using-ebpf-in-flatcar-container-linux/),
   from Mauricio Vásquez Bernal.
   Some specific kernel options must be enabled at compilation to enable all of
   the eBPF features. This post describes a few of them, all enabled in the
@@ -376,9 +376,9 @@ Updates!
   `CONFIG_IKHEADERS`, `CONFIG_DEBUG_INFO_BTF`, and `CONFIG_BPF_LSM` mean and
   what features they activate.
 
-{/_2021-04-27_/}
+{/*2021-04-27*/}
 
-- [_Reverse debugging at scale_](https://engineering.fb.com/2021/04/27/developer-tools/reverse-debugging/),
+- [*Reverse debugging at scale*](https://engineering.fb.com/2021/04/27/developer-tools/reverse-debugging/),
   from Walter Erquinigo, David Carrillo-Cisneros, and Alston Tang.
   These engineers from Facebook explain how they deployed a solution to record
   CPU activity on their (many) servers, to be able to extract information when
@@ -389,9 +389,9 @@ Updates!
   extraction. The best solution they found was to use an eBPF program attached
   to a kprobe to trigger the copy.
 
-{/_2020-11-04_/}
+{/*2020-11-04*/}
 
-- [_BPF binaries: BTF, CO-RE, and the future of BPF perf tools_](http://www.brendangregg.com/blog/2020-11-04/bpf-co-re-btf-libbpf.html),
+- [*BPF binaries: BTF, CO-RE, and the future of BPF perf tools*](http://www.brendangregg.com/blog/2020-11-04/bpf-co-re-btf-libbpf.html),
   from Brendan Gregg.
   _Catching up: This post is from November 2020, which does not really
   correspond to the time frame otherwise covered in this issue, but I missed it
@@ -400,15 +400,15 @@ Updates!
   existing eBPF-based tracing tools. In particular, it announces that the
   Python bindings used with the BCC tools should be considered as deprecated,
   and that libbpf should be preferred instead to build and manage these
-  programs. This does _not_ mean that BCC itself is deprecated: the project is
+  programs. This does *not* mean that BCC itself is deprecated: the project is
   simply transitioning to libbpf-based tools and abandoning the Python wrappers
   in newer tracing utilities.
 
 ### Academic Works
 
-- [_BMC: Accelerating Memcached using Safe In-kernel Caching and Pre-stack Processing_](https://www.usenix.org/conference/nsdi21/presentation/ghigoff)
+- [*BMC: Accelerating Memcached using Safe In-kernel Caching and Pre-stack Processing*](https://www.usenix.org/conference/nsdi21/presentation/ghigoff)
   ([PDF](https://www.usenix.org/system/files/nsdi21-ghigoff.pdf)),
-  from Yoann Ghigoff _et al._
+  from Yoann Ghigoff *et al.*
   Published at NSDI '21 (USENIX), this paper introduces BMC, the _BPF Memcached
   Cache_, a first-level in-kernel cache relying on XDP to accelerate Memcached.
   It improves the response time, by avoiding costly traversals of the network
@@ -454,7 +454,7 @@ Updates!
   project contains a Python-based generator to produce eBPF code on-the-fly!
 
 - The [sonde-rs](https://github.com/wasmerio/sonde-rs) library provides a way
-  to compile USDT (_Userland Statically Defined Tracing_) probes into Rust
+  to compile USDT (*Userland Statically Defined Tracing*) probes into Rust
   applications, so that they can be traced with any tools supporting those probes,
   including for example BCC tools or bpftrace.
 
@@ -500,11 +500,11 @@ down the changes into categories.
   some similarities with eBPF helper functions, which are compiled as part of
   the kernel and can be called from eBPF programs. But instead of writing
   dedicated functions, this is about calling pre-existing function from the
-  kernel. This does not apply to _any_ function: a list of allowed functions is
+  kernel. This does not apply to *any* function: a list of allowed functions is
   maintained in the kernel for each eBPF program type.
 
   A crucial difference with eBPF helpers is that kernel functions that can be
-  called are _not_ bounded to a fixed ABI contract. This means that they remain
+  called are *not* bounded to a fixed ABI contract. This means that they remain
   free to evolve, even if this breaks existing eBPF programs. BTF is what
   makes this possible.
 

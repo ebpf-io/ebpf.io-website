@@ -22,13 +22,13 @@ pancakes.
 
 ## New Resources
 
-{/_2021-02-07_/}
+{/*2021-02-07*/}
 
 Besides pancakes and Valentine's Day, early February is also marked by one of
 the biggest events centered on open-source: FOSDEM! This year's edition was
 held online, and included several presentations related to eBPF.
 
-- [_Advanced BPF kernel features for the container age_](https://fosdem.org/2021/schedule/event/containers_ebpf_kernel/),
+- [*Advanced BPF kernel features for the container age*](https://fosdem.org/2021/schedule/event/containers_ebpf_kernel/),
   from Daniel Borkmann.  
   eBPF is in a unique position to efficiently process and steer packets at
   different steps of their travel through the stack. Cilium relies on it to
@@ -40,14 +40,14 @@ held online, and included several presentations related to eBPF.
   Time) rate-limiting for Pods. Recommended if you want to learn more on
   advanced networking features entirely implemented with eBPF.
 
-- [_hXDP: Efficient Software Packet Processing on FPGA NICs_](https://fosdem.org/2021/schedule/event/sdn_hxdp_fpga/),
+- [*hXDP: Efficient Software Packet Processing on FPGA NICs*](https://fosdem.org/2021/schedule/event/sdn_hxdp_fpga/),
   from Marco Spaziani Brunella.  
   hXDP is an eBPF hardware offload implementation for FPGA-based NICs. Through
   hardware functions, some additional compiler work, and custom optimizations,
   it achieves great performance. Latest work include working on a higher-end
   platform, and trying to implement eight processing cores instead of one.
 
-- [_Networking Performances in the Linux Kernel, Getting the most out of the Hardware_](https://fosdem.org/2021/schedule/event/network_performance_in_kernel/),
+- [*Networking Performances in the Linux Kernel, Getting the most out of the Hardware*](https://fosdem.org/2021/schedule/event/network_performance_in_kernel/),
   from Maxime Chevallier.  
   Definitely centered on networking, this presentation follows the path of
   packets through the low-level mechanisms involved in the hardware and in the
@@ -55,7 +55,7 @@ held online, and included several presentations related to eBPF.
   talk helps understand how XDP and AF_XDP complement the other networking
   components in the kernel.
 
-- [_Monitoring MariaDB Server with bpftrace on Linux_](https://fosdem.org/2021/schedule/event/mariadb_bpftrace/),
+- [*Monitoring MariaDB Server with bpftrace on Linux*](https://fosdem.org/2021/schedule/event/mariadb_bpftrace/),
   from Valerii Kravchuk.  
   This presentation is both an introduction to bpftrace itself and to its
   application to MariaDB tracing. The objective is to add uprobes, get stack
@@ -65,11 +65,11 @@ held online, and included several presentations related to eBPF.
   Valerii also covered the topic in
   [a series of posts on his blog](https://mysqlentomologist.blogspot.com/2021/01/playing-with-recent-bpftrace-and.html).
 
-- [_Seccomp Notify on Kubernetes_](https://fosdem.org/2021/schedule/event/containers_k8s_seccomp_notify/),
+- [*Seccomp Notify on Kubernetes*](https://fosdem.org/2021/schedule/event/containers_k8s_seccomp_notify/),
   from Alban Crequy.  
   This talk demonstrates how to use seccomp notify to proxy some system
   calls—including `bpf()`— to the container manager, from an unprivileged
-  container. Seccomp relies on cBPF (_classic BPF_) to filter system calls and
+  container. Seccomp relies on cBPF (*classic BPF*) to filter system calls and
   take actions on them. Seccomp notify is a recent update where seccomp can
   return a file descriptor and hand it to another task, so that this task can
   analyze the data involved in the filtered system call and potentially emulate
@@ -78,7 +78,7 @@ held online, and included several presentations related to eBPF.
   and
   [the `bpf()` use case](https://people.kernel.org/brauner/the-seccomp-notifier-cranking-up-the-crazy-with-bpf).
 
-- [_Deploying eBPF, XDP & AF_XDP for Cloud Native_](https://fosdem.org/2021/schedule/event/sdn_ebpf_afxdp/),
+- [*Deploying eBPF, XDP & AF_XDP for Cloud Native*](https://fosdem.org/2021/schedule/event/sdn_ebpf_afxdp/),
   from Dave Cremins and Gary Loughnane.  
   As per the abstract, “_This talk will cover an introduction to AF_XDP, why it
   is suited to cloud native microservices, how it can be deployed today and the
@@ -89,9 +89,9 @@ held online, and included several presentations related to eBPF.
 And then here are some resources published over the last weeks, independent
 from FOSDEM.
 
-{/_2020-12-17_/}
+{/*2020-12-17*/}
 
-- [_Running eBPF and Perf in Docker for Mac_](https://petermalmgren.com/docker-mac-bpf-perf/),
+- [*Running eBPF and Perf in Docker for Mac*](https://petermalmgren.com/docker-mac-bpf-perf/),
   from Peter Malmgren.  
   Perf and eBPF tools are handy tools to trace processes and to pin down the
   origin of a performance bottleneck. Motivated by the need to identify the
@@ -99,9 +99,9 @@ from FOSDEM.
   explains how to install the Linux headers, to compile BCC and bpftrace, and
   to run them in the container.
 
-{/_2021-01-11_/}
+{/*2021-01-11*/}
 
-- [_Debugging QUIC with H2O and QLog_](https://www.fastly.com/blog/debugging-quic-with-h2o-and-qlog),
+- [*Debugging QUIC with H2O and QLog*](https://www.fastly.com/blog/debugging-quic-with-h2o-and-qlog),
   from Toru Maesaka.  
   The H2O HTTP server deployed by Fastly has a built-in event tracing
   infrastructure, powered by eBPF or DTrace depending on the platform. This
@@ -110,9 +110,9 @@ from FOSDEM.
   server and get logs to debug and improve QUIC, a network protocol implemented
   in user space.
 
-{/_2021-01-25_/}
+{/*2021-01-25*/}
 
-- [_eBPF & the future of osquery on Linux_](https://medium.com/fleetdm/ebpf-the-future-of-osquery-on-linux-c9f33726e84d) (video),
+- [*eBPF & the future of osquery on Linux*](https://medium.com/fleetdm/ebpf-the-future-of-osquery-on-linux-c9f33726e84d) (video),
   from Zach Wasserman.  
   Osquery has been relying on the Audit subsystem in Linux to provide system
   visibility, which is powerful but comes with some drawbacks. For example, it
@@ -121,9 +121,9 @@ from FOSDEM.
   an alternative backend to collect data, circumventing these issues and coming
   with “a potential to dramatically increase scope of observability”.
 
-{/_2021-01-27_/}
+{/*2021-01-27*/}
 
-- [_eBPF Tools: An Overview of Falco, Inspektor Gadget, Hubble and Cilium_](https://thenewstack.io/ebpf-tools-an-overview-of-falco-inspektor-gadget-hubble-and-cilium/),
+- [*eBPF Tools: An Overview of Falco, Inspektor Gadget, Hubble and Cilium*](https://thenewstack.io/ebpf-tools-an-overview-of-falco-inspektor-gadget-hubble-and-cilium/),
   from Lucas Severo Alves.  
   Here is an introduction to each of the four eBPF-based tools mentioned in the
   title, accompanied with example use cases. All these tools focus on
@@ -131,9 +131,9 @@ from FOSDEM.
   landscape in the cloud, and of the different issues it addresses in terms of
   security, tracing, visibility, and networking.
 
-{/_2021-02-03_/}
+{/*2021-02-03*/}
 
-- [_Datadog On eBPF_](https://www.youtube.com/watch?v=58KtGtpn0_g) (video),
+- [*Datadog On eBPF*](https://www.youtube.com/watch?v=58KtGtpn0_g) (video),
   from Lee Avital, Guillaume Fournier and Ara Pulido.  
   Various aspects of eBPF are covered in this presentation. After introducing
   the basics, Datadog discusses technical details related to their workflow: Is
@@ -141,9 +141,9 @@ from FOSDEM.
   compilation? They also describe two of their use cases for eBPF, network
   monitoring and runtime security.
 
-{/_2021-02-09_/}
+{/*2021-02-09*/}
 
-- [_A Beginner's Guide to eBPF with Go_](https://web.archive.org/web/20210216233137/https://files.gotocon.com/uploads/slides/conference_39/1688/original/Beginners%20guide%20to%20eBPF%20with%20Go.pdf) (PDF),
+- [*A Beginner's Guide to eBPF with Go*](https://web.archive.org/web/20210216233137/https://files.gotocon.com/uploads/slides/conference_39/1688/original/Beginners%20guide%20to%20eBPF%20with%20Go.pdf) (PDF),
   from Liz Rice.  
   Learn how to program with eBPF and Go with this accessible tutorial. After a
   reminder of the basics of eBPF, this presentation focuses on a simple tracing
@@ -151,9 +151,9 @@ from FOSDEM.
   program with eBPF and the libbpfgo Go bindings for the libbpf C library,
   before showing how to recreate the bpftrace command previously introduced.
 
-{/_2021-02-15_/}
+{/*2021-02-15*/}
 
-- [_Using eBPF to uncover in-memory loading_](https://blog.tofile.dev/2021/02/15/ebpf-01.html),
+- [*Using eBPF to uncover in-memory loading*](https://blog.tofile.dev/2021/02/15/ebpf-01.html),
   from Pat H.  
   Tracing with eBPF can be adapted to nearly any use case. In this post,
   programs are attached to trace the calls to `dup2()`, `write()` and `read()`,
@@ -219,9 +219,9 @@ from FOSDEM.
 
 ### Podcasts
 
-{/_2021-01-28_/}
+{/*2021-01-28*/}
 
-- [_Break Things on Purpose_ | Mikolaj Pawlikowski, Engineering Lead at Bloomberg](https://www.gremlin.com/blog/podcast-break-things-on-purpose-mikolaj-pawlikowski-engineering-lead-at-bloomberg/#ebpf),
+- [*Break Things on Purpose* | Mikolaj Pawlikowski, Engineering Lead at Bloomberg](https://www.gremlin.com/blog/podcast-break-things-on-purpose-mikolaj-pawlikowski-engineering-lead-at-bloomberg/#ebpf),
   interview from Jason Yee and Pat Higgins.  
   Centered on Chaos Engineering, this episode mentions eBPF as “a game changer”
   in terms of visibility. The technology uses small code snippets, has a low
@@ -231,26 +231,26 @@ from FOSDEM.
 Members of the Cilium community have been very active, and contributed to
 several podcasts on eBPF and Cilium over the last weeks:
 
-{/_2021-02-02_/}
+{/*2021-02-02*/}
 
-- [Software Engineering Daily - _Cilium: Programmable Linux Networking with Dan Wendlant and Thomas Graf_](https://softwareengineeringdaily.com/2021/02/02/cilium-programmable-linux-networking-with-dan-wendlant-and-thomas-graf/), interview from Jeff Meyerson.  
+- [Software Engineering Daily - *Cilium: Programmable Linux Networking with Dan Wendlant and Thomas Graf*](https://softwareengineeringdaily.com/2021/02/02/cilium-programmable-linux-networking-with-dan-wendlant-and-thomas-graf/), interview from Jeff Meyerson.  
   Virtual machines, and then containers, have led to important changes on how
   applications are managed. In response, Thomas explains, network processing
   and policing had to evolve. eBPF, and Cilium which builds on top of it, bring
   comprehensive networking, visibility, and security at scale to clusters.
 
-{/_2021-02-02_/}
+{/*2021-02-02*/}
 
-- [Software Engineering Radio, Episode 445 - _Thomas Graf on eBPF (extended Berkeley Packet Filter)_](https://www.se-radio.net/2021/02/episode-445-thomas-graf-on-ebpf-extended-berkeley-packet-filter/),
+- [Software Engineering Radio, Episode 445 - *Thomas Graf on eBPF (extended Berkeley Packet Filter)*](https://www.se-radio.net/2021/02/episode-445-thomas-graf-on-ebpf-extended-berkeley-packet-filter/),
   interview from Justin Beyer.  
   This episode focuses on eBPF itself, and explains how the technology can help
   with network processing to safely implement packet routing and network
   policies. Learn how eBPF interacts with elements such as namespaces, cgroups,
   or TCP congestion.
 
-{/_2021-02-08_/}
+{/*2021-02-08*/}
 
-- [DiscoPosse Podcast, Episode 153 - _Kubernetes Networking and Security, and Building Business on Open Source with Isovalent Founder, Thomas Graf_](https://discopossepodcast.com/ep-153-kubernetes-networking-and-security-and-building-business-on-open-source-with-isovalent-founder-thomas-graf/),
+- [DiscoPosse Podcast, Episode 153 - *Kubernetes Networking and Security, and Building Business on Open Source with Isovalent Founder, Thomas Graf*](https://discopossepodcast.com/ep-153-kubernetes-networking-and-security-and-building-business-on-open-source-with-isovalent-founder-thomas-graf/),
   interview from Eric Wright.  
   Thomas comes back on the evolution on Linux networking and on some of the new
   challenges to solve in cloud deployments. He explains how eBPF is in a unique
@@ -260,9 +260,9 @@ several podcasts on eBPF and Cilium over the last weeks:
   networking and the cloud infrastructure at large, and explains how Isovalent
   builds its product on top of the Cilium open source project.
 
-{/_2021-02-10_/}
+{/*2021-02-10*/}
 
-- [The Weekly Squeak - _eBPF Cloud Native computing with Neela Jacques of Isovalent_](https://www.youtube.com/watch?t=439&v=QrKt8PhAkiE),
+- [The Weekly Squeak - *eBPF Cloud Native computing with Neela Jacques of Isovalent*](https://www.youtube.com/watch?t=439&v=QrKt8PhAkiE),
   interview from Chris Chinchilla.  
   By operating from inside the kernel, eBPF offers unprecedented capabilities
   in terms of tracing and network processing. This allows Cilium and then
@@ -396,7 +396,7 @@ But both limits were changed<a href="#1"><sup>1</sup></a> in
 **The complexity limit was raised to one million verified instructions**. As
 for the maximum limit of instructions, it simply disappeared, meaning that the
 size of program is now limited by the complexity induced by their verification.
-There is still a _de facto_ hard limit at one million instructions, for a
+There is still a *de facto* hard limit at one million instructions, for a
 program that would have a single logical branch (no “if” and comparisons
 anywhere). In practice, such program would be of little interest. Programs have
 branches, their verification is more complex, and their allowance for

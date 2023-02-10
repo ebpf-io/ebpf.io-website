@@ -27,13 +27,13 @@ issue of the eBPF Updates, and Happy New Year!
 
 Let's start with some news from companies working on and with eBPF.
 
-{/_2020-12-20_/}
+{/*2020-12-20*/}
 
 - Microsoft is working on an eBPF-based monitoring tool for Linux:
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">We&#39;re working on eBPF-based Sysmon for Linux that has same filtering and output schema (where applicable) as Sysmon For Windows. Shooting for a preview in February. <a href="https://t.co/l0BTkVXac1">pic.twitter.com/l0BTkVXac1</a></p>&mdash; Mark Russinovich (@markrussinovich) <a href="https://twitter.com/markrussinovich/status/1340737856201879552?ref_src=twsrc%5Etfw">December 20, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-{/_2021-01-11_/}
+{/*2021-01-11*/}
 
 - [_Isovalent Looks to Transform Container Networking With eBPF_](https://containerjournal.com/topics/container-networking/isovalent-container-networking-in-2021-using-ebpf/),
   from Mike Vizard.  
@@ -42,7 +42,7 @@ Let's start with some news from companies working on and with eBPF.
   Cilium and Isovalent. The author foresees important changes for cloud-native
   environments in terms of networking, security, and observability.
 
-{/_2021-01-12_/}
+{/*2021-01-12*/}
 
 - [Kubernetes Podcast - _Episode #133: Cilium, with Thomas Graf_](https://kubernetespodcast.com/episode/133-cilium/),
   from Craig Box and Adam Glick.  
@@ -55,14 +55,14 @@ Let's start with some news from companies working on and with eBPF.
   possible support for eBPF on Windows, follow. “Twenty-two years on, do you
   think you finally fixed networking?” Future will tell.
 
-{/_2021-01-18_/}
+{/*2021-01-18*/}
 
 - Optimyze.cloud [announced in a tweet](https://twitter.com/OptimyzeCloud/status/1351203905850519557)
   that they are working on a “_Full-system lightweight continuous profiling for
   Linux Kernel, C/C++, Rust, Golang, Python, JVM, PHP (with Ruby and Node
   planned for the future)_”, apparently based on eBPF.
 
-{/_2021-01-18_/}
+{/*2021-01-18*/}
 
 - [_Securing Containerized Environments with eBPF_](https://www.tag-cyber.com/advisory/articles/securing-containerized-environments-with-ebpf),
   from Adam LeWinter.  
@@ -76,7 +76,7 @@ Let's start with some news from companies working on and with eBPF.
 
 ### Introductory Resources
 
-{/_2020-11-25_/}
+{/*2020-11-25*/}
 
 - [_BPF: The future of configs_](https://blog.habets.se/2020/11/BPF-the-future-of-configs.html),
   from Thomas Habets.  
@@ -89,7 +89,7 @@ Let's start with some news from companies working on and with eBPF.
   customization of TCP parameters, and more. This is a good read to help
   understand what is at stake with eBPF.
 
-{/_2020-12-11_/}
+{/*2020-12-11*/}
 
 - [_Linux Networking - eBPF, XDP, DPDK, VPP - What does all that mean?_](https://media.ccc.de/v/vnog-4-linux-networking-ebpf-xdp-dpdk-vp),
   from Andree Toonk.  
@@ -102,7 +102,7 @@ Let's start with some news from companies working on and with eBPF.
   from the Linux kernel. Andree also covers this topic
   [on his blog](https://toonk.io/tag/networking/index.html).
 
-{/_2020-12-19_/}
+{/*2020-12-19*/}
 
 - [_File Integrity Monitoring using eBPF_](https://www.devseccon.com/file-integrity-monitoring-using-ebpf-secadvent-day-19/),
   from Sylvain Baubeau.  
@@ -113,7 +113,7 @@ Let's start with some news from companies working on and with eBPF.
   performance overhead. eBPF addresses most of them, and provides performance
   and over overall improvements to the feature.
 
-{/_2021-01-19_/}
+{/*2021-01-19*/}
 
 - [_Introduction to eBPF_](https://oswalt.dev/2021/01/introduction-to-ebpf/),
   from Matt Oswalt.  
@@ -130,7 +130,7 @@ Let's start with some news from companies working on and with eBPF.
 
 ### Deep Dives
 
-{/_2020-12-23_/}
+{/*2020-12-23*/}
 
 - [Cilium documentation on _The Kubernetes Networking Guide_](https://k8s.networkop.co.uk/cni/cilium/),
   from Michael Kashin.  
@@ -143,7 +143,7 @@ Let's start with some news from companies working on and with eBPF.
   This is a recommended read if you want a glimpse of advanced networking with
   eBPF.
 
-{/_2020-12-24_/}
+{/*2020-12-24*/}
 
 - [_How to Trace Linux System Calls in Production with Minimal Impact on Performance_](https://pingcap.com/blog/how-to-trace-linux-system-calls-in-production-with-minimal-impact-on-performance),
   from Wenbo Zhang.  
@@ -301,18 +301,18 @@ or maps of maps.
 
 The enthusiasm about eBPF is strong:
 
-{/_2020-12-19_/}
+{/*2020-12-19*/}
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">The more I dig into eBPF the more it feels like there&#39;s a platform shift coming to parts of the market. The tone is reminiscent of early discussions around LXC and Docker. Exciting to watch and see what happens next!</p>&mdash; Alex Salazar (@TheMostlyGreat) <a href="https://twitter.com/TheMostlyGreat/status/1340361763112497152?ref_src=twsrc%5Etfw">December 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-{/_2021-01-22_/}
+{/*2021-01-22*/}
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">eBPF has to be one of the most fun things I’ve tinkered with in a while. The possibilities are really exciting! <a href="https://twitter.com/hashtag/infosec?src=hash&amp;ref_src=twsrc%5Etfw">#infosec</a> <a href="https://twitter.com/hashtag/informationsecurity?src=hash&amp;ref_src=twsrc%5Etfw">#informationsecurity</a> <a href="https://twitter.com/hashtag/linux?src=hash&amp;ref_src=twsrc%5Etfw">#linux</a> <a href="https://twitter.com/hashtag/blueteam?src=hash&amp;ref_src=twsrc%5Etfw">#blueteam</a></p>&mdash; Deathzone707 (@dunn707) <a href="https://twitter.com/dunn707/status/1352434717983817729?ref_src=twsrc%5Etfw">January 22, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Below is a thread asking how to improve eBPF usability:
 
-{/_2020-12-27_/}
+{/*2020-12-27*/}
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">What would make eBPF more accessible/usable to you? 👇</p>&mdash; Jaana Dogan ヤナ ドガン (@rakyll) <a href="https://twitter.com/rakyll/status/1343072598901420034?ref_src=twsrc%5Etfw">December 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
