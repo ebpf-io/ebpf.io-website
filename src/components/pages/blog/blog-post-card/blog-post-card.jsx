@@ -70,7 +70,7 @@ const BlogPostCard = ({
   <Link
     className="flex space-x-9 py-10 first:pt-0 last:pb-0 sm:flex-col sm:space-x-0 sm:space-y-6"
     to={externalUrl || path}
-    target={externalUrl ? '_blank' : '_self'}
+    target={externalUrl ? '_blank' : null}
     rel={externalUrl ? 'noopener noreferrer' : null}
   >
     <Image coverImage={coverImage} />

@@ -87,7 +87,7 @@ const MenuItem = ({ text, to, items }) => {
                   className="flex py-3 leading-none"
                   theme="black"
                   to={to}
-                  target={target || '_self'}
+                  target={target || null}
                   rel={target ? 'noopener noreferrer' : null}
                 >
                   {text}
@@ -103,7 +103,7 @@ const MenuItem = ({ text, to, items }) => {
                         className="flex py-3 leading-none"
                         theme="black"
                         to={to}
-                        target={target || '_self'}
+                        target={target || null}
                         rel={target ? 'noopener noreferrer' : null}
                       >
                         {text}

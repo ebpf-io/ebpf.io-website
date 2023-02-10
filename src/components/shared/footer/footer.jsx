@@ -143,7 +143,7 @@ const Footer = () => (
                         className="text-sm leading-none opacity-80"
                         theme="white"
                         to={to}
-                        target={target || '_self'}
+                        target={target || null}
                         rel={target ? 'noopener noreferrer' : null}
                       >
                         {text}

@@ -58,7 +58,7 @@ const Header = ({ items, isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder 
                             className="flex py-2.5 px-5 text-[15px] font-medium leading-none lg:text-sm"
                             theme="black"
                             to={to}
-                            target={target || '_self'}
+                            target={target || null}
                             rel={target ? 'noopener noreferrer' : null}
                           >
                             {text}
@@ -76,7 +76,7 @@ const Header = ({ items, isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder 
                                   className="flex py-2.5 px-5 text-[15px] leading-none lg:text-sm"
                                   theme="black"
                                   to={to}
-                                  target={target || '_self'}
+                                  target={target || null}
                                   rel={target ? 'noopener noreferrer' : null}
                                 >
                                   {text}
