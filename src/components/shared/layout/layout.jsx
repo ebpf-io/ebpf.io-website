@@ -124,7 +124,7 @@ const headerMenu = [
     items: [
       {
         text: 'Slack',
-        to: '/slack',
+        to: 'https://ebpf.io/slack',
       },
       {
         text: 'Stack Overflow',
