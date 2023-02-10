@@ -40,14 +40,16 @@ const items = [
       {
         text: 'License',
         to: 'https://creativecommons.org/licenses/by/4.0/',
+        target: '_blank',
       },
       {
         text: 'GitHub repository',
         to: 'https://github.com/ebpf-io/ebpf.io-website',
+        target: '_blank',
       },
       {
         text: 'Slack',
-        to: '/slack',
+        to: 'https://ebpf.io/slack',
       },
     ],
   },
@@ -68,7 +70,7 @@ const HowToContribute = () => (
             </h3>
             <div className="mt-3 text-sm" dangerouslySetInnerHTML={{ __html: description }} />
             <ul className="mt-6 flex flex-wrap gap-x-4 gap-y-3">
-              {links.map(({ text, to }, index) => (
+              {links.map(({ text, to, target }, index) => (
                 <li
                   className="relative font-semibold uppercase leading-none before:absolute before:top-1/2 before:-right-2.5 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 last:before:hidden"
                   key={index}
@@ -78,6 +80,8 @@ const HowToContribute = () => (
                     theme="black"
                     size="sm"
                     to={to}
+                    target={target || null}
+                    rel={target === '_blank' ? 'noopener noreferrer' : null}
                   >
                     {text}
                   </Link>
