@@ -51,13 +51,15 @@ const Header = ({ items, isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder 
                         '0px 2px 6px rgba(28, 23, 23, 0.04), 0px 5px 14px rgba(28, 23, 23, 0.1)',
                     }}
                   >
-                    {items.map(({ text, to, items }) => (
+                    {items.map(({ text, to, target, items }) => (
                       <li key={text}>
                         {to ? (
                           <Link
                             className="flex py-2.5 px-5 text-[15px] font-medium leading-none lg:text-sm"
                             theme="black"
                             to={to}
+                            target={target || '_self'}
+                            rel={target ? 'noopener noreferrer' : null}
                           >
                             {text}
                           </Link>
@@ -68,12 +70,14 @@ const Header = ({ items, isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder 
                         )}
                         {items?.length > 0 && (
                           <ul className="flex flex-col px-4">
-                            {items.map(({ text, to }) => (
+                            {items.map(({ text, to, target }) => (
                               <li key={text}>
                                 <Link
                                   className="flex py-2.5 px-5 text-[15px] leading-none lg:text-sm"
                                   theme="black"
                                   to={to}
+                                  target={target || '_self'}
+                                  rel={target ? 'noopener noreferrer' : null}
                                 >
                                   {text}
                                 </Link>
@@ -104,10 +108,12 @@ Header.propTypes = {
         PropTypes.shape({
           text: PropTypes.string.isRequired,
           to: PropTypes.string,
+          target: PropTypes.string,
           items: PropTypes.arrayOf(
             PropTypes.shape({
               text: PropTypes.string.isRequired,
               to: PropTypes.string,
+              target: PropTypes.string,
             })
           ),
         })

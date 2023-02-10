@@ -80,10 +80,16 @@ const MenuItem = ({ text, to, items }) => {
           animate={controls}
           variants={submenuVariants}
         >
-          {items.map(({ text, to, items }, index) => (
+          {items.map(({ text, to, target, items }, index) => (
             <li className="mb-2 last:mb-3" key={index}>
               {to ? (
-                <Link className="flex py-3 leading-none" theme="black" to={to}>
+                <Link
+                  className="flex py-3 leading-none"
+                  theme="black"
+                  to={to}
+                  target={target || '_self'}
+                  rel={target ? 'noopener noreferrer' : null}
+                >
                   {text}
                 </Link>
               ) : (
@@ -91,9 +97,15 @@ const MenuItem = ({ text, to, items }) => {
               )}
               {items?.length > 0 && (
                 <ul className="flex flex-col pl-6">
-                  {items.map(({ text, to }, index) => (
+                  {items.map(({ text, to, target }, index) => (
                     <li className="mb-2" key={index}>
-                      <Link className="flex py-3 leading-none" theme="black" to={to}>
+                      <Link
+                        className="flex py-3 leading-none"
+                        theme="black"
+                        to={to}
+                        target={target || '_self'}
+                        rel={target ? 'noopener noreferrer' : null}
+                      >
                         {text}
                       </Link>
                     </li>
@@ -115,10 +127,12 @@ MenuItem.propTypes = {
     PropTypes.shape({
       text: PropTypes.string.isRequired,
       to: PropTypes.string,
+      target: PropTypes.string,
       items: PropTypes.arrayOf(
         PropTypes.shape({
           text: PropTypes.string.isRequired,
           to: PropTypes.string,
+          target: PropTypes.string,
         })
       ),
     })
