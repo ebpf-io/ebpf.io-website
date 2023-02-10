@@ -154,18 +154,20 @@ const Layout = ({ children, headerWithFullWidthBottomBorder }) => {
   const handleHeaderBurgerClick = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <>
       <TopBanner />
-      <Header
-        items={headerMenu}
-        isMobileMenuOpen={isMobileMenuOpen}
-        fullWidthBottomBorder={headerWithFullWidthBottomBorder}
-        onBurgerClick={handleHeaderBurgerClick}
-      />
-      <main className="flex-grow">{children}</main>
-      <Footer />
-      <MobileMenu isOpen={isMobileMenuOpen} items={headerMenu} />
-    </div>
+      <div className="relative flex min-h-screen flex-col">
+        <Header
+          items={headerMenu}
+          isMobileMenuOpen={isMobileMenuOpen}
+          fullWidthBottomBorder={headerWithFullWidthBottomBorder}
+          onBurgerClick={handleHeaderBurgerClick}
+        />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+        <MobileMenu isOpen={isMobileMenuOpen} items={headerMenu} />
+      </div>
+    </>
   );
 };
 
