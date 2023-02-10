@@ -1,0 +1,8 @@
+{
+  "line-length": false,
+  "ol-prefix": false,
+  "no-inline-html": false,
+  "heading-increment": false,
+  "first-line-heading": false,
+  "no-emphasis-as-heading": false
+}

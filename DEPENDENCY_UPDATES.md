@@ -13,9 +13,9 @@ Version of npm and the node on which the project runs
 
 This routine assumes you’ll be using `npm` as the main package manager.
 
-- `npm update` - this command will update all the packages listed to the latest version (specified by the tag config), respecting the [semver](https://semver.org/) constraints of both your package and its dependencies (if they also require the same package). It will also install missing packages.
+- `npm update` - this command will update all the packages listed to the latest version (specified by the tag config), respecting the [semver](https://semver.org/) constraints of both your package and its dependencies (if they also require the same package). It will also install missing packages.
 
-💡 Note that by default `npm update` will not update the [semver](https://semver.org/) values of direct dependencies in your project `package.json`, if you want to also update values in `package.json` you can run: `npm update --save` (or add the `save=true` option to a [configuration file](https://docs.npmjs.com/cli/v8/configuring-npm/npmrc) to make that the default behavior).
+💡 Note that by default `npm update` will not update the [semver](https://semver.org/) values of direct dependencies in your project `package.json`, if you want to also update values in `package.json` you can run: `npm update --save` (or add the `save=true` option to a [configuration file](https://docs.npmjs.com/cli/v8/configuring-npm/npmrc) to make that the default behavior).
 
 1. Open up the project, fetch latest changes, branch out
 
@@ -23,7 +23,7 @@ This routine assumes you’ll be using `npm` as the main package manager.
 
 The most common/best practice is to never allow automatic updates to versions that have potentially critical changes this applies to `major` versions so in this case you can rest assured that you will not get critical changes during the upgrade, but if you want to upgrade the `major` version you will need to do it manually (more about this in step 5) - this will allow you to further check and make sure everything works fine
 
-⚠️ **Please, make yourself familiar with conventional [semver constraints](https://docs.npmjs.com/cli/v8/commands/npm-update#example)**
+⚠️ **Please, make yourself familiar with conventional [semver constraints](https://docs.npmjs.com/cli/v8/commands/npm-update#example)**
 
 3. Run `npm install` to update the deps
 
@@ -91,6 +91,7 @@ In this case you'd want to specify all the libraries with green updates first
 ## 🐛 Known issues
 
 Add information if you're having trouble updating any dependencies, this could be very helpful for future updates
+
 <details>
   <summary>Example</summary>
 
