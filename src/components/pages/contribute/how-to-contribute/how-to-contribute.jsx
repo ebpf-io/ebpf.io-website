@@ -15,7 +15,7 @@ const items = [
     links: [
       {
         text: 'eBPF landscape',
-        to: 'https://ebpf.io/projects',
+        to: '/applications',
       },
     ],
   },
@@ -27,7 +27,7 @@ const items = [
     links: [
       {
         text: 'eBPF development toolchains',
-        to: 'https://ebpf.io/what-is-ebpf#toolchains',
+        to: '/what-is-ebpf/#development-toolchains',
       },
     ],
   },
@@ -47,7 +47,7 @@ const items = [
       },
       {
         text: 'Slack',
-        to: 'https://ebpf.io/slack',
+        to: '/slack',
       },
     ],
   },

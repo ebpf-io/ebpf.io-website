@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link/link';
+import slugifyCategory from 'utils/slugify-category';
 
 import bccLogo from './logos/bcc.svg';
 import bumblebeeLogo from './logos/bumblebee.svg';
@@ -97,7 +98,9 @@ const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
         <div className="w-full max-w-[116px] shrink-0 sm:max-w-[90px]" />
       )}
       <div>
-        <h3 className="heading-6xl font-semibold">{name}</h3>
+        <h3 className="heading-6xl font-semibold" id={slugifyCategory(name)}>
+          {name}
+        </h3>
         {title && <h4 className="mt-0.5 font-sans text-lg font-medium leading-snug">{title}</h4>}
 
         <p className="mt-2.5" dangerouslySetInnerHTML={{ __html: description }} />
@@ -126,7 +129,7 @@ const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
 ProjectCard.propTypes = {
   name: PropTypes.string.isRequired,
   logoName: PropTypes.string,
-  logoUrl: PropTypes.string.isRequired,
+  logoUrl: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   urls: PropTypes.arrayOf(
@@ -138,6 +141,7 @@ ProjectCard.propTypes = {
 };
 
 ProjectCard.defaultProps = {
+  logoUrl: null,
   logoName: null,
 };
 

@@ -13,7 +13,7 @@ const links = [
   },
   {
     text: 'Linux kernel eBPF runtime',
-    to: 'https://ebpf.io/projects#linux-kernel',
+    to: '/infrastructure/#linux-kernel',
   },
 ];
 
