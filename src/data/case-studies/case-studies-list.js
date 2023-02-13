@@ -9,6 +9,7 @@ import Cruise from './logos/cruise.inline.svg';
 import Datadog from './logos/datadog.inline.svg';
 import DigitalOcean from './logos/digital-ocean.inline.svg';
 import F5 from './logos/f5.inline.svg';
+import Global from './logos/global.inline.svg';
 import Google from './logos/google.inline.svg';
 import Ikea from './logos/ikea.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
@@ -18,6 +19,7 @@ import NYT from './logos/nyt.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
 import Seznam from './logos/seznam.inline.svg';
 import Sky from './logos/sky.inline.svg';
+import Shopify from './logos/shopify.inline.svg';
 import Trip from './logos/trip.inline.svg';
 import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
@@ -72,25 +74,26 @@ const caseStudiesData = [
     ],
   },
   {
-    title: 'Ikea',
-    logo: Ikea,
+    title: 'S&P Global',
+    logo: Global,
     description:
-      '<strong>Ikea</strong> eBPF through Cilium for networking and load balancing in their private cloud.',
+      '<strong>S&P Global</strong> uses eBPF through Cilium for networking across multiple clouds and on-prem.',
     links: [
       {
         text: 'Video',
-        to: 'https://www.youtube.com/watch?v=sg-F_R-ZVNc',
+        to: 'https://www.youtube.com/watch?v=6CZ_SSTqb4g',
       },
     ],
   },
   {
-    title: 'Apple',
-    logo: Apple,
-    description: '<strong>Apple</strong> uses eBPF through Falco for kernel security monitoring.',
+    title: 'Shopify',
+    logo: Shopify,
+    description:
+      '<strong>Shopify</strong> uses eBPF through Falco for intrusion detection.',
     links: [
       {
         text: 'Video',
-        to: 'https://www.youtube.com/watch?v=ZBlJSr6XkN8',
+        to: 'https://www.youtube.com/watch?v=6pVci31Mb6Q',
       },
     ],
   },
@@ -107,6 +110,29 @@ const caseStudiesData = [
       {
         text: 'Talk',
         to: 'https://legacy.netdevconf.info/0x13/session.html?talk-XDP-based-DDoS-mitigation',
+      },
+    ],
+  },
+  {
+    title: 'Ikea',
+    logo: Ikea,
+    description:
+      '<strong>Ikea</strong> uses eBPF through Cilium for networking and load balancing in their private cloud.',
+    links: [
+      {
+        text: 'Video',
+        to: 'https://www.youtube.com/watch?v=sg-F_R-ZVNc',
+      },
+    ],
+  },
+  {
+    title: 'Apple',
+    logo: Apple,
+    description: '<strong>Apple</strong> uses eBPF through Falco for kernel security monitoring.',
+    links: [
+      {
+        text: 'Video',
+        to: 'https://www.youtube.com/watch?v=ZBlJSr6XkN8',
       },
     ],
   },
