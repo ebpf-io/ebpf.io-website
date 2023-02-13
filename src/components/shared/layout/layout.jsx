@@ -107,8 +107,14 @@ const headerMenu = [
         text: 'bpfconf (LSF/MM/BPF)',
         items: [
           {
+            text: '2023 CFP',
+            to: 'https://events.linuxfoundation.org/lsfmm/program/cfp/',
+            target: '_blank',
+          },
+          {
             text: '2022',
             to: 'http://vger.kernel.org/bpfconf2022.html',
+            target: '_blank',
           },
           {
             text: '2019',
