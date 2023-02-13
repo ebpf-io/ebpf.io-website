@@ -65,7 +65,7 @@ const navItems = [
 const socialLinks = [
   {
     text: 'Twitter',
-    to: 'https://twitter.com/ebpf_io',
+    to: 'https://twitter.com/eBPFsummit',
     icon: TwitterIcon,
   },
   {
