@@ -1,23 +1,45 @@
-// import clsx from 'clsx';
+import clsx from 'clsx';
 import React from 'react';
 
-// import Link from 'components/shared/link/link';
+import Link from 'components/shared/link/link';
 // import Button from 'components/shared/button';
 
-// import CheckIcon from './images/check.inline.svg';
-// import diagramMobile from './images/diagram-mobile.svg';
-// import diagram from './images/diagram.svg';
+import bookSvg from './images/book.svg';
+import labSvg from './images/lab.svg';
+import videoSvg from './images/video.svg';
 
-// const items = [
-//   {
-//     image: '',
-//     title: '',
-//     description: '',
-//     bgClassName: '',
-//     linkUrl: '',
-//     linkText: '',
-//   },
-// ];
+const items = [
+  {
+    image: labSvg,
+    title: 'Try the Lab',
+    description:
+      'Borrowing the opensnoop example from Liz Rice’s report, this lab teaches you to handle an eBPF tool, watch it loading its components, and even add your own tracing into the source eBPF code.',
+    cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
+    dashedBorderClassName: 'border-secondary-blue-2',
+    linkUrl: 'https://isovalent.com/labs/getting-started-with-ebpf/',
+    linkTarget: '_blank',
+  },
+  {
+    image: bookSvg,
+    title: 'Read the Books',
+    description:
+      'Read the “What is eBPF?” and “Learning eBPF” O’Reilly Books by Liz Rice or BPF Performance Tools by Brendan Gregg to get started. Throughout the books, you will learn what eBPF and why it is so powerful, the capabilities it provides.',
+    cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
+    dashedBorderClassName: 'border-secondary-green-2',
+    linkUrl: '#', // TODO: add anchor to the book section
+    linkTarget: '_self',
+  },
+  {
+    image: videoSvg,
+    title: 'Watch the video',
+    description:
+      'Borrowing the opensnoop example from Liz Rice’s report, this lab teaches you to handle an eBPF tool, watch it loading its components, and even add your own tracing into the source eBPF code.',
+    cardColorClassName: 'bg-secondary-red-1-light border-secondary-red-1',
+    dashedBorderClassName: 'border-secondary-red-2',
+    linkUrl: 'https://isovalent.com/labs/getting-started-with-ebpf/',
+    linkTarget: '_blank',
+  },
+];
 
 const Hero = () => (
   <section className="hero safe-paddings mt-20 lg:mt-16 md:mt-14 sm:mt-11">
@@ -26,28 +48,64 @@ const Hero = () => (
         Get Started with eBPF
       </h1>
 
-      <p className="max-w-[680px] pt-[12px] text-center text-lg leading-normal ">
+      <p className="max-w-[680px] pt-3 text-center text-lg leading-normal ">
         There are many variations of passages of Lorem Ipsum available, but the majority have
         suffered alteration in some form, by injected humour, or randomised.
       </p>
 
       <ul className="mt-14 grid grid-cols-3 gap-8 lg:mt-12 lg:gap-7 md:mt-10 md:grid-cols-1 md:gap-6">
-        {/* {items.map(({ image, title, description, bgClassName }, index) => (
-          <li className={clsx(bgClassName, 'flex rounded-lg sm:flex-col')} key={index}>
-            <img
-              className="lg:w-[184px] lg:object-cover md:w-40 sm:mx-auto sm:w-[264px]"
-              src={image}
-              alt={title}
-              width={264}
-              height={264}
-              loading="lazy"
-            />
+        {items.map(
+          (
+            {
+              image,
+              title,
+              description,
+              cardColorClassName,
+              dashedBorderClassName,
+              linkUrl,
+              linkTarget,
+            },
+            index
+          ) => (
+            <li
+              className={clsx(
+                cardColorClassName,
+                'flex flex-col justify-between rounded-lg border p-8'
+              )}
+              key={index}
+            >
+              <div>
+                <img
+                  className="h-14 w-14 md:h-20 md:w-20 sm:h-14 sm:w-14"
+                  src={image}
+                  alt={title}
+                  width={56}
+                  height={56}
+                  loading="lazy"
+                />
 
-            <h3 className="font-sans text-3xl font-semibold leading-snug lg:text-2xl">{title}</h3>
-            <p className="mt-3 lg:mt-2.5 lg:text-sm md:text-base">{description}</p>
-            <Link to="#">{text}</Link>
-          </li>
-        ))} */}
+                <h3 className="sm:2xl mt-5 font-sans text-3xl font-semibold leading-snug lg:text-2xl md:text-3xl">
+                  {title}
+                </h3>
+                <p className="mt-2.5 text-lg lg:mt-2.5 lg:text-sm md:text-lg sm:text-base">
+                  {description}
+                </p>
+              </div>
+
+              <Link
+                className={clsx(
+                  dashedBorderClassName,
+                  'mt-7 border-t border-dashed pt-7 text-sm font-semibold'
+                )}
+                to={linkUrl}
+                target={linkTarget}
+                theme="black"
+              >
+                {title}
+              </Link>
+            </li>
+          )
+        )}
       </ul>
     </div>
   </section>
