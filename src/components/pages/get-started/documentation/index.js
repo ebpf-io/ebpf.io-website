@@ -1,3 +1,3 @@
-import Hero from './documentation';
+import Documentation from './documentation';
 
-export default Hero;
+export default Documentation;
