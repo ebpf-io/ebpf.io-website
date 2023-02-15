@@ -1,9 +1,8 @@
 import clsx from 'clsx';
 import React from 'react';
 
-import Link from 'components/shared/link/link';
+import Button from 'components/shared/button/button';
 
-import Chevron from './images/chevron.inline.svg';
 import ciliumSvg from './images/cilium.svg';
 import gitKernelSvg from './images/git-kernel.svg';
 import kernelSvg from './images/kernel.svg';
@@ -85,13 +84,12 @@ const Documentation = () => (
                 </div>
               </div>
 
-              <Link
+              <Button
                 to={linkUrl}
-                className="ml-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black transition-colors duration-200 hover:bg-gray-40 md:mt-5 md:ml-0 sm:ml-5 sm:mt-0 xs:mt-5 xs:ml-0"
+                className="ml-10"
                 rel="noreferrer noopener"
-              >
-                <Chevron className="w-1.5" />
-              </Link>
+                theme="withYellowChevron"
+              />
             </div>
           </li>
         ))}
