@@ -88,6 +88,7 @@ const Documentation = () => (
               <Link
                 to={linkUrl}
                 className="ml-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black transition-colors duration-200 hover:bg-gray-40 md:mt-5 md:ml-0 sm:ml-5 sm:mt-0 xs:mt-5 xs:ml-0"
+                rel="noreferrer noopener"
               >
                 <Chevron className="w-1.5" />
               </Link>

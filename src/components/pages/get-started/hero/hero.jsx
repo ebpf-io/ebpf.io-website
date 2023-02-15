@@ -100,6 +100,7 @@ const Hero = () => (
                 to={linkUrl}
                 target={linkTarget}
                 theme="black"
+                rel={linkUrl.includes('http') && 'noreferrer noopener'}
               >
                 {title}
               </Link>
