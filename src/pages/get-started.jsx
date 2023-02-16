@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
+import Books from 'components/pages/get-started/books';
 import Documentation from 'components/pages/get-started/documentation/documentation';
 import Hero from 'components/pages/get-started/hero';
 import Layout from 'components/shared/layout';
@@ -42,6 +43,7 @@ const HomePage = () => (
     <div className="container mt-28">
       <SubscriptionForm size="md" />
     </div>
+    <Books />
     <VideoGallery items={videoItems} title="Watch videos on how to build infrastructure" />
   </Layout>
 );
