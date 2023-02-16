@@ -4,6 +4,7 @@ import React from 'react';
 import Books from 'components/pages/get-started/books';
 import Documentation from 'components/pages/get-started/documentation/documentation';
 import Hero from 'components/pages/get-started/hero';
+import Tutorials from 'components/pages/get-started/tutorials';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
@@ -44,6 +45,7 @@ const HomePage = () => (
       <SubscriptionForm size="md" />
     </div>
     <Books />
+    <Tutorials />
     <VideoGallery items={videoItems} title="Watch videos on how to build infrastructure" />
   </Layout>
 );
