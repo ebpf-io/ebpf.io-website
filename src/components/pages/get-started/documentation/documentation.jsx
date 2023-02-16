@@ -87,6 +87,7 @@ const Documentation = () => (
               <Button
                 to={linkUrl}
                 className="ml-10"
+                target="_blank"
                 rel="noreferrer noopener"
                 theme="withYellowChevron"
               />
