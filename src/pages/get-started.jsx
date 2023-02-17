@@ -42,11 +42,15 @@ const HomePage = () => (
     <Hero />
     <Documentation />
     <div className="container mt-28">
-      <SubscriptionForm size="md" />
+      <SubscriptionForm size="lg" />
     </div>
     <Books />
     <Tutorials />
-    <VideoGallery items={videoItems} title="Watch videos on how to build infrastructure" />
+    <VideoGallery
+      className="mt-[150px] md:mt-20 sm:mt-16"
+      items={videoItems}
+      title="Watch videos on how to build infrastructure"
+    />
   </Layout>
 );
 

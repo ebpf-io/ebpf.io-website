@@ -14,7 +14,7 @@ const styles = {
     'black-filled': 'bg-black text-white hover:btn-black-hover transition-[background]',
     'primary-yellow-filled': 'bg-primary-yellow text-black hover:bg-[#FFF04C]',
     withYellowChevron:
-      'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:bg-gray-40 md:mt-5 md:ml-0 sm:ml-5 sm:mt-0 xs:mt-5 xs:ml-0',
+      'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:bg-gray-40',
   },
 };
 

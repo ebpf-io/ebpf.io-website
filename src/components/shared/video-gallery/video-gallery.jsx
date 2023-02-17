@@ -58,11 +58,14 @@ const Video = ({ videoId, isCurrent, setCurrentVideo, isWrapperInView }) => {
   );
 };
 
-const VideoGallery = ({ title, items }) => {
+const VideoGallery = ({ title, items, className }) => {
   const [currentVideo, setCurrentVideo] = useState(null);
   const [wrapperRef, isWrapperInView] = useInView({ rootMargin: '500px' });
   return (
-    <section className="community safe-paddings mt-36 mb-40 lg:my-28 md:my-24" ref={wrapperRef}>
+    <section
+      className={clsx('community safe-paddings mt-36 mb-40 lg:my-28 md:my-24', className)}
+      ref={wrapperRef}
+    >
       <div className="container">
         <div className="flex items-center justify-between">
           <h2 className="heading-8xl font-semibold leading-dense">{title}</h2>
@@ -152,6 +155,11 @@ VideoGallery.propTypes = {
     speaker: PropTypes.string,
     date: PropTypes.string,
   }).isRequired,
+  className: PropTypes.string,
+};
+
+VideoGallery.defaultProps = {
+  className: null,
 };
 
 export default VideoGallery;
