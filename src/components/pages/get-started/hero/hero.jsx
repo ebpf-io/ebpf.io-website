@@ -33,10 +33,10 @@ const items = [
     image: videoSvg,
     title: 'Watch the video',
     description:
-      'Borrowing the opensnoop example from Liz Rice’s report, this lab teaches you to handle an eBPF tool, watch it loading its components, and even add your own tracing into the source eBPF code.',
+      'Dive into the history of eBPF with this talk from John Fastabend. Starting in the “early days” of 2014, it covers the main projects, companies, and players that influenced the landscape of Linux networking at the time and how they enabled the creation of eBPF.',
     cardColorClassName: 'bg-secondary-red-1-light border-secondary-red-1',
     dashedBorderClassName: 'border-secondary-red-2',
-    linkUrl: 'https://isovalent.com/labs/getting-started-with-ebpf/',
+    linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00',
     linkTarget: '_blank',
   },
 ];
