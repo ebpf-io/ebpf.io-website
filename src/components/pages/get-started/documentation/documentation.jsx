@@ -51,13 +51,13 @@ const items = [
 ];
 
 const Documentation = () => (
-  <section className="hero safe-paddings mt-20 lg:mt-16 md:mt-14 sm:mt-11">
+  <section className="hero safe-paddings md:mt-26 mt-32 lg:mt-20 sm:mt-14">
     <div className="container flex flex-col items-center">
-      <h2 className="heading-10xl text-center font-semibold leading-tight">
+      <h2 className="heading-8xl text-center font-semibold leading-tight">
         Read the Documentation to learn more about eBPF
       </h2>
 
-      <ul className="mt-11 grid w-full grid-cols-2 sm:grid-cols-1">
+      <ul className="mt-14 grid w-full grid-cols-2 sm:grid-cols-1">
         {items.map(({ title, image, linkUrl, description }, index) => (
           <li
             className={clsx(
@@ -86,7 +86,7 @@ const Documentation = () => (
 
               <Button
                 to={linkUrl}
-                className="ml-10"
+                className="ml-10 md:mt-5 md:ml-0 sm:ml-5 sm:mt-0 xs:mt-5 xs:ml-0"
                 target="_blank"
                 rel="noreferrer noopener"
                 theme="withYellowChevron"

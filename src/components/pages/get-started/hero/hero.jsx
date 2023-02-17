@@ -26,7 +26,7 @@ const items = [
       'Read the “What is eBPF?” and “Learning eBPF” O’Reilly Books by Liz Rice or BPF Performance Tools by Brendan Gregg to get started. Throughout the books, you will learn what eBPF and why it is so powerful, the capabilities it provides.',
     cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
     dashedBorderClassName: 'border-secondary-green-2',
-    linkUrl: '#', // TODO: add anchor to the book section
+    linkUrl: '#books',
     linkTarget: '_self',
   },
   {
@@ -84,7 +84,7 @@ const Hero = () => (
                   loading="lazy"
                 />
 
-                <h3 className="sm:2xl mt-5 font-sans text-3xl font-semibold leading-snug lg:text-2xl md:text-3xl">
+                <h3 className="mt-5 font-sans text-4xl font-semibold leading-snug lg:text-3xl md:text-4xl">
                   {title}
                 </h3>
                 <p className="mt-2.5 text-lg lg:mt-2.5 lg:text-sm md:text-lg sm:text-base">
@@ -95,7 +95,7 @@ const Hero = () => (
               <Link
                 className={clsx(
                   dashedBorderClassName,
-                  'mt-7 border-t border-dashed pt-7 text-sm font-semibold'
+                  'mt-7 border-t border-dashed pt-7 text-sm font-semibold uppercase'
                 )}
                 to={linkUrl}
                 target={linkTarget}

@@ -31,9 +31,9 @@ const items = [
 ];
 
 const Books = () => (
-  <section className="hero safe-paddings mt-32 lg:mt-24 md:mt-16 sm:mt-14">
+  <section className="hero safe-paddings mt-32 lg:mt-24 md:mt-16 sm:mt-14" id="books">
     <div className="container flex flex-col items-center px-3">
-      <h2 className="heading-10xl text-center font-semibold leading-tight">
+      <h2 className="heading-8xl text-center font-semibold leading-tight">
         Explore books on eBPF from the industry experts
       </h2>
 

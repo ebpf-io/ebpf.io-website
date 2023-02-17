@@ -32,6 +32,7 @@ const SubscriptionForm = ({ className, size }) => {
   const { formState, isLoading, errorMessage, email, handleInputChange, handleSubmit } =
     useSubscribeForm();
 
+  const lgSize = size === 'lg';
   const mdSize = size === 'md';
   const smSize = size === 'sm';
 
@@ -40,7 +41,11 @@ const SubscriptionForm = ({ className, size }) => {
       <div
         className={clsx(
           'flex items-center rounded-lg text-white lg:flex-col lg:space-x-0 lg:space-y-8 lg:px-9 md:px-7 sm:px-5',
-          { 'space-x-10 px-11 py-9': smSize, 'space-x-[60px] py-11 pl-14 pr-20': mdSize },
+          {
+            'space-x-10 px-11 py-9': smSize,
+            'space-x-[60px] py-11 pl-14 pr-20': mdSize,
+            'justify-between space-x-12 p-14 pb-[60px]': lgSize,
+          },
           className
         )}
         style={{
@@ -54,12 +59,19 @@ const SubscriptionForm = ({ className, size }) => {
             className={clsx('font-sans font-bold leading-tight', {
               'text-4xl': size === 'sm',
               'text-6xl': mdSize,
+              'text-7xl': lgSize,
             })}
           >
-            <span className={clsx({ 'text-primary-yellow': mdSize })}>Subscribe</span> to bi-weekly
-            eCHO News
+            <span className={clsx({ 'text-primary-yellow': mdSize || lgSize })}>Subscribe</span> to
+            bi-weekly eCHO News
           </h2>
-          <p className={clsx('mt-1.5', { 'text-sm': smSize, 'text-base': mdSize })}>
+          <p
+            className={clsx('mt-1.5', {
+              'text-sm': smSize,
+              'text-base': mdSize,
+              'text-lg': lgSize,
+            })}
+          >
             Keep up on the latest news and information from the eBPF and Cilium
           </p>
         </div>
@@ -67,16 +79,18 @@ const SubscriptionForm = ({ className, size }) => {
           className={clsx('relative grow text-black lg:w-full', {
             'max-w-[400px]': smSize,
             'max-w-[500px]': mdSize,
+            'max-w-[460px]': lgSize,
           })}
           onSubmit={handleSubmit}
         >
           <input
             className={clsx(
-              'remove-autocomplete-styles h-12 w-full rounded-[46px] border-2 py-3 pl-5 pr-14 text-sm leading-none transition-colors duration-200 placeholder:text-gray-70 focus:outline-none',
+              'remove-autocomplete-styles h-12 w-full rounded-[46px] border-2 py-3 pl-5 pr-14 text-base leading-none transition-colors duration-200 placeholder:text-gray-70 focus:outline-none',
               errorMessage
                 ? 'border-secondary-red hover:border-secondary-red focus:border-secondary-red'
                 : 'border-transparent',
-              formState === 'success' && 'font-medium'
+              formState === 'success' && 'font-medium',
+              lgSize && 'ml-0 h-[60px]'
             )}
             type="email"
             name="email"
@@ -98,16 +112,24 @@ const SubscriptionForm = ({ className, size }) => {
                 <Button
                   className={clsx(
                     'absolute inset-y-0 -right-px h-12 !rounded-[54px] border border-primary-yellow font-sans hover:border-[#FFF04C] sm:flex sm:items-center sm:justify-center sm:p-0',
-                    { 'w-12': smSize, 'w-[193px] sm:w-12': mdSize }
+                    {
+                      'w-12': smSize,
+                      'w-[193px] sm:w-12': mdSize,
+                      'top-1.5 right-1.5 w-[160px] sm:w-12': lgSize,
+                    }
                   )}
                   type="submit"
                   theme="primary-yellow-filled"
                   style={{ boxShadow: '0px 4px 12px rgba(143, 126, 0, 0.2)' }}
                   loading={isLoading}
                 >
-                  <span className={clsx({ hidden: smSize, 'sm:hidden': mdSize })}>Subscribe</span>
+                  <span className={clsx({ hidden: smSize, 'sm:hidden': mdSize || lgSize })}>
+                    Subscribe
+                  </span>
                   {!isLoading && (
-                    <SendIcon className={clsx('ml-1 h-6 w-6 sm:block', { hidden: mdSize })} />
+                    <SendIcon
+                      className={clsx('ml-1 h-6 w-6 sm:block', { hidden: mdSize || lgSize })}
+                    />
                   )}
                 </Button>
               </m.div>
@@ -117,15 +139,17 @@ const SubscriptionForm = ({ className, size }) => {
           <AnimatePresence>
             {(formState === 'success' || formState === 'error') && (
               <m.div
-                className={clsx('absolute top-1/2 -right-px -translate-y-1/2')}
+                className={clsx('absolute top-1/2 -right-px -translate-y-1/2', {
+                  'right-1.5': lgSize,
+                })}
                 initial="initial"
                 animate="animate"
                 exit="exit"
                 variants={appearAndExitAnimationVariants}
                 aria-hidden
               >
-                {formState === 'success' && <CheckIcon className="h-12 w-12" />}
-                {formState === 'error' && <ErrorIcon className="h-12 w-12" />}
+                {formState === 'success' && <CheckIcon className={clsx('h-12 w-12')} />}
+                {formState === 'error' && <ErrorIcon className={clsx('h-12 w-12')} />}
               </m.div>
             )}
           </AnimatePresence>
@@ -137,7 +161,7 @@ const SubscriptionForm = ({ className, size }) => {
 
 SubscriptionForm.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.oneOf(['sm', 'md']),
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
 };
 
 SubscriptionForm.defaultProps = {
