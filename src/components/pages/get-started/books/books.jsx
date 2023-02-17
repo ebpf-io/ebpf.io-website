@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Button from 'components/shared/button/button';
+import Link from 'components/shared/link/link';
 
 import bpfPerformanceTools from './images/bpf-performance-tools.jpg';
 import linuxObservabilityWithBpf from './images/linux-observability-with-bpf.jpg';
@@ -43,26 +44,25 @@ const Books = () => (
             className="group relative m-auto drop-shadow-book xs:flex xs:max-w-[256px] xs:justify-center"
             key={index}
           >
-            <img
-              className="w-full rounded"
-              src={image}
-              alt={alt}
-              width={256}
-              height={334}
-              loading="lazy"
-            />
+            <Link className="" to={linkUrl} target="_blank" rel="noreferrer noopener">
+              <img
+                className="w-full rounded"
+                src={image}
+                alt={alt}
+                width={256}
+                height={334}
+                loading="lazy"
+              />
 
-            <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center rounded bg-transparent transition-colors duration-200 group-hover:bg-[#000000]/[0.3] ">
-              <Button
-                to={linkUrl}
-                className="py-[16px] px-[28px] opacity-0 transition-opacity duration-200 group-hover:opacity-100"
-                target="_blank"
-                rel="noreferrer noopener"
-                theme="primary-yellow-filled"
-              >
-                Learn More
-              </Button>
-            </div>
+              <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center rounded bg-transparent transition-colors duration-200 group-hover:bg-[#000000]/[0.3] ">
+                <Button
+                  className="py-[16px] px-[28px] opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  theme="primary-yellow-filled"
+                >
+                  Learn More
+                </Button>
+              </div>
+            </Link>
           </li>
         ))}
       </ul>

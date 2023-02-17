@@ -59,7 +59,7 @@ const SubscriptionForm = ({ className, size }) => {
             className={clsx('font-sans font-bold leading-tight', {
               'text-4xl': size === 'sm',
               'text-6xl': mdSize,
-              'text-7xl': lgSize,
+              'heading-8xl': lgSize,
             })}
           >
             <span className={clsx({ 'text-primary-yellow': mdSize || lgSize })}>Subscribe</span> to

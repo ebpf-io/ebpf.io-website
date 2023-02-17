@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 
 import Button from 'components/shared/button/button';
+import Link from 'components/shared/link/link';
 
 import ciliumSvg from './images/cilium.svg';
 import gitKernelSvg from './images/git-kernel.svg';
@@ -51,7 +52,7 @@ const items = [
 ];
 
 const Documentation = () => (
-  <section className="hero safe-paddings md:mt-26 mt-32 lg:mt-20 sm:mt-14">
+  <section className="hero safe-paddings md:mt-26 mt-32 lg:mt-20">
     <div className="container flex flex-col items-center">
       <h2 className="heading-8xl text-center font-semibold leading-tight">
         Read the Documentation to learn more about eBPF
@@ -61,15 +62,20 @@ const Documentation = () => (
         {items.map(({ title, image, linkUrl, description }, index) => (
           <li
             className={clsx(
-              'flex border-l border-t border-dashed border-gray-80 p-10 lg:p-8',
+              'flex border-l border-t border-dashed border-gray-80 ',
               '[&:nth-child(-n+2)]:border-t-0 [&:nth-child(odd)]:border-l-0',
               'md:[&:nth-child(2n+1)]:border-l-0',
-              'sm:w-full sm:border-l-0 sm:px-0 sm:first:pt-0 sm:last:pb-0 sm:[&:nth-child(odd)]:border-l-0 sm:[&:nth-child(2)]:border-t'
+              'sm:w-full sm:border-l-0 sm:px-0 sm:first:pt-0 sm:last:pb-0 sm:[&:nth-child(-n+2)]:border-t sm:[&:nth-child(odd)]:border-l-0'
             )}
             key={index}
           >
-            <div className="flex w-full items-center justify-between">
-              <div className="flex max-w-full items-center md:flex-col md:items-start sm:flex-row sm:items-center xs:flex-col xs:items-start">
+            <Link
+              className="group flex w-full items-center justify-between p-10 lg:p-8 sm:py-6 sm:px-0"
+              to={linkUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div className="flex max-w-full items-start md:flex-col sm:flex-row xs:flex-col">
                 <img
                   className="h-[60px] w-[60px]"
                   src={image}
@@ -79,19 +85,17 @@ const Documentation = () => (
                   loading="lazy"
                 />
                 <div className="ml-5 flex flex-col md:ml-0 md:mt-5 sm:ml-5 sm:mt-0 xs:ml-0 xs:mt-5">
-                  <span className="text-3xl font-semibold md:text-2xl sm:text-3xl">{title}</span>
-                  <span className="mt-1 text-lg md:text-base sm:text-lg">{description}</span>
+                  <span className="text-3xl font-semibold leading-tight transition-colors duration-200 group-hover:text-gray-40 md:text-2xl">
+                    {title}
+                  </span>
+                  <span className="mt-1 text-lg leading-snug md:text-base sm:text-lg">
+                    {description}
+                  </span>
                 </div>
               </div>
 
-              <Button
-                to={linkUrl}
-                className="ml-10"
-                target="_blank"
-                rel="noreferrer noopener"
-                theme="withYellowChevron"
-              />
-            </div>
+              <Button className="ml-10" theme="withYellowChevron" />
+            </Link>
           </li>
         ))}
       </ul>

@@ -14,7 +14,7 @@ const styles = {
     'black-filled': 'bg-black text-white hover:btn-black-hover transition-[background]',
     'primary-yellow-filled': 'bg-primary-yellow text-black hover:bg-[#FFF04C]',
     withYellowChevron:
-      'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:bg-gray-40',
+      'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:btn-black-hover group-hover:btn-black-hover transition-[background]',
   },
 };
 
@@ -41,7 +41,9 @@ const Button = ({
 
   return (
     <Tag className={className} to={to} {...otherProps}>
-      {theme === 'withYellowChevron' ? <ChevronYellow className="w-1.5" /> : children}
+      <span className="-mt-0.5">
+        {theme === 'withYellowChevron' ? <ChevronYellow className="mt-0.5 ml-px w-2" /> : children}
+      </span>
     </Tag>
   );
 };
