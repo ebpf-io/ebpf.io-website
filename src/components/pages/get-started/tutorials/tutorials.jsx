@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Button from 'components/shared/button/button';
+import Link from 'components/shared/link/link';
 
 const items = [
   {
@@ -24,7 +25,7 @@ const items = [
 ];
 
 const Tutorials = () => (
-  <section className="hero safe-paddings mt-40 md:mt-32 sm:mt-24">
+  <section className="hero safe-paddings mt-40 md:mt-16 sm:mt-14">
     <div className="container grid grid-cols-2 gap-x-[26px] md:grid-cols-1">
       <div className="pr-[72px] pt-3 md:max-w-[550px] md:pr-0">
         <h2 className="heading-8xl font-semibold leading-tight">
@@ -43,22 +44,22 @@ const Tutorials = () => (
 
       <ul className="md:mt-14">
         {items.map(({ title, description, linkUrl }, index) => (
-          <li
-            className="flex items-center justify-between border-t border-dashed border-gray-80 pt-7 pb-8 last:border-b"
-            key={index}
-          >
-            <div className="flex flex-col">
-              <span className="text-4xl font-semibold leading-tight">{title}</span>
-              <span className="mt-2.5 text-base leading-normal">{description}</span>
-            </div>
-
-            <Button
+          <li className="border-t border-dashed border-gray-80 last:border-b" key={index}>
+            <Link
+              className="group flex items-center justify-between pt-7 pb-8 "
               to={linkUrl}
-              className="ml-10"
               target="_blank"
               rel="noreferrer noopener"
-              theme="withYellowChevron"
-            />
+            >
+              <div className="flex flex-col">
+                <span className="text-4xl font-semibold leading-tight transition-colors duration-200 group-hover:text-gray-40">
+                  {title}
+                </span>
+                <span className="mt-2.5 text-base leading-normal">{description}</span>
+              </div>
+
+              <Button className="ml-10" theme="withYellowChevron" />
+            </Link>
           </li>
         ))}
       </ul>

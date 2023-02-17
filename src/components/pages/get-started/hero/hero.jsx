@@ -70,13 +70,13 @@ const Hero = () => (
             <li
               className={clsx(
                 cardColorClassName,
-                'flex flex-col justify-between rounded-lg border p-8'
+                'flex flex-col justify-between rounded-lg border p-8 sm:p-6'
               )}
               key={index}
             >
               <div>
                 <img
-                  className="h-14 w-14 md:h-20 md:w-20 sm:h-14 sm:w-14"
+                  className="h-14 w-14"
                   src={image}
                   alt={title}
                   width={56}
@@ -84,7 +84,7 @@ const Hero = () => (
                   loading="lazy"
                 />
 
-                <h3 className="mt-5 font-sans text-4xl font-semibold leading-snug lg:text-3xl md:text-4xl">
+                <h3 className="mt-5 font-sans text-4xl font-semibold leading-snug lg:text-3xl md:text-4xl sm:mt-4 sm:text-3xl">
                   {title}
                 </h3>
                 <p className="mt-2.5 text-lg lg:mt-2.5 lg:text-sm md:text-lg sm:text-base">
@@ -95,7 +95,7 @@ const Hero = () => (
               <Link
                 className={clsx(
                   dashedBorderClassName,
-                  'mt-7 border-t border-dashed pt-7 text-sm font-semibold uppercase'
+                  'mt-7 border-t border-dashed pt-7 text-sm font-semibold uppercase sm:mt-5 sm:pt-5'
                 )}
                 to={linkUrl}
                 target={linkTarget}
