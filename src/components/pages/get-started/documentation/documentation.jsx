@@ -68,7 +68,7 @@ const Documentation = () => (
             )}
             key={index}
           >
-            <div className="flex w-full items-center justify-between md:flex-col md:items-start sm:flex-row sm:items-center xs:flex-col xs:items-start">
+            <div className="flex w-full items-center justify-between">
               <div className="flex max-w-full items-center md:flex-col md:items-start sm:flex-row sm:items-center xs:flex-col xs:items-start">
                 <img
                   className="h-[60px] w-[60px]"
@@ -86,7 +86,7 @@ const Documentation = () => (
 
               <Button
                 to={linkUrl}
-                className="ml-10 md:mt-5 md:ml-0 sm:ml-5 sm:mt-0 xs:mt-5 xs:ml-0"
+                className="ml-10"
                 target="_blank"
                 rel="noreferrer noopener"
                 theme="withYellowChevron"
