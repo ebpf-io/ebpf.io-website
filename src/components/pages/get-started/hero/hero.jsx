@@ -2,25 +2,25 @@ import clsx from 'clsx';
 import React from 'react';
 
 import Link from 'components/shared/link/link';
-// import Button from 'components/shared/button';
 
-import bookSvg from './images/book.svg';
-import labSvg from './images/lab.svg';
-import videoSvg from './images/video.svg';
+import BookSvg from './images/book.inline.svg';
+import LabSvg from './images/lab.inline.svg';
+import VideoSvg from './images/video.inline.svg';
 
 const items = [
   {
-    image: labSvg,
+    Image: LabSvg,
     title: 'Try the Lab',
     description:
       'Borrowing the opensnoop example from Liz Rice’s report, this lab teaches you to handle an eBPF tool, watch it loading its components, and even add your own tracing into the source eBPF code.',
     cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
     dashedBorderClassName: 'border-secondary-blue-2',
-    linkUrl: 'https://isovalent.com/labs/getting-started-with-ebpf/',
+    linkUrl:
+      'https://play.instruqt.com/embed/isovalent/tracks/ebpf-getting-started?token=em_9nxLzhlV41gb3rKM&show_challenges=true',
     linkTarget: '_blank',
   },
   {
-    image: bookSvg,
+    Image: BookSvg,
     title: 'Read the Books',
     description:
       'Read the “What is eBPF?” and “Learning eBPF” O’Reilly Books by Liz Rice or BPF Performance Tools by Brendan Gregg to get started. Throughout the books, you will learn what eBPF and why it is so powerful, the capabilities it provides.',
@@ -30,7 +30,7 @@ const items = [
     linkTarget: '_self',
   },
   {
-    image: videoSvg,
+    Image: VideoSvg,
     title: 'Watch the video',
     description:
       'Dive into the history of eBPF with this talk from John Fastabend. Starting in the “early days” of 2014, it covers the main projects, companies, and players that influenced the landscape of Linux networking at the time and how they enabled the creation of eBPF.',
@@ -48,16 +48,11 @@ const Hero = () => (
         Get Started with eBPF
       </h1>
 
-      <p className="max-w-[680px] pt-3 text-center text-lg leading-normal ">
-        There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some form, by injected humour, or randomised.
-      </p>
-
-      <ul className="mt-14 grid grid-cols-3 gap-8 lg:mt-12 lg:gap-7 md:mt-10 md:grid-cols-1 md:gap-6">
+      <ul className="mt-16 grid grid-cols-3 gap-8 lg:mt-12 lg:gap-7 md:mt-10 md:grid-cols-1 md:gap-6">
         {items.map(
           (
             {
-              image,
+              Image,
               title,
               description,
               cardColorClassName,
@@ -75,14 +70,7 @@ const Hero = () => (
               key={index}
             >
               <div>
-                <img
-                  className="h-14 w-14"
-                  src={image}
-                  alt={title}
-                  width={56}
-                  height={56}
-                  loading="lazy"
-                />
+                <Image className="h-14 w-14" />
 
                 <h3 className="mt-5 font-sans text-4xl font-semibold leading-snug lg:text-3xl md:text-4xl sm:mt-4 sm:text-3xl">
                   {title}
@@ -100,7 +88,7 @@ const Hero = () => (
                 to={linkUrl}
                 target={linkTarget}
                 theme="black"
-                rel={linkUrl.includes('http') && 'noreferrer noopener'}
+                el={linkTarget === '_blank' ? 'noreferrer noopener' : null}
               >
                 {title}
               </Link>

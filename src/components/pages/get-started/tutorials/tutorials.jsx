@@ -32,7 +32,7 @@ const Tutorials = () => (
           Dig into the eBPF technology with tutorials from industry experts
         </h2>
         <Button
-          to="/" // TODO: add a proper url
+          to="https://github.com/iovisor/bpftrace/blob/master/docs/tutorial_one_liners.md"
           className="mt-[36px] py-[16px] px-[36px]"
           target="_blank"
           rel="noreferrer noopener"
@@ -52,9 +52,9 @@ const Tutorials = () => (
               rel="noreferrer noopener"
             >
               <div className="flex flex-col">
-                <span className="text-4xl font-semibold leading-tight transition-colors duration-200 group-hover:text-gray-40">
+                <h3 className="text-4xl font-semibold leading-tight transition-colors duration-200 group-hover:text-gray-40">
                   {title}
-                </span>
+                </h3>
                 <span className="mt-2.5 text-base leading-normal">{description}</span>
               </div>
 

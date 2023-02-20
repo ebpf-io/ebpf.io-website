@@ -148,8 +148,8 @@ const SubscriptionForm = ({ className, size }) => {
                 variants={appearAndExitAnimationVariants}
                 aria-hidden
               >
-                {formState === 'success' && <CheckIcon className={clsx('h-12 w-12')} />}
-                {formState === 'error' && <ErrorIcon className={clsx('h-12 w-12')} />}
+                {formState === 'success' && <CheckIcon className="h-12 w-12" />}
+                {formState === 'error' && <ErrorIcon className="h-12 w-12" />}
               </m.div>
             )}
           </AnimatePresence>

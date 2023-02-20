@@ -27,7 +27,7 @@ const items = [
   {
     image: redditSvg,
     title: 'eBPF community on Reddit',
-    description: 'Explore stuff about eBPF kernel subsystem',
+    description: 'Discuss the eBPF kernel subsystem',
     linkUrl: 'https://www.reddit.com/r/eBPF/',
   },
   {
@@ -85,9 +85,9 @@ const Documentation = () => (
                   loading="lazy"
                 />
                 <div className="ml-5 flex flex-col md:ml-0 md:mt-5 sm:ml-5 sm:mt-0 xs:ml-0 xs:mt-5">
-                  <span className="text-3xl font-semibold leading-tight transition-colors duration-200 group-hover:text-gray-40 md:text-2xl">
+                  <h3 className="text-3xl font-semibold leading-tight transition-colors duration-200 group-hover:text-gray-40 md:text-2xl">
                     {title}
-                  </span>
+                  </h3>
                   <span className="mt-1 text-lg leading-snug md:text-base sm:text-lg">
                     {description}
                   </span>
