@@ -33,7 +33,7 @@ const Tutorials = () => (
         </h2>
         <Button
           to="https://github.com/iovisor/bpftrace/blob/master/docs/tutorial_one_liners.md"
-          className="mt-[36px] py-[16px] px-[36px]"
+          className="mt-9 py-4 px-9 sm:hidden"
           target="_blank"
           rel="noreferrer noopener"
           theme="primary-yellow-filled"
@@ -42,7 +42,7 @@ const Tutorials = () => (
         </Button>
       </div>
 
-      <ul className="md:mt-14">
+      <ul className="md:mt-14 sm:mt-10">
         {items.map(({ title, description, linkUrl }, index) => (
           <li className="border-t border-dashed border-gray-80 last:border-b" key={index}>
             <Link
@@ -63,6 +63,16 @@ const Tutorials = () => (
           </li>
         ))}
       </ul>
+
+      <Button
+        to="https://github.com/iovisor/bpftrace/blob/master/docs/tutorial_one_liners.md"
+        className="mt-9 hidden max-w-fit py-4 px-9 sm:inline-flex"
+        target="_blank"
+        rel="noreferrer noopener"
+        theme="primary-yellow-filled"
+      >
+        More tutorials
+      </Button>
     </div>
   </section>
 );
