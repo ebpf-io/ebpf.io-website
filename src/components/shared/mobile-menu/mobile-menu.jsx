@@ -45,12 +45,12 @@ const MobileMenu = ({ isOpen, items }) => {
   return (
     <LazyMotion features={domAnimation}>
       <m.nav
-        className="safe-paddings absolute inset-x-0 bottom-16 top-16 hidden w-full rounded-md bg-white pb-7 md:block"
+        className="safe-paddings fixed inset-x-0 bottom-0 top-[124px] hidden h-[calc(100%-124px)] w-full rounded-md bg-white lg:block xs:top-[154px] xs:h-[calc(100%-154px)]"
         initial="from"
         animate={controls}
         variants={variants}
       >
-        <ul className="flex h-[100vh] flex-col divide-y divide-gray-90 divide-opacity-50 overflow-x-hidden overflow-y-scroll px-7 sm:px-4">
+        <ul className="flex h-full flex-col divide-y divide-gray-90 divide-opacity-50 overflow-x-hidden overflow-y-scroll px-7 pb-7 sm:px-4">
           {items.map((item, index) => (
             <MenuItem {...item} key={index} />
           ))}
