@@ -8,8 +8,21 @@ import TopBanner from 'components/shared/top-banner';
 
 const headerMenu = [
   {
-    text: 'What is eBPF?',
-    to: '/what-is-ebpf',
+    text: 'Learn',
+    items: [
+      {
+        text: 'What is eBPF?',
+        to: '/what-is-ebpf',
+      },
+      {
+        text: 'Get started',
+        to: '/get-started',
+      },
+      {
+        text: 'Case Studies',
+        to: '/case-studies',
+      },
+    ],
   },
   {
     text: 'Blog',
@@ -28,6 +41,7 @@ const headerMenu = [
       },
     ],
   },
+
   {
     text: 'Conferences',
     items: [
@@ -146,10 +160,6 @@ const headerMenu = [
         text: 'eCHO',
         to: 'https://github.com/isovalent/eCHO',
         target: '_blank',
-      },
-      {
-        text: 'Case Studies',
-        to: '/case-studies',
       },
       {
         text: 'Contribute',
