@@ -41,7 +41,7 @@ const HomePage = () => (
   <Layout>
     <Hero />
     <Documentation />
-    <div className="container mt-28">
+    <div className="container mt-28 md:mt-20 sm:mt-12">
       <SubscriptionForm size="lg" />
     </div>
     <Books />

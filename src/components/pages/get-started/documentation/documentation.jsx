@@ -58,7 +58,7 @@ const Documentation = () => (
         Read the Documentation to learn more about eBPF
       </h2>
 
-      <ul className="mt-14 grid w-full grid-cols-2 sm:grid-cols-1">
+      <ul className="mt-14 grid w-full grid-cols-2 md:mt-12 sm:mt-10 sm:grid-cols-1">
         {items.map(({ title, image, linkUrl, description }, index) => (
           <li
             className={clsx(
