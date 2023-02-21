@@ -49,7 +49,7 @@ const HomePage = () => (
     <VideoGallery
       className="mt-[150px] md:mt-20 sm:mt-16"
       items={videoItems}
-      title="Watch videos on how to build infrastructure"
+      title="eBPF introductory videos"
     />
   </Layout>
 );

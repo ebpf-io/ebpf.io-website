@@ -25,10 +25,6 @@ const headerMenu = [
     ],
   },
   {
-    text: 'Blog',
-    to: '/blog',
-  },
-  {
     text: 'Project Landscape',
     items: [
       {
@@ -170,6 +166,10 @@ const headerMenu = [
         to: '/newsletter',
       },
     ],
+  },
+  {
+    text: 'Blog',
+    to: '/blog',
   },
   {
     text: 'Foundation',
