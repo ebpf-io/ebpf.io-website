@@ -11,51 +11,6 @@ import ArrowIcon from 'icons/arrow.inline.svg';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const items = [
-  {
-    videoId: '6N30Yp5f9c4',
-    title: 'BPF and Spectre: Mitigating transient execution attacks',
-    speaker: 'Daniel Borkmann, Isovalent',
-    date: 'Aug 20, 2021',
-  },
-  {
-    videoId: '_5Z2AU7QTH4',
-    title: 'BPF Internals',
-    speaker: 'Brendan Gregg, Netflix',
-    date: 'Jun 9, 2021',
-  },
-  {
-    videoId: 'PJY-rN1EsVw',
-    title: 'Advanced BPF kernel features for the container age',
-    speaker: 'Daniel Borkmann, Isovalent',
-    date: 'Feb 9, 2021',
-  },
-  {
-    videoId: 'slBAYUDABDA',
-    title: 'The Future of eBPF based Networking and Security',
-    speaker: 'Thomas Graf, Isovalent',
-    date: 'Nov 8, 2020',
-  },
-  {
-    videoId: 'Qhm1Zn_BNi4',
-    title: 'BPF as a Fundamentally Better Dataplane',
-    speaker: 'Daniel Borkmann, Isovalent',
-    date: 'Nov 8, 2020',
-  },
-  {
-    videoId: 'ZYBXZFKPS28',
-    title: 'BPF at Facebook',
-    speaker: 'Alexei Starovoitov, Facebook',
-    date: 'Dec 19, 2019',
-  },
-  {
-    videoId: '_Iq1xxNZOAo',
-    title: 'How to Make Linux Microservice-Aware with Cilium and eBPF',
-    speaker: 'Thomas Graf, Isovalent',
-    date: 'Mar 6, 2019',
-  },
-];
-
 const Video = ({ videoId, isCurrent, setCurrentVideo, isWrapperInView }) => {
   const [isSSR, setIsSSR] = useState(false);
   const onPlay = () => {
@@ -103,21 +58,17 @@ const Video = ({ videoId, isCurrent, setCurrentVideo, isWrapperInView }) => {
   );
 };
 
-Video.propTypes = {
-  videoId: PropTypes.string.isRequired,
-  isCurrent: PropTypes.bool.isRequired,
-  setCurrentVideo: PropTypes.func.isRequired,
-  isWrapperInView: PropTypes.bool.isRequired,
-};
-
-const Community = () => {
+const VideoGallery = ({ title, items, className }) => {
   const [currentVideo, setCurrentVideo] = useState(null);
   const [wrapperRef, isWrapperInView] = useInView({ rootMargin: '500px' });
   return (
-    <section className="community safe-paddings mt-36 mb-40 lg:my-28 md:my-24" ref={wrapperRef}>
+    <section
+      className={clsx('community safe-paddings mt-36 mb-40 lg:my-28 md:my-24', className)}
+      ref={wrapperRef}
+    >
       <div className="container">
         <div className="flex items-center justify-between">
-          <h2 className="heading-8xl font-semibold leading-dense">eBPF Community Talks</h2>
+          <h2 className="heading-8xl font-semibold leading-dense">{title}</h2>
           <div className="space-x-5 md:hidden">
             <button
               className="prev hover:btn-black-hover rounded bg-black py-[17px] px-3.5 transition-[background] duration-200 lg:px-3 lg:py-[15px]"
@@ -188,4 +139,27 @@ const Community = () => {
     </section>
   );
 };
-export default Community;
+
+Video.propTypes = {
+  videoId: PropTypes.string.isRequired,
+  isCurrent: PropTypes.bool.isRequired,
+  setCurrentVideo: PropTypes.func.isRequired,
+  isWrapperInView: PropTypes.bool.isRequired,
+};
+
+VideoGallery.propTypes = {
+  title: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf({
+    videoId: PropTypes.string,
+    title: PropTypes.string,
+    speaker: PropTypes.string,
+    date: PropTypes.string,
+  }).isRequired,
+  className: PropTypes.string,
+};
+
+VideoGallery.defaultProps = {
+  className: null,
+};
+
+export default VideoGallery;

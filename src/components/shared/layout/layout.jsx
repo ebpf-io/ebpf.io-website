@@ -8,12 +8,21 @@ import TopBanner from 'components/shared/top-banner';
 
 const headerMenu = [
   {
-    text: 'What is eBPF?',
-    to: '/what-is-ebpf',
-  },
-  {
-    text: 'Blog',
-    to: '/blog',
+    text: 'Learn',
+    items: [
+      {
+        text: 'What is eBPF?',
+        to: '/what-is-ebpf',
+      },
+      {
+        text: 'Get started',
+        to: '/get-started',
+      },
+      {
+        text: 'Case Studies',
+        to: '/case-studies',
+      },
+    ],
   },
   {
     text: 'Project Landscape',
@@ -28,6 +37,7 @@ const headerMenu = [
       },
     ],
   },
+
   {
     text: 'Conferences',
     items: [
@@ -148,10 +158,6 @@ const headerMenu = [
         target: '_blank',
       },
       {
-        text: 'Case Studies',
-        to: '/case-studies',
-      },
-      {
         text: 'Contribute',
         to: '/contribute',
       },
@@ -160,6 +166,10 @@ const headerMenu = [
         to: '/newsletter',
       },
     ],
+  },
+  {
+    text: 'Blog',
+    to: '/blog',
   },
   {
     text: 'Foundation',
