@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Button from 'components/shared/button';
-
 import bg1Md from './images/bg-1-md.png';
 import bg1 from './images/bg-1.png';
 import bg2Md from './images/bg-2-md.png';
@@ -40,9 +38,9 @@ const TopBanner = () => (
       <span className="font-sans text-3xl font-bold leading-none md:text-xl">
         eBPF summit 2022&nbsp;
       </span>
-      <Button className="h-9 px-4 pb-1 md:text-sm" theme="black-filled" to="/summit-2022">
+      <a className="h-9 px-4 pb-1 md:text-sm" theme="black-filled" to="/summit-2022">
         Watch Recordings
-      </Button>
+      </a>
     </div>
   </div>
 );
