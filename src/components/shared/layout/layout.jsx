@@ -15,7 +15,7 @@ const headerMenu = [
         to: '/what-is-ebpf',
       },
       {
-        text: 'Get started',
+        text: 'Get Started',
         to: '/get-started',
       },
       {
