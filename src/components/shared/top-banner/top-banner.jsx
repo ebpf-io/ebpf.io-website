@@ -40,7 +40,7 @@ const TopBanner = () => (
       <span className="font-sans text-3xl font-bold leading-none md:text-xl">
         eBPF summit 2022&nbsp;
       </span>
-      <Button className="h-9 px-4 pb-1 md:text-sm" theme="black-filled" to="/summit-2022">
+      <Button className="h-9 px-4 pb-1 md:text-sm" theme="black-filled" to="/summit-2022.html">
         Watch Recordings
       </Button>
     </div>
