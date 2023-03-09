@@ -73,7 +73,7 @@ const Card = ({
             {type}
           </span>
 
-          <h3 className="mt-2.5 text-2xl font-semibold leading-tight line-clamp-2 sm:text-xl">
+          <h3 className="mt-2.5 font-sans text-2xl font-semibold leading-tight line-clamp-2 sm:text-xl">
             {title}
           </h3>
 
