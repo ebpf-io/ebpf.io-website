@@ -91,6 +91,9 @@ module.exports = {
       lineHeight: {
         dense: '1.125',
       },
+      letterSpacing: {
+        'middle-wide': '0.03em',
+      },
       dropShadow: {
         book: '0px 8px 24px rgba(61, 61, 61, 0.16)',
       },
