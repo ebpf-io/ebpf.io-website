@@ -61,7 +61,7 @@ const Card = ({
             height={182}
           />
         )}
-        <div className="rounded-b-lg border-x border-b border-gray-90 p-6 pt-5">
+        <div className="rounded-b-lg border-x border-b border-gray-90 p-6 pt-5 xs:p-4">
           <span
             className={clsx(
               'rounded pl-1.5 pr-[5px] pt-[3.5px] pb-[4.5px] text-xs font-bold uppercase leading-none tracking-middle-wide',
@@ -81,9 +81,9 @@ const Card = ({
             {description}
           </p>
 
-          <div className="mt-auto flex space-x-4 border-t border-dashed border-gray-90 pt-5">
+          <div className="mt-auto flex gap-x-4 border-t border-dashed border-gray-90 pt-5 xs:flex-col xs:gap-x-0 xs:gap-y-4">
             {date && (
-              <div className="inline-flex items-center space-x-1.5">
+              <div className="inline-flex items-center gap-x-1.5">
                 <TimeIcon className="w-3.5 shrink-0" />
                 <span className="text-sm font-normal leading-none">
                   <time dateTime={date}>{date}</time>
@@ -91,7 +91,7 @@ const Card = ({
               </div>
             )}
             {place && (
-              <div className="flex items-center space-x-1.5">
+              <div className="flex items-center gap-x-1.5">
                 <PlaceIcon className="w-3.5 shrink-0" />
                 <span className="text-sm font-normal leading-none">{place}</span>
               </div>
