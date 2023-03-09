@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 
+import SpecialCard from 'components/pages/events//special-card';
 import Card from 'components/pages/events/card';
 import SubscriptionForm from 'components/shared/subscription-form';
 
@@ -10,8 +11,10 @@ const EventList = ({ items }) => (
       {items.map((item, index) => (
         <Fragment key={index}>
           <Card {...item} className="col-span-4 md:col-span-6" />
+          {index === 4 && <SpecialCard type="book" className="col-span-4 md:col-span-6" />}
+          {index === 10 && <SpecialCard type="webinar" className="col-span-4 md:col-span-6" />}
           {/* The section that is being displayed on the desktop */}
-          {index === 8 && (
+          {index === 7 && (
             <div className="col-span-12 my-[72px] md:!hidden">
               <SubscriptionForm size="lg" />
             </div>
