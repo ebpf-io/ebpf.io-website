@@ -8,12 +8,21 @@ import TopBanner from 'components/shared/top-banner';
 
 const headerMenu = [
   {
-    text: 'What is eBPF?',
-    to: '/what-is-ebpf',
-  },
-  {
-    text: 'Blog',
-    to: '/blog',
+    text: 'Learn',
+    items: [
+      {
+        text: 'What is eBPF?',
+        to: '/what-is-ebpf',
+      },
+      {
+        text: 'Get Started',
+        to: '/get-started',
+      },
+      {
+        text: 'Case Studies',
+        to: '/case-studies',
+      },
+    ],
   },
   {
     text: 'Project Landscape',
@@ -28,6 +37,7 @@ const headerMenu = [
       },
     ],
   },
+
   {
     text: 'Conferences',
     items: [
@@ -107,12 +117,33 @@ const headerMenu = [
         text: 'bpfconf (LSF/MM/BPF)',
         items: [
           {
+            text: '2023 (CFP)',
+            to: 'https://lore.kernel.org/bpf/Y7hDVliKq+PzY1yY@localhost.localdomain/',
+            target: '_blank',
+          },
+          {
             text: '2022',
             to: 'http://vger.kernel.org/bpfconf2022.html',
+            target: '_blank',
           },
           {
             text: '2019',
             to: 'http://vger.kernel.org/bpfconf2019.html',
+            target: '_blank',
+          },
+        ],
+      },
+      {
+        text: 'BPF Meetups at IETF',
+        items: [
+          {
+            text: '2023 (IETF 116)',
+            to: 'https://datatracker.ietf.org/group/bpf/meetings/',
+            target: '_blank',
+          },
+          {
+            text: '2022 (IETF 115)',
+            to: 'https://lore.kernel.org/bpf/DM4PR21MB3440837AE8F54F8E6EA5D475A3119@DM4PR21MB3440.namprd21.prod.outlook.com/',
             target: '_blank',
           },
         ],
@@ -142,10 +173,6 @@ const headerMenu = [
         target: '_blank',
       },
       {
-        text: 'Case Studies',
-        to: '/case-studies',
-      },
-      {
         text: 'Contribute',
         to: '/contribute',
       },
@@ -154,6 +181,10 @@ const headerMenu = [
         to: '/newsletter',
       },
     ],
+  },
+  {
+    text: 'Blog',
+    to: '/blog',
   },
   {
     text: 'Foundation',

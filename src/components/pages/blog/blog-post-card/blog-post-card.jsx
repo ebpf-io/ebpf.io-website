@@ -19,7 +19,7 @@ const Image = ({ coverImage }) => {
   if (!coverImage?.childImageSharp && coverImage?.publicURL) {
     return (
       <img
-        className="h-[200px] w-[200px] shrink-0 bg-gray-94 object-contain sm:h-[250px] sm:w-auto"
+        className="h-[200px] w-[200px] shrink-0 bg-gray-94 object-cover sm:h-[270px] sm:w-auto"
         src={coverImage.publicURL}
         alt=""
         loading="lazy"
@@ -32,18 +32,18 @@ const Image = ({ coverImage }) => {
   if (coverImage?.childImageSharp) {
     return (
       <GatsbyImage
-        className="h-[200px] w-full max-w-[200px] shrink-0 bg-gray-94 sm:h-[250px] sm:max-w-none"
+        className="h-[200px] w-full max-w-[200px] shrink-0 bg-gray-94 sm:h-[270px] sm:max-w-none"
         image={getImage(coverImage)}
         alt=""
         loading="lazy"
-        objectFit="contain"
+        objectFit="cover"
       />
     );
   }
 
   return (
     <img
-      className="shrink-0 bg-gray-94 sm:h-[250px]"
+      className="shrink-0 bg-gray-94 sm:h-[270px]"
       src={`data:image/svg+xml;charset=utf-8,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E`}
       alt=""
       aria-hidden

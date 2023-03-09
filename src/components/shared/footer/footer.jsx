@@ -65,7 +65,7 @@ const navItems = [
 const socialLinks = [
   {
     text: 'Twitter',
-    to: 'https://twitter.com/ebpf_io',
+    to: 'https://twitter.com/eBPFsummit',
     icon: TwitterIcon,
   },
   {
@@ -163,7 +163,7 @@ const Footer = () => (
               See a bug?{'  '}
               <Link
                 theme="primary-yellow"
-                to="https://github.com/cilium/ebpf/issues"
+                to="https://github.com/ebpf-io/ebpf.io-website/issues/new/choose"
                 target="_blank"
                 rel="noopener noreferrer"
               >

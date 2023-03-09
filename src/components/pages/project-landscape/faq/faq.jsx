@@ -72,7 +72,7 @@ const FAQ = () => (
               <h3 className="font-sans text-3xl font-semibold leading-tight lg:text-2xl md:text-xl">
                 {question}
               </h3>
-              <div className="md:prose-md prose prose-xl mt-6 prose-p:!leading-normal hover:prose-a:text-gray-40 hover:prose-a:transition hover:prose-a:duration-200 prose-ol:!pl-6 prose-ul:!pl-5 prose-li:!leading-normal prose-li:marker:font-light prose-li:marker:text-black lg:prose-lg">
+              <div className="prose mt-6 !max-w-none prose-p:!leading-normal hover:prose-a:text-gray-40 hover:prose-a:transition hover:prose-a:duration-200 prose-ol:!pl-6 prose-ul:!pl-5 prose-li:!leading-normal prose-li:marker:font-light prose-li:marker:text-black">
                 {typeof answer === 'string' ? (
                   <div dangerouslySetInnerHTML={{ __html: answer }} />
                 ) : (
