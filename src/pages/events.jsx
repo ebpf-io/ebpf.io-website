@@ -9,7 +9,7 @@ import events from 'constants/temp-events-data.js';
 
 const HomePage = () => (
   <Layout>
-    <Hero />
+    <Hero items={events.slice(0, 4)} />
     <EventList items={events} />
   </Layout>
 );
