@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 
-import SpecialCard from 'components/pages/events//special-card';
 import Card from 'components/pages/events/card';
 import SubscriptionForm from 'components/shared/subscription-form';
 
-const EventList = ({ items }) => (
+import Pagination from '../pagination';
+import SpecialCard from '../special-card';
+
+const EventList = ({ items, pageCount, currentPageIndex }) => (
   <section className="safe-paddings pt-12 pb-16 md:pt-10 md:pb-12">
     <div className="container grid-gap grid grid-cols-12 sm:flex sm:flex-col sm:gap-y-5">
       {items.map((item, index) => (
@@ -27,12 +29,15 @@ const EventList = ({ items }) => (
           )}
         </Fragment>
       ))}
+      {pageCount > 1 && <Pagination pageCount={pageCount} currentPageIndex={currentPageIndex} />}
     </div>
   </section>
 );
 
 EventList.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  pageCount: PropTypes.number.isRequired,
+  currentPageIndex: PropTypes.number.isRequired,
 };
 
 export default EventList;
