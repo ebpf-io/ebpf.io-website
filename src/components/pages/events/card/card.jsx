@@ -4,6 +4,7 @@ import React from 'react';
 
 import ImageUniversal from 'components/shared//image-universal';
 // import { getShortDate } from 'utils/constants/getDate';
+import Label from 'components/shared/label';
 import Link from 'components/shared/link/link';
 
 import conferenceSvg from './images/conference.svg';
@@ -12,19 +13,7 @@ import PlaceIcon from './images/place.inline.svg';
 import TimeIcon from './images/time.inline.svg';
 import webinarSvg from './images/webinar.svg';
 
-const Card = ({
-  type,
-  title,
-  description,
-  image,
-  date,
-  place,
-  linkUrl,
-  className,
-  gatsbyImageClassName,
-  imgClassName,
-  svgClassName,
-}) => {
+const Card = ({ type, title, description, image, date, place, linkUrl, className }) => {
   const placeholderImages = {
     Meetup: meetupSvg,
     Conference: conferenceSvg,
@@ -39,11 +28,8 @@ const Card = ({
     <div className={clsx('flex h-full flex-col', className)}>
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
         {(imageSrc || imageUrl) && (
-          // TODO: Add rounded-b-lg
           <ImageUniversal
-            gatsbyImageClassName={gatsbyImageClassName}
-            imgClassName={imgClassName}
-            svgClassName={svgClassName}
+            gatsbyImageClassName="rounded-t-lg"
             imageSrc={imageSrc}
             imageUrl={imageUrl}
             width={384}
@@ -62,17 +48,7 @@ const Card = ({
           />
         )}
         <div className="rounded-b-lg border-x border-b border-gray-90 p-6 pt-5 xs:p-4">
-          <span
-            className={clsx(
-              'rounded pl-1.5 pr-[5px] pt-[3.5px] pb-[4.5px] text-xs font-bold uppercase leading-none tracking-middle-wide',
-              { 'bg-secondary-green-light text-secondary-green': type === 'Meetup' },
-              { 'bg-secondary-red-light text-secondary-red': type === 'Webinar' },
-              { 'bg-secondary-green-light text-secondary-green': type === 'Conference' }
-            )}
-          >
-            {type}
-          </span>
-
+          <Label type={type} />
           <h3 className="mt-2.5 font-sans text-2xl font-semibold leading-tight line-clamp-2 sm:text-xl">
             {title}
           </h3>
@@ -119,17 +95,11 @@ Card.propTypes = {
   place: PropTypes.string.isRequired,
   linkUrl: PropTypes.string.isRequired,
   className: PropTypes.string,
-  gatsbyImageClassName: PropTypes.string,
-  imgClassName: PropTypes.string,
-  svgClassName: PropTypes.string,
 };
 
 Card.defaultProps = {
   image: null,
   className: null,
-  gatsbyImageClassName: null,
-  imgClassName: null,
-  svgClassName: null,
 };
 
 export default Card;
