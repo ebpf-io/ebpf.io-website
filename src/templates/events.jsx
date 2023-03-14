@@ -7,12 +7,15 @@ import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import events from 'constants/temp-events-data.js';
 
-const HomePage = () => (
-  <Layout>
-    <Hero items={events.slice(0, 4)} />
-    <EventList items={events} />
-  </Layout>
-);
+const HomePage = (props) => {
+  console.log(props);
+  return (
+    <Layout>
+      <Hero items={events.slice(0, 4)} />
+      <EventList items={events} />
+    </Layout>
+  );
+};
 
 export default HomePage;
 
