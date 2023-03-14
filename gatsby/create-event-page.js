@@ -17,13 +17,28 @@ module.exports = async ({ graphql, actions }) => {
           }
         ) {
           totalCount
-          group(field: { frontmatter: { type: SELECT } }) {
-            fieldValue
+        }
+        featuredPosts: allMdx(
+          filter: {
+            internal: { contentFilePath: { regex: $eventRegex } }
+            fields: { isDraft: { in: $draftFilter } }
+            frontmatter: { isFeatured: { eq: true } }
           }
+        ) {
           nodes {
             frontmatter {
               type
-              region
+              title
+              description
+              date
+              place
+              linkUrl
+              image {
+                childImageSharp {
+                  gatsbyImageData(width: 10)
+                }
+                publicURL
+              }
             }
           }
         }
@@ -35,6 +50,7 @@ module.exports = async ({ graphql, actions }) => {
   if (result.errors) throw new Error(result.errors);
 
   const { totalCount } = result.data.allMdx;
+  const { featuredPosts } = result.data;
 
   const pageCount = Math.ceil(totalCount / EVENT_PER_PAGE);
 
@@ -51,6 +67,7 @@ module.exports = async ({ graphql, actions }) => {
       path: pagePath,
       component: path.resolve('./src/templates/events.jsx'),
       context: {
+        featuredPosts,
         currentPageIndex: i,
         pageCount,
         skip: i * EVENT_PER_PAGE,
