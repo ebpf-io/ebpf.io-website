@@ -18,14 +18,16 @@ const Hero = ({ items }) => {
           dangerouslySetInnerHTML={{ __html: title }}
         />
 
-        <div className="grid-gap-x grid w-full grid-cols-12">
-          <MainCard {...mainItem} className="col-span-8 flex flex-col md:col-span-12" />
-          <div className="col-span-4 col-start-9 flex flex-col last:border-b last:border-dashed last:border-gray-90 md:col-span-12 md:col-start-1">
-            {items.map((item, index) => (
-              <ListCard {...item} key={index} />
-            ))}
+        {items.length > 0 && (
+          <div className="grid-gap-x grid w-full grid-cols-12">
+            <MainCard {...mainItem} className="col-span-8 flex flex-col md:col-span-12" />
+            <div className="col-span-4 col-start-9 flex flex-col last:border-b last:border-dashed last:border-gray-90 md:col-span-12 md:col-start-1">
+              {items.map((item, index) => (
+                <ListCard {...item} key={index} />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

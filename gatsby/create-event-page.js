@@ -24,13 +24,15 @@ module.exports = async ({ graphql, actions }) => {
             fields: { isDraft: { in: $draftFilter } }
             frontmatter: { isFeatured: { eq: true } }
           }
+          sort: { frontmatter: { date: DESC } }
+          limit: 5
         ) {
           nodes {
             frontmatter {
               type
               title
               description
-              date
+              date(formatString: "MMMM, DD YYYY")
               place
               linkUrl
               image {
@@ -61,7 +63,7 @@ module.exports = async ({ graphql, actions }) => {
   };
 
   Array.from({ length: pageCount }).forEach((_, i) => {
-    const pagePath = i === 0 ? EVENTS_BASE_PATH : `${EVENTS_BASE_PATH}${i + 1}`;
+    const pagePath = EVENTS_BASE_PATH;
 
     createPage({
       path: pagePath,
