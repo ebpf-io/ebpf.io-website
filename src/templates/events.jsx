@@ -1,28 +1,30 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useState } from 'react';
 
 import EventList from 'components/pages/events/event-list';
 import Hero from 'components/pages/events/hero';
+import Pagination from 'components/pages/events/pagination';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import events from 'constants/temp-events-data.js';
+import { EVENT_PER_PAGE } from 'constants/event';
 
-const HomePage = ({
-  pageContext: {
-    featuredPosts: { nodes: featured },
-  },
-}) => {
-  const featuredEvents = featured.map((item) => ({ ...item.frontmatter }));
-  console.log(featuredEvents);
+const EventsPage = ({ pageContext: { featuredEvents, allEvents, totalCount, pageCount } }) => {
+  const [itemOffset, setItemOffset] = useState(0);
+
+  const endOffset = itemOffset + EVENT_PER_PAGE;
+  const currentEvent = allEvents.slice(itemOffset, endOffset);
 
   return (
     <Layout>
       <Hero items={featuredEvents} />
-      <EventList items={events} />
+      <EventList items={currentEvent} />
+      {pageCount > 1 && (
+        <Pagination totalCount={totalCount} pageCount={pageCount} callback={setItemOffset} />
+      )}
     </Layout>
   );
 };
 
-export default HomePage;
+export default EventsPage;
 
 export const Head = ({ location: { pathname } }) => <SEO pathname={pathname} />;
