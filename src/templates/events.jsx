@@ -7,11 +7,17 @@ import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import events from 'constants/temp-events-data.js';
 
-const HomePage = (props) => {
-  console.log(props);
+const HomePage = ({
+  pageContext: {
+    featuredPosts: { nodes: featured },
+  },
+}) => {
+  const featuredEvents = featured.map((item) => ({ ...item.frontmatter }));
+  console.log(featuredEvents);
+
   return (
     <Layout>
-      <Hero items={events.slice(0, 4)} />
+      <Hero items={featuredEvents} />
       <EventList items={events} />
     </Layout>
   );
