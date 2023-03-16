@@ -5,7 +5,7 @@ import React from 'react';
 const Label = ({ type, className }) => (
   <span
     className={clsx(
-      'rounded pl-1.5 pr-[5px] pt-[3.5px] pb-[4.5px] text-xs font-bold uppercase leading-none tracking-middle-wide',
+      'w-fit rounded pl-1.5 pr-[5px] pt-[3.5px] pb-[4.5px] text-xs font-bold uppercase leading-none tracking-middle-wide',
       { 'bg-secondary-green-light text-secondary-green': type === 'Meetup' },
       { 'bg-secondary-red-light text-secondary-red': type === 'Webinar' },
       { 'bg-secondary-green-light text-secondary-green': type === 'Conference' },

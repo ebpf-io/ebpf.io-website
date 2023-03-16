@@ -18,14 +18,13 @@ module.exports = async ({ graphql, actions }) => {
         ) {
           totalCount
         }
-        featuredPosts: allMdx(
+        allPosts: allMdx(
           filter: {
             internal: { contentFilePath: { regex: $eventRegex } }
             fields: { isDraft: { in: $draftFilter } }
-            frontmatter: { isFeatured: { eq: true } }
+            frontmatter: { isFeatured: { eq: false } }
           }
           sort: { frontmatter: { date: DESC } }
-          limit: 5
         ) {
           nodes {
             frontmatter {
@@ -35,9 +34,35 @@ module.exports = async ({ graphql, actions }) => {
               date(formatString: "MMMM, DD YYYY")
               place
               linkUrl
-              image {
+              ogImage {
                 childImageSharp {
-                  gatsbyImageData(width: 10)
+                  gatsbyImageData(width: 384, height: 182)
+                }
+                publicURL
+              }
+            }
+          }
+        }
+        featuredPosts: allMdx(
+          filter: {
+            internal: { contentFilePath: { regex: $eventRegex } }
+            fields: { isDraft: { in: $draftFilter } }
+            frontmatter: { isFeatured: { eq: true } }
+          }
+          sort: { frontmatter: { date: DESC } }
+          limit: 4
+        ) {
+          nodes {
+            frontmatter {
+              type
+              title
+              description
+              date(formatString: "MMMM, DD YYYY")
+              place
+              linkUrl
+              ogImage {
+                childImageSharp {
+                  gatsbyImageData(width: 800, height: 280)
                 }
                 publicURL
               }
@@ -52,29 +77,29 @@ module.exports = async ({ graphql, actions }) => {
   if (result.errors) throw new Error(result.errors);
 
   const { totalCount } = result.data.allMdx;
-  const { featuredPosts } = result.data;
+  const {
+    featuredPosts: { nodes: featured },
+  } = result.data;
+  const {
+    allPosts: { nodes: events },
+  } = result.data;
 
+  function getFrontmatterData(items) {
+    return items.map((item) => ({ ...item.frontmatter }));
+  }
+
+  const allEvents = getFrontmatterData(events);
+  const featuredEvents = getFrontmatterData(featured);
   const pageCount = Math.ceil(totalCount / EVENT_PER_PAGE);
 
-  const context = {
-    draftFilter: DRAFT_FILTER,
-    limit: EVENT_PER_PAGE,
-    eventRegex: EVENTS_REGEX,
-  };
-
-  Array.from({ length: pageCount }).forEach((_, i) => {
-    const pagePath = EVENTS_BASE_PATH;
-
-    createPage({
-      path: pagePath,
-      component: path.resolve('./src/templates/events.jsx'),
-      context: {
-        featuredPosts,
-        currentPageIndex: i,
-        pageCount,
-        skip: i * EVENT_PER_PAGE,
-        ...context,
-      },
-    });
+  createPage({
+    path: EVENTS_BASE_PATH,
+    component: path.resolve('./src/templates/events.jsx'),
+    context: {
+      featuredEvents,
+      allEvents,
+      totalCount,
+      pageCount,
+    },
   });
 };

@@ -9,10 +9,10 @@ import SpecialCard from '../special-card';
 
 const EventList = ({ items, pageCount, currentPageIndex }) => (
   <section className="safe-paddings pt-12 pb-16 md:pt-10 md:pb-12">
-    <div className="container grid-gap grid grid-cols-12 sm:flex sm:flex-col sm:gap-y-5">
+    <div className="container grid-gap grid grid-cols-12 grid-rows-[min-content] items-stretch sm:flex sm:flex-col sm:gap-y-5">
       {items.map((item, index) => (
         <Fragment key={index}>
-          <Card {...item} className="col-span-4 md:col-span-6" />
+          <Card {...item} className="col-span-4 row-span-1 md:col-span-6" />
           {index === 4 && <SpecialCard type="book" className="col-span-4 md:col-span-6" />}
           {index === 10 && <SpecialCard type="webinar" className="col-span-4 md:col-span-6" />}
           {/* The section that is being displayed on the desktop */}
