@@ -1,6 +1,6 @@
 const path = require('path');
 
-const { EVENTS_BASE_PATH, EVENT_PER_PAGE } = require('../src/constants/event');
+const { EVENTS_BASE_PATH } = require('../src/constants/event');
 
 const { DRAFT_FILTER, EVENTS_REGEX } = require('./constants');
 
@@ -90,7 +90,6 @@ module.exports = async ({ graphql, actions }) => {
 
   const allEvents = getFrontmatterData(events);
   const featuredEvents = getFrontmatterData(featured);
-  const pageCount = Math.ceil(totalCount / EVENT_PER_PAGE);
 
   createPage({
     path: EVENTS_BASE_PATH,
@@ -99,7 +98,6 @@ module.exports = async ({ graphql, actions }) => {
       featuredEvents,
       allEvents,
       totalCount,
-      pageCount,
     },
   });
 };
