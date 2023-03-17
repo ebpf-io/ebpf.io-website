@@ -15,11 +15,17 @@ const Pagination = ({ pageCount, totalCount, callback }) => {
   const handlePageChange = ({ selected }) => {
     const newOfSet = (selected * EVENT_PER_PAGE) % totalCount;
     callback(newOfSet);
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
     <ReactPaginate
-      containerClassName="flex justify-center items-center mt-20 text-sm"
+      containerClassName="container flex justify-center items-center pt-16 pb-32 text-sm"
       pageClassName="sm:hidden"
       breakClassName="sm:hidden"
       pageLinkClassName={pageLinkAndBreakLinkClassName}

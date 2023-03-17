@@ -1,43 +1,46 @@
 import PropTypes from 'prop-types';
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 import Card from 'components/pages/events/card';
+import Pagination from 'components/pages/events/pagination';
 import SubscriptionForm from 'components/shared/subscription-form';
+import { EVENT_PER_PAGE } from 'constants/event';
 
-import Pagination from '../pagination';
 import SpecialCard from '../special-card';
 
-const EventList = ({ items, pageCount, currentPageIndex }) => (
-  <section className="safe-paddings pt-12 pb-16 md:pt-10 md:pb-12">
-    <div className="container grid-gap grid grid-cols-12 grid-rows-[min-content] items-stretch sm:flex sm:flex-col sm:gap-y-5">
-      {items.map((item, index) => (
-        <Fragment key={index}>
-          <Card {...item} className="col-span-4 row-span-1 md:col-span-6" />
-          {index === 4 && <SpecialCard type="book" className="col-span-4 md:col-span-6" />}
-          {index === 10 && <SpecialCard type="webinar" className="col-span-4 md:col-span-6" />}
-          {/* The section that is being displayed on the desktop */}
-          {index === 7 && (
-            <div className="col-span-12 my-[72px] md:!hidden">
-              <SubscriptionForm size="lg" />
-            </div>
-          )}
-          {/* The same section that is being displayed on the mobile */}
-          {index === 5 && (
-            <div className="col-span-12 my-20 hidden md:flex sm:my-12">
-              <SubscriptionForm size="lg" />
-            </div>
-          )}
-        </Fragment>
-      ))}
-      {pageCount > 1 && <Pagination pageCount={pageCount} currentPageIndex={currentPageIndex} />}
-    </div>
-  </section>
-);
+const EventList = ({ allEvents, totalCount, pageCount }) => {
+  const [itemOffset, setItemOffset] = useState(0);
+
+  const endOffset = itemOffset + EVENT_PER_PAGE;
+  const currentEvents = allEvents.slice(itemOffset, endOffset);
+
+  return (
+    <section className="safe-paddings pt-12 pb-16 md:pt-10 md:pb-12">
+      <div className="container grid-gap grid grid-cols-12 grid-rows-[min-content] items-stretch sm:flex sm:flex-col sm:gap-y-5">
+        {currentEvents.map((item, index) => (
+          <Fragment key={index}>
+            <Card {...item} className="col-span-4 row-span-1 md:col-span-6" />
+            {index === 4 && <SpecialCard type="book" className="col-span-4 md:col-span-6" />}
+            {index === 10 && <SpecialCard type="webinar" className="col-span-4 md:col-span-6" />}
+            {index === 7 && (
+              <div className="col-span-12 my-[72px] md:!hidden">
+                <SubscriptionForm size="lg" />
+              </div>
+            )}
+          </Fragment>
+        ))}
+      </div>
+      {pageCount > 1 && (
+        <Pagination totalCount={totalCount} pageCount={pageCount} callback={setItemOffset} />
+      )}
+    </section>
+  );
+};
 
 EventList.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  allEvents: PropTypes.arrayOf(PropTypes.object).isRequired,
+  totalCount: PropTypes.number.isRequired,
   pageCount: PropTypes.number.isRequired,
-  currentPageIndex: PropTypes.number.isRequired,
 };
 
 export default EventList;
