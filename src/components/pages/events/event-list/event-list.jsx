@@ -8,9 +8,10 @@ import { EVENT_PER_PAGE } from 'constants/event';
 
 import SpecialCard from '../special-card';
 
-const EventList = ({ allEvents, totalCount, pageCount }) => {
+const EventList = ({ allEvents, totalCount }) => {
   const [itemOffset, setItemOffset] = useState(0);
 
+  const pageCount = Math.ceil(totalCount / EVENT_PER_PAGE);
   const endOffset = itemOffset + EVENT_PER_PAGE;
   const currentEvents = allEvents.slice(itemOffset, endOffset);
 
@@ -23,7 +24,12 @@ const EventList = ({ allEvents, totalCount, pageCount }) => {
             {index === 4 && <SpecialCard type="book" className="col-span-4 md:col-span-6" />}
             {index === 10 && <SpecialCard type="webinar" className="col-span-4 md:col-span-6" />}
             {index === 7 && (
-              <div className="col-span-12 my-[72px] md:!hidden">
+              <div className="md!hidden col-span-12 my-[72px] lg:my-16 md:my-10">
+                <SubscriptionForm size="lg" />
+              </div>
+            )}
+            {index === 6 && (
+              <div className="col-span-12 hidden md:my-10 md:block">
                 <SubscriptionForm size="lg" />
               </div>
             )}
@@ -40,7 +46,6 @@ const EventList = ({ allEvents, totalCount, pageCount }) => {
 EventList.propTypes = {
   allEvents: PropTypes.arrayOf(PropTypes.object).isRequired,
   totalCount: PropTypes.number.isRequired,
-  pageCount: PropTypes.number.isRequired,
 };
 
 export default EventList;
