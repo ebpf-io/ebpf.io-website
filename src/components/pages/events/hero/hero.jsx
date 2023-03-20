@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { memo } from 'react';
+import React from 'react';
 
 import ListCard from './list-card';
 import MainCard from './main-card';
@@ -37,4 +37,4 @@ Hero.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-export default memo(Hero);
+export default Hero;
