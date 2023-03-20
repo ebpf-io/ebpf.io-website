@@ -7,7 +7,7 @@
     @apply inline-flex select-none items-center;
   }
   .checkbox__input + label::before {
-    @apply h-4.5 w-4.5 border-gray-2 mr-2.5 inline-block shrink-0 grow-0 rounded-sm border bg-center bg-no-repeat content-[''];
+    @apply mr-2.5 inline-block h-4 w-4 shrink-0 grow-0 rounded-sm border border-gray-40 bg-center bg-no-repeat content-[''];
   }
 
   .checkbox__label > span {
@@ -15,17 +15,7 @@
   }
 
   .checkbox__input:checked + label::before {
-    @apply border-new-blue bg-new-blue;
+    @apply border-secondary-blue bg-secondary-blue;
     background-image: url('icons/check.inline.svg');
-  }
-
-  .resourcesFilters {
-    .checkbox__label > span {
-      @apply text-base;
-    }
-
-    .checkbox__input:checked + label::before {
-      @apply border-new-blue bg-new-blue;
-    }
   }
 }
