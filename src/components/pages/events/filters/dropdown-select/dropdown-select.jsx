@@ -32,13 +32,13 @@ const DropdownSelect = ({ name, items, values, onSelect, className }) => {
     <div className={clsx('relative', className)}>
       <button
         type="button"
-        className="group flex items-center transition-colors duration-200"
+        className="group flex w-60 items-center justify-between rounded-full border border-gray-90 py-4 px-5 transition-colors duration-200 hover:border-black [@media(max-width:550px)]:w-full"
         ref={buttonRef}
         onClick={handleOpen}
       >
         <span
           className={clsx(
-            'text-base font-normal leading-none tracking-[0.015em] text-gray-40 transition-colors duration-200 group-hover:text-black',
+            'text-base font-medium leading-none text-gray-40 transition-colors duration-200 group-hover:text-black',
             isOpen && '!text-black',
             !!values.length && '!font-medium !tracking-normal !text-black'
           )}
@@ -47,7 +47,7 @@ const DropdownSelect = ({ name, items, values, onSelect, className }) => {
         </span>
         <ChevronIcon
           className={clsx(
-            'ml-2 h-2 w-3 shrink-0 text-gray-40 transition-[transform,color] duration-200 group-hover:text-black',
+            'mt-1 h-auto w-2.5 shrink-0 text-gray-40 transition-[transform,color] duration-200 group-hover:text-black',
             isOpen && '-rotate-180',
             (isOpen || !!values.length) && '!text-black'
           )}
@@ -55,18 +55,15 @@ const DropdownSelect = ({ name, items, values, onSelect, className }) => {
       </button>
       <div
         className={clsx(
-          'border-gray-5 shadow-box absolute top-[197%] left-0 rounded border bg-white transition-[opacity,visibility] duration-200',
+          'shadow-book absolute top-16 left-0 w-60 rounded border border-gray-40 bg-white transition-[opacity,visibility] duration-200 [@media(max-width:550px)]:w-full',
           isOpen ? 'visible z-10 opacity-100' : 'invisible -z-10 opacity-0'
         )}
         ref={dropdownRef}
       >
-        <nav className="p-4.5 flex items-start justify-between md:p-3">
+        <nav className="flex items-start justify-between px-4 py-5 md:p-3">
           <ul className="flex flex-col">
             {items.map(({ name }, index) => (
-              <li
-                className="accent-blue hover:accent-blue-hover flex items-center space-x-2.5 pt-2.5 first:pt-0 md:pt-3"
-                key={index}
-              >
+              <li className="flex items-center space-x-2.5 pt-2.5 first:pt-0 md:pt-3" key={index}>
                 <Checkbox
                   id={name}
                   name="type"

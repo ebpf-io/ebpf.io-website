@@ -23,8 +23,8 @@ const Card = ({ type, title, description, image, date, place, linkUrl, className
   const imageUrl = image?.localFile.publicURL;
 
   return (
-    <div className={clsx('flex flex-col', className)}>
-      <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
+    <div className={clsx('h-auto self-stretch', className)}>
+      <Link to={linkUrl} target="_blank" rel="noopener noreferrer" className="flex h-full flex-col">
         {(imageSrc || imageUrl) && (
           <ImageUniversal
             gatsbyImageClassName="rounded-t-lg"
@@ -45,13 +45,13 @@ const Card = ({ type, title, description, image, date, place, linkUrl, className
             height={182}
           />
         )}
-        <div className="flex flex-col justify-between rounded-b-lg border-x border-b border-gray-90 p-6 pt-5 xs:p-4">
+        <div className="flex flex-1 flex-col rounded-b-lg border-x border-b border-gray-90 p-6 pt-5 xs:p-4">
           <Label type={type} />
           <h3 className="mt-2.5 font-sans text-2xl font-semibold leading-tight line-clamp-2 sm:text-xl">
             {title}
           </h3>
 
-          <p className="mt-2 mb-5 text-base font-light leading-snug text-gray-40 line-clamp-3">
+          <p className="mt-2 mb-5 text-base font-light leading-snug text-gray-40 line-clamp-3 ">
             {description}
           </p>
 
