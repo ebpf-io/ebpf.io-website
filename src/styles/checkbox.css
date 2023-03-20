@@ -16,6 +16,6 @@
 
   .checkbox__input:checked + label::before {
     @apply border-secondary-blue bg-secondary-blue;
-    background-image: url('icons/check.inline.svg');
+    background-image: url('icons/checkbox.inline.svg');
   }
 }
