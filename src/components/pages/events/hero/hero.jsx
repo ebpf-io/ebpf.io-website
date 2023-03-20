@@ -11,7 +11,7 @@ const Hero = ({ items }) => {
   const mainItem = items.shift();
 
   return (
-    <section className="safe-paddings py-20 lg:pt-16 md:pb-10">
+    <section className="safe-paddings pt-20 pb-[72px] lg:pt-16 md:pb-10">
       <div className="container flex flex-col">
         <h1
           className="heading-9xl pb-12 font-semibold leading-tight lg:pb-8"
