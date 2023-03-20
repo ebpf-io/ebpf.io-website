@@ -12,6 +12,7 @@
 @import './heading.css';
 @import './typography.css';
 @import './highlighted-code.css';
+@import './checkbox.css';
 
 /* Utilities */
 @import './remove-autocomplete-styles.css';
