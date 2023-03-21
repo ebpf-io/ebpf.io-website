@@ -32,7 +32,7 @@ const DropdownSelect = ({ name, items, values, onSelect, className }) => {
     <div className={clsx('relative', className)}>
       <button
         type="button"
-        className="group flex w-60 items-center justify-between rounded-full border border-gray-90 py-4 px-5 transition-colors duration-200 hover:border-black [@media(max-width:550px)]:w-full"
+        className="group flex w-60 items-center justify-between rounded-full border border-gray-90 py-4 px-5 transition-colors duration-200 hover:border-gray-40 [@media(max-width:550px)]:w-full"
         ref={buttonRef}
         onClick={handleOpen}
       >
@@ -55,7 +55,7 @@ const DropdownSelect = ({ name, items, values, onSelect, className }) => {
       </button>
       <div
         className={clsx(
-          'shadow-book absolute top-16 left-0 w-60 rounded border border-gray-40 bg-white transition-[opacity,visibility] duration-200 [@media(max-width:550px)]:w-full',
+          'absolute top-16 left-0 w-60 rounded border bg-white drop-shadow-book transition-[opacity,visibility] duration-200 hover:drop-shadow-book [@media(max-width:550px)]:w-full',
           isOpen ? 'visible z-10 opacity-100' : 'invisible -z-10 opacity-0'
         )}
         ref={dropdownRef}

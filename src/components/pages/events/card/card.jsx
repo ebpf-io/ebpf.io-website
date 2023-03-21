@@ -23,7 +23,12 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
   const imageUrl = ogImage?.publicURL;
 
   return (
-    <div className={clsx('h-auto self-stretch rounded-lg border border-gray-90', className)}>
+    <div
+      className={clsx(
+        'h-auto self-stretch rounded-lg border border-gray-90 bg-white hover:drop-shadow-book',
+        className
+      )}
+    >
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer" className="flex h-full flex-col">
         {(imageSrc || imageUrl) && (
           <ImageUniversal
