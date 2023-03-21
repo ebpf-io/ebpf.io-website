@@ -11,7 +11,7 @@ import conferenceSvg from './images/conference-main.svg';
 import meetupSvg from './images/meetup-main.svg';
 import webinarSvg from './images/webinar-main.svg';
 
-const MainCard = ({ type, title, description, image, date, place, linkUrl, className }) => {
+const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, className }) => {
   const placeholderImages = {
     Meetup: meetupSvg,
     Conference: conferenceSvg,
@@ -19,8 +19,8 @@ const MainCard = ({ type, title, description, image, date, place, linkUrl, class
   };
 
   const placeholder = placeholderImages[type];
-  const imageSrc = image?.localFile;
-  const imageUrl = image?.localFile.publicURL;
+  const imageSrc = ogImage?.childImageSharp;
+  const imageUrl = ogImage?.publicURL;
 
   return (
     <div
@@ -32,7 +32,9 @@ const MainCard = ({ type, title, description, image, date, place, linkUrl, class
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
         {(imageSrc || imageUrl) && (
           <ImageUniversal
+            className="h-[280px] w-full md:h-56 sm:h-60 xs:h-48"
             gatsbyImageClassName="rounded-t-[3px]"
+            svgClassName="rounded-t-[3px]"
             imageSrc={imageSrc}
             imageUrl={imageUrl}
             width={800}
@@ -41,9 +43,9 @@ const MainCard = ({ type, title, description, image, date, place, linkUrl, class
           />
         )}
 
-        {!image && (
+        {!ogImage && (
           <img
-            className="h-auto w-full shrink-0 self-center rounded-t-[3px]"
+            className="h-auto w-full shrink-0 self-center rounded-t-[3px] md:h-56 sm:h-60 xs:h-48"
             src={placeholder || placeholderImages.Events}
             alt={title}
             width={800}
@@ -67,13 +69,11 @@ MainCard.propTypes = {
   type: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.shape({
-    localFile: PropTypes.shape({
-      childImageSharp: PropTypes.shape({
-        gatsbyImageData: PropTypes.object,
-      }),
-      publicURL: PropTypes.string,
+  ogImage: PropTypes.shape({
+    childImageSharp: PropTypes.shape({
+      gatsbyImageData: PropTypes.object,
     }),
+    publicURL: PropTypes.string,
   }),
   date: PropTypes.string.isRequired,
   place: PropTypes.string.isRequired,
@@ -82,7 +82,7 @@ MainCard.propTypes = {
 };
 
 MainCard.defaultProps = {
-  image: null,
+  ogImage: null,
   className: null,
 };
 
