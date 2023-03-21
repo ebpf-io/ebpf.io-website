@@ -11,7 +11,7 @@ import conferenceSvg from 'images/conference.svg';
 import meetupSvg from 'images/meetup.svg';
 import webinarSvg from 'images/webinar.svg';
 
-const Card = ({ type, title, description, image, date, place, linkUrl, className }) => {
+const Card = ({ type, title, description, ogImage, date, place, linkUrl, className }) => {
   const placeholderImages = {
     Meetup: meetupSvg,
     Conference: conferenceSvg,
@@ -19,15 +19,17 @@ const Card = ({ type, title, description, image, date, place, linkUrl, className
   };
 
   const placeholder = placeholderImages[type];
-  const imageSrc = image?.localFile;
-  const imageUrl = image?.localFile.publicURL;
+  const imageSrc = ogImage?.childImageSharp;
+  const imageUrl = ogImage?.publicURL;
 
   return (
-    <div className={clsx('h-auto self-stretch', className)}>
+    <div className={clsx('h-auto self-stretch rounded-lg border border-gray-90', className)}>
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer" className="flex h-full flex-col">
         {(imageSrc || imageUrl) && (
           <ImageUniversal
+            className="h-[182px] w-full rounded-t-lg md:h-56 sm:h-60 xs:h-48"
             gatsbyImageClassName="rounded-t-lg"
+            svgClassName="rounded-t-lg"
             imageSrc={imageSrc}
             imageUrl={imageUrl}
             width={384}
@@ -36,16 +38,16 @@ const Card = ({ type, title, description, image, date, place, linkUrl, className
           />
         )}
 
-        {!image && (
+        {!ogImage && (
           <img
-            className="h-auto w-full shrink-0 self-center rounded-t-lg"
+            className="h-[182px] w-full self-center rounded-t-lg object-cover md:h-56 sm:h-60 xs:h-48"
             src={placeholder || placeholderImages.Events}
             alt={title}
             width={384}
             height={182}
           />
         )}
-        <div className="flex flex-1 flex-col rounded-b-lg border-x border-b border-gray-90 p-6 pt-5 xs:p-4">
+        <div className="flex flex-1 flex-col p-6 pt-5 xs:p-4">
           <Label type={type} />
           <h3 className="mt-2.5 font-sans text-2xl font-semibold leading-tight line-clamp-2 sm:text-xl">
             {title}
@@ -70,13 +72,11 @@ Card.propTypes = {
   type: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.shape({
-    localFile: PropTypes.shape({
-      childImageSharp: PropTypes.shape({
-        gatsbyImageData: PropTypes.object,
-      }),
-      publicURL: PropTypes.string,
+  ogImage: PropTypes.shape({
+    childImageSharp: PropTypes.shape({
+      gatsbyImageData: PropTypes.object,
     }),
+    publicURL: PropTypes.string,
   }),
   date: PropTypes.string.isRequired,
   place: PropTypes.string.isRequired,
@@ -85,7 +85,7 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  image: null,
+  ogImage: null,
   className: null,
 };
 
