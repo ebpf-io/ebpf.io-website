@@ -35,7 +35,7 @@ const cardTypes = {
 const SpecialCard = ({ type, className }) => (
   <div
     className={clsx(
-      'flex h-full w-full flex-col justify-between rounded-lg border',
+      'flex h-full w-full flex-col justify-between rounded-lg border hover:drop-shadow-book',
       cardTypes[type].style,
       className
     )}
