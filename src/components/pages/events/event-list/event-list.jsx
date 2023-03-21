@@ -23,10 +23,6 @@ const EventList = ({ allEvents, totalCount }) => {
   const [itemOffset, setItemOffset] = useState(0);
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
 
-  console.log('Render!');
-
-  const endOffset = itemOffset + EVENT_PER_PAGE;
-
   const handleFilters = useCallback(
     (label, newValues) => {
       const newFilters = {
@@ -49,13 +45,10 @@ const EventList = ({ allEvents, totalCount }) => {
     [activeFilters, handleFilters]
   );
 
-  const filteredEvents = useFilteredEvents(allEvents, activeFilters);
+  const endOffset = itemOffset + EVENT_PER_PAGE;
+  const filteredEvents = useFilteredEvents(allEvents, activeFilters, itemOffset, endOffset);
   const currentEvents = filteredEvents.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(filteredEvents.length / EVENT_PER_PAGE);
-
-  console.log(filteredEvents.length);
-  console.log(currentEvents.length);
-  console.log(pageCount);
 
   return (
     <section className="safe-paddings pb-16 md:pb-12">
