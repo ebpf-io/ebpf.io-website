@@ -29,6 +29,7 @@ module.exports = async ({ graphql, actions }) => {
           nodes {
             frontmatter {
               type
+              region
               title
               description
               date(formatString: "MMMM, DD YYYY")
@@ -55,6 +56,7 @@ module.exports = async ({ graphql, actions }) => {
           nodes {
             frontmatter {
               type
+              region
               title
               description
               date(formatString: "MMMM, DD YYYY")
