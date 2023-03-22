@@ -14,7 +14,7 @@ const cardTypes = {
     illustration: bookIllustration,
     width: 382,
     height: 271,
-    imgClassName: 'xl:-mt-12 xs:-mt-6',
+    imgClassName: 'xl:-mt-12 sm:-mt-0 xs:-mt-6  sm:w-full sm:min-w-[160px]',
     buttonText: 'Learn more',
     buttonUrl: '/',
     style: 'bg-secondary-blue-light border-secondary-blue-1',
@@ -27,20 +27,20 @@ const cardTypes = {
     illustration: webinarIllustration,
     width: 310,
     height: 275,
-    imgClassName: '-mt-12 w-3/4 sm:w-1/2 xs:w-3/4',
-    style: 'bg-secondary-yellow-1-light border-secondary-yellow-light',
+    imgClassName: '-mt-12 w-3/4 sm:w-1/2 sm:-mt-0 xs:w-3/4',
+    style: 'bg-secondary-yellow-1-light border-secondary-yellow-light sm:shrink',
   },
 };
 
 const SpecialCard = ({ type, className }) => (
   <div
     className={clsx(
-      'flex h-full w-full flex-col justify-between rounded-lg border hover:drop-shadow-book',
+      'flex h-full w-full flex-col justify-between rounded-lg border hover:drop-shadow-book sm:flex-row sm:pt-5 [@media(max-width:480px)]:!flex-col',
       cardTypes[type].style,
       className
     )}
   >
-    <div className="flex flex-col pt-6 pl-6 pr-5">
+    <div className="flex flex-col pt-6 pl-6 pr-5 sm:pb-5 sm:pt-0 xs:pb-0">
       <h3 className="font-sans text-5xl font-semibold leading-tight sm:text-3xl">
         {cardTypes[type].title}
       </h3>
