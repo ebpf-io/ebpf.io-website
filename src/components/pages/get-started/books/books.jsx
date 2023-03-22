@@ -17,7 +17,7 @@ const items = [
         loading="lazy"
       />
     ),
-    linkUrl: 'https://isovalent.com/data/liz-rice-what-is-ebpf.pdf',
+    linkUrl: 'https://isovalent.com/ebpf/#form',
   },
   {
     image: (
