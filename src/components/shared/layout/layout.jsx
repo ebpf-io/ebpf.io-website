@@ -192,6 +192,10 @@ const headerMenu = [
     to: '/blog',
   },
   {
+    text: 'Events',
+    to: '/events',
+  },
+  {
     text: 'Foundation',
     to: 'https://ebpf.foundation/',
   },
