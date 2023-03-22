@@ -25,11 +25,11 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
   return (
     <div
       className={clsx(
-        'h-auto self-stretch rounded-lg border border-gray-90 bg-white hover:drop-shadow-book',
+        'flex h-full flex-col self-stretch rounded-lg border border-gray-90 bg-white hover:drop-shadow-book',
         className
       )}
     >
-      <Link to={linkUrl} target="_blank" rel="noopener noreferrer" className="flex h-full flex-col">
+      <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
         {(imageSrc || imageUrl) && (
           <ImageUniversal
             className="h-[182px] w-full rounded-t-lg md:h-56 sm:h-60 xs:h-48"
@@ -52,23 +52,25 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
             height={182}
           />
         )}
-        <div className="flex flex-1 flex-col p-6 pt-5 xs:p-4">
-          <Label type={type} />
+      </Link>
+      <div className="flex flex-1 flex-col p-6 pt-5 xs:p-4">
+        <Label type={type} />
+        <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
           <h3 className="mt-2.5 font-sans text-2xl font-semibold leading-tight line-clamp-2 sm:text-xl">
             {title}
           </h3>
+        </Link>
+        <div
+          className="mt-2 mb-5 text-base font-light leading-snug text-gray-40 line-clamp-3 "
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
 
-          <p className="mt-2 mb-5 text-base font-light leading-snug text-gray-40 line-clamp-3 ">
-            {description}
-          </p>
-
-          <DateAndPlace
-            className="mt-auto border-t border-dashed border-gray-90 pt-5"
-            date={date}
-            place={place}
-          />
-        </div>
-      </Link>
+        <DateAndPlace
+          className="mt-auto border-t border-dashed border-gray-90 pt-5"
+          date={date}
+          place={place}
+        />
+      </div>
     </div>
   );
 };
