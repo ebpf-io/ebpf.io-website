@@ -24,6 +24,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-google-calendar`,
+      options: {
+        calendarIds: [process.env.GOOGLE_CALENDAR_ID],
+        // options to retrieve the next 10 upcoming events
+        timeMin: new Date().toISOString(),
+        maxResults: 10,
+        singleEvents: true,
+        orderBy: 'startTime',
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
