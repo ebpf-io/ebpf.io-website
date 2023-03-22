@@ -51,9 +51,9 @@ const EventList = ({ allEvents, totalCount }) => {
   const pageCount = Math.ceil(filteredEvents.length / EVENT_PER_PAGE);
 
   return (
-    <section className="safe-paddings pb-16 md:pb-12">
+    <section className="safe-paddings pb-16 md:pb-12 sm:pb-2">
       {memoizedFilterDropdowns}
-      <div className="container grid-gap grid grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
+      <div className="container grid-gap grid auto-rows-min grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
         {currentEvents.length > 0 &&
           currentEvents.map((item, index) => (
             <Fragment key={index}>

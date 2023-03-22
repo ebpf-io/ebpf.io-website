@@ -7,7 +7,7 @@ import Label from 'components/shared/label';
 import Link from 'components/shared/link/link';
 
 const ListCard = ({ type, title, date, place, linkUrl, className }) => (
-  <div className={clsx('flex h-full w-full flex-col', className)}>
+  <div className={clsx('flex h-auto w-full flex-col', className)}>
     <Link to={linkUrl} target="_blank" rel="noopener noreferrer" className="h-full">
       <div className="flex h-full flex-col border-t border-dashed border-gray-90 py-6 md:py-4">
         <Label type={type} />
