@@ -19,7 +19,6 @@ const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, cla
   };
 
   const placeholder = placeholderImages[type];
-  const imageSrc = ogImage?.childImageSharp;
   const imageUrl = ogImage?.publicURL;
 
   return (
@@ -30,12 +29,11 @@ const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, cla
       )}
     >
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
-        {(imageSrc || imageUrl) && (
+        {(ogImage || imageUrl) && (
           <ImageUniversal
-            className="h-[280px] w-full md:h-56 sm:h-60 xs:h-48"
-            gatsbyImageClassName="rounded-t-[3px]"
-            svgClassName="rounded-t-[3px]"
-            imageSrc={imageSrc}
+            gatsbyClassName="rounded-t-[3px] w-full h-[280px] lg:h-[20vw] md:h-[36vw] xs:h-[34vw]"
+            svgClassName="mix-blend-multiply rounded-t-[3px] w-full h-[280px] lg:h-[20vw] md:h-[36vw] xs:h-[34vw] object-cover"
+            imageSrc={ogImage}
             imageUrl={imageUrl}
             width={800}
             height={280}
