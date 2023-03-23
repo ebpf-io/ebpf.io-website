@@ -35,6 +35,8 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
             svgClassName="mix-blend-multiply rounded-t-lg h-[182px] w-full lg:h-[15vw] md:h-[24vw] sm:h-[44vw] xs:h-[50vw] object-cover"
             imageSrc={ogImage}
             imageUrl={imageUrl}
+            width={384}
+            height={182}
             alt={title}
           />
         )}
