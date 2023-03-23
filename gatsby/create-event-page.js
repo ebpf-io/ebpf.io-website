@@ -38,7 +38,7 @@ module.exports = async ({ graphql, actions }) => {
               linkUrl
               ogImage {
                 childImageSharp {
-                  gatsbyImageData(width: 384, height: 182)
+                  gatsbyImageData(width: 768, height: 364)
                 }
                 publicURL
               }

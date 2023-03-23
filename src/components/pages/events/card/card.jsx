@@ -31,19 +31,17 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
         {(ogImage || imageUrl) && (
           <ImageUniversal
-            className="h-[182px] w-full overflow-hidden rounded-t-lg md:h-56 sm:h-60 xs:h-48"
-            svgClassName="mix-blend-multiply"
+            gatsbyClassName="rounded-t-lg h-[182px] lg:h-[15vw] md:h-[24vw] sm:h-[44vw] xs:h-[50vw]"
+            svgClassName="mix-blend-multiply rounded-t-lg h-[182px] w-full lg:h-[15vw] md:h-[24vw] sm:h-[44vw] xs:h-[50vw] object-cover"
             imageSrc={ogImage}
             imageUrl={imageUrl}
-            width={384}
-            height={182}
             alt={title}
           />
         )}
 
         {!ogImage && (
           <img
-            className="h-[182px] w-full self-center rounded-t-lg bg-gray-96 object-contain md:h-56 sm:h-60 xs:h-48"
+            className="h-[182px] w-full self-center rounded-t-lg bg-gray-96 object-contain lg:h-[15vw] md:h-[24vw] sm:h-[44vw] xs:h-[50vw]"
             src={placeholder || placeholderImages.Events}
             alt={title}
             width={384}
