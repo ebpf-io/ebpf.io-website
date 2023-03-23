@@ -19,7 +19,6 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
   };
 
   const placeholder = placeholderImages[type];
-  const imageSrc = ogImage?.childImageSharp;
   const imageUrl = ogImage?.publicURL;
 
   return (
@@ -30,12 +29,11 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
       )}
     >
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
-        {(imageSrc || imageUrl) && (
+        {(ogImage || imageUrl) && (
           <ImageUniversal
-            className="h-[182px] w-full rounded-t-lg md:h-56 sm:h-60 xs:h-48"
-            gatsbyImageClassName="rounded-t-lg"
-            svgClassName="rounded-t-lg"
-            imageSrc={imageSrc}
+            className="h-[182px] w-full overflow-hidden rounded-t-lg md:h-56 sm:h-60 xs:h-48"
+            svgClassName="mix-blend-multiply"
+            imageSrc={ogImage}
             imageUrl={imageUrl}
             width={384}
             height={182}
@@ -45,7 +43,7 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
 
         {!ogImage && (
           <img
-            className="h-[182px] w-full self-center rounded-t-lg object-cover md:h-56 sm:h-60 xs:h-48"
+            className="h-[182px] w-full self-center rounded-t-lg bg-gray-96 object-contain md:h-56 sm:h-60 xs:h-48"
             src={placeholder || placeholderImages.Events}
             alt={title}
             width={384}
