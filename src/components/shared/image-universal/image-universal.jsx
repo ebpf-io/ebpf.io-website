@@ -42,7 +42,6 @@ ImageUniversal.propTypes = {
   height: PropTypes.number,
   gatsbyClassName: PropTypes.string,
   gatsbyImgClassName: PropTypes.string,
-  imgClassName: PropTypes.string,
   svgClassName: PropTypes.string,
 };
 
@@ -54,7 +53,6 @@ ImageUniversal.defaultProps = {
   alt: '',
   gatsbyClassName: null,
   gatsbyImgClassName: null,
-  imgClassName: null,
   svgClassName: null,
 };
 
