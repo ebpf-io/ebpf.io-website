@@ -1,6 +1,6 @@
 const eventFilters = [
   {
-    name: 'All types',
+    name: 'Types',
     label: 'eventtype',
     items: [
       {
@@ -15,7 +15,7 @@ const eventFilters = [
     ],
   },
   {
-    name: 'All region',
+    name: 'Region',
     label: 'region',
     items: [
       {
