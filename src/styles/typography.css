@@ -106,4 +106,10 @@
       @apply font-medium;
     }
   }
+
+  .with-link-blue {
+    a {
+      @apply text-secondary-blue transition-colors duration-200 hover:text-secondary-green;
+    }
+  }
 }

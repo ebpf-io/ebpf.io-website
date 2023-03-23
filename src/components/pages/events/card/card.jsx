@@ -59,7 +59,7 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
           </h3>
         </Link>
         <div
-          className="mt-2 mb-5 text-base font-light leading-snug text-gray-40 line-clamp-3 "
+          className="with-link-blue mt-2 mb-5 text-base font-light leading-snug text-gray-40 line-clamp-3 "
           dangerouslySetInnerHTML={{ __html: description }}
         />
 
