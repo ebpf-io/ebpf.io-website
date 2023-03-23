@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -10,31 +9,28 @@ const ImageUniversal = ({
   alt,
   width,
   height,
-  className,
-  gatsbyImageClassName,
-  imgClassName,
+  gatsbyClassName,
+  gatsbyImgClassName,
   svgClassName,
-}) => (
-  <div className={className}>
-    {imageSrc?.childImageSharp ? (
+}) => {
+  if (imageSrc?.childImageSharp) {
+    return (
       <GatsbyImage
-        className={clsx('h-full w-full', gatsbyImageClassName)}
-        imgClassName={imgClassName}
+        className={gatsbyClassName}
+        imgClassName={gatsbyImgClassName}
         image={getImage(imageSrc)}
         width={width}
         height={height}
         objectFit="cover"
+        layout="fullWidth"
+        backgroundColor="#F6F6F9"
         alt={alt}
       />
-    ) : (
-      <img
-        className={clsx('h-full w-full object-contain', svgClassName)}
-        src={imageUrl}
-        alt={alt}
-      />
-    )}
-  </div>
-);
+    );
+  }
+
+  return <img className={svgClassName} src={imageUrl} alt={alt} />;
+};
 
 ImageUniversal.propTypes = {
   imageSrc: PropTypes.shape({
@@ -44,8 +40,8 @@ ImageUniversal.propTypes = {
   alt: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  className: PropTypes.string,
-  gatsbyImageClassName: PropTypes.string,
+  gatsbyClassName: PropTypes.string,
+  gatsbyImgClassName: PropTypes.string,
   imgClassName: PropTypes.string,
   svgClassName: PropTypes.string,
 };
@@ -56,8 +52,8 @@ ImageUniversal.defaultProps = {
   width: null,
   height: null,
   alt: '',
-  className: null,
-  gatsbyImageClassName: null,
+  gatsbyClassName: null,
+  gatsbyImgClassName: null,
   imgClassName: null,
   svgClassName: null,
 };
