@@ -16,7 +16,7 @@ const cardTypes = {
     height: 271,
     imgClassName: 'xl:-mt-12 sm:-mt-0 xs:-mt-6  sm:w-full sm:min-w-[160px]',
     buttonText: 'Learn more',
-    buttonUrl: '/',
+    buttonUrl: '/get-started/#books',
     style: 'bg-secondary-blue-light border-secondary-blue-1',
   },
   webinar: {
