@@ -27,7 +27,11 @@ const ImageUniversal = ({
         alt={alt}
       />
     ) : (
-      <img className={clsx('h-full w-full object-cover', svgClassName)} src={imageUrl} alt={alt} />
+      <img
+        className={clsx('h-full w-full object-contain', svgClassName)}
+        src={imageUrl}
+        alt={alt}
+      />
     )}
   </div>
 );
