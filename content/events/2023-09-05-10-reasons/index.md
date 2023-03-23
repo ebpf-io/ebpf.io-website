@@ -4,7 +4,7 @@ place: 'Cupertino, California'
 title: 'The Top Reasons Why You Should Give eBPF a Chance'
 description: 'Find out where all the hype around eBPF is coming from'
 linkUrl: 'https://ebpf.io'
-ogImage: ogimage.webp
+ogImage: ogimage.png
 type: Webinar
 region: North America
 isFeatured: true
