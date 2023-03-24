@@ -47,6 +47,7 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
             alt={title}
             width={384}
             height={182}
+            loading="lazy"
           />
         )}
       </Link>

@@ -7,6 +7,7 @@ import Button from 'components/shared/button/button';
 import bookIllustration from './images/book-illustration.png';
 import webinarIllustration from './images/webinar-illustration.svg';
 
+// TODO: add link to the webinar
 const cardTypes = {
   book: {
     title: 'Explore books on eBPF from the industry experts',
@@ -32,10 +33,10 @@ const cardTypes = {
   },
 };
 
-const SpecialCard = ({ type, className }) => (
+const CardWithCta = ({ type, className }) => (
   <div
     className={clsx(
-      'flex h-full w-full flex-col justify-between rounded-lg border hover:drop-shadow-book sm:flex-row sm:pt-5 [@media(max-width:480px)]:!flex-col',
+      'flex h-full w-full flex-col justify-between overflow-hidden rounded-lg border hover:drop-shadow-book sm:flex-row sm:pt-5 [@media(max-width:480px)]:!flex-col',
       cardTypes[type].style,
       className
     )}
@@ -57,18 +58,19 @@ const SpecialCard = ({ type, className }) => (
       width={cardTypes[type].width}
       height={cardTypes[type].height}
       alt=""
+      loading="lazy"
       aria-hidden
     />
   </div>
 );
 
-SpecialCard.propTypes = {
+CardWithCta.propTypes = {
   type: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
 
-SpecialCard.defaultProps = {
+CardWithCta.defaultProps = {
   className: null,
 };
 
-export default SpecialCard;
+export default CardWithCta;

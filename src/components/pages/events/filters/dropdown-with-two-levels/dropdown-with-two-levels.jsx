@@ -6,7 +6,7 @@ import Checkbox from 'components/shared/checkbox';
 import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
 
-const DropdownWithTwoSelect = ({
+const DropdownWithTwoLevels = ({
   mainFilter,
   secondFilter,
   activeFilters,
@@ -22,13 +22,13 @@ const DropdownWithTwoSelect = ({
   const valuesMain = activeFilters[mainFilter.label];
   const valuesSecond = activeFilters[secondFilter.label];
 
-  const handleSelect = (state, value, filter) => {
-    if (state) {
-      handleFilters(filter, [...activeFilters[filter.label], value]);
+  const handleSelect = (event, filter) => {
+    if (event.target.checked) {
+      handleFilters(filter, [...activeFilters[filter.label], event.target.value]);
     } else {
       handleFilters(
         filter,
-        activeFilters[filter.label].filter((currentValue) => currentValue !== value)
+        activeFilters[filter.label].filter((currentValue) => currentValue !== event.target.value)
       );
     }
   };
@@ -46,8 +46,8 @@ const DropdownWithTwoSelect = ({
   return (
     <div className={clsx('relative', className)}>
       <button
-        type="button"
         className="group flex w-60 items-center justify-between rounded-full border border-gray-90 py-4 px-5 transition-colors duration-200 hover:border-gray-40 [@media(max-width:550px)]:w-full"
+        type="button"
         ref={buttonRef}
         onClick={handleOpen}
       >
@@ -85,7 +85,7 @@ const DropdownWithTwoSelect = ({
                   label={name}
                   value={name}
                   checked={valuesMain.includes(name)}
-                  onChange={(e) => handleSelect(e.target.checked, e.target.value, mainFilter)}
+                  onChange={(e) => handleSelect(e, mainFilter)}
                 />
               </li>
             ))}
@@ -99,7 +99,7 @@ const DropdownWithTwoSelect = ({
                   label={name}
                   value={name}
                   checked={valuesSecond.includes(name)}
-                  onChange={(e) => handleSelect(e.target.checked, e.target.value, secondFilter)}
+                  onChange={(e) => handleSelect(e, secondFilter)}
                 />
               </li>
             ))}
@@ -110,7 +110,7 @@ const DropdownWithTwoSelect = ({
   );
 };
 
-DropdownWithTwoSelect.propTypes = {
+DropdownWithTwoLevels.propTypes = {
   mainFilter: PropTypes.shape({
     name: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
@@ -130,8 +130,8 @@ DropdownWithTwoSelect.propTypes = {
   className: PropTypes.string,
 };
 
-DropdownWithTwoSelect.defaultProps = {
+DropdownWithTwoLevels.defaultProps = {
   className: null,
 };
 
-export default DropdownWithTwoSelect;
+export default DropdownWithTwoLevels;

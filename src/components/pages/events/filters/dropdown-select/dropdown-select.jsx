@@ -31,8 +31,8 @@ const DropdownSelect = ({ name, items, values, onSelect, className }) => {
   return (
     <div className={clsx('relative', className)}>
       <button
-        type="button"
         className="group flex w-60 items-center justify-between rounded-full border border-gray-90 py-4 px-5 transition-colors duration-200 hover:border-gray-40 [@media(max-width:550px)]:w-full"
+        type="button"
         ref={buttonRef}
         onClick={handleOpen}
       >

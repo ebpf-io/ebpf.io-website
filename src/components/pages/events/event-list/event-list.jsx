@@ -9,7 +9,7 @@ import { EVENT_PER_PAGE } from 'constants/event';
 import { eventFilters } from 'constants/event-filters';
 import useFilteredEvents from 'hooks/use-filtered-events';
 
-import SpecialCard from '../special-card';
+import CardWithCta from '../card-with-cta';
 
 const getInitialFilters = (allFilters) =>
   allFilters.reduce((acc, { label }) => {
@@ -58,8 +58,8 @@ const EventList = ({ allEvents, totalCount }) => {
           currentEvents.map((item, index) => (
             <Fragment key={index}>
               <Card {...item} className="col-span-4 md:col-span-6" />
-              {index === 4 && <SpecialCard type="book" className="col-span-4 md:col-span-6" />}
-              {index === 10 && <SpecialCard type="webinar" className="col-span-4 md:col-span-6" />}
+              {index === 4 && <CardWithCta type="book" className="col-span-4 md:col-span-6" />}
+              {index === 10 && <CardWithCta type="webinar" className="col-span-4 md:col-span-6" />}
               {index === 7 && (
                 <div className="col-span-12 my-10 lg:my-16 md:my-10 md:hidden">
                   <SubscriptionForm size="md" />
