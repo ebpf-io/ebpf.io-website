@@ -6,6 +6,7 @@ description: 'We are open sourcing the production tooling we’ve built for the 
 ogImage: ogimage.png
 linkUrl: 'https://ebpf.io'
 type: Conference
+conference: eBPF Track (LPC)
 region: North America
 isFeatured: false
 ---
