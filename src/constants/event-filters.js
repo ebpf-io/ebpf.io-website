@@ -15,6 +15,24 @@ const eventFilters = [
     ],
   },
   {
+    name: 'Conference',
+    label: 'conference',
+    items: [
+      {
+        name: 'eBPF Summit',
+      },
+      {
+        name: 'Cloud Native eBPF Day',
+      },
+      {
+        name: 'eBPF Track (LPC)',
+      },
+      {
+        name: 'bpfconf (LSF/MM/BPF)',
+      },
+    ],
+  },
+  {
     name: 'Region',
     label: 'region',
     items: [
