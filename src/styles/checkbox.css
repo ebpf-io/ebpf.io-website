@@ -7,11 +7,11 @@
     @apply inline-flex select-none items-center;
   }
   .checkbox__input + label::before {
-    @apply mr-2.5 inline-block h-4 w-4 shrink-0 grow-0 rounded-sm border border-gray-40 bg-center bg-no-repeat content-[''];
+    @apply mr-2.5 inline-block h-5 w-5 shrink-0 grow-0 rounded-sm border border-gray-40 bg-center bg-no-repeat content-[''];
   }
 
   .checkbox__label > span {
-    @apply whitespace-nowrap text-lg leading-none xs:text-base;
+    @apply whitespace-nowrap text-base leading-none;
   }
 
   .checkbox__input:checked + label::before {
