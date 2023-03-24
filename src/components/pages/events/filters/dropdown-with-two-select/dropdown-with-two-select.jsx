@@ -9,10 +9,8 @@ import ChevronIcon from 'icons/chevron.inline.svg';
 const DropdownWithTwoSelect = ({
   mainFilter,
   secondFilter,
-  valuesMain,
-  valuesSecond,
-  onSelectMain,
-  onSelectSecond,
+  activeFilters,
+  handleFilters,
   className,
 }) => {
   const dropdownRef = useRef(null);
@@ -21,20 +19,17 @@ const DropdownWithTwoSelect = ({
 
   const { name, items: itemsMain } = mainFilter;
   const { items: itemsSecond } = secondFilter;
+  const valuesMain = activeFilters[mainFilter.label];
+  const valuesSecond = activeFilters[secondFilter.label];
 
-  const handleSelectMainFilter = (state, value) => {
+  const handleSelect = (state, value, filter) => {
     if (state) {
-      onSelectMain([...valuesMain, value]);
+      handleFilters(filter, [...activeFilters[filter.label], value]);
     } else {
-      onSelectMain(valuesMain.filter((currentValue) => currentValue !== value));
-    }
-  };
-
-  const handleSelectSecondFilter = (state, value) => {
-    if (state) {
-      onSelectSecond([...valuesSecond, value]);
-    } else {
-      onSelectSecond(valuesSecond.filter((currentValue) => currentValue !== value));
+      handleFilters(
+        filter,
+        activeFilters[filter.label].filter((currentValue) => currentValue !== value)
+      );
     }
   };
 
@@ -90,7 +85,7 @@ const DropdownWithTwoSelect = ({
                   label={name}
                   value={name}
                   checked={valuesMain.includes(name)}
-                  onChange={(e) => handleSelectMainFilter(e.target.checked, e.target.value)}
+                  onChange={(e) => handleSelect(e.target.checked, e.target.value, mainFilter)}
                 />
               </li>
             ))}
@@ -104,7 +99,7 @@ const DropdownWithTwoSelect = ({
                   label={name}
                   value={name}
                   checked={valuesSecond.includes(name)}
-                  onChange={(e) => handleSelectSecondFilter(e.target.checked, e.target.value)}
+                  onChange={(e) => handleSelect(e.target.checked, e.target.value, secondFilter)}
                 />
               </li>
             ))}
