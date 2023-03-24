@@ -12,6 +12,7 @@ const ImageUniversal = ({
   gatsbyClassName,
   gatsbyImgClassName,
   svgClassName,
+  ...otherProps
 }) => {
   if (imageSrc?.childImageSharp) {
     return (
@@ -25,11 +26,13 @@ const ImageUniversal = ({
         layout="fullWidth"
         backgroundColor="#F6F6F9"
         alt={alt}
+        {...otherProps}
+        loading="lazy"
       />
     );
   }
 
-  return <img className={svgClassName} src={imageUrl} alt={alt} />;
+  return <img className={svgClassName} src={imageUrl} alt={alt} {...otherProps} loading="lazy" />;
 };
 
 ImageUniversal.propTypes = {
