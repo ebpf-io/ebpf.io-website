@@ -12,6 +12,7 @@ doubt caused by winter hibernation, welcome to the fifth issue of the eBPF
 Updates!"
 linkUrl: 'https://ebpf.io'
 type: Conference
+conference: eBPF Summit
 region: North America
 isFeatured: false
 ---

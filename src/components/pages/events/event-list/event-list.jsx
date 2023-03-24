@@ -24,10 +24,10 @@ const EventList = ({ allEvents, totalCount }) => {
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
 
   const handleFilters = useCallback(
-    (label, newValues) => {
+    (filter, newValues) => {
       const newFilters = {
         ...activeFilters,
-        [label]: newValues,
+        [filter.label]: newValues,
       };
       setActiveFilters(newFilters);
     },

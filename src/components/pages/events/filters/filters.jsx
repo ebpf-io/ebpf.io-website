@@ -15,15 +15,13 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
       <DropdownWithTwoSelect
         mainFilter={type}
         secondFilter={conference}
-        valuesMain={activeFilters[type.label]}
-        valuesSecond={activeFilters[conference.label]}
-        onSelectMain={(newValues) => handleFilters(type.label, newValues)}
-        onSelectSecond={(newValues) => handleFilters(conference.label, newValues)}
+        activeFilters={activeFilters}
+        handleFilters={handleFilters}
       />
       <DropdownSelect
         {...region}
         values={activeFilters[region.label]}
-        onSelect={(newValues) => handleFilters(region.label, newValues)}
+        onSelect={(newValues) => handleFilters(region, newValues)}
       />
     </div>
   );
