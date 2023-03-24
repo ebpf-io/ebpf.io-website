@@ -69,8 +69,6 @@ module.exports = {
       options: {
         defaults: {
           quality: 85,
-          placeholder: 'dominantColor',
-          transformOptions: { cropFocus: 'attention' },
         },
       },
     },

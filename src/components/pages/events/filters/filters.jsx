@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import DropdownSelect from './dropdown-select';
-import DropdownWithTwoSelect from './dropdown-with-two-select';
+import DropdownWithTwoLevels from './dropdown-with-two-levels';
 
 const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
   const [type, conference, region] = eventFilters;
@@ -12,7 +12,7 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
       id="categories"
       className="container flex space-x-6 [@media(max-width:550px)]:flex-col [@media(max-width:550px)]:space-y-5 [@media(max-width:550px)]:space-x-0 "
     >
-      <DropdownWithTwoSelect
+      <DropdownWithTwoLevels
         mainFilter={type}
         secondFilter={conference}
         activeFilters={activeFilters}
