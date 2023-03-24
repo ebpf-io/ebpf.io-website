@@ -4,19 +4,16 @@ import React from 'react';
 import ListCard from './list-card';
 import MainCard from './main-card';
 
-const title =
-  'Participate in eBPF events that highlight</br>a range of expert voices and inspiring ideas';
-
 const Hero = ({ items }) => {
   const mainItem = items.shift();
 
   return (
     <section className="safe-paddings pt-20 pb-[72px] lg:pt-16 md:pb-10">
       <div className="container flex flex-col">
-        <h1
-          className="heading-9xl pb-12 font-semibold leading-tight lg:pb-8"
-          dangerouslySetInnerHTML={{ __html: title }}
-        />
+        <h1 className="heading-9xl pb-12 font-semibold leading-tight lg:pb-8">
+          Participate in eBPF events that highlight
+          <br />a range of expert voices and inspiring ideas
+        </h1>
 
         {items.length > 0 && (
           <div className="grid w-full grid-cols-12 gap-x-8 md:gap-x-0">
