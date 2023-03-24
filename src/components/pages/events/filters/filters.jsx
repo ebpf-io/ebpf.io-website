@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import DropdownSelect from './dropdown-select';
@@ -25,6 +25,17 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
       />
     </div>
   );
+};
+
+Filters.propTypes = {
+  eventFilters: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      items: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string.isRequired })).isRequired,
+    })
+  ).isRequired,
+  activeFilters: PropTypes.objectOf(PropTypes.array).isRequired,
+  handleFilters: PropTypes.func.isRequired,
 };
 
 export default Filters;

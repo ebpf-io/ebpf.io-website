@@ -46,7 +46,6 @@ const Pagination = ({ pageCount, totalCount, callback }) => {
           <ChevronIcon className="mt-0.5 w-[5px]" />
         </>
       }
-      // forcePage={currentPageIndex}
       pageCount={pageCount}
       pageRangeDisplayed={3}
       marginPagesDisplayed={1}
