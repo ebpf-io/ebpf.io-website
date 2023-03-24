@@ -9,7 +9,7 @@ const Checkbox = (props) => {
     <div className={clsx('checkbox', className)}>
       <input className="checkbox__input" type="checkbox" id={id} {...otherProps} />
       <label className="checkbox__label" htmlFor={id}>
-        <span dangerouslySetInnerHTML={{ __html: label }} />
+        <span>{label}</span>
       </label>
     </div>
   );

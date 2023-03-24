@@ -13,8 +13,8 @@ const previousAndNextLinkClassName =
 
 const Pagination = ({ pageCount, totalCount, callback }) => {
   const handlePageChange = ({ selected }) => {
-    const newOfSet = (selected * EVENT_PER_PAGE) % totalCount;
-    callback(newOfSet);
+    const newOffSet = (selected * EVENT_PER_PAGE) % totalCount;
+    callback(newOffSet);
 
     window.scrollTo({
       top: 0,
