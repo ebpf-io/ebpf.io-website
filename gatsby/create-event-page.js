@@ -31,6 +31,7 @@ module.exports = async ({ graphql, actions }) => {
             frontmatter {
               type
               region
+              conference
               title
               description
               date(formatString: "MMMM, DD YYYY")

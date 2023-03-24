@@ -6,6 +6,7 @@ description: 'eBPF is a powerful tool to use in cloud-native environments. This 
 ogImage: ogimage.png
 linkUrl: 'https://ebpf.io'
 type: Conference
+conference: bpfconf (LSF/MM/BPF)
 region: EMEA
 isFeatured: false
 ---
