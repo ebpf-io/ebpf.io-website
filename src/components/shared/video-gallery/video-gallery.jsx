@@ -149,12 +149,14 @@ Video.propTypes = {
 
 VideoGallery.propTypes = {
   title: PropTypes.string.isRequired,
-  items: PropTypes.arrayOf({
-    videoId: PropTypes.string,
-    title: PropTypes.string,
-    speaker: PropTypes.string,
-    date: PropTypes.string,
-  }).isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      videoId: PropTypes.string,
+      title: PropTypes.string,
+      speaker: PropTypes.string,
+      date: PropTypes.string,
+    })
+  ).isRequired,
   className: PropTypes.string,
 };
 

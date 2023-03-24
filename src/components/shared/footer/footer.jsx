@@ -51,6 +51,10 @@ const navItems = [
         to: '/blog',
       },
       {
+        text: 'Swag Shop',
+        to: 'https://cilium.myspreadshop.net/',
+      },
+      {
         text: 'Newsletter',
         to: '/newsletter',
       },

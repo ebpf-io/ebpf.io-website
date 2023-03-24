@@ -53,7 +53,7 @@ Button.propTypes = {
   to: PropTypes.string,
   size: PropTypes.oneOf(Object.keys(styles.size)),
   theme: PropTypes.oneOf(Object.keys(styles.theme)),
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   loading: PropTypes.bool,
 };
 
@@ -62,6 +62,7 @@ Button.defaultProps = {
   to: null,
   size: null,
   theme: null,
+  children: null,
   loading: false,
 };
 
