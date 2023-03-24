@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import ImageUniversal from 'components/shared//image-universal';
-// import { getShortDate } from 'utils/constants/getDate';
 import DateAndPlace from 'components/shared/date-and-place';
 import Label from 'components/shared/label';
 import Link from 'components/shared/link/link';
