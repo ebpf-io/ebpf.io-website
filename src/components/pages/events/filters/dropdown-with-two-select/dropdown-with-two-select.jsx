@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
 import React, { useRef, useState } from 'react';
 
 import Checkbox from 'components/shared/checkbox';
@@ -108,6 +108,30 @@ const DropdownWithTwoSelect = ({
       </div>
     </div>
   );
+};
+
+DropdownWithTwoSelect.propTypes = {
+  mainFilter: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    items: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string.isRequired })).isRequired,
+  }).isRequired,
+  secondFilter: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    items: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string.isRequired })).isRequired,
+  }).isRequired,
+  activeFilters: PropTypes.shape({
+    type: PropTypes.arrayOf(PropTypes.string),
+    region: PropTypes.arrayOf(PropTypes.string),
+    conference: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
+  handleFilters: PropTypes.func.isRequired,
+  className: PropTypes.string,
+};
+
+DropdownWithTwoSelect.defaultProps = {
+  className: null,
 };
 
 export default DropdownWithTwoSelect;
