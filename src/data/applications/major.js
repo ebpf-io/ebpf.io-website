@@ -95,6 +95,20 @@ const majorApplications = [
       { label: 'Website', url: 'https://px.dev' },
     ],
   },
+  {
+    logoUrl: 'https://github.com/projectcalico/calico',
+    name: 'Calico',
+    logoName: 'calicoLogo',
+    title: 'Pluggable eBPF-based networking and security for containers and Kubernetes',
+    description: `Calico Open Source is designed to simplify, scale, and secure container 
+    and Kubernetes networks. Calico's eBPF dataplane utilizes the power, speed, and efficiency 
+    of eBPF programs to deliver networking, load-balancing, and in-kernel security 
+    enforcement for your environment.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/projectcalico/calico' },
+      { label: 'Website', url: 'https://tigera.io/project-calico' },
+    ],
+  },
 ];
 
 export default majorApplications;

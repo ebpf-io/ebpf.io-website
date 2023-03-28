@@ -7,6 +7,7 @@ import slugifyCategory from 'utils/slugify-category';
 
 import bccLogo from './logos/bcc.svg';
 import bumblebeeLogo from './logos/bumblebee.svg';
+import calicoLogo from './logos/calico.svg';
 import ciliumLogo from './logos/cilium-with-text.svg';
 import ebpfForWindowsLogo from './logos/ebpf-windows.svg';
 import ecaptureLogo from './logos/ecapture.svg';
@@ -37,6 +38,7 @@ const logos = {
   katranLogo,
   ecaptureLogo,
   pixieLogo,
+  calicoLogo,
   hubbleLogo,
   kubectlTraceLogo,
   traceeLogo,

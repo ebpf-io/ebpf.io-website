@@ -133,6 +133,21 @@ const headerMenu = [
           },
         ],
       },
+      {
+        text: 'BPF Meetups at IETF',
+        items: [
+          {
+            text: '2023 (IETF 116)',
+            to: 'https://datatracker.ietf.org/group/bpf/meetings/',
+            target: '_blank',
+          },
+          {
+            text: '2022 (IETF 115)',
+            to: 'https://lore.kernel.org/bpf/DM4PR21MB3440837AE8F54F8E6EA5D475A3119@DM4PR21MB3440.namprd21.prod.outlook.com/',
+            target: '_blank',
+          },
+        ],
+      },
     ],
   },
   {
