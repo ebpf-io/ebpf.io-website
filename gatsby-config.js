@@ -29,7 +29,7 @@ module.exports = {
         calendarIds: [process.env.GOOGLE_CALENDAR_ID],
         // options to retrieve the next 10 upcoming events
         timeMin: new Date().toISOString(),
-        maxResults: 10,
+        maxResults: 2,
         singleEvents: true,
         orderBy: 'startTime',
       },
