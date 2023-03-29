@@ -1,6 +1,6 @@
 ---
 path: '/blog/launching-excel-bpf'
-date: '2023-04-017T10:00:00.000Z'
+date: '2023-04-01T10:00:00.000Z'
 title: 'Annoucing eBPF 2.0: excelBPF'
 description: 'Hear about the latest innovation from the eBPF community, turn your cells into hives of activity'
 ogImage: 
