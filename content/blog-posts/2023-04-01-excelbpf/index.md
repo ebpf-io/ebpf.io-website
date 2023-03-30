@@ -27,6 +27,6 @@ With money flowing this quickly through **excelBPF™**, you could easily guess 
 
 The [eBPF Landscape](https://ebpf.io/applications/) is rapidly evolving and we are excited to see the first **excelBPF™** powered applications be added to the landscape. Be sure to check back regularly to see how the space is evolving. If you want to catch up on eBPF 1.0 before diving into excelBPF, check out [what is eBPF](https://ebpf.io/what-is-ebpf/), the [getting started page](https://ebpf.io/get-started/), our [interactive eBPF labs](https://play.instruqt.com/embed/isovalent/tracks/ebpf-getting-started?token=em_9nxLzhlV41gb3rKM&show_challenges=true), and subscribe to [eCHO News](https://ebpf.io/newsletter/) to keep up on all the updates from the eBPF community.
 
-<video src="excelBPF.mp4" width="1036" height="720" controls muted></video>
+<video src="/videos/excelBPF.mp4" type="video/mp4" width="1036" height="720" controls muted></video>. 
 
 _See excelBPF in action in this short demo from [Liz Rice](https://twitter.com/lizrice)_
