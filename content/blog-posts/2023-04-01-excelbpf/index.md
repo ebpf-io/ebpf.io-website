@@ -26,3 +26,7 @@ Early versions of **excelBPF™** were put in the hands of the community, and fe
 With money flowing this quickly through **excelBPF™**, you could easily guess that the funding for companies is just behind it and you wouldn’t be wrong. “After seeing how fast Isovalent changed the cloud native landscape with eBPF 1.0, we have an open checkbook for companies looking to build around **excelBPF™**. I'm literally just waiting for those **excelBPF™** financial models to hit my inbox.” said Martanique Casandro, Partner at Redwood Tree Venturez (r17z).
 
 The [eBPF Landscape](https://ebpf.io/applications/) is rapidly evolving and we are excited to see the first **excelBPF™** powered applications be added to the landscape. Be sure to check back regularly to see how the space is evolving. If you want to catch up on eBPF 1.0 before diving into excelBPF, check out [what is eBPF](https://ebpf.io/what-is-ebpf/), the [getting started page](https://ebpf.io/get-started/), our [interactive eBPF labs](https://play.instruqt.com/embed/isovalent/tracks/ebpf-getting-started?token=em_9nxLzhlV41gb3rKM&show_challenges=true), and subscribe to [eCHO News](https://ebpf.io/newsletter/) to keep up on all the updates from the eBPF community.
+
+![demo of excelBPF](excelBPF.mov)
+
+_See excelBPF in action in this short demo from [Liz Rice](https://twitter.com/lizrice)_
