@@ -17,6 +17,10 @@ eBPF has been deployed at scale for over half a decade now, delivering you every
 
 “When we got the first version of eBPF merged into the Linux kernel in 2014, we had ideas about how transformative the technology could be for the Linux kernel, but they were still to be proven out. Seeing the massive step change in innovation and flexibility eBPF has enabled for the kernel community, I’m excited to see what **excelBPF™** holds in store for the world. I think we are really just scratching the surface of what is possible. It feels like Day 1 all over again.” said Daniel Borkmann, co-creator of eBPF.
 
+<video src="/videos/excelBPF.mp4" type="video/mp4" width="1036" height="720" controls muted></video>. 
+
+_See excelBPF in action in this short demo from [Liz Rice](https://twitter.com/lizrice)_
+
 Looking at where eBPF 1.0 has transformed the world shows us some of the potential excelBPF has for the future. In the cloud native world, [eBPF has unlocked innovation](https://www.infoworld.com/article/3689690/how-ebpf-unlocks-cloud-native-innovation.html) by shortening production feedback loops, extending functionality safely, providing new building blocks while still leveraging existing tooling, allowing for on the fly upgrades, making data processing faster with lower resource consumption, and creating better abstractions for observability and security. **excelBPF™** is bringing these benefits outside the IT department. Spreadsheets no longer need to be held back by decades old macros.
 
 “With eBPF 1.0, [Cilium](cilium.io) was able to transform the cloud native infrastructure landscape in areas as diverse as modernizing telecommunications networks, bringing retail stores online, and moving money through markets. Our end users are excited at what **excelBPF™** will bring to the rest of the organization. Just as prompt engineering has taken off with the launch of large language models, I think we soon see job advertisements for excelBPF engineers who are able to change spreadsheets from individual cells to hives of activity.” said Thomas Graf, co-founder of the Cilium project.
@@ -26,7 +30,3 @@ Early versions of **excelBPF™** were put in the hands of the community, and fe
 With money flowing this quickly through **excelBPF™**, you could easily guess that the funding for companies is just behind it and you wouldn’t be wrong. “After seeing how fast Isovalent changed the cloud native landscape with eBPF 1.0, we have an open checkbook for companies looking to build around **excelBPF™**. I'm literally just waiting for those **excelBPF™** financial models to hit my inbox.” said Martanique Casandro, Partner at Redwood Tree Venturez (r17z).
 
 The [eBPF Landscape](https://ebpf.io/applications/) is rapidly evolving and we are excited to see the first **excelBPF™** powered applications be added to the landscape. Be sure to check back regularly to see how the space is evolving. If you want to catch up on eBPF 1.0 before diving into excelBPF, check out [what is eBPF](https://ebpf.io/what-is-ebpf/), the [getting started page](https://ebpf.io/get-started/), our [interactive eBPF labs](https://play.instruqt.com/embed/isovalent/tracks/ebpf-getting-started?token=em_9nxLzhlV41gb3rKM&show_challenges=true), and subscribe to [eCHO News](https://ebpf.io/newsletter/) to keep up on all the updates from the eBPF community.
-
-<video src="/videos/excelBPF.mp4" type="video/mp4" width="1036" height="720" controls muted></video>. 
-
-_See excelBPF in action in this short demo from [Liz Rice](https://twitter.com/lizrice)_
