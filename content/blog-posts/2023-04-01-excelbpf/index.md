@@ -20,7 +20,7 @@ eBPF has been deployed at scale for over half a decade now, delivering you every
 “When we got the first version of eBPF merged into the Linux kernel in 2014, we had ideas about how transformative the technology could be for the Linux kernel, but they were still to be proven out. Seeing the massive step change in innovation and flexibility eBPF has enabled for the kernel community, I’m excited to see what **excelBPF™** holds in store for the world. I think we are really just scratching the surface of what is possible. It feels like Day 1 all over again.” said Daniel Borkmann, co-creator of eBPF.
 
 <video src="/videos/excelBPF.mp4" type="video/mp4" width="1036" height="720" controls muted></video>
-_See excelBPF in action in this short demo from [Liz Rice](https://twitter.com/lizrice)_
+_See excelBPF™ in action in this short demo from [Liz Rice](https://twitter.com/lizrice)_
 
 Looking at where eBPF 1.0 has transformed the world shows us some of the potential excelBPF has for the future. In the cloud native world, [eBPF has unlocked innovation](https://www.infoworld.com/article/3689690/how-ebpf-unlocks-cloud-native-innovation.html) by shortening production feedback loops, extending functionality safely, providing new building blocks while still leveraging existing tooling, allowing for on the fly upgrades, making data processing faster with lower resource consumption, and creating better abstractions for observability and security. **excelBPF™** is bringing these benefits outside the IT department. Spreadsheets no longer need to be held back by decades old macros.
 
