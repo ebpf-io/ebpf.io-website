@@ -180,6 +180,11 @@ const headerMenu = [
         text: 'Newsletter',
         to: '/newsletter',
       },
+      {
+        text: 'Branding',
+        to: 'https://ebpf.foundation/brand-guidelines/',
+        target: '_blank',
+      },
     ],
   },
   {
