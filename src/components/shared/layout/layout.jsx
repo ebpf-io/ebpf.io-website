@@ -173,17 +173,12 @@ const headerMenu = [
         target: '_blank',
       },
       {
-        text: 'Contribute',
-        to: '/contribute',
-      },
-      {
         text: 'Newsletter',
         to: '/newsletter',
       },
       {
-        text: 'Branding',
-        to: 'https://ebpf.foundation/brand-guidelines/',
-        target: '_blank',
+        text: 'Contribute',
+        to: '/contribute',
       },
     ],
   },
