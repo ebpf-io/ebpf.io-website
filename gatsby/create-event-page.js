@@ -53,7 +53,7 @@ module.exports = async ({ graphql, actions }) => {
             frontmatter: { isFeatured: { eq: true } }
           }
           sort: { frontmatter: { date: DESC } }
-          limit: 4
+          limit: 5
         ) {
           nodes {
             frontmatter {

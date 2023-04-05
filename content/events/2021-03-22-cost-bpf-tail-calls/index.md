@@ -7,5 +7,5 @@ ogImage: ogimage.png
 linkUrl: 'https://ebpf.io'
 type: Meetup
 region: North America
-isFeatured: false
+isFeatured: true
 ---
