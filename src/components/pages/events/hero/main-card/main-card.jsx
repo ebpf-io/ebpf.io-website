@@ -22,21 +22,16 @@ const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, cla
   const imageUrl = ogImage?.publicURL;
 
   return (
-    <div
-      className={clsx(
-        'lg:border-b-none flex h-full flex-col border-b border-dashed border-gray-90 pb-6',
-        className
-      )}
-    >
+    <div className={clsx('lg:border-b-none flex h-full flex-col pb-6', className)}>
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
         {(ogImage || imageUrl) && (
           <ImageUniversal
-            gatsbyClassName="rounded-t-[3px] w-full h-[280px] lg:h-[20vw] md:h-[36vw] xs:h-[34vw]"
-            svgClassName="mix-blend-multiply rounded-t-[3px] w-full h-[280px] lg:h-[20vw] md:h-[36vw] xs:h-[34vw] object-cover"
+            gatsbyClassName="rounded-t-[3px] w-full h-[329px] lg:h-[26vw] md:h-[44vw] sm:h-[44vw] xs:h-[50vw]"
+            svgClassName="mix-blend-multiply rounded-t-[3px] w-full h-[280px] lg:h-[26vw] md:h-[44vw] sm:h-[44vw] xs:h-[50vw] object-cover"
             imageSrc={ogImage}
             imageUrl={imageUrl}
-            width={800}
-            height={280}
+            width={696}
+            height={329}
             alt={title}
           />
         )}
@@ -52,7 +47,7 @@ const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, cla
         )}
         <div className="py-6 lg:pb-0">
           <Label type={type} />
-          <h3 className="heading-7xl mt-2.5 font-semibold leading-tight line-clamp-2">{title}</h3>
+          <h3 className="heading-6xl mt-2.5 font-semibold leading-tight line-clamp-2">{title}</h3>
           <p className="mt-2 mb-5 text-base font-light leading-snug text-gray-40 line-clamp-3">
             {description}
           </p>
