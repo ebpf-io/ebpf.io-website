@@ -55,6 +55,10 @@ const navItems = [
         to: 'https://cilium.myspreadshop.net/',
       },
       {
+        text: 'Branding',
+        to: 'https://ebpf.foundation/brand-guidelines/',
+      },
+      {
         text: 'Newsletter',
         to: '/newsletter',
       },

@@ -173,12 +173,12 @@ const headerMenu = [
         target: '_blank',
       },
       {
-        text: 'Contribute',
-        to: '/contribute',
-      },
-      {
         text: 'Newsletter',
         to: '/newsletter',
+      },
+      {
+        text: 'Contribute',
+        to: '/contribute',
       },
     ],
   },
