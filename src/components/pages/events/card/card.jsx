@@ -76,7 +76,7 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
 Card.propTypes = {
   type: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   ogImage: PropTypes.shape({
     childImageSharp: PropTypes.shape({
       gatsbyImageData: PropTypes.object,
@@ -90,6 +90,7 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
+  description: null,
   ogImage: null,
   className: null,
 };
