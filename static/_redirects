@@ -8,10 +8,12 @@
 /swag/ /swag.html
 /host-a-watch-party/ /host-a-watch-party.html
 /summit-2021-ctf/ /summit-2021-ctf.html
-/summit-2022/day-1/ https://youtu.be/0YqF45Kaapo 
+/summit-2022/day-1/ https://youtu.be/0YqF45Kaapo
 /summit-2022/day-2/ https://youtu.be/a3AwA1VdohU
 
 /slack/ https://cilium.herokuapp.com
+
+/foundation/ https://ebpf.foundation
 
 # It should be at the end of the file in order to keep redirects on top of it working
 /* https://ebpf-summit-2021.netlify.app/:splat 200
