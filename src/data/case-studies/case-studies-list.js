@@ -17,6 +17,7 @@ import Meta from './logos/meta.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
+import SentinelOne from './logos/sentinelone.inline.svg';
 import Seznam from './logos/seznam.inline.svg';
 import Sky from './logos/sky.inline.svg';
 import Shopify from './logos/shopify.inline.svg';
@@ -82,6 +83,18 @@ const caseStudiesData = [
       {
         text: 'Video',
         to: 'https://www.youtube.com/watch?v=6CZ_SSTqb4g',
+      },
+    ],
+  },
+  {
+    title: 'SentinelOne',
+    logo: SentinelOne,
+    description:
+      '<strong>SentinelOne</strong> uses eBPF to detect and to respond to runtime threats like ransomware and zero-day exploits in real time.',
+    links: [
+      {
+        text: 'Blog',
+        to: 'https://www.sentinelone.com/blog/the-advantages-of-ebpf-for-cwpp-applications/',
       },
     ],
   },
