@@ -15,5 +15,5 @@
 
 /foundation/ https://ebpf.foundation
 
-# It should be at the end of the file in order to keep redirects on top of it working
-/* https://ebpf-summit-2021.netlify.app/:splat 200
+
+
