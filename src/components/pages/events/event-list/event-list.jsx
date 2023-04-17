@@ -59,7 +59,6 @@ const EventList = ({ allEvents, totalCount }) => {
             <Fragment key={index}>
               <Card {...item} className="col-span-4 md:col-span-6" />
               {index === 4 && <CardWithCta type="book" className="col-span-4 md:col-span-6" />}
-              {index === 10 && <CardWithCta type="webinar" className="col-span-4 md:col-span-6" />}
               {index === 7 && (
                 <div className="col-span-12 my-10 lg:my-16 md:my-10 md:hidden">
                   <SubscriptionForm size="md" />
