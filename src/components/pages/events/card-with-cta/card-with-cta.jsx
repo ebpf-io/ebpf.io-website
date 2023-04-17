@@ -5,7 +5,6 @@ import React from 'react';
 import Button from 'components/shared/button/button';
 
 import bookIllustration from './images/book-illustration.png';
-import webinarIllustration from './images/webinar-illustration.svg';
 
 // TODO: add link to the webinar
 const cardTypes = {
@@ -19,17 +18,6 @@ const cardTypes = {
     buttonText: 'Learn more',
     buttonUrl: '/get-started/#books',
     style: 'bg-secondary-blue-light border-secondary-blue-1',
-  },
-  webinar: {
-    title: 'Watch webinars on how to build infrastructure',
-    description: 'There are many variations of passages of Lorem Ipsum available',
-    buttonText: 'Learn more',
-    buttonUrl: '/',
-    illustration: webinarIllustration,
-    width: 310,
-    height: 275,
-    imgClassName: '-mt-12 w-3/4 sm:w-1/2 sm:-mt-0 xs:w-3/4',
-    style: 'bg-secondary-yellow-1-light border-secondary-yellow-light sm:shrink',
   },
 };
 
