@@ -6,10 +6,9 @@ import ImageUniversal from 'components/shared//image-universal';
 import DateAndPlace from 'components/shared/date-and-place';
 import Label from 'components/shared/label';
 import Link from 'components/shared/link/link';
-
-import conferenceSvg from './images/conference-main.svg';
-import meetupSvg from './images/meetup-main.svg';
-import webinarSvg from './images/webinar-main.svg';
+import conferenceSvg from 'images/conference.svg';
+import meetupSvg from 'images/meetup.svg';
+import webinarSvg from 'images/webinar.svg';
 
 const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, className }) => {
   const placeholderImages = {
@@ -26,23 +25,24 @@ const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, cla
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
         {(ogImage || imageUrl) && (
           <ImageUniversal
-            gatsbyClassName="rounded-t-[3px] w-full h-[329px] lg:h-[26vw] md:h-[44vw] sm:h-[44vw] xs:h-[50vw]"
-            svgClassName="mix-blend-multiply rounded-t-[3px] w-full h-[280px] lg:h-[26vw] md:h-[44vw] sm:h-[44vw] xs:h-[50vw] object-cover"
+            gatsbyClassName="rounded-t-[3px] w-full h-[329px] lg:h-[26vw] md:h-auto md:max-h-none before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-gray-98"
+            gatsbyImgClassName="mix-blend-multiply opacity-0 md:h-auto"
+            svgClassName="mix-blend-multiply rounded-t-[3px] w-full h-[280px] lg:h-[26vw] md:h-auto md:max-h-none object-contain bg-gray-98"
             imageSrc={ogImage}
             imageUrl={imageUrl}
-            width={696}
-            height={329}
+            width={967}
+            height={509}
             alt={title}
           />
         )}
 
         {!ogImage && (
           <img
-            className="h-auto w-full shrink-0 self-center rounded-t-[3px] md:h-56 sm:h-60 xs:h-48"
+            className="h-auto w-full shrink-0 self-center rounded-t-[3px]"
             src={placeholder || placeholderImages.Events}
             alt={title}
-            width={800}
-            height={280}
+            width={967}
+            height={509}
           />
         )}
         <div className="py-6 lg:pb-0">
