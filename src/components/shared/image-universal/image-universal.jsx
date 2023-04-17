@@ -12,6 +12,7 @@ const ImageUniversal = ({
   gatsbyClassName,
   gatsbyImgClassName,
   svgClassName,
+  bgColor,
   ...otherProps
 }) => {
   if (imageSrc?.childImageSharp) {
@@ -22,9 +23,9 @@ const ImageUniversal = ({
         image={getImage(imageSrc)}
         width={width}
         height={height}
-        objectFit="cover"
+        objectFit="contain"
         layout="fullWidth"
-        backgroundColor="#F6F6F9"
+        backgroundColor={bgColor}
         alt={alt}
         {...otherProps}
         loading="lazy"
@@ -46,6 +47,7 @@ ImageUniversal.propTypes = {
   gatsbyClassName: PropTypes.string,
   gatsbyImgClassName: PropTypes.string,
   svgClassName: PropTypes.string,
+  bgColor: PropTypes.string,
 };
 
 ImageUniversal.defaultProps = {
@@ -57,6 +59,7 @@ ImageUniversal.defaultProps = {
   gatsbyClassName: null,
   gatsbyImgClassName: null,
   svgClassName: null,
+  bgColor: null,
 };
 
 export default ImageUniversal;
