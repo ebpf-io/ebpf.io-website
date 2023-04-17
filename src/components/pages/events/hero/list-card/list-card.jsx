@@ -9,7 +9,7 @@ import Link from 'components/shared/link/link';
 const ListCard = ({ type, title, date, place, linkUrl, className }) => (
   <div
     className={clsx(
-      'flex h-auto w-full flex-col border-t border-dashed border-gray-90 py-6 first:border-none first:pt-0 lg:first:border-t',
+      'md:first:bt flex h-auto w-full flex-col border-t border-dashed border-gray-90 py-6 first:border-none first:pt-0 lg:first:border-t md:first:border-dashed md:first:pt-6',
       className
     )}
   >
