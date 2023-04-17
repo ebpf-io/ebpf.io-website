@@ -33,7 +33,17 @@ const ImageUniversal = ({
     );
   }
 
-  return <img className={svgClassName} src={imageUrl} alt={alt} {...otherProps} loading="lazy" />;
+  return (
+    <img
+      className={svgClassName}
+      src={imageUrl}
+      alt={alt}
+      width={width}
+      height={height}
+      {...otherProps}
+      loading="lazy"
+    />
+  );
 };
 
 ImageUniversal.propTypes = {
