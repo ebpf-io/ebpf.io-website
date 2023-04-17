@@ -7,5 +7,7 @@ linkUrl: 'https://ebpf.io/summit-2020.html'
 type: Conference
 conference: eBPF Summit
 region: Online
+# TODO: remove test files and nex line before merge
+ogImage: ogimage.png
 isFeatured: false
 ---
