@@ -7,5 +7,5 @@ linkUrl: 'http://vger.kernel.org/bpfconf2022.html'
 type: Conference
 conference: 'bpfconf (LSF/MM/BPF)'
 region: North America
-isFeatured: false
+isFeatured: true
 ---
