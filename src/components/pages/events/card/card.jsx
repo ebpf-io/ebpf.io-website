@@ -30,23 +30,24 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
         {(ogImage || imageUrl) && (
           <ImageUniversal
-            gatsbyClassName="rounded-t-lg h-[182px] lg:h-[15vw] md:h-[24vw] sm:h-[44vw] xs:h-[50vw]"
-            svgClassName="mix-blend-multiply rounded-t-lg h-[182px] w-full lg:h-[15vw] md:h-[24vw] sm:h-[44vw] xs:h-[50vw] object-cover"
+            gatsbyClassName="rounded-t-lg h-[182px] lg:h-[15vw] md:h-[24vw] sm:h-auto sm:max-h-none bg-gray-98"
+            gatsbyImgClassName="mix-blend-multiply"
+            svgClassName="mix-blend-multiply rounded-t-lg h-[182px] w-full lg:h-[15vw] md:h-[24vw] sm:h-auto sm:max-h-none object-contain bg-gray-98"
             imageSrc={ogImage}
             imageUrl={imageUrl}
-            width={384}
-            height={182}
+            width={733}
+            height={383}
             alt={title}
           />
         )}
 
         {!ogImage && (
           <img
-            className="h-[182px] w-full self-center rounded-t-lg bg-gray-96 object-contain lg:h-[15vw] md:h-[24vw] sm:h-[44vw] xs:h-[50vw]"
+            className="h-[182px] w-full self-center rounded-t-lg bg-gray-98 object-contain lg:h-[15vw] md:h-[24vw] sm:h-auto"
             src={placeholder || placeholderImages.Events}
             alt={title}
-            width={384}
-            height={182}
+            width={733}
+            height={383}
             loading="lazy"
           />
         )}
