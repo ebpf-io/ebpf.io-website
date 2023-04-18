@@ -29,6 +29,7 @@ const animationProps = {
 const items = [
   {
     logo: azureLogo,
+    logoWidth: 134,
     company: 'Microsoft Azure',
     review:
       'eBPF has resulted in a new generation of tooling that allows developers to easily diagnose problems, innovate quickly, and extend operating system functionality.',
@@ -37,6 +38,7 @@ const items = [
   },
   {
     logo: googleLogo,
+    logoWidth: 104,
     company: 'Google',
     review:
       'eBPF is the future of networking for the Linux kernel and Google is pleased to be part of the evolving standard it has created.',
@@ -45,6 +47,7 @@ const items = [
   },
   {
     logo: isovalentLogo,
+    logoWidth: 148,
     company: 'Isovalent',
     review:
       'Even though eBPF has already found its ways into the production stacks of countless enterprises, we are still at the beginning of the innovation curve that eBPF as a technology unlocks',
@@ -52,8 +55,9 @@ const items = [
     role: 'Chief Technology Officer at Isovalent, 2021',
   },
   {
-    company: 'Meta',
     logo: metaLogo,
+    logoWidth: 120,
+    company: 'Meta',
     review:
       'For many years, eBPF has played a critical role in accelerating the kernel development. We’re excited to support the work of the eBPF community, enabling them to build the tools needed to power the next generation of Linux system development.',
     author: 'Chris Mason',
@@ -61,6 +65,7 @@ const items = [
   },
   {
     logo: netflixLogo,
+    logoWidth: 109,
     company: 'Netflix',
     review:
       'eBPF is a new type of software that provides superpower capabilities, birthing an industry of networking, performance, and security technologies. Netflix has pioneered uses of eBPF for observability, providing insight into countless areas that were previously difficult or prohibitively expensive to instrument. eBPF has helped us lower application latency and find cost savings.',
@@ -99,7 +104,7 @@ const Testimonials = () => {
           </AnimatePresence>
         </LazyMotion>
         <ul className="scrollbar-hidden relative mt-24 flex justify-between border-b border-dashed border-gray-80 lg:mt-20 md:mt-16 md:overflow-x-auto sm:-mx-4 sm:mt-12 sm:border-b-0 sm:px-4">
-          {items.map(({ logo, company }, index) => (
+          {items.map(({ logo, logoWidth, company }, index) => (
             <li
               className="flex shrink-0 border-dashed border-gray-80 sm:grow sm:border-b"
               key={index}
@@ -120,6 +125,7 @@ const Testimonials = () => {
                       : 'opacity-0 transition-opacity duration-200 group-hover:opacity-100'
                   )}
                   src={logo}
+                  width={logoWidth}
                   height={48}
                   alt={company}
                   loading="lazy"
