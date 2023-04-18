@@ -7,7 +7,5 @@ linkUrl: 'https://lpc.events/event/7/sessions/91/#all'
 type: Conference
 conference: eBPF Track (LPC)
 region: North America
-# TODO: remove test files and nex line before merge
-ogImage: ogimage.webp
 isFeatured: false
 ---

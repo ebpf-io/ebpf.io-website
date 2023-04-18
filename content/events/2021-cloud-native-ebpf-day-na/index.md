@@ -7,7 +7,5 @@ linkUrl: 'https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-
 type: Conference
 conference: Cloud Native eBPF Day
 region: North America
-# TODO: remove test files and nex line before merge
-ogImage: ogimage.svg
 isFeatured: false
 ---
