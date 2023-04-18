@@ -7,7 +7,5 @@ linkUrl: 'https://lore.kernel.org/bpf/Y7hDVliKq+PzY1yY@localhost.localdomain/'
 type: Conference
 conference: 'bpfconf (LSF/MM/BPF)'
 region: North America
-# TODO: remove test files and nex line before merge
-# ogImage: ogimage1.png
 isFeatured: true
 ---
