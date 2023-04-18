@@ -6,10 +6,10 @@ import Hero from 'components/pages/events/hero';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 
-const EventsPage = ({ pageContext: { featuredEvents, allEvents, totalCount } }) => (
+const EventsPage = ({ pageContext: { featuredEvents, postEvents, totalCount } }) => (
   <Layout>
     <Hero items={featuredEvents} />
-    <EventList allEvents={allEvents} totalCount={totalCount} />
+    <EventList allEvents={postEvents} totalCount={totalCount} />
   </Layout>
 );
 
