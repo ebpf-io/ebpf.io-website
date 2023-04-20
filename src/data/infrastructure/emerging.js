@@ -67,7 +67,7 @@ const emergingInfrastructure = [
   {
     name: 'BPF Conformance',
     title: 'eBPF Conformance Testing Framework',
-    description: `A conformance testing framework for eBPF programs. It
+    description: `A conformance testing framework for eBPF runtime implementations. It
     provides a set of tests that can be used to verify that an eBPF
     implementation is compliant with the eBPF specification.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/Alan-Jowett/bpf_conformance' }],
