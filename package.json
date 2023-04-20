@@ -75,7 +75,7 @@
     "gatsby-alias-imports": "^1.0.6",
     "gatsby-plugin-manifest": "^5.5.0",
     "gatsby-plugin-postcss": "^6.5.0",
-    "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-plugin-sharp": "^5.8.1",
     "gatsby-plugin-sitemap": "^6.5.0",
     "gatsby-plugin-svgr-svgo": "^2.0.0",
     "gatsby-source-filesystem": "^5.5.0",
