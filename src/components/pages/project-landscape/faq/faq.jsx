@@ -12,9 +12,8 @@ const Requirements = () => (
         license. Any documentation must be licensed under an open license.
       </li>
       <li>
-        The project must be using eBPF as its underlying core technology and help accelerate the
-        adoption of eBPF in production. In other words, a project would lose its purpose if the 
-        eBPF parts are removed.
+        The project must be using eBPF as its underlying core technology (in other words, a project would lose its purpose if the 
+        eBPF parts are removed) or help accelerate the adoption of eBPF in production.
       </li>
       <li>
         The project must be open to collaboration and have a governance model following open source
