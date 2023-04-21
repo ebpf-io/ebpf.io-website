@@ -17,9 +17,10 @@ import Meta from './logos/meta.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
+import SentinelOne from './logos/sentinelone.inline.svg';
 import Seznam from './logos/seznam.inline.svg';
-import Sky from './logos/sky.inline.svg';
 import Shopify from './logos/shopify.inline.svg';
+import Sky from './logos/sky.inline.svg';
 import Trip from './logos/trip.inline.svg';
 import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
@@ -88,7 +89,7 @@ const caseStudiesData = [
   {
     title: 'Shopify',
     logo: Shopify,
-    description:
+    description: 
       '<strong>Shopify</strong> uses eBPF through Falco for intrusion detection.',
     links: [
       {
@@ -368,6 +369,18 @@ const caseStudiesData = [
       {
         text: 'Video',
         to: 'https://www.youtube.com/watch?v=qmrHONqsV2M&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D',
+      },
+    ],
+  },
+  {
+    title: 'SentinelOne',
+    logo: SentinelOne,
+    description:
+      '<strong>SentinelOne</strong> uses eBPF to detect and to respond to runtime threats like ransomware and zero-day exploits in real time.',
+    links: [
+      {
+        text: 'Blog',
+        to: 'https://www.sentinelone.com/blog/the-advantages-of-ebpf-for-cwpp-applications/',
       },
     ],
   },
