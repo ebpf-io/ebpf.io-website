@@ -89,7 +89,8 @@ const caseStudiesData = [
   {
     title: 'Shopify',
     logo: Shopify,
-    description: '<strong>Shopify</strong> uses eBPF through Falco for intrusion detection.',
+    description: 
+      '<strong>Shopify</strong> uses eBPF through Falco for intrusion detection.',
     links: [
       {
         text: 'Video',
