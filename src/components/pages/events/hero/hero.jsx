@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
 import ListCard from './list-card';
 import MainCard from './main-card';
 
 const Hero = ({ items }) => {
-  const mainItem = items.shift();
+  const mainItem = useMemo(() => items.shift(), [items]);
 
   return (
     <section className="safe-paddings pt-20 pb-[72px] lg:pt-16 md:pb-10">

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import React, { Fragment, useState, useCallback, useMemo } from 'react';
+import React, { Fragment, useState, useCallback, useMemo, useEffect } from 'react';
+import { useSearchParam } from 'react-use';
 
 import Card from 'components/pages/events/card';
 import Filters from 'components/pages/events/filters';
@@ -23,6 +24,9 @@ const EventList = ({ allEvents, totalCount }) => {
   const [itemOffset, setItemOffset] = useState(0);
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
 
+  const eventtype = useSearchParam('eventtype');
+  const conference = useSearchParam('conference');
+
   const handleFilters = useCallback(
     (filter, newValues) => {
       const newFilters = {
@@ -33,6 +37,18 @@ const EventList = ({ allEvents, totalCount }) => {
     },
     [activeFilters]
   );
+
+  useEffect(() => {
+    if (eventtype) {
+      handleFilters(eventFilters[0], [eventtype]);
+    }
+    if (conference) {
+      handleFilters(eventFilters[1], [conference]);
+    }
+    if (eventtype || conference) {
+      history.pushState(null, '', window.location.pathname);
+    }
+  }, [eventtype, conference, handleFilters]);
 
   const memoizedFilterDropdowns = useMemo(
     () => (
