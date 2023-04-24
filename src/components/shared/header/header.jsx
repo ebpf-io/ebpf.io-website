@@ -55,7 +55,7 @@ const Header = ({ items, isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder 
                       <li key={text}>
                         {to ? (
                           <Link
-                            className="flex py-2.5 px-5 text-[15px] font-medium leading-none lg:text-sm"
+                            className="flex whitespace-nowrap py-2.5 px-5 text-[15px] font-medium leading-none lg:text-sm"
                             theme="black"
                             to={to}
                             target={target || null}
@@ -73,7 +73,7 @@ const Header = ({ items, isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder 
                             {items.map(({ text, to, target }) => (
                               <li key={text}>
                                 <Link
-                                  className="flex py-2.5 px-5 text-[15px] leading-none lg:text-sm"
+                                  className="blabla flex py-2.5 px-5 text-[15px] leading-none lg:text-sm"
                                   theme="black"
                                   to={to}
                                   target={target || null}
