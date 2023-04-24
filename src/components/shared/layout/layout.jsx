@@ -82,6 +82,11 @@ const headerMenu = [
         text: 'eBPF Track (LPC)',
         items: [
           {
+            text: '2023 (CFP)',
+            to: 'https://lore.kernel.org/bpf/1515db2c-f517-76da-8aad-127a67da802f@iogearbox.net/',
+            target: '_blank',
+          },
+          {
             text: '2022',
             to: 'https://lpc.events/event/16/sessions/131/#all',
             target: '_blank',
