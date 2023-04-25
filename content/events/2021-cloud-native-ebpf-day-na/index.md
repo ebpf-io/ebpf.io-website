@@ -5,6 +5,7 @@ title: 'Cloud Native eBPF Day 2021 North America'
 description:
 linkUrl: 'https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/'
 type: Conference
+ogImage: ogImage.jpg
 conference: Cloud Native eBPF Day
 region: North America
 isFeatured: false
