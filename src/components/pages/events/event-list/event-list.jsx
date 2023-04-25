@@ -24,8 +24,8 @@ const EventList = ({ allEvents, totalCount }) => {
   const [itemOffset, setItemOffset] = useState(0);
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
 
-  const eventtype = useSearchParam('eventtype');
-  const conference = useSearchParam('conference');
+  const eventtype = useSearchParam(eventFilters[0].label);
+  const conference = useSearchParam(eventFilters[1].label);
 
   const handleFilters = useCallback(
     (filter, newValues) => {
