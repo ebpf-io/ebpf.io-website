@@ -46,6 +46,7 @@ const EventList = ({ allEvents, totalCount }) => {
       handleFilters(eventFilters[1], [conference]);
     }
     if (eventtype || conference) {
+      // eslint-disable-next-line no-restricted-globals
       history.pushState(null, '', window.location.pathname);
     }
   }, [eventtype, conference, handleFilters]);
