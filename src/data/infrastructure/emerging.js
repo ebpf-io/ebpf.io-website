@@ -64,6 +64,14 @@ const emergingInfrastructure = [
     description: `A polynomial-time eBPF verifier supporting bounded loops  based on abstract interpretation.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/vbpf/ebpf-verifier' }],
   },
+  {
+    name: 'BPF Conformance',
+    title: 'eBPF Conformance Testing Framework',
+    description: `A conformance testing framework for eBPF runtime implementations. It
+    provides a set of tests that can be used to verify that an eBPF
+    implementation is compliant with the eBPF specification.`,
+    urls: [{ label: 'GitHub', url: 'https://github.com/Alan-Jowett/bpf_conformance' }],
+  },
 ];
 
 export default emergingInfrastructure;

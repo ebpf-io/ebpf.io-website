@@ -2,10 +2,15 @@ import React from 'react';
 
 import Button from 'components/shared/button';
 
-import bg1Md from './images/bg-1-md.png';
-import bg1 from './images/bg-1.png';
-import bg2Md from './images/bg-2-md.png';
-import bg2 from './images/bg-2.png';
+// import bg1Md from './images/bg-1-md.png';
+// import bg1 from './images/bg-1.png';
+// import bg2Md from './images/bg-2-md.png';
+// import bg2 from './images/bg-2.png';
+
+import bg1Md from './images/bg-1-md.webp';
+import bg1 from './images/bg-1.webp';
+import bg2Md from './images/bg-2-md.webp';
+import bg2 from './images/bg-2.webp';
 
 const TopBanner = () => (
   <div
@@ -31,7 +36,7 @@ const TopBanner = () => (
       aria-hidden
     />
     <img
-      className="absolute top-0 left-0 hidden mix-blend-multiply md:block"
+      className="absolute bottom-0 left-0 hidden mix-blend-multiply md:block"
       src={bg2Md}
       alt=""
       aria-hidden

@@ -12,11 +12,12 @@ const Requirements = () => (
         license. Any documentation must be licensed under an open license.
       </li>
       <li>
-        The project must be using eBPF as its underlying core technology, in other words, a project
-        would lose its purpose if the eBPF parts are removed.
+        The project must be using eBPF as its underlying core technology (in other words, a project
+        would lose its purpose if the eBPF parts are removed) or help accelerate the adoption of
+        eBPF in production.
       </li>
       <li>
-        The project must be open to collaboration and have a governance model following open-source
+        The project must be open to collaboration and have a governance model following open source
         best-practices.
       </li>
     </ul>
@@ -40,7 +41,7 @@ const items = [
   {
     question: 'Are these projects under the eBPF Foundation?',
     answer:
-      '<ul><li>This page lists a number of open source projects that use eBPF as the underlying core technology. These projects are not under the <a href="https://www.ebpf.foundation/">eBPF Foundation</a> but are listed here as a survey of the eBPF project landscape today.</li></ul>',
+      '<ul><li>This page lists a number of open source projects that use eBPF as the underlying core technology. These projects are not all under the <a href="https://www.ebpf.foundation/">eBPF Foundation</a> but are listed here as a survey of the eBPF project landscape today.</li></ul>',
   },
   {
     question: 'Add your project',
