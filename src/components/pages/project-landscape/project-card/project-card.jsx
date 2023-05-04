@@ -30,6 +30,7 @@ import pyroscopeLogo from './logos/pyroscope.svg';
 import rbpfLogo from './logos/rbpf.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
+import sshlogLogo from './logos/sshlog.svg';
 
 const logos = {
   bccLogo,
@@ -51,6 +52,7 @@ const logos = {
   parcaLogo,
   keplerLogo,
   sysinternalsLogo,
+  sshlogLogo,
   linuxLogo,
   llvmLogo,
   ebpfForWindowsLogo,
