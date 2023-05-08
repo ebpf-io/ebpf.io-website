@@ -7,5 +7,5 @@ linkUrl: 'https://blog.linuxplumbersconf.org/2017/ocw/events/LPC2017/schedule.ht
 type: Conference
 conference: eBPF Track (LPC)
 region: North America
-isFeatured: true
+isFeatured: false
 ---

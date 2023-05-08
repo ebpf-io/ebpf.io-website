@@ -4,6 +4,7 @@ place: 'Online'
 title: 'Linux Plumbers Conference 2021'
 description: "This year's Networking and BPF track technical committee is comprised of: David S. Miller, Jakub Kicinski, Eric Dumazet, Alexei Starovoitov, Daniel Borkmann, and Andrii Nakryiko."
 linkUrl: 'https://lpc.events/event/11/sessions/120/#all'
+ogImage: ogImage.jpg
 type: Conference
 conference: eBPF Track (LPC)
 region: North America
