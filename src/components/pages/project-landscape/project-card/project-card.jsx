@@ -31,6 +31,7 @@ import rbpfLogo from './logos/rbpf.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
 import sshlogLogo from './logos/sshlog.svg';
+import carettaLogo from './logos/caretta.svg';
 
 const logos = {
   bccLogo,
@@ -53,6 +54,7 @@ const logos = {
   keplerLogo,
   sysinternalsLogo,
   sshlogLogo,
+  carettaLogo,
   linuxLogo,
   llvmLogo,
   ebpfForWindowsLogo,
