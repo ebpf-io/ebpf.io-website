@@ -324,6 +324,18 @@ const emergingApplications = [
       { label: 'Website', url: 'http://www.sshlog.com/' },
     ],
   },
+  {
+    logoUrl: 'https://github.com/groundcover-com/caretta',
+    name: 'Caretta',
+    logoName: 'carettaLogo',
+    title: 'eBPF based Kubernetes service map',
+    description: `Caretta is a Kubernetes service map that uses eBPF to trace network traffic between pods.
+    It can be used to visualize the network traffic between services in a Kubernetes cluster,
+    and gain additional insights into the network traffic and the relationships between services.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/groundcover-com/caretta' },
+    ],
+  }
 ];
 
 export default emergingApplications;
