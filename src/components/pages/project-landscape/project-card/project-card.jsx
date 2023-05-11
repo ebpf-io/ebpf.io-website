@@ -32,6 +32,7 @@ import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
 import sshlogLogo from './logos/sshlog.svg';
 import carettaLogo from './logos/caretta.svg';
+import bpfdLogo from './logos/bpfd.svg';
 
 const logos = {
   bccLogo,
@@ -52,6 +53,7 @@ const logos = {
   pyroscopeLogo,
   parcaLogo,
   keplerLogo,
+  bpfdLogo,
   sysinternalsLogo,
   sshlogLogo,
   carettaLogo,
