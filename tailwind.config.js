@@ -31,6 +31,7 @@ module.exports = {
         'red-1': '#F9DCE4',
         'red-2': '#E3ABBA',
         'yellow-light': '#FEF9E7',
+        'yellow-1-light': '#FEFBF0',
         'green-light': '#EBFAEB',
         'green-1-light': '#F3FCF3',
         'blue-light': '#E7F6FE',
@@ -90,6 +91,9 @@ module.exports = {
     extend: {
       lineHeight: {
         dense: '1.125',
+      },
+      letterSpacing: {
+        'middle-wide': '0.03em',
       },
       dropShadow: {
         book: '0px 8px 24px rgba(61, 61, 61, 0.16)',

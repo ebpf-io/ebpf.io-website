@@ -40,7 +40,7 @@ const SubscriptionForm = ({ className, size }) => {
     <LazyMotion features={domAnimation}>
       <div
         className={clsx(
-          'flex items-center rounded-lg text-white lg:flex-col lg:space-x-0 lg:space-y-8 lg:px-9 md:px-7 sm:px-5',
+          'flex w-full items-center rounded-lg text-white lg:flex-col lg:space-x-0 lg:space-y-8 lg:px-9 md:px-7 sm:px-5',
           {
             'space-x-10 px-11 py-9': smSize,
             'space-x-[60px] py-11 pl-14 pr-20': mdSize,

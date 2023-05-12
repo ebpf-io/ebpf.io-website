@@ -42,116 +42,28 @@ const headerMenu = [
     text: 'Conferences',
     items: [
       {
+        text: 'Overview',
+        to: '/events?eventtype=Conference',
+      },
+      {
         text: 'eBPF Summit',
-        items: [
-          {
-            text: '2022',
-            to: '/summit-2022.html',
-          },
-          {
-            text: '2021',
-            to: '/summit-2021.html',
-          },
-          {
-            text: '2020',
-            to: '/summit-2020.html',
-          },
-        ],
+        to: '/events?conference=eBPF%20Summit',
       },
       {
         text: 'Cloud Native eBPF Day',
-        items: [
-          {
-            text: '2022 (NA)',
-            to: 'https://events.linuxfoundation.org/cloud-native-ebpf-day-north-america/program/schedule/',
-            target: '_blank',
-          },
-          {
-            text: '2022 (EU)',
-            to: 'https://events.linuxfoundation.org/cloud-native-ebpf-day-europe/program/schedule/',
-            target: '_blank',
-          },
-          {
-            text: '2021 (NA)',
-            to: 'https://events.linuxfoundation.org/archive/2021/cloud-native-ebpf-day-north-america/program/schedule/',
-            target: '_blank',
-          },
-        ],
+        to: '/events?conference=Cloud%20Native%20eBPF%20Day',
       },
       {
         text: 'eBPF Track (LPC)',
-        items: [
-          {
-            text: '2023 (CFP)',
-            to: 'https://lore.kernel.org/bpf/1515db2c-f517-76da-8aad-127a67da802f@iogearbox.net/',
-            target: '_blank',
-          },
-          {
-            text: '2022',
-            to: 'https://lpc.events/event/16/sessions/131/#all',
-            target: '_blank',
-          },
-          {
-            text: '2021',
-            to: 'https://linuxplumbersconf.org/event/11/sessions/120/#all',
-            target: '_blank',
-          },
-          {
-            text: '2020',
-            to: 'https://linuxplumbersconf.org/event/7/sessions/91/#all',
-            target: '_blank',
-          },
-          {
-            text: '2019',
-            to: 'https://linuxplumbersconf.org/event/4/sessions/62/#20190911',
-            target: '_blank',
-          },
-          {
-            text: '2018',
-            to: 'http://vger.kernel.org/lpc-bpf2018.html',
-            target: '_blank',
-          },
-          {
-            text: '2017',
-            to: 'https://blog.linuxplumbersconf.org/2017/ocw/events/LPC2017/schedule.html#day_2017_09_15',
-            target: '_blank',
-          },
-        ],
+        to: '/events?conference=eBPF%20Track%20%28LPC%29',
       },
       {
         text: 'bpfconf (LSF/MM/BPF)',
-        items: [
-          {
-            text: '2023 (CFP)',
-            to: 'https://lore.kernel.org/bpf/Y7hDVliKq+PzY1yY@localhost.localdomain/',
-            target: '_blank',
-          },
-          {
-            text: '2022',
-            to: 'http://vger.kernel.org/bpfconf2022.html',
-            target: '_blank',
-          },
-          {
-            text: '2019',
-            to: 'http://vger.kernel.org/bpfconf2019.html',
-            target: '_blank',
-          },
-        ],
+        to: '/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
       },
       {
         text: 'BPF Meetups at IETF',
-        items: [
-          {
-            text: '2023 (IETF 116)',
-            to: 'https://datatracker.ietf.org/group/bpf/meetings/',
-            target: '_blank',
-          },
-          {
-            text: '2022 (IETF 115)',
-            to: 'https://lore.kernel.org/bpf/DM4PR21MB3440837AE8F54F8E6EA5D475A3119@DM4PR21MB3440.namprd21.prod.outlook.com/',
-            target: '_blank',
-          },
-        ],
+        to: '/events?conference=BPF%20Meetups%20at%20IETF',
       },
     ],
   },
@@ -190,6 +102,10 @@ const headerMenu = [
   {
     text: 'Blog',
     to: '/blog',
+  },
+  {
+    text: 'Events',
+    to: '/events',
   },
   {
     text: 'Foundation',
