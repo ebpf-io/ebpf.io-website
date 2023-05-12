@@ -21,7 +21,7 @@ const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, cla
   const imageUrl = ogImage?.publicURL;
 
   return (
-    <div className={clsx('lg:border-b-none flex h-full flex-col pb-6', className)}>
+    <div className={clsx('lg:border-b-none flex h-full flex-col', className)}>
       <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
         {(ogImage || imageUrl) && (
           <ImageUniversal

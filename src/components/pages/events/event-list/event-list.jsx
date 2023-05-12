@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React, { Fragment, useState, useCallback, useMemo, useEffect } from 'react';
-import { useSearchParam } from 'react-use';
 
 import Card from 'components/pages/events/card';
 import Filters from 'components/pages/events/filters';
@@ -24,9 +23,6 @@ const EventList = ({ allEvents, totalCount }) => {
   const [itemOffset, setItemOffset] = useState(0);
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
 
-  const eventtype = useSearchParam(eventFilters[0].label);
-  const conference = useSearchParam(eventFilters[1].label);
-
   const handleFilters = useCallback(
     (filter, newValues) => {
       const newFilters = {
@@ -38,18 +34,38 @@ const EventList = ({ allEvents, totalCount }) => {
     [activeFilters]
   );
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (eventtype) {
-      handleFilters(eventFilters[0], [eventtype]);
-    }
-    if (conference) {
-      handleFilters(eventFilters[1], [conference]);
-    }
-    if (eventtype || conference) {
-      // eslint-disable-next-line no-restricted-globals
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const eventtype = eventFilters[0].label;
+    const conference = eventFilters[1].label;
+    const eventtypeParam = urlSearchParams.get(eventtype);
+    const conferenceParam = urlSearchParams.get(conference);
+
+    if (eventtypeParam || conferenceParam) {
+      setActiveFilters((prev) => ({
+        ...prev,
+        ...(eventtypeParam && prev[eventtype] !== eventtypeParam
+          ? { [eventtype]: [eventtypeParam] }
+          : {}),
+        ...(conferenceParam && prev[conference] !== conferenceParam
+          ? { [conference]: [conferenceParam] }
+          : {}),
+      }));
+
+      const element = document.getElementById('ref');
+      if (element) {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementOffset = window.pageYOffset + elementTop;
+        window.scrollTo({
+          top: elementOffset,
+          behavior: 'smooth',
+        });
+      }
+
       history.pushState(null, '', window.location.pathname);
     }
-  }, [eventtype, conference, handleFilters]);
+  });
 
   const memoizedFilterDropdowns = useMemo(
     () => (
@@ -68,7 +84,7 @@ const EventList = ({ allEvents, totalCount }) => {
   const pageCount = Math.ceil(filteredEvents.length / EVENT_PER_PAGE);
 
   return (
-    <section className="safe-paddings pb-28 lg:pb-24 md:pb-16 sm:pb-12">
+    <section className="safe-paddings pt-6 pb-28 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
       {memoizedFilterDropdowns}
       <div className="container grid-gap grid auto-rows-min grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
         {currentEvents.length > 0 &&
