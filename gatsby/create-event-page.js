@@ -33,7 +33,7 @@ module.exports = async ({ graphql, actions }) => {
               conference
               title
               description
-              date(formatString: "MMMM, DD YYYY")
+              date(formatString: "MMMM DD, YYYY")
               place
               linkUrl
               ogImage {
@@ -60,7 +60,7 @@ module.exports = async ({ graphql, actions }) => {
               region
               title
               description
-              date(formatString: "MMMM, DD YYYY")
+              date(formatString: "MMMM DD, YYYY")
               place
               linkUrl
               ogImage {
