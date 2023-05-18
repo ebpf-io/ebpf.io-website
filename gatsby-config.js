@@ -102,8 +102,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        // name: 'ebpf-site',
-        // short_name: 'ebpf',
         start_url: '/',
         display: 'minimal-ui',
         icon: 'src/images/favicon.png',
