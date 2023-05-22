@@ -39,7 +39,7 @@ const headerMenu = [
   },
 
   {
-    text: 'Conferences',
+    text: 'Events',
     items: [
       {
         text: 'Overview',
