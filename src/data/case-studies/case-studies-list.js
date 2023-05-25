@@ -1,3 +1,4 @@
+import Akita from './logos/alibaba.inline.svg';
 import Alibaba from './logos/alibaba.inline.svg';
 import Android from './logos/android.inline.svg';
 import Apple from './logos/apple.inline.svg';
@@ -59,6 +60,17 @@ const caseStudiesData = [
       {
         text: 'Blog',
         to: 'https://netflixtechblog.com/how-netflix-uses-ebpf-flow-logs-at-scale-for-network-insight-e3ea997dca96',
+      },
+    ],
+  },
+  {
+    title: 'Akita',
+    logo: Akita,
+    description: '<strong>Akita</strong> uses eBPF at scale for API observability.',
+    links: [
+      {
+        text: 'Docs',
+        to: 'https://docs.akita.software/docs/how-akita-works#what-makes-akita-different',
       },
     ],
   },
