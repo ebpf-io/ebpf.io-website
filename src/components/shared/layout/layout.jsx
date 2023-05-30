@@ -50,10 +50,6 @@ const headerMenu = [
         to: '/events?conference=eBPF%20Summit',
       },
       {
-        text: 'Cloud Native eBPF Day',
-        to: '/events?conference=Cloud%20Native%20eBPF%20Day',
-      },
-      {
         text: 'eBPF Track (LPC)',
         to: '/events?conference=eBPF%20Track%20%28LPC%29',
       },
