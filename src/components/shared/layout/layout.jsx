@@ -81,6 +81,11 @@ const headerMenu = [
         target: '_blank',
       },
       {
+        text: 'Wikipedia',
+        to: 'https://en.wikipedia.org/wiki/EBPF',
+        target: '_blank',
+      },
+      {
         text: 'eCHO',
         to: 'https://github.com/isovalent/eCHO',
         target: '_blank',
