@@ -112,4 +112,8 @@
       @apply text-secondary-blue transition-colors duration-200 hover:text-secondary-green;
     }
   }
+
+  .with-orange-highlight strong {
+    @apply text-primary-orange;
+  }
 }

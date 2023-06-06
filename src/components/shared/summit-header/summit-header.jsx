@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import PropTypes from 'prop-types';
@@ -44,34 +45,26 @@ const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-10 xl:space-x-8 lg:hidden">
-                  {navigation.map(({ name, href, menuItems, target }, index) => {
-                    const hasSubmenu = menuItems?.length > 0;
-                    return (
-                      <Fragment key={index}>
-                        {hasSubmenu ? (
-                          <SubMenu name={name} href={href} menuItems={menuItems} />
-                        ) : (
-                          <a
-                            className="hover:text-gray-1 font-bold leading-none transition-colors duration-200"
-                            href={href}
-                            target={target}
-                          >
-                            {name}
-                          </a>
-                        )}
-                      </Fragment>
-                    );
-                  })}
+                  {navigation.map(({ name, href, target }, index) => (
+                    <a
+                      className="hover:text-gray-1 font-bold leading-none transition-colors duration-200"
+                      key={index}
+                      href={href}
+                      target={target}
+                    >
+                      {name}
+                    </a>
+                  ))}
                 </div>
 
                 <Button
-                  className="flex space-x-2.5 rounded-lg text-base lg:hidden"
+                  className="flex gap-x-2.5 rounded-lg text-base font-extrabold lg:hidden"
                   type="button"
                   size="xs"
-                  theme="black"
+                  theme="black-filled"
                   onClick={openModal}
                 >
-                  <BeeIcon />
+                  <BeeIcon className="h-5 w-auto" />
                   <span>Register</span>
                 </Button>
               </nav>

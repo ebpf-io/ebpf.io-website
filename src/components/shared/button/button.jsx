@@ -8,9 +8,13 @@ import ChevronYellow from 'icons/chevron-yellow.inline.svg';
 const styles = {
   base: 'leading-none inline-flex items-center justify-center font-bold text-center whitespace-nowrap rounded-[34px] transition-colors duration-200 outline-none',
   size: {
+    xs: 'px-4 py-3 text-base',
+    sm: 'px-6 py-4 lg:px-4 lg:py-3',
     md: 'text-base py-4 px-7 lg:px-6',
   },
   theme: {
+    gray: 'text-black bg-gray-96 border-[1.5px] border-gray-90 hover:bg-gray-98',
+    orange: 'text-white bg-button-gradient hover:opacity-90',
     'black-filled': 'bg-black text-white hover:btn-black-hover transition-[background]',
     'primary-yellow-filled': 'bg-primary-yellow text-black hover:bg-[#FFF04C]',
     withYellowChevron:
@@ -41,9 +45,7 @@ const Button = ({
 
   return (
     <Tag className={className} to={to} {...otherProps}>
-      <span className="-mt-0.5">
-        {theme === 'withYellowChevron' ? <ChevronYellow className="mt-0.5 ml-px w-2" /> : children}
-      </span>
+      {theme === 'withYellowChevron' ? <ChevronYellow className="mt-0.5 ml-px w-2" /> : children}
     </Tag>
   );
 };

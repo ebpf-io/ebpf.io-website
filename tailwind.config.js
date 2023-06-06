@@ -19,6 +19,7 @@ module.exports = {
       white: '#FFFFFF',
       primary: {
         yellow: '#FFE100',
+        orange: '#FFA41D',
       },
       secondary: {
         green: '#5CCC6F',
@@ -88,6 +89,9 @@ module.exports = {
       '10xl': '50px',
       '11xl': '60px',
     },
+    backgroundImage: () => ({
+      'button-gradient': 'linear-gradient(82.18deg, #EC6113 -0.66%, #FF9900 97.55%)',
+    }),
     extend: {
       lineHeight: {
         dense: '1.125',

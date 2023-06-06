@@ -8,7 +8,7 @@ import Logo from 'images/logo.inline.svg';
 
 const SummitFooter = () => (
   <footer className="py-8 lg:py-6 md:py-4" aria-labelledby="footerHeading">
-    <Container className="flex items-center justify-between bg-white">
+    <Container className="flex items-center justify-between">
       <Link to="https://ebpf.io/">
         <Logo className="h-8 w-auto" />
       </Link>
