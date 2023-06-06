@@ -11,9 +11,12 @@ const Heading = (props) => {
     ...otherProps
   } = props;
 
-  const commonStylesClassName = 'font-extrabold';
+  const commonStylesClassName = 'font-bold';
   let sizeClassName = null;
   switch (size) {
+    case '4xl':
+      sizeClassName = 'text-9xl lg:text-7xl md:text-5xl';
+      break;
     case '3xl':
       sizeClassName = 'text-7xl md:text-6xl';
       break;
