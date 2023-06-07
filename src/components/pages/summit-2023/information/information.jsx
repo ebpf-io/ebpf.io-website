@@ -1,8 +1,5 @@
 import React from 'react';
 
-import Container from 'components/shared/container';
-import Heading from 'components/shared/heading';
-
 import ConnectingIcon from './images/connecting.inline.svg';
 import SharingIcon from './images/sharing.inline.svg';
 import TrendingIcon from './images/trending.inline.svg';
@@ -36,10 +33,8 @@ const icons = {
 
 const Information = () => (
   <section className="mt-16 md:mt-10" id="information">
-    <Container>
-      <Heading className="text-center" tag="h2" size="4xl">
-        About conference
-      </Heading>
+    <div className="container">
+      <h2 className="heading-9xl text-center font-bold leading-none">About conference</h2>
       <p className="mt-5 text-center text-xl leading-normal md:mt-3">
         Back by popular demand, we’re excited to announce the eBPF Summit 2022
       </p>
@@ -52,18 +47,13 @@ const Information = () => (
               key={index}
             >
               <Icon className="h-auto w-14 shrink-0" />
-              <Heading
-                tag="h3"
-                className="mt-6 text-2xl leading-tight lg:text-xl md:mt-4 md:text-xl"
-              >
-                {title}
-              </Heading>
+              <h3 className="mt-6 text-2xl leading-tight lg:text-xl md:mt-4 md:text-xl">{title}</h3>
               <p className="mt-2.5 text-lg leading-normal lg:text-base">{description}</p>
             </article>
           );
         })}
       </div>
-    </Container>
+    </div>
   </section>
 );
 

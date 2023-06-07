@@ -1,8 +1,7 @@
+import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Container from 'components/shared/container';
-import Heading from 'components/shared/heading';
 import Link from 'components/shared/link';
 import avatar3 from 'images/pages/summit-2023/last-year/dnsmichi.png';
 import avatar2 from 'images/pages/summit-2023/last-year/pchaigno.png';
@@ -50,14 +49,12 @@ const LastYear = ({ title, description, link, items }) => (
     className="relative overflow-hidden pt-40 pb-32 after:absolute after:top-0 after:left-0 after:-z-20 after:h-full after:w-full after:bg-gray-98 lg:pt-32 md:pt-20 md:pb-20"
     id="last-year-summit"
   >
-    <Container>
+    <div className="container">
       <div className="grid grid-cols-2 items-start gap-x-8 gap-y-10 lg:grid-cols-1">
         <div className="flex max-w-[546px] flex-col items-start">
-          <Heading tag="h2" size="4xl" className="!font-bold">
-            {title}
-          </Heading>
-          <p className="mt-6 text-left text-xl md:text-lg">{description}</p>
-          <Link className="mt-7 text-lg" theme="underline" to={link.url}>
+          <h2 className="heading-9xl font-bold leading-none">{title}</h2>
+          <p className="mt-5 text-left text-xl leading-normal md:text-lg">{description}</p>
+          <Link className="mt-7 text-lg leading-none" theme="underline" to={link.url}>
             {link.title}
           </Link>
         </div>
@@ -100,16 +97,18 @@ const LastYear = ({ title, description, link, items }) => (
                 />
                 <div className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col space-y-0.5 text-center">
                   <span
-                    className={`text-[64px] font-semibold leading-none lg:text-5xl md:text-6xl xs:text-5xl ${
+                    className={clsx(
+                      'text-[64px] font-semibold leading-none lg:text-5xl md:text-6xl xs:text-5xl',
                       isNumberOrange ? 'text-primary-orange' : 'text-white'
-                    }`}
+                    )}
                   >
                     {number}
                   </span>
                   <span
-                    className={`text-base font-medium leading-none ${
+                    className={clsx(
+                      'text-base font-medium leading-none',
                       isTextBlack ? 'text-black' : 'text-white'
-                    }`}
+                    )}
                   >
                     {unit}
                   </span>
@@ -147,7 +146,7 @@ const LastYear = ({ title, description, link, items }) => (
           </Link>
         ))}
       </div>
-    </Container>
+    </div>
   </section>
 );
 LastYear.propTypes = {

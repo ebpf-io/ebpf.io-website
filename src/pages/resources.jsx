@@ -6,8 +6,6 @@ import Tutorials from 'components/pages/resources/tutorials';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 import VideoGallery from 'components/shared/video-gallery';
-// TODO: Update SEO
-import SEO_DATA from 'data/seo-data';
 import {
   navigation,
   mobileNavigation,
@@ -29,8 +27,15 @@ const Resources = () => (
 );
 
 // eslint-disable-next-line react/prop-types
-export const Head = ({ location: { pathname } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.contribute} />
-);
+export const Head = ({ location: { pathname } }) => {
+  const pageMetadata = {
+    title: 'eBPF resources',
+    description: 'Dig into the eBPF technology with our labs, books, and tutorials.',
+    // TODO: Add oImage
+    // image: ogImage,
+    slug: pathname,
+  };
+  <SEO data={pageMetadata} />;
+};
 
 export default Resources;

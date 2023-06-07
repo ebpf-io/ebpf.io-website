@@ -1,4 +1,3 @@
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
 import Hero from 'components/pages/summit-2023/hero';
@@ -8,8 +7,6 @@ import LastYear from 'components/pages/summit-2023/last-year';
 import Proposal from 'components/pages/summit-2023/proposal';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
-// TODO: Update SEO
-import SEO_DATA from 'data/seo-data';
 import {
   navigation,
   mobileNavigation,
@@ -42,6 +39,20 @@ const proposal = {
   date2: 'Full schedule announced: <strong>August 21</strong>',
   buttonText: 'Send proposal',
   buttonUrl: 'https://ebpf.io/slack',
+};
+
+const hosts = {
+  title: 'Your eBPF Summit Hosts',
+  items: [
+    {
+      name: 'Liz Rice',
+      position: 'Chief Open Source Officer, Isovalent',
+    },
+    {
+      name: 'Duffie Cooley',
+      position: 'Field CTO Open Source Officer, Isovalent',
+    },
+  ],
 };
 
 const lastYear = {
@@ -80,56 +91,31 @@ const lastYear = {
   ],
 };
 
-const Summit2023 = () => {
-  const { duffieCooley, lizRice } = useStaticQuery(graphql`
-    query {
-      lizRice: file(relativePath: { eq: "pages/summit-2023/hosts/liz-rice.png" }) {
-        childImageSharp {
-          gatsbyImageData(width: 120)
-        }
-      }
-      duffieCooley: file(relativePath: { eq: "pages/summit-2023/hosts/duffie-cooley.png" }) {
-        childImageSharp {
-          gatsbyImageData(width: 120)
-        }
-      }
-    }
-  `);
-
-  const hosts = {
-    title: 'Your eBPF Summit Hosts',
-    items: [
-      {
-        avatar: lizRice,
-        name: 'Liz Rice',
-        position: 'Chief Open Source Officer, Isovalent',
-      },
-      {
-        avatar: duffieCooley,
-        name: 'Duffie Cooley',
-        position: 'Field CTO Open Source Officer, Isovalent',
-      },
-    ],
-  };
-
-  return (
-    <SummitLayout
-      navigation={navigation}
-      mobileNavigation={mobileNavigation}
-      hubspotFormId={hubspotFormId}
-    >
-      <Hero {...hero} />
-      <Proposal {...proposal} />
-      <Information />
-      <Hosts {...hosts} />
-      <LastYear {...lastYear} />
-    </SummitLayout>
-  );
-};
+const Summit2023 = () => (
+  <SummitLayout
+    navigation={navigation}
+    mobileNavigation={mobileNavigation}
+    hubspotFormId={hubspotFormId}
+  >
+    <Hero {...hero} />
+    <Proposal {...proposal} />
+    <Information />
+    <Hosts {...hosts} />
+    <LastYear {...lastYear} />
+  </SummitLayout>
+);
 
 // eslint-disable-next-line react/prop-types
-export const Head = ({ location: { pathname } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.contribute} />
-);
+export const Head = ({ location: { pathname } }) => {
+  const pageMetadata = {
+    title: 'eBPF Summit 2023',
+    description:
+      'Register now for the eBPF Summit 2023, Sep 13, 2023, a free virtual event for DevOps, SRE, SecOps, and developers.',
+    // TODO: Add oImage
+    // image: ogImage,
+    slug: pathname,
+  };
+  <SEO data={pageMetadata} />;
+};
 
 export default Summit2023;

@@ -12,6 +12,7 @@ const styles = {
     xs: 'px-4 py-3 text-base',
     sm: 'px-6 py-4 lg:px-4 lg:py-3',
     md: 'text-base py-4 px-7 lg:px-6',
+    none: '',
   },
   theme: {
     gray: 'text-black bg-gray-96 border-[1.5px] border-gray-90 hover:bg-gray-98',

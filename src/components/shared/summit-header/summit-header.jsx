@@ -5,9 +5,7 @@ import PropTypes from 'prop-types';
 import React, { useState, Fragment } from 'react';
 
 import Button from 'components/shared/button';
-import Container from 'components/shared/container';
 import CustomModal from 'components/shared/custom-modal';
-import Heading from 'components/shared/heading';
 import HubspotForm from 'components/shared/hubspot-form';
 import Link from 'components/shared/link';
 import BeeIcon from 'icons/bee.inline.svg';
@@ -28,7 +26,7 @@ const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
       <Popover>
         {({ open }) => (
           <>
-            <Container className="pt-5 pb-4">
+            <div className="container pt-5 pb-4">
               <nav className="relative flex items-center justify-between" aria-label="Global">
                 <div className="-mt-2.5 flex flex-none items-center lg:flex-1">
                   <div className="flex w-auto items-center justify-between lg:w-full">
@@ -68,7 +66,7 @@ const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
                   <span>Register</span>
                 </Button>
               </nav>
-            </Container>
+            </div>
 
             <Transition
               show={open}
@@ -109,8 +107,13 @@ const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
                     ))}
                   </div>
                   <div className="my-6 mx-5">
-                    <Button className="w-full" theme="orange" type="button" onClick={openModal}>
-                      Register
+                    <Button
+                      className="w-full rounded-lg py-4"
+                      theme="orange"
+                      type="button"
+                      onClick={openModal}
+                    >
+                      Register here
                     </Button>
                   </div>
                 </div>
@@ -126,9 +129,7 @@ const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
         closeModal={closeModal}
       >
         <CloseIcon className="absolute top-4 right-5 h-4 w-4" role="button" onClick={closeModal} />
-        <Heading className="text-center" size="lg" tag="h2">
-          Register for eBPF Summit
-        </Heading>
+        <h2 className="text-center">Register for eBPF Summit</h2>
         <HubspotForm className="mt-8 min-h-[400px]" hubspotFormId={hubspotFormId} />
       </CustomModal>
     </div>
