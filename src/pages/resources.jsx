@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Books from 'components/pages/resources/books';
+import Hero from 'components/pages/resources/hero';
 import Tutorials from 'components/pages/resources/tutorials';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
@@ -18,6 +19,7 @@ const Resources = () => (
     mobileNavigation={mobileNavigation}
     hubspotFormId={hubspotFormId}
   >
+    <Hero />
     <Books />
     <VideoGallery title="Watch videos on eBPF technology" items={videoItems} />
     <Tutorials />
