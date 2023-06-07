@@ -10,22 +10,9 @@ import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 // TODO: Update SEO
 import SEO_DATA from 'data/seo-data';
+import { navigation, mobileNavigation } from 'data/summit-2023/summit-2023-navigation';
 
 const hubspotFormId = process.env.HUBSPOT_FORM_ID_2023;
-
-const navigation = [
-  { name: 'Information', href: '/summit-2023/#information' },
-  { name: 'eBPF resources', href: '/ebpf-resources' },
-  { name: `Last year's summit`, href: `/summit-2023/#last-year-summit` },
-  { name: 'Attendee Swag', href: '/swag' },
-];
-
-const mobileNavigation = [
-  { name: 'Information', href: '/summit-2023/#information' },
-  { name: 'eBPF resources', href: '/ebpf-resources' },
-  { name: `Last year's summit`, href: `/summit-2023/#last-year's-summit` },
-  { name: 'Attendee Swag', href: '/swag' },
-];
 
 const hero = {
   date: 'September <strong>13</strong>, 2023',
