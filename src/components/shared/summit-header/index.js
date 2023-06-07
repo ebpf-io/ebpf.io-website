@@ -1,1 +1,3 @@
-export { default } from './summit-header';
+import SummitHeader from './summit-header';
+
+export default SummitHeader;

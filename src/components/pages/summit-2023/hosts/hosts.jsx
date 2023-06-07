@@ -6,14 +6,14 @@ import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
 
 const Hosts = ({ title, items }) => (
-  <section className="py-28 md:py-20">
+  <section className="py-32 md:py-20">
     <Container>
       <Heading className="text-center" tag="h2" size="4xl">
         {title}
       </Heading>
-      <div className="mx-auto mt-16 flex max-w-[904px] flex-wrap gap-8 md:mt-10 md:gap-6">
+      <div className="mx-auto mt-16 flex max-w-[904px] flex-wrap justify-center gap-8 md:mt-10 md:gap-6">
         {items.map(({ avatar, name, position }, index) => (
-          <div className="flex flex-grow flex-col items-center text-center" key={index}>
+          <div className="flex flex-col items-center text-center" key={index}>
             <GatsbyImage
               className="h-32 w-32 flex-shrink-0 rounded-full"
               image={getImage(avatar)}

@@ -1,1 +1,3 @@
-export { default } from './hosts';
+import Hosts from './hosts';
+
+export default Hosts;

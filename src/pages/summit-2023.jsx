@@ -4,6 +4,7 @@ import React from 'react';
 import Hero from 'components/pages/summit-2023/hero';
 import Hosts from 'components/pages/summit-2023/hosts';
 import Information from 'components/pages/summit-2023/information';
+import LastYear from 'components/pages/summit-2023/last-year';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 // TODO: Update SEO
@@ -45,8 +46,44 @@ const hero = {
   ],
 };
 
+const lastYear = {
+  title: `Last year's summit`,
+  description:
+    'eBPF Summit 2022 featured 32 talks from many different perspectives, from kernel maintainers working on eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities. Join us this September for what promises to be an even more exciting edition!',
+  link: {
+    url: 'https://ebpf.io/summit-2022.html',
+    title: 'eBPF Summit 2022',
+  },
+  items: [
+    {
+      number: '2.5k',
+      unit: 'Registrations',
+      textColor: 'black',
+      numberColor: 'orange',
+    },
+    {
+      number: '5',
+      unit: 'Keynotes',
+      textColor: 'white',
+      numberColor: 'white',
+    },
+    {
+      number: '32',
+      unit: 'Talks',
+      textColor: 'white',
+      numberColor: 'orange',
+    },
+    {
+      number: '2',
+      unit: 'Days',
+      textColor: 'black',
+      numberColor: 'orange',
+    },
+  ],
+};
+
 const Summit2023 = () => {
-  const { tracyHolmes, duffieCooley, lizRice } = useStaticQuery(graphql`
+  const { duffieCooley, lizRice } = useStaticQuery(graphql`
     query {
       lizRice: file(relativePath: { eq: "pages/summit-2023/hosts/liz-rice.png" }) {
         childImageSharp {
@@ -54,11 +91,6 @@ const Summit2023 = () => {
         }
       }
       duffieCooley: file(relativePath: { eq: "pages/summit-2023/hosts/duffie-cooley.png" }) {
-        childImageSharp {
-          gatsbyImageData(width: 120)
-        }
-      }
-      tracyHolmes: file(relativePath: { eq: "pages/summit-2023/hosts/tracy-holmes.png" }) {
         childImageSharp {
           gatsbyImageData(width: 120)
         }
@@ -73,11 +105,6 @@ const Summit2023 = () => {
         avatar: lizRice,
         name: 'Liz Rice',
         position: 'Chief Open Source Officer, Isovalent',
-      },
-      {
-        avatar: tracyHolmes,
-        name: 'Tracy Holmes',
-        position: 'Technical Community Advocate, Isovalent',
       },
       {
         avatar: duffieCooley,
@@ -96,6 +123,7 @@ const Summit2023 = () => {
       <Hero {...hero} />
       <Information />
       <Hosts {...hosts} />
+      <LastYear {...lastYear} />
     </SummitLayout>
   );
 };
