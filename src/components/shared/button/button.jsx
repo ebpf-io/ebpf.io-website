@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
+import ChevronWhite from 'icons/chevron-white.inline.svg';
 import ChevronYellow from 'icons/chevron-yellow.inline.svg';
 
 const styles = {
@@ -18,6 +19,8 @@ const styles = {
     'black-filled': 'bg-black text-white hover:btn-black-hover transition-[background]',
     'primary-yellow-filled': 'bg-primary-yellow text-black hover:bg-[#FFF04C]',
     withYellowChevron:
+      'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:btn-black-hover group-hover:btn-black-hover transition-[background]',
+    withWhiteChevron:
       'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:btn-black-hover group-hover:btn-black-hover transition-[background]',
   },
 };
@@ -45,7 +48,9 @@ const Button = ({
 
   return (
     <Tag className={className} to={to} {...otherProps}>
-      {theme === 'withYellowChevron' ? <ChevronYellow className="mt-0.5 ml-px w-2" /> : children}
+      {theme === 'withYellowChevron' && <ChevronYellow className="mt-0.5 ml-px w-2" />}
+      {theme === 'withWhiteChevron' && <ChevronWhite className="mt-0.5 ml-px w-2" />}
+      {children}
     </Tag>
   );
 };
