@@ -60,7 +60,7 @@ const Books = () => (
             className="group relative max-w-[280px] drop-shadow-book lg:max-w-[220px] xs:flex xs:justify-center"
             key={index}
           >
-            <Link className="" to={linkUrl} target="_blank" rel="noreferrer noopener">
+            <Link to={linkUrl} target="_blank" rel="noreferrer noopener">
               {image}
 
               <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center rounded bg-transparent transition-colors duration-200 group-hover:bg-[#000000]/[0.3] ">

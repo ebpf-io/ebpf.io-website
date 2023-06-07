@@ -19,7 +19,7 @@ const items = [
 ];
 
 const Tutorials = () => (
-  <section className="hero safe-paddings mt-40 mb-32 md:my-16 sm:my-14">
+  <section className="hero safe-paddings mt-40 mb-32 md:my-16 sm:mt-0 sm:mb-14">
     <div className="container grid grid-cols-2 gap-x-[26px] md:grid-cols-1">
       <div className="pr-[72px] pt-3 md:max-w-[550px] md:pr-0">
         <h2 className="heading-8xl font-semibold leading-tight">
