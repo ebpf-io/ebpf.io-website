@@ -8,10 +8,12 @@ import SummitLayout from 'components/shared/summit-layout';
 import VideoGallery from 'components/shared/video-gallery';
 // TODO: Update SEO
 import SEO_DATA from 'data/seo-data';
-import { navigation, mobileNavigation } from 'data/summit-2023/summit-2023-navigation';
+import {
+  navigation,
+  mobileNavigation,
+  hubspotFormId,
+} from 'data/summit-2023/summit-2023-navigation';
 import videoItems from 'data/summit-2023/video-data';
-
-const hubspotFormId = process.env.HUBSPOT_FORM_ID_2023;
 
 const Resources = () => (
   <SummitLayout

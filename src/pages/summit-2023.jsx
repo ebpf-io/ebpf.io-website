@@ -10,9 +10,11 @@ import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 // TODO: Update SEO
 import SEO_DATA from 'data/seo-data';
-import { navigation, mobileNavigation } from 'data/summit-2023/summit-2023-navigation';
-
-const hubspotFormId = process.env.HUBSPOT_FORM_ID_2023;
+import {
+  navigation,
+  mobileNavigation,
+  hubspotFormId,
+} from 'data/summit-2023/summit-2023-navigation';
 
 const hero = {
   date: 'September <strong>13</strong>, 2023',

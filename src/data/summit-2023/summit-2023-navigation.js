@@ -11,3 +11,5 @@ export const mobileNavigation = [
   { name: `Last year's summit`, href: `/summit-2023/#last-year's-summit` },
   { name: 'Attendee Swag', href: '/swag' },
 ];
+
+export const hubspotFormId = process.env.HUBSPOT_FORM_ID_2023;
