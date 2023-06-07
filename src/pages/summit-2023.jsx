@@ -5,6 +5,7 @@ import Hero from 'components/pages/summit-2023/hero';
 import Hosts from 'components/pages/summit-2023/hosts';
 import Information from 'components/pages/summit-2023/information';
 import LastYear from 'components/pages/summit-2023/last-year';
+import Proposal from 'components/pages/summit-2023/proposal';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 // TODO: Update SEO
@@ -15,7 +16,7 @@ const hubspotFormId = process.env.HUBSPOT_FORM_ID_2023;
 const navigation = [
   { name: 'Information', href: '/summit-2023/#information' },
   { name: 'eBPF resources', href: '/ebpf-resources' },
-  { name: `Last year's summit`, href: `/summit-2023/#last-year's-summit` },
+  { name: `Last year's summit`, href: `/summit-2023/#last-year-summit` },
   { name: 'Attendee Swag', href: '/swag' },
 ];
 
@@ -44,6 +45,14 @@ const hero = {
       iconName: 'slack',
     },
   ],
+};
+
+const proposal = {
+  title: 'Call for proposals: open now',
+  date1: 'CFP closed: <strong>July 21</strong>',
+  date2: 'Full schedule announced: <strong>August 21</strong>',
+  buttonText: 'Send proposal',
+  buttonUrl: 'https://ebpf.io/slack',
 };
 
 const lastYear = {
@@ -121,6 +130,7 @@ const Summit2023 = () => {
       hubspotFormId={hubspotFormId}
     >
       <Hero {...hero} />
+      <Proposal {...proposal} />
       <Information />
       <Hosts {...hosts} />
       <LastYear {...lastYear} />

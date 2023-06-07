@@ -53,7 +53,7 @@ const Heading = (props) => {
 Heading.propTypes = {
   className: PropTypes.string,
   tag: PropTypes.string.isRequired,
-  size: PropTypes.oneOf(['3xl', '2xl', 'xl', 'lg']),
+  size: PropTypes.oneOf(['4xl', '3xl', '2xl', 'xl', 'lg']),
   innerHTML: PropTypes.string,
   children: PropTypes.node,
 };

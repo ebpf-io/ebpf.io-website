@@ -35,7 +35,7 @@ const icons = {
 };
 
 const Information = () => (
-  <section className="mt-14 md:mt-10" id="information">
+  <section className="mt-16 md:mt-10" id="information">
     <Container>
       <Heading className="text-center" tag="h2" size="4xl">
         About conference

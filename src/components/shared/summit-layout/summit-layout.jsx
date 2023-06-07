@@ -18,8 +18,8 @@ const SummitLayout = ({ children, navigation, mobileNavigation, hubspotFormId })
 
 SummitLayout.propTypes = {
   children: PropTypes.node.isRequired,
-  navigation: PropTypes.object.isRequired,
-  mobileNavigation: PropTypes.object.isRequired,
+  navigation: PropTypes.array.isRequired,
+  mobileNavigation: PropTypes.array.isRequired,
   hubspotFormId: PropTypes.string.isRequired,
 };
 

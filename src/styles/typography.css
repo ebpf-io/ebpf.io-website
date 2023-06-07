@@ -113,6 +113,12 @@
     }
   }
 
+  .with-marker-blue {
+    marker {
+      @apply text-secondary-blue transition-colors duration-200;
+    }
+  }
+
   .with-orange-highlight strong {
     @apply text-primary-orange;
   }
