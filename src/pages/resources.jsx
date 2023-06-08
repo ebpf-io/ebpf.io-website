@@ -13,6 +13,8 @@ import {
 } from 'data/summit-2023/summit-2023-navigation';
 import videoItems from 'data/summit-2023/video-data';
 
+const ogImage = '/images/social-preview-ebpf-summit-resources.jpg';
+
 const Resources = () => (
   <SummitLayout
     navigation={navigation}
@@ -31,8 +33,7 @@ export const Head = ({ location: { pathname } }) => {
   const pageMetadata = {
     title: 'eBPF resources',
     description: 'Dig into the eBPF technology with our labs, books, and tutorials.',
-    // TODO: Add oImage
-    // image: ogImage,
+    image: ogImage,
     slug: pathname,
   };
   <SEO data={pageMetadata} />;

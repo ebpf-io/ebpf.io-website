@@ -12,6 +12,8 @@ import {
   hubspotFormId,
 } from 'data/summit-2023/summit-2023-navigation';
 
+const ogImage = '/images/social-preview-ebpf-summit-attendee-swag.jpg';
+
 const hero = {
   title: 'eBPF Summit Attendee Swag',
   description: 'Bee a part of the hive, get your eBPF swag now!',
@@ -37,8 +39,7 @@ export const Head = ({ location: { pathname } }) => {
   const pageMetadata = {
     title: 'Attendee swag for eBPF Summit',
     description: 'Bee a part of the hive, get your eBPF swag now!',
-    // TODO: add ogImage when it is ready
-    // image: ogImage,
+    image: ogImage,
     slug: pathname,
   };
   return <SEO data={pageMetadata} />;

@@ -13,6 +13,8 @@ import {
   hubspotFormId,
 } from 'data/summit-2023/summit-2023-navigation';
 
+const ogImage = '/images/social-preview-ebpf-summit.jpg';
+
 const hero = {
   date: 'September <strong>13</strong>, 2023',
   title: 'Summit 2023',
@@ -98,8 +100,7 @@ export const Head = ({ location: { pathname } }) => {
     title: 'eBPF Summit 2023',
     description:
       'Register now for the eBPF Summit 2023, Sep 13, 2023, a free virtual event for DevOps, SRE, SecOps, and developers.',
-    // TODO: Add oImage
-    // image: ogImage,
+    image: ogImage,
     slug: pathname,
   };
   <SEO data={pageMetadata} />;
