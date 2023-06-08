@@ -1,1 +1,3 @@
-export { default } from './summit-layout';
+import SummitLayout from './summit-layout';
+
+export default SummitLayout;

@@ -34,9 +34,4 @@ export default {
     title: 'eBPF - Blog',
     description: 'The latest news, updates and articles covering eBPF and related topics.',
   },
-  summit2023: {
-    title: 'eBPF Summit 2023',
-    description:
-      'Register now for the eBPF Summit 2023, Sep 13, 2023, a free virtual event for DevOps, SRE, SecOps, and developers.',
-  },
 };

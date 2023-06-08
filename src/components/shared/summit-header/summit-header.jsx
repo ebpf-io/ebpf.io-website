@@ -10,7 +10,7 @@ import Link from 'components/shared/link';
 import BeeIcon from 'icons/bee.inline.svg';
 import Logo from 'images/logo.inline.svg';
 
-const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
+const SummitHeader = ({ navigation, hubspotFormId }) => {
   const [isOpen, setIsOpen] = useState(false);
   const openModal = () => {
     setIsOpen(true);
@@ -94,7 +94,7 @@ const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
                     </div>
                   </div>
                   <div className="px-2 pt-2">
-                    {mobileNavigation.map((item) => (
+                    {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -132,7 +132,6 @@ const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
 
 SummitHeader.propTypes = {
   navigation: PropTypes.array.isRequired,
-  mobileNavigation: PropTypes.array.isRequired,
   hubspotFormId: PropTypes.string.isRequired,
 };
 

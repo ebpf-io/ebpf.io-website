@@ -1,1 +1,3 @@
-export { default } from './hubspot-form';
+import HubspotForm from './hubspot-form';
+
+export default HubspotForm;

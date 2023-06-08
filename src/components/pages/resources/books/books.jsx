@@ -63,7 +63,7 @@ const Books = () => (
             <Link to={linkUrl} target="_blank" rel="noreferrer noopener">
               {image}
 
-              <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center rounded bg-transparent transition-colors duration-200 group-hover:bg-[#000000]/[0.3] ">
+              <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center rounded bg-transparent transition-colors duration-200 group-hover:bg-[#000000]/[0.3]">
                 <Button
                   className="py-4 px-7 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
                   theme="primary-yellow-filled"

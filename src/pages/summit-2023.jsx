@@ -7,11 +7,7 @@ import LastYear from 'components/pages/summit-2023/last-year';
 import Proposal from 'components/pages/summit-2023/proposal';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
-import {
-  navigation,
-  mobileNavigation,
-  hubspotFormId,
-} from 'data/summit-2023/summit-2023-navigation';
+import { navigation, hubspotFormId } from 'data/summit-2023/summit-2023-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
 
@@ -81,11 +77,7 @@ const lastYear = {
 };
 
 const Summit2023 = () => (
-  <SummitLayout
-    navigation={navigation}
-    mobileNavigation={mobileNavigation}
-    hubspotFormId={hubspotFormId}
-  >
+  <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
     <Proposal {...proposal} />
     <Information />

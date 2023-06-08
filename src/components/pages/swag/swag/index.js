@@ -1,1 +1,3 @@
-export { default } from './swag';
+import Swag from './swag';
+
+export default Swag;

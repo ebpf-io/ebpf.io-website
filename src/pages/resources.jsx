@@ -6,21 +6,13 @@ import Tutorials from 'components/pages/resources/tutorials';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 import VideoGallery from 'components/shared/video-gallery';
-import {
-  navigation,
-  mobileNavigation,
-  hubspotFormId,
-} from 'data/summit-2023/summit-2023-navigation';
+import { navigation, hubspotFormId } from 'data/summit-2023/summit-2023-navigation';
 import videoItems from 'data/summit-2023/video-data';
 
 const ogImage = '/images/social-preview-ebpf-summit-resources.jpg';
 
 const Resources = () => (
-  <SummitLayout
-    navigation={navigation}
-    mobileNavigation={mobileNavigation}
-    hubspotFormId={hubspotFormId}
-  >
+  <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero />
     <Books />
     <VideoGallery title="Watch videos on eBPF technology" items={videoItems} />

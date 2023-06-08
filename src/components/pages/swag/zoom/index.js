@@ -1,1 +1,3 @@
-export { default } from './zoom';
+import Zoom from './zoom';
+
+export default Zoom;
