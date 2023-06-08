@@ -5,11 +5,9 @@ import PropTypes from 'prop-types';
 import React, { useState, Fragment } from 'react';
 
 import Button from 'components/shared/button';
-import CustomModal from 'components/shared/custom-modal';
-import HubspotForm from 'components/shared/hubspot-form';
+import FormModal from 'components/shared/form-modal';
 import Link from 'components/shared/link';
 import BeeIcon from 'icons/bee.inline.svg';
-import CloseIcon from 'icons/close.inline.svg';
 import Logo from 'images/logo.inline.svg';
 
 const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
@@ -122,16 +120,12 @@ const SummitHeader = ({ navigation, mobileNavigation, hubspotFormId }) => {
           </>
         )}
       </Popover>
-      <CustomModal
-        className="relative overflow-scroll p-8 md:py-5"
-        title="Register form"
+      <FormModal
+        title="Register for eBPF Summit"
         isOpen={isOpen}
         closeModal={closeModal}
-      >
-        <CloseIcon className="absolute top-4 right-5 h-4 w-4" role="button" onClick={closeModal} />
-        <h2 className="heading-6xl text-center font-bold">Register for eBPF Summit</h2>
-        <HubspotForm className="mt-8 min-h-[400px]" hubspotFormId={hubspotFormId} />
-      </CustomModal>
+        hubspotFormId={hubspotFormId}
+      />
     </div>
   );
 };
