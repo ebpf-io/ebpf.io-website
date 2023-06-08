@@ -10,7 +10,7 @@ const styles = {
   base: 'leading-none inline-flex items-center justify-center font-bold text-center whitespace-nowrap rounded-[34px] transition-colors duration-200 outline-none',
   size: {
     xs: 'px-4 py-3 text-base',
-    sm: 'px-6 py-4 lg:px-4 lg:py-3',
+    sm: 'px-6 pb-4 pt-3.5 lg:px-4 lg:py-3',
     md: 'text-base py-4 px-7 lg:px-6',
     none: '',
   },

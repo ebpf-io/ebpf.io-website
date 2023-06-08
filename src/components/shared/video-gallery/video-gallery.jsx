@@ -102,8 +102,12 @@ const VideoGallery = ({ title, items, className }) => {
             slidesPerView: 1.1,
             spaceBetween: 10,
           },
+          560: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
           768: {
-            slidesPerView: 'auto',
+            slidesPerView: 2.1,
             spaceBetween: 20,
           },
           1280: {

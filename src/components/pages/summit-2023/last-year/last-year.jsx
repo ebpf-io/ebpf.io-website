@@ -127,7 +127,14 @@ const LastYear = ({ title, description, link, items }) => (
             target="_blank"
           >
             <div className="flex items-center space-x-3 self-start">
-              <img className="h-11 w-11" src={avatar} alt={name} />
+              <img
+                className="h-11 w-11"
+                src={avatar}
+                alt={name}
+                width={44}
+                height={44}
+                aria-hidden
+              />
               <div className="flex flex-col">
                 <span className="font-bold">{name}</span>
                 <span className="mt-1 text-gray-50">{nick}</span>

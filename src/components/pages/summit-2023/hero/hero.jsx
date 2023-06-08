@@ -68,7 +68,7 @@ const Hero = ({ date, title, description }) => {
               const Icon = icons[iconName];
               return (
                 <Button
-                  className="flex items-center space-x-3 rounded-lg px-5 sm:flex-1 xs:px-3.5"
+                  className="flex items-center space-x-3 rounded-lg px-6 leading-none sm:flex-1 xs:px-3.5"
                   size="sm"
                   to={url}
                   theme={theme}
@@ -86,6 +86,10 @@ const Hero = ({ date, title, description }) => {
           src={illustration}
           className="absolute top-[4.5rem] right-8 h-auto w-[648px] xl:top-24 xl:right-0 xl:w-[490px] lg:static lg:mt-12 lg:w-full"
           alt="Illustration"
+          width={648}
+          height={431}
+          loading="eager"
+          aria-hidden
         />
       </div>
       <FormModal

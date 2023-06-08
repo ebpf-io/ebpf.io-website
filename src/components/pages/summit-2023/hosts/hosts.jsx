@@ -17,8 +17,10 @@ const Hosts = ({ title, items }) => (
         {items.map(({ name, position }, index) => (
           <div className="flex flex-col items-center text-center" key={index}>
             <img
-              className="h-32 w-32 flex-shrink-0 rounded-full"
+              className="h-40 w-40 flex-shrink-0 rounded-full"
               src={avatars[name]}
+              width={160}
+              height={160}
               alt={name}
               loading="lazy"
               aria-hidden

@@ -47,7 +47,9 @@ const Information = () => (
               key={index}
             >
               <Icon className="h-auto w-14 shrink-0" />
-              <h3 className="mt-6 text-2xl leading-tight lg:text-xl md:mt-4 md:text-xl">{title}</h3>
+              <h3 className="mt-6 text-2xl font-bold leading-tight lg:text-xl md:mt-4 md:text-xl">
+                {title}
+              </h3>
               <p className="mt-2.5 text-lg leading-normal lg:text-base">{description}</p>
             </article>
           );

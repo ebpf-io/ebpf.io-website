@@ -39,16 +39,24 @@ const Hero = () => (
         eBPF resources
       </h1>
       <h2 className="heading-8xl font-semibold leading-tight">Read the articles from our blog</h2>
-      <div className="grid-gap-x mt-16 grid grid-cols-12 lg:mt-10 lg:grid-cols-4 lg:gap-y-10">
+      <div className="grid-gap-x mt-16 grid grid-cols-12 lg:mt-10 md:grid-cols-4 md:gap-y-10">
         {items.map(({ cover, title, description, date, linkUrl }, index) => (
           <Link
-            className="group col-span-4 flex flex-col"
+            className="group col-span-4 flex flex-col md:max-w-[700px] sm:max-w-full"
             to={linkUrl}
             target="_blank"
             rel="noreferrer noopener"
             key={index}
           >
-            <img src={cover} alt="" />
+            <img
+              className="h-auto w-full"
+              src={cover}
+              alt=""
+              width={382}
+              height={182}
+              loading="eager"
+              aria-hidden
+            />
             <div className="mt-5 flex h-full w-full flex-col gap-y-2 transition-colors duration-200 group-hover:text-gray-40">
               <time className="text-sm leading-none">{date}</time>
               <h3 className="text-2xl font-bold leading-tight ">{title}</h3>
