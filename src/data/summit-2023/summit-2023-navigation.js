@@ -12,4 +12,4 @@ export const mobileNavigation = [
   { name: 'Attendee Swag', href: '/swag' },
 ];
 
-export const hubspotFormId = process.env.HUBSPOT_FORM_ID_2023;
+export const hubspotFormId = '064150bd-c559-4b3b-8f22-56dd9a0542a9';

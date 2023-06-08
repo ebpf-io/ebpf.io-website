@@ -7,7 +7,7 @@ const HubspotForm = ({ hubspotFormId, className }) => {
   useHubspotForm('hubspot-form');
   return (
     <div className={className}>
-      <div className="hubspot-form with-link-secondary" data-form-id={hubspotFormId} />
+      <div className="hubspot-form with-link-blue" data-form-id={hubspotFormId} />
     </div>
   );
 };
