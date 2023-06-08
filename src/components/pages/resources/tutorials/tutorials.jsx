@@ -45,10 +45,8 @@ const Tutorials = () => (
               target="_blank"
               rel="noreferrer noopener"
             >
-              <div className="flex flex-col">
-                <h3 className="text-4xl font-semibold leading-tight transition-colors duration-200 group-hover:text-gray-40">
-                  {title}
-                </h3>
+              <div className="flex flex-col transition-colors duration-200 group-hover:text-gray-40">
+                <h3 className="text-4xl font-semibold leading-tight">{title}</h3>
                 <span className="mt-2.5 text-base leading-normal">{description}</span>
               </div>
 

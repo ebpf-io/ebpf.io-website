@@ -42,16 +42,16 @@ const Hero = () => (
       <div className="grid-gap-x mt-16 grid grid-cols-12 lg:mt-10 lg:grid-cols-4 lg:gap-y-10">
         {items.map(({ cover, title, description, date, linkUrl }, index) => (
           <Link
-            className="col-span-4 flex flex-col"
+            className="group col-span-4 flex flex-col"
             to={linkUrl}
             target="_blank"
             rel="noreferrer noopener"
             key={index}
           >
             <img src={cover} alt="" />
-            <div className="mt-5 flex h-full w-full flex-col gap-y-2">
+            <div className="mt-5 flex h-full w-full flex-col gap-y-2 transition-colors duration-200 group-hover:text-gray-40">
               <time className="text-sm leading-none">{date}</time>
-              <h3 className="text-2xl font-bold leading-tight">{title}</h3>
+              <h3 className="text-2xl font-bold leading-tight ">{title}</h3>
               <p className="text-base leading-normal">{description}</p>
             </div>
           </Link>
