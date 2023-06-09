@@ -15,7 +15,7 @@ const Zoom = () => (
     <div className="container flex items-center justify-between space-x-24 lg:block lg:space-x-0">
       <StaticImage
         className="max-w-[624px] xl:max-w-[475px] lg:max-w-full"
-        src="./images/zoom.jpg"
+        src="./images/zoom-preview.jpg"
         alt="Zoom background"
         width={624}
         height={316}

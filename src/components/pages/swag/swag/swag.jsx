@@ -31,7 +31,7 @@ const Swag = () => (
         <div className="grid grid-cols-2 grid-rows-2 gap-8 sm:grid-cols-1 sm:gap-6">
           <div className="flex items-center justify-center rounded-lg border border-gray-94 p-4">
             <StaticImage
-              src="./images/sticker.jpg"
+              src="./images/sticker-2023.jpg"
               width={147}
               height={138}
               alt="Sticker"
@@ -40,7 +40,7 @@ const Swag = () => (
           </div>
           <div className="col-start-1 flex items-center justify-center rounded-lg border border-gray-94 p-4">
             <StaticImage
-              src="./images/sticker-2.jpg"
+              src="./images/sticker-2-2023.jpg"
               width={129}
               height={100}
               alt="Sticker"
@@ -53,14 +53,14 @@ const Swag = () => (
         </div>
         <div className="flex items-center justify-center rounded-lg border border-gray-94 p-4 lg:py-6 xs:flex-col xs:space-y-8">
           <StaticImage
-            src="./images/t-shirt.jpg"
+            src="./images/t-shirt-2023.jpg"
             width={224}
             height={277}
             alt="T-Shirt"
             loading="lazy"
           />
           <StaticImage
-            src="./images/t-shirt-2.jpg"
+            src="./images/t-shirt-2-2023.jpg"
             width={227}
             height={277}
             alt="T-Shirt"
