@@ -28,7 +28,7 @@
     "copy-to-clipboard": "^3.3.3",
     "date-fns": "^2.29.3",
     "framer-motion": "^7.6.19",
-    "gatsby": "^5.5.0",
+    "gatsby": "^5.10.0",
     "gatsby-plugin-canonical-urls": "^5.5.0",
     "gatsby-plugin-feed": "^5.5.0",
     "gatsby-plugin-google-analytics": "^5.5.0",
