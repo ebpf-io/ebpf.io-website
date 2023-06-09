@@ -42,16 +42,16 @@ const Hero = ({ date, title, description }) => {
 
   return (
     <section className="relative lg:overflow-hidden">
-      <div className="absolute right-0 -top-20 w-[200px] lg:block md:-right-4 sm:-top-[120px] sm:-right-[81px]">
+      <div className="absolute right-0 -top-20 w-[200px] lg:block md:-right-4 sm:-top-[120px] sm:hidden">
         <StaticImage src="./images/drop-1.jpg" alt="" loading="eager" aria-hidden />
       </div>
-      <div className="absolute -top-3 left-0 w-[128px] 2xl:-left-4 2xl:top-12 lg:-top-3 md:-left-4 sm:-left-14 sm:-top-[28px] sm:hidden">
+      <div className="absolute -top-3 left-0 w-[128px] 2xl:-left-4 2xl:top-12 xl:-left-8 lg:-top-3 md:-left-4 sm:-left-14 sm:-top-[28px] sm:hidden">
         <StaticImage src="./images/drop-2.jpg" alt="" loading="eager" aria-hidden />
       </div>
       <div className="absolute top-96 -left-10 w-[330px] 2xl:top-[450px] 2xl:-left-20 2xl:w-[280px] lg:top-80 lg:left-0 lg:block md:top-64 md:-left-20 sm:hidden">
         <StaticImage src="./images/honey.jpg" alt="" loading="eager" aria-hidden />
       </div>
-      <div className="container relative pt-28 pb-6 lg:w-[95%] lg:pb-0 md:pt-24">
+      <div className="container relative pt-28 pb-6 lg:w-[95%] lg:pt-16 lg:pb-0 md:pt-8 ">
         <div className="max-w-[644px] lg:max-w-full lg:text-center">
           <time
             className="with-orange-highlight inline-block rounded-md border-2 border-primary-orange border-opacity-30 bg-white p-2 text-center font-bold uppercase leading-none text-black"
@@ -84,7 +84,7 @@ const Hero = ({ date, title, description }) => {
         </div>
         <img
           src={illustration}
-          className="absolute top-[4.5rem] right-8 h-auto w-[648px] xl:top-24 xl:right-0 xl:w-[490px] lg:static lg:mt-12 lg:w-full"
+          className="absolute right-8 top-24 h-auto w-[648px] lg:static lg:mt-12 lg:w-full"
           alt="Illustration"
           width={648}
           height={431}

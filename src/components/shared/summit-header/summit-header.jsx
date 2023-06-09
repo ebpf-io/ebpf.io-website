@@ -28,7 +28,7 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
               <nav className="relative flex items-center justify-between" aria-label="Global">
                 <div className="-mt-2.5 flex flex-none items-center lg:flex-1">
                   <div className="flex w-auto items-center justify-between lg:w-full">
-                    <Link to="https://ebpf.io/">
+                    <Link to="/">
                       <span className="sr-only">eBPF</span>
                       <Logo className="h-12 w-auto sm:h-8" aria-label="Logo" />
                     </Link>
