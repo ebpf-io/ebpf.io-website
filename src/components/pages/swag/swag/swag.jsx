@@ -48,7 +48,13 @@ const Swag = () => (
             />
           </div>
           <div className="col-start-2 row-start-1 row-end-3 flex items-center justify-center rounded-lg border border-gray-94 p-4 sm:col-auto sm:row-auto">
-            <StaticImage src="./images/bag.jpg" width={285} height={285} alt="Bag" loading="lazy" />
+            <StaticImage
+              src="./images/bag-2023.jpg"
+              width={285}
+              height={285}
+              alt="Bag"
+              loading="lazy"
+            />
           </div>
         </div>
         <div className="flex items-center justify-center rounded-lg border border-gray-94 p-4 lg:py-6 xs:flex-col xs:space-y-8">
