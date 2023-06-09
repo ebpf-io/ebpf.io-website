@@ -93,9 +93,9 @@ export const Head = ({ location: { pathname } }) => {
     description:
       'Register now for the eBPF Summit 2023, Sep 13, 2023, a free virtual event for DevOps, SRE, SecOps, and developers.',
     image: ogImage,
-    slug: pathname,
+    pathname,
   };
-  <SEO data={pageMetadata} />;
+  return <SEO {...pageMetadata} />;
 };
 
 export default Summit2023;

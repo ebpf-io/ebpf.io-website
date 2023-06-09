@@ -16,10 +16,10 @@ const Zoom = () => (
       <StaticImage
         className="max-w-[624px] xl:max-w-[475px] lg:max-w-full"
         src="./images/zoom.jpg"
+        alt="Zoom background"
         width={624}
         height={316}
-        loading="lazy"
-        alt="Zoom background"
+        loading="eager"
       />
       <div className="max-w-[488px] lg:mt-12 lg:max-w-full lg:text-center">
         <div className="flex items-center space-x-5 lg:justify-center">

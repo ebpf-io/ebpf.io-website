@@ -32,7 +32,7 @@ export const Head = ({ location: { pathname } }) => {
     title: 'Attendee swag for eBPF Summit',
     description: 'Bee a part of the hive, get your eBPF swag now!',
     image: ogImage,
-    slug: pathname,
+    pathname,
   };
-  return <SEO data={pageMetadata} />;
+  return <SEO {...pageMetadata} />;
 };

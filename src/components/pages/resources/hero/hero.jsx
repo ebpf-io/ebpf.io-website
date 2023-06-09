@@ -2,9 +2,9 @@ import React from 'react';
 
 import Link from 'components/shared/link/link';
 
-import cover3 from './images/cocver-ebpf-2.png';
-import cover2 from './images/cocver-ebpf.png';
-import cover1 from './images/cocver-tetragon.png';
+import cover3 from './images/cover-ebpf-2.png';
+import cover2 from './images/cover-ebpf.png';
+import cover1 from './images/cover-tetragon.png';
 
 const items = [
   {

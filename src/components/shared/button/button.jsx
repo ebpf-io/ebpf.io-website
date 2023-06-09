@@ -50,7 +50,7 @@ const Button = ({
   return (
     <Tag className={className} to={to} {...otherProps}>
       {theme === 'withYellowChevron' && <ChevronYellow className="mt-0.5 ml-px w-2" />}
-      {theme === 'withWhiteChevron' && <ChevronWhite className="mt-0.5 ml-px w-2" />}
+      {theme === 'withWhiteChevron' && <ChevronWhite className="ml-px w-2" />}
       {children}
     </Tag>
   );

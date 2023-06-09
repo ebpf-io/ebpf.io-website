@@ -14,9 +14,9 @@ const Proposal = ({ title, date1, date2, buttonText, buttonUrl }) => (
         <div className="absolute left-0 h-full w-[220px] rotate-180 md:-right-4 md:hidden">
           <StaticImage src="./images/back-illustration.png" alt="" loading="eager" aria-hidden />
         </div>
-        <div className="relative flex flex-col gap-y-3 lg:gap-y-2 md:mb-5 md:text-center">
+        <div className="relative flex flex-col gap-y-3 lg:gap-y-2 md:mb-5 md:items-center md:text-center">
           <h2 className="heading-6xl !font-medium leading-none">{title}</h2>
-          <div className="flex flex-wrap gap-x-7 lg:gap-x-5">
+          <div className="flex gap-x-7 lg:gap-x-5 sm:flex-col">
             <time
               className="text-lg leading-normal text-black/70"
               dangerouslySetInnerHTML={{ __html: date1 }}

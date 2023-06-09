@@ -1,11 +1,9 @@
 import clsx from 'clsx';
+import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
-import avatar3 from 'images/pages/summit-2023/last-year/dnsmichi.png';
-import avatar2 from 'images/pages/summit-2023/last-year/pchaigno.png';
-import avatar1 from 'images/pages/summit-2023/last-year/swarna.png';
 
 import hexagonBg from './images/hexagon-background.svg';
 import shape1 from './images/shape-1.svg';
@@ -15,7 +13,16 @@ import shape4 from './images/shape-4.svg';
 
 const twitterCards = [
   {
-    avatar: avatar1,
+    avatar: (
+      <StaticImage
+        className="h-11 w-11"
+        src="./images/swarna.png"
+        alt="Swarna userpic"
+        width={44}
+        height={44}
+        loading="lazy"
+      />
+    ),
     name: 'Swarna (she/her)🏳️‍🌈',
     nick: '@skpodila',
     text: `As I watch the sessions at <marker>#eBPFSummit</marker>, (<marker>@alexei_ast</marker> and <marker>@classic_addetz</marker>'s so far), it reminds me of the truly global nature of the <marker>#eBPF</marker> community and hence how much more awesome these speakers are to present a hard core tech topic in English so effortlessly. Kudos to them!`,
@@ -24,7 +31,16 @@ const twitterCards = [
     url: 'https://twitter.com/skpodila/status/1575156286915649536',
   },
   {
-    avatar: avatar2,
+    avatar: (
+      <StaticImage
+        className="h-11 w-11"
+        src="./images/pchaigno.png"
+        alt="Paul Chaignon userpic"
+        width={44}
+        height={44}
+        loading="lazy"
+      />
+    ),
     name: 'Paul Chaignon',
     nick: '@pchaigno',
     text: `Coming to us from the Swiss mountains, <marker>@martyns</marker> demos pwru, an <marker>#eBPF</marker> tool to debug networking issues. Don't be surprised if you hear cow bells in the background 😅 Only at <marker>#eBPFSummit</marker>!`,
@@ -33,7 +49,16 @@ const twitterCards = [
     url: 'https://twitter.com/pchaigno/status/1575187896218550272',
   },
   {
-    avatar: avatar3,
+    avatar: (
+      <StaticImage
+        className="h-11 w-11"
+        src="./images/dnsmichi.png"
+        alt="Michael Friedrich userpic"
+        width={44}
+        height={44}
+        loading="lazy"
+      />
+    ),
     name: 'Michael Friedrich🌈',
     nick: '@dnsmichi',
     text: `I really dig the CTF exercises at <marker>@ebpfsummit</marker>🤗<br/><br/>Rare that it catches me so fast, chapeau <marker>@lizrice</marker> <marker>@mauilion</marker>🤩<br/><br/>Amazing to learn while being challenged. 💡`,
@@ -127,14 +152,7 @@ const LastYear = ({ title, description, link, items }) => (
             target="_blank"
           >
             <div className="flex items-center space-x-3 self-start">
-              <img
-                className="h-11 w-11"
-                src={avatar}
-                alt={name}
-                width={44}
-                height={44}
-                aria-hidden
-              />
+              {avatar}
               <div className="flex flex-col">
                 <span className="font-bold">{name}</span>
                 <span className="mt-1 text-gray-50">{nick}</span>

@@ -26,9 +26,9 @@ export const Head = ({ location: { pathname } }) => {
     title: 'eBPF resources',
     description: 'Dig into the eBPF technology with our labs, books, and tutorials.',
     image: ogImage,
-    slug: pathname,
+    pathname,
   };
-  <SEO data={pageMetadata} />;
+  return <SEO {...pageMetadata} />;
 };
 
 export default Resources;

@@ -9,7 +9,7 @@ const items = [
     image: (
       <StaticImage
         className="w-full rounded"
-        imgClassName="w-full"
+        imgClassName="rounded"
         src="./images/what-is-ebpf.jpg"
         alt="What is eBPF? Liz Rice, O'Reilly, 2022"
         width={280}
@@ -23,7 +23,7 @@ const items = [
     image: (
       <StaticImage
         className="w-full rounded"
-        imgClassName="w-full"
+        imgClassName="rounded"
         src="./images/lern-epf.jpg"
         alt="Learning eBPF O'Reilly book by Liz Rice"
         width={280}
@@ -37,7 +37,7 @@ const items = [
     image: (
       <StaticImage
         className="w-full rounded"
-        imgClassName="w-full"
+        imgClassName="rounded"
         src="./images/security.jpg"
         alt="O’Reilly Report Security Observability with eBPF"
         width={280}
@@ -51,7 +51,7 @@ const items = [
 
 const Books = () => (
   <section className="hero safe-paddings mt-32 lg:mt-24 md:mt-16 sm:mt-14" id="books">
-    <div className="container flex flex-col items-center px-3">
+    <div className="container flex flex-col items-center">
       <h2 className="heading-8xl text-center font-semibold leading-tight">Explore books on eBPF</h2>
 
       <ul className="mt-16 flex w-full flex-wrap justify-center gap-8 lg:mt-14 lg:gap-6 md:mt-11 sm:mt-8">

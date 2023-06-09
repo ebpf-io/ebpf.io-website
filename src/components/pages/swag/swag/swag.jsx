@@ -16,7 +16,7 @@ const Swag = () => (
       <div className="flex items-center justify-between lg:flex-col lg:text-center">
         <div className="flex flex-col space-y-4">
           <h2 className="heading-8xl font-bold leading-dense">{data.title}</h2>
-          <p className="mt-4 text-xl leading-normal lg:mx-auto">{data.description}</p>{' '}
+          <p className="mt-4 text-xl leading-normal lg:mx-auto">{data.description}</p>
         </div>
         <Button
           className="mt-5 h-[52px] rounded-md px-6 md:h-[44px] sm:w-full"
