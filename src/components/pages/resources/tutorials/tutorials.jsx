@@ -23,7 +23,7 @@ const Tutorials = () => (
     <div className="container grid grid-cols-2 gap-x-[26px] md:grid-cols-1">
       <div className="pr-[72px] pt-3 md:max-w-[550px] md:pr-0">
         <h2 className="heading-8xl font-semibold leading-tight">
-          Dig into the eBPF technology with our labs
+          Dig into the eBPF technology with labs
         </h2>
         <Button
           to="https://isovalent.com/resource-library/labs/"

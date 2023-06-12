@@ -10,7 +10,7 @@ const SummitFooter = () => (
   <footer className="py-8 lg:py-6 md:py-4" aria-labelledby="footerHeading">
     <div className="container flex items-center justify-between sm:flex-col sm:gap-y-4">
       <Link to="/">
-        <Logo className="h-8 w-auto" />
+        <Logo className="h-12 w-auto sm:h-8" />
       </Link>
 
       <Link

@@ -160,11 +160,11 @@ const LastYear = ({ title, description, link, items }) => (
               {avatar}
               <div className="flex flex-col">
                 <span className="font-bold">{name}</span>
-                <span className="mt-1 text-gray-50">{nick}</span>
+                <span className="mt-1 text-gray-20">{nick}</span>
               </div>
             </div>
             <p
-              className="with-marker-blue mt-5 text-lg leading-normal"
+              className="with-marker-blue mt-5 text-lg font-normal leading-normal"
               dangerouslySetInnerHTML={{ __html: text }}
             />
             <div className="mt-4 flex space-x-5 self-start leading-normal text-gray-50">
