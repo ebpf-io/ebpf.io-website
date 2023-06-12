@@ -58,9 +58,9 @@ const Hero = ({ date, title, description }) => {
             dangerouslySetInnerHTML={{ __html: date }}
           />
 
-          <h1 className="mt-7 text-[80px] font-bold leading-tight sm:text-5xl">{title}</h1>
+          <h1 className="mt-7 text-[80px] font-bold leading-tight sm:text-7xl">{title}</h1>
           <div
-            className="with-link-primary mt-4 max-w-lg space-y-4 text-xl font-semibold lg:mx-auto lg:max-w-xl md:max-w-lg md:space-y-4 md:text-lg sm:max-w-sm"
+            className="with-link-primary mt-4 max-w-lg space-y-4 font-sans text-xl font-normal lg:mx-auto lg:max-w-xl md:max-w-lg md:space-y-4 md:text-lg sm:max-w-sm"
             dangerouslySetInnerHTML={{ __html: description }}
           />
           <div className="mt-9 flex space-x-5 lg:justify-center sm:flex-col sm:space-x-0 sm:space-y-3 xs:w-full">
@@ -75,7 +75,7 @@ const Hero = ({ date, title, description }) => {
                   key={index}
                   onClick={onClick}
                 >
-                  {Icon && <Icon className="mr-3 h-5 w-auto" />}
+                  {Icon && <Icon className="mr-2.5 h-5 w-auto" />}
                   {title}
                 </Button>
               );
