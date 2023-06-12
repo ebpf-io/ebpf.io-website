@@ -164,10 +164,10 @@ const LastYear = ({ title, description, link, items }) => (
               </div>
             </div>
             <p
-              className="with-marker-blue mt-5 text-lg font-normal leading-normal"
+              className="with-marker-blue mt-5 text-lg leading-normal"
               dangerouslySetInnerHTML={{ __html: text }}
             />
-            <div className="mt-4 flex space-x-5 self-start leading-normal text-gray-50">
+            <div className="mt-4 flex space-x-5 self-start font-sans font-normal leading-normal text-gray-50">
               <time>{time}</time>
               <time className="relative before:absolute before:top-1/2 before:-left-3 before:block before:h-[3px] before:w-[3px] before:-translate-y-1/2 before:rounded-full before:bg-gray-50">
                 {date}
