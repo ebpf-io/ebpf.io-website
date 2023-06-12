@@ -1,7 +1,7 @@
 import React from 'react';
 
+import Articles from 'components/pages/resources/articles';
 import Books from 'components/pages/resources/books';
-import Hero from 'components/pages/resources/hero';
 import Tutorials from 'components/pages/resources/tutorials';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
@@ -13,10 +13,13 @@ const ogImage = '/images/social-preview-ebpf-summit-resources.jpg';
 
 const Resources = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
-    <Hero />
+    <h1 className="heading-10xl container safe-paddings mt-16 text-center font-semibold leading-tight">
+      eBPF resources
+    </h1>
     <Books />
-    <VideoGallery title="Watch videos on eBPF technology" items={videoItems} />
     <Tutorials />
+    <Articles />
+    <VideoGallery title="Watch videos on eBPF technology" items={videoItems} />
   </SummitLayout>
 );
 

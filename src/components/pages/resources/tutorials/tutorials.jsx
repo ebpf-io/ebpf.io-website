@@ -5,16 +5,16 @@ import Link from 'components/shared/link/link';
 
 const items = [
   {
-    title: 'Security Observability with eBPF & Tetragon',
-    description:
-      'The best way to have your first experience with Cilium Tetragon is to walk through this lab, which takes the Real World Attack example out of the book and teaches you how to detect a container escape step by step.',
-    linkUrl: 'https://isovalent.com/labs/security-observability-with-ebpf-and-cilium-tetragon/',
-  },
-  {
     title: 'Getting started with eBPF',
     description:
       'The best way to have your first experience with eBPF programming is to walk through this lab, which teaches you to handle an eBPF tool, watch it loading its components and even add your own tracing into the source eBPF code.',
     linkUrl: 'https://isovalent.com/labs/getting-started-with-ebpf/',
+  },
+  {
+    title: 'Security Observability with eBPF & Tetragon',
+    description:
+      'A new paradigm that utilizes eBPF, a Linux kernel technology, to allow Security and DevOps teams, SREs, Cloud Engineers, and Solution Architects to gain real-time visibility into Kubernetes.',
+    linkUrl: 'https://isovalent.com/labs/security-observability-with-ebpf-and-cilium-tetragon/',
   },
 ];
 

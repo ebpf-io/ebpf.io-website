@@ -32,12 +32,9 @@ const items = [
   },
 ];
 
-const Hero = () => (
+const Articles = () => (
   <section className="safe-paddings my-16">
     <div className="container flex flex-col items-center">
-      <h1 className="heading-10xl mb-20 text-center font-semibold leading-tight lg:mb-14">
-        eBPF resources
-      </h1>
       <h2 className="heading-8xl font-semibold leading-tight">Read the articles from our blog</h2>
       <div className="grid-gap-x mt-16 grid grid-cols-12 lg:mt-10 md:grid-cols-4 md:gap-y-10">
         {items.map(({ cover, title, description, date, linkUrl }, index) => (
@@ -69,4 +66,4 @@ const Hero = () => (
   </section>
 );
 
-export default Hero;
+export default Articles;

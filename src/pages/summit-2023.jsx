@@ -15,7 +15,7 @@ const hero = {
   date: 'September <strong>13</strong>, 2023',
   title: 'Summit 2023',
   description:
-    '<p>eBPF Summit is a virtual event, targeted at DevOps, SecOps, platform architects, security engineers, and developers. Register to save the date and stay updated on event information.</p>',
+    '<p>Welcome to eBPF Summit, a vendor-neutral virtual event for all things within the Open Source eBPF ecosystem. This event for the eBPF community is aimed at new and existing members wishing to learn and grow and includes DevOps, SecOps, platform.</p>',
 };
 
 const proposal = {
@@ -45,8 +45,9 @@ const lastYear = {
   description:
     'eBPF Summit 2022 featured 32 talks from many different perspectives, from kernel maintainers working on eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities. Join us this September for what promises to be an even more exciting edition!',
   link: {
-    url: 'https://ebpf.io/summit-2022.html',
+    url: 'https://youtu.be/UQV75Dol_dg',
     title: 'eBPF Summit 2022',
+    target: '_blank',
   },
   items: [
     {

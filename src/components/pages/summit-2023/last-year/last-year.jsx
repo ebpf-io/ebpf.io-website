@@ -79,7 +79,12 @@ const LastYear = ({ title, description, link, items }) => (
         <div className="flex max-w-[546px] flex-col items-start">
           <h2 className="heading-9xl font-bold leading-none">{title}</h2>
           <p className="mt-5 text-left text-xl leading-normal md:text-lg">{description}</p>
-          <Link className="mt-7 text-lg leading-none" theme="underline" to={link.url}>
+          <Link
+            className="mt-7 text-lg leading-none"
+            theme="underline"
+            to={link.url}
+            target={link.target}
+          >
             {link.title}
           </Link>
         </div>
@@ -180,6 +185,7 @@ LastYear.propTypes = {
   link: PropTypes.shape({
     url: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    target: PropTypes.string.isRequired,
   }).isRequired,
   items: PropTypes.arrayOf(
     PropTypes.shape({

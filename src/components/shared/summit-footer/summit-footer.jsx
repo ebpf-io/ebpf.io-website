@@ -2,6 +2,7 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 import LinkedInIcon from 'icons/linkedin.inline.svg';
+import SlackIcon from 'icons/slack-logo-black.inline.svg';
 import TwitterIcon from 'icons/twitter.inline.svg';
 import Logo from 'images/logo.inline.svg';
 
@@ -22,7 +23,15 @@ const SummitFooter = () => (
       </Link>
       <div className="flex items-center space-x-6 md:space-x-3">
         <Link
-          className="hover:text-primary-5 text-black transition-colors duration-200"
+          className="text-black transition-colors duration-200 hover:text-primary-orange"
+          to="https://ebpf.io/slack"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SlackIcon className="h-6 w-auto" />
+        </Link>
+        <Link
+          className="text-black transition-colors duration-200 hover:text-primary-orange"
           to="http://twitter.com/ebpfsummit"
           target="_blank"
           rel="noopener noreferrer"
@@ -30,7 +39,7 @@ const SummitFooter = () => (
           <TwitterIcon className="h-6 w-auto" />
         </Link>
         <Link
-          className="hover:text-primary-5 text-black transition-colors duration-200"
+          className="text-black transition-colors duration-200 hover:text-primary-orange"
           to="http://linkedin.com/company/ebpf-summit"
           target="_blank"
           rel="noopener noreferrer"

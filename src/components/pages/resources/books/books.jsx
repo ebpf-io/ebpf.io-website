@@ -17,7 +17,7 @@ const items = [
         loading="lazy"
       />
     ),
-    linkUrl: 'https://isovalent.com/ebpf/#form',
+    linkUrl: 'https://isovalent.com/ebpf',
   },
   {
     image: (
@@ -31,7 +31,7 @@ const items = [
         loading="lazy"
       />
     ),
-    linkUrl: 'https://isovalent.com/learning-ebpf/#form',
+    linkUrl: 'https://isovalent.com/learning-ebpf',
   },
   {
     image: (
@@ -45,12 +45,12 @@ const items = [
         loading="lazy"
       />
     ),
-    linkUrl: 'https://isovalent.com/ebpf-security/#form',
+    linkUrl: 'https://isovalent.com/ebpf-security',
   },
 ];
 
 const Books = () => (
-  <section className="hero safe-paddings mt-32 lg:mt-24 md:mt-16 sm:mt-14" id="books">
+  <section className="hero safe-paddings mt-20 lg:mt-16 sm:mt-14" id="books">
     <div className="container flex flex-col items-center">
       <h2 className="heading-8xl text-center font-semibold leading-tight">Explore books on eBPF</h2>
 
