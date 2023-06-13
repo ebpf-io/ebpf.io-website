@@ -4,7 +4,7 @@ import React from 'react';
 
 import Button from 'components/shared/button';
 
-const Proposal = ({ title, date1, date2, buttonText, buttonUrl }) => (
+const Proposal = ({ title, date1, date2, buttonText, buttonUrl, buttonTarget }) => (
   <section className="mt-32 mb-16 lg:mt-20">
     <div className="container">
       <div className="relative flex items-center justify-center gap-x-[58px] overflow-hidden rounded-lg bg-gray-98 p-8 xl:gap-x-12 md:flex-col">
@@ -33,6 +33,7 @@ const Proposal = ({ title, date1, date2, buttonText, buttonUrl }) => (
           size="sm"
           theme="black-filled"
           to={buttonUrl}
+          target={buttonTarget}
         >
           {buttonText}
         </Button>
@@ -47,6 +48,7 @@ Proposal.propTypes = {
   date2: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
   buttonUrl: PropTypes.string.isRequired,
+  buttonTarget: PropTypes.string.isRequired,
 };
 
 export default Proposal;

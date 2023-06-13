@@ -23,7 +23,8 @@ const proposal = {
   date1: 'CFP closed: <strong>July 21</strong>',
   date2: 'Full schedule announced: <strong>August 21</strong>',
   buttonText: 'Send proposal',
-  buttonUrl: 'https://ebpf.io/slack',
+  buttonUrl: 'https://sessionize.com/ebpf-summit-2023/',
+  buttonTarget: '_blank',
 };
 
 const hosts = {
