@@ -2,25 +2,27 @@ import React from 'react';
 
 import Link from 'components/shared/link/link';
 
+import cover1 from './images/cover-1.png';
+import cover2 from './images/cover-2.png';
 import cover3 from './images/cover-ebpf-2.png';
-import cover2 from './images/cover-ebpf.png';
-import cover1 from './images/cover-tetragon.png';
 
 const items = [
   {
     cover: cover1,
-    title: 'Tetragon – eBPF-based Security Observability & Runtime Enforcement',
-    description: 'We are excited to announce the Tetragon open source project.',
-    date: 'May 16, 2022',
-    linkUrl: 'https://isovalent.com/blog/post/2022-05-16-tetragon/',
+    title: 'Why eBPF for All Means People Don’t Need to Care about eBPF',
+    description:
+      'A couple months ago, the two of us got to talking about a phenomenon we both observed.',
+    date: 'Nov 17, 2022',
+    linkUrl: 'https://ebpf.io/blog/ebpf-for-all/',
   },
   {
     cover: cover2,
-    title: 'How eBPF will solve Service Mesh – Goodbye Sidecars',
+    title: '“How the Hive Came To Bee” – a story of eBPF and Cilium so far',
     description:
-      'Service mesh is a concept describing the requirements of modern cloud native applications with regards to communication, visibility, and security.',
-    date: 'Dec 08, 2021',
-    linkUrl: 'https://isovalent.com/blog/post/2021-12-08-ebpf-servicemesh/',
+      'Who created eBPF? Which challenges led to its creation? Does eBPF actually stand for anything? How does eBPF allow us to rethink the way we solve problems?',
+    date: 'Dec 13, 2022',
+    linkUrl:
+      'https://isovalent.com/blog/post/how-the-hive-came-to-bee-a-story-of-ebpf-and-cilium-so-far/',
   },
   {
     cover: cover3,
