@@ -6,15 +6,15 @@ import TrendingIcon from './images/trending.inline.svg';
 
 const cardItems = [
   {
-    title: 'Connecting end-users',
+    title: 'Connecting technologists',
     description:
-      'The eBPF Summit brings together end-user and the eBPF developer community for two days of exciting content all around eBPF. ',
+      'This year’s summit is a single-day virtual event diving into the technology that’s powering the most exciting new infrastructure tools.',
     iconName: 'connecting',
   },
   {
-    title: 'Sharing experience',
+    title: 'Sharing ideas',
     description:
-      'Just like last year, we will hear from both end-users sharing their experience using eBPF as well as developers actively working on eBPF and eBPF projects.',
+      'You’ll hear about how people and projects leverage eBPF today to solve engineering problems, and how eBPF itself is evolving and growing.',
     iconName: 'sharing',
   },
   {
@@ -34,7 +34,7 @@ const icons = {
 const Information = () => (
   <section className="mt-16 md:mt-10" id="information">
     <div className="container">
-      <h2 className="heading-9xl text-center font-bold leading-none">About conference</h2>
+      <h2 className="heading-9xl text-center font-bold leading-none">About the conference</h2>
       <p className="mt-5 text-center text-xl leading-normal md:mt-3">
         Back by popular demand, we’re excited to announce the eBPF Summit 2023
       </p>
