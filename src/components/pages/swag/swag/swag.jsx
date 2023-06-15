@@ -7,7 +7,7 @@ const data = {
   title: 'T-shirts, stickers and bags',
   description: 'Get the buzz for your laptop or your next conference t-shirt in the store',
   buttonText: 'Visit our store',
-  buttonUrl: 'https://isovalent.myspreadshop.com/',
+  buttonUrl: 'https://cilium.myspreadshop.net/',
 };
 
 const Swag = () => (
