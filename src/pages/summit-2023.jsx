@@ -44,7 +44,7 @@ const hosts = {
 const lastYear = {
   title: `Last year's summit`,
   description:
-    'The eBPF Summit 2022 featured 32 talks from many different perspectives, from kernel maintainers working on eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities. Join us this September for what promises to be an even more exciting edition!',
+    'The eBPF Summit 2022 featured 32 talks from many different perspectives, from kernel maintainers working on the eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities. Join us this September for what promises to be an even more exciting edition!',
   link: {
     url: 'https://youtu.be/UQV75Dol_dg',
     title: 'eBPF Summit 2022',
