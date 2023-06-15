@@ -9,8 +9,6 @@ import { EVENT_PER_PAGE } from 'constants/event';
 import { eventFilters } from 'constants/event-filters';
 import useFilteredEvents from 'hooks/use-filtered-events';
 
-import CardWithCta from '../card-with-cta';
-
 const getInitialFilters = (allFilters) =>
   allFilters.reduce((acc, { label }) => {
     if (!acc[label]) {
@@ -91,13 +89,12 @@ const EventList = ({ allEvents, totalCount }) => {
           currentEvents.map((item, index) => (
             <Fragment key={index}>
               <Card {...item} className="col-span-4 md:col-span-6" />
-              {index === 4 && <CardWithCta type="book" className="col-span-4 md:col-span-6" />}
-              {index === 7 && (
+              {index === 8 && (
                 <div className="col-span-12 my-10 lg:my-16 md:my-10 md:hidden">
                   <SubscriptionForm size="md" />
                 </div>
               )}
-              {index === 6 && (
+              {index === 7 && (
                 <div className="col-span-12 hidden md:my-10 md:block">
                   <SubscriptionForm size="lg" />
                 </div>

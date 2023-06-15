@@ -7,7 +7,7 @@ import SEO from 'components/shared/seo';
 
 const EventsPage = ({ pageContext: { postEvents, totalCount } }) => (
   <Layout>
-    <div className="container flex flex-col pt-20 pb-10 lg:pt-16 lg:pb-6 md:pb-4">
+    <div className="container flex flex-col pt-20 lg:pt-16">
       <h1 className="heading-9xl pb-12 font-semibold leading-tight lg:pb-8">
         Participate in eBPF events that highlight
         <br />a range of expert voices and inspiring ideas
