@@ -8,9 +8,8 @@ import SEO from 'components/shared/seo';
 const EventsPage = ({ pageContext: { postEvents, totalCount } }) => (
   <Layout>
     <div className="container flex flex-col pt-20 lg:pt-16">
-      <h1 className="heading-9xl pb-12 font-semibold leading-tight lg:pb-8">
-        Participate in eBPF events that highlight
-        <br />a range of expert voices and inspiring ideas
+      <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
+        Participate in eBPF events that highlight a&nbsp;range of expert voices and inspiring ideas
       </h1>
     </div>
     <EventList allEvents={postEvents} totalCount={totalCount} />
