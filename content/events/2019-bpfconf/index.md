@@ -7,5 +7,4 @@ linkUrl: 'http://vger.kernel.org/bpfconf2019.html'
 type: Conference
 conference: 'bpfconf (LSF/MM/BPF)'
 region: North America
-isFeatured: false
 ---

@@ -8,5 +8,4 @@ ogImage: ogImage.jpg
 type: Conference
 conference: eBPF Summit
 region: Online
-isFeatured: false
 ---

@@ -8,5 +8,4 @@ ogImage: ogImage.jpg
 type: Conference
 conference: BPF Meetups at IETF
 region: Online
-isFeatured: false
 ---

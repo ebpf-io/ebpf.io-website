@@ -8,5 +8,4 @@ ogImage: ogImage.jpg
 type: Conference
 conference: eBPF Track (LPC)
 region: North America
-isFeatured: false
 ---
