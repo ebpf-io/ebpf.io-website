@@ -7,5 +7,4 @@ linkUrl: 'https://datatracker.ietf.org/group/bpf/meetings/'
 type: Conference
 conference: BPF Meetups at IETF
 region: Online
-isFeatured: true
 ---

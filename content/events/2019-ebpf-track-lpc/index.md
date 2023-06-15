@@ -7,5 +7,4 @@ linkUrl: 'https://lpc.events/event/4/sessions/62/#20190911'
 type: Conference
 conference: eBPF Track (LPC)
 region: EMEA
-isFeatured: false
 ---

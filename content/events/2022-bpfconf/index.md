@@ -8,5 +8,4 @@ ogImage: ogImage.jpg
 type: Conference
 conference: bpfconf (LSF/MM/BPF)
 region: North America
-isFeatured: false
 ---

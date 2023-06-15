@@ -9,5 +9,4 @@ linkUrl: 'https://lore.kernel.org/bpf/1515db2c-f517-76da-8aad-127a67da802f@iogea
 type: Conference
 conference: eBPF Track (LPC)
 region: North America
-isFeatured: true
 ---
