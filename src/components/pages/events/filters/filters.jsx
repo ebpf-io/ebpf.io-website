@@ -10,7 +10,7 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
   return (
     <div
       id="categories"
-      className="container flex space-x-6 [@media(max-width:550px)]:flex-col [@media(max-width:550px)]:space-y-5 [@media(max-width:550px)]:space-x-0 "
+      className="container flex justify-center space-x-6 [@media(max-width:550px)]:flex-col [@media(max-width:550px)]:space-y-5 [@media(max-width:550px)]:space-x-0 "
     >
       <DropdownWithTwoLevels
         mainFilter={type}
