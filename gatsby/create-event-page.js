@@ -22,7 +22,6 @@ module.exports = async ({ graphql, actions }) => {
           filter: {
             internal: { contentFilePath: { regex: $eventRegex } }
             fields: { isDraft: { in: $draftFilter } }
-            frontmatter: { isFeatured: { eq: false } }
           }
           sort: { frontmatter: { date: DESC } }
         ) {
@@ -45,32 +44,6 @@ module.exports = async ({ graphql, actions }) => {
             }
           }
         }
-        featuredPosts: allMdx(
-          filter: {
-            internal: { contentFilePath: { regex: $eventRegex } }
-            fields: { isDraft: { in: $draftFilter } }
-            frontmatter: { isFeatured: { eq: true } }
-          }
-          sort: { frontmatter: { date: DESC } }
-          limit: 5
-        ) {
-          nodes {
-            frontmatter {
-              type
-              region
-              title
-              description
-              date(formatString: "MMMM DD, YYYY")
-              place
-              linkUrl
-              ogImage {
-                childImageSharp {
-                  gatsbyImageData(width: 967)
-                }
-                publicURL
-              }
-            }
-          }
         }
       }
     `,
@@ -81,7 +54,6 @@ module.exports = async ({ graphql, actions }) => {
 
   const { totalCount } = result.data.allMdx;
   const {
-    featuredPosts: { nodes: featuredPosts },
     allPosts: { nodes: allPosts },
   } = result.data;
 
@@ -90,13 +62,11 @@ module.exports = async ({ graphql, actions }) => {
   }
 
   const postEvents = getFrontmatterData(allPosts);
-  const featuredEvents = getFrontmatterData(featuredPosts);
 
   createPage({
     path: EVENTS_BASE_PATH,
     component: path.resolve('./src/templates/events.jsx'),
     context: {
-      featuredEvents,
       postEvents,
       totalCount,
     },
