@@ -44,7 +44,6 @@ module.exports = async ({ graphql, actions }) => {
             }
           }
         }
-        }
       }
     `,
     { draftFilter: DRAFT_FILTER, eventRegex: EVENTS_REGEX }
