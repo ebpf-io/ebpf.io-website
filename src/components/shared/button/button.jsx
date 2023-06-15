@@ -3,17 +3,25 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
+import ChevronWhite from 'icons/chevron-white.inline.svg';
 import ChevronYellow from 'icons/chevron-yellow.inline.svg';
 
 const styles = {
   base: 'leading-none inline-flex items-center justify-center font-bold text-center whitespace-nowrap rounded-[34px] transition-colors duration-200 outline-none',
   size: {
+    xs: 'px-4 py-3 text-base',
+    sm: 'px-6 pb-4 pt-3.5 lg:px-4 lg:py-3',
     md: 'text-base py-4 px-7 lg:px-6',
+    none: '',
   },
   theme: {
+    gray: 'text-black bg-gray-96 border-[1.5px] border-gray-90 hover:bg-gray-98',
+    orange: 'text-white bg-button-gradient hover:opacity-90',
     'black-filled': 'bg-black text-white hover:btn-black-hover transition-[background]',
     'primary-yellow-filled': 'bg-primary-yellow text-black hover:bg-[#FFF04C]',
     withYellowChevron:
+      'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:btn-black-hover group-hover:btn-black-hover transition-[background]',
+    withWhiteChevron:
       'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:btn-black-hover group-hover:btn-black-hover transition-[background]',
   },
 };
@@ -41,9 +49,9 @@ const Button = ({
 
   return (
     <Tag className={className} to={to} {...otherProps}>
-      <span className="-mt-0.5">
-        {theme === 'withYellowChevron' ? <ChevronYellow className="mt-0.5 ml-px w-2" /> : children}
-      </span>
+      {theme === 'withYellowChevron' && <ChevronYellow className="mt-0.5 ml-px w-2" />}
+      {theme === 'withWhiteChevron' && <ChevronWhite className="ml-px w-2" />}
+      {children}
     </Tag>
   );
 };

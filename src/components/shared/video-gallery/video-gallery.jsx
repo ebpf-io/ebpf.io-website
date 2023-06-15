@@ -102,8 +102,12 @@ const VideoGallery = ({ title, items, className }) => {
             slidesPerView: 1.1,
             spaceBetween: 10,
           },
+          560: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
           768: {
-            slidesPerView: 'auto',
+            slidesPerView: 2.1,
             spaceBetween: 20,
           },
           1280: {
@@ -126,7 +130,7 @@ const VideoGallery = ({ title, items, className }) => {
               <h3 className="mt-4 font-sans text-xl font-semibold leading-tight lg:text-lg">
                 {title}
               </h3>
-              <span className="mt-2 inline-flex space-x-4 text-sm opacity-50 lg:text-sm">
+              <span className="mt-2 inline-flex space-x-4 text-sm lg:text-sm">
                 <span>{speaker}</span>
                 <span className="relative before:absolute before:top-1/2 before:-left-2.5 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90">
                   {date}

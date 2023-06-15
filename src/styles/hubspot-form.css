@@ -1,0 +1,113 @@
+/* stylelint-disable unit-whitelist */
+.hubspot-form {
+  .submitted-message {
+    span {
+      @apply no-underline !important;
+    }
+
+    a {
+      @apply font-bold text-secondary-blue no-underline transition-colors duration-200 hover:text-black !important;
+    }
+  }
+
+  .hs-form {
+    fieldset {
+      @apply mb-5 max-w-none text-sm;
+
+      &.form-columns-2 {
+        @apply grid grid-cols-2 gap-x-8 gap-y-5 lg:grid-cols-1;
+      }
+
+      .hs-form-field {
+        @apply !w-full;
+
+        > label {
+          @apply text-sm font-normal;
+        }
+      }
+
+      .input {
+        @apply !mr-0 mt-2;
+      }
+
+      input[type='text'],
+      input[type='email'],
+      select {
+        @apply h-11 !w-full appearance-none rounded-lg border border-[#CCCCCC] bg-no-repeat px-4 focus:border-secondary-blue focus-visible:outline-none;
+
+        &.error {
+          @apply border-[#ED3F3F] !important;
+        }
+      }
+
+      select {
+        @apply px-4;
+
+        background-image: url('/images/dropdown-arrow.svg');
+        background-position-x: calc(100% - 16px);
+        background-position-y: 18px;
+
+        &.is-placeholder {
+          @apply text-gray-40;
+        }
+      }
+
+      .hs-form-checkbox-display,
+      .hs-form-booleancheckbox-display {
+        @apply relative cursor-pointer;
+
+        span:not(.hs-form-required) {
+          @apply !ml-0 block font-normal transition-colors duration-200;
+          @apply pl-7 !important;
+
+          &::before {
+            @apply right-5 left-auto border-gray-90 !important;
+          }
+
+          &::after {
+            content: '';
+
+            @apply absolute top-0 left-0 block h-5 w-5 transform rounded border border-[#cccccc] bg-gray-98 !important;
+          }
+        }
+
+        input[type='checkbox'] {
+          @apply sr-only;
+
+          &:hover {
+            ~ span::after {
+              @apply border-2 !border-secondary-blue;
+            }
+          }
+
+          &:checked {
+            ~ span::after {
+              @apply border-secondary-blue bg-secondary-blue bg-center bg-no-repeat !important;
+
+              background-image: url('/images/check-icon.svg') !important;
+            }
+          }
+        }
+      }
+
+      .hs-error-msgs {
+        label {
+          @apply absolute mt-1 text-xs font-normal text-[#ED3F3F];
+        }
+      }
+
+      .legal-consent-container {
+        @apply text-gray-40;
+      }
+
+      .inputs-list.multi-container {
+        @apply mt-4 space-y-4;
+      }
+    }
+
+    input[type='submit'] {
+      @apply rounded-lg px-8 py-4 font-bold leading-none text-white transition-colors duration-200 hover:opacity-90;
+      background: linear-gradient(82.18deg, #db6c2e -0.66%, #fd9800 97.55%);
+    }
+  }
+}
