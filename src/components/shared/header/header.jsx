@@ -31,11 +31,11 @@ const Header = ({ items, isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder 
           />
         </Link>
         <ul className="flex space-x-8 lg:space-x-7 md:hidden">
-          {items.map(({ text, to, items }) => {
+          {items.map(({ text, to, items }, index) => {
             const Tag = to ? Link : 'button';
             const withChildItems = items?.length > 0;
             return (
-              <li className={clsx(withChildItems && 'group relative')} key={text}>
+              <li className={clsx(withChildItems && 'group relative')} key={index}>
                 <Tag
                   className="group inline-flex items-center py-5 text-[15px] font-medium leading-none transition-colors duration-200 hover:text-gray-40 lg:text-sm"
                   to={to}

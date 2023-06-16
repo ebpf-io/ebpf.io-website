@@ -1,11 +1,35 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useCallback } from 'react';
 
 import DropdownSelect from './dropdown-select';
 import DropdownWithTwoLevels from './dropdown-with-two-levels';
 
-const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
+const Filters = ({ eventFilters, activeFilters, setActiveFilters, setItemOffset }) => {
   const [type, conference, region] = eventFilters;
+  const {
+    eventtype: eventtypeFilter,
+    conference: conferenceFilter,
+    region: regionFilter,
+  } = activeFilters;
+  const isTypeSelected = eventtypeFilter.length > 0 || conferenceFilter.length > 0;
+  const isRegionSelected = regionFilter.length > 0;
+
+  console.log('Render! Filters');
+  console.log('activeFilters', activeFilters);
+  console.log('eventFilters', eventFilters);
+  console.log('eventtypeFilter', eventtypeFilter);
+
+  const handleFilters = useCallback(
+    (filter, newValues) => {
+      const newFilters = {
+        ...activeFilters,
+        [filter.label]: newValues,
+      };
+      setActiveFilters(newFilters);
+      setItemOffset(0);
+    },
+    [activeFilters, setItemOffset, setActiveFilters]
+  );
 
   return (
     <div
@@ -14,6 +38,7 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
     >
       <DropdownWithTwoLevels
         mainFilter={type}
+        isSelected={isTypeSelected}
         secondFilter={conference}
         activeFilters={activeFilters}
         handleFilters={handleFilters}
@@ -21,6 +46,7 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
       <DropdownSelect
         {...region}
         values={activeFilters[region.label]}
+        isSelected={isRegionSelected}
         onSelect={(newValues) => handleFilters(region, newValues)}
       />
     </div>
@@ -35,7 +61,8 @@ Filters.propTypes = {
     })
   ).isRequired,
   activeFilters: PropTypes.objectOf(PropTypes.array).isRequired,
-  handleFilters: PropTypes.func.isRequired,
+  setItemOffset: PropTypes.func.isRequired,
+  setActiveFilters: PropTypes.func.isRequired,
 };
 
 export default Filters;
