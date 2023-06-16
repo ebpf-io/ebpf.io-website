@@ -43,7 +43,7 @@ const headerMenu = [
     items: [
       {
         text: 'Overview',
-        to: '/events?eventtype=Conference',
+        to: '/events?overview',
       },
       {
         text: 'eBPF Summit',
