@@ -28,9 +28,12 @@ const EventList = ({ allEvents, totalCount }) => {
         [filter.label]: newValues,
       };
       setActiveFilters(newFilters);
+      setItemOffset(0);
     },
     [activeFilters]
   );
+
+  console.log(activeFilters);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
@@ -39,6 +42,12 @@ const EventList = ({ allEvents, totalCount }) => {
     const conference = eventFilters[1].label;
     const eventtypeParam = urlSearchParams.get(eventtype);
     const conferenceParam = urlSearchParams.get(conference);
+    const isOverviewParam = urlSearchParams.has('overview');
+
+    if (isOverviewParam) {
+      setActiveFilters(getInitialFilters(eventFilters));
+      history.pushState(null, '', window.location.pathname);
+    }
 
     if (eventtypeParam || conferenceParam) {
       setActiveFilters((prev) => ({
