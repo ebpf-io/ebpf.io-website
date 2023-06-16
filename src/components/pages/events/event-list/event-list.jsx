@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { Fragment, useState, useCallback, useMemo, useEffect } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 
 import Card from 'components/pages/events/card';
 import Filters from 'components/pages/events/filters';
@@ -21,19 +21,8 @@ const EventList = ({ allEvents, totalCount }) => {
   const [itemOffset, setItemOffset] = useState(0);
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
 
-  const handleFilters = useCallback(
-    (filter, newValues) => {
-      const newFilters = {
-        ...activeFilters,
-        [filter.label]: newValues,
-      };
-      setActiveFilters(newFilters);
-      setItemOffset(0);
-    },
-    [activeFilters]
-  );
-
   console.log(activeFilters);
+  console.log('Render! EventList');
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
@@ -74,17 +63,6 @@ const EventList = ({ allEvents, totalCount }) => {
     }
   });
 
-  const memoizedFilterDropdowns = useMemo(
-    () => (
-      <Filters
-        eventFilters={eventFilters}
-        activeFilters={activeFilters}
-        handleFilters={handleFilters}
-      />
-    ),
-    [activeFilters, handleFilters]
-  );
-
   const endOffset = itemOffset + EVENT_PER_PAGE;
   const filteredEvents = useFilteredEvents(allEvents, activeFilters, itemOffset, endOffset);
   const currentEvents = filteredEvents.slice(itemOffset, endOffset);
@@ -92,7 +70,12 @@ const EventList = ({ allEvents, totalCount }) => {
 
   return (
     <section className="safe-paddings pt-6 pb-28 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
-      {memoizedFilterDropdowns}
+      <Filters
+        eventFilters={eventFilters}
+        activeFilters={activeFilters}
+        setItemOffset={setItemOffset}
+        setActiveFilters={setActiveFilters}
+      />
       <div className="container grid-gap grid auto-rows-min grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
         {currentEvents.length > 0 &&
           currentEvents.map((item, index) => (

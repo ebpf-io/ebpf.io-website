@@ -11,6 +11,7 @@ const DropdownWithTwoLevels = ({
   secondFilter,
   activeFilters,
   handleFilters,
+  isSelected,
   className,
 }) => {
   const dropdownRef = useRef(null);
@@ -46,7 +47,10 @@ const DropdownWithTwoLevels = ({
   return (
     <div className={clsx('relative', className)}>
       <button
-        className="group flex w-60 items-center justify-between rounded-full border border-gray-90 py-4 px-5 transition-colors duration-200 hover:border-gray-40 [@media(max-width:550px)]:w-full"
+        className={clsx(
+          'group flex w-60 items-center justify-between rounded-full border border-gray-90 py-4 px-5 transition-colors duration-200 hover:border-secondary-blue [@media(max-width:550px)]:w-full',
+          (isOpen || isSelected) && 'border-secondary-blue'
+        )}
         type="button"
         ref={buttonRef}
         onClick={handleOpen}
@@ -127,6 +131,7 @@ DropdownWithTwoLevels.propTypes = {
     conference: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
   handleFilters: PropTypes.func.isRequired,
+  isSelected: PropTypes.bool.isRequired,
   className: PropTypes.string,
 };
 
