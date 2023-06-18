@@ -14,11 +14,6 @@ const Filters = ({ eventFilters, activeFilters, setActiveFilters, setItemOffset 
   const isTypeSelected = eventtypeFilter.length > 0 || conferenceFilter.length > 0;
   const isRegionSelected = regionFilter.length > 0;
 
-  console.log('Render! Filters');
-  console.log('activeFilters', activeFilters);
-  console.log('eventFilters', eventFilters);
-  console.log('eventtypeFilter', eventtypeFilter);
-
   const handleFilters = (filter, newValues) => {
     setActiveFilters((prev) => ({ ...prev, [filter.label]: newValues }));
     setItemOffset(0);
