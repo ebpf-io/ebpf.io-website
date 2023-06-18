@@ -21,9 +21,6 @@ const EventList = ({ allEvents, totalCount }) => {
   const [itemOffset, setItemOffset] = useState(0);
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
 
-  console.log(activeFilters);
-  console.log('Render! EventList');
-
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const urlSearchParams = new URLSearchParams(window.location.search);
