@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { useCallback } from 'react';
+import React from 'react';
 
 import DropdownSelect from './dropdown-select';
 import DropdownWithTwoLevels from './dropdown-with-two-levels';
@@ -19,17 +19,10 @@ const Filters = ({ eventFilters, activeFilters, setActiveFilters, setItemOffset 
   console.log('eventFilters', eventFilters);
   console.log('eventtypeFilter', eventtypeFilter);
 
-  const handleFilters = useCallback(
-    (filter, newValues) => {
-      const newFilters = {
-        ...activeFilters,
-        [filter.label]: newValues,
-      };
-      setActiveFilters(newFilters);
-      setItemOffset(0);
-    },
-    [activeFilters, setItemOffset, setActiveFilters]
-  );
+  const handleFilters = (filter, newValues) => {
+    setActiveFilters((prev) => ({ ...prev, [filter.label]: newValues }));
+    setItemOffset(0);
+  };
 
   return (
     <div

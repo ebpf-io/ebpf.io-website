@@ -23,7 +23,7 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
   return (
     <div
       className={clsx(
-        'flex h-full flex-col self-stretch rounded-lg border border-gray-90 bg-white hover:drop-shadow-book',
+        'flex h-full flex-col self-stretch rounded-lg border border-gray-90 bg-white duration-200 hover:drop-shadow-book',
         className
       )}
     >
