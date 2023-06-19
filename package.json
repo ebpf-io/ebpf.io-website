@@ -61,9 +61,9 @@
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
+    "@babel/core": "^7.22.5",
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
     "@svgr/webpack": "^6.5.1",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
