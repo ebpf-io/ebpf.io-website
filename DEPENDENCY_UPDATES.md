@@ -60,15 +60,15 @@ Example output
 
 As you may have noticed, `ncu` is colorizing the possible updates into 3 colors: green, cyan and red.
 
-**🟢 Green updates**
+### 🟢 Green updates
 
 All the libraries that are in green can be updated safely without really looking at the changelogs (it only concerns patches updates)... So far, we haven't faced any issue when we were updating green dependencies. So usually, just select all of them and update them together.
 
-**🔵 Cyan updates**
+### 🔵 Cyan updates
 
 Cyan updates are related to minor updates. So normally, you should be able to update them without any problem but we'd suggest you to do it one by one and by running tests after each update. It'll take time but it'll be safer.
 
-**🔴 Red updates**
+### 🔴 Red updates
 
 Red updates are for major updates. So somehow it means that the version you've specified in the package.json is really permissive. For sure here, you have to update them one by one and have a real look at the changelogs !
 
@@ -92,15 +92,11 @@ In this case you'd want to specify all the libraries with green updates first
 
 Add information if you're having trouble updating any dependencies, this could be very helpful for future updates
 
-<details>
-  <summary>Example</summary>
+### [remark-gfm](https://github.com/remarkjs/remark-gfm/)
 
-### packageName
+- **Issue found on:** 19 June, 2023
 
-- **Issue found on:** D Month, YYYY
-- **Problematic version:** x.x.x
-- **Last stable version:** x.x.x
+  - **Problematic version:** `3.0.0`
+  - **Last stable version:** `1.6.9`
 
-Space for a free-form description of the problem
-
-</details>
+  From v2 is an ESM-only module - we are not able to import it with require() in gatsby-config.js file.
