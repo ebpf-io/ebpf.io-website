@@ -1,5 +1,7 @@
+import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { Fragment, useState, useEffect } from 'react';
+import useLocation from 'react-use/lib/useLocation';
 
 import Card from 'components/pages/events/card';
 import Filters from 'components/pages/events/filters';
@@ -9,6 +11,8 @@ import { EVENT_PER_PAGE } from 'constants/event';
 import { eventFilters } from 'constants/event-filters';
 import useFilteredEvents from 'hooks/use-filtered-events';
 
+import EmptyState from '../empty-state';
+
 const getInitialFilters = (allFilters) =>
   allFilters.reduce((acc, { label }) => {
     if (!acc[label]) {
@@ -17,11 +21,19 @@ const getInitialFilters = (allFilters) =>
     return acc;
   }, {});
 
+const subscriptionFormDesktopIndex = 8;
+const subscriptionFormMobileIndex = 7;
+
 const EventList = ({ allEvents, totalCount }) => {
-  const [itemOffset, setItemOffset] = useState(0);
+  const [eventPositionStart, setEventPositionStart] = useState(0);
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const location = useLocation();
+  const handleFilters = (filter, newValues) => {
+    setActiveFilters((prev) => ({ ...prev, [filter.label]: newValues }));
+    setEventPositionStart(0);
+  };
+
   useEffect(() => {
     const urlSearchParams = new URLSearchParams(window.location.search);
     const eventtype = eventFilters[0].label;
@@ -32,7 +44,7 @@ const EventList = ({ allEvents, totalCount }) => {
 
     if (isOverviewParam) {
       setActiveFilters(getInitialFilters(eventFilters));
-      history.pushState(null, '', window.location.pathname);
+      window.history.replaceState({}, '', window.location.pathname);
     }
 
     if (eventtypeParam || conferenceParam) {
@@ -56,13 +68,19 @@ const EventList = ({ allEvents, totalCount }) => {
         });
       }
 
-      history.pushState(null, '', window.location.pathname);
+      window.history.replaceState({}, '', window.location.pathname);
     }
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.search]);
 
-  const endOffset = itemOffset + EVENT_PER_PAGE;
-  const filteredEvents = useFilteredEvents(allEvents, activeFilters, itemOffset, endOffset);
-  const currentEvents = filteredEvents.slice(itemOffset, endOffset);
+  const eventPositionEnd = eventPositionStart + EVENT_PER_PAGE;
+  const filteredEvents = useFilteredEvents(
+    allEvents,
+    activeFilters,
+    eventPositionStart,
+    eventPositionEnd
+  );
+  const currentEvents = filteredEvents.slice(eventPositionStart, eventPositionEnd);
   const pageCount = Math.ceil(filteredEvents.length / EVENT_PER_PAGE);
 
   return (
@@ -70,30 +88,39 @@ const EventList = ({ allEvents, totalCount }) => {
       <Filters
         eventFilters={eventFilters}
         activeFilters={activeFilters}
-        setItemOffset={setItemOffset}
-        setActiveFilters={setActiveFilters}
+        handleFilters={handleFilters}
       />
-      <div className="container grid-gap grid auto-rows-min grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
-        {currentEvents.length > 0 &&
-          currentEvents.map((item, index) => (
-            <Fragment key={index}>
-              <Card {...item} className="col-span-4 md:col-span-6" />
-              {index === 8 && (
-                <div className="col-span-12 my-10 lg:my-16 md:my-10 md:hidden">
-                  <SubscriptionForm size="md" />
-                </div>
-              )}
-              {index === 7 && (
-                <div className="col-span-12 hidden md:my-10 md:block">
-                  <SubscriptionForm size="lg" />
-                </div>
-              )}
-            </Fragment>
-          ))}
-      </div>
+      {currentEvents.length > 0 ? (
+        <div className="container grid-gap grid auto-rows-min grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
+          {currentEvents.length > 0 &&
+            currentEvents.map((item, index) => (
+              <Fragment key={index}>
+                <Card {...item} className="col-span-4 md:col-span-6" />
+                {(index === subscriptionFormDesktopIndex ||
+                  index === subscriptionFormMobileIndex) && (
+                  <div
+                    className={clsx(
+                      'col-span-12 md:my-10',
+                      { 'my-10 lg:my-16 md:hidden': index === subscriptionFormDesktopIndex },
+                      { 'hidden md:block': index === subscriptionFormMobileIndex }
+                    )}
+                  >
+                    <SubscriptionForm size={index === subscriptionFormDesktopIndex ? 'md' : 'lg'} />
+                  </div>
+                )}
+              </Fragment>
+            ))}
+        </div>
+      ) : (
+        <EmptyState />
+      )}
 
       {pageCount > 1 && (
-        <Pagination totalCount={totalCount} pageCount={pageCount} callback={setItemOffset} />
+        <Pagination
+          totalCount={totalCount}
+          pageCount={pageCount}
+          callback={setEventPositionStart}
+        />
       )}
     </section>
   );

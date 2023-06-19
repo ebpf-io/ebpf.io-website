@@ -4,7 +4,7 @@ import React from 'react';
 import DropdownSelect from './dropdown-select';
 import DropdownWithTwoLevels from './dropdown-with-two-levels';
 
-const Filters = ({ eventFilters, activeFilters, setActiveFilters, setItemOffset }) => {
+const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
   const [type, conference, region] = eventFilters;
   const {
     eventtype: eventtypeFilter,
@@ -13,11 +13,6 @@ const Filters = ({ eventFilters, activeFilters, setActiveFilters, setItemOffset 
   } = activeFilters;
   const isTypeSelected = eventtypeFilter.length > 0 || conferenceFilter.length > 0;
   const isRegionSelected = regionFilter.length > 0;
-
-  const handleFilters = (filter, newValues) => {
-    setActiveFilters((prev) => ({ ...prev, [filter.label]: newValues }));
-    setItemOffset(0);
-  };
 
   return (
     <div
@@ -49,8 +44,7 @@ Filters.propTypes = {
     })
   ).isRequired,
   activeFilters: PropTypes.objectOf(PropTypes.array).isRequired,
-  setItemOffset: PropTypes.func.isRequired,
-  setActiveFilters: PropTypes.func.isRequired,
+  handleFilters: PropTypes.func.isRequired,
 };
 
 export default Filters;
