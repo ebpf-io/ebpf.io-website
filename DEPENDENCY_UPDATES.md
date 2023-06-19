@@ -97,6 +97,6 @@ Add information if you're having trouble updating any dependencies, this could b
 - **Issue found on:** 19 June, 2023
 
   - **Problematic version:** `3.0.0`
-  - **Last stable version:** `1.6.9`
+  - **Last stable version:** `1.0.0`
 
   From v2 is an ESM-only module - we are not able to import it with require() in gatsby-config.js file.
