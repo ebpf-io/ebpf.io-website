@@ -29,7 +29,7 @@
     "clsx": "^1.2.1",
     "copy-to-clipboard": "^3.3.3",
     "date-fns": "^2.30.0",
-    "framer-motion": "^7.6.19",
+    "framer-motion": "^10.12.16",
     "gatsby": "^5.11.0",
     "gatsby-plugin-canonical-urls": "^5.11.0",
     "gatsby-plugin-feed": "^5.11.0",
