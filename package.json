@@ -86,12 +86,12 @@
     "gatsby-transformer-sharp": "^5.11.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
-    "markdownlint-cli": "^0.32.2",
+    "markdownlint-cli": "^0.35.0",
     "postcss": "^8.4.24",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "tailwindcss-safe-area": "^0.2.2"
+    "tailwindcss-safe-area": "^0.3.0"
   },
   "keywords": [
     "react",
