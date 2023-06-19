@@ -65,7 +65,7 @@
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
     "@svgr/webpack": "^8.0.1",
-    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
@@ -90,7 +90,7 @@
     "postcss": "^8.4.24",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.2.0",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwindcss-safe-area": "^0.2.2"
   },
   "keywords": [
