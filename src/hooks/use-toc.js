@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
-import { useDebounce, useWindowSize } from 'react-use';
+import useDebounce from 'react-use/lib/useDebounce';
+import useWindowSize from 'react-use/lib/useWindowSize';
 
 import debounce from 'utils/debounce';
 
