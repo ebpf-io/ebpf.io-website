@@ -33,7 +33,7 @@
     "gatsby": "^5.11.0",
     "gatsby-plugin-canonical-urls": "^5.11.0",
     "gatsby-plugin-feed": "^5.11.0",
-    "gatsby-plugin-google-analytics": "^5.11.0",
+    "gatsby-plugin-google-gtag": "^5.11.0",
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^3.11.0",
     "gatsby-plugin-mdx": "^5.11.0",
