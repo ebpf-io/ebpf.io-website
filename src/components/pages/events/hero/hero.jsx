@@ -11,8 +11,7 @@ const Hero = ({ items }) => {
     <section className="safe-paddings pt-20 pb-10 lg:pt-16 lg:pb-6 md:pb-4">
       <div className="container flex flex-col">
         <h1 className="heading-9xl pb-12 font-semibold leading-tight lg:pb-8">
-          Participate in eBPF events that highlight
-          <br />a range of expert voices and inspiring ideas
+	  eBPF Conferences and Meetups
         </h1>
 
         {items.length > 0 && (
