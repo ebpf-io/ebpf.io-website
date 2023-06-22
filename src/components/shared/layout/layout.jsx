@@ -42,7 +42,7 @@ const headerMenu = [
     text: 'Events',
     items: [
       {
-        text: 'Overview',
+        text: 'All Events',
         to: '/events?overview',
       },
       {
@@ -56,10 +56,6 @@ const headerMenu = [
       {
         text: 'bpfconf (LSF/MM/BPF)',
         to: '/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
-      },
-      {
-        text: 'BPF Meetups at IETF',
-        to: '/events?conference=BPF%20Meetups%20at%20IETF',
       },
     ],
   },
@@ -103,10 +99,6 @@ const headerMenu = [
   {
     text: 'Blog',
     to: '/blog',
-  },
-  {
-    text: 'Events',
-    to: '/events',
   },
   {
     text: 'Foundation',
