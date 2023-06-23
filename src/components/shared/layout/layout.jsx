@@ -42,16 +42,12 @@ const headerMenu = [
     text: 'Events',
     items: [
       {
-        text: 'Overview',
-        to: '/events?eventtype=Conference',
+        text: 'All Events',
+        to: '/events?overview',
       },
       {
         text: 'eBPF Summit',
         to: '/events?conference=eBPF%20Summit',
-      },
-      {
-        text: 'Cloud Native eBPF Day',
-        to: '/events?conference=Cloud%20Native%20eBPF%20Day',
       },
       {
         text: 'eBPF Track (LPC)',
@@ -60,10 +56,6 @@ const headerMenu = [
       {
         text: 'bpfconf (LSF/MM/BPF)',
         to: '/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
-      },
-      {
-        text: 'BPF Meetups at IETF',
-        to: '/events?conference=BPF%20Meetups%20at%20IETF',
       },
     ],
   },
@@ -85,6 +77,11 @@ const headerMenu = [
         target: '_blank',
       },
       {
+        text: 'Wikipedia',
+        to: 'https://en.wikipedia.org/wiki/EBPF',
+        target: '_blank',
+      },
+      {
         text: 'eCHO',
         to: 'https://github.com/isovalent/eCHO',
         target: '_blank',
@@ -102,10 +99,6 @@ const headerMenu = [
   {
     text: 'Blog',
     to: '/blog',
-  },
-  {
-    text: 'Events',
-    to: '/events',
   },
   {
     text: 'Foundation',

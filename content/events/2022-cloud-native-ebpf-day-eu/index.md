@@ -8,5 +8,4 @@ type: Conference
 ogImage: ogImage.jpg
 conference: Cloud Native eBPF Day
 region: EMEA
-isFeatured: false
 ---

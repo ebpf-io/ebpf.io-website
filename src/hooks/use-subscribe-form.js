@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { useCookie, useLocalStorage, useLocation } from 'react-use';
+import useCookie from 'react-use/lib/useCookie';
+import useLocalStorage from 'react-use/lib/useLocalStorage';
+import useLocation from 'react-use/lib/useLocation';
 
 import submitHubspotForm from 'utils/submit-hubspot-form';
 

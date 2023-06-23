@@ -6,6 +6,5 @@ description: 'The first session of our eBPF Creators webinar series to hear how 
 linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00'
 ogImage: ogimage.jpeg
 type: Webinar
-isFeatured: false
 region: Online
 ---

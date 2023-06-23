@@ -58,6 +58,7 @@ module.exports = {
       options: {
         defaults: {
           quality: 85,
+          placeholder: 'none',
         },
       },
     },
@@ -217,10 +218,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingId: 'UA-96283704-3',
-        head: false,
+        trackingIds: ['G-Z8DWSQN6XQ'],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
   ],

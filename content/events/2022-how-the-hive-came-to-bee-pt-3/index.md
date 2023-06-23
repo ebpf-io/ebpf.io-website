@@ -6,6 +6,5 @@ description: 'The final part of the series is presented by Joe Stringer (Cilium 
 linkUrl: 'https://www.youtube.com/watch?v=wnlsHeiTLtE'
 ogImage: ogimage.jpeg
 type: Webinar
-isFeatured: false
 region: Online
 ---

@@ -1,5 +1,5 @@
 const EVENTS_BASE_PATH = '/events/';
-const EVENT_PER_PAGE = 16;
+const EVENT_PER_PAGE = 18;
 
 // We are using ES modules here in order to be able to import variables from this file in gatsby-node.js
 module.exports = {

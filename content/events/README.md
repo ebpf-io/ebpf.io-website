@@ -21,9 +21,8 @@ Right now Markdown files accept following frontmatter:
 7. `region` — region, four options available: APAC, EMEA, North America, Online (required)
 8. `conference` — if the event type is a Conference, you can specify what type or leave it empty.
    Five options available: eBPF Summit, Cloud Native eBPF Day, eBPF Track (LPC), bpfconf (LSF/MM/BPF)
-9. `isFeatured` — set the 'true' flag if you want the card to be featured. Otherwise, put 'false'. Featured event will not be visible in the list of events. You can feature up to 4 events. (required)
-10. `draft` — flag that says the post is not ready yet. It won't appear in production but will appear in the development mode.
-11. `ogImage` - the preview image of the card.
+9. `draft` — flag that says the post is not ready yet. It won't appear in production but will appear in the development mode.
+10. `ogImage` - the preview image of the card.
 
 > ⚠️ Please note that the project won't build if at least one of the Markdown files is missing a required field.
 

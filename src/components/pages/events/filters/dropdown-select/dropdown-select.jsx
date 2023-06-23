@@ -6,7 +6,7 @@ import Checkbox from 'components/shared/checkbox';
 import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
 
-const DropdownSelect = ({ name, items, values, onSelect, className }) => {
+const DropdownSelect = ({ name, items, values, onSelect, isSelected, className }) => {
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,10 @@ const DropdownSelect = ({ name, items, values, onSelect, className }) => {
   return (
     <div className={clsx('relative', className)}>
       <button
-        className="group flex w-60 items-center justify-between rounded-full border border-gray-90 py-4 px-5 transition-colors duration-200 hover:border-gray-40 [@media(max-width:550px)]:w-full"
+        className={clsx(
+          'group flex w-60 items-center justify-between rounded-full border border-gray-90 py-4 px-5 transition-colors duration-200 hover:border-secondary-blue [@media(max-width:550px)]:w-full',
+          (isOpen || isSelected) && 'border-secondary-blue'
+        )}
         type="button"
         ref={buttonRef}
         onClick={handleOpen}
@@ -92,6 +95,7 @@ DropdownSelect.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string.isRequired })).isRequired,
   values: PropTypes.array.isRequired,
   onSelect: PropTypes.func.isRequired,
+  isSelected: PropTypes.bool.isRequired,
 };
 
 DropdownSelect.defaultProps = {
