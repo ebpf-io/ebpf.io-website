@@ -4,6 +4,7 @@ place: 'San Francisco, US'
 title: "BPF Meetups at IETF 117"
 description: 'IETF session to discuss the standarization of eBPF'
 linkUrl: 'https://datatracker.ietf.org/meeting/117/session/bpf'
+ogImage: ogImage.jpg
 type: Conference
 conference: BPF Meetups at IETF
 region: Online
