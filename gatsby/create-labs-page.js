@@ -39,12 +39,12 @@ module.exports = async ({ graphql, actions }) => {
 
   const { group: groupedCategories, totalCount, nodes: allLabs } = result.data.allMdx;
 
-  const allLabsCategory = { name: 'All labs', slug: '' };
+  const allLabsCategory = { name: 'All labs', slug: LABS_BASE_PATH };
   const categories = [
     allLabsCategory,
     ...groupedCategories.map(({ fieldValue }) => ({
       name: fieldValue,
-      slug: slugifyCategory(fieldValue),
+      slug: `${LABS_BASE_PATH}/${slugifyCategory(fieldValue)}`,
     })),
   ];
 
@@ -58,7 +58,7 @@ module.exports = async ({ graphql, actions }) => {
   };
 
   Array.from({ length: pageCount }).forEach((_, i) => {
-    const pagePath = i === 0 ? LABS_BASE_PATH : `${LABS_BASE_PATH}${i + 1}`;
+    const pagePath = i === 0 ? LABS_BASE_PATH : `${LABS_BASE_PATH}/${i + 1}`;
 
     createPage({
       path: pagePath,
@@ -87,7 +87,7 @@ module.exports = async ({ graphql, actions }) => {
     const categoryPageCount = Math.ceil(categoryPosts.length / LABS_PER_PAGE);
 
     Array.from({ length: categoryPageCount }).forEach((_, i) => {
-      const pagePath = i === 0 ? `${LABS_BASE_PATH}${slug}` : `${LABS_BASE_PATH}${slug}/${i + 1}`;
+      const pagePath = i === 0 ? slug : `${slug}/${i + 1}`;
 
       createPage({
         path: pagePath,
@@ -96,6 +96,7 @@ module.exports = async ({ graphql, actions }) => {
           category: name,
           categorySlug: slug,
           currentPageIndex: i,
+          currentCategory: name,
           pageCount: categoryPageCount,
           skip: i * LABS_PER_PAGE,
           ...context,
