@@ -19,7 +19,7 @@ const Categories = ({ categories, currentCategory, className }) => {
           return (
             <button
               className={clsx(
-                'py-4 text-base font-medium leading-normal hover:shadow-category',
+                'whitespace-nowrap py-4 text-base font-medium leading-normal hover:shadow-category',
                 isActiveElement ? 'font-semibold text-black shadow-category' : ' text-gray-50'
               )}
               key={index}
