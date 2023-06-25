@@ -29,7 +29,9 @@ const EventsPage = ({
         currentCategory={currentCategory}
       />
       <LabList labs={labs} />
-      <SubscriptionForm size="md" className="container-md mb-24 lg:mb-20" />
+      <div className="container-md">
+        <SubscriptionForm size="md" className="mb-24 lg:mb-20" isVertical="true" />
+      </div>
     </Layout>
   );
 };

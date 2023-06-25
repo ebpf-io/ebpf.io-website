@@ -28,7 +28,7 @@ const ErrorMessage = ({ serverError }) => {
   );
 };
 
-const SubscriptionForm = ({ className, size }) => {
+const SubscriptionForm = ({ className, size, isVertical }) => {
   const { formState, isLoading, errorMessage, email, handleInputChange, handleSubmit } =
     useSubscribeForm();
 
@@ -40,11 +40,13 @@ const SubscriptionForm = ({ className, size }) => {
     <LazyMotion features={domAnimation}>
       <div
         className={clsx(
-          'flex w-full items-center rounded-lg text-white lg:flex-col lg:space-x-0 lg:space-y-8 lg:px-9 md:px-7 sm:px-5',
+          'w-full items-center rounded-lg text-white lg:flex-col lg:space-x-0 lg:space-y-8 lg:px-9 md:px-7 sm:px-5',
+          isVertical ? 'flex flex-col' : 'flex',
           {
-            'space-x-10 px-11 py-9': smSize,
-            'space-x-[60px] py-11 pl-14 pr-20': mdSize,
-            'justify-between space-x-12 p-14 pb-[60px]': lgSize,
+            'space-x-10 px-11 py-9': smSize && !isVertical,
+            'space-x-[60px] py-11 pl-14 pr-20': mdSize && !isVertical,
+            'justify-between space-x-12 p-14 pb-[60px]': lgSize && !isVertical,
+            'pb-14 pt-11': isVertical,
           },
           className
         )}
@@ -54,7 +56,7 @@ const SubscriptionForm = ({ className, size }) => {
             'linear-gradient(59.49deg, rgba(255, 238, 153, 0.16) 0%, rgba(255, 238, 153, 0) 72.04%), #1A1A1A',
         }}
       >
-        <div className="lg:text-center">
+        <div className={clsx(isVertical ? 'text-center' : 'lg:text-center')}>
           <h2
             className={clsx('font-sans font-bold leading-tight', {
               'text-4xl': size === 'sm',
@@ -77,9 +79,10 @@ const SubscriptionForm = ({ className, size }) => {
         </div>
         <form
           className={clsx('relative grow text-black lg:w-full', {
-            'max-w-[400px]': smSize,
-            'max-w-[500px]': mdSize,
-            'max-w-[460px]': lgSize,
+            'max-w-[400px]': smSize && !isVertical,
+            'max-w-[500px]': mdSize && !isVertical,
+            'max-w-[460px]': lgSize && !isVertical,
+            'mt-7 w-full max-w-[500px]': isVertical,
           })}
           onSubmit={handleSubmit}
         >
@@ -90,7 +93,8 @@ const SubscriptionForm = ({ className, size }) => {
                 ? 'border-secondary-red hover:border-secondary-red focus:border-secondary-red'
                 : 'border-transparent',
               formState === 'success' && 'font-medium',
-              lgSize && 'ml-0 h-[60px]'
+              lgSize && 'ml-0 h-[60px]',
+              !isVertical && ''
             )}
             type="email"
             name="email"
@@ -115,7 +119,7 @@ const SubscriptionForm = ({ className, size }) => {
                     {
                       'w-12': smSize,
                       'w-[193px] sm:w-12': mdSize,
-                      'top-1.5 right-1.5 w-[160px] sm:w-12': lgSize,
+                      'right-1.5 top-1.5 w-[160px] sm:w-12': lgSize,
                     }
                   )}
                   type="submit"
@@ -139,7 +143,7 @@ const SubscriptionForm = ({ className, size }) => {
           <AnimatePresence>
             {(formState === 'success' || formState === 'error') && (
               <m.div
-                className={clsx('absolute top-1/2 -right-px -translate-y-1/2', {
+                className={clsx('absolute -right-px top-1/2 -translate-y-1/2', {
                   'right-1.5': lgSize,
                 })}
                 initial="initial"
@@ -162,11 +166,13 @@ const SubscriptionForm = ({ className, size }) => {
 SubscriptionForm.propTypes = {
   className: PropTypes.string,
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  isVertical: PropTypes.bool,
 };
 
 SubscriptionForm.defaultProps = {
   className: null,
   size: 'sm',
+  isVertical: false,
 };
 
 export default SubscriptionForm;
