@@ -12,8 +12,8 @@ const Categories = ({ categories, currentCategory, className }) => {
   };
 
   return (
-    <section className={clsx('container', className)}>
-      <nav className="no-scrollbar mx-auto flex gap-x-6 gap-x-9 overflow-visible border-b border-gray-96 xl:overflow-x-auto">
+    <section className={clsx('container-sm', className)}>
+      <nav className="no-scrollbar mx-6 flex gap-x-9 overflow-visible border-b border-gray-96 xl:overflow-x-auto lg:gap-x-6 md:mx-0">
         {categories.map(({ name, slug }, index) => {
           const isActiveElement = currentCategory === name;
           return (

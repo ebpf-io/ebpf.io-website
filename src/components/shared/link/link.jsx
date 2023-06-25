@@ -10,6 +10,7 @@ const styles = {
   base: 'inline-flex leading-none items-center',
   transition: 'transition-colors duration-200',
   size: {
+    base: 'text-base font-semibold',
     lg: 'text-lg font-semibold lg:text-base',
     md: 'text-md font-semibold lg:text-base',
     sm: 'text-sm font-semibold',
@@ -22,6 +23,8 @@ const styles = {
     blue: 'text-[#305fe8] hover:text-black',
     underline:
       'font-bold text-black hover:text-primary-orange underline underline-offset-4 decoration-primary-orange decoration-2',
+    'underline-yellow':
+      'font-bold text-black hover:text-primary-yellow underline underline-offset-4 decoration-primary-yellow decoration-2',
   },
 };
 
