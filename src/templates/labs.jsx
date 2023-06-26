@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 import { graphql } from 'gatsby';
+import { navigate } from 'gatsby';
 import React from 'react';
 
 import Categories from 'components/pages/labs/categories';
-import LabList from 'components/pages/labs/labs-list';
-import Pagination from 'components/pages/labs/pagination';
+import LabsList from 'components/pages/labs/labs-list';
 import Layout from 'components/shared/layout';
+import Pagination from 'components/shared/pagination';
 import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
+import { LABS_BASE_PATH } from 'constants/labs';
 
 const EventsPage = ({
   pageContext: { labsCategories, pageCount, currentPageIndex, categorySlug, currentCategory },
@@ -16,6 +18,15 @@ const EventsPage = ({
   },
 }) => {
   const labs = allLabs.map((lab) => ({ ...lab.frontmatter }));
+  const handlePageChange = ({ selected }) => {
+    let navigatePath = '';
+    if (categorySlug) {
+      navigatePath = selected === 0 ? categorySlug : `${categorySlug}/${selected + 1}`;
+    } else {
+      navigatePath = selected === 0 ? LABS_BASE_PATH : `${LABS_BASE_PATH}/${selected + 1}`;
+    }
+    navigate(navigatePath);
+  };
 
   return (
     <Layout>
@@ -29,12 +40,13 @@ const EventsPage = ({
         categories={labsCategories}
         currentCategory={currentCategory}
       />
-      <LabList labs={labs} />
+      <LabsList labs={labs} />
       {pageCount > 1 && (
         <Pagination
+          className="container-md mb-20 lg:mb-16"
           pageCount={pageCount}
           currentPageIndex={currentPageIndex}
-          categorySlug={categorySlug}
+          handlePageChange={handlePageChange}
         />
       )}
       <div className="container-md">

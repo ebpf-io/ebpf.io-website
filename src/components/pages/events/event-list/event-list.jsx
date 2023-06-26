@@ -29,6 +29,17 @@ const EventList = ({ allEvents, totalCount }) => {
     setEventPositionStart(0);
   };
 
+  const handlePageChange = ({ selected }) => {
+    const newOffSet = (selected * EVENT_PER_PAGE) % totalCount;
+    setEventPositionStart(newOffSet);
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
+
   useEffect(() => {
     const urlSearchParams = new URLSearchParams(window.location.search);
     const eventtype = eventFilters[0].label;
@@ -98,9 +109,10 @@ const EventList = ({ allEvents, totalCount }) => {
 
       {pageCount > 1 && (
         <Pagination
+          className="container mt-16 sm:mt-12"
           totalCount={totalCount}
           pageCount={pageCount}
-          callback={setEventPositionStart}
+          handlePageChange={handlePageChange}
         />
       )}
     </section>
