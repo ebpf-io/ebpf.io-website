@@ -24,28 +24,28 @@ const LabsCard = ({ title, description, linkText, linkUrl, ogImage, category, cl
         height={230}
         alt={title}
       />
-    </Link>
-    <div className="flex h-auto w-full flex-col p-9 lg:p-6">
-      <div className="flex gap-x-5">
-        {category.map((category, index) => (
-          <span className="text-[13px] uppercase leading-none tracking-category" key={index}>
-            {category}
-          </span>
-        ))}
+      <div className="flex h-auto w-full flex-col p-9 lg:p-6">
+        <div className="flex gap-x-5">
+          {category.map((category, index) => (
+            <span className="text-[13px] uppercase leading-none tracking-category" key={index}>
+              {category}
+            </span>
+          ))}
+        </div>
+        <h4 className="mt-[14px] text-3xl font-semibold leading-tight md:text-xl">{title}</h4>
+        <p className="text-grey-40 mt-2.5 text-base leading-normal">{description}</p>
+        <Link
+          className="mt-auto w-fit pt-5"
+          to={linkUrl}
+          theme="black-primary-yellow"
+          size="base"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {linkText}
+        </Link>
       </div>
-      <h4 className="mt-[14px] text-3xl font-semibold leading-tight md:text-xl">{title}</h4>
-      <p className="text-grey-40 mt-2.5 text-base leading-normal">{description}</p>
-      <Link
-        className="mt-auto w-fit pt-5"
-        to={linkUrl}
-        theme="black-primary-yellow"
-        size="base"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {linkText}
-      </Link>
-    </div>
+    </Link>
   </article>
 );
 
