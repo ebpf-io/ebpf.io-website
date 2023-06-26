@@ -28,6 +28,10 @@ const navItems = [
         text: 'Case Studies',
         to: '/case-studies',
       },
+      {
+        text: 'Labs',
+        to: '/labs',
+      },
     ],
   },
   {
@@ -138,7 +142,7 @@ const Footer = () => (
           <SocialLinks className="hidden md:flex sm:hidden" />
         </div>
         <div className="flex space-x-[100px] lg:justify-between lg:space-x-[122px] md:space-x-20 sm:flex-col sm:space-x-0">
-          <ul className="flex space-x-[97px] lg:space-x-[122px] md:space-x-16 sm:order-1 sm:mt-11 sm:flex-wrap sm:gap-y-11 sm:gap-x-20 sm:space-x-0 xs:gap-x-10">
+          <ul className="flex space-x-[97px] lg:space-x-[122px] md:space-x-16 sm:order-1 sm:mt-11 sm:flex-wrap sm:gap-x-20 sm:gap-y-11 sm:space-x-0 xs:gap-x-10">
             {navItems.map(({ title, items }) => (
               <li key={title}>
                 <h3 className="font-medium leading-none tracking-[0.02em] xs:leading-tight">
