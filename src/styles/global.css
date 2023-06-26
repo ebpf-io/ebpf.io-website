@@ -32,4 +32,10 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  @media (min-width: 768px) {
+    .category-hover:hover {
+      @apply shadow-category;
+    }
+  }
 }

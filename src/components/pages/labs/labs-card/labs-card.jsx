@@ -34,16 +34,9 @@ const LabsCard = ({ title, description, linkText, linkUrl, ogImage, category, cl
         </div>
         <h4 className="mt-[14px] text-3xl font-semibold leading-tight md:text-xl">{title}</h4>
         <p className="text-grey-40 mt-2.5 text-base leading-normal">{description}</p>
-        <Link
-          className="mt-auto w-fit pt-5"
-          to={linkUrl}
-          theme="black-primary-yellow"
-          size="base"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <span className="relative mt-auto w-fit pt-5 text-base font-semibold text-black before:pointer-events-none before:absolute before:-bottom-2 before:left-0 before:h-[3px] before:w-full before:bg-primary-yellow hover:text-gray-40">
           {linkText}
-        </Link>
+        </span>
       </div>
     </Link>
   </article>

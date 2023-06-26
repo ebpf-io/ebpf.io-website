@@ -1,31 +1,52 @@
 import clsx from 'clsx';
 import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const Categories = ({ categories, currentCategory, className }) => {
+  const categoryRefs = useRef([]);
+
   const handleCategoryClick = (slug) => (event) => {
     event.preventDefault();
     navigate(slug);
   };
 
+  useEffect(() => {
+    const activeIndex = categories.findIndex(({ name }) => name === currentCategory);
+    if (activeIndex !== -1 && categoryRefs.current[activeIndex]) {
+      categoryRefs.current[activeIndex].scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+      });
+    }
+  }, [categories, currentCategory]);
+
   return (
-    <section className={clsx('container-sm', className)}>
-      <nav className="no-scrollbar mx-6 flex gap-x-9 overflow-visible border-b border-gray-96 xl:overflow-x-auto lg:gap-x-6 md:mx-0">
+    <section className={clsx('safe-paddings', className)}>
+      <nav className="container-sm no-scrollbar flex overflow-visible xl:overflow-x-auto sm:px-0">
         {categories.map(({ name, slug }, index) => {
           const isActiveElement = currentCategory === name;
           return (
-            <button
-              className={clsx(
-                'whitespace-nowrap py-4 text-base font-medium leading-normal hover:shadow-category',
-                isActiveElement ? 'font-semibold text-black shadow-category' : ' text-gray-50'
-              )}
+            <div
+              className="flex first:sm:ml-6"
+              // eslint-disable-next-line no-return-assign
+              ref={(el) => (categoryRefs.current[index] = el)}
               key={index}
-              type="button"
-              onClick={handleCategoryClick(slug)}
             >
-              {name}
-            </button>
+              <button
+                className={clsx(
+                  'category-hover whitespace-nowrap py-4 text-base font-medium leading-normal',
+                  isActiveElement
+                    ? 'font-semibold text-black shadow-category'
+                    : 'border-b border-gray-96 text-gray-50'
+                )}
+                type="button"
+                onClick={handleCategoryClick(slug)}
+              >
+                {name}
+              </button>
+              <div className="h-full w-9 border-b border-gray-96 lg:w-6" />
+            </div>
           );
         })}
       </nav>
