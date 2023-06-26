@@ -6,9 +6,7 @@ import React from 'react';
 const Categories = ({ categories, currentCategory, className }) => {
   const handleCategoryClick = (slug) => (event) => {
     event.preventDefault();
-    navigate(slug, {
-      state: { preventScroll: true },
-    });
+    navigate(slug);
   };
 
   return (

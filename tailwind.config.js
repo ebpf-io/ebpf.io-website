@@ -99,7 +99,7 @@ module.exports = {
       },
       letterSpacing: {
         'middle-wide': '0.03em',
-        category: '0.91px',
+        category: '0.07em',
       },
       dropShadow: {
         book: '0px 8px 24px rgba(61, 61, 61, 0.16)',

@@ -11,7 +11,7 @@ import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
 import { LABS_BASE_PATH } from 'constants/labs';
 
-const EventsPage = ({
+const LabsPage = ({
   pageContext: { labsCategories, pageCount, currentPageIndex, categorySlug, currentCategory },
   data: {
     allMdx: { nodes: allLabs },
@@ -30,11 +30,13 @@ const EventsPage = ({
 
   return (
     <Layout>
-      <div className="container flex flex-col pt-20 lg:pt-16">
-        <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
-          Dig into the eBPF with our interactive labs
-        </h1>
-      </div>
+      <section className="safe-paddings">
+        <div className="container flex flex-col pt-20 lg:pt-16">
+          <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
+            Dig into the eBPF with our interactive labs
+          </h1>
+        </div>
+      </section>
       <Categories
         className="mb-10 mt-4"
         categories={labsCategories}
@@ -56,7 +58,7 @@ const EventsPage = ({
   );
 };
 
-export default EventsPage;
+export default LabsPage;
 
 export const Head = ({ location: { pathname } }) => <SEO pathname={pathname} />;
 

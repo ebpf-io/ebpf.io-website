@@ -5,10 +5,12 @@ import LabsCard from 'components/pages/labs/labs-card';
 import { labsCardPropTypes } from 'components/pages/labs/labs-card/labs-card';
 
 const LabsList = ({ labs }) => (
-  <section className="container-md grid-gap mb-24 mt-16 grid grid-cols-12 lg:mb-20 lg:mt-10">
-    {labs.map((lab, index) => (
-      <LabsCard {...lab} key={index} className="col-span-6 md:col-span-full" />
-    ))}
+  <section className="safe-paddings mb-24 mt-16 lg:mb-20 lg:mt-10">
+    <div className="container-md grid-gap grid grid-cols-12">
+      {labs.map((lab, index) => (
+        <LabsCard {...lab} key={index} className="col-span-6 md:col-span-full" />
+      ))}
+    </div>
   </section>
 );
 LabsList.propTypes = {
