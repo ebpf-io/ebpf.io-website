@@ -11,11 +11,10 @@ const LabsList = ({ labs }) => (
     ))}
   </section>
 );
-
 LabsList.propTypes = {
   labs: PropTypes.arrayOf(
     PropTypes.shape({
-      lab: labsCardPropTypes,
+      ...labsCardPropTypes,
     })
   ).isRequired,
 };
