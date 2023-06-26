@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import LabsCard from 'components/pages/labs/labs-card';
+import { labsCardPropTypes } from 'components/pages/labs/labs-card/labs-card';
 
 const LabsList = ({ labs }) => (
   <section className="container-md grid-gap mb-24 mt-16 grid grid-cols-12 lg:mb-20 lg:mt-10">
@@ -14,7 +15,7 @@ const LabsList = ({ labs }) => (
 LabsList.propTypes = {
   labs: PropTypes.arrayOf(
     PropTypes.shape({
-      lab: PropTypes.object.isRequired,
+      lab: labsCardPropTypes,
     })
   ).isRequired,
 };

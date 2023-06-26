@@ -166,13 +166,13 @@ const SubscriptionForm = ({ className, size, isVertical }) => {
 SubscriptionForm.propTypes = {
   className: PropTypes.string,
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
-  isVertical: PropTypes.bool,
+  isVertical: PropTypes.string,
 };
 
 SubscriptionForm.defaultProps = {
   className: null,
   size: 'sm',
-  isVertical: false,
+  isVertical: '',
 };
 
 export default SubscriptionForm;

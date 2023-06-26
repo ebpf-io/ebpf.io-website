@@ -49,14 +49,23 @@ const LabsCard = ({ title, description, linkText, linkUrl, ogImage, category, cl
   </article>
 );
 
-LabsCard.propTypes = {
+export const labsCardPropTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   linkText: PropTypes.string.isRequired,
   linkUrl: PropTypes.string.isRequired,
-  ogImage: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  gImage: PropTypes.shape({
+    childImageSharp: PropTypes.shape({
+      gatsbyImageData: PropTypes.object,
+    }),
+    publicURL: PropTypes.string,
+  }),
+  category: PropTypes.arrayOf(PropTypes.string).isRequired,
   className: PropTypes.string,
+};
+
+LabsCard.propTypes = {
+  ...labsCardPropTypes,
 };
 
 LabsCard.defaultProps = {

@@ -6,5 +6,5 @@ ogImage: ogImage.jpg
 linkText: 'Start the lab'
 linkUrl: 'https://isovalent.com/labs/security-observability-with-ebpf-and-cilium-tetragon/'
 category:
-  - Tracing and Profiling
+  - Programming
 ---

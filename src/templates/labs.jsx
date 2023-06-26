@@ -4,12 +4,13 @@ import React from 'react';
 
 import Categories from 'components/pages/labs/categories';
 import LabList from 'components/pages/labs/labs-list';
+import Pagination from 'components/pages/labs/pagination';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
 
 const EventsPage = ({
-  pageContext: { labsCategories, currentCategory },
+  pageContext: { labsCategories, pageCount, currentPageIndex, categorySlug, currentCategory },
   data: {
     allMdx: { nodes: allLabs },
   },
@@ -29,6 +30,13 @@ const EventsPage = ({
         currentCategory={currentCategory}
       />
       <LabList labs={labs} />
+      {pageCount > 1 && (
+        <Pagination
+          pageCount={pageCount}
+          currentPageIndex={currentPageIndex}
+          categorySlug={categorySlug}
+        />
+      )}
       <div className="container-md">
         <SubscriptionForm size="md" className="mb-24 lg:mb-20" isVertical="true" />
       </div>

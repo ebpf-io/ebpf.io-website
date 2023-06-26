@@ -7,4 +7,5 @@ linkText: 'Start the lab'
 linkUrl: 'https://isovalent.com/labs/getting-started-with-ebpf/'
 category:
   - Observability
+  - Programming
 ---
