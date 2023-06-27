@@ -19,7 +19,7 @@ Today, eBPF is used extensively to drive a wide variety of use cases: Providing 
 
 ### What is eBPF.io?
 
-eBPF.io is a place for everybody to learn and collaborate on the topic of eBPF. eBPF is an open community and everybody can participate and share. Whether you want to read a first introduction to eBPF, find further reading material or make your first steps to becoming contributors to major eBPF projects, eBPF.io will help you along the way.
+eBPF.io is a place for everybody to learn and collaborate on the topic of eBPF. eBPF is an open community and everybody can participate and share. Whether you want to read a first introduction to eBPF, find further reading material, or make your first steps to becoming contributors to major eBPF projects, eBPF.io will help you along the way.
 
 ### What do eBPF and BPF stand for?
 
@@ -27,7 +27,7 @@ BPF originally stood for Berkeley Packet Filter, but now that eBPF (extended BPF
 
 ### What is the bee named?
 
-The bee is the official logo for eBPF and was originally created by Vadim Shchekoldin. At the first eBPF Summit there was a vote taken and the bee was named eBee. (For details on acceptable uses of the logo, please see the Linux Foundation [Brand Guidelines](https://linuxfoundation.org/brand-guidelines/).)
+The bee is the official logo for eBPF and was originally created by Vadim Shchekoldin. At the [first eBPF Summit](https://ebpf.io/summit-2020.html) there was a vote taken and the bee was named eBee. (For details on acceptable uses of the logo, please see the Linux Foundation [Brand Guidelines](https://linuxfoundation.org/brand-guidelines/).)
 
 ## Introduction to eBPF
 
@@ -45,7 +45,7 @@ If a predefined hook does not exist for a particular need, it is possible to cre
 
 ### How are eBPF programs written?
 
-In a lot of scenarios, eBPF is not used directly but indirectly via projects like [Cilium](https://ebpf.io/projects/#cilium), [bcc](https://ebpf.io/projects/#bcc), or [bpftrace](https://ebpf.io/projects/#bpftrace) which provide an abstraction on top of eBPF and do not require to write programs directly but instead offer the ability to specify intent-based definitions which are then implemented with eBPF.
+In a lot of scenarios, eBPF is not used directly but indirectly via projects like [Cilium](https://ebpf.io/projects/#cilium), [bcc](https://ebpf.io/projects/#bcc), or [bpftrace](https://ebpf.io/projects/#bpftrace) which provide an abstraction on top of eBPF and do not require writing programs directly but instead offer the ability to specify intent-based definitions which are then implemented with eBPF.
 
 ![Clang](clang.png)
 
@@ -129,9 +129,11 @@ If a process is allowed to load an eBPF program, all programs still pass through
 - Programs must fit within the size requirements of the system. It is not possible to load arbitrarily large eBPF programs.
 - Program must have a finite complexity. The verifier will evaluate all possible execution paths and must be capable of completing the analysis within the limits of the configured upper complexity limit.
 
+The verifier is meant as a safety tool, checking that programs are safe to run. It is not a security tool inspecting what the programs are doing.
+
 #### Hardening
 
-Upon successful completion of the verification, the eBPF program runs through a hardening process according to whether the program is loaded from a privileged or unprivileged process. This step includes:
+Upon successful completion of verification, the eBPF program runs through a hardening process according to whether the program is loaded from a privileged or unprivileged process. This step includes:
 
 - **Program execution protection**: The kernel memory holding an eBPF program is protected and made read-only. If for any reason, whether it is a kernel bug or malicious manipulation, the eBPF program is attempted to be modified, the kernel will crash instead of allowing it to continue executing the corrupted/manipulated program.
 - **Mitigation against Spectre**: Under speculation CPUs may mispredict branches and leave observable side effects that could be extracted through a side channel. To name a few examples: eBPF programs mask memory access in order to redirect access under transient instructions to controlled areas, the verifier also follows program paths accessible only under speculative execution and the JIT compiler emits Retpolines in case tail calls cannot be converted to direct calls.
@@ -149,7 +151,7 @@ Let’s start with an analogy. Do you remember GeoCities? 20 years ago, web page
 
 ![Geocities](geocities.png)
 
-The short-answer is programmability with the introduction of JavaScript. It unlocked a massive revolution resulting in browsers to evolve into almost independent operating systems.
+The short-answer is programmability with the introduction of JavaScript. It unlocked a massive revolution resulting in browsers evolving into almost independent operating systems.
 
 Why did the evolution happen? Programmers were no longer as bound to users running particular browser versions. Instead of convincing standards bodies that a new HTML tag was needed, the availability of the necessary building blocks decoupled the pace of innovation of the underlying browser from the application running on top. This is of course a bit oversimplified as HTML did evolve over time and contributed to the success but the evolution of HTML itself would not have been sufficient.
 
@@ -201,7 +203,7 @@ BCC is a framework that enables users to write python programs with eBPF program
 
 #### bpftrace
 
-bpftrace is a high-level tracing language for Linux eBPF and available in recent Linux kernels (4.x). bpftrace uses LLVM as a backend to compile scripts to eBPF bytecode and makes use of BCC for interacting with the Linux eBPF subsystem as well as existing Linux tracing capabilities: kernel dynamic tracing (kprobes), user-level dynamic tracing (uprobes), and tracepoints. The bpftrace language is inspired by awk, C and predecessor tracers such as DTrace and SystemTap.
+bpftrace is a high-level tracing language for Linux eBPF and available in semi-recent Linux kernels (4.x). bpftrace uses LLVM as a backend to compile scripts to eBPF bytecode and makes use of BCC for interacting with the Linux eBPF subsystem as well as existing Linux tracing capabilities: kernel dynamic tracing (kprobes), user-level dynamic tracing (uprobes), and tracepoints. The bpftrace language is inspired by awk, C, and predecessor tracers such as DTrace and SystemTap.
 
 ![bpftrace](bpftrace.png)
 
