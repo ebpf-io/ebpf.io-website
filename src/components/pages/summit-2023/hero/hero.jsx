@@ -53,7 +53,7 @@ const Hero = ({ date, title, time, description }) => {
       </div>
       <div className="container relative pb-6 pt-28 lg:w-[95%] lg:pb-0 lg:pt-16 md:pt-8 ">
         <div className="flex max-w-[644px] flex-col lg:max-w-full lg:text-center">
-          <div className="flex items-center gap-x-5 lg:mx-auto sm:flex-col sm:gap-x-0 sm:gap-y-4">
+          <div className="flex items-center gap-x-5 lg:mx-auto lg:flex-col lg:gap-x-0 lg:gap-y-4">
             <time
               className="with-orange-highlight inline-block rounded-md border-2 border-primary-orange border-opacity-30 bg-white p-2 text-center font-bold uppercase leading-none text-black"
               dangerouslySetInnerHTML={{ __html: date }}
