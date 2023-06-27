@@ -8,7 +8,9 @@ const Categories = ({ categories, currentCategory, className }) => {
 
   const handleCategoryClick = (slug) => (event) => {
     event.preventDefault();
-    navigate(slug);
+    navigate(slug, {
+      state: { preventScroll: true },
+    });
   };
 
   useEffect(() => {
