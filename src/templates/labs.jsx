@@ -90,7 +90,7 @@ export const query = graphql`
           linkUrl
           ogImage {
             childImageSharp {
-              gatsbyImageData(width: 490)
+              gatsbyImageData(width: 976)
             }
             publicURL
           }
