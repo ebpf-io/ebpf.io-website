@@ -41,7 +41,7 @@ const Categories = ({ categories, currentCategory, className }) => {
                 className={clsx(
                   'category-hover whitespace-nowrap py-4 text-base font-medium leading-normal',
                   isActiveElement
-                    ? 'font-semibold text-black shadow-category'
+                    ? 'pb-[19px] font-semibold text-black shadow-category'
                     : 'border-b border-gray-96 text-gray-50'
                 )}
                 type="button"
