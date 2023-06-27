@@ -16,10 +16,12 @@ const Categories = ({ categories, currentCategory, className }) => {
   useEffect(() => {
     const activeIndex = categories.findIndex(({ name }) => name === currentCategory);
     if (activeIndex !== -1 && categoryRefs.current[activeIndex]) {
-      categoryRefs.current[activeIndex].scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-      });
+      setTimeout(() => {
+        categoryRefs.current[activeIndex].scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+        });
+      }, 0);
     }
   }, [categories, currentCategory]);
 
