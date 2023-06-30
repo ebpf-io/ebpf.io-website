@@ -19,7 +19,7 @@ const items = [
     image: observabilitySvg,
     title: 'Observability',
     description:
-      'Collection and in-kernel aggregation of custom metrics with generation of visibility events and data structures from a wide range of possible source without having to export samples.',
+      'Collection and in-kernel aggregation of custom metrics with generation of visibility events and data structures from a wide range of possible sources without having to export samples.',
   },
   {
     bgClassName: 'bg-secondary-blue-light',
@@ -33,7 +33,7 @@ const items = [
     image: securitySvg,
     title: 'Security',
     description:
-      'Combine seeing and understanding all system calls with a packet and socket-level view of all networking to create security systems operating on more context with a better level of control',
+      'Combine seeing and understanding all system calls with a packet and socket-level view of all networking to create security systems operating on more context with a better level of control.',
   },
 ];
 
