@@ -37,11 +37,13 @@ const LabsPage = ({
           </h1>
         </div>
       </section>
-      <Categories
-        className="mb-10 mt-4"
-        categories={labsCategories}
-        currentCategory={currentCategory}
-      />
+      {labsCategories.length > 2 && (
+        <Categories
+          className="mb-10 mt-4"
+          categories={labsCategories}
+          currentCategory={currentCategory}
+        />
+      )}
       <LabsList labs={labs} />
       {pageCount > 1 && (
         <Pagination
