@@ -13,7 +13,7 @@ const items = [
     description:
       'A couple months ago, the two of us got to talking about a phenomenon we both observed.',
     date: 'Nov 17, 2022',
-    linkUrl: 'https://isovalent.site/43oWWkV',
+    linkUrl: 'https://ebpf.io/blog/ebpf-for-all/',
   },
   {
     cover: cover2,
