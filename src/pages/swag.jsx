@@ -14,7 +14,7 @@ const hero = {
   title: 'eBPF Summit Attendee Swag',
   description: 'Bee a part of the hive, get your eBPF swag now!',
   buttonText: 'Visit our store',
-  buttonUrl: 'https://cilium.myspreadshop.net/',
+  buttonUrl: 'https://isovalent.site/3XAj22h',
 };
 
 const HostWatchParty = () => (
