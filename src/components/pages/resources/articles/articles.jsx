@@ -13,7 +13,7 @@ const items = [
     description:
       'A couple months ago, the two of us got to talking about a phenomenon we both observed.',
     date: 'Nov 17, 2022',
-    linkUrl: 'https://ebpf.io/blog/ebpf-for-all/',
+    linkUrl: 'https://isovalent.site/43oWWkV',
   },
   {
     cover: cover2,
@@ -21,8 +21,7 @@ const items = [
     description:
       'Who created eBPF? Which challenges led to its creation? Does eBPF actually stand for anything? How does eBPF allow us to rethink the way we solve problems?',
     date: 'Dec 13, 2022',
-    linkUrl:
-      'https://isovalent.com/blog/post/how-the-hive-came-to-bee-a-story-of-ebpf-and-cilium-so-far/',
+    linkUrl: 'https://isovalent.site/44qW5ky',
   },
   {
     cover: cover3,
@@ -30,7 +29,7 @@ const items = [
     description:
       'Observability is about more than just operations and application monitoring, it’s about inferring the state of the environment based on the outputs from the overall system.',
     date: 'Oct 18, 2022',
-    linkUrl: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
+    linkUrl: 'https://isovalent.site/446F67h',
   },
 ];
 

@@ -8,26 +8,26 @@ const items = [
     title: 'Getting started with eBPF',
     description:
       'The best way to have your first experience with eBPF programming is to walk through this lab, which teaches you to handle an eBPF tool, watch it loading its components and even add your own tracing into the source eBPF code.',
-    linkUrl: 'https://isovalent.com/labs/getting-started-with-ebpf/',
+    linkUrl: 'https://isovalent.site/3NDyAh8',
   },
   {
     title: 'Security Observability with eBPF & Tetragon',
     description:
       'A new paradigm that utilizes eBPF, a Linux kernel technology, to allow Security and DevOps teams, SREs, Cloud Engineers, and Solution Architects to gain real-time visibility into Kubernetes.',
-    linkUrl: 'https://isovalent.com/labs/security-observability-with-ebpf-and-cilium-tetragon/',
+    linkUrl: 'https://isovalent.site/3XCrAWy',
   },
 ];
 
 const Tutorials = () => (
-  <section className="hero safe-paddings mt-40 mb-32 md:my-16 sm:mt-0 sm:mb-14">
+  <section className="hero safe-paddings mb-32 mt-40 md:my-16 sm:mb-14 sm:mt-0">
     <div className="container grid grid-cols-2 gap-x-[26px] md:grid-cols-1">
       <div className="pr-[72px] pt-3 md:max-w-[550px] md:pr-0">
         <h2 className="heading-8xl font-semibold leading-tight">
           Dig into the eBPF technology with labs
         </h2>
         <Button
-          to="https://isovalent.com/resource-library/labs/"
-          className="mt-9 rounded-lg py-4 px-9 sm:hidden"
+          to="https://isovalent.site/44fbMf2"
+          className="mt-9 rounded-lg px-9 py-4 sm:hidden"
           target="_blank"
           rel="noreferrer noopener"
           theme="orange"
@@ -40,7 +40,7 @@ const Tutorials = () => (
         {items.map(({ title, description, linkUrl }, index) => (
           <li className="border-t border-dashed border-gray-80 last:border-b" key={index}>
             <Link
-              className="group flex items-center justify-between pt-7 pb-8 "
+              className="group flex items-center justify-between pb-8 pt-7 "
               to={linkUrl}
               target="_blank"
               rel="noreferrer noopener"
@@ -60,7 +60,7 @@ const Tutorials = () => (
 
       <Button
         to="https://isovalent.com/resource-library/labs/"
-        className="mt-9 hidden max-w-fit rounded-lg py-4 px-9 sm:inline-flex"
+        className="mt-9 hidden max-w-fit rounded-lg px-9 py-4 sm:inline-flex"
         target="_blank"
         rel="noreferrer noopener"
         theme="orange"
