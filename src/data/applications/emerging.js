@@ -73,21 +73,6 @@ const emergingApplications = [
     urls: [{ label: 'GitHub', url: 'https://github.com/aquasecurity/tracee' }],
   },
   {
-    logoUrl: 'https://github.com/cilium/tetragon',
-    name: 'Tetragon',
-    logoName: 'tetragonLogo',
-    title: 'eBPF-based Security Observability & Runtime Enforcement',
-    description: `Tetragon provides eBPF-based transparent security observability
-    combined with real-time runtime enforcement. The deep visibility is
-    achieved without requiring application changes and is provided at
-    low overhead thanks to smart Linux in-kernel filtering and
-    aggregation logic built directly into the eBPF-based kernel-level
-    collector. The embedded runtime enforcement layer is capable of
-    performing access control on kernel functions, system calls and at
-    other enforcement levels.`,
-    urls: [{ label: 'GitHub', url: 'https://github.com/cilium/tetragon' }],
-  },
-  {
     logoUrl: 'https://github.com/iovisor/kubectl-trace',
     name: 'kubectl trace',
     logoName: 'kubectlTraceLogo',
