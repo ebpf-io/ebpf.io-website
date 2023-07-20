@@ -1,12 +1,10 @@
-import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import useLocation from 'react-use/lib/useLocation';
 
 import Card from 'components/pages/events/card';
 import Filters from 'components/pages/events/filters';
 import Pagination from 'components/pages/events/pagination';
-import SubscriptionForm from 'components/shared/subscription-form';
 import { EVENT_PER_PAGE } from 'constants/event';
 import { eventFilters } from 'constants/event-filters';
 import useFilteredEvents from 'hooks/use-filtered-events';
@@ -20,9 +18,6 @@ const getInitialFilters = (allFilters) =>
     }
     return acc;
   }, {});
-
-const subscriptionFormDesktopIndex = 8;
-const subscriptionFormMobileIndex = 7;
 
 const EventList = ({ allEvents, totalCount }) => {
   const [eventPositionStart, setEventPositionStart] = useState(0);
@@ -84,7 +79,7 @@ const EventList = ({ allEvents, totalCount }) => {
   const pageCount = Math.ceil(filteredEvents.length / EVENT_PER_PAGE);
 
   return (
-    <section className="safe-paddings pt-6 pb-28 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
+    <section className="safe-paddings pb-28 pt-6 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
       <Filters
         eventFilters={eventFilters}
         activeFilters={activeFilters}
@@ -94,21 +89,7 @@ const EventList = ({ allEvents, totalCount }) => {
         <div className="container grid-gap grid auto-rows-min grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
           {currentEvents.length > 0 &&
             currentEvents.map((item, index) => (
-              <Fragment key={index}>
-                <Card {...item} className="col-span-4 md:col-span-6" />
-                {(index === subscriptionFormDesktopIndex ||
-                  index === subscriptionFormMobileIndex) && (
-                  <div
-                    className={clsx(
-                      'col-span-12 md:my-10',
-                      { 'my-10 lg:my-16 md:hidden': index === subscriptionFormDesktopIndex },
-                      { 'hidden md:block': index === subscriptionFormMobileIndex }
-                    )}
-                  >
-                    <SubscriptionForm size={index === subscriptionFormDesktopIndex ? 'md' : 'lg'} />
-                  </div>
-                )}
-              </Fragment>
+              <Card {...item} className="col-span-4 md:col-span-6" key={index} />
             ))}
         </div>
       ) : (
