@@ -60,18 +60,19 @@ module.exports = async ({ graphql, actions }) => {
   const { group: groupedCategories, totalCount, nodes: allPosts } = result.data.allMdx;
   const { externalPosts } = result.data;
 
-  const categories = groupedCategories.map(({ fieldValue }) => ({
-    name: fieldValue,
-    slug: slugifyCategory(fieldValue),
-  }));
+  const preferredCategories = ['Community', 'Technology', 'How-To'];
 
-  const externalCategory = { name: 'External', slug: 'external' };
-  const categoriesWithExternal = [...categories, externalCategory];
+  const categories = groupedCategories
+    .filter(({ fieldValue }) => preferredCategories.includes(fieldValue))
+    .map(({ fieldValue }) => ({ name: fieldValue, slug: slugifyCategory(fieldValue) }));
+
+  // const externalCategory = { name: 'External', slug: 'external' };
+  // const categoriesWithExternal = [...categories, externalCategory];
 
   const pageCount = Math.ceil(totalCount / BLOG_POSTS_PER_PAGE);
 
   const context = {
-    categories: categoriesWithExternal,
+    categories,
     draftFilter: DRAFT_FILTER,
     limit: BLOG_POSTS_PER_PAGE,
     postRegex: POSTS_REGEX,
