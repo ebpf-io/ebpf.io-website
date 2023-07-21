@@ -53,6 +53,18 @@ const eventFilters = [
       },
     ],
   },
+  {
+    name: 'Date',
+    label: 'date',
+    items: [
+      {
+        name: 'Upcoming events',
+      },
+      {
+        name: 'Archived events',
+      },
+    ],
+  },
 ];
 
 // We are using ES modules here in order to be able to import variables from this file in gatsby-node.js

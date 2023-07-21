@@ -4,24 +4,15 @@ import React from 'react';
 
 import BlogPostCard from 'components/pages/blog/blog-post-card';
 import { blogPostCardPropTypes } from 'components/pages/blog/blog-post-card/blog-post-card';
-
-import SubscriptionForm from '../../../shared/subscription-form';
-import Pagination from '../pagination';
+import Pagination from 'components/pages/blog/pagination';
 
 const BlogPostsList = ({ className, items, pageCount, currentPageIndex, categorySlug }) => (
   <div className={clsx('flex flex-col', className)}>
     <div className="divide-y divide-dashed divide-gray-80">
-      {items.slice(0, 5).map((item, index) => (
+      {items.map((item, index) => (
         <BlogPostCard {...item} key={index} />
       ))}
     </div>
-    <SubscriptionForm className="my-16" />
-    <div className="divide-y divide-dashed divide-gray-80">
-      {items.slice(5).map((item, index) => (
-        <BlogPostCard {...item} key={index} />
-      ))}
-    </div>
-
     {pageCount > 1 && (
       <Pagination
         pageCount={pageCount}

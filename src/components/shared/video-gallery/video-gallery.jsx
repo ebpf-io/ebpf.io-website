@@ -1,4 +1,6 @@
 import clsx from 'clsx';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import shuffle from 'lodash.shuffle';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -36,7 +38,7 @@ const Video = ({ videoId, isCurrent, setCurrentVideo, isWrapperInView }) => {
       />
       {isWrapperInView && isSSR && (
         <ReactPlayer
-          className="youtube-video absolute top-0 left-0 h-full w-full rounded-2xl"
+          className="youtube-video absolute left-0 top-0 h-full w-full rounded-2xl"
           url={`https://www.youtube.com/watch?v=${videoId}`}
           width="100%"
           height="100%"
@@ -49,7 +51,7 @@ const Video = ({ videoId, isCurrent, setCurrentVideo, isWrapperInView }) => {
         type="button"
         aria-label="Play video"
         className={clsx(
-          'absolute top-0 left-0 h-full w-full',
+          'absolute left-0 top-0 h-full w-full',
           isCurrent ? 'pointer-events-none' : 'pointer-events-auto'
         )}
         onClick={handleClick}
@@ -60,10 +62,17 @@ const Video = ({ videoId, isCurrent, setCurrentVideo, isWrapperInView }) => {
 
 const VideoGallery = ({ title, items, className }) => {
   const [currentVideo, setCurrentVideo] = useState(null);
+  const [shuffledItems, setShuffledItems] = useState([]);
   const [wrapperRef, isWrapperInView] = useInView({ rootMargin: '500px' });
+
+  useEffect(() => {
+    const shuffledArray = shuffle(items);
+    setShuffledItems(shuffledArray);
+  }, [items]);
+
   return (
     <section
-      className={clsx('community safe-paddings mt-36 mb-40 lg:my-28 md:my-24', className)}
+      className={clsx('community safe-paddings mb-40 mt-36 lg:my-28 md:my-24', className)}
       ref={wrapperRef}
     >
       <div className="container">
@@ -71,14 +80,14 @@ const VideoGallery = ({ title, items, className }) => {
           <h2 className="heading-8xl font-semibold leading-dense">{title}</h2>
           <div className="space-x-5 md:hidden">
             <button
-              className="prev hover:btn-black-hover rounded bg-black py-[17px] px-3.5 transition-[background] duration-200 lg:px-3 lg:py-[15px]"
+              className="prev hover:btn-black-hover rounded bg-black px-3.5 py-[17px] transition-[background] duration-200 lg:px-3 lg:py-[15px]"
               type="button"
               aria-label="Previous"
             >
               <ArrowIcon className="h-auto w-[18px] rotate-180" />
             </button>
             <button
-              className="next hover:btn-black-hover rounded bg-black py-[17px] px-3.5 transition-[background] duration-200 lg:px-3 lg:py-[15px]"
+              className="next hover:btn-black-hover rounded bg-black px-3.5 py-[17px] transition-[background] duration-200 lg:px-3 lg:py-[15px]"
               type="button"
               aria-label="Next"
             >
@@ -116,7 +125,7 @@ const VideoGallery = ({ title, items, className }) => {
           },
         }}
       >
-        {items.map(({ videoId, title, speaker, date }) => {
+        {shuffledItems.map(({ videoId, title, speaker, date }) => {
           const isCurrent = currentVideo === videoId;
 
           return (
@@ -132,7 +141,7 @@ const VideoGallery = ({ title, items, className }) => {
               </h3>
               <span className="mt-2 inline-flex space-x-4 text-sm lg:text-sm">
                 <span>{speaker}</span>
-                <span className="relative before:absolute before:top-1/2 before:-left-2.5 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90">
+                <span className="relative before:absolute before:-left-2.5 before:top-1/2 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90">
                   {date}
                 </span>
               </span>
