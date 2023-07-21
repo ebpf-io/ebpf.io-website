@@ -2,9 +2,9 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Pagination from 'components/pages/blog//pagination';
 import BlogPostCard from 'components/pages/blog/blog-post-card';
 import { blogPostCardPropTypes } from 'components/pages/blog/blog-post-card/blog-post-card';
+import Pagination from 'components/pages/blog/pagination';
 
 const BlogPostsList = ({ className, items, pageCount, currentPageIndex, categorySlug }) => (
   <div className={clsx('flex flex-col', className)}>

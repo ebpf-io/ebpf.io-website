@@ -66,9 +66,6 @@ module.exports = async ({ graphql, actions }) => {
     .filter(({ fieldValue }) => preferredCategories.includes(fieldValue))
     .map(({ fieldValue }) => ({ name: fieldValue, slug: slugifyCategory(fieldValue) }));
 
-  // const externalCategory = { name: 'External', slug: 'external' };
-  // const categoriesWithExternal = [...categories, externalCategory];
-
   const pageCount = Math.ceil(totalCount / BLOG_POSTS_PER_PAGE);
 
   const context = {
