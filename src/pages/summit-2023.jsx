@@ -72,7 +72,6 @@ const lastYear = {
 const Summit2023 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
-    <Proposal {...proposal} />
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />
