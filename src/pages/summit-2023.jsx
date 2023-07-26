@@ -4,7 +4,6 @@ import Hero from 'components/pages/summit-2023/hero';
 import Hosts from 'components/pages/summit-2023/hosts';
 import Information from 'components/pages/summit-2023/information';
 import LastYear from 'components/pages/summit-2023/last-year';
-import Proposal from 'components/pages/summit-2023/proposal';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 import { navigation, hubspotFormId } from 'data/summit-2023/summit-2023-navigation';
@@ -17,15 +16,6 @@ const hero = {
   time: '8:30AM-12:30PM&nbsp;PST / 5:30PM-9:30PM&nbsp;CEST',
   description:
     '<p>Welcome to the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem. This event for the eBPF community is aimed at new and existing members wishing to learn and grow and includes hands-on technologists building, using or interested in eBPF as a platform.</p>',
-};
-
-const proposal = {
-  title: 'Call for proposals: open now',
-  date1: 'CFP closes: <strong>July 21</strong>',
-  date2: 'Full schedule announced: <strong>August 21</strong>',
-  buttonText: 'Send proposal',
-  buttonUrl: 'https://sessionize.com/ebpf-summit-2023/',
-  buttonTarget: '_blank',
 };
 
 const hosts = {
@@ -82,7 +72,6 @@ const lastYear = {
 const Summit2023 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
-    <Proposal {...proposal} />
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />
