@@ -1,7 +1,7 @@
 import React from 'react';
 
-// import Speakers from 'components/pages/summit-2023/speakers';
 import Hero from 'components/pages/summit-schedule/hero';
+import Schedule from 'components/pages/summit-schedule/schedule';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 import { navigation, hubspotFormId } from 'data/summit-2023/summit-2023-navigation';
@@ -14,15 +14,14 @@ const hero = {
     'Explore schedule of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
 };
 
-// const speakers = {
-//   title: 'Featured Speakers',
-//   endpoint: 'https://sessionize.com/api/v2/6b8qteaw/view/SpeakerWall',
-// };
+const schedule = {
+  endpoint: 'https://sessionize.com/api/v2/6b8qteaw/view/Sessions',
+};
 
 const Summit2023 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
-    {/* <Speakers {...speakers} /> */}
+    <Schedule {...schedule} />
   </SummitLayout>
 );
 
