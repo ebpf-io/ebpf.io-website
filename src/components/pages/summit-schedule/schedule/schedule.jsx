@@ -7,8 +7,10 @@ import { getMonthAndDay } from 'utils/get-date-data';
 const Schedule = ({ endpoint }) => {
   const [schedule, setSchedule] = useState([]);
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchSchedule = useCallback(async () => {
+    setIsLoading(true);
     try {
       const response = await fetch(endpoint);
 
@@ -25,11 +27,20 @@ const Schedule = ({ endpoint }) => {
     } catch (error) {
       setError(error.toString());
     }
+    setIsLoading(false);
   }, [endpoint]);
 
   useEffect(() => {
     fetchSchedule();
   }, [fetchSchedule]);
+
+  if (isLoading) {
+    return (
+      <div className="my-20 flex items-center justify-center">
+        <div className="h-10 w-10 animate-spin rounded-full border-b-2 border-t-2 border-gray-90" />
+      </div>
+    );
+  }
 
   if (!error && schedule.length > 0) {
     return (
