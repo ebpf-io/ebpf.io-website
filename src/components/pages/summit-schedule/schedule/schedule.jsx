@@ -45,7 +45,7 @@ const Schedule = ({ endpoint }) => {
   if (!error && schedule.length > 0) {
     return (
       <section className="safe-paddings mb-32 mt-16 lg:mb-24 md:mb-20 sm:mt-14">
-        <div className="container">
+        <div className="container max-w-[1008px]">
           <ul className="w-full">
             {schedule.map(({ id, title, startsAt, speakers, recordingUrl }) => {
               const date = getMonthAndDay(startsAt);
