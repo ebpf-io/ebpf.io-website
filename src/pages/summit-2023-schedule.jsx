@@ -14,8 +14,9 @@ const hero = {
     'Explore schedule of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
 };
 
+// TODO: Change to 2023
 const schedule = {
-  endpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/Sessions',
+  endpoint: 'https://sessionize.com/api/v2/6b8qteaw/view/Sessions',
 };
 
 const Summit2023 = () => (
