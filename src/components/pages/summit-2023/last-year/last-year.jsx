@@ -71,7 +71,7 @@ const twitterCards = [
 const shapes = [shape1, shape2, shape3, shape4];
 const LastYear = ({ title, description, link, items }) => (
   <section
-    className="relative overflow-hidden pt-40 pb-32 after:absolute after:top-0 after:left-0 after:-z-20 after:h-full after:w-full after:bg-gray-98 lg:pt-32 md:pt-20 md:pb-20"
+    className="relative overflow-hidden pb-32 pt-40 after:absolute after:left-0 after:top-0 after:-z-20 after:h-full after:w-full after:bg-gray-98 lg:pt-32 md:pb-20 md:pt-20"
     id="last-year-summit"
   >
     <div className="container">
@@ -90,8 +90,8 @@ const LastYear = ({ title, description, link, items }) => (
         </div>
         <div className="relative pb-[56.25%]">
           <iframe
-            className="absolute top-0 left-0 h-full w-full"
-            src="https://www.youtube.com/embed/0YqF45Kaapo"
+            className="absolute left-0 top-0 h-full w-full"
+            src="https://www.youtube.com/embed/UQV75Dol_dg"
             frameBorder="0"
             width={592}
             height={333}
@@ -103,7 +103,7 @@ const LastYear = ({ title, description, link, items }) => (
       </div>
       <div className="relative">
         <img
-          className="absolute top-1/2 left-1/2 -z-10 h-[1015px] w-[1501px] max-w-none translate-y-[calc(-50%-13.5rem)] translate-x-[calc(-50%+3rem)] md:hidden"
+          className="absolute left-1/2 top-1/2 -z-10 h-[1015px] w-[1501px] max-w-none translate-x-[calc(-50%+3rem)] translate-y-[calc(-50%-13.5rem)] md:hidden"
           width={1501}
           height={1015}
           loading="lazy"
@@ -125,7 +125,7 @@ const LastYear = ({ title, description, link, items }) => (
                   loading="lazy"
                   aria-hidden
                 />
-                <div className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col space-y-0.5 text-center">
+                <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col space-y-0.5 text-center">
                   <span
                     className={clsx(
                       'text-[64px] font-semibold leading-none lg:text-5xl md:text-6xl xs:text-5xl',
@@ -169,7 +169,7 @@ const LastYear = ({ title, description, link, items }) => (
             />
             <div className="mt-4 flex space-x-5 self-start font-sans font-normal leading-normal text-gray-50">
               <time>{time}</time>
-              <time className="relative before:absolute before:top-1/2 before:-left-3 before:block before:h-[3px] before:w-[3px] before:-translate-y-1/2 before:rounded-full before:bg-gray-50">
+              <time className="relative before:absolute before:-left-3 before:top-1/2 before:block before:h-[3px] before:w-[3px] before:-translate-y-1/2 before:rounded-full before:bg-gray-50">
                 {date}
               </time>
             </div>
