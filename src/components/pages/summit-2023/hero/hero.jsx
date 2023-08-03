@@ -42,13 +42,13 @@ const Hero = ({ date, title, time, description }) => {
 
   return (
     <section className="relative lg:overflow-hidden">
-      <div className="absolute -top-20 right-0 w-[200px] lg:block md:-right-4 sm:-top-[120px] sm:hidden">
+      <div className="absolute -top-20 right-0 -z-10 w-[200px] lg:block md:-right-4 sm:-top-[120px] sm:hidden">
         <StaticImage src="./images/drop-1.jpg" alt="" loading="eager" aria-hidden />
       </div>
-      <div className="absolute -top-3 left-0 w-[128px] 2xl:-left-4 2xl:top-12 xl:-left-8 lg:-top-3 md:-left-4 sm:-left-14 sm:-top-[28px] sm:hidden">
+      <div className="absolute -top-3 left-0 -z-10 w-[128px] 2xl:-left-4 2xl:top-12 xl:-left-8 lg:-top-3 md:-left-4 sm:-left-14 sm:-top-[28px] sm:hidden">
         <StaticImage src="./images/drop-2.jpg" alt="" loading="eager" aria-hidden />
       </div>
-      <div className="absolute -left-10 top-96 w-[330px] 2xl:-left-20 2xl:top-[450px] 2xl:w-[280px] lg:left-0 lg:top-80 lg:block md:-left-20 md:top-64 sm:hidden">
+      <div className="absolute -left-10 top-96  -z-10 w-[330px] 2xl:-left-20 2xl:top-[450px] 2xl:w-[280px] lg:left-0 lg:top-80 lg:block md:-left-20 md:top-64 sm:hidden">
         <StaticImage src="./images/honey.jpg" alt="" loading="eager" aria-hidden />
       </div>
       <div className="container relative pb-6 pt-28 lg:w-[95%] lg:pb-0 lg:pt-16 md:pt-8 ">
