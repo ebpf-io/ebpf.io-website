@@ -15,7 +15,7 @@ const hero = {
 };
 
 const schedule = {
-  endpoint: 'https://sessionize.com/api/v2/6b8qteaw/view/Sessions',
+  endpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/Sessions',
 };
 
 const Summit2023 = () => (

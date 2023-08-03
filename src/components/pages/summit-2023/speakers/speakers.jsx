@@ -1,11 +1,24 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useState, useCallback } from 'react';
 
+import Modal from 'components/pages/summit-2023/speakers/modal';
 import Speaker from 'components/pages/summit-2023/speakers/speaker';
 
 const Speakers = ({ title, endpoint }) => {
   const [speakers, setSpeakers] = useState([]);
+  const [currentSpeaker, setCurrentSpeaker] = useState(null);
   const [error, setError] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const clickHandler = (id) => {
+    setCurrentSpeaker(speakers.find((speaker) => speaker.id === id));
+    setIsOpen(true);
+  };
+
+  const closeModal = (e) => {
+    e.stopPropagation();
+    setIsOpen(false);
+  };
 
   const fetchSpeakers = useCallback(async () => {
     try {
@@ -13,7 +26,7 @@ const Speakers = ({ title, endpoint }) => {
 
       if (response.ok) {
         const data = await response.json();
-        setSpeakers(data);
+        setSpeakers(data.filter((speaker) => speaker.isTopSpeaker));
       } else {
         throw new Error(`Error: ${response.status}`);
       }
@@ -35,6 +48,7 @@ const Speakers = ({ title, endpoint }) => {
             {speakers.map(({ fullName, tagLine, profilePicture, id }) => (
               <Speaker
                 key={id}
+                clickHandler={() => clickHandler(id)}
                 fullName={fullName}
                 tagLine={tagLine}
                 profilePicture={profilePicture}
@@ -42,6 +56,7 @@ const Speakers = ({ title, endpoint }) => {
             ))}
           </div>
         </div>
+        <Modal isOpen={isOpen} closeModal={closeModal} {...currentSpeaker} />
       </section>
     );
   }
