@@ -86,10 +86,10 @@ const Hero = ({ date, title, time, description }) => {
         </div>
         <img
           src={illustration}
-          className="absolute right-8 top-24 h-auto w-[648px] lg:static lg:mt-12 lg:w-full"
+          className="absolute right-8 top-24 h-auto w-[624px] lg:static lg:mt-12 lg:w-full"
           alt="Illustration"
-          width={648}
-          height={431}
+          width={624}
+          height={404}
           loading="eager"
           aria-hidden
         />

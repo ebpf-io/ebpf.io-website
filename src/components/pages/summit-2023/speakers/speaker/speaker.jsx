@@ -8,7 +8,7 @@ const Speaker = ({ fullName, tagLine, profilePicture, clickHandler }) => {
   return (
     <button className="flex flex-col items-center text-center" type="button" onClick={clickHandler}>
       <img
-        className={clsx('h-40 w-40 flex-shrink-0 rounded-full', isLoaded ? '' : 'hidden')}
+        className={clsx('h-40 w-40 flex-shrink-0 rounded-full', !isLoaded && 'hidden')}
         src={profilePicture}
         alt={fullName}
         width={160}

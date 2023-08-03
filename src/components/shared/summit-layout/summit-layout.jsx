@@ -5,11 +5,11 @@ import SummitFooter from 'components/shared/summit-footer';
 import SummitHeader from 'components/shared/summit-header';
 
 const SummitLayout = ({ children, navigation, hubspotFormId }) => (
-  <>
+  <section className="flex min-h-screen flex-col">
     <SummitHeader navigation={navigation} hubspotFormId={hubspotFormId} />
-    <main>{children}</main>
+    <main className="flex-grow">{children}</main>
     <SummitFooter />
-  </>
+  </section>
 );
 
 SummitLayout.propTypes = {

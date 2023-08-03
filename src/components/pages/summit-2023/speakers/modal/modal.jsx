@@ -51,7 +51,7 @@ const Modal = ({
       <div className="flex h-full w-full flex-col">
         <div className="flex w-full sm:mt-5">
           <img
-            className={clsx('h-20 w-20 flex-shrink-0 rounded-full', isLoaded ? '' : 'hidden')}
+            className={clsx('h-20 w-20 flex-shrink-0 rounded-full', !isLoaded && 'hidden')}
             src={profilePicture}
             alt={fullName}
             width={80}

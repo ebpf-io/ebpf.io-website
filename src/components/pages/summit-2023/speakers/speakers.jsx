@@ -41,7 +41,7 @@ const Speakers = ({ title, endpoint }) => {
 
   if (!error && speakers.length > 0) {
     return (
-      <section className="pb-10 pt-32 md:pt-20">
+      <section className="min-h-[300px] pb-10 pt-32 md:pt-20">
         <div className="container">
           <h2 className="heading-9xl text-center font-bold leading-none">{title}</h2>
           <div className="mt-16 flex flex-wrap justify-center gap-8 md:mt-10 md:gap-6">
