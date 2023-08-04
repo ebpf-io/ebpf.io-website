@@ -1,3 +1,4 @@
+// TODO: Return the page to the src/pages folder when the schedule is ready
 import React from 'react';
 
 import Hero from 'components/pages/summit-schedule/hero';
