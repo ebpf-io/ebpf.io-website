@@ -4,6 +4,7 @@ import Hero from 'components/pages/summit-2023/hero';
 import Hosts from 'components/pages/summit-2023/hosts';
 import Information from 'components/pages/summit-2023/information';
 import LastYear from 'components/pages/summit-2023/last-year';
+import Speakers from 'components/pages/summit-2023/speakers';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 import { navigation, hubspotFormId } from 'data/summit-2023/summit-2023-navigation';
@@ -69,9 +70,15 @@ const lastYear = {
   ],
 };
 
+const speakers = {
+  title: 'Featured Speakers',
+  endpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/Speakers',
+};
+
 const Summit2023 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
+    <Speakers {...speakers} />
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />

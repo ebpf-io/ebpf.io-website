@@ -16,6 +16,7 @@ const styles = {
   },
   theme: {
     gray: 'text-black bg-gray-96 border-[1.5px] border-gray-90 hover:bg-gray-98',
+    disabled: 'text-gray-60 bg-gray-90 cursor-default',
     orange: 'text-white bg-button-gradient hover:opacity-90',
     'black-filled': 'bg-black text-white hover:btn-black-hover transition-[background]',
     'primary-yellow-filled': 'bg-primary-yellow text-black hover:bg-[#FFF04C]',
@@ -49,7 +50,7 @@ const Button = ({
 
   return (
     <Tag className={className} to={to} {...otherProps}>
-      {theme === 'withYellowChevron' && <ChevronYellow className="mt-0.5 ml-px w-2" />}
+      {theme === 'withYellowChevron' && <ChevronYellow className="ml-px mt-0.5 w-2" />}
       {theme === 'withWhiteChevron' && <ChevronWhite className="ml-px w-2" />}
       {children}
     </Tag>

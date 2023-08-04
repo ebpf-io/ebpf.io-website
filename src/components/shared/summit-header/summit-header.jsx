@@ -24,7 +24,7 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
       <Popover>
         {({ open }) => (
           <>
-            <div className="container pt-5 pb-4">
+            <div className="container pb-4 pt-5">
               <nav className="relative flex items-center justify-between" aria-label="Global">
                 <div className="-mt-2.5 flex flex-none items-center lg:flex-1">
                   <div className="flex w-auto items-center justify-between lg:w-full">
@@ -43,7 +43,7 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
                 <div className="flex items-center space-x-10 xl:space-x-8 lg:hidden">
                   {navigation.map(({ name, href, target }, index) => (
                     <a
-                      className="hover:text-gray-1 font-bold leading-none transition-colors duration-200"
+                      className="hover:text-gray-1 mb-2 font-bold leading-none transition-colors duration-200"
                       key={index}
                       href={href}
                       target={target}
@@ -104,7 +104,7 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
                       </a>
                     ))}
                   </div>
-                  <div className="my-6 mx-5">
+                  <div className="mx-5 my-6">
                     <Button
                       className="w-full rounded-lg py-4"
                       theme="orange"
