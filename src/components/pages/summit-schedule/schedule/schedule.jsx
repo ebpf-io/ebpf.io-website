@@ -71,10 +71,10 @@ const Schedule = ({ endpoint }) => {
                   <Button
                     className="my-auto flex max-h-14 items-center rounded-lg px-5 leading-none sm:flex-1"
                     size="md"
-                    theme="gray"
+                    theme={recordingUrl ? 'gray' : 'disabled'}
                     to={recordingUrl}
                   >
-                    Watch
+                    {recordingUrl ? 'Watch' : 'Coming soon'}
                   </Button>
                 </li>
               );
