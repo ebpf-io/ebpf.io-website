@@ -4,11 +4,16 @@ import React, { useEffect, useState, useCallback } from 'react';
 import Button from 'components/shared/button';
 import { getMonthAndDay } from 'utils/get-date-data';
 
+import Modal from './modal';
+
 const Schedule = ({ endpoint }) => {
   const [schedule, setSchedule] = useState([]);
+  const [currentEvent, setCurrentEvent] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
+  console.log(currentEvent);
   const fetchSchedule = useCallback(async () => {
     setIsLoading(true);
     try {
@@ -29,6 +34,16 @@ const Schedule = ({ endpoint }) => {
     }
     setIsLoading(false);
   }, [endpoint]);
+
+  const clickHandler = (id) => {
+    setCurrentEvent(schedule.find((event) => event.id === id));
+    setIsOpen(true);
+  };
+
+  const closeModal = (e) => {
+    e.stopPropagation();
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     fetchSchedule();
@@ -51,7 +66,7 @@ const Schedule = ({ endpoint }) => {
               const date = getMonthAndDay(startsAt);
               return (
                 <li
-                  className="group flex w-full justify-between border-t border-gray-94 py-8 last:border-b md:py-6 sm:flex-col"
+                  className="flex w-full justify-between border-t border-gray-94 py-8 last:border-b md:py-6 sm:flex-col"
                   key={id}
                 >
                   <div className="flex max-w-[70%] flex-col pr-5 lg:max-w-full sm:mb-8">
@@ -63,9 +78,11 @@ const Schedule = ({ endpoint }) => {
                         </li>
                       ))}
                     </ul>
-                    <h3 className="text-4xl font-semibold leading-tight transition-colors duration-200 group-hover:text-gray-40 lg:text-3xl md:text-xl">
-                      {title}
-                    </h3>
+                    <button className="text-left" type="button" onClick={() => clickHandler(id)}>
+                      <h3 className="text-4xl font-semibold leading-tight transition-colors duration-200 hover:text-primary-orange lg:text-3xl md:text-xl">
+                        {title}
+                      </h3>
+                    </button>
                   </div>
 
                   <Button
@@ -81,6 +98,7 @@ const Schedule = ({ endpoint }) => {
             })}
           </ul>
         </div>
+        <Modal isOpen={isOpen} closeModal={closeModal} {...currentEvent} />
       </section>
     );
   }
