@@ -13,7 +13,6 @@ const Schedule = ({ endpoint }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(currentEvent);
   const fetchSchedule = useCallback(async () => {
     setIsLoading(true);
     try {
