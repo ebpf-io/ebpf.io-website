@@ -12,7 +12,7 @@
 
   .hs-form {
     fieldset {
-      @apply mb-5 max-w-none text-sm;
+      @apply mb-3 max-w-none text-sm;
 
       &.form-columns-2 {
         @apply grid grid-cols-2 gap-x-8 gap-y-5 lg:grid-cols-1;
@@ -61,13 +61,13 @@
           @apply pl-7 !important;
 
           &::before {
-            @apply right-5 left-auto border-gray-90 !important;
+            @apply left-auto right-5 border-gray-90 !important;
           }
 
           &::after {
             content: '';
 
-            @apply absolute top-0 left-0 block h-5 w-5 transform rounded border border-[#cccccc] bg-gray-98 !important;
+            @apply absolute left-0 top-0 block h-5 w-5 transform rounded border border-[#cccccc] bg-gray-98 !important;
           }
         }
 
@@ -92,7 +92,7 @@
 
       .hs-error-msgs {
         label {
-          @apply absolute mt-1 text-xs font-normal text-[#ED3F3F];
+          @apply mt-1 text-xs font-normal text-[#ED3F3F];
         }
       }
 
