@@ -61,7 +61,6 @@ const Modal = ({ className, isOpen, closeModal, session }) => {
         <div className="mt-4 flex items-center">
           <CalendarIcon className="mr-3 h-5 w-5 text-primary-orange" />
           <time className="pr-2 font-semibold">{`${getMonthAndDay(startsAt)},`}</time>
-          <time className="pr-2 font-semibold">{`${getMonthAndDay(startsAt)},`}</time>
           <time className="font-semibold">{getFormattedTimeWithAmPm(startsAt)}</time>
         </div>
       </div>
