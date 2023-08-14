@@ -40,7 +40,7 @@ const TimeSlot = ({ rooms, clickSpeakerHandler }) => {
           const duration = calculateTimeDifference(startsAt, endsAt);
           return (
             <article
-              className="max-w-1/2 flex w-full flex-col items-center justify-center border-l-2 border-t-2 border-black px-7 pb-8 pt-7 transition-colors duration-200 hover:bg-primary-orange hover:bg-opacity-90 md:border-l-0 md:px-4 md:py-7"
+              className="max-w-1/2 flex w-full flex-col items-center justify-center border-l-2 border-t-2 border-black px-7 pb-8 pt-7 transition-colors duration-200 hover:bg-primary-yellow hover:bg-opacity-90 md:border-l-0 md:px-4 md:py-7"
               key={id}
             >
               <div className="flex flex-col items-center gap-y-2">

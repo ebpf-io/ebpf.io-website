@@ -25,7 +25,7 @@ const styles = {
       'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:btn-black-hover group-hover:btn-black-hover transition-[background]',
     withWhiteChevron:
       'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:btn-black-hover group-hover:btn-black-hover transition-[background]',
-    outline: 'border border-black hover:bg-black hover:text-primary-orange',
+    outline: 'border border-black hover:bg-black hover:text-primary-yellow',
   },
 };
 
