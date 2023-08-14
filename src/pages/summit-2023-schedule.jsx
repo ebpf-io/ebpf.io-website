@@ -2,6 +2,7 @@ import React from 'react';
 
 import Grid from 'components/pages/summit-schedule/grid';
 import Hero from 'components/pages/summit-schedule/hero';
+// TODO: Add after summit
 // import Schedule from 'components/pages/summit-schedule/schedule';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
@@ -15,6 +16,7 @@ const hero = {
     'Explore schedule of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
 };
 
+// TODO: Add after summit
 // const schedule = {
 //   endpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/Sessions',
 // };
@@ -27,6 +29,7 @@ const grid = {
 const Summit2023 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
+    {/* TODO: Add after summit */}
     {/* <Schedule {...schedule} /> */}
     <Grid {...grid} />
   </SummitLayout>
