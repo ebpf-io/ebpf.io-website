@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
@@ -14,6 +14,7 @@ import Modal from '../modal';
 const TimeSlot = ({ rooms, clickSpeakerHandler }) => {
   const [currentRoom, setCurrentRoom] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const oneColumn = 1;
 
   const clickHandler = (id) => {
     setCurrentRoom(rooms.find(({ session }) => session.id === id));
@@ -48,7 +49,12 @@ const TimeSlot = ({ rooms, clickSpeakerHandler }) => {
                   <time>{date}</time> — <span>{duration} min</span>
                 </span>
               </div>
-              <h3 className="mt-2.5 text-center text-3xl font-bold leading-tight lg:text-2xl md:text-xl">
+              <h3
+                className={clsx(
+                  'mt-2.5 text-center text-3xl font-bold leading-tight lg:text-2xl md:text-xl',
+                  rooms.length === oneColumn && 'max-w-[60%] sm:max-w-full'
+                )}
+              >
                 {title}
               </h3>
               {speakers && (
@@ -87,7 +93,20 @@ const TimeSlot = ({ rooms, clickSpeakerHandler }) => {
 };
 
 TimeSlot.propTypes = {
-  endpoint: PropTypes.string.isRequired,
+  rooms: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      session: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        startsAt: PropTypes.string.isRequired,
+        endsAt: PropTypes.string.isRequired,
+        speakers: PropTypes.array,
+        description: PropTypes.string.isRequired,
+      }),
+    })
+  ).isRequired,
+  clickSpeakerHandler: PropTypes.func.isRequired,
 };
 
 export default TimeSlot;
