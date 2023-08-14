@@ -22,6 +22,18 @@ function getHoursAndMinutes(dateTime) {
   return `${formattedHours}:${formattedMinutes}`;
 }
 
+function getFormattedTimeWithAmPm(dateTime) {
+  const convertedDateTime = new Date(dateTime);
+  const hours = convertedDateTime.getUTCHours();
+  const minutes = convertedDateTime.getUTCMinutes();
+
+  const amOrPm = hours < 12 ? 'AM' : 'PM';
+  const formattedHours = (hours % 12 || 12).toString();
+  const formattedMinutes = minutes.toString().padStart(2, '0');
+
+  return `${formattedHours}:${formattedMinutes} ${amOrPm}`;
+}
+
 function calculateTimeDifference(startsAt, endsAt) {
   const startsAtDate = new Date(startsAt);
   const endsAtDate = new Date(endsAt);
@@ -30,4 +42,10 @@ function calculateTimeDifference(startsAt, endsAt) {
   return timeDifferenceMinutes;
 }
 
-export { getMonthAndDay, getYear, getHoursAndMinutes, calculateTimeDifference };
+export {
+  getMonthAndDay,
+  getYear,
+  getHoursAndMinutes,
+  calculateTimeDifference,
+  getFormattedTimeWithAmPm,
+};

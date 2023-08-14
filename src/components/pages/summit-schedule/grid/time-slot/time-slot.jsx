@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
 import Button from 'components/shared/button';
-import { getHoursAndMinutes, calculateTimeDifference } from 'utils/get-date-data';
+import { getFormattedTimeWithAmPm, calculateTimeDifference } from 'utils/get-date-data';
 
 import Modal from '../modal';
 
@@ -23,21 +23,21 @@ const TimeSlot = ({ rooms }) => {
 
   return (
     <section className="flex w-full border-r-2 border-black md:flex-col">
-      <div className="w-full max-w-[104px] border-t-2 border-black py-7 md:max-w-full md:border-x-2 md:border-t-0 md:py-5">
-        <span className="text-xl font-bold leading-none">
-          {getHoursAndMinutes(rooms[0].session.startsAt)}
+      <div className="flex w-full max-w-[104px] border-t-2 border-black py-7 md:max-w-full md:md:border-l-2 md:py-5">
+        <span className="text-xl font-bold leading-none md:mx-auto">
+          {getFormattedTimeWithAmPm(rooms[0].session.startsAt)}
         </span>
       </div>
       <div className="flex w-full md:flex-col ">
         {rooms.map(({ name, session: { id, title, startsAt, endsAt, speakers, description } }) => {
-          const date = getHoursAndMinutes(startsAt);
+          const date = getFormattedTimeWithAmPm(startsAt);
           const duration = calculateTimeDifference(startsAt, endsAt);
           return (
             <article
               className="max-w-1/2 flex w-full flex-col items-center justify-center border-l-2 border-t-2 border-black px-7 pb-8 pt-7 transition-colors duration-200 hover:bg-primary-yellow md:px-4 md:py-7"
               key={id}
             >
-              <div className="flex gap-x-4">
+              <div className="flex flex-col items-center gap-y-2">
                 <span className="text-sm font-semibold leading-none">{name}</span>
                 <span className="text-sm leading-none text-black">
                   <time>{date}</time> — <span>{duration} min</span>
