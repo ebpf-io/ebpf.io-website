@@ -78,7 +78,8 @@ const logos = {
   bpftraceLogo: <StaticImage src="./logos/bpftrace.png" alt="bpftrace" loading="lazy" />,
   eunomiaLogo: <StaticImage src="./logos/eunomia.png" alt="Eunomia" loading="lazy" />,
   kindlingLogo: <StaticImage src="./logos/kindling.png" alt="Kindling" loading="lazy" />,
-};
+  odigosLogo: <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" />,
+}; 
 
 const Logo = ({ logo, name }) => {
   const isStaticImage = typeof logo === 'object';

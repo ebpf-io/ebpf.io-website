@@ -134,6 +134,19 @@ const emergingApplications = [
     ],
   },
   {
+    logoUrl: 'https://github.com/keyval-dev/odigos',
+    name: 'Odigos',
+    logoName: 'odigosLogo',
+    title: 'Zero-code distributed tracing via eBPF',
+    description: `Odigos is a zero-code distributed tracing solution that uses eBPF to automatically
+    instrument any application, including automatic context propagation.
+    Traces are produced in OpenTelemetry format and can be delivered to any compatible backend.`,
+     urls: [
+      { label: 'GitHub', url: 'https://github.com/keyval-dev/odigos' },
+      { label: 'Website', url: 'https://odigos.io' },
+     ],
+  },
+  {
     logoUrl: 'https://github.com/solo-io/bumblebee',
     name: 'BumbleBee',
     logoName: 'bumblebeeLogo',
