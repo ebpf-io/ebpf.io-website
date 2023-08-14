@@ -1,0 +1,1725 @@
+[
+  {
+    "date": "2023-09-13T00:00:00Z",
+    "isDefault": true,
+    "rooms": [
+      {
+        "id": 36877,
+        "name": "Room 1",
+        "sessions": [
+          {
+            "id": "23811b53-2626-4c4f-89c7-cd69086ac93a",
+            "title": "Welcome",
+            "description": null,
+            "startsAt": "2023-09-13T15:30:00Z",
+            "endsAt": "2023-09-13T15:40:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": true,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "525821",
+            "title": "Fast by Friday: Why eBPF is Essential",
+            "description": "It is not ok that we speed weeks, even months, trying to solve why software is slow. It should not take more than a week to identify the root cause or causes for a performance issue, such that any performance issue reported on a Monday should be solved by Friday, or sooner.\r\n\r\nThis talk explores the dream of “fast by Friday,” and shows how kernel technologies like eBPF, and performance methodologies, can get us there. The end goal is not more tools and metrics or having everyone learn eBPF bytecode. It’s about efficient computing, and solving inefficiencies as quickly as possible to save cycles and carbon.\r\n\r\nTo be fast by Friday requires observability tools to work on Monday, and right now for many Linux environments that means /proc, Ftrace, or perf, and rarely the eBPF tracing tools: bcc and bpftrace. This and other current and future technical challenges will be discussed, including eBPF stack walking, runtime behavior, and uprobes.",
+            "startsAt": "2023-09-13T15:40:00Z",
+            "endsAt": "2023-09-13T16:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": true,
+            "speakers": [
+              {
+                "id": "061be51b-a661-4c53-a7f7-22cd40435bb3",
+                "name": "Brendan Gregg"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "525828",
+            "title": "A Vision for eBPF Everywhere",
+            "description": "My vision: eBPF is going to be available to everyone everywhere through solutions that leverage it to provide better developer and end user experience. \r\n\r\nWe’ll know that it is successful not when all developers know about eBPF, but when developers start demanding faster networking, effortless monitoring and observability, and easier-to-use security solutions. Less than 1% of developers may actually program something in eBPF, but the vast majority will still benefit from it. People will recognize eBPF not by name, but by capability: through solutions that will be able to do things that are only currently “too good to be true”. \r\n\r\nThis talk lays out how we get there.\r\n\r\n",
+            "startsAt": "2023-09-13T16:00:00Z",
+            "endsAt": "2023-09-13T16:20:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": true,
+            "speakers": [
+              {
+                "id": "56ed9942-f072-424d-b8e9-668f82a0bb26",
+                "name": "Jean Yang"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "525822",
+            "title": "eBPF CTF",
+            "description": null,
+            "startsAt": "2023-09-13T16:20:00Z",
+            "endsAt": "2023-09-13T16:25:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": true,
+            "speakers": [
+              {
+                "id": "88af7df7-39f6-4538-8cac-32c8d28d4d1b",
+                "name": "CTF eBee"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "f14b4988-a790-47dc-bcfe-63add000c019",
+            "title": "Break",
+            "description": null,
+            "startsAt": "2023-09-13T16:25:00Z",
+            "endsAt": "2023-09-13T16:30:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": true,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "520266",
+            "title": "GPU Profiling with BPF at Meta",
+            "description": "How Meta is building and using a low overhead GPU observability toolset for continuous fleet wide GPU profiling.\r\n\r\nTopics Covered:\r\n- Intro to our BPF based CPU continuous fleet wide profiling solution (Also known as Strobelight)\r\n- Business problems at Meta due to lack of continuous, fleet wide GPU observability for training and for inference workloads. Using OOMs as an example.\r\n- How GPU memory is allocated.\r\n- Challenges with current profiling techniques.\r\n- How BPF can be used to track allocations and detect memory leaks.\r\n- Analyzing and visualizing the data.\r\n- Extending to support PyTorch memory profiling.\r\n- Memory leak use case.\r\n- Challenges and limitations of BPF profiling.",
+            "startsAt": "2023-09-13T16:30:00Z",
+            "endsAt": "2023-09-13T16:45:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "e5c03a47-f8ff-4288-bf2c-20957f3535b2",
+                "name": "Riham Selim"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "517483",
+            "title": "On the Integration of Machine Learning Models within the Linux Kernel through eBPF-based Development",
+            "description": "So far, eBPF has being used in combination with ML models by employing eBPF programs as mere data collectors at kernel level and feeding a Machine Learning (ML) algorithm running in user space. In this talk, we present a solution that integrates advanced ML processing within the Linux kernel to provide intelligent fast packet inspection. Concretely, by exploiting the TinyML paradigm and the characteristics of eBPF, we have implemented a complex model such as a Multi Layer Perceptron (MLP) in kernel space. This proposal allows to significantly reduce processing latencies compared to similar solutions implemented outside the kernel, as well as enabling the deployment of advanced network functions in a flexible and dynamic way on devices not specialized in network management tasks.",
+            "startsAt": "2023-09-13T16:45:00Z",
+            "endsAt": "2023-09-13T16:50:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "e5086287-6e41-4736-adea-b5a25381ab9a",
+                "name": "Jorge Gallego-Madrid"
+              },
+              {
+                "id": "9b0a0add-e838-4bb6-a3f3-8030241ae775",
+                "name": "Irene Bru Santa"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "508682",
+            "title": "BPF for Android - How we leverage BPF for our networking solutions",
+            "description": "In this session, we discuss the implementation of BPF in Samsung Smartphones. We also highlight how BPF helped us to develop the upcoming networking solutions for Android smartphones.\r\n\r\nUse case 1: Prioritizing realtime traffic.\r\nhttps://ieeexplore.ieee.org/document/10172036/\r\n\r\nUse case 2: Client handling in Mobile hotspot. \r\nhttps://r2.community.samsung.com/t5/Tech-Talk/The-Enhanced-Samsung-Mobile-Hotspot-Empowering-you-with-full/td-p/14096729\r\n\r\n",
+            "startsAt": "2023-09-13T16:50:00Z",
+            "endsAt": "2023-09-13T17:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "5ab6d8b5-8ac6-43e6-8006-ff459343a01d",
+                "name": "Madhan Raj Kanagarathinam"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "521476",
+            "title": "Hot standby load balancing with SO_REUSEPORT and eBPF",
+            "description": "SO_REUSEPORT is a powerful feature of the Linux kernel that allows users to have more than one process listen on a given port and allow for load balancing between them. The default load-balancing strategy is round-robin, but with the help of eBPF, we can take this feature one step further and implement other load-balancing strategies. In this lightning talk, you’ll learn to implement weighted and hot standby load balancing with nothing but eBPF and SO_REUSEPORT.",
+            "startsAt": "2023-09-13T17:00:00Z",
+            "endsAt": "2023-09-13T17:05:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "937571ad-c437-4aa0-9733-5252b5d460ec",
+                "name": "Hemanth Malla"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "b1edca41-296a-423d-9d82-a63f4a10d794",
+            "title": "To Be Confirmed",
+            "description": null,
+            "startsAt": "2023-09-13T17:05:00Z",
+            "endsAt": "2023-09-13T17:10:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "75504283-4f11-4ee4-83a3-d98d5c915b8a",
+            "title": "Break",
+            "description": null,
+            "startsAt": "2023-09-13T17:10:00Z",
+            "endsAt": "2023-09-13T17:20:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "521554",
+            "title": "Enabling Zero Code Observability for Financial Applications through eBPF and WebAssembly",
+            "description": "Monitoring core applications of financial through instrumentation is difficult due to complex systems and large amounts of data. Invasive monitoring can harm performance, while incomplete coverage may cause unpredictable fault response times. These issues can negatively impact user satisfaction and damage the financial industry's reputation.\r\n\r\nThe protocol-parsing approach allows for zero code observability of core applications with full coverage. Despite the complexity and lack of standardized specifications for business protocols, such as those in sensitive industries like finance and securities, we can leverage eBPF in conjunction with WebAssembly plugins to parse these protocols.\r\n\r\nIn this talk, we will demonstrate how the combination of eBPF and WebAssembly plugins can be used to parse private security protocols and provide zero code observability with full coverage for the core applications of a specific bank. ",
+            "startsAt": "2023-09-13T17:20:00Z",
+            "endsAt": "2023-09-13T17:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "bba277f8-e0c5-4b50-9ee9-debb6808630f",
+                "name": "Casey Li"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "518764",
+            "title": "Lies, damned lies and request times",
+            "description": "Stories of wasted time and lots of emotions. What is a “request time”, and what is “a service time” of an application? What time do we really measure, when we instrument our applications and try to collect request duration metrics? This talk covers some subtle nuances in request duration measurement, which can often lead to completely misleading results. We show how by using eBPF application instrumentation, we can overcome various inaccuracies in request duration measurement in REST services.",
+            "startsAt": "2023-09-13T17:30:00Z",
+            "endsAt": "2023-09-13T17:35:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "02a00ad7-270e-4e2a-9531-255b3a4f6c92",
+                "name": "Nikola Grcevski"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "520995",
+            "title": "Reliable User Space TLS tracing with eBPF",
+            "description": "TLS adoption in today’s environments is growing rapidly and poses challenges for tracing tools that intercept microservices’ RPC messages. Normal traffic sniffing collects the encrypted data and has no means to access the original payload. This inhibits traditional tracing tools and complicates debugging systems when critical issues arise.\r\n\r\nTo address this, eBPF tools probe user space to regain access to the plaintext data. While these approaches are exciting, scaling this type of instrumentation presents a new set of difficulties due to the variety of library choices, possible versions of each library and type of linking.\r\n\r\nWe present the techniques developed to reliably trace TLS applications across a wide array of conditions found in real-life applications. This allows Pixie to trace both BoringSSL and OpenSSL and reduces the maintenance for supporting new library versions compared to the previous tracing. We conclude by noting the coverage challenges that remain and our future plans",
+            "startsAt": "2023-09-13T17:35:00Z",
+            "endsAt": "2023-09-13T17:45:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "d7e0a65d-a1b5-497c-82ae-80f332f26e72",
+                "name": "Dom Del Nano"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "27d9b7df-2d9d-40da-81c9-d8bb29de5aa9",
+            "title": "To Be Confirmed",
+            "description": null,
+            "startsAt": "2023-09-13T17:45:00Z",
+            "endsAt": "2023-09-13T17:55:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "520942",
+            "title": "Making bpftrace more powerful",
+            "description": "bpftrace continues to evolve with new features and functionality as eBPF advances and new ideas and use-cases emerge.\r\n\r\nIn this talk, we'll explore recent and upcoming enhancements to the bpftrace language, which allow for writing more complex scripts and let us extend our tracing capabilities into new areas.\r\n\r\nWe will also discuss ideas about what can be done to improve the story for tracing programs written in languages other than C.",
+            "startsAt": "2023-09-13T17:55:00Z",
+            "endsAt": "2023-09-13T18:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "c17c725a-1372-4b7f-93b1-faaa02c1a0dc",
+                "name": "Alastair Robertson"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "61e4819c-e781-4b83-bfad-604449f5af6c",
+            "title": "Break",
+            "description": null,
+            "startsAt": "2023-09-13T18:00:00Z",
+            "endsAt": "2023-09-13T18:10:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": true,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "521542",
+            "title": "Minifying Containers with SlimToolkit and eBPF Leveraging Tetragon's File System Activity Tracing",
+            "description": "This talk describes my journey learning Tetragon, its unique eBPF capabilities that sets it apart from other eBPF tools, how its component components work and interact with each over discovering its key interfaces and how to use them.\r\n\r\nSlimToolkit (aka DockerSlim) is best known for its ability to reduce application container image size. It performs dynamic application and container analysis in temporary containers collecting file system activity information and other telemetry from inside of those containers, which has technical limitations. eBPF is a great way to address these technical limitations making it possible to collect data from production environments.\r\n\r\nThe talk outlines a sensor design and the eBPF hooks it needs to collect the necessary file system activity telemetry exploring different implementation options and then showing how Tetragon, a Kubernetes-aware eBPF-based runtime observability and enforcement tool,  implements the design, how it works and its key interfaces.\r\n",
+            "startsAt": "2023-09-13T18:10:00Z",
+            "endsAt": "2023-09-13T18:20:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "f33ea11e-0e2f-41ca-a7e3-3c5ad6b19f68",
+                "name": "Kyle Quest"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "521159",
+            "title": "Detecting and Preventing Stack Pivots in Linux Userland Programs Using eBPF",
+            "description": "eBPF excels for collecting information at runtime from within the kernel, which many security monitoring solutions use. However it's less straightforward to use eBPF for a proactive defense, stopping attacks immediately rather than simply alerting SOC analysts that concerning things are happening on a machine. Is this possible within the limitations of eBPF?\r\n\r\nThis session showcases a proof-of-concept that uses eBPF to detect and even prevent stack pivoting, a popular ROP exploitation technique. We'll briefly review ROP exploitation and stack pivots, and explore the possibility of using eBPF to kill ROP exploits using stack pivots as they happen.",
+            "startsAt": "2023-09-13T18:20:00Z",
+            "endsAt": "2023-09-13T18:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "501f614c-40bd-468e-abd0-48df4353aea0",
+                "name": "Mike Zandi"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "513150",
+            "title": "How to use eBPF as a solution to Observe and optimize applications for endpoint security",
+            "description": "Endpoints when built on Linux currently leverages eBPF for two use-cases: host isolation and event sourcing. This talks discusses how you can leverage ebpf under the hood to create better observability solutions",
+            "startsAt": "2023-09-13T18:30:00Z",
+            "endsAt": "2023-09-13T18:35:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "d600ad62-6942-47fa-9b6d-84dcbddf64f0",
+                "name": "Geetha Anne"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "9e938854-fd45-45c3-bc91-674a2985fd0f",
+            "title": "Break",
+            "description": null,
+            "startsAt": "2023-09-13T18:35:00Z",
+            "endsAt": "2023-09-13T18:40:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": true,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "511543",
+            "title": "Performance Analysis of XDP-native, XDP-generic, and TC eBPF hooks",
+            "description": "eBay consistently ranks as the second-most visited e-commerce website after Amazon, which means ingesting a lot of network traffic. Hence, network performance, latency, and overhead are very important scaling metrics alongside network security.\r\n\r\nWhile designing a new feature in Cilium for better network-level security, we did traffic ingress throughput and latency performance experiments in order to determine how the different eBPF hooks (XDP-native vs. XDP-generic vs. TC) compare.\r\n\r\nIn this session, Vinay will illustrate the use case, talk about related hooks to which eBPF programs can be attached on the network traffic receive path, and discuss the experiments performed and the outcomes. He will show how to use the eBPF profiler and FlameGraph tools to capture and analyze overhead in the network traffic receive path. He will conclude the talk with recommendations based on the findings from this experiment.",
+            "startsAt": "2023-09-13T18:40:00Z",
+            "endsAt": "2023-09-13T18:50:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "4fc76f3e-96d0-41d4-b3ff-1d37a5857642",
+                "name": "Vinay Kulkarni"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "521330",
+            "title": "eBPF Re-entrancy",
+            "description": "The proposed lightning talk will go over the problem of re-entrancy in eBPF programs. It will discuss how it can happen, its implications for accuracy, and possible mitigations.\r\n\r\nThe talk will focus on the behavior of kprobes and socket filters under re-entrancy and also cover how these have manifested in real world environments within the Datadog Agent.\r\n\r\nFor kprobes, the talk will cover the mechanism by which re-entrancy happens when probing a function which can be called from both user contexts and interrupt context. The main implications to be discussed are kprobe misses, and potential map entry leak.\r\n\r\nFor socket filters, the implications of re-entrancy will be covered. Moreover, some features of the execution environment will be discussed which may be used for implementing mitigations.\r\n\r\nThe aim of this talk will be to inform users more about the guarantees provided by the kernel for eBPF programs, and the wider context within which the programs run.\r\n",
+            "startsAt": "2023-09-13T18:50:00Z",
+            "endsAt": "2023-09-13T18:55:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "62540059-34d4-4979-82ba-7c4284152398",
+                "name": "Usama Saqib"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "520024",
+            "title": "State synchronization of eBPF Maps for high-availability applications",
+            "description": "eBPF is being increasingly used for various stateful applications like stateful firewalls, hitless load-balancing etc. When such applications  are deployed in HA configuration, we need a way to achieve scalable eBPF map synchronization across nodes which deploy such applications . In this talk, we will discuss how we can refactor eBPF kprobes/uprobes to achieve the same at scale alongside other well known frameworks like gRPC/kafka. We will also discuss performance/limitations and related future work of such an implementation.",
+            "startsAt": "2023-09-13T18:55:00Z",
+            "endsAt": "2023-09-13T19:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "817ad2d5-dca2-4cb0-9d23-7822b92b47a5",
+                "name": "Dip Saikia"
+              },
+              {
+                "id": "568f028c-cba6-40d6-aa13-4ab87ff0e865",
+                "name": "Nikhil Malik"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "ae552861-9847-43f9-8a26-a29dd8da7379",
+            "title": "break",
+            "description": null,
+            "startsAt": "2023-09-13T19:00:00Z",
+            "endsAt": "2023-09-13T19:05:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "515487",
+            "title": "bpftune - auto-tuning Linux with eBPF",
+            "description": "bpftune is an open-source eBPF-based service/program that auto-tunes Linux (https://github.com/oracle-samples/bpftune). Because eBPF provides low-overhead observability and the means to modify system state at a fine grain (per socket policies etc), it is a great fit for this problem space. Currently bpftune focuses on networking-related tunables as a starting point but it is pluggable and extensible. Here we aim to describe the goals of bpftune, methods used and discuss possible future directions.  Some of the methods used may be of more general interest; for example online correlational analysis in eBPF is a useful technique that can help automate observability-driven decision-making and drilldown. In addition, bpftune showcases a number of types of eBPF programs so the availability of the code may hopefully help developers learning eBPF too.",
+            "startsAt": "2023-09-13T19:05:00Z",
+            "endsAt": "2023-09-13T19:15:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "7036080b-4577-4c03-b0a1-4fbf27eaf7c9",
+                "name": "Alan Maguire"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "519808",
+            "title": "Using eBPF to create native Windows drivers",
+            "description": "Typically we think of BPF as JIT'ing programs at load time.  Such JIT is great for many purposes, but doesn't work when a Type-1 hypervisor requires signed pages before allowing them to be loaded, when signing keys are offline.  This security feature, sometimes known as HyperVisor-enforced Code Integrity (HVCI) is common in Windows environments.  In this talk, we will present recent work to allow eBPF to be used to create native drivers that work with HVCI, and also allow kernel debuggers to work normally with BPF programs as a result, improving the developer experience.",
+            "startsAt": "2023-09-13T19:15:00Z",
+            "endsAt": "2023-09-13T19:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "8406d918-7312-4611-b28f-817a11ce4636",
+                "name": "Dave Thaler"
+              },
+              {
+                "id": "839d327d-4d0b-48ee-a987-1b84910e56d6",
+                "name": "Alan Jowett"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "526197",
+            "title": "Building the Kernel of Tomorrow with eBPF",
+            "description": "eBPF introduces programmability, flexibility, and performance into the 30 year old Linux kernel to make it ready for the cloud native challenges of today and whatever hurdles the next wave of technology innovation will bring tomorrow. Taking Cilium as an example, Joe will walk through how eBPF helped solve challenges around networking, observability, and security in the cloud native world. Each example will highlight how eBPF allows us to rethink the way we solve problems and how eBPF lets us build a fundamentally better kernel.",
+            "startsAt": "2023-09-13T19:30:00Z",
+            "endsAt": "2023-09-13T19:50:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": true,
+            "speakers": [
+              {
+                "id": "bbbdfe4b-0d9e-42c9-985f-25b4dcb0ae5b",
+                "name": "Joe Stringer"
+              }
+            ],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted"
+          },
+          {
+            "id": "2f18c4c5-56b0-427b-86a1-9ca5cdce1561",
+            "title": "Goodbye",
+            "description": null,
+            "startsAt": "2023-09-13T19:50:00Z",
+            "endsAt": "2023-09-13T20:00:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": true,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36877,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      },
+      {
+        "id": 36878,
+        "name": "Room 2",
+        "sessions": [
+          {
+            "id": "209f3cf4-a17d-4440-8898-b99412cf56f6",
+            "title": "Keynotes",
+            "description": null,
+            "startsAt": "2023-09-13T15:40:00Z",
+            "endsAt": "2023-09-13T16:20:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36878,
+            "room": "Room 2",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "1622a6f9-1c4f-42b9-808f-f5c9c0f0d650",
+            "title": "Using eBPF",
+            "description": null,
+            "startsAt": "2023-09-13T16:30:00Z",
+            "endsAt": "2023-09-13T16:50:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36878,
+            "room": "Room 2",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "16f02f36-0279-4104-9d03-32c72a1c3774",
+            "title": "Networking with eBPF",
+            "description": null,
+            "startsAt": "2023-09-13T16:50:00Z",
+            "endsAt": "2023-09-13T17:10:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36878,
+            "room": "Room 2",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "bd0c7297-ff06-4048-aedb-8c73980845be",
+            "title": "Observability with eBPF",
+            "description": null,
+            "startsAt": "2023-09-13T17:20:00Z",
+            "endsAt": "2023-09-13T18:00:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36878,
+            "room": "Room 2",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "966a07b8-90c0-45ec-9131-28c031979fa5",
+            "title": "Security with eBPF",
+            "description": null,
+            "startsAt": "2023-09-13T18:10:00Z",
+            "endsAt": "2023-09-13T18:35:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36878,
+            "room": "Room 2",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "b805d3e1-3119-4034-962c-3702250196b2",
+            "title": "eBPF internals",
+            "description": null,
+            "startsAt": "2023-09-13T18:40:00Z",
+            "endsAt": "2023-09-13T19:00:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36878,
+            "room": "Room 2",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          },
+          {
+            "id": "55431f18-a269-4db9-8387-dd745f06fc06",
+            "title": "eBPF and operating systems",
+            "description": null,
+            "startsAt": "2023-09-13T19:05:00Z",
+            "endsAt": "2023-09-13T19:30:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 36878,
+            "room": "Room 2",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      }
+    ],
+    "timeSlots": [
+      {
+        "slotStart": "15:30:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "23811b53-2626-4c4f-89c7-cd69086ac93a",
+              "title": "Welcome",
+              "description": null,
+              "startsAt": "2023-09-13T15:30:00Z",
+              "endsAt": "2023-09-13T15:40:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": true,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "15:40:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "525821",
+              "title": "Fast by Friday: Why eBPF is Essential",
+              "description": "It is not ok that we speed weeks, even months, trying to solve why software is slow. It should not take more than a week to identify the root cause or causes for a performance issue, such that any performance issue reported on a Monday should be solved by Friday, or sooner.\r\n\r\nThis talk explores the dream of “fast by Friday,” and shows how kernel technologies like eBPF, and performance methodologies, can get us there. The end goal is not more tools and metrics or having everyone learn eBPF bytecode. It’s about efficient computing, and solving inefficiencies as quickly as possible to save cycles and carbon.\r\n\r\nTo be fast by Friday requires observability tools to work on Monday, and right now for many Linux environments that means /proc, Ftrace, or perf, and rarely the eBPF tracing tools: bcc and bpftrace. This and other current and future technical challenges will be discussed, including eBPF stack walking, runtime behavior, and uprobes.",
+              "startsAt": "2023-09-13T15:40:00Z",
+              "endsAt": "2023-09-13T16:00:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": true,
+              "speakers": [
+                {
+                  "id": "061be51b-a661-4c53-a7f7-22cd40435bb3",
+                  "name": "Brendan Gregg"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          },
+          {
+            "id": 36878,
+            "name": "Room 2",
+            "session": {
+              "id": "209f3cf4-a17d-4440-8898-b99412cf56f6",
+              "title": "Keynotes",
+              "description": null,
+              "startsAt": "2023-09-13T15:40:00Z",
+              "endsAt": "2023-09-13T16:20:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36878,
+              "room": "Room 2",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "16:00:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "525828",
+              "title": "A Vision for eBPF Everywhere",
+              "description": "My vision: eBPF is going to be available to everyone everywhere through solutions that leverage it to provide better developer and end user experience. \r\n\r\nWe’ll know that it is successful not when all developers know about eBPF, but when developers start demanding faster networking, effortless monitoring and observability, and easier-to-use security solutions. Less than 1% of developers may actually program something in eBPF, but the vast majority will still benefit from it. People will recognize eBPF not by name, but by capability: through solutions that will be able to do things that are only currently “too good to be true”. \r\n\r\nThis talk lays out how we get there.\r\n\r\n",
+              "startsAt": "2023-09-13T16:00:00Z",
+              "endsAt": "2023-09-13T16:20:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": true,
+              "speakers": [
+                {
+                  "id": "56ed9942-f072-424d-b8e9-668f82a0bb26",
+                  "name": "Jean Yang"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "16:20:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "525822",
+              "title": "eBPF CTF",
+              "description": null,
+              "startsAt": "2023-09-13T16:20:00Z",
+              "endsAt": "2023-09-13T16:25:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": true,
+              "speakers": [
+                {
+                  "id": "88af7df7-39f6-4538-8cac-32c8d28d4d1b",
+                  "name": "CTF eBee"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "16:25:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "f14b4988-a790-47dc-bcfe-63add000c019",
+              "title": "Break",
+              "description": null,
+              "startsAt": "2023-09-13T16:25:00Z",
+              "endsAt": "2023-09-13T16:30:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": true,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "16:30:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "520266",
+              "title": "GPU Profiling with BPF at Meta",
+              "description": "How Meta is building and using a low overhead GPU observability toolset for continuous fleet wide GPU profiling.\r\n\r\nTopics Covered:\r\n- Intro to our BPF based CPU continuous fleet wide profiling solution (Also known as Strobelight)\r\n- Business problems at Meta due to lack of continuous, fleet wide GPU observability for training and for inference workloads. Using OOMs as an example.\r\n- How GPU memory is allocated.\r\n- Challenges with current profiling techniques.\r\n- How BPF can be used to track allocations and detect memory leaks.\r\n- Analyzing and visualizing the data.\r\n- Extending to support PyTorch memory profiling.\r\n- Memory leak use case.\r\n- Challenges and limitations of BPF profiling.",
+              "startsAt": "2023-09-13T16:30:00Z",
+              "endsAt": "2023-09-13T16:45:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "e5c03a47-f8ff-4288-bf2c-20957f3535b2",
+                  "name": "Riham Selim"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          },
+          {
+            "id": 36878,
+            "name": "Room 2",
+            "session": {
+              "id": "1622a6f9-1c4f-42b9-808f-f5c9c0f0d650",
+              "title": "Using eBPF",
+              "description": null,
+              "startsAt": "2023-09-13T16:30:00Z",
+              "endsAt": "2023-09-13T16:50:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36878,
+              "room": "Room 2",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "16:45:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "517483",
+              "title": "On the Integration of Machine Learning Models within the Linux Kernel through eBPF-based Development",
+              "description": "So far, eBPF has being used in combination with ML models by employing eBPF programs as mere data collectors at kernel level and feeding a Machine Learning (ML) algorithm running in user space. In this talk, we present a solution that integrates advanced ML processing within the Linux kernel to provide intelligent fast packet inspection. Concretely, by exploiting the TinyML paradigm and the characteristics of eBPF, we have implemented a complex model such as a Multi Layer Perceptron (MLP) in kernel space. This proposal allows to significantly reduce processing latencies compared to similar solutions implemented outside the kernel, as well as enabling the deployment of advanced network functions in a flexible and dynamic way on devices not specialized in network management tasks.",
+              "startsAt": "2023-09-13T16:45:00Z",
+              "endsAt": "2023-09-13T16:50:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "e5086287-6e41-4736-adea-b5a25381ab9a",
+                  "name": "Jorge Gallego-Madrid"
+                },
+                {
+                  "id": "9b0a0add-e838-4bb6-a3f3-8030241ae775",
+                  "name": "Irene Bru Santa"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "16:50:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "508682",
+              "title": "BPF for Android - How we leverage BPF for our networking solutions",
+              "description": "In this session, we discuss the implementation of BPF in Samsung Smartphones. We also highlight how BPF helped us to develop the upcoming networking solutions for Android smartphones.\r\n\r\nUse case 1: Prioritizing realtime traffic.\r\nhttps://ieeexplore.ieee.org/document/10172036/\r\n\r\nUse case 2: Client handling in Mobile hotspot. \r\nhttps://r2.community.samsung.com/t5/Tech-Talk/The-Enhanced-Samsung-Mobile-Hotspot-Empowering-you-with-full/td-p/14096729\r\n\r\n",
+              "startsAt": "2023-09-13T16:50:00Z",
+              "endsAt": "2023-09-13T17:00:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "5ab6d8b5-8ac6-43e6-8006-ff459343a01d",
+                  "name": "Madhan Raj Kanagarathinam"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          },
+          {
+            "id": 36878,
+            "name": "Room 2",
+            "session": {
+              "id": "16f02f36-0279-4104-9d03-32c72a1c3774",
+              "title": "Networking with eBPF",
+              "description": null,
+              "startsAt": "2023-09-13T16:50:00Z",
+              "endsAt": "2023-09-13T17:10:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36878,
+              "room": "Room 2",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "17:00:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "521476",
+              "title": "Hot standby load balancing with SO_REUSEPORT and eBPF",
+              "description": "SO_REUSEPORT is a powerful feature of the Linux kernel that allows users to have more than one process listen on a given port and allow for load balancing between them. The default load-balancing strategy is round-robin, but with the help of eBPF, we can take this feature one step further and implement other load-balancing strategies. In this lightning talk, you’ll learn to implement weighted and hot standby load balancing with nothing but eBPF and SO_REUSEPORT.",
+              "startsAt": "2023-09-13T17:00:00Z",
+              "endsAt": "2023-09-13T17:05:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "937571ad-c437-4aa0-9733-5252b5d460ec",
+                  "name": "Hemanth Malla"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "17:05:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "b1edca41-296a-423d-9d82-a63f4a10d794",
+              "title": "To Be Confirmed",
+              "description": null,
+              "startsAt": "2023-09-13T17:05:00Z",
+              "endsAt": "2023-09-13T17:10:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "17:10:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "75504283-4f11-4ee4-83a3-d98d5c915b8a",
+              "title": "Break",
+              "description": null,
+              "startsAt": "2023-09-13T17:10:00Z",
+              "endsAt": "2023-09-13T17:20:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "17:20:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "521554",
+              "title": "Enabling Zero Code Observability for Financial Applications through eBPF and WebAssembly",
+              "description": "Monitoring core applications of financial through instrumentation is difficult due to complex systems and large amounts of data. Invasive monitoring can harm performance, while incomplete coverage may cause unpredictable fault response times. These issues can negatively impact user satisfaction and damage the financial industry's reputation.\r\n\r\nThe protocol-parsing approach allows for zero code observability of core applications with full coverage. Despite the complexity and lack of standardized specifications for business protocols, such as those in sensitive industries like finance and securities, we can leverage eBPF in conjunction with WebAssembly plugins to parse these protocols.\r\n\r\nIn this talk, we will demonstrate how the combination of eBPF and WebAssembly plugins can be used to parse private security protocols and provide zero code observability with full coverage for the core applications of a specific bank. ",
+              "startsAt": "2023-09-13T17:20:00Z",
+              "endsAt": "2023-09-13T17:30:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "bba277f8-e0c5-4b50-9ee9-debb6808630f",
+                  "name": "Casey Li"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          },
+          {
+            "id": 36878,
+            "name": "Room 2",
+            "session": {
+              "id": "bd0c7297-ff06-4048-aedb-8c73980845be",
+              "title": "Observability with eBPF",
+              "description": null,
+              "startsAt": "2023-09-13T17:20:00Z",
+              "endsAt": "2023-09-13T18:00:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36878,
+              "room": "Room 2",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "17:30:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "518764",
+              "title": "Lies, damned lies and request times",
+              "description": "Stories of wasted time and lots of emotions. What is a “request time”, and what is “a service time” of an application? What time do we really measure, when we instrument our applications and try to collect request duration metrics? This talk covers some subtle nuances in request duration measurement, which can often lead to completely misleading results. We show how by using eBPF application instrumentation, we can overcome various inaccuracies in request duration measurement in REST services.",
+              "startsAt": "2023-09-13T17:30:00Z",
+              "endsAt": "2023-09-13T17:35:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "02a00ad7-270e-4e2a-9531-255b3a4f6c92",
+                  "name": "Nikola Grcevski"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "17:35:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "520995",
+              "title": "Reliable User Space TLS tracing with eBPF",
+              "description": "TLS adoption in today’s environments is growing rapidly and poses challenges for tracing tools that intercept microservices’ RPC messages. Normal traffic sniffing collects the encrypted data and has no means to access the original payload. This inhibits traditional tracing tools and complicates debugging systems when critical issues arise.\r\n\r\nTo address this, eBPF tools probe user space to regain access to the plaintext data. While these approaches are exciting, scaling this type of instrumentation presents a new set of difficulties due to the variety of library choices, possible versions of each library and type of linking.\r\n\r\nWe present the techniques developed to reliably trace TLS applications across a wide array of conditions found in real-life applications. This allows Pixie to trace both BoringSSL and OpenSSL and reduces the maintenance for supporting new library versions compared to the previous tracing. We conclude by noting the coverage challenges that remain and our future plans",
+              "startsAt": "2023-09-13T17:35:00Z",
+              "endsAt": "2023-09-13T17:45:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "d7e0a65d-a1b5-497c-82ae-80f332f26e72",
+                  "name": "Dom Del Nano"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "17:45:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "27d9b7df-2d9d-40da-81c9-d8bb29de5aa9",
+              "title": "To Be Confirmed",
+              "description": null,
+              "startsAt": "2023-09-13T17:45:00Z",
+              "endsAt": "2023-09-13T17:55:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "17:55:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "520942",
+              "title": "Making bpftrace more powerful",
+              "description": "bpftrace continues to evolve with new features and functionality as eBPF advances and new ideas and use-cases emerge.\r\n\r\nIn this talk, we'll explore recent and upcoming enhancements to the bpftrace language, which allow for writing more complex scripts and let us extend our tracing capabilities into new areas.\r\n\r\nWe will also discuss ideas about what can be done to improve the story for tracing programs written in languages other than C.",
+              "startsAt": "2023-09-13T17:55:00Z",
+              "endsAt": "2023-09-13T18:00:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "c17c725a-1372-4b7f-93b1-faaa02c1a0dc",
+                  "name": "Alastair Robertson"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "18:00:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "61e4819c-e781-4b83-bfad-604449f5af6c",
+              "title": "Break",
+              "description": null,
+              "startsAt": "2023-09-13T18:00:00Z",
+              "endsAt": "2023-09-13T18:10:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": true,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "18:10:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "521542",
+              "title": "Minifying Containers with SlimToolkit and eBPF Leveraging Tetragon's File System Activity Tracing",
+              "description": "This talk describes my journey learning Tetragon, its unique eBPF capabilities that sets it apart from other eBPF tools, how its component components work and interact with each over discovering its key interfaces and how to use them.\r\n\r\nSlimToolkit (aka DockerSlim) is best known for its ability to reduce application container image size. It performs dynamic application and container analysis in temporary containers collecting file system activity information and other telemetry from inside of those containers, which has technical limitations. eBPF is a great way to address these technical limitations making it possible to collect data from production environments.\r\n\r\nThe talk outlines a sensor design and the eBPF hooks it needs to collect the necessary file system activity telemetry exploring different implementation options and then showing how Tetragon, a Kubernetes-aware eBPF-based runtime observability and enforcement tool,  implements the design, how it works and its key interfaces.\r\n",
+              "startsAt": "2023-09-13T18:10:00Z",
+              "endsAt": "2023-09-13T18:20:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "f33ea11e-0e2f-41ca-a7e3-3c5ad6b19f68",
+                  "name": "Kyle Quest"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          },
+          {
+            "id": 36878,
+            "name": "Room 2",
+            "session": {
+              "id": "966a07b8-90c0-45ec-9131-28c031979fa5",
+              "title": "Security with eBPF",
+              "description": null,
+              "startsAt": "2023-09-13T18:10:00Z",
+              "endsAt": "2023-09-13T18:35:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36878,
+              "room": "Room 2",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "18:20:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "521159",
+              "title": "Detecting and Preventing Stack Pivots in Linux Userland Programs Using eBPF",
+              "description": "eBPF excels for collecting information at runtime from within the kernel, which many security monitoring solutions use. However it's less straightforward to use eBPF for a proactive defense, stopping attacks immediately rather than simply alerting SOC analysts that concerning things are happening on a machine. Is this possible within the limitations of eBPF?\r\n\r\nThis session showcases a proof-of-concept that uses eBPF to detect and even prevent stack pivoting, a popular ROP exploitation technique. We'll briefly review ROP exploitation and stack pivots, and explore the possibility of using eBPF to kill ROP exploits using stack pivots as they happen.",
+              "startsAt": "2023-09-13T18:20:00Z",
+              "endsAt": "2023-09-13T18:30:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "501f614c-40bd-468e-abd0-48df4353aea0",
+                  "name": "Mike Zandi"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "18:30:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "513150",
+              "title": "How to use eBPF as a solution to Observe and optimize applications for endpoint security",
+              "description": "Endpoints when built on Linux currently leverages eBPF for two use-cases: host isolation and event sourcing. This talks discusses how you can leverage ebpf under the hood to create better observability solutions",
+              "startsAt": "2023-09-13T18:30:00Z",
+              "endsAt": "2023-09-13T18:35:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "d600ad62-6942-47fa-9b6d-84dcbddf64f0",
+                  "name": "Geetha Anne"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "18:35:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "9e938854-fd45-45c3-bc91-674a2985fd0f",
+              "title": "Break",
+              "description": null,
+              "startsAt": "2023-09-13T18:35:00Z",
+              "endsAt": "2023-09-13T18:40:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": true,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "18:40:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "511543",
+              "title": "Performance Analysis of XDP-native, XDP-generic, and TC eBPF hooks",
+              "description": "eBay consistently ranks as the second-most visited e-commerce website after Amazon, which means ingesting a lot of network traffic. Hence, network performance, latency, and overhead are very important scaling metrics alongside network security.\r\n\r\nWhile designing a new feature in Cilium for better network-level security, we did traffic ingress throughput and latency performance experiments in order to determine how the different eBPF hooks (XDP-native vs. XDP-generic vs. TC) compare.\r\n\r\nIn this session, Vinay will illustrate the use case, talk about related hooks to which eBPF programs can be attached on the network traffic receive path, and discuss the experiments performed and the outcomes. He will show how to use the eBPF profiler and FlameGraph tools to capture and analyze overhead in the network traffic receive path. He will conclude the talk with recommendations based on the findings from this experiment.",
+              "startsAt": "2023-09-13T18:40:00Z",
+              "endsAt": "2023-09-13T18:50:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "4fc76f3e-96d0-41d4-b3ff-1d37a5857642",
+                  "name": "Vinay Kulkarni"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          },
+          {
+            "id": 36878,
+            "name": "Room 2",
+            "session": {
+              "id": "b805d3e1-3119-4034-962c-3702250196b2",
+              "title": "eBPF internals",
+              "description": null,
+              "startsAt": "2023-09-13T18:40:00Z",
+              "endsAt": "2023-09-13T19:00:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36878,
+              "room": "Room 2",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "18:50:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "521330",
+              "title": "eBPF Re-entrancy",
+              "description": "The proposed lightning talk will go over the problem of re-entrancy in eBPF programs. It will discuss how it can happen, its implications for accuracy, and possible mitigations.\r\n\r\nThe talk will focus on the behavior of kprobes and socket filters under re-entrancy and also cover how these have manifested in real world environments within the Datadog Agent.\r\n\r\nFor kprobes, the talk will cover the mechanism by which re-entrancy happens when probing a function which can be called from both user contexts and interrupt context. The main implications to be discussed are kprobe misses, and potential map entry leak.\r\n\r\nFor socket filters, the implications of re-entrancy will be covered. Moreover, some features of the execution environment will be discussed which may be used for implementing mitigations.\r\n\r\nThe aim of this talk will be to inform users more about the guarantees provided by the kernel for eBPF programs, and the wider context within which the programs run.\r\n",
+              "startsAt": "2023-09-13T18:50:00Z",
+              "endsAt": "2023-09-13T18:55:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "62540059-34d4-4979-82ba-7c4284152398",
+                  "name": "Usama Saqib"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "18:55:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "520024",
+              "title": "State synchronization of eBPF Maps for high-availability applications",
+              "description": "eBPF is being increasingly used for various stateful applications like stateful firewalls, hitless load-balancing etc. When such applications  are deployed in HA configuration, we need a way to achieve scalable eBPF map synchronization across nodes which deploy such applications . In this talk, we will discuss how we can refactor eBPF kprobes/uprobes to achieve the same at scale alongside other well known frameworks like gRPC/kafka. We will also discuss performance/limitations and related future work of such an implementation.",
+              "startsAt": "2023-09-13T18:55:00Z",
+              "endsAt": "2023-09-13T19:00:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "817ad2d5-dca2-4cb0-9d23-7822b92b47a5",
+                  "name": "Dip Saikia"
+                },
+                {
+                  "id": "568f028c-cba6-40d6-aa13-4ab87ff0e865",
+                  "name": "Nikhil Malik"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "19:00:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "ae552861-9847-43f9-8a26-a29dd8da7379",
+              "title": "break",
+              "description": null,
+              "startsAt": "2023-09-13T19:00:00Z",
+              "endsAt": "2023-09-13T19:05:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "19:05:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "515487",
+              "title": "bpftune - auto-tuning Linux with eBPF",
+              "description": "bpftune is an open-source eBPF-based service/program that auto-tunes Linux (https://github.com/oracle-samples/bpftune). Because eBPF provides low-overhead observability and the means to modify system state at a fine grain (per socket policies etc), it is a great fit for this problem space. Currently bpftune focuses on networking-related tunables as a starting point but it is pluggable and extensible. Here we aim to describe the goals of bpftune, methods used and discuss possible future directions.  Some of the methods used may be of more general interest; for example online correlational analysis in eBPF is a useful technique that can help automate observability-driven decision-making and drilldown. In addition, bpftune showcases a number of types of eBPF programs so the availability of the code may hopefully help developers learning eBPF too.",
+              "startsAt": "2023-09-13T19:05:00Z",
+              "endsAt": "2023-09-13T19:15:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "7036080b-4577-4c03-b0a1-4fbf27eaf7c9",
+                  "name": "Alan Maguire"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          },
+          {
+            "id": 36878,
+            "name": "Room 2",
+            "session": {
+              "id": "55431f18-a269-4db9-8387-dd745f06fc06",
+              "title": "eBPF and operating systems",
+              "description": null,
+              "startsAt": "2023-09-13T19:05:00Z",
+              "endsAt": "2023-09-13T19:30:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36878,
+              "room": "Room 2",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "19:15:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "519808",
+              "title": "Using eBPF to create native Windows drivers",
+              "description": "Typically we think of BPF as JIT'ing programs at load time.  Such JIT is great for many purposes, but doesn't work when a Type-1 hypervisor requires signed pages before allowing them to be loaded, when signing keys are offline.  This security feature, sometimes known as HyperVisor-enforced Code Integrity (HVCI) is common in Windows environments.  In this talk, we will present recent work to allow eBPF to be used to create native drivers that work with HVCI, and also allow kernel debuggers to work normally with BPF programs as a result, improving the developer experience.",
+              "startsAt": "2023-09-13T19:15:00Z",
+              "endsAt": "2023-09-13T19:30:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "8406d918-7312-4611-b28f-817a11ce4636",
+                  "name": "Dave Thaler"
+                },
+                {
+                  "id": "839d327d-4d0b-48ee-a987-1b84910e56d6",
+                  "name": "Alan Jowett"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "19:30:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "526197",
+              "title": "Building the Kernel of Tomorrow with eBPF",
+              "description": "eBPF introduces programmability, flexibility, and performance into the 30 year old Linux kernel to make it ready for the cloud native challenges of today and whatever hurdles the next wave of technology innovation will bring tomorrow. Taking Cilium as an example, Joe will walk through how eBPF helped solve challenges around networking, observability, and security in the cloud native world. Each example will highlight how eBPF allows us to rethink the way we solve problems and how eBPF lets us build a fundamentally better kernel.",
+              "startsAt": "2023-09-13T19:30:00Z",
+              "endsAt": "2023-09-13T19:50:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": true,
+              "speakers": [
+                {
+                  "id": "bbbdfe4b-0d9e-42c9-985f-25b4dcb0ae5b",
+                  "name": "Joe Stringer"
+                }
+              ],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "19:50:00",
+        "rooms": [
+          {
+            "id": 36877,
+            "name": "Room 1",
+            "session": {
+              "id": "2f18c4c5-56b0-427b-86a1-9ca5cdce1561",
+              "title": "Goodbye",
+              "description": null,
+              "startsAt": "2023-09-13T19:50:00Z",
+              "endsAt": "2023-09-13T20:00:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": true,
+              "speakers": [],
+              "categories": [],
+              "roomId": 36877,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null
+            },
+            "index": 0
+          }
+        ]
+      }
+    ]
+  }
+]

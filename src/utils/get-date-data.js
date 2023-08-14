@@ -22,4 +22,12 @@ function getHoursAndMinutes(dateTime) {
   return `${formattedHours}:${formattedMinutes}`;
 }
 
-export { getMonthAndDay, getYear, getHoursAndMinutes };
+function calculateTimeDifference(startsAt, endsAt) {
+  const startsAtDate = new Date(startsAt);
+  const endsAtDate = new Date(endsAt);
+  const timeDifferenceMilliseconds = endsAtDate - startsAtDate;
+  const timeDifferenceMinutes = timeDifferenceMilliseconds / (1000 * 60);
+  return timeDifferenceMinutes;
+}
+
+export { getMonthAndDay, getYear, getHoursAndMinutes, calculateTimeDifference };

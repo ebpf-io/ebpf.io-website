@@ -9,6 +9,7 @@ import ChevronYellow from 'icons/chevron-yellow.inline.svg';
 const styles = {
   base: 'leading-none inline-flex items-center justify-center font-bold text-center whitespace-nowrap rounded-[34px] transition-colors duration-200 outline-none',
   size: {
+    '2xs': 'pt-1.5 pb-2 px-2 text-12 leading-none',
     xs: 'px-4 py-3 text-base',
     sm: 'px-6 pb-4 pt-3.5 lg:px-4 lg:py-3',
     md: 'text-base py-4 px-7 lg:px-6',
@@ -24,6 +25,7 @@ const styles = {
       'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:btn-black-hover group-hover:btn-black-hover transition-[background]',
     withWhiteChevron:
       'flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black hover:btn-black-hover group-hover:btn-black-hover transition-[background]',
+    outline: 'border border-black hover:bg-black hover:text-primary-yellow',
   },
 };
 
