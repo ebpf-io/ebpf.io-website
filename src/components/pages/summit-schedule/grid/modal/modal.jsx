@@ -59,7 +59,7 @@ const Modal = ({ className, isOpen, closeModal, session }) => {
         <h2 className="text-5xl font-bold leading-tight lg:text-4xl md:text-xl">{title}</h2>
         <div className="mt-5 text-lg leading-normal md:text-base">{formattedDescription}</div>
         <div className="mt-4 flex items-center">
-          <CalendarIcon className="mr-3 h-5 w-5" />
+          <CalendarIcon className="mr-3 h-5 w-5 text-primary-orange" />
           <time className="pr-2 font-semibold">{`${getMonthAndDay(startsAt)},`}</time>
           <time className="pr-2 font-semibold">{`${getMonthAndDay(startsAt)},`}</time>
           <time className="font-semibold">{getFormattedTimeWithAmPm(startsAt)}</time>
