@@ -3,16 +3,20 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
 import Button from 'components/shared/button';
-import { getFormattedTimeWithAmPm, calculateTimeDifference } from 'utils/get-date-data';
+import {
+  getMonthAndDay,
+  getFormattedTimeWithAmPm,
+  calculateTimeDifference,
+} from 'utils/get-date-data';
 
 import Modal from '../modal';
 
-const TimeSlot = ({ rooms }) => {
+const TimeSlot = ({ rooms, clickSpeakerHandler }) => {
   const [currentRoom, setCurrentRoom] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const clickHandler = (id) => {
-    setCurrentRoom(rooms.find((event) => event.id === id));
+    setCurrentRoom(rooms.find(({ session }) => session.id === id));
     setIsOpen(true);
   };
 
@@ -23,10 +27,11 @@ const TimeSlot = ({ rooms }) => {
 
   return (
     <section className="flex w-full border-r-2 border-black md:flex-col">
-      <div className="flex w-full max-w-[104px] border-t-2 border-black py-7 md:max-w-full md:md:border-l-2 md:py-5">
-        <span className="text-xl font-bold leading-none md:mx-auto">
+      <div className="flex w-full max-w-[104px] flex-col gap-y-2 border-t-2 border-black py-7 md:max-w-full md:items-center md:md:border-l-2 md:py-5">
+        <time className="text-sm leading-none">{getMonthAndDay(rooms[0].session.startsAt)}</time>
+        <time className="text-xl font-bold leading-none md:text-base">
           {getFormattedTimeWithAmPm(rooms[0].session.startsAt)}
-        </span>
+        </time>
       </div>
       <div className="flex w-full md:flex-col ">
         {rooms.map(({ name, session: { id, title, startsAt, endsAt, speakers, description } }) => {
@@ -50,7 +55,13 @@ const TimeSlot = ({ rooms }) => {
                 <ul className="mt-2.5 flex flex-wrap gap-x-5">
                   {speakers.map(({ id, name }) => (
                     <li key={id}>
-                      <span className="text-base leading-none">{name}</span>
+                      <button
+                        className="relative inline-block text-base leading-none transition-all duration-200 after:absolute after:left-0 after:block after:h-[1px] after:w-full after:content-[''] hover:after:-bottom-1 hover:after:bg-black"
+                        type="button"
+                        onClick={() => clickSpeakerHandler(name)}
+                      >
+                        {name}
+                      </button>
                     </li>
                   ))}
                 </ul>

@@ -20,7 +20,8 @@ const hero = {
 // };
 
 const grid = {
-  endpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/GridSmart',
+  scheduleEndpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/GridSmart',
+  speackersEndpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/Speakers',
 };
 
 const Summit2023 = () => (
