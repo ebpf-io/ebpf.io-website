@@ -67,25 +67,23 @@ const Grid = ({ scheduleEndpoint, speackersEndpoint }) => {
   if (isLoading) {
     return (
       <div className="my-20 flex items-center justify-center">
-        <div className="h-10 w-10 animate-spin rounded-full border-b-2 border-t-2 border-gray-90" />
+        <div className="h-10 w-10 animate-spin rounded-full border-b-2 border-t-2 border-gray-80" />
       </div>
     );
   }
 
   if (!error && timeSlots.length > 0) {
     return (
-      <section className="safe-paddings mb-32 mt-16 lg:mb-24 md:mb-20 sm:mt-14">
+      <section className="safe-paddings bg-gray-98 pb-32 pt-16 lg:pb-24 md:pb-20 sm:pt-14">
         <div className="container flex flex-col items-center">
           <h2 className="pb-16 text-9xl font-bold leading-tight lg:pb-12 md:pb-10 sm:text-7xl">
             Schedule
           </h2>
-          <div className="grid-gap-x grid w-full grid-cols-12">
-            <ul className="col-span-11 w-full last:border-b-2 lg:col-span-full">
-              {timeSlots.map((slot, index) => (
-                <TimeSlot key={index} {...slot} clickSpeakerHandler={clickSpeakerHandler} />
-              ))}
-            </ul>
-          </div>
+          <ul className="w-full last:border-b-2">
+            {timeSlots.map((slot, index) => (
+              <TimeSlot key={index} {...slot} clickSpeakerHandler={clickSpeakerHandler} />
+            ))}
+          </ul>
         </div>
         <SpeakersModal isOpen={isOpen} closeModal={closeModal} {...currentSpeaker} />
       </section>
