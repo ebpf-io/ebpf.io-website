@@ -15,6 +15,8 @@ const Grid = () => {
     } catch (e) {
       // eslint-disable-next-line
       console.warn('Can not fetch the schedule:', { e });
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -31,7 +33,6 @@ const Grid = () => {
     if (process.env.GATSBY_SESSIONIZE_URL) {
       fetchScheduleData(modifySessionizeScript);
     }
-    setIsLoading(false);
   }, [modifySessionizeScript]);
 
   if (isLoading) {
