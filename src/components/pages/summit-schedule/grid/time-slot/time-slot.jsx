@@ -11,7 +11,7 @@ import {
 
 import Modal from '../modal';
 
-const TimeSlot = ({ rooms, clickSpeakerHandler }) => {
+const TimeSlot = ({ rooms, clickSpeakerHandler, timeZone }) => {
   const [currentRoom, setCurrentRoom] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const oneColumn = 1;
@@ -31,12 +31,12 @@ const TimeSlot = ({ rooms, clickSpeakerHandler }) => {
       <div className="flex w-full max-w-[120px] flex-col gap-y-2 border-t-2 py-7 pl-4 md:max-w-full md:items-center md:py-5">
         <time className="text-sm leading-none">{getMonthAndDay(rooms[0].session.startsAt)}</time>
         <time className="text-xl font-bold leading-none md:text-base">
-          {getFormattedTimeWithAmPm(rooms[0].session.startsAt)}
+          {getFormattedTimeWithAmPm(rooms[0].session.startsAt, timeZone)}
         </time>
       </div>
       <div className="flex w-full md:flex-col ">
         {rooms.map(({ name, session: { id, title, startsAt, endsAt, speakers, description } }) => {
-          const date = getFormattedTimeWithAmPm(startsAt);
+          const date = getFormattedTimeWithAmPm(startsAt, timeZone);
           const duration = calculateTimeDifference(startsAt, endsAt);
           return (
             <article
@@ -61,13 +61,13 @@ const TimeSlot = ({ rooms, clickSpeakerHandler }) => {
                 <ul className="mt-2.5 flex flex-wrap gap-x-5">
                   {speakers.map(({ id, name }) => (
                     <li key={id}>
-                      <button
-                        className="relative inline-block text-base font-medium leading-none opacity-50 transition-all duration-200 after:absolute after:left-0 after:block after:h-[1px] after:w-full after:content-[''] hover:opacity-100 hover:after:-bottom-1 hover:after:bg-black"
-                        type="button"
+                      <Button
+                        className="text-base font-medium leading-none opacity-50 hover:opacity-100"
+                        theme="underline"
                         onClick={() => clickSpeakerHandler(name)}
                       >
                         {name}
-                      </button>
+                      </Button>
                     </li>
                   ))}
                 </ul>
@@ -95,18 +95,19 @@ const TimeSlot = ({ rooms, clickSpeakerHandler }) => {
 TimeSlot.propTypes = {
   rooms: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired,
+      name: PropTypes.string,
       session: PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        startsAt: PropTypes.string.isRequired,
-        endsAt: PropTypes.string.isRequired,
+        id: PropTypes.string,
+        title: PropTypes.string,
+        startsAt: PropTypes.string,
+        endsAt: PropTypes.string,
         speakers: PropTypes.array,
-        description: PropTypes.string.isRequired,
+        description: PropTypes.string,
       }),
     })
   ).isRequired,
   clickSpeakerHandler: PropTypes.func.isRequired,
+  timeZone: PropTypes.string.isRequired,
 };
 
 export default TimeSlot;

@@ -1,6 +1,9 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { DateTime } from 'luxon';
 
+const PST_TIME = 'PST';
+const CEST_TIME = 'CEST';
+
 function getMonthAndDay(date) {
   const convertedDate = new Date(date);
   const day = convertedDate.getUTCDate();
@@ -25,8 +28,17 @@ function getHoursAndMinutes(dateTime) {
   return `${formattedHours}:${formattedMinutes}`;
 }
 
-function getFormattedTimeWithAmPm(dateTime) {
-  const dt = DateTime.fromISO(dateTime);
+function getFormattedTimeWithAmPm(dateTime, timeZone) {
+  let dt = DateTime.fromISO(dateTime, { zone: 'America/Los_Angeles' });
+
+  switch (timeZone) {
+    case CEST_TIME:
+      dt = dt.setZone('Europe/Berlin');
+      break;
+    case PST_TIME:
+    default:
+      break;
+  }
 
   const formattedTime = dt.toFormat('h:mm a');
   return formattedTime;
@@ -41,6 +53,8 @@ function calculateTimeDifference(startsAt, endsAt) {
 }
 
 export {
+  PST_TIME,
+  CEST_TIME,
   getMonthAndDay,
   getYear,
   getHoursAndMinutes,
