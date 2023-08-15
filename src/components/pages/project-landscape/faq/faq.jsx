@@ -12,8 +12,12 @@ const Requirements = () => (
         license. Any documentation must be licensed under an open license.
       </li>
       <li>
-        The project must be using eBPF as its underlying core technology (in other words, a project would lose its purpose if the 
-        eBPF parts are removed) or help accelerate the adoption of eBPF in production.
+        The project must be using eBPF as its underlying core technology (in other words, a project
+	would lose its purpose if the eBPF parts are removed) or help accelerate the adoption of eBPF
+	in production.
+      </li>
+      <li>
+	The project must be actively maintained.
       </li>
       <li>
         The project must be open to collaboration and have a governance model following open source
@@ -26,7 +30,6 @@ const Requirements = () => (
     </p>
     <ul>
       <li>The project must have more than 50 contributors.</li>
-      <li>The project must be actively maintained.</li>
       <li>
         The project must be used in production-like environments with a significant amount of users.
         Since this information may not be easily discoverable from a link to the project, such
