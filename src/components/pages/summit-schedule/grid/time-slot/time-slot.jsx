@@ -87,7 +87,7 @@ const TimeSlot = ({ rooms, clickSpeakerHandler, timeZone }) => {
         })}
       </div>
 
-      <Modal isOpen={isOpen} closeModal={closeModal} {...currentRoom} />
+      <Modal isOpen={isOpen} closeModal={closeModal} {...currentRoom} timeZone={timeZone} />
     </section>
   );
 };

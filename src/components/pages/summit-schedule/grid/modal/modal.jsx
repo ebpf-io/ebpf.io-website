@@ -14,7 +14,7 @@ const customStyles = {
   },
 };
 
-const Modal = ({ className, isOpen, closeModal, session }) => {
+const Modal = ({ className, isOpen, closeModal, session, timeZone }) => {
   let title = '';
   let description = '';
   let speakers = [];
@@ -61,7 +61,7 @@ const Modal = ({ className, isOpen, closeModal, session }) => {
         <div className="mt-4 flex items-center">
           <CalendarIcon className="mr-3 h-5 w-5 text-primary-orange" />
           <time className="pr-2 font-semibold">{`${getMonthAndDay(startsAt)},`}</time>
-          <time className="font-semibold">{getFormattedTimeWithAmPm(startsAt)}</time>
+          <time className="font-semibold">{getFormattedTimeWithAmPm(startsAt, timeZone)}</time>
         </div>
       </div>
     </ReactModal>
@@ -72,6 +72,7 @@ Modal.propTypes = {
   className: PropTypes.string,
   isOpen: PropTypes.bool.isRequired,
   closeModal: PropTypes.func.isRequired,
+  timeZone: PropTypes.string.isRequired,
   session: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
