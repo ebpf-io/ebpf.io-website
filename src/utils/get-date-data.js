@@ -1,3 +1,6 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { DateTime } from 'luxon';
+
 function getMonthAndDay(date) {
   const convertedDate = new Date(date);
   const day = convertedDate.getUTCDate();
@@ -23,15 +26,10 @@ function getHoursAndMinutes(dateTime) {
 }
 
 function getFormattedTimeWithAmPm(dateTime) {
-  const convertedDateTime = new Date(dateTime);
-  const hours = convertedDateTime.getUTCHours();
-  const minutes = convertedDateTime.getUTCMinutes();
+  const dt = DateTime.fromISO(dateTime);
 
-  const amOrPm = hours < 12 ? 'AM' : 'PM';
-  const formattedHours = (hours % 12 || 12).toString();
-  const formattedMinutes = minutes.toString().padStart(2, '0');
-
-  return `${formattedHours}:${formattedMinutes} ${amOrPm}`;
+  const formattedTime = dt.toFormat('h:mm a');
+  return formattedTime;
 }
 
 function calculateTimeDifference(startsAt, endsAt) {
