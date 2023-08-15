@@ -14,7 +14,7 @@ const ogImage = '/images/social-preview-ebpf-summit.jpg';
 const hero = {
   date: 'September <strong>13</strong>, 2023',
   title: 'eBPF Summit 2023',
-  time: '8:30AM-12:30PM&nbsp;PST / 5:30PM-9:30PM&nbsp;CEST',
+  time: '8:30AM-13:00PM&nbsp;PST / 5:30PM-10:00PM&nbsp;CEST',
   description:
     '<p>Welcome to the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem. This event for the eBPF community is aimed at new and existing members wishing to learn and grow and includes hands-on technologists building, using or interested in eBPF as a platform.</p>',
 };
