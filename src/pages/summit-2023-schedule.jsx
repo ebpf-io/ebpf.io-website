@@ -21,17 +21,12 @@ const hero = {
 //   endpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/Sessions',
 // };
 
-const grid = {
-  scheduleEndpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/GridSmart',
-  speackersEndpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/Speakers',
-};
-
 const Summit2023 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
     {/* TODO: Add after summit */}
     {/* <Schedule {...schedule} /> */}
-    <Grid {...grid} />
+    <Grid />
   </SummitLayout>
 );
 
