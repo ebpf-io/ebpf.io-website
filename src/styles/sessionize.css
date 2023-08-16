@@ -50,10 +50,6 @@ stylelint-disable unit-whitelist .sz-session__room {
   }
 }
 
-.sz-tab-container {
-  @apply border-b border-gray-90;
-}
-
 #sessionize.sessionize-wrapper .sz-session__card {
   .sz-session__time {
     @apply text-gray-50;
@@ -80,7 +76,7 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
-  @apply items-center rounded-none border-x border-t border-gray-90 bg-white shadow-none transition-all duration-200 !important;
+  @apply items-center rounded-none border-x border-b border-gray-90 bg-white shadow-none transition-all duration-200 !important;
 
   .sz-session__title {
     a:first-child {
@@ -116,7 +112,7 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-separator {
-  @apply -mt-px border-t border-gray-90 !important;
+  @apply !hidden;
 }
 
 #sessionize.sessionize-wrapper .sz-speaker__links .sz-speaker__link,
@@ -230,22 +226,28 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label {
-  @apply !block border-t border-gray-90 !font-bold;
+  @apply relative !block !font-bold before:absolute before:-top-px before:h-px before:w-full before:bg-gray-90;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label {
-    @apply border-t-0;
+    @apply before:hidden;
+  }
+  #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
+    @apply border-t;
+  }
+
+  #sessionize.sessionize-wrapper .sz-session__card h3 {
+    @apply text-left;
   }
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label h2 {
   display: block;
   font-weight: bold;
-  border-top: 1px solid #3d3d3d;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label h2 {
     box-shadow: none;
   }
