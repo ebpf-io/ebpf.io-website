@@ -13,7 +13,7 @@ const ogImage = '/images/social-preview-ebpf-summit.jpg';
 const hero = {
   title: 'eBPF Summit 2023 Schedule',
   description:
-    'Explore schedule of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
+    'Explore the schedule of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
 };
 
 // TODO: Add after summit
