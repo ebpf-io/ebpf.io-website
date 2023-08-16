@@ -237,6 +237,15 @@ stylelint-disable unit-whitelist .sz-session__room {
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label h2 {
   display: block;
+  font-weight: bold;
+  border-top: 2px solid #e6e6e6;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label h2 {
+    border-top: none;
+  }
 }
 
 #sessionize.sessionize-wrapper .sz-modal-container-inner {
