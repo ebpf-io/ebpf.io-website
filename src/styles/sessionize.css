@@ -229,6 +229,10 @@ stylelint-disable unit-whitelist .sz-session__room {
   @apply !block !font-bold;
 }
 
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label h2 {
+  display: block;
+}
+
 #sessionize.sessionize-wrapper .sz-modal-container-inner {
   @apply px-6;
 }
