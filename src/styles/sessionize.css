@@ -50,6 +50,10 @@ stylelint-disable unit-whitelist .sz-session__room {
   }
 }
 
+.sz-tab-container {
+  @apply border-b border-gray-90;
+}
+
 #sessionize.sessionize-wrapper .sz-session__card {
   .sz-session__time {
     @apply text-gray-50;
@@ -76,7 +80,7 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
-  @apply items-center rounded-none border border-gray-90 bg-white shadow-none transition-all duration-200 !important;
+  @apply items-center rounded-none border-x border-t border-gray-90 bg-white shadow-none transition-all duration-200 !important;
 
   .sz-session__title {
     a:first-child {
@@ -100,7 +104,7 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__track-label {
-  @apply !rounded-none border border-t-2 border-gray-90 !text-xl font-bold;
+  @apply !rounded-none border border-gray-90 !text-xl font-bold;
 }
 
 #sessionize.sessionize-wrapper .sz-session__speakers {
@@ -112,7 +116,7 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-separator {
-  @apply -mt-px border-t-2 border-solid border-gray-90 !important;
+  @apply -mt-px border-t border-gray-90 !important;
 }
 
 #sessionize.sessionize-wrapper .sz-speaker__links .sz-speaker__link,
@@ -216,7 +220,7 @@ stylelint-disable unit-whitelist .sz-session__room {
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:hover,
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:focus,
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:active {
-  @apply border-b border-gray-90 opacity-100 shadow-none !important;
+  @apply opacity-100 shadow-none !important;
 
   h2 {
     @apply !block;
@@ -226,7 +230,7 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label {
-  @apply m-0 !block border-t-2 border-gray-90 !font-bold;
+  @apply !block border-t border-gray-90 !font-bold;
 }
 
 @media (max-width: 600px) {
@@ -238,13 +242,12 @@ stylelint-disable unit-whitelist .sz-session__room {
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label h2 {
   display: block;
   font-weight: bold;
-  border-top: 2px solid #e6e6e6;
-  margin: 0;
+  border-top: 1px solid #3d3d3d;
 }
 
 @media (max-width: 600px) {
   #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label h2 {
-    border-top: none;
+    box-shadow: none;
   }
 }
 
