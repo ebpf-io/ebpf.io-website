@@ -11,4 +11,15 @@ function getYear(date) {
   return year;
 }
 
-export { getMonthAndDay, getYear };
+function getHoursAndMinutes(dateTime) {
+  const convertedDateTime = new Date(dateTime);
+  const hours = convertedDateTime.getUTCHours();
+  const minutes = convertedDateTime.getUTCMinutes();
+
+  const formattedHours = hours.toString().padStart(2, '0');
+  const formattedMinutes = minutes.toString().padStart(2, '0');
+
+  return `${formattedHours}:${formattedMinutes}`;
+}
+
+export { getMonthAndDay, getYear, getHoursAndMinutes };

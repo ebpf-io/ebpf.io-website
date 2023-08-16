@@ -1,0 +1,285 @@
+/* stylelint-disable unit-whitelist */
+stylelint-disable unit-whitelist .sz-session__room {
+  @apply !hidden;
+}
+
+#sessionize.sessionize-wrapper .sz-timezone .sz-timezone__name {
+  @apply text-xl md:text-lg;
+}
+
+#sessionize.sessionize-wrapper .sz-timezone__radio input[type='radio']:checked + label,
+#sessionize.sessionize-wrapper .sz-timezone__radio input[type='radio']:hover + label {
+  box-shadow: inset 0 -0.125rem 0 0 theme('colors.black') !important;
+}
+
+#sessionize.sessionize-wrapper .sz-tabs__item--active .sz-tabs__link,
+#sessionize.sessionize-wrapper .sz-tabs__link:hover,
+#sessionize.sessionize-wrapper .sz-tabs__link:focus,
+#sessionize.sessionize-wrapper .sz-tabs__link:active {
+  @apply bg-black text-white !important;
+}
+
+#sessionize.sessionize-wrapper .sz-tabs__link {
+  @apply text-xl text-black !important;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid {
+  @apply !gap-0;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card:hover {
+  background: linear-gradient(82.18deg, #ec61130a -0.66%, #ff99000a 97.55%) !important;
+
+  .sz-session__title {
+    a:first-child {
+      @apply !shadow-none;
+
+      background: linear-gradient(82.18deg, #ec6113 -0.66%, #f90 97.55%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      /* stylelint-disable-next-line property-no-unknown */
+      text-fill-color: transparent;
+    }
+  }
+}
+
+.sz-tab-container {
+  h1 {
+    @apply font-medium;
+  }
+}
+
+#sessionize.sessionize-wrapper .sz-session__card {
+  .sz-session__time {
+    @apply text-gray-50;
+  }
+
+  h3 {
+    @apply w-full max-w-[60%] text-center md:max-w-none;
+  }
+
+  .sz-session__title a {
+    @apply text-black;
+  }
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session {
+  @apply bg-white !important;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session--service .sz-session__card {
+  .sz-session__title,
+  .sz-session__time {
+    @apply text-gray-50;
+  }
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
+  @apply items-center rounded-none border-x border-b border-gray-90 bg-white shadow-none transition-all duration-200 !important;
+
+  .sz-session__title {
+    a:first-child {
+      @apply text-2xl font-bold leading-tight no-underline;
+
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .sz-session__speakers {
+    @apply text-gray-50;
+  }
+
+  .sz-session__tags {
+    @apply !h-7;
+
+    li {
+      @apply border border-gray-90 bg-white px-2 py-1.5 leading-none;
+    }
+  }
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__track-label {
+  @apply !rounded-none border border-gray-90 !text-xl font-bold;
+}
+
+#sessionize.sessionize-wrapper .sz-session__speakers {
+  @apply my-2 !important;
+
+  a {
+    @apply text-base;
+  }
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-separator {
+  @apply !hidden;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker__links .sz-speaker__link,
+#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__name,
+#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__tagline,
+#sessionize.sessionize-wrapper .sz-timezone__radio input[type='radio']:checked + label {
+  @apply !text-black;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker {
+  @apply !mb-0;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__sessions li {
+  @apply pl-0 text-primary-orange !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker__sessions a {
+  @apply transition-all duration-200;
+
+  background: linear-gradient(82.18deg, #ec6113 -0.66%, #f90 97.55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* stylelint-disable-next-line property-no-unknown */
+  text-fill-color: transparent;
+
+  &:hover {
+    background: linear-gradient(#000, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+#sessionize.sessionize-wrapper a:hover,
+#sessionize.sessionize-wrapper a:focus,
+#sessionize.sessionize-wrapper a:active {
+  @apply text-black shadow-none !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__sessions li::before {
+  @apply hidden;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--compact .sz-speaker__photo {
+  @apply mb-0 border-none !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--compact {
+  @apply flex flex-col items-center !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--compact .sz-speaker__name {
+  @apply mt-5 text-2xl leading-normal !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--compact .sz-speaker__tagline {
+  @apply mt-1 max-w-[270px] self-center text-lg opacity-70 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-modal {
+  @apply max-w-3xl p-10 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__photo {
+  @apply mb-0 mr-6 h-auto w-[72px] !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__photo img {
+  @apply rounded-full !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full {
+  @apply !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__name {
+  @apply text-[28px] font-semibold !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__tagline {
+  @apply mt-1.5 font-semibold !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__bio {
+  @apply mt-5 indent-0 text-lg !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker__sessions {
+  @apply mt-6 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-modal-overlay {
+  @apply !bg-black opacity-20;
+}
+
+#sessionize.sessionize-wrapper .sz-modal__close {
+  @apply right-8 top-6 h-4 w-4 border-none !important;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:hover,
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:focus,
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:active {
+  @apply opacity-100 shadow-none !important;
+
+  h2 {
+    @apply !block;
+  }
+
+  box-shadow: 0 theme('spacing.px') 0 0 theme('colors.black') !important;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label {
+  @apply relative !block !font-bold before:absolute before:-top-px before:h-px before:w-full before:bg-gray-90;
+}
+
+@media (max-width: 599px) {
+  #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label {
+    @apply before:hidden;
+  }
+  #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
+    @apply border-t;
+  }
+
+  #sessionize.sessionize-wrapper .sz-session__card h3 {
+    @apply text-left;
+  }
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label h2 {
+  display: block;
+  font-weight: bold;
+}
+
+@media (max-width: 599px) {
+  #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label h2 {
+    box-shadow: none;
+  }
+}
+
+#sessionize.sessionize-wrapper .sz-modal-container-inner {
+  @apply px-6;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker__link {
+  @apply border-none bg-white !important;
+
+  .sz-speaker__link-icon {
+    @apply fill-[#ec6113] transition-colors duration-200 hover:fill-black;
+  }
+}
+
+#sessionize.sessionize-wrapper .sz-speakers--wall .sz-speaker {
+  @apply w-[200px] xl:w-[300px] lg:w-[256px] !important;
+}
+
+#sessionize.sessionize-wrapper .sz-session.sz-session--full {
+  .sz-session__speakers li {
+    @apply text-gray-50 !important;
+  }
+
+  .sz-session__room,
+  .sz-session__tags li {
+    @apply border border-gray-50 bg-white px-2 py-1.5 leading-none text-black !important;
+  }
+
+  .sz-session__time {
+    @apply rounded-sm bg-button-gradient text-white !important;
+  }
+}

@@ -18,7 +18,7 @@ const Hero = ({ title, description }) => {
 
   return (
     <section className="safe-paddings">
-      <div className="container pb-6 pt-16 lg:pb-0 md:pt-8 ">
+      <div className="container py-16 md:pt-8 ">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-9xl font-bold leading-tight sm:text-7xl">{title}</h1>
           <p className="mt-4 max-w-[590px] text-xl font-light md:max-w-none md:text-lg">

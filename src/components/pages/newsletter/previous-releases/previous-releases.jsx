@@ -42,7 +42,7 @@ const PreviousReleases = () => {
   const newsletterData = getReleases();
 
   return Object.keys(newsletterData).length > 0 ? (
-    <section className="releases safe-paddings mt-40 mb-32 lg:my-32 md:my-24 sm:my-20" id="archive">
+    <section className="releases safe-paddings mb-32 mt-40 lg:my-32 md:my-24 sm:my-20" id="archive">
       <div className="container">
         <h2 className="heading-9xl text-center font-semibold tracking-[-0.01em]">
           Previous releases of eCHO News
@@ -65,7 +65,7 @@ const PreviousReleases = () => {
                         <span className="heading-7xl font-medium leading-none">#{number}</span>
                         <h4 className="mt-3 text-lg font-medium md:text-base">{title}</h4>
                         <span className="mt-4 flex items-center space-x-2.5 border-t border-dashed border-gray-80 pt-5">
-                          <CalendarIcon className="h-3.5 w-3.5 shrink-0" />
+                          <CalendarIcon className="h-3.5 w-3.5 shrink-0 text-secondary-blue" />
                           <span className="text-sm leading-none">{date}</span>
                         </span>
                       </Link>

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useState, useCallback } from 'react';
 
-import Modal from 'components/pages/summit-2023/speakers/modal';
 import Speaker from 'components/pages/summit-2023/speakers/speaker';
+import SpeakersModal from 'components/shared/speakers-modal';
 
 const Speakers = ({ title, endpoint }) => {
   const [speakers, setSpeakers] = useState([]);
@@ -56,7 +56,7 @@ const Speakers = ({ title, endpoint }) => {
             ))}
           </div>
         </div>
-        <Modal isOpen={isOpen} closeModal={closeModal} {...currentSpeaker} />
+        <SpeakersModal isOpen={isOpen} closeModal={closeModal} {...currentSpeaker} />
       </section>
     );
   }

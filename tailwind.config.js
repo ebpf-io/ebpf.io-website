@@ -102,6 +102,9 @@ module.exports = {
       dropShadow: {
         book: '0px 8px 24px rgba(61, 61, 61, 0.16)',
       },
+      boxShadow: {
+        'custom-top': '0 -2px 0 0 #e6e6e6',
+      },
     },
   },
   plugins: [require('tailwindcss-safe-area'), require('@tailwindcss/typography')],

@@ -20,7 +20,7 @@ const customStyles = {
   },
 };
 
-const Modal = ({
+const SpeakersModal = ({
   className,
   isOpen,
   closeModal,
@@ -87,7 +87,7 @@ const Modal = ({
     </ReactModal>
   );
 };
-Modal.propTypes = {
+SpeakersModal.propTypes = {
   className: PropTypes.string,
   isOpen: PropTypes.bool.isRequired,
   closeModal: PropTypes.func.isRequired,
@@ -98,7 +98,7 @@ Modal.propTypes = {
   links: PropTypes.array,
 };
 
-Modal.defaultProps = {
+SpeakersModal.defaultProps = {
   className: null,
   tagLine: null,
   profilePicture: null,
@@ -107,4 +107,4 @@ Modal.defaultProps = {
   fullName: null,
 };
 
-export default Modal;
+export default SpeakersModal;
