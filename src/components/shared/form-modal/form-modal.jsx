@@ -21,7 +21,7 @@ const FormModal = ({ className, isOpen, closeModal, title, hubspotFormId }) => (
     ariaHideApp={false}
     bodyOpenClassName="overflow-hidden touch-none"
     className={clsx(
-      'border-gray-2 scrollbar-hidden relative left-1/2 top-1/2 z-50 max-h-[90%] w-[95%] max-w-[800px] -translate-x-1/2 -translate-y-1/2 overflow-scroll rounded-lg border border-gray-90 bg-white p-8 md:py-5',
+      'border-gray-2 scrollbar-hidden z-100 relative left-1/2 top-1/2 max-h-[90%] w-[95%] max-w-[800px] -translate-x-1/2 -translate-y-1/2 overflow-scroll rounded-lg border border-gray-90 bg-white p-8 md:py-5',
       className
     )}
     closeTimeoutMS={200}

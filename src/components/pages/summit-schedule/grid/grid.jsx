@@ -32,7 +32,7 @@ const Grid = () => {
   }, [modifySessionizeScript]);
 
   return (
-    <section className="safe-paddings py-24 md:py-20">
+    <section className="safe-paddings relative z-0 py-24 md:py-20">
       <div className="container item-center flex flex-col" id="schedule">
         <h2 className="mx-auto w-fit text-10xl font-bold leading-tight lg:text-9xl sm:text-7xl">
           Schedule
