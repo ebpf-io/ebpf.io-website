@@ -222,7 +222,7 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label {
-  @apply !font-bold;
+  @apply !block !font-bold;
 }
 
 #sessionize.sessionize-wrapper .sz-modal-container-inner {
