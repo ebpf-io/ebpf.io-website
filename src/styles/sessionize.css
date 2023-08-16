@@ -218,6 +218,10 @@ stylelint-disable unit-whitelist .sz-session__room {
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:active {
   @apply border-b border-gray-90 opacity-100 shadow-none !important;
 
+  h2 {
+    @apply !block;
+  }
+
   box-shadow: 0 theme('spacing.px') 0 0 theme('colors.black') !important;
 }
 
