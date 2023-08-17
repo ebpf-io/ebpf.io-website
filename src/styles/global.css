@@ -17,9 +17,9 @@
 }
 
 @layer components {
-  .with-white-primary-yellow-link {
+  .with-primary-blue-link {
     a {
-      @apply relative font-semibold text-white transition-colors duration-200 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-primary-yellow after:ease-in-out hover:text-primary-yellow;
+      @apply relative font-semibold transition-colors duration-200 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-secondary-blue after:ease-in-out hover:text-secondary-blue;
     }
   }
 }

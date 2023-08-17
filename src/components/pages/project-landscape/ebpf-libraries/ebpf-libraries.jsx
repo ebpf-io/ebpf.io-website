@@ -34,16 +34,9 @@ const items = [
 const EbpfLibraries = () => (
   <section className="libraries safe-paddings mt-32 lg:mt-28 md:mt-20">
     <div className="container">
-      <div
-        className="rounded-lg p-16 text-white lg:p-12 md:px-8"
-        style={{
-          background:
-            'linear-gradient(250.01deg, rgba(255, 238, 153, 0.14) -15.05%, rgba(255, 238, 153, 0) 55.15%), #1A1A1A',
-          boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.14), 0px 14px 30px rgba(0, 0, 0, 0.25)',
-        }}
-      >
+      <div className="rounded-lg border border-secondary-blue-1 bg-secondary-blue-1-light p-16 lg:p-12 md:px-8">
         <h2 className="heading-9xl text-center font-bold leading-dense">eBPF Libraries</h2>
-        <ul className="mt-12 flex divide-x divide-dashed divide-gray-80 divide-opacity-30 lg:mt-10 md:mt-8 md:flex-col md:divide-x-0 md:divide-y">
+        <ul className="mt-12 flex divide-x divide-dashed divide-secondary-blue-2 divide-opacity-30 lg:mt-10 md:mt-8 md:flex-col md:divide-x-0 md:divide-y">
           {items.map(({ name, icon: Icon, list }, index) => (
             <li
               className="flex-1 px-8 first:pl-0 last:pr-0 lg:px-6 md:px-0 md:py-6 md:first:pt-0 md:last:pb-0"
@@ -51,14 +44,14 @@ const EbpfLibraries = () => (
             >
               <div className="flex items-center">
                 <Icon className="h-11 w-auto pr-4" />
-                <h3 className="heading-6xl border-l border-white pl-4 font-semibold leading-none">
+                <h3 className="heading-6xl border-l border-secondary-blue-2 pl-4 font-semibold leading-none">
                   {name}
                 </h3>
               </div>
               <ul className="mt-7 lg:mt-6 md:mt-5">
                 {list.map((item, index) => (
                   <li
-                    className="with-white-primary-yellow-link mt-4 first:mt-0"
+                    className="with-primary-blue-link mt-4 first:mt-0"
                     key={index}
                     dangerouslySetInnerHTML={{ __html: item }}
                   />
