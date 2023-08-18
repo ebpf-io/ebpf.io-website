@@ -2,7 +2,9 @@ const path = require('path');
 
 const { EVENTS_BASE_PATH } = require('../src/constants/event');
 
-const { DRAFT_FILTER, EVENTS_REGEX } = require('./constants');
+const { DRAFT_FILTER, EVENTS_TEMPLATE, EVENTS_REGEX } = require('./constants');
+
+const template = path.resolve(EVENTS_TEMPLATE);
 
 module.exports = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -64,7 +66,7 @@ module.exports = async ({ graphql, actions }) => {
 
   createPage({
     path: EVENTS_BASE_PATH,
-    component: path.resolve('./src/templates/events.jsx'),
+    component: template,
     context: {
       postEvents,
       totalCount,

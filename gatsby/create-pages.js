@@ -1,11 +1,13 @@
-const createBlogPages = require('./create-blog-pages');
-const createBlogPosts = require('./create-blog-posts');
-const createEventPage = require('./create-event-page');
+const createBlogPostPage = require('./create-blog-post');
+const createBlogPostsPage = require('./create-blog-posts');
+const createEventsPage = require('./create-events');
+const createGetStartedPage = require('./create-get-started');
 const createStaticPages = require('./create-static-pages');
 
 module.exports = async (options) => {
   await createStaticPages(options);
-  await createBlogPages(options);
-  await createBlogPosts(options);
-  await createEventPage(options);
+  await createBlogPostsPage(options);
+  await createBlogPostPage(options);
+  await createEventsPage(options);
+  await createGetStartedPage(options);
 };

@@ -15,10 +15,6 @@ const headerMenu = [
         to: '/what-is-ebpf',
       },
       {
-        text: 'Get Started',
-        to: '/get-started',
-      },
-      {
         text: 'Case Studies',
         to: '/case-studies',
       },
@@ -62,6 +58,10 @@ const headerMenu = [
   {
     text: 'Community',
     items: [
+      {
+        text: 'Get Started',
+        to: '/get-started',
+      },
       {
         text: 'Slack',
         to: 'https://ebpf.io/slack',
