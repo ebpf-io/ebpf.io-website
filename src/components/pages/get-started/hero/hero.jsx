@@ -72,9 +72,9 @@ const Hero = () => (
               <div>
                 <Image className="h-14 w-14" />
 
-                <h3 className="mt-5 font-sans text-4xl font-semibold leading-snug lg:text-3xl md:text-4xl sm:mt-4 sm:text-3xl">
+                <h2 className="mt-5 font-sans text-4xl font-semibold leading-snug lg:text-3xl md:text-4xl sm:mt-4 sm:text-3xl">
                   {title}
-                </h3>
+                </h2>
                 <p className="mt-2.5 text-lg lg:mt-2.5 lg:text-sm md:text-lg sm:text-base">
                   {description}
                 </p>

@@ -33,7 +33,7 @@ const Tutorials = () => (
         </h2>
         <Button
           to="https://github.com/iovisor/bpftrace/blob/master/docs/tutorial_one_liners.md"
-          className="mt-9 py-4 px-9 sm:hidden"
+          className="mt-9 px-9 py-4 sm:hidden"
           target="_blank"
           rel="noreferrer noopener"
           theme="primary-yellow-filled"
@@ -46,7 +46,7 @@ const Tutorials = () => (
         {items.map(({ title, description, linkUrl }, index) => (
           <li className="border-t border-dashed border-gray-80 last:border-b" key={index}>
             <Link
-              className="group flex items-center justify-between pt-7 pb-8 "
+              className="group flex items-center justify-between pb-8 pt-7 "
               to={linkUrl}
               target="_blank"
               rel="noreferrer noopener"
@@ -58,7 +58,9 @@ const Tutorials = () => (
                 <span className="mt-2.5 text-base leading-normal">{description}</span>
               </div>
 
-              <Button className="ml-10" theme="withYellowChevron" />
+              <Button className="ml-10" theme="withYellowChevron">
+                <span className="sr-only">{title}</span>
+              </Button>
             </Link>
           </li>
         ))}
@@ -66,7 +68,7 @@ const Tutorials = () => (
 
       <Button
         to="https://github.com/iovisor/bpftrace/blob/master/docs/tutorial_one_liners.md"
-        className="mt-9 hidden max-w-fit py-4 px-9 sm:inline-flex"
+        className="mt-9 hidden max-w-fit px-9 py-4 sm:inline-flex"
         target="_blank"
         rel="noreferrer noopener"
         theme="primary-yellow-filled"

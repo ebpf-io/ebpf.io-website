@@ -70,7 +70,7 @@ const Documentation = () => (
             key={index}
           >
             <Link
-              className="group flex w-full items-center justify-between p-10 lg:p-8 sm:py-6 sm:px-0"
+              className="group flex w-full items-center justify-between p-10 lg:p-8 sm:px-0 sm:py-6"
               to={linkUrl}
               target="_blank"
               rel="noreferrer noopener"
@@ -94,7 +94,9 @@ const Documentation = () => (
                 </div>
               </div>
 
-              <Button className="ml-10" theme="withYellowChevron" />
+              <Button className="ml-10" theme="withYellowChevron">
+                <span className="sr-only">{description}</span>
+              </Button>
             </Link>
           </li>
         ))}
