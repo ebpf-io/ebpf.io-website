@@ -18,7 +18,7 @@ const Speaker = ({ fullName, tagLine, profilePicture, clickHandler, isLoading })
       {isLoading && !hasData && (
         <>
           <div className="mt-5 h-[33px] w-40 animate-pulse rounded-md bg-gray-96 [@media(max-width:543px)]:mt-3" />
-          <div className="mt-1 h-[25px] w-28 animate-pulse rounded-md bg-gray-96 [@media(max-width:543px)]:mt-0" />
+          <div className="mt-1 h-[25px] w-28 animate-pulse rounded-md bg-gray-96" />
           <div className="mt-1 h-[25px] w-36 animate-pulse rounded-md bg-gray-96" />
         </>
       )}
@@ -35,7 +35,7 @@ const Speaker = ({ fullName, tagLine, profilePicture, clickHandler, isLoading })
           />
           <h3 className="mt-5 text-2xl font-bold [@media(max-width:543px)]:mt-3">{fullName}</h3>
           {tagLine && (
-            <span className="text-gray-1 mt-1 max-w-[240px] text-lg [@media(max-width:543px)]:mt-0 [@media(max-width:543px)]:max-w-none">
+            <span className="text-gray-1 mt-1 max-w-[240px] text-lg [@media(max-width:543px)]:max-w-none">
               {tagLine}
             </span>
           )}
