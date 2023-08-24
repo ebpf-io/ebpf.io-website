@@ -72,7 +72,7 @@ const Speakers = ({ title, endpoint }) => {
             to="/summit-2023-schedule/"
             theme="orange"
           >
-            Schedule
+            View the schedule
           </Button>
         </div>
       </div>
