@@ -11,7 +11,7 @@ const Events = ({ items, className }) => (
       <h2 className="heading-8xl text-center font-semibold leading-tight">
         Participate in eBPF events to level up your expertize
       </h2>
-      <div className="container grid-gap mt-14 grid auto-rows-min grid-cols-12 justify-items-stretch md:mt-11 sm:mt-8 sm:flex sm:flex-col sm:gap-y-5">
+      <div className="grid-gap mt-14 grid auto-rows-min grid-cols-12 justify-items-stretch md:mt-11 sm:mt-8 sm:flex sm:flex-col sm:gap-y-5">
         {items.map((item, index) => (
           <EventCard {...item} className="col-span-4 md:col-span-6" key={index} />
         ))}
