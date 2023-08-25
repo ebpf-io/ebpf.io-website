@@ -73,6 +73,18 @@ const emergingApplications = [
     urls: [{ label: 'GitHub', url: 'https://github.com/aquasecurity/tracee' }],
   },
   {
+    logoUrl: 'https://github.com/coroot/coroot',
+    name: 'coroot',
+    logoName: 'corootLogo',
+    title: 'Zero-instrumentation observability',
+    description: `Coroot is an open-source eBPF-based observability tool that turns telemetry
+  data into actionable insights, helping you identify and resolve application issues quickly.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/coroot/coroot' },
+      { label: 'Website', url: 'https://coroot.com/' },
+    ],
+  },
+  {
     logoUrl: 'https://github.com/iovisor/kubectl-trace',
     name: 'kubectl trace',
     logoName: 'kubectlTraceLogo',
@@ -357,7 +369,7 @@ const emergingApplications = [
     description: `Blixt is a layer 4 load-balancer for Kubernetes. It has a control-plane
     implemented using Gateway API and a data-plane built using eBPF and Rust.`,
     urls: [
-      { label: 'GitHub', url: 'https://github.com/kong/blixt' },
+      { label: 'GitHub', url: 'https://github.com/kong/blixt' }
     ],
   }
 ];
