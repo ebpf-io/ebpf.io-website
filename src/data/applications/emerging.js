@@ -359,6 +359,17 @@ const emergingApplications = [
     urls: [
       { label: 'GitHub', url: 'https://github.com/kong/blixt' },
     ],
+  },
+  {
+    logoUrl: 'https://github.com/daeuniverse/dae',
+    name: 'dae',
+    logoName: 'daeLogo',
+    title: 'Linux high-performance transparent proxy solution',
+    description: `dae, means goose, is a high-performance transparent proxy solution.
+In order to improve the traffic split performance as much as possible, dae runs the transparent proxy and traffic split suite in the Linux kernel by eBPF. Therefore, dae has the opportunity to make the direct traffic bypass the forwarding by proxy application and achieve true direct traffic through. Under such a magic trick, there is almost no performance loss and additional resource consumption for direct traffic.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/daeuniverse/dae' },
+    ],
   }
 ];
 
