@@ -369,6 +369,6 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/coroot/coroot' },
       { label: 'Website', url: 'https://coroot.com/' },
     ],
-  },
+  }
 ];
 export default emergingApplications;
