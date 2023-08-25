@@ -359,6 +359,19 @@ const emergingApplications = [
     urls: [
       { label: 'GitHub', url: 'https://github.com/kong/blixt' },
     ],
+  },
+  {
+    logoUrl: 'https://github.com/coroot/coroot',
+    name: 'coroot',
+    logoName: 'corootLogo',
+    title: 'Zero-instrumentation observability',
+    description: `Coroot is an open-source eBPF-based observability tool that turns telemetry
+    data into actionable insights, helping you identify and resolve application issues quickly.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/coroot/coroot' },
+      { label: 'Website', url: 'https://coroot.com/' },
+
+    ],
   }
 ];
 
