@@ -115,7 +115,7 @@ const SubscriptionForm = ({ className, size }) => {
                     {
                       'w-12': smSize,
                       'w-[193px] sm:w-12': mdSize,
-                      'top-1.5 right-1.5 w-[160px] sm:w-12': lgSize,
+                      'right-1.5 top-1.5 w-[160px] sm:w-12': lgSize,
                     }
                   )}
                   type="submit"
@@ -123,6 +123,7 @@ const SubscriptionForm = ({ className, size }) => {
                   style={{ boxShadow: '0px 4px 12px rgba(143, 126, 0, 0.2)' }}
                   loading={isLoading}
                 >
+                  <span className="sr-only">Subscribe</span>
                   <span className={clsx({ hidden: smSize, 'sm:hidden': mdSize || lgSize })}>
                     Subscribe
                   </span>
@@ -139,7 +140,7 @@ const SubscriptionForm = ({ className, size }) => {
           <AnimatePresence>
             {(formState === 'success' || formState === 'error') && (
               <m.div
-                className={clsx('absolute top-1/2 -right-px -translate-y-1/2', {
+                className={clsx('absolute -right-px top-1/2 -translate-y-1/2', {
                   'right-1.5': lgSize,
                 })}
                 initial="initial"
