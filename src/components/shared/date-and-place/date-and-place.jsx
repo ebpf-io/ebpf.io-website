@@ -10,15 +10,15 @@ const DateAndPlace = ({ date, place, className }) => (
     {date && (
       <div className="inline-flex items-center gap-x-1.5">
         <TimeIcon className="w-3.5 shrink-0" />
-        <time className="text-sm font-normal leading-none" dateTime={date}>
+        <time className="truncate text-sm font-normal leading-none" dateTime={date}>
           {date}
         </time>
       </div>
     )}
     {place && (
-      <div className="flex items-center gap-x-1.5">
+      <div className="flex items-center gap-x-1.5 overflow-hidden">
         <PlaceIcon className="w-3.5 shrink-0" />
-        <span className="text-sm font-normal leading-none">{place}</span>
+        <span className="truncate text-sm font-normal leading-none">{place}</span>
       </div>
     )}
   </div>
