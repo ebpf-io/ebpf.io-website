@@ -35,7 +35,7 @@ export const Head = ({ location: { pathname } }) => {
   const pageMetadata = {
     title: 'eBPF Summit 2023 Schedule',
     description:
-      'Explore schedule of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
+      'Explore the schedule of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
     image: ogImage,
     pathname,
   };

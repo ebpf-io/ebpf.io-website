@@ -41,8 +41,8 @@ const Swag = () => (
           <div className="col-start-1 flex items-center justify-center rounded-lg border border-gray-94 p-4">
             <StaticImage
               src="./images/sticker-2-2023.jpg"
-              width={129}
-              height={100}
+              width={132}
+              height={117}
               alt="Sticker"
               loading="lazy"
             />

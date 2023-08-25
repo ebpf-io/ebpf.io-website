@@ -91,6 +91,7 @@ module.exports = {
     },
     backgroundImage: () => ({
       'button-gradient': 'linear-gradient(82.18deg, #EC6113 -0.66%, #FF9900 97.55%)',
+      'light-yellow-gradient': 'linear-gradient(218deg, #FFC78F 0%, #FFEB8A 100%)',
     }),
     extend: {
       lineHeight: {
@@ -104,6 +105,7 @@ module.exports = {
       },
       boxShadow: {
         'custom-top': '0 -2px 0 0 #e6e6e6',
+        'banner-image': '0px 20px 50px 0px rgba(102, 73, 0, 0.16);',
       },
     },
   },
