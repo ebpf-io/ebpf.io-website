@@ -11,7 +11,7 @@ const data = {
 };
 
 const Zoom = () => (
-  <section className="pt-36 pb-32 lg:pt-28 lg:pb-24 md:pb-20 md:pt-24 sm:py-16">
+  <section className="pb-32 pt-36 lg:pb-24 lg:pt-28 md:pb-20 md:pt-24 sm:py-16">
     <div className="container flex items-center justify-center space-x-24 lg:flex-col lg:space-x-0">
       <StaticImage
         className="max-w-[624px] xl:max-w-[475px] lg:max-w-full"
