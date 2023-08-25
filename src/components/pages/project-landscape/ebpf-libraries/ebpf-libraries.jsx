@@ -1,8 +1,12 @@
 import React from 'react';
 
+import slugifyCategory from 'utils/slugify-category';
+
 import CPlusPlusIcon from './images/cplusplus.inline.svg';
 import GoIcon from './images/go.inline.svg';
 import RustIcon from './images/rust.inline.svg';
+
+const title = 'eBPF Libraries';
 
 const items = [
   {
@@ -32,10 +36,10 @@ const items = [
 ];
 
 const EbpfLibraries = () => (
-  <section className="libraries safe-paddings mt-32 lg:mt-28 md:mt-20">
+  <section className="libraries safe-paddings pt-32 lg:pt-28 md:pt-20" id={slugifyCategory(title)}>
     <div className="container">
       <div className="rounded-lg border border-secondary-blue-1 bg-secondary-blue-1-light p-16 lg:p-12 md:px-8">
-        <h2 className="heading-9xl text-center font-bold leading-dense">eBPF Libraries</h2>
+        <h2 className="heading-9xl text-center font-bold leading-dense">{title}</h2>
         <ul className="mt-12 flex divide-x divide-dashed divide-secondary-blue-2 divide-opacity-30 lg:mt-10 md:mt-8 md:flex-col md:divide-x-0 md:divide-y">
           {items.map(({ name, icon: Icon, list }, index) => (
             <li

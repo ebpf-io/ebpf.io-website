@@ -24,8 +24,8 @@ const ApplicationsPage = () => (
   <Layout>
     <h1 className="sr-only">Applications</h1>
     <Hero />
-    <ProjectsList className="mt-[72px] lg:mt-16 md:mt-12" {...majorApplicationsProps} />
-    <ProjectsList className="mt-32 lg:mt-28 md:mt-20 sm:mt-16" {...emergingApplicationsProps} />
+    <ProjectsList className="pt-[72px] lg:pt-16 md:pt-12" {...majorApplicationsProps} />
+    <ProjectsList className="pt-32 lg:pt-28 md:pt-20 sm:pt-16" {...emergingApplicationsProps} />
     <FAQ />
   </Layout>
 );

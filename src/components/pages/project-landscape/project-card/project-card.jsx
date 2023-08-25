@@ -6,8 +6,11 @@ import Link from 'components/shared/link/link';
 import slugifyCategory from 'utils/slugify-category';
 
 import bccLogo from './logos/bcc.svg';
+import blixtLogo from './logos/blixt.png';
+import bpfdLogo from './logos/bpfd.svg';
 import bumblebeeLogo from './logos/bumblebee.svg';
 import calicoLogo from './logos/calico.svg';
+import carettaLogo from './logos/caretta.svg';
 import ciliumLogo from './logos/cilium-with-text.svg';
 import ebpfForWindowsLogo from './logos/ebpf-windows.svg';
 import ecaptureLogo from './logos/ecapture.svg';
@@ -28,12 +31,9 @@ import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
 import pyroscopeLogo from './logos/pyroscope.svg';
 import rbpfLogo from './logos/rbpf.svg';
+import sshlogLogo from './logos/sshlog.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
-import sshlogLogo from './logos/sshlog.svg';
-import carettaLogo from './logos/caretta.svg';
-import bpfdLogo from './logos/bpfd.svg';
-import blixtLogo from './logos/blixt.png';
 
 const logos = {
   bccLogo,
@@ -79,7 +79,7 @@ const logos = {
   eunomiaLogo: <StaticImage src="./logos/eunomia.png" alt="Eunomia" loading="lazy" />,
   kindlingLogo: <StaticImage src="./logos/kindling.png" alt="Kindling" loading="lazy" />,
   odigosLogo: <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" />,
-}; 
+};
 
 const Logo = ({ logo, name }) => {
   const isStaticImage = typeof logo === 'object';
@@ -96,7 +96,10 @@ const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
   const logo = logos[logoName];
 
   return (
-    <li className="flex items-start space-x-8 pt-7 pb-10 sm:flex-col sm:space-x-0 sm:pt-6 sm:pb-7">
+    <li
+      className="flex items-start space-x-8 pb-10 pt-7 sm:flex-col sm:space-x-0 sm:pb-7 sm:pt-6"
+      id={slugifyCategory(name)}
+    >
       {logo && logoUrl ? (
         <Tag
           className="mb-4 w-full max-w-[116px] shrink-0 sm:max-w-[90px] xs:max-w-[80px]"
@@ -116,10 +119,10 @@ const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
 
         <p className="mt-2.5" dangerouslySetInnerHTML={{ __html: description }} />
         {urls && (
-          <div className="mt-3.5 flex flex-wrap gap-y-3.5 gap-x-5">
+          <div className="mt-3.5 flex flex-wrap gap-x-5 gap-y-3.5">
             {urls.map(({ label, url }, index) => (
               <Link
-                className="relative uppercase leading-none tracking-[0.03em] before:absolute before:top-1/2 before:-right-3 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 last:before:hidden"
+                className="relative uppercase leading-none tracking-[0.03em] before:absolute before:-right-3 before:top-1/2 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 last:before:hidden"
                 size="sm"
                 theme="black"
                 to={url}

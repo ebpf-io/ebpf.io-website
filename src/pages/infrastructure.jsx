@@ -31,10 +31,10 @@ const InfrastructurePage = () => (
   <Layout>
     <h1 className="sr-only">Infrastructure</h1>
     <Hero />
-    <ProjectsList className="mt-[72px] lg:mt-16 md:mt-12" {...majorInfrastructureProps} />
-    <ProjectsList className="mt-32 lg:mt-28 md:mt-20 sm:mt-16" {...emergingInfrastructureProps} />
+    <ProjectsList className="pt-[72px] lg:pt-16 md:pt-12" {...majorInfrastructureProps} />
+    <ProjectsList className="pt-32 lg:pt-28 md:pt-20 sm:pt-16" {...emergingInfrastructureProps} />
     <EbpfLibraries />
-    <ProjectsList className="mt-32 lg:mt-28 md:mt-20 sm:mt-16" {...auxiliaryLibrariesProps} />
+    <ProjectsList className="pt-32 lg:pt-28 md:pt-20 sm:pt-16" {...auxiliaryLibrariesProps} />
     <FAQ />
   </Layout>
 );

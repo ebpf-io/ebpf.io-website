@@ -13,12 +13,10 @@ const Requirements = () => (
       </li>
       <li>
         The project must be using eBPF as its underlying core technology (in other words, a project
-	would lose its purpose if the eBPF parts are removed) or help accelerate the adoption of eBPF
-	in production.
+        would lose its purpose if the eBPF parts are removed) or help accelerate the adoption of
+        eBPF in production.
       </li>
-      <li>
-	The project must be actively maintained.
-      </li>
+      <li>The project must be actively maintained.</li>
       <li>
         The project must be open to collaboration and have a governance model following open source
         best-practices.
@@ -62,7 +60,7 @@ const items = [
 ];
 
 const FAQ = () => (
-  <section className="faq safe-paddings my-32 lg:my-28 md:my-20">
+  <section className="faq safe-paddings mb-32 pt-32 lg:mb-28 lg:pt-28 md:mb-20 md:pt-20" id="faq">
     <div className="container-sm">
       <h2 className="heading-8xl text-center font-bold leading-dense">
         Frequently Asked Questions

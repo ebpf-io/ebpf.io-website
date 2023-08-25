@@ -2,10 +2,12 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import slugifyCategory from 'utils/slugify-category';
+
 import ProjectCard from '../project-card';
 
 const ProjectsList = ({ className, titleTag: Tag, title, description, items }) => (
-  <section className={clsx('projects safe-paddings', className)}>
+  <section className={clsx('projects safe-paddings', className)} id={slugifyCategory(title)}>
     <div className="container-sm">
       <div className="mx-auto max-w-[446px] text-center">
         <Tag className="heading-8xl font-semibold leading-dense">{title}</Tag>
