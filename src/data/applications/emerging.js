@@ -368,7 +368,9 @@ const emergingApplications = [
     title: 'Layer 4 Kubernetes load-balancer',
     description: `Blixt is a layer 4 load-balancer for Kubernetes. It has a control-plane
     implemented using Gateway API and a data-plane built using eBPF and Rust.`,
-    urls: [{ label: 'GitHub', url: 'https://github.com/kong/blixt' }],
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/kong/blixt' }
+    ],
   }
 ];
 
