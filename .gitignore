@@ -72,4 +72,5 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+.vscode
 .vscode/snipsnap.code-snippets

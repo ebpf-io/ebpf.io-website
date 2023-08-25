@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useState, useCallback } from 'react';
 
 import Speaker from 'components/pages/summit-2023/speakers/speaker';
+import Button from 'components/shared/button';
 import SpeakersModal from 'components/shared/speakers-modal';
 
 const Speakers = ({ title, endpoint }) => {
@@ -39,28 +40,45 @@ const Speakers = ({ title, endpoint }) => {
     fetchSpeakers();
   }, [fetchSpeakers]);
 
-  if (!error && speakers.length > 0) {
-    return (
-      <section className="pb-10 pt-32 md:pt-20">
-        <div className="container">
-          <h2 className="heading-9xl text-center font-bold leading-none">{title}</h2>
-          <div className="mt-16 flex flex-wrap justify-center gap-10 md:mt-10 md:gap-6">
-            {speakers.map(({ fullName, tagLine, profilePicture, id }) => (
-              <Speaker
-                key={id}
-                clickHandler={() => clickHandler(id)}
-                fullName={fullName}
-                tagLine={tagLine}
-                profilePicture={profilePicture}
-              />
-            ))}
+  return (
+    <section className="pb-10 pt-32 md:pt-20">
+      <div className="container">
+        <div className="flex flex-col items-start justify-center">
+          <h2 className="heading-9xl mx-auto text-center font-bold leading-none">{title}</h2>
+          <div className="mx-auto mt-16 flex flex-wrap justify-center gap-10 md:mt-10 md:gap-6">
+            {!error && speakers.length > 0 ? (
+              <>
+                {speakers.map(({ fullName, tagLine, profilePicture, id }) => (
+                  <Speaker
+                    key={id}
+                    clickHandler={() => clickHandler(id)}
+                    fullName={fullName}
+                    tagLine={tagLine}
+                    profilePicture={profilePicture}
+                  />
+                ))}
+              </>
+            ) : (
+              <>
+                {[0, 1, 2, 3].map((_, index) => (
+                  <Speaker key={index} isLoading />
+                ))}
+              </>
+            )}
           </div>
+          <Button
+            className="mx-auto mt-16 flex items-center space-x-3 rounded-lg px-6 leading-none md:mt-10 sm:flex-1 xs:px-3.5"
+            size="sm"
+            to="/summit-2023-schedule/"
+            theme="orange"
+          >
+            View the schedule
+          </Button>
         </div>
-        <SpeakersModal isOpen={isOpen} closeModal={closeModal} {...currentSpeaker} />
-      </section>
-    );
-  }
-  return null;
+      </div>
+      <SpeakersModal isOpen={isOpen} closeModal={closeModal} {...currentSpeaker} />
+    </section>
+  );
 };
 
 Speakers.propTypes = {

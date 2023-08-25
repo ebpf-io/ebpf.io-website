@@ -32,13 +32,10 @@ const Grid = () => {
   }, [modifySessionizeScript]);
 
   return (
-    <section className="safe-paddings relative z-0 py-24 md:py-20">
+    <section className="safe-paddings relative z-0 pb-24 pt-16 md:pb-20 md:pt-8">
       <div className="container item-center flex flex-col" id="schedule">
-        <h2 className="mx-auto w-fit text-10xl font-bold leading-tight lg:text-9xl sm:text-7xl">
-          Schedule
-        </h2>
         {scheduleHTML ? (
-          <DangerousHtml className="mt-6" html={scheduleHTML} />
+          <DangerousHtml html={scheduleHTML} />
         ) : (
           <div className="my-20 flex items-center justify-center">
             <div className="h-10 w-10 animate-spin rounded-full border-b-2 border-t-2 border-gray-80" />
