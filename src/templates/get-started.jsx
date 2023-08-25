@@ -16,7 +16,7 @@ import VideoGallery from 'components/shared/video-gallery';
 import videoItems from 'data/get-started/video-data';
 
 const GetStartedPage = ({ pageContext: { events, blogPosts, contributors } }) => {
-  const hasContributors = false;
+  const hasContributors = contributors.length;
 
   return (
     <Layout>
