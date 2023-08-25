@@ -73,6 +73,18 @@ const emergingApplications = [
     urls: [{ label: 'GitHub', url: 'https://github.com/aquasecurity/tracee' }],
   },
   {
+    logoUrl: 'https://github.com/coroot/coroot',
+    name: 'coroot',
+    logoName: 'corootLogo',
+    title: 'Zero-instrumentation observability',
+    description: `Coroot is an open-source eBPF-based observability tool that turns telemetry
+  data into actionable insights, helping you identify and resolve application issues quickly.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/coroot/coroot' },
+      { label: 'Website', url: 'https://coroot.com/' },
+    ],
+  },
+  {
     logoUrl: 'https://github.com/iovisor/kubectl-trace',
     name: 'kubectl trace',
     logoName: 'kubectlTraceLogo',
@@ -129,9 +141,7 @@ const emergingApplications = [
     description: `Caretta is a Kubernetes service map that uses eBPF to trace network traffic between pods.
     It can be used to visualize the network traffic between services in a Kubernetes cluster,
     and gain additional insights into the network traffic and the relationships between services.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/groundcover-com/caretta' },
-    ],
+    urls: [{ label: 'GitHub', url: 'https://github.com/groundcover-com/caretta' }],
   },
   {
     logoUrl: 'https://github.com/keyval-dev/odigos',
@@ -141,10 +151,10 @@ const emergingApplications = [
     description: `Odigos is a zero-code distributed tracing solution that uses eBPF to automatically
     instrument any application, including automatic context propagation.
     Traces are produced in OpenTelemetry format and can be delivered to any compatible backend.`,
-     urls: [
+    urls: [
       { label: 'GitHub', url: 'https://github.com/keyval-dev/odigos' },
       { label: 'Website', url: 'https://odigos.io' },
-     ],
+    ],
   },
   {
     logoUrl: 'https://github.com/solo-io/bumblebee',
@@ -356,10 +366,8 @@ const emergingApplications = [
     title: 'Layer 4 Kubernetes load-balancer',
     description: `Blixt is a layer 4 load-balancer for Kubernetes. It has a control-plane
     implemented using Gateway API and a data-plane built using eBPF and Rust.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/kong/blixt' },
-    ],
-  }
+    urls: [{ label: 'GitHub', url: 'https://github.com/kong/blixt' }],
+  },
 ];
 
 export default emergingApplications;

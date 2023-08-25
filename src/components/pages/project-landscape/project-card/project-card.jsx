@@ -12,6 +12,7 @@ import bumblebeeLogo from './logos/bumblebee.svg';
 import calicoLogo from './logos/calico.svg';
 import carettaLogo from './logos/caretta.svg';
 import ciliumLogo from './logos/cilium-with-text.svg';
+import corootLogo from './logos/coroot.svg';
 import ebpfForWindowsLogo from './logos/ebpf-windows.svg';
 import ecaptureLogo from './logos/ecapture.svg';
 import falcoLogo from './logos/falco.svg';
@@ -65,6 +66,7 @@ const logos = {
   hbpfLogo,
   gccLogo,
   rbpfLogo,
+  corootLogo,
   tetragonLogo: <StaticImage src="./logos/tetragon.png" alt="Tetragon" loading="lazy" />,
   loxiLBLogo: <StaticImage src="./logos/loxilb.png" alt="Loxi LB" loading="lazy" />,
   pwruLogo: <StaticImage src="./logos/pwru.png" alt="pwru" loading="lazy" />,
