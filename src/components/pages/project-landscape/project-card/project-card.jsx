@@ -35,6 +35,7 @@ import carettaLogo from './logos/caretta.svg';
 import bpfdLogo from './logos/bpfd.svg';
 import blixtLogo from './logos/blixt.png';
 import daeLogo from './logos/dae.png';
+import corootLogo from './logos/coroot.svg';
 
 const logos = {
   bccLogo,
@@ -67,6 +68,7 @@ const logos = {
   hbpfLogo,
   gccLogo,
   rbpfLogo,
+  corootLogo,
   tetragonLogo: <StaticImage src="./logos/tetragon.png" alt="Tetragon" loading="lazy" />,
   loxiLBLogo: <StaticImage src="./logos/loxilb.png" alt="Loxi LB" loading="lazy" />,
   pwruLogo: <StaticImage src="./logos/pwru.png" alt="pwru" loading="lazy" />,
