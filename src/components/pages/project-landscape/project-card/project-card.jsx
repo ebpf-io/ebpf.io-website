@@ -34,6 +34,7 @@ import sshlogLogo from './logos/sshlog.svg';
 import carettaLogo from './logos/caretta.svg';
 import bpfdLogo from './logos/bpfd.svg';
 import blixtLogo from './logos/blixt.png';
+import daeLogo from './logos/dae.png';
 import corootLogo from './logos/coroot.svg';
 
 const logos = {
@@ -57,6 +58,7 @@ const logos = {
   keplerLogo,
   bpfdLogo,
   blixtLogo,
+  daeLogo,
   sysinternalsLogo,
   sshlogLogo,
   carettaLogo,
