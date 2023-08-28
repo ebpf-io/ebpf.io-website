@@ -31,7 +31,7 @@ const Card = ({ type, title, description, ogImage, date, linkUrl, className }) =
         {(ogImage || imageUrl) && (
           <ImageUniversal
             gatsbyClassName="rounded-t-lg h-[182px] lg:h-[15vw] md:h-[24vw] sm:h-auto sm:max-h-none bg-gray-98"
-            gatsbyImgClassName="mix-blend-multiply !object-none"
+            gatsbyImgClassName="mix-blend-multiply"
             svgClassName="mix-blend-multiply rounded-t-lg h-[182px] w-full lg:h-[15vw] md:h-[24vw] sm:h-auto sm:max-h-none object-contain bg-gray-98"
             imageSrc={ogImage}
             imageUrl={imageUrl}
