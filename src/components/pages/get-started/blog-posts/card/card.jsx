@@ -38,6 +38,7 @@ const Card = ({ type, title, description, ogImage, date, linkUrl, className }) =
             width={733}
             height={383}
             alt={title}
+            objectFit="cover"
           />
         )}
       </Link>
