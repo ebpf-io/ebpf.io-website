@@ -69,25 +69,87 @@ const logos = {
   gccLogo,
   rbpfLogo,
   corootLogo,
-  tetragonLogo: <StaticImage src="./logos/tetragon.png" alt="Tetragon" loading="lazy" />,
-  loxiLBLogo: <StaticImage src="./logos/loxilb.png" alt="Loxi LB" loading="lazy" />,
-  pwruLogo: <StaticImage src="./logos/pwru.png" alt="pwru" loading="lazy" />,
-  wachyLogo: <StaticImage src="./logos/wachy.png" alt="wachy" loading="lazy" />,
-  skywalkingLogo: <StaticImage src="./logos/skywalking.png" alt="SkyWalking" loading="lazy" />,
-  pulsarLogo: <StaticImage src="./logos/pulsar.png" alt="Pulsar" loading="lazy" />,
-  deepflowLogo: <StaticImage src="./logos/deepflow.png" alt="DeepFlow" loading="lazy" />,
-  inspektorGadgetLogo: (
-    <StaticImage src="./logos/inspektor_gadget.png" alt="Inspektor Gadget" loading="lazy" />
+  tetragonLogo: (
+    <StaticImage
+      src="./logos/tetragon.png"
+      alt="Tetragon"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
   ),
-  bpftraceLogo: <StaticImage src="./logos/bpftrace.png" alt="bpftrace" loading="lazy" />,
-  eunomiaLogo: <StaticImage src="./logos/eunomia.png" alt="Eunomia" loading="lazy" />,
-  kindlingLogo: <StaticImage src="./logos/kindling.png" alt="Kindling" loading="lazy" />,
-  odigosLogo: <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" />,
+  loxiLBLogo: (
+    <StaticImage src="./logos/loxilb.png" alt="Loxi LB" loading="lazy" width={116} height={116} />
+  ),
+  pwruLogo: (
+    <StaticImage src="./logos/pwru.png" alt="pwru" loading="lazy" width={116} height={116} />
+  ),
+  wachyLogo: (
+    <StaticImage src="./logos/wachy.png" alt="wachy" loading="lazy" width={116} height={116} />
+  ),
+  skywalkingLogo: (
+    <StaticImage
+      src="./logos/skywalking.png"
+      alt="SkyWalking"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  pulsarLogo: (
+    <StaticImage src="./logos/pulsar.png" alt="Pulsar" loading="lazy" width={116} height={116} />
+  ),
+  deepflowLogo: (
+    <StaticImage
+      src="./logos/deepflow.png"
+      alt="DeepFlow"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  inspektorGadgetLogo: (
+    <StaticImage
+      src="./logos/inspektor_gadget.png"
+      alt="Inspektor Gadget"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  bpftraceLogo: (
+    <StaticImage
+      src="./logos/bpftrace.png"
+      alt="bpftrace"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  eunomiaLogo: (
+    <StaticImage src="./logos/eunomia.png" alt="Eunomia" loading="lazy" width={116} height={116} />
+  ),
+  kindlingLogo: (
+    <StaticImage
+      src="./logos/kindling.png"
+      alt="Kindling"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  odigosLogo: (
+    <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" width={116} height={116} />
+  ),
 };
 
 const Logo = ({ logo, name }) => {
   const isStaticImage = typeof logo === 'object';
-  return isStaticImage ? logo : <img src={logo} alt={name} loading="lazy" />;
+  return isStaticImage ? (
+    logo
+  ) : (
+    <img src={logo} alt={name} loading="lazy" width={116} height={116} />
+  );
 };
 
 Logo.propTypes = {

@@ -10,7 +10,7 @@ import majorApplications from 'data/applications/major';
 import SEO_DATA from 'data/seo-data';
 
 const majorApplicationsProps = {
-  titleTag: 'h1',
+  titleTag: 'h2',
   title: 'Major Applications',
   items: majorApplications,
 };

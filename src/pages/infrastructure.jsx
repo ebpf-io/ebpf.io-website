@@ -12,7 +12,7 @@ import majorInfrastructure from 'data/infrastructure/major';
 import SEO_DATA from 'data/seo-data';
 
 const majorInfrastructureProps = {
-  titleTag: 'h1',
+  titleTag: 'h2',
   title: 'Major Infrastructure',
   items: majorInfrastructure,
 };
