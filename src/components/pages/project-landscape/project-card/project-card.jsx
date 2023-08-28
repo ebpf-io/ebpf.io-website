@@ -13,6 +13,7 @@ import calicoLogo from './logos/calico.svg';
 import carettaLogo from './logos/caretta.svg';
 import ciliumLogo from './logos/cilium-with-text.svg';
 import corootLogo from './logos/coroot.svg';
+import daeLogo from './logos/dae.png';
 import ebpfForWindowsLogo from './logos/ebpf-windows.svg';
 import ecaptureLogo from './logos/ecapture.svg';
 import falcoLogo from './logos/falco.svg';
@@ -57,6 +58,7 @@ const logos = {
   keplerLogo,
   bpfdLogo,
   blixtLogo,
+  daeLogo,
   sysinternalsLogo,
   sshlogLogo,
   carettaLogo,
