@@ -141,7 +141,7 @@ Upon successful completion of verification, the eBPF program runs through a hard
 
 #### Abstracted Runtime Context
 
-eBPF programs cannot access arbitrary kernel memory directly. Data and data structures that lie outside of the context of the program must be accessed via eBPF helpers. This guarantees consistent data access and makes any such access subject to the privileges of the eBPF program, e.g. only data structures relevant to the program's type can be read or (sometimes) modified, provided the verifier could ensure at load time that out-of-bound accesses will never happen or an eBPF program running is only allowed to modify the data of certain data structures if the modification can be guaranteed to be safe. An eBPF program cannot randomly modify data structures in the kernel.
+eBPF programs cannot access arbitrary kernel memory directly. Data and data structures that lie outside of the context of the program must be accessed via eBPF helpers. This guarantees consistent data access and makes any such access subject to the privileges of the eBPF program, e.g. only data structures relevant to the program's type can be read or (sometimes) modified, provided the verifier could ensure at load time that out-of-bound accesses will never happen; or an eBPF program running is only allowed to modify the data of certain data structures if the modification can be guaranteed to be safe. An eBPF program cannot randomly modify data structures in the kernel.
 
 ## Why eBPF?
 
