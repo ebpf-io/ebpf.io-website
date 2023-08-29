@@ -215,7 +215,7 @@ The eBPF Go library provides a generic eBPF library that decouples the process o
 
 #### libbpf C/C++ Library
 
-The libbpf library is a C/C++-based generic eBPF library which helps to decouple the loading of eBPF object files generated from the clang/LLVM compiler into the kernel and generally abstracts interaction with the BPF system call by providing easy to use library APIs for applications.
+The libbpf library is a C/C++-based generic eBPF library which helps the loading of eBPF object files generated from the clang/LLVM compiler into the kernel and generally abstracts interaction with the BPF system call by providing easy to use library APIs for applications.
 
 ![Libbpf](libbpf.png)
 
