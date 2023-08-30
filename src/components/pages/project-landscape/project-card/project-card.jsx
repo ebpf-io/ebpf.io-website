@@ -2,13 +2,19 @@ import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import AnchorHeading from 'components/shared/anchor-heading';
 import Link from 'components/shared/link/link';
 import slugifyCategory from 'utils/slugify-category';
 
 import bccLogo from './logos/bcc.svg';
+import blixtLogo from './logos/blixt.png';
+import bpfdLogo from './logos/bpfd.svg';
 import bumblebeeLogo from './logos/bumblebee.svg';
 import calicoLogo from './logos/calico.svg';
+import carettaLogo from './logos/caretta.svg';
 import ciliumLogo from './logos/cilium-with-text.svg';
+import corootLogo from './logos/coroot.svg';
+import daeLogo from './logos/dae.png';
 import ebpfForWindowsLogo from './logos/ebpf-windows.svg';
 import ecaptureLogo from './logos/ecapture.svg';
 import falcoLogo from './logos/falco.svg';
@@ -28,14 +34,9 @@ import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
 import pyroscopeLogo from './logos/pyroscope.svg';
 import rbpfLogo from './logos/rbpf.svg';
+import sshlogLogo from './logos/sshlog.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
-import sshlogLogo from './logos/sshlog.svg';
-import carettaLogo from './logos/caretta.svg';
-import bpfdLogo from './logos/bpfd.svg';
-import blixtLogo from './logos/blixt.png';
-import daeLogo from './logos/dae.png';
-import corootLogo from './logos/coroot.svg';
 
 const logos = {
   bccLogo,
@@ -69,25 +70,87 @@ const logos = {
   gccLogo,
   rbpfLogo,
   corootLogo,
-  tetragonLogo: <StaticImage src="./logos/tetragon.png" alt="Tetragon" loading="lazy" />,
-  loxiLBLogo: <StaticImage src="./logos/loxilb.png" alt="Loxi LB" loading="lazy" />,
-  pwruLogo: <StaticImage src="./logos/pwru.png" alt="pwru" loading="lazy" />,
-  wachyLogo: <StaticImage src="./logos/wachy.png" alt="wachy" loading="lazy" />,
-  skywalkingLogo: <StaticImage src="./logos/skywalking.png" alt="SkyWalking" loading="lazy" />,
-  pulsarLogo: <StaticImage src="./logos/pulsar.png" alt="Pulsar" loading="lazy" />,
-  deepflowLogo: <StaticImage src="./logos/deepflow.png" alt="DeepFlow" loading="lazy" />,
-  inspektorGadgetLogo: (
-    <StaticImage src="./logos/inspektor_gadget.png" alt="Inspektor Gadget" loading="lazy" />
+  tetragonLogo: (
+    <StaticImage
+      src="./logos/tetragon.png"
+      alt="Tetragon"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
   ),
-  bpftraceLogo: <StaticImage src="./logos/bpftrace.png" alt="bpftrace" loading="lazy" />,
-  eunomiaLogo: <StaticImage src="./logos/eunomia.png" alt="Eunomia" loading="lazy" />,
-  kindlingLogo: <StaticImage src="./logos/kindling.png" alt="Kindling" loading="lazy" />,
-  odigosLogo: <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" />,
-}; 
+  loxiLBLogo: (
+    <StaticImage src="./logos/loxilb.png" alt="Loxi LB" loading="lazy" width={116} height={116} />
+  ),
+  pwruLogo: (
+    <StaticImage src="./logos/pwru.png" alt="pwru" loading="lazy" width={116} height={116} />
+  ),
+  wachyLogo: (
+    <StaticImage src="./logos/wachy.png" alt="wachy" loading="lazy" width={116} height={116} />
+  ),
+  skywalkingLogo: (
+    <StaticImage
+      src="./logos/skywalking.png"
+      alt="SkyWalking"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  pulsarLogo: (
+    <StaticImage src="./logos/pulsar.png" alt="Pulsar" loading="lazy" width={116} height={116} />
+  ),
+  deepflowLogo: (
+    <StaticImage
+      src="./logos/deepflow.png"
+      alt="DeepFlow"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  inspektorGadgetLogo: (
+    <StaticImage
+      src="./logos/inspektor_gadget.png"
+      alt="Inspektor Gadget"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  bpftraceLogo: (
+    <StaticImage
+      src="./logos/bpftrace.png"
+      alt="bpftrace"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  eunomiaLogo: (
+    <StaticImage src="./logos/eunomia.png" alt="Eunomia" loading="lazy" width={116} height={116} />
+  ),
+  kindlingLogo: (
+    <StaticImage
+      src="./logos/kindling.png"
+      alt="Kindling"
+      loading="lazy"
+      width={116}
+      height={116}
+    />
+  ),
+  odigosLogo: (
+    <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" width={116} height={116} />
+  ),
+};
 
 const Logo = ({ logo, name }) => {
   const isStaticImage = typeof logo === 'object';
-  return isStaticImage ? logo : <img src={logo} alt={name} loading="lazy" />;
+  return isStaticImage ? (
+    logo
+  ) : (
+    <img src={logo} alt={name} loading="lazy" width={116} height={116} />
+  );
 };
 
 Logo.propTypes = {
@@ -95,12 +158,18 @@ Logo.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
+const Heading = AnchorHeading('h3');
+
 const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
   const Tag = logoUrl ? Link : 'div';
   const logo = logos[logoName];
+  const slug = slugifyCategory(name);
 
   return (
-    <li className="flex items-start space-x-8 pt-7 pb-10 sm:flex-col sm:space-x-0 sm:pt-6 sm:pb-7">
+    <li
+      className="flex items-start space-x-8 pb-10 pt-7 sm:flex-col sm:space-x-0 sm:pb-7 sm:pt-6"
+      id={slug}
+    >
       {logo && logoUrl ? (
         <Tag
           className="mb-4 w-full max-w-[116px] shrink-0 sm:max-w-[90px] xs:max-w-[80px]"
@@ -113,17 +182,17 @@ const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
         <div className="w-full max-w-[116px] shrink-0 sm:max-w-[90px]" />
       )}
       <div>
-        <h3 className="heading-6xl font-semibold" id={slugifyCategory(name)}>
+        <Heading className="heading-6xl font-semibold" id={slug}>
           {name}
-        </h3>
+        </Heading>
         {title && <h4 className="mt-0.5 font-sans text-lg font-medium leading-snug">{title}</h4>}
 
         <p className="mt-2.5" dangerouslySetInnerHTML={{ __html: description }} />
         {urls && (
-          <div className="mt-3.5 flex flex-wrap gap-y-3.5 gap-x-5">
+          <div className="mt-3.5 flex flex-wrap gap-x-5 gap-y-3.5">
             {urls.map(({ label, url }, index) => (
               <Link
-                className="relative uppercase leading-none tracking-[0.03em] before:absolute before:top-1/2 before:-right-3 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 last:before:hidden"
+                className="relative uppercase leading-none tracking-[0.03em] before:absolute before:-right-3 before:top-1/2 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 last:before:hidden"
                 size="sm"
                 theme="black"
                 to={url}
