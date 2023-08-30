@@ -13,7 +13,7 @@ Historically, the operating system has always been an ideal place to implement o
 
 ![Overview](overview.png)
 
-eBPF changes this formula fundamentally. By allowing to run sandboxed programs within the operating system, application developers can run eBPF programs to add additional capabilities to the operating system at runtime. The operating system then guarantees safety and execution efficiency as if natively compiled with the aid of a Just-In-Time (JIT) compiler and verification engine. This has led to a wave of eBPF-based projects covering a wide array of use cases, including next-generation networking, observability, and security functionality.
+eBPF changes this formula fundamentally. It allows sandboxed programs to run within the operating system, which means that application developers can run eBPF programs to add additional capabilities to the operating system at runtime. The operating system then guarantees safety and execution efficiency as if natively compiled with the aid of a Just-In-Time (JIT) compiler and verification engine. This has led to a wave of eBPF-based projects covering a wide array of use cases, including next-generation networking, observability, and security functionality.
 
 Today, eBPF is used extensively to drive a wide variety of use cases: Providing high-performance networking and load-balancing in modern data centers and cloud native environments, extracting fine-grained security observability data at low overhead, helping application developers trace applications, providing insights for performance troubleshooting, preventive application and container runtime security enforcement, and much more. The possibilities are endless, and the innovation that eBPF is unlocking has only just begun.
 
@@ -141,7 +141,7 @@ Upon successful completion of verification, the eBPF program runs through a hard
 
 #### Abstracted Runtime Context
 
-eBPF programs cannot access arbitrary kernel memory directly. Access to data and data structures that lie outside of the context of the program must be accessed via eBPF helpers. This guarantees consistent data access and makes any such access subject to the privileges of the eBPF program, e.g. an eBPF program running is allowed to modify the data of certain data structures if the modification can be guaranteed to be safe. An eBPF program cannot randomly modify data structures in the kernel.
+eBPF programs cannot access arbitrary kernel memory directly. Data and data structures that lie outside of the context of the program must be accessed via eBPF helpers. This guarantees consistent data access and makes any such access subject to the privileges of the eBPF program, e.g. only data structures relevant to the program's type can be read or (sometimes) modified, provided the verifier could ensure at load time that out-of-bound accesses will never happen; or an eBPF program running is only allowed to modify the data of certain data structures if the modification can be guaranteed to be safe. An eBPF program cannot randomly modify data structures in the kernel.
 
 ## Why eBPF?
 
@@ -215,7 +215,7 @@ The eBPF Go library provides a generic eBPF library that decouples the process o
 
 #### libbpf C/C++ Library
 
-The libbpf library is a C/C++-based generic eBPF library which helps to decouple the loading of eBPF object files generated from the clang/LLVM compiler into the kernel and generally abstracts interaction with the BPF system call by providing easy to use library APIs for applications.
+The libbpf library is a C/C++-based generic eBPF library which helps the loading of eBPF object files generated from the clang/LLVM compiler into the kernel and generally abstracts interaction with the BPF system call by providing easy to use library APIs for applications.
 
 ![Libbpf](libbpf.png)
 
