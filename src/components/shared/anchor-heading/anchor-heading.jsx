@@ -1,16 +1,20 @@
 import clsx from 'clsx';
 import React from 'react';
 
-import HashIcon from './images/hash.inline.svg';
+import HashIcon from 'icons/hash.inline.svg';
 
 const AnchorHeading =
   (Tag) =>
   // eslint-disable-next-line react/prop-types
-  ({ children, id }) =>
+  ({ children, id, className }) =>
     (
-      <Tag id={id} className="group relative flex w-fit">
+      <Tag id={id} className={clsx('group relative flex w-fit', className)}>
         <a
-          className="anchor !absolute top-1/2 -right-16 flex h-full -translate-y-[calc(50%-0.15rem)] -translate-x-full items-center justify-center px-2.5 opacity-0 transition-opacity duration-200 before:!hidden hover:opacity-100 group-hover:opacity-100 sm:hidden"
+          className={clsx(
+            'anchor !absolute top-1/2 flex h-full -translate-x-full -translate-y-[calc(50%-0.15rem)] items-center justify-center px-2.5 opacity-0 transition-opacity duration-200 before:!hidden hover:opacity-100 group-hover:opacity-100 sm:hidden',
+            Tag === 'h2' && '-right-[72px]',
+            Tag === 'h3' && '-right-16'
+          )}
           href={`#${id}`}
           tabIndex="-1"
           aria-hidden

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AnchorHeading from 'components/shared/anchor-heading';
 import slugifyCategory from 'utils/slugify-category';
 
 import CPlusPlusIcon from './images/cplusplus.inline.svg';
@@ -35,38 +36,51 @@ const items = [
   },
 ];
 
-const EbpfLibraries = () => (
-  <section className="libraries safe-paddings pt-32 lg:pt-28 md:pt-20" id={slugifyCategory(title)}>
-    <div className="container">
-      <div className="rounded-lg border border-secondary-blue-1 bg-secondary-blue-1-light p-16 lg:p-12 md:px-8">
-        <h2 className="heading-9xl text-center font-bold leading-dense">{title}</h2>
-        <ul className="mt-12 flex divide-x divide-dashed divide-secondary-blue-2 divide-opacity-30 lg:mt-10 md:mt-8 md:flex-col md:divide-x-0 md:divide-y">
-          {items.map(({ name, icon: Icon, list }, index) => (
-            <li
-              className="flex-1 px-8 first:pl-0 last:pr-0 lg:px-6 md:px-0 md:py-6 md:first:pt-0 md:last:pb-0"
-              key={index}
+const Heading = AnchorHeading('h2');
+
+const EbpfLibraries = () => {
+  const slug = slugifyCategory(title);
+
+  return (
+    <section className="libraries safe-paddings pt-32 lg:pt-28 md:pt-20" id={slug}>
+      <div className="container">
+        <div className="rounded-lg border border-secondary-blue-1 bg-secondary-blue-1-light p-16 lg:p-12 md:px-8">
+          <div className="w-full text-center">
+            <Heading
+              className="heading-9xl inline-flex text-center font-bold leading-dense"
+              id={slug}
             >
-              <div className="flex items-center">
-                <Icon className="h-11 w-auto pr-4" />
-                <h3 className="heading-6xl border-l border-secondary-blue-2 pl-4 font-semibold leading-none">
-                  {name}
-                </h3>
-              </div>
-              <ul className="mt-7 lg:mt-6 md:mt-5">
-                {list.map((item, index) => (
-                  <li
-                    className="with-primary-blue-link mt-4 first:mt-0"
-                    key={index}
-                    dangerouslySetInnerHTML={{ __html: item }}
-                  />
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+              {title}
+            </Heading>
+          </div>
+          <ul className="mt-12 flex divide-x divide-dashed divide-secondary-blue-2 divide-opacity-30 lg:mt-10 md:mt-8 md:flex-col md:divide-x-0 md:divide-y">
+            {items.map(({ name, icon: Icon, list }, index) => (
+              <li
+                className="flex-1 px-8 first:pl-0 last:pr-0 lg:px-6 md:px-0 md:py-6 md:first:pt-0 md:last:pb-0"
+                key={index}
+              >
+                <div className="flex items-center">
+                  <Icon className="h-11 w-auto pr-4" />
+                  <h3 className="heading-6xl border-l border-secondary-blue-2 pl-4 font-semibold leading-none">
+                    {name}
+                  </h3>
+                </div>
+                <ul className="mt-7 lg:mt-6 md:mt-5">
+                  {list.map((item, index) => (
+                    <li
+                      className="with-primary-blue-link mt-4 first:mt-0"
+                      key={index}
+                      dangerouslySetInnerHTML={{ __html: item }}
+                    />
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default EbpfLibraries;

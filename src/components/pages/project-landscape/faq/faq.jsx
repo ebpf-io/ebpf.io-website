@@ -1,5 +1,7 @@
 import React from 'react';
 
+import AnchorHeading from 'components/shared/anchor-heading';
+
 const Requirements = () => (
   <>
     <p>
@@ -59,12 +61,16 @@ const items = [
   },
 ];
 
+const Heading = AnchorHeading('h2');
+
 const FAQ = () => (
   <section className="faq safe-paddings mb-32 pt-32 lg:mb-28 lg:pt-28 md:mb-20 md:pt-20" id="faq">
     <div className="container-sm">
-      <h2 className="heading-8xl text-center font-bold leading-dense">
-        Frequently Asked Questions
-      </h2>
+      <div className="text-center">
+        <Heading className="heading-8xl inline-flex text-center font-bold leading-dense">
+          Frequently Asked Questions
+        </Heading>
+      </div>
       <ul>
         {items.map(({ question, answer }, index) => {
           const Answer = answer;

@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import AnchorHeading from 'components/shared/anchor-heading';
 import Link from 'components/shared/link/link';
 import slugifyCategory from 'utils/slugify-category';
 
@@ -157,14 +158,17 @@ Logo.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
+const Heading = AnchorHeading('h3');
+
 const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
   const Tag = logoUrl ? Link : 'div';
   const logo = logos[logoName];
+  const slug = slugifyCategory(name);
 
   return (
     <li
       className="flex items-start space-x-8 pb-10 pt-7 sm:flex-col sm:space-x-0 sm:pb-7 sm:pt-6"
-      id={slugifyCategory(name)}
+      id={slug}
     >
       {logo && logoUrl ? (
         <Tag
@@ -178,9 +182,9 @@ const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
         <div className="w-full max-w-[116px] shrink-0 sm:max-w-[90px]" />
       )}
       <div>
-        <h3 className="heading-6xl font-semibold" id={slugifyCategory(name)}>
+        <Heading className="heading-6xl font-semibold" id={slug}>
           {name}
-        </h3>
+        </Heading>
         {title && <h4 className="mt-0.5 font-sans text-lg font-medium leading-snug">{title}</h4>}
 
         <p className="mt-2.5" dangerouslySetInnerHTML={{ __html: description }} />
