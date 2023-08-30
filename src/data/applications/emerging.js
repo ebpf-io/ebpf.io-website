@@ -141,9 +141,7 @@ const emergingApplications = [
     description: `Caretta is a Kubernetes service map that uses eBPF to trace network traffic between pods.
     It can be used to visualize the network traffic between services in a Kubernetes cluster,
     and gain additional insights into the network traffic and the relationships between services.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/groundcover-com/caretta' },
-    ],
+    urls: [{ label: 'GitHub', url: 'https://github.com/groundcover-com/caretta' }],
   },
   {
     logoUrl: 'https://github.com/keyval-dev/odigos',
@@ -153,10 +151,10 @@ const emergingApplications = [
     description: `Odigos is a zero-code distributed tracing solution that uses eBPF to automatically
     instrument any application, including automatic context propagation.
     Traces are produced in OpenTelemetry format and can be delivered to any compatible backend.`,
-     urls: [
+    urls: [
       { label: 'GitHub', url: 'https://github.com/keyval-dev/odigos' },
       { label: 'Website', url: 'https://odigos.io' },
-     ],
+    ],
   },
   {
     logoUrl: 'https://github.com/solo-io/bumblebee',
@@ -230,9 +228,7 @@ const emergingApplications = [
     logoName: 'daeLogo',
     title: 'Linux high-performance transparent proxy solution',
     description: `"Dae," which means "goose," serves as a high-performance transparent proxy solution. To enhance traffic split performance to the fullest extent, dae employs the transparent proxy and traffic split suite within the Linux kernel using eBPF. As a result, dae can enable direct traffic to bypass the proxy application's forwarding, facilitating genuine direct traffic passage. Through this remarkable feat, there is minimal performance loss and negligible additional resource consumption for direct traffic.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/daeuniverse/dae' },
-    ],
+    urls: [{ label: 'GitHub', url: 'https://github.com/daeuniverse/dae' }],
   },
   {
     logoUrl: 'https://github.com/rubrikinc/wachy',
@@ -378,10 +374,8 @@ const emergingApplications = [
     title: 'Layer 4 Kubernetes load-balancer',
     description: `Blixt is a layer 4 load-balancer for Kubernetes. It has a control-plane
     implemented using Gateway API and a data-plane built using eBPF and Rust.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/kong/blixt' }
-    ],
-  }
+    urls: [{ label: 'GitHub', url: 'https://github.com/kong/blixt' }],
+  },
 ];
 
 export default emergingApplications;
