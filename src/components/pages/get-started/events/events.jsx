@@ -9,7 +9,7 @@ const Events = ({ items, className }) => (
   <section className={clsx('safe-paddings mt-32 lg:mt-24 md:mt-16 sm:mt-14', className)}>
     <div className="container">
       <h2 className="heading-8xl text-center font-semibold leading-tight">
-        Participate in eBPF events to level up your expertize
+        Attend eBPF events to learn from industry experts
       </h2>
       <div className="grid-gap mt-14 grid auto-rows-min grid-cols-12 justify-items-stretch md:mt-11 sm:mt-8 sm:flex sm:flex-col sm:gap-y-5">
         {items.map((item, index) => (

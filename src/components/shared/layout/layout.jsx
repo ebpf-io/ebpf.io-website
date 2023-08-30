@@ -11,6 +11,10 @@ const headerMenu = [
     text: 'Learn',
     items: [
       {
+        text: 'Get Started',
+        to: '/get-started',
+      },
+      {
         text: 'What is eBPF?',
         to: '/what-is-ebpf',
       },
