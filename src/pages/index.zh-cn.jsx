@@ -12,7 +12,7 @@ import VideoGallery from 'components/shared/video-gallery';
 import videoItems from 'data/home-page/video-data';
 
 const HomePage = () => (
-  <Layout>
+  <Layout lang="zh-cn">
     <Hero />
     <CaseStudies />
     <WhyEbpf />

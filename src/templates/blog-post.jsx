@@ -29,7 +29,7 @@ const BlogPost = ({
 
   return (
     <Layout>
-      <article className="safe-paddings mt-16 mb-36 xl:mb-32 lg:mb-28 md:mt-14 md:mb-20">
+      <article className="safe-paddings mb-36 mt-16 xl:mb-32 lg:mb-28 md:mb-20 md:mt-14">
         <div className="container grid-gap-x grid grid-cols-12">
           <div className="col-span-8 md:col-span-full">
             <h1 className="heading-8xl font-semibold leading-tight">{title}</h1>
@@ -71,7 +71,7 @@ const BlogPost = ({
             content={children}
           />
           <aside className="col-start-10 col-end-13 mt-8 md:col-span-full md:hidden">
-            <div className="sticky top-10 bottom-10 max-h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden ">
+            <div className="sticky bottom-10 top-10 max-h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden ">
               {showTableOfContents && <TableOfContents items={tableOfContents.items} />}
               <SocialShare
                 className={clsx({ 'mt-9': showTableOfContents })}

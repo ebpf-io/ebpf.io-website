@@ -11,35 +11,37 @@ import SEO from 'components/shared/seo';
 import VideoGallery from 'components/shared/video-gallery';
 import videoItems from 'data/home-page/video-data';
 
+import { languages } from '../../../config/languages';
+
 const data = {
   hero: {
     title:
-      'Dynamically program the kernel for efficient networking, observability, tracing, and security',
+      'Programmation dynamique du noyau pour un trafic réseau, une observabilité, une trace et une sécurité efficacesc',
     blackButtonTitle: 'Project Landscape',
-    blackButtonUrl: '/applications',
+    blackButtonUrl: '/fr-fr/applications',
     yellowButtonTitle: 'What is eBPF',
-    yellowButtonUrl: '/what-is-ebpf',
+    yellowButtonUrl: '/fr-fr/what-is-ebpf',
     altImage: 'eBPF diagram',
     items: [
-      'Programs are verified to safely execute',
-      'Hook anywhere in the kernel to modify functionality',
-      'JIT compiler for near native execution speed',
-      'Add OS capabilities at runtime',
+      'Vérification des programmes pour une exécution sécurisée',
+      'Branchement n’importe où dans le noyau pour une modification des fonctionnalités',
+      'Compilateur JIT pour une vitesse d’exécution quasi native',
+      'Accès au fonctions bas niveau du système',
     ],
   },
   caseStudies: {
-    title: 'Organizations in every industry use eBPF in production',
-    linkText: 'More case studies',
-    linkUrl: '/case-studies/',
+    title: 'Des entreprises de tous type d’industries utilisent eBPF en production',
+    linkText: 'Plus d’études de cas',
+    linkUrl: '/fr-fr/case-studies/',
   },
   videoGallery: {
-    title: 'eBPF Community Talks',
+    title: 'Présentations de la communauté eBPF',
     items: videoItems,
   },
 };
 
 const HomePage = () => (
-  <Layout>
+  <Layout lang={languages['fr-fr'].code}>
     <Hero {...data.hero} />
     <CaseStudies {...data.caseStudies} />
     <WhyEbpf />

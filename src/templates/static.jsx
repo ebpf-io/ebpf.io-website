@@ -15,10 +15,11 @@ const StaticPage = ({
     },
   },
   children,
+  pageContext,
 }) => (
-  <Layout>
+  <Layout lang={pageContext.language}>
     <div className="safe-paddings">
-      <div className="container grid-gap-x mt-20 mb-28 grid grid-cols-12 lg:mt-16 lg:mb-24 md:mt-12 md:mb-20">
+      <div className="container grid-gap-x mb-28 mt-20 grid grid-cols-12 lg:mb-24 lg:mt-16 md:mb-20 md:mt-12">
         <TableOfContents
           className="col-span-3 lg:col-span-4 lg:max-w-[300px] md:hidden"
           items={tableOfContents.items}

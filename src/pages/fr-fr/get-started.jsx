@@ -10,6 +10,8 @@ import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
 import VideoGallery from 'components/shared/video-gallery';
 
+import { languages } from '../../../config/languages';
+
 const videoItems = [
   {
     videoId: 'wnlsHeiTLtE',
@@ -39,14 +41,16 @@ const videoItems = [
 
 const data = {
   videoGallery: {
-    title: 'eBPF introductory videos',
+    title: 'Vidéos d’introduction eBPF',
     items: videoItems,
   },
 };
 
+const lang = languages['fr-fr'].code;
+
 const HomePage = () => (
-  <Layout>
-    <Hero />
+  <Layout lang={lang}>
+    <Hero lang={lang} />
     <Documentation />
     <div className="container mt-28 md:mt-20 sm:mt-12">
       <SubscriptionForm size="lg" />

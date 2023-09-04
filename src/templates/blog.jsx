@@ -32,7 +32,7 @@ const BlogPage = ({
             pathname={pathname}
           />
           <BlogPostsList
-            className="pl-20 pt-20 pb-36 xl:pb-32 lg:pl-16 lg:pt-16 lg:pb-28 md:pb-20 md:pt-14 md:pl-0"
+            className="pb-36 pl-20 pt-20 xl:pb-32 lg:pb-28 lg:pl-16 lg:pt-16 md:pb-20 md:pl-0 md:pt-14"
             items={filteredPosts}
             pageCount={pageCount}
             currentPageIndex={currentPageIndex}

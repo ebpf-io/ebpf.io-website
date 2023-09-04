@@ -53,7 +53,7 @@ const Hero = () => (
           }}
         >
           <img
-            className="absolute top-0 right-0 md:-right-10 sm:-right-14 sm:-top-6 xs:hidden"
+            className="absolute right-0 top-0 md:-right-10 sm:-right-14 sm:-top-6 xs:hidden"
             src={shape1}
             alt=""
             width={171}
@@ -77,10 +77,10 @@ const Hero = () => (
               manage all developer contributions. The trees are maintained by:
             </p>
             <ul className="mt-2.5 inline-flex space-x-6 xs:flex-col xs:space-x-0 xs:space-y-2">
-              <li className="relative pl-3.5 before:absolute before:top-2 before:left-0 before:block before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary-yellow">
+              <li className="relative pl-3.5 before:absolute before:left-0 before:top-2 before:block before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary-yellow">
                 <span className="font-semibold">Alexei Starovoitov</span>, Facebook
               </li>
-              <li className="relative pl-3.5 before:absolute before:top-2 before:left-0 before:block before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary-yellow">
+              <li className="relative pl-3.5 before:absolute before:left-0 before:top-2 before:block before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary-yellow">
                 <span className="font-semibold">Daniel Borkmann</span>, Cilium/Isovalent
               </li>
             </ul>
@@ -95,7 +95,7 @@ const Hero = () => (
             <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-4">
               {links.map(({ text, to }, index) => (
                 <li
-                  className="relative text-[13px] font-semibold uppercase leading-none before:absolute before:top-1/2 before:-right-3 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-30 last:before:hidden lg:text-[13px]"
+                  className="relative text-[13px] font-semibold uppercase leading-none before:absolute before:-right-3 before:top-1/2 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-30 last:before:hidden lg:text-[13px]"
                   key={index}
                 >
                   <Link
