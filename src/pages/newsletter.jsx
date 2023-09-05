@@ -5,7 +5,7 @@ import Hero from 'components/pages/newsletter/hero';
 import PreviousReleases from 'components/pages/newsletter/previous-releases';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import SEO_DATA from 'data/seo-data';
+import SEO_DATA from 'data/shared/seo-data';
 
 const Newsletter = () => (
   <Layout>

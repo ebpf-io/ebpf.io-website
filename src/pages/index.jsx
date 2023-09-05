@@ -9,43 +9,20 @@ import WhyEbpf from 'components/pages/home/why-ebpf';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import VideoGallery from 'components/shared/video-gallery';
-import videoItems from 'data/home-page/video-data';
+import data from 'data/pages/home';
 
-const data = {
-  hero: {
-    title:
-      'Dynamically program the kernel for efficient networking, observability, tracing, and security',
-    blackButtonTitle: 'Project Landscape',
-    blackButtonUrl: '/applications',
-    yellowButtonTitle: 'What is eBPF',
-    yellowButtonUrl: '/what-is-ebpf',
-    altImage: 'eBPF diagram',
-    items: [
-      'Programs are verified to safely execute',
-      'Hook anywhere in the kernel to modify functionality',
-      'JIT compiler for near native execution speed',
-      'Add OS capabilities at runtime',
-    ],
-  },
-  caseStudies: {
-    title: 'Organizations in every industry use eBPF in production',
-    linkText: 'More case studies',
-    linkUrl: '/case-studies/',
-  },
-  videoGallery: {
-    title: 'eBPF Community Talks',
-    items: videoItems,
-  },
-};
+import { defaultLanguage } from '../../config/languages';
+
+const lang = defaultLanguage;
 
 const HomePage = () => (
   <Layout>
-    <Hero {...data.hero} />
-    <CaseStudies {...data.caseStudies} />
-    <WhyEbpf />
-    <Testimonials />
-    <Features />
-    <VideoGallery {...data.videoGallery} />
+    <Hero {...data[lang].hero} />
+    <CaseStudies {...data[lang].caseStudies} />
+    <WhyEbpf {...data[lang].whyEbpf} />
+    <Testimonials {...data[lang].testimonials} />
+    <Features {...data[lang].features} />
+    <VideoGallery {...data[lang].videoGallery} />
   </Layout>
 );
 

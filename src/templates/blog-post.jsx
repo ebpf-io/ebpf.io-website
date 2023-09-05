@@ -12,7 +12,7 @@ import Content from 'components/shared/content';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
-import postAuthors from 'data/post-authors';
+import postAuthors from 'data/shared/post-authors';
 
 const BlogPost = ({
   data: {
@@ -90,7 +90,15 @@ const BlogPost = ({
           {author && postAuthors[author]?.bio && (
             <PostAuthor className="col-span-8 md:col-span-full" author={author} />
           )}
-          <SubscriptionForm className="col-span-full mt-28 lg:mt-24 md:mt-20 sm:mt-16" size="md" />
+          <SubscriptionForm
+            className="col-span-full mt-28 lg:mt-24 md:mt-20 sm:mt-16"
+            title="Subscribe"
+            afterTitle="to bi-weekly eCHO News"
+            description="Keep up on the latest news and information from the eBPF and Cilium"
+            placeholder="Email address..."
+            buttonTitle="Subscribe"
+            size="md"
+          />
         </div>
       </article>
     </Layout>

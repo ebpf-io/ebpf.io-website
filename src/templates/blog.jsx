@@ -6,7 +6,7 @@ import BlogPostsList from 'components/pages/blog/blog-posts-list';
 import Sidebar from 'components/pages/blog/sidebar';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import SEO_DATA from 'data/seo-data';
+import SEO_DATA from 'data/shared/seo-data';
 
 const BlogPage = ({
   location: { pathname },

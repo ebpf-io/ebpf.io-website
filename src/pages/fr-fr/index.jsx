@@ -9,45 +9,20 @@ import WhyEbpf from 'components/pages/home/why-ebpf';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import VideoGallery from 'components/shared/video-gallery';
-import videoItems from 'data/home-page/video-data';
+import data from 'data/pages/home';
 
 import { languages } from '../../../config/languages';
 
-const data = {
-  hero: {
-    title:
-      'Programmation dynamique du noyau pour un trafic réseau, une observabilité, une trace et une sécurité efficacesc',
-    blackButtonTitle: 'Project Landscape',
-    blackButtonUrl: '/fr-fr/applications',
-    yellowButtonTitle: 'What is eBPF',
-    yellowButtonUrl: '/fr-fr/what-is-ebpf',
-    altImage: 'eBPF diagram',
-    items: [
-      'Vérification des programmes pour une exécution sécurisée',
-      'Branchement n’importe où dans le noyau pour une modification des fonctionnalités',
-      'Compilateur JIT pour une vitesse d’exécution quasi native',
-      'Accès au fonctions bas niveau du système',
-    ],
-  },
-  caseStudies: {
-    title: 'Des entreprises de tous type d’industries utilisent eBPF en production',
-    linkText: 'Plus d’études de cas',
-    linkUrl: '/fr-fr/case-studies/',
-  },
-  videoGallery: {
-    title: 'Présentations de la communauté eBPF',
-    items: videoItems,
-  },
-};
+const lang = languages['fr-fr'].code;
 
 const HomePage = () => (
-  <Layout lang={languages['fr-fr'].code}>
-    <Hero {...data.hero} />
-    <CaseStudies {...data.caseStudies} />
-    <WhyEbpf />
-    <Testimonials />
-    <Features />
-    <VideoGallery {...data.videoGallery} />
+  <Layout lang={lang}>
+    <Hero {...data[lang].hero} />
+    <CaseStudies {...data[lang].caseStudies} />
+    <WhyEbpf {...data[lang].whyEbpf} />
+    <Testimonials {...data[lang].testimonials} />
+    <Features {...data[lang].features} />
+    <VideoGallery {...data[lang].videoGallery} />
   </Layout>
 );
 
