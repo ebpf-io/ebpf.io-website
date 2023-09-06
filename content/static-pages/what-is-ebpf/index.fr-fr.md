@@ -116,7 +116,7 @@ eBPF est une technologie incroyablement puissante et fonctionne désormais au c�
 
 #### Privilèges requis
 
-À moins qu’une option dédiée ne soit activée,, tous les processus qui tentent de charger des programmes eBPF dans le noyau Linux doivent s'exécuter en mode privilégié (administrateur) ou nécessitent la capacité CAP_BPF. Cela signifie que les programmes non approuvés ne peuvent pas charger de programmes eBPF.
+À moins qu’une option dédiée ne soit activée, tous les processus qui tentent de charger des programmes eBPF dans le noyau Linux doivent s'exécuter en mode privilégié (administrateur) ou nécessitent la capacité CAP_BPF. Cela signifie que les programmes non approuvés ne peuvent pas charger de programmes eBPF.
 
 Si l’option est activée, les processus non privilégiés peuvent charger certains programmes eBPF avec un ensemble de fonctionnalités réduit et un accès limité au noyau.
 

@@ -1,4 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
@@ -6,29 +7,16 @@ import Link from 'components/shared/link';
 import shape1 from './images/shape-1.svg';
 import shape2 from './images/shape-2.svg';
 
-const links = [
-  {
-    text: 'Git trees',
-    to: 'https://git.kernel.org/?q=BPF+Group',
-  },
-  {
-    text: 'Linux kernel eBPF runtime',
-    to: '/infrastructure/#linux-kernel',
-  },
-];
-
-const Hero = () => (
+const Hero = ({
+  title,
+  description,
+  card: { title: cardTitle, description: cardDescription, authors, secondDescription, links },
+}) => (
   <section className="hero safe-paddings mt-20 lg:mt-16 md:mt-12">
     <div className="container">
       <div className="mx-auto max-w-[790px] text-center">
-        <h1 className="heading-10xl font-semibold leading-tight">How to Contribute to eBPF</h1>
-        <p className="mt-3">
-          eBPF consists of many communities including the eBPF runtime in the Linux kernel, various
-          development SDKs and libraries, a series of large projects using eBPF, and a wide set of
-          smaller projects and tools. There are therefore many ways to contribute to the eBPF
-          community and get involved. The following list of ideas can serve as a starting point on
-          how you can get involved and contribute to the community.
-        </p>
+        <h1 className="heading-10xl font-semibold leading-tight">{title}</h1>
+        <p className="mt-3">{description}</p>
       </div>
       <div
         className="mt-20 flex rounded-lg lg:mt-16 lg:flex-col md:mt-12"
@@ -69,29 +57,21 @@ const Hero = () => (
             aria-hidden
           />
           <h2 className="max-w-[460px] font-sans text-[34px] font-semibold leading-tight lg:max-w-[90%] lg:text-6xl md:text-5xl xs:max-w-none">
-            Contribute to the eBPF runtime in the Linux kernel
+            {cardTitle}
           </h2>
           <div className="mt-4 text-sm">
-            <p>
-              The Linux kernel community is maintaining separate Git trees for the eBPF subsystem to
-              manage all developer contributions. The trees are maintained by:
-            </p>
+            <p>{cardDescription}</p>
             <ul className="mt-2.5 inline-flex space-x-6 xs:flex-col xs:space-x-0 xs:space-y-2">
-              <li className="relative pl-3.5 before:absolute before:left-0 before:top-2 before:block before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary-yellow">
-                <span className="font-semibold">Alexei Starovoitov</span>, Facebook
-              </li>
-              <li className="relative pl-3.5 before:absolute before:left-0 before:top-2 before:block before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary-yellow">
-                <span className="font-semibold">Daniel Borkmann</span>, Cilium/Isovalent
-              </li>
+              {authors.map(({ name, company }, index) => (
+                <li
+                  className="relative pl-3.5 before:absolute before:left-0 before:top-2 before:block before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary-yellow"
+                  key={index}
+                >
+                  <span className="font-semibold">{name}</span>, {company}
+                </li>
+              ))}
             </ul>
-            <p className="mt-2.5">
-              Working on the eBPF runtime can be incredibly rewarding as it builds the foundation
-              for software being written that runs on millions of systems and devices. Work includes
-              a wide range of topics from adding support to additional hooks, adding new program
-              types, improvements to the eBPF verifier, adding JIT support for additional CPU
-              architectures, extending the set of BPF helpers, adding new test cases to BPF's test
-              infrastructure, or improvements to bpftool and libbpf.
-            </p>
+            <p className="mt-2.5">{secondDescription}</p>
             <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-4">
               {links.map(({ text, to }, index) => (
                 <li
@@ -116,5 +96,27 @@ const Hero = () => (
     </div>
   </section>
 );
+
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  card: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    secondDescription: PropTypes.string.isRequired,
+    authors: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        company: PropTypes.string.isRequired,
+      })
+    ),
+    links: PropTypes.arrayOf(
+      PropTypes.shape({
+        text: PropTypes.string.isRequired,
+        to: PropTypes.string.isRequired,
+      })
+    ),
+  }).isRequired,
+};
 
 export default Hero;

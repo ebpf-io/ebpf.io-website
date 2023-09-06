@@ -4,12 +4,17 @@ import Hero from 'components/pages/contribute/hero';
 import HowToContribute from 'components/pages/contribute/how-to-contribute';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
+import data from 'data/pages/contribute';
 import SEO_DATA from 'data/shared/seo-data';
+
+import { defaultLanguage } from '../../config/languages';
+
+const lang = defaultLanguage;
 
 const Contribute = () => (
   <Layout>
-    <Hero />
-    <HowToContribute />
+    <Hero {...data[lang].hero} />
+    <HowToContribute {...data[lang].howToContribute} />
   </Layout>
 );
 
