@@ -125,7 +125,7 @@ Si l’option est activée, les processus non privilégiés peuvent charger cert
 Même si un processus dispose des privilèges requis, tous les programmes passent systématiquement par le vérificateur eBPF. Ce vérificateur eBPF assure la sécurité de ces programmes. Voici quelques exemples des contraintes appliquées :
 
 - Les programmes sont validés pour s'assurer qu'ils sont toujours exécutés jusqu'à la fin, par exemple un programme eBPF ne peut jamais bloquer l’exécution ou rester dans une boucle indéfiniment. Les programmes eBPF peuvent contenir des boucles délimitées, mais le programme n'est accepté que si le vérificateur est en mesure de s'assurer que la sortie de boucle est garantie.
-- Programs may not use any uninitialized variables or access memory out of bounds.
+- Les programmes ne peuvent pas utiliser des variables non initialisées ou accéder à de la mémoire en dehors des limites.
 - Les programmes doivent respecter les exigences de taille du système. Il n'est pas possible de charger des programmes eBPF arbitrairement volumineux.
 - Le programme doit avoir une complexité finie. Le vérificateur évaluera tous les chemins d'exécution possibles et doit être capable de terminer l'analyse dans les limites de la borne de complexité.
 
@@ -196,7 +196,7 @@ Plusieurs chaînes d'outils existent pour aider au développement et à la gesti
 
 #### bcc
 
-BCC est un projet qui permet aux utilisateurs d'écrire des programmes python avec des programmes eBPF intégrés à l'intérieur. BCC cible principalement les cas d’uqui impliquent le profilage/traçage d'applications et de systèmes. Un programme eBPF est utilisé pour collecter des statistiques ou générer des événements, tandis qu’un collecteur en espace utilisateur récupère les données et les affiche sous une forme lisible par l’utilisateur. L'exécution du programme Python génére le code assembleur eBPF et le charge dans le noyau.
+BCC est un projet qui permet aux utilisateurs d'écrire des programmes python avec des programmes eBPF intégrés à l'intérieur. BCC cible principalement les cas qui impliquent le profilage/traçage d'applications et de systèmes. Un programme eBPF est utilisé pour collecter des statistiques ou générer des événements, tandis qu’un collecteur en espace utilisateur récupère les données et les affiche sous une forme lisible par l’utilisateur. L'exécution du programme Python génère le code assembleur eBPF et le charge dans le noyau.
 
 ![bcc](bcc.png)
 
@@ -208,7 +208,7 @@ bpftrace est un langage de traçage de haut niveau pour eBPF sur Linux. bpftrace
 
 #### Bibliothèque eBPF Go
 
-eBPF Go estune bibliothèque eBPF générique qui dissocie l’'accès au bytecode eBPF du chargement et de la gestion des programmes eBPF. Les programmes eBPF sont généralement créés à l’aide d’un langage haut niveau, puis en utilisant le compilateur clang/LLVM pour compiler en code machine eBPF.
+eBPF Go est une bibliothèque eBPF générique qui dissocie l’'accès au bytecode eBPF du chargement et de la gestion des programmes eBPF. Les programmes eBPF sont généralement créés à l’aide d’un langage haut niveau, puis en utilisant le compilateur clang/LLVM pour compiler en code machine eBPF.
 
 ![Go](go.png)
 

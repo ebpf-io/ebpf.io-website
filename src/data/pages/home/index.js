@@ -139,7 +139,7 @@ const data = {
   'fr-fr': {
     hero: {
       title:
-        'Programmation dynamique du noyau pour un trafic réseau, une observabilité, une trace et une sécurité efficacesc',
+        'Programmation dynamique du noyau pour un trafic réseau, une observabilité, une trace et une sécurité efficaces',
       blackButtonTitle: 'Project Landscape',
       blackButtonUrl: '/fr-fr/applications',
       yellowButtonTitle: 'What is eBPF',
