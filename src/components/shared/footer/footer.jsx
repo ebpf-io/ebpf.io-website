@@ -2,10 +2,11 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import LanguageSelect from 'components/shared/language-select';
 import Link from 'components/shared/link';
 import socialLinks from 'data/shared/social-links';
 import logo from 'images/logo-white.svg';
+
+import LanguageSelect from './language-select';
 
 const SocialLinks = ({ className }) => (
   <ul className={clsx('flex space-x-4', className)}>

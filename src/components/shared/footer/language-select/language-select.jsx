@@ -5,8 +5,9 @@ import React, { useCallback, useRef, useState } from 'react';
 
 import Link from 'components/shared/link';
 import useClickOutside from 'hooks/use-click-outside';
+import ChevronIcon from 'icons/chevron.inline.svg';
 
-import { languages } from '../../../../config/languages';
+import { languages } from '../../../../../config/languages';
 
 const ANIMATION_DURATION = 0.2;
 
@@ -31,11 +32,13 @@ const LanguageSelect = ({ lang }) => {
   const handleDropdown = () => {
     setShowDropdown((prevState) => !prevState);
   };
+
   const handleClickOutside = useCallback(() => {
     setShowDropdown(false);
   }, [setShowDropdown]);
 
   useClickOutside([dropdownRef], handleClickOutside);
+
   return (
     <LazyMotion features={domAnimation}>
       <div className="relative h-10 w-[136px]">
@@ -72,20 +75,9 @@ const LanguageSelect = ({ lang }) => {
             onClick={handleDropdown}
           >
             <span>{languages[lang].name}</span>
-            <span className="relative">
-              <span
-                className={clsx(
-                  'absolute -left-1 top-1/2 h-[7px] w-[1.5px] -translate-y-1/2 bg-white transition-transform duration-200',
-                  showDropdown ? 'rotate-45' : 'rotate-[135deg]'
-                )}
-              />
-              <span
-                className={clsx(
-                  'absolute top-1/2 h-[7px] w-[1.5px] -translate-y-1/2  bg-white transition-transform duration-200',
-                  showDropdown ? '-rotate-45' : '-rotate-[135deg]'
-                )}
-              />
-            </span>
+            <ChevronIcon
+              className={clsx('ml-1.5 mt-1 h-auto w-2.5', showDropdown ? 'rotate-180' : 'rotate-0')}
+            />
           </button>
         </div>
       </div>
