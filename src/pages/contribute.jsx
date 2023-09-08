@@ -20,7 +20,7 @@ const Contribute = () => (
 
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.contribute} />
+  <SEO pathname={pathname} {...SEO_DATA.contribute[lang]} />
 );
 
 export default Contribute;

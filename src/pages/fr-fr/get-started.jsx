@@ -10,6 +10,7 @@ import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
 import VideoGallery from 'components/shared/video-gallery';
 import data from 'data/pages/get-started';
+import SEO_DATA from 'data/shared/seo-data';
 
 import { languages } from '../../../config/languages';
 
@@ -30,4 +31,6 @@ const HomePage = () => (
 
 export default HomePage;
 
-export const Head = ({ location: { pathname } }) => <SEO pathname={pathname} />;
+export const Head = ({ location: { pathname } }) => (
+  <SEO pathname={pathname} {...SEO_DATA.home[lang]} />
+);

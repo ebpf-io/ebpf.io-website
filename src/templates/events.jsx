@@ -4,6 +4,7 @@ import React from 'react';
 import EventList from 'components/pages/events/event-list';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
+import SEO_DATA from 'data/shared/seo-data';
 
 const title = {
   en: 'eBPF Conferences and Meetups',
@@ -28,4 +29,6 @@ const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => (
 
 export default EventsPage;
 
-export const Head = ({ location: { pathname } }) => <SEO pathname={pathname} />;
+export const Head = ({ location: { pathname }, pageContext: { language } }) => (
+  <SEO pathname={pathname} {...SEO_DATA.home[language]} />
+);

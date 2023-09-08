@@ -1,20 +1,41 @@
 export default {
-  whatIsEBPF: {
-    title: 'What is eBPF? An Introduction and Deep Dive into the eBPF Technology',
-    description:
-      'A detailed step by step introduction to the eBPF technology with lots of references for further reading.',
-    keywords: 'ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, documentation',
+  home: {
+    en: {
+      title: 'eBPF - Introduction, Tutorials & Community Resources',
+      description:
+        'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.',
+    },
+    'fr-fr': {
+      title: 'eBPF - Introduction, Tutorials & Community Resources',
+      description:
+        'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.',
+    },
   },
   contribute: {
-    title: 'How to contribute to eBPF',
-    description:
-      'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.',
-    keywords: 'ebpf, bpf, contribute, getting started, community',
+    en: {
+      title: 'How to contribute to eBPF',
+      description:
+        'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.',
+      keywords: 'ebpf, bpf, contribute, getting started, community',
+    },
+    'fr-fr': {
+      title: 'How to contribute to eBPF',
+      description:
+        'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.',
+      keywords: 'ebpf, bpf, contribute, getting started, community',
+    },
   },
   caseStudies: {
-    title: 'eBPF Case Studies',
-    description: 'Learn how eBPF is used in different projects.',
-    keywords: 'ebpf, bpf, contribute, getting started, community',
+    en: {
+      title: 'eBPF Case Studies',
+      description: 'Learn how eBPF is used in different projects.',
+      keywords: 'ebpf, bpf, contribute, getting started, community',
+    },
+    'fr-fr': {
+      title: 'eBPF Case Studies',
+      description: 'Learn how eBPF is used in different projects.',
+      keywords: 'ebpf, bpf, contribute, getting started, community',
+    },
   },
   applications: {
     title: 'eBPF Applications Landscape',
