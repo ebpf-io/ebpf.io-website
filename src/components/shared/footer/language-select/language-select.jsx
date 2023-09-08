@@ -88,10 +88,12 @@ const LanguageSelect = ({ lang, pageUrls }) => {
 
 LanguageSelect.propTypes = {
   lang: PropTypes.string.isRequired,
-  pageUrls: PropTypes.shape({
-    en: PropTypes.string.isRequired,
-    'fr-fr': PropTypes.string.isRequired,
-  }),
+  pageUrls: PropTypes.shape(
+    Object.keys(languages).reduce((acc, lang) => {
+      acc[lang] = PropTypes.string.isRequired;
+      return acc;
+    }, {})
+  ),
 };
 
 LanguageSelect.defaultProps = {
