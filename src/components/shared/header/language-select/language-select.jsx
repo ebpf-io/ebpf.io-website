@@ -5,9 +5,15 @@ import React, { useCallback, useRef, useState } from 'react';
 import Link from 'components/shared/link';
 import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
-import GlobeIcon from 'icons/globe.inline.svg';
+import EnIcon from 'icons/languages/en.inline.svg';
+import FrIcon from 'icons/languages/fr.inline.svg';
 
 import { languages } from '../../../../../config/languages';
+
+const langIcons = {
+  en: EnIcon,
+  'fr-fr': FrIcon,
+};
 
 const LanguageSelect = ({ lang }) => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -23,6 +29,8 @@ const LanguageSelect = ({ lang }) => {
 
   useClickOutside([dropdownRef], handleClickOutside);
 
+  const LangIcon = langIcons[lang];
+
   return (
     <div className="relative" ref={dropdownRef}>
       <button
@@ -31,7 +39,7 @@ const LanguageSelect = ({ lang }) => {
         aria-label="Select language"
         onClick={handleDropdown}
       >
-        <GlobeIcon className="mr-1.5 h-[18px] w-[18px]" />
+        <LangIcon className="mr-1.5 h-[18px] w-[18px]" />
         <span>{languages[lang].shortName}</span>
         <ChevronIcon
           className={clsx('ml-1.5 mt-1 h-auto w-2.5', showDropdown ? 'rotate-180' : 'rotate-0')}
