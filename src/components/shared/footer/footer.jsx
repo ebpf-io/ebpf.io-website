@@ -29,7 +29,7 @@ SocialLinks.defaultProps = {
   className: null,
 };
 
-const Footer = ({ items, lang }) => (
+const Footer = ({ items, lang, pageUrls }) => (
   <footer className="safe-paddings bg-black pt-16 text-white lg:pt-12">
     <div className="container">
       <nav className="flex justify-between lg:flex-col lg:space-y-12">
@@ -121,7 +121,7 @@ const Footer = ({ items, lang }) => (
             .
           </span>
         </div>
-        <LanguageSelect lang={lang} />
+        <LanguageSelect lang={lang} pageUrls={pageUrls} />
       </div>
     </div>
   </footer>
@@ -149,6 +149,11 @@ Footer.propTypes = {
     })
   ).isRequired,
   lang: PropTypes.string.isRequired,
+  pageUrls: PropTypes.object,
+};
+
+Footer.defaultProps = {
+  pageUrls: null,
 };
 
 export default Footer;

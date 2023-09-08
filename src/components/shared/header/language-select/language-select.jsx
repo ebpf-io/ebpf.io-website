@@ -15,7 +15,7 @@ const langIcons = {
   'fr-fr': FrIcon,
 };
 
-const LanguageSelect = ({ lang }) => {
+const LanguageSelect = ({ lang, pageUrls }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -40,7 +40,7 @@ const LanguageSelect = ({ lang }) => {
         onClick={handleDropdown}
       >
         <LangIcon className="mr-1.5 h-[18px] w-[18px]" />
-        <span>{languages[lang].shortName}</span>
+        <span className="w-7">{languages[lang].shortName}</span>
         <ChevronIcon
           className={clsx('ml-1.5 mt-1 h-auto w-2.5', showDropdown ? 'rotate-180' : 'rotate-0')}
         />
@@ -56,17 +56,22 @@ const LanguageSelect = ({ lang }) => {
       >
         {Object.values(languages)
           .filter(({ code }) => code !== lang)
-          .map(({ name, code }) => (
-            <li className="flex" key={name}>
-              <Link
-                className="flex whitespace-nowrap px-5 py-2.5 text-[15px] font-medium leading-none lg:text-sm"
-                theme="black"
-                to={code === 'en' ? '/' : `/${code}/`}
-              >
-                {name}
-              </Link>
-            </li>
-          ))}
+          .map(({ name, code }) => {
+            let url = code === 'en' ? '/' : `/${code}/`;
+            if (pageUrls) url = pageUrls[code];
+
+            return (
+              <li className="flex" key={name}>
+                <Link
+                  className="flex whitespace-nowrap px-5 py-2.5 text-[15px] font-medium leading-none lg:text-sm"
+                  theme="black"
+                  to={url}
+                >
+                  {name}
+                </Link>
+              </li>
+            );
+          })}
       </ul>
     </div>
   );
@@ -74,6 +79,14 @@ const LanguageSelect = ({ lang }) => {
 
 LanguageSelect.propTypes = {
   lang: PropTypes.string.isRequired,
+  pageUrls: PropTypes.shape({
+    en: PropTypes.string.isRequired,
+    'fr-fr': PropTypes.string.isRequired,
+  }),
+};
+
+LanguageSelect.defaultProps = {
+  pageUrls: null,
 };
 
 export default LanguageSelect;

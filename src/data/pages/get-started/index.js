@@ -1,6 +1,10 @@
 import videoItems from 'data/pages/get-started/video-data';
 
 const data = {
+  pageUrls: {
+    en: '/get-started/',
+    'fr-fr': '/fr-fr/get-started/',
+  },
   en: {
     hero: {
       title: 'Get Started with eBPF',

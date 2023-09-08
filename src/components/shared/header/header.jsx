@@ -11,7 +11,14 @@ import { defaultLanguage } from '../../../../config/languages';
 
 import LanguageSelect from './language-select';
 
-const Header = ({ items, isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder, lang }) => (
+const Header = ({
+  items,
+  isMobileMenuOpen,
+  onBurgerClick,
+  fullWidthBottomBorder,
+  lang,
+  pageUrls,
+}) => (
   <header
     className={clsx('safe-paddings', {
       'border-b border-gray-90': fullWidthBottomBorder,
@@ -99,7 +106,7 @@ const Header = ({ items, isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder,
             })}
           </ul>
           <span className="mx-6 h-3.5 w-[1px] bg-gray-80 md:hidden" />
-          <LanguageSelect lang={lang} />
+          <LanguageSelect lang={lang} pageUrls={pageUrls} />
           <span className="mx-6 hidden h-3.5 w-[1px] bg-gray-80 md:block" />
           <Burger
             className="hidden md:block"
@@ -137,11 +144,13 @@ Header.propTypes = {
   onBurgerClick: PropTypes.func.isRequired,
   fullWidthBottomBorder: PropTypes.bool,
   lang: PropTypes.string.isRequired,
+  pageUrls: PropTypes.object,
 };
 
 Header.defaultProps = {
   isMobileMenuOpen: false,
   fullWidthBottomBorder: false,
+  pageUrls: null,
 };
 
 export default Header;

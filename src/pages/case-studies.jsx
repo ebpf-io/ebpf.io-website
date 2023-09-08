@@ -4,7 +4,7 @@ import Hero from 'components/pages/case-studies/hero';
 import Layout from 'components/shared/layout';
 import Link from 'components/shared/link';
 import SEO from 'components/shared/seo';
-import caseStudiesData from 'data/shared/case-studies/case-studies-list';
+import data from 'data/pages/case-studies';
 import SEO_DATA from 'data/shared/seo-data';
 
 import { defaultLanguage } from '../../config/languages';
@@ -22,15 +22,9 @@ const Description = () => (
   </span>
 );
 
-const data = {
-  title: 'eBPF Case Studies',
-  description: <Description />,
-  items: caseStudiesData[lang],
-};
-
 const CaseStudies = () => (
-  <Layout>
-    <Hero {...data} />
+  <Layout pageUrls={data.pageUrls}>
+    <Hero {...data[lang].hero} description={<Description />} />
   </Layout>
 );
 

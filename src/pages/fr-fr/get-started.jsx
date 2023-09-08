@@ -16,7 +16,7 @@ import { languages } from '../../../config/languages';
 const lang = languages['fr-fr'].code;
 
 const HomePage = () => (
-  <Layout lang={lang}>
+  <Layout lang={lang} pageUrls={data.pageUrls}>
     <Hero {...data[lang].hero} />
     <Documentation {...data[lang].documentation} />
     <div className="container mt-28 md:mt-20 sm:mt-12">

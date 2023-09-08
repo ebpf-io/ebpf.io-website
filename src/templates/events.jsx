@@ -10,8 +10,13 @@ const title = {
   'fr-fr': 'Conférences et Meetups eBPF',
 };
 
+const pageUrls = {
+  en: '/events/',
+  'fr-fr': '/fr-fr/events/',
+};
+
 const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => (
-  <Layout lang={language}>
+  <Layout lang={language} pageUrls={pageUrls}>
     <div className="container flex flex-col pt-20 lg:pt-16">
       <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
         {title[language]}

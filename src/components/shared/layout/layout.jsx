@@ -19,7 +19,7 @@ const translateMenuItem = (menuItem, language) => ({
     : undefined,
 });
 
-const Layout = ({ children, headerWithFullWidthBottomBorder, lang }) => {
+const Layout = ({ children, headerWithFullWidthBottomBorder, lang, pageUrls }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleHeaderBurgerClick = () => setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -36,10 +36,11 @@ const Layout = ({ children, headerWithFullWidthBottomBorder, lang }) => {
           isMobileMenuOpen={isMobileMenuOpen}
           fullWidthBottomBorder={headerWithFullWidthBottomBorder}
           lang={lang}
+          pageUrls={pageUrls}
           onBurgerClick={handleHeaderBurgerClick}
         />
         <main className="flex-grow">{children}</main>
-        <Footer items={footerMenuItems} lang={lang} />
+        <Footer items={footerMenuItems} lang={lang} pageUrls={pageUrls} />
         <MobileMenu isOpen={isMobileMenuOpen} items={headerMenuItems} />
       </div>
     </>
@@ -50,11 +51,13 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
   headerWithFullWidthBottomBorder: PropTypes.bool,
   lang: PropTypes.string,
+  pageUrls: PropTypes.object,
 };
 
 Layout.defaultProps = {
   headerWithFullWidthBottomBorder: false,
   lang: defaultLanguage,
+  pageUrls: null,
 };
 
 export default Layout;

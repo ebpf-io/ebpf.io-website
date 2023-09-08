@@ -25,7 +25,7 @@ const dropdownVariants = {
   },
 };
 
-const LanguageSelect = ({ lang }) => {
+const LanguageSelect = ({ lang, pageUrls }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -56,17 +56,18 @@ const LanguageSelect = ({ lang }) => {
           >
             {Object.values(languages)
               .filter(({ code }) => code !== lang)
-              .map(({ name, code }) => (
-                <m.li className="flex" key={name}>
-                  <Link
-                    className="px-[13px] py-3"
-                    theme="white"
-                    to={code === 'en' ? '/' : `/${code}/`}
-                  >
-                    {name}
-                  </Link>
-                </m.li>
-              ))}
+              .map(({ name, code }) => {
+                let url = code === 'en' ? '/' : `/${code}/`;
+                if (pageUrls) url = pageUrls[code];
+
+                return (
+                  <m.li className="flex" key={name}>
+                    <Link className="px-[13px] py-3" theme="white" to={url}>
+                      {name}
+                    </Link>
+                  </m.li>
+                );
+              })}
           </m.ul>
           <button
             className="flex h-10 w-full items-center justify-between px-[13px] py-3 text-sm font-medium leading-none"
@@ -87,6 +88,14 @@ const LanguageSelect = ({ lang }) => {
 
 LanguageSelect.propTypes = {
   lang: PropTypes.string.isRequired,
+  pageUrls: PropTypes.shape({
+    en: PropTypes.string.isRequired,
+    'fr-fr': PropTypes.string.isRequired,
+  }),
+};
+
+LanguageSelect.defaultProps = {
+  pageUrls: null,
 };
 
 export default LanguageSelect;

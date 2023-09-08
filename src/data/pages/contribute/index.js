@@ -1,4 +1,8 @@
 const data = {
+  pageUrls: {
+    en: '/contribute/',
+    'fr-fr': '/fr-fr/contribute/',
+  },
   en: {
     hero: {
       title: 'How to Contribute to eBPF',

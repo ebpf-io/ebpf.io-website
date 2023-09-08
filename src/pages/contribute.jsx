@@ -12,7 +12,7 @@ import { defaultLanguage } from '../../config/languages';
 const lang = defaultLanguage;
 
 const Contribute = () => (
-  <Layout>
+  <Layout pageUrls={data.pageUrls}>
     <Hero {...data[lang].hero} />
     <HowToContribute {...data[lang].howToContribute} />
   </Layout>
