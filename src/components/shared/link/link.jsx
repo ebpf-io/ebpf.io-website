@@ -22,6 +22,8 @@ const styles = {
     blue: 'text-[#305fe8] hover:text-black',
     underline:
       'font-bold text-black hover:text-primary-orange underline underline-offset-4 decoration-primary-orange decoration-2',
+    orange:
+      'font-bold text-primary-orange hover:decoration-transparent underline underline-offset-4 decoration-primary-orange decoration-2',
   },
 };
 
