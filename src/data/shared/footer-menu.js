@@ -2,13 +2,13 @@ const footerMenu = [
   {
     title: {
       en: 'Get Started',
-      'fr-fr': 'Get Started',
+      'fr-fr': 'Commencer',
     },
     items: [
       {
         title: {
           en: 'What is eBPF?',
-          'fr-fr': 'What is eBPF?',
+          'fr-fr': 'Qu’est-ce qu’eBPF',
         },
         to: {
           en: '/what-is-ebpf',
@@ -26,7 +26,7 @@ const footerMenu = [
       {
         title: {
           en: 'Case Studies',
-          'fr-fr': 'Case Studies',
+          'fr-fr': 'Études de cas',
         },
         to: {
           en: '/case-studies',
@@ -38,7 +38,7 @@ const footerMenu = [
   {
     title: {
       en: 'Project landscape',
-      'fr-fr': 'Project landscape',
+      'fr-fr': 'Paysage du projet',
     },
     items: [
       {
@@ -60,7 +60,7 @@ const footerMenu = [
   {
     title: {
       en: 'About',
-      'fr-fr': 'About',
+      'fr-fr': 'À propos',
     },
     items: [
       {
@@ -73,14 +73,14 @@ const footerMenu = [
       {
         title: {
           en: 'Swag Shop',
-          'fr-fr': 'Swag Shop',
+          'fr-fr': 'Boutique de cadeaux',
         },
         to: 'https://cilium.myspreadshop.net/',
       },
       {
         title: {
           en: 'Branding',
-          'fr-fr': 'Branding',
+          'fr-fr': 'l’image de marque',
         },
         to: 'https://ebpf.foundation/brand-guidelines/',
       },
@@ -94,7 +94,7 @@ const footerMenu = [
       {
         title: {
           en: 'Contribute',
-          'fr-fr': 'Contribute',
+          'fr-fr': 'Contribuer',
         },
         to: {
           en: '/contribute',

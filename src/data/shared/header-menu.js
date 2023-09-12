@@ -2,13 +2,13 @@ const headerMenu = [
   {
     title: {
       en: 'Learn',
-      'fr-fr': 'Learn',
+      'fr-fr': 'Apprendre',
     },
     items: [
       {
         title: {
           en: 'What is eBPF?',
-          'fr-fr': 'What is eBPF?',
+          'fr-fr': 'Qu’est-ce qu’eBPF',
         },
         to: {
           en: '/what-is-ebpf',
@@ -18,7 +18,7 @@ const headerMenu = [
       {
         title: {
           en: 'Get Started',
-          'fr-fr': 'Get Started',
+          'fr-fr': 'Commencer',
         },
         to: {
           en: '/get-started',
@@ -28,7 +28,7 @@ const headerMenu = [
       {
         title: {
           en: 'Case Studies',
-          'fr-fr': 'Case Studies',
+          'fr-fr': 'Études de cas',
         },
         to: {
           en: '/case-studies',
@@ -40,7 +40,7 @@ const headerMenu = [
   {
     title: {
       en: 'Project Landscape',
-      'fr-fr': 'Project Landscape',
+      'fr-fr': 'Paysage du projet',
     },
     items: [
       {
@@ -63,13 +63,13 @@ const headerMenu = [
   {
     title: {
       en: 'Events',
-      'fr-fr': 'Events',
+      'fr-fr': 'Événements',
     },
     items: [
       {
         title: {
           en: 'All Events',
-          'fr-fr': 'All Events',
+          'fr-fr': 'Tous les évènements',
         },
         to: {
           en: '/events?overview',
@@ -111,7 +111,7 @@ const headerMenu = [
   {
     title: {
       en: 'Community',
-      'fr-fr': 'Community',
+      'fr-fr': 'Communauté',
     },
     items: [
       {
@@ -163,7 +163,7 @@ const headerMenu = [
       {
         title: {
           en: 'Contribute',
-          'fr-fr': 'Contribute',
+          'fr-fr': 'Contribuer',
         },
         to: {
           en: '/contribute',
@@ -182,7 +182,7 @@ const headerMenu = [
   {
     title: {
       en: 'Foundation',
-      'fr-fr': 'Foundation',
+      'fr-fr': 'Fondation',
     },
     to: 'https://ebpf.foundation/',
   },

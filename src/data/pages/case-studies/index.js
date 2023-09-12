@@ -13,7 +13,7 @@ const data = {
   },
   'fr-fr': {
     hero: {
-      title: 'eBPF Case Studies',
+      title: 'Études de cas eBPF',
       items: caseStudiesData['fr-fr'],
     },
   },

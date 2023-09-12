@@ -140,9 +140,9 @@ const data = {
     hero: {
       title:
         'Programmation dynamique du noyau pour un trafic réseau, une observabilité, une trace et une sécurité efficaces',
-      blackButtonTitle: 'Project Landscape',
+      blackButtonTitle: 'Paysage du projet',
       blackButtonUrl: '/fr-fr/applications',
-      yellowButtonTitle: 'What is eBPF',
+      yellowButtonTitle: 'Qu’est-ce qu’eBPF',
       yellowButtonUrl: '/fr-fr/what-is-ebpf',
       altImage: 'eBPF diagram',
       items: [

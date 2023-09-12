@@ -1,32 +1,69 @@
-import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
-import socialLinks from 'data/shared/social-links';
 import logo from 'images/logo-white.svg';
 
 import LanguageSelect from './language-select';
+import SocialLinks from './social-links';
 
-const SocialLinks = ({ className }) => (
-  <ul className={clsx('flex space-x-4', className)}>
-    {socialLinks.map(({ text, to, icon: Icon }) => (
-      <li key={text}>
-        <Link className="group" to={to} target="_blank" rel="noopener noreferrer">
-          <span className="sr-only">{text}</span>
-          <Icon className="h-10 w-10 text-white transition-colors duration-200 group-hover:text-primary-yellow" />
+const data = {
+  en: {
+    copyright: 'eBPF.io authors',
+    maintain: {
+      title: 'Maintained by the eBPF community.',
+      beforeLink: 'See a bug?',
+      linkTitle: 'File an issue',
+    },
+    content: (
+      <span>
+        The content of the{' '}
+        <Link className="!inline font-medium" theme="white" to="/">
+          ebpf.io
+        </Link>{' '}
+        website is licensed under a{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creative Commons Attribution 4.0 International License
         </Link>
-      </li>
-    ))}
-  </ul>
-);
-
-SocialLinks.propTypes = {
-  className: PropTypes.string,
-};
-
-SocialLinks.defaultProps = {
-  className: null,
+        .
+      </span>
+    ),
+  },
+  'fr-fr': {
+    copyright: 'Auteurs d’eBPF.io',
+    maintain: {
+      title: 'Maintenu par la communauté eBPF.',
+      beforeLink: 'Vous avez trouvé un bug ?',
+      linkTitle: 'Reporter un problème',
+    },
+    content: (
+      <span>
+        Le contenu du site Web{' '}
+        <Link className="!inline font-medium" theme="white" to="/fr-fr/">
+          ebpf.io
+        </Link>{' '}
+        est sous{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          licence internationale Creative Commons Attribution 4.0
+        </Link>
+        .
+      </span>
+    ),
+  },
 };
 
 const Footer = ({ items, lang, pageUrls }) => (
@@ -75,17 +112,18 @@ const Footer = ({ items, lang, pageUrls }) => (
           <div className="flex flex-col md:max-w-[163px] sm:max-w-none">
             <SocialLinks className="md:hidden sm:flex" />
             <span className="mt-6 text-sm text-gray-70 opacity-80 md:mt-0 sm:mt-6">
-              Maintained by the eBPF community.
+              {data[lang].maintain.title}
             </span>
             <span className="mt-1 text-sm font-semibold opacity-80">
-              See a bug?{'  '}
+              {data[lang].maintain.beforeLink}
+              {'  '}
               <Link
                 theme="primary-yellow"
                 to="https://github.com/ebpf-io/ebpf.io-website/issues/new/choose"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                File an issue
+                {data[lang].maintain.linkTitle}
               </Link>
             </span>
           </div>
@@ -94,7 +132,9 @@ const Footer = ({ items, lang, pageUrls }) => (
       <div className="mt-16 flex items-center justify-between border-t border-dashed border-gray-80 border-opacity-20 py-8 lg:mt-12 md:flex-col md:items-start">
         <div className="flex flex-col items-start justify-start">
           <div className="flex space-x-6 text-sm font-medium sm:flex-wrap sm:gap-x-5 sm:gap-y-5 sm:space-x-0">
-            <span>© {new Date().getFullYear()} eBPF.io authors</span>
+            <span>
+              © {new Date().getFullYear()} {data[lang].copyright}
+            </span>
             {/* <Link theme="white" to="/terms-of-service">
                 Terms of Service
               </Link>
@@ -102,24 +142,7 @@ const Footer = ({ items, lang, pageUrls }) => (
                 Privacy Policy
               </Link> */}
           </div>
-          <span className="mt-4 text-sm text-gray-70">
-            The content of the{' '}
-            <Link className="!inline font-medium" theme="white" to="/">
-              ebpf.io
-            </Link>{' '}
-            website is licensed under a{' '}
-            <Link
-              className="!inline"
-              theme="white"
-              size="sm"
-              to="https://creativecommons.org/licenses/by/4.0/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Creative Commons Attribution 4.0 International License
-            </Link>
-            .
-          </span>
+          <span className="mt-4 text-sm text-gray-70">{data[lang].content}</span>
         </div>
         <LanguageSelect lang={lang} pageUrls={pageUrls} />
       </div>
