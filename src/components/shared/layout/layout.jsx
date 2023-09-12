@@ -22,6 +22,10 @@ const headerMenu = [
         text: 'Case Studies',
         to: '/case-studies',
       },
+      {
+        text: 'Labs',
+        to: '/labs',
+      },
     ],
   },
   {

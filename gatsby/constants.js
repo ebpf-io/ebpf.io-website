@@ -8,6 +8,7 @@ const GET_STARTED_TEMPLATE = './src/templates/get-started.jsx';
 const BLOG_POSTS_REGEX = '/content/blog-posts/((?!README).)*$/';
 const EVENTS_REGEX = '/content/events/((?!README).)*$/';
 const CONTRIBUTORS_REGEX = '/content/contributors/((?!README).)*$/';
+const LABS_REGEX = '/content/labs/((?!README).)*$/';
 
 const STATIC_PAGE_REQUIRED_FIELDS = ['title'];
 const BLOG_POST_REQUIRED_FIELDS = ['title', 'description', 'date', 'categories'];
@@ -35,4 +36,5 @@ module.exports = {
   BLOG_POST_REQUIRED_FIELDS,
   EVENT_REQUIRED_FIELDS,
   CONTRIBUTORS_REQUIRED_FIELDS,
+  LABS_REGEX,
 };

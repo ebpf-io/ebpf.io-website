@@ -16,9 +16,6 @@ const BlogPage = ({
     externalPosts: { nodes: externalPosts },
   },
 }) => {
-  const allPosts = { name: 'All posts', slug: '' };
-  const categoriesWithAllPosts = [allPosts, ...categories];
-
   const filteredPosts = categorySlug === 'external' ? externalPosts : posts;
 
   return (
@@ -28,11 +25,11 @@ const BlogPage = ({
         <div className="container flex md:flex-col">
           <Sidebar
             className="w-full max-w-[230px] shrink-0 md:w-auto md:max-w-none"
-            categories={categoriesWithAllPosts}
+            categories={categories}
             pathname={pathname}
           />
           <BlogPostsList
-            className="pl-20 pt-20 pb-36 xl:pb-32 lg:pl-16 lg:pt-16 lg:pb-28 md:pb-20 md:pt-14 md:pl-0"
+            className="pb-36 pl-20 pt-20 xl:pb-32 lg:pb-28 lg:pl-16 lg:pt-16 md:pb-20 md:pl-0 md:pt-14"
             items={filteredPosts}
             pageCount={pageCount}
             currentPageIndex={currentPageIndex}

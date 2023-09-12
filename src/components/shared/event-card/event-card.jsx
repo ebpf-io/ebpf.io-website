@@ -35,6 +35,7 @@ const EventCard = ({ type, title, description, ogImage, date, place, linkUrl, cl
             svgClassName="mix-blend-multiply rounded-t-lg h-[182px] w-full lg:h-[15vw] md:h-[24vw] sm:h-auto sm:max-h-none object-contain bg-gray-98"
             imageSrc={ogImage}
             imageUrl={imageUrl}
+            objectFit="contain"
             width={733}
             height={383}
             alt={title}
