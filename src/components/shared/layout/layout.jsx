@@ -65,6 +65,7 @@ const headerMenu = [
   },
   {
     text: 'Community',
+    to: '/get-started/#docs',
     items: [
       {
         text: 'Get Started',
