@@ -17,7 +17,7 @@ const SummitTopBanner = () => (
         aria-hidden
       />
       <span className="font-sans text-lg font-medium leading-none text-white md:text-base">
-        Youtube stream of eBPF Summit
+        YouTube stream of eBPF Summit
       </span>
     </div>
     <Link theme="orange" size="lg" to="https://www.youtube.com/watch?v=EViAho-6qoc" target="_blank">
