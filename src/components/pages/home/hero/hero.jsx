@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from 'components/shared/button';
@@ -6,32 +7,30 @@ import CheckIcon from './images/check.inline.svg';
 import diagramMobile from './images/diagram-mobile.svg';
 import diagram from './images/diagram.svg';
 
-const items = [
-  'Programs are verified to safely execute',
-  'Hook anywhere in the kernel to modify functionality',
-  'JIT compiler for near native execution speed',
-  'Add OS capabilities at runtime',
-];
-
-const Hero = () => (
+const Hero = ({
+  title,
+  blackButtonTitle,
+  blackButtonUrl,
+  yellowButtonTitle,
+  yellowButtonUrl,
+  altImage,
+  items,
+}) => (
   <section className="hero safe-paddings mt-20 lg:mt-16 md:mt-14 sm:mt-11">
     <div className="container flex flex-col items-center">
-      <h1 className="heading-10xl text-center font-semibold leading-tight">
-        Dynamically program the kernel for efficient networking, observability, tracing, and
-        security
-      </h1>
+      <h1 className="heading-10xl text-center font-semibold leading-tight">{title}</h1>
       <div className="mt-10 grid grid-cols-2 gap-x-7 lg:mt-8 md:gap-y-4 sm:gap-x-4 [@media(max-width:414px)]:w-full [@media(max-width:414px)]:grid-cols-1">
-        <Button size="md" theme="black-filled" to="/applications">
-          Project Landscape
+        <Button size="md" theme="black-filled" to={blackButtonUrl}>
+          {blackButtonTitle}
         </Button>
-        <Button size="md" theme="primary-yellow-filled" to="/what-is-ebpf">
-          What is eBPF
+        <Button size="md" theme="primary-yellow-filled" to={yellowButtonUrl}>
+          {yellowButtonTitle}
         </Button>
       </div>
       <img
         className="mt-20 lg:mt-16 md:mt-14 sm:hidden"
         src={diagram}
-        alt="eBPF diagram"
+        alt={altImage}
         width={1216}
         height={344}
         loading="eager"
@@ -39,7 +38,7 @@ const Hero = () => (
       <img
         className="mt-14 hidden w-full max-w-[450px] sm:block"
         src={diagramMobile}
-        alt="eBPF diagram"
+        alt={altImage}
         width={328}
         height={592}
         loading="eager"
@@ -59,5 +58,15 @@ const Hero = () => (
     </div>
   </section>
 );
+
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+  blackButtonTitle: PropTypes.string.isRequired,
+  blackButtonUrl: PropTypes.string.isRequired,
+  yellowButtonTitle: PropTypes.string.isRequired,
+  yellowButtonUrl: PropTypes.string.isRequired,
+  altImage: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default Hero;

@@ -1,4 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from 'components/shared/button/button';
@@ -77,12 +78,10 @@ const items = [
   },
 ];
 
-const Books = () => (
+const Books = ({ title, linkTitle }) => (
   <section className="hero safe-paddings mt-32 lg:mt-24 md:mt-16 sm:mt-14" id="books">
     <div className="container flex flex-col items-center px-3">
-      <h2 className="heading-8xl text-center font-semibold leading-tight">
-        Explore books on eBPF from the industry experts
-      </h2>
+      <h2 className="heading-8xl text-center font-semibold leading-tight">{title}</h2>
 
       <ul className="mt-16 grid w-full grid-cols-5 items-center justify-center gap-8 lg:mt-14 lg:gap-6 md:mt-11 md:flex-wrap sm:mt-8 sm:grid-cols-2 xs:grid-cols-1">
         {items.map(({ image, linkUrl }, index) => (
@@ -90,15 +89,14 @@ const Books = () => (
             className="group relative m-auto drop-shadow-book xs:flex xs:max-w-[256px] xs:justify-center"
             key={index}
           >
-            <Link className="" to={linkUrl} target="_blank" rel="noreferrer noopener">
+            <Link to={linkUrl} target="_blank" rel="noreferrer noopener">
               {image}
-
-              <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center rounded bg-transparent transition-colors duration-200 group-hover:bg-[#000000]/[0.3] ">
+              <div className="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center rounded bg-transparent transition-colors duration-200 group-hover:bg-[#000000]/[0.3] ">
                 <Button
-                  className="py-4 px-7 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  className="px-7 py-4 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
                   theme="primary-yellow-filled"
                 >
-                  Learn More
+                  {linkTitle}
                 </Button>
               </div>
             </Link>
@@ -108,5 +106,10 @@ const Books = () => (
     </div>
   </section>
 );
+
+Books.propTypes = {
+  title: PropTypes.string.isRequired,
+  linkTitle: PropTypes.string.isRequired,
+};
 
 export default Books;
