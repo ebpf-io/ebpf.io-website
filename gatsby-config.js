@@ -51,6 +51,13 @@ module.exports = {
         path: `${__dirname}/content/events/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'labs',
+        path: `${__dirname}/content/labs/`,
+      },
+    },
     'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     {
