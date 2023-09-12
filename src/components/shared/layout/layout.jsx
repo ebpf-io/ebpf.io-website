@@ -65,11 +65,10 @@ const headerMenu = [
   },
   {
     text: 'Community',
-    to: '/get-started/#docs',
     items: [
       {
         text: 'Get Started',
-        to: '/get-started',
+        to: '/get-started/#docs',
       },
       {
         text: 'Slack',
