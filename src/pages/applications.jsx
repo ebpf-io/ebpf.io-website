@@ -5,9 +5,9 @@ import Hero from 'components/pages/project-landscape/hero';
 import ProjectsList from 'components/pages/project-landscape/projects-list';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import emergingApplications from 'data/applications/emerging';
-import majorApplications from 'data/applications/major';
-import SEO_DATA from 'data/seo-data';
+import emergingApplications from 'data/pages/applications/emerging';
+import majorApplications from 'data/pages/applications/major';
+import SEO_DATA from 'data/shared/seo-data';
 
 const majorApplicationsProps = {
   titleTag: 'h2',

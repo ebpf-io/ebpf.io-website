@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { AnimatePresence, m, LazyMotion, domAnimation } from 'framer-motion';
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
 import QuoteIcon from 'icons/quote.inline.svg';
@@ -26,61 +27,22 @@ const animationProps = {
   transition: { ease: [0.25, 0.1, 0, 1] },
 };
 
-const items = [
-  {
-    logo: azureLogo,
-    logoWidth: 134,
-    company: 'Microsoft Azure',
-    review:
-      'eBPF has resulted in a new generation of tooling that allows developers to easily diagnose problems, innovate quickly, and extend operating system functionality.',
-    author: 'Mark Russinovich',
-    role: 'Chief Technology Officer at Microsoft Azure, 2021',
-  },
-  {
-    logo: googleLogo,
-    logoWidth: 104,
-    company: 'Google',
-    review:
-      'eBPF is the future of networking for the Linux kernel and Google is pleased to be part of the evolving standard it has created.',
-    author: 'Chris DiBona',
-    role: 'Director of Open Source at Google, 2021',
-  },
-  {
-    logo: isovalentLogo,
-    logoWidth: 148,
-    company: 'Isovalent',
-    review:
-      'Even though eBPF has already found its ways into the production stacks of countless enterprises, we are still at the beginning of the innovation curve that eBPF as a technology unlocks',
-    author: 'Thomas Graf',
-    role: 'Chief Technology Officer at Isovalent, 2021',
-  },
-  {
-    logo: metaLogo,
-    logoWidth: 120,
-    company: 'Meta',
-    review:
-      'For many years, eBPF has played a critical role in accelerating the kernel development. We’re excited to support the work of the eBPF community, enabling them to build the tools needed to power the next generation of Linux system development.',
-    author: 'Chris Mason',
-    role: 'Kernel Maintainer and Engineering Director at Facebook, 2021',
-  },
-  {
-    logo: netflixLogo,
-    logoWidth: 109,
-    company: 'Netflix',
-    review:
-      'eBPF is a new type of software that provides superpower capabilities, birthing an industry of networking, performance, and security technologies. Netflix has pioneered uses of eBPF for observability, providing insight into countless areas that were previously difficult or prohibitively expensive to instrument. eBPF has helped us lower application latency and find cost savings.',
-    author: 'Brendan Gregg',
-    role: 'Senior performance engineer at Netflix, 2021',
-  },
-];
-const Testimonials = () => {
+const logos = {
+  azure: azureLogo,
+  google: googleLogo,
+  isovalent: isovalentLogo,
+  meta: metaLogo,
+  netflix: netflixLogo,
+};
+
+const Testimonials = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const handleClick = (index) => {
     setActiveIndex(index);
   };
 
   return (
-    <section className="testimonials safe-paddings -mt-[133px] overflow-hidden bg-gray-98 pt-[261px] pb-32 lg:-mt-[168px] lg:pb-24 md:-mt-[184px] md:pb-20 sm:-mt-[438px] sm:pt-[502px] sm:pb-16">
+    <section className="testimonials safe-paddings -mt-[133px] overflow-hidden bg-gray-98 pb-32 pt-[261px] lg:-mt-[168px] lg:pb-24 md:-mt-[184px] md:pb-20 sm:-mt-[438px] sm:pb-16 sm:pt-[502px]">
       <div className="container">
         <LazyMotion features={domAnimation}>
           <AnimatePresence initial={false} mode="wait">
@@ -124,7 +86,7 @@ const Testimonials = () => {
                       ? 'opacity-100'
                       : 'opacity-0 transition-opacity duration-200 group-hover:opacity-100'
                   )}
-                  src={logo}
+                  src={logos[logo]}
                   width={logoWidth}
                   height={48}
                   alt={company}
@@ -133,16 +95,16 @@ const Testimonials = () => {
 
                 <div
                   className={clsx(
-                    'absolute inset-x-[22px] top-0 bottom-0 z-10 block bg-gray-80 lg:inset-x-[19px]',
+                    'absolute inset-x-[22px] bottom-0 top-0 z-10 block bg-gray-80 lg:inset-x-[19px]',
                     activeIndex === index
                       ? 'opacity-0'
                       : 'opacity-100 transition-opacity duration-200 group-hover:opacity-0'
                   )}
                   style={{
-                    maskImage: `url('${logo}')`,
+                    maskImage: `url('${logos[logo]}')`,
                     maskSize: 'contain',
                     maskRepeat: 'no-repeat',
-                    WebkitMaskImage: `url('${logo}')`,
+                    WebkitMaskImage: `url('${logos[logo]}')`,
                     WebkitMaskRepeat: 'no-repeat',
                     WebkitMaskSize: 'contain',
                   }}
@@ -154,6 +116,19 @@ const Testimonials = () => {
       </div>
     </section>
   );
+};
+
+Testimonials.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      logo: PropTypes.string.isRequired,
+      logoWidth: PropTypes.number.isRequired,
+      company: PropTypes.string.isRequired,
+      review: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
+      role: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default Testimonials;

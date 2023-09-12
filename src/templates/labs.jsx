@@ -54,7 +54,16 @@ const LabsPage = ({
         />
       )}
       <div className="container-md">
-        <SubscriptionForm size="md" className="mb-24 lg:mb-20" isVertical="true" />
+        <SubscriptionForm
+          className="mb-24 lg:mb-20"
+          title="Subscribe"
+          afterTitle="to bi-weekly eCHO News"
+          description="Keep up on the latest news and information from the eBPF and Cilium"
+          placeholder="Email address..."
+          buttonTitle="Subscribe"
+          size="md"
+          isVertical
+        />
       </div>
     </Layout>
   );

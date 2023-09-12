@@ -12,7 +12,7 @@ import Content from 'components/shared/content';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
-import postAuthors from 'data/post-authors';
+import postAuthors from 'data/shared/post-authors';
 
 const BlogPost = ({
   data: {
@@ -29,7 +29,7 @@ const BlogPost = ({
 
   return (
     <Layout>
-      <article className="safe-paddings mt-16 mb-36 xl:mb-32 lg:mb-28 md:mt-14 md:mb-20">
+      <article className="safe-paddings mb-36 mt-16 xl:mb-32 lg:mb-28 md:mb-20 md:mt-14">
         <div className="container grid-gap-x grid grid-cols-12">
           <div className="col-span-8 md:col-span-full">
             <h1 className="heading-8xl font-semibold leading-tight">{title}</h1>
@@ -71,7 +71,7 @@ const BlogPost = ({
             content={children}
           />
           <aside className="col-start-10 col-end-13 mt-8 md:col-span-full md:hidden">
-            <div className="sticky top-10 bottom-10 max-h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden ">
+            <div className="sticky bottom-10 top-10 max-h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden ">
               {showTableOfContents && <TableOfContents items={tableOfContents.items} />}
               <SocialShare
                 className={clsx({ 'mt-9': showTableOfContents })}
@@ -90,7 +90,15 @@ const BlogPost = ({
           {author && postAuthors[author]?.bio && (
             <PostAuthor className="col-span-8 md:col-span-full" author={author} />
           )}
-          <SubscriptionForm className="col-span-full mt-28 lg:mt-24 md:mt-20 sm:mt-16" size="md" />
+          <SubscriptionForm
+            className="col-span-full mt-28 lg:mt-24 md:mt-20 sm:mt-16"
+            title="Subscribe"
+            afterTitle="to bi-weekly eCHO News"
+            description="Keep up on the latest news and information from the eBPF and Cilium"
+            placeholder="Email address..."
+            buttonTitle="Subscribe"
+            size="md"
+          />
         </div>
       </article>
     </Layout>

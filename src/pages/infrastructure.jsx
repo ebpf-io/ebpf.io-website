@@ -6,10 +6,10 @@ import Hero from 'components/pages/project-landscape/hero';
 import ProjectsList from 'components/pages/project-landscape/projects-list';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import auxiliaryLibraries from 'data/infrastructure/auxiliary-libraries';
-import emergingInfrastructure from 'data/infrastructure/emerging';
-import majorInfrastructure from 'data/infrastructure/major';
-import SEO_DATA from 'data/seo-data';
+import auxiliaryLibraries from 'data/pages/infrastructure/auxiliary-libraries';
+import emergingInfrastructure from 'data/pages/infrastructure/emerging';
+import majorInfrastructure from 'data/pages/infrastructure/major';
+import SEO_DATA from 'data/shared/seo-data';
 
 const majorInfrastructureProps = {
   titleTag: 'h2',

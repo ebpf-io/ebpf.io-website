@@ -6,14 +6,14 @@ import Tutorials from 'components/pages/resources/tutorials';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 import VideoGallery from 'components/shared/video-gallery';
-import { navigation, hubspotFormId } from 'data/summit-2023/summit-2023-navigation';
-import videoItems from 'data/summit-2023/video-data';
+import videoItems from 'data/pages/resources/video-data';
+import { navigation, hubspotFormId } from 'data/shared/summit-2023-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit-resources.jpg';
 
 const Resources = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
-    <h1 className="heading-10xl container safe-paddings mt-16 text-center font-semibold leading-tight">
+    <h1 className="container heading-10xl safe-paddings mt-16 text-center font-semibold leading-tight">
       eBPF resources
     </h1>
     <Books />

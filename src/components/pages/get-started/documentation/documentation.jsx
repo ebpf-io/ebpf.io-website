@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from 'components/shared/button/button';
@@ -11,52 +12,19 @@ import redditSvg from './images/reddit.svg';
 import stackoverflowSvg from './images/stackoverflow.svg';
 import wikipediaSvg from './images/wikipedia.svg';
 
-const items = [
-  {
-    image: wikipediaSvg,
-    title: 'Wikipedia',
-    description: 'Wikipedia article on eBPF',
-    linkUrl: 'https://en.wikipedia.org/wiki/EBPF',
-  },
-  {
-    image: stackoverflowSvg,
-    title: 'eBPF Stackoverflow',
-    description: 'Ask questions and read answers',
-    linkUrl: 'https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf',
-  },
-  {
-    image: redditSvg,
-    title: 'eBPF community on Reddit',
-    description: 'Discuss the eBPF kernel subsystem',
-    linkUrl: 'https://www.reddit.com/r/eBPF/',
-  },
-  {
-    image: ciliumSvg,
-    title: 'BPF & XDP Reference Guide',
-    description: 'Learn BPF internals and programming',
-    linkUrl: 'https://cilium.readthedocs.io/en/stable/bpf/',
-  },
-  {
-    image: kernelSvg,
-    title: 'BPF Documentation',
-    description: 'BPF Documentation in the Linux Kernel',
-    linkUrl: 'https://www.kernel.org/doc/html/latest/bpf/index.html',
-  },
-  {
-    image: gitKernelSvg,
-    title: 'BPF Design Q&A',
-    description: 'FAQ for kernel-related eBPF questions',
-    linkUrl:
-      'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst',
-  },
-];
+const images = {
+  wikipedia: wikipediaSvg,
+  stackoverflow: stackoverflowSvg,
+  reddit: redditSvg,
+  cilium: ciliumSvg,
+  kernel: kernelSvg,
+  gitKernel: gitKernelSvg,
+};
 
-const Documentation = () => (
+const Documentation = ({ title, items }) => (
   <section className="hero safe-paddings md:mt-26 mt-32 lg:mt-20">
     <div className="container flex flex-col items-center">
-      <h2 className="heading-8xl text-center font-semibold leading-tight">
-        Read the Documentation to learn more about eBPF
-      </h2>
+      <h2 className="heading-8xl text-center font-semibold leading-tight">{title}</h2>
 
       <ul className="mt-14 grid w-full grid-cols-2 md:mt-12 sm:mt-10 sm:grid-cols-1">
         {items.map(({ title, image, linkUrl, description }, index) => (
@@ -70,7 +38,7 @@ const Documentation = () => (
             key={index}
           >
             <Link
-              className="group flex w-full items-center justify-between p-10 lg:p-8 sm:py-6 sm:px-0"
+              className="group flex w-full items-center justify-between p-10 lg:p-8 sm:px-0 sm:py-6"
               to={linkUrl}
               target="_blank"
               rel="noreferrer noopener"
@@ -78,7 +46,7 @@ const Documentation = () => (
               <div className="flex max-w-full items-start md:flex-col sm:flex-row xs:flex-col">
                 <img
                   className="h-[60px] w-[60px]"
-                  src={image}
+                  src={images[image]}
                   alt={title}
                   width={56}
                   height={56}
@@ -102,5 +70,17 @@ const Documentation = () => (
     </div>
   </section>
 );
+
+Documentation.propTypes = {
+  title: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      linkUrl: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default Documentation;

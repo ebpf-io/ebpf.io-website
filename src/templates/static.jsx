@@ -7,6 +7,13 @@ import Content from 'components/shared/content';
 import Layout from 'components/shared/layout/layout';
 import SEO from 'components/shared/seo';
 
+const pageUrls = {
+  'what-is-ebpf': {
+    en: '/what-is-ebpf/',
+    'fr-fr': '/fr-fr/what-is-ebpf/',
+  },
+};
+
 const StaticPage = ({
   data: {
     mdx: {
@@ -15,32 +22,44 @@ const StaticPage = ({
     },
   },
   children,
-}) => (
-  <Layout>
-    <div className="safe-paddings">
-      <div className="container grid-gap-x mt-20 mb-28 grid grid-cols-12 lg:mt-16 lg:mb-24 md:mt-12 md:mb-20">
-        <TableOfContents
-          className="col-span-3 lg:col-span-4 lg:max-w-[300px] md:hidden"
-          items={tableOfContents.items}
-        />
-        <article className="col-start-5 col-end-13 md:col-span-full">
-          <h1 className="heading-10xl font-semibold leading-dense">{title}</h1>
+  pageContext,
+  location,
+}) => {
+  let pageUrl = false;
+
+  Object.keys(pageUrls).forEach((page) => {
+    if (location.pathname.includes(page)) {
+      pageUrl = page;
+    }
+  });
+
+  return (
+    <Layout lang={pageContext.language} pageUrls={pageUrl ? pageUrls[pageUrl] : null}>
+      <div className="safe-paddings">
+        <div className="container grid-gap-x mb-28 mt-20 grid grid-cols-12 lg:mb-24 lg:mt-16 md:mb-20 md:mt-12">
           <TableOfContents
-            className="mt-10 hidden md:block"
-            title="Table of contents"
+            className="col-span-3 lg:col-span-4 lg:max-w-[300px] md:hidden"
             items={tableOfContents.items}
           />
-          <Content
-            className="prose-static mt-10"
-            title={title}
-            items={tableOfContents.items}
-            content={children}
-          />
-        </article>
+          <article className="col-start-5 col-end-13 md:col-span-full">
+            <h1 className="heading-10xl font-semibold leading-dense">{title}</h1>
+            <TableOfContents
+              className="mt-10 hidden md:block"
+              title="Table of contents"
+              items={tableOfContents.items}
+            />
+            <Content
+              className="prose-static mt-10"
+              title={title}
+              items={tableOfContents.items}
+              content={children}
+            />
+          </article>
+        </div>
       </div>
-    </div>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default StaticPage;
 

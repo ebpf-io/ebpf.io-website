@@ -6,7 +6,7 @@ import Swag from 'components/pages/swag/swag';
 import Zoom from 'components/pages/swag/zoom';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
-import { navigation, hubspotFormId } from 'data/summit-2023/summit-2023-navigation';
+import { navigation, hubspotFormId } from 'data/shared/summit-2023-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit-attendee-swag.jpg';
 

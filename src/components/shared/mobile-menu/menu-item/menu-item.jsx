@@ -27,7 +27,7 @@ const submenuVariants = {
   },
 };
 
-const MenuItem = ({ text, to, items }) => {
+const MenuItem = ({ title, to, items }) => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const Tag = to ? Link : 'button';
   const withChildItems = items?.length > 0;
@@ -55,18 +55,18 @@ const MenuItem = ({ text, to, items }) => {
         to={to}
         onClick={handleClick}
       >
-        <span>{text}</span>
+        <span>{title}</span>
         {withChildItems && (
           <span className="relative w-1.5">
             <span
               className={clsx(
-                'absolute top-1/2 -left-1 h-2 w-0.5 -translate-y-1/2 bg-black transition-transform duration-200 group-hover:bg-gray-40',
+                'absolute -left-1 top-1/2 h-2 w-0.5 -translate-y-1/2 bg-black transition-transform duration-200 group-hover:bg-gray-40',
                 isSubmenuOpen ? 'rotate-45' : 'rotate-[135deg]'
               )}
             />
             <span
               className={clsx(
-                'absolute top-1/2 left-[0.5px] h-2 w-0.5 -translate-y-1/2 bg-black transition-transform duration-200 group-hover:bg-gray-40',
+                'absolute left-[0.5px] top-1/2 h-2 w-0.5 -translate-y-1/2 bg-black transition-transform duration-200 group-hover:bg-gray-40',
                 isSubmenuOpen ? '-rotate-45' : '-rotate-[135deg]'
               )}
             />
@@ -80,7 +80,7 @@ const MenuItem = ({ text, to, items }) => {
           animate={controls}
           variants={submenuVariants}
         >
-          {items.map(({ text, to, target, items }, index) => (
+          {items.map(({ title, to, target, items }, index) => (
             <li className="mb-2 last:mb-3" key={index}>
               {to ? (
                 <Link
@@ -90,14 +90,14 @@ const MenuItem = ({ text, to, items }) => {
                   target={target || null}
                   rel={target ? 'noopener noreferrer' : null}
                 >
-                  {text}
+                  {title}
                 </Link>
               ) : (
-                <h3 className="flex py-3 font-medium leading-none">{text}</h3>
+                <h3 className="flex py-3 font-medium leading-none">{title}</h3>
               )}
               {items?.length > 0 && (
                 <ul className="flex flex-col pl-6">
-                  {items.map(({ text, to, target }, index) => (
+                  {items.map(({ title, to, target }, index) => (
                     <li className="mb-2" key={index}>
                       <Link
                         className="flex py-3 leading-none"
@@ -106,7 +106,7 @@ const MenuItem = ({ text, to, items }) => {
                         target={target || null}
                         rel={target ? 'noopener noreferrer' : null}
                       >
-                        {text}
+                        {title}
                       </Link>
                     </li>
                   ))}
@@ -121,16 +121,16 @@ const MenuItem = ({ text, to, items }) => {
 };
 
 MenuItem.propTypes = {
-  text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   to: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      text: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
       to: PropTypes.string,
       target: PropTypes.string,
       items: PropTypes.arrayOf(
         PropTypes.shape({
-          text: PropTypes.string.isRequired,
+          title: PropTypes.string.isRequired,
           to: PropTypes.string,
           target: PropTypes.string,
         })
