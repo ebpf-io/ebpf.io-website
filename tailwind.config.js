@@ -99,6 +99,7 @@ module.exports = {
       },
       letterSpacing: {
         'middle-wide': '0.03em',
+        category: '0.07em',
       },
       dropShadow: {
         book: '0px 8px 24px rgba(61, 61, 61, 0.16)',
@@ -106,6 +107,7 @@ module.exports = {
       boxShadow: {
         'custom-top': '0 -2px 0 0 #e6e6e6',
         'banner-image': '0px 20px 50px 0px rgba(102, 73, 0, 0.16);',
+        category: 'inset 0px -2px 0px rgba(255, 225, 0, 1)',
       },
     },
   },

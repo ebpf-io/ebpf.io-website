@@ -3,6 +3,10 @@
     @apply mx-auto max-w-[1216px] lg:px-10 md:px-7 sm:px-4;
   }
 
+  .container-md {
+    @apply mx-auto max-w-[1008px] lg:px-10 md:px-7 sm:px-4;
+  }
+
   .container-sm {
     @apply mx-auto max-w-[800px] lg:px-10 md:px-7 sm:px-4;
   }

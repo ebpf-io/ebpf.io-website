@@ -30,6 +30,7 @@ const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, cla
             svgClassName="mix-blend-multiply rounded-t-[3px] w-full h-[280px] lg:h-[26vw] md:h-auto md:max-h-none object-contain bg-gray-98"
             imageSrc={ogImage}
             imageUrl={imageUrl}
+            objectFit="contain"
             width={967}
             height={509}
             alt={title}
@@ -47,8 +48,8 @@ const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, cla
         )}
         <div className="py-6 lg:pb-0">
           <Label type={type} />
-          <h3 className="heading-6xl mt-2.5 font-semibold leading-tight line-clamp-2">{title}</h3>
-          <p className="mt-2 mb-5 text-base font-light leading-snug text-gray-40 line-clamp-3">
+          <h3 className="heading-6xl mt-2.5 line-clamp-2 font-semibold leading-tight">{title}</h3>
+          <p className="mb-5 mt-2 line-clamp-3 text-base font-light leading-snug text-gray-40">
             {description}
           </p>
           <DateAndPlace className="mt-6" date={date} place={place} />

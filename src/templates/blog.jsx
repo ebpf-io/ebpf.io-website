@@ -16,9 +16,6 @@ const BlogPage = ({
     externalPosts: { nodes: externalPosts },
   },
 }) => {
-  const allPosts = { name: 'All posts', slug: '' };
-  const categoriesWithAllPosts = [allPosts, ...categories];
-
   const filteredPosts = categorySlug === 'external' ? externalPosts : posts;
 
   return (
@@ -28,7 +25,7 @@ const BlogPage = ({
         <div className="container flex md:flex-col">
           <Sidebar
             className="w-full max-w-[230px] shrink-0 md:w-auto md:max-w-none"
-            categories={categoriesWithAllPosts}
+            categories={categories}
             pathname={pathname}
           />
           <BlogPostsList

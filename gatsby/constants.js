@@ -4,6 +4,7 @@ const POST_REQUIRED_FIELDS = ['title', 'description', 'date', 'categories'];
 const STATIC_PAGE_REQUIRED_FIELDS = ['title'];
 
 const EVENTS_REGEX = '/content/events/((?!README).)*$/';
+const LABS_REGEX = '/content/labs/((?!README).)*$/';
 const EVENT_REQUIRED_FIELDS = [
   'title',
   'description',
@@ -21,4 +22,5 @@ module.exports = {
   STATIC_PAGE_REQUIRED_FIELDS,
   EVENTS_REGEX,
   EVENT_REQUIRED_FIELDS,
+  LABS_REGEX,
 };

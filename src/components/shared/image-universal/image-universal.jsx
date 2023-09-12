@@ -23,7 +23,6 @@ const ImageUniversal = ({
         image={getImage(imageSrc)}
         width={width}
         height={height}
-        objectFit="contain"
         layout="fullWidth"
         backgroundColor={bgColor}
         alt={alt}
