@@ -102,8 +102,7 @@ const SubscriptionForm = ({
                 ? 'border-secondary-red hover:border-secondary-red focus:border-secondary-red'
                 : 'border-transparent',
               formState === 'success' && 'font-medium',
-              lgSize && 'ml-0 h-[60px]',
-              !isVertical && ''
+              lgSize && 'ml-0 h-[60px]'
             )}
             type="email"
             name="email"
@@ -180,13 +179,13 @@ SubscriptionForm.propTypes = {
   buttonTitle: PropTypes.string.isRequired,
   className: PropTypes.string,
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
-  isVertical: PropTypes.string,
+  isVertical: PropTypes.bool,
 };
 
 SubscriptionForm.defaultProps = {
   className: null,
   size: 'sm',
-  isVertical: '',
+  isVertical: false,
 };
 
 export default SubscriptionForm;

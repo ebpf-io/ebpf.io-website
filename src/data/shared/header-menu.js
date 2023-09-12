@@ -35,6 +35,13 @@ const headerMenu = [
           'fr-fr': '/fr-fr/case-studies',
         },
       },
+      {
+        title: {
+          en: 'Labs',
+          'fr-fr': 'Labs',
+        },
+        to: '/labs',
+      },
     ],
   },
   {
