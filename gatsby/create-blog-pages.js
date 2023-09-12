@@ -61,7 +61,7 @@ module.exports = async ({ graphql, actions }) => {
   const { externalPosts } = result.data;
 
   const preferredCategories = ['Community', 'Technology', 'How-To'];
-
+ 
   const categories = groupedCategories
     .filter(({ fieldValue }) => preferredCategories.includes(fieldValue))
     .map(({ fieldValue }) => ({ name: fieldValue, slug: slugifyCategory(fieldValue) }));

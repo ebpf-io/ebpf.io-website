@@ -1,4 +1,4 @@
-# Blog
+# Events
 
 Welcome to eBPF events! This folder contains the source code of the [eBPF events](https://ebpf.io/events/).
 
@@ -21,7 +21,7 @@ Right now Markdown files accept following frontmatter:
 7. `region` — region, four options available: APAC, EMEA, North America, Online (required)
 8. `conference` — if the event type is a Conference, you can specify what type or leave it empty.
    Five options available: eBPF Summit, Cloud Native eBPF Day, eBPF Track (LPC), bpfconf (LSF/MM/BPF)
-9. `draft` — flag that says the post is not ready yet. It won't appear in production but will appear in the development mode.
+9. `isDraft` — flag that says the post is not ready yet. It won't appear in production but will appear in the development mode.
 10. `ogImage` - the preview image of the card.
 
 > ⚠️ Please note that the project won't build if at least one of the Markdown files is missing a required field.

@@ -22,4 +22,20 @@
       @apply relative font-semibold transition-colors duration-200 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-secondary-blue after:ease-in-out hover:text-secondary-blue;
     }
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  @media (min-width: 768px) {
+    .category-hover:hover {
+      @apply shadow-category;
+    }
+  }
 }
