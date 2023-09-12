@@ -28,7 +28,16 @@ const ErrorMessage = ({ serverError }) => {
   );
 };
 
-const SubscriptionForm = ({ className, size, isVertical }) => {
+const SubscriptionForm = ({
+  title,
+  afterTitle,
+  description,
+  placeholder,
+  buttonTitle,
+  className,
+  size,
+  isVertical,
+}) => {
   const { formState, isLoading, errorMessage, email, handleInputChange, handleSubmit } =
     useSubscribeForm();
 
@@ -58,14 +67,14 @@ const SubscriptionForm = ({ className, size, isVertical }) => {
       >
         <div className={clsx(isVertical ? 'text-center' : 'lg:text-center')}>
           <h2
-            className={clsx('font-sans font-bold leading-tight', {
+            className={clsx('max-w-[652px] font-sans font-bold leading-tight', {
               'text-4xl': size === 'sm',
               'text-6xl': mdSize,
               'heading-8xl': lgSize,
             })}
           >
-            <span className={clsx({ 'text-primary-yellow': mdSize || lgSize })}>Subscribe</span> to
-            bi-weekly eCHO News
+            <span className={clsx({ 'text-primary-yellow': mdSize || lgSize })}>{title}</span>{' '}
+            {afterTitle}
           </h2>
           <p
             className={clsx('mt-1.5', {
@@ -74,7 +83,7 @@ const SubscriptionForm = ({ className, size, isVertical }) => {
               'text-lg': lgSize,
             })}
           >
-            Keep up on the latest news and information from the eBPF and Cilium
+            {description}
           </p>
         </div>
         <form
@@ -93,12 +102,11 @@ const SubscriptionForm = ({ className, size, isVertical }) => {
                 ? 'border-secondary-red hover:border-secondary-red focus:border-secondary-red'
                 : 'border-transparent',
               formState === 'success' && 'font-medium',
-              lgSize && 'ml-0 h-[60px]',
-              !isVertical && ''
+              lgSize && 'ml-0 h-[60px]'
             )}
             type="email"
             name="email"
-            placeholder="Email address..."
+            placeholder={placeholder}
             autoComplete="email"
             readOnly={formState !== 'default'}
             value={email}
@@ -129,7 +137,7 @@ const SubscriptionForm = ({ className, size, isVertical }) => {
                 >
                   <span className="sr-only">Subscribe</span>
                   <span className={clsx({ hidden: smSize, 'sm:hidden': mdSize || lgSize })}>
-                    Subscribe
+                    {buttonTitle}
                   </span>
                   {!isLoading && (
                     <SendIcon
@@ -165,15 +173,20 @@ const SubscriptionForm = ({ className, size, isVertical }) => {
 };
 
 SubscriptionForm.propTypes = {
+  title: PropTypes.string.isRequired,
+  afterTitle: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  buttonTitle: PropTypes.string.isRequired,
   className: PropTypes.string,
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
-  isVertical: PropTypes.string,
+  isVertical: PropTypes.bool,
 };
 
 SubscriptionForm.defaultProps = {
   className: null,
   size: 'sm',
-  isVertical: '',
+  isVertical: false,
 };
 
 export default SubscriptionForm;

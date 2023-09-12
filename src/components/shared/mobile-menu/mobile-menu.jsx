@@ -64,15 +64,15 @@ MobileMenu.propTypes = {
   isOpen: PropTypes.bool,
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      text: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
       to: PropTypes.string,
       items: PropTypes.arrayOf(
         PropTypes.shape({
-          text: PropTypes.string.isRequired,
+          title: PropTypes.string.isRequired,
           to: PropTypes.string,
           items: PropTypes.arrayOf(
             PropTypes.shape({
-              text: PropTypes.string.isRequired,
+              title: PropTypes.string.isRequired,
               to: PropTypes.string,
             })
           ),

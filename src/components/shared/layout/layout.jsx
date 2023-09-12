@@ -5,133 +5,43 @@ import Footer from 'components/shared/footer';
 import Header from 'components/shared/header';
 import MobileMenu from 'components/shared/mobile-menu';
 import TopBanner from 'components/shared/top-banner';
+import footerMenu from 'data/shared/footer-menu';
+import headerMenu from 'data/shared/header-menu';
 
-const headerMenu = [
-  {
-    text: 'Learn',
-    items: [
-      {
-        text: 'Get Started',
-        to: '/get-started',
-      },
-      {
-        text: 'What is eBPF?',
-        to: '/what-is-ebpf',
-      },
-      {
-        text: 'Case Studies',
-        to: '/case-studies',
-      },
-      {
-        text: 'Labs',
-        to: '/labs',
-      },
-    ],
-  },
-  {
-    text: 'Project Landscape',
-    items: [
-      {
-        text: 'Applications',
-        to: '/applications',
-      },
-      {
-        text: 'Infrastructure',
-        to: '/infrastructure',
-      },
-    ],
-  },
+import { defaultLanguage } from '../../../../config/languages';
 
-  {
-    text: 'Events',
-    items: [
-      {
-        text: 'All Events',
-        to: '/events?overview',
-      },
-      {
-        text: 'eBPF Summit',
-        to: '/events?conference=eBPF%20Summit',
-      },
-      {
-        text: 'eBPF Track (LPC)',
-        to: '/events?conference=eBPF%20Track%20%28LPC%29',
-      },
-      {
-        text: 'bpfconf (LSF/MM/BPF)',
-        to: '/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
-      },
-    ],
-  },
-  {
-    text: 'Community',
-    items: [
-      {
-        text: 'Get Started',
-        to: '/get-started/#docs',
-      },
-      {
-        text: 'Slack',
-        to: 'https://ebpf.io/slack',
-      },
-      {
-        text: 'Stack Overflow',
-        to: 'https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace',
-        target: '_blank',
-      },
-      {
-        text: 'r/eBPF',
-        to: 'https://www.reddit.com/r/eBPF/',
-        target: '_blank',
-      },
-      {
-        text: 'Wikipedia',
-        to: 'https://en.wikipedia.org/wiki/EBPF',
-        target: '_blank',
-      },
-      {
-        text: 'eCHO',
-        to: 'https://github.com/isovalent/eCHO',
-        target: '_blank',
-      },
-      {
-        text: 'Newsletter',
-        to: '/newsletter',
-      },
-      {
-        text: 'Contribute',
-        to: '/contribute',
-      },
-    ],
-  },
-  {
-    text: 'Blog',
-    to: '/blog',
-  },
-  {
-    text: 'Foundation',
-    to: 'https://ebpf.foundation/',
-  },
-];
+const translateMenuItem = (menuItem, language) => ({
+  ...menuItem,
+  title: menuItem.title ? menuItem.title[language] || menuItem.title : menuItem.title,
+  to: menuItem.to ? menuItem.to[language] || menuItem.to : menuItem.to,
+  items: menuItem.items
+    ? menuItem.items.map((subItem) => translateMenuItem(subItem, language))
+    : undefined,
+});
 
-const Layout = ({ children, headerWithFullWidthBottomBorder }) => {
+const Layout = ({ children, headerWithFullWidthBottomBorder, lang, pageUrls }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleHeaderBurgerClick = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+
+  const headerMenuItems = headerMenu.map((item) => translateMenuItem(item, lang));
+  const footerMenuItems = footerMenu.map((item) => translateMenuItem(item, lang));
 
   return (
     <>
       <TopBanner />
       <div className="relative flex min-h-screen flex-col">
         <Header
-          items={headerMenu}
+          items={headerMenuItems}
           isMobileMenuOpen={isMobileMenuOpen}
           fullWidthBottomBorder={headerWithFullWidthBottomBorder}
+          lang={lang}
+          pageUrls={pageUrls}
           onBurgerClick={handleHeaderBurgerClick}
         />
         <main className="flex-grow">{children}</main>
-        <Footer />
-        <MobileMenu isOpen={isMobileMenuOpen} items={headerMenu} />
+        <Footer items={footerMenuItems} lang={lang} pageUrls={pageUrls} />
+        <MobileMenu isOpen={isMobileMenuOpen} items={headerMenuItems} />
       </div>
     </>
   );
@@ -140,10 +50,14 @@ const Layout = ({ children, headerWithFullWidthBottomBorder }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   headerWithFullWidthBottomBorder: PropTypes.bool,
+  lang: PropTypes.string,
+  pageUrls: PropTypes.object,
 };
 
 Layout.defaultProps = {
   headerWithFullWidthBottomBorder: false,
+  lang: defaultLanguage,
+  pageUrls: null,
 };
 
 export default Layout;

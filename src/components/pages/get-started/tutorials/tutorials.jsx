@@ -1,36 +1,14 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from 'components/shared/button/button';
 import Link from 'components/shared/link/link';
 
-const items = [
-  {
-    title: 'eBPF Tracing Tutorials',
-    description:
-      'Learn how to use eBPF for tracing from just running bcc tools to developing with bpftrace and bcc.',
-    linkUrl: 'http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html',
-  },
-  {
-    title: 'XDP Tutorials',
-    description:
-      'Learn the basic steps needed to effectively write programs for the XDP from what it is to attaching multiple programs to one interface',
-    linkUrl: 'https://github.com/xdp-project/xdp-tutorial',
-  },
-  {
-    title: 'Compiler Explorer',
-    description:
-      'BPF support to run the compiler interactively in your web browser and explore the assembly',
-    linkUrl: 'https://godbolt.org/',
-  },
-];
-
-const Tutorials = () => (
+const Tutorials = ({ title, linkTitle, items }) => (
   <section className="hero safe-paddings mt-40 md:mt-16 sm:mt-14">
     <div className="container grid grid-cols-2 gap-x-[26px] md:grid-cols-1">
       <div className="pr-[72px] pt-3 md:max-w-[550px] md:pr-0">
-        <h2 className="heading-8xl font-semibold leading-tight">
-          Dig into the eBPF technology with tutorials from industry experts
-        </h2>
+        <h2 className="heading-8xl font-semibold leading-tight">{title}</h2>
         <Button
           to="https://github.com/iovisor/bpftrace/blob/master/docs/tutorial_one_liners.md"
           className="mt-9 px-9 py-4 sm:hidden"
@@ -38,7 +16,7 @@ const Tutorials = () => (
           rel="noreferrer noopener"
           theme="primary-yellow-filled"
         >
-          More tutorials
+          {linkTitle}
         </Button>
       </div>
 
@@ -73,10 +51,22 @@ const Tutorials = () => (
         rel="noreferrer noopener"
         theme="primary-yellow-filled"
       >
-        More tutorials
+        {linkTitle}
       </Button>
     </div>
   </section>
 );
+
+Tutorials.propTypes = {
+  title: PropTypes.string.isRequired,
+  linkTitle: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      linkUrl: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default Tutorials;

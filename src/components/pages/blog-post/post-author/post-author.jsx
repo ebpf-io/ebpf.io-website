@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
-import postAuthors from 'data/post-authors';
+import postAuthors from 'data/shared/post-authors';
 
 import TwitterIcon from './images/twitter.inline.svg';
 

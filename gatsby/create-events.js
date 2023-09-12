@@ -1,5 +1,6 @@
 const path = require('path');
 
+const { languages, defaultLanguage } = require('../config/languages');
 const { EVENTS_BASE_PATH } = require('../src/constants/event');
 
 const { DRAFT_FILTER, EVENTS_TEMPLATE, EVENTS_REGEX } = require('./constants');
@@ -64,12 +65,17 @@ module.exports = async ({ graphql, actions }) => {
 
   const postEvents = getFrontmatterData(allPosts);
 
-  createPage({
-    path: EVENTS_BASE_PATH,
-    component: template,
-    context: {
-      postEvents,
-      totalCount,
-    },
+  Object.values(languages).forEach(({ code }) => {
+    const pagePath = code === defaultLanguage ? EVENTS_BASE_PATH : `/${code}${EVENTS_BASE_PATH}`;
+
+    createPage({
+      path: pagePath,
+      component: template,
+      context: {
+        postEvents,
+        totalCount,
+        language: code,
+      },
+    });
   });
 };

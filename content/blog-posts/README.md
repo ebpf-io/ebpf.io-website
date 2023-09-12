@@ -18,7 +18,7 @@ Right now Markdown files accept following frontmatter:
 4. `categories` - categories of the post (required)
 5. `author` - author of the post (currently multiple authors are not supported)
 
-   To add photo and bio of author, open the file `./src/data/post-authors.js`, and follow the template below
+   To add photo and bio of author, open the file `./src/data/shared/post-authors.js`, and follow the template below
 
    ```js
    module.exports = {
