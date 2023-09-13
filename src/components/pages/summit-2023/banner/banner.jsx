@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Button from 'components/shared/button/button';
 import FormModal from 'components/shared/form-modal';
-import { hubspotFormId } from 'data/summit-2023/summit-2023-navigation';
+import { hubspotFormId } from 'data/shared/summit-2023-navigation';
 
 const Banner = () => {
   const [isOpen, setIsOpen] = useState(false);
