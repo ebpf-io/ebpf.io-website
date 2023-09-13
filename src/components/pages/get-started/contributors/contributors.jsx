@@ -6,12 +6,10 @@ import ImageUniversal from 'components/shared/image-universal';
 import Link from 'components/shared/link/link';
 import githubLogo from 'images/github.svg';
 
-const Contributors = ({ items, className }) => (
+const Contributors = ({ title, items, className }) => (
   <section className={clsx('safe-paddings mt-32 lg:mt-24 md:mt-16 sm:mt-14', className)}>
     <div className="container">
-      <h2 className="heading-8xl text-center font-semibold leading-tight">
-        Meet some of our community members
-      </h2>
+      <h2 className="heading-8xl text-center font-semibold leading-tight">{title}</h2>
       <div className="container grid-gap-x mt-14 grid auto-rows-min grid-cols-12 justify-items-stretch gap-y-16 xl:gap-y-14 lg:gap-y-10 md:mt-11 sm:mt-8 sm:flex sm:flex-col sm:gap-y-8">
         {items.map(({ title, description, ogImage, linkUrl }, index) => {
           const imageUrl = ogImage?.publicURL;
@@ -60,6 +58,7 @@ const Contributors = ({ items, className }) => (
 );
 
 Contributors.propTypes = {
+  title: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,

@@ -22,7 +22,7 @@ const images = {
 };
 
 const Documentation = ({ title, items }) => (
-  <section className="hero safe-paddings md:mt-26 mt-32 lg:mt-20" id="docs">
+  <section className="hero safe-paddings md:pt-26 pt-32 lg:pt-20" id="docs">
     <div className="container flex flex-col items-center">
       <h2 className="heading-8xl text-center font-semibold leading-tight">{title}</h2>
 
