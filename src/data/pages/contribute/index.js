@@ -115,7 +115,7 @@ const data = {
           },
           {
             text: 'Linux kernel eBPF runtime',
-            to: '/infrastructure/#linux-kernel',
+            to: '/fr-fr/infrastructure/#linux-kernel',
           },
         ],
       },
@@ -130,7 +130,7 @@ const data = {
           links: [
             {
               text: 'eBPF landscape',
-              to: '/applications',
+              to: '/fr-fr/applications',
             },
           ],
         },

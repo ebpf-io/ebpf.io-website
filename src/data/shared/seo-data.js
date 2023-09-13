@@ -38,14 +38,28 @@ export default {
     },
   },
   applications: {
-    title: 'eBPF Applications Landscape',
-    description: 'A directory of eBPF-based open source applications',
-    keywords: 'ebpf, bpf, landscape, directory, open source',
+    en: {
+      title: 'eBPF Applications Landscape',
+      description: 'A directory of eBPF-based open source applications',
+      keywords: 'ebpf, bpf, landscape, directory, open source',
+    },
+    'fr-fr': {
+      title: 'Paysage des applications eBPF',
+      description: 'Un répertoire d’applications open source basées sur eBPF',
+      keywords: 'ebpf, bpf, paysage, répertoire, open source',
+    },
   },
   infrastructure: {
-    title: 'eBPF Core Infrastructure Landscape',
-    description: 'A directory of eBPF-based core infrastructure',
-    keywords: 'ebpf, bpf, landscape, directory, open source',
+    en: {
+      title: 'eBPF Core Infrastructure Landscape',
+      description: 'A directory of eBPF-based core infrastructure',
+      keywords: 'ebpf, bpf, landscape, directory, open source',
+    },
+    'fr-fr': {
+      title: 'Paysage des infrastructures de base de l’eBPF',
+      description: 'Un répertoire d’infrastructures basées sur eBPF',
+      keywords: 'ebpf, bpf, paysage, répertoire, open source',
+    },
   },
   newsletter: {
     title: 'Subscribe to bi-weekly eCHO News - eBPF',
