@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Banner from 'components/pages/summit-2023/banner';
 import Hero from 'components/pages/summit-2023/hero';
 import Hosts from 'components/pages/summit-2023/hosts';
 import Information from 'components/pages/summit-2023/information';
@@ -78,6 +79,7 @@ const speakers = {
 const Summit2023 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
+    <Banner />
     <Speakers {...speakers} />
     <Information />
     <Hosts {...hosts} />
