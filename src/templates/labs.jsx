@@ -10,9 +10,23 @@ import Pagination from 'components/shared/pagination';
 import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
 import { LABS_BASE_PATH } from 'constants/labs';
+import data from 'data/pages/labs';
+import SEO_DATA from 'data/shared/seo-data';
+
+const pageUrls = {
+  en: '/labs/',
+  'fr-fr': '/fr-fr/labs/',
+};
 
 const LabsPage = ({
-  pageContext: { labsCategories, pageCount, currentPageIndex, categorySlug, currentCategory },
+  pageContext: {
+    labsCategories,
+    pageCount,
+    currentPageIndex,
+    categorySlug,
+    currentCategory,
+    language,
+  },
   data: {
     allMdx: { nodes: allLabs },
   },
@@ -29,11 +43,11 @@ const LabsPage = ({
   };
 
   return (
-    <Layout>
+    <Layout lang={language} pageUrls={pageUrls}>
       <section className="safe-paddings">
         <div className="container flex flex-col pt-20 lg:pt-16">
           <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
-            Dig into eBPF with interactive labs
+            {data[language].title}
           </h1>
         </div>
       </section>
@@ -56,11 +70,7 @@ const LabsPage = ({
       <div className="container-md">
         <SubscriptionForm
           className="mb-24 lg:mb-20"
-          title="Subscribe"
-          afterTitle="to bi-weekly eCHO News"
-          description="Keep up on the latest news and information from the eBPF and Cilium"
-          placeholder="Email address..."
-          buttonTitle="Subscribe"
+          {...data[language].subscriptionForm}
           size="md"
           isVertical
         />
@@ -71,7 +81,9 @@ const LabsPage = ({
 
 export default LabsPage;
 
-export const Head = ({ location: { pathname } }) => <SEO pathname={pathname} />;
+export const Head = ({ location: { pathname }, pageContext: { language } }) => (
+  <SEO pathname={pathname} {...SEO_DATA.home[language]} />
+);
 
 export const query = graphql`
   query LabsPageQuery(

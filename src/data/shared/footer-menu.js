@@ -38,7 +38,10 @@ const footerMenu = [
           en: 'Labs',
           'fr-fr': 'Labs',
         },
-        to: '/labs',
+        to: {
+          en: '/labs',
+          'fr-fr': '/fr-fr/labs',
+        },
       },
     ],
   },
