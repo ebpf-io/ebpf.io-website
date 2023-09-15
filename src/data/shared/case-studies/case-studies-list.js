@@ -13,11 +13,13 @@ import F5 from './logos/f5.inline.svg';
 import Global from './logos/global.inline.svg';
 import Google from './logos/google.inline.svg';
 import Ikea from './logos/ikea.inline.svg';
+import LineCoporation from './logos/line-corp.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
 import Meta from './logos/meta.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
+import Redhat from './logos/redhat.inline.svg';
 import SentinelOne from './logos/sentinelone.inline.svg';
 import Seznam from './logos/seznam.inline.svg';
 import Shopify from './logos/shopify.inline.svg';
@@ -62,6 +64,10 @@ const caseStudiesData = {
           text: 'Blog',
           to: 'https://netflixtechblog.com/how-netflix-uses-ebpf-flow-logs-at-scale-for-network-insight-e3ea997dca96',
         },
+        {
+          text: 'Video',
+          to: 'https://www.youtube.com/watch?v=16slh29iN1g',
+        },
       ],
     },
     {
@@ -73,6 +79,10 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://source.android.com/docs/core/architecture/kernel/bpf',
+        },
+        {
+          text: 'Docs 2',
+          to: 'https://source.android.com/docs/core/data/ebpf-traffic-monitor',
         },
       ],
     },
@@ -157,6 +167,10 @@ const caseStudiesData = {
           to: 'https://engineering.fb.com/2018/10/30/open-source/linux/',
         },
         {
+          text: 'Blog 3',
+          to: 'https://engineering.fb.com/2021/07/12/security/enforcing-encryption/',
+        },
+        {
           text: 'Talk 1',
           to: 'https://lpc.events/event/16/contributions/1363/',
         },
@@ -176,6 +190,18 @@ const caseStudiesData = {
           text: 'Video',
           to: 'https://datadogon.datadoghq.com/episodes/datadog-on-ebpf/',
         },
+        {
+          text: 'Blog',
+          to: 'https://www.datadoghq.com/blog/network-performance-monitoring/',
+        },
+        {
+          text: 'Talk 1',
+          to: 'https://www.youtube.com/watch?v=YK7GyEJdJGo',
+        },
+        {
+          text: 'Talk 2',
+          to: ' https://www.youtube.com/watch?v=6nlv_VCsjpQ',
+        },
       ],
     },
     {
@@ -188,6 +214,22 @@ const caseStudiesData = {
           text: 'Blog',
           to: 'https://www.alibabacloud.com/blog/how-does-alibaba-cloud-build-high-performance-cloud-native-pod-networks-in-production-environments_596590',
         },
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=Z4qxd5yYoP4',
+        },
+      ],
+    },
+    {
+      title: 'Red Hat',
+      logo: Redhat,
+      description:
+        '<strong>Red Hat</strong> uses eBPF at scale for load balancing and tracing in their private cloud',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://youtu.be/xxRAppnmirY?si=OSxhLJ8S1B2-Z-9T',
+        },
       ],
     },
     {
@@ -199,6 +241,14 @@ const caseStudiesData = {
           text: 'Blog',
           to: 'https://cilium.io/blog/2022/04/12/cilium-standalone-L4LB-XDP/',
         },
+        {
+          text: 'Talk 1',
+          to: 'https://www.youtube.com/watch?v=xwjZF3alO7g',
+        },
+        {
+          text: 'Talk 2',
+          to: 'https://www.youtube.com/watch?v=-D-uGV1bWdY',
+        },
       ],
     },
     {
@@ -209,6 +259,10 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://cilium.io/blog/2020/02/05/how-trip-com-uses-cilium/',
+        },
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=NIsU4I950l4',
         },
       ],
     },
@@ -236,6 +290,10 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://cilium.io/blog/2020/09/03/wildlife-studios-multi-cluster-gaming-platform',
+        },
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=_1t3bXzptP0',
         },
       ],
     },
@@ -274,6 +332,14 @@ const caseStudiesData = {
         {
           text: 'Video 2',
           to: 'https://youtu.be/thmAcyix8FM',
+        },
+        {
+          text: 'Video 3',
+          to: 'https://www.youtube.com/watch?v=0m-1c7HJPcs',
+        },
+        {
+          text: 'Blog',
+          to: 'https://medium.com/walmartglobaltech/introducing-walmarts-l3af-project-how-do-we-use-ebpf-to-provide-network-visibility-in-a-8b9ae4d26200',
         },
       ],
     },
@@ -393,6 +459,18 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.akita.software/docs/how-akita-works#what-makes-akita-different',
+        },
+      ],
+    },
+    {
+      title: 'Line Coporation',
+      logo: LineCoporation,
+      description:
+        '<strong>Line Corporation</strong> uses eBPF at scale for load balancing and tracing in their private cloud',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=cxfVpBYlol4',
         },
       ],
     },
@@ -562,6 +640,18 @@ const caseStudiesData = {
       ],
     },
     {
+      title: 'Red Hat',
+      logo: Redhat,
+      description:
+        '<strong>Red Hat</strong> uses eBPF at scale for load balancing and tracing in their private cloud',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://youtu.be/xxRAppnmirY?si=OSxhLJ8S1B2-Z-9T',
+        },
+      ],
+    },
+    {
       title: 'Seznam',
       logo: Seznam,
       description: '<strong>Seznam</strong> uses eBPF for load balancing',
@@ -764,6 +854,18 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.akita.software/docs/how-akita-works#what-makes-akita-different',
+        },
+      ],
+    },
+    {
+      title: 'Line Coporation',
+      logo: LineCoporation,
+      description:
+        '<strong>Line Corporation</strong> uses eBPF at scale for load balancing and tracing in their private cloud',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=cxfVpBYlol4',
         },
       ],
     },
