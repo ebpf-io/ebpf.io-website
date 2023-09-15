@@ -149,6 +149,13 @@ const headerMenu = [
       },
       {
         title: {
+          en: 'eBPF User Group',
+          'fr-fr': 'eBPF User Group',
+        },
+        to: 'https://www.meetup.com/ebpf-user-group/',
+      },
+      {
+        title: {
           en: 'Stack Overflow',
           'fr-fr': 'Stack Overflow',
         },
