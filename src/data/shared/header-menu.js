@@ -149,8 +149,8 @@ const headerMenu = [
       },
       {
         title: {
-          en: 'eBPF User Group',
-          'fr-fr': 'eBPF User Group',
+          en: 'eBPF Meetup',
+          'fr-fr': 'eBPF Meetup',
         },
         to: 'https://www.meetup.com/ebpf-user-group/',
       },
