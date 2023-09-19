@@ -10,7 +10,7 @@ import conferenceSvg from 'images/conference.svg';
 import meetupSvg from 'images/meetup.svg';
 import webinarSvg from 'images/webinar.svg';
 
-const Card = ({ type, title, description, ogImage, date, place, linkUrl, className }) => {
+const EventCard = ({ type, title, description, ogImage, date, place, linkUrl, className }) => {
   const placeholderImages = {
     Meetup: meetupSvg,
     Conference: conferenceSvg,
@@ -41,7 +41,6 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
             alt={title}
           />
         )}
-
         {!ogImage && (
           <img
             className="h-[182px] w-full self-center rounded-t-lg bg-gray-98 object-contain lg:h-[15vw] md:h-[24vw] sm:h-auto"
@@ -75,7 +74,7 @@ const Card = ({ type, title, description, ogImage, date, place, linkUrl, classNa
   );
 };
 
-Card.propTypes = {
+EventCard.propTypes = {
   type: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
@@ -86,15 +85,16 @@ Card.propTypes = {
     publicURL: PropTypes.string,
   }),
   date: PropTypes.string.isRequired,
-  place: PropTypes.string.isRequired,
+  place: PropTypes.string,
   linkUrl: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
 
-Card.defaultProps = {
+EventCard.defaultProps = {
   description: null,
   ogImage: null,
+  place: null,
   className: null,
 };
 
-export default Card;
+export default EventCard;

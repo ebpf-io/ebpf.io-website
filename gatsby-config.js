@@ -65,6 +65,13 @@ module.exports = {
         path: `${__dirname}/content/labs/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'contributors',
+        path: `${__dirname}/content/contributors/`,
+      },
+    },
     'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     {

@@ -119,9 +119,22 @@ const data = {
         },
       ],
     },
+    events: {
+      title: 'Attend eBPF events to learn from industry experts',
+      linkTitle: 'More events',
+      linkUrl: '/events/',
+    },
     videoGallery: {
       title: 'eBPF introductory videos',
       items: videoItems,
+    },
+    blog: {
+      title: 'Learn more about eBPF in articles from the community',
+      linkTitle: 'More articles',
+      linkUrl: '/blog/',
+    },
+    contributors: {
+      title: 'Meet some of our community members',
     },
   },
   'fr-fr': {
@@ -239,9 +252,22 @@ const data = {
         },
       ],
     },
+    events: {
+      title: 'Participez aux événements eBPF pour apprendre des experts du secteur',
+      linkTitle: 'Plus d’événements',
+      linkUrl: '/fr-fr/events/',
+    },
     videoGallery: {
       title: 'Vidéos d’introduction eBPF',
       items: videoItems,
+    },
+    blog: {
+      title: 'Apprenez-en davantage sur eBPF grâce aux articles de la communauté',
+      linkTitle: 'Plus d’articles',
+      linkUrl: '/blog/',
+    },
+    contributors: {
+      title: 'Meet some of our community members',
     },
   },
 };
