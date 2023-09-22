@@ -25,12 +25,12 @@ const InfrastructurePage = () => (
       className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
       {...data[lang].emergingInfrastructureProps}
     />
-    <EbpfLibraries />
+    <EbpfLibraries lang={lang} />
     <ProjectsList
       className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
       {...data[lang].auxiliaryLibrariesProps}
     />
-    <FAQ />
+    <FAQ lang={lang} />
   </Layout>
 );
 

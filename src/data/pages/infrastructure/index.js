@@ -51,15 +51,15 @@ const data = {
     },
     majorInfrastructureProps: {
       titleTag: 'h2',
-      title: 'Major Infrastructure',
+      title: 'Infrastructures majeures',
       items: majorInfrastructure,
     },
     emergingInfrastructureProps: {
-      title: 'Emerging',
+      title: 'Émergentes',
       items: emergingInfrastructure,
     },
     auxiliaryLibrariesProps: {
-      title: 'eBPF Auxiliary Libraries',
+      title: 'Bibliothèques eBPF auxiliaires',
       items: auxiliaryLibraries,
     },
   },

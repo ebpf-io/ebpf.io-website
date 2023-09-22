@@ -21,7 +21,7 @@ const ApplicationsPage = () => (
       className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
       {...data[lang].emergingApplicationsProps}
     />
-    <FAQ />
+    <FAQ lang={lang} />
   </Layout>
 );
 

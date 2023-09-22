@@ -46,11 +46,11 @@ const data = {
     },
     majorApplicationsProps: {
       titleTag: 'h2',
-      title: 'Major Applications',
+      title: 'Applications majeures',
       items: majorApplications,
     },
     emergingApplicationsProps: {
-      title: 'Emerging',
+      title: 'Émergentes',
       items: emergingApplications,
     },
   },

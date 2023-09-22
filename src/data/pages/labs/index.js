@@ -10,7 +10,7 @@ const data = {
     },
   },
   'fr-fr': {
-    title: 'Dig into eBPF with interactive labs',
+    title: 'Explorez eBPF avec des laboratoires interactifs',
     subscriptionForm: {
       title: 'Abonnez-vous',
       afterTitle: 'aux nouvelles d’eCHO une fois toutes les deux semaines',
