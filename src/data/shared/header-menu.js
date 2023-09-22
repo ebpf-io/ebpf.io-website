@@ -132,6 +132,16 @@ const headerMenu = [
     items: [
       {
         title: {
+          en: 'Get Started',
+          'fr-fr': 'Commencer',
+        },
+        to: {
+          en: '/get-started/#docs',
+          'fr-fr': '/fr-fr/get-started/#docs',
+        },
+      },
+      {
+        title: {
           en: 'Slack',
           'fr-fr': 'Slack',
         },

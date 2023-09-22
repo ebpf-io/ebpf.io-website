@@ -36,7 +36,9 @@ const Tutorials = ({ title, linkTitle, items }) => (
                 <span className="mt-2.5 text-base leading-normal">{description}</span>
               </div>
 
-              <Button className="ml-10" theme="withYellowChevron" />
+              <Button className="ml-10" theme="withYellowChevron">
+                <span className="sr-only">{title}</span>
+              </Button>
             </Link>
           </li>
         ))}

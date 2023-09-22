@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import useLocation from 'react-use/lib/useLocation';
 
-import Card from 'components/pages/events/card';
 import Filters from 'components/pages/events/filters';
 import Pagination from 'components/pages/events/pagination';
+import EventCard from 'components/shared/event-card';
 import { EVENT_PER_PAGE } from 'constants/event';
 import { eventFilters } from 'constants/event-filters';
 import useFilteredEvents from 'hooks/use-filtered-events';
@@ -89,7 +89,7 @@ const EventList = ({ allEvents, totalCount }) => {
         <div className="container grid-gap grid auto-rows-min grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
           {currentEvents.length > 0 &&
             currentEvents.map((item, index) => (
-              <Card {...item} className="col-span-4 md:col-span-6" key={index} />
+              <EventCard {...item} className="col-span-4 md:col-span-6" key={index} />
             ))}
         </div>
       ) : (

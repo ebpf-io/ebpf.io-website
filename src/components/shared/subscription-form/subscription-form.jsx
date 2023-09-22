@@ -135,6 +135,7 @@ const SubscriptionForm = ({
                   style={{ boxShadow: '0px 4px 12px rgba(143, 126, 0, 0.2)' }}
                   loading={isLoading}
                 >
+                  <span className="sr-only">Subscribe</span>
                   <span className={clsx({ hidden: smSize, 'sm:hidden': mdSize || lgSize })}>
                     {buttonTitle}
                   </span>
