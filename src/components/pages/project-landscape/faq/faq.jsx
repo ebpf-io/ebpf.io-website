@@ -1,78 +1,23 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import AnchorHeading from 'components/shared/anchor-heading';
+import data from 'data/shared/faq';
 
-const Requirements = () => (
-  <>
-    <p>
-      Projects can be listed on this page as "Major" or "Emerging". The requirements for being
-      listed as "Emerging" are:
-    </p>
-    <ul>
-      <li>
-        The project must be open source. All source code must be licensed under an open source
-        license. Any documentation must be licensed under an open license.
-      </li>
-      <li>
-        The project must be using eBPF as its underlying core technology (in other words, a project
-        would lose its purpose if the eBPF parts are removed) or help accelerate the adoption of
-        eBPF in production.
-      </li>
-      <li>The project must be actively maintained.</li>
-      <li>
-        The project must be open to collaboration and have a governance model following open source
-        best-practices.
-      </li>
-    </ul>
-    <p>
-      In order to be listed as a "Major" project, a project must meet all of the requirements above,
-      plus:
-    </p>
-    <ul>
-      <li>The project must have more than 50 contributors.</li>
-      <li>
-        The project must be used in production-like environments with a significant amount of users.
-        Since this information may not be easily discoverable from a link to the project, such
-        information should be included in the pull request description.
-      </li>
-    </ul>
-  </>
-);
-
-const items = [
-  {
-    question: 'Are these projects under the eBPF Foundation?',
-    answer:
-      '<ul><li>This page lists a number of open source projects that use eBPF as the underlying core technology. These projects are not all under the <a href="https://www.ebpf.foundation/">eBPF Foundation</a> but are listed here as a survey of the eBPF project landscape today.</li></ul>',
-  },
-  {
-    question: 'Add your project',
-    answer:
-      '<ol><li>Make sure that the project is meeting the requirements to be listed. See below.</li><li>Open a <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">pull request</a> and provide the required information. Use one of the already listed projects as a template. The ordering of applications is based on the number of Github stars (high to low), updated on a quarterly basis.</li><li>The pull request will be reviewed by the community and merged by one of the maintainers. If you have any questions, feel free to ask on <a href="https://ebpf.io/slack">Slack</a>.</li></ol>',
-  },
-  {
-    question: 'Are you maintaining a listed project?',
-    answer:
-      '<ul><li>If you are maintaining one of the listed projects and would like to adjust the content. Get in touch on <a href="https://ebpf.io/slack">Slack</a> or open a pull request directly.</li></ul>',
-  },
-  {
-    question: 'Requirements for a project to be listed',
-    answer: Requirements,
-  },
-];
+import { defaultLanguage } from '../../../../../config/languages';
 
 const Heading = AnchorHeading('h2');
 
-const FAQ = () => (
+const FAQ = ({ lang }) => (
   <section className="faq safe-paddings mb-32 pt-32 lg:mb-28 lg:pt-28 md:mb-20 md:pt-20" id="faq">
     <div className="container-sm">
       <div className="text-center">
         <Heading className="heading-8xl inline-flex text-center font-bold leading-dense">
-          Frequently Asked Questions
+          {data[lang].title}
         </Heading>
       </div>
       <ul>
-        {items.map(({ question, answer }, index) => {
+        {data[lang].items.map(({ question, answer }, index) => {
           const Answer = answer;
           return (
             <li className="mt-12 first:mt-14 md:mt-10 md:first:mt-10" key={index}>
@@ -93,5 +38,13 @@ const FAQ = () => (
     </div>
   </section>
 );
+
+FAQ.propTypes = {
+  lang: PropTypes.string,
+};
+
+FAQ.defaultProps = {
+  lang: defaultLanguage,
+};
 
 export default FAQ;

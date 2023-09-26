@@ -9,12 +9,12 @@ import SEO from 'components/shared/seo';
 import data from 'data/pages/infrastructure';
 import SEO_DATA from 'data/shared/seo-data';
 
-import { defaultLanguage } from '../../config/languages';
+import { languages } from '../../../config/languages';
 
-const lang = defaultLanguage;
+const lang = languages['fr-fr'].code;
 
 const InfrastructurePage = () => (
-  <Layout pageUrls={data.pageUrls}>
+  <Layout lang={lang} pageUrls={data.pageUrls}>
     <h1 className="sr-only">{data[lang].title}</h1>
     <Hero {...data[lang].hero} />
     <ProjectsList
@@ -25,12 +25,12 @@ const InfrastructurePage = () => (
       className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
       {...data[lang].emergingInfrastructureProps}
     />
-    <EbpfLibraries />
+    <EbpfLibraries lang={lang} />
     <ProjectsList
       className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
       {...data[lang].auxiliaryLibrariesProps}
     />
-    <FAQ />
+    <FAQ lang={lang} />
   </Layout>
 );
 

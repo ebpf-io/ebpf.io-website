@@ -40,7 +40,10 @@ const headerMenu = [
           en: 'Labs',
           'fr-fr': 'Labs',
         },
-        to: '/labs',
+        to: {
+          en: '/labs',
+          'fr-fr': '/fr-fr/labs',
+        },
       },
     ],
   },
@@ -55,14 +58,20 @@ const headerMenu = [
           en: 'Applications',
           'fr-fr': 'Applications',
         },
-        to: '/applications',
+        to: {
+          en: '/applications',
+          'fr-fr': '/fr-fr/applications',
+        },
       },
       {
         title: {
           en: 'Infrastructure',
           'fr-fr': 'Infrastructure',
         },
-        to: '/infrastructure',
+        to: {
+          en: '/infrastructure',
+          'fr-fr': '/fr-fr/infrastructure',
+        },
       },
     ],
   },

@@ -1,13 +1,19 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import AnchorHeading from 'components/shared/anchor-heading';
 import slugifyCategory from 'utils/slugify-category';
 
+import { defaultLanguage } from '../../../../../config/languages';
+
 import CPlusPlusIcon from './images/cplusplus.inline.svg';
 import GoIcon from './images/go.inline.svg';
 import RustIcon from './images/rust.inline.svg';
 
-const title = 'eBPF Libraries';
+const title = {
+  en: 'eBPF Libraries',
+  'fr-fr': 'Bibliothèques eBPF',
+};
 
 const items = [
   {
@@ -38,8 +44,8 @@ const items = [
 
 const Heading = AnchorHeading('h2');
 
-const EbpfLibraries = () => {
-  const slug = slugifyCategory(title);
+const EbpfLibraries = ({ lang }) => {
+  const slug = slugifyCategory(title.en);
 
   return (
     <section className="libraries safe-paddings pt-32 lg:pt-28 md:pt-20" id={slug}>
@@ -50,7 +56,7 @@ const EbpfLibraries = () => {
               className="heading-9xl inline-flex text-center font-bold leading-dense"
               id={slug}
             >
-              {title}
+              {title[lang]}
             </Heading>
           </div>
           <ul className="mt-12 flex divide-x divide-dashed divide-secondary-blue-2 divide-opacity-30 lg:mt-10 md:mt-8 md:flex-col md:divide-x-0 md:divide-y">
@@ -81,6 +87,14 @@ const EbpfLibraries = () => {
       </div>
     </section>
   );
+};
+
+EbpfLibraries.propTypes = {
+  lang: PropTypes.string,
+};
+
+EbpfLibraries.defaultProps = {
+  lang: defaultLanguage,
 };
 
 export default EbpfLibraries;

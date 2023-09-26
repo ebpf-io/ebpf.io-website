@@ -1,19 +1,9 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
 
-const items = [
-  {
-    text: 'Applications',
-    to: '/applications/',
-  },
-  {
-    text: 'Infrastructure',
-    to: '/infrastructure/',
-  },
-];
-
-const Hero = () => (
+const Hero = ({ items }) => (
   <section className="hero safe-paddings mt-7">
     <div className="container flex justify-center">
       <div className="mx-auto flex justify-center space-x-8 border-b-2 border-gray-94 text-xl font-bold text-gray-50">
@@ -31,5 +21,14 @@ const Hero = () => (
     </div>
   </section>
 );
+
+Hero.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      to: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default Hero;
