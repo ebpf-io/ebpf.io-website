@@ -3,11 +3,13 @@ import Alibaba from './logos/alibaba.inline.svg';
 import Android from './logos/android.inline.svg';
 import AntGroup from './logos/ant-group.inline.svg';
 import Apple from './logos/apple.inline.svg';
+import Aqua from './logos/aqua.inline.svg';
 import Bell from './logos/bell.inline.svg';
 import Bytedance from './logos/byte-dance.inline.svg';
 import CapitalOne from './logos/capital-one.inline.svg';
 import Cloudflare from './logos/cloudflare.inline.svg';
 import Cruise from './logos/cruise.inline.svg';
+import Cycode from './logos/cycode.inline.svg';
 import Datadog from './logos/datadog.inline.svg';
 import DigitalOcean from './logos/digital-ocean.inline.svg';
 import Exein from './logos/exein.inline.svg';
@@ -15,9 +17,11 @@ import F5 from './logos/f5.inline.svg';
 import Global from './logos/global.inline.svg';
 import Google from './logos/google.inline.svg';
 import Ikea from './logos/ikea.inline.svg';
+import Kodem from './logos/kodemsec.inline.svg';
 import LineCoporation from './logos/line-corp.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
 import Meta from './logos/meta.inline.svg';
+import Microsoft from './logos/microsoft.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
@@ -39,7 +43,7 @@ const caseStudiesData = {
       title: 'Google',
       logo: Google,
       description:
-        '<strong>Google</strong> uses eBPF for security auditing, packet processing, and performance monitoring.',
+        '<strong>Google</strong> uses eBPF for security auditing, packet processing, and performance monitoring',
       links: [
         {
           text: 'Video 1',
@@ -62,7 +66,7 @@ const caseStudiesData = {
     {
       title: 'Netflix',
       logo: Netflix,
-      description: '<strong>Netflix</strong> uses eBPF at scale for network insights.',
+      description: '<strong>Netflix</strong> uses eBPF at scale for network insights',
       links: [
         {
           text: 'Blog',
@@ -75,10 +79,26 @@ const caseStudiesData = {
       ],
     },
     {
+      title: 'Microsoft',
+      logo: Microsoft,
+      description:
+        '<strong>Microsot</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=ilcYXPDSgu8&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=5',
+        },
+        {
+          text: 'Talk 2',
+          to: 'https://www.youtube.com/watch?v=tdcHnbLJClc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=6',
+        },
+      ],
+    },
+    {
       title: 'Android',
       logo: Android,
       description:
-        '<strong>Android</strong> uses eBPF to monitor network usage, power, and memory profiling.',
+        '<strong>Android</strong> uses eBPF to monitor network usage, power, and memory profiling',
       links: [
         {
           text: 'Docs',
@@ -105,7 +125,7 @@ const caseStudiesData = {
       title: 'S&P Global',
       logo: Global,
       description:
-        '<strong>S&P Global</strong> uses eBPF through Cilium for networking across multiple clouds and on-prem.',
+        '<strong>S&P Global</strong> uses eBPF through Cilium for networking across multiple clouds and on-prem',
       links: [
         {
           text: 'Video',
@@ -116,7 +136,7 @@ const caseStudiesData = {
     {
       title: 'Shopify',
       logo: Shopify,
-      description: '<strong>Shopify</strong> uses eBPF through Falco for intrusion detection.',
+      description: '<strong>Shopify</strong> uses eBPF through Falco for intrusion detection',
       links: [
         {
           text: 'Video',
@@ -128,7 +148,7 @@ const caseStudiesData = {
       title: 'Cloudflare',
       logo: Cloudflare,
       description:
-        '<strong>Cloudflare</strong> uses eBPF for network security, performance monitoring, and network observability.',
+        '<strong>Cloudflare</strong> uses eBPF for network security, performance monitoring, and network observability',
       links: [
         {
           text: 'Blog',
@@ -144,7 +164,7 @@ const caseStudiesData = {
       title: 'Ikea',
       logo: Ikea,
       description:
-        '<strong>Ikea</strong> uses eBPF through Cilium for networking and load balancing in their private cloud.',
+        '<strong>Ikea</strong> uses eBPF through Cilium for networking and load balancing in their private cloud',
       links: [
         {
           text: 'Video',
@@ -155,7 +175,7 @@ const caseStudiesData = {
     {
       title: 'Apple',
       logo: Apple,
-      description: '<strong>Apple</strong> uses eBPF through Falco for kernel security monitoring.',
+      description: '<strong>Apple</strong> uses eBPF through Falco for kernel security monitoring',
       links: [
         {
           text: 'Video',
@@ -467,9 +487,21 @@ const caseStudiesData = {
       ],
     },
     {
+      title: 'Aqua Security',
+      logo: Aqua,
+      description:
+        '<strong>Aqua Security</strong> uses eBPF to handle runtime detection and forensics',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://youtu.be/BF42-cl-8B0?si=FM6Mp2PfewzX7BnS',
+        },
+      ],
+    },
+    {
       title: 'Akita',
       logo: Akita,
-      description: '<strong>Akita</strong> uses eBPF at scale for API observability.',
+      description: '<strong>Akita</strong> uses eBPF at scale for API observability',
       links: [
         {
           text: 'Docs',
@@ -525,13 +557,40 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Kodem',
+      logo: Kodem,
+      description:
+        '<strong>Kodem</strong> uses eBPF for application visibilty and runtime intelligence',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://kodemsec.webflow.io/resources/deep-visibility-with-ebpf',
+        },
+      ],
+    },
+    {
+      title: 'Cycode',
+      logo: Cycode,
+      description: '<strong>Cycode</strong> uses eBPF for CI/CD security',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=pcBGRFvSrvY',
+        },
+        {
+          text: 'Blog',
+          to: 'https://cycode.com/blog/introducing-cimon-build-hardening/',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
       title: 'Google',
       logo: Google,
       description:
-        '<strong>Google</strong> utilise eBPF pour des audits sécurité, du traitement de paquets ainsi que le monitoring de performance.',
+        '<strong>Google</strong> utilise eBPF pour des audits sécurité, du traitement de paquets ainsi que le monitoring de performance',
       links: [
         {
           text: 'Video 1',
@@ -555,7 +614,7 @@ const caseStudiesData = {
       title: 'Netflix',
       logo: Netflix,
       description:
-        '<strong>Netflix</strong> utilise eBPF à grande échelle pour obtenir des informations sur le réseau.',
+        '<strong>Netflix</strong> utilise eBPF à grande échelle pour obtenir des informations sur le réseau',
       links: [
         {
           text: 'Blog',
@@ -564,10 +623,26 @@ const caseStudiesData = {
       ],
     },
     {
+      title: 'Microsoft',
+      logo: Microsoft,
+      description:
+        '<strong>Microsot</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes',
+      links: [
+        {
+          text: 'Talk 1',
+          to: 'https://www.youtube.com/watch?v=ilcYXPDSgu8&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=5',
+        },
+        {
+          text: 'Talk 2',
+          to: 'https://www.youtube.com/watch?v=tdcHnbLJClc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=6',
+        },
+      ],
+    },
+    {
       title: 'Android',
       logo: Android,
       description:
-        '<strong>Android</strong> utilise eBPF pour surveiller l’utilisation du réseau, pour l’alimentation et le profilage de la mémoire.',
+        '<strong>Android</strong> utilise eBPF pour surveiller l’utilisation du réseau, pour l’alimentation et le profilage de la mémoire',
       links: [
         {
           text: 'Docs',
@@ -602,7 +677,7 @@ const caseStudiesData = {
       title: 'Shopify',
       logo: Shopify,
       description:
-        '<strong>Shopify</strong> utilise eBPF via Falco pour la détection des intrusions.',
+        '<strong>Shopify</strong> utilise eBPF via Falco pour la détection des intrusions',
       links: [
         {
           text: 'Video',
@@ -614,7 +689,7 @@ const caseStudiesData = {
       title: 'Cloudflare',
       logo: Cloudflare,
       description:
-        '<strong>Cloudflare</strong> utilise eBPF pour la sécurisation du réseau, la surveillance des performances et l’observabilité du réseau.',
+        '<strong>Cloudflare</strong> utilise eBPF pour la sécurisation du réseau, la surveillance des performances et l’observabilité du réseau',
       links: [
         {
           text: 'Blog',
@@ -630,7 +705,7 @@ const caseStudiesData = {
       title: 'Ikea',
       logo: Ikea,
       description:
-        '<strong>Ikea</strong> uses eBPF through Cilium for networking and load balancing in their private cloud.',
+        '<strong>Ikea</strong> uses eBPF through Cilium for networking and load balancing in their private cloud',
       links: [
         {
           text: 'Video',
@@ -641,7 +716,7 @@ const caseStudiesData = {
     {
       title: 'Apple',
       logo: Apple,
-      description: '<strong>Apple</strong> uses eBPF through Falco for kernel security monitoring.',
+      description: '<strong>Apple</strong> uses eBPF through Falco for kernel security monitoring',
       links: [
         {
           text: 'Video',
@@ -710,6 +785,10 @@ const caseStudiesData = {
         {
           text: 'Talk',
           to: 'https://youtu.be/xxRAppnmirY?si=OSxhLJ8S1B2-Z-9T',
+        },
+        {
+          text: 'Talk 2',
+          to: 'https://www.youtube.com/watch?v=hmUjW-dV_vc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=11',
         },
       ],
     },
@@ -904,11 +983,23 @@ const caseStudiesData = {
       title: 'SentinelOne',
       logo: SentinelOne,
       description:
-        '<strong>SentinelOne</strong> uses eBPF to detect and to respond to runtime threats like ransomware and zero-day exploits in real time.',
+        '<strong>SentinelOne</strong> uses eBPF to detect and to respond to runtime threats like ransomware and zero-day exploits in real time',
       links: [
         {
           text: 'Blog',
           to: 'https://www.sentinelone.com/blog/the-advantages-of-ebpf-for-cwpp-applications/',
+        },
+      ],
+    },
+    {
+      title: 'Aqua Security',
+      logo: Aqua,
+      description:
+        '<strong>Aqua Security</strong> uses eBPF to handle runtime detection and forensics',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://youtu.be/BF42-cl-8B0?si=FM6Mp2PfewzX7BnS',
         },
       ],
     },
@@ -956,6 +1047,18 @@ const caseStudiesData = {
         {
           text: 'Talk',
           to: 'https://youtu.be/TXlxgDvxcoY?si=iAsbxdWJLlt2p9SV',
+        },
+      ],
+    },
+    {
+      title: 'Kodem',
+      logo: Kodem,
+      description:
+        '<strong>Kodem</strong> uses eBPF for application visibilty and runtime intelligence',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://kodemsec.webflow.io/resources/deep-visibility-with-ebpf',
         },
       ],
     },
