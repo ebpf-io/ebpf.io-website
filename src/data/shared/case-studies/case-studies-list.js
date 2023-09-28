@@ -537,7 +537,7 @@ const caseStudiesData = {
       title: 'Ant Group',
       logo: AntGroup,
       description:
-        '<strong>Ant Group</strong> uses eBPF in their cloud native security paltform for vulnerability live-patching, and system anomaly detection',
+        '<strong>Ant Group</strong> uses eBPF in their cloud native security platform for vulnerability live-patching, and system anomaly detection',
       links: [
         {
           text: 'Talk',
