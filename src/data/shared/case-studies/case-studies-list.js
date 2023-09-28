@@ -12,6 +12,7 @@ import Cruise from './logos/cruise.inline.svg';
 import Cycode from './logos/cycode.inline.svg';
 import Datadog from './logos/datadog.inline.svg';
 import DigitalOcean from './logos/digital-ocean.inline.svg';
+import DoorDash from './logos/doordash.inline.svg';
 import Exein from './logos/exein.inline.svg';
 import F5 from './logos/f5.inline.svg';
 import Global from './logos/global.inline.svg';
@@ -212,6 +213,18 @@ const caseStudiesData = {
         {
           text: 'Talk 2',
           to: 'https://lpc.events/event/11/contributions/950/',
+        },
+      ],
+    },
+    {
+      title: 'DoorDash',
+      logo: DoorDash,
+      description:
+        '<strong>DoorDash</strong> uses eBPF through BPFAgent for kernel level monitoring',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://doordash.engineering/2023/08/15/bpfagent-ebpf-for-monitoring-at-doordash/',
         },
       ],
     },
