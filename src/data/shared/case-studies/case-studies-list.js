@@ -1,6 +1,7 @@
 import Akita from './logos/akita.inline.svg';
 import Alibaba from './logos/alibaba.inline.svg';
 import Android from './logos/android.inline.svg';
+import AntGroup from './logos/ant-group.inline.svg';
 import Apple from './logos/apple.inline.svg';
 import Bell from './logos/bell.inline.svg';
 import Bytedance from './logos/byte-dance.inline.svg';
@@ -9,6 +10,7 @@ import Cloudflare from './logos/cloudflare.inline.svg';
 import Cruise from './logos/cruise.inline.svg';
 import Datadog from './logos/datadog.inline.svg';
 import DigitalOcean from './logos/digital-ocean.inline.svg';
+import Exein from './logos/exein.inline.svg';
 import F5 from './logos/f5.inline.svg';
 import Global from './logos/global.inline.svg';
 import Google from './logos/google.inline.svg';
@@ -20,10 +22,12 @@ import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
 import Redhat from './logos/redhat.inline.svg';
+import Samsung from './logos/samsung.inline.svg';
 import SentinelOne from './logos/sentinelone.inline.svg';
 import Seznam from './logos/seznam.inline.svg';
 import Shopify from './logos/shopify.inline.svg';
 import Sky from './logos/sky.inline.svg';
+import Sysdig from './logos/sysdig.inline.svg';
 import Trip from './logos/trip.inline.svg';
 import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
@@ -83,6 +87,17 @@ const caseStudiesData = {
         {
           text: 'Docs 2',
           to: 'https://source.android.com/docs/core/data/ebpf-traffic-monitor',
+        },
+      ],
+    },
+    {
+      title: 'Samsung',
+      logo: Samsung,
+      description: '<strong>Samsung</strong> uses eBPF in their android devices for networking',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/live/EViAho-6qoc?t=5220&si=shsfjYQ5X5lnL5cL',
         },
       ],
     },
@@ -474,6 +489,42 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Exein',
+      logo: Exein,
+      description:
+        '<strong>Exein</strong> uses eBPF in their open source runtime security framework for IoT',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=vmRQXRit-sY&list=PLDg_GiBbAx-mAwr1P5H4xFEn7X-qWZ2V_&index=16',
+        },
+      ],
+    },
+    {
+      title: 'Ant Group',
+      logo: AntGroup,
+      description:
+        '<strong>Ant Group</strong> uses eBPF in their cloud native security paltform for vulnerability live-patching, and system anomaly detection',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://youtu.be/TXlxgDvxcoY?si=lvC1HqNl4jXNyfD0',
+        },
+      ],
+    },
+    {
+      title: 'Sysdig',
+      logo: Sysdig,
+      description:
+        '<strong>Sysdig</strong> uses eBPF to enhance the performance of Falco, their open-source runtime security project',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=BxoKztfHnYY&list=PLDg_GiBbAx-mAwr1P5H4xFEn7X-qWZ2V_&index=28',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
@@ -521,6 +572,17 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://source.android.com/docs/core/architecture/kernel/bpf',
+        },
+      ],
+    },
+    {
+      title: 'Samsung',
+      logo: Samsung,
+      description: '<strong>Samsung</strong> uses eBPF in their android devices for networking',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/live/EViAho-6qoc?t=5220&si=shsfjYQ5X5lnL5cL',
         },
       ],
     },
@@ -766,8 +828,12 @@ const caseStudiesData = {
       description: '<strong>Digital Ocean</strong> uses eBPF to monitor GPU performance',
       links: [
         {
-          text: 'Video',
+          text: 'Talks',
           to: 'https://youtu.be/gcHxfhDT-I4',
+        },
+        {
+          text: 'Talk 2',
+          to: 'https://www.youtube.com/watch?v=J3vgXVBWIRY&list=PLDg_GiBbAx-mAwr1P5H4xFEn7X-qWZ2V_&index=18',
         },
       ],
     },
@@ -866,6 +932,30 @@ const caseStudiesData = {
         {
           text: 'Talk',
           to: 'https://www.youtube.com/watch?v=cxfVpBYlol4',
+        },
+      ],
+    },
+    {
+      title: 'Exein',
+      logo: Exein,
+      description:
+        '<strong>Exein</strong> uses eBPF in their open source runtime security framework for IoT',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://youtu.be/vmRQXRit-sY?si=WurbrS-lNCEsDWGS',
+        },
+      ],
+    },
+    {
+      title: 'Ant Group',
+      logo: AntGroup,
+      description:
+        '<strong>Ant Group</strong> uses eBPF in their cloud native security paltform for vulnerability live-patching, and system anomaly detection',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://youtu.be/TXlxgDvxcoY?si=iAsbxdWJLlt2p9SV',
         },
       ],
     },
