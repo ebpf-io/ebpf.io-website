@@ -80,22 +80,6 @@ const caseStudiesData = {
       ],
     },
     {
-      title: 'Microsoft',
-      logo: Microsoft,
-      description:
-        '<strong>Microsot</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes',
-      links: [
-        {
-          text: 'Talk',
-          to: 'https://www.youtube.com/watch?v=ilcYXPDSgu8&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=5',
-        },
-        {
-          text: 'Talk 2',
-          to: 'https://www.youtube.com/watch?v=tdcHnbLJClc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=6',
-        },
-      ],
-    },
-    {
       title: 'Android',
       logo: Android,
       description:
@@ -108,17 +92,6 @@ const caseStudiesData = {
         {
           text: 'Docs 2',
           to: 'https://source.android.com/docs/core/data/ebpf-traffic-monitor',
-        },
-      ],
-    },
-    {
-      title: 'Samsung',
-      logo: Samsung,
-      description: '<strong>Samsung</strong> uses eBPF in their android devices for networking',
-      links: [
-        {
-          text: 'Talk',
-          to: 'https://www.youtube.com/live/EViAho-6qoc?t=5220&si=shsfjYQ5X5lnL5cL',
         },
       ],
     },
@@ -158,6 +131,33 @@ const caseStudiesData = {
         {
           text: 'Talk',
           to: 'https://legacy.netdevconf.info/0x13/session.html?talk-XDP-based-DDoS-mitigation',
+        },
+      ],
+    },
+    {
+      title: 'Microsoft',
+      logo: Microsoft,
+      description:
+        '<strong>Microsot</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=ilcYXPDSgu8&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=5',
+        },
+        {
+          text: 'Talk 2',
+          to: 'https://www.youtube.com/watch?v=tdcHnbLJClc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=6',
+        },
+      ],
+    },
+    {
+      title: 'Samsung',
+      logo: Samsung,
+      description: '<strong>Samsung</strong> uses eBPF in their android devices for networking',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/live/EViAho-6qoc?t=5220&si=shsfjYQ5X5lnL5cL',
         },
       ],
     },
@@ -506,8 +506,8 @@ const caseStudiesData = {
         '<strong>Aqua Security</strong> uses eBPF to handle runtime detection and forensics',
       links: [
         {
-          text: 'Talk',
-          to: 'https://youtu.be/BF42-cl-8B0?si=FM6Mp2PfewzX7BnS',
+          text: 'Blog',
+          to: 'https://blog.aquasec.com/linux-vulnerabilitie-tracee',
         },
       ],
     },
@@ -636,22 +636,6 @@ const caseStudiesData = {
       ],
     },
     {
-      title: 'Microsoft',
-      logo: Microsoft,
-      description:
-        '<strong>Microsot</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes',
-      links: [
-        {
-          text: 'Talk 1',
-          to: 'https://www.youtube.com/watch?v=ilcYXPDSgu8&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=5',
-        },
-        {
-          text: 'Talk 2',
-          to: 'https://www.youtube.com/watch?v=tdcHnbLJClc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=6',
-        },
-      ],
-    },
-    {
       title: 'Android',
       logo: Android,
       description:
@@ -660,17 +644,6 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://source.android.com/docs/core/architecture/kernel/bpf',
-        },
-      ],
-    },
-    {
-      title: 'Samsung',
-      logo: Samsung,
-      description: '<strong>Samsung</strong> uses eBPF in their android devices for networking',
-      links: [
-        {
-          text: 'Talk',
-          to: 'https://www.youtube.com/live/EViAho-6qoc?t=5220&si=shsfjYQ5X5lnL5cL',
         },
       ],
     },
@@ -711,6 +684,33 @@ const caseStudiesData = {
         {
           text: 'Talk',
           to: 'https://legacy.netdevconf.info/0x13/session.html?talk-XDP-based-DDoS-mitigation',
+        },
+      ],
+    },
+    {
+      title: 'Microsoft',
+      logo: Microsoft,
+      description:
+        '<strong>Microsot</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes',
+      links: [
+        {
+          text: 'Talk 1',
+          to: 'https://www.youtube.com/watch?v=ilcYXPDSgu8&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=5',
+        },
+        {
+          text: 'Talk 2',
+          to: 'https://www.youtube.com/watch?v=tdcHnbLJClc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=6',
+        },
+      ],
+    },
+    {
+      title: 'Samsung',
+      logo: Samsung,
+      description: '<strong>Samsung</strong> uses eBPF in their android devices for networking',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/live/EViAho-6qoc?t=5220&si=shsfjYQ5X5lnL5cL',
         },
       ],
     },
