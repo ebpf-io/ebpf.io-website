@@ -36,6 +36,7 @@ import Sysdig from './logos/sysdig.inline.svg';
 import Trip from './logos/trip.inline.svg';
 import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
+import Wiz from './logos/wiz.inline.svg';
 import Yahoo from './logos/yahoo.inline.svg';
 
 const caseStudiesData = {
@@ -561,8 +562,7 @@ const caseStudiesData = {
     {
       title: 'Sysdig',
       logo: Sysdig,
-      description:
-        '<strong>Sysdig</strong> uses eBPF to enhance the performance of Falco, their open-source runtime security project',
+      description: '<strong>Sysdig</strong> uses eBPF through falco for real-time threat detection',
       links: [
         {
           text: 'Talk',
@@ -594,6 +594,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://cycode.com/blog/introducing-cimon-build-hardening/',
+        },
+      ],
+    },
+    {
+      title: 'Wiz',
+      logo: Wiz,
+      description:
+        '<strong>Wiz</strong> uses eBPF to provide real-time threat detection and monitoring within cloud workloads',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.wiz.io/blog/wiz-expands-platform-with-the-runtime-sensor-to-provide-unified-cloud-security',
         },
       ],
     },
@@ -1064,6 +1076,17 @@ const caseStudiesData = {
       ],
     },
     {
+      title: 'Sysdig',
+      logo: Sysdig,
+      description: '<strong>Sysdig</strong> uses eBPF through falco for real-time threat detection',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=BxoKztfHnYY&list=PLDg_GiBbAx-mAwr1P5H4xFEn7X-qWZ2V_&index=28',
+        },
+      ],
+    },
+    {
       title: 'Kodem',
       logo: Kodem,
       description:
@@ -1072,6 +1095,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://kodemsec.webflow.io/resources/deep-visibility-with-ebpf',
+        },
+      ],
+    },
+    {
+      title: 'Wiz',
+      logo: Wiz,
+      description:
+        '<strong>Wiz</strong> uses eBPF to provide real-time threat detection and monitoring within cloud workloads',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.wiz.io/blog/wiz-expands-platform-with-the-runtime-sensor-to-provide-unified-cloud-security',
         },
       ],
     },
