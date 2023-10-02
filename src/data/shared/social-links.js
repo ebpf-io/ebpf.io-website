@@ -1,4 +1,5 @@
 import KernelIcon from 'images/social/kernel.inline.svg';
+import MeetupIcon from 'images/social/meetup.inline.svg';
 import RedditIcon from 'images/social/reddit.inline.svg';
 import SlackIcon from 'images/social/slack.inline.svg';
 import StackOverflowIcon from 'images/social/stackoverflow.inline.svg';
@@ -29,6 +30,11 @@ const socialLinks = [
     text: 'Reddit',
     to: 'https://www.reddit.com/r/eBPF/',
     icon: RedditIcon,
+  },
+  {
+    text: 'Meetup',
+    to: 'https://www.meetup.com',
+    icon: MeetupIcon,
   },
 ];
 
