@@ -2,69 +2,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
+import data from 'data/shared/footer';
 import logo from 'images/logo-white.svg';
 
 import LanguageSelect from './language-select';
 import SocialLinks from './social-links';
-
-const data = {
-  en: {
-    copyright: 'eBPF.io authors',
-    maintain: {
-      title: 'Maintained by the eBPF community.',
-      beforeLink: 'See a bug?',
-      linkTitle: 'File an issue',
-    },
-    content: (
-      <span>
-        The content of the{' '}
-        <Link className="!inline font-medium" theme="white" to="/">
-          ebpf.io
-        </Link>{' '}
-        website is licensed under a{' '}
-        <Link
-          className="!inline"
-          theme="white"
-          size="sm"
-          to="https://creativecommons.org/licenses/by/4.0/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Creative Commons Attribution 4.0 International License
-        </Link>
-        .
-      </span>
-    ),
-  },
-  'fr-fr': {
-    copyright: 'Auteurs d’eBPF.io',
-    maintain: {
-      title: 'Maintenu par la communauté eBPF.',
-      beforeLink: 'Vous avez trouvé un bug ?',
-      linkTitle: 'Reporter un problème',
-    },
-    content: (
-      <span>
-        Le contenu du site Web{' '}
-        <Link className="!inline font-medium" theme="white" to="/fr-fr/">
-          ebpf.io
-        </Link>{' '}
-        est sous{' '}
-        <Link
-          className="!inline"
-          theme="white"
-          size="sm"
-          to="https://creativecommons.org/licenses/by/4.0/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          licence internationale Creative Commons Attribution 4.0
-        </Link>
-        .
-      </span>
-    ),
-  },
-};
 
 const Footer = ({ items, lang, pageUrls }) => (
   <footer className="safe-paddings bg-black pt-16 text-white lg:pt-12">

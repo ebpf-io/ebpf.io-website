@@ -4,23 +4,20 @@ import React from 'react';
 import EventList from 'components/pages/events/event-list';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
+import data from 'data/pages/events';
 import SEO_DATA from 'data/shared/seo-data';
-
-const title = {
-  en: 'eBPF Conferences and Meetups',
-  'fr-fr': 'Conférences et Meetups eBPF',
-};
 
 const pageUrls = {
   en: '/events/',
   'fr-fr': '/fr-fr/events/',
+  pt: '/pt/events/',
 };
 
 const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => (
   <Layout lang={language} pageUrls={pageUrls}>
     <div className="container flex flex-col pt-20 lg:pt-16">
       <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
-        {title[language]}
+        {data[language].title}
       </h1>
     </div>
     <EventList allEvents={postEvents} totalCount={totalCount} />

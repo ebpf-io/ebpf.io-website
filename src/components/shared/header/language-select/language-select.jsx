@@ -7,12 +7,14 @@ import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
 import EnIcon from 'icons/languages/en.inline.svg';
 import FrIcon from 'icons/languages/fr.inline.svg';
+import PtIcon from 'icons/languages/pt.inline.svg';
 
 import { languages } from '../../../../../config/languages';
 
 const langIcons = {
   en: EnIcon,
   'fr-fr': FrIcon,
+  pt: PtIcon,
 };
 
 const LanguageSelect = ({ lang, pageUrls }) => {
