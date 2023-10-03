@@ -6,7 +6,7 @@ import Link from 'components/shared/link';
 import socialLinks from 'data/shared/social-links';
 
 const SocialLinks = ({ className }) => (
-  <ul className={clsx('flex space-x-4', className)}>
+  <ul className={clsx('flex space-x-4 xs:justify-between xs:space-x-0', className)}>
     {socialLinks.map(({ text, to, icon: Icon }) => (
       <li key={text}>
         <Link className="group" to={to} target="_blank" rel="noopener noreferrer">
