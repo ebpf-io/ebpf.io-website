@@ -95,6 +95,17 @@ const headerMenu = [
       },
       {
         title: {
+          en: 'eBPF Meetup',
+          'fr-fr': 'eBPF Meetup',
+        },
+        to: {
+          en: 'https://www.meetup.com/ebpf-user-group/',
+          'fr-fr': 'https://www.meetup.com/ebpf-user-group/',
+        },
+        target: '_blank',
+      },
+      {
+        title: {
           en: 'eBPF Track (LPC)',
           'fr-fr': 'eBPF Track (LPC)',
         },
