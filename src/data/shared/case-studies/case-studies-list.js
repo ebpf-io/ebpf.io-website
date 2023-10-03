@@ -562,11 +562,16 @@ const caseStudiesData = {
     {
       title: 'Sysdig',
       logo: Sysdig,
-      description: '<strong>Sysdig</strong> uses eBPF through falco for real-time threat detection',
+      description:
+        '<strong>Sysdig</strong> uses eBPF to enable high-performance system call tracing, facilitate container-aware troubleshooting, conduct security auditing, and provide rich insights and data from the kernel',
       links: [
         {
           text: 'Talk',
           to: 'https://www.youtube.com/watch?v=BxoKztfHnYY&list=PLDg_GiBbAx-mAwr1P5H4xFEn7X-qWZ2V_&index=28',
+        },
+        {
+          text: 'Blog',
+          to: 'https://sysdig.com/blog/sysdig-and-falco-now-powered-by-ebpf/',
         },
       ],
     },
@@ -1078,11 +1083,16 @@ const caseStudiesData = {
     {
       title: 'Sysdig',
       logo: Sysdig,
-      description: '<strong>Sysdig</strong> uses eBPF through falco for real-time threat detection',
+      description:
+        '<strong>Sysdig</strong> uses eBPF to enable high-performance system call tracing, facilitate container-aware troubleshooting, conduct security auditing, and provide rich insights and data from the kernel',
       links: [
         {
           text: 'Talk',
           to: 'https://www.youtube.com/watch?v=BxoKztfHnYY&list=PLDg_GiBbAx-mAwr1P5H4xFEn7X-qWZ2V_&index=28',
+        },
+        {
+          text: 'Blog',
+          to: 'https://sysdig.com/blog/sysdig-and-falco-now-powered-by-ebpf/',
         },
       ],
     },
