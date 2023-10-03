@@ -33,7 +33,7 @@ const socialLinks = [
   },
   {
     text: 'Meetup',
-    to: 'https://www.meetup.com',
+    to: 'https://www.meetup.com/ebpf-user-group/',
     icon: MeetupIcon,
   },
 ];
