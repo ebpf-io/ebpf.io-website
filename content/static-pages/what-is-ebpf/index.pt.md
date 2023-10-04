@@ -39,13 +39,13 @@ Os programas eBPF são baseados em eventos e são executados quando o kernel ou 
 
 ![Syscall hook](syscall-hook.png)
 
-If a predefined hook does not exist for a particular need, it is possible to create a kernel probe (kprobe) or user probe (uprobe) to attach eBPF programs almost anywhere in kernel or user applications.
+Se um gancho predeterminado não existe para uma necessidade em particular , É possível criar um kernel probe (kprobe)ou usuário probe (uprobe) para anexar programas eBPF praticamente em qualquer lugar do kernel ou aplicações do usuário.
 
 ![Hook overview](hook-overview.png)
 
-### How are eBPF programs written?
+### Como os programas de eBPF são escritos ?
 
-In a lot of scenarios, eBPF is not used directly but indirectly via projects like [Cilium](https://ebpf.io/projects/#cilium), [bcc](https://ebpf.io/projects/#bcc), or [bpftrace](https://ebpf.io/projects/#bpftrace) which provide an abstraction on top of eBPF and do not require writing programs directly but instead offer the ability to specify intent-based definitions which are then implemented with eBPF.
+Em muitos cenários, eBPF não é usado diretamente mas sim indiretamente através de projetos como [Cilium](https://ebpf.io/projects/#cilium), [bcc](https://ebpf.io/projects/#bcc) ou [bpftrace](https://ebpf.io/projects/#bpftrace) que fornecem uma abstração em cima do eBPF e não necessitam de um programa de escrita diretamente, mas ao invés disso oferecem a habilidade de especificar definições baseadas nas intenções que são implementadas com eBPF.
 
 ![Clang](clang.png)
 
