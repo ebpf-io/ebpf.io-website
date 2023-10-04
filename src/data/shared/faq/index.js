@@ -114,61 +114,53 @@ const data = {
     ],
   },
   pt: {
-    title: 'Frequently Asked Questions',
+    title: 'Perguntas Frequentes',
     items: [
       {
-        question: 'Are these projects under the eBPF Foundation?',
+        question: 'Esses projetos fazem parte da Fundação eBPF?',
         answer: `<ul>
-					<li>This page lists a number of open source projects that use eBPF as the underlying core technology. These projects are not all under the <a href="https://www.ebpf.foundation/">eBPF Foundation</a> but are listed here as a survey of the eBPF project landscape today.</li>
+					<li>Esta página lista vários projetos de open source que usam o eBPF como tecnologia central. Esses projetos não fazem todos parte da <a href="https://www.ebpf.foundation/">Fundação eBPF</a>, mas estão listados aqui como uma pesquisa da lanscape atual do projeto eBPF.</li>
 				</ul>`,
       },
       {
-        question: 'Add your project',
+        question: 'Adicione o seu projeto',
         answer: `<ol>
-					<li>Make sure that the project is meeting the requirements to be listed. See below.</li>
-					<li>Open a <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">pull request</a> and provide the required information. Use one of the already listed projects as a template. The ordering of applications is based on the number of Github stars (high to low), updated on a quarterly basis.</li>
-					<li>The pull request will be reviewed by the community and merged by one of the maintainers. If you have any questions, feel free to ask on <a href="https://ebpf.io/slack">Slack</a>.</li>
+					<li>Certifique-se de que o projeto atende aos requisitos para ser listado. Veja abaixo.</li>
+					<li>Abra um <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">pull request</a> e forneça as informações necessárias. Use um dos projetos já listados como modelo. A ordenação das aplicações é baseada no número de estrelas no Github (de alta para baixa) e é atualizada trimestralmente.</li>
+					<li>O pull request será revisado pela comunidade e mesclado por um dos mantenedores. Se tiver alguma dúvida, sinta-se à vontade para perguntar no <a href="https://ebpf.io/slack">Slack</a>.</li>
 				</ol>`,
       },
       {
-        question: 'Are you maintaining a listed project?',
+        question: 'Você é mantenedor de um projeto listado?',
         answer: `<ul>
-					<li>If you are maintaining one of the listed projects and would like to adjust the content. Get in touch on <a href="https://ebpf.io/slack">Slack</a> or open a pull request directly.</li>
+					<li>Se você for mantenedor de um dos projetos listados e desejar ajustar o conteúdo. Entre em contato pelo <a href="https://ebpf.io/slack">Slack</a> ou abra um pull request diretamente.</li>
 				</ul>`,
       },
       {
-        question: 'Requirements for a project to be listed',
+        question: 'Requisitos para um projeto ser listado',
         answer: `
 					<p>
-						Projects can be listed on this page as "Major" or "Emerging". The requirements for being
-						listed as "Emerging" are:
+						Os projetos podem ser listados nesta página como "Principais" ou "Emergentes". Os requisitos para serem listados como "Emergentes" são:
 					</p>
 					<ul>
 						<li>
-							The project must be open source. All source code must be licensed under an open source
-							license. Any documentation must be licensed under an open license.
+							O projeto deve ser de open source. Todo o código-fonte deve estar licenciado sob uma licença de open source. Qualquer documentação deve ser licenciada sob uma licença aberta.
 						</li>
 						<li>
-							The project must be using eBPF as its underlying core technology (in other words, a project
-							would lose its purpose if the eBPF parts are removed) or help accelerate the adoption of
-							eBPF in production.
+							O projeto deve usar o eBPF como tecnologia central (ou seja, o projeto perderia sua finalidade se as partes do eBPF fossem removidas) ou ajudar a acelerar a adoção do eBPF em produção.
 						</li>
-						<li>The project must be actively maintained.</li>
+						<li>O projeto deve ser ativamente mantido.</li>
 						<li>
-							The project must be open to collaboration and have a governance model following open source
-							best-practices.
+							O projeto deve estar aberto à colaboração e ter um modelo de governança seguindo as melhores práticas do open source.
 						</li>
 					</ul>
 					<p>
-						In order to be listed as a "Major" project, a project must meet all of the requirements above,
-						plus:
+						Para ser listado como um projeto "Principal", um projeto deve atender a todos os requisitos acima, além de:
 					</p>
 					<ul>
-						<li>The project must have more than 50 contributors.</li>
+						<li>O projeto deve ter mais de 50 colaboradores.</li>
 						<li>
-							The project must be used in production-like environments with a significant amount of users.
-							Since this information may not be easily discoverable from a link to the project, such
-							information should be included in the pull request description.
+							O projeto deve ser usado em ambientes semelhantes à produção, com um número significativo de usuários. Como essa informação pode não ser facilmente descoberta a partir de um link para o projeto, essa informação deve ser incluída na descrição do pull request.
 						</li>
 					</ul>`,
       },

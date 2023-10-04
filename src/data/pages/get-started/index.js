@@ -387,17 +387,17 @@ const data = {
       ],
     },
     events: {
-      title: 'Attend eBPF events to learn from industry experts',
-      linkTitle: 'More events',
-      linkUrl: '/events/',
+      title: 'Participe de eventos do eBPF para aprender com especialistas da indústria',
+      linkTitle: 'Mais eventos',
+      linkUrl: '/pt/events/',
     },
     videoGallery: {
       title: 'Vídeos introdutórios do eBPF',
       items: videoItems,
     },
     blog: {
-      title: 'Learn more about eBPF in articles from the community',
-      linkTitle: 'More articles',
+      title: 'Saiba mais sobre o eBPF em artigos da comunidade',
+      linkTitle: 'Mais artigos',
       linkUrl: '/blog/',
     },
     contributors: {

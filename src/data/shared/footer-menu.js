@@ -3,14 +3,14 @@ const footerMenu = [
     title: {
       en: 'Get Started',
       'fr-fr': 'Commencer',
-      pt: 'Get Started',
+      pt: 'Comece',
     },
     items: [
       {
         title: {
           en: 'What is eBPF?',
           'fr-fr': 'Qu’est-ce qu’eBPF',
-          pt: 'What is eBPF?',
+          pt: 'O que é o eBPF',
         },
         to: {
           en: '/what-is-ebpf',
@@ -31,7 +31,7 @@ const footerMenu = [
         title: {
           en: 'Case Studies',
           'fr-fr': 'Études de cas',
-          pt: 'Case Studies',
+          pt: 'Estudos de Caso',
         },
         to: {
           en: '/case-studies',
@@ -57,14 +57,14 @@ const footerMenu = [
     title: {
       en: 'Project landscape',
       'fr-fr': 'Paysage du projet',
-      pt: 'Project landscape',
+      pt: 'Landscape do Projeto',
     },
     items: [
       {
         title: {
           en: 'Applications',
           'fr-fr': 'Applications',
-          pt: 'Applications',
+          pt: 'Aplicações',
         },
         to: {
           en: '/applications',
@@ -76,7 +76,7 @@ const footerMenu = [
         title: {
           en: 'Infrastructure',
           'fr-fr': 'Infrastructure',
-          pt: 'Infrastructure',
+          pt: 'Infraestrutura',
         },
         to: {
           en: '/infrastructure',
@@ -90,7 +90,7 @@ const footerMenu = [
     title: {
       en: 'About',
       'fr-fr': 'À propos',
-      pt: 'About',
+      pt: 'Sobre',
     },
     items: [
       {
@@ -105,7 +105,7 @@ const footerMenu = [
         title: {
           en: 'Swag Shop',
           'fr-fr': 'Boutique de cadeaux',
-          pt: 'Swag Shop',
+          pt: 'Loja de Produtos',
         },
         to: 'https://cilium.myspreadshop.net/',
       },
@@ -113,7 +113,7 @@ const footerMenu = [
         title: {
           en: 'Branding',
           'fr-fr': 'l’image de marque',
-          pt: 'Branding',
+          pt: 'Identidade Visual',
         },
         to: 'https://ebpf.foundation/brand-guidelines/',
       },
@@ -121,7 +121,7 @@ const footerMenu = [
         title: {
           en: 'Newsletter',
           'fr-fr': 'Newsletter',
-          pt: 'Newsletter',
+          pt: 'Boletim informativo',
         },
         to: '/newsletter',
       },
@@ -129,7 +129,7 @@ const footerMenu = [
         title: {
           en: 'Contribute',
           'fr-fr': 'Contribuer',
-          pt: 'Contribute',
+          pt: 'Contribua',
         },
         to: {
           en: '/contribute',

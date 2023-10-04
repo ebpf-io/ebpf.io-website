@@ -20,7 +20,7 @@ const data = {
   },
   pt: {
     hero: {
-      title: 'eBPF Case Studies',
+      title: 'Estudos de Caso do eBPF',
       items: caseStudiesData.en,
     },
   },

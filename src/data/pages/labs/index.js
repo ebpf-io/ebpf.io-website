@@ -21,7 +21,7 @@ const data = {
     },
   },
   pt: {
-    title: 'Dig into eBPF with interactive labs',
+    title: 'Explore o eBPF com laboratórios interativos',
     subscriptionForm: {
       title: 'Assine',
       afterTitle: 'as Notícias quinzenais do eCHO',

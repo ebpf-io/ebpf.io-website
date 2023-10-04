@@ -61,19 +61,19 @@ const data = {
     ),
   },
   pt: {
-    copyright: 'eBPF.io authors',
+    copyright: 'Autores do eBPF.io',
     maintain: {
-      title: 'Maintained by the eBPF community.',
-      beforeLink: 'See a bug?',
-      linkTitle: 'File an issue',
+      title: 'Mantido pela comunidade do eBPF.',
+      beforeLink: 'Encontrou um erro?',
+      linkTitle: 'Registre um problema',
     },
     content: (
       <span>
-        The content of the{' '}
-        <Link className="!inline font-medium" theme="white" to="/">
+        O conteúdo do site{' '}
+        <Link className="!inline font-medium" theme="white" to="/pt/">
           ebpf.io
         </Link>{' '}
-        website is licensed under a{' '}
+        está licenciado sob uma{' '}
         <Link
           className="!inline"
           theme="white"
@@ -82,7 +82,7 @@ const data = {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Creative Commons Attribution 4.0 International License
+          Licença Internacional Creative Commons Attribution 4.0
         </Link>
         .
       </span>

@@ -56,26 +56,26 @@ const data = {
     },
   },
   pt: {
-    title: 'Applications',
+    title: 'Aplicações',
     hero: {
       items: [
         {
-          text: 'Applications',
+          text: 'Aplicações',
           to: '/pt/applications/',
         },
         {
-          text: 'Infrastructure',
+          text: 'Infraestrutura',
           to: '/pt/infrastructure/',
         },
       ],
     },
     majorApplicationsProps: {
       titleTag: 'h2',
-      title: 'Major Applications',
+      title: 'Aplicações Principais',
       items: majorApplications,
     },
     emergingApplicationsProps: {
-      title: 'Emerging',
+      title: 'Emergentes',
       items: emergingApplications,
     },
   },

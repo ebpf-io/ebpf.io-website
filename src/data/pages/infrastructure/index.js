@@ -65,30 +65,30 @@ const data = {
     },
   },
   pt: {
-    title: 'Infrastructure',
+    title: 'Infraestrutura',
     hero: {
       items: [
         {
-          text: 'Applications',
+          text: 'Aplicações',
           to: '/pt/applications/',
         },
         {
-          text: 'Infrastructure',
+          text: 'Infraestrutura',
           to: '/pt/infrastructure/',
         },
       ],
     },
     majorInfrastructureProps: {
       titleTag: 'h2',
-      title: 'Major Infrastructure',
+      title: 'Infraestrutura Principal',
       items: majorInfrastructure,
     },
     emergingInfrastructureProps: {
-      title: 'Emerging',
+      title: 'Emergente',
       items: emergingInfrastructure,
     },
     auxiliaryLibrariesProps: {
-      title: 'eBPF Auxiliary Libraries',
+      title: 'Bibliotecas Auxiliares do eBPF',
       items: auxiliaryLibraries,
     },
   },
