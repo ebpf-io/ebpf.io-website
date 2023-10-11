@@ -48,20 +48,12 @@ const caseStudiesData = {
         '<strong>Google</strong> uses eBPF for security auditing, packet processing, and performance monitoring',
       links: [
         {
-          text: 'Video 1',
-          to: 'https://www.youtube.com/watch?v=URm_q9ylxBk',
-        },
-        {
-          text: 'Video 2',
+          text: 'Video',
           to: 'https://www.youtube.com/watch?v=XFJw37Vwzcc&t=657s',
         },
         {
-          text: 'Talk 1',
+          text: 'Talk',
           to: 'https://legacy.netdevconf.info/0x14/session.html?talk-replacing-HTB-with-EDT-and-BPF',
-        },
-        {
-          text: 'Talk 2',
-          to: 'https://lpc.events/event/11/contributions/954/',
         },
       ],
     },
@@ -89,10 +81,6 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://source.android.com/docs/core/architecture/kernel/bpf',
-        },
-        {
-          text: 'Docs 2',
-          to: 'https://source.android.com/docs/core/data/ebpf-traffic-monitor',
         },
       ],
     },
@@ -145,10 +133,6 @@ const caseStudiesData = {
           text: 'Talk',
           to: 'https://www.youtube.com/watch?v=ilcYXPDSgu8&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=5',
         },
-        {
-          text: 'Talk 2',
-          to: 'https://www.youtube.com/watch?v=tdcHnbLJClc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=6',
-        },
       ],
     },
     {
@@ -196,24 +180,12 @@ const caseStudiesData = {
           to: 'https://www.youtube.com/watch?v=ZYBXZFKPS28',
         },
         {
-          text: 'Blog 1',
+          text: 'Blog',
           to: 'https://engineering.fb.com/2018/05/22/open-source/open-sourcing-katran-a-scalable-network-load-balancer/',
         },
         {
-          text: 'Blog 2',
-          to: 'https://engineering.fb.com/2018/10/30/open-source/linux/',
-        },
-        {
-          text: 'Blog 3',
-          to: 'https://engineering.fb.com/2021/07/12/security/enforcing-encryption/',
-        },
-        {
-          text: 'Talk 1',
+          text: 'Talk',
           to: 'https://lpc.events/event/16/contributions/1363/',
-        },
-        {
-          text: 'Talk 2',
-          to: 'https://lpc.events/event/11/contributions/950/',
         },
       ],
     },
@@ -244,11 +216,7 @@ const caseStudiesData = {
           to: 'https://www.datadoghq.com/blog/network-performance-monitoring/',
         },
         {
-          text: 'Talk 1',
-          to: 'https://www.youtube.com/watch?v=YK7GyEJdJGo',
-        },
-        {
-          text: 'Talk 2',
+          text: 'Talk',
           to: ' https://www.youtube.com/watch?v=6nlv_VCsjpQ',
         },
       ],
@@ -291,12 +259,8 @@ const caseStudiesData = {
           to: 'https://cilium.io/blog/2022/04/12/cilium-standalone-L4LB-XDP/',
         },
         {
-          text: 'Talk 1',
+          text: 'Talk',
           to: 'https://www.youtube.com/watch?v=xwjZF3alO7g',
-        },
-        {
-          text: 'Talk 2',
-          to: 'https://www.youtube.com/watch?v=-D-uGV1bWdY',
         },
       ],
     },
@@ -321,12 +285,8 @@ const caseStudiesData = {
       description: '<strong>Bell</strong> Canada uses eBPF to moderize telco networking with SRv6',
       links: [
         {
-          text: 'Video 1',
+          text: 'Talk',
           to: 'https://www.youtube.com/watch?v=fNtG0iHYne4',
-        },
-        {
-          text: 'Video 2',
-          to: 'https://www.youtube.com/watch?v=vJaOKGWiyvU',
         },
       ],
     },
@@ -352,7 +312,7 @@ const caseStudiesData = {
       description: '<strong>Capital One</strong> uses eBPF to secure their cloud infrastructure',
       links: [
         {
-          text: 'Video',
+          text: 'Talk',
           to: 'https://www.youtube.com/watch?v=hwOpCKBaJ-w&ab_channel=eBPFSummit',
         },
       ],
@@ -363,28 +323,19 @@ const caseStudiesData = {
       description: '<strong>Sky</strong> uses eBPF through Cilium for cloud networking',
       links: [
         {
-          text: 'Video',
+          text: 'Talk',
           to: 'https://www.youtube.com/watch?v=u-4naOMfs_w',
         },
       ],
     },
-
     {
       title: 'Walmart',
       logo: Walmart,
       description: '<strong>Walmart</strong> uses eBPF for edge cloud load balancing',
       links: [
         {
-          text: 'Video 1',
-          to: 'https://youtu.be/Fu4L8ewcO70',
-        },
-        {
-          text: 'Video 2',
+          text: 'Talk',
           to: 'https://youtu.be/thmAcyix8FM',
-        },
-        {
-          text: 'Video 3',
-          to: 'https://www.youtube.com/watch?v=0m-1c7HJPcs',
         },
         {
           text: 'Blog',
@@ -420,7 +371,7 @@ const caseStudiesData = {
       description: '<strong>Digital Ocean</strong> uses eBPF to monitor GPU performance',
       links: [
         {
-          text: 'Video',
+          text: 'Talk',
           to: 'https://youtu.be/gcHxfhDT-I4',
         },
       ],
@@ -431,11 +382,11 @@ const caseStudiesData = {
       description: '<strong>Yahoo</strong> uses eBPF for load balancing and performance analysis',
       links: [
         {
-          text: 'Video 1',
+          text: 'Video',
           to: 'https://youtu.be/-C86fBMcp5Q',
         },
         {
-          text: 'Video 2',
+          text: 'Talk',
           to: 'https://www.usenix.org/conference/lisa21/presentation/jones-zachary',
         },
       ],
@@ -623,20 +574,12 @@ const caseStudiesData = {
         '<strong>Google</strong> utilise eBPF pour des audits sécurité, du traitement de paquets ainsi que le monitoring de performance',
       links: [
         {
-          text: 'Video 1',
-          to: 'https://www.youtube.com/watch?v=URm_q9ylxBk',
-        },
-        {
-          text: 'Video 2',
+          text: 'Video',
           to: 'https://www.youtube.com/watch?v=XFJw37Vwzcc&t=657s',
         },
         {
-          text: 'Talk 1',
+          text: 'Talk',
           to: 'https://legacy.netdevconf.info/0x14/session.html?talk-replacing-HTB-with-EDT-and-BPF',
-        },
-        {
-          text: 'Talk 2',
-          to: 'https://lpc.events/event/11/contributions/954/',
         },
       ],
     },
@@ -711,12 +654,8 @@ const caseStudiesData = {
         '<strong>Microsot</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes',
       links: [
         {
-          text: 'Talk 1',
+          text: 'Talk',
           to: 'https://www.youtube.com/watch?v=ilcYXPDSgu8&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=5',
-        },
-        {
-          text: 'Talk 2',
-          to: 'https://www.youtube.com/watch?v=tdcHnbLJClc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=6',
         },
       ],
     },
@@ -755,6 +694,18 @@ const caseStudiesData = {
       ],
     },
     {
+      title: 'DoorDash',
+      logo: DoorDash,
+      description:
+        '<strong>DoorDash</strong> uses eBPF through BPFAgent for kernel level monitoring',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://doordash.engineering/2023/08/15/bpfagent-ebpf-for-monitoring-at-doordash/',
+        },
+      ],
+    },
+    {
       title: 'Meta',
       logo: Meta,
       description:
@@ -765,20 +716,12 @@ const caseStudiesData = {
           to: 'https://www.youtube.com/watch?v=ZYBXZFKPS28',
         },
         {
-          text: 'Blog 1',
+          text: 'Blog',
           to: 'https://engineering.fb.com/2018/05/22/open-source/open-sourcing-katran-a-scalable-network-load-balancer/',
         },
         {
-          text: 'Blog 2',
-          to: 'https://engineering.fb.com/2018/10/30/open-source/linux/',
-        },
-        {
-          text: 'Talk 1',
+          text: 'Talk',
           to: 'https://lpc.events/event/16/contributions/1363/',
-        },
-        {
-          text: 'Talk 2',
-          to: 'https://lpc.events/event/11/contributions/950/',
         },
       ],
     },
@@ -792,6 +735,14 @@ const caseStudiesData = {
           text: 'Video',
           to: 'https://datadogon.datadoghq.com/episodes/datadog-on-ebpf/',
         },
+        {
+          text: 'Blog',
+          to: 'https://www.datadoghq.com/blog/network-performance-monitoring/',
+        },
+        {
+          text: 'Talk',
+          to: ' https://www.youtube.com/watch?v=6nlv_VCsjpQ',
+        },
       ],
     },
     {
@@ -803,6 +754,10 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.alibabacloud.com/blog/how-does-alibaba-cloud-build-high-performance-cloud-native-pod-networks-in-production-environments_596590',
+        },
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=Z4qxd5yYoP4',
         },
       ],
     },
@@ -816,10 +771,6 @@ const caseStudiesData = {
           text: 'Talk',
           to: 'https://youtu.be/xxRAppnmirY?si=OSxhLJ8S1B2-Z-9T',
         },
-        {
-          text: 'Talk 2',
-          to: 'https://www.youtube.com/watch?v=hmUjW-dV_vc&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=11',
-        },
       ],
     },
     {
@@ -830,6 +781,10 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://cilium.io/blog/2022/04/12/cilium-standalone-L4LB-XDP/',
+        },
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=xwjZF3alO7g',
         },
       ],
     },
@@ -842,6 +797,10 @@ const caseStudiesData = {
           text: 'Blog',
           to: 'https://cilium.io/blog/2020/02/05/how-trip-com-uses-cilium/',
         },
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=NIsU4I950l4',
+        },
       ],
     },
     {
@@ -850,12 +809,8 @@ const caseStudiesData = {
       description: '<strong>Bell</strong> Canada uses eBPF to moderize telco networking with SRv6',
       links: [
         {
-          text: 'Video 1',
+          text: 'Talk',
           to: 'https://www.youtube.com/watch?v=fNtG0iHYne4',
-        },
-        {
-          text: 'Video 2',
-          to: 'https://www.youtube.com/watch?v=vJaOKGWiyvU',
         },
       ],
     },
@@ -869,6 +824,10 @@ const caseStudiesData = {
           text: 'Blog',
           to: 'https://cilium.io/blog/2020/09/03/wildlife-studios-multi-cluster-gaming-platform',
         },
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=_1t3bXzptP0',
+        },
       ],
     },
     {
@@ -877,7 +836,7 @@ const caseStudiesData = {
       description: '<strong>Capital One</strong> uses eBPF to secure their cloud infrastructure',
       links: [
         {
-          text: 'Video',
+          text: 'Talk',
           to: 'https://www.youtube.com/watch?v=hwOpCKBaJ-w&ab_channel=eBPFSummit',
         },
       ],
@@ -888,24 +847,23 @@ const caseStudiesData = {
       description: '<strong>Sky</strong> uses eBPF through Cilium for cloud networking',
       links: [
         {
-          text: 'Video',
+          text: 'Talk',
           to: 'https://www.youtube.com/watch?v=u-4naOMfs_w',
         },
       ],
     },
-
     {
       title: 'Walmart',
       logo: Walmart,
       description: '<strong>Walmart</strong> uses eBPF for edge cloud load balancing',
       links: [
         {
-          text: 'Video 1',
-          to: 'https://youtu.be/Fu4L8ewcO70',
+          text: 'Talk',
+          to: 'https://youtu.be/thmAcyix8FM',
         },
         {
-          text: 'Video 2',
-          to: 'https://youtu.be/thmAcyix8FM',
+          text: 'Blog',
+          to: 'https://medium.com/walmartglobaltech/introducing-walmarts-l3af-project-how-do-we-use-ebpf-to-provide-network-visibility-in-a-8b9ae4d26200',
         },
       ],
     },
@@ -937,12 +895,8 @@ const caseStudiesData = {
       description: '<strong>Digital Ocean</strong> uses eBPF to monitor GPU performance',
       links: [
         {
-          text: 'Talks',
+          text: 'Talk',
           to: 'https://youtu.be/gcHxfhDT-I4',
-        },
-        {
-          text: 'Talk 2',
-          to: 'https://www.youtube.com/watch?v=J3vgXVBWIRY&list=PLDg_GiBbAx-mAwr1P5H4xFEn7X-qWZ2V_&index=18',
         },
       ],
     },
@@ -952,11 +906,11 @@ const caseStudiesData = {
       description: '<strong>Yahoo</strong> uses eBPF for load balancing and performance analysis',
       links: [
         {
-          text: 'Video 1',
+          text: 'Video',
           to: 'https://youtu.be/-C86fBMcp5Q',
         },
         {
-          text: 'Video 2',
+          text: 'Talk',
           to: 'https://www.usenix.org/conference/lisa21/presentation/jones-zachary',
         },
       ],
@@ -1105,6 +1059,21 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://kodemsec.webflow.io/resources/deep-visibility-with-ebpf',
+        },
+      ],
+    },
+    {
+      title: 'Cycode',
+      logo: Cycode,
+      description: '<strong>Cycode</strong> uses eBPF for CI/CD security',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=pcBGRFvSrvY',
+        },
+        {
+          text: 'Blog',
+          to: 'https://cycode.com/blog/introducing-cimon-build-hardening/',
         },
       ],
     },
