@@ -19,7 +19,7 @@ import SEO_DATA from 'data/shared/seo-data';
 const pageUrls = {
   en: '/get-started/',
   'fr-fr': '/fr-fr/get-started/',
-  pt: '/pt/get-started/',
+  'pt-br': '/pt-br/get-started/',
 };
 
 const hasContributors = false;

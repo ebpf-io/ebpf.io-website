@@ -270,14 +270,14 @@ const data = {
       items: videoItems,
     },
   },
-  pt: {
+  'pt-br': {
     hero: {
       title:
         'Programar dinamicamente o kernel para networking eficiente, observabilidade, rastreamento e segurança',
       blackButtonTitle: 'Cenário do Projeto',
-      blackButtonUrl: '/pt/applications',
+      blackButtonUrl: '/pt-br/applications',
       yellowButtonTitle: 'What is eBPF',
-      yellowButtonUrl: '/pt/what-is-ebpf',
+      yellowButtonUrl: '/pt-br/what-is-ebpf',
       altImage: 'eBPF diagram',
       items: [
         'Programas são verificados para execução segura',
@@ -289,13 +289,13 @@ const data = {
     caseStudies: {
       title: 'Organizações em todas as indústrias usam o eBPF em produção',
       linkText: 'Mais estudos de caso',
-      linkUrl: '/pt/case-studies/',
-      items: caseStudiesData.pt.slice(0, 6),
+      linkUrl: '/pt-br/case-studies/',
+      items: caseStudiesData['pt-br'].slice(0, 6),
     },
     whyEbpf: {
       title: 'Por que o eBPF?',
       linkTitle: 'O que é o eBPF?',
-      linkUrl: '/pt/what-is-ebpf/',
+      linkUrl: '/pt-br/what-is-ebpf/',
       items: [
         {
           title: 'Desempenho',

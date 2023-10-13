@@ -13,7 +13,7 @@ import RustIcon from './images/rust.inline.svg';
 const title = {
   en: 'eBPF Libraries',
   'fr-fr': 'Bibliothèques eBPF',
-  pt: 'Bibliotecas eBPF',
+  'pt-br': 'Bibliotecas eBPF',
 };
 
 const items = [

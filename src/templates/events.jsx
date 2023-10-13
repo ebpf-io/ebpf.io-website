@@ -10,7 +10,7 @@ import SEO_DATA from 'data/shared/seo-data';
 const pageUrls = {
   en: '/events/',
   'fr-fr': '/fr-fr/events/',
-  pt: '/pt/events/',
+  'pt-br': '/pt-br/events/',
 };
 
 const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => (

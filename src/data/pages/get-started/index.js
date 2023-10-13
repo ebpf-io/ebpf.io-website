@@ -4,7 +4,7 @@ const data = {
   pageUrls: {
     en: '/get-started/',
     'fr-fr': '/fr-fr/get-started/',
-    pt: '/pt/get-started/',
+    'pt-br': '/pt-br/get-started/',
   },
   en: {
     hero: {
@@ -271,7 +271,7 @@ const data = {
       title: 'Meet some of our community members',
     },
   },
-  pt: {
+  'pt-br': {
     hero: {
       title: 'Comece com eBPF',
       items: [
@@ -389,7 +389,7 @@ const data = {
     events: {
       title: 'Participe de eventos do eBPF para aprender com especialistas da indústria',
       linkTitle: 'Mais eventos',
-      linkUrl: '/pt/events/',
+      linkUrl: '/pt-br/events/',
     },
     videoGallery: {
       title: 'Vídeos introdutórios do eBPF',

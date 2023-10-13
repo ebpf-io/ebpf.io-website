@@ -113,7 +113,7 @@ const data = {
       },
     ],
   },
-  pt: {
+  'pt-br': {
     title: 'Perguntas Frequentes',
     items: [
       {

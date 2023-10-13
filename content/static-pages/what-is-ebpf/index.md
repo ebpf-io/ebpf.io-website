@@ -159,9 +159,7 @@ Before taking this example and applying it to eBPF, let's look at a couple of ke
 
 - **Safety**: Untrusted code runs in the browser of the user. This was solved by sandboxing JavaScript programs and abstracting access to browser data.
 - **Continuous Delivery**: Evolution of program logic must be possible without requiring to constantly ship new browser versions. This was solved by providing the right low-level building blocks sufficient to build arbitrary logic.
-- **Performance**: Programmability must be provided with minimal overhead. This was solved with the introduction of a Just-in-Time (JIT) compiler.
-
-For all of the above, exact counterparts can be found in eBPF for the same reason.
+- **Performance**: Programmability must be provided with minimal overhead. This was solved with the introduction of a Just-in-Time (JIT) compiler. For all of the above, exact counterparts can be found in eBPF for the same reason.
 
 ### eBPF's impact on the Linux Kernel
 

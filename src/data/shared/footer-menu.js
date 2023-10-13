@@ -3,27 +3,23 @@ const footerMenu = [
     title: {
       en: 'Get Started',
       'fr-fr': 'Commencer',
-      pt: 'Comece',
+      'pt-br': 'Comece',
     },
     items: [
       {
         title: {
           en: 'What is eBPF?',
           'fr-fr': 'Qu’est-ce qu’eBPF',
-          pt: 'O que é o eBPF',
+          'pt-br': 'O que é o eBPF',
         },
         to: {
           en: '/what-is-ebpf',
           'fr-fr': '/fr-fr/what-is-ebpf',
-          pt: '/pt/what-is-ebpf',
+          'pt-br': '/pt-br/what-is-ebpf',
         },
       },
       {
-        title: {
-          en: 'eBPF Tech Talks',
-          'fr-fr': 'eBPF Tech Talks',
-          pt: 'eBPF Tech Talks',
-        },
+        title: 'eBPF Tech Talks',
         to: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi',
         target: '_blank',
       },
@@ -31,24 +27,20 @@ const footerMenu = [
         title: {
           en: 'Case Studies',
           'fr-fr': 'Études de cas',
-          pt: 'Estudos de Caso',
+          'pt-br': 'Estudos de Caso',
         },
         to: {
           en: '/case-studies',
           'fr-fr': '/fr-fr/case-studies',
-          pt: '/pt/case-studies',
+          'pt-br': '/pt-br/case-studies',
         },
       },
       {
-        title: {
-          en: 'Labs',
-          'fr-fr': 'Labs',
-          pt: 'Labs',
-        },
+        title: 'Labs',
         to: {
           en: '/labs',
           'fr-fr': '/fr-fr/labs',
-          pt: '/pt/labs',
+          'pt-br': '/pt-br/labs',
         },
       },
     ],
@@ -57,31 +49,31 @@ const footerMenu = [
     title: {
       en: 'Project landscape',
       'fr-fr': 'Paysage du projet',
-      pt: 'Landscape do Projeto',
+      'pt-br': 'Landscape do Projeto',
     },
     items: [
       {
         title: {
           en: 'Applications',
           'fr-fr': 'Applications',
-          pt: 'Aplicações',
+          'pt-br': 'Aplicações',
         },
         to: {
           en: '/applications',
           'fr-fr': '/fr-fr/applications',
-          pt: '/pt/applications',
+          'pt-br': '/pt-br/applications',
         },
       },
       {
         title: {
           en: 'Infrastructure',
           'fr-fr': 'Infrastructure',
-          pt: 'Infraestrutura',
+          'pt-br': 'Infraestrutura',
         },
         to: {
           en: '/infrastructure',
           'fr-fr': '/fr-fr/infrastructure',
-          pt: '/pt/infrastructure',
+          'pt-br': '/pt-br/infrastructure',
         },
       },
     ],
@@ -90,22 +82,18 @@ const footerMenu = [
     title: {
       en: 'About',
       'fr-fr': 'À propos',
-      pt: 'Sobre',
+      'pt-br': 'Sobre',
     },
     items: [
       {
-        title: {
-          en: 'Blog',
-          'fr-fr': 'Blog',
-          pt: 'Blog',
-        },
+        title: 'Blog',
         to: '/blog',
       },
       {
         title: {
           en: 'Swag Shop',
           'fr-fr': 'Boutique de cadeaux',
-          pt: 'Loja de Produtos',
+          'pt-br': 'Loja de Produtos',
         },
         to: 'https://cilium.myspreadshop.net/',
       },
@@ -113,7 +101,7 @@ const footerMenu = [
         title: {
           en: 'Branding',
           'fr-fr': 'l’image de marque',
-          pt: 'Identidade Visual',
+          'pt-br': 'Identidade Visual',
         },
         to: 'https://ebpf.foundation/brand-guidelines/',
       },
@@ -121,7 +109,7 @@ const footerMenu = [
         title: {
           en: 'Newsletter',
           'fr-fr': 'Newsletter',
-          pt: 'Boletim informativo',
+          'pt-br': 'Boletim informativo',
         },
         to: '/newsletter',
       },
@@ -129,12 +117,12 @@ const footerMenu = [
         title: {
           en: 'Contribute',
           'fr-fr': 'Contribuer',
-          pt: 'Contribua',
+          'pt-br': 'Contribua',
         },
         to: {
           en: '/contribute',
           'fr-fr': '/fr-fr/contribute',
-          pt: '/pt/contribute',
+          'pt-br': '/pt-br/contribute',
         },
       },
     ],

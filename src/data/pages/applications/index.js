@@ -5,7 +5,7 @@ const data = {
   pageUrls: {
     en: '/applications/',
     'fr-fr': '/fr-fr/applications/',
-    pt: '/pt/applications/',
+    'pt-br': '/pt-br/applications/',
   },
   en: {
     title: 'Applications',
@@ -55,17 +55,17 @@ const data = {
       items: emergingApplications,
     },
   },
-  pt: {
+  'pt-br': {
     title: 'Aplicações',
     hero: {
       items: [
         {
           text: 'Aplicações',
-          to: '/pt/applications/',
+          to: '/pt-br/applications/',
         },
         {
           text: 'Infraestrutura',
-          to: '/pt/infrastructure/',
+          to: '/pt-br/infrastructure/',
         },
       ],
     },

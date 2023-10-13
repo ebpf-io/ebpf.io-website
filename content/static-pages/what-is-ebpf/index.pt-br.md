@@ -5,9 +5,9 @@ ogDescription: A detailed step by step introduction to the eBPF technology with 
 ogKeywords: ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, documentation
 ---
 
-## What is eBPF?
+## O que é eBPF?
 
-O eBPF é uma tecnologia revolucionária com origens no kernel Linux que pode executar programas em um contexto privilegiado, como o kernel do sistema operacional. Ele é usado para estender com segurança e eficiência as capacidades do kernel sem a necessidade de alterar o código-fonte do kernel ou carregar módulos do kernel.
+O eBPF é uma tecnologia revolucionária com origens no kernel Linux que pode executar programas em _sandbox_ em um contexto privilegiado, como o kernel do sistema operacional. Ele é usado para estender com segurança e eficiência as capacidades do kernel sem a necessidade de alterar o código-fonte do kernel ou carregar módulos do kernel.
 
 Historicamente, o sistema operacional sempre foi um local ideal para implementar funcionalidades de observabilidade, segurança e rede, devido à habilidade privilegiada do kernel de supervisionar e controlar todo o sistema. Ao mesmo tempo, evoluir o kernel do sistema operacional é difícil devido ao seu papel central e aos altos requisitos de estabilidade e segurança. Como resultado, a taxa de inovação no nível do sistema operacional tradicionalmente tem sido menor em comparação com as funcionalidades implementadas fora do sistema operacional.
 
@@ -159,9 +159,7 @@ Antes de aplicar esse exemplo ao eBPF, vamos analisar alguns aspectos-chave que 
 
 - **Segurança**: O código não confiável é executado no navegador do usuário. Isso foi resolvido isolando os programas JavaScript e abstraindo o acesso aos dados do navegador.
 - **Entrega Contínua**: A evolução da lógica do programa deve ser possível sem exigir o envio constante de novas versões do navegador. Isso foi resolvido fornecendo os blocos de construção de baixo nível corretos, suficientes para construir lógica arbitrária.
-- **Desempenho**: A programabilidade deve ser fornecida com um mínimo de sobrecarga. Isso foi resolvido com a introdução de um compilador Just-in-Time (JIT).
-
-Para todos os itens acima, encontramos contrapartes exatas no eBPF pelas mesmas razões.
+- **Desempenho**: A programabilidade deve ser fornecida com um mínimo de sobrecarga. Isso foi resolvido com a introdução de um compilador Just-in-Time (JIT). Para todos os itens acima, encontramos contrapartes exatas no eBPF pelas mesmas razões.
 
 ### Impacto do eBPF no Kernel Linux
 

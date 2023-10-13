@@ -9,7 +9,7 @@ import SEO_DATA from 'data/shared/seo-data';
 
 import { languages } from '../../../config/languages';
 
-const lang = languages.pt.code;
+const lang = languages['pt-br'].code;
 
 const Description = () => (
   <span>

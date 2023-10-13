@@ -60,7 +60,7 @@ const data = {
       </span>
     ),
   },
-  pt: {
+  'pt-br': {
     copyright: 'Autores do eBPF.io',
     maintain: {
       title: 'Mantido pela comunidade do eBPF.',
@@ -70,7 +70,7 @@ const data = {
     content: (
       <span>
         O conteúdo do site{' '}
-        <Link className="!inline font-medium" theme="white" to="/pt/">
+        <Link className="!inline font-medium" theme="white" to="/pt-br/">
           ebpf.io
         </Link>{' '}
         está licenciado sob uma{' '}

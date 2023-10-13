@@ -6,7 +6,7 @@ const data = {
   pageUrls: {
     en: '/infrastructure/',
     'fr-fr': '/fr-fr/infrastructure/',
-    pt: '/pt/infrastructure/',
+    'pt-br': '/pt-br/infrastructure/',
   },
   en: {
     title: 'Infrastructure',
@@ -64,17 +64,17 @@ const data = {
       items: auxiliaryLibraries,
     },
   },
-  pt: {
+  'pt-br': {
     title: 'Infraestrutura',
     hero: {
       items: [
         {
           text: 'Aplicações',
-          to: '/pt/applications/',
+          to: '/pt-br/applications/',
         },
         {
           text: 'Infraestrutura',
-          to: '/pt/infrastructure/',
+          to: '/pt-br/infrastructure/',
         },
       ],
     },

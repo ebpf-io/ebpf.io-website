@@ -10,7 +10,7 @@ export default {
       description:
         'eBPF est une technologie révolutionnaire qui peut exécuter des programmes en bac à sable dans le noyau Linux sans modifier le code source du noyau ni charger un module du noyau.',
     },
-    pt: {
+    'pt-br': {
       title: 'eBPF - Introdução, Tutoriais e Recursos da Comunidade',
       description:
         'O eBPF é uma tecnologia revolucionária que pode executar programas isolados no kernel do Linux sem alterar o código-fonte do kernel ou carregar um módulo do kernel.',
@@ -29,7 +29,7 @@ export default {
         'Vous voulez savoir comment contribuer à eBPF ? Découvrez comment commencer à contribuer aux projets eBPF.',
       keywords: 'ebpf, bpf, contribuer, démarrer, communauté',
     },
-    pt: {
+    'pt-br': {
       title: 'Como contribuir com o eBPF',
       description:
         'Quer aprender como contribuir com o eBPF? Saiba como começar a contribuir com projetos do eBPF.',
@@ -47,7 +47,7 @@ export default {
       description: 'Découvrez comment eBPF est utilisé à travers différents projets.',
       keywords: 'ebpf, bpf, contribuer, démarrer, communauté',
     },
-    pt: {
+    'pt-br': {
       title: 'Estudos de Caso do eBPF',
       description: 'Aprenda como o eBPF é usado em diferentes projetos.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
@@ -64,7 +64,7 @@ export default {
       description: 'Un répertoire d’applications open source basées sur eBPF',
       keywords: 'ebpf, bpf, paysage, répertoire, open source',
     },
-    pt: {
+    'pt-br': {
       title: 'Landscape de Aplicações do eBPF',
       description: 'Um diretório de aplicações de open source baseadas em eBPF',
       keywords: 'ebpf, bpf, landscape, diretório, código aberto, open source',
@@ -81,7 +81,7 @@ export default {
       description: 'Un répertoire d’infrastructures basées sur eBPF',
       keywords: 'ebpf, bpf, paysage, répertoire, open source',
     },
-    pt: {
+    'pt-br': {
       title: 'Landscape de Infraestrutura Principal do eBPF',
       description: 'Um diretório de infraestrutura principal baseada em eBPF',
       keywords: 'ebpf, bpf, paisagem, diretório, código aberto',

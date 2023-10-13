@@ -20,7 +20,7 @@ const data = {
       buttonTitle: 'S’abonner',
     },
   },
-  pt: {
+  'pt-br': {
     title: 'Explore o eBPF com laboratórios interativos',
     subscriptionForm: {
       title: 'Assine',

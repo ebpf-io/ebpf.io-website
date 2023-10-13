@@ -159,9 +159,7 @@ Avant de prendre cet exemple et de l'appliquer à eBPF, examinons les clés du s
 
 - **Sécurité**: un code non fiable s'exécute dans le navigateur de l'utilisateur. Ce problème a été résolu en plaçant les programmes JavaScript en bac à sable et en supprimant l'accès aux données du navigateur.
 - **Livraison continue**: l'évolution de la logique du programme doit être possible sans nécessiter la livraison constante de nouvelles versions de navigateur. Pour ce faire, les blocs de construction permettant de bâtir la logique de différents projets sont fournis par le navigateur.
-- **Performance**: La programmabilité ne doit pas se faire au détriment des performances. L'introduction d'un compilateur Just-In-Time (JIT) a permis de conserver une grande vitesse d’exécution.
-
-Pour tous les éléments cités se trouve un équivalent du côté d’eBPF, pour les mêmes raisons.
+- **Performance**: La programmabilité ne doit pas se faire au détriment des performances. L'introduction d'un compilateur Just-In-Time (JIT) a permis de conserver une grande vitesse d’exécution. Pour tous les éléments cités se trouve un équivalent du côté d’eBPF, pour les mêmes raisons.
 
 ### L'impact d'eBPF sur le noyau Linux
 

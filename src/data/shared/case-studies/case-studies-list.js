@@ -1090,7 +1090,7 @@ const caseStudiesData = {
       ],
     },
   ],
-  pt: [
+  'pt-br': [
     {
       title: 'Google',
       logo: Google,
