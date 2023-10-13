@@ -200,7 +200,7 @@ const data = {
           },
           {
             text: 'Linux kernel eBPF runtime',
-            to: '/infrastructure/#linux-kernel',
+            to: '/pt-br/infrastructure/#linux-kernel',
           },
         ],
       },
@@ -215,7 +215,7 @@ const data = {
           links: [
             {
               text: 'eBPF landscape',
-              to: '/applications',
+              to: '/pt-br/applications',
             },
           ],
         },
@@ -227,7 +227,7 @@ const data = {
           links: [
             {
               text: 'eBPF development toolchains',
-              to: '/what-is-ebpf/#development-toolchains',
+              to: '/pt-br/what-is-ebpf/#development-toolchains',
             },
           ],
         },

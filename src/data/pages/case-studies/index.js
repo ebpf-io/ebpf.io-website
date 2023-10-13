@@ -21,7 +21,7 @@ const data = {
   'pt-br': {
     hero: {
       title: 'Estudos de Caso do eBPF',
-      items: caseStudiesData.en,
+      items: caseStudiesData['pt-br'],
     },
   },
 };
