@@ -279,7 +279,7 @@ const data = {
           image: 'lab',
           title: 'Experimente o laboratório',
           description:
-            'Tomando como exemplo o exemplo opensnoop do relatório de Liz Rice, este laboratório ensina como manipular uma ferramenta eBPF, observar o carregamento de seus componentes e até mesmo adicionar seu próprio rastreamento ao código-fonte eBPF.',
+            'Tomando emprestado o exemplo do opensnoop do relatório de Liz Rice, este laboratório ensina como manipular uma ferramenta eBPF, observá-la carregando seus componentes e até mesmo adicionar seu próprio rastreamento ao código-fonte eBPF.',
           cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
           dashedBorderClassName: 'border-secondary-blue-2',
           linkUrl:

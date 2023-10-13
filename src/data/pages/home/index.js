@@ -274,7 +274,7 @@ const data = {
     hero: {
       title:
         'Programar dinamicamente o kernel para networking eficiente, observabilidade, rastreamento e segurança',
-      blackButtonTitle: 'Paisagem do Projeto',
+      blackButtonTitle: 'Cenário do Projeto',
       blackButtonUrl: '/pt/applications',
       yellowButtonTitle: 'What is eBPF',
       yellowButtonUrl: '/pt/what-is-ebpf',

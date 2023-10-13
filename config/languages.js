@@ -11,7 +11,7 @@ module.exports = {
       code: 'fr-fr',
     },
     pt: {
-      name: 'Portuguesa',
+      name: 'Português',
       shortName: 'Por',
       code: 'pt',
     },
