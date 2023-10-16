@@ -376,6 +376,23 @@ const emergingApplications = [
     implemented using Gateway API and a data-plane built using eBPF and Rust.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/kong/blixt' }],
   },
+   {
+    logoUrl: 'https://github.com/netobserv/netobserv-ebpf-agent',
+    name: 'netobserv',
+    logoName: 'netobservLogo',
+    title: 'Flow based observability platform',
+    description: `NetObserv eBPF agent empowers the collection of essential network metrics, 
+    including the tracking of network flow statistics. It conducts in-depth DNS latency analysis for DNS over UDP and TCP, 
+    allowing for the measurement of the time it takes for DNS requests to be processed. 
+    Additionally, it calculates TCP round trip latency on a per-flow basis, aiding in the identification of latency-related 
+    issues within TCP connections.
+    The agent also provides insights into packet drops, offering protocol-specific drop metrics along with the reasons for packet drops. 
+    Furthermore, NetObserv eBPF offers filter-based capabilities for capturing raw network packets,
+    enabling administrators to focus on specific network events or issues of interest.
+    These captured packets are stored in the widely supported .pcap format,
+    facilitating easy post-analysis and compatibility with various network analysis tools.`,
+    urls: [{ label: 'GitHub', url: 'https://github.com/netobserv/netobserv-ebpf-agent' }],
+  },
 ];
 
 export default emergingApplications;
