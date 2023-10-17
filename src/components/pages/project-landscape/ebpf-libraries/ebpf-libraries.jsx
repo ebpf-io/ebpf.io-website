@@ -36,7 +36,6 @@ const items = [
     icon: RustIcon,
     list: [
       `<a href="https://github.com/libbpf/libbpf-rs" target="_blank" rel="noopener noreferrer">libbpf-rs</a> is a safe, idiomatic, and opinionated wrapper API around libbpf written in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin) allows to write 'compile once run everywhere' (CO-RE) eBPF programs.`,
-      '<a href="https://github.com/redsift/redbpf" target="_blank" rel="noopener noreferrer">redbpf</a> is a Rust eBPF toolchain that contains a collection of Rust libraries to work with eBPF programs.',
       '<a href="https://github.com/aya-rs/aya" target="_blank" rel="noopener noreferrer">aya</a> is an eBPF library built with a focus on operability and developer experience. It allows for both eBPF programs and their userspace programs to be written in Rust.',
     ],
   },
