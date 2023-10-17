@@ -143,7 +143,7 @@ const data = {
           links: [
             {
               text: 'eBPF development toolchains',
-              to: '/fr-fr/what-is-ebpf/#development-toolchains',
+              to: '/fr-fr/what-is-ebpf/#chaînes-doutils-de-développement',
             },
           ],
         },
@@ -227,7 +227,7 @@ const data = {
           links: [
             {
               text: 'CONJUNTOS DE FERRAMENTAS DE DESENVOLVIMENTO EBPF',
-              to: '/pt-br/what-is-ebpf/#development-toolchains',
+              to: '/pt-br/what-is-ebpf/#ferramentas-de-desenvolvimento',
             },
           ],
         },
