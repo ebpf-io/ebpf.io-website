@@ -9,6 +9,7 @@ import slugifyCategory from 'utils/slugify-category';
 import bccLogo from './logos/bcc.svg';
 import blixtLogo from './logos/blixt.png';
 import bpfdLogo from './logos/bpfd.svg';
+import bpftoolLogo from './logos/bpftool.svg';
 import bumblebeeLogo from './logos/bumblebee.svg';
 import calicoLogo from './logos/calico.svg';
 import carettaLogo from './logos/caretta.svg';
@@ -71,6 +72,7 @@ const logos = {
   hbpfLogo,
   gccLogo,
   rbpfLogo,
+  bpftoolLogo,
   corootLogo,
   tetragonLogo: (
     <StaticImage
