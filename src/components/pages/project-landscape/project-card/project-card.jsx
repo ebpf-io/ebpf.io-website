@@ -37,6 +37,7 @@ import rbpfLogo from './logos/rbpf.svg';
 import sshlogLogo from './logos/sshlog.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
+import netobservLogo from './logos/netobserv.svg';
 
 const logos = {
   bccLogo,
@@ -54,6 +55,7 @@ const logos = {
   kubeArmorLogo,
   l3afLogo,
   merbridgeLogo,
+  netobservLogo,
   pyroscopeLogo,
   parcaLogo,
   keplerLogo,
