@@ -65,20 +65,6 @@ const emergingInfrastructure = [
     urls: [{ label: 'GitHub', url: 'https://github.com/vbpf/ebpf-verifier' }],
   },
   {
-    logoUrl: 'https://github.com/libbpf/bpftool',
-    name: 'bpftool',
-    logoName: 'bpftoolLogo',
-    title: 'Command-line tool to inspect and manage eBPF objects',
-    description: `Powered by libbpf, bpftool is the reference utility to
-    quickly inspect and manage BPF objects on a Linux system. Use it to list,
-    dump, or load eBPF programs and maps, to generate skeletons for eBPF
-    applications, to statically link eBPF programs from different object files,
-    or to perform various other eBPF-related tasks.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/libbpf/bpftool' },
-    ],
-  },
-  {
     name: 'BPF Conformance',
     title: 'eBPF Conformance Testing Framework',
     description: `A conformance testing framework for eBPF runtime implementations. It
