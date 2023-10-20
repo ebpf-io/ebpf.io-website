@@ -9,6 +9,7 @@ import slugifyCategory from 'utils/slugify-category';
 import bccLogo from './logos/bcc.svg';
 import blixtLogo from './logos/blixt.png';
 import bpfdLogo from './logos/bpfd.svg';
+import bpftoolLogo from './logos/bpftool.svg';
 import bumblebeeLogo from './logos/bumblebee.svg';
 import calicoLogo from './logos/calico.svg';
 import carettaLogo from './logos/caretta.svg';
@@ -37,6 +38,7 @@ import rbpfLogo from './logos/rbpf.svg';
 import sshlogLogo from './logos/sshlog.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
+import netobservLogo from './logos/netobserv.svg';
 
 const logos = {
   bccLogo,
@@ -54,6 +56,7 @@ const logos = {
   kubeArmorLogo,
   l3afLogo,
   merbridgeLogo,
+  netobservLogo,
   pyroscopeLogo,
   parcaLogo,
   keplerLogo,
@@ -69,6 +72,7 @@ const logos = {
   hbpfLogo,
   gccLogo,
   rbpfLogo,
+  bpftoolLogo,
   corootLogo,
   tetragonLogo: (
     <StaticImage
