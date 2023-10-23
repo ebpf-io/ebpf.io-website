@@ -16,6 +16,7 @@ import SEO_DATA from 'data/shared/seo-data';
 const pageUrls = {
   en: '/labs/',
   'fr-fr': '/fr-fr/labs/',
+  'pt-br': '/pt-br/labs/',
 };
 
 const LabsPage = ({

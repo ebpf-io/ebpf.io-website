@@ -4,6 +4,7 @@ const data = {
   pageUrls: {
     en: '/case-studies/',
     'fr-fr': '/fr-fr/case-studies/',
+    'pt-br': '/pt-br/case-studies/',
   },
   en: {
     hero: {
@@ -15,6 +16,12 @@ const data = {
     hero: {
       title: 'Études de cas eBPF',
       items: caseStudiesData['fr-fr'],
+    },
+  },
+  'pt-br': {
+    hero: {
+      title: 'Estudos de Caso do eBPF',
+      items: caseStudiesData['pt-br'],
     },
   },
 };
