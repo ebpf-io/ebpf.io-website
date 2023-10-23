@@ -270,6 +270,140 @@ const data = {
       items: videoItems,
     },
   },
+  'pt-br': {
+    hero: {
+      title:
+        'Programar dinamicamente o kernel para networking eficiente, observabilidade, rastreamento e segurança',
+      blackButtonTitle: 'Cenário do Projeto',
+      blackButtonUrl: '/pt-br/applications',
+      yellowButtonTitle: 'O que é o eBPF',
+      yellowButtonUrl: '/pt-br/what-is-ebpf',
+      altImage: 'eBPF diagram',
+      items: [
+        'Programas são verificados para execução segura',
+        'Gancho em qualquer lugar no kernel para modificar a funcionalidade',
+        'Compilador JIT para velocidade de execução quase nativa',
+        'Adicionar capacidades do sistema operacional em tempo de execução',
+      ],
+    },
+    caseStudies: {
+      title: 'Organizações em todas as indústrias usam o eBPF em produção',
+      linkText: 'Mais estudos de caso',
+      linkUrl: '/pt-br/case-studies/',
+      items: caseStudiesData['pt-br'].slice(0, 6),
+    },
+    whyEbpf: {
+      title: 'Por que o eBPF?',
+      linkTitle: 'O que é o eBPF?',
+      linkUrl: '/pt-br/what-is-ebpf/',
+      items: [
+        {
+          title: 'Desempenho',
+          icon: 'performance',
+          description:
+            'O eBPF melhora drasticamente o processamento ao ser compilado JIT e executado diretamente no kernel.',
+        },
+        {
+          title: 'Segurança',
+          icon: 'security',
+          description:
+            'Programas eBPF são verificados para não causar falhas no kernel e só podem ser modificados por usuários privilegiados.',
+        },
+        {
+          title: 'Flexibilidade',
+          icon: 'flexibility',
+          description:
+            'Modificar ou adicionar funcionalidades e casos de uso ao kernel sem a necessidade de reiniciá-lo ou aplicar patches.',
+        },
+      ],
+    },
+    testimonials: {
+      items: [
+        {
+          logo: 'azure',
+          logoWidth: 134,
+          company: 'Microsoft Azure',
+          review:
+            'O eBPF resultou em uma nova geração de ferramentas que permitem que os desenvolvedores diagnostiquem problemas com facilidade, inovem rapidamente e estendam a funcionalidade do sistema operacional.',
+          author: 'Mark Russinovich',
+          role: 'Chief Technology Officer at Microsoft Azure, 2021',
+        },
+        {
+          logo: 'google',
+          logoWidth: 104,
+          company: 'Google',
+          review:
+            'O eBPF é o futuro da rede para o kernel Linux, e o Google tem o prazer de fazer parte do padrão em evolução que ele criou.',
+          author: 'Chris DiBona',
+          role: 'Director of Open Source at Google, 2021',
+        },
+        {
+          logo: 'isovalent',
+          logoWidth: 148,
+          company: 'Isovalent',
+          review:
+            'Apesar de o eBPF já estar presente nas pilhas de produção de inúmeras empresas, ainda estamos no início da curva de inovação que a tecnologia eBPF desbloqueia.',
+          author: 'Thomas Graf',
+          role: 'Chief Technology Officer at Isovalent, 2021',
+        },
+        {
+          logo: 'meta',
+          logoWidth: 120,
+          company: 'Meta',
+          review:
+            'Por muitos anos, o eBPF desempenhou um papel crítico no desenvolvimento do kernel. Estamos empolgados em apoiar o trabalho da comunidade do eBPF, permitindo que eles construam as ferramentas necessárias para impulsionar a próxima geração do desenvolvimento de sistemas Linux.',
+          author: 'Chris Mason',
+          role: 'Kernel Maintainer and Engineering Director at Facebook, 2021',
+        },
+        {
+          logo: 'netflix',
+          logoWidth: 109,
+          company: 'Netflix',
+          review:
+            'O eBPF é um novo tipo de software que oferece capacidades de superpoder, dando origem a uma indústria de tecnologias de rede, desempenho e segurança. A Netflix tem sido pioneira no uso do eBPF para observabilidade, fornecendo insights em inúmeras áreas que anteriormente eram difíceis ou proibitivamente caras de serem instrumentadas. O eBPF nos ajudou a reduzir a latência do aplicativo e encontrar economia de custos.',
+          author: 'Brendan Gregg',
+          role: 'Senior performance engineer at Netflix, 2021',
+        },
+      ],
+    },
+    features: {
+      title: 'O que é possível com o eBPF?',
+      items: [
+        {
+          bgClassName: 'bg-secondary-yellow-light',
+          image: 'networking',
+          title: 'Rede',
+          description:
+            'Acelere o processamento de pacotes sem sair do espaço do kernel. Adicione analisadores de protocolo adicionais e programe facilmente qualquer lógica de encaminhamento para atender a requisitos em constante mudança.',
+        },
+        {
+          bgClassName: 'bg-secondary-green-light',
+          image: 'observability',
+          title: 'Observabilidade',
+          description:
+            'Combine a visualização e compreensão de todas as chamadas do sistema com uma visão de nível de pacote e socket de toda a rede para criar sistemas de segurança que operam com mais contexto e um melhor nível de controle.',
+        },
+        {
+          bgClassName: 'bg-secondary-blue-light',
+          image: 'tracingAndProfiling',
+          title: 'Rastreamento e Profiling',
+          description:
+            'Anexe programas eBPF a pontos de rastreamento, bem como pontos de sondagem de aplicativos do kernel e do usuário, oferecendo poderosas habilidades de introspecção e insights únicos para solucionar problemas de desempenho do sistema.',
+        },
+        {
+          bgClassName: 'bg-secondary-red-light',
+          image: 'security',
+          title: 'Segurança',
+          description:
+            'Combine a visualização e compreensão de todas as chamadas do sistema com uma visão de nível de pacote e socket de toda a rede para criar sistemas de segurança que operam com mais contexto e um melhor nível de controle.',
+        },
+      ],
+    },
+    videoGallery: {
+      title: 'Palestras da Comunidade do eBPF',
+      items: videoItems,
+    },
+  },
 };
 
 export default data;

@@ -20,7 +20,7 @@ const Header = ({
   pageUrls,
 }) => (
   <header
-    className={clsx('safe-paddings', {
+    className={clsx('safe-paddings z-[1000]', {
       'border-b border-gray-90': fullWidthBottomBorder,
     })}
   >
