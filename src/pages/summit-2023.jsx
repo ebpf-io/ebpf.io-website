@@ -79,8 +79,8 @@ const Summit2023 = () => (
     <Speakers
       title="Featured Speakers"
       endpoint={endpoints.speakers}
-      linkTitle="View the talks"
-      linkUrl="/summit-2023-schedule/"
+      linkTitle="View talks"
+      linkUrl="/summit-2023-talks/"
     />
     <Information />
     <Hosts {...hosts} />
