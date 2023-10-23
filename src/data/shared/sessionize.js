@@ -1,4 +1,4 @@
-const GRID_TOKEN_2023 = process.env.GATSBY_SESSIONIZE_TOKEN_GRID_2023;
+const GRID_TOKEN_2023 = process.env.GATSBY_SESSIONIZE_GRID_TOKEN_2023;
 const TOKEN_2023 = process.env.GATSBY_SESSIONIZE_TOKEN_2023;
 
 const endpoints = {
