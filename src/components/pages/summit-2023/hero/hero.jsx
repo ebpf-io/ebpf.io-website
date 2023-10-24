@@ -15,7 +15,7 @@ const ctaButtons = [
   {
     onClick: null,
     url: 'https://www.youtube.com/watch?v=EViAho-6qoc',
-    title: 'Watch live on YouTube',
+    title: 'Watch the recordings on YouTube',
     theme: 'orange',
   },
   {
