@@ -4,6 +4,7 @@ const headerMenu = [
       en: 'Learn',
       'fr-fr': 'Apprendre',
       'pt-br': 'Aprenda',
+      'it-it': 'Impara',
     },
     items: [
       {
@@ -11,11 +12,13 @@ const headerMenu = [
           en: 'What is eBPF?',
           'fr-fr': 'Qu’est-ce qu’eBPF',
           'pt-br': 'O que é o eBPF',
+          'it-it': 'Cos’è eBPF?',
         },
         to: {
           en: '/what-is-ebpf',
           'fr-fr': '/fr-fr/what-is-ebpf',
           'pt-br': '/pt-br/what-is-ebpf',
+          'it-it': '/it-it/what-is-ebpf',
         },
       },
       {
@@ -23,11 +26,13 @@ const headerMenu = [
           en: 'Get Started',
           'fr-fr': 'Commencer',
           'pt-br': 'Comece',
+          'it-it': 'Per Iniziare',
         },
         to: {
           en: '/get-started',
           'fr-fr': '/fr-fr/get-started',
           'pt-br': '/pt-br/get-started',
+          'it-it': '/it-it/get-started',
         },
       },
       {
@@ -35,11 +40,13 @@ const headerMenu = [
           en: 'Case Studies',
           'fr-fr': 'Études de cas',
           'pt-br': 'Estudos de Caso',
+          'it-it': 'Casi di Studio',
         },
         to: {
           en: '/case-studies',
           'fr-fr': '/fr-fr/case-studies',
           'pt-br': '/pt-br/case-studies',
+          'it-it': '/it-it/case-studies',
         },
       },
       {
@@ -48,6 +55,7 @@ const headerMenu = [
           en: '/labs',
           'fr-fr': '/fr-fr/labs',
           'pt-br': '/pt-br/labs',
+          'it-it': '/it-it/labs',
         },
       },
     ],
@@ -57,6 +65,7 @@ const headerMenu = [
       en: 'Project Landscape',
       'fr-fr': 'Paysage du projet',
       'pt-br': 'Landscape do Projeto',
+      'it-it': 'Panorama dei Progetti',
     },
     items: [
       {
@@ -64,11 +73,13 @@ const headerMenu = [
           en: 'Applications',
           'fr-fr': 'Applications',
           'pt-br': 'Aplicações',
+          'it-it': 'Applicazioni',
         },
         to: {
           en: '/applications',
           'fr-fr': '/fr-fr/applications',
           'pt-br': '/pt-br/applications',
+          'it-it': '/it-it/applications',
         },
       },
       {
@@ -76,11 +87,13 @@ const headerMenu = [
           en: 'Infrastructure',
           'fr-fr': 'Infrastructure',
           'pt-br': 'Infraestrutura',
+          'it-it': 'Infrastruttura',
         },
         to: {
           en: '/infrastructure',
           'fr-fr': '/fr-fr/infrastructure',
           'pt-br': '/pt-br/infrastructure',
+          'it-it': '/it-it/infrastructure',
         },
       },
     ],
@@ -91,6 +104,7 @@ const headerMenu = [
       en: 'Events',
       'fr-fr': 'Événements',
       'pt-br': 'Eventos',
+      'it-it': 'Eventi',
     },
     items: [
       {
@@ -98,11 +112,13 @@ const headerMenu = [
           en: 'All Events',
           'fr-fr': 'Tous les évènements',
           'pt-br': 'Todos os Eventos',
+          'it-it': 'Tutti gli eventi',
         },
         to: {
           en: '/events?overview',
           'fr-fr': '/fr-fr/events?overview',
           'pt-br': '/pt-br/events?overview',
+          'it-it': '/it-it/events?overview',
         },
       },
       {
@@ -111,6 +127,7 @@ const headerMenu = [
           en: '/events?conference=eBPF%20Summit',
           'fr-fr': '/fr-fr/events?conference=eBPF%20Summit',
           'pt-br': '/pt-br/events?conference=eBPF%20Summit',
+          'it-it': '/it-it/events?conference=eBPF%20Summit',
         },
       },
       {
@@ -124,6 +141,7 @@ const headerMenu = [
           en: '/events?conference=eBPF%20Track%20%28LPC%29',
           'fr-fr': '/fr-fr/events?conference=eBPF%20Track%20%28LPC%29',
           'pt-br': '/pt-br/events?conference=eBPF%20Track%20%28LPC%29',
+          'it-it': '/it-it/events?conference=eBPF%20Track%20%28LPC%29',
         },
       },
       {
@@ -132,6 +150,7 @@ const headerMenu = [
           en: '/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
           'fr-fr': '/fr-fr/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
           'pt-br': '/pt-br/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
+          'it-it': '/it-it/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
         },
       },
     ],
@@ -141,6 +160,7 @@ const headerMenu = [
       en: 'Community',
       'fr-fr': 'Communauté',
       'pt-br': 'Comunidade',
+      'it-it': 'Community',
     },
     items: [
       {
@@ -148,11 +168,13 @@ const headerMenu = [
           en: 'Get Started',
           'fr-fr': 'Commencer',
           'pt-br': 'Comece',
+          'it-it': 'Per Iniziare',
         },
         to: {
           en: '/get-started/#docs',
           'fr-fr': '/fr-fr/get-started/#docs',
           'pt-br': '/pt-br/get-started/#docs',
+          'it-it': '/it-it/get-started/#docs',
         },
       },
       {
@@ -188,6 +210,7 @@ const headerMenu = [
           en: 'Newsletter',
           'fr-fr': 'Newsletter',
           'pt-br': 'Boletim informativo',
+          'it-it': 'Newsletter',
         },
         to: '/newsletter',
       },
@@ -196,11 +219,13 @@ const headerMenu = [
           en: 'Contribute',
           'fr-fr': 'Contribuer',
           'pt-br': 'Contribua',
+          'it-it': 'Contribuisci',
         },
         to: {
           en: '/contribute',
           'fr-fr': '/fr-fr/contribute',
           'pt-br': '/pt-br/contribute',
+          'it-it': '/it-it/contribute',
         },
       },
     ],
@@ -214,6 +239,7 @@ const headerMenu = [
       en: 'Foundation',
       'fr-fr': 'Fondation',
       'pt-br': 'Fundação',
+      'it-it': 'Fondazione',
     },
     to: 'https://ebpf.foundation/',
   },
