@@ -285,7 +285,7 @@ const data = {
           },
           {
             text: 'Linux kernel eBPF runtime',
-            to: '/pt-br/infrastructure/#linux-kernel',
+            to: '/it-it/infrastructure/#linux-kernel',
           },
         ],
       },
