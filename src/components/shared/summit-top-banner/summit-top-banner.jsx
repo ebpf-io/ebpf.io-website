@@ -20,7 +20,12 @@ const SummitTopBanner = () => (
         Watch the recordings on YouTube
       </span>
     </div>
-    <Link theme="orange" size="lg" to="https://www.youtube.com/watch?v=EViAho-6qoc" target="_blank">
+    <Link
+      theme="orange"
+      size="lg"
+      to="https://www.youtube.com/playlist?list=PLDg_GiBbAx-l4D4oKbscJhPFKv2oqPcD_"
+      target="_blank"
+    >
       Watch
     </Link>
   </div>

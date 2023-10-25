@@ -20,10 +20,11 @@ const Banner = () => {
             Find all of the recordings on YouTube
           </h2>
           <Button
+            to="https://www.youtube.com/playlist?list=PLDg_GiBbAx-l4D4oKbscJhPFKv2oqPcD_"
             className="rounded-lg leading-tight xs:w-full"
             theme="black-filled"
             size="md"
-            onClick={() => setIsOpen(true)}
+            target="_blank"
           >
             Watch now
           </Button>
