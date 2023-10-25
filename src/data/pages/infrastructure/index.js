@@ -7,6 +7,7 @@ const data = {
     en: '/infrastructure/',
     'fr-fr': '/fr-fr/infrastructure/',
     'pt-br': '/pt-br/infrastructure/',
+    'it-it': '/it-it/infrastructure/',
   },
   en: {
     title: 'Infrastructure',
@@ -89,6 +90,34 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'Bibliotecas Auxiliares do eBPF',
+      items: auxiliaryLibraries,
+    },
+  },
+  'it-it': {
+    title: 'Infrastruttura',
+    hero: {
+      items: [
+        {
+          text: 'Applications',
+          to: '/it-it/applications/',
+        },
+        {
+          text: 'Infrastructure',
+          to: '/it-it/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: 'Infrastruttura Principale',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: 'Emergente',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'Librerie eBPF ausiliarie',
       items: auxiliaryLibraries,
     },
   },
