@@ -17,15 +17,16 @@ const Banner = () => {
       <div className="container">
         <div className="relative flex flex-row items-center justify-center space-x-10 rounded-lg bg-gray-98 px-6 py-[42px] md:flex-col md:space-x-0 md:space-y-6 md:py-6">
           <h2 className="heading-6xl text-left font-semibold leading-tight text-black md:text-center">
-            Register for early access to presentation recordings!
+            Find all of the recordings on YouTube
           </h2>
           <Button
+            to="https://www.youtube.com/playlist?list=PLDg_GiBbAx-l4D4oKbscJhPFKv2oqPcD_"
             className="rounded-lg leading-tight xs:w-full"
             theme="black-filled"
             size="md"
-            onClick={() => setIsOpen(true)}
+            target="_blank"
           >
-            Register
+            Watch now
           </Button>
         </div>
       </div>
