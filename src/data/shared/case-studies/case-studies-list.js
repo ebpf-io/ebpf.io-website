@@ -1488,7 +1488,8 @@ const caseStudiesData = {
     {
       title: 'Netflix',
       logo: Netflix,
-      description: '<strong>Netflix</strong> usa eBPF su larga scala per ottenere informazioni sulla rete.',
+      description:
+        '<strong>Netflix</strong> usa eBPF su larga scala per ottenere informazioni sulla rete.',
       links: [
         {
           text: 'Blog',
@@ -1563,7 +1564,8 @@ const caseStudiesData = {
     {
       title: 'Apple',
       logo: Apple,
-      description: '<strong>Apple</strong> usa eBPF attraverso Falco per monitorare la sicurezza del kernel.',
+      description:
+        '<strong>Apple</strong> usa eBPF attraverso Falco per monitorare la sicurezza del kernel.',
       links: [
         {
           text: 'Video',
@@ -1675,7 +1677,8 @@ const caseStudiesData = {
     {
       title: 'Capital One',
       logo: CapitalOne,
-      description: '<strong>Capital One</strong> usa eBPF per proteggere la propria infrastruttura cloud',
+      description:
+        '<strong>Capital One</strong> usa eBPF per proteggere la propria infrastruttura cloud',
       links: [
         {
           text: 'Video',
@@ -1698,7 +1701,8 @@ const caseStudiesData = {
     {
       title: 'Walmart',
       logo: Walmart,
-      description: '<strong>Walmart</strong> usa eBPF per il bilanciamento del carico dell’edge cloud',
+      description:
+        '<strong>Walmart</strong> usa eBPF per il bilanciamento del carico dell’edge cloud',
       links: [
         {
           text: 'Video 1',
@@ -1724,7 +1728,7 @@ const caseStudiesData = {
     {
       title: 'Cruise',
       logo: Cruise,
-      description: '<strong>Cruise</strong> usa eBPF per monitorare le prestazioni della GPU'',
+      description: '<strong>Cruise</strong> usa eBPF per monitorare le prestazioni della GPU',
       links: [
         {
           text: 'Video',
@@ -1735,7 +1739,8 @@ const caseStudiesData = {
     {
       title: 'Digital Ocean',
       logo: DigitalOcean,
-      description: '<strong>Digital Ocean</strong> usa eBPF per monitorare le prestazioni della GPU',
+      description:
+        '<strong>Digital Ocean</strong> usa eBPF per monitorare le prestazioni della GPU',
       links: [
         {
           text: 'Video',
@@ -1746,7 +1751,8 @@ const caseStudiesData = {
     {
       title: 'Yahoo',
       logo: Yahoo,
-      description: '<strong>Yahoo</strong> usa eBPF per il bilanciamento del carico e l’analisi delle prestazioni',
+      description:
+        '<strong>Yahoo</strong> usa eBPF per il bilanciamento del carico e l’analisi delle prestazioni',
       links: [
         {
           text: 'Video 1',
