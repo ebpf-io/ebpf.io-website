@@ -407,7 +407,7 @@ const data = {
   'it-it': {
     hero: {
       title:
-        'Programma dinamicamente il kernel per una rete efficiente, osservabilità, tracciamento e sicurezza',
+        'Programma dinamicamente il kernel per networking efficiente, osservabilità, tracciamento e sicurezza',
       blackButtonTitle: 'Panorama dei Progetti',
       blackButtonUrl: '/it-it/applications',
       yellowButtonTitle: 'Cos’è eBPF',
