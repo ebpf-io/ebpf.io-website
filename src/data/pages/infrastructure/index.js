@@ -98,11 +98,11 @@ const data = {
     hero: {
       items: [
         {
-          text: 'Applications',
+          text: 'Applicazioni',
           to: '/it-it/applications/',
         },
         {
-          text: 'Infrastructure',
+          text: 'Infrastruttura',
           to: '/it-it/infrastructure/',
         },
       ],
