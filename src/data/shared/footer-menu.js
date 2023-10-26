@@ -115,7 +115,7 @@ const footerMenu = [
           en: 'Branding',
           'fr-fr': 'l’image de marque',
           'pt-br': 'Identidade Visual',
-          'pt-br': 'Marchio',
+          'it-it': 'Marchio',
         },
         to: 'https://ebpf.foundation/brand-guidelines/',
       },
