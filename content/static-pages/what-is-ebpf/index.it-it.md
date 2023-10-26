@@ -172,7 +172,7 @@ Lo scopo primario del kernel di Linux è astrarre dall’hardware o dall’hardw
 
 <CardsList>
 
-<CardItem title="Supporto Nativo">
+<CardItem title="Supporto Nativo" content="blah blah">
 
 1. Modifica il codice sorgente del kernel e convinci la community del kernel di Linux che il cambiamento è necessario.
 2. Attendi diversi anni che la nuova versione del kernel divenga una commodity.
