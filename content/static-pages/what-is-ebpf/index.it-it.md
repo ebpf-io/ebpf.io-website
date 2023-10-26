@@ -24,11 +24,11 @@ eBPF.io è un luogo per tutti per imparare e collaborare sull’argomento di eBP
 
 ### Cosa significano eBPF e BPF?
 
-Originalmente BPF stava per Berkeley Packet Filter, ma ora che eBPF (extended BPF) può fare molto di più che filtrare i pacchetti di rete, l’acronimo non ha più molto senso, eBPF è considerato ora a se stante. Nel codice sorgente Linux, il termine BPF persiste, e negli strumenti e nella documentazione, il termine BPF e eBPF sono intercambiabili generalmente. L’originale BPF è a volte riferito con cBPF (classic BPF) per distinguerlo da eBPF.
+Originalmente BPF stava per Berkeley Packet Filter, ma ora che eBPF (extended BPF) può fare molto di più che filtrare i pacchetti di rete, l’acronimo non ha più molto senso, eBPF è considerato ora a se stante. Nel codice sorgente Linux, il termine BPF persiste, e negli strumenti e nella documentazione, il termine BPF e eBPF sono generalmente intercambiabili. L’originale BPF è a volte riferito con cBPF (classic BPF) per distinguerlo da eBPF.
 
 ### Come si chiama l’ape?
 
-L’ape è il logo ufficiale per eBPF ed è stato originariamente creato da Vadim Shchekoldin. Al [primo eBPF Summit](https://ebpf.io/summit-2020.html) c’è stata una votazione e l’ape è stata nominata eBee. (Per dettagli sull’uso accettabile del logo, per favore consultate le [Linee guida del marchio](https://linuxfoundation.org/brand-guidelines/) della Linux Foundation.)
+L’ape è il logo ufficiale per eBPF ed è stato originariamente creato da Vadim Shchekoldin. Al [primo eBPF Summit](https://ebpf.io/summit-2020.html) c’è stata una votazione e l’ape è stata nominata eBee. (Per dettagli sull’uso accettabile del logo, per favore consultate le [Linee guida del marchio](https://linuxfoundation.org/brand-guidelines/) della Linux Foundation).
 
 ## Introduzione a eBPF
 
@@ -46,7 +46,7 @@ Se un hook predefinito non esiste per una necessità in particolare, è possibil
 
 ### Come sono scritti i programmi eBPF?
 
-In molti scenari, eBPF non viene usato direttamente ma indirettamente attraverso progetti come [Cilium](https://ebpf.io/projects/#cilium), [bcc](https://ebpf.io/projects/#bcc), or [bpftrace](https://ebpf.io/projects/#bpftrace) che forniscono una astrazione sopra eBPF e non richiedono di scrivere direttamente dei programmi ma invece offrono abilità per specificare definizioni basate su l'intento che vengono poi implementate con eBPF.
+In molti scenari, eBPF non viene usato direttamente ma indirettamente attraverso progetti come [Cilium](https://ebpf.io/projects/#cilium), [bcc](https://ebpf.io/projects/#bcc), or [bpftrace](https://ebpf.io/projects/#bpftrace) che forniscono una astrazione sopra eBPF e non richiedono di scrivere direttamente dei programmi ma invece offrono abilità per specificare definizioni basate su intenti che vengono poi implementate con eBPF.
 
 ![Clang](clang.png)
 
@@ -58,7 +58,7 @@ Una volta identificato l’hook desiderato, il programma eBPF può essere carica
 
 ![Go](go.png)
 
-Dal momento in cui un programma è caricato nel kernel Linux, passa attraverso due fasi prima di venire attaccato all’hook richiesto:
+Dal momento in cui un programma è caricato nel kernel Linux, passa attraverso due fasi prima di venire agganciato all’hook richiesto:
 
 ### Verifica
 
