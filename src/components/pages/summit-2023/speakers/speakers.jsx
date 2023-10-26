@@ -5,7 +5,7 @@ import Speaker from 'components/pages/summit-2023/speakers/speaker';
 import Button from 'components/shared/button';
 import SpeakersModal from 'components/shared/speakers-modal';
 
-const Speakers = ({ title, endpoint }) => {
+const Speakers = ({ title, endpoint, linkTitle, linkUrl }) => {
   const [speakers, setSpeakers] = useState([]);
   const [currentSpeaker, setCurrentSpeaker] = useState(null);
   const [error, setError] = useState(null);
@@ -69,10 +69,10 @@ const Speakers = ({ title, endpoint }) => {
           <Button
             className="mx-auto mt-16 flex items-center space-x-3 rounded-lg px-6 leading-none md:mt-10 sm:flex-1 xs:px-3.5"
             size="sm"
-            to="/summit-2023-schedule/"
+            to={linkUrl}
             theme="orange"
           >
-            View the schedule
+            {linkTitle}
           </Button>
         </div>
       </div>
@@ -84,6 +84,8 @@ const Speakers = ({ title, endpoint }) => {
 Speakers.propTypes = {
   title: PropTypes.string.isRequired,
   endpoint: PropTypes.string.isRequired,
+  linkTitle: PropTypes.string.isRequired,
+  linkUrl: PropTypes.string.isRequired,
 };
 
 export default Speakers;

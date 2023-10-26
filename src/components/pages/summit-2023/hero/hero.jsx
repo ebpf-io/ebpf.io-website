@@ -14,9 +14,10 @@ const icons = {
 const ctaButtons = [
   {
     onClick: null,
-    url: 'https://www.youtube.com/watch?v=EViAho-6qoc',
-    title: 'Watch live on YouTube',
+    url: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-l4D4oKbscJhPFKv2oqPcD_',
+    title: 'Watch the recordings on YouTube',
     theme: 'orange',
+    target: '_blank',
   },
   {
     onClick: null,
@@ -24,6 +25,7 @@ const ctaButtons = [
     title: 'Join Summit Slack',
     theme: 'gray',
     iconName: 'slack',
+    target: '_blank',
   },
 ];
 
@@ -53,7 +55,7 @@ const Hero = ({ date, title, time, description }) => (
           dangerouslySetInnerHTML={{ __html: description }}
         />
         <div className="mt-9 flex space-x-5 lg:justify-center sm:flex-col sm:space-x-0 sm:space-y-3 xs:w-full">
-          {ctaButtons.map(({ title, url, theme, iconName, onClick }, index) => {
+          {ctaButtons.map(({ title, url, theme, iconName, onClick, target }, index) => {
             const Icon = icons[iconName];
 
             return (
@@ -61,6 +63,7 @@ const Hero = ({ date, title, time, description }) => (
                 className="flex items-center space-x-3 rounded-lg px-6 leading-none sm:flex-1 xs:px-3.5"
                 size="sm"
                 to={url}
+                target={target}
                 theme={theme}
                 key={index}
                 onClick={onClick}

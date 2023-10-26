@@ -1,13 +1,14 @@
 import React, { useCallback, useState, useEffect } from 'react';
 
 import DangerousHtml from 'components/shared/dangerous-html';
+import endpoints from 'data/shared/sessionize';
 
 const Grid = () => {
   const [scheduleHTML, setScheduleHTML] = useState('');
 
   const fetchScheduleData = async (cb) => {
     try {
-      const res = await fetch(process.env.GATSBY_SESSIONIZE_URL);
+      const res = await fetch(endpoints.grid);
       const data = await res.text();
       cb(data);
     } catch (e) {
@@ -26,7 +27,7 @@ const Grid = () => {
   }, []);
 
   useEffect(() => {
-    if (process.env.GATSBY_SESSIONIZE_URL) {
+    if (endpoints.grid) {
       fetchScheduleData(modifySessionizeScript);
     }
   }, [modifySessionizeScript]);

@@ -8,6 +8,7 @@ import LastYear from 'components/pages/summit-2023/last-year';
 import Speakers from 'components/pages/summit-2023/speakers';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
+import endpoints from 'data/shared/sessionize';
 import { navigation, hubspotFormId } from 'data/shared/summit-2023-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
@@ -71,16 +72,16 @@ const lastYear = {
   ],
 };
 
-const speakers = {
-  title: 'Featured Speakers',
-  endpoint: 'https://sessionize.com/api/v2/oou3fuu0/view/Speakers',
-};
-
 const Summit2023 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
     <Banner />
-    <Speakers {...speakers} />
+    <Speakers
+      title="Featured Speakers"
+      endpoint={endpoints.speakers}
+      linkTitle="View talks"
+      linkUrl="/summit-2023-talks/"
+    />
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />
