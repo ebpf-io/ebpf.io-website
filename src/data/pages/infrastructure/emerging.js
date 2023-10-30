@@ -65,6 +65,25 @@ const emergingInfrastructure = [
     urls: [{ label: 'GitHub', url: 'https://github.com/vbpf/ebpf-verifier' }],
   },
   {
+    logoUrl: 'https://github.com/eunomia-bpf/bpftime',
+    name: 'bpftime',
+    logoName: 'eunomiaLogo',
+    title: 'Userspace eBPF Runtime',
+    description: `An userspace eBPF runtime that allows existing eBPF applications
+    to operate in unprivileged userspace using the same libraries and toolchains.
+    It offers Uprobe and Syscall tracepoints for eBPF, with significant performance
+    improvements over kernel uprobe and without requiring manual code instrumentation
+    or process restarts. The runtime facilitates interprocess eBPF maps in userspace
+    shared memory, and is also compatible with kernel eBPF maps, allowing for
+    seamless operation with the kernel's eBPF infrastructure. It includes a
+    high-performance LLVM JIT for various architectures, alongside a lightweight
+    JIT for x86 and an interpreter.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/eunomia-bpf/bpftime' },
+      { label: 'Website', url: 'https://eunomia.dev/bpftime/' },
+    ],
+  },
+  {
     name: 'BPF Conformance',
     title: 'eBPF Conformance Testing Framework',
     description: `A conformance testing framework for eBPF runtime implementations. It
