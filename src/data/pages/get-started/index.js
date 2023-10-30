@@ -18,7 +18,7 @@ const data = {
           cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
           dashedBorderClassName: 'border-secondary-blue-2',
           linkUrl:
-            'https://play.instruqt.com/embed/isovalent/tracks/ebpf-getting-started?token=em_9nxLzhlV41gb3rKM&show_challenges=true',
+            'https://ebpf.io/labs/',
           linkTarget: '_blank',
         },
         {
@@ -150,7 +150,7 @@ const data = {
           cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
           dashedBorderClassName: 'border-secondary-blue-2',
           linkUrl:
-            'https://play.instruqt.com/embed/isovalent/tracks/ebpf-getting-started?token=em_9nxLzhlV41gb3rKM&show_challenges=true',
+            'https://ebpf.io/labs/',
           linkTarget: '_blank',
         },
         {
@@ -283,7 +283,7 @@ const data = {
           cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
           dashedBorderClassName: 'border-secondary-blue-2',
           linkUrl:
-            'https://play.instruqt.com/embed/isovalent/tracks/ebpf-getting-started?token=em_9nxLzhlV41gb3rKM&show_challenges=true',
+            'https://ebpf.io/labs/',
           linkTarget: '_blank',
         },
         {
