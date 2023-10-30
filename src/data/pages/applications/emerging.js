@@ -294,7 +294,7 @@ const emergingApplications = [
     and automatically expose your data from the kernel and interact with eBPF program in user space with a WASM runtime.`,
     urls: [
       { label: 'GitHub', url: 'https://github.com/eunomia-bpf/eunomia-bpf' },
-      { label: 'Website', url: 'https://eunomia-bpf.github.io/' },
+      { label: 'Website', url: 'https://eunomia.dev/' },
     ],
   },
   {
