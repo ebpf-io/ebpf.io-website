@@ -6,6 +6,7 @@ import AnchorHeading from 'components/shared/anchor-heading';
 import Link from 'components/shared/link/link';
 import slugifyCategory from 'utils/slugify-category';
 
+import alazLogo from './logos/alaz.svg';
 import bccLogo from './logos/bcc.svg';
 import blixtLogo from './logos/blixt.png';
 import bpfdLogo from './logos/bpfd.svg';
@@ -30,6 +31,7 @@ import l3afLogo from './logos/l3af.svg';
 import linuxLogo from './logos/linux.svg';
 import llvmLogo from './logos/llvm.svg';
 import merbridgeLogo from './logos/merbridge.svg';
+import netobservLogo from './logos/netobserv.svg';
 import parcaLogo from './logos/parca.svg';
 import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
@@ -38,7 +40,6 @@ import rbpfLogo from './logos/rbpf.svg';
 import sshlogLogo from './logos/sshlog.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
-import netobservLogo from './logos/netobserv.svg';
 
 const logos = {
   bccLogo,
@@ -74,6 +75,7 @@ const logos = {
   rbpfLogo,
   bpftoolLogo,
   corootLogo,
+  alazLogo,
   tetragonLogo: (
     <StaticImage
       src="./logos/tetragon.png"

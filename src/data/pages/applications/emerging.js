@@ -284,6 +284,19 @@ const emergingApplications = [
     ],
   },
   {
+    logoUrl: 'https://github.com/ddosify/alaz',
+    name: 'Alaz',
+    logoName: 'alazLogo',
+    title: 'Effortless, Low-Overhead, eBPF-based Kubernetes Monitoring',
+    description: `Alaz is an open-source Ddosify eBPF agent that can inspect and collect Kubernetes (K8s) service traffic 
+    without the need for code instrumentation, sidecars, or service restarts. This is possible due to its use of eBPF technology. 
+    Alaz can create a Service Map that helps identify golden signals and problems like high latencies, 5xx errors, zombie services, slow HTTP requests and SQL queries.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/ddosify/alaz' },
+      { label: 'Website', url: 'https://ddosify.com/' },
+    ],
+  },
+  {
     logoUrl: 'https://github.com/eunomia-bpf/eunomia-bpf',
     name: 'eunomia-bpf',
     logoName: 'eunomiaLogo',
@@ -376,7 +389,7 @@ const emergingApplications = [
     implemented using Gateway API and a data-plane built using eBPF and Rust.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/kong/blixt' }],
   },
-   {
+  {
     logoUrl: 'https://github.com/netobserv/netobserv-ebpf-agent',
     name: 'netobserv',
     logoName: 'netobservLogo',
