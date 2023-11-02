@@ -416,7 +416,7 @@ const data = {
       items: [
         'I programmi sono verificati per essere eseguiti in sicurezza',
         'Agganciali ovunque nel kernel per modificarne la funzionalità',
-        'Compilatore JIT per una esecuzione quasi nativa',
+        'Compilatore JIT per una velocità d'esecuzione quasi nativa',
         'Aggiungi funzionalità del sistema operativo in fase di esecuzione',
       ],
     },
