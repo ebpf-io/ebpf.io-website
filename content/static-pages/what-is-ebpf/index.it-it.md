@@ -50,7 +50,7 @@ In molti scenari, eBPF non viene usato direttamente ma indirettamente attraverso
 
 ![Clang](clang.png)
 
-Se non esiste un livello di astrazione più alto, i programmi devono essere scritti direttamente. Il kernel Linux si aspetta che i programmi eBPF vengano caricati in forma di bytecode. Mentre è sicuramente possibile scrivere direttamente bytecode, la pratica di sviluppo più comunemente usata è di offrire una suite di compilatori come [LLVM](https://llvm.org/) per compilare codice pseudo-C in eBPF bytecode.
+Se non esiste un livello di astrazione più alto, i programmi devono essere scritti direttamente. Il kernel Linux si aspetta che i programmi eBPF vengano caricati in forma di bytecode. Mentre è sicuramente possibile scrivere direttamente bytecode, la pratica di sviluppo più comunemente usata è di utilizzare una suite di compilatori come [LLVM](https://llvm.org/) per compilare codice pseudo-C in eBPF bytecode.
 
 ### Architettura del Loader e Verifica
 
