@@ -529,7 +529,7 @@ const data = {
           image: 'security',
           title: 'Sicurezza',
           description:
-            'Combina la visione e la comprensione di tutte le chiamate di sistema con una visione a livello di pacchetto e di socket di tutto il networking per creare sistemi di sicurezza che operano in un contesto più ampio con un migliore livello di controllo.',
+            'Combina la visione e la comprensione di tutte le chiamate di sistema con una osservabilità a livello di pacchetto e di socket di tutto il networking per creare sistemi di sicurezza che operano in un contesto più ampio e con un migliore livello di controllo.',
         },
       ],
     },
