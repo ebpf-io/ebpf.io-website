@@ -494,7 +494,7 @@ const data = {
           logoWidth: 109,
           company: 'Netflix',
           review:
-            'eBPF è un nuovo tipo di software che offre capacità superpotenti, dando vita a un settore di tecnologie di rete, prestazioni, e sicurezza. Netflix è stata pioniera nell’uso di eBPF per l’osservabilità, fornendo informazioni su innumerevoli aree che erano precedentemente difficili o proibitivamente costose da strumentare. eBPF ci ha aiutato a ridurre la latenza delle applicazioni e a risparmiare costi.',
+            'eBPF è un nuovo tipo di software che offre capacità superpotenti, dando vita a un settore di tecnologie di rete, prestazioni, e sicurezza. Netflix è stata pioniera nell’uso di eBPF per l’osservabilità, fornendo informazioni su innumerevoli aree che erano precedentemente difficili o proibitivamente costose da strumentare. eBPF ci ha aiutato a ridurre la latenza delle applicazioni e a risparmiare sui costi.',
           author: 'Brendan Gregg',
           role: 'Senior performance engineer at Netflix, 2021',
         },
