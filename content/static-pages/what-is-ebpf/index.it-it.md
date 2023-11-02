@@ -67,7 +67,7 @@ La fase di verifica assicura che un programma eBPF sia sicuro da eseguire. Conva
 ![Loader](loader.png)
 
 - Il processo che carica il programma eBPF possiede le capacità richieste (privilegi). A meno che “unprivileged eBPF” sia attivo, solo i processi privilegiati possono caricare i programmi eBPF.
-- Il programma non si blocca o danneggia il sistema in alcun modo.
+- Il programma non si può bloccare o danneggiare il sistema in alcun modo.
 - Il programma viene eseguito sempre fino alla fine (i.e. il programma non resta in un loop infinito, ritardando l’ulteriore elaborazione).
 
 ### Compilazione JIT
