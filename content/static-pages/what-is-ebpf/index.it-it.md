@@ -54,7 +54,7 @@ Se non esiste un livello di astrazione più alto, i programmi devono essere scri
 
 ### Architettura del Loader e Verifica
 
-Una volta identificato l’hook desiderato, il programma eBPF può essere caricato nel kernel Linux usando la chiamata di sistema bpf. Di solito usando una libreria eBPF tra quelle esistenti. La sezione seguente fornisce una introduzione alle toolchain di sviluppo disponibili.
+Una volta identificato l’hook desiderato, il programma eBPF può essere caricato nel kernel Linux usando la chiamata di sistema bpf. Questo è solitamente effettuato usando una libreria eBPF tra quelle esistenti. La sezione seguente fornisce una introduzione alle toolchain di sviluppo disponibili.
 
 ![Go](go.png)
 
