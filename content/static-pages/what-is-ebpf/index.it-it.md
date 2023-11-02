@@ -32,7 +32,7 @@ L’ape è il logo ufficiale per eBPF ed è stato originariamente creato da Vadi
 
 ## Introduzione a eBPF
 
-I capitoli seguenti sono una veloce introduzione a eBPF. Se volete scoprire di più su eBPF, guardate la [eBPF & XDP Reference Guide](https://cilium.readthedocs.io/en/stable/bpf/). Sia che siate uno sviluppatore che cerca di fare un programma eBPF, o interessati a sfruttare una soluzione che utilizza eBPF, è utile comprenderne i concetti e l'architettura di base.
+I capitoli seguenti sono una veloce introduzione a eBPF. Se volete scoprire di più su eBPF, guardate la [eBPF & XDP Reference Guide](https://cilium.readthedocs.io/en/stable/bpf/). Sia che siate uno sviluppatore che cerca di creare un programma eBPF, o siate interessati a sfruttare una soluzione che utilizza eBPF, è utile comprenderne i concetti e l'architettura di base.
 
 ### Panoramica degli Hook
 
