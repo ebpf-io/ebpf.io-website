@@ -72,7 +72,7 @@ La fase di verifica assicura che un programma eBPF sia sicuro da eseguire. Conva
 
 ### Compilazione JIT
 
-La fase della compilazione Just-in-Time (JIT) traduce il generico bytecode del programma nella specifica istruzione del linguaggio macchina affinché l’esecuzione del programma venga ottimizzata alla velocità di esecuzione. Questo rende l’esecuzione dei programmi eBPF efficiente come quella del codice nativo del kernel o dei moduli kernel caricati.
+La fase della compilazione Just-in-Time (JIT) traduce il bytecode generico del programma nelle istruzioni macchina vere e proprie, al fine di ottimizzare la velocità d'esecuzione. Questo rende l’esecuzione dei programmi eBPF efficiente come quella del codice nativo del kernel o dei moduli kernel caricati.
 
 ### Mappe
 
