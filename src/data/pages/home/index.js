@@ -435,7 +435,7 @@ const data = {
           title: 'Prestazioni',
           icon: 'performance',
           description:
-            'eBPF migliora drasticamente l’elaborazione essendo compilato JIT e all’esecuzione direttamente nel kernel.',
+            'eBPF migliora drasticamente l’elaborazione essendo compilato JIT ed eseguito direttamente nel kernel.',
         },
         {
           title: 'Sicurezza',
