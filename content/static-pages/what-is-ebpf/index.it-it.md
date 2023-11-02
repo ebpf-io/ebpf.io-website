@@ -28,7 +28,7 @@ Originalmente BPF stava per Berkeley Packet Filter, ma ora che eBPF (extended BP
 
 ### Come si chiama l’ape?
 
-L’ape è il logo ufficiale per eBPF ed è stato originariamente creato da Vadim Shchekoldin. Al [primo eBPF Summit](https://ebpf.io/summit-2020.html) c’è stata una votazione e l’ape è stata nominata eBee. (Per dettagli sull’uso accettabile del logo, per favore consultate le [Linee guida del marchio](https://linuxfoundation.org/brand-guidelines/) della Linux Foundation).
+L’ape è il logo ufficiale per eBPF ed è stato originariamente creato da Vadim Shchekoldin. Al [primo eBPF Summit](https://ebpf.io/summit-2020.html) c’è stata una votazione e l’ape è stata nominata eBee. (Per dettagli sull’uso accettabile del logo, consultate le [Linee guida del marchio](https://linuxfoundation.org/brand-guidelines/) della Linux Foundation).
 
 ## Introduzione a eBPF
 
