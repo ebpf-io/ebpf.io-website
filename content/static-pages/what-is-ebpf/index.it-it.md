@@ -24,7 +24,7 @@ eBPF.io è un luogo per tutti per imparare e collaborare sull’argomento di eBP
 
 ### Cosa significano eBPF e BPF?
 
-Originalmente BPF stava per Berkeley Packet Filter, ma ora che eBPF (extended BPF) può fare molto di più che filtrare i pacchetti di rete, l’acronimo non ha più molto senso, eBPF è considerato ora a se stante. Nel codice sorgente Linux, il termine BPF persiste, e negli strumenti e nella documentazione, il termine BPF e eBPF sono generalmente intercambiabili. L’originale BPF è a volte riferito con cBPF (classic BPF) per distinguerlo da eBPF.
+Originalmente BPF stava per Berkeley Packet Filter, ma ora che eBPF (extended BPF) può fare molto di più che filtrare i pacchetti di rete, l’acronimo non ha più molto senso, ed eBPF è considerato un termine a se stante. Nel codice sorgente Linux, il termine BPF persiste, e negli strumenti e nella documentazione, il termine BPF e eBPF sono generalmente intercambiabili. L’originale BPF è a volte riferito con cBPF (classic BPF) per distinguerlo da eBPF.
 
 ### Come si chiama l’ape?
 
