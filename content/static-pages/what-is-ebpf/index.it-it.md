@@ -9,7 +9,7 @@ ogKeywords: ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, document
 
 eBPF è una tecnologia rivoluzionaria che ha origine nel kernel Linux e può eseguire programmi in sandbox in un contesto privilegiato del kernel senza il bisogno di cambiare il codice sorgente del kernel o caricare dei moduli del kernel.
 
-Storicamente, il sistema operativo è sempre stato un posto ideale per implementare l’osservabilità, la sicurezza, e le funzionalità di rete grazie all'abilità privilegiata del kernel di osservare e controllare il sistema intero.
+Storicamente, il sistema operativo è sempre stato un posto ideale per implementare l’osservabilità, la sicurezza, e le funzionalità di rete grazie all'abilità privilegiata del kernel di osservare e controllare il sistema nella sua interezza.
 Allo stesso tempo, un kernel di un sistema operativo è difficile da far evolvere a causa del suo ruolo centrale e degli elevati requisiti di stabilità e sicurezza. Il rapporto di innovazione a livello di sistema operativo è stato così tradizionalmente più basso a confronto delle funzionalità implementate fuori dal sistema operativo.
 
 ![Panoramica](overview.png)
