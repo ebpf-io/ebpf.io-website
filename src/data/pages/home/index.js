@@ -508,7 +508,7 @@ const data = {
           image: 'networking',
           title: 'Rete',
           description:
-            'Elaborazione veloce dei pacchetti di rete senza lasciare lo spazio kernel. Aggiunge ulteriori parser di protocollo e programma facilmente ogni logica di inoltro per soddisfare i requisiti di modifica.',
+            'Elaborazione veloce dei pacchetti di rete senza lasciare lo spazio kernel. Aggiungere ulteriori parser di protocollo e programmare facilmente logiche di inoltro per soddisfare requisiti in continua evoluzione',
         },
         {
           bgClassName: 'bg-secondary-green-light',
