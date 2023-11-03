@@ -18,8 +18,7 @@ const data = {
             'Borrowing the opensnoop example from Liz Rice’s report, this lab teaches you to handle an eBPF tool, watch it loading its components, and even add your own tracing into the source eBPF code.',
           cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
           dashedBorderClassName: 'border-secondary-blue-2',
-          linkUrl:
-            'https://ebpf.io/labs/',
+          linkUrl: 'https://ebpf.io/labs/',
           linkTarget: '_blank',
         },
         {
@@ -150,8 +149,7 @@ const data = {
             'En empruntant l’exemple d’opensnoop de l’ouvrage de Liz Rice, ce lab vous apprend à gérer un outil eBPF, à l’observer lorsqu’il charge ses composants et même à ajouter votre propre traçage dans le code source eBPF.',
           cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
           dashedBorderClassName: 'border-secondary-blue-2',
-          linkUrl:
-            'https://ebpf.io/labs/',
+          linkUrl: 'https://ebpf.io/labs/',
           linkTarget: '_blank',
         },
         {
@@ -283,8 +281,7 @@ const data = {
             'Tomando emprestado o exemplo do opensnoop do relatório de Liz Rice, este laboratório ensina como manipular uma ferramenta eBPF, observá-la carregando seus componentes e até mesmo adicionar seu próprio rastreamento ao código-fonte eBPF.',
           cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
           dashedBorderClassName: 'border-secondary-blue-2',
-          linkUrl:
-            'https://ebpf.io/labs/',
+          linkUrl: 'https://ebpf.io/labs/',
           linkTarget: '_blank',
         },
         {
@@ -537,7 +534,7 @@ const data = {
     contributors: {
       title: 'Conosci alcuni membri della nostra community',
     },
-  },  
+  },
 };
 
 export default data;

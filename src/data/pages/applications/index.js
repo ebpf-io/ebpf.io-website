@@ -103,7 +103,7 @@ const data = {
       title: 'Emergenti',
       items: emergingApplications,
     },
-  },  
+  },
 };
 
 export default data;

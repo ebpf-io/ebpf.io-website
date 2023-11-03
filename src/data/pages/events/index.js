@@ -10,7 +10,7 @@ const data = {
   },
   'it-it': {
     title: 'Conferenze eBPF e Meetup',
-  },  
+  },
 };
 
 export default data;

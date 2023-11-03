@@ -7,8 +7,8 @@ import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
 import EnIcon from 'icons/languages/en.inline.svg';
 import FrFrIcon from 'icons/languages/fr-fr.inline.svg';
-import PtBrIcon from 'icons/languages/pt-br.inline.svg';
 import ItItIcon from 'icons/languages/it-it.inline.svg';
+import PtBrIcon from 'icons/languages/pt-br.inline.svg';
 
 import { languages } from '../../../../../config/languages';
 

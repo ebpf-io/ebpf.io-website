@@ -36,12 +36,11 @@ const data = {
     subscriptionForm: {
       title: 'Sottoscrivi',
       afterTitle: 'alla pubblicazione quindicinale eCHO News',
-      description:
-        'Tieniti aggiornato sulle ultime notizie e informazioni inerenti eBPF e Cilium',
+      description: 'Tieniti aggiornato sulle ultime notizie e informazioni inerenti eBPF e Cilium',
       placeholder: 'Indirizzo email...',
       buttonTitle: 'Sottoscrivi',
     },
-  },  
+  },
 };
 
 export default data;
