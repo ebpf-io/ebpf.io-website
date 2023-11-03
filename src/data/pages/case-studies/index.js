@@ -30,7 +30,7 @@ const data = {
       title: 'Casi di studio eBPF',
       items: caseStudiesData['it-it'],
     },
-  },  
+  },
 };
 
 export default data;

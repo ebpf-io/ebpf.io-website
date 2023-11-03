@@ -13,8 +13,8 @@ const lang = languages['it-it'].code;
 
 const Description = () => (
   <span>
-    Ecco alcune delle organizzazioni che impiegano eBPF in produzione. Se anche tu stai usando eBPF e
-    non ti trovi elencato,{' '}
+    Ecco alcune delle organizzazioni che impiegano eBPF in produzione. Se anche tu stai usando eBPF
+    e non ti trovi elencato,{' '}
     <Link theme="black-primary-yellow" size="lg" to="https://github.com/ebpf-io/ebpf.io">
       invia una richiesta di pull.
     </Link>

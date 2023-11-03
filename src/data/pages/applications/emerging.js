@@ -376,7 +376,7 @@ const emergingApplications = [
     implemented using Gateway API and a data-plane built using eBPF and Rust.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/kong/blixt' }],
   },
-   {
+  {
     logoUrl: 'https://github.com/netobserv/netobserv-ebpf-agent',
     name: 'netobserv',
     logoName: 'netobservLogo',

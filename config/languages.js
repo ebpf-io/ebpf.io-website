@@ -20,7 +20,7 @@ module.exports = {
       shortName: 'Ita',
       code: 'it-it',
     },
-        
+
     // 'zh-cn': {
     //   name: '简体中文',
     //   code: 'zh-cn',
