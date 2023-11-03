@@ -6,6 +6,7 @@ const data = {
     en: '/applications/',
     'fr-fr': '/fr-fr/applications/',
     'pt-br': '/pt-br/applications/',
+    'it-it': '/it-it/applications/',
   },
   en: {
     title: 'Applications',
@@ -76,6 +77,30 @@ const data = {
     },
     emergingApplicationsProps: {
       title: 'Emergentes',
+      items: emergingApplications,
+    },
+  },
+  'it-it': {
+    title: 'Applicazioni',
+    hero: {
+      items: [
+        {
+          text: 'Applicazioni',
+          to: '/it-it/applications/',
+        },
+        {
+          text: 'Infrastruttura',
+          to: '/it-it/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: 'Applicazioni Principali',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: 'Emergenti',
       items: emergingApplications,
     },
   },

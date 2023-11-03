@@ -8,6 +8,9 @@ const data = {
   'pt-br': {
     title: 'Conferências e encontros do eBPF',
   },
+  'it-it': {
+    title: 'Conferenze eBPF e Meetup',
+  },
 };
 
 export default data;

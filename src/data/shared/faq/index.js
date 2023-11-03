@@ -166,6 +166,59 @@ const data = {
       },
     ],
   },
+  'it-it': {
+    title: 'Domande Frequenti',
+    items: [
+      {
+        question: 'Questi progetti sono sostenuti dalla Fondazione eBPF?',
+        answer: `<ul>
+					<li>Questa pagina elenca alcuni progetti open source che impiegano eBPF come tecnologia fondante. Non tutti questi progetti sono sostenuti dalla <a href="https://www.ebpf.foundation/">Fondazione eBPF</a>, ma l’elenco rappresenta una fotografia del panorama odierno dei progetti eBPF.</li>
+				</ul>`,
+      },
+      {
+        question: 'Aggiungi il tuo progetto',
+        answer: `<ol>
+					<li>Assicurati che il tuo progetto rispetti i requisiti richiesti. Vedi qui sotto.</li>
+					<li>Apri una <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">pull request</a> e fornisci le informazioni richieste. Utilizza uno dei progetti già presenti come modello. L’ordine di presentazione delle applicazioni è in base ai voti (le stelle ottenute) su Github (discendente), aggiornata ogni trimestre..</li>
+					<li>La richiesta di pull verrà valutata dalla community e ne verrà fatto il merge da uno dei manutentori. Chiedi pure su <a href="https://ebpf.io/slack">Slack</a> se avessi domande da porre.</li>
+				</ol>`,
+      },
+      {
+        question: 'Sei il manutentore di uno dei progetti elencati?',
+        answer: `<ul>
+					<li>Se sei il manutentore di uno dei progetti elencati e vuoi modificarne il contenuto. Entra in contatto su <a href="https://ebpf.io/slack">Slack</a> o apri direttamente una richiesta di pull.</li>
+				</ul>`,
+      },
+      {
+        question: 'Requisiti da rispettare affinché un progetto possa essere incluso',
+        answer: `
+					<p>
+						I progetti possono essere aggiunti a questa pagina nella categoria “Major” (Principale) oppure “Emerging” (Emergente). I requisiti per poter essere annoverati come “Emerging” sono:
+					</p>
+					<ul>
+						<li>
+							Il progetto deve essere open source. Tutti i codici sorgente devono essere rilasciati con una licenza open source. Tutta la documentazione deve essere rilasciata con una licenza open.
+						</li>
+						<li>
+							Il progetto deve necessariamente impiegare eBPF come sua tecnologia fondante (in altre parole, un progetto perderebbe il suo scopo qualora le parti eBPF venissero rimosse), oppure favorire l’adozione di eBPF in produzione.
+						</li>
+						<li>Il progetto deve essere attivamente mantenuto.</li>
+						<li>
+							Il progetto deve essere aperto alla collaborazione e avere un modello di governance aderente alle best-practice dell’open source.
+						</li>
+					</ul>
+					<p>
+						Per poter essere definibile “Major”, un progetto deve soddisfare tutti i requisiti di cui sopra, più:
+					</p>
+					<ul>
+						<li>Il progetto deve avere più di 50 contributori.</li>
+						<li>
+							Il progetto deve essere impiegato in ambienti realistici di produzione che abbiano un significativo numero di utenti. Dal momento che queste informazioni non sono facilmente ricavabili da un collegamento al progetto, dovrebbero essere incluse nella descrizione della pull request.
+						</li>
+					</ul>`,
+      },
+    ],
+  },
 };
 
 export default data;

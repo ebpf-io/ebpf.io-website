@@ -20,6 +20,7 @@ const pageUrls = {
   en: '/get-started/',
   'fr-fr': '/fr-fr/get-started/',
   'pt-br': '/pt-br/get-started/',
+  'it-it': '/it-it/get-started/',
 };
 
 const hasContributors = false;

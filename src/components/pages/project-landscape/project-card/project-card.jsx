@@ -23,6 +23,7 @@ import falcoLogo from './logos/falco.svg';
 import gccLogo from './logos/gcc.svg';
 import hbpfLogo from './logos/hbpf.svg';
 import hubbleLogo from './logos/hubble.svg';
+import ingressNodeFirewallLogo from './logos/infw.jpg';
 import katranLogo from './logos/katran.svg';
 import keplerLogo from './logos/kepler.gif';
 import kubeArmorLogo from './logos/kubearmor.svg';
@@ -148,6 +149,7 @@ const logos = {
   odigosLogo: (
     <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" width={116} height={116} />
   ),
+  ingressNodeFirewallLogo,
 };
 
 const Logo = ({ logo, name }) => {

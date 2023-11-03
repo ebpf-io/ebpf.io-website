@@ -1460,6 +1460,382 @@ const caseStudiesData = {
       ],
     },
   ],
+  'it-it': [
+    {
+      title: 'Google',
+      logo: Google,
+      description:
+        '<strong>Google</strong> usa eBPF per l’auditing di sicurezza, l’elaborazione dei pacchetti di rete, e il monitoraggio delle performance.',
+      links: [
+        {
+          text: 'Video 1',
+          to: 'https://www.youtube.com/watch?v=URm_q9ylxBk',
+        },
+        {
+          text: 'Video 2',
+          to: 'https://www.youtube.com/watch?v=XFJw37Vwzcc&t=657s',
+        },
+        {
+          text: 'Talk 1',
+          to: 'https://legacy.netdevconf.info/0x14/session.html?talk-replacing-HTB-with-EDT-and-BPF',
+        },
+        {
+          text: 'Talk 2',
+          to: 'https://lpc.events/event/11/contributions/954/',
+        },
+      ],
+    },
+    {
+      title: 'Netflix',
+      logo: Netflix,
+      description:
+        '<strong>Netflix</strong> usa eBPF su larga scala per ottenere informazioni sulla rete.',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://netflixtechblog.com/how-netflix-uses-ebpf-flow-logs-at-scale-for-network-insight-e3ea997dca96',
+        },
+      ],
+    },
+    {
+      title: 'Android',
+      logo: Android,
+      description:
+        '<strong>Android</strong> usa eBPF per il monitoraggio dell’uso della rete, dell’energia e la profilazione della memoria.',
+      links: [
+        {
+          text: 'Docs',
+          to: 'https://source.android.com/docs/core/architecture/kernel/bpf',
+        },
+      ],
+    },
+    {
+      title: 'S&P Global',
+      logo: Global,
+      description:
+        '<strong>S&P Global</strong> usa eBPF attraverso Cilium per il networking su molteplici cloud e on-prem.',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://www.youtube.com/watch?v=6CZ_SSTqb4g',
+        },
+      ],
+    },
+    {
+      title: 'Shopify',
+      logo: Shopify,
+      description:
+        '<strong>Shopify</strong> usa eBPF attraverso Falco per il rilevamento delle intrusioni.',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://www.youtube.com/watch?v=6pVci31Mb6Q',
+        },
+      ],
+    },
+    {
+      title: 'Cloudflare',
+      logo: Cloudflare,
+      description:
+        '<strong>Cloudflare</strong> usa eBPF per la sicurezza di rete, monitoraggio delle prestazioni e l’osservabilità della rete.',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://blog.cloudflare.com/tag/ebpf/',
+        },
+        {
+          text: 'Talk',
+          to: 'https://legacy.netdevconf.info/0x13/session.html?talk-XDP-based-DDoS-mitigation',
+        },
+      ],
+    },
+    {
+      title: 'Ikea',
+      logo: Ikea,
+      description:
+        '<strong>Ikea</strong> usa eBPF attraverso Cilium per il networking e il bilanciamento del carico nel proprio cloud privato.',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://www.youtube.com/watch?v=sg-F_R-ZVNc',
+        },
+      ],
+    },
+    {
+      title: 'Apple',
+      logo: Apple,
+      description:
+        '<strong>Apple</strong> usa eBPF attraverso Falco per monitorare la sicurezza del kernel.',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://www.youtube.com/watch?v=ZBlJSr6XkN8',
+        },
+      ],
+    },
+    {
+      title: 'Meta',
+      logo: Meta,
+      description:
+        '<strong>Meta</strong> usa eBPF per elaborare e bilanciare il carico di ogni pacchetto di rete che arriva nei loro data center',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://www.youtube.com/watch?v=ZYBXZFKPS28',
+        },
+        {
+          text: 'Blog 1',
+          to: 'https://engineering.fb.com/2018/05/22/open-source/open-sourcing-katran-a-scalable-network-load-balancer/',
+        },
+        {
+          text: 'Blog 2',
+          to: 'https://engineering.fb.com/2018/10/30/open-source/linux/',
+        },
+        {
+          text: 'Talk 1',
+          to: 'https://lpc.events/event/16/contributions/1363/',
+        },
+        {
+          text: 'Talk 2',
+          to: 'https://lpc.events/event/11/contributions/950/',
+        },
+      ],
+    },
+    {
+      title: 'Datadog',
+      logo: Datadog,
+      description:
+        '<strong>Datadog</strong> usa eBPF per la rete e la sicurezza del proprio prodotto SaaS',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://datadogon.datadoghq.com/episodes/datadog-on-ebpf/',
+        },
+      ],
+    },
+    {
+      title: 'Alibaba',
+      logo: Alibaba,
+      description:
+        '<strong>Alibaba</strong> usa eBPF attraverso Cilium per fornire la rete nel proprio cloud',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.alibabacloud.com/blog/how-does-alibaba-cloud-build-high-performance-cloud-native-pod-networks-in-production-environments_596590',
+        },
+      ],
+    },
+    {
+      title: 'Seznam',
+      logo: Seznam,
+      description: '<strong>Seznam</strong> usa eBPF per il bilanciamento del carico',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://cilium.io/blog/2022/04/12/cilium-standalone-L4LB-XDP/',
+        },
+      ],
+    },
+    {
+      title: 'Trip.com',
+      logo: Trip,
+      description: '<strong>Trip.com</strong> usa eBPF per il bilanciamento del carico',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://cilium.io/blog/2020/02/05/how-trip-com-uses-cilium/',
+        },
+      ],
+    },
+    {
+      title: 'Bell',
+      logo: Bell,
+      description: '<strong>Bell</strong> Canada usa eBPF per modernizzare la rete telco con SRv6',
+      links: [
+        {
+          text: 'Video 1',
+          to: 'https://www.youtube.com/watch?v=fNtG0iHYne4',
+        },
+        {
+          text: 'Video 2',
+          to: 'https://www.youtube.com/watch?v=vJaOKGWiyvU',
+        },
+      ],
+    },
+    {
+      title: 'Wildlife Studios',
+      logo: Wildlife,
+      description:
+        '<strong>Wildlife Studios</strong> usa eBPF attraverso Cilium per il high performance game networking',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://cilium.io/blog/2020/09/03/wildlife-studios-multi-cluster-gaming-platform',
+        },
+      ],
+    },
+    {
+      title: 'Capital One',
+      logo: CapitalOne,
+      description:
+        '<strong>Capital One</strong> usa eBPF per proteggere la propria infrastruttura cloud',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://www.youtube.com/watch?v=hwOpCKBaJ-w&ab_channel=eBPFSummit',
+        },
+      ],
+    },
+    {
+      title: 'Sky',
+      logo: Sky,
+      description: '<strong>Sky</strong> usa eBPF tramite Cilium per la rete del cloud',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://www.youtube.com/watch?v=u-4naOMfs_w',
+        },
+      ],
+    },
+
+    {
+      title: 'Walmart',
+      logo: Walmart,
+      description:
+        '<strong>Walmart</strong> usa eBPF per il bilanciamento del carico dell’edge cloud',
+      links: [
+        {
+          text: 'Video 1',
+          to: 'https://youtu.be/Fu4L8ewcO70',
+        },
+        {
+          text: 'Video 2',
+          to: 'https://youtu.be/thmAcyix8FM',
+        },
+      ],
+    },
+    {
+      title: 'Palantir',
+      logo: Palantir,
+      description: '<strong>Palantir</strong> usa eBPF per il debug dei problemi di rete',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://youtu.be/0RDp1IPxbg0',
+        },
+      ],
+    },
+    {
+      title: 'Cruise',
+      logo: Cruise,
+      description: '<strong>Cruise</strong> usa eBPF per monitorare le prestazioni della GPU',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://youtu.be/7bdy2AkRjqE',
+        },
+      ],
+    },
+    {
+      title: 'Digital Ocean',
+      logo: DigitalOcean,
+      description:
+        '<strong>Digital Ocean</strong> usa eBPF per monitorare le prestazioni della GPU',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://youtu.be/gcHxfhDT-I4',
+        },
+      ],
+    },
+    {
+      title: 'Yahoo',
+      logo: Yahoo,
+      description:
+        '<strong>Yahoo</strong> usa eBPF per il bilanciamento del carico e l’analisi delle prestazioni',
+      links: [
+        {
+          text: 'Video 1',
+          to: 'https://youtu.be/-C86fBMcp5Q',
+        },
+        {
+          text: 'Video 2',
+          to: 'https://www.usenix.org/conference/lisa21/presentation/jones-zachary',
+        },
+      ],
+    },
+    {
+      title: 'Bytedance',
+      logo: Bytedance,
+      description: '<strong>Bytedance</strong> usa eBPF per il tracciamento del sistema',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://inf.news/en/tech/3313635d67f796ae38e7ef64061bc7c4.html',
+        },
+      ],
+    },
+    {
+      title: 'F5',
+      logo: F5,
+      description: '<strong>F5</strong> integra BIG-IP con la funzione VTEP di Cilium',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://youtu.be/EfmdjrQLFFg',
+        },
+        {
+          text: 'Guide',
+          to: 'https://github.com/f5devcentral/f5-ci-docs/blob/master/docs/cilium/cilium-bigip-info.rst',
+        },
+      ],
+    },
+    {
+      title: 'LinkedIn',
+      logo: LinkedIn,
+      description: '<strong>LinkedIn</strong> usa eBPF per l’osservabilità dell’infrastruttura',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://engineering.linkedin.com/blog/2022/skyfall--ebpf-agent-for-infrastructure-observability',
+        },
+      ],
+    },
+    {
+      title: 'The New York Times',
+      logo: NYT,
+      description: '<strong>The New York Times</strong> usa eBPF per la rete.',
+      links: [
+        {
+          text: 'Video',
+          to: 'https://www.youtube.com/watch?v=qmrHONqsV2M&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D',
+        },
+      ],
+    },
+    {
+      title: 'SentinelOne',
+      logo: SentinelOne,
+      description:
+        '<strong>SentinelOne</strong> usa eBPF per rilevare e rispondere in tempo reale a minacce runtime come ransomware e zero-day exploits.',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.sentinelone.com/blog/the-advantages-of-ebpf-for-cwpp-applications/',
+        },
+      ],
+    },
+    {
+      title: 'Akita',
+      logo: Akita,
+      description: '<strong>Akita</strong> usa eBPF su larga scala per l’osservabilità delle API.',
+      links: [
+        {
+          text: 'Docs',
+          to: 'https://docs.akita.software/docs/how-akita-works#what-makes-akita-different',
+        },
+      ],
+    },
+  ],
 };
 
 export default caseStudiesData;

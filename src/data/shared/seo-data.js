@@ -15,6 +15,11 @@ export default {
       description:
         'O eBPF é uma tecnologia revolucionária que pode executar programas isolados no kernel do Linux sem alterar o código-fonte do kernel ou carregar um módulo do kernel.',
     },
+    'it-it': {
+      title: 'eBPF - Introduzione, Tutorial & Risorse dalla Community',
+      description:
+        'eBPF è una tecnologia rivoluzionaria in grado di eseguire programmi in una sandbox all’interno del kernel di Linux senza modificare il codice sorgente del kernel o caricare un modulo del kernel.',
+    },
   },
   contribute: {
     en: {
@@ -35,6 +40,12 @@ export default {
         'Quer aprender como contribuir com o eBPF? Saiba como começar a contribuir com projetos do eBPF.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
+    'it-it': {
+      title: 'Come contribuire a eBPF',
+      description:
+        'Vuoi sapere come contribuire a eBPF? Impara come iniziare a contribuire ai progetti eBPF.',
+      keywords: 'ebpf, bpf, contribuir, começar, comunidade',
+    },
   },
   caseStudies: {
     en: {
@@ -50,6 +61,11 @@ export default {
     'pt-br': {
       title: 'Estudos de Caso do eBPF',
       description: 'Aprenda como o eBPF é usado em diferentes projetos.',
+      keywords: 'ebpf, bpf, contribuir, começar, comunidade',
+    },
+    'it-it': {
+      title: 'Casi di studio eBPF',
+      description: 'Apprendi come eBPF viene impiegato in svariati progetti.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
   },
@@ -69,6 +85,11 @@ export default {
       description: 'Um diretório de aplicações de open source baseadas em eBPF',
       keywords: 'ebpf, bpf, landscape, diretório, código aberto, open source',
     },
+    'it-it': {
+      title: 'Panorama delle applicazioni eBPF',
+      description: 'Una directory di applicazioni open source basate su eBPF',
+      keywords: 'ebpf, bpf, landscape, diretório, código aberto, open source',
+    },
   },
   infrastructure: {
     en: {
@@ -84,6 +105,11 @@ export default {
     'pt-br': {
       title: 'Landscape de Infraestrutura Principal do eBPF',
       description: 'Um diretório de infraestrutura principal baseada em eBPF',
+      keywords: 'ebpf, bpf, paisagem, diretório, código aberto',
+    },
+    'it-it': {
+      title: 'Panorama sulla infrastruttura eBPF di base',
+      description: 'Una directory di infrastrutture eBPF di base',
       keywords: 'ebpf, bpf, paisagem, diretório, código aberto',
     },
   },

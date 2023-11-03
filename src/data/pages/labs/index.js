@@ -31,6 +31,16 @@ const data = {
       buttonTitle: 'Assine',
     },
   },
+  'it-it': {
+    title: 'Esplora eBPF con laboratori interattivi',
+    subscriptionForm: {
+      title: 'Sottoscrivi',
+      afterTitle: 'alla pubblicazione quindicinale eCHO News',
+      description: 'Tieniti aggiornato sulle ultime notizie e informazioni inerenti eBPF e Cilium',
+      placeholder: 'Indirizzo email...',
+      buttonTitle: 'Sottoscrivi',
+    },
+  },
 };
 
 export default data;

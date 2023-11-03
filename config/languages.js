@@ -15,6 +15,12 @@ module.exports = {
       shortName: 'Por',
       code: 'pt-br',
     },
+    'it-it': {
+      name: 'Italiano',
+      shortName: 'Ita',
+      code: 'it-it',
+    },
+
     // 'zh-cn': {
     //   name: '简体中文',
     //   code: 'zh-cn',

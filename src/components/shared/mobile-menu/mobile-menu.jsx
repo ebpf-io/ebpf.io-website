@@ -45,7 +45,7 @@ const MobileMenu = ({ isOpen, items }) => {
   return (
     <LazyMotion features={domAnimation}>
       <m.nav
-        className="safe-paddings fixed inset-x-0 bottom-0 top-[124px] hidden h-[calc(100%-124px)] w-full rounded-md bg-white md:block xs:top-[154px] xs:h-[calc(100%-154px)]"
+        className="safe-paddings absolute inset-x-0 bottom-0 top-16 hidden h-full w-full rounded-md bg-white md:block"
         initial="from"
         animate={controls}
         variants={variants}
