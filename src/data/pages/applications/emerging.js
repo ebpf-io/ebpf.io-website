@@ -393,6 +393,16 @@ const emergingApplications = [
     facilitating easy post-analysis and compatibility with various network analysis tools.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/netobserv/netobserv-ebpf-agent' }],
   },
+  {
+    logoUrl: 'https://github.com/openshift/ingress-node-firewall',
+    name: 'ingress-node-firewall',
+    logoName: 'ingressNodeFirewallLogo',
+    title: 'Statless Ingress Node Firewall',
+    description: `The Ingress node firewall is orchestrated by a Kubernetes operator designed to provision stateless
+    firewall rules at the node level. The stateless Ingress node firewall is achieved through the utilization of an eBPF
+     XDP kernel plugin.`,
+    urls: [{ label: 'GitHub', url: 'https://github.com/openshift/ingress-node-firewall' }],
+  },
 ];
 
 export default emergingApplications;

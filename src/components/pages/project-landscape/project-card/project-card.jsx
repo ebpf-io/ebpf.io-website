@@ -39,6 +39,7 @@ import sshlogLogo from './logos/sshlog.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
 import netobservLogo from './logos/netobserv.svg';
+import ingressNodeFirewallLogo from './logos/infw.jpg';
 
 const logos = {
   bccLogo,
@@ -146,6 +147,7 @@ const logos = {
   odigosLogo: (
     <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" width={116} height={116} />
   ),
+  ingressNodeFirewallLogo,
 };
 
 const Logo = ({ logo, name }) => {
