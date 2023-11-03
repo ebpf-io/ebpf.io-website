@@ -3,6 +3,7 @@ const data = {
     en: '/contribute/',
     'fr-fr': '/fr-fr/contribute/',
     'pt-br': '/pt-br/contribute/',
+    'it-it': '/it-it/contribute/',
   },
   en: {
     hero: {
@@ -256,6 +257,90 @@ const data = {
       ],
     },
   },
+  'it-it': {
+    hero: {
+      title: 'Come contribuire a eBPF',
+      description:
+        'eBPF è costituito da molte community tra cui il runtime eBPF nel kernel Linux, vari SDK e librerie di sviluppo, una serie di progetti di grandi dimensioni che utilizzano eBPF e un’ampia serie di progetti e strumenti più piccoli. Esistono quindi molti modi per contribuire alla comunità eBPF ed essere coinvolti. Il seguente elenco di idee può servire come punto di partenza su come puoi essere coinvolto e contribuire alla comunità.',
+      card: {
+        title: 'Contribuisci al runtime eBPF nel kernel Linux',
+        description:
+          'La community del kernel Linux mantiene alberature Git separate per il sottosistema eBPF per gestire tutti i contributi degli sviluppatori. Queste alberature sono mantenute da:',
+        secondDescription:
+          'Lavorare sul runtime eBPF può essere incredibilmente gratificante poiché crea le basi per la scrittura di software che può essere eseguito su milioni di sistemi e dispositivi. Il lavoro include un’ampia gamma di argomenti, dall’aggiunta del supporto a hook aggiuntivi, l’aggiunta di nuovi tipi di programmi, miglioramenti al verificatore eBPF, l’aggiunta del supporto JIT per architetture CPU aggiuntive, l’estensione del set di helper BPF, l’aggiunta di nuovi casi di test all’infrastruttura di test di BPF o miglioramenti a bpftool e libbpf.',
+        authors: [
+          {
+            name: 'Alexei Starovoitov',
+            company: 'Facebook',
+          },
+          {
+            name: 'Daniel Borkmann',
+            company: 'Cilium/Isovalent',
+          },
+        ],
+        links: [
+          {
+            text: 'Alberature Git',
+            to: 'https://git.kernel.org/?q=BPF+Group',
+          },
+          {
+            text: 'Linux kernel eBPF runtime',
+            to: '/it-it/infrastructure/#linux-kernel',
+          },
+        ],
+      },
+    },
+    howToContribute: {
+      items: [
+        {
+          icon: 'file',
+          title: 'Contribuisci a un progetto eBPF',
+          description:
+            '<p>La lista dei progetti basati su eBPF è lunga e in crescita costante. Sarà semplice individuare un progetto che susciti interesse. Dai un’occhiata per avere una panoramica dei progetti basati su eBPF.</p><p>Molti dei progetti basati su eBPF elencati mantengono un elenco di attività etichettate come "good-first-issue" che hanno lo scopo di non richiedere una conoscenza approfondita specifica del progetto e di fornire una grande opportunità per cominciare rapidamente a metterci le mani.</p>',
+          links: [
+            {
+              text: 'Panorama eBPF',
+              to: '/it-it/applications',
+            },
+          ],
+        },
+        {
+          icon: 'gear',
+          title: 'Contribuisci alla toolchain di sviluppo eBPF',
+          description:
+            '<p>Nonostante il kernel di Linux fornisca librerie e API minimali per usare eBPF direttamente, la maggioranza dei progetti sfrutta una toolchain di sviluppo eBPF per semplificare l’uso di eBPF e condividere codice comune con altri progetti.</p><p>Consulta la toolchain di sviluppo eBPF per una lista di progetti che viene frequentemente aggiornata in questo spazio. Troverai informazioni su come partecipare direttamente sul sito web di ciascun progetto.</p>',
+          links: [
+            {
+              text: 'Toolchain di sviluppo eBPF',
+              to: '/it-it/what-is-ebpf/#toolchain-di-sviluppo',
+            },
+          ],
+        },
+        {
+          icon: 'pen',
+          title: 'Contribuire a ebpf.io',
+          description:
+            '<p>Ritieni di aver talento per la scrittura? Sai creare diagrammi? Il contenuto del sito ebpf.io è concesso in licenza con una licenza internazionale Creative Commons Attribution 4.0. Se vuoi essere coinvolto visita il repository GitHub. Assicurati di unirti anche al canale Slack del sito web #ebpf per entrare in contatto con il team che lavora sulla documentazione. Condividi ciò che hai imparato migliorando la documentazione o scrivendo tutorial aggiuntivi.</p>',
+          links: [
+            {
+              text: 'Licenza',
+              to: 'https://creativecommons.org/licenses/by/4.0/',
+              target: '_blank',
+            },
+            {
+              text: 'Repository GitHub',
+              to: 'https://github.com/ebpf-io/ebpf.io-website',
+              target: '_blank',
+            },
+            {
+              text: 'Slack',
+              to: 'https://ebpf.io/slack',
+            },
+          ],
+        },
+      ],
+    },
+  },  
 };
 
 export default data;

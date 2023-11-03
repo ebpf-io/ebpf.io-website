@@ -5,6 +5,7 @@ const data = {
     en: '/case-studies/',
     'fr-fr': '/fr-fr/case-studies/',
     'pt-br': '/pt-br/case-studies/',
+    'it-it': '/it-it/case-studies/',
   },
   en: {
     hero: {
@@ -24,6 +25,12 @@ const data = {
       items: caseStudiesData['pt-br'],
     },
   },
+  'it-it': {
+    hero: {
+      title: 'Casi di studio eBPF',
+      items: caseStudiesData['it-it'],
+    },
+  },  
 };
 
 export default data;

@@ -88,6 +88,34 @@ const data = {
       </span>
     ),
   },
+  'it-it': {
+    copyright: 'Autori di eBPF.io',
+    maintain: {
+      title: 'Mantenuto dalla community eBPF.',
+      beforeLink: 'Hai notato un errore?',
+      linkTitle: 'Invia una segnalazione',
+    },
+    content: (
+      <span>
+        Il contenuto del sito{' '}
+        <Link className="!inline font-medium" theme="white" to="/it-it/">
+          ebpf.io
+        </Link>{' '}
+        è sotto{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          licenza internazionale Creative Commons Attribution 4.0
+        </Link>
+        .
+      </span>
+    ),
+  },
 };
 
 export default data;
