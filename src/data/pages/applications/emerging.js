@@ -291,10 +291,7 @@ const emergingApplications = [
     description: `Alaz is an open-source Ddosify eBPF agent that can inspect and collect Kubernetes (K8s) service traffic 
     without the need for code instrumentation, sidecars, or service restarts.
     Alaz uses eBPF to create a Service Map that helps identify golden signals and problems like high latencies, 5xx errors, zombie services, slow HTTP requests and SQL queries.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/ddosify/alaz' },
-      { label: 'Website', url: 'https://ddosify.com/' },
-    ],
+    urls: [{ label: 'GitHub', url: 'https://github.com/ddosify/alaz' }],
   },
   {
     logoUrl: 'https://github.com/eunomia-bpf/eunomia-bpf',
