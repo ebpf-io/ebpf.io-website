@@ -22,6 +22,7 @@ import falcoLogo from './logos/falco.svg';
 import gccLogo from './logos/gcc.svg';
 import hbpfLogo from './logos/hbpf.svg';
 import hubbleLogo from './logos/hubble.svg';
+import ingressNodeFirewallLogo from './logos/infw.jpg';
 import katranLogo from './logos/katran.svg';
 import keplerLogo from './logos/kepler.gif';
 import kubeArmorLogo from './logos/kubearmor.svg';
@@ -30,6 +31,7 @@ import l3afLogo from './logos/l3af.svg';
 import linuxLogo from './logos/linux.svg';
 import llvmLogo from './logos/llvm.svg';
 import merbridgeLogo from './logos/merbridge.svg';
+import netobservLogo from './logos/netobserv.svg';
 import parcaLogo from './logos/parca.svg';
 import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
@@ -38,8 +40,6 @@ import rbpfLogo from './logos/rbpf.svg';
 import sshlogLogo from './logos/sshlog.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
-import netobservLogo from './logos/netobserv.svg';
-import ingressNodeFirewallLogo from './logos/infw.jpg';
 
 const logos = {
   bccLogo,
@@ -77,7 +77,7 @@ const logos = {
   corootLogo,
   tetragonLogo: (
     <StaticImage
-      src="./logos/tetragon.png"
+      src="./logos/tetragon.svg"
       alt="Tetragon"
       loading="lazy"
       width={116}

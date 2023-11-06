@@ -100,9 +100,9 @@ const majorApplications = [
     name: 'Calico',
     logoName: 'calicoLogo',
     title: 'Pluggable eBPF-based networking and security for containers and Kubernetes',
-    description: `Calico Open Source is designed to simplify, scale, and secure container 
-    and Kubernetes networks. Calico's eBPF dataplane utilizes the power, speed, and efficiency 
-    of eBPF programs to deliver networking, load-balancing, and in-kernel security 
+    description: `Calico Open Source is designed to simplify, scale, and secure container
+    and Kubernetes networks. Calico's eBPF dataplane utilizes the power, speed, and efficiency
+    of eBPF programs to deliver networking, load-balancing, and in-kernel security
     enforcement for your environment.`,
     urls: [
       { label: 'GitHub', url: 'https://github.com/projectcalico/calico' },
@@ -122,7 +122,10 @@ const majorApplications = [
     collector. The embedded runtime enforcement layer is capable of
     performing access control on kernel functions, system calls and at
     other enforcement levels.`,
-    urls: [{ label: 'GitHub', url: 'https://github.com/cilium/tetragon' }],
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/cilium/tetragon' },
+      { label: 'Website', url: 'https://tetragon.io/' },
+    ],
   },
 ];
 
