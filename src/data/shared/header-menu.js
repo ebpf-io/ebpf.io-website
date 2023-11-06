@@ -58,6 +58,15 @@ const headerMenu = [
           'it-it': '/it-it/labs',
         },
       },
+      {
+        title: 'Children\'s Guide to eBPF',
+        to: {
+          en: '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
+          'fr-fr': '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
+          'pt-br': '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
+          'it-it': '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
+        },
+      },
     ],
   },
   {
