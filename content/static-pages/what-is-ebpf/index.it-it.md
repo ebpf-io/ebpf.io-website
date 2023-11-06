@@ -175,17 +175,17 @@ Lo scopo primario del kernel di Linux è astrarre dall’hardware o dall’hardw
 <CardItem title="Supporto Nativo">
 
 - Supporto Nativo
-    1. Modifica il codice sorgente del kernel e convinci la community del kernel di Linux che il cambiamento è necessario.
-    2. Attendi diversi anni che la nuova versione del kernel divenga una commodity.
+  1. Modifica il codice sorgente del kernel e convinci la community del kernel di Linux che il cambiamento è necessario.
+  2. Attendi diversi anni che la nuova versione del kernel divenga una commodity.
 
 </CardItem>
 
 <CardItem title="Modulo del Kernel">
 
 - Modulo del Kernel
-    1. Scrivi un modulo del Kernel
-    2. Predisponiti a doverlo rivedere frequentemente, dato che ogni nuova versione del kernel può comprometterne il funzionamento.
-    3. Corri il rischio di compromettere il kernel a causa dell’assenza di limiti operativi di sicurezza.
+  1. Scrivi un modulo del Kernel
+  2. Predisponiti a doverlo rivedere frequentemente, dato che ogni nuova versione del kernel può comprometterne il funzionamento.
+  3. Corri il rischio di compromettere il kernel a causa dell’assenza di limiti operativi di sicurezza.
 
 </CardItem>
 

@@ -6,6 +6,7 @@ import AnchorHeading from 'components/shared/anchor-heading';
 import Link from 'components/shared/link/link';
 import slugifyCategory from 'utils/slugify-category';
 
+import alazLogo from './logos/alaz.svg';
 import bccLogo from './logos/bcc.svg';
 import blixtLogo from './logos/blixt.png';
 import bpfdLogo from './logos/bpfd.svg';
@@ -75,6 +76,7 @@ const logos = {
   rbpfLogo,
   bpftoolLogo,
   corootLogo,
+  alazLogo,
   tetragonLogo: (
     <StaticImage
       src="./logos/tetragon.svg"
