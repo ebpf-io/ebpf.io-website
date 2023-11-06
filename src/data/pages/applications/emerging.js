@@ -288,9 +288,9 @@ const emergingApplications = [
     name: 'Alaz',
     logoName: 'alazLogo',
     title: 'Effortless, Low-Overhead, eBPF-based Kubernetes Monitoring',
-    description: `Alaz is an open-source Ddosify eBPF agent that can inspect and collect Kubernetes (K8s) service traffic 
+    description: `Alaz is an open source Ddosify eBPF agent that can inspect and collect Kubernetes service traffic 
     without the need for code instrumentation, sidecars, or service restarts.
-    Alaz uses eBPF to create a Service Map that helps identify golden signals and problems like high latencies, 5xx errors, zombie services, slow HTTP requests and SQL queries.`,
+    Alaz uses eBPF to create a Service Map that helps identify golden signals and problems like high latencies, 5xx errors, zombie services, slow HTTP requests, and SQL queries.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/ddosify/alaz' }],
   },
   {
