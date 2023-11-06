@@ -570,7 +570,7 @@ const caseStudiesData = {
       title: 'Core Tech',
       logo: CoreTech,
       description:
-        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDos attacks ',
+        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDoS attacks ',
       links: [
         {
           text: 'Blog',
@@ -1106,7 +1106,7 @@ const caseStudiesData = {
       title: 'Core Tech',
       logo: CoreTech,
       description:
-        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDos attacks ',
+        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDoS attacks ',
       links: [
         {
           text: 'Blog',
@@ -1488,7 +1488,7 @@ const caseStudiesData = {
       title: 'Core Tech',
       logo: CoreTech,
       description:
-        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDos attacks ',
+        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDoS attacks ',
       links: [
         {
           text: 'Blog',
@@ -1876,7 +1876,7 @@ const caseStudiesData = {
       title: 'Core Tech',
       logo: CoreTech,
       description:
-        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDos attacks ',
+        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDoS attacks ',
       links: [
         {
           text: 'Blog',
