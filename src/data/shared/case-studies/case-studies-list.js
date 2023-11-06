@@ -8,6 +8,7 @@ import Bell from './logos/bell.inline.svg';
 import Bytedance from './logos/byte-dance.inline.svg';
 import CapitalOne from './logos/capital-one.inline.svg';
 import Cloudflare from './logos/cloudflare.inline.svg';
+import CoreTech from './logos/coretech.inline.svg';
 import Cruise from './logos/cruise.inline.svg';
 import Cycode from './logos/cycode.inline.svg';
 import Datadog from './logos/datadog.inline.svg';
@@ -565,6 +566,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Core Tech',
+      logo: CoreTech,
+      description:
+        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDos attacks ',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.linkedin.com/pulse/coretechnologys-how-drop-1-tbps-ddos-traffic-coretechnolgys-rayif/',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
@@ -1089,6 +1102,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Core Tech',
+      logo: CoreTech,
+      description:
+        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDos attacks ',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.linkedin.com/pulse/coretechnologys-how-drop-1-tbps-ddos-traffic-coretechnolgys-rayif/',
+        },
+      ],
+    },
   ],
   'pt-br': [
     {
@@ -1456,6 +1481,18 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.akita.software/docs/how-akita-works#what-makes-akita-different',
+        },
+      ],
+    },
+    {
+      title: 'Core Tech',
+      logo: CoreTech,
+      description:
+        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDos attacks ',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.linkedin.com/pulse/coretechnologys-how-drop-1-tbps-ddos-traffic-coretechnolgys-rayif/',
         },
       ],
     },
@@ -1832,6 +1869,18 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.akita.software/docs/how-akita-works#what-makes-akita-different',
+        },
+      ],
+    },
+    {
+      title: 'Core Tech',
+      logo: CoreTech,
+      description:
+        '<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDos attacks ',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.linkedin.com/pulse/coretechnologys-how-drop-1-tbps-ddos-traffic-coretechnolgys-rayif/',
         },
       ],
     },
