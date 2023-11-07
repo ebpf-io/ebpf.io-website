@@ -84,11 +84,11 @@ const headerMenu = [
       {
         title: {
           en: "Children's Guide to eBPF",
-          'fr-fr': "Children's Guide to eBPF",
-          'pt-br': "Children's Guide to eBPF",
-          'it-it': "Children's Guide to eBPF",
+          'fr-fr': 'Livre pour enfants sur eBPF (en anglais)',
+          'pt-br': 'Livro infantil sobre eBPF (em inglês)',
+          'it-it': 'Libro per bambini su eBPF (in inglese)',
           'zh-cn': 'eBPF 儿童指南',
-          sw: "Children's Guide to eBPF",
+          sw: 'Kitabu cha Watoto kuhusu eBPF (kwa Kiingereza)',
         },
         to: '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
       },
