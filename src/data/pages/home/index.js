@@ -1,6 +1,8 @@
 import videoItems from 'data/pages/home/video-data';
 import caseStudiesData from 'data/shared/case-studies/case-studies-list';
 
+// TODO: set actual videoId to the film
+
 const data = {
   en: {
     hero: {
@@ -48,6 +50,14 @@ const data = {
             'Modify or add functionality and use cases to the kernel without having to restart or patch it.',
         },
       ],
+    },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: '5pvDi6y6LrM',
+      description:
+        'The film is inspired by EBPF research in next-gen networking tech, observability, and the safety of operating cores. The movie is produced with the support of Isovalent, Intel.',
+      buttonText: 'Watch more',
     },
     testimonials: {
       items: [
@@ -183,6 +193,14 @@ const data = {
         },
       ],
     },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: '5pvDi6y6LrM',
+      description:
+        'The film is inspired by EBPF research in next-gen networking tech, observability, and the safety of operating cores. The movie is produced with the support of Isovalent, Intel.',
+      buttonText: 'Watch more',
+    },
     testimonials: {
       items: [
         {
@@ -317,6 +335,14 @@ const data = {
         },
       ],
     },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: '5pvDi6y6LrM',
+      description:
+        'The film is inspired by EBPF research in next-gen networking tech, observability, and the safety of operating cores. The movie is produced with the support of Isovalent, Intel.',
+      buttonText: 'Watch more',
+    },
     testimonials: {
       items: [
         {
@@ -450,6 +476,14 @@ const data = {
             'Modificare o aggiungere una funzionalità e casi d’uso al kernel senza doverlo riavviare o applicare una patch.',
         },
       ],
+    },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: '5pvDi6y6LrM',
+      description:
+        'The film is inspired by EBPF research in next-gen networking tech, observability, and the safety of operating cores. The movie is produced with the support of Isovalent, Intel.',
+      buttonText: 'Watch more',
     },
     testimonials: {
       items: [
