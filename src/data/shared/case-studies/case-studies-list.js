@@ -16,6 +16,7 @@ import DigitalOcean from './logos/digital-ocean.inline.svg';
 import DoorDash from './logos/doordash.inline.svg';
 import Exein from './logos/exein.inline.svg';
 import F5 from './logos/f5.inline.svg';
+import FlowSecurity from './logos/flowsecurity.inline.svg';
 import Global from './logos/global.inline.svg';
 import Google from './logos/google.inline.svg';
 import Ikea from './logos/ikea.inline.svg';
@@ -578,6 +579,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'FlowSecurity',
+      logo: FlowSecurity,
+      description:
+        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response.',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
@@ -1114,6 +1127,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'FlowSecurity',
+      logo: FlowSecurity,
+      description:
+        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response.',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
+        },
+      ],
+    },
   ],
   'pt-br': [
     {
@@ -1493,6 +1518,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.linkedin.com/pulse/coretechnologys-how-drop-1-tbps-ddos-traffic-coretechnolgys-rayif/',
+        },
+      ],
+    },
+    {
+      title: 'FlowSecurity',
+      logo: FlowSecurity,
+      description:
+        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response. ',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
         },
       ],
     },
@@ -1881,6 +1918,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.linkedin.com/pulse/coretechnologys-how-drop-1-tbps-ddos-traffic-coretechnolgys-rayif/',
+        },
+      ],
+    },
+    {
+      title: 'FlowSecurity',
+      logo: FlowSecurity,
+      description:
+        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response. ',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
         },
       ],
     },
