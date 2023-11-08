@@ -54,10 +54,11 @@ const data = {
     film: {
       label: 'premiere',
       title: 'Unlocking the Kernel',
-      videoId: '5pvDi6y6LrM',
+      videoId: 'LiB2udSo3AA',
       description:
-        'The film is inspired by EBPF research in next-gen networking tech, observability, and the safety of operating cores. The movie is produced with the support of Isovalent, Intel.',
-      buttonText: 'Watch more',
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
     },
     testimonials: {
       items: [
@@ -196,10 +197,11 @@ const data = {
     film: {
       label: 'premiere',
       title: 'Unlocking the Kernel',
-      videoId: '5pvDi6y6LrM',
+      videoId: 'LiB2udSo3AA',
       description:
-        'The film is inspired by EBPF research in next-gen networking tech, observability, and the safety of operating cores. The movie is produced with the support of Isovalent, Intel.',
-      buttonText: 'Watch more',
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
     },
     testimonials: {
       items: [
@@ -338,10 +340,11 @@ const data = {
     film: {
       label: 'premiere',
       title: 'Unlocking the Kernel',
-      videoId: '5pvDi6y6LrM',
+      videoId: 'LiB2udSo3AA',
       description:
-        'The film is inspired by EBPF research in next-gen networking tech, observability, and the safety of operating cores. The movie is produced with the support of Isovalent, Intel.',
-      buttonText: 'Watch more',
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
     },
     testimonials: {
       items: [
@@ -480,10 +483,11 @@ const data = {
     film: {
       label: 'premiere',
       title: 'Unlocking the Kernel',
-      videoId: '5pvDi6y6LrM',
+      videoId: 'LiB2udSo3AA',
       description:
-        'The film is inspired by EBPF research in next-gen networking tech, observability, and the safety of operating cores. The movie is produced with the support of Isovalent, Intel.',
-      buttonText: 'Watch more',
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
     },
     testimonials: {
       items: [

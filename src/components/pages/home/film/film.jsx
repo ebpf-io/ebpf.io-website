@@ -6,7 +6,7 @@ import Button from 'components/shared/button';
 import Label from 'components/shared/label';
 import VideoPlayer from 'components/shared/video-player';
 
-const Film = ({ label, title, description, videoId, buttonText }) => {
+const Film = ({ label, title, description, videoId, buttonText, buttonUrl }) => {
   const [wrapperRef, isWrapperInView] = useInView({ rootMargin: '500px' });
   const [isPlaing, setIsPlaing] = useState(false);
 
@@ -36,12 +36,11 @@ const Film = ({ label, title, description, videoId, buttonText }) => {
             {description}
           </p>
           <Button
-            className="mt-10 w-[175px] tracking-wide lg:mt-8 md:mt-6"
-            to={`https://www.youtube.com/watch?v=${videoId}`}
+            className="mt-10 px-9 tracking-wide lg:mt-8 md:mt-6"
+            to={buttonUrl}
             theme="primary-yellow-filled"
             size="md"
             target="_blank"
-            rel="noopener noreferrer"
           >
             {buttonText}
           </Button>
@@ -57,6 +56,7 @@ Film.propTypes = {
   description: PropTypes.string.isRequired,
   videoId: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
+  buttonUrl: PropTypes.string.isRequired,
 };
 
 export default Film;
