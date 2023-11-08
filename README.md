@@ -2,7 +2,12 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-[![Logo](src/images/logo-black.svg)](https://ebpf.io)
+<a href="https://ebpf.io">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="src/images/logo-white.svg">
+    <img src="src/images/logo-black.svg" alt="Logo">
+  </picture>
+</a>
 
 This is the source code for the website [ebpf.io](https://ebpf.io/). For more information, see the [contribute](https://ebpf.io/contribute) page.
 
