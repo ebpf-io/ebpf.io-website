@@ -16,7 +16,6 @@ import DigitalOcean from './logos/digital-ocean.inline.svg';
 import DoorDash from './logos/doordash.inline.svg';
 import Exein from './logos/exein.inline.svg';
 import F5 from './logos/f5.inline.svg';
-import FlowSecurity from './logos/flowsecurity.inline.svg';
 import Global from './logos/global.inline.svg';
 import Google from './logos/google.inline.svg';
 import Ikea from './logos/ikea.inline.svg';
@@ -40,6 +39,7 @@ import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
 import Wiz from './logos/wiz.inline.svg';
 import Yahoo from './logos/yahoo.inline.svg';
+import FlowSecurity from './logos/flowsecurity.inline.svg';
 
 const caseStudiesData = {
   en: [
