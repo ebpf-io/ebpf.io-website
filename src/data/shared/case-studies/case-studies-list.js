@@ -583,7 +583,7 @@ const caseStudiesData = {
       title: 'FlowSecurity',
       logo: FlowSecurity,
       description:
-        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response.',
+        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response',
       links: [
         {
           text: 'Blog',
