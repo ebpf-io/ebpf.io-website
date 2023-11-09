@@ -45,7 +45,7 @@ const TopBanner = () => (
       <span className="font-sans text-3xl font-bold leading-none md:text-xl">
         eBPF Documentary
       </span>
-      <Button className="h-9 px-4 pb-1 md:text-sm" theme="black-filled" to="https://www.youtube.com/watch?v=cofiJSswcKg">
+      <Button className="h-9 px-4 pb-1 md:text-sm" theme="black-filled" to="https://www.youtube.com/watch?v=Wb_vD3XZYOA">
         Watch Now
       </Button>
     </div>
