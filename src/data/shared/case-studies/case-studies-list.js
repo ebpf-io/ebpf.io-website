@@ -39,6 +39,7 @@ import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
 import Wiz from './logos/wiz.inline.svg';
 import Yahoo from './logos/yahoo.inline.svg';
+import FlowSecurity from './logos/flowsecurity.inline.svg';
 
 const caseStudiesData = {
   en: [
@@ -578,6 +579,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'FlowSecurity',
+      logo: FlowSecurity,
+      description:
+        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
@@ -1114,6 +1127,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'FlowSecurity',
+      logo: FlowSecurity,
+      description:
+        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
+        },
+      ],
+    },
   ],
   'pt-br': [
     {
@@ -1493,6 +1518,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.linkedin.com/pulse/coretechnologys-how-drop-1-tbps-ddos-traffic-coretechnolgys-rayif/',
+        },
+      ],
+    },
+    {
+      title: 'FlowSecurity',
+      logo: FlowSecurity,
+      description:
+        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
         },
       ],
     },
@@ -1881,6 +1918,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.linkedin.com/pulse/coretechnologys-how-drop-1-tbps-ddos-traffic-coretechnolgys-rayif/',
+        },
+      ],
+    },
+    {
+      title: 'FlowSecurity',
+      logo: FlowSecurity,
+      description:
+        '<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
         },
       ],
     },
