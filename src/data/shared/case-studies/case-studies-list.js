@@ -16,8 +16,10 @@ import DigitalOcean from './logos/digital-ocean.inline.svg';
 import DoorDash from './logos/doordash.inline.svg';
 import Exein from './logos/exein.inline.svg';
 import F5 from './logos/f5.inline.svg';
+import FlowSecurity from './logos/flowsecurity.inline.svg';
 import Global from './logos/global.inline.svg';
 import Google from './logos/google.inline.svg';
+import Helios from './logos/helios.inline.svg';
 import Ikea from './logos/ikea.inline.svg';
 import Kodem from './logos/kodemsec.inline.svg';
 import LineCoporation from './logos/line-corp.inline.svg';
@@ -39,7 +41,6 @@ import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
 import Wiz from './logos/wiz.inline.svg';
 import Yahoo from './logos/yahoo.inline.svg';
-import FlowSecurity from './logos/flowsecurity.inline.svg';
 
 const caseStudiesData = {
   en: [
@@ -591,6 +592,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Helios',
+      logo: Helios,
+      description:
+        '<strong>Helios</strong> uses eBPF in their runtime analysis tool for observability and security',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
@@ -1139,6 +1152,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Helios',
+      logo: Helios,
+      description:
+        '<strong>Helios</strong> uses eBPF in their runtime analysis tool for observability and security',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/',
+        },
+      ],
+    },
   ],
   'pt-br': [
     {
@@ -1530,6 +1555,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
+        },
+      ],
+    },
+    {
+      title: 'Helios',
+      logo: Helios,
+      description:
+        '<strong>Helios</strong> uses eBPF in their runtime analysis tool for observability and security',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/',
         },
       ],
     },
@@ -1930,6 +1967,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.flowsecurity.com/ebpf-data-security-hype/',
+        },
+      ],
+    },
+    {
+      title: 'Helios',
+      logo: Helios,
+      description:
+        '<strong>Helios</strong> uses eBPF in their runtime analysis tool for observability and security',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/',
         },
       ],
     },
