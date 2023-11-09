@@ -24,8 +24,8 @@ The eBPF story is one of collaboration and community. DockerCon 2017 was a pivot
 
 We invite you to learn about the journey of eBPF from its inception to the successful merge into the Linux kernel and witness how it has grown to be deployed everywhere. The future is being written with eBPF, and this documentary is your gateway to understanding how we got here.
 
-You can watch the eBPF documentary [here](https://www.youtube.com/watch?v=cofiJSswcKg)
+You can watch the eBPF documentary [here](https://www.youtube.com/watch?v=Wb_vD3XZYOA)
 
 <iframe width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-src="https://www.youtube.com/embed/cofiJSswcKg?controls=0">
+src="https://www.youtube.com/embed/Wb_vD3XZYOA?controls=0">
 </iframe>
