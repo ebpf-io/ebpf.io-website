@@ -284,6 +284,22 @@ const emergingApplications = [
     ],
   },
   {
+    logoUrl: 'https://github.com/grafana/beyla',
+    name: 'Beyla',
+    logoName: 'beylaLogo',
+    title: 'Zero-code automatic instrumentation with eBPF and OpenTelemetry',
+    description: `Beyla is a vendor agnostic, OpenTelemetry application auto-instrumentation tool, 
+    which lets you easily get started with Application Observability. eBPF is used to automatically inspect 
+    application executables and the OS networking layer, allowing us to capture essential application observability 
+    events for HTTP/S and gRPC services. From these captured eBPF events, we produce OpenTelemetry web transaction 
+    trace spans and Rate-Errors-Duration (RED) metrics. As with most eBPF tools, all data capture and instrumentation 
+    occurs without any modifications to your application code or configuration.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/grafana/beyla' },
+      { label: 'Website', url: 'https://grafana.com/oss/beyla-ebpf/' },
+    ],
+  },
+  {
     logoUrl: 'https://github.com/ddosify/alaz',
     name: 'Alaz',
     logoName: 'alazLogo',
@@ -412,22 +428,6 @@ const emergingApplications = [
     firewall rules at the node level. The stateless Ingress node firewall is achieved through the utilization of an eBPF
      XDP kernel plugin.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/openshift/ingress-node-firewall' }],
-  },
-  {
-    logoUrl: 'https://github.com/grafana/beyla',
-    name: 'Beyla',
-    logoName: 'beylaLogo',
-    title: 'Zero-code automatic instrumentation with eBPF and OpenTelemetry',
-    description: `Beyla is a vendor agnostic, OpenTelemetry application auto-instrumentation tool, 
-    which lets you easily get started with Application Observability. eBPF is used to automatically inspect 
-    application executables and the OS networking layer, allowing us to capture essential application observability 
-    events for HTTP/S and gRPC services. From these captured eBPF events, we produce OpenTelemetry web transaction 
-    trace spans and Rate-Errors-Duration (RED) metrics. As with most eBPF tools, all data capture and instrumentation 
-    occurs without any modifications to your application code or configuration.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/grafana/beyla' },
-      { label: 'Website', url: 'https://grafana.com/oss/beyla-ebpf/' },
-    ],
   },
 ];
 
