@@ -288,7 +288,7 @@ const emergingApplications = [
     name: 'Beyla',
     logoName: 'beylaLogo',
     title: 'Zero-code automatic instrumentation with eBPF and OpenTelemetry',
-    description: `Beyla is a vendor agnostic, OpenTelemetry application auto-instrumentation tool, 
+    description: `Beyla is a vendor agnostic, OpenTelemetry and Prometheus application auto-instrumentation tool, 
     which lets you easily get started with Application Observability. eBPF is used to automatically inspect 
     application executables and the OS networking layer, allowing us to capture essential application observability 
     events for HTTP/S and gRPC services. From these captured eBPF events, we produce OpenTelemetry web transaction 
