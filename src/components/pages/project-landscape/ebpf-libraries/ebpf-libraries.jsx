@@ -106,7 +106,7 @@ const EbpfLibraries = ({ lang }) => {
   const slug = slugifyCategory(title.en);
 
   return (
-    <section className="libraries safe-paddings mt-32 lg:mt-28 md:mt-20" id={slug}>
+    <section className="libraries safe-paddings pt-32 lg:pt-28 md:pt-20" id={slug}>
       <div className="container">
         <div className="rounded-lg bg-secondary-yellow-light p-16 lg:p-12 md:px-8 sm:px-5">
           <header className="text-center">
