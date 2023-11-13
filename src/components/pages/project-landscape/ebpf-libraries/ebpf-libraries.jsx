@@ -23,16 +23,6 @@ const title = {
   'it-it': 'Librerie eBPF',
 };
 
-const subtitle = {
-  en: 'A conformance testing framework for eBPF runtime implementations. It provides a set of tests that can be used to verify that an eBPF implementation is compliant with the eBPF specification.',
-  'fr-fr':
-    'A conformance testing framework for eBPF runtime implementations. It provides a set of tests that can be used to verify that an eBPF implementation is compliant with the eBPF specification.',
-  'pt-br':
-    'A conformance testing framework for eBPF runtime implementations. It provides a set of tests that can be used to verify that an eBPF implementation is compliant with the eBPF specification.',
-  'it-it':
-    'A conformance testing framework for eBPF runtime implementations. It provides a set of tests that can be used to verify that an eBPF implementation is compliant with the eBPF specification.',
-};
-
 const items = [
   {
     name: 'C++',
@@ -109,16 +99,13 @@ const EbpfLibraries = ({ lang }) => {
     <section className="libraries safe-paddings pt-32 lg:pt-28 md:pt-20" id={slug}>
       <div className="container">
         <div className="rounded-lg bg-secondary-yellow-light p-16 lg:p-12 md:px-8 sm:px-5">
-          <header className="text-center">
-            <Heading
-              className="heading-9xl inline-flex font-bold leading-dense tracking-wide"
-              id={slug}
-            >
-              {title[lang]}
-            </Heading>
-            <p className="mx-auto mt-4 max-w-[740px] font-light">{subtitle[lang]}</p>
-          </header>
-          <ul className="mt-8 grid grid-cols-12 gap-7 lg:mt-10 lg:gap-6 md:mt-8">
+          <Heading
+            className="heading-9xl mx-auto inline-block font-bold leading-dense tracking-wide"
+            id={slug}
+          >
+            {title[lang]}
+          </Heading>
+          <ul className="mt-12 grid grid-cols-12 gap-7 lg:mt-10 lg:gap-6 md:mt-8">
             {items.map(({ name, icon, list }, index) => (
               <li
                 className="col-span-4 flex flex-col overflow-hidden rounded bg-white md:col-span-full"
