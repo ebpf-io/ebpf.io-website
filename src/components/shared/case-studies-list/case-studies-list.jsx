@@ -9,7 +9,7 @@ const CaseStudiesList = ({ className, items, linkUrl, linkText }) => (
     <ul className={clsx('grid-gap grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1', className)}>
       {items.map(({ title, logo: Logo, description, links }, index) => (
         <li
-          className="flex h-full flex-col self-stretch rounded-lg border border-gray-90 bg-white p-8 duration-200 hover:drop-shadow-book sm:p-6"
+          className="flex h-full flex-col self-stretch rounded-lg border border-gray-90 bg-white p-8"
           key={index}
         >
           <div className="max-w-full">
@@ -18,7 +18,7 @@ const CaseStudiesList = ({ className, items, linkUrl, linkText }) => (
           </div>
 
           <p
-            className="mb-6 mt-6 text-xl leading-normal lg:mb-5 lg:text-base [&_strong]:font-semibold"
+            className="mb-6 mt-6 text-xl leading-normal lg:mb-5 lg:text-base [&_strong]:font-bold"
             dangerouslySetInnerHTML={{ __html: description }}
           />
           <ul className="mt-auto flex flex-wrap gap-x-4 gap-y-4 border-t border-dashed border-gray-90 pt-7 sm:pt-6">
