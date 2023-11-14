@@ -74,17 +74,16 @@ const items = [
     },
     list: [
       {
-        name: 'libbpf-rs',
-        linkUrl: 'https://github.com/libbpf/libbpf-rs',
-        logo: libbpfLogo,
-        description: `is a safe, idiomatic, and opinionated wrapper API around libbpf written in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin) allows to write 'compile once run everywhere' (CO-RE) eBPF programs.`,
-      },
-      {
         name: 'aya',
         linkUrl: 'https://github.com/aya-rs/aya',
         logo: ayaLogo,
         description:
           'is an eBPF library built with a focus on operability and developer experience. It allows for both eBPF programs and their userspace programs to be written in Rust.',
+      },
+      {
+        name: 'libbpf-rs',
+        linkUrl: 'https://github.com/libbpf/libbpf-rs',
+        description: `is a safe, idiomatic, and opinionated wrapper API around libbpf written in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin) allows to write 'compile once run everywhere' (CO-RE) eBPF programs.`,
       },
     ],
   },
@@ -105,7 +104,7 @@ const EbpfLibraries = ({ lang }) => {
           >
             {title[lang]}
           </Heading>
-          <ul className="mt-12 grid grid-cols-12 gap-7 lg:mt-10 lg:gap-6 md:mt-8">
+          <ul className="mt-10 grid grid-cols-12 gap-7 lg:gap-6 md:mt-8">
             {items.map(({ name, icon, list }, index) => (
               <li
                 className="col-span-4 flex flex-col overflow-hidden rounded bg-white md:col-span-full"
@@ -117,21 +116,16 @@ const EbpfLibraries = ({ lang }) => {
                     {name}
                   </h3>
                 </div>
-                <ul className="flex grow flex-col gap-y-4 rounded-b border-b border-l border-r border-[#F7F3D4] p-7 lg:p-6 md:p-5">
+                <ul className="flex grow flex-col gap-y-6 rounded-b border-b border-l border-r border-[#F7F3D4] p-7 pb-6 lg:p-6 md:p-5">
                   {list.map(({ logo, name, linkUrl, description }, index) => (
                     <li
                       className={clsx(
-                        'with-primary-blue-link',
-                        index + 1 < list.length && 'border-b border-dashed border-gray-80 pb-7'
+                        'flex flex-col gap-y-3.5',
+                        index + 1 < list.length && 'border-b border-dashed border-gray-80 pb-6'
                       )}
                       key={index}
                     >
-                      <Link
-                        className="w-fit after:hidden"
-                        to={linkUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      {logo && (
                         <img
                           src={logo}
                           className="h-14"
@@ -140,9 +134,18 @@ const EbpfLibraries = ({ lang }) => {
                           loading="lazy"
                           alt={name}
                         />
-                      </Link>
-                      <p className="mt-3.5">
-                        <strong>{name}</strong> {description}
+                      )}
+                      <p>
+                        <Link
+                          className="w-fit font-medium after:hidden"
+                          to={linkUrl}
+                          target="_blank"
+                          theme="black"
+                          rel="noopener noreferrer"
+                        >
+                          {name}
+                        </Link>{' '}
+                        {description}
                       </p>
                     </li>
                   ))}
