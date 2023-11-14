@@ -187,7 +187,7 @@ const emergingApplications = [
     ],
   },
   {
-    logoUrl: 'https://github.com/accuknox/KubeArmor',
+    logoUrl: 'https://github.com/kubearmor/KubeArmor',
     name: 'KubeArmor',
     logoName: 'kubeArmorLogo',
     title: 'Container-aware Runtime Security Enforcement System',
@@ -196,7 +196,7 @@ const emergingApplications = [
     networking operation, and resource utilization) of containers at the
     system level, using LSMs and eBPF.`,
     urls: [
-      { label: 'GitHub', url: 'https://github.com/accuknox/KubeArmor' },
+      { label: 'GitHub', url: 'https://github.com/kubearmor/KubeArmor' },
       { label: 'Website', url: 'https://kubearmor.com' },
     ],
   },
