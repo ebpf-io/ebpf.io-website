@@ -18,7 +18,7 @@ const CaseStudiesList = ({ className, items, linkUrl, linkText }) => (
           </div>
 
           <p
-            className="mb-6 mt-6 text-xl leading-normal lg:mb-5 lg:text-base [&_strong]:font-bold"
+            className="mb-8 mt-6 text-lg leading-normal lg:mb-5 lg:text-base [&_strong]:font-bold"
             dangerouslySetInnerHTML={{ __html: description }}
           />
           <ul className="mt-auto flex flex-wrap gap-x-4 gap-y-4 border-t border-dashed border-gray-90 pt-7 sm:pt-6">
