@@ -15,6 +15,7 @@ const title = {
   'fr-fr': 'Bibliothèques eBPF',
   'pt-br': 'Bibliotecas eBPF',
   'it-it': 'Librerie eBPF',
+  'zh-cn': 'eBPF 库',
 };
 
 const items = [

@@ -219,6 +219,59 @@ const data = {
       },
     ],
   },
+  'zh-cn': {
+    title: '常见问题',
+    items: [
+      {
+        question: '这些项目是否属于 eBPF 基金会 ?',
+        answer: `<ul>
+					<li>本页列出了许多使用 eBPF 作为底层核心技术的开源项目。这些项目并不都在 <a href="https://www.ebpf.foundation/">eBPF 基金会</a> 之下，但在此列出，以展示当前 eBPF 项目的概况。.</li>
+				</ul>`,
+      },
+      {
+        question: '添加你的项目',
+        answer: `<ol>
+					<li>确保项目符合列出的要求。见下文。</li>
+					<li>提交 <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">pull request</a> 并提供所需的信息。使用一个已经列出的项目作为模板。应用程序的排序基于 Github 星标的数量(从高到低)，每季度更新一次。</li>
+					<li>Pull Request 将由社区审核，并由一个维护者合并。如果你有任何问题，请在 <a href="https://ebpf.io/slack">Slack</a> 上提问。</li>
+				</ol>`,
+      },
+      {
+        question: '您是否在维护一个已列出的项目 ?',
+        answer: `<ul>
+					<li>如果您正在维护列出的项目之一，并希望调整内容。在 <a href="https://ebpf.io/slack">Slack</a> 上与我们取得联系或直接提交一个 Pull Request。</li>
+				</ul>`,
+      },
+      {
+        question: '被列出项目的要求',
+        answer: `
+					<p>
+						项目可以在此页面上以“主要”或“新兴”的形式列出。被列为“新兴”的要求是：
+					</p>
+					<ul>
+						<li>
+							项目必须是开源的。所有源代码必须在开放源代码许可下进行许可。任何文档都必须在开放许可协议下授权。
+						</li>
+						<li>
+							项目必须使用 eBPF 作为其基础核心技术（换句话说, 如果去掉eBPF部分, 项目将失去其目的）,或者帮助加速在生产中采用 eBPF。
+						</li>
+						<li>项目必须积极维护。</li>
+						<li>
+							项目必须对协作开放，并具有遵循开源最佳实践的治理模型。
+						</li>
+					</ul>
+					<p>
+						要被列为“主要”项目, 该项目必须满足上述所有要求, 并且：
+					</p>
+					<ul>
+						<li>项目必须有超过 50 个贡献者。</li>
+						<li>
+							该项目必须在生产级别的环境中有大量使用用户。由于这些信息可能不容易从项目链接中发现，因此这些信息应该包含在 Pull Request 描述中。
+						</li>
+					</ul>`,
+      },
+    ],
+  },
 };
 
 export default data;

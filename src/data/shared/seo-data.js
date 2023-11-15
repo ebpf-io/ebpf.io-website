@@ -20,6 +20,11 @@ export default {
       description:
         'eBPF è una tecnologia rivoluzionaria in grado di eseguire programmi in una sandbox all’interno del kernel di Linux senza modificare il codice sorgente del kernel o caricare un modulo del kernel.',
     },
+    'zh-cn': {
+      title: 'eBPF - 介绍, 教程和社区资源',
+      description:
+        'eBPF是一项革命性的技术, 它可以在 Linux 内核中运行沙盒程序, 而无需通过更改内核源代码或加载内核模块的方式来实现。',
+    },
   },
   contribute: {
     en: {
@@ -46,6 +51,11 @@ export default {
         'Vuoi sapere come contribuire a eBPF? Impara come iniziare a contribuire ai progetti eBPF.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
+    'zh-cn': {
+      title: '如何为 eBPF 作出贡献',
+      description: '想要学习如何为 eBPF 作出贡献 ? 学习如何开始给 eBPF 的项目作出贡献。',
+      keywords: 'ebpf, bpf, 贡献, 开始, 社区',
+    },
   },
   caseStudies: {
     en: {
@@ -67,6 +77,11 @@ export default {
       title: 'Casi di studio eBPF',
       description: 'Apprendi come eBPF viene impiegato in svariati progetti.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
+    },
+    'zh-cn': {
+      title: 'eBPF 案例研究',
+      description: '学习了解 eBPF 在不同的项目中是如何被应用的。',
+      keywords: 'ebpf, bpf, 贡献, 开始, 社区',
     },
   },
   applications: {
@@ -90,6 +105,11 @@ export default {
       description: 'Una directory di applicazioni open source basate su eBPF',
       keywords: 'ebpf, bpf, landscape, diretório, código aberto, open source',
     },
+    'zh-cn': {
+      title: 'eBPF 应用项目概览',
+      description: '基于 eBPF 的开源应用项目目录',
+      keywords: 'ebpf, bpf, 概览, 目录, 开源',
+    },
   },
   infrastructure: {
     en: {
@@ -111,6 +131,11 @@ export default {
       title: 'Panorama sulla infrastruttura eBPF di base',
       description: 'Una directory di infrastrutture eBPF di base',
       keywords: 'ebpf, bpf, paisagem, diretório, código aberto',
+    },
+    'zh-cn': {
+      title: 'eBPF 核心基础设施概览',
+      description: '基于 eBPF 的核心基础设施目录',
+      keywords: 'ebpf, bpf, 概览, 目录, 开源',
     },
   },
   newsletter: {

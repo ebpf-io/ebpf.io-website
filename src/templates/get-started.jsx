@@ -21,6 +21,7 @@ const pageUrls = {
   'fr-fr': '/fr-fr/get-started/',
   'pt-br': '/pt-br/get-started/',
   'it-it': '/it-it/get-started/',
+  'zh-cn': '/zh-cn/get-started/',
 };
 
 const hasContributors = false;

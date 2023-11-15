@@ -12,12 +12,12 @@ import VideoGallery from 'components/shared/video-gallery';
 import data from 'data/pages/home';
 import SEO_DATA from 'data/shared/seo-data';
 
-import { defaultLanguage } from '../../../config/languages';
+import { languages } from '../../../config/languages';
 
-const lang = defaultLanguage;
+const lang = languages['zh-cn'].code;
 
 const HomePage = () => (
-  <Layout>
+  <Layout lang={lang}>
     <Hero {...data[lang].hero} />
     <CaseStudies {...data[lang].caseStudies} />
     <WhyEbpf {...data[lang].whyEbpf} />

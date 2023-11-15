@@ -13,6 +13,7 @@ const pageUrls = {
     'fr-fr': '/fr-fr/what-is-ebpf/',
     'pt-br': '/pt-br/what-is-ebpf/',
     'it-it': '/it-it/what-is-ebpf/',
+    'zh-cn': '/zh-cn/what-is-ebpf/',
   },
 };
 
