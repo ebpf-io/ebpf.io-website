@@ -535,135 +535,135 @@ const data = {
     contributors: {
       title: 'Conosci alcuni membri della nostra community',
     },
-    'zh-cn': {
-      hero: {
-        title: '开始了解 eBPF',
-        items: [
-          {
-            image: 'lab',
-            title: '动手实验',
-            description:
-              '通过借用 Liz Rice 报告中的 opensnoop 示例, 本实验将会教你使用 eBPF 工具, 观察其组件的加载过程, 以及可以将您自己的追踪用例添加到 eBPF 源代码中。',
-            cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
-            dashedBorderClassName: 'border-secondary-blue-2',
-            linkUrl: 'https://ebpf.io/labs/',
-            linkTarget: '_blank',
-          },
-          {
-            image: 'book',
-            title: '阅读书籍',
-            description:
-              '阅读 Liz Rice 所著的 O’Reilly 书籍 《What is eBPF?》 和 《Learning eBPF》 或者 Brendan Gregg 所著的 《BPF Performance Tools》 进行入门了解。通过这些书籍, 您将了解什么是 eBPF, 为什么它如此强大, 以及它提供的能力。',
-            cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
-            dashedBorderClassName: 'border-secondary-green-2',
-            linkUrl: '#books',
-            linkTarget: '_self',
-          },
-          {
-            image: 'video',
-            title: '观看视频',
-            description:
-              '跟随 John Fastabend 的演讲来深入了解 eBPF 的历史。从2014年的”早期“开始, 它介绍了当时影响 Linux 网络领域的主要项目、公司和参与者，以及它们如何促成了 eBPF 的创建。',
-            cardColorClassName: 'bg-secondary-red-1-light border-secondary-red-1',
-            dashedBorderClassName: 'border-secondary-red-2',
-            linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00',
-            linkTarget: '_blank',
-          },
-        ],
-      },
-      documentation: {
-        title: '阅读以下文档，了解更多有关 eBPF 内容',
-        items: [
-          {
-            image: 'wikipedia',
-            title: 'Wikipedia',
-            description: 'Wikipedia 中关于 eBPF 的文章',
-            linkUrl: 'https://en.wikipedia.org/wiki/EBPF',
-          },
-          {
-            image: 'stackoverflow',
-            title: 'eBPF Stackoverflow',
-            description: '提问问题，阅读回答',
-            linkUrl: 'https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf',
-          },
-          {
-            image: 'reddit',
-            title: 'eBPF 在 Reddit 的社区',
-            description: '讨论 eBPF 内核子系统',
-            linkUrl: 'https://www.reddit.com/r/eBPF/',
-          },
-          {
-            image: 'cilium',
-            title: 'BPF & XDP 参考指南',
-            description: '学习了解 BPF 的内部原理和编程',
-            linkUrl: 'https://cilium.readthedocs.io/en/stable/bpf/',
-          },
-          {
-            image: 'kernel',
-            title: 'BPF 文档',
-            description: 'Linux 内核文档中的 BPF 部分',
-            linkUrl: 'https://www.kernel.org/doc/html/latest/bpf/index.html',
-          },
-          {
-            image: 'gitKernel',
-            title: 'BPF 的设计答疑',
-            description: 'eBPF 内核相关问题的 FAQ',
-            linkUrl:
-              'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst',
-          },
-        ],
-      },
-      subscriptionForm: {
-        title: '订阅',
-        afterTitle: 'eCHO 的双周新闻',
-        description: '了解 eBPF 和 Cilium 的最新的资讯',
-        placeholder: 'Email address...',
-        buttonTitle: '订阅',
-      },
-      books: {
-        title: '从行业专家所著的书里探索 eBPF',
-        linkTitle: '了解更多',
-      },
-      tutorials: {
-        title: '从行业专家的教程里深入了解 eBPF 技术',
-        linkTitle: '更多教程',
-        items: [
-          {
-            title: 'eBPF 追踪教程',
-            description:
-              '学习如何使用 eBPF 进行跟踪, 从运行 bcc 工具到使用 bpftrace 和 bcc 进行开发。',
-            linkUrl: 'http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html',
-          },
-          {
-            title: 'XDP 教程',
-            description:
-              '学习编写 XDP 程序的基本步骤，从了解 XDP 的概念到如何在一个接口上附加多个程序',
-            linkUrl: 'https://github.com/xdp-project/xdp-tutorial',
-          },
-          {
-            title: '编译器探索器',
-            description: '支持在 web 浏览器中以交互方式运行 BPF 编译器并探索汇编代码',
-            linkUrl: 'https://godbolt.org/',
-          },
-        ],
-      },
-      events: {
-        title: '参加 eBPF 活动向行业专家了解更多信息',
-        linkTitle: '更多活动',
-        linkUrl: '/events/',
-      },
-      videoGallery: {
-        title: 'eBPF 入门视频',
-        items: videoItems,
-      },
-      blog: {
-        title: '通过社区文章更多的了解 eBPF',
-        linkTitle: '更多文章',
-        linkUrl: '/blog/',
-      },
-      contributors: {
-        title: '认识一些我们的社区成员',
-      },
+  },
+  'zh-cn': {
+    hero: {
+      title: '开始了解 eBPF',
+      items: [
+        {
+          image: 'lab',
+          title: '动手实验',
+          description:
+            '通过借用 Liz Rice 报告中的 opensnoop 示例, 本实验将会教你使用 eBPF 工具, 观察其组件的加载过程, 以及可以将您自己的追踪用例添加到 eBPF 源代码中。',
+          cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
+          dashedBorderClassName: 'border-secondary-blue-2',
+          linkUrl: 'https://ebpf.io/labs/',
+          linkTarget: '_blank',
+        },
+        {
+          image: 'book',
+          title: '阅读书籍',
+          description:
+            '阅读 Liz Rice 所著的 O’Reilly 书籍 《What is eBPF?》 和 《Learning eBPF》 或者 Brendan Gregg 所著的 《BPF Performance Tools》 进行入门了解。通过这些书籍, 您将了解什么是 eBPF, 为什么它如此强大, 以及它提供的能力。',
+          cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
+          dashedBorderClassName: 'border-secondary-green-2',
+          linkUrl: '#books',
+          linkTarget: '_self',
+        },
+        {
+          image: 'video',
+          title: '观看视频',
+          description:
+            '跟随 John Fastabend 的演讲来深入了解 eBPF 的历史。从2014年的”早期“开始, 它介绍了当时影响 Linux 网络领域的主要项目、公司和参与者，以及它们如何促成了 eBPF 的创建。',
+          cardColorClassName: 'bg-secondary-red-1-light border-secondary-red-1',
+          dashedBorderClassName: 'border-secondary-red-2',
+          linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00',
+          linkTarget: '_blank',
+        },
+      ],
+    },
+    documentation: {
+      title: '阅读以下文档，了解更多有关 eBPF 内容',
+      items: [
+        {
+          image: 'wikipedia',
+          title: 'Wikipedia',
+          description: 'Wikipedia 中关于 eBPF 的文章',
+          linkUrl: 'https://en.wikipedia.org/wiki/EBPF',
+        },
+        {
+          image: 'stackoverflow',
+          title: 'eBPF Stackoverflow',
+          description: '提问问题，阅读回答',
+          linkUrl: 'https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf',
+        },
+        {
+          image: 'reddit',
+          title: 'eBPF 在 Reddit 的社区',
+          description: '讨论 eBPF 内核子系统',
+          linkUrl: 'https://www.reddit.com/r/eBPF/',
+        },
+        {
+          image: 'cilium',
+          title: 'BPF & XDP 参考指南',
+          description: '学习了解 BPF 的内部原理和编程',
+          linkUrl: 'https://cilium.readthedocs.io/en/stable/bpf/',
+        },
+        {
+          image: 'kernel',
+          title: 'BPF 文档',
+          description: 'Linux 内核文档中的 BPF 部分',
+          linkUrl: 'https://www.kernel.org/doc/html/latest/bpf/index.html',
+        },
+        {
+          image: 'gitKernel',
+          title: 'BPF 的设计答疑',
+          description: 'eBPF 内核相关问题的 FAQ',
+          linkUrl:
+            'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst',
+        },
+      ],
+    },
+    subscriptionForm: {
+      title: '订阅',
+      afterTitle: 'eCHO 的双周新闻',
+      description: '了解 eBPF 和 Cilium 的最新的资讯',
+      placeholder: 'Email address...',
+      buttonTitle: '订阅',
+    },
+    books: {
+      title: '从行业专家所著的书里探索 eBPF',
+      linkTitle: '了解更多',
+    },
+    tutorials: {
+      title: '从行业专家的教程里深入了解 eBPF 技术',
+      linkTitle: '更多教程',
+      items: [
+        {
+          title: 'eBPF 追踪教程',
+          description:
+            '学习如何使用 eBPF 进行跟踪, 从运行 bcc 工具到使用 bpftrace 和 bcc 进行开发。',
+          linkUrl: 'http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html',
+        },
+        {
+          title: 'XDP 教程',
+          description:
+            '学习编写 XDP 程序的基本步骤，从了解 XDP 的概念到如何在一个接口上附加多个程序',
+          linkUrl: 'https://github.com/xdp-project/xdp-tutorial',
+        },
+        {
+          title: '编译器探索器',
+          description: '支持在 web 浏览器中以交互方式运行 BPF 编译器并探索汇编代码',
+          linkUrl: 'https://godbolt.org/',
+        },
+      ],
+    },
+    events: {
+      title: '参加 eBPF 活动向行业专家了解更多信息',
+      linkTitle: '更多活动',
+      linkUrl: '/events/',
+    },
+    videoGallery: {
+      title: 'eBPF 入门视频',
+      items: videoItems,
+    },
+    blog: {
+      title: '通过社区文章更多的了解 eBPF',
+      linkTitle: '更多文章',
+      linkUrl: '/blog/',
+    },
+    contributors: {
+      title: '认识一些我们的社区成员',
     },
   },
 };
