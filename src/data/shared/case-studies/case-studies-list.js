@@ -1983,7 +1983,7 @@ const caseStudiesData = {
       ],
     },
   ],
-  en: [
+  'zh-cn': [
     {
       title: 'Google',
       logo: Google,
