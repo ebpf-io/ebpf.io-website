@@ -651,7 +651,7 @@ const data = {
     events: {
       title: '参加 eBPF 活动向行业专家了解更多信息',
       linkTitle: '更多活动',
-      linkUrl: '/events/',
+      linkUrl: '/zh-cn/events/',
     },
     videoGallery: {
       title: 'eBPF 入门视频',
