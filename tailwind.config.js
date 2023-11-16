@@ -92,6 +92,8 @@ module.exports = {
     backgroundImage: () => ({
       'button-gradient': 'linear-gradient(82.18deg, #EC6113 -0.66%, #FF9900 97.55%)',
       'light-yellow-gradient': 'linear-gradient(218deg, #FFC78F 0%, #FFEB8A 100%)',
+      'infrastructure-item-gradient':
+        'linear-gradient(76deg, rgba(255, 238, 153, 0.16) -3.1%, rgba(255, 238, 153, 0.00) 41.46%)',
     }),
     extend: {
       lineHeight: {

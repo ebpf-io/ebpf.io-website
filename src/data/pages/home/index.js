@@ -1,6 +1,8 @@
 import videoItems from 'data/pages/home/video-data';
 import caseStudiesData from 'data/shared/case-studies/case-studies-list';
 
+// TODO: set actual videoId to the film
+
 const data = {
   en: {
     hero: {
@@ -48,6 +50,15 @@ const data = {
             'Modify or add functionality and use cases to the kernel without having to restart or patch it.',
         },
       ],
+    },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: 'Wb_vD3XZYOA',
+      description:
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
     },
     testimonials: {
       items: [
@@ -183,6 +194,15 @@ const data = {
         },
       ],
     },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: 'Wb_vD3XZYOA',
+      description:
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
+    },
     testimonials: {
       items: [
         {
@@ -317,6 +337,15 @@ const data = {
         },
       ],
     },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: 'Wb_vD3XZYOA',
+      description:
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
+    },
     testimonials: {
       items: [
         {
@@ -450,6 +479,15 @@ const data = {
             'Modificare o aggiungere una funzionalità e casi d’uso al kernel senza doverlo riavviare o applicare una patch.',
         },
       ],
+    },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: 'Wb_vD3XZYOA',
+      description:
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
     },
     testimonials: {
       items: [

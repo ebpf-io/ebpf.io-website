@@ -6,6 +6,7 @@ import ImageUniversal from 'components/shared/image-universal';
 import Label from 'components/shared/label';
 import Link from 'components/shared/link/link';
 import { BLOG_CATEGORIES_NAME } from 'constants/blog';
+import getLabelThemeByType from 'utils/get-label-theme-by-type';
 import slugifyCategory from 'utils/slugify-category';
 
 const categoriesColors = {
@@ -44,7 +45,9 @@ const Card = ({ type, title, description, ogImage, date, linkUrl, className }) =
       </Link>
       <div className="flex flex-1 flex-col p-6 pt-5 xs:p-4">
         <div className="flex flex-row items-center">
-          <Label type={type} className={clsx('mr-3', categoriesColors[slug])} />
+          <Label theme={getLabelThemeByType(type)} className={clsx('mr-3', categoriesColors[slug])}>
+            {type}
+          </Label>
           <span className="text-sm font-light leading-none text-gray-40">{date}</span>
         </div>
         <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
