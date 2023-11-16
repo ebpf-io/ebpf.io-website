@@ -595,7 +595,7 @@ const data = {
       title: '在各行各业的生产环境中使用 eBPF 的组织',
       linkText: '更多案例研究',
       linkUrl: '/zh-cn/case-studies/',
-      items: caseStudiesData.en.slice(0, 6),
+      items: caseStudiesData['zh-cn'].slice(0, 6),
     },
     whyEbpf: {
       title: '为什么使用 eBPF ?',
