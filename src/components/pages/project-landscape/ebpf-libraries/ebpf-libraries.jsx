@@ -1,20 +1,14 @@
-import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import AnchorHeading from 'components/shared/anchor-heading';
-import Link from 'components/shared/link';
 import slugifyCategory from 'utils/slugify-category';
 
 import { defaultLanguage } from '../../../../../config/languages';
 
-import ayaLogo from './images/aya-logo.png';
-import CPlusPlusIcon from './images/cplusplus-logo.svg';
-import ebpfLogo from './images/ebpf-logo.png';
-import GoIcon from './images/go-logo.svg';
-import libbpfLogo from './images/libbpf-logo.png';
-import libbpfgoLogo from './images/libbpfgo-logo.png';
-import RustIcon from './images/rust-logo.svg';
+import CPlusPlusIcon from './images/cplusplus.inline.svg';
+import GoIcon from './images/go.inline.svg';
+import RustIcon from './images/rust.inline.svg';
 
 const title = {
   en: 'eBPF Libraries',
@@ -26,66 +20,26 @@ const title = {
 
 const items = [
   {
-    name: 'C++',
-    icon: {
-      src: CPlusPlusIcon,
-      width: 35,
-      height: 40,
-    },
+    name: 'Golang',
+    icon: GoIcon,
     list: [
-      {
-        name: 'libbpf',
-        linkUrl: 'https://github.com/libbpf/libbpf',
-        logo: libbpfLogo,
-        description:
-          'is a C/C++ based library which is maintained as part of the upstream Linux kernel. It contains an eBPF loader which takes over processing LLVM generated eBPF ELF files for loading into the kernel. libbpf received a major boost in capabilities and sophistication and closed many existing gaps with BCC as a library. It also supports important features not available in BCC such as global variables and BPF skeletons.',
-      },
+      '<a href="https://github.com/cilium/ebpf" target="_blank" rel="noopener noreferrer">eBPF</a> is designed as a pure Go library that provides utilities for loading, compiling, and debugging eBPF programs. It has minimal external dependencies and is intended to be used in long running processes.',
+      '<a href="https://github.com/aquasecurity/libbpfgo" target="_blank" rel="noopener noreferrer">libbpfgo</a> is a Go wrapper around libbpf. It supports BPF CO-RE and its goal is to be a complete implementation of libbpf APIs. It uses CGo to call into linked versions of libbpf.',
     ],
   },
   {
-    name: 'Golang',
-    icon: {
-      src: GoIcon,
-      width: 76,
-      height: 40,
-    },
+    name: 'C++',
+    icon: CPlusPlusIcon,
     list: [
-      {
-        name: 'eBPF',
-        linkUrl: 'https://github.com/cilium/ebpf',
-        logo: ebpfLogo,
-        description:
-          'is designed as a pure Go library that provides utilities for loading, compiling, and debugging eBPF programs. It has minimal external dependencies and is intended to be used in long running processes.',
-      },
-      {
-        name: 'libbpfgo',
-        linkUrl: 'https://github.com/aquasecurity/libbpfgo',
-        logo: libbpfgoLogo,
-        description:
-          'is a Go wrapper around libbpf. It supports BPF CO-RE and its goal is to be a complete implementation of libbpf APIs. It uses CGo to call into linked versions of libbpf.',
-      },
+      '<a href="https://github.com/libbpf/libbpf" target="_blank" rel="noopener noreferrer">libbpf</a> is a C/C++ based library which is maintained as part of the upstream Linux kernel. It contains an eBPF loader which takes over processing LLVM generated eBPF ELF files for loading into the kernel. libbpf received a major boost in capabilities and sophistication and closed many existing gaps with BCC as a library. It also supports important features not available in BCC such as global variables and BPF skeletons.',
     ],
   },
   {
     name: 'Rust',
-    icon: {
-      src: RustIcon,
-      width: 40,
-      height: 40,
-    },
+    icon: RustIcon,
     list: [
-      {
-        name: 'aya',
-        linkUrl: 'https://github.com/aya-rs/aya',
-        logo: ayaLogo,
-        description:
-          'is an eBPF library built with a focus on operability and developer experience. It allows for both eBPF programs and their userspace programs to be written in Rust.',
-      },
-      {
-        name: 'libbpf-rs',
-        linkUrl: 'https://github.com/libbpf/libbpf-rs',
-        description: `is a safe, idiomatic, and opinionated wrapper API around libbpf written in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin) allows to write 'compile once run everywhere' (CO-RE) eBPF programs.`,
-      },
+      `<a href="https://github.com/libbpf/libbpf-rs" target="_blank" rel="noopener noreferrer">libbpf-rs</a> is a safe, idiomatic, and opinionated wrapper API around libbpf written in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin) allows to write 'compile once run everywhere' (CO-RE) eBPF programs.`,
+      '<a href="https://github.com/aya-rs/aya" target="_blank" rel="noopener noreferrer">aya</a> is an eBPF library built with a focus on operability and developer experience. It allows for both eBPF programs and their userspace programs to be written in Rust.',
     ],
   },
 ];
@@ -98,57 +52,34 @@ const EbpfLibraries = ({ lang }) => {
   return (
     <section className="libraries safe-paddings pt-32 lg:pt-28 md:pt-20" id={slug}>
       <div className="container">
-        <div className="rounded-lg bg-secondary-yellow-light p-16 lg:p-12 md:px-8 sm:px-5">
-          <Heading
-            className="heading-9xl mx-auto inline-block font-bold leading-dense tracking-wide"
-            id={slug}
-          >
-            {title[lang]}
-          </Heading>
-          <ul className="mt-10 grid grid-cols-12 gap-7 lg:gap-6 md:mt-8">
-            {items.map(({ name, icon, list }, index) => (
+        <div className="rounded-lg border border-secondary-blue-1 bg-secondary-blue-1-light p-16 lg:p-12 md:px-8">
+          <div className="w-full text-center">
+            <Heading
+              className="heading-9xl inline-flex text-center font-bold leading-dense"
+              id={slug}
+            >
+              {title[lang]}
+            </Heading>
+          </div>
+          <ul className="mt-12 flex divide-x divide-dashed divide-secondary-blue-2 divide-opacity-30 lg:mt-10 md:mt-8 md:flex-col md:divide-x-0 md:divide-y">
+            {items.map(({ name, icon: Icon, list }, index) => (
               <li
-                className="col-span-4 flex flex-col overflow-hidden rounded bg-white md:col-span-full"
+                className="flex-1 px-8 first:pl-0 last:pr-0 lg:px-6 md:px-0 md:py-6 md:first:pt-0 md:last:pb-0"
                 key={index}
               >
-                <div className="flex items-center justify-center bg-black bg-infrastructure-item-gradient py-6">
-                  <img {...icon} className="h-10" loading="lazy" />
-                  <h3 className="heading-6xl ml-3.5 border-l border-white border-opacity-50 pl-3.5 font-semibold leading-none tracking-wide text-white">
+                <div className="flex items-center">
+                  <Icon className="h-11 w-auto pr-4" />
+                  <h3 className="heading-6xl border-l border-secondary-blue-2 pl-4 font-semibold leading-none">
                     {name}
                   </h3>
                 </div>
-                <ul className="flex grow flex-col gap-y-6 rounded-b border-b border-l border-r border-[#F7F3D4] p-7 pb-6 lg:p-6 md:p-5">
-                  {list.map(({ logo, name, linkUrl, description }, index) => (
+                <ul className="mt-7 lg:mt-6 md:mt-5">
+                  {list.map((item, index) => (
                     <li
-                      className={clsx(
-                        'flex flex-col gap-y-3.5',
-                        index + 1 < list.length && 'border-b border-dashed border-gray-80 pb-6'
-                      )}
+                      className="with-primary-blue-link mt-4 first:mt-0"
                       key={index}
-                    >
-                      {logo && (
-                        <img
-                          src={logo}
-                          className="h-14"
-                          width={144}
-                          height={56}
-                          loading="lazy"
-                          alt={name}
-                        />
-                      )}
-                      <p>
-                        <Link
-                          className="w-fit font-medium after:hidden"
-                          to={linkUrl}
-                          target="_blank"
-                          theme="black"
-                          rel="noopener noreferrer"
-                        >
-                          {name}
-                        </Link>{' '}
-                        {description}
-                      </p>
-                    </li>
+                      dangerouslySetInnerHTML={{ __html: item }}
+                    />
                   ))}
                 </ul>
               </li>

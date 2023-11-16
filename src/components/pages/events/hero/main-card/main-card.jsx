@@ -9,7 +9,6 @@ import Link from 'components/shared/link/link';
 import conferenceSvg from 'images/conference.svg';
 import meetupSvg from 'images/meetup.svg';
 import webinarSvg from 'images/webinar.svg';
-import getLabelThemeByType from 'utils/get-label-theme-by-type';
 
 const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, className }) => {
   const placeholderImages = {
@@ -48,7 +47,7 @@ const MainCard = ({ type, title, description, ogImage, date, place, linkUrl, cla
           />
         )}
         <div className="py-6 lg:pb-0">
-          <Label theme={getLabelThemeByType(type)}>{type}</Label>
+          <Label type={type} />
           <h3 className="heading-6xl mt-2.5 line-clamp-2 font-semibold leading-tight">{title}</h3>
           <p className="mb-5 mt-2 line-clamp-3 text-base font-light leading-snug text-gray-40">
             {description}

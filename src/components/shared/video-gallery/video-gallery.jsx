@@ -4,14 +4,61 @@ import shuffle from 'lodash.shuffle';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import ReactPlayer from 'react-player/lazy';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import VideoPlayer from 'components/shared/video-player/';
 import ArrowIcon from 'icons/arrow.inline.svg';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+
+const Video = ({ videoId, isCurrent, setCurrentVideo, isWrapperInView }) => {
+  const [isSSR, setIsSSR] = useState(false);
+  const onPlay = () => {
+    setCurrentVideo(videoId);
+  };
+  useEffect(() => {
+    setIsSSR(true);
+  }, []);
+
+  const handleClick = () => {
+    setCurrentVideo(videoId);
+  };
+
+  return (
+    <div className="relative h-0 overflow-hidden pb-[56.25%]">
+      <img
+        className="w-full"
+        src={`data:image/svg+xml;charset=utf-8,%3Csvg width='592' height='333' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E`}
+        alt=""
+        width={592}
+        height={333}
+        aria-hidden
+      />
+      {isWrapperInView && isSSR && (
+        <ReactPlayer
+          className="youtube-video absolute left-0 top-0 h-full w-full rounded-2xl"
+          url={`https://www.youtube.com/watch?v=${videoId}`}
+          width="100%"
+          height="100%"
+          playing={isCurrent}
+          controls
+          onPlay={onPlay}
+        />
+      )}
+      <button
+        type="button"
+        aria-label="Play video"
+        className={clsx(
+          'absolute left-0 top-0 h-full w-full',
+          isCurrent ? 'pointer-events-none' : 'pointer-events-auto'
+        )}
+        onClick={handleClick}
+      />
+    </div>
+  );
+};
 
 const VideoGallery = ({ title, items, className }) => {
   const [currentVideo, setCurrentVideo] = useState(null);
@@ -83,7 +130,7 @@ const VideoGallery = ({ title, items, className }) => {
 
           return (
             <SwiperSlide className="mt-14 lg:mt-10 sm:mt-[30px]" key={videoId}>
-              <VideoPlayer
+              <Video
                 videoId={videoId}
                 isCurrent={isCurrent}
                 setCurrentVideo={setCurrentVideo}
@@ -104,6 +151,13 @@ const VideoGallery = ({ title, items, className }) => {
       </Swiper>
     </section>
   );
+};
+
+Video.propTypes = {
+  videoId: PropTypes.string.isRequired,
+  isCurrent: PropTypes.bool.isRequired,
+  setCurrentVideo: PropTypes.func.isRequired,
+  isWrapperInView: PropTypes.bool.isRequired,
 };
 
 VideoGallery.propTypes = {
