@@ -28,6 +28,7 @@ import Meta from './logos/meta.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
+import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
 import Redhat from './logos/redhat.inline.svg';
 import Samsung from './logos/samsung.inline.svg';
@@ -463,6 +464,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://blog.aquasec.com/linux-vulnerabilitie-tracee',
+        },
+      ],
+    },
+    {
+      title: 'Oligo Security',
+      logo: Oligo,
+      description:
+        '<strong>Oligo Security</strong> uses eBPF for application security observability and protection',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.oligo.security/blog/scaling-runtime-security-how-ebpf-is-solving-decade-long-challenges',
         },
       ],
     },
