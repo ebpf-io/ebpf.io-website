@@ -20,6 +20,11 @@ export default {
       description:
         'eBPF è una tecnologia rivoluzionaria in grado di eseguire programmi in una sandbox all’interno del kernel di Linux senza modificare il codice sorgente del kernel o caricare un modulo del kernel.',
     },
+    sw: {
+      title: 'eBPF - Utangulizi, Mafunzo, na Rasilmali za Jumuiya',
+      description:
+        'eBPF ni teknolojia ya mapinduzi inayoweza kuendesha programu zilizoko kwenye sanduku katika kernel ya Linux bila kubadilisha msimbo wa kernel au kupakia moduli ya kernel.',
+    },
   },
   contribute: {
     en: {
@@ -46,6 +51,12 @@ export default {
         'Vuoi sapere come contribuire a eBPF? Impara come iniziare a contribuire ai progetti eBPF.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
+    sw: {
+      title: 'Jinsi ya kuchangia kwa eBPF',
+      description:
+        'Je, unataka kujifunza jinsi ya kuchangia kwa eBPF? Jifunze jinsi ya kuanza kuchangia miradi ya eBPF.',
+      keywords: 'ebpf, bpf, kuchangia, kuanza, jumuiya',
+    },
   },
   caseStudies: {
     en: {
@@ -67,6 +78,11 @@ export default {
       title: 'Casi di studio eBPF',
       description: 'Apprendi come eBPF viene impiegato in svariati progetti.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
+    },
+    sw: {
+      title: 'Uchambuzi wa Kesi za eBPF',
+      description: 'Jifunze jinsi eBPF inavyotumiwa katika miradi tofauti.',
+      keywords: 'ebpf, bpf, kuchangia, kuanza, jumuiya',
     },
   },
   applications: {
@@ -90,6 +106,11 @@ export default {
       description: 'Una directory di applicazioni open source basate su eBPF',
       keywords: 'ebpf, bpf, landscape, diretório, código aberto, open source',
     },
+    sw: {
+      title: 'Mandhari ya Matumizi ya eBPF',
+      description: 'Orodha ya programu za chanzo wazi zinazotumia eBPF',
+      keywords: 'ebpf, bpf, mandhari, orodha, chanzo wazi',
+    },
   },
   infrastructure: {
     en: {
@@ -111,6 +132,11 @@ export default {
       title: 'Panorama sulla infrastruttura eBPF di base',
       description: 'Una directory di infrastrutture eBPF di base',
       keywords: 'ebpf, bpf, paisagem, diretório, código aberto',
+    },
+    sw: {
+      title: 'Mandhari ya Msingi ya Miundombinu ya eBPF',
+      description: 'Orodha ya msingi wa miundombinu inayotumia eBPF',
+      keywords: 'ebpf, bpf, mandhari, orodha, chanzo wazi',
     },
   },
   newsletter: {

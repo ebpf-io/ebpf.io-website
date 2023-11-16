@@ -11,6 +11,9 @@ const data = {
   'it-it': {
     title: 'Conferenze eBPF e Meetup',
   },
+  sw: {
+    title: 'Hifadhi ya Taarifa kuhusu eBPF',
+  },
 };
 
 export default data;
