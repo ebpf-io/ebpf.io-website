@@ -8,7 +8,7 @@ const data = {
     'fr-fr': '/fr-fr/infrastructure/',
     'pt-br': '/pt-br/infrastructure/',
     'it-it': '/it-it/infrastructure/',
-    'zh-cn': '/it-it/infrastructure/',
+    'zh-cn': '/zh-cn/infrastructure/',
   },
   en: {
     title: 'Infrastructure',
