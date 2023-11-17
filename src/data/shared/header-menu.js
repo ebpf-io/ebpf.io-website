@@ -57,7 +57,13 @@ const headerMenu = [
         },
       },
       {
-        title: 'Labs',
+        title: {
+          en: 'Labs',
+          'fr-fr': 'Labs',
+          'pt-br': 'Labs',
+          'it-it': 'Labs',
+          'zh-cn': '实验室',
+        },
         to: {
           en: '/labs',
           'fr-fr': '/fr-fr/labs',
@@ -67,7 +73,13 @@ const headerMenu = [
         },
       },
       {
-        title: "Children's Guide to eBPF",
+        title: {
+          en: "Children's Guide to eBPF",
+          'fr-fr': "Children's Guide to eBPF",
+          'pt-br': "Children's Guide to eBPF",
+          'it-it': "Children's Guide to eBPF",
+          'zh-cn': 'eBPF 儿童指南',
+        },
         to: {
           en: '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
           'fr-fr': '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
@@ -148,7 +160,14 @@ const headerMenu = [
         },
       },
       {
-        title: 'eBPF Summit',
+        title: {
+          en: 'eBPF Summit',
+          'fr-fr': 'eBPF Summit',
+          'pt-br': 'eBPF Summit',
+          'it-it': 'eBPF Summit',
+          'zh-cn': 'eBPF 峰会',
+        },
+
         to: {
           en: '/events?conference=eBPF%20Summit',
           'fr-fr': '/fr-fr/events?conference=eBPF%20Summit',
@@ -158,7 +177,14 @@ const headerMenu = [
         },
       },
       {
-        title: 'eBPF Meetup',
+        title: {
+          en: 'eBPF Meetup',
+          'fr-fr': 'eBPF Meetup',
+          'pt-br': 'eBPF Meetup',
+          'it-it': 'eBPF Meetup',
+          'zh-cn': 'eBPF 见面会',
+        },
+
         to: 'https://www.meetup.com/ebpf-user-group/',
         target: '_blank',
       },
@@ -266,7 +292,13 @@ const headerMenu = [
     ],
   },
   {
-    title: 'Blog',
+    title: {
+      en: 'Blog',
+      'fr-fr': 'Blog',
+      'pt-br': 'Blog',
+      'it-it': 'Blog',
+      'zh-cn': '博客',
+    },
     to: '/blog',
   },
   {

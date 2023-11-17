@@ -232,7 +232,7 @@ const data = {
         question: '添加你的项目',
         answer: `<ol>
 					<li>确保项目符合列出的要求。见下文。</li>
-					<li>提交 <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">pull request</a> 并提供所需的信息。使用一个已经列出的项目作为模板。应用程序的排序基于 Github 星标的数量(从高到低)，每季度更新一次。</li>
+					<li>提交 <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">Pull Request</a> 并提供所需的信息。使用一个已经列出的项目作为模板。应用程序的排序基于 Github 星标的数量(从高到低)，每季度更新一次。</li>
 					<li>Pull Request 将由社区审核，并由一个维护者合并。如果你有任何问题，请在 <a href="https://ebpf.io/slack">Slack</a> 上提问。</li>
 				</ol>`,
       },
