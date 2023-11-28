@@ -44,17 +44,17 @@ const TableOfContents = ({ className, title, items }) => {
           </button>
         )}
         <m.nav
-          className="sticky top-10 bottom-10 max-h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden md:static md:max-h-max md:overflow-y-hidden md:pt-4"
+          className="sticky bottom-10 top-10 max-h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden md:static md:max-h-max md:overflow-y-hidden md:pt-4"
           initial="visible"
           animate={isTocVisible ? 'visible' : 'hidden'}
           variants={isTabletWidth && animationVariants}
         >
           <ul className="border-l border-dashed border-gray-80 text-gray-40 md:flex md:flex-col md:text-black">
             {items.map(({ url, title, items }) => (
-              <li className="inline-flex min-h-[22px] flex-col" key={url}>
+              <li className="flex min-h-[22px] flex-col" key={url}>
                 <Link
                   className={clsx(
-                    'relative inline-flex py-1.5 pl-7 font-medium before:absolute before:inset-y-0 before:-left-px before:h-full before:w-0.5 hover:text-black lg:pl-6',
+                    'relative inline-flex w-fit py-1.5 pl-7 font-medium before:absolute before:inset-y-0 before:-left-px before:h-full before:w-0.5 hover:text-black lg:pl-6',
                     {
                       '!font-semibold text-black before:bg-black md:!font-medium md:text-inherit md:before:bg-transparent':
                         debouncedActiveAnchor === url,
@@ -66,7 +66,7 @@ const TableOfContents = ({ className, title, items }) => {
                   {title}
                 </Link>
                 {items && (
-                  <ul className="inline-flex flex-col text-sm">
+                  <ul className="flex flex-col text-sm">
                     {items.map(({ url: nestedUrl, title: nestedTitle }) => (
                       <li className="min-h-[21px] py-1" key={nestedUrl}>
                         <Link
