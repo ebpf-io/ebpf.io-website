@@ -8,6 +8,7 @@ import slugifyCategory from 'utils/slugify-category';
 
 import alazLogo from './logos/alaz.svg';
 import bccLogo from './logos/bcc.svg';
+import beylaLogo from './logos/beyla.png';
 import blixtLogo from './logos/blixt.png';
 import bpfdLogo from './logos/bpfd.svg';
 import bpftoolLogo from './logos/bpftool.svg';
@@ -150,6 +151,7 @@ const logos = {
     <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" width={116} height={116} />
   ),
   ingressNodeFirewallLogo,
+  beylaLogo,
 };
 
 const Logo = ({ logo, name }) => {

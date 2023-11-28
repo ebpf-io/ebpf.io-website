@@ -42,7 +42,7 @@ const Testimonials = ({ items }) => {
   };
 
   return (
-    <section className="testimonials safe-paddings -mt-[133px] overflow-hidden bg-gray-98 pb-32 pt-[261px] lg:-mt-[168px] lg:pb-24 md:-mt-[184px] md:pb-20 sm:-mt-[438px] sm:pb-16 sm:pt-[502px]">
+    <section className="testimonials safe-paddings mt-32 overflow-hidden bg-gray-98 py-32 lg:mt-28 lg:py-24 md:mt-24 md:py-20 sm:mt-20 sm:py-16">
       <div className="container">
         <LazyMotion features={domAnimation}>
           <AnimatePresence initial={false} mode="wait">

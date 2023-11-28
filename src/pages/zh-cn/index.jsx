@@ -3,6 +3,7 @@ import React from 'react';
 
 import CaseStudies from 'components/pages/home/case-studies';
 import Features from 'components/pages/home/features';
+import Film from 'components/pages/home/film';
 import Hero from 'components/pages/home/hero';
 import Testimonials from 'components/pages/home/testimonials';
 import WhyEbpf from 'components/pages/home/why-ebpf';
@@ -21,6 +22,7 @@ const HomePage = () => (
     <Hero {...data[lang].hero} />
     <CaseStudies {...data[lang].caseStudies} />
     <WhyEbpf {...data[lang].whyEbpf} />
+    <Film {...data[lang].film} />
     <Testimonials {...data[lang].testimonials} />
     <Features {...data[lang].features} />
     <VideoGallery {...data[lang].videoGallery} />

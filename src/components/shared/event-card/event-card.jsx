@@ -9,6 +9,7 @@ import Link from 'components/shared/link/link';
 import conferenceSvg from 'images/conference.svg';
 import meetupSvg from 'images/meetup.svg';
 import webinarSvg from 'images/webinar.svg';
+import getLabelThemeByType from 'utils/get-label-theme-by-type';
 
 const EventCard = ({ type, title, description, ogImage, date, place, linkUrl, className }) => {
   const placeholderImages = {
@@ -53,7 +54,7 @@ const EventCard = ({ type, title, description, ogImage, date, place, linkUrl, cl
         )}
       </Link>
       <div className="flex flex-1 flex-col p-6 pt-5 xs:p-4">
-        <Label type={type} />
+        <Label theme={getLabelThemeByType(type)}>{type}</Label>
         <Link to={linkUrl} target="_blank" rel="noopener noreferrer">
           <h3 className="mt-2.5 line-clamp-2 font-sans text-2xl font-semibold leading-tight sm:text-xl">
             {title}
