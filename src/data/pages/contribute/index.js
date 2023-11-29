@@ -344,15 +344,15 @@ const data = {
   },
   sw: {
     hero: {
-      title: 'How to Contribute to eBPF',
+      title: 'Jinsi ya kuchangia eBPF',
       description:
-        'eBPF consists of many communities including the eBPF runtime in the Linux kernel, various development SDKs and libraries, a series of large projects using eBPF, and a wide set of smaller projects and tools. There are therefore many ways to contribute to the eBPF community and get involved. The following list of ideas can serve as a starting point on how you can get involved and contribute to the community.',
+        'eBPF inajumuisha jumuiya nyingi ikiwa ni pamoja na wakati wa utekelezaji wa eBPF katika kinu cha Linux kernel, SDK mbalimbali za maendeleo na maktaba, mfululizo wa miradi mikubwa inayotumia eBPF, na seti pana ya miradi na zana ndogondogo. Kwa hiyo kuna njia nyingi za kuchangia jumuiya ya eBPF na kujihusisha. Orodha ifuatayo ya mawazo inaweza kutumika kama kianzio cha jinsi unavyoweza kujihusisha na kuchangia kwa jamii.',
       card: {
-        title: 'Contribute to the eBPF runtime in the Linux kernel',
+        title: 'Changia kwa wakati wa utekelezaji wa eBPF rutime kinu cha Linux kernel',
         description:
-          'The Linux kernel community is maintaining separate Git trees for the eBPF subsystem to manage all developer contributions. The trees are maintained by:',
+          'Jumuiya ya Linux kernel inadumisha miti tofauti ya Git kwa mfumo mdogo wa eBPF ili kudhibiti michango yote ya wasanidi programu. Miti hiyo inatunzwa na:',
         secondDescription:
-          'Working on the eBPF runtime can be incredibly rewarding as it builds the foundation for software being written that runs on millions of systems and devices. Work includes a wide range of topics from adding support to additional hooks, adding new program types, improvements to the eBPF verifier, adding JIT support for additional CPU architectures, extending the set of BPF helpers, adding new test cases to BPF’s test infrastructure, or improvements to bpftool and libbpf.',
+          'Kufanya kazi kwenye wakati wa utekelezaji wa eBPF kunaweza kufaidika sana kwani kunajenga msingi wa programu kuandikwa unaotumia mamilioni ya mifumo na vifaa. Kazi inajumuisha mada mbalimbali kuanzia kuongeza usaidizi hadi ndoano za ziada, kuongeza aina mpya za programu, uboreshaji wa kithibitishaji cha eBPF, kuongeza usaidizi wa JIT kwa usanifu wa ziada wa CPU, kupanua seti ya wasaidizi wa BPF, kuongeza kesi mpya za majaribio kwenye miundombinu ya majaribio ya BPF, au uboreshaji wa bpftool na libbpf.',
         authors: [
           {
             name: 'Alexei Starovoitov',
@@ -379,36 +379,36 @@ const data = {
       items: [
         {
           icon: 'file',
-          title: 'Contribute to an eBPF project',
+          title: 'Changia kwa mradi wa eBPF',
           description:
-            '<p>The list of eBPF-based projects is long and growing. It will be simple to find a project that sparks interest. Check out the eBPF landscape to see an overview of eBPF-based projects.</p><p>Many of the listed eBPF-based projects maintain a list of good-first-issue-labeled tasks which are scoped to not require extensive project specific knowledge and provide a great opportunity to get hands-on quickly.</p>',
+            '<p>Orodha ya miradi inayotegemea eBPF ni ndefu na inakua. Itakuwa rahisi kupata mradi unaovutia. Angalia mandhari ya eBPF ili kuona muhtasari wa miradi inayotegemea eBPF.</p><p>Miradi mingi iliyoorodheshwa kulingana na eBPF hudumisha orodha ya majukumu yenye lebo ya suala-kwanza ambayo yamepangwa ili kutohitaji ujuzi mahususi wa mradi na kutoa fursa nzuri ya kufanyiwa kazi haraka.</p>',
           links: [
             {
-              text: 'eBPF landscape',
+              text: 'eBPF Mandhari',
               to: '/sw/applications',
             },
           ],
         },
         {
           icon: 'gear',
-          title: 'Contribute to the eBPF development toolchains',
+          title: 'Changia kwa minyororo ya ukuzaji ya eBPF',
           description:
-            '<p>Even though the Linux kernel provides minimal libraries and APIs to use eBPF directly, the majority of projects leverage an eBPF development toolchain to simplify use of eBPF and share common code among other projects.</p><p>Check out eBPF development toolchains for a frequently updated list of projects in this space. You will find information on how to get involved on each project website directly.</p>',
+            '<p>Ingawa kinu cha Linux hutoa maktaba na API chache za kutumia eBPF moja kwa moja, miradi mingi hutumia zana za ukuzaji za eBPF ili kurahisisha matumizi ya eBPF na kushiriki msimbo wa pamoja kati ya miradi mingine.</p><p>Angalia misururu ya zana za ukuzaji za eBPF kwa orodha inayosasishwa mara kwa mara ya miradi katika nafasi hii. Utapata habari juu ya jinsi ya kushiriki kwenye kila tovuti ya mradi moja kwa moja.</p>',
           links: [
             {
-              text: 'eBPF development toolchains',
+              text: 'vyombo vya maendeleo ya eBPF',
               to: '/sw/what-is-ebpf/#development-toolchains',
             },
           ],
         },
         {
           icon: 'pen',
-          title: 'Contribute to ebpf.io',
+          title: 'Changia kwa ebpf.io',
           description:
-            '<p>Do you have a writing talent? Are you good with diagrams? The content of the ebpf.io website is licensed under a Creative Commons Attribution 4.0 International License. If you want to get involved, visit the GitHub repository. Make sure to also join the #ebpf-website Slack channel to get in touch with the team working on the documentation. Share what you have learned by improving the documentation or write additional tutorials.</p>',
+            '<p>Je, una kipaji cha uandishi? Je, wewe ni mzuri na michoro? Maudhui ya tovuti ya ebpf.io yameidhinishwa chini ya Leseni ya Kimataifa ya Creative Commons Attribution 4.0. Ikiwa unataka kujihusisha, tembelea hazina ya GitHub. Hakikisha pia umejiunga na kituo cha #ebpf-tovuti ya Slack ili kuwasiliana na timu inayoshughulikia uhifadhi. Shiriki kile umejifunza kwa kuboresha uhifadhi au kuandika mafunzo ya ziada.</p>',
           links: [
             {
-              text: 'License',
+              text: 'Leseni',
               to: 'https://creativecommons.org/licenses/by/4.0/',
               target: '_blank',
             },
