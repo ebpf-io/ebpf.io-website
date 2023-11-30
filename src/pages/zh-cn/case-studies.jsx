@@ -13,12 +13,12 @@ const lang = languages['zh-cn'].code;
 
 const Description = () => (
   <span>
-    Here are some of the organizations that are using eBPF in production. If you’re using eBPF and
-    aren’t on this list,{' '}
+    下面是一些在生产环境中使用 eBPF 的公司或组织。如果你的公司或组织正在使用 eBPF
+    还不在这个列表里，请提交一个{' '}
     <Link theme="black-primary-yellow" size="lg" to="https://github.com/ebpf-io/ebpf.io">
-      please submit a pull request
-    </Link>
-    .
+      pull request
+    </Link>{' '}
+    给我们，谢谢。
   </span>
 );
 

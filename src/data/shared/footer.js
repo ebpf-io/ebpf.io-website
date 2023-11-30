@@ -117,7 +117,7 @@ const data = {
     ),
   },
   'zh-cn': {
-    copyright: 'eBPF.io authors',
+    copyright: 'eBPF.io 作者',
     maintain: {
       title: '由 eBPF 社区维护。',
       beforeLink: '发现一个 bug ?',
@@ -125,11 +125,10 @@ const data = {
     },
     content: (
       <span>
-        The content of the{' '}
         <Link className="!inline font-medium" theme="white" to="/zh-cn/">
           ebpf.io
         </Link>{' '}
-        website is licensed under a{' '}
+        网站内容基于{' '}
         <Link
           className="!inline"
           theme="white"
@@ -139,8 +138,8 @@ const data = {
           rel="noopener noreferrer"
         >
           Creative Commons Attribution 4.0 International License
-        </Link>
-        .
+        </Link>{' '}
+        授权许可。
       </span>
     ),
   },
