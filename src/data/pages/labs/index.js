@@ -41,6 +41,16 @@ const data = {
       buttonTitle: 'Sottoscrivi',
     },
   },
+  sw: {
+    title: 'Ingia kwa undani wa eBPF na maabara ya kuingiliana',
+    subscriptionForm: {
+      title: 'Jisajili',
+      afterTitle: 'kwa Habari za eCHO News Mara Moja kwa Wiki',
+      description: 'Kuwa na habari za hivi karibuni kutoka jamii za eBPF na Cilium',
+      placeholder: 'Anwani ya barua pepe...',
+      buttonTitle: 'Jisajili',
+    },
+  },
 };
 
 export default data;

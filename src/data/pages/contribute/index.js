@@ -4,6 +4,7 @@ const data = {
     'fr-fr': '/fr-fr/contribute/',
     'pt-br': '/pt-br/contribute/',
     'it-it': '/it-it/contribute/',
+    sw: '/sw/contribute/',
   },
   en: {
     hero: {
@@ -329,6 +330,90 @@ const data = {
             },
             {
               text: 'Repository GitHub',
+              to: 'https://github.com/ebpf-io/ebpf.io-website',
+              target: '_blank',
+            },
+            {
+              text: 'Slack',
+              to: 'https://ebpf.io/slack',
+            },
+          ],
+        },
+      ],
+    },
+  },
+  sw: {
+    hero: {
+      title: 'Jinsi ya kuchangia eBPF',
+      description:
+        'eBPF inajumuisha jumuiya nyingi ikiwa ni pamoja na wakati wa utekelezaji wa eBPF katika kinu cha Linux kernel, SDK mbalimbali za maendeleo na maktaba, mfululizo wa miradi mikubwa inayotumia eBPF, na seti pana ya miradi na zana ndogondogo. Kwa hiyo kuna njia nyingi za kuchangia jumuiya ya eBPF na kujihusisha. Orodha ifuatayo ya mawazo inaweza kutumika kama kianzio cha jinsi unavyoweza kujihusisha na kuchangia kwa jamii.',
+      card: {
+        title: 'Changia kwa wakati wa utekelezaji wa eBPF rutime kinu cha Linux kernel',
+        description:
+          'Jumuiya ya Linux kernel inadumisha miti tofauti ya Git kwa mfumo mdogo wa eBPF ili kudhibiti michango yote ya wasanidi programu. Miti hiyo inatunzwa na:',
+        secondDescription:
+          'Kufanya kazi kwenye wakati wa utekelezaji wa eBPF kunaweza kufaidika sana kwani kunajenga msingi wa programu kuandikwa unaotumia mamilioni ya mifumo na vifaa. Kazi inajumuisha mada mbalimbali kuanzia kuongeza usaidizi hadi ndoano za ziada, kuongeza aina mpya za programu, uboreshaji wa kithibitishaji cha eBPF, kuongeza usaidizi wa JIT kwa usanifu wa ziada wa CPU, kupanua seti ya wasaidizi wa BPF, kuongeza kesi mpya za majaribio kwenye miundombinu ya majaribio ya BPF, au uboreshaji wa bpftool na libbpf.',
+        authors: [
+          {
+            name: 'Alexei Starovoitov',
+            company: 'Facebook',
+          },
+          {
+            name: 'Daniel Borkmann',
+            company: 'Cilium/Isovalent',
+          },
+        ],
+        links: [
+          {
+            text: 'Git trees',
+            to: 'https://git.kernel.org/?q=BPF+Group',
+          },
+          {
+            text: 'Linux kernel eBPF runtime',
+            to: '/infrastructure/#linux-kernel',
+          },
+        ],
+      },
+    },
+    howToContribute: {
+      items: [
+        {
+          icon: 'file',
+          title: 'Changia kwa mradi wa eBPF',
+          description:
+            '<p>Orodha ya miradi inayotegemea eBPF ni ndefu na inakua. Itakuwa rahisi kupata mradi unaovutia. Angalia mandhari ya eBPF ili kuona muhtasari wa miradi inayotegemea eBPF.</p><p>Miradi mingi iliyoorodheshwa kulingana na eBPF hudumisha orodha ya majukumu yenye lebo ya suala-kwanza ambayo yamepangwa ili kutohitaji ujuzi mahususi wa mradi na kutoa fursa nzuri ya kufanyiwa kazi haraka.</p>',
+          links: [
+            {
+              text: 'eBPF Mandhari',
+              to: '/sw/applications',
+            },
+          ],
+        },
+        {
+          icon: 'gear',
+          title: 'Changia kwa minyororo ya ukuzaji ya eBPF',
+          description:
+            '<p>Ingawa kinu cha Linux hutoa maktaba na API chache za kutumia eBPF moja kwa moja, miradi mingi hutumia zana za ukuzaji za eBPF ili kurahisisha matumizi ya eBPF na kushiriki msimbo wa pamoja kati ya miradi mingine.</p><p>Angalia misururu ya zana za ukuzaji za eBPF kwa orodha inayosasishwa mara kwa mara ya miradi katika nafasi hii. Utapata habari juu ya jinsi ya kushiriki kwenye kila tovuti ya mradi moja kwa moja.</p>',
+          links: [
+            {
+              text: 'vyombo vya maendeleo ya eBPF',
+              to: '/sw/what-is-ebpf/#development-toolchains',
+            },
+          ],
+        },
+        {
+          icon: 'pen',
+          title: 'Changia kwa ebpf.io',
+          description:
+            '<p>Je, una kipaji cha uandishi? Je, wewe ni mzuri na michoro? Maudhui ya tovuti ya ebpf.io yameidhinishwa chini ya Leseni ya Kimataifa ya Creative Commons Attribution 4.0. Ikiwa unataka kujihusisha, tembelea hazina ya GitHub. Hakikisha pia umejiunga na kituo cha #ebpf-tovuti ya Slack ili kuwasiliana na timu inayoshughulikia uhifadhi. Shiriki kile umejifunza kwa kuboresha uhifadhi au kuandika mafunzo ya ziada.</p>',
+          links: [
+            {
+              text: 'Leseni',
+              to: 'https://creativecommons.org/licenses/by/4.0/',
+              target: '_blank',
+            },
+            {
+              text: 'GitHub repository',
               to: 'https://github.com/ebpf-io/ebpf.io-website',
               target: '_blank',
             },

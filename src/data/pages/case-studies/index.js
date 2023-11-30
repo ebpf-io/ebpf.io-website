@@ -6,6 +6,7 @@ const data = {
     'fr-fr': '/fr-fr/case-studies/',
     'pt-br': '/pt-br/case-studies/',
     'it-it': '/it-it/case-studies/',
+    sw: '/sw/case-studies/',
   },
   en: {
     hero: {
@@ -29,6 +30,12 @@ const data = {
     hero: {
       title: 'Casi di studio eBPF',
       items: caseStudiesData['it-it'],
+    },
+  },
+  sw: {
+    hero: {
+      title: 'Uchambuzi wa Kesi za eBPF',
+      items: caseStudiesData.sw,
     },
   },
 };

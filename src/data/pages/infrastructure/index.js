@@ -8,6 +8,7 @@ const data = {
     'fr-fr': '/fr-fr/infrastructure/',
     'pt-br': '/pt-br/infrastructure/',
     'it-it': '/it-it/infrastructure/',
+    sw: '/sw/infrastructure/',
   },
   en: {
     title: 'Infrastructure',
@@ -118,6 +119,34 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'Librerie eBPF ausiliarie',
+      items: auxiliaryLibraries,
+    },
+  },
+  sw: {
+    title: 'Miundombinu',
+    hero: {
+      items: [
+        {
+          text: 'Programu',
+          to: '/sw/applications/',
+        },
+        {
+          text: 'Miundombinu',
+          to: '/sw/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: 'Miundombinu Mikubwa',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: 'Inayojitokeza',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'Maktaba za eBPF za Kubadiliana',
       items: auxiliaryLibraries,
     },
   },

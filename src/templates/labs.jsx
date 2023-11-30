@@ -18,6 +18,7 @@ const pageUrls = {
   'fr-fr': '/fr-fr/labs/',
   'pt-br': '/pt-br/labs/',
   'it-it': '/it-it/labs/',
+  sw: '/sw/labs/',
 };
 
 const LabsPage = ({

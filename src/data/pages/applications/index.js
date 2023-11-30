@@ -7,6 +7,7 @@ const data = {
     'fr-fr': '/fr-fr/applications/',
     'pt-br': '/pt-br/applications/',
     'it-it': '/it-it/applications/',
+    sw: '/sw/applications/',
   },
   en: {
     title: 'Applications',
@@ -101,6 +102,30 @@ const data = {
     },
     emergingApplicationsProps: {
       title: 'Emergenti',
+      items: emergingApplications,
+    },
+  },
+  sw: {
+    title: 'Programu',
+    hero: {
+      items: [
+        {
+          text: 'Programu',
+          to: '/sw/applications/',
+        },
+        {
+          text: 'Miundombinu',
+          to: '/sw/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: 'Matumizi Makubwa',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: 'Inayojitokeza',
       items: emergingApplications,
     },
   },
