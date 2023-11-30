@@ -619,6 +619,15 @@ const data = {
         },
       ],
     },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: 'Wb_vD3XZYOA',
+      description:
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
+    },
     testimonials: {
       items: [
         {
@@ -706,7 +715,6 @@ const data = {
       items: videoItems,
     },
   },
-
   sw: {
     hero: {
       title:

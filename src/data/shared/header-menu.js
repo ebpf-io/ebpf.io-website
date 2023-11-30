@@ -88,6 +88,7 @@ const headerMenu = [
           'pt-br': "Children's Guide to eBPF",
           'it-it': "Children's Guide to eBPF",
           'zh-cn': 'eBPF 儿童指南',
+          sw: "Children's Guide to eBPF",
         },
         to: '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
       },
@@ -141,7 +142,6 @@ const headerMenu = [
       },
     ],
   },
-
   {
     title: {
       en: 'Events',
@@ -177,6 +177,7 @@ const headerMenu = [
           'pt-br': 'eBPF Summit',
           'it-it': 'eBPF Summit',
           'zh-cn': 'eBPF 峰会',
+          sw: 'eBPF Summit',
         },
 
         to: {
@@ -195,6 +196,7 @@ const headerMenu = [
           'pt-br': 'eBPF Meetup',
           'it-it': 'eBPF Meetup',
           'zh-cn': 'eBPF 见面会',
+          sw: 'eBPF Meetup',
         },
 
         to: 'https://www.meetup.com/ebpf-user-group/',
@@ -318,6 +320,7 @@ const headerMenu = [
       'pt-br': 'Blog',
       'it-it': 'Blog',
       'zh-cn': '博客',
+      sw: 'Blog',
     },
     to: '/blog',
   },

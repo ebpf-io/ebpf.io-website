@@ -34,6 +34,7 @@ const footerMenu = [
           'pt-br': 'eBPF Tech Talks',
           'it-it': 'eBPF Tech Talks',
           'zh-cn': 'eBPF 技术演讲',
+          sw: 'eBPF Tech Talks',
         },
         to: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi',
         target: '_blank',
@@ -63,6 +64,7 @@ const footerMenu = [
           'pt-br': 'Labs',
           'it-it': 'Labs',
           'zh-cn': '实验室',
+          sw: 'Labs',
         },
         to: {
           en: '/labs',
@@ -140,6 +142,7 @@ const footerMenu = [
           'pt-br': 'Blog',
           'it-it': 'Blog',
           'zh-cn': '博客',
+          sw: 'Blog',
         },
         to: '/blog',
       },
