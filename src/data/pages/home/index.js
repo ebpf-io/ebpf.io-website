@@ -579,7 +579,7 @@ const data = {
   sw: {
     hero: {
       title:
-        'Programu kwa njia ya kudhibiti mabadiliko wa kiini(kernel) ndo uwe na: muungano bora kwenye mtandao, uwezo wa kuchunguza na kufuatilia shughuli, na usalama wa mtandao kwa njia ya kudhibitiwa kwa mabadiliko.',
+        'Panga kernel kwa uthabiti kwa ajili ya utendakazi bora wa mtandao, uangalizi, ufuatiliaji na usalama',
       blackButtonTitle: 'Mandhari ya Mradi',
       blackButtonUrl: '/sw/applications',
       yellowButtonTitle: 'Ni nini eBPF',
