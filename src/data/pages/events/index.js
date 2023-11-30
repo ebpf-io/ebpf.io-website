@@ -14,6 +14,9 @@ const data = {
   'zh-cn': {
     title: 'eBPF 会议和见面会',
   },
+  sw: {
+    title: 'Hifadhi ya Taarifa kuhusu eBPF',
+  },
 };
 
 export default data;

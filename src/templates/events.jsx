@@ -13,6 +13,7 @@ const pageUrls = {
   'pt-br': '/pt-br/events/',
   'it-it': '/it-it/events/',
   'zh-cn': '/zh-cn/events/',
+  sw: '/sw/events/',
 };
 
 const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => (

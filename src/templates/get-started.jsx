@@ -22,6 +22,7 @@ const pageUrls = {
   'pt-br': '/pt-br/get-started/',
   'it-it': '/it-it/get-started/',
   'zh-cn': '/zh-cn/get-started/',
+  sw: '/sw/get-started/',
 };
 
 const hasContributors = false;

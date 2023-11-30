@@ -272,6 +272,59 @@ const data = {
       },
     ],
   },
+  sw: {
+    title: 'Maswali Yanayoulizwa Sana',
+    items: [
+      {
+        question: 'Je, miradi hii iko chini ya Msingi wa eBPF?',
+        answer: `<ul>
+					<li>Ukurasa huu unataja idadi ya miradi ya chanzo wazi inayotumia eBPF kama teknolojia ya msingi. Miradi hii yote haijarudi chini ya <a href="https://www.ebpf.foundation/">Msingi wa eBPF</a> lakini inatajwa hapa kama utafiti wa taswira ya mradi wa eBPF leo.</li>
+				</ul>`,
+      },
+      {
+        question: 'Ongeza mradi wako',
+        answer: `<ol>
+					<li>Hakikisha kuwa mradi unakidhi mahitaji ya kuingizwa. Tazama hapo chini.</li>
+					<li>Fungua <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">ombi la uchukuzi</a> na toa habari zinazohitajika. Tumia mradi ulioorodheshwa tayari kama kiolezo. Mpangilio wa maombi unategemea idadi ya Nyota za Github (kutoka juu hadi chini), zinazorekebishwa kila robo.</li>
+					<li>Ombi la uchukuzi litapitiwa na jamii na kuunganishwa na mmoja wa wahifadhi. Ikiwa una maswali yoyote, jisikie huru kuuliza kwenye <a href="https://ebpf.io/slack">Slack</a>.</li>
+				</ol>`,
+      },
+      {
+        question: 'Je, unasimamia mradi ulioorodheshwa?',
+        answer: `<ul>
+					<li>Ikiwa unasimamia moja ya miradi iliyoorodheshwa na ungependa kurekebisha maudhui. Wasiliana kwenye <a href="https://ebpf.io/slack">Slack</a> au fungua ombi la kuchukuliwa moja kwa moja.</li>
+				</ul>`,
+      },
+      {
+        question: 'Mahitaji kwa mradi kuingizwa',
+        answer: `
+					<p>
+						Miradi inaweza kuorodheshwa kwenye ukurasa huu kama "Kubwa" au "Inayojitokeza". Mahitaji ya kuorodheshwa kama "Inayojitokeza" ni kama ifuatavyo:
+					</p>
+					<ul>
+						<li>
+							Mradi lazima uwe wa chanzo wazi. Kila msimbo wa chanzo lazima uwe na leseni ya chanzo wazi. Nyaraka yoyote lazima iwe na leseni ya wazi.
+						</li>
+						<li>
+							Mradi lazima utumie eBPF kama teknolojia yake ya msingi (kwa maneno mengine, mradi ungepoteza kusudi lake ikiwa sehemu za eBPF ziondolewa) au kusaidia kuharakisha usambazaji wa eBPF katika uzalishaji.
+						</li>
+						<li>Mradi lazima uwe unahifadhiwa kwa shughuli.</li>
+						<li>
+							Mradi lazima uwe wazi kwa ushirikiano na uwe na mfano wa utawala unaozingatia mazoea bora ya chanzo wazi.
+						</li>
+					</ul>
+					<p>
+						Ili kuorodheshwa kama "Kubwa," mradi lazima ukidhi mahitaji yote hapo juu, pamoja na:
+					</p>
+					<ul>
+						<li>Mradi lazima uwe na zaidi ya wachangiaji 50.</li>
+						<li>
+							Mradi lazima utumiwe katika mazingira yanayofanana na uzalishaji na idadi kubwa ya watumiaji. Tangu habari kama hiyo inaweza isiwe rahisi kupatikana kutoka kwa kiungo kwenye mradi, habari kama hiyo inapaswa kuwa sehemu ya maelezo ya ombi la uchukuzi.
+						</li>
+					</ul>`,
+      },
+    ],
+  },
 };
 
 export default data;

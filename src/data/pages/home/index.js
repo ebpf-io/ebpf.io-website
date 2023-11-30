@@ -706,6 +706,150 @@ const data = {
       items: videoItems,
     },
   },
+
+  sw: {
+    hero: {
+      title:
+        'Panga kernel kwa uthabiti kwa ajili ya utendakazi bora wa mtandao, uangalizi, ufuatiliaji na usalama',
+      blackButtonTitle: 'Mandhari ya Mradi',
+      blackButtonUrl: '/sw/applications',
+      yellowButtonTitle: 'Ni nini eBPF',
+      yellowButtonUrl: '/sw/what-is-ebpf',
+      altImage: 'eBPF diagram',
+      items: [
+        'Programu zimethibitishwa kwamba zinatekelezwa na usalama',
+        'Ungana na kiini(kernel) popote ndo uwe na uwezo wa kubadishile kazi linalofanya',
+        'Kompileri(Compiler) cha JIT kwa kasi ya utekelezaji karibu na asilia',
+        'Ongeza uwezo wa OS wakati wa utekelezaji',
+      ],
+    },
+    caseStudies: {
+      title: 'Mashirika katika kila tasnia hutumia eBPF katika uzalishaji',
+      linkText: 'Masomo zaidi',
+      linkUrl: '/sw/case-studies/',
+      items: caseStudiesData.sw.slice(0, 6),
+    },
+    whyEbpf: {
+      title: 'Kwa nini eBPF?',
+      linkTitle: 'Ni nini eBPF',
+      linkUrl: '/sw/what-is-ebpf/',
+      items: [
+        {
+          title: 'Utendezi',
+          icon: 'performance',
+          description:
+            'eBPF inaboresha sana usindikaji kwa Kompileri cha JIT na kufanya kazi moja kwa moja ndani ya kiini.',
+        },
+        {
+          title: 'Usalama',
+          icon: 'security',
+          description:
+            'Programu za eBPF zimehakikishwa kutokwamisha kiini na zinaweza kubadilishwa tu na watumiaji wenye mamlaka.',
+        },
+        {
+          title: 'Upanuzi',
+          icon: 'flexibility',
+          description:
+            'Badili au ongeza utendaji na matumizi wa kiini bila kulazimika kuanzisha upya au kuipachika.',
+        },
+      ],
+    },
+    film: {
+      label: 'premiere',
+      title: 'Unlocking the Kernel',
+      videoId: 'Wb_vD3XZYOA',
+      description:
+        'The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.',
+      buttonText: 'eBPF Documentary Website',
+      buttonUrl: 'https://ebpfdocumentary.com/',
+    },
+    testimonials: {
+      items: [
+        {
+          logo: 'azure',
+          logoWidth: 134,
+          company: 'Microsoft Azure',
+          review:
+            'eBPF imesababisha kizazi kipya cha zana ambazo huruhusu waendelezaji kubaini na  kutatua matatizo kwa urahisi, kubuni haraka, na kuongeza utendaji wa mfumo wa uendeshaji kwa urahisi.',
+          author: 'Mark Russinovich',
+          role: 'Chief Technology Officer at Microsoft Azure, 2021',
+        },
+        {
+          logo: 'google',
+          logoWidth: 104,
+          company: 'Google',
+          review:
+            'eBPF ndiyo mustakabali wa mtandao kwa kiini cha Linux, na Google inafurahia kushuhudia na kushiriki katika kuweka kiwango cha msimamo.',
+          author: 'Chris DiBona',
+          role: 'Director of Open Source at Google, 2021',
+        },
+        {
+          logo: 'isovalent',
+          logoWidth: 148,
+          company: 'Isovalent',
+          review:
+            'Ingawa eBPF tayari imeingia katika mifumo ya uzalishaji ya makampuni mengi, bado tuko mwanzoni mwa mzunguko wa ubunifu ambao teknolojia ya eBPF inawezesha.',
+          author: 'Thomas Graf',
+          role: 'Chief Technology Officer at Isovalent, 2021',
+        },
+        {
+          logo: 'meta',
+          logoWidth: 120,
+          company: 'Meta',
+          review:
+            'Kwa miaka mingi, eBPF imecheza jukumu muhimu katika kuongeza kasi ya maendeleo ya kiini. Tunafurahi kuunga mkono kazi ya jamii ya eBPF, kuwaruhusu kujenga zana wanazohitaji kwa ajili ya kuendesha kizazi kijacho cha maendeleo ya mfumo wa Linux.',
+          author: 'Chris Mason',
+          role: 'Kernel Maintainer and Engineering Director at Facebook, 2021',
+        },
+        {
+          logo: 'netflix',
+          logoWidth: 109,
+          company: 'Netflix',
+          review:
+            'eBPF ni aina mpya ya programu inayotoa uwezo mkubwa, na kuzaa tasnia ya teknolojia za mtandao, utendaji, na usalama. Netflix imeongoza matumizi ya eBPF kwa ufuatiliaji, kutoa ufahamu katika maeneo mengi ambayo awali ilikuwa ngumu au ghali sana kuweka vifaa vya ufuatiliaji. eBPF imetusaidia kupunguza kucheleweshwa kwa maombi katika programu na kupata akiba za gharama.',
+          author: 'Brendan Gregg',
+          role: 'Senior performance engineer at Netflix, 2021',
+        },
+      ],
+    },
+    features: {
+      title: 'Je, ni nini kinachowezekana na eBPF?',
+      items: [
+        {
+          bgClassName: 'bg-secondary-yellow-light',
+          image: 'networking',
+          title: 'Mtandao',
+          description:
+            'Kusindika pakiti kwa kasi bila kuacha nafasi katika kiini. Ongeza mchambuzi(parsers) wa itifaki za ziada na programu kwa urahisi mantiki yoyote ya usambazaji ili kukidhi mahitaji yanayobadilika.',
+        },
+        {
+          bgClassName: 'bg-secondary-green-light',
+          image: 'observability',
+          title: 'Ufuatiliaji',
+          description:
+            'Ukusanyaji na umoja wa takwimu za kawaida ndani ya kiini na kuzalisha matukio na miundo ya data kutoka vyanzo vingi iwezekanavyo bila kuhitaji kusafirisha sampuli nje.',
+        },
+        {
+          bgClassName: 'bg-secondary-blue-light',
+          image: 'tracingAndProfiling',
+          title: 'Ufuatiliaji na Uchambuzi',
+          description:
+            'Ambatanisha programu za eBPF na vituo vya ufuatiliaji pamoja na vituo vya uchunguzi vya programu za kiini na watumiaji, kutoa uwezo mkubwa wa kuchunguza na ufahamu wa pekee katika kutatua matatizo ya utendaji wa mfumo.',
+        },
+        {
+          bgClassName: 'bg-secondary-red-light',
+          image: 'security',
+          title: 'Usalama',
+          description:
+            'Unakutanisha kuona na kuelewa wito zote za mfumo pamoja na mtazamo wa mtandao wa pakiti na soketi ili kuunda mifumo ya usalama inayofanya kazi kwa muktadha zaidi na kiwango bora cha udhibiti.',
+        },
+      ],
+    },
+    videoGallery: {
+      title: 'Mazungumzo ya Jumuiya ya eBPF',
+      items: videoItems,
+    },
+  },
 };
 
 export default data;

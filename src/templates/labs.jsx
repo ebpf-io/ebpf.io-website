@@ -19,6 +19,7 @@ const pageUrls = {
   'pt-br': '/pt-br/labs/',
   'it-it': '/it-it/labs/',
   'zh-cn': '/zh-cn/labs/',
+  sw: '/sw/labs/',
 };
 
 const LabsPage = ({

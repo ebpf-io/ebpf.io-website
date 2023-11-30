@@ -25,6 +25,11 @@ export default {
       description:
         'eBPF是一项革命性的技术, 它可以在 Linux 内核中运行沙盒程序, 而无需通过更改内核源代码或加载内核模块的方式来实现。',
     },
+    sw: {
+      title: 'eBPF - Utangulizi, Mafunzo, na Rasilmali za Jumuiya',
+      description:
+        'eBPF ni teknolojia ya mapinduzi inayoweza kuendesha programu zilizoko kwenye sanduku katika kernel ya Linux bila kubadilisha msimbo wa kernel au kupakia moduli ya kernel.',
+    },
   },
   contribute: {
     en: {
@@ -56,6 +61,12 @@ export default {
       description: '想要学习如何为 eBPF 作出贡献 ? 学习如何开始给 eBPF 的项目作出贡献。',
       keywords: 'ebpf, bpf, 贡献, 开始, 社区',
     },
+    sw: {
+      title: 'Jinsi ya kuchangia kwa eBPF',
+      description:
+        'Je, unataka kujifunza jinsi ya kuchangia kwa eBPF? Jifunze jinsi ya kuanza kuchangia miradi ya eBPF.',
+      keywords: 'ebpf, bpf, kuchangia, kuanza, jumuiya',
+    },
   },
   caseStudies: {
     en: {
@@ -82,6 +93,11 @@ export default {
       title: 'eBPF 案例研究',
       description: '学习了解 eBPF 在不同的项目中是如何被应用的。',
       keywords: 'ebpf, bpf, 贡献, 开始, 社区',
+    },
+    sw: {
+      title: 'Uchambuzi wa Kesi za eBPF',
+      description: 'Jifunze jinsi eBPF inavyotumiwa katika miradi tofauti.',
+      keywords: 'ebpf, bpf, kuchangia, kuanza, jumuiya',
     },
   },
   applications: {
@@ -110,6 +126,11 @@ export default {
       description: '基于 eBPF 的开源应用项目目录',
       keywords: 'ebpf, bpf, 概览, 目录, 开源',
     },
+    sw: {
+      title: 'Mandhari ya Matumizi ya eBPF',
+      description: 'Orodha ya programu za chanzo wazi zinazotumia eBPF',
+      keywords: 'ebpf, bpf, mandhari, orodha, chanzo wazi',
+    },
   },
   infrastructure: {
     en: {
@@ -136,6 +157,11 @@ export default {
       title: 'eBPF 核心基础设施概览',
       description: '基于 eBPF 的核心基础设施目录',
       keywords: 'ebpf, bpf, 概览, 目录, 开源',
+    },
+    sw: {
+      title: 'Mandhari ya Msingi ya Miundombinu ya eBPF',
+      description: 'Orodha ya msingi wa miundombinu inayotumia eBPF',
+      keywords: 'ebpf, bpf, mandhari, orodha, chanzo wazi',
     },
   },
   newsletter: {

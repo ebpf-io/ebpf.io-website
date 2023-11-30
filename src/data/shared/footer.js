@@ -143,6 +143,34 @@ const data = {
       </span>
     ),
   },
+  sw: {
+    copyright: 'Waandishi wa eBPF.io',
+    maintain: {
+      title: 'Inasimamiwa na jamii ya eBPF.',
+      beforeLink: 'Ona kasoro?',
+      linkTitle: 'Wasilisha suala',
+    },
+    content: (
+      <span>
+        Yaliyomo ya wavuti ya{' '}
+        <Link className="!inline font-medium" theme="white" to="/">
+          ebpf.io
+        </Link>{' '}
+        inalindwa chini ya Leseni ya{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Kimataifa ya Utambulisho 4.0 ya Creative Commons
+        </Link>
+        .
+      </span>
+    ),
+  },
 };
 
 export default data;
