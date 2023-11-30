@@ -21,6 +21,7 @@ import Global from './logos/global.inline.svg';
 import Google from './logos/google.inline.svg';
 import Helios from './logos/helios.inline.svg';
 import Ikea from './logos/ikea.inline.svg';
+import Isovalent from './logos/isovalent.inline.svg';
 import Kodem from './logos/kodemsec.inline.svg';
 import LineCoporation from './logos/line-corp.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
@@ -28,6 +29,7 @@ import Meta from './logos/meta.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
+import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
 import Redhat from './logos/redhat.inline.svg';
 import Samsung from './logos/samsung.inline.svg';
@@ -253,6 +255,22 @@ const caseStudiesData = {
       ],
     },
     {
+      title: 'Isovalent',
+      logo: Isovalent,
+      description:
+        "eBPF is the technlogy that powers <b>Isovalent</b>'s enterpise networking, observability and security solutions",
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=Xs3MBK17kCk',
+        },
+        {
+          text: 'Blog',
+          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
+        },
+      ],
+    },
+    {
       title: 'Seznam',
       logo: Seznam,
       description: '<strong>Seznam</strong> uses eBPF for load balancing',
@@ -463,6 +481,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://blog.aquasec.com/linux-vulnerabilitie-tracee',
+        },
+      ],
+    },
+    {
+      title: 'Oligo Security',
+      logo: Oligo,
+      description:
+        '<strong>Oligo Security</strong> uses eBPF for application security observability and protection',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.oligo.security/blog/scaling-runtime-security-how-ebpf-is-solving-decade-long-challenges',
         },
       ],
     },
@@ -809,6 +839,22 @@ const caseStudiesData = {
         {
           text: 'Talk',
           to: 'https://youtu.be/xxRAppnmirY?si=OSxhLJ8S1B2-Z-9T',
+        },
+      ],
+    },
+    {
+      title: 'Isovalent',
+      logo: Isovalent,
+      description:
+        "eBPF is the technlogy that powers <b>Isovalent</b>'s enterpise networking, observability and security solutions",
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=Xs3MBK17kCk',
+        },
+        {
+          text: 'Blog',
+          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
         },
       ],
     },
@@ -1329,6 +1375,34 @@ const caseStudiesData = {
       ],
     },
     {
+      title: 'Red Hat',
+      logo: Redhat,
+      description:
+        '<strong>Red Hat</strong> uses eBPF at scale for load balancing and tracing in their private cloud',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://youtu.be/xxRAppnmirY?si=OSxhLJ8S1B2-Z-9T',
+        },
+      ],
+    },
+    {
+      title: 'Isovalent',
+      logo: Isovalent,
+      description:
+        "eBPF is the technlogy that powers <b>Isovalent</b>'s enterpise networking, observability and security solutions",
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=Xs3MBK17kCk',
+        },
+        {
+          text: 'Blog',
+          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
+        },
+      ],
+    },
+    {
       title: 'Seznam',
       logo: Seznam,
       description: '<strong>Seznam</strong> uses eBPF for load balancing',
@@ -1733,6 +1807,34 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.alibabacloud.com/blog/how-does-alibaba-cloud-build-high-performance-cloud-native-pod-networks-in-production-environments_596590',
+        },
+      ],
+    },
+    {
+      title: 'Red Hat',
+      logo: Redhat,
+      description:
+        '<strong>Red Hat</strong> uses eBPF at scale for load balancing and tracing in their private cloud',
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://youtu.be/xxRAppnmirY?si=OSxhLJ8S1B2-Z-9T',
+        },
+      ],
+    },
+    {
+      title: 'Isovalent',
+      logo: Isovalent,
+      description:
+        "eBPF is the technlogy that powers <b>Isovalent</b>'s enterpise networking, observability and security solutions",
+      links: [
+        {
+          text: 'Talk',
+          to: 'https://www.youtube.com/watch?v=Xs3MBK17kCk',
+        },
+        {
+          text: 'Blog',
+          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
         },
       ],
     },
