@@ -7,6 +7,7 @@ const data = {
     'fr-fr': '/fr-fr/applications/',
     'pt-br': '/pt-br/applications/',
     'it-it': '/it-it/applications/',
+    'zh-cn': '/zh-cn/applications/',
     sw: '/sw/applications/',
   },
   en: {
@@ -102,6 +103,30 @@ const data = {
     },
     emergingApplicationsProps: {
       title: 'Emergenti',
+      items: emergingApplications,
+    },
+  },
+  'zh-cn': {
+    title: '应用项目',
+    hero: {
+      items: [
+        {
+          text: '应用项目',
+          to: '/zh-cn/applications/',
+        },
+        {
+          text: '基础设施',
+          to: '/zh-cn/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: '主要项目',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: '新兴项目',
       items: emergingApplications,
     },
   },

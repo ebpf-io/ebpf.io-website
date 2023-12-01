@@ -8,6 +8,7 @@ const data = {
     'fr-fr': '/fr-fr/infrastructure/',
     'pt-br': '/pt-br/infrastructure/',
     'it-it': '/it-it/infrastructure/',
+    'zh-cn': '/zh-cn/infrastructure/',
     sw: '/sw/infrastructure/',
   },
   en: {
@@ -119,6 +120,34 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'Librerie eBPF ausiliarie',
+      items: auxiliaryLibraries,
+    },
+  },
+  'zh-cn': {
+    title: '基础设施',
+    hero: {
+      items: [
+        {
+          text: '应用项目',
+          to: '/zh-cn/applications/',
+        },
+        {
+          text: '基础设施',
+          to: '/zh-cn/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: '主要基础设施',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: '新兴的基础设施',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'eBPF 辅助库',
       items: auxiliaryLibraries,
     },
   },

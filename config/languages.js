@@ -20,16 +20,16 @@ module.exports = {
       shortName: 'Ita',
       code: 'it-it',
     },
+    'zh-cn': {
+      name: ' 简体中文',
+      shortName: 'Chi',
+      code: 'zh-cn',
+    },
     sw: {
       name: 'Swahili',
       shortName: 'Swa',
       code: 'sw',
     },
-
-    // 'zh-cn': {
-    //   name: '简体中文',
-    //   code: 'zh-cn',
-    // },
   },
   defaultLanguage: 'en',
 };

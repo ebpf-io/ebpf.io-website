@@ -576,6 +576,145 @@ const data = {
       items: videoItems,
     },
   },
+  'zh-cn': {
+    hero: {
+      title: '动态地编程内核以实现高效的网络、可观测性、追踪和安全性。',
+      blackButtonTitle: '项目概览',
+      blackButtonUrl: '/zh-cn/applications',
+      yellowButtonTitle: '什么是 eBPF',
+      yellowButtonUrl: '/zh-cn/what-is-ebpf',
+      altImage: 'eBPF diagram',
+      items: [
+        '程序经过验证，确保安全执行',
+        '在内核中的任何位置配置钩子进行功能的修改',
+        'JIT 编译器可以实现接近直接运行机器码的速度',
+        '可以动态增加系统功能',
+      ],
+    },
+    caseStudies: {
+      title: '在各行各业的生产环境中使用 eBPF 的组织',
+      linkText: '更多案例研究',
+      linkUrl: '/zh-cn/case-studies/',
+      items: caseStudiesData['zh-cn'].slice(0, 6),
+    },
+    whyEbpf: {
+      title: '为什么使用 eBPF ?',
+      linkTitle: '什么是 eBPF',
+      linkUrl: '/zh-cn/what-is-ebpf/',
+      items: [
+        {
+          title: '性能',
+          icon: 'performance',
+          description: 'eBPF 通过 JIT 编译以及运行在内核空间中，可以大幅提高处理能力。',
+        },
+        {
+          title: '安全',
+          icon: 'security',
+          description: 'eBPF 程序经过验证，不会导致内核崩溃，并且只能由特权用户进行修改。',
+        },
+        {
+          title: '灵活性',
+          icon: 'flexibility',
+          description: '功能和用例的修改、增加即时加载到内核并生效，而不需要重启或者打补丁。',
+        },
+      ],
+    },
+    film: {
+      label: 'premiere',
+      title: '释放内核潜力',
+      videoId: 'Wb_vD3XZYOA',
+      description:
+        'eBPF 纪录片对 eBPF 的起源进行了深入的挖掘探索，并展示了这一行业变革技术的故事、挑战和回报。在这里您将听到开源世界中最杰出的一些人的演讲，其中包括了来自 Meta、Intel、Isovalent、Google、Red Hat 和 Netflix 的关键合作伙伴们，是他们帮助塑造和构建的工具推动了 eBPF 的成功和推广采用，。',
+      buttonText: 'eBPF 纪录片',
+      buttonUrl: 'https://ebpfdocumentary.com/',
+    },
+    testimonials: {
+      items: [
+        {
+          logo: 'azure',
+          logoWidth: 134,
+          company: 'Microsoft Azure',
+          review:
+            'eBPF带来了新一代的工具，通过它开发人员可以轻松地诊断问题、快速地创新和扩展操作系统的功能。',
+          author: 'Mark Russinovich',
+          role: 'Chief Technology Officer at Microsoft Azure, 2021',
+        },
+        {
+          logo: 'google',
+          logoWidth: 104,
+          company: 'Google',
+          review:
+            'eBPF 是 Linux 内核网络实现的未来，谷歌公司也很高兴可以成为其创建的不断发展的标准的一部分。',
+          author: 'Chris DiBona',
+          role: 'Director of Open Source at Google, 2021',
+        },
+        {
+          logo: 'isovalent',
+          logoWidth: 148,
+          company: 'Isovalent',
+          review:
+            '尽管 eBPF 已经进入了很多企业的生产技术栈中，但我们仍然处于 eBPF 这项技术开启的创新浪潮的起始阶段。',
+          author: 'Thomas Graf',
+          role: 'Chief Technology Officer at Isovalent, 2021',
+        },
+        {
+          logo: 'meta',
+          logoWidth: 120,
+          company: 'Meta',
+          review:
+            '多年以来, eBPF 在加速内核开发方面发挥了关键作用。我们很高兴能够支持eBPF社区的工作, 为Linux系统的开发提供所需要的、强有力的工具。',
+          author: 'Chris Mason',
+          role: 'Kernel Maintainer and Engineering Director at Facebook, 2021',
+        },
+        {
+          logo: 'netflix',
+          logoWidth: 109,
+          company: 'Netflix',
+          review:
+            'eBPF是一种新型软件, 它提供了强大的功能, 催生了一个专注于网络、性能和安全的技术行业。Netflix 率先将 eBPF 用于可观测性中, 提供了对很多领域的观测和洞察, 而要观测到这些领域以前很难或代价非常昂贵。eBPF 帮助我们降低了应用程序延迟, 找到节省成本的方式。',
+          author: 'Brendan Gregg',
+          role: 'Senior performance engineer at Netflix, 2021',
+        },
+      ],
+    },
+    features: {
+      title: 'eBPF 有哪些可能性 ?',
+      items: [
+        {
+          bgClassName: 'bg-secondary-yellow-light',
+          image: 'networking',
+          title: '网络',
+          description:
+            '通过在内核空间中进行数据包传输加快处理速度。可以添加额外的协议解析器，并轻松地编程构建转发逻辑以满足不断变化的需求。',
+        },
+        {
+          bgClassName: 'bg-secondary-green-light',
+          image: 'observability',
+          title: '可观测性',
+          description:
+            '收集并在内核内聚合自定义指标，从各种可能的来源生成可见性事件和数据结构，而无需导出数据样本。',
+        },
+        {
+          bgClassName: 'bg-secondary-blue-light',
+          image: 'tracingAndProfiling',
+          title: '追踪和分析',
+          description:
+            '将 eBPF 程序附加到跟踪点、内核中以及用户应用程序的探测点上，可以赋予它们强大的自查能力和独特的洞察力来排查系统性能问题。',
+        },
+        {
+          bgClassName: 'bg-secondary-red-light',
+          image: 'security',
+          title: '安全',
+          description:
+            '结合对所有系统调用的观察理解和对所有网络的数据包/套接字级别的视图，用以创造拥有更全面上下文和更好控制水平的安全系统。',
+        },
+      ],
+    },
+    videoGallery: {
+      title: 'eBPF 社区演讲',
+      items: videoItems,
+    },
+  },
   sw: {
     hero: {
       title:

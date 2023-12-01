@@ -41,6 +41,16 @@ const data = {
       buttonTitle: 'Sottoscrivi',
     },
   },
+  'zh-cn': {
+    title: '通过交互式实验室深入研究 eBPF',
+    subscriptionForm: {
+      title: '订阅',
+      afterTitle: 'eCHO 的双周新闻',
+      description: '了解 eBPF 和 Cilium 的最新的资讯',
+      placeholder: 'Email address...',
+      buttonTitle: '订阅',
+    },
+  },
   sw: {
     title: 'Ingia kwa undani wa eBPF na maabara ya kuingiliana',
     subscriptionForm: {

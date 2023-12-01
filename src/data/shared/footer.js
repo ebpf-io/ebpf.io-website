@@ -116,6 +116,33 @@ const data = {
       </span>
     ),
   },
+  'zh-cn': {
+    copyright: 'eBPF.io 作者',
+    maintain: {
+      title: '由 eBPF 社区维护。',
+      beforeLink: '发现一个 bug ?',
+      linkTitle: '创建一个 issue',
+    },
+    content: (
+      <span>
+        <Link className="!inline font-medium" theme="white" to="/zh-cn/">
+          ebpf.io
+        </Link>{' '}
+        网站内容基于{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creative Commons Attribution 4.0 International License
+        </Link>{' '}
+        授权许可。
+      </span>
+    ),
+  },
   sw: {
     copyright: 'Waandishi wa eBPF.io',
     maintain: {
