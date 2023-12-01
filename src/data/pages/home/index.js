@@ -624,7 +624,7 @@ const data = {
       title: '释放内核潜力',
       videoId: 'Wb_vD3XZYOA',
       description:
-        'eBPF 纪录片对 eBPF 的起源进行了深入的挖掘探索，并展示了这一行业变革技术的故事、挑战和回报。在这里您将听到开源世界中最杰出的人的演讲，是他们帮助塑造和构建的工具推动了 eBPF 的成功和推广采用，其中也包括了来自 Meta、Intel、Isovalent、Google、Red Hat 和 Netflix 的关键合作伙伴们。',
+        'eBPF 纪录片对 eBPF 的起源进行了深入的挖掘探索，并展示了这一行业变革技术的故事、挑战和回报。在这里您将听到开源世界中最杰出的一些人的演讲，其中包括了来自 Meta、Intel、Isovalent、Google、Red Hat 和 Netflix 的关键合作伙伴们，是他们帮助塑造和构建的工具推动了 eBPF 的成功和推广采用，。',
       buttonText: 'eBPF 纪录片',
       buttonUrl: 'https://ebpfdocumentary.com/',
     },
