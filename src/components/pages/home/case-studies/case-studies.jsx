@@ -4,10 +4,15 @@ import React from 'react';
 import CaseStudiesList from 'components/shared/case-studies-list';
 
 const CaseStudies = ({ title, linkText, linkUrl, items }) => (
-  <section className="case-studies safe-paddings mt-36 lg:mt-28 md:mt-24">
+  <section className="case-studies safe-paddings my-36 lg:my-28 md:my-24">
     <div className="container flex flex-col items-center">
       <h2 className="heading-8xl text-center font-semibold leading-tight">{title}</h2>
-      <CaseStudiesList className="mt-10" items={items} linkText={linkText} linkUrl={linkUrl} />
+      <CaseStudiesList
+        className="relative mt-10"
+        items={items}
+        linkText={linkText}
+        linkUrl={linkUrl}
+      />
     </div>
   </section>
 );

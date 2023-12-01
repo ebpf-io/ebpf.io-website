@@ -15,7 +15,7 @@ const icons = {
 };
 
 const WhyEbpf = ({ title, linkTitle, linkUrl, items }) => (
-  <section className="why-ebpf safe-paddings relative z-10 mt-36 lg:mt-28 md:mt-24">
+  <section className="why-ebpf safe-paddings">
     <div className="container">
       <div
         className="flex rounded-lg px-7 py-16 text-white lg:px-4 lg:py-12 md:flex-col md:items-center md:px-4 md:py-10 sm:px-7 sm:py-9"
