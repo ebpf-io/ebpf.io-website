@@ -9,7 +9,7 @@ const CaseStudiesList = ({ className, items, linkUrl, linkText }) => (
     <ul className={clsx('grid-gap grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1', className)}>
       {items.map(({ title, logo: Logo, description, links }, index) => (
         <li
-          className="flex h-full flex-col self-stretch rounded-lg border border-gray-90 bg-white p-8"
+          className="flex flex-col self-stretch rounded-lg border border-gray-90 bg-white p-8"
           key={index}
         >
           <div className="max-w-full">
