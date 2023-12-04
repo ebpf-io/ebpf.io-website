@@ -494,7 +494,7 @@ const caseStudiesData = {
     {
       title: 'groundcover',
       logo: groundcover,
-      description: '<strong>groundcover</strong> uses eBPF to reinvent the cloud-native application monitoring domain. It enables teams to instantly monitor everything they build and run in the cloud without compromising on cost, granularity, or scale.',
+      description: '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud-native environments, at any scale.',
       links: [
         {
           text: 'Product',
@@ -1073,7 +1073,7 @@ const caseStudiesData = {
     {
       title: 'groundcover',
       logo: groundcover,
-      description: '<strong>groundcover</strong> uses eBPF to reinvent the cloud-native application monitoring domain. It enables teams to instantly monitor everything they build and run in the cloud without compromising on cost, granularity, or scale.',
+      description: '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud-native environments, at any scale.',
       links: [
         {
           text: 'Product',
@@ -1589,7 +1589,7 @@ const caseStudiesData = {
     {
       title: 'groundcover',
       logo: groundcover,
-      description: '<strong>groundcover</strong> uses eBPF to reinvent the cloud-native application monitoring domain. It enables teams to instantly monitor everything they build and run in the cloud without compromising on cost, granularity, or scale.',
+      description: '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud-native environments, at any scale.',
       links: [
         {
           text: 'Product',
@@ -2020,7 +2020,7 @@ const caseStudiesData = {
     {
       title: 'groundcover',
       logo: groundcover,
-      description: '<strong>groundcover</strong> uses eBPF to reinvent the cloud-native application monitoring domain. It enables teams to instantly monitor everything they build and run in the cloud without compromising on cost, granularity, or scale.',
+      description: '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud-native environments, at any scale.',
       links: [
         {
           text: 'Product',
