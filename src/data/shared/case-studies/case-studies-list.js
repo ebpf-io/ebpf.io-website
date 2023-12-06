@@ -494,7 +494,7 @@ const caseStudiesData = {
     {
       title: 'groundcover',
       logo: groundcover,
-      description: '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud-native environments, at any scale.',
+      description: '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud native environments, at any scale.',
       links: [
         {
           text: 'Product',
