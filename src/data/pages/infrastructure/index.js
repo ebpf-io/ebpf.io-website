@@ -6,6 +6,7 @@ const data = {
   pageUrls: {
     en: '/infrastructure/',
     'fr-fr': '/fr-fr/infrastructure/',
+    pt: '/pt/infrastructure/',
     'pt-br': '/pt-br/infrastructure/',
     'it-it': '/it-it/infrastructure/',
     'zh-cn': '/zh-cn/infrastructure/',
@@ -64,6 +65,34 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'Bibliothèques eBPF auxiliaires',
+      items: auxiliaryLibraries,
+    },
+  },
+  pt: {
+    title: 'A infraestrutura',
+    hero: {
+      items: [
+        {
+          text: 'Aplicação',
+          to: '/pt/applications/',
+        },
+        {
+          text: 'A infraestrutura',
+          to: '/pt/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: 'Infraestrutura principais',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: 'Emergindo',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'Bibliotecas Auxiliares eBPF',
       items: auxiliaryLibraries,
     },
   },

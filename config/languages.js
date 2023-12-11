@@ -10,8 +10,13 @@ module.exports = {
       shortName: 'Fra',
       code: 'fr-fr',
     },
-    'pt-br': {
+    pt: {
       name: 'Português',
+      shortName: 'Por',
+      code: 'pt',
+    },
+    'pt-br': {
+      name: 'Português (Br)',
       shortName: 'Por',
       code: 'pt-br',
     },
