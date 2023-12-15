@@ -30,7 +30,7 @@ const Layout = ({ children, headerWithFullWidthBottomBorder, lang, pageUrls }) =
   return (
     <>
       <TopBanner />
-      <div className="relative flex min-h-screen flex-col">
+      <div className="relative flex min-h-screen flex-col overflow-y-hidden">
         <Header
           items={headerMenuItems}
           isMobileMenuOpen={isMobileMenuOpen}
