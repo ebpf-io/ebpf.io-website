@@ -12,7 +12,13 @@ import { languages } from '../../../../../config/languages';
 const ANIMATION_DURATION = 0.2;
 
 const dropdownVariants = {
-  hidden: { opacity: 0, y: '0', height: 0, pointerEvents: 'none', visibility: 'hidden' },
+  hidden: {
+    opacity: 0,
+    y: '0',
+    height: 0,
+    pointerEvents: 'none',
+    visibility: 'hidden',
+  },
   visible: {
     opacity: 1,
     y: '0',
@@ -62,7 +68,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
 
                 return (
                   <m.li className="flex" key={name}>
-                    <Link className="px-[13px] py-3" theme="white" to={url}>
+                    <Link className="px-[13px] py-3 xs:w-full" theme="white" to={url}>
                       {name}
                     </Link>
                   </m.li>
@@ -70,7 +76,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
               })}
           </m.ul>
           <button
-            className="flex h-10 w-full items-center justify-between px-[13px] py-3 text-sm font-medium leading-none"
+            className="flex h-10 w-full items-center justify-between rounded bg-black px-[13px] py-3 text-sm font-medium leading-none"
             type="button"
             aria-label="Select language"
             onClick={handleDropdown}
