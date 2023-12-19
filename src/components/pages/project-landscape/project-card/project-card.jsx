@@ -35,6 +35,7 @@ import llvmLogo from './logos/llvm.svg';
 import merbridgeLogo from './logos/merbridge.svg';
 import netobservLogo from './logos/netobserv.svg';
 import parcaLogo from './logos/parca.svg';
+import pcapplusplusLogo from './logos/pcapplusplus.svg';
 import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
 import pyroscopeLogo from './logos/pyroscope.svg';
@@ -152,6 +153,7 @@ const logos = {
   ),
   ingressNodeFirewallLogo,
   beylaLogo,
+  pcapplusplusLogo,
 };
 
 const Logo = ({ logo, name }) => {
