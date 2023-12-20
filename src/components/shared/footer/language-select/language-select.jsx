@@ -50,7 +50,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
       <div className="relative h-10 w-[136px] md:mt-6 xs:w-full">
         <div
           className={clsx(
-            'absolute bottom-0 right-0 w-[136px] items-center rounded border border-gray-40 bg-black text-sm leading-none transition-[shadow,border-color] duration-200 hover:border-gray-70 xs:w-full'
+            'absolute bottom-0 right-0 w-[136px] items-center overflow-hidden rounded border border-gray-40 bg-black text-sm leading-none transition-[shadow,border-color] duration-200 hover:border-gray-70 xs:w-full'
           )}
           ref={dropdownRef}
         >
@@ -76,7 +76,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
               })}
           </m.ul>
           <button
-            className="flex h-10 w-full items-center justify-between rounded bg-black px-[13px] py-3 text-sm font-medium leading-none"
+            className="relative flex h-10 w-full items-center justify-between rounded bg-black px-[13px] py-3 text-sm font-medium leading-none"
             type="button"
             aria-label="Select language"
             onClick={handleDropdown}

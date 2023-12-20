@@ -9,7 +9,7 @@ import LanguageSelect from './language-select';
 import SocialLinks from './social-links';
 
 const Footer = ({ items, lang, pageUrls }) => (
-  <footer className="safe-paddings overflow-y-hidden bg-black pt-16 text-white lg:pt-12">
+  <footer className="safe-paddings bg-black pt-16 text-white lg:pt-12">
     <div className="container">
       <nav className="flex justify-between lg:flex-col lg:space-y-12">
         <div className="flex md:items-center md:justify-between">

@@ -32,13 +32,13 @@ const MobileMenu = ({ isOpen, items }) => {
 
   useEffect(() => {
     if (isOpen) {
-      controls.start('to');
       document.body.style.overflow = 'hidden';
       document.body.style.touchAction = 'none';
+      controls.start('to');
     } else {
-      controls.start('from');
       document.body.style.overflow = '';
       document.body.style.touchAction = '';
+      controls.start('from');
     }
   }, [isOpen, controls]);
 
@@ -50,7 +50,7 @@ const MobileMenu = ({ isOpen, items }) => {
         animate={controls}
         variants={variants}
       >
-        <ul className="flex h-[calc(100vh-64px-60px)] flex-col divide-y divide-gray-90 divide-opacity-50 overflow-y-auto overflow-x-hidden px-7 pb-7 sm:px-4">
+        <ul className="flex h-[calc(100vh-64px-60px)] flex-col divide-y divide-gray-90 divide-opacity-50 overflow-y-auto overflow-x-hidden px-7 pb-7 sm:px-4 xs:h-[calc(100vh-64px-90px)]">
           {items.map((item, index) => (
             <MenuItem {...item} key={index} />
           ))}
