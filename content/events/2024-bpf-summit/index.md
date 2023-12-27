@@ -7,4 +7,5 @@ description: 'The Linux Storage, Filesystem, Memory Management & BPF Summit brin
 ogImage: ogimage.jpeg
 linkUrl: 'https://events.linuxfoundation.org/lsfmmbpf/'
 type: Conference
+conference: 'bpfconf (LSF/MM/BPF)'
 ---
