@@ -10,7 +10,7 @@ import alazLogo from './logos/alaz.svg';
 import bccLogo from './logos/bcc.svg';
 import beylaLogo from './logos/beyla.png';
 import blixtLogo from './logos/blixt.png';
-import bpfdLogo from './logos/bpfd.svg';
+import bpfmanLogo from './logos/bpfman.svg';
 import bpftoolLogo from './logos/bpftool.svg';
 import bumblebeeLogo from './logos/bumblebee.svg';
 import calicoLogo from './logos/calico.svg';
@@ -64,7 +64,7 @@ const logos = {
   pyroscopeLogo,
   parcaLogo,
   keplerLogo,
-  bpfdLogo,
+  bpfmanLogo,
   blixtLogo,
   daeLogo,
   sysinternalsLogo,
