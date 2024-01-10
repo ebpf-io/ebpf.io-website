@@ -134,6 +134,14 @@ const emergingApplications = [
     urls: [{ label: 'GitHub', url: 'https://github.com/cilium/pwru' }],
   },
   {
+    logoUrl: 'https://github.com/daeuniverse/dae',
+    name: 'dae',
+    logoName: 'daeLogo',
+    title: 'Linux high-performance transparent proxy solution',
+    description: `dae, means goose, is a high-performance transparent proxy solution. To enhance traffic split performance as much as possible, dae employs the transparent proxy and traffic split suite within the Linux kernel using eBPF. As a result, dae can enable direct traffic to bypass the proxy application's forwarding, facilitating genuine direct traffic passage. Through this remarkable feat, there is minimal performance loss and negligible additional resource consumption for direct traffic.`,
+    urls: [{ label: 'GitHub', url: 'https://github.com/daeuniverse/dae' }],
+  },
+  {
     logoUrl: 'https://github.com/groundcover-com/caretta',
     name: 'Caretta',
     logoName: 'carettaLogo',
@@ -221,14 +229,6 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/deepflowys/deepflow' },
       { label: 'Website', url: 'https://deepflow.yunshan.net/community.html' },
     ],
-  },
-  {
-    logoUrl: 'https://github.com/daeuniverse/dae',
-    name: 'dae',
-    logoName: 'daeLogo',
-    title: 'Linux high-performance transparent proxy solution',
-    description: `"Dae," which means "goose," serves as a high-performance transparent proxy solution. To enhance traffic split performance to the fullest extent, dae employs the transparent proxy and traffic split suite within the Linux kernel using eBPF. As a result, dae can enable direct traffic to bypass the proxy application's forwarding, facilitating genuine direct traffic passage. Through this remarkable feat, there is minimal performance loss and negligible additional resource consumption for direct traffic.`,
-    urls: [{ label: 'GitHub', url: 'https://github.com/daeuniverse/dae' }],
   },
   {
     logoUrl: 'https://github.com/rubrikinc/wachy',
