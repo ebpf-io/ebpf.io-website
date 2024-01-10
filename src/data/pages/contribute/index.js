@@ -178,11 +178,11 @@ const data = {
   },
   pt: {
     hero: {
-      title: 'Como Contribuir para o eBPF',
+      title: 'Como contribuir para o eBPF',
       description:
-        "O eBPF consiste em várias comunidades, incluindo o 'Runtime' eBPF no kernel do Linux, também contempla vários SDK’s e bibliotecas de desenvolvimento, muitos projetos importantes que utilizam o eBPF e alguns outros projetos menores e ferramentas também fazem parte desta gama. Portanto, há muitas maneiras para que você possa interagir, e contribuir para a comunidade eBPF. A lista de ideias abaixo pode servir como um ponto de partida sobre como você pode se envolver e contribuir para a comunidade.",
+        'O eBPF consiste em muitas comunidades, incluindo o tempo de execução do eBPF no kernel Linux, vários SDKs e bibliotecas de desenvolvimento, uma série de grandes projetos usando eBPF e um amplo conjunto de projetos e ferramentas menores. Existem, portanto, muitas maneiras de contribuir para a comunidade eBPF e se envolver. A lista de ideias a seguir pode servir como um ponto de partida sobre como você pode se envolver e contribuir para a comunidade.',
       card: {
-        title: "Contribuidores do 'runtime' do eBPF no kernel Linux",
+        title: 'Contribua para o tempo de execução do eBPF no kernel Linux',
         description:
           'A comunidade do kernel Linux mantém branch’s separadas no Git para gerenciar todas as contribuições dos desenvolvedores. Elas são mantidas por:',
         secondDescription:
@@ -194,7 +194,7 @@ const data = {
           },
           {
             name: 'Daniel Borkmann',
-            company: 'Cilium/Isovalent',
+            company: 'Cílio/Isovalente',
           },
         ],
         links: [
@@ -215,19 +215,19 @@ const data = {
           icon: 'file',
           title: 'Contribuir para um projeto eBPF',
           description:
-            '<p>A lista de projetos baseados em eBPF é extensa e está em constante crescimento. Será fácil encontrar um projeto que desperte seu interesse. Consulte o landscape eBPF para obter uma visão geral dos projetos baseados em eBPF.</p><p>Muitos dos projetos baseados em eBPF listados mantêm uma lista de tarefas marcadas como "good-first-issue", que não exigem um conhecimento extenso do projeto e oferecem uma ótima oportunidade para que você possa começar rapidamente.</p>',
+            '<p>A lista de projetos baseados no eBPF é longa e crescente. Será simples encontrar um projeto que desperte interesse. Consulte o panorama do eBPF para ver uma visão geral dos projetos baseados no eBPF.</p><p>Muitos dos projetos baseados no eBPF listados mantêm uma lista de tarefas rotuladas como boas primeiras, que têm como escopo não exigir um conhecimento extensivo específico do projeto e oferecem uma ótima oportunidade para colocar a mão na massa rapidamente.</p>',
           links: [
             {
-              text: 'eBPF landscape',
+              text: 'Paisagem eBPF',
               to: '/pt/applications',
             },
           ],
         },
         {
           icon: 'gear',
-          title: 'Contribuir para as ferramentas de desenvolvimento eBPF',
+          title: 'Contribuir para as cadeias de ferramentas de desenvolvimento do eBPF',
           description:
-            '<p>Mesmo que o kernel Linux forneça bibliotecas e APIs mínimas para usar o eBPF diretamente, a maioria dos projetos aproveita uma ferramenta de desenvolvimento eBPF para simplificar o uso do eBPF e compartilhar código comum entre outros projetos.</p><p>Consulte as ferramentas de desenvolvimento eBPF para obter uma lista frequentemente atualizada de projetos nesta área. Você encontrará informações sobre como se envolver em cada site do projeto diretamente.</p>',
+            '<p>Embora o kernel Linux forneça bibliotecas e APIs mínimas para usar o eBPF diretamente, a maioria dos projetos aproveita uma cadeia de ferramentas de desenvolvimento do eBPF para simplificar o uso do eBPF e compartilhar código comum entre outros projetos.</p><p>Confira as cadeias de ferramentas de desenvolvimento do eBPF para obter uma lista atualizada com frequência de projetos neste espaço. Encontrará informações sobre como participar diretamente no sítio Web de cada projeto.</p>',
           links: [
             {
               text: 'CONJUNTOS DE FERRAMENTAS DE DESENVOLVIMENTO EBPF',
@@ -237,9 +237,9 @@ const data = {
         },
         {
           icon: 'pen',
-          title: 'Contribuir para o ebpf.io',
+          title: 'Contribua para ebpf.io',
           description:
-            '<p>Você tem talento para escrever? Sabe criar diagramas? O conteúdo do site ebpf.io é licenciado sob uma Licença Internacional Creative Commons Atribuição 4.0. Se você deseja se envolver, visite nosso repositório no GitHub. Certifique-se de também se juntar ao nosso canal no Slack #ebpf-website para entrar em contato com a equipe que trabalha na documentação. Compartilhe o que você aprendeu melhorando a documentação ou escrevendo tutoriais adicionais.</p>',
+            '<p>Você tem talento para escrever? Você é bom com diagramas? O conteúdo do site ebpf.io está licenciado sob uma Licença Creative Commons Attribution 4.0 International. Se você quiser participar, visite o repositório GitHub. Certifique-se também de entrar no canal Slack do #ebpf-site para entrar em contato com a equipe que trabalha na documentação. Partilhe o que aprendeu melhorando a documentação ou escreva tutoriais adicionais.</p>',
           links: [
             {
               text: 'License',
@@ -302,7 +302,7 @@ const data = {
             '<p>A lista de projetos baseados em eBPF é extensa e está em constante crescimento. Será fácil encontrar um projeto que desperte seu interesse. Consulte o landscape eBPF para obter uma visão geral dos projetos baseados em eBPF.</p><p>Muitos dos projetos baseados em eBPF listados mantêm uma lista de tarefas marcadas como "good-first-issue", que não exigem um conhecimento extenso do projeto e oferecem uma ótima oportunidade para que você possa começar rapidamente.</p>',
           links: [
             {
-              text: 'eBPF landscape',
+              text: 'Panorama eBPF',
               to: '/pt-br/applications',
             },
           ],
