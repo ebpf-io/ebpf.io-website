@@ -379,18 +379,19 @@ const emergingApplications = [
     ],
   },
   {
-    logoUrl: 'https://github.com/bpfd-dev/bpfd',
-    name: 'bpfd',
-    logoName: 'bpfdLogo',
-    title: 'A system daemon and Kubernetes operator for managing eBPF programs',
-    description: `bpfd is a system daemon aimed at simplifying the deployment and
-    management of eBPF programs. It's goal is to enhance the developer-experience as well
-    as provide features to improve security, visibility and program-cooperation.
-    bpfd includes a Kubernetes operator to bring those same features to Kubernetes,
-    allowing users to safely deploy eBPF via custom resources across nodes in a cluster.`,
+    logoUrl: 'https://github.com/bpfman/bpfman',
+    name: 'bpfman',
+    logoName: 'bpfmanLogo',
+    title: 'System manager and Kubernetes operator for eBPF programs',
+    description: `bpfman is a software stack that aims to make it easy to load,
+    unload, modify and monitor eBPF programs whether on a single host, or in a
+    Kubernetes cluster. It provides insights into how eBPF is utilized on a system,
+    includes a built-in program loader that supports program cooperation for XDP
+    and TC programs, and manages the eBPF filesystem, facilitating the deployment
+    of eBPF applications without requiring additional privileges`,
     urls: [
-      { label: 'GitHub', url: 'https://github.com/bpfd-dev/bpfd' },
-      { label: 'Website', url: 'https://bpfd.netlify.app/' },
+      { label: 'GitHub', url: 'https://github.com/bpfman/bpfman' },
+      { label: 'Website', url: 'https://bpfman.io' },
     ],
   },
   {

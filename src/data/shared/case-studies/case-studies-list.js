@@ -19,6 +19,7 @@ import F5 from './logos/f5.inline.svg';
 import FlowSecurity from './logos/flowsecurity.inline.svg';
 import Global from './logos/global.inline.svg';
 import Google from './logos/google.inline.svg';
+import groundcover from './logos/groundcover.inline.svg';
 import Helios from './logos/helios.inline.svg';
 import Ikea from './logos/ikea.inline.svg';
 import Isovalent from './logos/isovalent.inline.svg';
@@ -504,6 +505,26 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.akita.software/docs/how-akita-works#what-makes-akita-different',
+        },
+      ],
+    },
+    {
+      title: 'groundcover',
+      logo: groundcover,
+      description:
+        '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud native environments, at any scale.',
+      links: [
+        {
+          text: 'Product',
+          to: 'https://www.groundcover.com/how-it-works',
+        },
+        {
+          text: 'Docs',
+          to: 'https://www.groundcover.com/docs',
+        },
+        {
+          text: 'Video',
+          to: 'https://youtu.be/73wait5RR7c?si=vZKzrQpwHmyIeM3k',
         },
       ],
     },
@@ -1080,6 +1101,26 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.akita.software/docs/how-akita-works#what-makes-akita-different',
+        },
+      ],
+    },
+    {
+      title: 'groundcover',
+      logo: groundcover,
+      description:
+        '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud native environments, at any scale.',
+      links: [
+        {
+          text: 'Product',
+          to: 'https://www.groundcover.com/how-it-works',
+        },
+        {
+          text: 'Docs',
+          to: 'https://www.groundcover.com/docs',
+        },
+        {
+          text: 'Video',
+          to: 'https://youtu.be/73wait5RR7c?si=vZKzrQpwHmyIeM3k',
         },
       ],
     },
@@ -2199,6 +2240,26 @@ const caseStudiesData = {
       ],
     },
     {
+      title: 'groundcover',
+      logo: groundcover,
+      description:
+        '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud native environments, at any scale.',
+      links: [
+        {
+          text: 'Product',
+          to: 'https://www.groundcover.com/how-it-works',
+        },
+        {
+          text: 'Docs',
+          to: 'https://www.groundcover.com/docs',
+        },
+        {
+          text: 'Video',
+          to: 'https://youtu.be/73wait5RR7c?si=vZKzrQpwHmyIeM3k',
+        },
+      ],
+    },
+    {
       title: 'Core Tech',
       logo: CoreTech,
       description:
@@ -2635,6 +2696,26 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.akita.software/docs/how-akita-works#what-makes-akita-different',
+        },
+      ],
+    },
+    {
+      title: 'groundcover',
+      logo: groundcover,
+      description:
+        '<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud native environments, at any scale.',
+      links: [
+        {
+          text: 'Product',
+          to: 'https://www.groundcover.com/how-it-works',
+        },
+        {
+          text: 'Docs',
+          to: 'https://www.groundcover.com/docs',
+        },
+        {
+          text: 'Video',
+          to: 'https://youtu.be/73wait5RR7c?si=vZKzrQpwHmyIeM3k',
         },
       ],
     },
