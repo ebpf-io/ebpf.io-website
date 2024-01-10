@@ -259,8 +259,17 @@ const headerMenu = [
         to: 'https://ebpf.io/slack',
       },
       {
-        title: 'eBPF 见面会',
+        title: {
+          en: 'eBPF Meetup',
+          'fr-fr': 'eBPF Meetup',
+          'pt-br': 'eBPF Meetup',
+          'it-it': 'eBPF Meetup',
+          'zh-cn': 'eBPF 见面会',
+          sw: 'eBPF Meetup',
+        },
+
         to: 'https://www.meetup.com/ebpf-user-group/',
+        target: '_blank',
       },
       {
         title: 'Stack Overflow',
