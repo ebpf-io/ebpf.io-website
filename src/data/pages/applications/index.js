@@ -5,6 +5,7 @@ const data = {
   pageUrls: {
     en: '/applications/',
     'fr-fr': '/fr-fr/applications/',
+    pt: '/pt/applications/',
     'pt-br': '/pt-br/applications/',
     'it-it': '/it-it/applications/',
     'zh-cn': '/zh-cn/applications/',
@@ -55,6 +56,30 @@ const data = {
     },
     emergingApplicationsProps: {
       title: 'Émergentes',
+      items: emergingApplications,
+    },
+  },
+  pt: {
+    title: 'Aplicação',
+    hero: {
+      items: [
+        {
+          text: 'Aplicação',
+          to: '/pt/applications/',
+        },
+        {
+          text: 'A infraestrutura',
+          to: '/pt/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: 'Principais aplicações',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: 'Emergindo',
       items: emergingApplications,
     },
   },

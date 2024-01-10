@@ -60,6 +60,34 @@ const data = {
       </span>
     ),
   },
+  pt: {
+    copyright: 'Autores eBPF.io ',
+    maintain: {
+      title: 'Mantido pela comunidade eBPF.',
+      beforeLink: 'Viu um bug?',
+      linkTitle: 'Registrar um problema ',
+    },
+    content: (
+      <span>
+        O conteúdo do site{' '}
+        <Link className="!inline font-medium" theme="white" to="/pt/">
+          ebpf.io
+        </Link>{' '}
+        está licenciado sob uma{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Licença Creative Commons Atribuição 4.0 Internacional
+        </Link>
+        .
+      </span>
+    ),
+  },
   'pt-br': {
     copyright: 'Autores do eBPF.io',
     maintain: {

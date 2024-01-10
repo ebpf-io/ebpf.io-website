@@ -19,6 +19,7 @@ import RustIcon from './images/rust-logo.svg';
 const title = {
   en: 'eBPF Libraries',
   'fr-fr': 'Bibliothèques eBPF',
+  pt: 'Bibliotecas eBPF',
   'pt-br': 'Bibliotecas eBPF',
   'it-it': 'Librerie eBPF',
   'zh-cn': 'eBPF 库',

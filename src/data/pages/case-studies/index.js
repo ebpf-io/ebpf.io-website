@@ -4,6 +4,7 @@ const data = {
   pageUrls: {
     en: '/case-studies/',
     'fr-fr': '/fr-fr/case-studies/',
+    pt: '/pt/case-studies/',
     'pt-br': '/pt-br/case-studies/',
     'it-it': '/it-it/case-studies/',
     'zh-cn': '/zh-cn/case-studies/',
@@ -19,6 +20,12 @@ const data = {
     hero: {
       title: 'Études de cas eBPF',
       items: caseStudiesData['fr-fr'],
+    },
+  },
+  pt: {
+    hero: {
+      title: 'Estudos de Caso eBPF',
+      items: caseStudiesData.pt,
     },
   },
   'pt-br': {

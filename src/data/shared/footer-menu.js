@@ -3,6 +3,7 @@ const footerMenu = [
     title: {
       en: 'Get Started',
       'fr-fr': 'Commencer',
+      pt: 'Iniciar',
       'pt-br': 'Comece',
       'it-it': 'Per Iniziare',
       'zh-cn': '开始',
@@ -13,6 +14,7 @@ const footerMenu = [
         title: {
           en: 'What is eBPF?',
           'fr-fr': 'Qu’est-ce qu’eBPF',
+          pt: 'O que é eBPF',
           'pt-br': 'O que é o eBPF',
           'it-it': 'Cos’è eBPF?',
           'zh-cn': '什么是 eBPF ?',
@@ -21,6 +23,7 @@ const footerMenu = [
         to: {
           en: '/what-is-ebpf',
           'fr-fr': '/fr-fr/what-is-ebpf',
+          pt: '/pt/what-is-ebpf',
           'pt-br': '/pt-br/what-is-ebpf',
           'it-it': '/it-it/what-is-ebpf',
           'zh-cn': '/zh-cn/what-is-ebpf',
@@ -31,6 +34,7 @@ const footerMenu = [
         title: {
           en: 'eBPF Tech Talks',
           'fr-fr': 'eBPF Tech Talks',
+          pt: 'eBPF Tech Talks',
           'pt-br': 'eBPF Tech Talks',
           'it-it': 'eBPF Tech Talks',
           'zh-cn': 'eBPF 技术演讲',
@@ -43,6 +47,7 @@ const footerMenu = [
         title: {
           en: 'Case Studies',
           'fr-fr': 'Études de cas',
+          pt: 'Estudos de caso',
           'pt-br': 'Estudos de Caso',
           'it-it': 'Casi di Studio',
           'zh-cn': '案例研究',
@@ -51,6 +56,7 @@ const footerMenu = [
         to: {
           en: '/case-studies',
           'fr-fr': '/fr-fr/case-studies',
+          pt: '/pt/case-studies',
           'pt-br': '/pt-br/case-studies',
           'it-it': '/it-it/case-studies',
           'zh-cn': '/zh-cn/case-studies',
@@ -61,6 +67,7 @@ const footerMenu = [
         title: {
           en: 'Labs',
           'fr-fr': 'Labs',
+          pt: 'Labs',
           'pt-br': 'Labs',
           'it-it': 'Labs',
           'zh-cn': '实验室',
@@ -69,6 +76,7 @@ const footerMenu = [
         to: {
           en: '/labs',
           'fr-fr': '/fr-fr/labs',
+          pt: '/pt/labs',
           'pt-br': '/pt-br/labs',
           'it-it': '/it-it/labs',
           'zh-cn': '/zh-cn/labs',
@@ -81,6 +89,7 @@ const footerMenu = [
     title: {
       en: 'Project landscape',
       'fr-fr': 'Paysage du projet',
+      pt: 'Paisagem do Projeto',
       'pt-br': 'Landscape do Projeto',
       'it-it': 'Panorama dei Progetti',
       'zh-cn': '项目概览',
@@ -91,6 +100,7 @@ const footerMenu = [
         title: {
           en: 'Applications',
           'fr-fr': 'Applications',
+          pt: 'Aplicativo',
           'pt-br': 'Aplicações',
           'it-it': 'Applicazioni',
           'zh-cn': '应用项目',
@@ -99,6 +109,7 @@ const footerMenu = [
         to: {
           en: '/applications',
           'fr-fr': '/fr-fr/applications',
+          pt: '/pt/applications',
           'pt-br': '/pt-br/applications',
           'it-it': '/it-it/applications',
           'zh-cn': '/zh-cn/applications',
@@ -109,6 +120,7 @@ const footerMenu = [
         title: {
           en: 'Infrastructure',
           'fr-fr': 'Infrastructure',
+          pt: 'Infraestrutura',
           'pt-br': 'Infraestrutura',
           'it-it': 'Infrastruttura',
           'zh-cn': '基础设施项目',
@@ -117,6 +129,7 @@ const footerMenu = [
         to: {
           en: '/infrastructure',
           'fr-fr': '/fr-fr/infrastructure',
+          pt: '/pt/infrastructure',
           'pt-br': '/pt-br/infrastructure',
           'it-it': '/it-it/infrastructure',
           'zh-cn': '/zh-cn/infrastructure',
@@ -129,6 +142,7 @@ const footerMenu = [
     title: {
       en: 'About',
       'fr-fr': 'À propos',
+      pt: 'Sobre',
       'pt-br': 'Sobre',
       'it-it': 'Informazioni',
       'zh-cn': '关于',
@@ -139,6 +153,7 @@ const footerMenu = [
         title: {
           en: 'Blog',
           'fr-fr': 'Blog',
+          pt: 'Blog',
           'pt-br': 'Blog',
           'it-it': 'Blog',
           'zh-cn': '博客',
@@ -150,6 +165,7 @@ const footerMenu = [
         title: {
           en: 'Swag Shop',
           'fr-fr': 'Boutique de cadeaux',
+          pt: 'Loja de brindes',
           'pt-br': 'Loja de Produtos',
           'it-it': 'Acquista Gadget',
           'zh-cn': '商店',
@@ -161,6 +177,7 @@ const footerMenu = [
         title: {
           en: 'Branding',
           'fr-fr': 'l’image de marque',
+          pt: 'Marca',
           'pt-br': 'Identidade Visual',
           'it-it': 'Marchio',
           'zh-cn': '品牌',
@@ -172,6 +189,7 @@ const footerMenu = [
         title: {
           en: 'Newsletter',
           'fr-fr': 'Newsletter',
+          pt: 'Boletim de Notícias',
           'pt-br': 'Boletim informativo',
           'it-it': 'Newsletter',
           'zh-cn': '资讯',
@@ -183,6 +201,7 @@ const footerMenu = [
         title: {
           en: 'Contribute',
           'fr-fr': 'Contribuer',
+          pt: 'Contribuir',
           'pt-br': 'Contribua',
           'it-it': 'Contribuisci',
           'zh-cn': '贡献',
@@ -191,6 +210,7 @@ const footerMenu = [
         to: {
           en: '/contribute',
           'fr-fr': '/fr-fr/contribute',
+          pt: '/pt/contribute',
           'pt-br': '/pt-br/contribute',
           'it-it': '/it-it/contribute',
           'zh-cn': '/zh-cn/contribute',

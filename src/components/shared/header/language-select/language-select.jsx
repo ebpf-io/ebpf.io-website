@@ -9,6 +9,7 @@ import EnIcon from 'icons/languages/en.inline.svg';
 import FrFrIcon from 'icons/languages/fr-fr.inline.svg';
 import ItItIcon from 'icons/languages/it-it.inline.svg';
 import PtBrIcon from 'icons/languages/pt-br.inline.svg';
+import PtIcon from 'icons/languages/pt.inline.svg';
 import SwIcon from 'icons/languages/sw.inline.svg';
 import ZhCNIcon from 'icons/languages/zh-cn.inline.svg';
 
@@ -17,6 +18,7 @@ import { languages } from '../../../../../config/languages';
 const langIcons = {
   en: EnIcon,
   'fr-fr': FrFrIcon,
+  pt: PtIcon,
   'pt-br': PtBrIcon,
   'it-it': ItItIcon,
   'zh-cn': ZhCNIcon,

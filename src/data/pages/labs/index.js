@@ -20,6 +20,16 @@ const data = {
       buttonTitle: 'S’abonner',
     },
   },
+  pt: {
+    title: 'Explore o eBPF com laboratórios interativos',
+    subscriptionForm: {
+      title: 'Subscrever',
+      afterTitle: 'o eCHO Notícias quinzenal',
+      description: 'Fique por dentro das últimas notícias e informações do eBPF e Cilium',
+      placeholder: 'Endereço de email...',
+      buttonTitle: 'Se inscrever',
+    },
+  },
   'pt-br': {
     title: 'Explore o eBPF com laboratórios interativos',
     subscriptionForm: {

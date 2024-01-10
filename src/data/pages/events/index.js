@@ -5,6 +5,9 @@ const data = {
   'fr-fr': {
     title: 'Conférences et Meetups eBPF',
   },
+  pt: {
+    title: 'Conferências e encontros eBPF',
+  },
   'pt-br': {
     title: 'Conferências e encontros do eBPF',
   },

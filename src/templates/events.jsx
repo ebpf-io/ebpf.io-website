@@ -10,6 +10,7 @@ import SEO_DATA from 'data/shared/seo-data';
 const pageUrls = {
   en: '/events/',
   'fr-fr': '/fr-fr/events/',
+  pt: '/pt/events/',
   'pt-br': '/pt-br/events/',
   'it-it': '/it-it/events/',
   'zh-cn': '/zh-cn/events/',

@@ -3,6 +3,7 @@ const headerMenu = [
     title: {
       en: 'Learn',
       'fr-fr': 'Apprendre',
+      pt: 'Aprender',
       'pt-br': 'Aprenda',
       'it-it': 'Impara',
       'zh-cn': '学习',
@@ -13,6 +14,7 @@ const headerMenu = [
         title: {
           en: 'What is eBPF?',
           'fr-fr': 'Qu’est-ce qu’eBPF',
+          pt: 'O que é eBPF',
           'pt-br': 'O que é o eBPF',
           'it-it': 'Cos’è eBPF?',
           'zh-cn': '什么是 eBPF ?',
@@ -21,6 +23,7 @@ const headerMenu = [
         to: {
           en: '/what-is-ebpf',
           'fr-fr': '/fr-fr/what-is-ebpf',
+          pt: '/pt/what-is-ebpf',
           'pt-br': '/pt-br/what-is-ebpf',
           'it-it': '/it-it/what-is-ebpf',
           'zh-cn': '/zh-cn/what-is-ebpf',
@@ -31,6 +34,7 @@ const headerMenu = [
         title: {
           en: 'Get Started',
           'fr-fr': 'Commencer',
+          pt: 'Iniciar',
           'pt-br': 'Comece',
           'it-it': 'Per Iniziare',
           'zh-cn': '开始',
@@ -39,6 +43,7 @@ const headerMenu = [
         to: {
           en: '/get-started',
           'fr-fr': '/fr-fr/get-started',
+          pt: '/pt/get-started',
           'pt-br': '/pt-br/get-started',
           'it-it': '/it-it/get-started',
           'zh-cn': '/zh-cn/get-started',
@@ -49,6 +54,7 @@ const headerMenu = [
         title: {
           en: 'Case Studies',
           'fr-fr': 'Études de cas',
+          pt: 'Estudos de caso',
           'pt-br': 'Estudos de Caso',
           'it-it': 'Casi di Studio',
           'zh-cn': '案例研究',
@@ -57,6 +63,7 @@ const headerMenu = [
         to: {
           en: '/case-studies',
           'fr-fr': '/fr-fr/case-studies',
+          pt: '/pt/case-studies',
           'pt-br': '/pt-br/case-studies',
           'it-it': '/it-it/case-studies',
           'zh-cn': '/zh-cn/case-studies',
@@ -67,6 +74,7 @@ const headerMenu = [
         title: {
           en: 'Labs',
           'fr-fr': 'Labs',
+          pt: 'Labs',
           'pt-br': 'Labs',
           'it-it': 'Labs',
           'zh-cn': '实验室',
@@ -75,6 +83,7 @@ const headerMenu = [
         to: {
           en: '/labs',
           'fr-fr': '/fr-fr/labs',
+          pt: '/pt/labs',
           'pt-br': '/pt-br/labs',
           'it-it': '/it-it/labs',
           'zh-cn': '/zh-cn/labs',
@@ -85,6 +94,7 @@ const headerMenu = [
         title: {
           en: "Children's Guide to eBPF",
           'fr-fr': 'Livre pour enfants sur eBPF (en anglais)',
+          pt: "Children's Guide to eBPF",
           'pt-br': 'Livro infantil sobre eBPF (em inglês)',
           'it-it': 'Libro per bambini su eBPF (in inglese)',
           'zh-cn': 'eBPF 儿童指南',
@@ -98,6 +108,7 @@ const headerMenu = [
     title: {
       en: 'Project Landscape',
       'fr-fr': 'Paysage du projet',
+      pt: 'Paisagem do Projeto',
       'pt-br': 'Landscape do Projeto',
       'it-it': 'Panorama dei Progetti',
       'zh-cn': '项目概览',
@@ -108,6 +119,7 @@ const headerMenu = [
         title: {
           en: 'Applications',
           'fr-fr': 'Applications',
+          pt: 'Aplicativo',
           'pt-br': 'Aplicações',
           'it-it': 'Applicazioni',
           'zh-cn': '应用项目',
@@ -116,6 +128,7 @@ const headerMenu = [
         to: {
           en: '/applications',
           'fr-fr': '/fr-fr/applications',
+          pt: '/pt/applications',
           'pt-br': '/pt-br/applications',
           'it-it': '/it-it/applications',
           'zh-cn': '/zh-cn/applications',
@@ -126,6 +139,7 @@ const headerMenu = [
         title: {
           en: 'Infrastructure',
           'fr-fr': 'Infrastructure',
+          pt: 'Infraestrutura',
           'pt-br': 'Infraestrutura',
           'it-it': 'Infrastruttura',
           'zh-cn': '基础设施项目',
@@ -134,6 +148,7 @@ const headerMenu = [
         to: {
           en: '/infrastructure',
           'fr-fr': '/fr-fr/infrastructure',
+          pt: '/pt/infrastructure',
           'pt-br': '/pt-br/infrastructure',
           'it-it': '/it-it/infrastructure',
           'zh-cn': '/zh-cn/infrastructure',
@@ -146,6 +161,7 @@ const headerMenu = [
     title: {
       en: 'Events',
       'fr-fr': 'Événements',
+      pt: 'Eventos',
       'pt-br': 'Eventos',
       'it-it': 'Eventi',
       'zh-cn': '活动',
@@ -156,6 +172,7 @@ const headerMenu = [
         title: {
           en: 'All Events',
           'fr-fr': 'Tous les évènements',
+          pt: 'Todos os eventos',
           'pt-br': 'Todos os Eventos',
           'it-it': 'Tutti gli eventi',
           'zh-cn': '所有活动',
@@ -164,6 +181,7 @@ const headerMenu = [
         to: {
           en: '/events?overview',
           'fr-fr': '/fr-fr/events?overview',
+          pt: '/pt/events?overview',
           'pt-br': '/pt-br/events?overview',
           'it-it': '/it-it/events?overview',
           'zh-cn': '/zh-cn/events?overview',
@@ -174,6 +192,7 @@ const headerMenu = [
         title: {
           en: 'eBPF Summit',
           'fr-fr': 'eBPF Summit',
+          pt: 'eBPF Summit',
           'pt-br': 'eBPF Summit',
           'it-it': 'eBPF Summit',
           'zh-cn': 'eBPF 峰会',
@@ -183,6 +202,7 @@ const headerMenu = [
         to: {
           en: '/events?conference=eBPF%20Summit',
           'fr-fr': '/fr-fr/events?conference=eBPF%20Summit',
+          pt: '/pt/events?conference=eBPF%20Summit',
           'pt-br': '/pt-br/events?conference=eBPF%20Summit',
           'it-it': '/it-it/events?conference=eBPF%20Summit',
           'zh-cn': '/zh-cn/events?conference=eBPF%20Summit',
@@ -193,6 +213,7 @@ const headerMenu = [
         title: {
           en: 'eBPF Meetup',
           'fr-fr': 'eBPF Meetup',
+          pt: 'eBPF Meetup',
           'pt-br': 'eBPF Meetup',
           'it-it': 'eBPF Meetup',
           'zh-cn': 'eBPF 见面会',
@@ -207,6 +228,7 @@ const headerMenu = [
         to: {
           en: '/events?conference=eBPF%20Track%20%28LPC%29',
           'fr-fr': '/fr-fr/events?conference=eBPF%20Track%20%28LPC%29',
+          pt: '/pt/events?conference=eBPF%20Track%20%28LPC%29',
           'pt-br': '/pt-br/events?conference=eBPF%20Track%20%28LPC%29',
           'it-it': '/it-it/events?conference=eBPF%20Track%20%28LPC%29',
           'zh-cn': '/zh-cn/events?conference=eBPF%20Track%20%28LPC%29',
@@ -218,6 +240,7 @@ const headerMenu = [
         to: {
           en: '/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
           'fr-fr': '/fr-fr/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
+          pt: '/pt/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
           'pt-br': '/pt-br/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
           'it-it': '/it-it/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
           'zh-cn': '/zh-cn/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
@@ -230,6 +253,7 @@ const headerMenu = [
     title: {
       en: 'Community',
       'fr-fr': 'Communauté',
+      pt: 'Comunidade',
       'pt-br': 'Comunidade',
       'it-it': 'Community',
       'zh-cn': '社区',
@@ -240,6 +264,7 @@ const headerMenu = [
         title: {
           en: 'Get Started',
           'fr-fr': 'Commencer',
+          pt: 'Iniciar',
           'pt-br': 'Comece',
           'it-it': 'Per Iniziare',
           'zh-cn': '开始',
@@ -248,6 +273,7 @@ const headerMenu = [
         to: {
           en: '/get-started/#docs',
           'fr-fr': '/fr-fr/get-started/#docs',
+          pt: '/pt/get-started/#docs',
           'pt-br': '/pt-br/get-started/#docs',
           'it-it': '/it-it/get-started/#docs',
           'zh-cn': '/zh-cn/get-started/#docs',
@@ -295,6 +321,7 @@ const headerMenu = [
         title: {
           en: 'Newsletter',
           'fr-fr': 'Newsletter',
+          pt: 'Boletim de Notícias',
           'pt-br': 'Boletim informativo',
           'it-it': 'Newsletter',
           'zh-cn': '资讯',
@@ -306,6 +333,7 @@ const headerMenu = [
         title: {
           en: 'Contribute',
           'fr-fr': 'Contribuer',
+          pt: 'Contribuir',
           'pt-br': 'Contribua',
           'it-it': 'Contribuisci',
           'zh-cn': '贡献',
@@ -314,6 +342,7 @@ const headerMenu = [
         to: {
           en: '/contribute',
           'fr-fr': '/fr-fr/contribute',
+          pt: '/pt/contribute',
           'pt-br': '/pt-br/contribute',
           'it-it': '/it-it/contribute',
           'zh-cn': '/zh-cn/contribute',
@@ -326,6 +355,7 @@ const headerMenu = [
     title: {
       en: 'Blog',
       'fr-fr': 'Blog',
+      pt: 'Blogue',
       'pt-br': 'Blog',
       'it-it': 'Blog',
       'zh-cn': '博客',
@@ -337,6 +367,7 @@ const headerMenu = [
     title: {
       en: 'Foundation',
       'fr-fr': 'Fondation',
+      pt: 'Fundação',
       'pt-br': 'Fundação',
       'it-it': 'Fondazione',
       'zh-cn': '基金会',
