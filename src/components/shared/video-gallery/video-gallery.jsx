@@ -4,7 +4,7 @@ import shuffle from 'lodash.shuffle';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Navigation } from 'swiper';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import VideoPlayer from 'components/shared/video-player/';

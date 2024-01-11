@@ -100,3 +100,12 @@ Add information if you're having trouble updating any dependencies, this could b
   - **Last stable version:** `1.0.0`
 
   From v2 is an ESM-only module - we are not able to import it with require() in gatsby-config.js file.
+
+### [@mdx-js/react](https://github.com/mdx-js/mdx/tree/main/packages/react)
+
+- **Issue found on:** 19 June, 2023
+
+  - **Problematic version:** `3.0.0`
+  - **Last stable version:** `2.3.0`
+
+  From v3 is an [ESM-only module](https://github.com/mdx-js/mdx/tree/main/packages/react#install)
