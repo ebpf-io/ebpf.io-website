@@ -39,6 +39,7 @@ import Seznam from './logos/seznam.inline.svg';
 import Shopify from './logos/shopify.inline.svg';
 import Sky from './logos/sky.inline.svg';
 import Sysdig from './logos/sysdig.inline.svg';
+import Threatx from './logos/threatX.inline.svg';
 import Trip from './logos/trip.inline.svg';
 import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
@@ -655,6 +656,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'ThreatX',
+      logo: Threatx,
+      description:
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
@@ -1251,6 +1264,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'ThreatX',
+      logo: Threatx,
+      description:
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
+        },
+      ],
+    },
   ],
   pt: [
     {
@@ -1841,6 +1866,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'ThreatX',
+      logo: Threatx,
+      description:
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
+        },
+      ],
+    },
   ],
   'pt-br': [
     {
@@ -2292,6 +2329,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/',
+        },
+      ],
+    },
+    {
+      title: 'ThreatX',
+      logo: Threatx,
+      description:
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
         },
       ],
     },
@@ -2752,6 +2801,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/',
+        },
+      ],
+    },
+    {
+      title: 'ThreatX',
+      logo: Threatx,
+      description:
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
         },
       ],
     },
@@ -3305,6 +3366,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/',
+        },
+      ],
+    },
+    {
+      title: 'ThreatX',
+      logo: Threatx,
+      description:
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
         },
       ],
     },
@@ -3869,6 +3942,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/',
+        },
+      ],
+    },
+    {
+      title: 'ThreatX',
+      logo: Threatx,
+      description:
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
         },
       ],
     },
