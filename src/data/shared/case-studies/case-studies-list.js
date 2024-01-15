@@ -660,7 +660,7 @@ const caseStudiesData = {
       title: 'ThreatX',
       logo: Threatx,
       description:
-        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threats',
       links: [
         {
           text: 'Blog',
@@ -1268,7 +1268,7 @@ const caseStudiesData = {
       title: 'ThreatX',
       logo: Threatx,
       description:
-        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threats',
       links: [
         {
           text: 'Blog',
@@ -1870,7 +1870,7 @@ const caseStudiesData = {
       title: 'ThreatX',
       logo: Threatx,
       description:
-        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threats',
       links: [
         {
           text: 'Blog',
@@ -2336,7 +2336,7 @@ const caseStudiesData = {
       title: 'ThreatX',
       logo: Threatx,
       description:
-        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threats',
       links: [
         {
           text: 'Blog',
@@ -2808,7 +2808,7 @@ const caseStudiesData = {
       title: 'ThreatX',
       logo: Threatx,
       description:
-        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threats',
       links: [
         {
           text: 'Blog',
@@ -3373,7 +3373,7 @@ const caseStudiesData = {
       title: 'ThreatX',
       logo: Threatx,
       description:
-        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threats',
       links: [
         {
           text: 'Blog',
@@ -3949,7 +3949,7 @@ const caseStudiesData = {
       title: 'ThreatX',
       logo: Threatx,
       description:
-        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threat',
+        '<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threats',
       links: [
         {
           text: 'Blog',
