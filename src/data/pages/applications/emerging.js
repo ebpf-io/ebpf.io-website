@@ -21,10 +21,10 @@ const emergingApplications = [
     name: 'eCapture',
     logoName: 'ecaptureLogo',
     title: 'SSL/TLS capture tool using eBPF',
-    description: `eCapture is a Go language-written tool that can capture HTTPS/TLS 
-    plaintext without a CA certificate. It supports TLS encryption libraries such as 
-    openssl, boringssl, gnutls, and nspr. It can run on x86_64 CPU architectures with 
-    Linux kernel 4.18 or higher, and aarch64 CPU architectures with Linux/Android 
+    description: `eCapture is a Go language-written tool that can capture HTTPS/TLS
+    plaintext without a CA certificate. It supports TLS encryption libraries such as
+    openssl, boringssl, gnutls, and nspr. It can run on x86_64 CPU architectures with
+    Linux kernel 4.18 or higher, and aarch64 CPU architectures with Linux/Android
     kernel 5.5 or higher, supporting both CO-RE and non-CO-RE modes without BTF.`,
     urls: [
       { label: 'GitHub', url: 'https://github.com/gojue/ecapture' },
@@ -45,6 +45,18 @@ const emergingApplications = [
     urls: [
       { label: 'GitHub', url: 'https://github.com/parca-dev/parca' },
       { label: 'Website', url: 'https://parca.dev' },
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/coroot/coroot',
+    name: 'coroot',
+    logoName: 'corootLogo',
+    title: 'Zero-instrumentation observability',
+    description: `Coroot is an open-source eBPF-based observability tool that turns telemetry
+  data into actionable insights, helping you identify and resolve application issues quickly.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/coroot/coroot' },
+      { label: 'Website', url: 'https://coroot.com/' },
     ],
   },
   {
@@ -73,15 +85,36 @@ const emergingApplications = [
     urls: [{ label: 'GitHub', url: 'https://github.com/aquasecurity/tracee' }],
   },
   {
-    logoUrl: 'https://github.com/coroot/coroot',
-    name: 'coroot',
-    logoName: 'corootLogo',
-    title: 'Zero-instrumentation observability',
-    description: `Coroot is an open-source eBPF-based observability tool that turns telemetry
-  data into actionable insights, helping you identify and resolve application issues quickly.`,
+    logoUrl: 'https://github.com/keyval-dev/odigos',
+    name: 'Odigos',
+    logoName: 'odigosLogo',
+    title: 'Zero-code distributed tracing via eBPF',
+    description: `Odigos is a zero-code distributed tracing solution that uses eBPF to automatically
+    instrument any application, including automatic context propagation.
+    Traces are produced in OpenTelemetry format and can be delivered to any compatible backend.`,
     urls: [
-      { label: 'GitHub', url: 'https://github.com/coroot/coroot' },
-      { label: 'Website', url: 'https://coroot.com/' },
+      { label: 'GitHub', url: 'https://github.com/keyval-dev/odigos' },
+      { label: 'Website', url: 'https://odigos.io' },
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/cilium/pwru',
+    name: 'pwru',
+    logoName: 'pwruLogo',
+    title: 'eBPF-based Linux kernel network packet tracer',
+    description:
+      'pwru is an eBPF-based tool for tracing network packets in the Linux kernel with advanced filtering capabilities. It allows fine-grained introspection of kernel state to facilitate debugging network connectivity issues.',
+    urls: [{ label: 'GitHub', url: 'https://github.com/cilium/pwru' }],
+  },
+  {
+    logoUrl: 'https://github.com/deepflowys/deepflow',
+    name: 'DeepFlow',
+    logoName: 'deepflowLogo',
+    title: 'Highly Automated Observability Platform powered by eBPF',
+    description: `DeepFlow is a highly automated observability platform built for cloud native developers. Based on eBPF, DeepFlow innovatively implements an automated distributed tracing mechanism: AutoTracing. Microservice processes, service mesh sidecars, and network interfaces along the way are included as tracing spans, for every distributed transaction, without any code instrumentation. DeepFlow can automatically generate golden RED metrics for any process in cloud native environment.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/deepflowys/deepflow' },
+      { label: 'Website', url: 'https://deepflow.yunshan.net/community.html' },
     ],
   },
   {
@@ -96,6 +129,14 @@ const emergingApplications = [
     programs. When pointed to a cluster, it schedules a temporary job
     called trace-runner that executes bpftrace.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/iovisor/kubectl-trace' }],
+  },
+  {
+    logoUrl: 'https://github.com/daeuniverse/dae',
+    name: 'dae',
+    logoName: 'daeLogo',
+    title: 'Linux high-performance transparent proxy solution',
+    description: `dae, means goose, is a high-performance transparent proxy solution. To enhance traffic split performance as much as possible, dae employs the transparent proxy and traffic split suite within the Linux kernel using eBPF. As a result, dae can enable direct traffic to bypass the proxy application's forwarding, facilitating genuine direct traffic passage. Through this remarkable feat, there is minimal performance loss and negligible additional resource consumption for direct traffic.`,
+    urls: [{ label: 'GitHub', url: 'https://github.com/daeuniverse/dae' }],
   },
   {
     logoUrl: 'https://github.com/kinvolk/inspektor-gadget',
@@ -119,27 +160,10 @@ const emergingApplications = [
     name: 'Sysinternals Sysmon for Linux',
     logoName: 'sysinternalsLogo',
     title: 'Security Observability',
-    description: `Sysmon for Linux is a tool that monitors and logs system activity including process lifetime, network 
+    description: `Sysmon for Linux is a tool that monitors and logs system activity including process lifetime, network
     connections, file system writes, and more. Sysmon works across reboots and supports advanced filtering to help identify
     malicious activity as well as how intruders and malware operate on your network.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/Sysinternals/SysmonForLinux' }],
-  },
-  {
-    logoUrl: 'https://github.com/cilium/pwru',
-    name: 'pwru',
-    logoName: 'pwruLogo',
-    title: 'eBPF-based Linux kernel network packet tracer',
-    description:
-      'pwru is an eBPF-based tool for tracing network packets in the Linux kernel with advanced filtering capabilities. It allows fine-grained introspection of kernel state to facilitate debugging network connectivity issues.',
-    urls: [{ label: 'GitHub', url: 'https://github.com/cilium/pwru' }],
-  },
-  {
-    logoUrl: 'https://github.com/daeuniverse/dae',
-    name: 'dae',
-    logoName: 'daeLogo',
-    title: 'Linux high-performance transparent proxy solution',
-    description: `dae, means goose, is a high-performance transparent proxy solution. To enhance traffic split performance as much as possible, dae employs the transparent proxy and traffic split suite within the Linux kernel using eBPF. As a result, dae can enable direct traffic to bypass the proxy application's forwarding, facilitating genuine direct traffic passage. Through this remarkable feat, there is minimal performance loss and negligible additional resource consumption for direct traffic.`,
-    urls: [{ label: 'GitHub', url: 'https://github.com/daeuniverse/dae' }],
   },
   {
     logoUrl: 'https://github.com/groundcover-com/caretta',
@@ -150,19 +174,6 @@ const emergingApplications = [
     It can be used to visualize the network traffic between services in a Kubernetes cluster,
     and gain additional insights into the network traffic and the relationships between services.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/groundcover-com/caretta' }],
-  },
-  {
-    logoUrl: 'https://github.com/keyval-dev/odigos',
-    name: 'Odigos',
-    logoName: 'odigosLogo',
-    title: 'Zero-code distributed tracing via eBPF',
-    description: `Odigos is a zero-code distributed tracing solution that uses eBPF to automatically
-    instrument any application, including automatic context propagation.
-    Traces are produced in OpenTelemetry format and can be delivered to any compatible backend.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/keyval-dev/odigos' },
-      { label: 'Website', url: 'https://odigos.io' },
-    ],
   },
   {
     logoUrl: 'https://github.com/solo-io/bumblebee',
@@ -176,6 +187,36 @@ const emergingApplications = [
     urls: [
       { label: 'GitHub', url: 'https://github.com/solo-io/bumblebee' },
       { label: 'Website', url: 'https://bumblebee.io/' },
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/kubearmor/KubeArmor',
+    name: 'KubeArmor',
+    logoName: 'kubeArmorLogo',
+    title: 'Container-aware Runtime Security Enforcement System',
+    description: `KubeArmor is a container-aware runtime security enforcement system
+    that restricts the behavior (such as process execution, file access,
+    networking operation, and resource utilization) of containers at the
+    system level, using LSMs and eBPF.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/kubearmor/KubeArmor' },
+      { label: 'Website', url: 'https://kubearmor.com' },
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/grafana/beyla',
+    name: 'Beyla',
+    logoName: 'beylaLogo',
+    title: 'Zero-code automatic instrumentation with eBPF and OpenTelemetry',
+    description: `Beyla is a vendor agnostic, OpenTelemetry and Prometheus application auto-instrumentation tool,
+    which lets you easily get started with Application Observability. eBPF is used to automatically inspect
+    application executables and the OS networking layer, allowing us to capture essential application observability
+    events for HTTP/S and gRPC services. From these captured eBPF events, we produce OpenTelemetry web transaction
+    trace spans and Rate-Errors-Duration (RED) metrics. As with most eBPF tools, all data capture and instrumentation
+    occurs without any modifications to your application code or configuration.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/grafana/beyla' },
+      { label: 'Website', url: 'https://grafana.com/oss/beyla-ebpf/' },
     ],
   },
   {
@@ -195,61 +236,19 @@ const emergingApplications = [
     ],
   },
   {
-    logoUrl: 'https://github.com/kubearmor/KubeArmor',
-    name: 'KubeArmor',
-    logoName: 'kubeArmorLogo',
-    title: 'Container-aware Runtime Security Enforcement System',
-    description: `KubeArmor is a container-aware runtime security enforcement system
-    that restricts the behavior (such as process execution, file access,
-    networking operation, and resource utilization) of containers at the
-    system level, using LSMs and eBPF.`,
+    logoUrl: 'https://github.com/sustainable-computing-io/kepler',
+    name: 'Kepler',
+    logoName: 'keplerLogo',
+    title: 'Kubernetes-based Efficient Power Level Exporter',
+    description: `Kepler (Kubernetes-based Efficient Power Level Exporter) is a Prometheus exporter.
+    It uses eBPF to probe CPU performance counters and Linux kernel tracepoints.
+    These data and stats from cgroup and sysfs are fed into ML models to estimate energy consumption by Pods.`,
     urls: [
-      { label: 'GitHub', url: 'https://github.com/kubearmor/KubeArmor' },
-      { label: 'Website', url: 'https://kubearmor.com' },
-    ],
-  },
-  {
-    logoUrl: 'https://github.com/merbridge/merbridge',
-    name: 'Merbridge',
-    logoName: 'merbridgeLogo',
-    title: 'Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge',
-    description: `Merbridge is designed to make traffic interception and forwarding more efficient for service mesh. With Merbridge, developers can use eBPF instead of iptables to accelerate their service mesh without any additional operations or code changes. Currently, Merbridge already supports Istio, Linkerd, and Kuma.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/merbridge/merbridge' },
-      { label: 'Website', url: 'https://merbridge.io/' },
-    ],
-  },
-  {
-    logoUrl: 'https://github.com/deepflowys/deepflow',
-    name: 'DeepFlow',
-    logoName: 'deepflowLogo',
-    title: 'Highly Automated Observability Platform powered by eBPF',
-    description: `DeepFlow is a highly automated observability platform built for cloud native developers. Based on eBPF, DeepFlow innovatively implements an automated distributed tracing mechanism: AutoTracing. Microservice processes, service mesh sidecars, and network interfaces along the way are included as tracing spans, for every distributed transaction, without any code instrumentation. DeepFlow can automatically generate golden RED metrics for any process in cloud native environment.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/deepflowys/deepflow' },
-      { label: 'Website', url: 'https://deepflow.yunshan.net/community.html' },
-    ],
-  },
-  {
-    logoUrl: 'https://github.com/rubrikinc/wachy',
-    name: 'wachy',
-    logoName: 'wachyLogo',
-    title: 'UI for interactive eBPF-based userspace performance debugging',
-    description: `Wachy is a profiler that uses eBPF to trace arbitrary compiled binaries and functions at runtime. It aims to make eBPF uprobe-based debugging much easier to use by displaying traces in a UI next to the source code, and allowing interactive drilldown analysis.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/rubrikinc/wachy' },
-      { label: 'Website', url: 'https://rubrikinc.github.io/wachy/' },
-    ],
-  },
-  {
-    logoUrl: 'https://github.com/kindlingproject/kindling',
-    name: 'Kindling',
-    logoName: 'kindlingLogo',
-    title: 'eBPF-based Cloud Native Monitoring & Profiling Tool',
-    description: `Kindling is a monitoring tool that aims to help users understand the execution behavior of programs from kernel space to user space to pinpoint the root cause of critical incidents. It can obtain L4/L7 network performance metrics and build service maps. Kindling implements a mechanism, Trace Profiling, that can display how each trace is executing on-CPU with thread-level flame graph, and how it is slowed down by off-CPU events with related metrics.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/kindlingproject/kindling' },
-      { label: 'Website', url: 'http://kindling.harmonycloud.cn' },
+      {
+        label: 'GitHub',
+        url: 'https://github.com/sustainable-computing-io/kepler',
+      },
+      { label: 'Website', url: 'https://sustainable-computing.io' },
     ],
   },
   {
@@ -268,43 +267,45 @@ const emergingApplications = [
     ],
   },
   {
-    logoUrl: 'https://github.com/sustainable-computing-io/kepler',
-    name: 'Kepler',
-    logoName: 'keplerLogo',
-    title: 'Kubernetes-based Efficient Power Level Exporter',
-    description: `Kepler (Kubernetes-based Efficient Power Level Exporter) is a Prometheus exporter.
-    It uses eBPF to probe CPU performance counters and Linux kernel tracepoints.
-    These data and stats from cgroup and sysfs are fed into ML models to estimate energy consumption by Pods.`,
+    logoUrl: 'https://github.com/merbridge/merbridge',
+    name: 'Merbridge',
+    logoName: 'merbridgeLogo',
+    title: 'Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge',
+    description: `Merbridge is designed to make traffic interception and forwarding more efficient for service mesh. With Merbridge, developers can use eBPF instead of iptables to accelerate their service mesh without any additional operations or code changes. Currently, Merbridge already supports Istio, Linkerd, and Kuma.`,
     urls: [
-      {
-        label: 'GitHub',
-        url: 'https://github.com/sustainable-computing-io/kepler',
-      },
-      { label: 'Website', url: 'https://sustainable-computing.io' },
+      { label: 'GitHub', url: 'https://github.com/merbridge/merbridge' },
+      { label: 'Website', url: 'https://merbridge.io/' },
     ],
   },
   {
-    logoUrl: 'https://github.com/grafana/beyla',
-    name: 'Beyla',
-    logoName: 'beylaLogo',
-    title: 'Zero-code automatic instrumentation with eBPF and OpenTelemetry',
-    description: `Beyla is a vendor agnostic, OpenTelemetry and Prometheus application auto-instrumentation tool, 
-    which lets you easily get started with Application Observability. eBPF is used to automatically inspect 
-    application executables and the OS networking layer, allowing us to capture essential application observability 
-    events for HTTP/S and gRPC services. From these captured eBPF events, we produce OpenTelemetry web transaction 
-    trace spans and Rate-Errors-Duration (RED) metrics. As with most eBPF tools, all data capture and instrumentation 
-    occurs without any modifications to your application code or configuration.`,
+    logoUrl: 'https://github.com/kindlingproject/kindling',
+    name: 'Kindling',
+    logoName: 'kindlingLogo',
+    title: 'eBPF-based Cloud Native Monitoring & Profiling Tool',
+    description: `Kindling is a monitoring tool that aims to help users understand the execution behavior of programs from kernel space to user space to pinpoint the root cause of critical incidents. It can obtain L4/L7 network performance metrics and build service maps. Kindling implements a mechanism, Trace Profiling, that can display how each trace is executing on-CPU with thread-level flame graph, and how it is slowed down by off-CPU events with related metrics.`,
     urls: [
-      { label: 'GitHub', url: 'https://github.com/grafana/beyla' },
-      { label: 'Website', url: 'https://grafana.com/oss/beyla-ebpf/' },
+      { label: 'GitHub', url: 'https://github.com/kindlingproject/kindling' },
+      { label: 'Website', url: 'http://kindling.harmonycloud.cn' },
     ],
   },
+  {
+    logoUrl: 'https://github.com/rubrikinc/wachy',
+    name: 'wachy',
+    logoName: 'wachyLogo',
+    title: 'UI for interactive eBPF-based userspace performance debugging',
+    description: `Wachy is a profiler that uses eBPF to trace arbitrary compiled binaries and functions at runtime. It aims to make eBPF uprobe-based debugging much easier to use by displaying traces in a UI next to the source code, and allowing interactive drilldown analysis.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/rubrikinc/wachy' },
+      { label: 'Website', url: 'https://rubrikinc.github.io/wachy/' },
+    ],
+  },
+
   {
     logoUrl: 'https://github.com/ddosify/alaz',
     name: 'Alaz',
     logoName: 'alazLogo',
     title: 'Effortless, Low-Overhead, eBPF-based Kubernetes Monitoring',
-    description: `Alaz is an open source Ddosify eBPF agent that can inspect and collect Kubernetes service traffic 
+    description: `Alaz is an open source Ddosify eBPF agent that can inspect and collect Kubernetes service traffic
     without the need for code instrumentation, sidecars, or service restarts.
     Alaz uses eBPF to create a Service Map that helps identify golden signals and problems like high latencies, 5xx errors, zombie services, slow HTTP requests, and SQL queries.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/ddosify/alaz' }],
@@ -370,8 +371,8 @@ const emergingApplications = [
     name: 'SSHLog',
     logoName: 'sshlogLogo',
     title: 'eBPF SSH session monitoring',
-    description: `SSHLog is a Linux daemon written in C++ and Python that monitors OpenSSH servers via eBPF.  The agent 
-    passively records all SSH session activity (commands and output) to log files for any connecting user.  Administrators can also share an SSH session with 
+    description: `SSHLog is a Linux daemon written in C++ and Python that monitors OpenSSH servers via eBPF.  The agent
+    passively records all SSH session activity (commands and output) to log files for any connecting user.  Administrators can also share an SSH session with
     any logged in user.  Actions may be triggered based on SSH behavior such as posting a Slack message when a remote user attempts to gain root access.`,
     urls: [
       { label: 'GitHub', url: 'https://github.com/sshlog/agent/' },
@@ -408,12 +409,12 @@ const emergingApplications = [
     name: 'netobserv',
     logoName: 'netobservLogo',
     title: 'Flow based observability platform',
-    description: `NetObserv eBPF agent empowers the collection of essential network metrics, 
-    including the tracking of network flow statistics. It conducts in-depth DNS latency analysis for DNS over UDP and TCP, 
-    allowing for the measurement of the time it takes for DNS requests to be processed. 
-    Additionally, it calculates TCP round trip latency on a per-flow basis, aiding in the identification of latency-related 
+    description: `NetObserv eBPF agent empowers the collection of essential network metrics,
+    including the tracking of network flow statistics. It conducts in-depth DNS latency analysis for DNS over UDP and TCP,
+    allowing for the measurement of the time it takes for DNS requests to be processed.
+    Additionally, it calculates TCP round trip latency on a per-flow basis, aiding in the identification of latency-related
     issues within TCP connections.
-    The agent also provides insights into packet drops, offering protocol-specific drop metrics along with the reasons for packet drops. 
+    The agent also provides insights into packet drops, offering protocol-specific drop metrics along with the reasons for packet drops.
     Furthermore, NetObserv eBPF offers filter-based capabilities for capturing raw network packets,
     enabling administrators to focus on specific network events or issues of interest.
     These captured packets are stored in the widely supported .pcap format,
