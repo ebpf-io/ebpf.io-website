@@ -23,6 +23,16 @@ const getInitialFilters = (allFilters) =>
     return acc;
   }, {});
 
+const getFiltersArrayForTagList = (value) => {
+  let result = [];
+
+  Object.keys(value).forEach((type) => {
+    result = [...result, ...value[type].map((item) => ({ title: item, label: type }))];
+  });
+
+  return result;
+};
+
 const EventList = ({ allEvents, totalCount }) => {
   const [eventPositionStart, setEventPositionStart] = useState(0);
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
@@ -94,12 +104,7 @@ const EventList = ({ allEvents, totalCount }) => {
   );
   const currentEvents = filteredEvents.slice(eventPositionStart, eventPositionEnd);
   const pageCount = Math.ceil(filteredEvents.length / EVENT_PER_PAGE);
-  const allActiveFilters = [
-    ...activeFilters.date.map((item) => ({ title: item, label: 'date' })),
-    ...activeFilters.eventtype.map((item) => ({ title: item, label: 'eventtype' })),
-    ...activeFilters.conference.map((item) => ({ title: item, label: 'conference' })),
-    ...activeFilters.region.map((item) => ({ title: item, label: 'region' })),
-  ];
+  const allActiveFilters = getFiltersArrayForTagList(activeFilters);
 
   return (
     <section className="mt-9 safe-paddings pb-28 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
