@@ -118,7 +118,7 @@ const EventList = ({ allEvents, totalCount }) => {
             {allActiveFilters.map(({ title, label }, index) => (
               <li key={index}>
                 <Button
-                  className="text-sm border-none gap-x-3"
+                  className="text-sm font-medium border-none gap-x-3"
                   theme="gray"
                   size="xs"
                   onClick={() => resetFilterTag(label, title)}
