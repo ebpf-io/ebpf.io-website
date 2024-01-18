@@ -10,7 +10,7 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
   return (
     <div
       id="categories"
-      className="flex w-full justify-left space-x-6 [@media(max-width:845px)]:flex-col [@media(max-width:845px)]:space-x-0 [@media(max-width:845px)]:space-y-5 "
+      className="flex w-full space-x-6 [@media(max-width:845px)]:flex-col [@media(max-width:845px)]:space-x-0 [@media(max-width:845px)]:space-y-5 "
     >
       <DropdownSelect
         {...date}
