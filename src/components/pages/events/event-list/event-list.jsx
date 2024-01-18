@@ -13,7 +13,7 @@ import useFilteredEvents from 'hooks/use-filtered-events';
 
 import EmptyState from '../empty-state';
 
-import CloseIcon from './images/close.inline.svg';
+import closeIcon from './images/close.svg';
 
 const getInitialFilters = (allFilters) =>
   allFilters.reduce((acc, { label }) => {
@@ -124,7 +124,14 @@ const EventList = ({ allEvents, totalCount }) => {
                   onClick={() => resetFilterTag(label, title)}
                 >
                   <span>{title}</span>
-                  <CloseIcon className="w-2 h-2" />
+                  <img
+                    className="w-2 h-2"
+                    src={closeIcon}
+                    alt={title}
+                    width={8}
+                    height={8}
+                    loading="lazy"
+                  />
                 </Button>
               </li>
             ))}
