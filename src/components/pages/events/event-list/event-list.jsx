@@ -1,15 +1,19 @@
+import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import useLocation from 'react-use/lib/useLocation';
 
 import Filters from 'components/pages/events/filters';
 import Pagination from 'components/pages/events/pagination';
+import Button from 'components/shared/button';
 import EventCard from 'components/shared/event-card';
 import { EVENT_PER_PAGE } from 'constants/event';
 import { eventFilters } from 'constants/event-filters';
 import useFilteredEvents from 'hooks/use-filtered-events';
 
 import EmptyState from '../empty-state';
+
+import CloseIcon from './images/close.inline.svg';
 
 const getInitialFilters = (allFilters) =>
   allFilters.reduce((acc, { label }) => {
@@ -27,6 +31,19 @@ const EventList = ({ allEvents, totalCount }) => {
   const handleFilters = (filter, newValues) => {
     setActiveFilters((prev) => ({ ...prev, [filter.label]: newValues }));
     setEventPositionStart(0);
+  };
+
+  const resetFilters = () => {
+    Object.values(eventFilters).forEach((type) => {
+      handleFilters(type, []);
+    });
+  };
+
+  const resetFilterTag = (type, tag) => {
+    handleFilters(
+      { label: type },
+      activeFilters[type].filter((item) => item !== tag)
+    );
   };
 
   useEffect(() => {
@@ -77,16 +94,55 @@ const EventList = ({ allEvents, totalCount }) => {
   );
   const currentEvents = filteredEvents.slice(eventPositionStart, eventPositionEnd);
   const pageCount = Math.ceil(filteredEvents.length / EVENT_PER_PAGE);
+  const allActiveFilters = [
+    ...activeFilters.date.map((item) => ({ title: item, label: 'date' })),
+    ...activeFilters.eventtype.map((item) => ({ title: item, label: 'eventtype' })),
+    ...activeFilters.conference.map((item) => ({ title: item, label: 'conference' })),
+    ...activeFilters.region.map((item) => ({ title: item, label: 'region' })),
+  ];
 
   return (
-    <section className="safe-paddings pb-28 pt-6 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
-      <Filters
-        eventFilters={eventFilters}
-        activeFilters={activeFilters}
-        handleFilters={handleFilters}
-      />
+    <section className="mt-9 safe-paddings pb-28 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
+      <div
+        className={clsx('container flex flex-col items-start justify-start gap-y-6', {
+          'divide-y divide-gray-80 divide-dashed': allActiveFilters.length > 0,
+        })}
+      >
+        <Filters
+          eventFilters={eventFilters}
+          activeFilters={activeFilters}
+          handleFilters={handleFilters}
+        />
+        {allActiveFilters.length > 0 && (
+          <ul className="flex flex-row flex-wrap items-center justify-start w-full gap-4 pt-6">
+            {allActiveFilters.map(({ title, label }, index) => (
+              <li key={index}>
+                <Button
+                  className="text-sm border-none gap-x-3"
+                  theme="gray"
+                  size="xs"
+                  onClick={() => resetFilterTag(label, title)}
+                >
+                  <span>{title}</span>
+                  <CloseIcon className="w-2 h-2" />
+                </Button>
+              </li>
+            ))}
+            <li>
+              <button
+                className="self-start pb-1 mt-auto font-sans text-sm font-semibold leading-none transition-colors duration-200 border-b-2 text-gray-80 border-gray-80 hover:text-gray-60 hover:border-gray-70"
+                type="button"
+                onClick={resetFilters}
+              >
+                Reset filters
+              </button>
+            </li>
+          </ul>
+        )}
+      </div>
+
       {currentEvents.length > 0 ? (
-        <div className="container grid-gap grid auto-rows-min grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
+        <div className="container grid grid-cols-12 pt-12 grid-gap auto-rows-min justify-items-stretch md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
           {currentEvents.length > 0 &&
             currentEvents.map((item, index) => (
               <EventCard {...item} className="col-span-4 md:col-span-6" key={index} />
@@ -95,7 +151,6 @@ const EventList = ({ allEvents, totalCount }) => {
       ) : (
         <EmptyState />
       )}
-
       {pageCount > 1 && (
         <Pagination
           totalCount={totalCount}

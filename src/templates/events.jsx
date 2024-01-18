@@ -20,9 +20,10 @@ const pageUrls = {
 const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => (
   <Layout lang={language} pageUrls={pageUrls}>
     <div className="container flex flex-col pt-20 lg:pt-16">
-      <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
-        {data[language].title}
-      </h1>
+      <h1
+        className="heading-9xl max-w-[890px] text-left font-semibold leading-tight"
+        dangerouslySetInnerHTML={{ __html: data[language].title }}
+      />
     </div>
     <EventList allEvents={postEvents} totalCount={totalCount} />
   </Layout>
