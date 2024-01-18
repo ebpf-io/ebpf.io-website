@@ -118,7 +118,7 @@ const EventList = ({ allEvents, totalCount }) => {
                   className="text-sm font-medium border-none gap-x-3"
                   theme="gray"
                   size="xs"
-                  aria-label="Remove filter"
+                  aria-label={`Remove filter ${title}`}
                   onClick={() => resetFilterTag(label, title)}
                 >
                   <span>{title}</span>
@@ -137,7 +137,6 @@ const EventList = ({ allEvents, totalCount }) => {
               <button
                 className="self-start pb-1 mt-auto font-sans text-sm font-semibold leading-none transition-colors duration-200 border-b-2 text-gray-80 border-gray-80 hover:text-gray-60 hover:border-gray-70"
                 type="button"
-                aria-label="Reset filters"
                 onClick={resetFilters}
               >
                 Reset filters
