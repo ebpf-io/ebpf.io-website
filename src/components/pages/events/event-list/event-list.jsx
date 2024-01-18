@@ -23,16 +23,6 @@ const getInitialFilters = (allFilters) =>
     return acc;
   }, {});
 
-const getFiltersArrayForTagList = (value) => {
-  let result = [];
-
-  Object.keys(value).forEach((type) => {
-    result = [...result, ...value[type].map((item) => ({ title: item, label: type }))];
-  });
-
-  return result;
-};
-
 const EventList = ({ allEvents, totalCount }) => {
   const [eventPositionStart, setEventPositionStart] = useState(0);
   const [activeFilters, setActiveFilters] = useState(getInitialFilters(eventFilters));
@@ -104,12 +94,14 @@ const EventList = ({ allEvents, totalCount }) => {
   );
   const currentEvents = filteredEvents.slice(eventPositionStart, eventPositionEnd);
   const pageCount = Math.ceil(filteredEvents.length / EVENT_PER_PAGE);
-  const allActiveFilters = getFiltersArrayForTagList(activeFilters);
+  const allActiveFilters = Object.entries(activeFilters).flatMap(([label, items]) =>
+    items.map((item) => ({ label, title: item }))
+  );
 
   return (
     <section className="mt-9 safe-paddings pb-28 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
       <div
-        className={clsx('container flex flex-col items-start justify-start gap-y-6', {
+        className={clsx('container flex flex-col gap-y-6', {
           'divide-y divide-gray-80 divide-dashed': allActiveFilters.length > 0,
         })}
       >
@@ -119,20 +111,21 @@ const EventList = ({ allEvents, totalCount }) => {
           handleFilters={handleFilters}
         />
         {allActiveFilters.length > 0 && (
-          <ul className="flex flex-row flex-wrap items-center justify-start w-full gap-4 pt-6">
+          <ul className="flex flex-wrap items-center w-full gap-4 pt-6">
             {allActiveFilters.map(({ title, label }, index) => (
               <li key={index}>
                 <Button
                   className="text-sm font-medium border-none gap-x-3"
                   theme="gray"
                   size="xs"
+                  aria-label="Remove filter"
                   onClick={() => resetFilterTag(label, title)}
                 >
                   <span>{title}</span>
                   <img
                     className="w-2 h-2"
                     src={closeIcon}
-                    alt={title}
+                    alt=""
                     width={8}
                     height={8}
                     loading="lazy"
@@ -144,6 +137,7 @@ const EventList = ({ allEvents, totalCount }) => {
               <button
                 className="self-start pb-1 mt-auto font-sans text-sm font-semibold leading-none transition-colors duration-200 border-b-2 text-gray-80 border-gray-80 hover:text-gray-60 hover:border-gray-70"
                 type="button"
+                aria-label="Reset filters"
                 onClick={resetFilters}
               >
                 Reset filters
