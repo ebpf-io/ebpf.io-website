@@ -672,7 +672,7 @@ const caseStudiesData = {
     {
       title: 'Levo',
       logo: Levo,
-      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation.',
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
       links: [
         {
           text: 'Docs',
@@ -1291,7 +1291,7 @@ const caseStudiesData = {
     {
       title: 'Levo',
       logo: Levo,
-      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation.',
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
       links: [
         {
           text: 'Docs',
@@ -1904,7 +1904,7 @@ const caseStudiesData = {
     {
       title: 'Levo',
       logo: Levo,
-      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation.',
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
       links: [
         {
           text: 'Docs',
@@ -2381,7 +2381,7 @@ const caseStudiesData = {
     {
       title: 'Levo',
       logo: Levo,
-      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation.',
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
       links: [
         {
           text: 'Docs',
@@ -2864,7 +2864,7 @@ const caseStudiesData = {
     {
       title: 'Levo',
       logo: Levo,
-      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation.',
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
       links: [
         {
           text: 'Docs',
@@ -3440,7 +3440,7 @@ const caseStudiesData = {
     {
       title: 'Levo',
       logo: Levo,
-      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation.',
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
       links: [
         {
           text: 'Docs',
@@ -4027,7 +4027,7 @@ const caseStudiesData = {
     {
       title: 'Levo',
       logo: Levo,
-      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation.',
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
       links: [
         {
           text: 'Docs',
