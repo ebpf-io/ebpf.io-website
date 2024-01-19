@@ -5,7 +5,6 @@ import useLocation from 'react-use/lib/useLocation';
 
 import Filters from 'components/pages/events/filters';
 import Pagination from 'components/pages/events/pagination';
-import Button from 'components/shared/button';
 import EventCard from 'components/shared/event-card';
 import { EVENT_PER_PAGE } from 'constants/event';
 import { eventFilters } from 'constants/event-filters';
@@ -114,23 +113,24 @@ const EventList = ({ allEvents, totalCount }) => {
           <ul className="flex flex-wrap items-center w-full gap-4 pt-6">
             {allActiveFilters.map(({ title, label }, index) => (
               <li key={index}>
-                <Button
-                  className="text-sm font-medium border-none gap-x-3"
-                  theme="gray"
-                  size="xs"
-                  aria-label={`Remove filter ${title}`}
-                  onClick={() => resetFilterTag(label, title)}
-                >
+                <span className="inline-flex items-center justify-center pl-4 text-sm font-medium leading-none text-center text-black border-none rounded-full bg-gray-96 whitespace-nowrap">
                   <span>{title}</span>
-                  <img
-                    className="w-2 h-2"
-                    src={closeIcon}
-                    alt=""
-                    width={8}
-                    height={8}
-                    loading="lazy"
-                  />
-                </Button>
+                  <button
+                    className="inline-flex items-center justify-center py-[13px] pl-3 pr-4 leading-none text-center rounded-full outline-none cursor-pointer hover:bg-gray-94 transition-colors duration-200"
+                    type="button"
+                    aria-label={`Remove filter ${title}`}
+                    onClick={() => resetFilterTag(label, title)}
+                  >
+                    <img
+                      className="w-3 h-3"
+                      src={closeIcon}
+                      alt=""
+                      width={12}
+                      height={12}
+                      loading="lazy"
+                    />
+                  </button>
+                </span>
               </li>
             ))}
             <li>
