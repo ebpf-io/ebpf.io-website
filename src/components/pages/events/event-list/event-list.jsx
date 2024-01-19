@@ -99,13 +99,13 @@ const EventList = ({ allEvents, totalCount }) => {
 
   return (
     <section className="mt-9 safe-paddings pb-28 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
-      <div className="container flex flex-col divide-y gap-y-6 divide-gray-80 divide-dashed">
+      <div className="container flex flex-col">
         <Filters
           eventFilters={eventFilters}
           activeFilters={activeFilters}
           handleFilters={handleFilters}
         />
-        {allActiveFilters.length > 0 ? (
+        {allActiveFilters.length > 0 && (
           <ul className="flex flex-wrap items-center w-full gap-4 pt-6">
             {allActiveFilters.map(({ title, label }, index) => (
               <li
@@ -133,8 +133,6 @@ const EventList = ({ allEvents, totalCount }) => {
               </button>
             </li>
           </ul>
-        ) : (
-          <div />
         )}
       </div>
 
