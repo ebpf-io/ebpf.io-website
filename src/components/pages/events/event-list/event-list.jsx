@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+// import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import useLocation from 'react-use/lib/useLocation';
@@ -12,7 +12,7 @@ import useFilteredEvents from 'hooks/use-filtered-events';
 
 import EmptyState from '../empty-state';
 
-import closeIcon from './images/close.svg';
+import CloseIcon from './images/close.inline.svg';
 
 const getInitialFilters = (allFilters) =>
   allFilters.reduce((acc, { label }) => {
@@ -99,38 +99,28 @@ const EventList = ({ allEvents, totalCount }) => {
 
   return (
     <section className="mt-9 safe-paddings pb-28 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
-      <div
-        className={clsx('container flex flex-col gap-y-6', {
-          'divide-y divide-gray-80 divide-dashed': allActiveFilters.length > 0,
-        })}
-      >
+      <div className="container flex flex-col divide-y gap-y-6 divide-gray-80 divide-dashed">
         <Filters
           eventFilters={eventFilters}
           activeFilters={activeFilters}
           handleFilters={handleFilters}
         />
-        {allActiveFilters.length > 0 && (
+        {allActiveFilters.length > 0 ? (
           <ul className="flex flex-wrap items-center w-full gap-4 pt-6">
             {allActiveFilters.map(({ title, label }, index) => (
-              <li key={index}>
-                <span className="inline-flex items-center justify-center pl-4 text-sm font-medium leading-none text-center text-black border-none rounded-full bg-gray-96 whitespace-nowrap">
-                  <span>{title}</span>
-                  <button
-                    className="inline-flex items-center justify-center py-[13px] pl-3 pr-4 leading-none text-center rounded-full outline-none cursor-pointer hover:bg-gray-94 transition-colors duration-200"
-                    type="button"
-                    aria-label={`Remove filter ${title}`}
-                    onClick={() => resetFilterTag(label, title)}
-                  >
-                    <img
-                      className="w-3 h-3"
-                      src={closeIcon}
-                      alt=""
-                      width={12}
-                      height={12}
-                      loading="lazy"
-                    />
-                  </button>
-                </span>
+              <li
+                className="inline-flex items-center justify-center pl-4 text-sm font-medium leading-none text-center text-black border-none rounded-full bg-gray-96 whitespace-nowrap"
+                key={index}
+              >
+                <span>{title}</span>
+                <button
+                  className="inline-flex items-center justify-center py-[13px] pl-3 pr-4 text-black hover:text-secondary-red leading-none text-center rounded-full outline-none cursor-pointer transition-colors duration-200"
+                  type="button"
+                  aria-label={`Remove filter ${title}`}
+                  onClick={() => resetFilterTag(label, title)}
+                >
+                  <CloseIcon className="w-3 h-3" />
+                </button>
               </li>
             ))}
             <li>
@@ -143,6 +133,8 @@ const EventList = ({ allEvents, totalCount }) => {
               </button>
             </li>
           </ul>
+        ) : (
+          <div />
         )}
       </div>
 
