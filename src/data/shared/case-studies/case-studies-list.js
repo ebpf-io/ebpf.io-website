@@ -24,6 +24,7 @@ import Helios from './logos/helios.inline.svg';
 import Ikea from './logos/ikea.inline.svg';
 import Isovalent from './logos/isovalent.inline.svg';
 import Kodem from './logos/kodemsec.inline.svg';
+import Levo from './logos/levo.inline.svg';
 import LineCoporation from './logos/line-corp.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
 import Meta from './logos/meta.inline.svg';
@@ -668,6 +669,17 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Levo',
+      logo: Levo,
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
+      links: [
+        {
+          text: 'Docs',
+          to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
@@ -1276,6 +1288,17 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Levo',
+      logo: Levo,
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
+      links: [
+        {
+          text: 'Docs',
+          to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        },
+      ],
+    },
   ],
   pt: [
     {
@@ -1878,6 +1901,17 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Levo',
+      logo: Levo,
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
+      links: [
+        {
+          text: 'Docs',
+          to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        },
+      ],
+    },
   ],
   'pt-br': [
     {
@@ -2341,6 +2375,17 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
+        },
+      ],
+    },
+    {
+      title: 'Levo',
+      logo: Levo,
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
+      links: [
+        {
+          text: 'Docs',
+          to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
         },
       ],
     },
@@ -2813,6 +2858,17 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
+        },
+      ],
+    },
+    {
+      title: 'Levo',
+      logo: Levo,
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
+      links: [
+        {
+          text: 'Docs',
+          to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
         },
       ],
     },
@@ -3378,6 +3434,17 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
+        },
+      ],
+    },
+    {
+      title: 'Levo',
+      logo: Levo,
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
+      links: [
+        {
+          text: 'Docs',
+          to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
         },
       ],
     },
@@ -3954,6 +4021,17 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/',
+        },
+      ],
+    },
+    {
+      title: 'Levo',
+      logo: Levo,
+      description: '<strong>Levo</strong> uses eBPF for API discovery and documentation',
+      links: [
+        {
+          text: 'Docs',
+          to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
         },
       ],
     },
