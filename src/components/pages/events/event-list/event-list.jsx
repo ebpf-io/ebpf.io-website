@@ -1,3 +1,4 @@
+// import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import useLocation from 'react-use/lib/useLocation';
@@ -10,6 +11,8 @@ import { eventFilters } from 'constants/event-filters';
 import useFilteredEvents from 'hooks/use-filtered-events';
 
 import EmptyState from '../empty-state';
+
+import CloseIcon from './images/close.inline.svg';
 
 const getInitialFilters = (allFilters) =>
   allFilters.reduce((acc, { label }) => {
@@ -27,6 +30,19 @@ const EventList = ({ allEvents, totalCount }) => {
   const handleFilters = (filter, newValues) => {
     setActiveFilters((prev) => ({ ...prev, [filter.label]: newValues }));
     setEventPositionStart(0);
+  };
+
+  const resetFilters = () => {
+    Object.values(eventFilters).forEach((type) => {
+      handleFilters(type, []);
+    });
+  };
+
+  const resetFilterTag = (type, tag) => {
+    handleFilters(
+      { label: type },
+      activeFilters[type].filter((item) => item !== tag)
+    );
   };
 
   useEffect(() => {
@@ -77,16 +93,51 @@ const EventList = ({ allEvents, totalCount }) => {
   );
   const currentEvents = filteredEvents.slice(eventPositionStart, eventPositionEnd);
   const pageCount = Math.ceil(filteredEvents.length / EVENT_PER_PAGE);
+  const allActiveFilters = Object.entries(activeFilters).flatMap(([label, items]) =>
+    items.map((item) => ({ label, title: item }))
+  );
 
   return (
-    <section className="safe-paddings pb-28 pt-6 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
-      <Filters
-        eventFilters={eventFilters}
-        activeFilters={activeFilters}
-        handleFilters={handleFilters}
-      />
+    <section className="mt-9 safe-paddings pb-28 lg:pb-24 md:pb-16 sm:pb-12" id="ref">
+      <div className="container flex flex-col">
+        <Filters
+          eventFilters={eventFilters}
+          activeFilters={activeFilters}
+          handleFilters={handleFilters}
+        />
+        {allActiveFilters.length > 0 && (
+          <ul className="flex flex-wrap items-center w-full gap-4 pt-6">
+            {allActiveFilters.map(({ title, label }, index) => (
+              <li
+                className="inline-flex items-center justify-center pl-4 text-sm font-medium leading-none text-center text-black border-none rounded-full bg-gray-96 whitespace-nowrap"
+                key={index}
+              >
+                <span>{title}</span>
+                <button
+                  className="inline-flex items-center justify-center py-[13px] pl-3 pr-4 text-black hover:text-secondary-red leading-none text-center rounded-full outline-none cursor-pointer transition-colors duration-200"
+                  type="button"
+                  aria-label={`Remove filter ${title}`}
+                  onClick={() => resetFilterTag(label, title)}
+                >
+                  <CloseIcon className="w-3 h-3" />
+                </button>
+              </li>
+            ))}
+            <li>
+              <button
+                className="self-start pb-1 mt-auto font-sans text-sm font-semibold leading-none transition-colors duration-200 border-b-2 text-gray-80 border-gray-80 hover:text-gray-60 hover:border-gray-70"
+                type="button"
+                onClick={resetFilters}
+              >
+                Reset filters
+              </button>
+            </li>
+          </ul>
+        )}
+      </div>
+
       {currentEvents.length > 0 ? (
-        <div className="container grid-gap grid auto-rows-min grid-cols-12 justify-items-stretch pt-12 md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
+        <div className="container grid grid-cols-12 pt-12 grid-gap auto-rows-min justify-items-stretch md:pt-10 sm:flex sm:flex-col sm:gap-y-5">
           {currentEvents.length > 0 &&
             currentEvents.map((item, index) => (
               <EventCard {...item} className="col-span-4 md:col-span-6" key={index} />
@@ -95,7 +146,6 @@ const EventList = ({ allEvents, totalCount }) => {
       ) : (
         <EmptyState />
       )}
-
       {pageCount > 1 && (
         <Pagination
           totalCount={totalCount}
