@@ -41,6 +41,7 @@ import Shopify from './logos/shopify.inline.svg';
 import Sky from './logos/sky.inline.svg';
 import Sysdig from './logos/sysdig.inline.svg';
 import Threatx from './logos/threatX.inline.svg';
+import Traceable from './logos/traceable.inline.svg';
 import Trip from './logos/trip.inline.svg';
 import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
@@ -677,6 +678,17 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        }
+        ]
+    },
+  {
+      title: 'Traceable',
+      logo: Traceable,
+      description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
         },
       ],
     },
@@ -1296,6 +1308,17 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        }
+        ]
+    },
+  {
+      title: 'Traceable',
+      logo: Traceable,
+      description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
         },
       ],
     },
@@ -1909,6 +1932,17 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        }
+        ]
+    },
+  {
+      title: 'Traceable',
+      logo: Traceable,
+      description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
         },
       ],
     },
@@ -2386,6 +2420,17 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        }
+        ]
+    },
+  {
+      title: 'Traceable',
+      logo: Traceable,
+      description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
         },
       ],
     },
@@ -2869,6 +2914,17 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        }
+        ]
+    },
+  {
+      title: 'Traceable',
+      logo: Traceable,
+      description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
         },
       ],
     },
@@ -3445,11 +3501,21 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        }
+        ]
+    },
+  {
+      title: 'Traceable',
+      logo: Traceable,
+      description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
         },
       ],
     },
   ],
-
   sw: [
     {
       title: 'Google',
@@ -4032,6 +4098,17 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
+        }
+        ]
+    },
+  {
+      title: 'Traceable',
+      logo: Traceable,
+      description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
         },
       ],
     },
