@@ -4,6 +4,7 @@ import Android from './logos/android.inline.svg';
 import AntGroup from './logos/ant-group.inline.svg';
 import Apple from './logos/apple.inline.svg';
 import Aqua from './logos/aqua.inline.svg';
+import ArvanCloud from './logos/arvancloud.inline.svg';
 import Bell from './logos/bell.inline.svg';
 import Bytedance from './logos/byte-dance.inline.svg';
 import CapitalOne from './logos/capital-one.inline.svg';
@@ -689,6 +690,17 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
+        },
+      ],
+    },
+    {
+      title: 'ArvanCloud',
+      logo: ArvanCloud,
+      description: '<strong>ArvanCloud</strong> uses eBPF for their CDN product',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://medium.com/@amiremohamadi/we-removed-shared-memory-by-building-an-ebpf-load-balancer-394f9f1b344',
         },
       ],
     },
