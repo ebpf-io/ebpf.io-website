@@ -110,6 +110,22 @@ const majorApplications = [
     ],
   },
   {
+    logoUrl: 'https://github.com/parca-dev/parca',
+    name: 'Parca',
+    logoName: 'parcaLogo',
+    title: 'Continuous Profiling Platform',
+    description: `Track memory, CPU, I/O bottlenecks broken down by method
+    name, class name, and line number over time. Without complex overhead, in
+    any language or framework. Using Parca's UI the data can be globally
+    explored and analyzed using various visualizations to quickly and
+    efficiently identify bottlenecks in code. Parca uses eBPF to collect
+    profiling data and uses libbpf-go to interact with the kernel.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/parca-dev/parca' },
+      { label: 'Website', url: 'https://parca.dev' },
+    ],
+  },
+  {
     logoUrl: 'https://github.com/cilium/tetragon',
     name: 'Tetragon',
     logoName: 'tetragonLogo',
