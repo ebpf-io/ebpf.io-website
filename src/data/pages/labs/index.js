@@ -71,6 +71,16 @@ const data = {
       buttonTitle: 'Jisajili',
     },
   },
+  'tw-cn': {
+    title: '參與互動實驗，深入研究 eBPF',
+    subscriptionForm: {
+      title: '訂閱',
+      afterTitle: '訂閱雙周刊 eCHO 新聞',
+      description: '了解 eBPF 和 Cilium 的最新新聞和資訊',
+      placeholder: '電子郵件地址...',
+      buttonTitle: '訂閱',
+    }
+  }
 };
 
 export default data;

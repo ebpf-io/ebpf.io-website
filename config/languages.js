@@ -35,6 +35,11 @@ module.exports = {
       shortName: 'Swa',
       code: 'sw',
     },
+    'tw-cn': {
+      name: '繁體中文',
+      shortName: 'Chi',
+      code: 'tw-cn',
+    }
   },
   defaultLanguage: 'en',
 };

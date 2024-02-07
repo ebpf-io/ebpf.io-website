@@ -24,6 +24,7 @@ const title = {
   'it-it': 'Librerie eBPF',
   'zh-cn': 'eBPF 库',
   sw: 'Maktaba za eBPF',
+  'zh-tw': 'eBPF 函式庫'
 };
 
 const items = [

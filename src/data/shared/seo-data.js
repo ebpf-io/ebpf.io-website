@@ -35,6 +35,10 @@ export default {
       description:
         'eBPF ni teknolojia ya mapinduzi inayoweza kuendesha programu zilizoko kwenye sanduku katika kernel ya Linux bila kubadilisha msimbo wa kernel au kupakia moduli ya kernel.',
     },
+    'tw-cn': {
+      title: 'eBPF - 介紹、教學與社群資源',
+      description: 'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。',
+    },
   },
   contribute: {
     en: {
@@ -78,6 +82,11 @@ export default {
         'Je, unataka kujifunza jinsi ya kuchangia kwa eBPF? Jifunze jinsi ya kuanza kuchangia miradi ya eBPF.',
       keywords: 'ebpf, bpf, kuchangia, kuanza, jumuiya',
     },
+    'tw-cn': {
+      title: '如何為 eBPF 做出貢獻',
+      description: '想了解如何為 eBPF 做出貢獻嗎？ 了解如何開始為 eBPF 項目做出貢獻。',
+      keywords: 'ebpf, bpf, 貢獻, 開始, 社群'
+    }
   },
   caseStudies: {
     en: {
@@ -115,6 +124,11 @@ export default {
       description: 'Jifunze jinsi eBPF inavyotumiwa katika miradi tofauti.',
       keywords: 'ebpf, bpf, kuchangia, kuanza, jumuiya',
     },
+    'tw-cn': {
+      title: 'eBPF 案例研究',
+      description: '了解 eBPF 如何在不同項目中的應用。',
+      keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
+    }
   },
   applications: {
     en: {
@@ -152,6 +166,11 @@ export default {
       description: 'Orodha ya programu za chanzo wazi zinazotumia eBPF',
       keywords: 'ebpf, bpf, mandhari, orodha, chanzo wazi',
     },
+    'tw-cn': {
+      title: 'eBPF 應用項目概覽',
+      description: '基於 eBPF 的開源應用程式目錄',
+      keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
+    }
   },
   infrastructure: {
     en: {
@@ -189,6 +208,11 @@ export default {
       description: 'Orodha ya msingi wa miundombinu inayotumia eBPF',
       keywords: 'ebpf, bpf, mandhari, orodha, chanzo wazi',
     },
+    'tw-cn': {
+      title: 'eBPF 核心基礎設施概覽',
+      description: '基於 eBPF 的核心基礎設施目錄',
+      keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
+    }
   },
   newsletter: {
     title: 'Subscribe to bi-weekly eCHO News - eBPF',

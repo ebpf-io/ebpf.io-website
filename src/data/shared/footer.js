@@ -199,6 +199,31 @@ const data = {
       </span>
     ),
   },
+  'tw-cn': {
+    copyright: 'eBPF.io 作者',
+    maintain: {
+      title: '由eBPF社群維護。',
+      beforeLink: '現一個bug?',
+      linkTitle: '創建一個issue',
+    },
+    content: (
+      <span>
+        <Link className="!inline font-medium" theme="white" to="/tw-cn/">ebpf.io</Link>{' '}
+        網站的內容根據{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creative Commons Attribution 4.0 International License
+        </Link>{' '}
+        授權
+      </span>
+    ),
+  },
 };
 
 export default data;

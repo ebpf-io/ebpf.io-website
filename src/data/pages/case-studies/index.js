@@ -9,6 +9,7 @@ const data = {
     'it-it': '/it-it/case-studies/',
     'zh-cn': '/zh-cn/case-studies/',
     sw: '/sw/case-studies/',
+    'tw-cn': '/tw-cn/case-studies/',
   },
   en: {
     hero: {
@@ -52,6 +53,12 @@ const data = {
       items: caseStudiesData.sw,
     },
   },
+  'tw-cn': {
+    hero: {
+      title: 'eBPF案例研究',
+      items: caseStudiesData['tw-cn'],
+    }
+  }
 };
 
 export default data;
