@@ -1,7 +1,6 @@
 const data = {
   en: {
-    title:
-      'Participate in eBPF events that highlight<br /> a range of expert voices and inspiring ideas',
+    title: 'eBPF Conferences and Meetups',
   },
   'fr-fr': {
     title: 'Conférences et Meetups eBPF',
@@ -21,6 +20,9 @@ const data = {
   sw: {
     title: 'Hifadhi ya Taarifa kuhusu eBPF',
   },
+  'tw-cn': {
+    title: 'eBPF 會議和見面會',
+  }
 };
 
 export default data;

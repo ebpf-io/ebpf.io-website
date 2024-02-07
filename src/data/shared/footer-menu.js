@@ -8,6 +8,7 @@ const footerMenu = [
       'it-it': 'Per Iniziare',
       'zh-cn': '开始',
       sw: 'Anza',
+      'tw-cn': '開始',
     },
     items: [
       {
@@ -19,6 +20,7 @@ const footerMenu = [
           'it-it': 'Cos’è eBPF?',
           'zh-cn': '什么是 eBPF ?',
           sw: 'Ni nini eBPF?',
+          'tw-ch': '什麼是eBPF',
         },
         to: {
           en: '/what-is-ebpf',
@@ -28,6 +30,7 @@ const footerMenu = [
           'it-it': '/it-it/what-is-ebpf',
           'zh-cn': '/zh-cn/what-is-ebpf',
           sw: '/sw/what-is-ebpf',
+          'tw-cn': '/tw-cn/what-is-ebpf',
         },
       },
       {
@@ -39,6 +42,7 @@ const footerMenu = [
           'it-it': 'eBPF Tech Talks',
           'zh-cn': 'eBPF 技术演讲',
           sw: 'eBPF Tech Talks',
+          'tw-cn': 'eBPF 技術演講',
         },
         to: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi',
         target: '_blank',
@@ -52,6 +56,7 @@ const footerMenu = [
           'it-it': 'Casi di Studio',
           'zh-cn': '案例研究',
           sw: 'Uchambuzi wa Kesi',
+          'tw-cn': '案例研究',
         },
         to: {
           en: '/case-studies',
@@ -61,6 +66,7 @@ const footerMenu = [
           'it-it': '/it-it/case-studies',
           'zh-cn': '/zh-cn/case-studies',
           sw: '/sw/case-studies',
+          'tw-cn': '/tw-cn/case-studies',
         },
       },
       {
@@ -72,6 +78,7 @@ const footerMenu = [
           'it-it': 'Labs',
           'zh-cn': '实验室',
           sw: 'Labs',
+          'tw-cn': '實驗',
         },
         to: {
           en: '/labs',
@@ -81,6 +88,7 @@ const footerMenu = [
           'it-it': '/it-it/labs',
           'zh-cn': '/zh-cn/labs',
           sw: '/sw/labs',
+          'tw-cn': '/tw-cn/labs',
         },
       },
     ],
@@ -94,6 +102,7 @@ const footerMenu = [
       'it-it': 'Panorama dei Progetti',
       'zh-cn': '项目概览',
       sw: 'Mandhari ya Mradi',
+      'tw-cn': '項目概覽',
     },
     items: [
       {
@@ -105,6 +114,7 @@ const footerMenu = [
           'it-it': 'Applicazioni',
           'zh-cn': '应用项目',
           sw: 'Matumizi',
+          'tw-cn': '應用項目',
         },
         to: {
           en: '/applications',
@@ -114,6 +124,7 @@ const footerMenu = [
           'it-it': '/it-it/applications',
           'zh-cn': '/zh-cn/applications',
           sw: '/sw/applications',
+          'tw-cn': '/tw-cn/applications',
         },
       },
       {
@@ -125,6 +136,7 @@ const footerMenu = [
           'it-it': 'Infrastruttura',
           'zh-cn': '基础设施项目',
           sw: 'Miundombinu',
+          'tw-cn': '基礎設施',
         },
         to: {
           en: '/infrastructure',
@@ -134,6 +146,7 @@ const footerMenu = [
           'it-it': '/it-it/infrastructure',
           'zh-cn': '/zh-cn/infrastructure',
           sw: '/sw/infrastructure',
+          'tw-cn': '/tw-cn/infrastructure',
         },
       },
     ],
@@ -147,6 +160,7 @@ const footerMenu = [
       'it-it': 'Informazioni',
       'zh-cn': '关于',
       sw: 'Kuhusu',
+      'tw-cn': '關於',
     },
     items: [
       {
@@ -158,6 +172,7 @@ const footerMenu = [
           'it-it': 'Blog',
           'zh-cn': '博客',
           sw: 'Blog',
+          'tw-cn': '部落格'
         },
         to: '/blog',
       },
@@ -170,6 +185,7 @@ const footerMenu = [
           'it-it': 'Acquista Gadget',
           'zh-cn': '商店',
           sw: 'Duka la Swag',
+          'tw-cn': '商店',
         },
         to: 'https://cilium.myspreadshop.net/',
       },
@@ -182,6 +198,7 @@ const footerMenu = [
           'it-it': 'Marchio',
           'zh-cn': '品牌',
           sw: 'Branding',
+          'tw-cn': '品牌推廣',
         },
         to: 'https://ebpf.foundation/brand-guidelines/',
       },
@@ -194,6 +211,7 @@ const footerMenu = [
           'it-it': 'Newsletter',
           'zh-cn': '资讯',
           sw: 'Barua Pepe',
+          'tw-cn': '新聞',
         },
         to: '/newsletter',
       },
@@ -206,6 +224,7 @@ const footerMenu = [
           'it-it': 'Contribuisci',
           'zh-cn': '贡献',
           sw: 'Changia',
+          'tw-cn': '貢獻',
         },
         to: {
           en: '/contribute',
@@ -215,6 +234,7 @@ const footerMenu = [
           'it-it': '/it-it/contribute',
           'zh-cn': '/zh-cn/contribute',
           sw: '/sw/contribute',
+          'tw-cn': '/tw-cn/contribute',
         },
       },
     ],

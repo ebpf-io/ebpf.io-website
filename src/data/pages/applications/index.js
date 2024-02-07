@@ -10,6 +10,7 @@ const data = {
     'it-it': '/it-it/applications/',
     'zh-cn': '/zh-cn/applications/',
     sw: '/sw/applications/',
+    'tw-cn': '/tw-cn/applications/',
   },
   en: {
     title: 'Applications',
@@ -176,6 +177,30 @@ const data = {
     },
     emergingApplicationsProps: {
       title: 'Inayojitokeza',
+      items: emergingApplications,
+    },
+  },
+  'tw-cn': {
+    title: '應用項目',
+    hero: {
+      items: [
+        {
+          text: '應用項目',
+          to: '/tw-cn/applications/',
+        },
+        {
+          text: '基礎設施',
+          to: '/tw-cn/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: '主要項目',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: '新興項目',
       items: emergingApplications,
     },
   },
