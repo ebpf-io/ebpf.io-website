@@ -712,8 +712,8 @@ const caseStudiesData = {
         '<strong>RAD Security</strong> uses eBPF for runtime threat detection and supply chain verification',
       links: [
         {
-          text: 'Product',
-          to: 'https://rad.security/catalog',
+          text: 'Blog',
+          to: 'https://ksoc.com/blog/introducing-rad-security',
         },
       ],
     },
