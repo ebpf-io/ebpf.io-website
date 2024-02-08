@@ -34,6 +34,7 @@ import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
+import RADSecurity from './logos/rad-security.inline.svg';
 import Redhat from './logos/redhat.inline.svg';
 import Samsung from './logos/samsung.inline.svg';
 import SentinelOne from './logos/sentinelone.inline.svg';
@@ -679,10 +680,10 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
-        }
-        ]
+        },
+      ],
     },
-  {
+    {
       title: 'Traceable',
       logo: Traceable,
       description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
@@ -701,6 +702,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://medium.com/@amiremohamadi/we-removed-shared-memory-by-building-an-ebpf-load-balancer-394f9f1b344',
+        },
+      ],
+    },
+    {
+      title: 'RAD Security',
+      logo: RADSecurity,
+      description:
+        '<strong>RAD Security</strong> uses eBPF for runtime threat detection and supply chain verification',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://ksoc.com/blog/introducing-rad-security',
         },
       ],
     },
@@ -1320,10 +1333,10 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
-        }
-        ]
+        },
+      ],
     },
-  {
+    {
       title: 'Traceable',
       logo: Traceable,
       description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
@@ -1944,10 +1957,10 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
-        }
-        ]
+        },
+      ],
     },
-  {
+    {
       title: 'Traceable',
       logo: Traceable,
       description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
@@ -2432,10 +2445,10 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
-        }
-        ]
+        },
+      ],
     },
-  {
+    {
       title: 'Traceable',
       logo: Traceable,
       description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
@@ -2926,10 +2939,10 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
-        }
-        ]
+        },
+      ],
     },
-  {
+    {
       title: 'Traceable',
       logo: Traceable,
       description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
@@ -3513,10 +3526,10 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
-        }
-        ]
+        },
+      ],
     },
-  {
+    {
       title: 'Traceable',
       logo: Traceable,
       description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
@@ -4110,10 +4123,10 @@ const caseStudiesData = {
         {
           text: 'Docs',
           to: 'https://docs.levo.ai/api-observability/concepts#ebpf-sensor',
-        }
-        ]
+        },
+      ],
     },
-  {
+    {
       title: 'Traceable',
       logo: Traceable,
       description: '<strong>Traceable</strong> uses eBPF for enhanced data collection',
