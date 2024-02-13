@@ -20,7 +20,7 @@ const footerMenu = [
           'it-it': 'Cos’è eBPF?',
           'zh-cn': '什么是 eBPF ?',
           sw: 'Ni nini eBPF?',
-          'tw-ch': '什麼是eBPF',
+          'tw-cn': '什麼是eBPF',
         },
         to: {
           en: '/what-is-ebpf',

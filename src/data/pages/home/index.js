@@ -1065,7 +1065,7 @@ const data = {
         },
         {
           logo: 'google',
-          logoWidth: '104',
+          logoWidth: 104,
           company: 'Google',
           review: 'eBPF 是 Linux 核心網路的未來，Google 公司也很高興成為其創建的不斷發展的標準的一部分。',
           author: 'Chris DiBona',
