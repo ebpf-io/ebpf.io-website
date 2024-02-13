@@ -1,3 +1,4 @@
+import Accuknox from './logos/accuknox.inline.svg'
 import Akita from './logos/akita.inline.svg';
 import Alibaba from './logos/alibaba.inline.svg';
 import Android from './logos/android.inline.svg';
@@ -717,6 +718,17 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Accuknox',
+      logo: Accuknox,
+      description: '<strong>Accuknox</strong> uses eBPF through KubeArmor for runtime security observability, container forensics and policy enforcement',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.accuknox.com/blog/runtime-security-and-the-role-of-ebpf-bpf-lsm',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
@@ -1347,6 +1359,17 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Accuknox',
+      logo: Accuknox,
+      description: '<strong>Accuknox</strong> uses eBPF through KubeArmor for runtime security observability, container forensics and policy enforcement',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.accuknox.com/blog/runtime-security-and-the-role-of-ebpf-bpf-lsm',
+        },
+      ],
+    },
   ],
   pt: [
     {
@@ -1971,6 +1994,17 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Accuknox',
+      logo: Accuknox,
+      description: '<strong>Accuknox</strong> uses eBPF through KubeArmor for runtime security observability, container forensics and policy enforcement',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.accuknox.com/blog/runtime-security-and-the-role-of-ebpf-bpf-lsm',
+        },
+      ],
+    },
   ],
   'pt-br': [
     {
@@ -2456,6 +2490,17 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
+        },
+      ],
+    },
+    {
+      title: 'Accuknox',
+      logo: Accuknox,
+      description: '<strong>Accuknox</strong> uses eBPF through KubeArmor for runtime security observability, container forensics and policy enforcement',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.accuknox.com/blog/runtime-security-and-the-role-of-ebpf-bpf-lsm',
         },
       ],
     },
@@ -2950,6 +2995,17 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
+        },
+      ],
+    },
+    {
+      title: 'Accuknox',
+      logo: Accuknox,
+      description: '<strong>Accuknox</strong> uses eBPF through KubeArmor for runtime security observability, container forensics and policy enforcement',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.accuknox.com/blog/runtime-security-and-the-role-of-ebpf-bpf-lsm',
         },
       ],
     },
@@ -3537,6 +3593,17 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
+        },
+      ],
+    },
+    {
+      title: 'Accuknox',
+      logo: Accuknox,
+      description: '<strong>Accuknox</strong> uses eBPF through KubeArmor for runtime security observability, container forensics and policy enforcement',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.accuknox.com/blog/runtime-security-and-the-role-of-ebpf-bpf-lsm',
         },
       ],
     },
@@ -4134,6 +4201,17 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
+        },
+      ],
+    },
+    {
+      title: 'Accuknox',
+      logo: Accuknox,
+      description: '<strong>Accuknox</strong> uses eBPF through KubeArmor for runtime security observability, container forensics and policy enforcement',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.accuknox.com/blog/runtime-security-and-the-role-of-ebpf-bpf-lsm',
         },
       ],
     },
