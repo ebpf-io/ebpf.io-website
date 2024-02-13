@@ -940,7 +940,7 @@ const data = {
           title: '動手實驗',
           description:
             '借用 Liz Rice 報告中的 opensnoop 範例，本實驗將教您如何使用 eBPF 工具，觀察其元件載入過程，以及將您自己的追蹤用例添加到 eBPF 原始碼中。',
-          cardColorClassName: 'border-secondary-blue-2',
+          cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
           linkUrl: 'https://ebpf.io/labs/',
           linkTarget: '_blank',
         },
@@ -948,7 +948,7 @@ const data = {
           image: 'book',
           title: '閱讀書籍',
           description: '閱讀 Liz Rice 所著的O’Reilly書籍《What is eBPF?》和《Learning eBPF》或者Brendan Gregg 所著的《BPF Performance Tools》來入門了解。 透過這些書，您將了解什麼是 eBPF、它為何如此強大，以及它提供的功能。',
-          cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
+          cardColorClassName: 'border-secondary-blue-2',
           dashedBorderClassName: 'border-secondary-green-2',
           linkUrl: '#books',
           linkTarget: '_self',
