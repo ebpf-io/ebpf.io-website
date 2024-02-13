@@ -5,6 +5,7 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
+import Accuknox from './logos/accuknox.inline.svg';
 import Akita from './logos/akita.inline.svg';
 import Akto from './logos/akto.inline.svg';
 import Alibaba from './logos/alibaba.inline.svg';
@@ -67,6 +68,7 @@ import Wiz from './logos/wiz.inline.svg';
 import Yahoo from './logos/yahoo.inline.svg';
 
 const logos = {
+  accuknox: Accuknox,
   akita: Akita,
   akto: Akto,
   alibaba: Alibaba,
