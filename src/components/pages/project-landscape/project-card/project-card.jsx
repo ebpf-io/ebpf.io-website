@@ -12,6 +12,7 @@ import beylaLogo from './logos/beyla.png';
 import blixtLogo from './logos/blixt.png';
 import bpfmanLogo from './logos/bpfman.svg';
 import bpftoolLogo from './logos/bpftool.svg';
+import bpftopLogo from './logos/bpftop.png';
 import bumblebeeLogo from './logos/bumblebee.svg';
 import calicoLogo from './logos/calico.svg';
 import carettaLogo from './logos/caretta.svg';
@@ -154,6 +155,7 @@ const logos = {
   ingressNodeFirewallLogo,
   beylaLogo,
   pcapplusplusLogo,
+  bpftopLogo,
 };
 
 const Logo = ({ logo, name }) => {

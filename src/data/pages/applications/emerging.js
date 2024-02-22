@@ -415,6 +415,16 @@ const emergingApplications = [
      XDP kernel plugin.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/openshift/ingress-node-firewall' }],
   },
+  {
+    logoUrl: 'https://github.com/Netflix/bpftop',
+    name: 'bpftop',
+    logoName: 'bpftopLogo',
+    title: 'Real-time eBPF Program Monitoring and Performance Statistics',
+    description: `bpftop provides a dynamic real-time view of running eBPF programs. It displays the average runtime, 
+    events per second, and estimated total CPU % for each program. It also provides graphical views of these statistics over time. 
+    This tool minimizes overhead by enabling performance statistics only while it is active.`,
+    urls: [{ label: 'GitHub', url: 'https://github.com/Netflix/bpftop' }],
+  },
 ];
 
 export default emergingApplications;
