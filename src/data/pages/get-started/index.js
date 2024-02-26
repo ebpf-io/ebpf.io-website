@@ -941,6 +941,7 @@ const data = {
           description:
             '借用 Liz Rice 報告中的 opensnoop 範例，本實驗將教您如何使用 eBPF 工具，觀察其元件載入過程，以及將您自己的追蹤用例添加到 eBPF 原始碼中。',
           cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
+          dashedBorderClassName: 'border-secondary-blue-2',
           linkUrl: 'https://ebpf.io/labs/',
           linkTarget: '_blank',
         },
