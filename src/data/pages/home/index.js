@@ -1026,7 +1026,7 @@ const data = {
     whyEbpf: {
       title: '為什麼使用eBPF？',
       linkTitle: '什麼是eBPF？',
-      linkUrl: '/zh-cn/what-is-ebpf/',
+      linkUrl: '/tw-cn/what-is-ebpf/',
       items: [
         {
           title: '效能',
