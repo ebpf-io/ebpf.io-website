@@ -30,6 +30,7 @@ import katranLogo from './logos/katran.svg';
 import keplerLogo from './logos/kepler.gif';
 import kubeArmorLogo from './logos/kubearmor.svg';
 import kubectlTraceLogo from './logos/kubectl_trace.svg';
+import kubeskoopLogo from './logos/kubeskoop.svg';
 import l3afLogo from './logos/l3af.svg';
 import linuxLogo from './logos/linux.svg';
 import llvmLogo from './logos/llvm.svg';
@@ -156,6 +157,7 @@ const logos = {
   beylaLogo,
   pcapplusplusLogo,
   bpftopLogo,
+  kubeskoopLogo,
 };
 
 const Logo = ({ logo, name }) => {

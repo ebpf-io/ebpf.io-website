@@ -309,6 +309,19 @@ const emergingApplications = [
     ],
   },
   {
+    logoUrl: 'https://github.com/alibaba/kubeskoop',
+    name: 'KubeSkoop',
+    logoName: 'kubeskoopLogo',
+    title: 'Network monitoring & diagnosis suite for Kubernetes',
+    description: `KubeSkoop is a toolset designed to assist users in monitoring and diagnosing network-related
+    issues within Kubernetes environments. It uses eBPF to provide pod-level kernel metrics and anomaly events, enabling
+    users quickly detect and solve network issues in their Kubernetes clusters.`,
+    urls: [
+      { label: 'Github', url: 'https://github.com/alibaba/kubeskoop' },
+      { label: 'Website', url: 'https://kubeskoop.io' },
+    ],
+  },
+  {
     logoUrl: 'https://github.com/l3af-project',
     name: 'L3AF',
     logoName: 'l3afLogo',
