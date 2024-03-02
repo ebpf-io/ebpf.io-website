@@ -314,6 +314,7 @@ const headerMenu = [
         title: {
           en: 'eBPF Meetup',
           'fr-fr': 'eBPF Meetup',
+          pt: 'eBPF Meetup',
           'pt-br': 'eBPF Meetup',
           'it-it': 'eBPF Meetup',
           'zh-cn': 'eBPF 见面会',

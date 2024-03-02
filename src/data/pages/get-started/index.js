@@ -949,7 +949,7 @@ const data = {
           image: 'book',
           title: '閱讀書籍',
           description: '閱讀 Liz Rice 所著的O’Reilly書籍《What is eBPF?》和《Learning eBPF》或者Brendan Gregg 所著的《BPF Performance Tools》來入門了解。 透過這些書，您將了解什麼是 eBPF、它為何如此強大，以及它提供的功能。',
-          cardColorClassName: 'border-secondary-blue-2',
+          cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
           dashedBorderClassName: 'border-secondary-green-2',
           linkUrl: '#books',
           linkTarget: '_self',
