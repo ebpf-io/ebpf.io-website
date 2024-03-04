@@ -8,6 +8,7 @@ const headerMenu = [
       'it-it': 'Impara',
       'zh-cn': '学习',
       sw: 'Jifunze',
+      'tw-cn': '學習',
     },
     items: [
       {
@@ -19,6 +20,7 @@ const headerMenu = [
           'it-it': 'Cos’è eBPF?',
           'zh-cn': '什么是 eBPF ?',
           sw: 'Ni nini eBPF?',
+          'tw-cn': '什麼是eBPF',
         },
         to: {
           en: '/what-is-ebpf',
@@ -28,6 +30,7 @@ const headerMenu = [
           'it-it': '/it-it/what-is-ebpf',
           'zh-cn': '/zh-cn/what-is-ebpf',
           sw: '/sw/what-is-ebpf',
+          'tw-cn': '/tw-cn/what-is-ebpf',
         },
       },
       {
@@ -39,6 +42,7 @@ const headerMenu = [
           'it-it': 'Per Iniziare',
           'zh-cn': '开始',
           sw: 'Anza',
+          'tw-cn': '開始',
         },
         to: {
           en: '/get-started',
@@ -48,6 +52,7 @@ const headerMenu = [
           'it-it': '/it-it/get-started',
           'zh-cn': '/zh-cn/get-started',
           sw: '/sw/get-started',
+          'tw-cn': '/tw-cn/get-started',
         },
       },
       {
@@ -59,6 +64,7 @@ const headerMenu = [
           'it-it': 'Casi di Studio',
           'zh-cn': '案例研究',
           sw: 'Uchambuzi wa Kesi',
+          'tw-cn': '案例研究',
         },
         to: {
           en: '/case-studies',
@@ -68,6 +74,7 @@ const headerMenu = [
           'it-it': '/it-it/case-studies',
           'zh-cn': '/zh-cn/case-studies',
           sw: '/sw/case-studies',
+          'tw-cn': '/tw-cn/case-studies',
         },
       },
       {
@@ -79,6 +86,7 @@ const headerMenu = [
           'it-it': 'Labs',
           'zh-cn': '实验室',
           sw: 'Labs',
+          'tw-cn': '實驗',
         },
         to: {
           en: '/labs',
@@ -88,6 +96,7 @@ const headerMenu = [
           'it-it': '/it-it/labs',
           'zh-cn': '/zh-cn/labs',
           sw: '/sw/labs',
+          'tw-cn': '/tw-cn/labs',
         },
       },
       {
@@ -99,6 +108,7 @@ const headerMenu = [
           'it-it': 'Libro per bambini su eBPF (in inglese)',
           'zh-cn': 'eBPF 儿童指南',
           sw: 'Kitabu cha Watoto kuhusu eBPF (kwa Kiingereza)',
+          'tw-cn': 'eBPF 兒童指南',
         },
         to: '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
       },
@@ -113,6 +123,7 @@ const headerMenu = [
       'it-it': 'Panorama dei Progetti',
       'zh-cn': '项目概览',
       sw: 'Mandhari ya Mradi',
+      'tw-cn': '項目概覽',
     },
     items: [
       {
@@ -124,6 +135,7 @@ const headerMenu = [
           'it-it': 'Applicazioni',
           'zh-cn': '应用项目',
           sw: 'Matumizi',
+          'tw-cn': '應用項目',
         },
         to: {
           en: '/applications',
@@ -133,6 +145,7 @@ const headerMenu = [
           'it-it': '/it-it/applications',
           'zh-cn': '/zh-cn/applications',
           sw: '/sw/applications',
+          'tw-cn': '/tw-cn/applications',
         },
       },
       {
@@ -144,6 +157,7 @@ const headerMenu = [
           'it-it': 'Infrastruttura',
           'zh-cn': '基础设施项目',
           sw: 'Miundombinu',
+          'tw-cn': '基礎設施',
         },
         to: {
           en: '/infrastructure',
@@ -153,6 +167,7 @@ const headerMenu = [
           'it-it': '/it-it/infrastructure',
           'zh-cn': '/zh-cn/infrastructure',
           sw: '/sw/infrastructure',
+          'tw-cn': '/tw-cn/infrastructure',
         },
       },
     ],
@@ -166,6 +181,7 @@ const headerMenu = [
       'it-it': 'Eventi',
       'zh-cn': '活动',
       sw: 'Matukio',
+      'tw-cn': '活動',
     },
     items: [
       {
@@ -177,6 +193,7 @@ const headerMenu = [
           'it-it': 'Tutti gli eventi',
           'zh-cn': '所有活动',
           sw: 'Matukio Yote',
+          'tw-cn': '所有活動',
         },
         to: {
           en: '/events?overview',
@@ -186,6 +203,7 @@ const headerMenu = [
           'it-it': '/it-it/events?overview',
           'zh-cn': '/zh-cn/events?overview',
           sw: '/sw/events?overview',
+          'tw-cn': '/tw-cn/events?overview',
         },
       },
       {
@@ -197,6 +215,7 @@ const headerMenu = [
           'it-it': 'eBPF Summit',
           'zh-cn': 'eBPF 峰会',
           sw: 'eBPF Summit',
+          'tw-cn': ' eBPF 峰會',
         },
 
         to: {
@@ -207,6 +226,7 @@ const headerMenu = [
           'it-it': '/it-it/events?conference=eBPF%20Summit',
           'zh-cn': '/zh-cn/events?conference=eBPF%20Summit',
           sw: '/sw/events?conference=eBPF%20Summit',
+          'tw-cn': '/tw-cn/events?conference=eBPF%20Summit',
         },
       },
       {
@@ -218,6 +238,7 @@ const headerMenu = [
           'it-it': 'eBPF Meetup',
           'zh-cn': 'eBPF 见面会',
           sw: 'eBPF Meetup',
+          'tw-cn': 'eBPF 見面會',
         },
 
         to: 'https://www.meetup.com/ebpf-user-group/',
@@ -233,6 +254,7 @@ const headerMenu = [
           'it-it': '/it-it/events?conference=eBPF%20Track%20%28LPC%29',
           'zh-cn': '/zh-cn/events?conference=eBPF%20Track%20%28LPC%29',
           sw: '/sw/events?conference=eBPF%20Track%20%28LPC%29',
+          'tw-cn': '/tw-cn/events?conference=eBPF%20Track%20%28LPC%29',
         },
       },
       {
@@ -245,6 +267,7 @@ const headerMenu = [
           'it-it': '/it-it/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
           'zh-cn': '/zh-cn/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
           sw: '/sw/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
+          'tw-cn': '/tw-cn/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
         },
       },
     ],
@@ -258,6 +281,7 @@ const headerMenu = [
       'it-it': 'Community',
       'zh-cn': '社区',
       sw: 'Jumuiya',
+      'tw-cn': '社群',
     },
     items: [
       {
@@ -269,6 +293,7 @@ const headerMenu = [
           'it-it': 'Per Iniziare',
           'zh-cn': '开始',
           sw: 'Anza',
+          'tw-cn': '開始',
         },
         to: {
           en: '/get-started/#docs',
@@ -278,6 +303,7 @@ const headerMenu = [
           'it-it': '/it-it/get-started/#docs',
           'zh-cn': '/zh-cn/get-started/#docs',
           sw: '/sw/get-started/#docs',
+          'tw-cn': '/tw-cn/get-started/#docs',
         },
       },
       {
@@ -293,6 +319,7 @@ const headerMenu = [
           'it-it': 'eBPF Meetup',
           'zh-cn': 'eBPF 见面会',
           sw: 'eBPF Meetup',
+          'tw-cn': 'eBPF 見面會',
         },
 
         to: 'https://www.meetup.com/ebpf-user-group/',
@@ -327,6 +354,7 @@ const headerMenu = [
           'it-it': 'Newsletter',
           'zh-cn': '资讯',
           sw: 'Barua Pepe',
+          'tw-cn': '新聞',
         },
         to: '/newsletter',
       },
@@ -339,6 +367,7 @@ const headerMenu = [
           'it-it': 'Contribuisci',
           'zh-cn': '贡献',
           sw: 'Changia',
+          'tw-cn': '貢獻',
         },
         to: {
           en: '/contribute',
@@ -348,6 +377,7 @@ const headerMenu = [
           'it-it': '/it-it/contribute',
           'zh-cn': '/zh-cn/contribute',
           sw: '/sw/contribute',
+          'tw-cn': '/tw-cn/contribute',
         },
       },
     ],
@@ -361,6 +391,7 @@ const headerMenu = [
       'it-it': 'Blog',
       'zh-cn': '博客',
       sw: 'Blog',
+      'tw-cn': '部落格',
     },
     to: '/blog',
   },
@@ -373,6 +404,7 @@ const headerMenu = [
       'it-it': 'Fondazione',
       'zh-cn': '基金会',
       sw: 'Msingi',
+      'tw-cn': '基金會',
     },
     to: 'https://ebpf.foundation/',
   },

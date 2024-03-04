@@ -1001,6 +1001,136 @@ const data = {
       items: videoItems,
     },
   },
+
+  'tw-cn': {
+    hero: {
+      title: '對核心進行動態編程，以實現高效的網路、可觀察性、追蹤和安全性。',
+      blackButtonTitle: '項目概覽',
+      blackButtonUrl: '/tw-cn/applications',
+      yellowButtonTitle: '什麼是eBPF？',
+      yellowButtonUrl: '/tw-cn/what-is-ebpf',
+      altImage: 'eBPF diagram',
+      items: [
+        '程序經過驗證，確保安全執行',
+        '在核心中任何位置勾點(hook)進行功能的修改',
+        '即時(JIT)編譯器可實現接近本機的執行速度',
+        '可在運行時增加作業系統功能',
+      ],
+    },
+    caseStudies: {
+      title: '每個行業的組織在生產中都使用 eBPF',
+      linkText: '更多案例研究',
+      linkUrl: '/tw-cn/case-studies/',
+      items: caseStudiesData['tw-cn'].slice(0, 6),
+    },
+    whyEbpf: {
+      title: '為什麼使用eBPF？',
+      linkTitle: '什麼是eBPF？',
+      linkUrl: '/tw-cn/what-is-ebpf/',
+      items: [
+        {
+          title: '效能',
+          icon: 'performance',
+          description: 'eBPF 透過即時編譯以及直接在核心中運行，大大提高了處理能力。',
+        },
+        {
+          title: '安全性',
+          icon: 'security',
+          description: 'eBPF 程式經過驗證不會導致核心崩潰，並且只能由特權使用者修改。',
+        },
+        {
+          title: '靈活性',
+          icon: 'flexibility',
+          description: '功能和用例的修改與添加可以即時加載到核心並生效，而無需重新啟動或打補丁。',
+        },
+      ],
+    },
+    film: {
+      label: 'premiere',
+      title: '釋放核心潛力',
+      videoId: 'Wb_vD3XZYOA',
+      description: 'eBPF 紀錄片深入探討了 eBPF 的起源，並展示了這項改變產業的技術的故事、挑戰和回報。 您將聽到開源世界中最傑出的人士的演講，包括來自Meta、Intel、Isovalent、Google、Red Hat 和Netflix 的關鍵合作夥伴，他們幫助塑造和構建的工具推動了 eBPF 成功和採用。',
+      buttonText: 'eBPF 紀錄片',
+      buttonUrl: 'https://ebpfdocumentary.com/',
+    },
+    testimonials: {
+      items: [
+        {
+          logo: 'azure',
+          logoWidth: 134,
+          company: 'Microsoft Azure',
+          review: 'eBPF 帶來了新一代的工具，使開發人員能夠輕鬆地診斷問題、快速地創新以及擴展作業系統功能。',
+          author: 'Mark Russinovich',
+          role: 'Chief Technology Officer at Microsoft Azure, 2021',
+        },
+        {
+          logo: 'google',
+          logoWidth: 104,
+          company: 'Google',
+          review: 'eBPF 是 Linux 核心網路的未來，Google 公司也很高興成為其創建的不斷發展的標準的一部分。',
+          author: 'Chris DiBona',
+          role: 'Director of Open Source at Google, 2021',
+        },
+        {
+          logo: 'isovalent',
+          logoWidth: 148,
+          company: 'Isovalent',
+          review: '儘管 eBPF 已進入了很多企業的生產堆疊，但我們仍處於 eBPF 作為一項技術所開啟的創新曲線的起始階段。',
+          author: 'Thomas Graf',
+          role: 'Chief Technology Officer at Isovalent, 2021',
+        },
+        {
+          logo: 'meta',
+          logoWidth: 120,
+          company: "Meta",
+          review: '多年以來，eBPF 在加速核心開發方面發揮了關鍵作用。 我們很高興能夠支援 eBPF 社群的工作，打造為下一代Linux系統開發所需要的工具。',
+          author: 'Chris Mason',
+          role: 'Kernel Maintainer and Engineering Director at Facebook, 2021',
+        },
+        {
+          logo: 'netflix',
+          logoWidth: 109,
+          company: 'Netflix',
+          review: 'eBPF是一種提供超強能力的新型軟體，催生了網路、效能和安全技術的產業。 Netflix 率先將 eBPF 使用於可觀察性中，為以前難以測量或測量成本過高的很多領域提供了洞察。 eBPF 幫助我們降低了應用程式延遲,也找到了節省成本的方法。',
+          author: 'Brendan Gregg',
+          role: 'Senior performance engineer at Netflix, 2021',
+        },
+      ],
+    },
+    features: {
+      title: 'eBPF 可以做什麼？',
+      items: [
+        {
+          bgClassName: 'bg-secondary-yellow-light',
+          image: 'networking',
+          title: '網路',
+          description: '透過在核心空間中進行資料封包傳輸加快處理速度。可以添加額外的協定解析器，並輕鬆地編程任何轉送邏輯以滿足不斷變化的需求。',
+        },
+        {
+          bgClassName: 'bg-secondary-green-light',
+          image: 'observability',
+          title: '可觀察性',
+          description: '收集並在核心內聚合自訂指標，並從各種可能的來源產生可見性事件和資料結構，而無需匯出資料樣本。',
+        },
+        {
+          bgClassName: 'bg-secondary-blue-light',
+          image: 'tracingAndProfiling',
+          title: '追蹤與分析',
+          description: '將 eBPF 程式附加到追蹤點、核心中以及使用者應用程式探測點，從而賦予它們強大的自省能力和獨特的洞察力來排查系統效能問題。',
+        },
+        {
+          bgClassName: 'bg-secondary-red-light',
+          image: 'security',
+          title: '安全性',
+          description: '將對所有系統呼叫的觀察和理解以及對所有網路的封包和插座級別的視圖相結合，用以創造擁有更全面上下文、更好控制水平的安全系統。',
+        },
+      ],
+    },
+    videoGallery: {
+      title: 'eBPF 社群講座',
+      items: videoItems,
+    },
+  },
 };
 
 export default data;

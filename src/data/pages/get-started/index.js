@@ -931,6 +931,131 @@ const data = {
       title: 'Meet some of our community members',
     },
   },
+  'tw-cn': {
+    hero: {
+      title: '開始了解 eBPF',
+      items: [
+        {
+          image: 'lab',
+          title: '動手實驗',
+          description:
+            '借用 Liz Rice 報告中的 opensnoop 範例，本實驗將教您如何使用 eBPF 工具，觀察其元件載入過程，以及將您自己的追蹤用例添加到 eBPF 原始碼中。',
+          cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
+          dashedBorderClassName: 'border-secondary-blue-2',
+          linkUrl: 'https://ebpf.io/labs/',
+          linkTarget: '_blank',
+        },
+        {
+          image: 'book',
+          title: '閱讀書籍',
+          description: '閱讀 Liz Rice 所著的O’Reilly書籍《What is eBPF?》和《Learning eBPF》或者Brendan Gregg 所著的《BPF Performance Tools》來入門了解。 透過這些書，您將了解什麼是 eBPF、它為何如此強大，以及它提供的功能。',
+          cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
+          dashedBorderClassName: 'border-secondary-green-2',
+          linkUrl: '#books',
+          linkTarget: '_self',
+        },
+        {
+          image: 'video',
+          title: '觀看影片',
+          description: '跟隨 John Fastabend 的演講深入了解 eBPF 的歷史。 從 2014 年的“早期”開始，它介紹了當時影響Linux 網路領域的主要專案、公司和參與者，以及它們如何促成 eBPF 的創建。',
+          cardColorClassName: 'bg-secondary-red-1-light border-secondary-red-1',
+          dashedBorderClassName: 'border-secondary-red-2',
+          linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00',
+          linkTarget: '_blank',
+        },
+      ]
+    },
+    documentation: {
+      title: '閱讀以下文件，了解更多有關 eBPF 的內容',
+      items: [
+        {
+          image: 'wikipedia',
+          title: '維基百科',
+          description: '維基百科中關於 eBPF 的文章',
+          linkUrl: 'https://en.wikipedia.org/wiki/EBPF',
+        },
+        {
+          image: 'stackoverflow',
+          title: 'eBPF Stackoverflow',
+          description: '提出問題，閱讀回答',
+          linkUrl: 'https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf',
+        },
+        {
+          image: 'reddit',
+          title: 'eBPF 在 Reddit 的社群',
+          description: '討論 eBPF 核心子系統',
+          linkUrl: 'https://www.reddit.com/r/eBPF/',
+        },
+        {
+          image: 'cilium',
+          title: 'BPF 和 XDP 參考指南',
+          description: '學習 BPF 的內部原理與編程',
+          linkUrl: 'https://cilium.readthedocs.io/en/stable/bpf/',
+        },
+        {
+          image: 'kernel',
+          title: 'BPF 文件',
+          description: 'Linux 核心文件中 BPF 的部分',
+          linkUrl: 'https://www.kernel.org/doc/html/latest/bpf/index.html',
+        },
+        {
+          image: 'gitKernel',
+          title: 'BPF 設計答疑',
+          description: 'eBPF 核心相關問題的 FAQ',
+          linkUrl: 'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst',
+        },
+      ]
+    },
+    subscriptionForm: {
+      title: '訂閱',
+      afterTitle: '訂閱雙周刊 eCHO 新聞',
+      description: '了解 eBPF 和 Cilium 的最新新聞和資訊',
+      placeholder: '電子郵件地址...',
+      buttonTitle: '訂閱',
+    },
+    books: {
+      title: '從行業專家撰寫的書裡探索 eBPF',
+      linkTitle: '了解更多',
+    },
+    tutorials: {
+      title: '從行業專家的教程裡深入了解 eBPF 技術',
+      linkTitle: '更多教程',
+      items: [
+        {
+          title: 'eBPF 追蹤教程',
+          description: '學習如何使用 eBPF 進行跟踪，從運行 bcc 工具到使用 bpftrace 和 bcc 進行開發。',
+          linkUrl: 'http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html',
+        },
+        {
+          title: 'XDP 教程',
+          description: '學習編寫 XDP 程式所需的基本步驟，從了解XDP的概念到如何將多個程式附加到一個介面',
+          linkUrl: 'https://github.com/xdp-project/xdp-tutorial',
+        },
+        {
+          title: '編譯器探索器',
+          description: '支援在 Web 瀏覽器中以互動方式運行的BPF編譯器並探組合語言程式碼',
+          linkUrl: 'https://godbolt.org/',
+        },
+      ]
+    },
+    events: {
+      title: '參加 eBPF 活動，向行業專家學習',
+      linkTitle: '更多活動',
+      linkUrl: '/tw-cn/events',
+    },
+    videoGallery: {
+      title: 'eBPF 入門影片',
+      items: videoItems,
+    },
+    blog: {
+      title: '透過社群文章更多的了解eBPF',
+      linkTitle: '更多文章',
+      linkUrl: '/blog/',
+    },
+    contributors: {
+      title: '認識一些我們的社群成員',
+    },
+  },
 };
 
 export default data;

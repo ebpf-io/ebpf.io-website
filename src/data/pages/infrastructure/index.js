@@ -11,6 +11,7 @@ const data = {
     'it-it': '/it-it/infrastructure/',
     'zh-cn': '/zh-cn/infrastructure/',
     sw: '/sw/infrastructure/',
+    'tw-cn': '/tw-cn/infrastructure/',
   },
   en: {
     title: 'Infrastructure',
@@ -205,6 +206,34 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'Maktaba za eBPF za Kubadiliana',
+      items: auxiliaryLibraries,
+    },
+  },
+  'tw-cn': {
+    title: '基礎設施',
+    hero: {
+      items: [
+        {
+          text: '應用項目',
+          to: '/tw-cn/applications/',
+        },
+        {
+          text: '基礎設施',
+          to: '/tw-cn/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: '主要基礎設施',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: '新興基礎設施',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'eBPF 輔助函式庫',
       items: auxiliaryLibraries,
     },
   },

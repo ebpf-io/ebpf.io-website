@@ -23,6 +23,7 @@ const langIcons = {
   'it-it': ItItIcon,
   'zh-cn': ZhCNIcon,
   sw: SwIcon,
+  'tw-cn': ZhCNIcon,
 };
 
 const LanguageSelect = ({ lang, pageUrls }) => {
