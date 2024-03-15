@@ -272,7 +272,7 @@ const caseStudiesData = {
         },
         {
           text: 'Blog',
-          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
+          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/?utm_source=website-ebpf&utm_medium=referral&utm_campaign=ebpf-blog',
         },
       ],
     },
@@ -937,7 +937,7 @@ const caseStudiesData = {
         },
         {
           text: 'Blog',
-          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
+          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/?utm_source=website-ebpf&utm_medium=referral&utm_campaign=ebpf-blog',
         },
       ],
     },
@@ -1569,7 +1569,7 @@ const caseStudiesData = {
         },
         {
           text: 'Blog',
-          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
+          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/?utm_source=website-ebpf&utm_medium=referral&utm_campaign=ebpf-blog',
         },
       ],
     },
@@ -2159,7 +2159,7 @@ const caseStudiesData = {
         },
         {
           text: 'Blog',
-          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
+          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/?utm_source=website-ebpf&utm_medium=referral&utm_campaign=ebpf-blog',
         },
       ],
     },
@@ -2649,7 +2649,7 @@ const caseStudiesData = {
         },
         {
           text: 'Blog',
-          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/',
+          to: 'https://isovalent.com/blog/post/next-generation-observability-with-ebpf/?utm_source=website-ebpf&utm_medium=referral&utm_campaign=ebpf-blog',
         },
       ],
     },

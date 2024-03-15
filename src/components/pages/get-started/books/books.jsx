@@ -18,7 +18,7 @@ const items = [
         loading="lazy"
       />
     ),
-    linkUrl: 'https://isovalent.com/ebpf/#form',
+    linkUrl: 'https://isovalent.com/books/ebpf/#form?utm_source=website-ebpf&utm_medium=referral&utm_campaign=partner',
     linkText: 'What is eBPF? Liz Rice, O’Reilly, 2022',
   },
   {
@@ -80,7 +80,7 @@ const items = [
         loading="lazy"
       />
     ),
-    linkUrl: 'https://isovalent.com/learning-ebpf/#form',
+    linkUrl: 'https://isovalent.com/books/learning-ebpf/#form?utm_source=website-ebpf&utm_medium=referral&utm_campaign=partner',
     linkText: 'Learning eBPF O’Reilly book by Liz Rice',
   },
 ];
