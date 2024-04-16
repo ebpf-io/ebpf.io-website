@@ -42,7 +42,6 @@ import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
 import pyroscopeLogo from './logos/pyroscope.svg';
 import rbpfLogo from './logos/rbpf.svg';
-import sshlogLogo from './logos/sshlog.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
 
@@ -70,7 +69,6 @@ const logos = {
   blixtLogo,
   daeLogo,
   sysinternalsLogo,
-  sshlogLogo,
   carettaLogo,
   linuxLogo,
   llvmLogo,
