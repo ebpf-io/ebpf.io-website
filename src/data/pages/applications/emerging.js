@@ -364,19 +364,6 @@ const emergingApplications = [
     ],
   },
   {
-    logoUrl: 'https://github.com/sshlog/agent/',
-    name: 'SSHLog',
-    logoName: 'sshlogLogo',
-    title: 'eBPF SSH session monitoring',
-    description: `SSHLog is a Linux daemon written in C++ and Python that monitors OpenSSH servers via eBPF.  The agent
-    passively records all SSH session activity (commands and output) to log files for any connecting user.  Administrators can also share an SSH session with
-    any logged in user.  Actions may be triggered based on SSH behavior such as posting a Slack message when a remote user attempts to gain root access.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/sshlog/agent/' },
-      { label: 'Website', url: 'http://www.sshlog.com/' },
-    ],
-  },
-  {
     logoUrl: 'https://github.com/bpfman/bpfman',
     name: 'bpfman',
     logoName: 'bpfmanLogo',
