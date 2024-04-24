@@ -1,11 +1,12 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/prop-types */
+import { graphql } from 'gatsby';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import EventList from 'components/pages/events/event-list';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import data from 'data/pages/events';
-import SEO_DATA from 'data/shared/seo-data';
 
 const pageUrls = {
   en: '/events/',
@@ -18,20 +19,41 @@ const pageUrls = {
   'tw-cn': '/tw-cn/events/',
 };
 
-const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => (
-  <Layout lang={language} pageUrls={pageUrls}>
-    <div className="container flex flex-col pt-20 lg:pt-16">
-      <h1
-        className="heading-9xl max-w-[890px] text-left font-semibold leading-tight"
-        dangerouslySetInnerHTML={{ __html: data[language].title }}
-      />
-    </div>
-    <EventList allEvents={postEvents} totalCount={totalCount} />
-  </Layout>
-);
+const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => {
+  const { t } = useTranslation();
+
+  return (
+    <Layout lang={language} pageUrls={pageUrls}>
+      <div className="container flex flex-col pt-20 lg:pt-16">
+        <h1
+          className="heading-9xl max-w-[890px] text-left font-semibold leading-tight"
+          dangerouslySetInnerHTML={{ __html: t('events:title') }}
+        />
+      </div>
+      <EventList allEvents={postEvents} totalCount={totalCount} />
+    </Layout>
+  );
+};
+
+export const Head = ({ location: { pathname }, data }) => {
+  const dataLanguage = data.locales.edges.find((e) => e.node.ns === 'events').node.data;
+  const t = JSON.parse(dataLanguage);
+
+  return <SEO pathname={pathname} title={t.meta.title} description={t.meta.description} />;
+};
 
 export default EventsPage;
 
-export const Head = ({ location: { pathname }, pageContext: { language } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.home[language]} />
-);
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

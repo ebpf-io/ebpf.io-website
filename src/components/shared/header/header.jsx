@@ -1,13 +1,15 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import clsx from 'clsx';
+import { Link } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import Burger from 'components/shared/burger';
-import Link from 'components/shared/link';
+// import Link from 'components/shared/link';
 import ChevronIcon from 'icons/chevron.inline.svg';
 import logo from 'images/logo-black.svg';
 
-import { defaultLanguage } from '../../../../config/languages';
+// import { defaultLanguage } from '../../../../config/languages';
 
 import LanguageSelect from './language-select';
 
@@ -30,10 +32,10 @@ const Header = ({
           'border-b border-dashed border-gray-80': !fullWidthBottomBorder,
         })}
       >
-        <Link to={lang === defaultLanguage ? '/' : `/${lang}/`}>
+        <Link to="/">
           <span className="sr-only">eBPF logo</span>
           <img
-            className="h-9 w-auto lg:h-8"
+            className="w-auto h-9 lg:h-8"
             src={logo}
             alt=""
             width={106}
