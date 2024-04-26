@@ -25,6 +25,11 @@ module.exports = {
       shortName: 'Ita',
       code: 'it-it',
     },
+    es: {
+      name: 'Spanish',
+      shortName: 'Spa',
+      code: 'es',
+    },
     'zh-cn': {
       name: ' 简体中文',
       shortName: 'Chi',
@@ -39,7 +44,7 @@ module.exports = {
       name: '繁體中文',
       shortName: 'Chi',
       code: 'tw-cn',
-    }
+    },
   },
   defaultLanguage: 'en',
 };

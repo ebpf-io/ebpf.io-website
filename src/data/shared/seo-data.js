@@ -25,6 +25,11 @@ export default {
       description:
         'eBPF è una tecnologia rivoluzionaria in grado di eseguire programmi in una sandbox all’interno del kernel di Linux senza modificare il codice sorgente del kernel o caricare un modulo del kernel.',
     },
+    es: {
+      title: 'eBPF - Introduction, Tutorials & Community Resources',
+      description:
+        'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.',
+    },
     'zh-cn': {
       title: 'eBPF - 介绍, 教程和社区资源',
       description:
@@ -37,7 +42,8 @@ export default {
     },
     'tw-cn': {
       title: 'eBPF - 介紹、教學與社群資源',
-      description: 'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。',
+      description:
+        'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。',
     },
   },
   contribute: {
@@ -71,6 +77,12 @@ export default {
         'Vuoi sapere come contribuire a eBPF? Impara come iniziare a contribuire ai progetti eBPF.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
+    es: {
+      title: 'How to contribute to eBPF',
+      description:
+        'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.',
+      keywords: 'ebpf, bpf, contribute, getting started, community',
+    },
     'zh-cn': {
       title: '如何为 eBPF 作出贡献',
       description: '想要学习如何为 eBPF 作出贡献 ? 学习如何开始给 eBPF 的项目作出贡献。',
@@ -85,8 +97,8 @@ export default {
     'tw-cn': {
       title: '如何為 eBPF 做出貢獻',
       description: '想了解如何為 eBPF 做出貢獻嗎？ 了解如何開始為 eBPF 項目做出貢獻。',
-      keywords: 'ebpf, bpf, 貢獻, 開始, 社群'
-    }
+      keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
+    },
   },
   caseStudies: {
     en: {
@@ -114,6 +126,11 @@ export default {
       description: 'Apprendi come eBPF viene impiegato in svariati progetti.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
+    es: {
+      title: 'eBPF Case Studies',
+      description: 'Learn how eBPF is used in different projects.',
+      keywords: 'ebpf, bpf, contribute, getting started, community',
+    },
     'zh-cn': {
       title: 'eBPF 案例研究',
       description: '学习了解 eBPF 在不同的项目中是如何被应用的。',
@@ -128,7 +145,7 @@ export default {
       title: 'eBPF 案例研究',
       description: '了解 eBPF 如何在不同項目中的應用。',
       keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
-    }
+    },
   },
   applications: {
     en: {
@@ -156,6 +173,11 @@ export default {
       description: 'Una directory di applicazioni open source basate su eBPF',
       keywords: 'ebpf, bpf, landscape, diretório, código aberto, open source',
     },
+    es: {
+      title: 'eBPF Applications Landscape',
+      description: 'A directory of eBPF-based open source applications',
+      keywords: 'ebpf, bpf, landscape, directory, open source',
+    },
     'zh-cn': {
       title: 'eBPF 应用项目概览',
       description: '基于 eBPF 的开源应用项目目录',
@@ -170,7 +192,7 @@ export default {
       title: 'eBPF 應用項目概覽',
       description: '基於 eBPF 的開源應用程式目錄',
       keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
-    }
+    },
   },
   infrastructure: {
     en: {
@@ -198,6 +220,11 @@ export default {
       description: 'Una directory di infrastrutture eBPF di base',
       keywords: 'ebpf, bpf, paisagem, diretório, código aberto',
     },
+    es: {
+      title: 'eBPF Core Infrastructure Landscape',
+      description: 'A directory of eBPF-based core infrastructure',
+      keywords: 'ebpf, bpf, landscape, directory, open source',
+    },
     'zh-cn': {
       title: 'eBPF 核心基础设施概览',
       description: '基于 eBPF 的核心基础设施目录',
@@ -212,7 +239,7 @@ export default {
       title: 'eBPF 核心基礎設施概覽',
       description: '基於 eBPF 的核心基礎設施目錄',
       keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
-    }
+    },
   },
   newsletter: {
     title: 'Subscribe to bi-weekly eCHO News - eBPF',

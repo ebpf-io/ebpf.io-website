@@ -14,6 +14,9 @@ const data = {
   'it-it': {
     title: 'Conferenze eBPF e Meetup',
   },
+  es: {
+    title: 'Conferencias, eventos y reuniones sobre eBPF',
+  },
   'zh-cn': {
     title: 'eBPF 会议和见面会',
   },
@@ -22,7 +25,7 @@ const data = {
   },
   'tw-cn': {
     title: 'eBPF 會議和見面會',
-  }
+  },
 };
 
 export default data;

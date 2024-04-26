@@ -7,6 +7,7 @@ const data = {
     pt: '/pt/case-studies/',
     'pt-br': '/pt-br/case-studies/',
     'it-it': '/it-it/case-studies/',
+    es: '/es/case-studies/',
     'zh-cn': '/zh-cn/case-studies/',
     sw: '/sw/case-studies/',
     'tw-cn': '/tw-cn/case-studies/',
@@ -41,6 +42,12 @@ const data = {
       items: caseStudiesData['it-it'],
     },
   },
+  es: {
+    hero: {
+      title: 'Casos de estudios con eBPF',
+      items: caseStudiesData.es,
+    },
+  },
   'zh-cn': {
     hero: {
       title: 'eBPF 案例研究',
@@ -57,8 +64,8 @@ const data = {
     hero: {
       title: 'eBPF案例研究',
       items: caseStudiesData['tw-cn'],
-    }
-  }
+    },
+  },
 };
 
 export default data;
