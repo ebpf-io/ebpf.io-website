@@ -26,9 +26,9 @@ export default {
         'eBPF è una tecnologia rivoluzionaria in grado di eseguire programmi in una sandbox all’interno del kernel di Linux senza modificare il codice sorgente del kernel o caricare un modulo del kernel.',
     },
     es: {
-      title: 'eBPF - Introduction, Tutorials & Community Resources',
+      title: 'eBPF - Introducción, tutoriales y recursos comunitarios',
       description:
-        'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.',
+        'eBPF es una tecnología revolucionaria que puede ejecutar programas sandboxed en el kernel de Linux sin cambiar el código fuente del kernel o cargar un módulo del kernel.',
     },
     'zh-cn': {
       title: 'eBPF - 介绍, 教程和社区资源',
@@ -78,10 +78,10 @@ export default {
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
     es: {
-      title: 'How to contribute to eBPF',
+      title: 'Cómo contribuir a eBPF',
       description:
-        'Want to learn how to contribute to eBPF? Learn how to get started contributing to eBPF projects.',
-      keywords: 'ebpf, bpf, contribute, getting started, community',
+        '¿Quieres aprender cómo contribuir a eBPF? Aprenda cómo empezar a contribuir a los proyectos de eBPF',
+      keywords: 'ebpf, bpf, contribuir, empezar, comunidad',
     },
     'zh-cn': {
       title: '如何为 eBPF 作出贡献',
@@ -127,9 +127,9 @@ export default {
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
     es: {
-      title: 'eBPF Case Studies',
-      description: 'Learn how eBPF is used in different projects.',
-      keywords: 'ebpf, bpf, contribute, getting started, community',
+      title: 'Estudios de caso eBPF',
+      description: 'Conozca cómo se utiliza eBPF en diferentes proyectos.',
+      keywords: 'ebpf, bpf, contribuir, empezar, comunidad',
     },
     'zh-cn': {
       title: 'eBPF 案例研究',
@@ -174,9 +174,9 @@ export default {
       keywords: 'ebpf, bpf, landscape, diretório, código aberto, open source',
     },
     es: {
-      title: 'eBPF Applications Landscape',
-      description: 'A directory of eBPF-based open source applications',
-      keywords: 'ebpf, bpf, landscape, directory, open source',
+      title: 'Panorama de aplicaciones eBPF',
+      description: 'Directorio de aplicaciones de código abierto basadas en eBPF',
+      keywords: 'ebpf, bpf, paisaje, directorio, código abierto',
     },
     'zh-cn': {
       title: 'eBPF 应用项目概览',
@@ -221,9 +221,9 @@ export default {
       keywords: 'ebpf, bpf, paisagem, diretório, código aberto',
     },
     es: {
-      title: 'eBPF Core Infrastructure Landscape',
-      description: 'A directory of eBPF-based core infrastructure',
-      keywords: 'ebpf, bpf, landscape, directory, open source',
+      title: 'Panorama de la infraestructura central de eBPF',
+      description: 'Directorio de infraestructuras básicas basadas en eBPF',
+      keywords: 'ebpf, bpf, paisaje, directorio, código abierto',
     },
     'zh-cn': {
       title: 'eBPF 核心基础设施概览',
