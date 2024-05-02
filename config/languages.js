@@ -26,8 +26,8 @@ module.exports = {
       code: 'it-it',
     },
     es: {
-      name: 'Spanish',
-      shortName: 'Spa',
+      name: 'Español',
+      shortName: 'Esp',
       code: 'es',
     },
     'zh-cn': {
