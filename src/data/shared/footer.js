@@ -144,6 +144,34 @@ const data = {
       </span>
     ),
   },
+  es: {
+    copyright: 'Autores de eBPF.io',
+    maintain: {
+      title: 'Mantenido por la comunidad de eBPF.',
+      beforeLink: '¿Encontraste un error?',
+      linkTitle: 'Reporta y crea un issue ',
+    },
+    content: (
+      <span>
+        El contenido de la página oficial{' '}
+        <Link className="!inline font-medium" theme="white" to="/">
+          ebpf.io
+        </Link>{' '}
+        esta bajo la licencia
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creative Commons Attribution 4.0 International License
+        </Link>
+        .
+      </span>
+    ),
+  },
   'zh-cn': {
     copyright: 'eBPF.io 作者',
     maintain: {
@@ -208,7 +236,9 @@ const data = {
     },
     content: (
       <span>
-        <Link className="!inline font-medium" theme="white" to="/tw-cn/">ebpf.io</Link>{' '}
+        <Link className="!inline font-medium" theme="white" to="/tw-cn/">
+          ebpf.io
+        </Link>{' '}
         網站的內容根據{' '}
         <Link
           className="!inline"

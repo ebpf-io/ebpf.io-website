@@ -6,6 +6,7 @@ import Link from 'components/shared/link';
 import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
 import EnIcon from 'icons/languages/en.inline.svg';
+import EsIcon from 'icons/languages/es.inline.svg';
 import FrFrIcon from 'icons/languages/fr-fr.inline.svg';
 import ItItIcon from 'icons/languages/it-it.inline.svg';
 import PtBrIcon from 'icons/languages/pt-br.inline.svg';
@@ -21,6 +22,7 @@ const langIcons = {
   pt: PtIcon,
   'pt-br': PtBrIcon,
   'it-it': ItItIcon,
+  es: EsIcon,
   'zh-cn': ZhCNIcon,
   sw: SwIcon,
   'tw-cn': ZhCNIcon,
