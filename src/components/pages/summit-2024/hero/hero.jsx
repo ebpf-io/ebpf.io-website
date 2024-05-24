@@ -15,7 +15,7 @@ const ctaButtons = [
   {
     onClick: null,
     url: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-l4D4oKbscJhPFKv2oqPcD_',
-    title: 'Register here',
+    title: 'Watch the recordings on YouTube',
     theme: 'orange',
     target: '_blank',
   },

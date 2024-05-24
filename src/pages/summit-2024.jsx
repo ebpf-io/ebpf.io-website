@@ -1,15 +1,15 @@
 import React from 'react';
 
-import LastYear from 'components/pages/summit-2023/last-year';
-import Speakers from 'components/pages/summit-2023/speakers';
-import Banner from 'components/pages/summit-2024/banner';
+// import Banner from 'components/pages/summit-2024/banner';
 import Hero from 'components/pages/summit-2024/hero';
 import Hosts from 'components/pages/summit-2024/hosts';
 import Information from 'components/pages/summit-2024/information';
+import LastYear from 'components/pages/summit-2024/last-year';
+import Speakers from 'components/pages/summit-2024/speakers';
+import SummitLayout from 'components/pages/summit-2024/summit-layout';
 import SEO from 'components/shared/seo';
-import SummitLayout from 'components/shared/summit-layout';
 import endpoints from 'data/shared/sessionize';
-import { navigation, hubspotFormId } from 'data/shared/summit-2023-navigation';
+import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
 
@@ -38,27 +38,27 @@ const hosts = {
 const lastYear = {
   title: `Last year's summit`,
   description:
-    'The eBPF Summit 2022 featured 32 talks from many different perspectives, from kernel maintainers working on the eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities. Join us this September for what promises to be an even more exciting edition!',
+    'The eBPF Summit 2023 featured 17 talks from many different perspectives, from kernel maintainers working on the eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities. Join us this September for what promises to be an even more exciting edition!',
   link: {
     url: 'https://youtu.be/UQV75Dol_dg',
-    title: 'eBPF Summit 2022',
+    title: 'eBPF Summit 2023',
     target: '_blank',
   },
   items: [
     {
-      number: '2.5k',
+      number: '3.1k',
       unit: 'Registrations',
       textColor: 'black',
       numberColor: 'orange',
     },
     {
-      number: '5',
+      number: '3',
       unit: 'Keynotes',
       textColor: 'white',
       numberColor: 'white',
     },
     {
-      number: '32',
+      number: '17',
       unit: 'Talks',
       textColor: 'white',
       numberColor: 'orange',
@@ -72,15 +72,15 @@ const lastYear = {
   ],
 };
 
-const Summit2023 = () => (
+const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
-    <Banner />
+    {/* <Banner /> */}
     <Speakers
       title="Featured Speakers"
       endpoint={endpoints.speakers}
       linkTitle="View talks"
-      linkUrl="/summit-2023-talks/"
+      linkUrl="/summit-2024-talks/"
     />
     <Information />
     <Hosts {...hosts} />
@@ -91,13 +91,13 @@ const Summit2023 = () => (
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => {
   const pageMetadata = {
-    title: 'eBPF Summit 2023',
+    title: 'eBPF Summit 2024',
     description:
-      'Register now for the eBPF Summit 2023, Sep 13, 2023, a free virtual event for DevOps, SRE, SecOps, and developers.',
+      'Register now for the eBPF Summit 2023, Sep 11, 2024, a free virtual event for DevOps, SRE, SecOps, and developers.',
     image: ogImage,
     pathname,
   };
   return <SEO {...pageMetadata} />;
 };
 
-export default Summit2023;
+export default Summit2024;

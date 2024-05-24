@@ -17,7 +17,7 @@ const avatars = {
     <StaticImage
       className="h-40 w-40 flex-shrink-0 rounded-full"
       src="./images/duffie-cooley.png"
-      alt="Liz Rice"
+      alt="Duffie Cooley"
       width={160}
       height={160}
       loading="lazy"
