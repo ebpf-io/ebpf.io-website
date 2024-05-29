@@ -12,13 +12,13 @@ const icons = {
 };
 
 const ctaButtons = [
-  {
-    onClick: null,
-    url: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-l4D4oKbscJhPFKv2oqPcD_',
-    title: 'Watch the recordings on YouTube',
-    theme: 'orange',
-    target: '_blank',
-  },
+  // {
+  //   onClick: null,
+  //   url: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-l4D4oKbscJhPFKv2oqPcD_',
+  //   title: 'Watch the recordings on YouTube',
+  //   theme: 'orange',
+  //   target: '_blank',
+  // },
   {
     onClick: null,
     url: 'https://ebpf.io/slack',

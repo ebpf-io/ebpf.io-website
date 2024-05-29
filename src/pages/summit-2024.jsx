@@ -40,7 +40,7 @@ const lastYear = {
   description:
     'The eBPF Summit 2023 featured 17 talks from many different perspectives, from kernel maintainers working on the eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities. Join us this September for what promises to be an even more exciting edition!',
   link: {
-    url: 'https://youtu.be/UQV75Dol_dg',
+    url: 'https://www.youtube.com/watch?v=5pvDi6y6LrM',
     title: 'eBPF Summit 2023',
     target: '_blank',
   },

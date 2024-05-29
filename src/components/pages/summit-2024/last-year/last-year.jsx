@@ -16,55 +16,57 @@ const twitterCards = [
     avatar: (
       <StaticImage
         className="h-11 w-11"
-        src="./images/swarna.png"
-        alt="Swarna userpic"
+        src="./images/jean.jpg"
+        alt="Jean userpic"
         width={44}
         height={44}
+        style={{ borderRadius: '50%' }}
         loading="lazy"
       />
     ),
-    name: 'Swarna (she/her)🏳️‍🌈',
-    nick: '@skpodila',
-    text: `As I watch the sessions at <marker>#eBPFSummit</marker>, (<marker>@alexei_ast</marker> and <marker>@classic_addetz</marker>'s so far), it reminds me of the truly global nature of the <marker>#eBPF</marker> community and hence how much more awesome these speakers are to present a hard core tech topic in English so effortlessly. Kudos to them!`,
-    time: '8:11 PM',
-    date: 'Sep 28, 2022',
-    url: 'https://twitter.com/skpodila/status/1575156286915649536',
+    name: '✨ Jean Yang ✨',
+    nick: '@jeanqasaur',
+    text: `Excited for <marker> #eBPFSummit! </marker> I'll be speaking alongside <marker> @brendangregg </marker> and the CTF eBee. 🐝My talk will be about what the world will look when eBPF silently powers everything. The event will be virtual 9/13 if you'd like to join us! <marker> https://ebpf.io/summit-2023/ <marker/>`,
+    date: 'Aug 9, 2023',
+    url: 'https://x.com/jeanqasaur/status/1689320196497162240',
   },
   {
     avatar: (
       <StaticImage
         className="h-11 w-11"
-        src="./images/pchaigno.png"
-        alt="Paul Chaignon userpic"
+        src="./images/dan.jpg"
+        alt="Danner finnerman userpic"
         width={44}
         height={44}
+        style={{ borderRadius: '50%' }}
         loading="lazy"
       />
     ),
-    name: 'Paul Chaignon',
-    nick: '@pchaigno',
-    text: `Coming to us from the Swiss mountains, <marker>@martyns</marker> demos pwru, an <marker>#eBPF</marker> tool to debug networking issues. Don't be surprised if you hear cow bells in the background 😅 Only at <marker>#eBPFSummit</marker>!`,
-    time: '10:17 PM',
-    date: 'Sep 28, 2022',
-    url: 'https://twitter.com/pchaigno/status/1575187896218550272',
+    name: 'Daniel Finnerman',
+    nick: '@thebsdbox',
+    text: `Just watched <marker> @rawkode</marker> solve the <marker> @eBPFsummit</marker> CTF challenge (on HARDMODE) in around 15 mins. 😂`,
+    time: '11:39 AM',
+    date: 'Sep 5, 2023',
+    url: 'https://x.com/thebsdbox/status/1699009295734436261',
   },
   {
     avatar: (
       <StaticImage
         className="h-11 w-11"
-        src="./images/dnsmichi.png"
-        alt="Michael Friedrich userpic"
+        src="./images/shubham.jpg"
+        alt="Shubham userpic"
         width={44}
         height={44}
+        style={{ borderRadius: '50%' }}
         loading="lazy"
       />
     ),
-    name: 'Michael Friedrich🌈',
-    nick: '@dnsmichi',
-    text: `I really dig the CTF exercises at <marker>@ebpfsummit</marker>🤗<br/><br/>Rare that it catches me so fast, chapeau <marker>@lizrice</marker> <marker>@mauilion</marker>🤩<br/><br/>Amazing to learn while being challenged. 💡`,
-    time: '9:57 PM',
-    date: 'Sep 29, 2022',
-    url: 'https://twitter.com/dnsmichi/status/1575545403436433408',
+    name: 'Shubham',
+    nick: '@ShubhamInTech',
+    text: `5 days to go for the <marker> @eBPFsummit </marker> lessgoo! what are the talks y'all are most excited abouttt? for me, it has to be THE <marker>@brendangregg</marker> #ebpf`,
+    time: '3:07 PM',
+    date: 'Sep 7, 2023',
+    url: 'https://x.com/ShubhamInTech/status/1699785414570357147',
   },
 ];
 
@@ -91,7 +93,7 @@ const LastYear = ({ title, description, link, items }) => (
         <div className="relative pb-[56.25%]">
           <iframe
             className="absolute left-0 top-0 h-full w-full"
-            src="https://www.youtube.com/embed/UQV75Dol_dg"
+            src="https://www.youtube.com/embed/5pvDi6y6LrM"
             frameBorder="0"
             width={592}
             height={333}
