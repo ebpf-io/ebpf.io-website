@@ -5,10 +5,10 @@ import Hero from 'components/pages/summit-2024/hero';
 import Hosts from 'components/pages/summit-2024/hosts';
 import Information from 'components/pages/summit-2024/information';
 import LastYear from 'components/pages/summit-2024/last-year';
-import Speakers from 'components/pages/summit-2024/speakers';
+// import Speakers from 'components/pages/summit-2024/speakers';
 import SummitLayout from 'components/pages/summit-2024/summit-layout';
 import SEO from 'components/shared/seo';
-import endpoints from 'data/shared/sessionize';
+// import endpoints from 'data/shared/sessionize';
 import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
@@ -17,6 +17,7 @@ const hero = {
   date: 'September <strong>11</strong>, 2024',
   title: 'eBPF Summit 2024',
   time: '8:30AM-13:00PM&nbsp;PST / 5:30PM-10:00PM&nbsp;CEST',
+  hubspotFormId,
   description:
     '<p>Now in its fifth year, the eBPF Summit is the virtual event for all things within the Open Source eBPF ecosystem. Whether you are new to the eBPF community or an established expert, please join us for the conference that brings together everyone building, using, or interested in eBPF as a platform. You’ll find everything from deep dives and hands-on challenges to visionary talks that chart the future of this amazing technology.</p>',
 };
@@ -64,8 +65,8 @@ const lastYear = {
       numberColor: 'orange',
     },
     {
-      number: '2',
-      unit: 'Days',
+      number: '1',
+      unit: 'Day',
       textColor: 'black',
       numberColor: 'orange',
     },
@@ -76,12 +77,12 @@ const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
     {/* <Banner /> */}
-    <Speakers
+    {/* <Speakers
       title="Featured Speakers"
       endpoint={endpoints.speakers}
       linkTitle="View talks"
       linkUrl="/summit-2024-talks/"
-    />
+    /> */}
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />
