@@ -1,5 +1,5 @@
 export const navigation = [
-  { name: 'Information', href: '/summit-2023/#information' },
+  { name: 'Information', href: '/summit-2024/#information' },
   // { name: 'Talks', href: '/summit-2023-talks' },
   { name: 'eBPF resources', href: '/resources' },
   { name: `Last year's summit`, href: `/summit-2024/#last-year-summit` },
