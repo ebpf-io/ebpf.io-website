@@ -7,7 +7,7 @@ import SEO from 'components/shared/seo';
 import SummitLayout from 'components/shared/summit-layout';
 import VideoGallery from 'components/shared/video-gallery';
 import videoItems from 'data/pages/resources/video-data';
-import { navigation, hubspotFormId } from 'data/shared/summit-2023-navigation';
+import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit-resources.jpg';
 
