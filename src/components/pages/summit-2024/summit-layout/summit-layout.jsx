@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import SummitHeader from 'components/pages/summit-2024/summit-header';
 import TopBanner from 'components/pages/summit-2024/top-banner';
 import SummitFooter from 'components/shared/summit-footer';
-import SummitHeader from 'components/shared/summit-header';
 
 const SummitLayout = ({ children, navigation, hubspotFormId }) => (
   <>
