@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState, Fragment } from 'react';
 
@@ -14,7 +13,7 @@ import Logo from 'images/logo.inline.svg';
 const SummitHeader = ({ navigation, hubspotFormId }) => {
   const [isOpen, setIsOpen] = useState(false);
   const openModal = () => {
-    navigate('/summit-2024');
+    setIsOpen(true);
   };
   const closeModal = (e) => {
     e.stopPropagation();
@@ -62,7 +61,7 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
                   onClick={openModal}
                 >
                   <BeeIcon className="h-5 w-auto" />
-                  <span>Register for the 2024 edition!</span>
+                  <span>Register</span>
                 </Button>
               </nav>
             </div>
