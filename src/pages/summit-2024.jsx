@@ -94,7 +94,7 @@ export const Head = ({ location: { pathname } }) => {
   const pageMetadata = {
     title: 'eBPF Summit 2024',
     description:
-      'Register now for the eBPF Summit 2023, Sep 11, 2024, a free virtual event for DevOps, SRE, SecOps, and developers.',
+      'Register now for the eBPF Summit 2024, Sep 11, 2024, a free virtual event for DevOps, SRE, SecOps, and developers.',
     image: ogImage,
     pathname,
   };
