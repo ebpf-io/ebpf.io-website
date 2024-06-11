@@ -425,6 +425,21 @@ const emergingApplications = [
     This tool minimizes overhead by enabling performance statistics only while it is active.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/Netflix/bpftop' }],
   },
+  {
+    logoUrl: 'https://github.com/tarsal-oss/kflowd',
+    name: 'kflow',
+    logoName: 'kflowLogo',
+    title: 'Process Monitoring on Linux Endpoints via eBPF',
+    description: ` kflow is an open source project that implements Process
+    Monitoring on Linux Endpoints for File System, TCP and UDP Networking
+    Events via eBPF Subsystem.
+    kflow is built with libbpf+CO-RE and runs on Linux kernels 5.10+.
+    `,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/tarsal-oss/kflowd' },
+      { label: 'Website', url: 'https://tarsal.co/kflow/' },
+    ],
+  },
 ];
 
 export default emergingApplications;
