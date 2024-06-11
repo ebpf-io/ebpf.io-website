@@ -8,7 +8,6 @@ categories:
   - Community
 ---
 
-# A Practical Guide to eBPF Licensing: Or How I Learned to Stop Worrying and Love the GPL 
 
 _Disclaimer: We are not lawyers and this is not legal advice. Please contact a lawyer for legal advice._
 
