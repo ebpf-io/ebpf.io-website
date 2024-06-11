@@ -19,7 +19,7 @@ While there is a wide appreciation of the power of eBPF to [fundamentally change
 
 eBPF-based projects consist of user space code, plus eBPF programs that run in the kernel. Much like kernel modules, eBPF programs have the ability to significantly extend or change kernel behaviors. eBPF programs are dynamically linked with the kernel when they’re loaded into it using the `bpf()` system call. 
 
-![eBPF program overview diagram](ebpf-overview.png)
+![eBPF program overview diagram](/ebpf-overview.png)
 
 When an eBPF program is loaded, the Linux kernel checks which functions it intends to use. If any function is marked as “GPL only,” the eBPF program has to have a GPL-compatible license from the [licensing scheme documented here](https://github.com/torvalds/linux/blob/master/Documentation/process/license-rules.rst). The kernel rejects the eBPF program if it does not have a compatible license. The code for establishing this compatibility (`license_is_gpl_compatible()`) is defined [here](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/linux/license.h).
 
@@ -39,7 +39,7 @@ The Linux kernel developers have made a very deliberate effort to provide docume
 
 A userspace executable and the related eBPF bytecode is generally considered an aggregate of the two pieces of software. They are two separate works that interact via the Linux syscall API to get useful work done and can be packaged together without being considered modular parts of a single application derived from the Linux kernel. Aggregates are a number of separate programs, distributed together that communicate with each other as if they were independent executables on the system (using standard OS provided mechanisms such as pipes or file descriptors). The GPLv2 [FAQ](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.en.html#TOCMereAggregation) lays out that the creation and that distribution of an aggregate, of GPL and non-GPL compatible code, should be permitted.
 
-![modular vs aggregate code](modular-vs-aggregate.png)
+![modular vs aggregate code](/modular-vs-aggregate.png)
 
 eBPF programs have no ability to link either statically or dynamically with user space code. User space applications interact with the in-kernel eBPF program exclusively through the syscall interface, in the same way they interact with any other aspect of the kernel, and thus are not derivative work. This is expressly described in the [Linux syscall note](https://github.com/torvalds/linux/blob/master/LICENSES/exceptions/Linux-syscall-note) and further clarified in the eBPF licensing [section](https://docs.kernel.org/bpf/bpf_licensing.html) “Generally, proprietary-licensed applications and GPL licensed BPF programs written for the Linux kernel in the same package can co-exist because they are separate executable processes.”
 
