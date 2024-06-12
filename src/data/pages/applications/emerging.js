@@ -431,8 +431,8 @@ const emergingApplications = [
     logoName: 'kflowLogo',
     title: 'Process Monitoring on Linux Endpoints via eBPF',
     description: ` kflow is an open source project that implements Process
-    Monitoring on Linux Endpoints for File System, TCP and UDP Networking
-    Events via eBPF Subsystem.
+    Monitoring on Linux Endpoints for File System, TCP, and UDP Networking
+    Events via the eBPF Subsystem.
     kflow is built with libbpf+CO-RE and runs on Linux kernels 5.10+.
     `,
     urls: [
