@@ -156,6 +156,9 @@ const logos = {
   pcapplusplusLogo,
   bpftopLogo,
   kubeskoopLogo,
+  kflowLogo: (
+    <StaticImage src="./logos/kflow.png" alt="kflow" loading="lazy" width={116} height={116} />
+  ),
 };
 
 const Logo = ({ logo, name }) => {
