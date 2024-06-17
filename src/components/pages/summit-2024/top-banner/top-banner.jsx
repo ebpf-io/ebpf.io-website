@@ -10,7 +10,7 @@ const TopBanner = () => (
       </span>
     </div>
     <Link theme="orange" size="lg" to="https://sessionize.com/ebpf-summit-2024/" target="_blank">
-      Apply now!
+      Submit a talk proposal
     </Link>
   </div>
 );
