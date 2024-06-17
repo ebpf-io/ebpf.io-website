@@ -48,4 +48,4 @@ eBPF programs have no ability to link either statically or dynamically with user
 
 While eBPF licensing may seem complex, understanding GPL compatibility and the distinction between kernel space and user space components clarifies compliance strategies. The delineation between eBPF bytecode in the kernel and userspace executables helps mitigate concerns about GPL compatibility, affirming the flexibility of picking a license for userspace applications. Ultimately, with more clarity on licensing and a shared understanding of best practices, the eBPF ecosystem can continue to evolve and drive the [silent platform revolution](https://www.infoq.com/articles/ebpf-cloud-native-platforms/).
 
-If you want to learn more about this topic, please also check the KubeCon + CloudNativeCon [talk](https://www.youtube.com/watch?v=cxyDEdzNdH8).
+If you want to learn more about this topic, please also check the KubeCon + CloudNativeCon [talk](https://www.youtube.com/watch?v=cxyDEdzNdH8) and for other runtimes check out the [kernel documentation](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_licensing.rst).
