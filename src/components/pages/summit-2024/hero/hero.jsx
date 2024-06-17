@@ -20,7 +20,7 @@ const ctaButtons = [
   {
     onClick: null,
     url: 'https://ebpf.io/slack',
-    title: 'Join the summit slack to stay up to date',
+    title: 'Join the summit slack',
     theme: 'gray',
     iconName: 'slack',
     target: '_blank',
