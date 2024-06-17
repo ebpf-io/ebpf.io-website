@@ -14,6 +14,7 @@ _Disclaimer: We are not lawyers and this is not legal advice. Please contact a l
 Authors: Bill Mulligan and Liz Rice
 
 While there is a wide appreciation of the power of eBPF to [fundamentally change the platforms](https://www.infoq.com/articles/ebpf-cloud-native-platforms/) we run our software on, there are some misconceptions in the ecosystem about when eBPF programs need to be licensed under the GPL and how that impacts licensing compliance. Seeing GPL licensed code may give some legal teams pause because eBPF is unfamiliar to them - but it shouldn’t. This blog provides context around why GPL licensed eBPF code exists and lays out why if you are already using Linux in your project, product, or company then using eBPF should not cause any additional concerns. If you are a contributor to a project already using eBPF or looking to add it, or you're unfamiliar with or concerned about eBPF licensing, this blog will walk you through some practical strategies for eBPF licensing and hopefully you’ll learn to stop worrying and love the GPL.
+
 _Note: this article considers situations where eBPF programs are executed within the Linux kernel, which is the case for the majority of deployed eBPF applications today. It's also possible to run eBPF bytecode in other ways, for example in a [userspace eBPF runtime](https://eunomia.dev/blogs/userspace-ebpf/), where different licensing models can apply._ 
 ## All Meaningful Linux Kernel eBPF Programs Are GPL Licensed
 
