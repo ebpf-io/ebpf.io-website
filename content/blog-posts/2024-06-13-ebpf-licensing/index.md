@@ -1,6 +1,6 @@
 ---
 path: '/blog/ebpf-licensing-guide'
-date: '2024-06-13T10:00:00.000Z'
+date: '2024-06-17T10:00:00.000Z'
 title: 'A Practical Guide to eBPF Licensing: Or How I Learned to Stop Worrying and Love the GPL'
 description: "Learn how to license eBPF programs and their userspace components with the legal considerations along the way"
 ogImage: modular-vs-aggregate.png
