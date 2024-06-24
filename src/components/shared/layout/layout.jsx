@@ -8,8 +8,6 @@ import TopBanner from 'components/shared/top-banner';
 import footerMenu from 'data/shared/footer-menu';
 import headerMenu from 'data/shared/header-menu';
 
-import { defaultLanguage } from '../../../../config/languages';
-
 const translateMenuItem = (menuItem, language) => ({
   ...menuItem,
   title: menuItem.title ? menuItem.title[language] || menuItem.title : menuItem.title,
@@ -56,7 +54,7 @@ Layout.propTypes = {
 
 Layout.defaultProps = {
   headerWithFullWidthBottomBorder: false,
-  lang: defaultLanguage,
+  lang: 'en',
   pageUrls: null,
 };
 
