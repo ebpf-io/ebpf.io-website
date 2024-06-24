@@ -36,7 +36,7 @@ const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => {
 };
 
 export const Head = ({ location: { pathname }, data }) => {
-  const dataLanguage = data.locales.edges.find((e) => e.node.ns === 'events').node.data;
+  const dataLanguage = data.locales.edges[0].node.data;
   const t = JSON.parse(dataLanguage);
 
   return <SEO pathname={pathname} title={t.meta.title} description={t.meta.description} />;
@@ -46,7 +46,7 @@ export default EventsPage;
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(filter: { ns: { in: ["events"] }, language: { eq: $language } }) {
       edges {
         node {
           ns
