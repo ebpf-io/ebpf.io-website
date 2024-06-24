@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "zh-cn",
-    "description": "zh-cn"
+    "title": "eBPF - 介绍, 教程和社区资源",
+    "description": "eBPF是一项革命性的技术, 它可以在 Linux 内核中运行沙盒程序, 而无需通过更改内核源代码或加载内核模块的方式来实现。"
   },
-  "title": "zh-cn <a href='/'>title</a>"
+  "title": "eBPF 会议和见面会"
 }
