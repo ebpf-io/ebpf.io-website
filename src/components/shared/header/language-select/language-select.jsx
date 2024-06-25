@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
 import React, { useCallback, useRef, useState } from 'react';
 
@@ -13,8 +14,6 @@ import PtIcon from 'icons/languages/pt.inline.svg';
 import SwIcon from 'icons/languages/sw.inline.svg';
 import ZhCNIcon from 'icons/languages/zh-cn.inline.svg';
 
-import { languages } from '../../../../../config/languages';
-
 const langIcons = {
   en: EnIcon,
   'fr-fr': FrFrIcon,
@@ -26,7 +25,30 @@ const langIcons = {
   'tw-cn': ZhCNIcon,
 };
 
-const LanguageSelect = ({ lang, pageUrls }) => {
+const langNames = {
+  en: 'English',
+  'fr-fr': 'Français',
+  pt: 'Português',
+  'pt-br': 'Português (Br)',
+  'it-it': 'Italiano',
+  'zh-cn': '简体中文',
+  sw: 'Swahili',
+  'tw-cn': '繁體中文',
+};
+
+const langShortNames = {
+  en: 'Eng',
+  'fr-fr': 'Fra',
+  pt: 'Por',
+  'pt-br': 'Por',
+  'it-it': 'Ita',
+  'zh-cn': 'Chi',
+  sw: 'Swa',
+  'tw-cn': 'Chi',
+};
+
+const LanguageSelect = ({ pageUrls }) => {
+  const { language, languages } = useI18next();
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -40,7 +62,8 @@ const LanguageSelect = ({ lang, pageUrls }) => {
 
   useClickOutside([dropdownRef], handleClickOutside);
 
-  const LangIcon = langIcons[lang];
+  const LangIcon = langIcons[language];
+  const langShortName = langShortNames[language];
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -51,7 +74,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
         onClick={handleDropdown}
       >
         <LangIcon className="mr-1.5 h-[18px] w-[18px]" />
-        <span className="w-7">{languages[lang].shortName}</span>
+        <span className="w-7">{langShortName}</span>
         <ChevronIcon
           className={clsx('ml-1.5 mt-1 h-auto w-2.5', showDropdown ? 'rotate-180' : 'rotate-0')}
         />
@@ -66,19 +89,20 @@ const LanguageSelect = ({ lang, pageUrls }) => {
         }}
       >
         {Object.values(languages)
-          .filter(({ code }) => code !== lang)
-          .map(({ name, code }) => {
-            let url = code === 'en' ? '/' : `/${code}/`;
-            if (pageUrls) url = pageUrls[code];
+          .filter((lang) => lang !== language)
+          .map((lang) => {
+            let url = lang === 'en' ? '/' : `/${lang}/`;
+
+            if (pageUrls) url = pageUrls[lang];
 
             return (
-              <li className="flex" key={name}>
+              <li className="flex" key={language}>
                 <Link
                   className="flex whitespace-nowrap px-5 py-2.5 text-[15px] font-medium leading-none lg:text-sm"
                   theme="black"
                   to={url}
                 >
-                  {name}
+                  {langNames[lang]}
                 </Link>
               </li>
             );
@@ -89,13 +113,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
 };
 
 LanguageSelect.propTypes = {
-  lang: PropTypes.string.isRequired,
-  pageUrls: PropTypes.shape(
-    Object.keys(languages).reduce((acc, lang) => {
-      acc[lang] = PropTypes.string.isRequired;
-      return acc;
-    }, {})
-  ),
+  pageUrls: PropTypes.objectOf(PropTypes.string),
 };
 
 LanguageSelect.defaultProps = {
