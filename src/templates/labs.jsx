@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
-import { graphql } from 'gatsby';
-import { navigate } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import React from 'react';
 
 import Categories from 'components/pages/labs/categories';
@@ -123,6 +122,16 @@ export const query = graphql`
             }
             publicURL
           }
+        }
+      }
+    }
+
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

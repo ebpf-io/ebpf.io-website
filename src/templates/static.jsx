@@ -80,6 +80,16 @@ export const pageQuery = graphql`
       }
       tableOfContents(maxDepth: 3)
     }
+
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
   }
 `;
 

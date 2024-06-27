@@ -187,12 +187,6 @@ module.exports = {
           keySeparator: '.',
           nsSeparator: ':',
         },
-        // pages: [
-        //   {
-        //     matchPath: '/events',
-        //     languages: ['en', 'fr-fr', 'pt'],
-        //   },
-        // ],
       },
     },
     {

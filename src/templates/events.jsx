@@ -35,18 +35,17 @@ const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => {
   );
 };
 
-export const Head = ({ location: { pathname }, data }) => {
-  const dataLanguage = data.locales.edges[0].node.data;
-  const t = JSON.parse(dataLanguage);
+export const Head = ({ location: { pathname } }) => {
+  const { t } = useTranslation();
 
-  return <SEO pathname={pathname} title={t.meta.title} description={t.meta.description} />;
+  return <SEO pathname={pathname} {...t('events:meta', { returnObjects: true })} />;
 };
 
 export default EventsPage;
 
 export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { ns: { in: ["events"] }, language: { eq: $language } }) {
+  query {
+    locales: allLocale {
       edges {
         node {
           ns

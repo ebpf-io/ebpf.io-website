@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import React from 'react';
 
 import Cards from 'components/pages/newsletter/cards';
@@ -18,3 +19,17 @@ const Newsletter = () => (
 export default Newsletter;
 
 export const Head = () => <SEO {...SEO_DATA.newsletter} />;
+
+export const query = graphql`
+  query {
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

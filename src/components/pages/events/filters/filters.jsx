@@ -15,6 +15,7 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
       <DropdownSelect
         {...date}
         values={activeFilters[date.label]}
+        isSelected={activeFilters[date.label].length > 0}
         onSelect={(newValues) => handleFilters(date, newValues)}
       />
       <DropdownWithTwoLevels
@@ -26,6 +27,7 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
       <DropdownSelect
         {...region}
         values={activeFilters[region.label]}
+        isSelected={activeFilters[region.label].length > 0}
         onSelect={(newValues) => handleFilters(region, newValues)}
       />
     </div>

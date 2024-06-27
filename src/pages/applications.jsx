@@ -1,3 +1,5 @@
+import { graphql } from 'gatsby';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import FAQ from 'components/pages/project-landscape/faq';
@@ -8,26 +10,45 @@ import SEO from 'components/shared/seo';
 import data from 'data/pages/applications';
 import SEO_DATA from 'data/shared/seo-data';
 
-import { defaultLanguage } from '../../config/languages';
+const ApplicationsPage = () => {
+  const { language } = useI18next();
 
-const lang = defaultLanguage;
-
-const ApplicationsPage = () => (
-  <Layout pageUrls={data.pageUrls}>
-    <h1 className="sr-only">{data[lang].title}</h1>
-    <Hero {...data[lang].hero} />
-    <ProjectsList className="pt-[72px] lg:pt-16 md:pt-12" {...data[lang].majorApplicationsProps} />
-    <ProjectsList
-      className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
-      {...data[lang].emergingApplicationsProps}
-    />
-    <FAQ />
-  </Layout>
-);
+  return (
+    <Layout pageUrls={data.pageUrls}>
+      <h1 className="sr-only">{data[language].title}</h1>
+      <Hero {...data[language].hero} />
+      <ProjectsList
+        className="pt-[72px] lg:pt-16 md:pt-12"
+        {...data[language].majorApplicationsProps}
+      />
+      <ProjectsList
+        className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
+        {...data[language].emergingApplicationsProps}
+      />
+      <FAQ lang={language} />
+    </Layout>
+  );
+};
 
 // eslint-disable-next-line react/prop-types
-export const Head = ({ location: { pathname } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.applications[lang]} />
-);
+export const Head = ({ location: { pathname } }) => {
+  const { language } = useI18next();
+
+  return <SEO pathname={pathname} {...SEO_DATA.applications[language]} />;
+};
 
 export default ApplicationsPage;
+
+export const query = graphql`
+  query {
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

@@ -1,0 +1,77 @@
+{
+  "copyright": "Auteurs d’eBPF.io",
+  "maintain": {
+    "title": "Maintenu par la communauté eBPF.",
+    "beforeLink": "Vous avez trouvé un bug ?",
+    "linkTitle": "Reporter un problème"
+  },
+  "content": {
+    "beforeFirstLink": "Le contenu du site Web",
+    "firstLink": "ebpf.io",
+    "beforeSecondLink": "est sous",
+    "secondLink": "licence internationale Creative Commons Attribution 4.0",
+    "afterSecondLink": ""
+  },
+  "menu": [
+    {
+      "title": "Commencer",
+      "items": [
+        {
+          "title": "Qu’est-ce qu’eBPF",
+          "to": "/fr-fr/what-is-ebpf"
+        },
+        {
+          "title": "eBPF Tech Talks",
+          "to": "https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi",
+          "target": "_blank"
+        },
+        {
+          "title": "Études de cas",
+          "to": "/fr-fr/case-studies"
+        },
+        {
+          "title": "Labs",
+          "to": "/fr-fr/labs"
+        }
+      ]
+    },
+    {
+      "title": "Paysage du projet",
+      "items": [
+        {
+          "title": "Applications",
+          "to": "/fr-fr/applications"
+        },
+        {
+          "title": "Infrastructure",
+          "to": "/fr-fr/infrastructure"
+        }
+      ]
+    },
+    {
+      "title": "À propos",
+      "items": [
+        {
+          "title": "Blog",
+          "to": "/blog"
+        },
+        {
+          "title": "Boutique de cadeaux",
+          "to": "https://cilium.myspreadshop.net/"
+        },
+        {
+          "title": "l’image de marque",
+          "to": "https://ebpf.foundation/brand-guidelines/"
+        },
+        {
+          "title": "Newsletter",
+          "to": "/newsletter"
+        },
+        {
+          "title": "Contribuer",
+          "to": "/fr-fr/contribute"
+        }
+      ]
+    }
+  ]
+}

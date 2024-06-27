@@ -948,7 +948,8 @@ const data = {
         {
           image: 'book',
           title: '閱讀書籍',
-          description: '閱讀 Liz Rice 所著的O’Reilly書籍《What is eBPF?》和《Learning eBPF》或者Brendan Gregg 所著的《BPF Performance Tools》來入門了解。 透過這些書，您將了解什麼是 eBPF、它為何如此強大，以及它提供的功能。',
+          description:
+            '閱讀 Liz Rice 所著的O’Reilly書籍《What is eBPF?》和《Learning eBPF》或者Brendan Gregg 所著的《BPF Performance Tools》來入門了解。 透過這些書，您將了解什麼是 eBPF、它為何如此強大，以及它提供的功能。',
           cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
           dashedBorderClassName: 'border-secondary-green-2',
           linkUrl: '#books',
@@ -957,13 +958,14 @@ const data = {
         {
           image: 'video',
           title: '觀看影片',
-          description: '跟隨 John Fastabend 的演講深入了解 eBPF 的歷史。 從 2014 年的“早期”開始，它介紹了當時影響Linux 網路領域的主要專案、公司和參與者，以及它們如何促成 eBPF 的創建。',
+          description:
+            '跟隨 John Fastabend 的演講深入了解 eBPF 的歷史。 從 2014 年的“早期”開始，它介紹了當時影響Linux 網路領域的主要專案、公司和參與者，以及它們如何促成 eBPF 的創建。',
           cardColorClassName: 'bg-secondary-red-1-light border-secondary-red-1',
           dashedBorderClassName: 'border-secondary-red-2',
           linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00',
           linkTarget: '_blank',
         },
-      ]
+      ],
     },
     documentation: {
       title: '閱讀以下文件，了解更多有關 eBPF 的內容',
@@ -1002,9 +1004,10 @@ const data = {
           image: 'gitKernel',
           title: 'BPF 設計答疑',
           description: 'eBPF 核心相關問題的 FAQ',
-          linkUrl: 'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst',
+          linkUrl:
+            'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst',
         },
-      ]
+      ],
     },
     subscriptionForm: {
       title: '訂閱',
@@ -1023,12 +1026,14 @@ const data = {
       items: [
         {
           title: 'eBPF 追蹤教程',
-          description: '學習如何使用 eBPF 進行跟踪，從運行 bcc 工具到使用 bpftrace 和 bcc 進行開發。',
+          description:
+            '學習如何使用 eBPF 進行跟踪，從運行 bcc 工具到使用 bpftrace 和 bcc 進行開發。',
           linkUrl: 'http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html',
         },
         {
           title: 'XDP 教程',
-          description: '學習編寫 XDP 程式所需的基本步驟，從了解XDP的概念到如何將多個程式附加到一個介面',
+          description:
+            '學習編寫 XDP 程式所需的基本步驟，從了解XDP的概念到如何將多個程式附加到一個介面',
           linkUrl: 'https://github.com/xdp-project/xdp-tutorial',
         },
         {
@@ -1036,7 +1041,7 @@ const data = {
           description: '支援在 Web 瀏覽器中以互動方式運行的BPF編譯器並探組合語言程式碼',
           linkUrl: 'https://godbolt.org/',
         },
-      ]
+      ],
     },
     events: {
       title: '參加 eBPF 活動，向行業專家學習',

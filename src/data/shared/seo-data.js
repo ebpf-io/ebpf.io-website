@@ -37,7 +37,8 @@ export default {
     },
     'tw-cn': {
       title: 'eBPF - 介紹、教學與社群資源',
-      description: 'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。',
+      description:
+        'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。',
     },
   },
   contribute: {
@@ -85,50 +86,8 @@ export default {
     'tw-cn': {
       title: '如何為 eBPF 做出貢獻',
       description: '想了解如何為 eBPF 做出貢獻嗎？ 了解如何開始為 eBPF 項目做出貢獻。',
-      keywords: 'ebpf, bpf, 貢獻, 開始, 社群'
-    }
-  },
-  caseStudies: {
-    en: {
-      title: 'eBPF Case Studies',
-      description: 'Learn how eBPF is used in different projects.',
-      keywords: 'ebpf, bpf, contribute, getting started, community',
-    },
-    'fr-fr': {
-      title: 'Études de cas eBPF',
-      description: 'Découvrez comment eBPF est utilisé à travers différents projets.',
-      keywords: 'ebpf, bpf, contribuer, démarrer, communauté',
-    },
-    pt: {
-      title: 'eBPF estudos de caso',
-      description: 'Saber como o eBPF é utilizado em diferentes projetos.',
-      keywords: 'ebpf, bpf, contribuir, primeiros passos, comunidade',
-    },
-    'pt-br': {
-      title: 'Estudos de Caso do eBPF',
-      description: 'Aprenda como o eBPF é usado em diferentes projetos.',
-      keywords: 'ebpf, bpf, contribuir, começar, comunidade',
-    },
-    'it-it': {
-      title: 'Casi di studio eBPF',
-      description: 'Apprendi come eBPF viene impiegato in svariati progetti.',
-      keywords: 'ebpf, bpf, contribuir, começar, comunidade',
-    },
-    'zh-cn': {
-      title: 'eBPF 案例研究',
-      description: '学习了解 eBPF 在不同的项目中是如何被应用的。',
-      keywords: 'ebpf, bpf, 贡献, 开始, 社区',
-    },
-    sw: {
-      title: 'Uchambuzi wa Kesi za eBPF',
-      description: 'Jifunze jinsi eBPF inavyotumiwa katika miradi tofauti.',
-      keywords: 'ebpf, bpf, kuchangia, kuanza, jumuiya',
-    },
-    'tw-cn': {
-      title: 'eBPF 案例研究',
-      description: '了解 eBPF 如何在不同項目中的應用。',
       keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
-    }
+    },
   },
   applications: {
     en: {
@@ -170,7 +129,7 @@ export default {
       title: 'eBPF 應用項目概覽',
       description: '基於 eBPF 的開源應用程式目錄',
       keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
-    }
+    },
   },
   infrastructure: {
     en: {
@@ -212,7 +171,7 @@ export default {
       title: 'eBPF 核心基礎設施概覽',
       description: '基於 eBPF 的核心基礎設施目錄',
       keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
-    }
+    },
   },
   newsletter: {
     title: 'Subscribe to bi-weekly eCHO News - eBPF',

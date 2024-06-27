@@ -1,0 +1,122 @@
+{
+  "menu": [
+    {
+      "title": "学习",
+      "items": [
+        {
+          "title": "什么是 eBPF ?",
+          "to": "/zh-cn/what-is-ebpf"
+        },
+        {
+          "title": "开始",
+          "to": "/zh-cn/get-started"
+        },
+        {
+          "title": "案例研究",
+          "to": "/zh-cn/case-studies"
+        },
+        {
+          "title": "实验室",
+          "to": "/zh-cn/labs"
+        },
+        {
+          "title": "eBPF 儿童指南",
+          "to": "/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf"
+        }
+      ]
+    },
+    {
+      "title": "项目概览",
+      "items": [
+        {
+          "title": "应用项目",
+          "to": "/zh-cn/applications"
+        },
+        {
+          "title": "基础设施项目",
+          "to": "/zh-cn/infrastructure"
+        }
+      ]
+    },
+    {
+      "title": "活动",
+      "items": [
+        {
+          "title": "所有活动",
+          "to": "/zh-cn/events?overview"
+        },
+        {
+          "title": "eBPF 峰会",
+          "to": "/zh-cn/events?conference=eBPF%20Summit"
+        },
+        {
+          "title": "eBPF 见面会",
+          "to": "https://www.meetup.com/ebpf-user-group/",
+          "target": "_blank"
+        },
+        {
+          "title": "eBPF Track (LPC)",
+          "to": "/zh-cn/events?conference=eBPF%20Track%20%28LPC%29"
+        },
+        {
+          "title": "bpfconf (LSF/MM/BPF)",
+          "to": "/zh-cn/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29"
+        }
+      ]
+    },
+    {
+      "title": "社区",
+      "items": [
+        {
+          "title": "开始",
+          "to": "/zh-cn/get-started/#docs"
+        },
+        {
+          "title": "Slack",
+          "to": "https://ebpf.io/slack"
+        },
+        {
+          "title": "eBPF 见面会",
+          "to": "https://www.meetup.com/ebpf-user-group/",
+          "target": "_blank"
+        },
+        {
+          "title": "Stack Overflow",
+          "to": "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
+          "target": "_blank"
+        },
+        {
+          "title": "r/eBPF",
+          "to": "https://www.reddit.com/r/eBPF/",
+          "target": "_blank"
+        },
+        {
+          "title": "Wikipedia",
+          "to": "https://en.wikipedia.org/wiki/EBPF",
+          "target": "_blank"
+        },
+        {
+          "title": "eCHO",
+          "to": "https://github.com/isovalent/eCHO",
+          "target": "_blank"
+        },
+        {
+          "title": "资讯",
+          "to": "/newsletter"
+        },
+        {
+          "title": "贡献",
+          "to": "/zh-cn/contribute"
+        }
+      ]
+    },
+    {
+      "title": "博客",
+      "to": "/blog"
+    },
+    {
+      "title": "基金会",
+      "to": "https://ebpf.foundation/"
+    }
+  ]
+}

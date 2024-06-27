@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import React from 'react';
 
 import Articles from 'components/pages/resources/articles';
@@ -35,3 +36,17 @@ export const Head = ({ location: { pathname } }) => {
 };
 
 export default Resources;
+
+export const query = graphql`
+  query {
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

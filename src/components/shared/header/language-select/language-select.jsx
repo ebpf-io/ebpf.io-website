@@ -96,7 +96,7 @@ const LanguageSelect = ({ pageUrls }) => {
             if (pageUrls) url = pageUrls[lang];
 
             return (
-              <li className="flex" key={language}>
+              <li className="flex" key={lang}>
                 <Link
                   className="flex whitespace-nowrap px-5 py-2.5 text-[15px] font-medium leading-none lg:text-sm"
                   theme="black"

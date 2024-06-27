@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import clsx from 'clsx';
+import { graphql } from 'gatsby';
 import React from 'react';
 
 import BlogPosts from 'components/pages/get-started/blog-posts';
@@ -67,3 +68,17 @@ export default GetStartedPage;
 export const Head = ({ location: { pathname }, pageContext: { language } }) => (
   <SEO pathname={pathname} {...SEO_DATA.home[language]} />
 );
+
+export const query = graphql`
+  query {
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
