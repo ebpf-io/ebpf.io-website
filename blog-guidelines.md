@@ -42,6 +42,10 @@ Authors can add 1-2 sentences at the end of their blog with a link to an externa
 
 We will review the statement, as we do for the content for the blog. If changes are needed, we will provide suggestions.
 
+## Listing Events on Website
+
+Please see the ebpf.io [Event Guidelines](./Events-Guidelines.md).
+
 ## Promotion
 
 Please feel free to share the blog on Twitter and reach out to [blog@ebpf.io](blog@ebpf.io) if you would like to request retweets from [@ebpfsummit](https://twitter.com/eBPFsummit).
