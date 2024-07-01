@@ -187,6 +187,12 @@ module.exports = {
           keySeparator: '.',
           nsSeparator: ':',
         },
+        pages: [
+          {
+            matchPath: '/:lang?/what-is-ebpf',
+            getLanguageFromPath: true,
+          },
+        ],
       },
     },
     {
