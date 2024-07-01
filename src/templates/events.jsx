@@ -10,18 +10,22 @@ import SEO_DATA from 'data/shared/seo-data';
 const pageUrls = {
   en: '/events/',
   'fr-fr': '/fr-fr/events/',
+  pt: '/pt/events/',
   'pt-br': '/pt-br/events/',
   'it-it': '/it-it/events/',
+  es: '/es/events/',
   'zh-cn': '/zh-cn/events/',
   sw: '/sw/events/',
+  'tw-cn': '/tw-cn/events/',
 };
 
 const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => (
   <Layout lang={language} pageUrls={pageUrls}>
     <div className="container flex flex-col pt-20 lg:pt-16">
-      <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
-        {data[language].title}
-      </h1>
+      <h1
+        className="heading-9xl max-w-[890px] text-left font-semibold leading-tight"
+        dangerouslySetInnerHTML={{ __html: data[language].title }}
+      />
     </div>
     <EventList allEvents={postEvents} totalCount={totalCount} />
   </Layout>

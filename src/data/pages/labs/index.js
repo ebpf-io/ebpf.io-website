@@ -20,6 +20,16 @@ const data = {
       buttonTitle: 'S’abonner',
     },
   },
+  pt: {
+    title: 'Explore o eBPF com laboratórios interativos',
+    subscriptionForm: {
+      title: 'Subscrever',
+      afterTitle: 'o eCHO Notícias quinzenal',
+      description: 'Fique por dentro das últimas notícias e informações do eBPF e Cilium',
+      placeholder: 'Endereço de email...',
+      buttonTitle: 'Se inscrever',
+    },
+  },
   'pt-br': {
     title: 'Explore o eBPF com laboratórios interativos',
     subscriptionForm: {
@@ -41,6 +51,16 @@ const data = {
       buttonTitle: 'Sottoscrivi',
     },
   },
+  es: {
+    title: 'Profundiza en eBPF con laboratorios interactivos',
+    subscriptionForm: {
+      title: 'Suscríbete',
+      afterTitle: 'al boletín informativo quincenal de noticias eCHO',
+      description: 'Mantente al día con las últimas noticias e información de eBPF y Cilium',
+      placeholder: 'Dirección de email...',
+      buttonTitle: 'Suscríbete',
+    },
+  },
   'zh-cn': {
     title: '通过交互式实验室深入研究 eBPF',
     subscriptionForm: {
@@ -59,6 +79,16 @@ const data = {
       description: 'Kuwa na habari za hivi karibuni kutoka jamii za eBPF na Cilium',
       placeholder: 'Anwani ya barua pepe...',
       buttonTitle: 'Jisajili',
+    },
+  },
+  'tw-cn': {
+    title: '參與互動實驗，深入研究 eBPF',
+    subscriptionForm: {
+      title: '訂閱',
+      afterTitle: '訂閱雙周刊 eCHO 新聞',
+      description: '了解 eBPF 和 Cilium 的最新新聞和資訊',
+      placeholder: '電子郵件地址...',
+      buttonTitle: '訂閱',
     },
   },
 };

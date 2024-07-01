@@ -113,6 +113,59 @@ const data = {
       },
     ],
   },
+  pt: {
+    title: 'Perguntas frequentes',
+    items: [
+      {
+        question: 'Esses projetos são da Fundação eBPF?',
+        answer: `<ul>
+					<li>Esta página lista vários projetos de código aberto que usam eBPF como tecnologia central subjacente. Esses projetos não estão todos sob a <a href="https://www.ebpf.foundation/">Fundação eBPF</a>, mas estão listados aqui como uma pesquisa do panorama dos projetos eBPF hoje.</li>
+				</ul>`,
+      },
+      {
+        question: 'Adicione seu projeto',
+        answer: `<ol>
+					<li>Certifique-se de que o projeto atenda aos requisitos a serem listados. Veja abaixo.</li>
+					<li>Abra uma <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">solicitação pull</a> e forneça as informações necessárias. Use um dos projetos já listados como modelo. A ordenação dos aplicativos é baseada no número de estrelas do Github (maior para menor), atualizado trimestralmente.</li>
+					<li>A solicitação pull será revisada pela comunidade e mesclada por um dos mantenedores. Se você tiver alguma dúvida, fique à vontade para perguntar no <a href="https://ebpf.io/slack">Slack</a>.</li>
+				</ol>`,
+      },
+      {
+        question: 'Você está mantendo um projeto listado?',
+        answer: `<ul>
+					<li>Se você mantém um dos projetos listados e gostaria de ajustar o conteúdo. Entre em contacto no <a href="https://ebpf.io/slack">Slack</a> ou abra uma solicitação pull diretamente.</li>
+				</ul>`,
+      },
+      {
+        question: 'Requisitos para um projeto ser listado',
+        answer: `
+					<p>
+						Os projetos podem ser listados nesta página como "Principais" ou "Emergentes". Os requisitos para ser listado como "Emergente" são:
+					</p>
+					<ul>
+						<li>
+							O projeto deve ser de código aberto. Todo o código-fonte deve ser licenciado sob uma licença de código aberto. Qualquer documentação deve ser licenciada sob uma licença aberta.
+						</li>
+						<li>
+							O projeto deve usar o eBPF como tecnologia central subjacente (em outras palavras, um projeto perderia o seu propósito se as partes do eBPF fossem removidas) ou ajudar a acelerar a adoção do eBPF na produção.
+						</li>
+						<li>O projeto deve ser mantido ativamente.</li>
+						<li>
+							O projeto deve estar aberto à colaboração e ter um modelo de governança seguindo as melhores práticas de código aberto.
+						</li>
+					</ul>
+					<p>
+						Para ser listado como um projeto “Grande”, um projeto deve atender a todos os requisitos acima, mais:
+					</p>
+					<ul>
+						<li>O projeto deve ter mais de 50 colaboradores.</li>
+						<li>
+							O projeto deve ser utilizado em ambientes de produção com uma quantidade significativa de usuários. Como essas informações podem não ser facilmente descobertas a partir de um link para o projeto, tais informações devem ser incluídas na descrição da solicitação pull.
+						</li>
+					</ul>`,
+      },
+    ],
+  },
   'pt-br': {
     title: 'Perguntas Frequentes',
     items: [
@@ -214,6 +267,59 @@ const data = {
 						<li>Il progetto deve avere più di 50 contributori.</li>
 						<li>
 							Il progetto deve essere impiegato in ambienti realistici di produzione che abbiano un significativo numero di utenti. Dal momento che queste informazioni non sono facilmente ricavabili da un collegamento al progetto, dovrebbero essere incluse nella descrizione della pull request.
+						</li>
+					</ul>`,
+      },
+    ],
+  },
+  es: {
+    title: 'Preguntas frecuentes',
+    items: [
+      {
+        question: '¿Estos proyectos pertenecen a la Fundación eBPF?',
+        answer: `<ul>
+					<li>Esta página enumera una serie de proyectos de código abierto que utilizan eBPF como tecnología central subyacente. No todos estos proyectos pertenecen a la <a href="https://www.ebpf.foundation/">Fundación eBPF</a>, pero se enumeran aquí como un estudio del panorama actual de los proyectos eBPF.</li>
+				</ul>`,
+      },
+      {
+        question: 'Añade tu proyecto',
+        answer: `<ol>
+					<li>Asegúrate de que el proyecto cumpla con los requisitos para ser incluido en la lista. Ve abajo.</li>
+					<li>Abre un <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">pull request</a> y proporciona la información requerida. Utiliza uno de los proyectos ya enumerados como plantilla. El orden de las aplicaciones se basa en el número de estrellas de Github (de mayor a menor), actualizado trimestralmente.</li>
+					<li>La comunidad revisará el pull request y uno de los mantenedores le hará merge. Si tienes alguna pregunta, no dudes en preguntarla en <a href="https://ebpf.io/slack">Slack</a>.</li>
+				</ol>`,
+      },
+      {
+        question: '¿Estás manteniendo un proyecto listado?',
+        answer: `<ul>
+					<li>Si mantienes uno de los proyectos enumerados y deseas ajustar el contenido, pónte en contacto en <a href="https://ebpf.io/slack">Slack</a> o abre un pull request directamente.</li>
+				</ul>`,
+      },
+      {
+        question: 'Requisitos para que un proyecto sea catalogado',
+        answer: `
+					<p>
+						Los proyectos se pueden enumerar en esta página como "Principales" o "Emergentes". Los requisitos para figurar como “Emergente” son:
+					</p>
+					<ul>
+						<li>
+							El proyecto debe ser de código abierto. Todo el código fuente debe tener una licencia de código abierto. Cualquier documentación debe tener una licencia abierta.
+						</li>
+						<li>
+							El proyecto debe utilizar eBPF como tecnología central subyacente (en otras palabras, un proyecto perdería su propósito si se eliminan las partes de eBPF) o ayudar a acelerar la adopción de eBPF en producción.
+						</li>
+						<li>El proyecto debe mantenerse activamente.</li>
+						<li>
+							El proyecto debe estar abierto a la colaboración y tener un modelo de gobernanza que siga las mejores prácticas de código abierto.
+						</li>
+					</ul>
+					<p>
+						Para figurar como proyecto "principal", un proyecto debe cumplir con todos los requisitos anteriores, además de:
+					</p>
+					<ul>
+						<li>El proyecto debe tener más de 50 contribuyentes.</li>
+						<li>
+							El proyecto debe utilizarse en entornos similares a los de producción con una cantidad significativa de usuarios. Dado que es posible que esta información no se pueda descubrir fácilmente desde un enlace al proyecto, dicha información debe incluirse en la descripción del pull request.
 						</li>
 					</ul>`,
       },
@@ -321,6 +427,61 @@ const data = {
 						<li>
 							Mradi lazima utumiwe katika mazingira yanayofanana na uzalishaji na idadi kubwa ya watumiaji. Tangu habari kama hiyo inaweza isiwe rahisi kupatikana kutoka kwa kiungo kwenye mradi, habari kama hiyo inapaswa kuwa sehemu ya maelezo ya ombi la uchukuzi.
 						</li>
+					</ul>`,
+      },
+    ],
+  },
+  'tw-cn': {
+    title: '常見問題',
+    items: [
+      {
+        question: '這些項目是否屬於 eBPF 基金會？',
+        answer: `<ul> 
+							<li>本頁列出了一些使用 eBPF 作為底層核心技術的開源項目。 這些項目並非全部屬於 <a href="https://www.ebpf.foundation/">eBPF 基金會</a>，但在此列出以展示當前eBPF項目概況。
+						</ul>`,
+      },
+      {
+        question: '添加你的項目',
+        answer: `<ol> 
+							<li>確保項目符合列出的要求。 見下文。</li>
+							<li>提交 <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">Pull Request</a> t並提供所需的資訊。 使用一個已列出的項目作為範本。 應用程式的排序基於 Github 星數（從高到低），每季更新一次。</li>
+							<li>Pull request將由社群審核並由一位維護者合併。 如果您有任何疑問，請隨時在 <a href="https://ebpf.io/slack">Slack</a> 上提問。</li>
+						</ol>`,
+      },
+      {
+        question: '您是否在維護一個已列出的項目?',
+        answer: `<ul>
+					<li>如果您正在維護列出的項目之一，並希望調整內容。 在 <a href="https://ebpf.io/slack">Slack</a> 上取得聯繫或直接提交一個 Pull Request。</li> 
+				</ul>`,
+      },
+      {
+        question: '被列出項目的要求',
+        answer: `
+					<p>
+						項目可以在此頁面上以「主要」或「新興」的形式列出。 被列為"新興」的要求是：
+					</p> 
+					<ul> 
+						<li> 
+							該項目必須是開源的。 所有原始碼必須根據開源許可證獲得許可。 任何文件都必須在開放許可協議下授權。
+						</li> 
+						<li> 
+							該項目必須使用 eBPF 作為其底層核心技術（換句話說，如果去掉 eBPF 部分，项目將失去其目的）或有助於加速在生產中採用eBPF 。
+						</li> 
+						<li> 
+							該項目必須積極維護。
+						</li> 
+						<li> 
+							該項目必須對協作開放，並具有遵循開源最佳實踐的治理模式。
+						</li> 
+					<ul> 
+					<p> 
+						要被列為「主要」項目，該項目必須滿足上述所有要求，並且：
+					</p>
+					<ul>
+						<li>該項目必須有超過 50 名貢獻者。</li> 
+						<li>
+							該項目必須在生產級別環境中有大量使用者。 由於此資訊可能不容易從項目連結中發現，因此此類資訊應包含在pull request描述中。
+						</li> 
 					</ul>`,
       },
     ],

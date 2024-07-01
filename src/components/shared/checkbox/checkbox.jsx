@@ -8,7 +8,7 @@ const Checkbox = (props) => {
   return (
     <div className={clsx('checkbox', className)}>
       <input className="checkbox__input" type="checkbox" id={id} {...otherProps} />
-      <label className="checkbox__label" htmlFor={id}>
+      <label className="cursor-pointer checkbox__label" htmlFor={id}>
         <span>{label}</span>
       </label>
     </div>

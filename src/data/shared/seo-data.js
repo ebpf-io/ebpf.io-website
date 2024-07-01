@@ -10,6 +10,11 @@ export default {
       description:
         'eBPF est une technologie révolutionnaire qui peut exécuter des programmes en bac à sable dans le noyau Linux sans modifier le code source du noyau ni charger un module du noyau.',
     },
+    pt: {
+      title: 'eBPF - Introdução, tutoriais e recursos comunitários',
+      description:
+        'eBPF é uma tecnologia revolucionária que pode executar programas em sandbox no kernel Linux sem alterar o código-fonte do kernel ou carregar um módulo do kernel.',
+    },
     'pt-br': {
       title: 'eBPF - Introdução, Tutoriais e Recursos da Comunidade',
       description:
@@ -20,6 +25,11 @@ export default {
       description:
         'eBPF è una tecnologia rivoluzionaria in grado di eseguire programmi in una sandbox all’interno del kernel di Linux senza modificare il codice sorgente del kernel o caricare un modulo del kernel.',
     },
+    es: {
+      title: 'eBPF - Introducción, tutoriales y recursos comunitarios',
+      description:
+        'eBPF es una tecnología revolucionaria que puede ejecutar programas sandboxed en el kernel de Linux sin cambiar el código fuente del kernel o cargar un módulo del kernel.',
+    },
     'zh-cn': {
       title: 'eBPF - 介绍, 教程和社区资源',
       description:
@@ -29,6 +39,11 @@ export default {
       title: 'eBPF - Utangulizi, Mafunzo, na Rasilmali za Jumuiya',
       description:
         'eBPF ni teknolojia ya mapinduzi inayoweza kuendesha programu zilizoko kwenye sanduku katika kernel ya Linux bila kubadilisha msimbo wa kernel au kupakia moduli ya kernel.',
+    },
+    'tw-cn': {
+      title: 'eBPF - 介紹、教學與社群資源',
+      description:
+        'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。',
     },
   },
   contribute: {
@@ -44,6 +59,12 @@ export default {
         'Vous voulez savoir comment contribuer à eBPF ? Découvrez comment commencer à contribuer aux projets eBPF.',
       keywords: 'ebpf, bpf, contribuer, démarrer, communauté',
     },
+    pt: {
+      title: 'Como contribuir com o eBPF',
+      description:
+        'Quer saber como contribuir com o eBPF? Aprenda como começar a contribuir para projetos eBPF.',
+      keywords: 'ebpf, bpf, contribuir, primeiros passos, comunidade',
+    },
     'pt-br': {
       title: 'Como contribuir com o eBPF',
       description:
@@ -56,6 +77,12 @@ export default {
         'Vuoi sapere come contribuire a eBPF? Impara come iniziare a contribuire ai progetti eBPF.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
+    es: {
+      title: 'Cómo contribuir a eBPF',
+      description:
+        '¿Quieres aprender cómo contribuir a eBPF? Aprenda cómo empezar a contribuir a los proyectos de eBPF',
+      keywords: 'ebpf, bpf, contribuir, empezar, comunidad',
+    },
     'zh-cn': {
       title: '如何为 eBPF 作出贡献',
       description: '想要学习如何为 eBPF 作出贡献 ? 学习如何开始给 eBPF 的项目作出贡献。',
@@ -66,6 +93,11 @@ export default {
       description:
         'Je, unataka kujifunza jinsi ya kuchangia kwa eBPF? Jifunze jinsi ya kuanza kuchangia miradi ya eBPF.',
       keywords: 'ebpf, bpf, kuchangia, kuanza, jumuiya',
+    },
+    'tw-cn': {
+      title: '如何為 eBPF 做出貢獻',
+      description: '想了解如何為 eBPF 做出貢獻嗎？ 了解如何開始為 eBPF 項目做出貢獻。',
+      keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
     },
   },
   caseStudies: {
@@ -79,6 +111,11 @@ export default {
       description: 'Découvrez comment eBPF est utilisé à travers différents projets.',
       keywords: 'ebpf, bpf, contribuer, démarrer, communauté',
     },
+    pt: {
+      title: 'eBPF estudos de caso',
+      description: 'Saber como o eBPF é utilizado em diferentes projetos.',
+      keywords: 'ebpf, bpf, contribuir, primeiros passos, comunidade',
+    },
     'pt-br': {
       title: 'Estudos de Caso do eBPF',
       description: 'Aprenda como o eBPF é usado em diferentes projetos.',
@@ -89,6 +126,11 @@ export default {
       description: 'Apprendi come eBPF viene impiegato in svariati progetti.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
+    es: {
+      title: 'Estudios de caso eBPF',
+      description: 'Conozca cómo se utiliza eBPF en diferentes proyectos.',
+      keywords: 'ebpf, bpf, contribuir, empezar, comunidad',
+    },
     'zh-cn': {
       title: 'eBPF 案例研究',
       description: '学习了解 eBPF 在不同的项目中是如何被应用的。',
@@ -98,6 +140,11 @@ export default {
       title: 'Uchambuzi wa Kesi za eBPF',
       description: 'Jifunze jinsi eBPF inavyotumiwa katika miradi tofauti.',
       keywords: 'ebpf, bpf, kuchangia, kuanza, jumuiya',
+    },
+    'tw-cn': {
+      title: 'eBPF 案例研究',
+      description: '了解 eBPF 如何在不同項目中的應用。',
+      keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
     },
   },
   applications: {
@@ -111,6 +158,11 @@ export default {
       description: 'Un répertoire d’applications open source basées sur eBPF',
       keywords: 'ebpf, bpf, paysage, répertoire, open source',
     },
+    pt: {
+      title: 'Panorama de aplicações eBPF',
+      description: 'Um diretório de infraestrutura central baseada em eBPF',
+      keywords: 'ebpf, bpf, paisagem, diretório, código-fonte',
+    },
     'pt-br': {
       title: 'Landscape de Aplicações do eBPF',
       description: 'Um diretório de aplicações de open source baseadas em eBPF',
@@ -121,6 +173,11 @@ export default {
       description: 'Una directory di applicazioni open source basate su eBPF',
       keywords: 'ebpf, bpf, landscape, diretório, código aberto, open source',
     },
+    es: {
+      title: 'Panorama de aplicaciones eBPF',
+      description: 'Directorio de aplicaciones de código abierto basadas en eBPF',
+      keywords: 'ebpf, bpf, paisaje, directorio, código abierto',
+    },
     'zh-cn': {
       title: 'eBPF 应用项目概览',
       description: '基于 eBPF 的开源应用项目目录',
@@ -130,6 +187,11 @@ export default {
       title: 'Mandhari ya Matumizi ya eBPF',
       description: 'Orodha ya programu za chanzo wazi zinazotumia eBPF',
       keywords: 'ebpf, bpf, mandhari, orodha, chanzo wazi',
+    },
+    'tw-cn': {
+      title: 'eBPF 應用項目概覽',
+      description: '基於 eBPF 的開源應用程式目錄',
+      keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
     },
   },
   infrastructure: {
@@ -143,6 +205,11 @@ export default {
       description: 'Un répertoire d’infrastructures basées sur eBPF',
       keywords: 'ebpf, bpf, paysage, répertoire, open source',
     },
+    pt: {
+      title: 'Panorama de infraestrutura central eBPF',
+      description: 'Um diretório de infraestrutura central baseada em eBPF',
+      keywords: 'ebpf, bpf, paisagem, diretório, código-fonte',
+    },
     'pt-br': {
       title: 'Landscape de Infraestrutura Principal do eBPF',
       description: 'Um diretório de infraestrutura principal baseada em eBPF',
@@ -153,6 +220,11 @@ export default {
       description: 'Una directory di infrastrutture eBPF di base',
       keywords: 'ebpf, bpf, paisagem, diretório, código aberto',
     },
+    es: {
+      title: 'Panorama de la infraestructura central de eBPF',
+      description: 'Directorio de infraestructuras básicas basadas en eBPF',
+      keywords: 'ebpf, bpf, paisaje, directorio, código abierto',
+    },
     'zh-cn': {
       title: 'eBPF 核心基础设施概览',
       description: '基于 eBPF 的核心基础设施目录',
@@ -162,6 +234,11 @@ export default {
       title: 'Mandhari ya Msingi ya Miundombinu ya eBPF',
       description: 'Orodha ya msingi wa miundombinu inayotumia eBPF',
       keywords: 'ebpf, bpf, mandhari, orodha, chanzo wazi',
+    },
+    'tw-cn': {
+      title: 'eBPF 核心基礎設施概覽',
+      description: '基於 eBPF 的核心基礎設施目錄',
+      keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
     },
   },
   newsletter: {

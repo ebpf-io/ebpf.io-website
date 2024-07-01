@@ -5,10 +5,13 @@ const data = {
   pageUrls: {
     en: '/applications/',
     'fr-fr': '/fr-fr/applications/',
+    pt: '/pt/applications/',
     'pt-br': '/pt-br/applications/',
     'it-it': '/it-it/applications/',
+    es: '/es/applications/',
     'zh-cn': '/zh-cn/applications/',
     sw: '/sw/applications/',
+    'tw-cn': '/tw-cn/applications/',
   },
   en: {
     title: 'Applications',
@@ -55,6 +58,30 @@ const data = {
     },
     emergingApplicationsProps: {
       title: 'Émergentes',
+      items: emergingApplications,
+    },
+  },
+  pt: {
+    title: 'Aplicação',
+    hero: {
+      items: [
+        {
+          text: 'Aplicação',
+          to: '/pt/applications/',
+        },
+        {
+          text: 'A infraestrutura',
+          to: '/pt/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: 'Principais aplicações',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: 'Emergindo',
       items: emergingApplications,
     },
   },
@@ -106,6 +133,30 @@ const data = {
       items: emergingApplications,
     },
   },
+  es: {
+    title: 'Aplicaciones',
+    hero: {
+      items: [
+        {
+          text: 'Aplicaciones',
+          to: '/es/applications/',
+        },
+        {
+          text: 'Infraestructura',
+          to: '/es/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: 'Aplicaciones principales',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: 'Emergente',
+      items: emergingApplications,
+    },
+  },
   'zh-cn': {
     title: '应用项目',
     hero: {
@@ -151,6 +202,30 @@ const data = {
     },
     emergingApplicationsProps: {
       title: 'Inayojitokeza',
+      items: emergingApplications,
+    },
+  },
+  'tw-cn': {
+    title: '應用項目',
+    hero: {
+      items: [
+        {
+          text: '應用項目',
+          to: '/tw-cn/applications/',
+        },
+        {
+          text: '基礎設施',
+          to: '/tw-cn/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: '主要項目',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: '新興項目',
       items: emergingApplications,
     },
   },

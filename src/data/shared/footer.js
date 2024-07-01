@@ -60,6 +60,34 @@ const data = {
       </span>
     ),
   },
+  pt: {
+    copyright: 'Autores eBPF.io ',
+    maintain: {
+      title: 'Mantido pela comunidade eBPF.',
+      beforeLink: 'Viu um bug?',
+      linkTitle: 'Registrar um problema ',
+    },
+    content: (
+      <span>
+        O conteúdo do site{' '}
+        <Link className="!inline font-medium" theme="white" to="/pt/">
+          ebpf.io
+        </Link>{' '}
+        está licenciado sob uma{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Licença Creative Commons Atribuição 4.0 Internacional
+        </Link>
+        .
+      </span>
+    ),
+  },
   'pt-br': {
     copyright: 'Autores do eBPF.io',
     maintain: {
@@ -111,6 +139,34 @@ const data = {
           rel="noopener noreferrer"
         >
           licenza internazionale Creative Commons Attribution 4.0
+        </Link>
+        .
+      </span>
+    ),
+  },
+  es: {
+    copyright: 'Autores de eBPF.io',
+    maintain: {
+      title: 'Mantenido por la comunidad de eBPF.',
+      beforeLink: '¿Encontraste un error?',
+      linkTitle: 'Reporta y crea un issue ',
+    },
+    content: (
+      <span>
+        El contenido de la página oficial{' '}
+        <Link className="!inline font-medium" theme="white" to="/">
+          ebpf.io
+        </Link>{' '}
+        esta bajo la licencia
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creative Commons Attribution 4.0 International License
         </Link>
         .
       </span>
@@ -168,6 +224,33 @@ const data = {
           Kimataifa ya Utambulisho 4.0 ya Creative Commons
         </Link>
         .
+      </span>
+    ),
+  },
+  'tw-cn': {
+    copyright: 'eBPF.io 作者',
+    maintain: {
+      title: '由eBPF社群維護。',
+      beforeLink: '現一個bug?',
+      linkTitle: '創建一個issue',
+    },
+    content: (
+      <span>
+        <Link className="!inline font-medium" theme="white" to="/tw-cn/">
+          ebpf.io
+        </Link>{' '}
+        網站的內容根據{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creative Commons Attribution 4.0 International License
+        </Link>{' '}
+        授權
       </span>
     ),
   },

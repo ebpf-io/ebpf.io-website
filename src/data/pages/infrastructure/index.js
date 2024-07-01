@@ -6,10 +6,13 @@ const data = {
   pageUrls: {
     en: '/infrastructure/',
     'fr-fr': '/fr-fr/infrastructure/',
+    pt: '/pt/infrastructure/',
     'pt-br': '/pt-br/infrastructure/',
     'it-it': '/it-it/infrastructure/',
+    es: '/es/infrastructure/',
     'zh-cn': '/zh-cn/infrastructure/',
     sw: '/sw/infrastructure/',
+    'tw-cn': '/tw-cn/infrastructure/',
   },
   en: {
     title: 'Infrastructure',
@@ -64,6 +67,34 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'Bibliothèques eBPF auxiliaires',
+      items: auxiliaryLibraries,
+    },
+  },
+  pt: {
+    title: 'A infraestrutura',
+    hero: {
+      items: [
+        {
+          text: 'Aplicação',
+          to: '/pt/applications/',
+        },
+        {
+          text: 'A infraestrutura',
+          to: '/pt/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: 'Infraestrutura principais',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: 'Emergindo',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'Bibliotecas Auxiliares eBPF',
       items: auxiliaryLibraries,
     },
   },
@@ -123,6 +154,34 @@ const data = {
       items: auxiliaryLibraries,
     },
   },
+  es: {
+    title: 'Infraestructura',
+    hero: {
+      items: [
+        {
+          text: 'Aplicaciones',
+          to: '/es/applications/',
+        },
+        {
+          text: 'Infraestructura',
+          to: '/es/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: 'Infraestructura Mayor',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: 'Emergente',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'Bibliotecas auxiliares eBPF',
+      items: auxiliaryLibraries,
+    },
+  },
   'zh-cn': {
     title: '基础设施',
     hero: {
@@ -176,6 +235,34 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'Maktaba za eBPF za Kubadiliana',
+      items: auxiliaryLibraries,
+    },
+  },
+  'tw-cn': {
+    title: '基礎設施',
+    hero: {
+      items: [
+        {
+          text: '應用項目',
+          to: '/tw-cn/applications/',
+        },
+        {
+          text: '基礎設施',
+          to: '/tw-cn/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: '主要基礎設施',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: '新興基礎設施',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'eBPF 輔助函式庫',
       items: auxiliaryLibraries,
     },
   },

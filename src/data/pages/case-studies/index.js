@@ -4,10 +4,13 @@ const data = {
   pageUrls: {
     en: '/case-studies/',
     'fr-fr': '/fr-fr/case-studies/',
+    pt: '/pt/case-studies/',
     'pt-br': '/pt-br/case-studies/',
     'it-it': '/it-it/case-studies/',
+    es: '/es/case-studies/',
     'zh-cn': '/zh-cn/case-studies/',
     sw: '/sw/case-studies/',
+    'tw-cn': '/tw-cn/case-studies/',
   },
   en: {
     hero: {
@@ -19,6 +22,12 @@ const data = {
     hero: {
       title: 'Études de cas eBPF',
       items: caseStudiesData['fr-fr'],
+    },
+  },
+  pt: {
+    hero: {
+      title: 'Estudos de Caso eBPF',
+      items: caseStudiesData.pt,
     },
   },
   'pt-br': {
@@ -33,6 +42,12 @@ const data = {
       items: caseStudiesData['it-it'],
     },
   },
+  es: {
+    hero: {
+      title: 'Casos de estudios con eBPF',
+      items: caseStudiesData.es,
+    },
+  },
   'zh-cn': {
     hero: {
       title: 'eBPF 案例研究',
@@ -43,6 +58,12 @@ const data = {
     hero: {
       title: 'Uchambuzi wa Kesi za eBPF',
       items: caseStudiesData.sw,
+    },
+  },
+  'tw-cn': {
+    hero: {
+      title: 'eBPF案例研究',
+      items: caseStudiesData['tw-cn'],
     },
   },
 };

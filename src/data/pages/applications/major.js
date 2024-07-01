@@ -60,25 +60,6 @@ const majorApplications = [
     ],
   },
   {
-    logoUrl: 'https://github.com/facebookincubator/katran',
-    name: 'Katran',
-    logoName: 'katranLogo',
-    title: 'A high performance layer 4 load balancer',
-    description: `Katran is a C++ library and eBPF program to build a high-performance
-    layer 4 load balancing forwarding plane. Katran leverages the XDP
-    infrastructure from the Linux kernel to provide an in-kernel
-    facility for fast packet processing. Its performance scales linearly
-    with the number of NIC's receive queues and it uses RSS friendly
-    encapsulation for forwarding to L7 load balancers.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/facebookincubator/katran' },
-      {
-        label: 'Website',
-        url: 'https://engineering.fb.com/open-source/open-sourcing-katran-a-scalable-network-load-balancer/',
-      },
-    ],
-  },
-  {
     logoUrl: 'https://github.com/pixie-io/pixie',
     name: 'Pixie',
     logoName: 'pixieLogo',
@@ -107,6 +88,41 @@ const majorApplications = [
     urls: [
       { label: 'GitHub', url: 'https://github.com/projectcalico/calico' },
       { label: 'Website', url: 'https://tigera.io/project-calico' },
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/facebookincubator/katran',
+    name: 'Katran',
+    logoName: 'katranLogo',
+    title: 'A high performance layer 4 load balancer',
+    description: `Katran is a C++ library and eBPF program to build a high-performance
+    layer 4 load balancing forwarding plane. Katran leverages the XDP
+    infrastructure from the Linux kernel to provide an in-kernel
+    facility for fast packet processing. Its performance scales linearly
+    with the number of NIC's receive queues and it uses RSS friendly
+    encapsulation for forwarding to L7 load balancers.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/facebookincubator/katran' },
+      {
+        label: 'Website',
+        url: 'https://engineering.fb.com/open-source/open-sourcing-katran-a-scalable-network-load-balancer/',
+      },
+    ],
+  },
+  {
+    logoUrl: 'https://github.com/parca-dev/parca',
+    name: 'Parca',
+    logoName: 'parcaLogo',
+    title: 'Continuous Profiling Platform',
+    description: `Track memory, CPU, I/O bottlenecks broken down by method
+    name, class name, and line number over time. Without complex overhead, in
+    any language or framework. Using Parca's UI the data can be globally
+    explored and analyzed using various visualizations to quickly and
+    efficiently identify bottlenecks in code. Parca uses eBPF to collect
+    profiling data and uses libbpf-go to interact with the kernel.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/parca-dev/parca' },
+      { label: 'Website', url: 'https://parca.dev' },
     ],
   },
   {

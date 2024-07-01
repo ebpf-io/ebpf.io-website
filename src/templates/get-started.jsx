@@ -19,10 +19,13 @@ import SEO_DATA from 'data/shared/seo-data';
 const pageUrls = {
   en: '/get-started/',
   'fr-fr': '/fr-fr/get-started/',
+  pt: '/pt/get-started/',
   'pt-br': '/pt-br/get-started/',
   'it-it': '/it-it/get-started/',
+  es: '/es/get-started/',
   'zh-cn': '/zh-cn/get-started/',
   sw: '/sw/get-started/',
+  'tw-cn': '/tw-cn/get-started/',
 };
 
 const hasContributors = false;

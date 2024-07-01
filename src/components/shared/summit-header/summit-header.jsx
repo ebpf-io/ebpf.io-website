@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { Popover, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState, Fragment } from 'react';
 
@@ -13,7 +14,7 @@ import Logo from 'images/logo.inline.svg';
 const SummitHeader = ({ navigation, hubspotFormId }) => {
   const [isOpen, setIsOpen] = useState(false);
   const openModal = () => {
-    setIsOpen(true);
+    navigate('/summit-2024');
   };
   const closeModal = (e) => {
     e.stopPropagation();
@@ -35,7 +36,7 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
                     <div className="-mr-2 hidden items-center lg:flex">
                       <Popover.Button className="hover:text-gray-5 hover:bg-gray-100 focus-visible:ring-outline inline-flex items-center justify-center rounded-md p-2 text-black focus:outline-none focus-visible:ring-2">
                         <span className="sr-only">Open main menu</span>
-                        <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
                     </div>
                   </div>
@@ -61,7 +62,7 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
                   onClick={openModal}
                 >
                   <BeeIcon className="h-5 w-auto" />
-                  <span>Register</span>
+                  <span>Register for the 2024 edition!</span>
                 </Button>
               </nav>
             </div>
@@ -89,7 +90,7 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
                     <div className="-mr-2">
                       <Popover.Button className="hover:text-gray-5 hover:bg-gray-100 focus-visible:ring-outline inline-flex items-center justify-center rounded-md bg-white p-2 text-black focus:outline-none focus-visible:ring-2">
                         <span className="sr-only">Close menu</span>
-                        <XIcon className="h-6 w-6" aria-hidden="true" />
+                        <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
                     </div>
                   </div>
