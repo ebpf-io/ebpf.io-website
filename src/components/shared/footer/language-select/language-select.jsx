@@ -8,16 +8,7 @@ import Link from 'components/shared/link';
 import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
 
-const langNames = {
-  en: 'English',
-  'fr-fr': 'Français',
-  pt: 'Português',
-  'pt-br': 'Português (Br)',
-  'it-it': 'Italiano',
-  'zh-cn': '简体中文',
-  sw: 'Swahili',
-  'tw-cn': '繁體中文',
-};
+import { languages as languageList } from '../../../../../config/languages';
 
 const ANIMATION_DURATION = 0.2;
 
@@ -81,7 +72,7 @@ const LanguageSelect = ({ pageUrls }) => {
                 return (
                   <li className="flex" key={lang}>
                     <Link className="px-[13px] py-3 xs:w-full" theme="white" to={url}>
-                      {langNames[lang]}
+                      {languageList[lang].name}
                     </Link>
                   </li>
                 );
@@ -93,7 +84,7 @@ const LanguageSelect = ({ pageUrls }) => {
             aria-label="Select language"
             onClick={handleDropdown}
           >
-            <span>{langNames[language]}</span>
+            <span>{languageList[language].name}</span>
             <ChevronIcon
               className={clsx('ml-1.5 mt-1 h-auto w-2.5', showDropdown ? 'rotate-180' : 'rotate-0')}
             />

@@ -15,6 +15,8 @@ import PtIcon from 'icons/languages/pt.inline.svg';
 import SwIcon from 'icons/languages/sw.inline.svg';
 import ZhCNIcon from 'icons/languages/zh-cn.inline.svg';
 
+import { languages as languageList } from '../../../../../config/languages';
+
 const langIcons = {
   en: EnIcon,
   'fr-fr': FrFrIcon,
@@ -25,28 +27,6 @@ const langIcons = {
   'zh-cn': ZhCNIcon,
   sw: SwIcon,
   'tw-cn': ZhCNIcon,
-};
-
-const langNames = {
-  en: 'English',
-  'fr-fr': 'Français',
-  pt: 'Português',
-  'pt-br': 'Português (Br)',
-  'it-it': 'Italiano',
-  'zh-cn': '简体中文',
-  sw: 'Swahili',
-  'tw-cn': '繁體中文',
-};
-
-const langShortNames = {
-  en: 'Eng',
-  'fr-fr': 'Fra',
-  pt: 'Por',
-  'pt-br': 'Por',
-  'it-it': 'Ita',
-  'zh-cn': 'Chi',
-  sw: 'Swa',
-  'tw-cn': 'Chi',
 };
 
 const LanguageSelect = ({ pageUrls }) => {
@@ -65,7 +45,7 @@ const LanguageSelect = ({ pageUrls }) => {
   useClickOutside([dropdownRef], handleClickOutside);
 
   const LangIcon = langIcons[language];
-  const langShortName = langShortNames[language];
+  const langShortName = languageList[language].shortName;
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -104,7 +84,7 @@ const LanguageSelect = ({ pageUrls }) => {
                   theme="black"
                   to={url}
                 >
-                  {langNames[lang]}
+                  {languageList[lang].name}
                 </Link>
               </li>
             );
