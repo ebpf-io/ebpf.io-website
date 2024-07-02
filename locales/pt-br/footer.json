@@ -1,0 +1,78 @@
+{
+  "copyright": "Autores do eBPF.io",
+  "maintain": {
+    "title": "Mantido pela comunidade do eBPF.",
+    "beforeLink": "Encontrou um erro?",
+    "linkTitle": "Registre um problema"
+  },
+  "content": {
+    "beforeFirstLink": "O conteúdo do site",
+    "firstLink": "ebpf.io",
+    "beforeSecondLink": "está licenciado sob uma",
+    "secondLink": "Licença Internacional Creative Commons Attribution 4.0",
+    "afterSecondLink": ""
+  },
+  "menu": [
+    {
+      "title": "Comece",
+      "items": [
+        {
+          "title": "O que é o eBPF",
+          "to": "/pt-br/what-is-ebpf"
+        },
+        {
+          "title": "eBPF Tech Talks",
+          "to": "https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi",
+          "target": "_blank"
+        },
+        {
+          "title": "Estudos de Caso",
+          "to": "/pt-br/case-studies"
+        },
+        {
+          "title": "Labs",
+          "to": "/pt-br/labs"
+        }
+      ]
+    },
+    {
+      "title": "Landscape do Projeto",
+      "items": [
+        {
+          "title": "Aplicações",
+          "to": "/pt-br/applications"
+        },
+        {
+          "title": "Infraestrutura",
+          "to": "/pt-br/infrastructure"
+        }
+      ]
+    },
+    {
+      "title": "Sobre",
+      "items": [
+        {
+          "title": "Blog",
+          "to": "/blog"
+        },
+        {
+          "title": "Loja de Produtos",
+          "to": "https://cilium.myspreadshop.net/"
+        },
+        {
+          "title": "Identidade Visual",
+
+          "to": "https://ebpf.foundation/brand-guidelines/"
+        },
+        {
+          "title": "Boletim informativo",
+          "to": "/newsletter"
+        },
+        {
+          "title": "Contribua",
+          "to": "/pt-br/contribute"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
@@ -44,3 +45,17 @@ export const Head = ({ location: { pathname } }) => (
     pathname={pathname}
   />
 );
+
+export const query = graphql`
+  query {
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

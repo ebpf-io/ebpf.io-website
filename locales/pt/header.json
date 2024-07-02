@@ -1,0 +1,122 @@
+{
+  "menu": [
+    {
+      "title": "Aprender",
+      "items": [
+        {
+          "title": "O que é eBPF",
+          "to": "/pt/what-is-ebpf"
+        },
+        {
+          "title": "Iniciar",
+          "to": "/pt/get-started"
+        },
+        {
+          "title": "Estudos de caso",
+          "to": "/pt/case-studies"
+        },
+        {
+          "title": "Labs",
+          "to": "/pt/labs"
+        },
+        {
+          "title": "Children's Guide to eBPF",
+          "to": "/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Paisagem do Projeto",
+      "items": [
+        {
+          "title": "Aplicativo",
+          "to": "/pt/applications"
+        },
+        {
+          "title": "Infraestrutura",
+          "to": "/pt/infrastructure"
+        }
+      ]
+    },
+    {
+      "title": "Eventos",
+      "items": [
+        {
+          "title": "Todos os eventos",
+          "to": "/pt/events?overview"
+        },
+        {
+          "title": "eBPF Summit",
+          "to": "/pt/events?conference=eBPF%20Summit"
+        },
+        {
+          "title": "eBPF Meetup",
+          "to": "https://www.meetup.com/ebpf-user-group/",
+          "target": "_blank"
+        },
+        {
+          "title": "eBPF Track (LPC)",
+          "to": "/pt/events?conference=eBPF%20Track%20%28LPC%29"
+        },
+        {
+          "title": "bpfconf (LSF/MM/BPF)",
+          "to": "/pt/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29"
+        }
+      ]
+    },
+    {
+      "title": "Comunidade",
+      "items": [
+        {
+          "title": "Iniciar",
+          "to": "/pt/get-started/#docs"
+        },
+        {
+          "title": "Slack",
+          "to": "https://ebpf.io/slack"
+        },
+        {
+          "title": "eBPF Meetup",
+          "to": "https://www.meetup.com/ebpf-user-group/",
+          "target": "_blank"
+        },
+        {
+          "title": "Stack Overflow",
+          "to": "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace",
+          "target": "_blank"
+        },
+        {
+          "title": "r/eBPF",
+          "to": "https://www.reddit.com/r/eBPF/",
+          "target": "_blank"
+        },
+        {
+          "title": "Wikipedia",
+          "to": "https://en.wikipedia.org/wiki/EBPF",
+          "target": "_blank"
+        },
+        {
+          "title": "eCHO",
+          "to": "https://github.com/isovalent/eCHO",
+          "target": "_blank"
+        },
+        {
+          "title": "Boletim de Notícias",
+          "to": "/newsletter"
+        },
+        {
+          "title": "Contribuir",
+          "to": "/pt/contribute"
+        }
+      ]
+    },
+    {
+      "title": "Blogue",
+      "to": "/blog"
+    },
+    {
+      "title": "Fundação",
+      "to": "https://ebpf.foundation/"
+    }
+  ]
+}

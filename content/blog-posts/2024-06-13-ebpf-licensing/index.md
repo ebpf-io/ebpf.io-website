@@ -2,12 +2,11 @@
 path: '/blog/ebpf-licensing-guide'
 date: '2024-06-17T10:00:00.000Z'
 title: 'A Practical Guide to eBPF Licensing: Or How I Learned to Stop Worrying and Love the GPL'
-description: "Learn how to license eBPF programs and their userspace components with the legal considerations along the way"
+description: 'Learn how to license eBPF programs and their userspace components with the legal considerations along the way'
 ogImage: modular-vs-aggregate.png
 categories:
   - Community
 ---
-
 
 _Disclaimer: We are not lawyers and this is not legal advice. Please contact a lawyer for legal advice._
 
@@ -15,10 +14,11 @@ Authors: Bill Mulligan and Liz Rice
 
 While there is a wide appreciation of the power of eBPF to [fundamentally change the platforms](https://www.infoq.com/articles/ebpf-cloud-native-platforms/) we run our software on, there are some misconceptions in the ecosystem about when eBPF programs need to be licensed under the GPL and how that impacts licensing compliance. Seeing GPL licensed code may give some legal teams pause because eBPF is unfamiliar to them - but it shouldn’t. This blog provides context around why GPL licensed eBPF code exists and lays out why if you are already using Linux in your project, product, or company then using eBPF should not cause any additional concerns. If you are a contributor to a project already using eBPF or looking to add it, or you're unfamiliar with or concerned about eBPF licensing, this blog will walk you through some practical strategies for eBPF licensing and hopefully you’ll learn to stop worrying and love the GPL.
 
-_Note: this article considers situations where eBPF programs are executed within the Linux kernel, which is the case for the majority of deployed eBPF applications today. It's also possible to run eBPF bytecode in other ways, for example in a [userspace eBPF runtime](https://eunomia.dev/blogs/userspace-ebpf/), where different licensing models can apply._ 
+_Note: this article considers situations where eBPF programs are executed within the Linux kernel, which is the case for the majority of deployed eBPF applications today. It's also possible to run eBPF bytecode in other ways, for example in a [userspace eBPF runtime](https://eunomia.dev/blogs/userspace-ebpf/), where different licensing models can apply._
+
 ## All Meaningful Linux Kernel eBPF Programs Are GPL Licensed
 
-Most eBPF-based projects consist of user space code, plus eBPF programs that run in the kernel. Much like kernel modules, eBPF programs have the ability to significantly extend or change kernel behaviors. eBPF programs are dynamically linked with the kernel when they’re loaded into it using the `bpf()` system call. 
+Most eBPF-based projects consist of user space code, plus eBPF programs that run in the kernel. Much like kernel modules, eBPF programs have the ability to significantly extend or change kernel behaviors. eBPF programs are dynamically linked with the kernel when they’re loaded into it using the `bpf()` system call.
 
 ![eBPF program overview diagram](/ebpf-overview.png)
 
@@ -36,7 +36,7 @@ If an eBPF program needs to be GPL licensed, what does that mean for your usersp
 
 With the GPL [derived works](https://copyleft.org/guide/comprehensive-gpl-guide.html), external code that is either [linked](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#LinkingWithGPL) statically at build time or dynamically at runtime, and modular programs (single applications that may execute separately but depend on detailed communication of internal data structures or shared memory), must be distributed in a GPL compatible manner. However, userspace executables that load or interact with eBPF programs are none of the above.
 
-The Linux kernel developers have made a very deliberate effort to provide documented intent around the issue of what compromises a derived work of the Linux kernel and what does not.  They have designated the set of system calls as the syscall API that can be called from other programs without those programs being considered a derived work of the kernel.
+The Linux kernel developers have made a very deliberate effort to provide documented intent around the issue of what compromises a derived work of the Linux kernel and what does not. They have designated the set of system calls as the syscall API that can be called from other programs without those programs being considered a derived work of the kernel.
 
 A userspace executable and the related eBPF bytecode is generally considered an aggregate of the two pieces of software. They are two separate works that interact via the Linux syscall API to get useful work done and can be packaged together without being considered modular parts of a single application derived from the Linux kernel. Aggregates are a number of separate programs, distributed together that communicate with each other as if they were independent executables on the system (using standard OS provided mechanisms such as pipes or file descriptors). The GPLv2 [FAQ](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.en.html#TOCMereAggregation) lays out that the creation and that distribution of an aggregate, of GPL and non-GPL compatible code, should be permitted.
 

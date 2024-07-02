@@ -107,5 +107,15 @@ export const query = graphql`
         }
       }
     }
+
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
   }
 `;

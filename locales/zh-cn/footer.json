@@ -1,0 +1,77 @@
+{
+  "copyright": "eBPF.io 作者",
+  "maintain": {
+    "title": "由 eBPF 社区维护。",
+    "beforeLink": "发现一个 bug ?",
+    "linkTitle": "创建一个 issue"
+  },
+  "content": {
+    "beforeFirstLink": "",
+    "firstLink": "ebpf.io",
+    "beforeSecondLink": "网站内容基于",
+    "secondLink": "Creative Commons Attribution 4.0 International License",
+    "afterSecondLink": " 授权许可。"
+  },
+  "menu": [
+    {
+      "title": "开始",
+      "items": [
+        {
+          "title": "什么是 eBPF ?",
+          "to": "/zh-cn/what-is-ebpf"
+        },
+        {
+          "title": "eBPF 技术演讲",
+          "to": "https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi",
+          "target": "_blank"
+        },
+        {
+          "title": "案例研究",
+          "to": "/zh-cn/case-studies"
+        },
+        {
+          "title": "实验室",
+          "to": "/zh-cn/labs"
+        }
+      ]
+    },
+    {
+      "title": "项目概览",
+      "items": [
+        {
+          "title": "应用项目",
+          "to": "/zh-cn/applications"
+        },
+        {
+          "title": "基础设施项目",
+          "to": "/zh-cn/infrastructure"
+        }
+      ]
+    },
+    {
+      "title": "关于",
+      "items": [
+        {
+          "title": "博客",
+          "to": "/blog"
+        },
+        {
+          "title": "商店",
+          "to": "https://cilium.myspreadshop.net/"
+        },
+        {
+          "title": "品牌",
+          "to": "https://ebpf.foundation/brand-guidelines/"
+        },
+        {
+          "title": "资讯",
+          "to": "/newsletter"
+        },
+        {
+          "title": "贡献",
+          "to": "/zh-cn/contribute"
+        }
+      ]
+    }
+  ]
+}
