@@ -18,6 +18,7 @@ const pageUrls = {
   pt: '/pt/labs/',
   'pt-br': '/pt-br/labs/',
   'it-it': '/it-it/labs/',
+  es: '/es/labs/',
   'zh-cn': '/zh-cn/labs/',
   sw: '/sw/labs/',
   'tw-cn': '/tw-cn/labs/',
@@ -58,7 +59,7 @@ const LabsPage = ({
       </section>
       {labsCategories.length > 2 && (
         <Categories
-          className="mb-10 mt-4"
+          className="mt-4 mb-10"
           categories={labsCategories}
           currentCategory={currentCategory}
         />
@@ -66,7 +67,7 @@ const LabsPage = ({
       <LabsList labs={labs} />
       {pageCount > 1 && (
         <Pagination
-          className="container-md mb-20 lg:mb-16"
+          className="mb-20 container-md lg:mb-16"
           pageCount={pageCount}
           currentPageIndex={currentPageIndex}
           handlePageChange={handlePageChange}

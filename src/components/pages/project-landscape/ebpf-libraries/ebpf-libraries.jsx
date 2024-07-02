@@ -22,9 +22,10 @@ const title = {
   pt: 'Bibliotecas eBPF',
   'pt-br': 'Bibliotecas eBPF',
   'it-it': 'Librerie eBPF',
+  es: 'Bibliotecas eBPF',
   'zh-cn': 'eBPF 库',
   sw: 'Maktaba za eBPF',
-  'tw-cn': 'eBPF 函式庫'
+  'tw-cn': 'eBPF 函式庫',
 };
 
 const items = [
@@ -99,22 +100,22 @@ const EbpfLibraries = ({ lang }) => {
   const slug = slugifyCategory(title.en);
 
   return (
-    <section className="libraries safe-paddings pt-32 lg:pt-28 md:pt-20" id={slug}>
+    <section className="pt-32 libraries safe-paddings lg:pt-28 md:pt-20" id={slug}>
       <div className="container">
-        <div className="rounded-lg bg-secondary-yellow-light p-16 lg:p-12 md:px-8 sm:px-5">
+        <div className="p-16 rounded-lg bg-secondary-yellow-light lg:p-12 md:px-8 sm:px-5">
           <Heading
-            className="heading-9xl mx-auto inline-block font-bold leading-dense tracking-wide"
+            className="inline-block mx-auto font-bold tracking-wide heading-9xl leading-dense"
             id={slug}
           >
             {title[lang]}
           </Heading>
-          <ul className="mt-10 grid grid-cols-12 gap-7 lg:gap-6 md:mt-8">
+          <ul className="grid grid-cols-12 mt-10 gap-7 lg:gap-6 md:mt-8">
             {items.map(({ name, icon, list }, index) => (
               <li
-                className="col-span-4 flex flex-col overflow-hidden rounded bg-white md:col-span-full"
+                className="flex flex-col col-span-4 overflow-hidden bg-white rounded md:col-span-full"
                 key={index}
               >
-                <div className="flex items-center justify-center bg-black bg-infrastructure-item-gradient py-6">
+                <div className="flex items-center justify-center py-6 bg-black bg-infrastructure-item-gradient">
                   <img {...icon} className="h-10" loading="lazy" />
                   <h3 className="heading-6xl ml-3.5 border-l border-white border-opacity-50 pl-3.5 font-semibold leading-none tracking-wide text-white">
                     {name}
@@ -141,7 +142,7 @@ const EbpfLibraries = ({ lang }) => {
                       )}
                       <p>
                         <Link
-                          className="w-fit font-medium after:hidden"
+                          className="font-medium w-fit after:hidden"
                           to={linkUrl}
                           target="_blank"
                           theme="black"

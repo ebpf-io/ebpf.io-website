@@ -9,6 +9,7 @@ const data = {
     pt: '/pt/infrastructure/',
     'pt-br': '/pt-br/infrastructure/',
     'it-it': '/it-it/infrastructure/',
+    es: '/es/infrastructure/',
     'zh-cn': '/zh-cn/infrastructure/',
     sw: '/sw/infrastructure/',
     'tw-cn': '/tw-cn/infrastructure/',
@@ -150,6 +151,34 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'Librerie eBPF ausiliarie',
+      items: auxiliaryLibraries,
+    },
+  },
+  es: {
+    title: 'Infraestructura',
+    hero: {
+      items: [
+        {
+          text: 'Aplicaciones',
+          to: '/es/applications/',
+        },
+        {
+          text: 'Infraestructura',
+          to: '/es/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: 'Infraestructura Mayor',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: 'Emergente',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'Bibliotecas auxiliares eBPF',
       items: auxiliaryLibraries,
     },
   },

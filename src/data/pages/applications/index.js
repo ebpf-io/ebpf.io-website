@@ -8,6 +8,7 @@ const data = {
     pt: '/pt/applications/',
     'pt-br': '/pt-br/applications/',
     'it-it': '/it-it/applications/',
+    es: '/es/applications/',
     'zh-cn': '/zh-cn/applications/',
     sw: '/sw/applications/',
     'tw-cn': '/tw-cn/applications/',
@@ -129,6 +130,30 @@ const data = {
     },
     emergingApplicationsProps: {
       title: 'Emergenti',
+      items: emergingApplications,
+    },
+  },
+  es: {
+    title: 'Aplicaciones',
+    hero: {
+      items: [
+        {
+          text: 'Aplicaciones',
+          to: '/es/applications/',
+        },
+        {
+          text: 'Infraestructura',
+          to: '/es/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: 'Aplicaciones principales',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: 'Emergente',
       items: emergingApplications,
     },
   },

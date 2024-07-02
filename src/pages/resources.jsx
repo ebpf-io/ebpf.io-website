@@ -4,11 +4,11 @@ import React from 'react';
 import Articles from 'components/pages/resources/articles';
 import Books from 'components/pages/resources/books';
 import Tutorials from 'components/pages/resources/tutorials';
+import SummitLayout from 'components/pages/summit-2024/summit-layout';
 import SEO from 'components/shared/seo';
-import SummitLayout from 'components/shared/summit-layout';
 import VideoGallery from 'components/shared/video-gallery';
 import videoItems from 'data/pages/resources/video-data';
-import { navigation, hubspotFormId } from 'data/shared/summit-2023-navigation';
+import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit-resources.jpg';
 

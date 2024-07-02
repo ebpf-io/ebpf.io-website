@@ -25,6 +25,11 @@ export default {
       description:
         'eBPF è una tecnologia rivoluzionaria in grado di eseguire programmi in una sandbox all’interno del kernel di Linux senza modificare il codice sorgente del kernel o caricare un modulo del kernel.',
     },
+    es: {
+      title: 'eBPF - Introducción, tutoriales y recursos comunitarios',
+      description:
+        'eBPF es una tecnología revolucionaria que puede ejecutar programas sandboxed en el kernel de Linux sin cambiar el código fuente del kernel o cargar un módulo del kernel.',
+    },
     'zh-cn': {
       title: 'eBPF - 介绍, 教程和社区资源',
       description:
@@ -72,6 +77,12 @@ export default {
         'Vuoi sapere come contribuire a eBPF? Impara come iniziare a contribuire ai progetti eBPF.',
       keywords: 'ebpf, bpf, contribuir, começar, comunidade',
     },
+    es: {
+      title: 'Cómo contribuir a eBPF',
+      description:
+        '¿Quieres aprender cómo contribuir a eBPF? Aprenda cómo empezar a contribuir a los proyectos de eBPF',
+      keywords: 'ebpf, bpf, contribuir, empezar, comunidad',
+    },
     'zh-cn': {
       title: '如何为 eBPF 作出贡献',
       description: '想要学习如何为 eBPF 作出贡献 ? 学习如何开始给 eBPF 的项目作出贡献。',
@@ -115,6 +126,11 @@ export default {
       description: 'Una directory di applicazioni open source basate su eBPF',
       keywords: 'ebpf, bpf, landscape, diretório, código aberto, open source',
     },
+    es: {
+      title: 'Panorama de aplicaciones eBPF',
+      description: 'Directorio de aplicaciones de código abierto basadas en eBPF',
+      keywords: 'ebpf, bpf, paisaje, directorio, código abierto',
+    },
     'zh-cn': {
       title: 'eBPF 应用项目概览',
       description: '基于 eBPF 的开源应用项目目录',
@@ -156,6 +172,11 @@ export default {
       title: 'Panorama sulla infrastruttura eBPF di base',
       description: 'Una directory di infrastrutture eBPF di base',
       keywords: 'ebpf, bpf, paisagem, diretório, código aberto',
+    },
+    es: {
+      title: 'Panorama de la infraestructura central de eBPF',
+      description: 'Directorio de infraestructuras básicas basadas en eBPF',
+      keywords: 'ebpf, bpf, paisaje, directorio, código abierto',
     },
     'zh-cn': {
       title: 'eBPF 核心基础设施概览',
