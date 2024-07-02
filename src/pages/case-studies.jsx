@@ -13,6 +13,7 @@ const pageUrls = {
   pt: '/pt/case-studies/',
   'pt-br': '/pt-br/case-studies/',
   'it-it': '/it-it/case-studies/',
+  es: '/es/case-studies/',
   'zh-cn': '/zh-cn/case-studies/',
   sw: '/sw/case-studies/',
   'tw-cn': '/tw-cn/case-studies/',
