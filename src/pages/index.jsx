@@ -34,10 +34,13 @@ const HomePage = () => {
 
 export default HomePage;
 
-export const Head = ({ location: { pathname } }) => {
-  const { t } = useTranslation();
+export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
+  const dataLanguage = data.locales.edges.find(
+    (e) => e.node.ns === 'index' && e.node.language === language
+  ).node.data;
+  const t = JSON.parse(dataLanguage);
 
-  return <SEO pathname={pathname} {...t('index:meta', { returnObjects: true })} />;
+  return <SEO pathname={pathname} title={t.meta.title} description={t.meta.description} />;
 };
 
 export const query = graphql`

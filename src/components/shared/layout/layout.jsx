@@ -32,13 +32,11 @@ const Layout = ({ children, headerWithFullWidthBottomBorder, pageUrls }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   headerWithFullWidthBottomBorder: PropTypes.bool,
-  lang: PropTypes.string,
   pageUrls: PropTypes.object,
 };
 
 Layout.defaultProps = {
   headerWithFullWidthBottomBorder: false,
-  lang: 'en',
   pageUrls: null,
 };
 

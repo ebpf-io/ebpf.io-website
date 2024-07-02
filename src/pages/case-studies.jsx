@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { graphql } from 'gatsby';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import Hero from 'components/pages/case-studies/hero';
@@ -25,10 +24,13 @@ const CaseStudies = () => (
   </Layout>
 );
 
-export const Head = ({ location: { pathname } }) => {
-  const { t } = useTranslation();
+export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
+  const dataLanguage = data.locales.edges.find(
+    (e) => e.node.ns === 'case-studies' && e.node.language === language
+  ).node.data;
+  const t = JSON.parse(dataLanguage);
 
-  return <SEO pathname={pathname} {...t('case-studies:meta', { returnObjects: true })} />;
+  return <SEO pathname={pathname} title={t.meta.title} description={t.meta.description} />;
 };
 
 export default CaseStudies;
