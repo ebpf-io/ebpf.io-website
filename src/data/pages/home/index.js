@@ -1144,7 +1144,6 @@ const data = {
       items: videoItems,
     },
   },
-
   'tw-cn': {
     hero: {
       title: '對核心進行動態編程，以實現高效的網路、可觀察性、追蹤和安全性。',
@@ -1281,6 +1280,149 @@ const data = {
     },
     videoGallery: {
       title: 'eBPF 社群講座',
+      items: videoItems,
+    },
+  },
+  'ko-kr': {
+    hero: {
+      title:
+        '효율적인 네트워킹, 관측 가능성, 추적 및 보안을 위해 커널을 동적으로 프로그래밍할 수 있습니다',
+      blackButtonTitle: '프로젝트 큰그림',
+      blackButtonUrl: '/ko-kr/applications',
+      yellowButtonTitle: 'eBPF란',
+      yellowButtonUrl: '/ko-kr/what-is-ebpf',
+      altImage: 'eBPF diagram',
+      items: [
+        '안전한 실행을 위해 프로그램은 검증됩니다 ',
+        '커널의 기능을 변경하기 위해 임의의 위치에 훅을 걸 수 있습니다',
+        'JIT 컴파일러를 사용하여 기존 실행 속도와 유사합니다',
+        '런타임에서 OS에 기능을 추가할 수 있습니다',
+      ],
+    },
+    caseStudies: {
+      title: '모든 산업의 다양한 기업들이 eBPF를 프로덕션 환경에서 사용합니다 ',
+      linkText: '더 많은 경우는 다음 링크를 참고하세요',
+      linkUrl: '/ko-kr/case-studies/',
+      items: caseStudiesData['ko-kr'].slice(0, 6),
+    },
+    whyEbpf: {
+      title: 'eBPF를 왜 사용할까요?',
+      linkTitle: 'eBPF란',
+      linkUrl: '/ko-kr/what-is-ebpf/',
+      items: [
+        {
+          title: '성능',
+          icon: 'performance',
+          description:
+            'eBPF는 JIT 컴파일되어 커널 내에서 직접 실행되므로 처리 성능이 크게 향상됩니다.',
+        },
+        {
+          title: '보안',
+          icon: 'security',
+          description:
+            'eBPF 프로그램은 커널에서 오류가 발생하지 않도록 검증되며 권한 있는 사용자만이 수정할 수 있습니다.',
+        },
+        {
+          title: '유연성',
+          icon: 'flexibility',
+          description:
+            '커널을 재시작하거나 패치하지 않고도 커널에 기능 및 유즈케이스를 수정하거나 추가할 수 있습니다.',
+        },
+      ],
+    },
+    film: {
+      label: '최초공개',
+      title: '커널을 잠금 해제하다',
+      videoId: 'Wb_vD3XZYOA',
+      description:
+        'eBPF 다큐멘터리는 eBPF의 시작 및 산업을 변화시키는 기술의 이야기, 도전 그리고 보상에 대한 심층적인 내용을 소개합니다. 여러분은 Meta, Intel, Isovalent, Google, Red Hat 및 Netflix와 같이 eBPF의 성공과 확산을 위한 도구를 설계한 오픈소스 세상 최고의 사람들의 이야기를 듣게 됩니다.',
+      buttonText: 'eBPF 다큐멘터리 웹 사이트',
+      buttonUrl: 'https://ebpfdocumentary.com/',
+    },
+    testimonials: {
+      items: [
+        {
+          logo: 'azure',
+          logoWidth: 134,
+          company: 'Microsoft Azure',
+          review:
+            'eBPF는 개발자들이 문제들을 쉽게 진단하고, 빠르게 혁신하며 운영 체제의 기능을 확장할 수 있는 새로운 세대의 도구를 만들어냈습니다.',
+          author: 'Mark Russinovich',
+          role: 'Chief Technology Officer at Microsoft Azure, 2021',
+        },
+        {
+          logo: 'google',
+          logoWidth: 104,
+          company: 'Google',
+          review:
+            'eBPF는 리눅스 커널 네트워킹의 미래이며, Google은 해당 기술의 표준이 발전하는 것에 참여할 수 있어서 기쁩니다. (eBPF는 리눅스 커널 네트워킹의 미래이며, Google은 해당 기술의 표준이 발전하는 것에 참여할 수 있어서 기쁘게 생각합니다.)',
+          author: 'Chris DiBona',
+          role: 'Director of Open Source at Google, 2021',
+        },
+        {
+          logo: 'isovalent',
+          logoWidth: 148,
+          company: 'Isovalent',
+          review:
+            'eBPF가 이미 수 많은 기업의 프로덕션 스택에 적용되었지만, 아직도 우리는 eBPF가 해결할 수 있는 기술 혁신 곡선 중 초기 단계에 머물고 있습니다.',
+          author: 'Thomas Graf',
+          role: 'Chief Technology Officer at Isovalent, 2021',
+        },
+        {
+          logo: 'meta',
+          logoWidth: 120,
+          company: 'Meta',
+          review:
+            '수년간, eBPF는 커널 개발을 가속화하는 데 중요한 역할을 해왔습니다. 저희는 다음 세대의 리눅스 시스템 개발을 돕는 도구를 개발할 수 있는 eBPF 커뮤니티의 작업을 지원할 수 있어서 기대됩니다. ',
+          author: 'Chris Mason',
+          role: 'Kernel Maintainer and Engineering Director at Facebook, 2021',
+        },
+        {
+          logo: 'netflix',
+          logoWidth: 109,
+          company: 'Netflix',
+          review:
+            'eBPF는 굉장한 기능을 제공하는 새로운 종류의 소프트웨어로, 네트워킹, 성능 및 보안 기술의 새로운 산업을 탄생시켰습니다. Netflix는 eBPF를 사용하여 관측 가능성을 확보하는 것을 선구적으로 도입하여, 기존의 도구로는 관측이 어렵거나 높은 비용이 수반 되던 많은 영역에 대한 가시성을 확보할 수 있었습니다. eBPF는 저희가 애플리케이션 지연 시간을 낮추고 비용 절감에 도움을 주었습니다. ',
+          author: 'Brendan Gregg',
+          role: 'Senior performance engineer at Netflix, 2021',
+        },
+      ],
+    },
+    features: {
+      title: 'eBPF로 무엇을 할 수 있을까요?',
+      items: [
+        {
+          bgClassName: 'bg-secondary-yellow-light',
+          image: 'networking',
+          title: '네트워킹',
+          description:
+            '커널 공간을 벗어나지 않고 빠른 속도로 패킷을 처리할 수 있습니다. 그리고 변경되는 요구사항을 위한 추가적인 프로토콜 파싱 및 포워딩 로직을 손쉽게 프로그래밍 할 수 있습니다.',
+        },
+        {
+          bgClassName: 'bg-secondary-green-light',
+          image: 'observability',
+          title: '관측 가능성',
+          description:
+            '커널 내부의 사용자 지정 메트릭, 이벤트 가시성 그리고 다양한 종류의 자료 구조 등에 대한 정보를 내부에서 손쉽게 수집 및 종합 할 수 있습니다.',
+        },
+        {
+          bgClassName: 'bg-secondary-blue-light',
+          image: 'tracingAndProfiling',
+          title: '추적 및 프로파일링',
+          description:
+            'eBPF 프로그램을 tracepoint 및 커널 또는 유저 애플리케이션의 임의의 관측 지점에 부착할 수 있으며, 이를 통해 강력한 감시 능력과 독특한 시야를 제공하여 시스템 성능 관련 문제를 해결할 수 있습니다.',
+        },
+        {
+          bgClassName: 'bg-secondary-red-light',
+          image: 'security',
+          title: '보안',
+          description:
+            '모든 시스템 콜 및 네트워크 패킷 그리고 소켓 수준에서의 네트워킹 관측에 대한 정보를 종합하여, 시스템의 제어 흐름을 더 잘 설명하는 높은 수준의 보안 시스템을 구성할 수 있습니다.',
+        },
+      ],
+    },
+    videoGallery: {
+      title: 'eBPF 커뮤니티 발표들',
       items: videoItems,
     },
   },

@@ -10,6 +10,7 @@ const data = {
     es: '/es/get-started/',
     'zh-cn': '/zh-cn/get-started/',
     sw: '/sw/get-started/',
+    'ko-kr': '/ko-kr/get-started/',
   },
   en: {
     hero: {
@@ -90,8 +91,7 @@ const data = {
       ],
     },
     subscriptionForm: {
-      title: 'Subscribe',
-      afterTitle: 'to bi-weekly eCHO News',
+      title: '<span>Subscribe</span> to bi-weekly eCHO News',
       description: 'Keep up on the latest news and information from the eBPF and Cilium',
       placeholder: 'Email address...',
       buttonTitle: 'Subscribe',
@@ -221,8 +221,7 @@ const data = {
       ],
     },
     subscriptionForm: {
-      title: 'Abonnez-vous',
-      afterTitle: 'aux nouvelles d’eCHO une fois toutes les deux semaines',
+      title: '<span>Abonnez-vous</span> aux nouvelles d’eCHO une fois toutes les deux semaines',
       description:
         'Tenez-vous au courant des dernières actualités et informations d’eBPF et de Cilium',
       placeholder: 'Adresse e-mail...',
@@ -353,8 +352,7 @@ const data = {
       ],
     },
     subscriptionForm: {
-      title: 'Subscrever',
-      afterTitle: 'o eCHO Notícias quinzenal',
+      title: '<span>Subscrever</span> o eCHO Notícias quinzenal',
       description: 'Fique por dentro das últimas notícias e informações do eBPF e Cilium',
       placeholder: 'Endereço de email...',
       buttonTitle: 'Se inscrever',
@@ -484,8 +482,7 @@ const data = {
       ],
     },
     subscriptionForm: {
-      title: 'Assine',
-      afterTitle: 'as Notícias quinzenais do eCHO',
+      title: '<span>Assine</span> as Notícias quinzenais do eCHO',
       description:
         'Mantenha-se atualizado sobre as últimas notícias e informações do eBPF e Cilium',
       placeholder: 'Endereço de email...',
@@ -617,8 +614,7 @@ const data = {
       ],
     },
     subscriptionForm: {
-      title: 'Sottoscrivi',
-      afterTitle: 'la newsletter quindicinale eCHO News',
+      title: '<span>Suscríbete</span> alla pubblicazione quindicinale eCHO News',
       description:
         'Tieniti aggiornato sulle ultime notizie e sulle informazioni inerenti eBPF e Cilium',
       placeholder: 'Indirizzo email...',
@@ -749,8 +745,7 @@ const data = {
       ],
     },
     subscriptionForm: {
-      title: 'Suscríbete',
-      afterTitle: 'al boletín informativo quincenal de noticias eCHO',
+      title: '<span>Suscríbete</span> al boletín informativo quincenal de noticias eCHO',
       description: 'Mantente al día con las últimas noticias e información de eBPF y Cilium',
       placeholder: 'Dirección de email...',
       buttonTitle: 'Suscríbete',
@@ -880,8 +875,7 @@ const data = {
       ],
     },
     subscriptionForm: {
-      title: '订阅',
-      afterTitle: 'eCHO 的双周新闻',
+      title: '<span>订阅</span> eCHO 的双周新闻',
       description: '了解 eBPF 和 Cilium 的最新的资讯',
       placeholder: 'Email address...',
       buttonTitle: '订阅',
@@ -1010,8 +1004,7 @@ const data = {
       ],
     },
     subscriptionForm: {
-      title: 'Jisajili',
-      afterTitle: 'kwa Habari za eCHO News Mara Moja kwa Wiki',
+      title: '<span>Jisajili</span> kwa Habari za eCHO News Mara Moja kwa Wiki',
       description: 'Kuwa na habari za hivi karibuni kutoka jamii za eBPF na Cilium',
       placeholder: 'Anwani ya barua pepe...',
       buttonTitle: 'Jisajili',
@@ -1142,8 +1135,7 @@ const data = {
       ],
     },
     subscriptionForm: {
-      title: '訂閱',
-      afterTitle: '訂閱雙周刊 eCHO 新聞',
+      title: '<span>訂閱</span> 訂閱雙周刊 eCHO 新聞',
       description: '了解 eBPF 和 Cilium 的最新新聞和資訊',
       placeholder: '電子郵件地址...',
       buttonTitle: '訂閱',
@@ -1191,6 +1183,136 @@ const data = {
     },
     contributors: {
       title: '認識一些我們的社群成員',
+    },
+  },
+  'ko-kr': {
+    hero: {
+      title: 'eBPF 시작하기',
+      items: [
+        {
+          image: 'lab',
+          title: '예제 코드 사용해보기',
+          description:
+            'Liz Rize의 보고서의 opensnoop을 바탕으로 구성된 이 예제 코드는 여러분이 eBPF 도구를 다루고, 컴포넌트를 로딩하는 것을 관측하고, 심지어 여러분이 작성한 추적 기능을 eBPF 코드에다가 작성하는 내용을 포함합니다. ',
+          cardColorClassName: 'bg-secondary-blue-1-light border-secondary-blue-1',
+          dashedBorderClassName: 'border-secondary-blue-2',
+          linkUrl: 'https://ebpf.io/labs/',
+          linkTarget: '_blank',
+        },
+        {
+          image: 'book',
+          title: '관련 서적 읽기',
+          description:
+            'Liz Rice가 작성한 O’Reillly Books의 “What is eBPF?”와 “Learning eBPF” 또는 “BPF Performance Tools by Brendan Gregg”을 읽어보세요. 이러한 책들을 읽으며, eBPF가 무엇인지, 그리고 그것이 왜 강력한지, 그리고 그것이 제공하는 기능들에 대해서 배울 수 있습니다.',
+          cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
+          dashedBorderClassName: 'border-secondary-green-2',
+          linkUrl: '#books',
+          linkTarget: '_self',
+        },
+        {
+          image: 'video',
+          title: '비디오 보기',
+          description:
+            'John Fastabend의 강연을 통해서 eBPF의 역사에 대해 배워보세요. 이는 2014년 eBPF의 “초기 시절”부터 시작해서, 주요 프로젝트와, 기업들 그리고 당시의 리눅스 네트워킹 부분의 큰 그림에 영향을 끼치고 eBPF를 만들 수 있게 한 사람들의 얘기를 다룹니다. ',
+          cardColorClassName: 'bg-secondary-red-1-light border-secondary-red-1',
+          dashedBorderClassName: 'border-secondary-red-2',
+          linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00',
+          linkTarget: '_blank',
+        },
+      ],
+    },
+    documentation: {
+      title: '추가적인 문서를 읽어서 eBPF에 대해서 더 많이 알아보세요.',
+      items: [
+        {
+          image: 'wikipedia',
+          title: '위키피디아',
+          description: 'eBPF에 대한 위키피디아 게시글',
+          linkUrl: 'https://en.wikipedia.org/wiki/EBPF',
+        },
+        {
+          image: 'stackoverflow',
+          title: 'eBPF 스택오버플로우',
+          description: '질의 응답에 관련된 내용',
+          linkUrl: 'https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf',
+        },
+        {
+          image: 'reddit',
+          title: '레딧의 eBPF 커뮤니티',
+          description: '커널의 eBPF 서브 시스템에 대해 관한 내용들',
+          linkUrl: 'https://www.reddit.com/r/eBPF/',
+        },
+        {
+          image: 'cilium',
+          title: 'BPF 및 XDP 참고 가이드',
+          description: 'BPF의 동작 과정과 프로그래밍을 배워보세요',
+          linkUrl: 'https://cilium.readthedocs.io/en/stable/bpf/',
+        },
+        {
+          image: 'kernel',
+          title: 'BPF 공식 문서',
+          description: '리눅스 커널에서 다루는 BPF 공식 문서',
+          linkUrl: 'https://www.kernel.org/doc/html/latest/bpf/index.html',
+        },
+        {
+          image: 'gitKernel',
+          title: 'BPF 디자인 Q&A',
+          description: '자주 다뤄지는 커널과 관련된 eBPF 질문들',
+          linkUrl:
+            'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst',
+        },
+      ],
+    },
+    subscriptionForm: {
+      title: '격주마다 발행되는 eCHO 뉴스 <span>구독하기</span>',
+      description: 'eBPF와 Cilium의 최신 소식과 정보를 확인하세요',
+      placeholder: '이메일 주소...',
+      buttonTitle: '구독하기',
+    },
+    books: {
+      title: '산업 전문가가 작성한 eBPF 관련 서적을 살펴보세요.',
+      linkTitle: '더 알아보기',
+    },
+    tutorials: {
+      title: '산업 전문가의 튜토리얼을 통해 eBPF 기술에 대해 깊게 알아보세요.',
+      linkTitle: '더 많은 튜토리얼',
+      items: [
+        {
+          title: 'eBPF 트레이싱 튜토리얼',
+          description:
+            'bcc만 사용해서 eBPF를 트레이싱에 사용하는 간단한 예시부터, bpftrace및 bcc를 통해서 eBPF를 통한 트레이싱을 개발하는 방법에 대해 배워보세요.',
+          linkUrl: 'http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html',
+        },
+        {
+          title: 'XDP 튜토리얼',
+          description:
+            'XDP가 무엇인지부터, 여러개의 XDP 프로그램을 하나의 네트워크 인터페이스에 부착하는 방법까지, XDP 프로그램을 효율적으로 작성하는 기초적인 방법에 대해서 배워보세요.',
+          linkUrl: 'https://github.com/xdp-project/xdp-tutorial',
+        },
+        {
+          title: '컴파일러 익스플로러',
+          description:
+            '웹 브라우저에서 BPF를 지원하는 컴파일러를 실행해서 생성된 어셈블리어를 확인하세요.',
+          linkUrl: 'https://godbolt.org/',
+        },
+      ],
+    },
+    events: {
+      title: '산업 전문가를 통해 배우기 위해 eBPF 이벤트에 참석하세요',
+      linkTitle: '더 많은 이벤트들',
+      linkUrl: '/events/',
+    },
+    videoGallery: {
+      title: 'eBPF introductory videos',
+      items: videoItems,
+    },
+    blog: {
+      title: '커뮤니티의 기사를 통해서 eBPF에 대해 더 자세히 알아보세요',
+      linkTitle: '더 많은 기사들',
+      linkUrl: '/blog/',
+    },
+    contributors: {
+      title: 'Meet some of our community members',
     },
   },
 };

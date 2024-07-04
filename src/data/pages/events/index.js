@@ -26,6 +26,9 @@ const data = {
   'tw-cn': {
     title: 'eBPF 會議和見面會',
   },
+  'ko-kr': {
+    title: 'eBPF 컨퍼런스 및 미팅',
+  },
 };
 
 export default data;

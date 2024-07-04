@@ -26,6 +26,7 @@ const langIcons = {
   'zh-cn': ZhCNIcon,
   sw: SwIcon,
   'tw-cn': ZhCNIcon,
+  'ko-kr': EnIcon,
 };
 
 const LanguageSelect = ({ lang, pageUrls }) => {

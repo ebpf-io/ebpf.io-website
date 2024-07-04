@@ -23,6 +23,7 @@ const pageUrls = {
   'zh-cn': '/zh-cn/labs/',
   sw: '/sw/labs/',
   'tw-cn': '/tw-cn/labs/',
+  'ko-kr': '/ko-kr/labs/',
 };
 
 const LabsPage = ({

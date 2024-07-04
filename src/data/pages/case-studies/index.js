@@ -11,6 +11,7 @@ const data = {
     'zh-cn': '/zh-cn/case-studies/',
     sw: '/sw/case-studies/',
     'tw-cn': '/tw-cn/case-studies/',
+    'ko-kr': '/ko-kr/case-studies/',
   },
   en: {
     hero: {
@@ -64,6 +65,12 @@ const data = {
     hero: {
       title: 'eBPF案例研究',
       items: caseStudiesData['tw-cn'],
+    },
+  },
+  'ko-kr': {
+    hero: {
+      title: 'eBPF 사례 연구',
+      items: caseStudiesData['ko-kr'],
     },
   },
 };

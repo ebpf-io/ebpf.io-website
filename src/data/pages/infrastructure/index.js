@@ -13,6 +13,7 @@ const data = {
     'zh-cn': '/zh-cn/infrastructure/',
     sw: '/sw/infrastructure/',
     'tw-cn': '/tw-cn/infrastructure/',
+    'ko-kr': '/ko-kr/infrastructure/',
   },
   en: {
     title: 'Infrastructure',
@@ -263,6 +264,34 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'eBPF 輔助函式庫',
+      items: auxiliaryLibraries,
+    },
+  },
+  'ko-kr': {
+    title: '인프라',
+    hero: {
+      items: [
+        {
+          text: '애플리케이션',
+          to: '/ko-kr/applications/',
+        },
+        {
+          text: '인프라',
+          to: '/ko-kr/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: '주요 인프라',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: '새로운',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'eBPF 보조 라이브러리',
       items: auxiliaryLibraries,
     },
   },
