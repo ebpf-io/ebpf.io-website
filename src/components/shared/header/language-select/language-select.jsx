@@ -9,6 +9,7 @@ import EnIcon from 'icons/languages/en.inline.svg';
 import EsIcon from 'icons/languages/es.inline.svg';
 import FrFrIcon from 'icons/languages/fr-fr.inline.svg';
 import ItItIcon from 'icons/languages/it-it.inline.svg';
+import KoKrIcon from 'icons/languages/ko-kr.inline.svg';
 import PtBrIcon from 'icons/languages/pt-br.inline.svg';
 import PtIcon from 'icons/languages/pt.inline.svg';
 import SwIcon from 'icons/languages/sw.inline.svg';
@@ -26,7 +27,7 @@ const langIcons = {
   'zh-cn': ZhCNIcon,
   sw: SwIcon,
   'tw-cn': ZhCNIcon,
-  'ko-kr': EnIcon,
+  'ko-kr': KoKrIcon,
 };
 
 const LanguageSelect = ({ lang, pageUrls }) => {
