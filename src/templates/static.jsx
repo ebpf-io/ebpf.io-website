@@ -29,7 +29,6 @@ const StaticPage = ({
     },
   },
   children,
-  pageContext,
   location,
 }) => {
   let pageUrl = false;
@@ -41,7 +40,7 @@ const StaticPage = ({
   });
 
   return (
-    <Layout lang={pageContext.language} pageUrls={pageUrl ? pageUrls[pageUrl] : null}>
+    <Layout pageUrls={pageUrl ? pageUrls[pageUrl] : null}>
       <div className="safe-paddings">
         <div className="container grid grid-cols-12 mt-20 grid-gap-x mb-28 lg:mb-24 lg:mt-16 md:mb-20 md:mt-12">
           <TableOfContents
@@ -70,20 +69,6 @@ const StaticPage = ({
 
 export default StaticPage;
 
-export const pageQuery = graphql`
-  query StaticPageQuery($id: String!) {
-    mdx(id: { eq: $id }) {
-      frontmatter {
-        title
-        ogTitle
-        ogDescription
-        ogKeywords
-      }
-      tableOfContents(maxDepth: 3)
-    }
-  }
-`;
-
 export const Head = ({
   location: { pathname },
   data: {
@@ -99,3 +84,27 @@ export const Head = ({
     keywords={ogKeywords}
   />
 );
+
+export const pageQuery = graphql`
+  query StaticPageQuery($id: String!) {
+    mdx(id: { eq: $id }) {
+      frontmatter {
+        title
+        ogTitle
+        ogDescription
+        ogKeywords
+      }
+      tableOfContents(maxDepth: 3)
+    }
+
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

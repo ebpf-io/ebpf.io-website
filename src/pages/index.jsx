@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { graphql } from 'gatsby';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import CaseStudies from 'components/pages/home/case-studies';
@@ -11,26 +13,53 @@ import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import VideoGallery from 'components/shared/video-gallery';
 import data from 'data/pages/home';
-import SEO_DATA from 'data/shared/seo-data';
 
-import { defaultLanguage } from '../../config/languages';
+const HomePage = () => {
+  const { language } = useI18next();
 
-const lang = defaultLanguage;
-
-const HomePage = () => (
-  <Layout>
-    <Hero {...data[lang].hero} />
-    <CaseStudies {...data[lang].caseStudies} />
-    <WhyEbpf {...data[lang].whyEbpf} />
-    <Film {...data[lang].film} />
-    <Testimonials {...data[lang].testimonials} />
-    <Features {...data[lang].features} />
-    <VideoGallery {...data[lang].videoGallery} />
-  </Layout>
-);
+  return (
+    <Layout>
+      <Hero {...data[language].hero} />
+      <CaseStudies {...data[language].caseStudies} />
+      <WhyEbpf {...data[language].whyEbpf} />
+      <Film {...data[language].film} />
+      <Testimonials {...data[language].testimonials} />
+      <Features {...data[language].features} />
+      <VideoGallery {...data[language].videoGallery} />
+    </Layout>
+  );
+};
 
 export default HomePage;
 
-export const Head = ({ location: { pathname } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.home[lang]} />
-);
+export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
+  const t = JSON.parse(
+    data.locales.edges.find((edge) => edge.node.language === language).node.data
+  );
+
+  return (
+    <SEO
+      pathname={pathname}
+      title={t['eBPF - Introduction, Tutorials & Community Resources']}
+      description={
+        t[
+          'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+        ]
+      }
+    />
+  );
+};
+
+export const query = graphql`
+  query {
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

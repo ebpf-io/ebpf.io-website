@@ -2,6 +2,8 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 require('dotenv').config();
 
+const { languages, defaultLanguage } = require('./config/languages');
+
 const wrapESMPlugin = (name) =>
   function wrapESM(opts) {
     return async (...args) => {
@@ -23,6 +25,13 @@ module.exports = {
     authorName: 'Pixel Point',
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'locale',
+        path: `${__dirname}/locales`,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -159,6 +168,31 @@ module.exports = {
         langKeyDefault: 'en',
         prefixDefault: false,
         useLangKeyLayout: false,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-i18next',
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: Object.keys(languages),
+        defaultLanguage,
+        siteUrl: process.env.GATSBY_DEFAULT_SITE_URL,
+        trailingSlash: 'always',
+        i18nextOptions: {
+          load: 'all',
+          lowerCaseLng: true,
+          interpolation: {
+            escapeValue: false,
+          },
+          keySeparator: '.',
+          nsSeparator: ':',
+        },
+        pages: [
+          {
+            matchPath: '/:lang?/what-is-ebpf',
+            getLanguageFromPath: true,
+          },
+        ],
       },
     },
     {

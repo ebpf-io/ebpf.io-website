@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import clsx from 'clsx';
+import { graphql } from 'gatsby';
 import React from 'react';
 
 import BlogPosts from 'components/pages/get-started/blog-posts';
@@ -14,7 +15,6 @@ import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
 import VideoGallery from 'components/shared/video-gallery';
 import data from 'data/pages/get-started';
-import SEO_DATA from 'data/shared/seo-data';
 
 const pageUrls = {
   en: '/get-started/',
@@ -31,7 +31,7 @@ const pageUrls = {
 const hasContributors = false;
 
 const GetStartedPage = ({ pageContext: { events, blogPosts, contributors, language } }) => (
-  <Layout lang={language} pageUrls={pageUrls}>
+  <Layout pageUrls={pageUrls}>
     <Hero {...data[language].hero} />
     <Documentation {...data[language].documentation} />
     <div className="container mt-28 md:mt-20 sm:mt-12">
@@ -65,6 +65,33 @@ const GetStartedPage = ({ pageContext: { events, blogPosts, contributors, langua
 
 export default GetStartedPage;
 
-export const Head = ({ location: { pathname }, pageContext: { language } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.home[language]} />
-);
+export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
+  const t = JSON.parse(
+    data.locales.edges.find((edge) => edge.node.language === language).node.data
+  );
+
+  return (
+    <SEO
+      pathname={pathname}
+      title={t['eBPF - Introduction, Tutorials & Community Resources']}
+      description={
+        t[
+          'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+        ]
+      }
+    />
+  );
+};
+export const query = graphql`
+  query {
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

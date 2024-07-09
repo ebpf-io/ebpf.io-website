@@ -1,36 +1,42 @@
+/* eslint-disable react/prop-types */
+import { graphql } from 'gatsby';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import Hero from 'components/pages/case-studies/hero';
 import Layout from 'components/shared/layout';
-import Link from 'components/shared/link';
 import SEO from 'components/shared/seo';
 import data from 'data/pages/case-studies';
 import SEO_DATA from 'data/shared/seo-data';
 
-import { defaultLanguage } from '../../config/languages';
+const CaseStudies = () => {
+  const { language } = useI18next();
 
-const lang = defaultLanguage;
+  return (
+    <Layout pageUrls={data.pageUrls}>
+      <Hero {...data[language].hero} />
+    </Layout>
+  );
+};
 
-const Description = () => (
-  <span>
-    Here are some of the organizations that are using eBPF in production. If you’re using eBPF and
-    aren’t on this list,{' '}
-    <Link theme="black-primary-yellow" size="lg" to="https://github.com/ebpf-io/ebpf.io">
-      please submit a pull request
-    </Link>
-    .
-  </span>
-);
+export const Head = ({ location: { pathname } }) => {
+  const { language } = useI18next();
 
-const CaseStudies = () => (
-  <Layout pageUrls={data.pageUrls}>
-    <Hero {...data[lang].hero} description={<Description />} />
-  </Layout>
-);
-
-// eslint-disable-next-line react/prop-types
-export const Head = ({ location: { pathname } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.caseStudies[lang]} />
-);
+  return <SEO pathname={pathname} {...SEO_DATA.caseStudies[language]} />;
+};
 
 export default CaseStudies;
+
+export const query = graphql`
+  query {
+    locales: allLocale(filter: { ns: { in: ["shared", "case-studies"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

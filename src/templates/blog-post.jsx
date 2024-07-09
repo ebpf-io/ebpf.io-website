@@ -140,5 +140,15 @@ export const query = graphql`
       }
       tableOfContents(maxDepth: 3)
     }
+
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
   }
 `;

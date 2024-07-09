@@ -1,51 +1,4 @@
 export default {
-  home: {
-    en: {
-      title: 'eBPF - Introduction, Tutorials & Community Resources',
-      description:
-        'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.',
-    },
-    'fr-fr': {
-      title: 'eBPF - Introduction, tutoriels et ressources communautaires',
-      description:
-        'eBPF est une technologie révolutionnaire qui peut exécuter des programmes en bac à sable dans le noyau Linux sans modifier le code source du noyau ni charger un module du noyau.',
-    },
-    pt: {
-      title: 'eBPF - Introdução, tutoriais e recursos comunitários',
-      description:
-        'eBPF é uma tecnologia revolucionária que pode executar programas em sandbox no kernel Linux sem alterar o código-fonte do kernel ou carregar um módulo do kernel.',
-    },
-    'pt-br': {
-      title: 'eBPF - Introdução, Tutoriais e Recursos da Comunidade',
-      description:
-        'O eBPF é uma tecnologia revolucionária que pode executar programas isolados no kernel do Linux sem alterar o código-fonte do kernel ou carregar um módulo do kernel.',
-    },
-    'it-it': {
-      title: 'eBPF - Introduzione, Tutorial & Risorse dalla Community',
-      description:
-        'eBPF è una tecnologia rivoluzionaria in grado di eseguire programmi in una sandbox all’interno del kernel di Linux senza modificare il codice sorgente del kernel o caricare un modulo del kernel.',
-    },
-    es: {
-      title: 'eBPF - Introducción, tutoriales y recursos comunitarios',
-      description:
-        'eBPF es una tecnología revolucionaria que puede ejecutar programas sandboxed en el kernel de Linux sin cambiar el código fuente del kernel o cargar un módulo del kernel.',
-    },
-    'zh-cn': {
-      title: 'eBPF - 介绍, 教程和社区资源',
-      description:
-        'eBPF是一项革命性的技术, 它可以在 Linux 内核中运行沙盒程序, 而无需通过更改内核源代码或加载内核模块的方式来实现。',
-    },
-    sw: {
-      title: 'eBPF - Utangulizi, Mafunzo, na Rasilmali za Jumuiya',
-      description:
-        'eBPF ni teknolojia ya mapinduzi inayoweza kuendesha programu zilizoko kwenye sanduku katika kernel ya Linux bila kubadilisha msimbo wa kernel au kupakia moduli ya kernel.',
-    },
-    'tw-cn': {
-      title: 'eBPF - 介紹、教學與社群資源',
-      description:
-        'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。',
-    },
-  },
   contribute: {
     en: {
       title: 'How to contribute to eBPF',
@@ -240,13 +193,5 @@ export default {
       description: '基於 eBPF 的核心基礎設施目錄',
       keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
     },
-  },
-  newsletter: {
-    title: 'Subscribe to bi-weekly eCHO News - eBPF',
-    description: 'Keep up on the latest news and information from the eBPF and Cilium communities',
-  },
-  blog: {
-    title: 'eBPF - Blog',
-    description: 'The latest news, updates and articles covering eBPF and related topics.',
   },
 };

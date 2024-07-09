@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { m, LazyMotion, domAnimation } from 'framer-motion';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
 import React, { useCallback, useRef, useState } from 'react';
 
@@ -7,7 +8,7 @@ import Link from 'components/shared/link';
 import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
 
-import { languages } from '../../../../../config/languages';
+import { languages as languageList } from '../../../../../config/languages';
 
 const ANIMATION_DURATION = 0.2;
 
@@ -31,7 +32,8 @@ const dropdownVariants = {
   },
 };
 
-const LanguageSelect = ({ lang, pageUrls }) => {
+const LanguageSelect = ({ pageUrls }) => {
+  const { language, languages } = useI18next();
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -61,15 +63,16 @@ const LanguageSelect = ({ lang, pageUrls }) => {
             variants={dropdownVariants}
           >
             {Object.values(languages)
-              .filter(({ code }) => code !== lang)
-              .map(({ name, code }) => {
-                let url = code === 'en' ? '/' : `/${code}/`;
-                if (pageUrls) url = pageUrls[code];
+              .filter((lang) => lang !== language)
+              .map((lang) => {
+                let url = lang === 'en' ? '/' : `/${lang}/`;
+
+                if (pageUrls) url = pageUrls[lang];
 
                 return (
-                  <m.li className="flex" key={name}>
+                  <m.li className="flex" key={lang}>
                     <Link className="px-[13px] py-3 xs:w-full" theme="white" to={url}>
-                      {name}
+                      {languageList[lang].name}
                     </Link>
                   </m.li>
                 );
@@ -81,7 +84,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
             aria-label="Select language"
             onClick={handleDropdown}
           >
-            <span>{languages[lang].name}</span>
+            <span>{languageList[language].name}</span>
             <ChevronIcon
               className={clsx('ml-1.5 mt-1 h-auto w-2.5', showDropdown ? 'rotate-180' : 'rotate-0')}
             />
@@ -93,13 +96,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
 };
 
 LanguageSelect.propTypes = {
-  lang: PropTypes.string.isRequired,
-  pageUrls: PropTypes.shape(
-    Object.keys(languages).reduce((acc, lang) => {
-      acc[lang] = PropTypes.string.isRequired;
-      return acc;
-    }, {})
-  ),
+  pageUrls: PropTypes.objectOf(PropTypes.string),
 };
 
 LanguageSelect.defaultProps = {

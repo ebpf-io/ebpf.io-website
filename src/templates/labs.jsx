@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
-import { graphql } from 'gatsby';
-import { navigate } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import React from 'react';
 
 import Categories from 'components/pages/labs/categories';
@@ -11,7 +10,6 @@ import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
 import { LABS_BASE_PATH } from 'constants/labs';
 import data from 'data/pages/labs';
-import SEO_DATA from 'data/shared/seo-data';
 
 const pageUrls = {
   en: '/labs/',
@@ -50,7 +48,7 @@ const LabsPage = ({
   };
 
   return (
-    <Layout lang={language} pageUrls={pageUrls}>
+    <Layout pageUrls={pageUrls}>
       <section className="safe-paddings">
         <div className="container flex flex-col pt-20 lg:pt-16">
           <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
@@ -88,9 +86,23 @@ const LabsPage = ({
 
 export default LabsPage;
 
-export const Head = ({ location: { pathname }, pageContext: { language } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.home[language]} />
-);
+export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
+  const t = JSON.parse(
+    data.locales.edges.find((edge) => edge.node.language === language).node.data
+  );
+
+  return (
+    <SEO
+      pathname={pathname}
+      title={t['eBPF - Introduction, Tutorials & Community Resources']}
+      description={
+        t[
+          'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+        ]
+      }
+    />
+  );
+};
 
 export const query = graphql`
   query LabsPageQuery(
@@ -124,6 +136,16 @@ export const query = graphql`
             }
             publicURL
           }
+        }
+      }
+    }
+
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

@@ -1,6 +1,6 @@
 const path = require('path');
 
-const { languages, defaultLanguage } = require('../config/languages');
+const { GET_STARTED_BASE_PATH } = require('../src/constants/get-started');
 
 const {
   DRAFT_FILTER,
@@ -114,18 +114,13 @@ module.exports = async ({ graphql, actions }) => {
     contributors: { nodes: contributors },
   } = result.data;
 
-  Object.values(languages).forEach(({ code }) => {
-    const pagePath = code === defaultLanguage ? '/get-started/' : `/${code}/get-started/`;
-
-    createPage({
-      path: pagePath,
-      component: template,
-      context: {
-        events,
-        blogPosts,
-        contributors,
-        language: code,
-      },
-    });
+  createPage({
+    path: GET_STARTED_BASE_PATH,
+    component: template,
+    context: {
+      events,
+      blogPosts,
+      contributors,
+    },
   });
 };

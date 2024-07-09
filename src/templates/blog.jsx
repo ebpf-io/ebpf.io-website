@@ -6,7 +6,6 @@ import BlogPostsList from 'components/pages/blog/blog-posts-list';
 import Sidebar from 'components/pages/blog/sidebar';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import SEO_DATA from 'data/shared/seo-data';
 
 const BlogPage = ({
   location: { pathname },
@@ -43,7 +42,13 @@ const BlogPage = ({
 
 export default BlogPage;
 
-export const Head = ({ location: { pathname } }) => <SEO pathname={pathname} {...SEO_DATA.blog} />;
+export const Head = ({ location: { pathname } }) => (
+  <SEO
+    pathname={pathname}
+    title="eBPF - Blog"
+    description="The latest news, updates and articles covering eBPF and related topics."
+  />
+);
 
 export const query = graphql`
   query BlogPageQuery(
@@ -81,6 +86,7 @@ export const query = graphql`
         }
       }
     }
+
     externalPosts: allMdx(
       filter: {
         internal: { contentFilePath: { regex: $postRegex } }
@@ -104,6 +110,16 @@ export const query = graphql`
             }
             publicURL
           }
+        }
+      }
+    }
+
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }
