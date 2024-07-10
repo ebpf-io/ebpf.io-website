@@ -7,5 +7,6 @@ description: 'Cilium + eBPF Day is a full-day co-located event for Cilium and eB
 ogImage: ogimage.png
 linkUrl: 'https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/co-located-events/cilium-ebpf-day/'
 type: Conference
+conference: Cloud Native eBPF Day
 isFeatured: true
 ---
