@@ -3,6 +3,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import Button from 'components/shared/button';
+import mergeTranslations from 'utils/merge-translations';
 
 import FlexibilityIcon from './images/flexibility.inline.svg';
 import PerformanceIcon from './images/performance.inline.svg';
@@ -16,6 +17,11 @@ const icons = {
 
 const WhyEbpf = () => {
   const { t } = useTranslation();
+
+  const items = mergeTranslations(
+    t('index:whyEbpf.items', { returnObjects: true }),
+    t('index:whyEbpf.items', { lng: 'en', returnObjects: true })
+  );
 
   return (
     <section className="why-ebpf safe-paddings mt-36 lg:mt-28 md:mt-24">
@@ -42,28 +48,26 @@ const WhyEbpf = () => {
             </Button>
           </div>
           <ul className="grid grid-cols-3 md:mt-9 sm:mt-7 sm:grid-cols-1">
-            {t('index:whyEbpf.items', { returnObjects: true }).map(
-              ({ title, description, icon }, index) => {
-                const Icon = icons[icon];
+            {items.map(({ title, description, icon }, index) => {
+              const Icon = icons[icon];
 
-                return (
-                  <li
-                    className={clsx(
-                      'flex w-full max-w-[304px] flex-col border-l border-dashed border-gray-80 border-opacity-30 px-9 lg:px-8',
-                      'md:items-center md:px-5 md:first:border-l-0',
-                      'sm:max-w-[500px] sm:items-center sm:border-l-0 sm:border-t sm:px-0 sm:py-7 sm:text-center sm:first:border-t-0 sm:first:pt-0 sm:last:pb-0'
-                    )}
-                    key={index}
-                  >
-                    <Icon className="h-12 w-12" />
-                    <h3 className="mt-5 font-sans text-3xl font-semibold leading-snug lg:mt-4 lg:text-2xl">
-                      {title}
-                    </h3>
-                    <p className="mt-2.5 text-lg lg:text-base md:text-center">{description}</p>
-                  </li>
-                );
-              }
-            )}
+              return (
+                <li
+                  className={clsx(
+                    'flex w-full max-w-[304px] flex-col border-l border-dashed border-gray-80 border-opacity-30 px-9 lg:px-8',
+                    'md:items-center md:px-5 md:first:border-l-0',
+                    'sm:max-w-[500px] sm:items-center sm:border-l-0 sm:border-t sm:px-0 sm:py-7 sm:text-center sm:first:border-t-0 sm:first:pt-0 sm:last:pb-0'
+                  )}
+                  key={index}
+                >
+                  <Icon className="h-12 w-12" />
+                  <h3 className="mt-5 font-sans text-3xl font-semibold leading-snug lg:mt-4 lg:text-2xl">
+                    {title}
+                  </h3>
+                  <p className="mt-2.5 text-lg lg:text-base md:text-center">{description}</p>
+                </li>
+              );
+            })}
           </ul>
           <Button
             className="hidden px-7 lg:px-6 md:mt-10 md:inline-flex sm:mt-8"
