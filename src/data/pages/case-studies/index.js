@@ -8,9 +8,9 @@ const data = {
     'pt-br': '/pt-br/case-studies/',
     'it-it': '/it-it/case-studies/',
     es: '/es/case-studies/',
-    'zh-cn': '/zh-cn/case-studies/',
+    'zh-hans': '/zh-hans/case-studies/',
     sw: '/sw/case-studies/',
-    'tw-cn': '/tw-cn/case-studies/',
+    'zh-hant': '/zh-hant/case-studies/',
   },
   en: {
     hero: {
@@ -48,10 +48,10 @@ const data = {
       items: caseStudiesData.es,
     },
   },
-  'zh-cn': {
+  'zh-hans': {
     hero: {
       title: 'eBPF 案例研究',
-      items: caseStudiesData['zh-cn'],
+      items: caseStudiesData['zh-hans'],
     },
   },
   sw: {
@@ -60,10 +60,10 @@ const data = {
       items: caseStudiesData.sw,
     },
   },
-  'tw-cn': {
+  'zh-hant': {
     hero: {
       title: 'eBPF案例研究',
-      items: caseStudiesData['tw-cn'],
+      items: caseStudiesData['zh-hant'],
     },
   },
 };

@@ -20,9 +20,9 @@ const pageUrls = {
   'pt-br': '/pt-br/labs/',
   'it-it': '/it-it/labs/',
   es: '/es/labs/',
-  'zh-cn': '/zh-cn/labs/',
+  'zh-hans': '/zh-hans/labs/',
   sw: '/sw/labs/',
-  'tw-cn': '/tw-cn/labs/',
+  'zh-hant': '/zh-hant/labs/',
 };
 
 const LabsPage = ({

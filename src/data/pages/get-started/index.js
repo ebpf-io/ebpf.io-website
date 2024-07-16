@@ -8,7 +8,7 @@ const data = {
     'pt-br': '/pt-br/get-started/',
     'it-it': '/it-it/get-started/',
     es: '/es/get-started/',
-    'zh-cn': '/zh-cn/get-started/',
+    'zh-hans': '/zh-hans/get-started/',
     sw: '/sw/get-started/',
   },
   en: {
@@ -801,7 +801,7 @@ const data = {
       title: 'Conozca a algunos de los miembros de nuestra comunidad',
     },
   },
-  'zh-cn': {
+  'zh-hans': {
     hero: {
       title: '开始了解 eBPF',
       items: [
@@ -916,7 +916,7 @@ const data = {
     events: {
       title: '参加 eBPF 活动向行业专家了解更多信息',
       linkTitle: '更多活动',
-      linkUrl: '/zh-cn/events/',
+      linkUrl: '/zh-hans/events/',
     },
     videoGallery: {
       title: 'eBPF 入门视频',
@@ -1063,7 +1063,7 @@ const data = {
       title: 'Meet some of our community members',
     },
   },
-  'tw-cn': {
+  'zh-hant': {
     hero: {
       title: '開始了解 eBPF',
       items: [
@@ -1178,7 +1178,7 @@ const data = {
     events: {
       title: '參加 eBPF 活動，向行業專家學習',
       linkTitle: '更多活動',
-      linkUrl: '/tw-cn/events',
+      linkUrl: '/zh-hant/events',
     },
     videoGallery: {
       title: 'eBPF 入門影片',

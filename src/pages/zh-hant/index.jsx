@@ -15,22 +15,22 @@ import SEO_DATA from 'data/shared/seo-data';
 
 import { languages } from '../../../config/languages';
 
-const lang = languages['tw-cn'].code;
+const lang = languages['zh-hant'].code;
 
 const HomePage = () => (
-    <Layout lang={lang}>
-        <Hero {...data[lang].hero} />
-        <CaseStudies {...data[lang].caseStudies} />
-        <WhyEbpf {...data[lang].whyEbpf} />
-        <Film {...data[lang].film} />
-        <Testimonials {...data[lang].testimonials} />
-        <Features {...data[lang].features} />
-        <VideoGallery {...data[lang].videoGallery} />
-    </Layout>
+  <Layout lang={lang}>
+    <Hero {...data[lang].hero} />
+    <CaseStudies {...data[lang].caseStudies} />
+    <WhyEbpf {...data[lang].whyEbpf} />
+    <Film {...data[lang].film} />
+    <Testimonials {...data[lang].testimonials} />
+    <Features {...data[lang].features} />
+    <VideoGallery {...data[lang].videoGallery} />
+  </Layout>
 );
 
 export default HomePage;
 
 export const Head = ({ location: { pathname } }) => (
-    <SEO pathname={pathname} {...SEO_DATA.home[lang]} />
+  <SEO pathname={pathname} {...SEO_DATA.home[lang]} />
 );

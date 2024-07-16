@@ -9,9 +9,9 @@ const data = {
     'pt-br': '/pt-br/applications/',
     'it-it': '/it-it/applications/',
     es: '/es/applications/',
-    'zh-cn': '/zh-cn/applications/',
+    'zh-hans': '/zh-hans/applications/',
     sw: '/sw/applications/',
-    'tw-cn': '/tw-cn/applications/',
+    'zh-hant': '/zh-hant/applications/',
   },
   en: {
     title: 'Applications',
@@ -157,17 +157,17 @@ const data = {
       items: emergingApplications,
     },
   },
-  'zh-cn': {
+  'zh-hans': {
     title: '应用项目',
     hero: {
       items: [
         {
           text: '应用项目',
-          to: '/zh-cn/applications/',
+          to: '/zh-hans/applications/',
         },
         {
           text: '基础设施',
-          to: '/zh-cn/infrastructure/',
+          to: '/zh-hans/infrastructure/',
         },
       ],
     },
@@ -205,17 +205,17 @@ const data = {
       items: emergingApplications,
     },
   },
-  'tw-cn': {
+  'zh-hant': {
     title: '應用項目',
     hero: {
       items: [
         {
           text: '應用項目',
-          to: '/tw-cn/applications/',
+          to: '/zh-hant/applications/',
         },
         {
           text: '基礎設施',
-          to: '/tw-cn/infrastructure/',
+          to: '/zh-hant/infrastructure/',
         },
       ],
     },

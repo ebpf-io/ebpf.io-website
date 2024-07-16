@@ -9,16 +9,15 @@ import SEO_DATA from 'data/shared/seo-data';
 
 import { languages } from '../../../config/languages';
 
-const lang = languages['zh-cn'].code;
+const lang = languages['zh-hant'].code;
 
 const Description = () => (
   <span>
-    下面是一些在生产环境中使用 eBPF 的公司或组织。如果你的公司或组织正在使用 eBPF
-    还不在这个列表里，请提交一个{' '}
+    以下是一些在生產環境中使用 eBPF 的組織。 如果您正在使用 eBPF 而不在此清單中，請提交一個{' '}
     <Link theme="black-primary-yellow" size="lg" to="https://github.com/ebpf-io/ebpf.io">
       pull request
     </Link>{' '}
-    给我们，谢谢。
+    給我們，謝謝。
   </span>
 );
 

@@ -23,9 +23,9 @@ const langIcons = {
   'pt-br': PtBrIcon,
   'it-it': ItItIcon,
   es: EsIcon,
-  'zh-cn': ZhCNIcon,
+  'zh-hans': ZhCNIcon,
   sw: SwIcon,
-  'tw-cn': ZhCNIcon,
+  'zh-hant': ZhCNIcon,
 };
 
 const LanguageSelect = ({ lang, pageUrls }) => {

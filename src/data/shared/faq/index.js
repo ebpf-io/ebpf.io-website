@@ -325,7 +325,7 @@ const data = {
       },
     ],
   },
-  'zh-cn': {
+  'zh-hans': {
     title: '常见问题',
     items: [
       {
@@ -431,7 +431,7 @@ const data = {
       },
     ],
   },
-  'tw-cn': {
+  'zh-hant': {
     title: '常見問題',
     items: [
       {

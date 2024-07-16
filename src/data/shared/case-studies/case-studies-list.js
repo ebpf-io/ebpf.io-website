@@ -3623,7 +3623,7 @@ const caseStudiesData = {
       ],
     },
   ],
-  'zh-cn': [
+  'zh-hans': [
     {
       title: 'Google',
       logo: Google,
@@ -4774,7 +4774,7 @@ const caseStudiesData = {
       ],
     },
   ],
-  'tw-cn': [
+  'zh-hant': [
     {
       title: 'Google',
       logo: Google,

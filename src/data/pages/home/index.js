@@ -862,13 +862,13 @@ const data = {
       items: videoItems,
     },
   },
-  'zh-cn': {
+  'zh-hans': {
     hero: {
       title: '动态地编程内核以实现高效的网络、可观测性、追踪和安全性。',
       blackButtonTitle: '项目概览',
-      blackButtonUrl: '/zh-cn/applications',
+      blackButtonUrl: '/zh-hans/applications',
       yellowButtonTitle: '什么是 eBPF',
-      yellowButtonUrl: '/zh-cn/what-is-ebpf',
+      yellowButtonUrl: '/zh-hans/what-is-ebpf',
       altImage: 'eBPF diagram',
       items: [
         '程序经过验证，确保安全执行',
@@ -880,13 +880,13 @@ const data = {
     caseStudies: {
       title: '在各行各业的生产环境中使用 eBPF 的组织',
       linkText: '更多案例研究',
-      linkUrl: '/zh-cn/case-studies/',
-      items: caseStudiesData['zh-cn'].slice(0, 6),
+      linkUrl: '/zh-hans/case-studies/',
+      items: caseStudiesData['zh-hans'].slice(0, 6),
     },
     whyEbpf: {
       title: '为什么使用 eBPF ?',
       linkTitle: '什么是 eBPF',
-      linkUrl: '/zh-cn/what-is-ebpf/',
+      linkUrl: '/zh-hans/what-is-ebpf/',
       items: [
         {
           title: '性能',
@@ -1145,13 +1145,13 @@ const data = {
     },
   },
 
-  'tw-cn': {
+  'zh-hant': {
     hero: {
       title: '對核心進行動態編程，以實現高效的網路、可觀察性、追蹤和安全性。',
       blackButtonTitle: '項目概覽',
-      blackButtonUrl: '/tw-cn/applications',
+      blackButtonUrl: '/zh-hant/applications',
       yellowButtonTitle: '什麼是eBPF？',
-      yellowButtonUrl: '/tw-cn/what-is-ebpf',
+      yellowButtonUrl: '/zh-hant/what-is-ebpf',
       altImage: 'eBPF diagram',
       items: [
         '程序經過驗證，確保安全執行',
@@ -1163,13 +1163,13 @@ const data = {
     caseStudies: {
       title: '每個行業的組織在生產中都使用 eBPF',
       linkText: '更多案例研究',
-      linkUrl: '/tw-cn/case-studies/',
-      items: caseStudiesData['tw-cn'].slice(0, 6),
+      linkUrl: '/zh-hant/case-studies/',
+      items: caseStudiesData['zh-hant'].slice(0, 6),
     },
     whyEbpf: {
       title: '為什麼使用eBPF？',
       linkTitle: '什麼是eBPF？',
-      linkUrl: '/tw-cn/what-is-ebpf/',
+      linkUrl: '/zh-hant/what-is-ebpf/',
       items: [
         {
           title: '效能',

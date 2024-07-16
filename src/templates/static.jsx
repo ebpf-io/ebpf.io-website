@@ -15,9 +15,9 @@ const pageUrls = {
     'pt-br': '/pt-br/what-is-ebpf/',
     'it-it': '/it-it/what-is-ebpf/',
     es: '/es/what-is-ebpf/',
-    'zh-cn': '/zh-cn/what-is-ebpf/',
+    'zh-hans': '/zh-hans/what-is-ebpf/',
     sw: '/sw/what-is-ebpf/',
-    'tw-cn': '/tw-cn/what-is-ebpf/',
+    'zh-hant': '/zh-hant/what-is-ebpf/',
   },
 };
 

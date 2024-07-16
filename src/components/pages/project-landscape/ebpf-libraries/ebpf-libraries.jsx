@@ -23,9 +23,9 @@ const title = {
   'pt-br': 'Bibliotecas eBPF',
   'it-it': 'Librerie eBPF',
   es: 'Bibliotecas eBPF',
-  'zh-cn': 'eBPF 库',
+  'zh-hans': 'eBPF 库',
   sw: 'Maktaba za eBPF',
-  'tw-cn': 'eBPF 函式庫',
+  'zh-hant': 'eBPF 函式庫',
 };
 
 const items = [

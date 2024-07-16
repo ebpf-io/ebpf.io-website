@@ -6,9 +6,9 @@ const data = {
     'pt-br': '/pt-br/contribute/',
     'it-it': '/it-it/contribute/',
     es: '/es/contribute/',
-    'zh-cn': '/zh-cn/contribute/',
+    'zh-hans': '/zh-hans/contribute/',
     sw: '/sw/contribute/',
-    'tw-cn': '/tw-cn/contribute/',
+    'zh-hant': '/zh-hant/contribute/',
   },
   en: {
     hero: {
@@ -514,7 +514,7 @@ const data = {
       ],
     },
   },
-  'zh-cn': {
+  'zh-hans': {
     hero: {
       title: '如何为 eBPF 做出贡献',
       description:
@@ -542,7 +542,7 @@ const data = {
           },
           {
             text: 'Linux 内核 eBPF 运行时',
-            to: '/zh-cn/infrastructure/#linux-kernel',
+            to: '/zh-hans/infrastructure/#linux-kernel',
           },
         ],
       },
@@ -557,7 +557,7 @@ const data = {
           links: [
             {
               text: 'eBPF 应用项目概览',
-              to: '/zh-cn/applications',
+              to: '/zh-hans/applications',
             },
           ],
         },
@@ -569,7 +569,7 @@ const data = {
           links: [
             {
               text: 'eBPF 开发工具链',
-              to: '/zh-cn/what-is-ebpf/#development-toolchains',
+              to: '/zh-hans/what-is-ebpf/#development-toolchains',
             },
           ],
         },
@@ -682,7 +682,7 @@ const data = {
       ],
     },
   },
-  'tw-cn': {
+  'zh-hant': {
     hero: {
       title: '如何為 eBPF 做出貢獻',
       description:
@@ -710,7 +710,7 @@ const data = {
           },
           {
             text: 'Linux 核心 eBPF 運行時',
-            to: '/tw-cn/infrastructure/#linux-kernel',
+            to: '/zh-hant/infrastructure/#linux-kernel',
           },
         ],
       },
@@ -725,7 +725,7 @@ const data = {
           links: [
             {
               text: 'eBPF 應用項目概覽',
-              to: '/tw-cn/applications',
+              to: '/zh-hant/applications',
             },
           ],
         },
@@ -737,7 +737,7 @@ const data = {
           links: [
             {
               text: 'eBPF 開發工具鏈',
-              to: '/tw-cn/what-is-ebpf/#development-toolchains',
+              to: '/zh-hant/what-is-ebpf/#development-toolchains',
             },
           ],
         },

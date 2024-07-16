@@ -9,18 +9,18 @@ import SEO_DATA from 'data/shared/seo-data';
 
 import { languages } from '../../../config/languages';
 
-const lang = languages['tw-cn'].code;
+const lang = languages['zh-hans'].code;
 
 const Contribute = () => (
-    <Layout lang={lang} pageUrls={data.pageUrls}>
-        <Hero {...data[lang].hero} />
-        <HowToContribute {...data[lang].howToContribute} />
-    </Layout>
+  <Layout lang={lang} pageUrls={data.pageUrls}>
+    <Hero {...data[lang].hero} />
+    <HowToContribute {...data[lang].howToContribute} />
+  </Layout>
 );
 
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => (
-    <SEO pathname={pathname} {...SEO_DATA.contribute[lang]} />
+  <SEO pathname={pathname} {...SEO_DATA.contribute[lang]} />
 );
 
 export default Contribute;
