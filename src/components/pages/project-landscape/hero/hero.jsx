@@ -6,11 +6,11 @@ import Link from 'components/shared/link';
 const items = [
   {
     text: 'Applications',
-    to: '/applications/',
+    to: '/applications',
   },
   {
     text: 'Infrastructure',
-    to: '/infrastructure/',
+    to: '/infrastructure',
   },
 ];
 

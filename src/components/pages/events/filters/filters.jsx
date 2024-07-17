@@ -23,6 +23,7 @@ const Filters = ({ eventFilters, activeFilters, handleFilters }) => {
         secondFilter={conference}
         activeFilters={activeFilters}
         handleFilters={handleFilters}
+        isSelected={activeFilters[type.label].length > 0}
       />
       <DropdownSelect
         {...region}

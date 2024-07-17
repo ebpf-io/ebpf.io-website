@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { graphql, navigate } from 'gatsby';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { Trans } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import Categories from 'components/pages/labs/categories';
@@ -20,7 +20,6 @@ const LabsPage = ({
     allMdx: { nodes: allLabs },
   },
 }) => {
-  const { t } = useTranslation();
   const labs = allLabs.map((lab) => ({ ...lab.frontmatter }));
   const handlePageChange = ({ selected }) => {
     let navigatePath = '';
@@ -37,7 +36,7 @@ const LabsPage = ({
       <section className="safe-paddings">
         <div className="container flex flex-col pt-20 lg:pt-16">
           <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
-            {t('title')}
+            <Trans>Dig into eBPF with interactive labs</Trans>
           </h1>
         </div>
       </section>
@@ -67,12 +66,21 @@ const LabsPage = ({
 export default LabsPage;
 
 export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
-  const dataLanguage = data.locales.edges.find(
-    (e) => e.node.ns === 'labs' && e.node.language === language
-  ).node.data;
-  const t = JSON.parse(dataLanguage);
+  const t = JSON.parse(
+    data.locales.edges.find((edge) => edge.node.language === language).node.data
+  );
 
-  return <SEO pathname={pathname} title={t.meta.title} description={t.meta.description} />;
+  return (
+    <SEO
+      pathname={pathname}
+      title={t['eBPF - Introduction, Tutorials & Community Resources']}
+      description={
+        t[
+          'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+        ]
+      }
+    />
+  );
 };
 
 export const query = graphql`
