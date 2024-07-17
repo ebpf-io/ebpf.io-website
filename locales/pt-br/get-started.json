@@ -3,31 +3,19 @@
     "title": "Comece com eBPF",
     "items": [
       {
-        "image": "lab",
+        "card": "lab",
         "title": "Experimente o laboratório",
-        "description": "Tomando emprestado o exemplo do opensnoop do relatório de Liz Rice, este laboratório ensina como manipular uma ferramenta eBPF, observá-la carregando seus componentes e até mesmo adicionar seu próprio rastreamento ao código-fonte eBPF.",
-        "cardColorClassName": "bg-secondary-blue-1-light border-secondary-blue-1",
-        "dashedBorderClassName": "border-secondary-blue-2",
-        "linkUrl": "https://ebpf.io/labs/",
-        "linkTarget": "_blank"
+        "description": "Tomando emprestado o exemplo do opensnoop do relatório de Liz Rice, este laboratório ensina como manipular uma ferramenta eBPF, observá-la carregando seus componentes e até mesmo adicionar seu próprio rastreamento ao código-fonte eBPF."
       },
       {
-        "image": "book",
+        "card": "book",
         "title": "Leia os Livros",
-        "description": "Leia os livros \"What is eBPF?\" e \"Learning eBPF\" da O’Reilly, de Liz Rice, ou \"BPF Performance Tools\" de Brendan Gregg para começar. Ao longo dos livros, você aprenderá o que é eBPF e por que ele é tão poderoso, e as capacidades que ele oferece.",
-        "cardColorClassName": "bg-secondary-green-1-light border-secondary-green-1",
-        "dashedBorderClassName": "border-secondary-green-2",
-        "linkUrl": "#books",
-        "linkTarget": "_self"
+        "description": "Leia os livros \"What is eBPF?\" e \"Learning eBPF\" da O’Reilly, de Liz Rice, ou \"BPF Performance Tools\" de Brendan Gregg para começar. Ao longo dos livros, você aprenderá o que é eBPF e por que ele é tão poderoso, e as capacidades que ele oferece."
       },
       {
-        "image": "video",
+        "card": "video",
         "title": "Assista ao vídeo",
-        "description": "Mergulhe na história do eBPF com essa palestra de John Fastabend. Começando nos \"primeiros dias\" de 2014, ela aborda os principais projetos, empresas e atores que influenciaram o cenário de redes do Linux na época e como eles possibilitaram a criação do eBPF.",
-        "cardColorClassName": "bg-secondary-red-1-light border-secondary-red-1",
-        "dashedBorderClassName": "border-secondary-red-2",
-        "linkUrl": "https://www.youtube.com/watch?v=sYxUOKi3Q00",
-        "linkTarget": "_blank"
+        "description": "Mergulhe na história do eBPF com essa palestra de John Fastabend. Começando nos \"primeiros dias\" de 2014, ela aborda os principais projetos, empresas e atores que influenciaram o cenário de redes do Linux na época e como eles possibilitaram a criação do eBPF."
       }
     ]
   },
@@ -37,38 +25,32 @@
       {
         "image": "wikipedia",
         "title": "Wikipedia",
-        "description": "Artigo da Wikipedia sobre eBPF",
-        "linkUrl": "https://en.wikipedia.org/wiki/EBPF"
+        "description": "Artigo da Wikipedia sobre eBPF"
       },
       {
         "image": "stackoverflow",
         "title": "eBPF Stackoverflow",
-        "description": "Faça perguntas e leia respostas",
-        "linkUrl": "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf"
+        "description": "Faça perguntas e leia respostas"
       },
       {
         "image": "reddit",
         "title": "Comunidade eBPF no Reddit",
-        "description": "Discuta o subsistema do kernel eBPF",
-        "linkUrl": "https://www.reddit.com/r/eBPF/"
+        "description": "Discuta o subsistema do kernel eBPF"
       },
       {
         "image": "cilium",
         "title": "BPF & XDP Reference Guide",
-        "description": "Aprenda sobre a parte interna do BPF e a programação",
-        "linkUrl": "https://cilium.readthedocs.io/en/stable/bpf/"
+        "description": "Aprenda sobre a parte interna do BPF e a programação"
       },
       {
         "image": "kernel",
         "title": "Documentação BPF",
-        "description": "Documentação BPF no Kernel Linux",
-        "linkUrl": "https://www.kernel.org/doc/html/latest/bpf/index.html"
+        "description": "Documentação BPF no Kernel Linux"
       },
       {
         "image": "gitKernel",
         "title": "BPF Design Q&A",
-        "description": "FAQ para perguntas relacionadas ao kernel eBPF",
-        "linkUrl": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst"
+        "description": "FAQ para perguntas relacionadas ao kernel eBPF"
       }
     ]
   },
@@ -99,18 +81,14 @@
   },
   "events": {
     "title": "Participe de eventos do eBPF para aprender com especialistas da indústria",
-    "linkTitle": "Mais eventos",
-    "linkUrl": "/pt-br/events/"
+    "linkTitle": "Mais eventos"
   },
   "videoGallery": {
     "title": "Vídeos introdutórios do eBPF"
   },
   "blog": {
     "title": "Saiba mais sobre o eBPF em artigos da comunidade",
-    "linkTitle": "Mais artigos",
-    "linkUrl": "/blog/"
+    "linkTitle": "Mais artigos"
   },
-  "contributors": {
-    "title": "Meet some of our community members"
-  }
+  "Meet some of our community members": "Meet some of our community members"
 }

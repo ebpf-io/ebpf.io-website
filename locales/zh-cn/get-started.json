@@ -3,31 +3,19 @@
     "title": "开始了解 eBPF",
     "items": [
       {
-        "image": "lab",
+        "card": "lab",
         "title": "动手实验",
-        "description": "通过借用 Liz Rice 报告中的 opensnoop 示例, 本实验将会教你使用 eBPF 工具, 观察其组件的加载过程, 以及可以将您自己的追踪用例添加到 eBPF 源代码中。",
-        "cardColorClassName": "bg-secondary-blue-1-light border-secondary-blue-1",
-        "dashedBorderClassName": "border-secondary-blue-2",
-        "linkUrl": "https://ebpf.io/labs/",
-        "linkTarget": "_blank"
+        "description": "通过借用 Liz Rice 报告中的 opensnoop 示例, 本实验将会教你使用 eBPF 工具, 观察其组件的加载过程, 以及可以将您自己的追踪用例添加到 eBPF 源代码中。"
       },
       {
-        "image": "book",
+        "card": "book",
         "title": "阅读书籍",
-        "description": "阅读 Liz Rice 所著的 O’Reilly 书籍 《What is eBPF?》 和 《Learning eBPF》 或者 Brendan Gregg 所著的 《BPF Performance Tools》 进行入门了解。通过这些书籍, 您将了解什么是 eBPF, 为什么它如此强大, 以及它提供的能力。",
-        "cardColorClassName": "bg-secondary-green-1-light border-secondary-green-1",
-        "dashedBorderClassName": "border-secondary-green-2",
-        "linkUrl": "#books",
-        "linkTarget": "_self"
+        "description": "阅读 Liz Rice 所著的 O’Reilly 书籍 《What is eBPF?》 和 《Learning eBPF》 或者 Brendan Gregg 所著的 《BPF Performance Tools》 进行入门了解。通过这些书籍, 您将了解什么是 eBPF, 为什么它如此强大, 以及它提供的能力。"
       },
       {
-        "image": "video",
+        "card": "video",
         "title": "观看视频",
-        "description": "跟随 John Fastabend 的演讲来深入了解 eBPF 的历史。从2014年的”早期“开始, 它介绍了当时影响 Linux 网络领域的主要项目、公司和参与者，以及它们如何促成了 eBPF 的创建。",
-        "cardColorClassName": "bg-secondary-red-1-light border-secondary-red-1",
-        "dashedBorderClassName": "border-secondary-red-2",
-        "linkUrl": "https://www.youtube.com/watch?v=sYxUOKi3Q00",
-        "linkTarget": "_blank"
+        "description": "跟随 John Fastabend 的演讲来深入了解 eBPF 的历史。从2014年的”早期“开始, 它介绍了当时影响 Linux 网络领域的主要项目、公司和参与者，以及它们如何促成了 eBPF 的创建。"
       }
     ]
   },
@@ -37,38 +25,32 @@
       {
         "image": "wikipedia",
         "title": "Wikipedia",
-        "description": "Wikipedia 中关于 eBPF 的文章",
-        "linkUrl": "https://en.wikipedia.org/wiki/EBPF"
+        "description": "Wikipedia 中关于 eBPF 的文章"
       },
       {
         "image": "stackoverflow",
         "title": "eBPF Stackoverflow",
-        "description": "提问问题，阅读回答",
-        "linkUrl": "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf"
+        "description": "提问问题，阅读回答"
       },
       {
         "image": "reddit",
         "title": "eBPF 在 Reddit 的社区",
-        "description": "讨论 eBPF 内核子系统",
-        "linkUrl": "https://www.reddit.com/r/eBPF/"
+        "description": "讨论 eBPF 内核子系统"
       },
       {
         "image": "cilium",
         "title": "BPF & XDP 参考指南",
-        "description": "学习了解 BPF 的内部原理和编程",
-        "linkUrl": "https://cilium.readthedocs.io/en/stable/bpf/"
+        "description": "学习了解 BPF 的内部原理和编程"
       },
       {
         "image": "kernel",
         "title": "BPF 文档",
-        "description": "Linux 内核文档中的 BPF 部分",
-        "linkUrl": "https://www.kernel.org/doc/html/latest/bpf/index.html"
+        "description": "Linux 内核文档中的 BPF 部分"
       },
       {
         "image": "gitKernel",
         "title": "BPF 的设计答疑",
-        "description": "eBPF 内核相关问题的 FAQ",
-        "linkUrl": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst"
+        "description": "eBPF 内核相关问题的 FAQ"
       }
     ]
   },
@@ -99,18 +81,14 @@
   },
   "events": {
     "title": "参加 eBPF 活动向行业专家了解更多信息",
-    "linkTitle": "更多活动",
-    "linkUrl": "/zh-cn/events/"
+    "linkTitle": "更多活动"
   },
   "videoGallery": {
     "title": "eBPF 入门视频"
   },
   "blog": {
     "title": "通过社区文章更多的了解 eBPF",
-    "linkTitle": "更多文章",
-    "linkUrl": "/blog/"
+    "linkTitle": "更多文章"
   },
-  "contributors": {
-    "title": "认识一些我们的社区成员"
-  }
+  "Meet some of our community members": "认识一些我们的社区成员"
 }

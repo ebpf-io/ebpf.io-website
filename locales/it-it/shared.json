@@ -6,6 +6,7 @@
   "/events?conference=eBPF%20Summit": "/it-it/events?conference=eBPF%20Summit",
   "/events?conference=eBPF%20Track%20%28LPC%29": "/it-it/events?conference=eBPF%20Track%20%28LPC%29",
   "/events?overview": "/it-it/events?overview",
+  "/event": "/it-it/events",
   "/get-started": "/it-it/get-started",
   "/get-started/#docs": "/it-it/get-started/#docs",
   "/infrastructure": "/it-it/infrastructure",

@@ -20,7 +20,7 @@ const BlogPosts = ({ items, className }) => {
           ))}
         </div>
         <div className="mt-12 flex items-center justify-center sm:mt-10">
-          <Link theme="black-primary-yellow" size="lg" to={t('blog.linkUrl')}>
+          <Link theme="black-primary-yellow" size="lg" to="/blog">
             {t('blog.linkTitle')}
           </Link>
         </div>

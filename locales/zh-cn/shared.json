@@ -6,6 +6,7 @@
   "/events?conference=eBPF%20Summit": "/zh-cn/events?conference=eBPF%20Summit",
   "/events?conference=eBPF%20Track%20%28LPC%29": "/zh-cn/events?conference=eBPF%20Track%20%28LPC%29",
   "/events?overview": "/zh-cn/events?overview",
+  "/event": "/zh-cn/events",
   "/get-started": "/zh-cn/get-started",
   "/get-started/#docs": "/zh-cn/get-started/#docs",
   "/infrastructure": "/zh-cn/infrastructure",

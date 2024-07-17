@@ -12,13 +12,32 @@ import redditSvg from './images/reddit.svg';
 import stackoverflowSvg from './images/stackoverflow.svg';
 import wikipediaSvg from './images/wikipedia.svg';
 
-const images = {
-  wikipedia: wikipediaSvg,
-  stackoverflow: stackoverflowSvg,
-  reddit: redditSvg,
-  cilium: ciliumSvg,
-  kernel: kernelSvg,
-  gitKernel: gitKernelSvg,
+const items = {
+  wikipedia: {
+    icon: wikipediaSvg,
+    linkUrl: 'https://en.wikipedia.org/wiki/EBPF',
+  },
+  stackoverflow: {
+    icon: stackoverflowSvg,
+    linkUrl: 'https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf',
+  },
+  reddit: {
+    icon: redditSvg,
+    linkUrl: 'https://www.reddit.com/r/eBPF/',
+  },
+  cilium: {
+    icon: ciliumSvg,
+    linkUrl: 'https://cilium.readthedocs.io/en/stable/bpf/',
+  },
+  kernel: {
+    icon: kernelSvg,
+    linkUrl: 'https://www.kernel.org/doc/html/latest/bpf/index.html',
+  },
+  gitKernel: {
+    icon: gitKernelSvg,
+    linkUrl:
+      'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst',
+  },
 };
 
 const Documentation = () => {
@@ -33,7 +52,7 @@ const Documentation = () => {
 
         <ul className="mt-14 grid w-full grid-cols-2 md:mt-12 sm:mt-10 sm:grid-cols-1">
           {t('documentation.items', { returnObjects: true }).map(
-            ({ title, image, linkUrl, description }, index) => (
+            ({ title, image, description }, index) => (
               <li
                 className={clsx(
                   'flex border-l border-t border-dashed border-gray-80 ',
@@ -45,14 +64,14 @@ const Documentation = () => {
               >
                 <Link
                   className="group flex w-full items-center justify-between p-10 lg:p-8 sm:px-0 sm:py-6"
-                  to={linkUrl}
+                  to={items[image].linkUrl}
                   target="_blank"
                   rel="noreferrer noopener"
                 >
                   <div className="flex max-w-full items-start md:flex-col sm:flex-row xs:flex-col">
                     <img
                       className="h-[60px] w-[60px]"
-                      src={images[image]}
+                      src={items[image].icon}
                       alt={title}
                       width={56}
                       height={56}
