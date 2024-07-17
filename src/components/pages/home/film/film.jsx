@@ -22,14 +22,14 @@ const Film = () => {
       <div className="container grid grid-cols-12 gap-5 sm:flex sm:flex-col-reverse sm:gap-10">
         <div className="col-span-6 self-center sm:col-span-full sm:w-full">
           <VideoPlayer
-            videoId={t('film.videoId')}
+            videoId="Wb_vD3XZYOA"
             isWrapperInView={isWrapperInView}
             isCurrent={isPlaing}
             setCurrentVideo={() => setIsPlaing(true)}
           />
         </div>
         <div className="col-span-6 self-center pl-14 lg:pl-9 md:pl-8 sm:col-span-full sm:self-start sm:pl-0">
-          <Label theme="blue">{t('film.label')}</Label>
+          <Label theme="blue">Premiere</Label>
           <h2 className="heading-9xl mt-3 font-semibold leading-none md:mt-2.5 sm:leading-dense">
             {t('film.title')}
           </h2>
@@ -38,7 +38,7 @@ const Film = () => {
           </p>
           <Button
             className="mt-10 px-9 tracking-wide lg:mt-8 md:mt-6"
-            to={t('film.buttonUrl')}
+            to="https://ebpfdocumentary.com/"
             theme="primary-yellow-filled"
             size="md"
             target="_blank"

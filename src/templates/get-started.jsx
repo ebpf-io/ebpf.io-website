@@ -87,12 +87,21 @@ const GetStartedPage = ({ pageContext: { events, blogPosts, contributors } }) =>
 export default GetStartedPage;
 
 export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
-  const dataLanguage = data.locales.edges.find(
-    (e) => e.node.ns === 'get-started' && e.node.language === language
-  ).node.data;
-  const t = JSON.parse(dataLanguage);
+  const t = JSON.parse(
+    data.locales.edges.find((edge) => edge.node.language === language).node.data
+  );
 
-  return <SEO pathname={pathname} title={t.meta.title} description={t.meta.description} />;
+  return (
+    <SEO
+      pathname={pathname}
+      title={t['eBPF - Introduction, Tutorials & Community Resources']}
+      description={
+        t[
+          'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+        ]
+      }
+    />
+  );
 };
 
 export const query = graphql`

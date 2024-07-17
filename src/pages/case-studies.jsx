@@ -32,6 +32,7 @@ export const Head = ({ location: { pathname }, pageContext: { language }, data }
     />
   );
 };
+
 export default CaseStudies;
 
 export const query = graphql`

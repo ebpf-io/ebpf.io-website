@@ -15,11 +15,13 @@ const Hero = () => {
       <div className="container flex flex-col items-center">
         <h1 className="heading-10xl text-center font-semibold leading-tight">{t('hero.title')}</h1>
         <div className="mt-10 grid grid-cols-2 gap-x-7 lg:mt-8 md:gap-y-4 sm:gap-x-4 [@media(max-width:414px)]:w-full [@media(max-width:414px)]:grid-cols-1">
-          <Button size="md" theme="black-filled" to={t('hero.blackButtonUrl')}>
-            {t('hero.blackButtonTitle')}
+          <Button size="md" theme="black-filled" to={t('/applications')}>
+            {t('Project Landscape')}
           </Button>
           <Button size="md" theme="primary-yellow-filled" to={t('hero.yellowButtonUrl')}>
-            {t('hero.yellowButtonTitle')}
+            {t('What is eBPF?').includes('¿')
+              ? t('What is eBPF?')
+              : t('What is eBPF?').replace(/\?/g, '')}
           </Button>
         </div>
         <img

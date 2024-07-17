@@ -8,11 +8,11 @@ import FlexibilityIcon from './images/flexibility.inline.svg';
 import PerformanceIcon from './images/performance.inline.svg';
 import SecurityIcon from './images/security.inline.svg';
 
-const icons = {
-  performance: PerformanceIcon,
-  security: SecurityIcon,
-  flexibility: FlexibilityIcon,
-};
+const icons = [PerformanceIcon, SecurityIcon, FlexibilityIcon];
+//   performance: PerformanceIcon,
+//   security: SecurityIcon,
+//   flexibility: FlexibilityIcon,
+// };
 
 const WhyEbpf = () => {
   const { t } = useTranslation();
@@ -36,42 +36,44 @@ const WhyEbpf = () => {
               className="px-7 lg:px-6 md:hidden"
               theme="primary-yellow-filled"
               size="md"
-              to={t('whyEbpf.linkUrl')}
+              to={t('/what-is-ebpf')}
             >
-              {t('whyEbpf.linkTitle')}
+              {t('What is eBPF?').includes('¿')
+                ? t('What is eBPF?')
+                : t('What is eBPF?').replace(/\?/g, '')}
             </Button>
           </div>
           <ul className="grid grid-cols-3 md:mt-9 sm:mt-7 sm:grid-cols-1">
-            {t('whyEbpf.items', { returnObjects: true }).map(
-              ({ title, description, icon }, index) => {
-                const Icon = icons[icon];
+            {t('whyEbpf.items', { returnObjects: true }).map(({ title, description }, index) => {
+              const Icon = icons[index];
 
-                return (
-                  <li
-                    className={clsx(
-                      'flex w-full max-w-[304px] flex-col border-l border-dashed border-gray-80 border-opacity-30 px-9 lg:px-8',
-                      'md:items-center md:px-5 md:first:border-l-0',
-                      'sm:max-w-[500px] sm:items-center sm:border-l-0 sm:border-t sm:px-0 sm:py-7 sm:text-center sm:first:border-t-0 sm:first:pt-0 sm:last:pb-0'
-                    )}
-                    key={index}
-                  >
-                    <Icon className="h-12 w-12" />
-                    <h3 className="mt-5 font-sans text-3xl font-semibold leading-snug lg:mt-4 lg:text-2xl">
-                      {title}
-                    </h3>
-                    <p className="mt-2.5 text-lg lg:text-base md:text-center">{description}</p>
-                  </li>
-                );
-              }
-            )}
+              return (
+                <li
+                  className={clsx(
+                    'flex w-full max-w-[304px] flex-col border-l border-dashed border-gray-80 border-opacity-30 px-9 lg:px-8',
+                    'md:items-center md:px-5 md:first:border-l-0',
+                    'sm:max-w-[500px] sm:items-center sm:border-l-0 sm:border-t sm:px-0 sm:py-7 sm:text-center sm:first:border-t-0 sm:first:pt-0 sm:last:pb-0'
+                  )}
+                  key={index}
+                >
+                  <Icon className="h-12 w-12" />
+                  <h3 className="mt-5 font-sans text-3xl font-semibold leading-snug lg:mt-4 lg:text-2xl">
+                    {title}
+                  </h3>
+                  <p className="mt-2.5 text-lg lg:text-base md:text-center">{description}</p>
+                </li>
+              );
+            })}
           </ul>
           <Button
             className="hidden px-7 lg:px-6 md:mt-10 md:inline-flex sm:mt-8"
             theme="primary-yellow-filled"
             size="md"
-            to={t('whyEbpf.linkUrl')}
+            to={t('/what-is-ebpf')}
           >
-            {t('whyEbpf.linkTitle')}
+            {t('What is eBPF?').includes('¿')
+              ? t('What is eBPF?')
+              : t('What is eBPF?').replace(/\?/g, '')}
           </Button>
         </div>
       </div>

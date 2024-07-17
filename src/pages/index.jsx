@@ -69,7 +69,7 @@ const HomePage = () => {
       <Film />
       <Testimonials />
       <Features />
-      <VideoGallery title={t('videoGallery.title')} items={videoItems} />
+      <VideoGallery title={t('eBPF Community Talks')} items={videoItems} />
     </Layout>
   );
 };

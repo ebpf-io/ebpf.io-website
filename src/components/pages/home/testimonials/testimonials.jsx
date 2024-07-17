@@ -28,11 +28,26 @@ const animationProps = {
 };
 
 const logos = {
-  azure: azureLogo,
-  google: googleLogo,
-  isovalent: isovalentLogo,
-  meta: metaLogo,
-  netflix: netflixLogo,
+  'Microsoft Azure': {
+    logo: azureLogo,
+    width: 134,
+  },
+  Google: {
+    logo: googleLogo,
+    width: 104,
+  },
+  Isovalent: {
+    logo: isovalentLogo,
+    width: 148,
+  },
+  Meta: {
+    logo: metaLogo,
+    width: 120,
+  },
+  Netflix: {
+    logo: netflixLogo,
+    width: 109,
+  },
 };
 
 const Testimonials = () => {
@@ -68,8 +83,11 @@ const Testimonials = () => {
           </AnimatePresence>
         </LazyMotion>
         <ul className="scrollbar-hidden relative mt-24 flex justify-between border-b border-dashed border-gray-80 lg:mt-20 md:mt-16 md:overflow-x-auto sm:-mx-4 sm:mt-12 sm:border-b-0 sm:px-4">
-          {t('testimonials.items', { returnObjects: true }).map(
-            ({ logo, logoWidth, company }, index) => (
+          {t('testimonials.items', { returnObjects: true }).map(({ company }, index) => {
+            const { logo, width } = logos[company];
+            console.log(logo);
+
+            return (
               <li
                 className="flex shrink-0 border-dashed border-gray-80 sm:grow sm:border-b"
                 key={index}
@@ -89,8 +107,8 @@ const Testimonials = () => {
                         ? 'opacity-100'
                         : 'opacity-0 transition-opacity duration-200 group-hover:opacity-100'
                     )}
-                    src={logos[logo]}
-                    width={logoWidth}
+                    src={logo}
+                    width={width}
                     height={48}
                     alt={company}
                     loading="lazy"
@@ -104,18 +122,18 @@ const Testimonials = () => {
                         : 'opacity-100 transition-opacity duration-200 group-hover:opacity-0'
                     )}
                     style={{
-                      maskImage: `url('${logos[logo]}')`,
+                      maskImage: `url('${logo}')`,
                       maskSize: 'contain',
                       maskRepeat: 'no-repeat',
-                      WebkitMaskImage: `url('${logos[logo]}')`,
+                      WebkitMaskImage: `url('${logo}')`,
                       WebkitMaskRepeat: 'no-repeat',
                       WebkitMaskSize: 'contain',
                     }}
                   />
                 </button>
               </li>
-            )
-          )}
+            );
+          })}
         </ul>
       </div>
     </section>
