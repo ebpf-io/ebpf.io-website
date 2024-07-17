@@ -1,0 +1,21 @@
+{
+  "title": "Perguntas frequentes",
+  "items": [
+    {
+      "question": "Esses projetos são da Fundação eBPF?",
+      "answer": "<ul><li>Esta página lista vários projetos de código aberto que usam eBPF como tecnologia central subjacente. Esses projetos não estão todos sob a <a href=\"https://www.ebpf.foundation/\">Fundação eBPF</a>, mas estão listados aqui como uma pesquisa do panorama dos projetos eBPF hoje.</li></ul>"
+    },
+    {
+      "question": "Adicione seu projeto",
+      "answer": "<ol><li>Certifique-se de que o projeto atenda aos requisitos a serem listados. Veja abaixo.</li><li>Abra uma <a href=\"https://github.com/ebpf-io/ebpf.io\" target=\"_blank\" rel=\"noopener noreferrer\">solicitação pull</a> e forneça as informações necessárias. Use um dos projetos já listados como modelo. A ordenação dos aplicativos é baseada no número de estrelas do Github (maior para menor), atualizado trimestralmente.</li><li>A solicitação pull será revisada pela comunidade e mesclada por um dos mantenedores. Se você tiver alguma dúvida, fique à vontade para perguntar no <a href=\"https://ebpf.io/slack\">Slack</a>.</li></ol>"
+    },
+    {
+      "question": "Você está mantendo um projeto listado?",
+      "answer": "<ul><li>Se você mantém um dos projetos listados e gostaria de ajustar o conteúdo. Entre em contacto no <a href=\"https://ebpf.io/slack\">Slack</a> ou abra uma solicitação pull diretamente.</li></ul>"
+    },
+    {
+      "question": "Requisitos para um projeto ser listado",
+      "answer": "<p>Os projetos podem ser listados nesta página como \"Principais\" ou \"Emergentes\". Os requisitos para ser listado como \"Emergente\" são:</p><ul><li>O projeto deve ser de código aberto. Todo o código-fonte deve ser licenciado sob uma licença de código aberto. Qualquer documentação deve ser licenciada sob uma licença aberta.</li><li>O projeto deve usar o eBPF como tecnologia central subjacente (em outras palavras, um projeto perderia o seu propósito se as partes do eBPF fossem removidas) ou ajudar a acelerar a adoção do eBPF na produção.</li><li>O projeto deve ser mantido ativamente.</li><li>O projeto deve estar aberto à colaboração e ter um modelo de governança seguindo as melhores práticas de código aberto.</li></ul><p>Para ser listado como um projeto “Grande”, um projeto deve atender a todos os requisitos acima, mais:</p><ul><li>O projeto deve ter mais de 50 colaboradores.</li><li>O projeto deve ser utilizado em ambientes de produção com uma quantidade significativa de usuários. Como essas informações podem não ser facilmente descobertas a partir de um link para o projeto, tais informações devem ser incluídas na descrição da solicitação pull.</li></ul>"
+    }
+  ]
+}

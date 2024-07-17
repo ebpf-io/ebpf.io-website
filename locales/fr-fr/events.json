@@ -1,7 +1,3 @@
 {
-  "meta": {
-    "title": "eBPF - Introduction, tutoriels et ressources communautaires",
-    "description": "eBPF est une technologie révolutionnaire qui peut exécuter des programmes en bac à sable dans le noyau Linux sans modifier le code source du noyau ni charger un module du noyau."
-  },
   "title": "Conférences et Meetups eBPF"
 }

@@ -1,11 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import clsx from 'clsx';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { useTranslation, Trans } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import Burger from 'components/shared/burger';
 import Link from 'components/shared/link';
+import headerMenu from 'data/shared/header-menu';
 import ChevronIcon from 'icons/chevron.inline.svg';
 import logo from 'images/logo-black.svg';
 
@@ -39,7 +40,7 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder, pageUr
           </Link>
           <div className="flex items-center justify-end">
             <ul className="flex space-x-8 lg:space-x-7 md:hidden">
-              {t('header:menu', { returnObjects: true }).map(({ title, to, items }, index) => {
+              {headerMenu.map(({ title, to, items }, index) => {
                 const Tag = to ? Link : 'button';
                 const withChildItems = items?.length > 0;
 
@@ -47,9 +48,11 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder, pageUr
                   <li className={clsx(withChildItems && 'group relative')} key={index}>
                     <Tag
                       className="group inline-flex items-center py-5 text-[15px] font-medium leading-none transition-colors duration-200 hover:text-gray-40 lg:text-sm"
-                      to={to}
+                      to={t(to)}
                     >
-                      <span>{title}</span>
+                      <span>
+                        <Trans>{title}</Trans>
+                      </span>
                       {withChildItems && <ChevronIcon className="ml-1.5 mt-1 h-auto w-2.5" />}
                     </Tag>
                     {withChildItems && (
@@ -66,15 +69,15 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder, pageUr
                               <Link
                                 className="flex whitespace-nowrap px-5 py-2.5 text-[15px] font-medium leading-none lg:text-sm"
                                 theme="black"
-                                to={to}
+                                to={t(to)}
                                 target={target || null}
                                 rel={target ? 'noopener noreferrer' : null}
                               >
-                                {title}
+                                <Trans>{title}</Trans>
                               </Link>
                             ) : (
                               <h3 className="flex whitespace-pre px-5 py-2.5 text-[15px] font-medium leading-none lg:text-sm">
-                                {title}
+                                <Trans>{title}</Trans>
                               </h3>
                             )}
                             {items?.length > 0 && (
@@ -84,11 +87,11 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder, pageUr
                                     <Link
                                       className="flex px-5 py-2.5 text-[15px] leading-none lg:text-sm"
                                       theme="black"
-                                      to={to}
+                                      to={t(to)}
                                       target={target || null}
                                       rel={target ? 'noopener noreferrer' : null}
                                     >
-                                      {title}
+                                      <Trans>{title}</Trans>
                                     </Link>
                                   </li>
                                 ))}

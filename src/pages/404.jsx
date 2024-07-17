@@ -48,7 +48,7 @@ export const Head = ({ location: { pathname } }) => (
 
 export const query = graphql`
   query {
-    locales: allLocale {
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
       edges {
         node {
           ns

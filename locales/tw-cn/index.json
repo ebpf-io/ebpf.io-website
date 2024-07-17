@@ -1,8 +1,4 @@
 {
-  "meta": {
-    "title": "eBPF - 介紹、教學與社群資源",
-    "description": "eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。"
-  },
   "hero": {
     "title": "對核心進行動態編程，以實現高效的網路、可觀察性、追蹤和安全性。",
     "blackButtonTitle": "項目概覽",
@@ -19,8 +15,7 @@
   },
   "caseStudies": {
     "title": "每個行業的組織在生產中都使用 eBPF",
-    "linkText": "更多案例研究",
-    "linkUrl": "/tw-cn/case-studies/"
+    "linkText": "更多案例研究"
   },
   "whyEbpf": {
     "title": "為什麼使用eBPF？",

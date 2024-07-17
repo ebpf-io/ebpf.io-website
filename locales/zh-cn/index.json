@@ -1,8 +1,4 @@
 {
-  "meta": {
-    "title": "eBPF - 介绍, 教程和社区资源",
-    "description": "eBPF是一项革命性的技术, 它可以在 Linux 内核中运行沙盒程序, 而无需通过更改内核源代码或加载内核模块的方式来实现。"
-  },
   "hero": {
     "title": "动态地编程内核以实现高效的网络、可观测性、追踪和安全性。",
     "blackButtonTitle": "项目概览",
@@ -19,8 +15,7 @@
   },
   "caseStudies": {
     "title": "在各行各业的生产环境中使用 eBPF 的组织",
-    "linkText": "更多案例研究",
-    "linkUrl": "/zh-cn/case-studies/"
+    "linkText": "更多案例研究"
   },
   "whyEbpf": {
     "title": "为什么使用 eBPF ?",

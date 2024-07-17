@@ -47,7 +47,7 @@ const Testimonials = () => {
       <div className="container">
         <LazyMotion features={domAnimation}>
           <AnimatePresence initial={false} mode="wait">
-            {t('index:testimonials.items', { returnObjects: true }).map(
+            {t('testimonials.items', { returnObjects: true }).map(
               ({ review, author, role }, index) =>
                 index === activeIndex ? (
                   <m.figure
@@ -68,7 +68,7 @@ const Testimonials = () => {
           </AnimatePresence>
         </LazyMotion>
         <ul className="scrollbar-hidden relative mt-24 flex justify-between border-b border-dashed border-gray-80 lg:mt-20 md:mt-16 md:overflow-x-auto sm:-mx-4 sm:mt-12 sm:border-b-0 sm:px-4">
-          {t('index:testimonials.items', { returnObjects: true }).map(
+          {t('testimonials.items', { returnObjects: true }).map(
             ({ logo, logoWidth, company }, index) => (
               <li
                 className="flex shrink-0 border-dashed border-gray-80 sm:grow sm:border-b"

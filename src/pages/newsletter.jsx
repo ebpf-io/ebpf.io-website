@@ -6,7 +6,6 @@ import Hero from 'components/pages/newsletter/hero';
 import PreviousReleases from 'components/pages/newsletter/previous-releases';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import SEO_DATA from 'data/shared/seo-data';
 
 const Newsletter = () => (
   <Layout>
@@ -18,11 +17,16 @@ const Newsletter = () => (
 
 export default Newsletter;
 
-export const Head = () => <SEO {...SEO_DATA.newsletter} />;
+export const Head = () => (
+  <SEO
+    title="Subscribe to bi-weekly eCHO News - eBPF"
+    description="Keep up on the latest news and information from the eBPF and Cilium communities"
+  />
+);
 
 export const query = graphql`
   query {
-    locales: allLocale {
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
       edges {
         node {
           ns

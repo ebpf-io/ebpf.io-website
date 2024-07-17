@@ -1,0 +1,116 @@
+{
+  "hero": {
+    "title": "Empieza con eBPF",
+    "items": [
+      {
+        "image": "lab",
+        "title": "Explora el laboratorio",
+        "description": "Basado en el ejemplo opensnoop del informe de Liz Rice, este laboratorio te enseñará a manejar la herramienta eBPF, a observar cómo carga sus componentes e incluso a añadir tu propia trazabilidad al código fuente del documento eBPF original.",
+        "cardColorClassName": "bg-secondary-blue-1-light border-secondary-blue-1",
+        "dashedBorderClassName": "border-secondary-blue-2",
+        "linkUrl": "https://ebpf.io/labs/",
+        "linkTarget": "_blank"
+      },
+      {
+        "image": "book",
+        "title": "Lee los libros",
+        "description": "Si estás empezando en el mundo de eBPF, te aconsejamos leer los libros \"What is eBPF?\" y \"Learning eBPF\" de O`Reilly escritos por Liz Rice, o \"BPF Performance Tools\" de Brendan Gregg. Estos libros son un excelente punto de partida. A lo largo de su lectura, descubrirás qué es eBPF y por qué es tan poderoso, además de explorar las capacidades que ofrece.",
+        "cardColorClassName": "bg-secondary-green-1-light border-secondary-green-1",
+        "dashedBorderClassName": "border-secondary-green-2",
+        "linkUrl": "#books",
+        "linkTarget": "_self"
+      },
+      {
+        "image": "video",
+        "title": "Mira los videos",
+        "description": "Descubre la historia de eBPF con esta charla de John Fastabend. A principios de 2014, abordaron los principales proyectos, empresas y actores que influyeron en el panorama de la red de Linux en ese momento y cómo habilitaron la creación de eBPF.",
+        "cardColorClassName": "bg-secondary-red-1-light border-secondary-red-1",
+        "dashedBorderClassName": "border-secondary-red-2",
+        "linkUrl": "https://www.youtube.com/watch?v=sYxUOKi3Q00",
+        "linkTarget": "_blank"
+      }
+    ]
+  },
+  "documentation": {
+    "title": "Lee la Documentación para aprender más sobre eBPF",
+    "items": [
+      {
+        "image": "wikipedia",
+        "title": "Wikipedia",
+        "description": "Artículo de Wikipedia sobre eBPF",
+        "linkUrl": "https://en.wikipedia.org/wiki/EBPF"
+      },
+      {
+        "image": "stackoverflow",
+        "title": "Stack Overflow de eBPF",
+        "description": "Coloca tu pregunta y aprende de las respuestas",
+        "linkUrl": "https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf"
+      },
+      {
+        "image": "reddit",
+        "title": "Comunidad de eBPF en Reddit",
+        "description": "Discute acerca del subsistema eBPF del kernel",
+        "linkUrl": "https://www.reddit.com/r/eBPF/"
+      },
+      {
+        "image": "cilium",
+        "title": "Guía de Referencia de BPF & XDP",
+        "description": "Aprende sobre los aspectos internos y programación de BPF",
+        "linkUrl": "https://cilium.readthedocs.io/en/stable/bpf/"
+      },
+      {
+        "image": "kernel",
+        "title": "Documentación de BPF",
+        "description": "Documentación de BPF en el kernel de Linux",
+        "linkUrl": "https://www.kernel.org/doc/html/latest/bpf/index.html"
+      },
+      {
+        "image": "gitKernel",
+        "title": "Preguntas y Respuestas de Diseño de BPF",
+        "description": "Preguntas frecuentes sobre eBPF relacionadas con el kernel",
+        "linkUrl": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst"
+      }
+    ]
+  },
+  "books": {
+    "title": "Explora libros sobre eBPF de expertos de la industria",
+    "linkTitle": "Aprende más"
+  },
+  "tutorials": {
+    "title": "Profundiza en la tecnología eBPF con tutoriales de expertos de la industria",
+    "linkTitle": "Más tutoriales",
+    "items": [
+      {
+        "title": "Tutoriales de Rastreo con eBPF",
+        "description": "Aprende a usar eBPF para rastreo, desde ejecutar herramientas bcc hasta desarrollar con bpftrace y bcc.",
+        "linkUrl": "http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html"
+      },
+      {
+        "title": "Tutoriales sobre XDP",
+        "description": "Aprende los pasos básicos necesarios para escribir programas para XDP, desde saber la definición hasta adjuntar varios programas a una interfaz.",
+        "linkUrl": "https://github.com/xdp-project/xdp-tutorial"
+      },
+      {
+        "title": "Explorador de Compiladores",
+        "description": "Soporte BPF para ejecutar el compilador de forma interactiva en tu navegador web y explorar el ensamblado.",
+        "linkUrl": "https://godbolt.org/"
+      }
+    ]
+  },
+  "events": {
+    "title": "Asista a los eventos de eBPF para aprender de los expertos de la industria",
+    "linkTitle": "Más eventos",
+    "linkUrl": "/es/events/"
+  },
+  "videoGallery": {
+    "title": "Videos introductorios que deberás ver sobre eBPF"
+  },
+  "blog": {
+    "title": "Obtenga más información sobre eBPF en artículos de la comunidad",
+    "linkTitle": "Más artículos",
+    "linkUrl": "/blog/"
+  },
+  "contributors": {
+    "title": "Conozca a algunos de los miembros de nuestra comunidad"
+  }
+}

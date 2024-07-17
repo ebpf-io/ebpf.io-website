@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "eBPF Core Infrastructure Landscape",
+    "description": "A directory of eBPF-based core infrastructure",
+    "keywords": "ebpf, bpf, landscape, directory, open source"
+  },
+  "Major Infrastructure": "Major Infrastructure",
+  "Emerging": "Emerging",
+  "eBPF Auxiliary Libraries": "eBPF Auxiliary Libraries",
+  "eBPF Libraries": "eBPF Libraries"
+}

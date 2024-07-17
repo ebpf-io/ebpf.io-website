@@ -4,12 +4,8 @@
     "description": "Jifunze jinsi eBPF inavyotumiwa katika miradi tofauti.",
     "keywords": "ebpf, bpf, kuchangia, kuanza, jumuiya"
   },
-  "title": "Uchambuzi wa Kesi za eBPF",
-  "description": {
-    "beforeLink": "Hapa kuna baadhi ya mashirika yanayotumia eBPF kwa uzalishaji. Ikiwa unatumia eBPF na haukokwenye orodha hii,",
-    "insideLink": "tafadhali wasilisha ombi la uchukuzi",
-    "afterLink": "."
-  },
+  "eBPF Case Studies": "Uchambuzi wa Kesi za eBPF",
+  "Here are some of the organizations that are using eBPF in production. If you’re using eBPF and aren’t on this list, <2>please submit a pull request</2>.": "Hapa kuna baadhi ya mashirika yanayotumia eBPF kwa uzalishaji. Ikiwa unatumia eBPF na haukokwenye orodha hii, <2>tafadhali wasilisha ombi la uchukuzi</2>.",
   "items": [
     {
       "title": "Google",

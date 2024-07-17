@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import clsx from 'clsx';
 import { graphql } from 'gatsby';
 import { getSrc } from 'gatsby-plugin-image';
@@ -90,15 +89,7 @@ const BlogPost = ({
           {author && postAuthors[author]?.bio && (
             <PostAuthor className="col-span-8 md:col-span-full" author={author} />
           )}
-          <SubscriptionForm
-            className="col-span-full mt-28 lg:mt-24 md:mt-20 sm:mt-16"
-            title="Subscribe"
-            afterTitle="to bi-weekly eCHO News"
-            description="Keep up on the latest news and information from the eBPF and Cilium"
-            placeholder="Email address..."
-            buttonTitle="Subscribe"
-            size="md"
-          />
+          <SubscriptionForm className="col-span-full mt-28 lg:mt-24 md:mt-20 sm:mt-16" size="md" />
         </div>
       </article>
     </Layout>
@@ -141,7 +132,7 @@ export const query = graphql`
       tableOfContents(maxDepth: 3)
     }
 
-    locales: allLocale {
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
       edges {
         node {
           ns

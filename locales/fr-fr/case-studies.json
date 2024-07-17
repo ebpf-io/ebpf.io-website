@@ -4,13 +4,8 @@
     "description": "Découvrez comment eBPF est utilisé à travers différents projets.",
     "keywords": "ebpf, bpf, contribuer, démarrer, communauté"
   },
-
-  "title": "Études de cas eBPF",
-  "description": {
-    "beforeLink": "Voici quelques-unes des organisations qui utilisent eBPF en production. Si vous utilisez eBPF et que vous ne figurez pas sur cette liste,",
-    "insideLink": "veuillez soumettre une pull request",
-    "afterLink": "."
-  },
+  "eBPF Case Studies": "Études de cas eBPF",
+  "Here are some of the organizations that are using eBPF in production. If you’re using eBPF and aren’t on this list, <2>please submit a pull request</2>.": "Voici quelques-unes des organisations qui utilisent eBPF en production. Si vous utilisez eBPF et que vous ne figurez pas sur cette liste, <2>veuillez soumettre une pull request</2>.",
   "items": [
     {
       "title": "Google",

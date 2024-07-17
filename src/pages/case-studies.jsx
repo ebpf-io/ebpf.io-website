@@ -5,18 +5,9 @@ import React from 'react';
 import Hero from 'components/pages/case-studies/hero';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
+import createPageUrl from 'utils/create-page-url';
 
-const pageUrls = {
-  en: '/case-studies/',
-  'fr-fr': '/fr-fr/case-studies/',
-  pt: '/pt/case-studies/',
-  'pt-br': '/pt-br/case-studies/',
-  'it-it': '/it-it/case-studies/',
-  es: '/es/case-studies/',
-  'zh-cn': '/zh-cn/case-studies/',
-  sw: '/sw/case-studies/',
-  'tw-cn': '/tw-cn/case-studies/',
-};
+const pageUrls = createPageUrl('case-studies');
 
 const CaseStudies = () => (
   <Layout pageUrls={pageUrls}>
@@ -25,19 +16,27 @@ const CaseStudies = () => (
 );
 
 export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
-  const dataLanguage = data.locales.edges.find(
-    (e) => e.node.ns === 'case-studies' && e.node.language === language
-  ).node.data;
-  const t = JSON.parse(dataLanguage);
+  const t = JSON.parse(
+    data.locales.edges.find((edge) => edge.node.language === language).node.data
+  );
 
-  return <SEO pathname={pathname} title={t.meta.title} description={t.meta.description} />;
+  return (
+    <SEO
+      pathname={pathname}
+      title={t['eBPF - Introduction, Tutorials & Community Resources']}
+      description={
+        t[
+          'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+        ]
+      }
+    />
+  );
 };
-
 export default CaseStudies;
 
 export const query = graphql`
   query {
-    locales: allLocale {
+    locales: allLocale(filter: { ns: { in: ["shared", "case-studies"] } }) {
       edges {
         node {
           ns

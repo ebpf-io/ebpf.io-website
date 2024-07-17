@@ -1,7 +1,3 @@
 {
-  "meta": {
-    "title": "eBPF - Utangulizi, Mafunzo, na Rasilmali za Jumuiya",
-    "description": "eBPF ni teknolojia ya mapinduzi inayoweza kuendesha programu zilizoko kwenye sanduku katika kernel ya Linux bila kubadilisha msimbo wa kernel au kupakia moduli ya kernel."
-  },
   "title": "Hifadhi ya Taarifa kuhusu eBPF"
 }

@@ -1,7 +1,3 @@
 {
-  "meta": {
-    "title": "eBPF - Introducción, tutoriales y recursos comunitarios",
-    "description": "eBPF es una tecnología revolucionaria que puede ejecutar programas sandboxed en el kernel de Linux sin cambiar el código fuente del kernel o cargar un módulo del kernel."
-  },
   "title": "Conferencias, eventos y reuniones sobre eBPF"
 }

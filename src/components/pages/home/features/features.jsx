@@ -21,10 +21,10 @@ const Features = () => {
     <section className="features safe-paddings mt-32 lg:mt-24 md:mt-20">
       <div className="container">
         <h2 className="heading-8xl text-center font-semibold leading-dense">
-          {t('index:features.title')}
+          {t('features.title')}
         </h2>
         <ul className="mt-14 grid grid-cols-2 gap-8 lg:mt-12 lg:gap-7 md:mt-10 md:grid-cols-1 md:gap-6">
-          {t('index:features.items', { returnObjects: true }).map(
+          {t('features.items', { returnObjects: true }).map(
             ({ image, title, description, bgClassName }, index) => (
               <li className="flex rounded-lg sm:flex-col" key={index}>
                 <div

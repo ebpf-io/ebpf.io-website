@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { graphql, navigate } from 'gatsby';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import Categories from 'components/pages/labs/categories';
@@ -9,34 +10,17 @@ import Pagination from 'components/shared/pagination';
 import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
 import { LABS_BASE_PATH } from 'constants/labs';
-import data from 'data/pages/labs';
-import SEO_DATA from 'data/shared/seo-data';
+import createPageUrl from 'utils/create-page-url';
 
-const pageUrls = {
-  en: '/labs/',
-  'fr-fr': '/fr-fr/labs/',
-  pt: '/pt/labs/',
-  'pt-br': '/pt-br/labs/',
-  'it-it': '/it-it/labs/',
-  es: '/es/labs/',
-  'zh-cn': '/zh-cn/labs/',
-  sw: '/sw/labs/',
-  'tw-cn': '/tw-cn/labs/',
-};
+const pageUrls = createPageUrl('labs');
 
 const LabsPage = ({
-  pageContext: {
-    labsCategories,
-    pageCount,
-    currentPageIndex,
-    categorySlug,
-    currentCategory,
-    language,
-  },
+  pageContext: { labsCategories, pageCount, currentPageIndex, categorySlug, currentCategory },
   data: {
     allMdx: { nodes: allLabs },
   },
 }) => {
+  const { t } = useTranslation();
   const labs = allLabs.map((lab) => ({ ...lab.frontmatter }));
   const handlePageChange = ({ selected }) => {
     let navigatePath = '';
@@ -49,11 +33,11 @@ const LabsPage = ({
   };
 
   return (
-    <Layout lang={language} pageUrls={pageUrls}>
+    <Layout pageUrls={pageUrls}>
       <section className="safe-paddings">
         <div className="container flex flex-col pt-20 lg:pt-16">
           <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
-            {data[language].title}
+            {t('title')}
           </h1>
         </div>
       </section>
@@ -74,12 +58,7 @@ const LabsPage = ({
         />
       )}
       <div className="container-md">
-        <SubscriptionForm
-          className="mb-24 lg:mb-20"
-          {...data[language].subscriptionForm}
-          size="md"
-          isVertical
-        />
+        <SubscriptionForm className="mb-24 lg:mb-20" size="md" isVertical />
       </div>
     </Layout>
   );
@@ -87,9 +66,14 @@ const LabsPage = ({
 
 export default LabsPage;
 
-export const Head = ({ location: { pathname }, pageContext: { language } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.home[language]} />
-);
+export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
+  const dataLanguage = data.locales.edges.find(
+    (e) => e.node.ns === 'labs' && e.node.language === language
+  ).node.data;
+  const t = JSON.parse(dataLanguage);
+
+  return <SEO pathname={pathname} title={t.meta.title} description={t.meta.description} />;
+};
 
 export const query = graphql`
   query LabsPageQuery(
@@ -127,7 +111,7 @@ export const query = graphql`
       }
     }
 
-    locales: allLocale {
+    locales: allLocale(filter: { ns: { in: ["shared", "labs"] } }) {
       edges {
         node {
           ns

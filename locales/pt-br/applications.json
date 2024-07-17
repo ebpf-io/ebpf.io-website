@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "Landscape de Aplicações do eBPF",
+    "description": "Um diretório de aplicações de open source baseadas em eBPF",
+    "keywords": "ebpf, bpf, landscape, diretório, código aberto, open source"
+  },
+  "Major Infrastructure": "Aplicações Principais",
+  "Emerging": "Emergentes"
+}

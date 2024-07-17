@@ -19,14 +19,14 @@ import { languages as languageList } from '../../../../../config/languages';
 
 const langIcons = {
   en: EnIcon,
+  es: EsIcon,
   'fr-fr': FrFrIcon,
+  'it-it': ItItIcon,
   pt: PtIcon,
   'pt-br': PtBrIcon,
-  'it-it': ItItIcon,
-  es: EsIcon,
-  'zh-cn': ZhCNIcon,
   sw: SwIcon,
   'tw-cn': ZhCNIcon,
+  'zh-cn': ZhCNIcon,
 };
 
 const LanguageSelect = ({ pageUrls }) => {

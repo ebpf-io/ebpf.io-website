@@ -1,8 +1,4 @@
 {
-  "meta": {
-    "title": "eBPF - Introduction, tutoriels et ressources communautaires",
-    "description": "eBPF est une technologie révolutionnaire qui peut exécuter des programmes en bac à sable dans le noyau Linux sans modifier le code source du noyau ni charger un module du noyau."
-  },
   "hero": {
     "title": "Programmation dynamique du noyau pour un trafic réseau, une observabilité, une trace et une sécurité efficaces",
     "blackButtonTitle": "Paysage du projet",
@@ -19,8 +15,7 @@
   },
   "caseStudies": {
     "title": "Des entreprises de tous type d’industries utilisent eBPF en production",
-    "linkText": "Plus d’études de cas",
-    "linkUrl": "/fr-fr/case-studies/"
+    "linkText": "Plus d’études de cas"
   },
   "whyEbpf": {
     "title": "Pourquoi eBPF?",

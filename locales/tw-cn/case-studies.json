@@ -4,12 +4,8 @@
     "description": "了解 eBPF 如何在不同項目中的應用。",
     "keywords": "ebpf, bpf, 貢獻, 開始, 社群"
   },
-  "title": "eBPF案例研究",
-  "description": {
-    "beforeLink": "以下是一些在生產環境中使用 eBPF 的組織。 如果您正在使用 eBPF 而不在此清單中，請提交一個",
-    "insideLink": "pull request",
-    "afterLink": "給我們，謝謝。"
-  },
+  "eBPF Case Studies": "eBPF案例研究",
+  "Here are some of the organizations that are using eBPF in production. If you’re using eBPF and aren’t on this list, <2>please submit a pull request</2>.": "以下是一些在生產環境中使用 eBPF 的組織。 如果您正在使用 eBPF 而不在此清單中，請提交一個 <2>pull request</2> 給我們，謝謝。",
   "items": [
     {
       "title": "Google",
