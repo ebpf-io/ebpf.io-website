@@ -1,5 +1,5 @@
 ---
-title: eBPF Documentation
+title: eBPF 공식 문서
 ogTitle: What is eBPF? An Introduction and Deep Dive into the eBPF Technology
 ogDescription: A detailed step by step introduction to the eBPF technology with lots of references for further reading.
 ogKeywords: ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, documentation
