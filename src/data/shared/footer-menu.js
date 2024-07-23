@@ -10,6 +10,7 @@ const footerMenu = [
       'zh-cn': '开始',
       sw: 'Anza',
       'tw-cn': '開始',
+      'ko-kr': '시작하기',
     },
     items: [
       {
@@ -23,6 +24,7 @@ const footerMenu = [
           'zh-cn': '什么是 eBPF ?',
           sw: 'Ni nini eBPF?',
           'tw-cn': '什麼是eBPF',
+          'ko-kr': 'eBPF가 무엇인가요?',
         },
         to: {
           en: '/what-is-ebpf',
@@ -34,6 +36,7 @@ const footerMenu = [
           'zh-cn': '/zh-cn/what-is-ebpf',
           sw: '/sw/what-is-ebpf',
           'tw-cn': '/tw-cn/what-is-ebpf',
+          'ko-kr': '/ko-kr/what-is-ebpf',
         },
       },
       {
@@ -47,6 +50,7 @@ const footerMenu = [
           'zh-cn': 'eBPF 技术演讲',
           sw: 'eBPF Tech Talks',
           'tw-cn': 'eBPF 技術演講',
+          'ko-kr': 'eBPF Tech Talks',
         },
         to: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-lJRPROcSadWaI_5sZ_kfpi',
         target: '_blank',
@@ -62,6 +66,7 @@ const footerMenu = [
           'zh-cn': '案例研究',
           sw: 'Uchambuzi wa Kesi',
           'tw-cn': '案例研究',
+          'ko-kr': '사용 사례',
         },
         to: {
           en: '/case-studies',
@@ -73,6 +78,7 @@ const footerMenu = [
           'zh-cn': '/zh-cn/case-studies',
           sw: '/sw/case-studies',
           'tw-cn': '/tw-cn/case-studies',
+          'ko-kr': '/ko-kr/case-studies',
         },
       },
       {
@@ -86,6 +92,7 @@ const footerMenu = [
           'zh-cn': '实验室',
           sw: 'Labs',
           'tw-cn': '實驗',
+          'ko-kr': 'Labs',
         },
         to: {
           en: '/labs',
@@ -97,6 +104,7 @@ const footerMenu = [
           'zh-cn': '/zh-cn/labs',
           sw: '/sw/labs',
           'tw-cn': '/tw-cn/labs',
+          'ko-kr': '/ko-kr/labs',
         },
       },
     ],
@@ -112,6 +120,7 @@ const footerMenu = [
       'zh-cn': '项目概览',
       sw: 'Mandhari ya Mradi',
       'tw-cn': '項目概覽',
+      'ko-kr': '프로젝트 큰그림',
     },
     items: [
       {
@@ -125,6 +134,7 @@ const footerMenu = [
           'zh-cn': '应用项目',
           sw: 'Matumizi',
           'tw-cn': '應用項目',
+          'ko-kr': '애플리케이션',
         },
         to: {
           en: '/applications',
@@ -136,6 +146,7 @@ const footerMenu = [
           'zh-cn': '/zh-cn/applications',
           sw: '/sw/applications',
           'tw-cn': '/tw-cn/applications',
+          'ko-kr': '/ko-kr/applications',
         },
       },
       {
@@ -149,6 +160,7 @@ const footerMenu = [
           'zh-cn': '基础设施项目',
           sw: 'Miundombinu',
           'tw-cn': '基礎設施',
+          'ko-kr': '인프라',
         },
         to: {
           en: '/infrastructure',
@@ -160,6 +172,7 @@ const footerMenu = [
           'zh-cn': '/zh-cn/infrastructure',
           sw: '/sw/infrastructure',
           'tw-cn': '/tw-cn/infrastructure',
+          'ko-kr': '/ko-kr/infrastructure',
         },
       },
     ],
@@ -175,6 +188,7 @@ const footerMenu = [
       'zh-cn': '关于',
       sw: 'Kuhusu',
       'tw-cn': '關於',
+      'ko-kr': '추가 정보',
     },
     items: [
       {
@@ -188,6 +202,7 @@ const footerMenu = [
           'zh-cn': '博客',
           sw: 'Blog',
           'tw-cn': '部落格',
+          'ko-kr': '블로그',
         },
         to: '/blog',
       },
@@ -202,6 +217,7 @@ const footerMenu = [
           'zh-cn': '商店',
           sw: 'Duka la Swag',
           'tw-cn': '商店',
+          'ko-kr': '기념품 샵',
         },
         to: 'https://cilium.myspreadshop.net/',
       },
@@ -216,6 +232,7 @@ const footerMenu = [
           'zh-cn': '品牌',
           sw: 'Branding',
           'tw-cn': '品牌推廣',
+          'ko-kr': '브랜딩',
         },
         to: 'https://ebpf.foundation/brand-guidelines/',
       },
@@ -230,6 +247,7 @@ const footerMenu = [
           'zh-cn': '资讯',
           sw: 'Barua Pepe',
           'tw-cn': '新聞',
+          'ko-kr': '소식',
         },
         to: '/newsletter',
       },
@@ -244,6 +262,7 @@ const footerMenu = [
           'zh-cn': '贡献',
           sw: 'Changia',
           'tw-cn': '貢獻',
+          'ko-kr': '기여',
         },
         to: {
           en: '/contribute',
@@ -255,6 +274,7 @@ const footerMenu = [
           'zh-cn': '/zh-cn/contribute',
           sw: '/sw/contribute',
           'tw-cn': '/tw-cn/contribute',
+          'ko-kr': '/ko-kr/contribute',
         },
       },
     ],

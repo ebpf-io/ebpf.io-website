@@ -45,6 +45,11 @@ export default {
       description:
         'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。',
     },
+    'ko-kr': {
+      title: 'eBPF - 소개, 튜토리얼&커뮤니티 자료',
+      description:
+        'eBPF는 리눅스 커널에서 커널 소스 코드를 변경하거나 커널 모듈을 로드하지 않고 샌드박스화된 프로그램을 실행할 수 있는 혁신적인 기술입니다.',
+    },
   },
   contribute: {
     en: {
@@ -99,6 +104,12 @@ export default {
       description: '想了解如何為 eBPF 做出貢獻嗎？ 了解如何開始為 eBPF 項目做出貢獻。',
       keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
     },
+    'ko-kr': {
+      title: 'eBPF에 기여하는 방법',
+      description:
+        'eBPF에 기여하는 방법을 알고 싶나요? eBPF 프로젝트에 기여하는 방법을 시작하는 방법을 배워보세요.',
+      keywords: 'ebpf, bpf, 기여, 시작하기, 커뮤니티',
+    },
   },
   caseStudies: {
     en: {
@@ -145,6 +156,11 @@ export default {
       title: 'eBPF 案例研究',
       description: '了解 eBPF 如何在不同項目中的應用。',
       keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
+    },
+    'ko-kr': {
+      title: 'eBPF 사례 연구',
+      description: 'eBPF가 다양한 프로젝트에서 어떻게 사용되는지 알아보세요.',
+      keywords: 'ebpf, bpf, 기여, 시작하기, 커뮤니티',
     },
   },
   applications: {
@@ -193,6 +209,11 @@ export default {
       description: '基於 eBPF 的開源應用程式目錄',
       keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
     },
+    'ko-kr': {
+      title: 'eBPF 어플리케이션들의 큰그림',
+      description: 'eBPF 기반의 오픈 소스 어플리케이션을 다루는 내용들',
+      keywords: 'ebpf, bpf, 랜드스케이프, 큰그림, 디렉토리, 오픈 소스',
+    },
   },
   infrastructure: {
     en: {
@@ -239,6 +260,11 @@ export default {
       title: 'eBPF 核心基礎設施概覽',
       description: '基於 eBPF 的核心基礎設施目錄',
       keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
+    },
+    'ko-kr': {
+      title: 'eBPF 코어 인프라 큰그림',
+      description: 'eBPF 기반의 코어 인프라를 다루는 내용들',
+      keywords: 'ebpf, bpf, 랜드스케이프, 큰그림, 디렉토리, 오픈 소스',
     },
   },
   newsletter: {

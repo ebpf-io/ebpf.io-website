@@ -30,7 +30,6 @@ const ErrorMessage = ({ serverError }) => {
 
 const SubscriptionForm = ({
   title,
-  afterTitle,
   description,
   placeholder,
   buttonTitle,
@@ -71,11 +70,10 @@ const SubscriptionForm = ({
               'text-4xl': size === 'sm',
               'text-6xl': mdSize,
               'heading-8xl': lgSize,
+              '[&>span]:text-primary-yellow': mdSize || lgSize,
             })}
-          >
-            <span className={clsx({ 'text-primary-yellow': mdSize || lgSize })}>{title}</span>{' '}
-            {afterTitle}
-          </h2>
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
           <p
             className={clsx('mt-1.5', {
               'text-sm': smSize,
@@ -174,7 +172,6 @@ const SubscriptionForm = ({
 
 SubscriptionForm.propTypes = {
   title: PropTypes.string.isRequired,
-  afterTitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   buttonTitle: PropTypes.string.isRequired,

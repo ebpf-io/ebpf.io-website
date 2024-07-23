@@ -45,6 +45,11 @@ module.exports = {
       shortName: 'Chi',
       code: 'tw-cn',
     },
+    'ko-kr': {
+      name: '한국어',
+      shortName: 'Kor',
+      code: 'ko-kr',
+    },
   },
   defaultLanguage: 'en',
 };

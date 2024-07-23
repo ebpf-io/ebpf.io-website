@@ -254,6 +254,33 @@ const data = {
       </span>
     ),
   },
+  'ko-kr': {
+    copyright: 'eBPF.io 저자들',
+    maintain: {
+      title: 'eBPF 커뮤니티에 의해 관리됨',
+      beforeLink: '버그 발견시',
+      linkTitle: '다음 사이트로 알려주세요',
+    },
+    content: (
+      <span>
+        <Link className="!inline font-medium" theme="white" to="/">
+          ebpf.io
+        </Link>{' '}
+        웹사이트의 내용은{' '}
+        <Link
+          className="!inline"
+          theme="white"
+          size="sm"
+          to="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creative Commons Attribution 4.0 International License
+        </Link>{' '}
+        에 따라 라이선스가 부여됩니다.
+      </span>
+    ),
+  },
 };
 
 export default data;

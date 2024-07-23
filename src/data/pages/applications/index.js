@@ -12,6 +12,7 @@ const data = {
     'zh-cn': '/zh-cn/applications/',
     sw: '/sw/applications/',
     'tw-cn': '/tw-cn/applications/',
+    'ko-kr': '/ko-kr/applications/',
   },
   en: {
     title: 'Applications',
@@ -226,6 +227,30 @@ const data = {
     },
     emergingApplicationsProps: {
       title: '新興項目',
+      items: emergingApplications,
+    },
+  },
+  'ko-kr': {
+    title: '애플리케이션',
+    hero: {
+      items: [
+        {
+          text: '애플리케이션',
+          to: '/ko-kr/applications/',
+        },
+        {
+          text: '인프라',
+          to: '/ko-kr/infrastructure/',
+        },
+      ],
+    },
+    majorApplicationsProps: {
+      titleTag: 'h2',
+      title: '주요 어플리케이션',
+      items: majorApplications,
+    },
+    emergingApplicationsProps: {
+      title: '새로운',
       items: emergingApplications,
     },
   },

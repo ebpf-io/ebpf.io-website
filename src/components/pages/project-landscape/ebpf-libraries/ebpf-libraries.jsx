@@ -26,6 +26,7 @@ const title = {
   'zh-cn': 'eBPF 库',
   sw: 'Maktaba za eBPF',
   'tw-cn': 'eBPF 函式庫',
+  'ko-kr': 'eBPF 라이브러리',
 };
 
 const items = [
