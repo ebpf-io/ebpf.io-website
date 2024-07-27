@@ -62,7 +62,7 @@ const data = {
   },
   'zh-hant': {
     hero: {
-      title: 'eBPF案例研究',
+      title: 'eBPF 案例研究',
       items: caseStudiesData['zh-hant'],
     },
   },

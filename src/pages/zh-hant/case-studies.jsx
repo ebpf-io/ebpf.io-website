@@ -13,7 +13,7 @@ const lang = languages['zh-hant'].code;
 
 const Description = () => (
   <span>
-    以下是一些在生產環境中使用 eBPF 的組織。 如果您正在使用 eBPF 而不在此清單中，請提交一個{' '}
+    以下是一些在生產環境中使用 eBPF 的組織。如果您正在使用 eBPF 而不在此清單中，請提交一個{' '}
     <Link theme="black-primary-yellow" size="lg" to="https://github.com/ebpf-io/ebpf.io">
       pull request
     </Link>{' '}

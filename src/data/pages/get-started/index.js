@@ -1081,7 +1081,7 @@ const data = {
           image: 'book',
           title: '閱讀書籍',
           description:
-            '閱讀 Liz Rice 所著的O’Reilly書籍《What is eBPF?》和《Learning eBPF》或者Brendan Gregg 所著的《BPF Performance Tools》來入門了解。 透過這些書，您將了解什麼是 eBPF、它為何如此強大，以及它提供的功能。',
+            '閱讀 Liz Rice 所著的O’Reilly書籍《What is eBPF?》和《Learning eBPF》或者Brendan Gregg 所著的《BPF Performance Tools》來入門了解。透過這些書，您將了解什麼是 eBPF、它為何如此強大，以及它提供的功能。',
           cardColorClassName: 'bg-secondary-green-1-light border-secondary-green-1',
           dashedBorderClassName: 'border-secondary-green-2',
           linkUrl: '#books',
@@ -1091,7 +1091,7 @@ const data = {
           image: 'video',
           title: '觀看影片',
           description:
-            '跟隨 John Fastabend 的演講深入了解 eBPF 的歷史。 從 2014 年的“早期”開始，它介紹了當時影響Linux 網路領域的主要專案、公司和參與者，以及它們如何促成 eBPF 的創建。',
+            '跟隨 John Fastabend 的演講深入了解 eBPF 的歷史。從 2014 年的「早期」開始，它介紹了當時影響 Linux 網路領域的主要專案、公司和參與者，以及它們如何促成 eBPF 的創建。',
           cardColorClassName: 'bg-secondary-red-1-light border-secondary-red-1',
           dashedBorderClassName: 'border-secondary-red-2',
           linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00',
@@ -1123,7 +1123,7 @@ const data = {
         {
           image: 'cilium',
           title: 'BPF 和 XDP 參考指南',
-          description: '學習 BPF 的內部原理與編程',
+          description: '學習 BPF 的內部原理與程式撰寫',
           linkUrl: 'https://cilium.readthedocs.io/en/stable/bpf/',
         },
         {
@@ -1153,17 +1153,17 @@ const data = {
       linkTitle: '了解更多',
     },
     tutorials: {
-      title: '從行業專家的教程裡深入了解 eBPF 技術',
-      linkTitle: '更多教程',
+      title: '從行業專家的教學裡深入了解 eBPF 技術',
+      linkTitle: '更多教學',
       items: [
         {
-          title: 'eBPF 追蹤教程',
+          title: 'eBPF 追蹤教學',
           description:
             '學習如何使用 eBPF 進行跟踪，從運行 bcc 工具到使用 bpftrace 和 bcc 進行開發。',
           linkUrl: 'http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html',
         },
         {
-          title: 'XDP 教程',
+          title: 'XDP 教學',
           description:
             '學習編寫 XDP 程式所需的基本步驟，從了解XDP的概念到如何將多個程式附加到一個介面',
           linkUrl: 'https://github.com/xdp-project/xdp-tutorial',

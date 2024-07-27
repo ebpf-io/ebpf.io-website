@@ -206,11 +206,11 @@ const data = {
     },
   },
   'zh-hant': {
-    title: '應用項目',
+    title: '應用專案',
     hero: {
       items: [
         {
-          text: '應用項目',
+          text: '應用專案',
           to: '/zh-hant/applications/',
         },
         {
@@ -221,11 +221,11 @@ const data = {
     },
     majorApplicationsProps: {
       titleTag: 'h2',
-      title: '主要項目',
+      title: '主要專案',
       items: majorApplications,
     },
     emergingApplicationsProps: {
-      title: '新興項目',
+      title: '新興專案',
       items: emergingApplications,
     },
   },

@@ -686,13 +686,13 @@ const data = {
     hero: {
       title: '如何為 eBPF 做出貢獻',
       description:
-        'eBPF 由許多社群組成，包括 Linux 核心中的 eBPF 運行時、各種開發 SDK 和函式庫、一系列使用 eBPF 的大型專案以及廣泛的小型專案和工具。 因此，有許多方法可以為 eBPF 社群做出貢獻並參與其中。 以下想法清單可以作為您如何參與社區並為社區做出貢獻的起點。',
+        'eBPF 由許多社群組成，包括 Linux 核心中的 eBPF 運行時、各種開發 SDK 和函式庫、一系列使用 eBPF 的大型專案以及廣泛的小型專案和工具。因此，有許多方法可以為 eBPF 社群做出貢獻並參與其中。以下想法清單可以作為您如何參與社區並為社區做出貢獻的起點。',
       card: {
         title: '為 Linux 核心中的 eBPF 運行時做出貢獻',
         description:
-          'Linux 核心社群正在為 eBPF 子系統維護單獨的 Git tree，以管理對應所有開發人員的貢獻。 這些Git tree由以下人員維護：',
+          'Linux 核心社群正在為 eBPF 子系統維護單獨的 Git tree，以管理對應所有開發人員的貢獻。這些 Git tree 由以下人員維護：',
         secondDescription:
-          '為 eBPF 運行時做出貢獻可以獲得令人難以置信的回報，因為它為編寫在數百萬個系統和設備上運行的軟體奠定了基礎。 工作包括廣泛的主題，比如添加對額外勾點的支援、添加新的程式類型、改進eBPF 驗證器、添加對附加CPU 架構的JIT 支援、擴展BPF 助手集、向BPF 的測試基礎設施添加新的測試案例，或對 bpftool 和 libbpf 的改進等等。',
+          '為 eBPF 運行時做出貢獻可以獲得令人難以置信的回報，因為它為編寫在數百萬個系統和設備上運行的軟體奠定了基礎。工作包括廣泛的主題，比如添加對額外勾點的支援、添加新的程式類型、改進 eBPF 驗證器、添加對附加 CPU 架構的 JIT 支援、擴展 BPF 助手集、向 BPF 的測試基礎設施添加新的測試案例，或對 bpftool 和 libbpf 的改進等等。',
         authors: [
           {
             name: 'Alexei Starovoitov',
@@ -719,12 +719,12 @@ const data = {
       items: [
         {
           icon: 'file',
-          title: '為 eBPF 應用項目做出貢獻',
+          title: '為 eBPF 應用專案做出貢獻',
           description:
-            '<p> eBPF-based 的項目清單很長，而且還在增加。 想找到一個能夠激發您興趣的項目很容易, 請查看 eBPF 應用項目概覽。</p><p>列出的許多 eBPF-based 的項目都維護了一個標記為"giid-first-issue-labeled" 的任務列表，這些任務的範圍不需要廣泛的項目特定知識, 並提供了快速上手實踐的絕佳機會。</p>',
+            '<p> eBPF-based 的專案清單很長，而且還在增加。想找到一個能夠激發您興趣的專案很容易，請查看 eBPF 應用專案概覽。</p><p>列出的許多 eBPF-based 的專案都維護了一個標記為「giid-first-issue-labeled」的任務列表，這些任務的範圍不需要廣泛的專案特定知識，並提供了快速上手實踐的絕佳機會。</p>',
           links: [
             {
-              text: 'eBPF 應用項目概覽',
+              text: 'eBPF 應用專案概覽',
               to: '/zh-hant/applications',
             },
           ],
@@ -733,7 +733,7 @@ const data = {
           icon: 'gear',
           title: '為 eBPF 開發工具鏈做出貢獻',
           description:
-            '<p>儘管Linux 核心提供一些函式庫和API 來直接使用eBPF，但大多數項目都利用eBPF 開發工具鏈來簡化eBPF 的使用, 並在其他項目之間共享公共程式碼。</p><p>在這裡可以查看到一些經常更新的 eBPF 開發工具鏈的項目清單。 您可以在每個項目網站上直接找到有關如何參與的資訊。</p>',
+            '<p>儘管 Linux 核心提供一些函式庫和 API 來直接使用 eBPF，但大多數專案都利用 eBPF 開發工具鏈來簡化eBPF 的使用，並在其他專案之間共享公共程式碼。</p><p>在這裡可以查看到一些經常更新的 eBPF 開發工具鏈的專案清單。您可以在每個專案網站上直接找到有關如何參與的資訊。</p>',
           links: [
             {
               text: 'eBPF 開發工具鏈',
@@ -745,7 +745,7 @@ const data = {
           icon: 'pen',
           title: '為 eBPF 做出貢獻',
           description:
-            '<p>你有良好的寫作技巧嗎？ 你擅長繪畫圖表嗎？ ebpf.io 網站的內容根據 Creative Commons Attribution 4.0 International License 授權。 如果您想參與其中，請造訪我們的 GitHub Respository 進行了解。 也請記得加入我們 #ebpf-website Slack Channel，以便與處理文件的團隊取得聯繫, 以及透過改進文件或編寫其他教程來分享您學到的知識。</p>',
+            '<p>你有良好的寫作技巧嗎？你擅長繪畫圖表嗎？ebpf.io 網站的內容根據 Creative Commons Attribution 4.0 International License 授權。如果您想參與其中，請造訪我們的 GitHub Respository 進行了解。也請記得加入我們 #ebpf-website Slack Channel，以便與處理文件的團隊取得聯繫，以及透過改進文件或編寫其他教程來分享您學到的知識。</p>',
           links: [
             {
               text: 'License',

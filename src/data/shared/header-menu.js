@@ -22,7 +22,7 @@ const headerMenu = [
           es: '¿Qué es eBPF?',
           'zh-hans': '什么是 eBPF ?',
           sw: 'Ni nini eBPF?',
-          'zh-hant': '什麼是eBPF',
+          'zh-hant': '什麼是 eBPF？',
         },
         to: {
           en: '/what-is-ebpf',
@@ -134,7 +134,7 @@ const headerMenu = [
       es: 'Panorama del Proyecto',
       'zh-hans': '项目概览',
       sw: 'Mandhari ya Mradi',
-      'zh-hant': '項目概覽',
+      'zh-hant': '專案概覽',
     },
     items: [
       {
@@ -147,7 +147,7 @@ const headerMenu = [
           es: 'Aplicaciones',
           'zh-hans': '应用项目',
           sw: 'Matumizi',
-          'zh-hant': '應用項目',
+          'zh-hant': '應用專案',
         },
         to: {
           en: '/applications',

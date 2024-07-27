@@ -243,7 +243,7 @@ const data = {
     hero: {
       items: [
         {
-          text: '應用項目',
+          text: '應用專案',
           to: '/zh-hant/applications/',
         },
         {

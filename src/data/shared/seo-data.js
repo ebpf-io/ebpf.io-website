@@ -43,7 +43,7 @@ export default {
     'zh-hant': {
       title: 'eBPF - 介紹、教學與社群資源',
       description:
-        'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程序，而無需更改核心原始碼或載入核心模組。',
+        'eBPF 是一項革命性的技術，它可以在 Linux 核心中運行沙盒程式，而無需更改核心原始碼或載入核心模組。',
     },
   },
   contribute: {
@@ -96,7 +96,7 @@ export default {
     },
     'zh-hant': {
       title: '如何為 eBPF 做出貢獻',
-      description: '想了解如何為 eBPF 做出貢獻嗎？ 了解如何開始為 eBPF 項目做出貢獻。',
+      description: '想了解如何為 eBPF 做出貢獻嗎？了解如何開始為 eBPF 專案做出貢獻。',
       keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
     },
   },
@@ -143,7 +143,7 @@ export default {
     },
     'zh-hant': {
       title: 'eBPF 案例研究',
-      description: '了解 eBPF 如何在不同項目中的應用。',
+      description: '了解 eBPF 如何在不同專案中的應用。',
       keywords: 'ebpf, bpf, 貢獻, 開始, 社群',
     },
   },
@@ -189,7 +189,7 @@ export default {
       keywords: 'ebpf, bpf, mandhari, orodha, chanzo wazi',
     },
     'zh-hant': {
-      title: 'eBPF 應用項目概覽',
+      title: 'eBPF 應用專案概覽',
       description: '基於 eBPF 的開源應用程式目錄',
       keywords: 'ebpf, bpf, 概覽, 目錄, 開源',
     },
