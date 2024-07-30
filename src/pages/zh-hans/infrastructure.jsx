@@ -11,7 +11,7 @@ import SEO_DATA from 'data/shared/seo-data';
 
 import { languages } from '../../../config/languages';
 
-const lang = languages['zh-cn'].code;
+const lang = languages['zh-hans'].code;
 
 const InfrastructurePage = () => (
   <Layout lang={lang} pageUrls={data.pageUrls}>

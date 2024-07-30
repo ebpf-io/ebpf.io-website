@@ -10,24 +10,24 @@ import SEO_DATA from 'data/shared/seo-data';
 
 import { languages } from '../../../config/languages';
 
-const lang = languages['tw-cn'].code;
+const lang = languages['zh-hans'].code;
 
 const ApplicationsPage = () => (
-    <Layout lang={lang} pageUrls={data.pageUrls}>
-        <h1 className="sr-only">{data[lang].title}</h1>
-        <Hero {...data[lang].hero} />
-        <ProjectsList className="pt-[72px] lg:pt-16 md:pt-12" {...data[lang].majorApplicationsProps} />
-        <ProjectsList
-            className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
-            {...data[lang].emergingApplicationsProps}
-        />
-        <FAQ lang={lang} />
-    </Layout>
+  <Layout lang={lang} pageUrls={data.pageUrls}>
+    <h1 className="sr-only">{data[lang].title}</h1>
+    <Hero {...data[lang].hero} />
+    <ProjectsList className="pt-[72px] lg:pt-16 md:pt-12" {...data[lang].majorApplicationsProps} />
+    <ProjectsList
+      className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
+      {...data[lang].emergingApplicationsProps}
+    />
+    <FAQ lang={lang} />
+  </Layout>
 );
 
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => (
-    <SEO pathname={pathname} {...SEO_DATA.applications[lang]} />
+  <SEO pathname={pathname} {...SEO_DATA.applications[lang]} />
 );
 
 export default ApplicationsPage;

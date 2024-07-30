@@ -9,7 +9,7 @@ import SEO_DATA from 'data/shared/seo-data';
 
 import { languages } from '../../../config/languages';
 
-const lang = languages['zh-cn'].code;
+const lang = languages['zh-hant'].code;
 
 const Contribute = () => (
   <Layout lang={lang} pageUrls={data.pageUrls}>

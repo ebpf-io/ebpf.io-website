@@ -172,7 +172,7 @@ const data = {
       </span>
     ),
   },
-  'zh-cn': {
+  'zh-hans': {
     copyright: 'eBPF.io 作者',
     maintain: {
       title: '由 eBPF 社区维护。',
@@ -181,7 +181,7 @@ const data = {
     },
     content: (
       <span>
-        <Link className="!inline font-medium" theme="white" to="/zh-cn/">
+        <Link className="!inline font-medium" theme="white" to="/zh-hans/">
           ebpf.io
         </Link>{' '}
         网站内容基于{' '}
@@ -227,16 +227,16 @@ const data = {
       </span>
     ),
   },
-  'tw-cn': {
+  'zh-hant': {
     copyright: 'eBPF.io 作者',
     maintain: {
-      title: '由eBPF社群維護。',
-      beforeLink: '現一個bug?',
-      linkTitle: '創建一個issue',
+      title: '由 eBPF 社群維護。',
+      beforeLink: '發現一個 bug ?',
+      linkTitle: '創建一個 issue',
     },
     content: (
       <span>
-        <Link className="!inline font-medium" theme="white" to="/tw-cn/">
+        <Link className="!inline font-medium" theme="white" to="/zh-hant/">
           ebpf.io
         </Link>{' '}
         網站的內容根據{' '}
