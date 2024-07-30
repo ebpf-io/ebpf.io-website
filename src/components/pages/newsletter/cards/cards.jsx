@@ -38,7 +38,7 @@ const items = [
     links: [
       {
         text: 'Send on Slack',
-        to: 'https://cilium.herokuapp.com/',
+        to: 'https://slack.cilium.io/',
         target: '_blank',
       },
       {
@@ -63,13 +63,13 @@ const Cards = () => (
             {title}
           </h3>
           <p
-            className="mt-2.5 mb-[26px] max-w-[288px] sm:max-w-none [&_a]:font-semibold [&_a]:transition-colors [&_a]:duration-200 [&_a]:hover:text-gray-40"
+            className="mb-[26px] mt-2.5 max-w-[288px] sm:max-w-none [&_a]:font-semibold [&_a]:transition-colors [&_a]:duration-200 [&_a]:hover:text-gray-40"
             dangerouslySetInnerHTML={{ __html: description }}
           />
           <ul className="mt-auto flex space-x-4">
             {links.map(({ text, to, target }, index) => (
               <li
-                className="relative text-sm font-semibold uppercase leading-none tracking-wider before:absolute before:top-1/2 before:-left-2.5 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 first:before:hidden lg:text-[13px] md:text-xs"
+                className="relative text-sm font-semibold uppercase leading-none tracking-wider before:absolute before:-left-2.5 before:top-1/2 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 first:before:hidden lg:text-[13px] md:text-xs"
                 key={index}
               >
                 <Link
