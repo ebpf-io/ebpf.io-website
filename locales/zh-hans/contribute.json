@@ -28,7 +28,7 @@
         },
         {
           "text": "Linux 内核 eBPF 运行时",
-          "to": "/zh-cn/infrastructure/#linux-kernel"
+          "to": "/zh-hans/infrastructure/#linux-kernel"
         }
       ]
     }
@@ -42,7 +42,7 @@
         "links": [
           {
             "text": "eBPF 应用项目概览",
-            "to": "/zh-cn/applications"
+            "to": "/zh-hans/applications"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "links": [
           {
             "text": "eBPF 开发工具链",
-            "to": "/zh-cn/what-is-ebpf/#development-toolchains"
+            "to": "/zh-hans/what-is-ebpf/#development-toolchains"
           }
         ]
       },
