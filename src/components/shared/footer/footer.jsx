@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Trans, useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -11,13 +11,15 @@ import SocialLinks from './social-links';
 
 const Footer = ({ pageUrls }) => {
   const { t } = useTranslation();
+  const { language } = useI18next();
+  const logoUrl = language === 'en' ? '/' : `/${language}/`;
 
   return (
     <footer className="safe-paddings bg-black pt-16 text-white lg:pt-12">
       <div className="container">
         <nav className="flex justify-between lg:flex-col lg:space-y-12">
           <div className="flex md:items-center md:justify-between">
-            <Link to="/">
+            <Link to={logoUrl}>
               <span className="sr-only">eBPF logo</span>
               <img
                 className="h-auto w-32"

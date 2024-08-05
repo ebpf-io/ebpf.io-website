@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import clsx from 'clsx';
-import { useTranslation, Trans } from 'gatsby-plugin-react-i18next';
+import { useTranslation, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -14,6 +14,8 @@ import LanguageSelect from './language-select';
 
 const Header = ({ isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder, pageUrls }) => {
   const { t } = useTranslation();
+  const { language } = useI18next();
+  const logoUrl = language === 'en' ? '/' : `/${language}/`;
 
   return (
     <header
@@ -27,7 +29,7 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder, pageUr
             'border-b border-dashed border-gray-80': !fullWidthBottomBorder,
           })}
         >
-          <Link to="/">
+          <Link to={logoUrl}>
             <span className="sr-only">eBPF logo</span>
             <img
               className="w-auto h-9 lg:h-8"
