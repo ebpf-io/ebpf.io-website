@@ -5,28 +5,8 @@ import React, { useCallback, useRef, useState } from 'react';
 import Link from 'components/shared/link';
 import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
-import EnIcon from 'icons/languages/en.inline.svg';
-import EsIcon from 'icons/languages/es.inline.svg';
-import FrFrIcon from 'icons/languages/fr-fr.inline.svg';
-import ItItIcon from 'icons/languages/it-it.inline.svg';
-import PtBrIcon from 'icons/languages/pt-br.inline.svg';
-import PtIcon from 'icons/languages/pt.inline.svg';
-import SwIcon from 'icons/languages/sw.inline.svg';
-import ZhCNIcon from 'icons/languages/zh-cn.inline.svg';
 
 import { languages } from '../../../../../config/languages';
-
-const langIcons = {
-  en: EnIcon,
-  'fr-fr': FrFrIcon,
-  pt: PtIcon,
-  'pt-br': PtBrIcon,
-  'it-it': ItItIcon,
-  es: EsIcon,
-  'zh-cn': ZhCNIcon,
-  sw: SwIcon,
-  'tw-cn': ZhCNIcon,
-};
 
 const LanguageSelect = ({ lang, pageUrls }) => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -42,8 +22,6 @@ const LanguageSelect = ({ lang, pageUrls }) => {
 
   useClickOutside([dropdownRef], handleClickOutside);
 
-  const LangIcon = langIcons[lang];
-
   return (
     <div className="relative" ref={dropdownRef}>
       <button
@@ -52,8 +30,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
         aria-label="Select language"
         onClick={handleDropdown}
       >
-        <LangIcon className="mr-1.5 h-[18px] w-[18px]" />
-        <span className="w-7">{languages[lang].shortName}</span>
+        {languages[lang].name}
         <ChevronIcon
           className={clsx('ml-1.5 mt-1 h-auto w-2.5', showDropdown ? 'rotate-180' : 'rotate-0')}
         />

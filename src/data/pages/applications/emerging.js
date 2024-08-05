@@ -285,14 +285,14 @@ const emergingApplications = [
   },
 
   {
-    logoUrl: 'https://github.com/ddosify/alaz',
+    logoUrl: 'https://github.com/getanteon/alaz',
     name: 'Alaz',
     logoName: 'alazLogo',
     title: 'Effortless, Low-Overhead, eBPF-based Kubernetes Monitoring',
-    description: `Alaz is an open source Ddosify eBPF agent that can inspect and collect Kubernetes service traffic
+    description: `Alaz is an open source Anteon eBPF agent that can inspect and collect Kubernetes service traffic
     without the need for code instrumentation, sidecars, or service restarts.
     Alaz uses eBPF to create a Service Map that helps identify golden signals and problems like high latencies, 5xx errors, zombie services, slow HTTP requests, and SQL queries.`,
-    urls: [{ label: 'GitHub', url: 'https://github.com/ddosify/alaz' }],
+    urls: [{ label: 'GitHub', url: 'https://github.com/getanteon/alaz' }],
   },
   {
     logoUrl: 'https://github.com/eunomia-bpf/eunomia-bpf',
@@ -424,6 +424,21 @@ const emergingApplications = [
     events per second, and estimated total CPU % for each program. It also provides graphical views of these statistics over time. 
     This tool minimizes overhead by enabling performance statistics only while it is active.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/Netflix/bpftop' }],
+  },
+  {
+    logoUrl: 'https://github.com/tarsal-oss/kflowd',
+    name: 'kflow',
+    logoName: 'kflowLogo',
+    title: 'Process Monitoring on Linux Endpoints via eBPF',
+    description: ` kflow is an open source project that implements Process
+    Monitoring on Linux Endpoints for File System, TCP, and UDP Networking
+    Events via the eBPF Subsystem.
+    kflow is built with libbpf+CO-RE and runs on Linux kernels 5.10+.
+    `,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/tarsal-oss/kflowd' },
+      { label: 'Website', url: 'https://tarsal.co/kflow/' },
+    ],
   },
 ];
 

@@ -325,7 +325,7 @@ const data = {
       },
     ],
   },
-  'zh-cn': {
+  'zh-hans': {
     title: '常见问题',
     items: [
       {
@@ -431,56 +431,56 @@ const data = {
       },
     ],
   },
-  'tw-cn': {
+  'zh-hant': {
     title: '常見問題',
     items: [
       {
-        question: '這些項目是否屬於 eBPF 基金會？',
+        question: '這些專案是否屬於 eBPF 基金會？',
         answer: `<ul> 
-							<li>本頁列出了一些使用 eBPF 作為底層核心技術的開源項目。 這些項目並非全部屬於 <a href="https://www.ebpf.foundation/">eBPF 基金會</a>，但在此列出以展示當前eBPF項目概況。
+							<li>本頁列出了一些使用 eBPF 作為底層核心技術的開源專案。這些專案並非全部屬於 <a href="https://www.ebpf.foundation/">eBPF 基金會</a>，但在此列出以展示當前 eBPF 專案概況。
 						</ul>`,
       },
       {
-        question: '添加你的項目',
+        question: '添加你的專案',
         answer: `<ol> 
-							<li>確保項目符合列出的要求。 見下文。</li>
-							<li>提交 <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">Pull Request</a> t並提供所需的資訊。 使用一個已列出的項目作為範本。 應用程式的排序基於 Github 星數（從高到低），每季更新一次。</li>
-							<li>Pull request將由社群審核並由一位維護者合併。 如果您有任何疑問，請隨時在 <a href="https://ebpf.io/slack">Slack</a> 上提問。</li>
+							<li>確保專案符合列出的要求。見下文。</li>
+							<li>提交 <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">Pull Request</a> 並提供所需的資訊。使用一個已列出的專案作為範本。應用程式的排序基於 GitHub 星數（從高到低），每季更新一次。</li>
+							<li>Pull Request 將由社群審核並由一位維護者合併。如果您有任何疑問，請隨時在 <a href="https://ebpf.io/slack">Slack</a> 上提問。</li>
 						</ol>`,
       },
       {
-        question: '您是否在維護一個已列出的項目?',
+        question: '您是否在維護一個已列出的專案？',
         answer: `<ul>
-					<li>如果您正在維護列出的項目之一，並希望調整內容。 在 <a href="https://ebpf.io/slack">Slack</a> 上取得聯繫或直接提交一個 Pull Request。</li> 
+					<li>如果您正在維護列出的專案之一，並希望調整內容。在 <a href="https://ebpf.io/slack">Slack</a> 上取得聯繫或直接提交一個 Pull Request。</li> 
 				</ul>`,
       },
       {
-        question: '被列出項目的要求',
+        question: '被列出專案的要求',
         answer: `
 					<p>
-						項目可以在此頁面上以「主要」或「新興」的形式列出。 被列為"新興」的要求是：
+						專案可以在此頁面上以「主要」或「新興」的形式列出。被列為「新興」的要求是：
 					</p> 
 					<ul> 
 						<li> 
-							該項目必須是開源的。 所有原始碼必須根據開源許可證獲得許可。 任何文件都必須在開放許可協議下授權。
+							該專案必須是開源的。所有原始碼必須根據開源許可證獲得許可。任何文件都必須在開放許可協議下授權。
 						</li> 
 						<li> 
-							該項目必須使用 eBPF 作為其底層核心技術（換句話說，如果去掉 eBPF 部分，项目將失去其目的）或有助於加速在生產中採用eBPF 。
+							該專案必須使用 eBPF 作為其底層核心技術（換句話說，如果去掉 eBPF 部分，專案將失去其目的）或有助於加速在生產環境中採用 eBPF。
 						</li> 
 						<li> 
-							該項目必須積極維護。
+							該專案必須積極維護。
 						</li> 
 						<li> 
-							該項目必須對協作開放，並具有遵循開源最佳實踐的治理模式。
+							該專案必須對協作開放，並具有遵循開源最佳實踐的治理模式。
 						</li> 
 					<ul> 
 					<p> 
-						要被列為「主要」項目，該項目必須滿足上述所有要求，並且：
+						要被列為「主要」專案，該專案必須滿足上述所有要求，並且：
 					</p>
 					<ul>
-						<li>該項目必須有超過 50 名貢獻者。</li> 
+						<li>該專案必須有超過 50 名貢獻者。</li> 
 						<li>
-							該項目必須在生產級別環境中有大量使用者。 由於此資訊可能不容易從項目連結中發現，因此此類資訊應包含在pull request描述中。
+							該專案必須在生產級別環境中有大量使用者。由於此資訊可能不容易從專案連結中發現，因此此類資訊應包含在 Pull Request 描述中。
 						</li> 
 					</ul>`,
       },

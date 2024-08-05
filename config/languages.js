@@ -30,20 +30,20 @@ module.exports = {
       shortName: 'Esp',
       code: 'es',
     },
-    'zh-cn': {
+    'zh-hans': {
       name: ' 简体中文',
-      shortName: 'Chi',
-      code: 'zh-cn',
+      shortName: '简中',
+      code: 'zh-hans',
     },
     sw: {
       name: 'Swahili',
       shortName: 'Swa',
       code: 'sw',
     },
-    'tw-cn': {
+    'zh-hant': {
       name: '繁體中文',
-      shortName: 'Chi',
-      code: 'tw-cn',
+      shortName: '繁中',
+      code: 'zh-hant',
     },
   },
   defaultLanguage: 'en',

@@ -23,9 +23,9 @@ const pageUrls = {
   'pt-br': '/pt-br/get-started/',
   'it-it': '/it-it/get-started/',
   es: '/es/get-started/',
-  'zh-cn': '/zh-cn/get-started/',
+  'zh-hans': '/zh-hans/get-started/',
   sw: '/sw/get-started/',
-  'tw-cn': '/tw-cn/get-started/',
+  'zh-hant': '/zh-hant/get-started/',
 };
 
 const hasContributors = false;
