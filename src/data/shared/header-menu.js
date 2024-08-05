@@ -80,6 +80,11 @@ const headerMenu = [
         target: '_blank',
       },
       {
+        title: 'eBPF Docs',
+        to: 'https://ebpf-docs.dylanreimerink.nl/',
+        target: '_blank',
+      },
+      {
         title: 'Stack Overflow',
         to: 'https://stackoverflow.com/questions/tagged/ebpf+or+bpf+or+xdp-bpf+or+xdp-ebpf+or+bcc-bpf+or+libbpf+or+bpftrace',
         target: '_blank',

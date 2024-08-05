@@ -6,28 +6,8 @@ import React, { useCallback, useRef, useState } from 'react';
 import Link from 'components/shared/link';
 import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
-import EnIcon from 'icons/languages/en.inline.svg';
-import EsIcon from 'icons/languages/es.inline.svg';
-import FrFrIcon from 'icons/languages/fr-fr.inline.svg';
-import ItItIcon from 'icons/languages/it-it.inline.svg';
-import PtBrIcon from 'icons/languages/pt-br.inline.svg';
-import PtIcon from 'icons/languages/pt.inline.svg';
-import SwIcon from 'icons/languages/sw.inline.svg';
-import ZhCNIcon from 'icons/languages/zh-cn.inline.svg';
 
 import { languages as languageList } from '../../../../../config/languages';
-
-const langIcons = {
-  en: EnIcon,
-  es: EsIcon,
-  'fr-fr': FrFrIcon,
-  'it-it': ItItIcon,
-  pt: PtIcon,
-  'pt-br': PtBrIcon,
-  sw: SwIcon,
-  'tw-cn': ZhCNIcon,
-  'zh-cn': ZhCNIcon,
-};
 
 const LanguageSelect = ({ pageUrls }) => {
   const { language, languages } = useI18next();
@@ -44,8 +24,7 @@ const LanguageSelect = ({ pageUrls }) => {
 
   useClickOutside([dropdownRef], handleClickOutside);
 
-  const LangIcon = langIcons[language];
-  const langShortName = languageList[language].shortName;
+  const langName = languageList[language].name;
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -55,8 +34,7 @@ const LanguageSelect = ({ pageUrls }) => {
         aria-label="Select language"
         onClick={handleDropdown}
       >
-        <LangIcon className="mr-1.5 h-[18px] w-[18px]" />
-        <span className="w-7">{langShortName}</span>
+        {langName}
         <ChevronIcon
           className={clsx('ml-1.5 mt-1 h-auto w-2.5', showDropdown ? 'rotate-180' : 'rotate-0')}
         />

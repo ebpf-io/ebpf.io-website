@@ -1,6 +1,6 @@
-To add a new language option, follow these steps:
+To add a new language option, please follow the steps below:
 
-1. Open `config/languages.js` and add the new language details like this:
+1. Open `config/languages.js` and add the new language details as follows:
 
 ```js
 en: {
@@ -10,11 +10,9 @@ en: {
 },
 ```
 
-2. Save an icon for the language in `src/icons/languages`, using the same name as the language code (`en.inline.svg` for English). This icon will be used for language selection in the header. Then, in `src/components/header/language-select/index.js`, import the icon and add it to the `langIcons` object, following the existing format.
+2. The `en` folder from `locales` should be duplicated and renamed to match the language code. Please translate all strings in these files.
 
-3. Duplicate the en folder from locales, renaming it to match the language code. Translate all strings in these files.
-
-4. Finally, go to `static-pages/what-is-ebpf`, duplicate the `index.md` file, and rename your copy using your language code, like `index.fr-fr.md`. Translate the entire file. Remember, the page title is in the meta block at the top of the file.
+3. Finally, navigate to the `static-pages/what-is-ebpf` directory and duplicate the `index.md` file. Rename your copy to include your language code, such as `index.fr-fr.md`. Translate the entire file. Please note that the page title is located in the meta block at the top of the file.
 
 ## Additional Instructions
 

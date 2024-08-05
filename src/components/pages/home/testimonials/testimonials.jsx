@@ -85,7 +85,6 @@ const Testimonials = () => {
         <ul className="scrollbar-hidden relative mt-24 flex justify-between border-b border-dashed border-gray-80 lg:mt-20 md:mt-16 md:overflow-x-auto sm:-mx-4 sm:mt-12 sm:border-b-0 sm:px-4">
           {t('testimonials.items', { returnObjects: true }).map(({ company }, index) => {
             const { logo, width } = logos[company];
-            console.log(logo);
 
             return (
               <li
