@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "Mandhari ya Msingi ya Miundombinu ya eBPF",
+    "description": "Orodha ya msingi wa miundombinu inayotumia eBPF",
+    "keywords": "ebpf, bpf, mandhari, orodha, chanzo wazi"
+  },
+  "Major Infrastructure": "Miundombinu Mikubwa",
+  "Emerging": "Inayojitokeza",
+  "eBPF Auxiliary Libraries": "Maktaba za eBPF za Kubadiliana",
+  "eBPF Libraries": "Maktaba za eBPF"
+}

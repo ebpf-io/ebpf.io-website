@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
 import React, { useCallback, useRef, useState } from 'react';
 
@@ -6,9 +7,10 @@ import Link from 'components/shared/link';
 import useClickOutside from 'hooks/use-click-outside';
 import ChevronIcon from 'icons/chevron.inline.svg';
 
-import { languages } from '../../../../../config/languages';
+import { languages as languageList } from '../../../../../config/languages';
 
-const LanguageSelect = ({ lang, pageUrls }) => {
+const LanguageSelect = ({ pageUrls }) => {
+  const { language, languages } = useI18next();
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -22,6 +24,8 @@ const LanguageSelect = ({ lang, pageUrls }) => {
 
   useClickOutside([dropdownRef], handleClickOutside);
 
+  const langName = languageList[language].name;
+
   return (
     <div className="relative" ref={dropdownRef}>
       <button
@@ -30,7 +34,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
         aria-label="Select language"
         onClick={handleDropdown}
       >
-        {languages[lang].name}
+        {langName}
         <ChevronIcon
           className={clsx('ml-1.5 mt-1 h-auto w-2.5', showDropdown ? 'rotate-180' : 'rotate-0')}
         />
@@ -45,19 +49,20 @@ const LanguageSelect = ({ lang, pageUrls }) => {
         }}
       >
         {Object.values(languages)
-          .filter(({ code }) => code !== lang)
-          .map(({ name, code }) => {
-            let url = code === 'en' ? '/' : `/${code}/`;
-            if (pageUrls) url = pageUrls[code];
+          .filter((lang) => lang !== language)
+          .map((lang) => {
+            let url = lang === 'en' ? '/' : `/${lang}/`;
+
+            if (pageUrls) url = pageUrls[lang];
 
             return (
-              <li className="flex" key={name}>
+              <li className="flex" key={lang}>
                 <Link
                   className="flex whitespace-nowrap px-5 py-2.5 text-[15px] font-medium leading-none lg:text-sm"
                   theme="black"
                   to={url}
                 >
-                  {name}
+                  {languageList[lang].name}
                 </Link>
               </li>
             );
@@ -68,13 +73,7 @@ const LanguageSelect = ({ lang, pageUrls }) => {
 };
 
 LanguageSelect.propTypes = {
-  lang: PropTypes.string.isRequired,
-  pageUrls: PropTypes.shape(
-    Object.keys(languages).reduce((acc, lang) => {
-      acc[lang] = PropTypes.string.isRequired;
-      return acc;
-    }, {})
-  ),
+  pageUrls: PropTypes.objectOf(PropTypes.string),
 };
 
 LanguageSelect.defaultProps = {

@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "Panorama de infraestrutura central eBPF",
+    "description": "Um diretório de infraestrutura central baseada em eBPF",
+    "keywords": "ebpf, bpf, paisagem, diretório, código-fonte"
+  },
+  "Major Infrastructure": "Infraestrutura principais",
+  "Emerging": "Emergindo",
+  "eBPF Auxiliary Libraries": "Bibliotecas Auxiliares eBPF",
+  "eBPF Libraries": "Bibliotecas eBPF"
+}

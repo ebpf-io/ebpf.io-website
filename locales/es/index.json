@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "title": "Programar dinámicamente el kernel para un uso eficiente de las redes, observabilidad, rastreo y seguridad",
+    "altImage": "eBPF diagram",
+    "items": [
+      "Los programas son verificados para que se ejecuten de forma segura",
+      "Engachándose en cualquier parte del kernel para modificar la funcionalidad.",
+      "Compilador Just-In-Time (JIT) para una velocidad de ejecución casi nativa",
+      "Agregar capacidades del Sistema Operativo en tiempo de ejecución"
+    ]
+  },
+  "caseStudies": {
+    "title": "Organizaciones de todos los sectores utilizan eBPF en ambientes de producción",
+    "linkText": "Más casos de estudio"
+  },
+  "whyEbpf": {
+    "title": "¿Por qué eBPF?",
+    "items": [
+      {
+        "title": "Rendimiento",
+        "description": "eBPF mejora significativamente el procesamiento al ser compilado en tiempo de ejecución (JIT) y ejecutarse directamente en el kernel."
+      },
+      {
+        "title": "Seguridad",
+        "description": "Los programas eBPF están verificados para evitar fallos en el kernel y solo pueden ser modificados por usuarios con privilegios."
+      },
+      {
+        "title": "Flexibilidad",
+        "description": "Modificar o agregar funcionalidades y casos de uso al kernel sin necesidad de reiniciarlo o aplicar parches."
+      }
+    ]
+  },
+  "film": {
+    "title": "Unlocking the Kernel",
+    "description": "The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.",
+    "buttonText": "eBPF Documentary Website"
+  },
+  "testimonials": {
+    "items": [
+      {
+        "company": "Microsoft Azure",
+        "review": "eBPF ha dado lugar a una nueva generación de herramientas que permiten a los desarrolladores diagnosticar problemas, innovar rápidamente y ampliar la funcionalidad del sistema operativo de manera sencilla.",
+        "author": "Mark Russinovich",
+        "role": "Chief Technology Officer at Microsoft Azure, 2021"
+      },
+      {
+        "company": "Google",
+        "review": "eBPF es el futuro de las redes para el kernel de Linux y Google se complace en ser parte de la evolución de este estándar que ha sido creado.",
+        "author": "Chris DiBona",
+        "role": "Director of Open Source at Google, 2021"
+      },
+      {
+        "company": "Isovalent",
+        "review": "A pesar de que  eBPF ya haya encontrado su camino en stacks de producción de innumerables empresas, todavía estamos al comienzo de la curva de innovación que eBPF como tecnología puede lograr.",
+        "author": "Thomas Graf",
+        "role": "Chief Technology Officer at Isovalent, 2021"
+      },
+      {
+        "company": "Meta",
+        "review": "Por muchos años, eBPF ha desempeñado un papel fundamental a la hora de acelerar el desarrollo del kernel. Estamos emocionados por apoyar el trabajo de la comunidad eBPF, permitiéndoles crear las herramientas necesarias para impulsar la próxima generación de desarrollo de sistemas Linux.",
+        "author": "Chris Mason",
+        "role": "Kernel Maintainer and Engineering Director at Facebook, 2021"
+      },
+      {
+        "company": "Netflix",
+        "review": "eBPF es un nuevo tipo de software innovador que ofrece capacidades superpoderosas, dando origen a una industria de tecnologías enfocadas en redes, rendimiento y seguridad. Netflix ha sido pionero en la utilización de eBPF para la observabilidad, brindando información valiosa en áreas que antes eran difíciles de analizar o costosas de instrumentar. eBPF ha ayudado a reducir la latencia de las aplicaciones y a encontrar formas de ahorrar costos.",
+        "author": "Brendan Gregg",
+        "role": "Senior performance engineer at Netflix, 2021"
+      }
+    ]
+  },
+  "features": {
+    "title": "¿Qué es posible con eBPF?",
+    "items": [
+      {
+        "image": "networking",
+        "title": "Redes",
+        "description": "Procesamiento de paquetes de alta velocidad sin abandonar el espacio del kernel. Agregar analizadores de protocolo adicionales y programar fácilmente cualquier lógica de reenvío para cumplir con requisitos cambiantes."
+      },
+      {
+        "image": "observability",
+        "title": "Observabilidad",
+        "description": "Recolección y agregación de métricas personalizadas en el kernel con generación de eventos de visibilidad y estructuras de datos a partir de una amplia gama de posibles fuentes sin necesidad de exportar muestras."
+      },
+      {
+        "image": "tracingAndProfiling",
+        "title": "Trazado y Generación de perfiles",
+        "description": "Adjunta programas eBPF a puntos de rastreo, así como puntos de sondeo de aplicaciones de usuario y kernel, lo que brinda poderosas capacidades de introspección e información única para solucionar problemas de rendimiento del sistema."
+      },
+      {
+        "image": "security",
+        "title": "Seguridad",
+        "description": "Combina la visualización y comprensión de todas las llamadas de sistema con una vista de nivel de paquete y socket de todas las redes para crear sistemas de seguridad  que operan con más contexto y un mejor nivel de control."
+      }
+    ]
+  },
+  "eBPF Community Talks": "Charlas de la Comunidad eBPF"
+}

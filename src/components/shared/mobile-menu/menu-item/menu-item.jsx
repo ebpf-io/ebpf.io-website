@@ -1,9 +1,8 @@
 import clsx from 'clsx';
 import { useAnimation, m } from 'framer-motion';
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
-
-import Link from 'components/shared/link';
 
 const ANIMATION_DURATION = 0.2;
 const submenuVariants = {
@@ -28,6 +27,7 @@ const submenuVariants = {
 };
 
 const MenuItem = ({ title, to, items }) => {
+  const { t } = useTranslation();
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const Tag = to ? Link : 'button';
   const withChildItems = items?.length > 0;
@@ -52,10 +52,12 @@ const MenuItem = ({ title, to, items }) => {
     <li>
       <Tag
         className="group inline-flex w-full items-center justify-between py-5 font-semibold leading-none transition-colors duration-200 hover:text-gray-40"
-        to={to}
+        to={t(to)}
         onClick={handleClick}
       >
-        <span>{title}</span>
+        <span>
+          <Trans>{title}</Trans>
+        </span>
         {withChildItems && (
           <span className="relative w-1.5">
             <span
@@ -86,14 +88,16 @@ const MenuItem = ({ title, to, items }) => {
                 <Link
                   className="flex py-3 leading-none"
                   theme="black"
-                  to={to}
+                  to={t(to)}
                   target={target || null}
                   rel={target ? 'noopener noreferrer' : null}
                 >
-                  {title}
+                  <Trans>{title}</Trans>
                 </Link>
               ) : (
-                <h3 className="flex py-3 font-medium leading-none">{title}</h3>
+                <h3 className="flex py-3 font-medium leading-none">
+                  <Trans>{title}</Trans>
+                </h3>
               )}
               {items?.length > 0 && (
                 <ul className="flex flex-col pl-6">
@@ -102,11 +106,11 @@ const MenuItem = ({ title, to, items }) => {
                       <Link
                         className="flex py-3 leading-none"
                         theme="black"
-                        to={to}
+                        to={t(to)}
                         target={target || null}
                         rel={target ? 'noopener noreferrer' : null}
                       >
-                        {title}
+                        <Trans>{title}</Trans>
                       </Link>
                     </li>
                   ))}

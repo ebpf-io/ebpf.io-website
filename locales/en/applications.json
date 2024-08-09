@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "eBPF Applications Landscape",
+    "description": "A directory of eBPF-based open source applications",
+    "keywords": "ebpf, bpf, landscape, directory, open source"
+  },
+  "Major Infrastructure": "Major Infrastructure",
+  "Emerging": "Emerging"
+}

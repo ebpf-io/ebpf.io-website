@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "eBPF 核心基础设施概览",
+    "description": "基于 eBPF 的核心基础设施目录",
+    "keywords": "ebpf, bpf, 概览, 目录, 开源"
+  },
+  "Major Infrastructure": "主要基础设施",
+  "Emerging": "新兴的基础设施",
+  "eBPF Auxiliary Libraries": "eBPF 辅助库",
+  "eBPF Libraries": "eBPF 库"
+}

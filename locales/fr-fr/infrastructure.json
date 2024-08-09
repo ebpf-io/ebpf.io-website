@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "Paysage des infrastructures de base de l’eBPF",
+    "description": "Un répertoire d’infrastructures basées sur eBPF",
+    "keywords": "ebpf, bpf, paysage, répertoire, open source"
+  },
+  "Major Infrastructure": "Infrastructures majeures",
+  "Emerging": "Émergentes",
+  "eBPF Auxiliary Libraries": "Bibliothèques eBPF auxiliaires",
+  "eBPF Libraries": "Bibliothèques eBPF"
+}

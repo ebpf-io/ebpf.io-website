@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "eBPF 核心基礎設施概覽",
+    "description": "基於 eBPF 的核心基礎設施目錄",
+    "keywords": "ebpf, bpf, 概覽, 目錄, 開源"
+  },
+  "Major Infrastructure": "主要基礎設施",
+  "Emerging": "新興基礎設施",
+  "eBPF Auxiliary Libraries": "eBPF 輔助函式庫",
+  "eBPF Libraries": "eBPF 函式庫"
+}
