@@ -447,8 +447,7 @@ const emergingApplications = [
     title: 'Whole-system, cross-language continuous profiler for Linux',
     description: `The Open Telemetry eBPF-based continuous profiler offers comprehensive, low-overhead whole-system profiling for
     Linux systems. It supports a wide range of programming languages, including native code without debug symbols, and provides
-    deep insights into application behavior. By leveraging the experimental OTel profiling signal and innovative techniques, it
-    delivers unparalleled visibility into complex software systems without intrusive instrumentation. This project empowers developers
+    deep insights into application behavior. By leveraging the experimental OTel profiling signals, this project empowers developers
     to identify performance bottlenecks and optimize their applications efficiently.`,
     urls: [
       { label: 'GitHub', url: 'https://github.com/open-telemetry/opentelemetry-ebpf-profile' },
