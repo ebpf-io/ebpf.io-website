@@ -1300,10 +1300,10 @@ const data = {
     events: {
       title: '산업 전문가를 통해 배우기 위해 eBPF 이벤트에 참석하세요',
       linkTitle: '더 많은 이벤트들',
-      linkUrl: '/events/',
+      linkUrl: '/ko-kr/events/',
     },
     videoGallery: {
-      title: 'eBPF introductory videos',
+      title: 'eBPF 소개 비디오',
       items: videoItems,
     },
     blog: {

@@ -99,7 +99,7 @@ const footerMenu = [
           sw: 'Labs',
           'tw-cn': '實驗',
           'zh-hant': '實驗',
-          'ko-kr': 'Labs',
+          'ko-kr': '실습',
         },
         to: {
           en: '/labs',

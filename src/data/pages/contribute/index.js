@@ -770,15 +770,15 @@ const data = {
   },
   'ko-kr': {
     hero: {
-      title: 'How to Contribute to eBPF',
+      title: 'eBPF에 기여하는 방법',
       description:
-        'eBPF consists of many communities including the eBPF runtime in the Linux kernel, various development SDKs and libraries, a series of large projects using eBPF, and a wide set of smaller projects and tools. There are therefore many ways to contribute to the eBPF community and get involved. The following list of ideas can serve as a starting point on how you can get involved and contribute to the community.',
+        'eBPF는 리눅스 커널의 eBPF 런타임, 다양한 개발 SDK 및 라이브러리, eBPF를 사용하는 여러 대규모 프로젝트, 그리고 다양한 소규모 프로젝트 및 도구를 포함한 많은 커뮤니티로 구성되어 있습니다. 위와 같은 eBPF 커뮤니티에 기여하고 참여할 수 있는 많은 방법이 있습니다. 다음 아이디어 리스트에는 커뮤니티에 기여하고 참여할 수 있는 방법에 대한 시작점이 될 수 있습니다.',
       card: {
-        title: 'Contribute to the eBPF runtime in the Linux kernel',
+        title: '리눅스 커널의 eBPF 런타임에 기여',
         description:
-          'The Linux kernel community is maintaining separate Git trees for the eBPF subsystem to manage all developer contributions. The trees are maintained by:',
+          '리눅스 커널 커뮤니티는 모든 개발자 기여를 관리하기 위해 eBPF 하위 시스템에 대해 별도의 Git 트리를 유지 관리합니다. 트리는 다음의 관리자에 의해 유지됩니다:',
         secondDescription:
-          'Working on the eBPF runtime can be incredibly rewarding as it builds the foundation for software being written that runs on millions of systems and devices. Work includes a wide range of topics from adding support to additional hooks, adding new program types, improvements to the eBPF verifier, adding JIT support for additional CPU architectures, extending the set of BPF helpers, adding new test cases to BPF’s test infrastructure, or improvements to bpftool and libbpf.',
+          'eBPF 런타임 작업을 수행하는 것은 수백만 개의 시스템과 장치에서 실행되는 소프트웨어의 초석을 구축하는 것이므로, 매우 보람찬 일입니다. 작업 범위에는 추가 훅(hook) 지원 추가, 새로운 프로그램 유형 추가, eBPF 검증기 개선, 추가 CPU 아키텍처에 대한 JIT 지원 추가, BPF 헬퍼 함수들을 추가확장, BPF 테스트 인프라에 새로운 테스트 케이스 추가 또는 bpftool과 libbpf 개선 등의 넓은 범주의 주제가 포함됩니다.',
         authors: [
           {
             name: 'Alexei Starovoitov',
@@ -791,11 +791,11 @@ const data = {
         ],
         links: [
           {
-            text: 'Git trees',
+            text: '깃 트리',
             to: 'https://git.kernel.org/?q=BPF+Group',
           },
           {
-            text: 'Linux kernel eBPF runtime',
+            text: '리눅스 커널 eBPF 런타임',
             to: '/ko-kr/infrastructure/#linux-kernel',
           },
         ],
@@ -805,46 +805,46 @@ const data = {
       items: [
         {
           icon: 'file',
-          title: 'Contribute to an eBPF project',
+          title: 'eBPF 프로젝트에 기여하기',
           description:
-            '<p>The list of eBPF-based projects is long and growing. It will be simple to find a project that sparks interest. Check out the eBPF landscape to see an overview of eBPF-based projects.</p><p>Many of the listed eBPF-based projects maintain a list of good-first-issue-labeled tasks which are scoped to not require extensive project specific knowledge and provide a great opportunity to get hands-on quickly.</p>',
+            '<p>eBPF 기반 프로젝트의 리스트는 길고 계속해서 증가하고 있습니다. 흥미를 유발시키는 프로젝트를 찾는 것은 쉬울 것입니다. eBPF 로드맵을 통해 eBPF 기반의 프로젝트들의 개요를 확인하세요.</p><p>나열된 많은 eBPF 기반의 프로젝트들은, 너무 구체적인 지식을 요구하지 않는 프로젝트들이므로 초심자가 프로젝트에 참여할 좋은 기회를 제공합니다.</p>',
           links: [
             {
-              text: 'eBPF landscape',
+              text: 'eBPF 로드맵',
               to: '/ko-kr/applications',
             },
           ],
         },
         {
           icon: 'gear',
-          title: 'Contribute to the eBPF development toolchains',
+          title: 'eBPF 개발도구 툴체인에 기여하기',
           description:
-            '<p>Even though the Linux kernel provides minimal libraries and APIs to use eBPF directly, the majority of projects leverage an eBPF development toolchain to simplify use of eBPF and share common code among other projects.</p><p>Check out eBPF development toolchains for a frequently updated list of projects in this space. You will find information on how to get involved on each project website directly.</p>',
+            '<p>리눅스 커널은 eBPF를 직접 사용할 수 있는 최소한의 라이브러리와 API를 제공하지만, 대부분의 프로젝트는 eBPF 개발 툴체인을 사용하여 eBPF 사용을 단순화하고 다른 프로젝트 간에 공유할 수 있는 공통 코드를 작성합니다.</p><p>여기서 자주 업데이트 되는 프로젝트들의 eBPF 개발을 위한 툴체인에 대해서 확인할 수 있습니다. 각 프로젝트에 직접 참여하는 방법에 대한 정보를 각 프로젝트 웹사이트에서 확인할 수 있습니다.</p>',
           links: [
             {
-              text: 'eBPF development toolchains',
+              text: 'eBPF 개발 툴체인',
               to: '/ko-kr/what-is-ebpf/#development-toolchains',
             },
           ],
         },
         {
           icon: 'pen',
-          title: 'Contribute to ebpf.io',
+          title: 'ebpf.io에 기여하기',
           description:
-            '<p>Do you have a writing talent? Are you good with diagrams? The content of the ebpf.io website is licensed under a Creative Commons Attribution 4.0 International License. If you want to get involved, visit the GitHub repository. Make sure to also join the #ebpf-website Slack channel to get in touch with the team working on the documentation. Share what you have learned by improving the documentation or write additional tutorials.</p>',
+            '<p>글쓰기에 재능이 있으시나요? 도표 작성에 능숙하나요? ebpf.io 웹사이트의 내용은 Creative Commons Attribution 4.0 International License에 따라 라이선스가 부여됩니다. 참여를 위해 GitHub 저장소를 방문하여 확인할 수 있습니다. 문서를 개선하거나 추가적인 튜토리얼 문서를 작성하며 얻은 새로운 점에 대해서 공유할 수도 있습니다.</p>',
           links: [
             {
-              text: 'License',
+              text: '라이센스',
               to: 'https://creativecommons.org/licenses/by/4.0/',
               target: '_blank',
             },
             {
-              text: 'GitHub repository',
+              text: '깃헙 레포 주소',
               to: 'https://github.com/ebpf-io/ebpf.io-website',
               target: '_blank',
             },
             {
-              text: 'Slack',
+              text: '슬랙',
               to: 'https://ebpf.io/slack',
             },
           ],

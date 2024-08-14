@@ -110,7 +110,7 @@ const headerMenu = [
           sw: 'Labs',
           'tw-cn': '實驗',
           'zh-hant': '實驗',
-          'ko-kr': 'Labs',
+          'ko-kr': '실습',
         },
         to: {
           en: '/labs',
@@ -138,7 +138,7 @@ const headerMenu = [
           sw: 'Kitabu cha Watoto kuhusu eBPF (kwa Kiingereza)',
           'tw-cn': 'eBPF 兒童指南',
           'zh-hant': 'eBPF 兒童指南',
-          'ko-kr': 'Children’s Guide to eBPF',
+          'ko-kr': '아이 눈높이의 eBPF 가이드',
         },
         to: '/books/buzzing-across-space-illustrated-childrens-guide-to-ebpf.pdf',
       },
