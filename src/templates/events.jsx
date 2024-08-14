@@ -14,9 +14,10 @@ const pageUrls = {
   'pt-br': '/pt-br/events/',
   'it-it': '/it-it/events/',
   es: '/es/events/',
-  'zh-cn': '/zh-cn/events/',
+  'zh-hans': '/zh-hans/events/',
   sw: '/sw/events/',
   'tw-cn': '/tw-cn/events/',
+  'zh-hant': '/zh-hant/events/',
   'ko-kr': '/ko-kr/events/',
 };
 

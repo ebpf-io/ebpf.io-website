@@ -55,7 +55,7 @@ const data = {
       buttonTitle: 'Suscríbete',
     },
   },
-  'zh-cn': {
+  'zh-hans': {
     title: '通过交互式实验室深入研究 eBPF',
     subscriptionForm: {
       title: '<span>订阅</span> eCHO 的双周新闻',
@@ -73,7 +73,7 @@ const data = {
       buttonTitle: 'Jisajili',
     },
   },
-  'tw-cn': {
+  'zh-hant': {
     title: '參與互動實驗，深入研究 eBPF',
     subscriptionForm: {
       title: '<span>訂閱</span> 訂閱雙周刊 eCHO 新聞',

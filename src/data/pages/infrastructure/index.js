@@ -10,9 +10,10 @@ const data = {
     'pt-br': '/pt-br/infrastructure/',
     'it-it': '/it-it/infrastructure/',
     es: '/es/infrastructure/',
-    'zh-cn': '/zh-cn/infrastructure/',
+    'zh-hans': '/zh-hans/infrastructure/',
     sw: '/sw/infrastructure/',
     'tw-cn': '/tw-cn/infrastructure/',
+    'zh-hant': '/zh-hant/infrastructure/',
     'ko-kr': '/ko-kr/infrastructure/',
   },
   en: {
@@ -183,17 +184,17 @@ const data = {
       items: auxiliaryLibraries,
     },
   },
-  'zh-cn': {
+  'zh-hans': {
     title: '基础设施',
     hero: {
       items: [
         {
           text: '应用项目',
-          to: '/zh-cn/applications/',
+          to: '/zh-hans/applications/',
         },
         {
           text: '基础设施',
-          to: '/zh-cn/infrastructure/',
+          to: '/zh-hans/infrastructure/',
         },
       ],
     },
@@ -239,17 +240,17 @@ const data = {
       items: auxiliaryLibraries,
     },
   },
-  'tw-cn': {
+  'zh-hant': {
     title: '基礎設施',
     hero: {
       items: [
         {
-          text: '應用項目',
-          to: '/tw-cn/applications/',
+          text: '應用專案',
+          to: '/zh-hant/applications/',
         },
         {
           text: '基礎設施',
-          to: '/tw-cn/infrastructure/',
+          to: '/zh-hant/infrastructure/',
         },
       ],
     },

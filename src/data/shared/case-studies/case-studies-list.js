@@ -3623,7 +3623,7 @@ const caseStudiesData = {
       ],
     },
   ],
-  'zh-cn': [
+  'zh-hans': [
     {
       title: 'Google',
       logo: Google,
@@ -4773,7 +4773,7 @@ const caseStudiesData = {
       ],
     },
   ],
-  'tw-cn': [
+  'zh-hant': [
     {
       title: 'Google',
       logo: Google,
@@ -4837,7 +4837,7 @@ const caseStudiesData = {
     {
       title: 'Cloudflare',
       logo: Cloudflare,
-      description: '<strong>Cloudflare</strong> 在網路安全、效能監控和網路可觀察性中使用eBPF。',
+      description: '<strong>Cloudflare</strong> 在網路安全、效能監控和網路可觀測性中使用eBPF。',
       links: [
         {
           text: '部落格',
@@ -4852,7 +4852,7 @@ const caseStudiesData = {
     {
       title: 'Microsoft',
       logo: Microsoft,
-      description: '<strong>Microsot</strong> 使用 eBPF 增強 Kubernetes 內進程的可觀察性和洞察能力',
+      description: '<strong>Microsot</strong> 使用 eBPF 增強 Kubernetes 內程序的可觀測性和洞察能力',
       links: [
         {
           text: '演講',
@@ -5311,7 +5311,7 @@ const caseStudiesData = {
       title: 'Helios',
       logo: Helios,
       description:
-        '<strong>Helios</strong> 在他們的運行時分析工具中使用 eBPF 以實現可觀察性和安全性',
+        '<strong>Helios</strong> 在他們的運行時分析工具中使用 eBPF 以實現可觀測性和安全性',
       links: [
         {
           text: 'Blog',
@@ -5386,7 +5386,7 @@ const caseStudiesData = {
     {
       title: 'Cloudflare',
       logo: Cloudflare,
-      description: '<strong>Cloudflare</strong> 在網路安全、效能監控和網路可觀察性中使用eBPF。',
+      description: '<strong>Cloudflare</strong> 在網路安全、效能監控和網路可觀測性中使用eBPF。',
       links: [
         {
           text: '部落格',
@@ -5401,7 +5401,7 @@ const caseStudiesData = {
     {
       title: 'Microsoft',
       logo: Microsoft,
-      description: '<strong>Microsot</strong> 使用 eBPF 增強 Kubernetes 內進程的可觀察性和洞察能力',
+      description: '<strong>Microsot</strong> 使用 eBPF 增強 Kubernetes 內程序的可觀測性和洞察能力',
       links: [
         {
           text: '演講',
@@ -5860,7 +5860,7 @@ const caseStudiesData = {
       title: 'Helios',
       logo: Helios,
       description:
-        '<strong>Helios</strong> 在他們的運行時分析工具中使用 eBPF 以實現可觀察性和安全性',
+        '<strong>Helios</strong> 在他們的運行時分析工具中使用 eBPF 以實現可觀測性和安全性',
       links: [
         {
           text: 'Blog',

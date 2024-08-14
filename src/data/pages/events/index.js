@@ -17,13 +17,13 @@ const data = {
   es: {
     title: 'Conferencias, eventos y reuniones sobre eBPF',
   },
-  'zh-cn': {
+  'zh-hans': {
     title: 'eBPF 会议和见面会',
   },
   sw: {
     title: 'Hifadhi ya Taarifa kuhusu eBPF',
   },
-  'tw-cn': {
+  'zh-hant': {
     title: 'eBPF 會議和見面會',
   },
   'ko-kr': {

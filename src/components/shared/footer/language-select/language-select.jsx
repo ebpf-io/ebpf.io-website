@@ -47,11 +47,9 @@ const LanguageSelect = ({ lang, pageUrls }) => {
 
   return (
     <LazyMotion features={domAnimation}>
-      <div className="relative h-10 w-[136px] md:mt-6 xs:w-full">
+      <div className="relative h-10 w-36 md:mt-6 xs:w-full">
         <div
-          className={clsx(
-            'absolute bottom-0 right-0 w-[136px] items-center overflow-hidden rounded border border-gray-40 bg-black text-sm leading-none transition-[shadow,border-color] duration-200 hover:border-gray-70 xs:w-full'
-          )}
+          className="absolute bottom-0 right-0 w-36 items-center overflow-hidden rounded border border-gray-40 bg-black text-sm leading-none transition-[shadow,border-color] duration-200 hover:border-gray-70 xs:w-full"
           ref={dropdownRef}
         >
           <m.ul
