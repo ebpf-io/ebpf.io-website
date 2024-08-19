@@ -92,8 +92,7 @@ const BlogPost = ({
           )}
           <SubscriptionForm
             className="col-span-full mt-28 lg:mt-24 md:mt-20 sm:mt-16"
-            title="Subscribe"
-            afterTitle="to bi-weekly eCHO News"
+            title="<span>Subscribe</span> to bi-weekly eCHO News"
             description="Keep up on the latest news and information from the eBPF and Cilium"
             placeholder="Email address..."
             buttonTitle="Subscribe"

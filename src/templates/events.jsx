@@ -16,7 +16,9 @@ const pageUrls = {
   es: '/es/events/',
   'zh-hans': '/zh-hans/events/',
   sw: '/sw/events/',
+  'tw-cn': '/tw-cn/events/',
   'zh-hant': '/zh-hant/events/',
+  'ko-kr': '/ko-kr/events/',
 };
 
 const EventsPage = ({ pageContext: { postEvents, totalCount, language } }) => (
