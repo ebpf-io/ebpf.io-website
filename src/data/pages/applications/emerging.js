@@ -450,7 +450,7 @@ const emergingApplications = [
     deep insights into application behavior. By leveraging the experimental OTel profiling signals, this project empowers developers
     to identify performance bottlenecks and optimize their applications efficiently.`,
     urls: [
-      { label: 'GitHub', url: 'https://github.com/open-telemetry/opentelemetry-ebpf-profile' },
+      { label: 'GitHub', url: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler' },
     ],
   },
 ];
