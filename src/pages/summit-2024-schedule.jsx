@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import SummitLayout from 'components/pages/summit-2024/summit-layout';
 import Hero from 'components/pages/summit-schedule/hero';
@@ -13,19 +13,29 @@ const hero = {
     'Explore the talks of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
 };
 
-const Summit2024 = () => (
-  <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
-    <Hero {...hero} />
-    <div
-      className="px-4 mx-4"
-      dangerouslySetInnerHTML={{
-        __html: `
+const Summit2024 = () => {
+  useEffect(() => {
+    if (!sessionStorage.getItem('pageReloaded')) {
+      sessionStorage.setItem('pageReloaded', 'true');
+      window.location.reload();
+    } else {
+      sessionStorage.removeItem('pageReloaded');
+    }
+  }, []);
+
+  return (
+    <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
+      <Hero {...hero} />
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `
             <script type="text/javascript" src="https://sessionize.com/api/v2/t472wio9/view/GridSmart"></script>
           `,
-      }}
-    />
-  </SummitLayout>
-);
+        }}
+      />
+    </SummitLayout>
+  );
+};
 
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => {
