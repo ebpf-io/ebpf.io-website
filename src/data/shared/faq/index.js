@@ -436,13 +436,13 @@ const data = {
     items: [
       {
         question: '這些專案是否屬於 eBPF 基金會？',
-        answer: `<ul> 
+        answer: `<ul>
 							<li>本頁列出了一些使用 eBPF 作為底層核心技術的開源專案。這些專案並非全部屬於 <a href="https://www.ebpf.foundation/">eBPF 基金會</a>，但在此列出以展示當前 eBPF 專案概況。
 						</ul>`,
       },
       {
         question: '添加你的專案',
-        answer: `<ol> 
+        answer: `<ol>
 							<li>確保專案符合列出的要求。見下文。</li>
 							<li>提交 <a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">Pull Request</a> 並提供所需的資訊。使用一個已列出的專案作為範本。應用程式的排序基於 GitHub 星數（從高到低），每季更新一次。</li>
 							<li>Pull Request 將由社群審核並由一位維護者合併。如果您有任何疑問，請隨時在 <a href="https://ebpf.io/slack">Slack</a> 上提問。</li>
@@ -451,7 +451,7 @@ const data = {
       {
         question: '您是否在維護一個已列出的專案？',
         answer: `<ul>
-					<li>如果您正在維護列出的專案之一，並希望調整內容。在 <a href="https://ebpf.io/slack">Slack</a> 上取得聯繫或直接提交一個 Pull Request。</li> 
+					<li>如果您正在維護列出的專案之一，並希望調整內容。在 <a href="https://ebpf.io/slack">Slack</a> 上取得聯繫或直接提交一個 Pull Request。</li>
 				</ul>`,
       },
       {
@@ -459,29 +459,83 @@ const data = {
         answer: `
 					<p>
 						專案可以在此頁面上以「主要」或「新興」的形式列出。被列為「新興」的要求是：
-					</p> 
-					<ul> 
-						<li> 
+					</p>
+					<ul>
+						<li>
 							該專案必須是開源的。所有原始碼必須根據開源許可證獲得許可。任何文件都必須在開放許可協議下授權。
-						</li> 
-						<li> 
+						</li>
+						<li>
 							該專案必須使用 eBPF 作為其底層核心技術（換句話說，如果去掉 eBPF 部分，專案將失去其目的）或有助於加速在生產環境中採用 eBPF。
-						</li> 
-						<li> 
+						</li>
+						<li>
 							該專案必須積極維護。
-						</li> 
-						<li> 
+						</li>
+						<li>
 							該專案必須對協作開放，並具有遵循開源最佳實踐的治理模式。
-						</li> 
-					<ul> 
-					<p> 
+						</li>
+					<ul>
+					<p>
 						要被列為「主要」專案，該專案必須滿足上述所有要求，並且：
 					</p>
 					<ul>
-						<li>該專案必須有超過 50 名貢獻者。</li> 
+						<li>該專案必須有超過 50 名貢獻者。</li>
 						<li>
 							該專案必須在生產級別環境中有大量使用者。由於此資訊可能不容易從專案連結中發現，因此此類資訊應包含在 Pull Request 描述中。
-						</li> 
+						</li>
+					</ul>`,
+      },
+    ],
+  },
+
+  'ko-kr': {
+    title: '자주 묻는 질문들',
+    items: [
+      {
+        question: '이러한 프로젝트들은 eBPF Foundation 소속인가요?',
+        answer: `<ul>
+					<li>이 페이지는 eBPF를 코어 기술로 사용하는 오픈 소스 프로젝트를 나열하고 있습니다. 이러한 프로젝트들이 모두 <a href="https://www.ebpf.foundation/">eBPF 재단</a>에서 관리하는 프로젝트는 아니지만, eBPF 프로젝트 큰그림에 대한 조사의 일부로 나열되어있습니다.</li>
+				</ul>`,
+      },
+      {
+        question: '여러분의 프로젝트를 추가하세요',
+        answer: `<ol>
+					<li>해당 프로젝트가 후술되는 요구사항을 만족하는지에 대해 확인해주세요, 다음의 내용을 확인해주세요.</li>
+					<li><a href="https://github.com/ebpf-io/ebpf.io" target="_blank" rel="noopener noreferrer">Pull request</a>를 열어주시고 필수 정보를 제공해주세요. 나열된 프로젝트를 예시로 삼아서 사용해주세요. 후술되는 애플리케이션의 순서는 GitHub의 스타 (높은순)으로 나열되어있으며, 이는 매 분기마다 업데이트됩니다.</li>
+					<li>Pull request는 커뮤니티에서 검토를 진행하며, eBPF 프로젝트 관리자에 의해서 merge 될 것입니다. 만일 질문이 있으시다면, <a href="https://ebpf.io/slack">Slack</a>에 자유롭게 질문해주세요.</li>
+				</ol>`,
+      },
+      {
+        question: '나열된 프로젝트를 관리하고 계신가요?',
+        answer: `<ul>
+					<li>만일 나열된 프로젝트 중 하나를 관리하고 계시고, 내용을 수정하고 싶으시다면 <a href="https://ebpf.io/slack">Slack</a>을 통해 연락하시거나, pull request를 직접적으로 열어주세요..</li>
+				</ul>`,
+      },
+      {
+        question: '프로젝트가 목록에 등재되기 위한 요구사항들',
+        answer: `
+					<p>
+						프로젝트들은 현 페이지에서 “Major” 또는 “Emerging” 상태로 등재될 수 있습니다. “Emerging”으로 등재되기 위해서는 다음의 요구사항을 만족해야합니다:
+					</p>
+					<ul>
+						<li>
+							해당 프로젝트는 오픈소스여야 합니다. 모든 오픈소스 코드는 오픈소스 라이센스에 의해 라이센싱 되어야합니다. 모든 공식 문서 또한 공개 라이센스에 의해 라이센싱 되어야합니다.
+						</li>
+						<li>
+							해당 프로젝트는 반드시 eBPF를 해당 프로젝트의 근간이 되는 주요 기술로 사용해야하거나 (즉, 만일 eBPF가 사용되는 부분이 없어진다면, 해당 프로젝트의 목적이 없어집니다) eBPF를 프로덕션 환경에서 사용하는 것에
+						</li>
+						<li>도움을 주어야 합니다.</li>
+						<li>
+							해당 프로젝트는 반드시 협력을 할 수 있는 구조여야 하며 좋은 오픈소스 관행(best-practices)들을 따르는 관리 모델을 채택해야합니다.
+						</li>
+					</ul>
+					<p>
+						“Major” 프로젝트로 등재되기 위해서는, 해당 프로젝트는 상술된 모든 요구사항을 만족해야하며, 추가적으로 다음의 사항을 만족해야합니다:
+					</p>
+					<ul>
+						<li>해당 프로젝트는 50명 이상의 기여자가 있어야 합니다.</li>
+						<li>
+							해당 프로젝트는 반드시 수많은 유저를 가진 프로덕션과 같은 환경에서 사용하고 있어야 합니다. 이러한 정보는 프로젝트의 링크만을 통해서 확인하기는 어려운 정보이기에, 해당 정보는 pull request 설명에 포함되어야합니다.
+						</li>
 					</ul>`,
       },
     ],

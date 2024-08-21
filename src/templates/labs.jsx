@@ -22,7 +22,9 @@ const pageUrls = {
   es: '/es/labs/',
   'zh-hans': '/zh-hans/labs/',
   sw: '/sw/labs/',
+  'tw-cn': '/tw-cn/labs/',
   'zh-hant': '/zh-hant/labs/',
+  'ko-kr': '/ko-kr/labs/',
 };
 
 const LabsPage = ({

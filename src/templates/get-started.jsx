@@ -25,7 +25,9 @@ const pageUrls = {
   es: '/es/get-started/',
   'zh-hans': '/zh-hans/get-started/',
   sw: '/sw/get-started/',
+  'tw-cn': '/tw-cn/get-started/',
   'zh-hant': '/zh-hant/get-started/',
+  'ko-kr': '/ko-kr/get-started/',
 };
 
 const hasContributors = false;

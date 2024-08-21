@@ -45,6 +45,11 @@ module.exports = {
       shortName: '繁中',
       code: 'zh-hant',
     },
+    'ko-kr': {
+      name: '한국어',
+      shortName: 'Kor',
+      code: 'ko-kr',
+    },
   },
   defaultLanguage: 'en',
 };
