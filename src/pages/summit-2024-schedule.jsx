@@ -4,6 +4,7 @@ import SummitLayout from 'components/pages/summit-2024/summit-layout';
 import Hero from 'components/pages/summit-schedule/hero';
 import SEO from 'components/shared/seo';
 import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
+
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
 
 const hero = {
@@ -23,7 +24,7 @@ const Summit2024 = () => {
   }, []);
 
   return (
-    <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
+    <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId} showBanner={false}>
       <Hero {...hero} />
       <div
         dangerouslySetInnerHTML={{
