@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import SummitLayout from 'components/pages/summit-2024/summit-layout';
+import SummitLayout from 'components/pages/summit-2024/summit-schedule-layout';
 import Hero from 'components/pages/summit-schedule/hero';
 import SEO from 'components/shared/seo';
 import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
@@ -24,7 +24,7 @@ const Summit2024 = () => {
   }, []);
 
   return (
-    <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId} showBanner={false}>
+    <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
       <Hero {...hero} />
       <div
         dangerouslySetInnerHTML={{
