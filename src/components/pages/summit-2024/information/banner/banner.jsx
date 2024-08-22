@@ -7,7 +7,7 @@ import screenIllustration from './images/screen.png';
 const data = {
   title: 'Don’t Miss Out!<br /> eBPF 2024 Summit Talks',
   description:
-    'Discover the lineup of amazing talks on how eBPF to address engineering challenges, and explore the ongoing evolution of eBPF itself.',
+    'Discover the lineup of amazing talks on using eBPF to address engineering challenges for a variety of use cases and explore the ongoing evolution of the eBPF ecosystem.',
   linkText: 'View the schedule',
   linkUrl: '/summit-2024-schedule/',
 };
