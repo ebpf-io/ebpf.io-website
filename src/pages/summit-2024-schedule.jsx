@@ -24,7 +24,7 @@ const Summit2024 = () => {
   }, []);
 
   return (
-    <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
+    <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId} showBanner={false}>
       <Hero {...hero} />
       <div
         dangerouslySetInnerHTML={{
