@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import Banner from './banner';
+import Banner from './banner';
 import ConnectingIcon from './images/connecting.inline.svg';
 import SharingIcon from './images/sharing.inline.svg';
 import TrendingIcon from './images/trending.inline.svg';
@@ -56,7 +56,7 @@ const Information = () => (
           );
         })}
       </div>
-      {/* <Banner /> */}
+      <Banner />
     </div>
   </section>
 );
