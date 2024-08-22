@@ -64,6 +64,7 @@ const SubscriptionForm = ({ className, size, isVertical }) => {
               'text-4xl': size === 'sm',
               'text-6xl': mdSize,
               'heading-8xl': lgSize,
+              '[&>span]:text-primary-yellow': mdSize || lgSize,
             })}
           >
             <Trans>

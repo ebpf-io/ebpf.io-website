@@ -4,6 +4,6 @@
     "description": "Um diretório de infraestrutura central baseada em eBPF",
     "keywords": "ebpf, bpf, paisagem, diretório, código-fonte"
   },
-  "Major Infrastructure": "Principais aplicações",
+  "Major Applications": "Principais aplicações",
   "Emerging": "Emergindo"
 }

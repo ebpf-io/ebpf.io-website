@@ -4,6 +4,6 @@
     "description": "Directorio de aplicaciones de código abierto basadas en eBPF",
     "keywords": "ebpf, bpf, paisaje, directorio, código abierto"
   },
-  "Major Infrastructure": "Aplicaciones principales",
+  "Major Applications": "Aplicaciones principales",
   "Emerging": "Emergente"
 }

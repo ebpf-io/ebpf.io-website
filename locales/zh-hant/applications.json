@@ -4,6 +4,6 @@
     "description": "基於 eBPF 的開源應用程式目錄",
     "keywords": "ebpf, bpf, 概覽, 目錄, 開源"
   },
-  "Major Infrastructure": "主要项目",
+  "Major Applications": "主要项目",
   "Emerging": "新兴项目"
 }

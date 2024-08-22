@@ -25,7 +25,7 @@ const ApplicationsPage = () => {
       <Hero />
       <ProjectsList
         className="pt-[72px] lg:pt-16 md:pt-12"
-        title={t('Major Infrastructure')}
+        title={t('Major Applications')}
         items={majorApplications}
       />
       <ProjectsList

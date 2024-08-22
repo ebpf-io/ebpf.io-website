@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "eBPF 어플리케이션들의 큰그림",
+    "description": "eBPF 기반의 오픈 소스 어플리케이션을 다루는 내용들",
+    "keywords": "ebpf, bpf, 랜드스케이프, 큰그림, 디렉토리, 오픈 소스"
+  },
+  "Major Applications": "주요 어플리케이션",
+  "Emerging": "새로운"
+}
