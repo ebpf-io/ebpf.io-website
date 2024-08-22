@@ -76,13 +76,6 @@ const lastYear = {
 const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
-    {/* <Banner /> */}
-    {/* <Speakers
-      title="Featured Speakers"
-      endpoint={endpoints.speakers}
-      linkTitle="View talks"
-      linkUrl="/summit-2024-talks/"
-    /> */}
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />
