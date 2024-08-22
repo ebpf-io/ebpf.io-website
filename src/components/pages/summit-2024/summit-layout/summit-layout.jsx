@@ -5,7 +5,7 @@ import SummitHeader from 'components/pages/summit-2024/summit-header';
 import TopBanner from 'components/pages/summit-2024/top-banner';
 import SummitFooter from 'components/shared/summit-footer';
 
-const SummitLayout = ({ children, navigation, hubspotFormId }) => (
+const SummitLayout = ({ children, navigation, hubspotFormId, showBanner = true }) => (
   <section className="flex min-h-screen flex-col">
     <TopBanner />
     <SummitHeader navigation={navigation} hubspotFormId={hubspotFormId} />
@@ -18,6 +18,7 @@ SummitLayout.propTypes = {
   children: PropTypes.node.isRequired,
   navigation: PropTypes.array.isRequired,
   hubspotFormId: PropTypes.string.isRequired,
+  showBanner: PropTypes.bool.isRequired,
 };
 
 export default SummitLayout;
