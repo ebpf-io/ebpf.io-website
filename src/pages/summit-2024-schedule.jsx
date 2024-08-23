@@ -27,6 +27,7 @@ const Summit2024 = () => {
     <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
       <Hero {...hero} />
       <div
+        className="px-8 mx-8"
         dangerouslySetInnerHTML={{
           __html: `
             <script type="text/javascript" src="https://sessionize.com/api/v2/t472wio9/view/GridSmart"></script>
