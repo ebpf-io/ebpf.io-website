@@ -34,6 +34,7 @@ import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
+import Qpoint from './logos/qpoint.inline.svg';
 import RADSecurity from './logos/rad-security.inline.svg';
 import Redhat from './logos/redhat.inline.svg';
 import Samsung from './logos/samsung.inline.svg';
@@ -717,6 +718,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> uses eBPF to monitor and secure egress traffic to your external vendor APIs',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
+        },
+      ],
+    },
   ],
   'fr-fr': [
     {
@@ -1347,6 +1360,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> utilise eBPF pour surveiller et sécuriser le trafic sortant vers vos API de fournisseurs externes',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
+        },
+      ],
+    },
   ],
   pt: [
     {
@@ -1971,6 +1996,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> utiliza eBPF para monitorar e proteger o tráfego de saída para as suas APIs de fornecedores externos',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
+        },
+      ],
+    },
   ],
   'pt-br': [
     {
@@ -2456,6 +2493,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
+        },
+      ],
+    },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> usa eBPF para monitorar e proteger o tráfego de saída para suas APIs de fornecedores externos',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
         },
       ],
     },
@@ -2950,6 +2999,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable',
+        },
+      ],
+    },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> eBPF per monitorare e proteggere il traffico in uscita verso le tue API di fornitori esterni',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
         },
       ],
     },
@@ -3622,6 +3683,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> usa eBPF para monitorear y asegurar el tráfico de salida hacia tus APIs de proveedores externos',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
+        },
+      ],
+    },
   ],
   'zh-hans': [
     {
@@ -4209,6 +4282,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> 使用 eBPF 监控并保护到外部供应商 API 的出站流量',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
+        },
+      ],
+    },
   ],
   sw: [
     {
@@ -4769,6 +4854,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/',
+        },
+      ],
+    },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> inatumia eBPF kufuatilia na kulinda trafiki ya nje kuelekea API za wauzaji wako wa nje',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
         },
       ],
     },
@@ -5868,6 +5965,18 @@ const caseStudiesData = {
         },
       ],
     },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> 使用 eBPF 監控並保護到外部供應商 API 的出站流量',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
+        },
+      ],
+    },
   ],
   'ko-kr': [
     {
@@ -6532,6 +6641,18 @@ const caseStudiesData = {
         {
           text: 'Blog',
           to: 'https://ksoc.com/blog/introducing-rad-security',
+        },
+      ],
+    },
+    {
+      title: 'Qpoint',
+      logo: Qpoint,
+      description:
+        '<strong>Qpoint</strong> 는 eBPF를 사용하여 외부 벤더 API로의 출력 트래픽을 모니터링하고 보호합니다',
+      links: [
+        {
+          text: 'Blog',
+          to: 'https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf',
         },
       ],
     },
