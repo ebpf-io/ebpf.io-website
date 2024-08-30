@@ -27,7 +27,7 @@ BPF originally stood for Berkeley Packet Filter, but now that eBPF (extended BPF
 
 ### What is the bee named?
 
-The bee is the official logo for eBPF and was originally created by Vadim Shchekoldin. At the [first eBPF Summit](https://ebpf.io/summit-2020.html) there was a vote taken and the bee was named eBee. (For details on acceptable uses of the logo, please see the Linux Foundation [Brand Guidelines](https://linuxfoundation.org/brand-guidelines/).)
+The bee is the official logo for eBPF and was originally created by Vadim Shchekoldin. At the [first eBPF Summit](https://ebpf.io/summit-2020.html) there was a vote taken and the bee was named eBee. (For details on acceptable uses of [the logo](https://ebpf.foundation/wp-content/uploads/sites/9/2023/03/ebpf_logo_color_on_white-2.png), please see the eBPF Foundation [Brand Guidelines](https://ebpf.foundation/brand-guidelines/).)
 
 ## Introduction to eBPF
 
