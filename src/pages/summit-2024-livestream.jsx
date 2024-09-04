@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SummitLayout from 'components/pages/summit-2024/summit-schedule-layout';
+import SummitLayout from 'components/pages/summit-2024/summit-livestream-layout';
 import SEO from 'components/shared/seo';
 import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
 
@@ -8,7 +8,7 @@ const ogImage = '/images/social-preview-ebpf-summit.jpg';
 
 const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
-    <div className='lassName="fixed inset-0"'>
+    <div className='flex-grow w-full h-full"'>
       <iframe
         className="h-full w-full"
         // width="560"
