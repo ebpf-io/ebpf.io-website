@@ -13,7 +13,7 @@ const icons = {
 
 const ctaButtons = [
   {
-    title: 'Join the Livestream',
+    title: 'Join the summit livestream',
     theme: 'orange',
     onclick: null,
     url: '/summit-2024-livestream',
