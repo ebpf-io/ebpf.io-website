@@ -20,7 +20,7 @@ const Summit2024 = () => (
         webkitallowfullscreen="true"
        mozallowfullscreen="true"
       /> */}
-      <video autoPlay controls>
+      <video className="h-full w-full" autoPlay controls>
         <source
           src="https://res.cloudinary.com/dwlmlg0xw/video/upload/f_auto:video,q_auto/dhjitn2zfx2jhbvcw6bf"
           type="video/mp4"
