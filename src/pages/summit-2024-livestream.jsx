@@ -33,7 +33,7 @@ const Summit2024 = () => (
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => {
   const pageMetadata = {
-    title: 'eBPF Summit 2024 Schedule',
+    title: 'eBPF Summit 2024 Livestream',
     description:
       'Explore the talks of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
     image: ogImage,
