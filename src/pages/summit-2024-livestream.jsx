@@ -1,5 +1,6 @@
 import React from 'react';
 
+import PromoMp4 from 'assets/promo.mp4';
 import SummitLayout from 'components/pages/summit-2024/summit-livestream-layout';
 import SEO from 'components/shared/seo';
 import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
@@ -9,15 +10,20 @@ const ogImage = '/images/social-preview-ebpf-summit.jpg';
 const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <div className='flex-grow w-full h-full"'>
-      <iframe
+      {/* <iframe
         className="h-full w-full"
         // width="560"
         // height="315"
         src="https://www.youtube.com/embed/lqIBKiTI62Q"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      />
+        allowFullScreen="true"
+        webkitallowfullscreen="true"
+       mozallowfullscreen="true"
+      /> */}
+      <video className="h-full w-full" controls>
+        <source src={PromoMp4} type="video/mp4" />
+      </video>
     </div>
   </SummitLayout>
 );
