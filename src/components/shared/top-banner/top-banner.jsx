@@ -15,7 +15,7 @@ import bg2 from './images/bg-2.webp';
 
 const TopBanner = () => {
   const handleClick = () => {
-    navigate('/summit-2024');
+    navigate('/summit-2024-livestream');
   };
 
   return (
@@ -52,7 +52,7 @@ const TopBanner = () => {
           eBPF Summit 2024
         </span>
         <Button className="h-9 px-4 pb-1 md:text-sm" theme="black-filled" onClick={handleClick}>
-          Register here
+          Join the summit livestream
         </Button>
       </div>
     </div>
