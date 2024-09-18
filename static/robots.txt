@@ -1,0 +1,13 @@
+# Disallow high-traffic bots
+User-agent: Wget
+User-agent: Go-http-client
+User-agent: Gofeed
+User-agent: -
+Disallow: /
+
+# Allow all other bots
+User-agent: *
+Allow: /
+
+Sitemap: https://ebpf.io/sitemap-index.xml
+Host: https://ebpf.io
