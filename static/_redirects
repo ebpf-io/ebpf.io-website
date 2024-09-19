@@ -1,5 +1,5 @@
 # Block access to bots and crawlers
-/* /.netlify/edge-functions/bots 200
+/* /.netlify/functions/bots 200
 
 # Redirect all pages under /news/ to the equivalent path under /blog/
 /news/* /blog/:splat
