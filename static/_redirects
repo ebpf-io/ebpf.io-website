@@ -1,3 +1,6 @@
+# Block access to bots and crawlers
+/* /.netlify/edge-functions/bots 200
+
 # Redirect all pages under /news/ to the equivalent path under /blog/
 /news/* /blog/:splat
 /projects/ /applications/
@@ -13,6 +16,3 @@
 /slack/ https://slack.cilium.io/
 
 /foundation/ https://ebpf.foundation
-
-
-

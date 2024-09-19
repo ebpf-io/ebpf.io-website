@@ -1,30 +1,30 @@
-export default async (request) => {
-  // Get the user agent string of the requester
-  const ua = request.headers.get('user-agent');
+exports.handler = async (event) => {
+  const userAgent = event.headers['user-agent'] || '';
 
-  // Specify the user agents which need to be blocked
-  const agents = ['Wget', 'Go-http-client', 'Gofeed', '-'];
+  // List of user agents to block
+  const blockedUserAgents = [
+    'Wget',
+    'Go-http-client/2.0',
+    'Go-http-client/1.0',
+    'Gofeed/1.0',
+    'undefined',
+    '-',
+  ];
 
-  // Check against our list of known AI bots
-  let isBot = false;
-  agents.forEach((agent) => {
-    if (ua?.toLowerCase().includes(agent.toLowerCase())) {
-      isBot = true;
-      
-    }
-  });
-
-  // If the requester is an AI bot, disallow with a 401
-  if (isBot) {
-    return new Response(null, { status: 401 });
+  // Check if the request comes from a blocked user agent
+  if (blockedUserAgents.some((ua) => userAgent.includes(ua))) {
+    return {
+      statusCode: 403,
+      body: 'Access Forbidden: Bad User Agent',
+    };
   }
-  // Otherwise, continue with the request as normal
-  
-    
-  
-};
 
-// This edge function is executed for all requests across the site
-export const config = {
-  path: '*',
+  // If no conditions are met, allow the request
+  return {
+    statusCode: 200,
+    headers: {
+      'Content-Type': 'text/html',
+    },
+    body: '',
+  };
 };
