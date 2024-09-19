@@ -167,6 +167,7 @@ module.exports = {
         headers: {
           '/fonts/*': ['Cache-Control: public, max-age=31536000, immutable'],
         },
+        mergeSecurityHeaders: false,
       },
     },
     'gatsby-alias-imports',
