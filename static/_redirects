@@ -1,6 +1,3 @@
-# Block access to bots and crawlers
-/* /.netlify/functions/bots 200
-
 # Redirect all pages under /news/ to the equivalent path under /blog/
 /news/* /blog/:splat
 /projects/ /applications/
