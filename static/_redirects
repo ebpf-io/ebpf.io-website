@@ -1,5 +1,9 @@
 # Block access to bots and crawlers
-/* /.netlify/functions/bots 200
+/* / 403 User-Agent=Wget
+/* / 403 User-Agent=Go-http-client/2.0
+/* / 403 User-Agent=Go-http-client/1.0
+/* / 403 User-Agent=Gofeed/1.0
+/* / 403 User-Agent=-
 
 # Redirect all pages under /news/ to the equivalent path under /blog/
 /news/* /blog/:splat
