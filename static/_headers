@@ -1,8 +1,25 @@
 /*
-  X-Robots-Tag: noindex
-  Set-Cookie: blocked_user_agent=1; Max-Age=31536000
-  User-Agent: Wget
-  User-Agent: Go-http-client/2.0
-  User-Agent: Go-http-client/1.0
-  User-Agent: Gofeed/1.0
-  User-Agent: -
+  User-Agent based blocking
+  Blocking common unwanted User Agents
+  Bots like wget, Go-http-client, Gofeed
+*/
+User-Agent: Wget
+  X-Content-Type-Options: nosniff
+  403: Permission denied
+
+User-Agent: Go-http-client/2.0
+  X-Content-Type-Options: nosniff
+  403: Permission denied
+
+User-Agent: Go-http-client/1.0
+  X-Content-Type-Options: nosniff
+  403: Permission denied
+
+User-Agent: Gofeed/1.0
+  X-Content-Type-Options: nosniff
+  403: Permission denied
+
+/* Catch-all for undefined/malformed agents */
+User-Agent: undefined
+  X-Content-Type-Options: nosniff
+  403: Permission denied
