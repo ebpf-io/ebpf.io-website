@@ -38,6 +38,7 @@
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-mdx": "^5.13.0",
     "gatsby-plugin-netlify": "^5.1.1",
+    "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-twitter": "^5.13.0",
     "gatsby-remark-copy-linked-files": "^6.13.0",
     "gatsby-remark-images": "^7.13.0",

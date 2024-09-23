@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "eBPF 코어 인프라 큰그림",
+    "description": "eBPF 기반의 코어 인프라를 다루는 내용들",
+    "keywords": "ebpf, bpf, 랜드스케이프, 큰그림, 디렉토리, 오픈 소스"
+  },
+  "Major Infrastructure": "주요 인프라",
+  "Emerging": "새로운",
+  "eBPF Auxiliary Libraries": "eBPF 보조 라이브러리",
+  "eBPF Libraries": "eBPF 라이브러리"
+}

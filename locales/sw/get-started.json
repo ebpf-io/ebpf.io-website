@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "title": "Kuanza na eBPF",
+    "items": [
+      {
+        "card": "lab",
+        "title": "Jaribu Warsha",
+        "description": "Kwa kuchukua mfano wa opensnoop kutoka ripoti ya Liz Rice, warsha hii inakufundisha jinsi ya kutumia chombo cha eBPF, kuona jinsi kinavyopakia vipengee vyake, na hata kuongeza ufuatiliaji wako mwenyewe kwenye nambari chanzo ya eBPF."
+      },
+      {
+        "card": "book",
+        "title": "Soma Vitabu",
+        "description": "Soma vitabu vya \"What is eBPF?\" na \"Learning eBPF\" kutoka O’Reilly vilivyoandikwa na Liz Rice au \"BPF Performance Tools\" kutoka Brendan Gregg ili kuanza. Katika vitabu hivyo, utajifunza ni nini eBPF na kwa nini ni yenye nguvu, na uwezo wake."
+      },
+      {
+        "card": "video",
+        "title": "Tazama Video",
+        "description": "Zama katika historia ya eBPF na mazungumzo haya kutoka kwa John Fastabend. Kuanzia \"siku za mwanzo\" za mwaka 2014, inajadili miradi kuu, makampuni, na wadau walioathiri mandhari ya mtandao wa Linux wakati huo na jinsi walivyowezesha uumbaji wa eBPF."
+      }
+    ]
+  },
+  "documentation": {
+    "title": "Soma Nyaraka ili Kujifunza Zaidi Kuhusu eBPF",
+    "items": [
+      {
+        "image": "wikipedia",
+        "title": "Wikipedia",
+        "description": "Makala ya Wikipedia kuhusu eBPF"
+      },
+      {
+        "image": "stackoverflow",
+        "title": "eBPF Stackoverflow",
+        "description": "Uliza maswali na soma majibu"
+      },
+      {
+        "image": "reddit",
+        "title": "Jumuiya ya eBPF kwenye Reddit",
+        "description": "Jadili sehemu ya kernel ya eBPF"
+      },
+      {
+        "image": "cilium",
+        "title": "Mwongozo wa Marejeo wa BPF & XDP",
+        "description": "Jifunze muundo wa BPF na uandishi wa programu"
+      },
+      {
+        "image": "kernel",
+        "title": "Nyaraka za BPF",
+        "description": "Nyaraka za BPF katika Kernel ya Linux"
+      },
+      {
+        "image": "gitKernel",
+        "title": "BPF Design Q&A",
+        "description": "Maswali Yanayoulizwa Sana Kuhusu eBPF yanayohusiana na Kernel"
+      }
+    ]
+  },
+  "books": {
+    "title": "Chimbua Vitabu Kuhusu eBPF Kutoka kwa Wataalamu wa Tasnia",
+    "linkTitle": "Jifunze zaidi"
+  },
+  "tutorials": {
+    "title": "Jifunze zaidi kuhusu teknolojia ya eBPF kupitia mafunzo kutoka kwa wataalamu wa tasnia",
+    "linkTitle": "More tutorials",
+    "items": [
+      {
+        "title": "Mafunzo ya kufuatilia eBPF",
+        "description": "Jifunze jinsi ya kutumia eBPF kwa ufuatiliaji kutoka kwa zana za bcc hadi kuendeleza na bpftrace na bcc.",
+        "linkUrl": "http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html"
+      },
+      {
+        "title": "Mafunzo ya XDP",
+        "description": "Jifunze hatua za msingi zinazohitajika kuandika programu za XDP kutoka kwa ni nini hadi kuambatanisha programu nyingi kwenye kiolesura kimoja.",
+        "linkUrl": "https://github.com/xdp-project/xdp-tutorial"
+      },
+      {
+        "title": "Mbadala wa Kompila",
+        "description": "Msaada wa BPF wa kuendesha compiler kwa ushirikiano kwenye kivinjari chako na kuchunguza tukio la assembly.",
+        "linkUrl": "https://godbolt.org/"
+      }
+    ]
+  },
+  "events": {
+    "title": "Hudhuria matukio ya eBPF ili kujifunza kutoka kwa wataalamu wa tasnia",
+    "linkTitle": "Matukio zaidi"
+  },
+  "videoGallery": {
+    "title": "Video za Utangulizi kwa eBPF"
+  },
+  "blog": {
+    "title": "Jifunze zaidi kuhusu eBPF katika makala kutoka kwa jamii",
+    "linkTitle": "Makala zaidi"
+  },
+  "Meet some of our community members": "Meet some of our community members"
+}

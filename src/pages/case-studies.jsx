@@ -1,36 +1,50 @@
+/* eslint-disable react/prop-types */
+import { graphql } from 'gatsby';
 import React from 'react';
 
 import Hero from 'components/pages/case-studies/hero';
 import Layout from 'components/shared/layout';
-import Link from 'components/shared/link';
 import SEO from 'components/shared/seo';
-import data from 'data/pages/case-studies';
-import SEO_DATA from 'data/shared/seo-data';
+import createPageUrl from 'utils/create-page-url';
 
-import { defaultLanguage } from '../../config/languages';
-
-const lang = defaultLanguage;
-
-const Description = () => (
-  <span>
-    Here are some of the organizations that are using eBPF in production. If you’re using eBPF and
-    aren’t on this list,{' '}
-    <Link theme="black-primary-yellow" size="lg" to="https://github.com/ebpf-io/ebpf.io">
-      please submit a pull request
-    </Link>
-    .
-  </span>
-);
+const pageUrls = createPageUrl('case-studies');
 
 const CaseStudies = () => (
-  <Layout pageUrls={data.pageUrls}>
-    <Hero {...data[lang].hero} description={<Description />} />
+  <Layout pageUrls={pageUrls}>
+    <Hero />
   </Layout>
 );
 
-// eslint-disable-next-line react/prop-types
-export const Head = ({ location: { pathname } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.caseStudies[lang]} />
-);
+export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
+  const t = JSON.parse(
+    data.locales.edges.find((edge) => edge.node.language === language).node.data
+  );
+
+  return (
+    <SEO
+      pathname={pathname}
+      title={t['eBPF - Introduction, Tutorials & Community Resources']}
+      description={
+        t[
+          'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+        ]
+      }
+    />
+  );
+};
 
 export default CaseStudies;
+
+export const query = graphql`
+  query {
+    locales: allLocale(filter: { ns: { in: ["shared", "case-studies"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

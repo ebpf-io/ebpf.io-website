@@ -2,6 +2,8 @@ import { m, useAnimation, LazyMotion, domAnimation } from 'framer-motion';
 import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 
+import headerMenu from 'data/shared/header-menu';
+
 import MenuItem from './menu-item';
 
 const ANIMATION_DURATION = 0.2;
@@ -27,7 +29,7 @@ const variants = {
   },
 };
 
-const MobileMenu = ({ isOpen, items }) => {
+const MobileMenu = ({ isOpen }) => {
   const controls = useAnimation();
 
   useEffect(() => {
@@ -51,7 +53,7 @@ const MobileMenu = ({ isOpen, items }) => {
         variants={variants}
       >
         <ul className="flex h-[calc(100vh-64px-60px)] flex-col divide-y divide-gray-90 divide-opacity-50 overflow-y-auto overflow-x-hidden px-7 pb-7 sm:px-4 xs:h-[calc(100vh-64px-90px)]">
-          {items.map((item, index) => (
+          {headerMenu.map((item, index) => (
             <MenuItem {...item} key={index} />
           ))}
         </ul>
@@ -62,24 +64,6 @@ const MobileMenu = ({ isOpen, items }) => {
 
 MobileMenu.propTypes = {
   isOpen: PropTypes.bool,
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      to: PropTypes.string,
-      items: PropTypes.arrayOf(
-        PropTypes.shape({
-          title: PropTypes.string.isRequired,
-          to: PropTypes.string,
-          items: PropTypes.arrayOf(
-            PropTypes.shape({
-              title: PropTypes.string.isRequired,
-              to: PropTypes.string,
-            })
-          ),
-        })
-      ),
-    })
-  ).isRequired,
 };
 
 MobileMenu.defaultProps = {
