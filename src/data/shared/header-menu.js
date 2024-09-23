@@ -81,7 +81,7 @@ const headerMenu = [
       },
       {
         title: 'eBPF Docs',
-        to: 'https://ebpf-docs.dylanreimerink.nl/',
+        to: 'https://docs.ebpf.io/',
         target: '_blank',
       },
       {
