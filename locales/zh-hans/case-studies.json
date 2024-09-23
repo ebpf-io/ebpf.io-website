@@ -530,6 +530,16 @@
           "to": "https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable"
         }
       ]
+    },
+    {
+      "title": "Qpoint",
+      "description": "<strong>Qpoint</strong> 使用 eBPF 监控并保护到外部供应商 API 的出站流量",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
+        }
+      ]
     }
   ]
 }

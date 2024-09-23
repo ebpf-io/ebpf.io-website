@@ -592,6 +592,16 @@
           "to": "https://ksoc.com/blog/introducing-rad-security"
         }
       ]
+    },
+    {
+      "title": "Qpoint",
+      "description": "<strong>Qpoint</strong> 는 eBPF를 사용하여 외부 벤더 API로의 출력 트래픽을 모니터링하고 보호합니다",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
+        }
+      ]
     }
   ]
 }

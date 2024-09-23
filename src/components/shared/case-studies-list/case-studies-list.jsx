@@ -41,6 +41,7 @@ import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
+import Qpoint from './logos/qpoint.inline.svg';
 import RADSecurity from './logos/rad-security.inline.svg';
 import Redhat from './logos/redhat.inline.svg';
 import Samsung from './logos/samsung.inline.svg';
@@ -93,6 +94,7 @@ const logos = {
   'the new york times': NYT,
   'oligo security': Oligo,
   palantir: Palantir,
+  qpoint: Qpoint,
   'rad security': RADSecurity,
   'red hat': Redhat,
   samsung: Samsung,

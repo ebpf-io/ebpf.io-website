@@ -5,7 +5,7 @@
     "keywords": "ebpf, bpf, contribute, getting started, community"
   },
   "eBPF Case Studies": "eBPF Case Studies",
-  "Here are some of the organizations that are using eBPF in production. If you’re using eBPF and aren’t on this list, <2>please submit a pull request</2>.": "Here are some of the organizations that are using eBPF in production. If you’re using eBPF and aren’t on this list, <2>please submit a pull request</2>.",
+  "Here are some of the organizations that are using eBPF in production. If you're using eBPF and aren't on this list, <2>please submit a pull request</2>.": "Here are some of the organizations that are using eBPF in production. If you're using eBPF and aren't on this list, <2>please submit a pull request</2>.",
   "items": [
     {
       "title": "Google",
@@ -81,7 +81,7 @@
     },
     {
       "title": "Microsoft",
-      "description": "<strong>Microsot</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes",
+      "description": "<strong>Microsoft</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes",
       "links": [
         {
           "text": "Talk",
@@ -161,7 +161,7 @@
         },
         {
           "text": "Talk",
-          "to": " https://www.youtube.com/watch?v=6nlv_VCsjpQ"
+          "to": "https://www.youtube.com/watch?v=6nlv_VCsjpQ"
         }
       ]
     },
@@ -590,6 +590,16 @@
         {
           "text": "Blog",
           "to": "https://ksoc.com/blog/introducing-rad-security"
+        }
+      ]
+    },
+    {
+      "title": "Qpoint",
+      "description": "<strong>Qpoint</strong> uses eBPF to monitor and secure egress traffic to your external vendor APIs",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
         }
       ]
     }

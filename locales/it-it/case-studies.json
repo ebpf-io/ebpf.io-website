@@ -437,6 +437,16 @@
           "to": "https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable"
         }
       ]
+    },
+    {
+      "title": "Qpoint",
+      "description": "<strong>Qpoint</strong> eBPF per monitorare e proteggere il traffico in uscita verso le tue API di fornitori esterni",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
+        }
+      ]
     }
   ]
 }

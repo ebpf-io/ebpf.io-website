@@ -990,6 +990,16 @@
           "to": "https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/"
         }
       ]
+    },
+    {
+      "title": "Qpoint",
+      "description": "<strong>Qpoint</strong> 使用 eBPF 監控並保護到外部供應商 API 的出站流量",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
+        }
+      ]
     }
   ]
 }

@@ -500,6 +500,16 @@
           "to": "https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/"
         }
       ]
+    },
+    {
+      "title": "Qpoint",
+      "description": "<strong>Qpoint</strong> inatumia eBPF kufuatilia na kulinda trafiki ya nje kuelekea API za wauzaji wako wa nje",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
+        }
+      ]
     }
   ]
 }

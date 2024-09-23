@@ -5,11 +5,11 @@ import Button from 'components/shared/button';
 import screenIllustration from './images/screen.png';
 
 const data = {
-  title: 'Don’t Miss Out!<br /> eBPF 2024 Summit Talks',
+  title: 'Don’t Miss Out!<br /> eBPF 2024 Summit Schedule',
   description:
-    'Discover how individuals and initiatives currently utilize eBPF to address engineering challenges, and explore the ongoing evolution of eBPF itself.',
-  linkText: 'View talks',
-  linkUrl: '/summit-2023-talks/',
+    'Discover the lineup of amazing talks on using eBPF to address engineering challenges for a variety of use cases and explore the ongoing evolution of the eBPF ecosystem.',
+  linkText: 'View the schedule',
+  linkUrl: '/summit-2024-schedule/',
 };
 
 const Banner = () => (

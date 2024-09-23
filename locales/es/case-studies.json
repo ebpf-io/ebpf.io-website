@@ -592,6 +592,16 @@
           "to": "https://ksoc.com/blog/introducing-rad-security"
         }
       ]
+    },
+    {
+      "title": "Qpoint",
+      "description": "<strong>Qpoint</strong> usa eBPF para monitorear y asegurar el tráfico de salida hacia tus APIs de proveedores externos",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
+        }
+      ]
     }
   ]
 }

@@ -16,7 +16,7 @@ const CaseStudies = () => {
           className="relative mt-10"
           items={t('case-studies:items', { returnObjects: true }).slice(0, 6)}
           linkText={t('caseStudies.linkText')}
-          linkUrl={t('caseStudies.linkUrl')}
+          linkUrl={t('/case-studies')}
         />
       </div>
     </section>
