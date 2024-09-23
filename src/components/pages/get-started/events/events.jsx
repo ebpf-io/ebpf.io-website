@@ -20,7 +20,7 @@ const Events = ({ items, className }) => {
         </div>
         <div className="mt-12 flex items-center justify-center sm:mt-10">
           <Link theme="black-primary-yellow" size="lg" to={t('/events')}>
-            to={t('events.linkTitle')}
+            {t('events.linkTitle')}
           </Link>
         </div>
       </div>

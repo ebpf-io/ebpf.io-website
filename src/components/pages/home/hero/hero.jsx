@@ -18,7 +18,7 @@ const Hero = () => {
           <Button size="md" theme="black-filled" to={t('/applications')}>
             {t('Project Landscape')}
           </Button>
-          <Button size="md" theme="primary-yellow-filled" to={t('hero.yellowButtonUrl')}>
+          <Button size="md" theme="primary-yellow-filled" to={t('/what-is-ebpf')}>
             {t('What is eBPF?').includes('¿')
               ? t('What is eBPF?')
               : t('What is eBPF?').replace(/\?/g, '')}
