@@ -20,7 +20,7 @@ const Banner = () => {
             Find all of the recordings on YouTube
           </h2>
           <Button
-            to="https://www.youtube.com/playlist?list=PLDg_GiBbAx-l4D4oKbscJhPFKv2oqPcD_"
+            to="https://www.youtube.com/playlist?list=PLDg_GiBbAx-m7yn_FYcc41PNrgtxlISBK"
             className="rounded-lg leading-tight xs:w-full"
             theme="black-filled"
             size="md"

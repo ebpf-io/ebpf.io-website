@@ -15,7 +15,9 @@ import bg2 from './images/bg-2.webp';
 
 const TopBanner = () => {
   const handleClick = () => {
-    navigate('/summit-2024-livestream');
+    navigate('https://www.youtube.com/playlist?list=PLDg_GiBbAx-m7yn_FYcc41PNrgtxlISBK', {
+      target: '_blank',
+    });
   };
 
   return (
@@ -52,7 +54,7 @@ const TopBanner = () => {
           eBPF Summit 2024
         </span>
         <Button className="h-9 px-4 pb-1 md:text-sm" theme="black-filled" onClick={handleClick}>
-          Join the summit livestream
+          Watch the recordings on Youtube
         </Button>
       </div>
     </div>

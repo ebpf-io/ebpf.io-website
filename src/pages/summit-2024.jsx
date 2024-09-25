@@ -1,11 +1,10 @@
 import React from 'react';
 
-// import Banner from 'components/pages/summit-2024/banner';
+import Banner from 'components/pages/summit-2024/banner';
 import Hero from 'components/pages/summit-2024/hero';
 import Hosts from 'components/pages/summit-2024/hosts';
 import Information from 'components/pages/summit-2024/information';
 import LastYear from 'components/pages/summit-2024/last-year';
-// import Speakers from 'components/pages/summit-2024/speakers';
 import SummitLayout from 'components/pages/summit-2024/summit-layout';
 import SEO from 'components/shared/seo';
 // import endpoints from 'data/shared/sessionize';
@@ -76,6 +75,7 @@ const lastYear = {
 const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
+    <Banner />
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />

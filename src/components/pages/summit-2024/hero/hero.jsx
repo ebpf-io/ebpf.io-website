@@ -13,10 +13,10 @@ const icons = {
 
 const ctaButtons = [
   {
-    title: 'Join the summit livestream',
+    title: 'Watch the recordings on YouTube',
     theme: 'orange',
     onclick: null,
-    url: '/summit-2024-livestream',
+    url: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-m7yn_FYcc41PNrgtxlISBK',
   },
   {
     onClick: null,
