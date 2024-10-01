@@ -178,6 +178,7 @@ module.exports = {
         defaultLanguage,
         siteUrl: process.env.GATSBY_DEFAULT_SITE_URL,
         trailingSlash: 'always',
+        redirect: false,
         i18nextOptions: {
           load: 'all',
           lowerCaseLng: true,
