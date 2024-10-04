@@ -233,6 +233,7 @@ libbpf 库是一个基于 C/ c++ 的通用 eBPF 库，它可以帮助解耦将 c
 - [Learn eBPF Tracing: Tutorial and Examples](http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html), Brendan Gregg's Blog, Jan 2019
 - [XDP Hands-On Tutorials](https://github.com/xdp-project/xdp-tutorial), Various authors, 2019
 - [BCC, libbpf and BPF CO-RE Tutorials](https://facebookmicrosites.github.io/bpf/blog/), Facebook's BPF Blog, 2020
+- [eBPF Tutorial: Learning eBPF Step by Step with Examples](https://github.com/eunomia-bpf/bpf-developer-tutorial), Various authors, 2024
 
 ### 演讲
 
