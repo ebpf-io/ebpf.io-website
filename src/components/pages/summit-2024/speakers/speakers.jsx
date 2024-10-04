@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useState, useCallback } from 'react';
 
 import Speaker from 'components/pages/summit-2023/speakers/speaker';
-// import Button from 'components/shared/button';
+import Button from 'components/shared/button';
 import SpeakersModal from 'components/shared/speakers-modal';
 
 const Speakers = ({ title, endpoint, linkTitle, linkUrl }) => {
