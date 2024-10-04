@@ -10,7 +10,7 @@ const Banner = () => (
           Find all of the recordings on YouTube
         </h2>
         <Link
-          to="summit-2024-talks"
+          to="/summit-2024-talks"
           className="rounded-lg leading-tight xs:w-full"
           theme="black-filled"
           size="md"
