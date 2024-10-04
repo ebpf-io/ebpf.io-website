@@ -5,9 +5,10 @@ import Hero from 'components/pages/summit-2024/hero';
 import Hosts from 'components/pages/summit-2024/hosts';
 import Information from 'components/pages/summit-2024/information';
 import LastYear from 'components/pages/summit-2024/last-year';
+import Speakers from 'components/pages/summit-2024/speakers';
 import SummitLayout from 'components/pages/summit-2024/summit-layout';
 import SEO from 'components/shared/seo';
-// import endpoints from 'data/shared/sessionize';
+import endpoints from 'data/shared/sessionize';
 import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
@@ -76,6 +77,12 @@ const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
     <Banner />
+    <Speakers
+      title="Featured Speakers"
+      endpoint={endpoints.speakers}
+      linkTitle="View talks"
+      linkUrl="/summit-2024-talks/"
+    />
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />

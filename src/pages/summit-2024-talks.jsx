@@ -2,12 +2,12 @@ import React from 'react';
 
 // TODO: Add before summit
 // import Grid from 'components/pages/summit-schedule/grid';
+import SummitLayout from 'components/pages/summit-2024/summit-schedule-layout';
 import Hero from 'components/pages/summit-schedule/hero';
 import Schedule from 'components/pages/summit-schedule/schedule';
 import SEO from 'components/shared/seo';
-import SummitLayout from 'components/shared/summit-layout';
-import endpoints from 'data/shared/sessionize';
-import { navigation, hubspotFormId } from 'data/shared/summit-2023-navigation';
+import endpoints from 'data/shared/sessionize-2024';
+import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
 
@@ -21,8 +21,6 @@ const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
     <Schedule endpoint={endpoints.schedule} />
-    {/* TODO: Add before summit */}
-    {/* <Grid /> */}
   </SummitLayout>
 );
 
