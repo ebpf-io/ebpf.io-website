@@ -7,7 +7,6 @@ import Information from 'components/pages/summit-2024/information';
 import LastYear from 'components/pages/summit-2024/last-year';
 import SummitLayout from 'components/pages/summit-2024/summit-layout';
 import SEO from 'components/shared/seo';
-// import endpoints from 'data/shared/sessionize';
 import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
