@@ -9,12 +9,7 @@ const Banner = () => (
         <h2 className="heading-6xl text-left font-semibold leading-tight text-black md:text-center">
           Find all of the recordings on YouTube
         </h2>
-        <Link
-          to="/summit-2024-talks"
-          className="rounded-lg leading-tight xs:w-full"
-          theme="black-filled"
-          size="md"
-        >
+        <Link to="/summit-2024-talks" className="" theme="black-primary-yellow" size="lg">
           View talks
         </Link>
       </div>
