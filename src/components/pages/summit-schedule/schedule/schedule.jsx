@@ -50,7 +50,7 @@ const Schedule = ({ endpoint }) => {
 
   if (isLoading) {
     return (
-      <div className="my-20 flex items-center justify-center">
+      <div className="my-20 flex items-center justify-left">
         <div className="h-10 w-10 animate-spin rounded-full border-b-2 border-t-2 border-gray-90" />
       </div>
     );
@@ -59,7 +59,7 @@ const Schedule = ({ endpoint }) => {
   if (!error && schedule.length > 0) {
     return (
       <section className="safe-paddings mb-32 mt-16 lg:mb-24 md:mb-20 sm:mt-14">
-        <div className="container max-w-[1008px]">
+        <div className="container">
           <ul className="w-full">
             {schedule.map(({ id, title, startsAt, speakers, recordingUrl, questionAnswers }) => {
               const slideDeck =
