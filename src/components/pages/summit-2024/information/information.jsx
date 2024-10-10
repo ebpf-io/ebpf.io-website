@@ -39,7 +39,7 @@ const Information = () => (
       <p className="mt-5 text-center text-xl leading-normal md:mt-3">
         Back by popular demand, we’re excited to announce the eBPF Summit 2024
       </p>
-      <div className="mt-14 flex space-x-8 lg:space-x-6 md:mt-10 md:flex-col md:space-x-0 md:space-y-6">
+      <div className="mt-14 mb-14 flex space-x-8 lg:space-x-6 md:mt-10 md:flex-col md:space-x-0 md:space-y-6">
         {cardItems.map(({ iconName, title, description }, index) => {
           const Icon = icons[iconName];
           return (

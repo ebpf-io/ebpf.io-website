@@ -1,12 +1,14 @@
 import React from 'react';
 
-import Banner from 'components/pages/summit-2024/banner';
 import Hero from 'components/pages/summit-2024/hero';
 import Hosts from 'components/pages/summit-2024/hosts';
 import Information from 'components/pages/summit-2024/information';
 import LastYear from 'components/pages/summit-2024/last-year';
 import SummitLayout from 'components/pages/summit-2024/summit-layout';
+import ScheduleHero from 'components/pages/summit-schedule/hero';
+import Schedule from 'components/pages/summit-schedule/schedule';
 import SEO from 'components/shared/seo';
+import endpoints from 'data/shared/sessionize-2024';
 import { navigation, hubspotFormId } from 'data/shared/summit-2024-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
@@ -71,10 +73,17 @@ const lastYear = {
   ],
 };
 
+const scheduleHero = {
+  title: 'eBPF Summit 2024 Talks',
+  description:
+    'Explore the talks of the eBPF Summit, a virtual event for all things within the Open Source eBPF ecosystem',
+};
+
 const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
-    <Banner />
+    <ScheduleHero {...scheduleHero} />
+    <Schedule endpoint={endpoints.schedule} />
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />

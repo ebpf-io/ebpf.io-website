@@ -5,15 +5,15 @@ import Button from 'components/shared/button';
 import screenIllustration from './images/screen.png';
 
 const data = {
-  title: 'Don’t Miss Out!<br /> eBPF 2024 Summit Schedule',
+  title: 'eBPF 2024 Summit Schedule',
   description:
     'Discover the lineup of amazing talks on using eBPF to address engineering challenges for a variety of use cases and explore the ongoing evolution of the eBPF ecosystem.',
   linkText: 'View the schedule',
-  linkUrl: '/summit-2024-schedule/',
+  linkUrl: '/summit-2024-talks',
 };
 
 const Banner = () => (
-  <div className="relative mt-8 flex w-full flex-row overflow-hidden rounded-xl bg-light-yellow-gradient lg:mt-6 sm:flex-col">
+  <div className="relative mx-8 mb-8 flex w-full flex-row overflow-hidden rounded-xl bg-light-yellow-gradient lg:mt-6 sm:flex-col">
     <div className="flex max-w-[545px] flex-col items-start justify-start p-14 pr-0 lg:p-12 lg:pr-0 md:max-w-[420px] sm:max-w-none sm:p-6 sm:pb-0">
       <h3
         className="heading-6xl font-bold leading-dense tracking-[-0.01em]"

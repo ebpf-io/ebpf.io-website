@@ -1,20 +1,46 @@
 import React from 'react';
 
-import Link from 'components/shared/link/link';
+import Button from 'components/shared/button';
+
+import screenIllustration from './images/screen.png';
+
+const data = {
+  title: 'eBPF 2024 Summit Schedule',
+  description:
+    'Discover the lineup of amazing talks on using eBPF to address engineering challenges for a variety of use cases and explore the ongoing evolution of the eBPF ecosystem.',
+  linkText: 'View the schedule',
+  linkUrl: '/summit-2024-talks',
+};
 
 const Banner = () => (
-  <section className="relative mt-40 md:mt-16 sm:mt-14">
-    <div className="container">
-      <div className="relative flex flex-row items-center justify-center space-x-10 rounded-lg bg-gray-98 px-6 py-[42px] md:flex-col md:space-x-0 md:space-y-6 md:py-6">
-        <h2 className="heading-6xl text-left font-semibold leading-tight text-black md:text-center">
-          Find all of the recordings on YouTube
-        </h2>
-        <Link to="/summit-2024-talks" className="" theme="black-primary-yellow" size="lg">
-          View talks
-        </Link>
-      </div>
+  <div className="relative mx-8 mb-8 flex w-full flex-row overflow-hidden rounded-xl bg-light-yellow-gradient lg:mt-6 sm:flex-col">
+    <div className="flex max-w-[545px] flex-col items-start justify-start p-14 pr-0 lg:p-12 lg:pr-0 md:max-w-[420px] sm:max-w-none sm:p-6 sm:pb-0">
+      <h3
+        className="heading-6xl font-bold leading-dense tracking-[-0.01em]"
+        dangerouslySetInnerHTML={{ __html: data.title }}
+      />
+      <p className="mt-3.5 text-sm font-normal leading-normal md:mt-2">{data.description}</p>
+      <Button
+        className="mt-7 rounded-lg !py-3 text-sm md:mt-5"
+        size="sm"
+        to={data.linkUrl}
+        theme="black-filled"
+      >
+        {data.linkText}
+      </Button>
     </div>
-  </section>
+    <div className="relative flex-1 overflow-hidden sm:mt-7 sm:h-[228px] sm:w-full sm:flex-none">
+      <img
+        src={screenIllustration}
+        alt=""
+        className="absolute left-[87px] top-[41px] min-w-[468px] shadow-banner-image sm:left-6 sm:top-0 sm:w-full sm:min-w-[410px]"
+        width={468}
+        height={372}
+        loading="lazy"
+        aria-hidden
+      />
+    </div>
+  </div>
 );
 
 export default Banner;
