@@ -61,7 +61,9 @@ const Schedule = ({ endpoint }) => {
       <section className="safe-paddings mb-32 mt-16 lg:mb-24 md:mb-20 sm:mt-14">
         <div className="container max-w-[1008px]">
           <ul className="w-full">
-            {schedule.map(({ id, title, startsAt, speakers, recordingUrl }) => {
+            {schedule.map(({ id, title, startsAt, speakers, recordingUrl, questionAnswers }) => {
+              const slideDeck =
+                questionAnswers[0].question === 'Slide Deck' ? questionAnswers[0].answer : null;
               const date = getMonthAndDay(startsAt);
               return (
                 <li
@@ -84,14 +86,24 @@ const Schedule = ({ endpoint }) => {
                     </button>
                   </div>
 
-                  <Button
-                    className="my-auto flex max-h-14 items-center rounded-lg px-5 leading-none sm:flex-1"
-                    size="md"
-                    theme={recordingUrl ? 'gray' : 'disabled'}
-                    to={recordingUrl}
-                  >
-                    {recordingUrl ? 'Watch' : 'Coming soon'}
-                  </Button>
+                  <div className="flex gap-x-4">
+                    <Button
+                      className="my-auto max-h-14 items-center rounded-lg px-5 leading-none sm:flex-1"
+                      size="md"
+                      theme={slideDeck ? 'gray' : 'disabled'}
+                      to={slideDeck}
+                    >
+                      {slideDeck ? 'Download Slides' : 'Coming soon'}
+                    </Button>
+                    <Button
+                      className="my-auto max-h-14 items-center rounded-lg px-5 leading-none sm:flex-1"
+                      size="md"
+                      theme={recordingUrl ? 'gray' : 'disabled'}
+                      to={recordingUrl}
+                    >
+                      {recordingUrl ? 'Watch' : 'Coming soon'}
+                    </Button>
+                  </div>
                 </li>
               );
             })}

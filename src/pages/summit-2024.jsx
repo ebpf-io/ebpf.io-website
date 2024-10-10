@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Banner from 'components/pages/summit-2024/banner';
 import Hero from 'components/pages/summit-2024/hero';
 import Hosts from 'components/pages/summit-2024/hosts';
 import Information from 'components/pages/summit-2024/information';
@@ -74,7 +73,6 @@ const lastYear = {
 const Summit2024 = () => (
   <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
     <Hero {...hero} />
-    <Banner />
     <Information />
     <Hosts {...hosts} />
     <LastYear {...lastYear} />
