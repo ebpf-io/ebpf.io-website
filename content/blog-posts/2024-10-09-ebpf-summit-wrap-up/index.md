@@ -30,7 +30,7 @@ For this year's keynote, we were privileged to hear from some of the industry's 
 
 The opening keynote, titled “What Would the World Look Like Without eBPF” by **Shweta Saraf from Netflix**, took us on a thought-provoking journey. Shweta asked us to imagine the challenges of a world without eBPF, highlighting the inefficiencies that would plague modern computing systems. She explained that without eBPF, we would be stuck in the “kernel patching nightmare,” where long debugging cycles and resource-heavy tools like **tcpdump** and **strace** would dominate. These legacy methods would lead to high operational costs and inefficiencies in managing performance bottlenecks at scale.
 
-Shweta went on to emphasize the immense value eBPF brings to the industry by providing visibility and control at a lower system resource cost. She specifically mentioned its impact on security in microservice-based architectures. Without eBPF, debugging firewall issues at scale would be much slower, clunkier, and prone to security breaches ￼. This talk made it clear that eBPF has revolutionized the industry by enabling faster iteration, improved performance, and enhanced security, especially in cloud native environments where large-scale, distributed systems like Netflix’s infrastructure require real-time observability and control￼.
+Shweta went on to emphasize the immense value eBPF brings to the industry by providing visibility and control at a lower system resource cost. She specifically mentioned its impact on security in microservice-based architectures. Without eBPF, debugging firewall issues at scale would be much slower, clunkier, and prone to security breaches. This talk made it clear that eBPF has revolutionized the industry by enabling faster iteration, improved performance, and enhanced security, especially in cloud native environments where large-scale, distributed systems like Netflix’s infrastructure require real-time observability and control.
 
 ### Looking Ahead: The eBPF Innovation Roadmap by Thomas Graf (Isovalent at Cisco)
 
@@ -38,11 +38,11 @@ Shweta went on to emphasize the immense value eBPF brings to the industry by pro
 
 Next up, **Thomas Graf from Isovalent** presented “Looking Ahead: The eBPF Innovation Roadmap.” He highlighted how eBPF has revolutionized the Linux kernel by enabling rapid innovation through dynamically loaded code, allowing developers to implement changes much faster than traditional development processes. This flexibility has unlocked a wave of advancements in networking, security, and observability.
 
-Thomas also discussed the exciting expansion of eBPF to Windows, which will bring cross-platform compatibility, enabling enterprises to standardize eBPF-based tools across both Linux and Windows environments. This will be a significant step forward for companies operating in diverse infrastructure setups￼.
+Thomas also discussed the exciting expansion of eBPF to Windows, which will bring cross-platform compatibility, enabling enterprises to standardize eBPF-based tools across both Linux and Windows environments. This will be a significant step forward for companies operating in diverse infrastructure setups.
 
-As the eBPF ecosystem grows, he emphasized the importance of compatibility and interoperability between tools to ensure seamless integration as more solutions emerge. He also noted the potential for eBPF to support the growing demand for AI workloads and specialized hardware like GPUs and DPUs, ensuring that eBPF remains a key enabler of infrastructure innovation .
+As the eBPF ecosystem grows, he emphasized the importance of compatibility and interoperability between tools to ensure seamless integration as more solutions emerge. He also noted the potential for eBPF to support the growing demand for AI workloads and specialized hardware like GPUs and DPUs, ensuring that eBPF remains a key enabler of infrastructure innovation.
 
-One of the most exciting prospects is the idea of “eBPF distributed intelligence,” where eBPF could enable intelligent decisions to be made directly at the data source, reducing the need for extensive data transfer and storage. This could dramatically improve the efficiency and responsiveness of observability and security tools￼.
+One of the most exciting prospects is the idea of “eBPF distributed intelligence,” where eBPF could enable intelligent decisions to be made directly at the data source, reducing the need for extensive data transfer and storage. This could dramatically improve the efficiency and responsiveness of observability and security tools.
 
 ### Writing a Linux scheduler in Java with eBPF by Johannes Bechberger (SAP)
 
