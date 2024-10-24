@@ -20,7 +20,7 @@ Right now Markdown files accept following frontmatter:
 6. `type` — event type. Three types are available: Meetup, Webinar and Conference (required)
 7. `region` — region, four options available: APAC, EMEA, North America, Online (required)
 8. `conference` — if the event type is a Conference, you can specify what type or leave it empty.
-   Five options available: eBPF Summit, Cloud Native eBPF Day, eBPF Track (LPC), bpfconf (LSF/MM/BPF)
+   Five options available: eBPF Summit, Cloud Native eBPF Day, eBPF Track (LPC), bpfconf (LSF/MM/BPF), and BPF Meetups at IETF.
 9. `isDraft` — flag that says the post is not ready yet. It won't appear in production but will appear in the development mode.
 10. `ogImage` - the preview image of the card.
 
