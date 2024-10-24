@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cfp</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      max-width: 800px;
+      margin: auto;
+      font-family: "Noto Sans", Roboto, sans;
+      text-align: justify;
+      font-size: large;
+    }
+    h1 {
+      font-size: 300%;
+      text-align: center;
+    }
+    h2 {
+      font-size: 200%;
+      font-weight: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    img {
+      max-width: 100%;
+    }
+    h2, h3, h4, h5, h6 {
+      margin-top: 1em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="fosdem-2025-ebpf-devroom-call-for-participation">FOSDEM 2025
+eBPF Devroom Call for Participation</h1>
+<p>We are delighted to announce the Call for Participation for the
+very first eBPF Devroom at FOSDEM!</p>
+<div style="text-align: center;">
+<img src="/images/social-preview-fosdem-ebpf.png" width="400px"
+  alt="eBPF's logo, a stylised bee, flies around FOSDEM's logo, a pink gear."/>
+</div>
+<h2 id="mark-the-dates">Mark the Dates</h2>
+<ul>
+    <li><b>December 1st, 2024: Submission deadline</b></li>
+<li>December 15th, 2024: Announcement of accepted talks and
+schedule</li>
+<li>February 1st, 2025 (Saturday afternoon): eBPF Devroom at FOSDEM</li>
+</ul>
+<h2 id="ebpf-at-fosdem">eBPF at FOSDEM</h2>
+<p>Originally introduced to make the Linux kernel more programmable,
+eBPF allows users to load safe and efficient programs into the kernel,
+in order to implement custom logic running on specific events. The main
+use cases include kernel or user-space tracing and monitoring, network
+packet processing, security policies enforcement, or process scheduling.
+Today, eBPF also extends to Windows, user-space runtimes, or hardware
+offloads. The depth of the ecosystem has expanded far beyond its
+original goals and has seen increasing adoption from both enthusiasts
+and professionals within the open-source community, while the list of
+use cases and eBPF-based projects continues to grow.</p>
+<p>FOSDEM is a free, community-organized event focusing on open source,
+and aiming at gathering open source software developers and communities
+to meet, learn, and share. It takes place annually in Brussels, Belgium.
+After hosting a number of eBPF-related talks in various devrooms over
+the years, FOSDEM 2025 welcomes a devroom dedicated to eBPF for the
+first time! This devroom aims at gathering talks about various aspects
+of eBPF, ideally on multiple platforms.</p>
+<h2 id="topics-of-interest">Topics of Interest</h2>
+<p>FOSDEM is an event centered on free and open-source software
+development, and brings the opportunity to reach a large audience of
+knowledgeable, highly technical open-source software activists. If you
+have something to present about eBPF, we would love for you to consider
+submitting a proposal to the Devroom.</p>
+<p>The projects or technologies discussed in the talks
+<strong>MUST</strong> be open-source.</p>
+<p>Topics of interest for the Devroom include (but are not limited
+to):</p>
+<ul>
+<li>eBPF development: recent or proposed features (on Linux, on other
+platforms, or even cross-platform), such as:
+<ul>
+<li>eBPF program signing and supply chain security</li>
+<li>Profiling eBPF with eBPF</li>
+<li>eBPF-based process schedulers</li>
+<li>eBPF in storage devices</li>
+<li>eBPF verifier improvements or alternative implementations</li>
+<li>Memory management for eBPF</li>
+</ul></li>
+<li>Deep-dives on existing eBPF features</li>
+<li>Working with eBPF: best practices, common mistakes, debugging,
+and so on</li>
+<li>eBPF toolchain, for compiling, managing, debugging, packaging, and
+deploying eBPF programs and related objects</li>
+<li>eBPF libraries, in C/C++, Go, Rust, or other languages</li>
+<li>eBPF in the real world, production use cases and their impact</li>
+<li>eBPF community efforts (documentation, standardization,
+cross-platform initiatives)</li>
+</ul>
+<p>The list is not exhaustive, don’t hesitate to submit your
+proposal!</p>
+<h2 id="format">Format</h2>
+<p>FOSDEM 2025 will be an in-person event in Brussels, Belgium. We do
+not accept remote presentations.</p>
+<p>We’re looking for presentations in one of the following sizes:</p>
+<ul>
+<li>10 minutes (for example, a short demo)</li>
+<li>20 minutes (for example, a project update)</li>
+<li>30 minutes (for example, an introduction to a new technology or a
+deep dive on a complex feature)</li>
+</ul>
+<p>The durations above include time for questions: allow at least 5 to
+10 minutes, depending on the total length, to answer questions from the
+public.</p>
+<h2 id="how-to-submit">How to Submit</h2>
+<p>Please submit your proposals on <a
+href="https://pretalx.fosdem.org/fosdem-2025/cfp">Pretalx</a>, FOSDEM’s
+submissions tool.</p>
+<p>Make sure to <strong>select “eBPF” as the track</strong>.</p>
+<p>The official communication channel for the Devroom is the dedicated
+FOSDEM mailing list, <a href="mailto:ebpf-devroom@lists.fosdem.org"
+class="email">ebpf-devroom@lists.fosdem.org</a>. Please make sure to
+join if you submit a talk.</p>
+<h2 id="code-of-conduct">Code of Conduct</h2>
+<p>All participants at FOSDEM are expected to abide by the <a
+href="https://fosdem.org/2025/practical/conduct/">FOSDEM’s Code of
+Conduct</a>. If your proposal is accepted, you will be required to
+confirm that you accept this Code of Conduct.</p>
+<h2 id="devroom-organisers">Devroom Organisers</h2>
+<ul>
+<li>Alan Jowett</li>
+<li>Alexei Starovoitov</li>
+<li>Andrii Nakryiko</li>
+<li>Bill Mulligan</li>
+<li>Daniel Borkmann</li>
+<li>Dimitar Kanaliev</li>
+<li>Quentin Monnet</li>
+<li>Yusheng Zheng</li>
+</ul>
+<p>If you have questions about any aspects of this Call for
+Participation, please email us at <a
+href="mailto:ebpf-devroom-manager@fosdem.org"
+class="email">ebpf-devroom-manager@fosdem.org</a>, and we will do our
+best to assist you.</p>
+</body>
+</html>
