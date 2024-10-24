@@ -5,6 +5,7 @@
   "/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29": "/ko-kr/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29",
   "/events?conference=eBPF%20Summit": "/ko-kr/events?conference=eBPF%20Summit",
   "/events?conference=eBPF%20Track%20%28LPC%29": "/ko-kr/events?conference=eBPF%20Track%20%28LPC%29",
+  "/events?conference=FOSDEM": "/ko-kr/events?conference=FOSDEM",
   "/events?overview": "/ko-kr/events?overview",
   "/event": "/ko-kr/events",
   "/get-started": "/ko-kr/get-started",
