@@ -7,5 +7,5 @@ linkUrl: 'https://lpc.events/event/18/sessions/181/#all'
 ogImage: ogimage.png
 type: Conference
 conference: eBPF Track (LPC)
-region: Europe
+region: EMEA
 ---
