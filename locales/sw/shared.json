@@ -5,6 +5,7 @@
   "/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29": "/sw/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29",
   "/events?conference=eBPF%20Summit": "/sw/events?conference=eBPF%20Summit",
   "/events?conference=eBPF%20Track%20%28LPC%29": "/sw/events?conference=eBPF%20Track%20%28LPC%29",
+  "/events?conference=FOSDEM": "/sw/events?conference=FOSDEM",
   "/events?overview": "/sw/events?overview",
   "/event": "/sw/events",
   "/get-started": "/sw/get-started",
