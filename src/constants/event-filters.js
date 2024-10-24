@@ -31,6 +31,9 @@ const eventFilters = [
         name: 'bpfconf (LSF/MM/BPF)',
       },
       {
+        name: 'FOSDEM',
+      },
+      {
         name: 'BPF Meetups at IETF',
       },
     ],

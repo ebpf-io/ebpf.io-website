@@ -61,6 +61,10 @@ const headerMenu = [
         title: 'bpfconf (LSF/MM/BPF)',
         to: '/events?conference=bpfconf%20%28LSF%2FMM%2FBPF%29',
       },
+      {
+        title: 'FOSDEM eBPF Devroom',
+        to: '/events?conference=FOSDEM',
+      },
     ],
   },
   {
