@@ -453,6 +453,21 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler' },
     ],
   },
+  {
+    logoUrl: 'https://github.com/microsoft/retina',
+    name: 'Retina',
+    logoName: 'retinaLogo',
+    title: 'eBPF distributed networking observability tool for Kubernetes',
+    description: `Retina is a cloud-agnostic, eBPF-based open-source Kubernetes Network Observability platform which helps with DevOps,
+    SecOps and compliance use cases. It provides a centralized hub for monitoring application and network health and security,
+    catering to Cluster Network Administrators, Cluster Security Administrators and DevOps Engineers. Retina collects customizable
+    telemetry, which can be exported to multiple storage options (such as Prometheus, Azure Monitor, and other vendors) and
+    visualized in a variety of ways (like Grafana, Azure Log Analytics, and other vendors).`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/microsoft/retina' },
+      { label: 'Website', url: 'https://retina.sh' },
+    ],
+  },
 ];
 
 export default emergingApplications;
