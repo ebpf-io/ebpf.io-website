@@ -123,6 +123,17 @@ const emergingApplications = [
     urls: [{ label: 'GitHub', url: 'https://github.com/daeuniverse/dae' }],
   },
   {
+    logoUrl: 'https://github.com/microsoft/retina',
+    name: 'Retina',
+    logoName: 'retinaLogo',
+    title: 'eBPF distributed networking observability tool for Kubernetes',
+    description: `Retina is a cloud-agnostic, eBPF-based open source Kubernetes network observability platform providing a centralized hub for monitoring application and network health and security. Retina collects customizable telemetry, which can be exported to multiple storage options and visualized in a variety of ways.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/microsoft/retina' },
+      { label: 'Website', url: 'https://retina.sh' },
+    ],
+  },
+  {
     logoUrl: 'https://github.com/kinvolk/inspektor-gadget',
     name: 'Inspektor Gadget',
     logoName: 'inspektorGadgetLogo',
@@ -451,17 +462,6 @@ const emergingApplications = [
     to identify performance bottlenecks and optimize their applications efficiently.`,
     urls: [
       { label: 'GitHub', url: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler' },
-    ],
-  },
-  {
-    logoUrl: 'https://github.com/microsoft/retina',
-    name: 'Retina',
-    logoName: 'retinaLogo',
-    title: 'eBPF distributed networking observability tool for Kubernetes',
-    description: `Retina is a cloud-agnostic, eBPF-based open source Kubernetes network observability platform providing a centralized hub for monitoring application and network health and security. Retina collects customizable telemetry, which can be exported to multiple storage options and visualized in a variety of ways.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/microsoft/retina' },
-      { label: 'Website', url: 'https://retina.sh' },
     ],
   },
 ];
