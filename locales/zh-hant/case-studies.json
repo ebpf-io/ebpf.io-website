@@ -26,14 +26,18 @@
       "description": "<strong>Netflix</strong> 在網絡洞察領域大規模使用 eBPF。",
       "links": [
         {
-          "text": "Docs",
-          "to": "https://docs.levo.ai/api-observability/concepts#ebpf-sensor"
+          "text": "部落格",
+          "to": "https://netflixtechblog.com/how-netflix-uses-ebpf-flow-logs-at-scale-for-network-insight-e3ea997dca96"
+        },
+        {
+          "text": "影片",
+          "to": "https://www.youtube.com/watch?v=16slh29iN1g"
         }
       ]
     },
     {
-      "title": "Traceable",
-      "description": "<strong>Traceable</strong> uses eBPF for enhanced data collection",
+      "title": "Android",
+      "description": "<strong>Android</strong> 在監控網路使用率、電力情況和內存分析中使用eBPF。",
       "links": [
         {
           "text": "文檔",
