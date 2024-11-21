@@ -57,6 +57,7 @@ import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
 import Wiz from './logos/wiz.inline.svg';
 import Yahoo from './logos/yahoo.inline.svg';
+import Attribute from './logos/attribute.inline.svg';
 
 const logos = {
   akita: Akita,
@@ -111,6 +112,7 @@ const logos = {
   'wildlife studios': Wildlife,
   wiz: Wiz,
   yahoo: Yahoo,
+  attribute: Attribute,
 };
 
 const CaseStudiesList = ({ className, items, linkUrl, linkText }) => {
