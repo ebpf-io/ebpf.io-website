@@ -602,6 +602,16 @@
           "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
         }
       ]
+    },
+    {
+      "title": "Attribute",
+      "description": "<strong>Attribute</strong> uses eBPF to provide real time, no tagging cloud cost visibility and attribution for dynamic environments",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://attrb.io/unlocking-cloud-cost-visibility-with-ebpf-a-game-changer-for-finops/"
+        }
+      ]
     }
   ]
 }
