@@ -550,6 +550,16 @@
           "to": "https://attrb.io/unlocking-cloud-cost-visibility-with-ebpf-a-game-changer-for-finops/"
         }
       ]
+    },
+    {
+      "title": "Protect AI",
+      "description": "<strong>Protect AI</strong> 利用 eBPF 在运行时保护生产环境中的 LLM 应用程序，提供无与伦比的可见性和先进的威胁检测与响应能力",
+      "links": [
+        {
+          "text": "博客",
+          "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
+        }
+      ]
     }
   ]
 }

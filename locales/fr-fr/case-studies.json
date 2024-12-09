@@ -578,6 +578,16 @@
           "to": "https://attrb.io/unlocking-cloud-cost-visibility-with-ebpf-a-game-changer-for-finops/"
         }
       ]
+    },
+    {
+      "title": "Protect AI",
+      "description": "<strong>Protect AI</strong> utilise eBPF pour sécuriser les applications LLM en production en temps réel, offrant une visibilité inégalée ainsi que des capacités avancées de détection et de réponse aux menaces.",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
+        }
+      ]
     }
   ]
 }
