@@ -523,7 +523,7 @@
     },
     {
       "title": "Protect AI",
-      "description": "<strong>Protect AI</strong> 利用 eBPF 在執行階段保護生產環境中的 LLM 應用程式，提供無與倫比的可視性以及先進的威脅偵測與回應功能",
+      "description": "<strong>Protect AI</strong> 利用 eBPF 在生產環境的執行階段保護 LLM 應用程式，為進階威脅偵測與回應能力提供可視性",
       "links": [
         {
           "text": "部落格",

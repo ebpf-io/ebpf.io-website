@@ -523,7 +523,7 @@
     },
     {
       "title": "Protect AI",
-      "description": "<strong>Protect AI</strong> hutumia eBPF kulinda programu za LLM katika uzalishaji wakati wa utekelezaji, ikitoa mwonekano usio na kifani na uwezo wa hali ya juu wa kugundua na kukabiliana na vitisho",
+      "description": "<strong>Protect AI</strong> hutumia eBPF kulinda programu za LLM katika uzalishaji wakati wa utekelezaji, ikitoa mwonekano kwa ajili ya uwezo wa hali ya juu wa kugundua vitisho na kukabiliana navyo",
       "links": [
         {
           "text": "Blogi",

@@ -615,7 +615,7 @@
     },
     {
       "title": "Protect AI",
-      "description": "<strong>Protect AI</strong> utiliza eBPF para asegurar las aplicaciones LLM en entornos de producción durante su ejecución, proporcionando una visibilidad inigualable y capacidades avanzadas de detección y respuesta a amenazas",
+      "description": "<strong>Protect AI</strong> utiliza eBPF para asegurar las aplicaciones LLM en entornos de producción durante su ejecución, proporcionando visibilidad para capacidades avanzadas de detección y respuesta a amenazas",
       "links": [
         {
           "text": "Blog",
@@ -623,6 +623,5 @@
         }
       ]
     }
-
   ]
 }
