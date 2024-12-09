@@ -447,6 +447,16 @@
           "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
         }
       ]
+    },
+    {
+      "title": "Protect AI",
+      "description": "<strong>Protect AI</strong> utiliza eBPF para proteger aplicações LLM em produção em tempo de execução, fornecendo visibilidade para capacidades avançadas de detecção e resposta a ameaças",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
+        }
+      ]
     }
   ]
 }

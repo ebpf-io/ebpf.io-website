@@ -520,6 +520,16 @@
           "to": "https://attrb.io/unlocking-cloud-cost-visibility-with-ebpf-a-game-changer-for-finops/"
         }
       ]
+    },
+    {
+      "title": "Protect AI",
+      "description": "<strong>Protect AI</strong> hutumia eBPF kulinda programu za LLM katika uzalishaji wakati wa utekelezaji, ikitoa mwonekano kwa ajili ya uwezo wa hali ya juu wa kugundua vitisho na kukabiliana navyo",
+      "links": [
+        {
+          "text": "Blogi",
+          "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
+        }
+      ]
     }
   ]
 }
