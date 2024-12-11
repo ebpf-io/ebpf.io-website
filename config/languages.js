@@ -50,6 +50,11 @@ module.exports = {
       shortName: 'Kor',
       code: 'ko-kr',
     },
+    ja: {
+      name: '日本語',
+      shortName: 'Ja',
+      code: 'ja',
+    },
   },
   defaultLanguage: 'en',
 };

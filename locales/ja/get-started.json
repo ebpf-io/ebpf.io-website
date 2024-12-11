@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "title": "eBPF を始める",
+    "items": [
+      {
+        "card": "lab",
+        "title": "Lab を試す",
+        "description": "この Lab では、 Liz Rice の opensnoop の例を使って、 eBPF のツールの使い方、それらのコンポーネントがロードされる様子、eBPF のコードに独自のトレーシングを追加する方法について学べます。"
+      },
+      {
+        "card": "book",
+        "title": "本を読む",
+        "description": "Liz Rice による、O’Reilly 社から発売されている “What is eBPF” や “Learning eBPF”、Brendan Gregg による “BPF Performance Tools” を読んでみましょう。これらの本を通して、あなたは eBPF がどのようなものか・なぜ eBPF が強力なのか・eBPF が提供する機能を学べます。"
+      },
+      {
+        "card": "video",
+        "title": "動画を見る",
+        "description": "John Fastabend による eBPF の歴史を見てみましょう。このセッションは 2014年の「黎明期」からはじまり、当時の Linux のネットワーキングに関わる主要なプロジェクトや、企業・開発者らがどのように eBPF を創り上げたかを学べます。"
+      }
+    ]
+  },
+  "documentation": {
+    "title": "さらに eBPF について学ぶ",
+    "items": [
+      {
+        "image": "wikipedia",
+        "title": "Wikipedia",
+        "description": "Wikipedia の eBPF に関する記事"
+      },
+      {
+        "image": "stackoverflow",
+        "title": "eBPF に関する Stackoverflow",
+        "description": "質問して回答を得る"
+      },
+      {
+        "image": "reddit",
+        "title": "Reddit の eBPF コミュニティ",
+        "description": "eBPF のカーネルサブシステムについて議論する"
+      },
+      {
+        "image": "cilium",
+        "title": "BPF & XDP リファレンスガイド",
+        "description": "BPF の内部とプログラミングについて学ぶ"
+      },
+      {
+        "image": "kernel",
+        "title": "BPF のドキュメント",
+        "description": "Linux カーネルの BPF に関するドキュメント"
+      },
+      {
+        "image": "gitKernel",
+        "title": "BPF デザイン Q&A",
+        "description": "カーネル関連の eBPF についての FAQ"
+      }
+    ]
+  },
+  "books": {
+    "title": "業界の専門家が書いた eBPF の本から学ぶ",
+    "linkTitle": "Learn More"
+  },
+  "tutorials": {
+    "title": "業界の専門家のチュートリアルから eBPF 技術を学ぶ",
+    "linkTitle": "More tutorials",
+    "items": [
+      {
+        "title": "eBPF トレーシングチュートリアル",
+        "description": "bcc tools の実行から、bpftrace と bcc を使った開発まで、eBPF を使ったトレース手法を学ぶ",
+        "linkUrl": "http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html"
+      },
+      {
+        "title": "XDP チュートリアル",
+        "description": "XDP とは何かから、1つのインターフェースへ複数のプログラムをアタッチする仕方まで学び、効率的な XDP プログラムを書くための基本的なステップを学ぶ",
+        "linkUrl": "https://github.com/xdp-project/xdp-tutorial"
+      },
+      {
+        "title": "Compiler Explorer",
+        "description": "ブラウザ上で対話的に BPF をサポートしたコンパイラを実行し、アセンブリを調査する",
+        "linkUrl": "https://godbolt.org/"
+      }
+    ]
+  },
+  "events": {
+    "title": "専門家から学ぶためにeBPFのイベントに参加する。",
+    "linkTitle": "イベント"
+  },
+  "videoGallery": {
+    "title": "eBPF 紹介動画"
+  },
+  "blog": {
+    "title": "コミュニティの記事で更にeBPFについて学ぶ",
+    "linkTitle": "記事"
+  },
+  "Meet some of our community members": "Meet some of our community members"
+}
