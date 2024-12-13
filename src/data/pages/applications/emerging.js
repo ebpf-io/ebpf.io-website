@@ -134,6 +134,17 @@ const emergingApplications = [
     ],
   },
   {
+    logoUrl: 'https://github.com/hengyoush/kyanos',
+    name: 'kyanos',
+    logoName: 'kyanosLogo',
+    title: 'eBPF based networking analysis command line tool',
+    description: `Kyanos is a lightweight command-line tool designed for packet capture and efficient network troubleshooting. It allows users to filter traffic by process ID, container ID, or pod name, making it easy to focus on specific targets. With detailed kernel-level latency insights, Kyanos reveals how long it takes for requests to travel from a process to the network card and for responses to return from the network card to the process. Additionally, Kyanos can automatically decrypt SSL-encrypted traffic, supporting both OpenSSL and GoTLS, and operates without any dependencies.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/hengyoush/kyanos' },
+      { label: 'Website', url: 'https://kyanos.io' },
+    ],
+  },
+  {
     logoUrl: 'https://github.com/kinvolk/inspektor-gadget',
     name: 'Inspektor Gadget',
     logoName: 'inspektorGadgetLogo',
