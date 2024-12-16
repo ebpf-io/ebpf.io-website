@@ -141,8 +141,8 @@ const emergingApplications = [
     description: `Kyanos uses eBPF to collect network traffic events 
     at both the application layer and the kernel. From these eBPF events, 
     it visualizes the time consumption of network data in the kernel and 
-    calculates RED metrics on the network flow through aggregation, 
-    making troubleshooting more efficient.`,
+    calculates various aggregated metrics on the network flow, making 
+    troubleshooting more efficient.`,
     urls: [
       { label: 'GitHub', url: 'https://github.com/hengyoush/kyanos' },
       { label: 'Website', url: 'https://kyanos.io' },
