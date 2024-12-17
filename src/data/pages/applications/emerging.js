@@ -134,6 +134,21 @@ const emergingApplications = [
     ],
   },
   {
+    logoUrl: 'https://github.com/hengyoush/kyanos',
+    name: 'kyanos',
+    logoName: 'kyanosLogo',
+    title: 'eBPF based networking analysis command line tool',
+    description: `Kyanos uses eBPF to collect network traffic events 
+    at both the application layer and the kernel. From these eBPF events, 
+    it visualizes the time consumption of network data in the kernel and 
+    calculates various aggregated metrics on the network flow, making 
+    troubleshooting more efficient.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/hengyoush/kyanos' },
+      { label: 'Website', url: 'https://kyanos.io' },
+    ],
+  },
+  {
     logoUrl: 'https://github.com/kinvolk/inspektor-gadget',
     name: 'Inspektor Gadget',
     logoName: 'inspektorGadgetLogo',

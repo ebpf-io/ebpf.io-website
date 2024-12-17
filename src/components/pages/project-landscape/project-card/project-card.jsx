@@ -31,6 +31,7 @@ import keplerLogo from './logos/kepler.gif';
 import kubeArmorLogo from './logos/kubearmor.svg';
 import kubectlTraceLogo from './logos/kubectl_trace.svg';
 import kubeskoopLogo from './logos/kubeskoop.svg';
+import kyanosLogo from './logos/kyanos.png';
 import l3afLogo from './logos/l3af.svg';
 import linuxLogo from './logos/linux.svg';
 import llvmLogo from './logos/llvm.svg';
@@ -163,6 +164,7 @@ const logos = {
   kflowLogo: (
     <StaticImage src="./logos/kflow.png" alt="kflow" loading="lazy" width={116} height={116} />
   ),
+  kyanosLogo,
 };
 
 const Logo = ({ logo, name }) => {
