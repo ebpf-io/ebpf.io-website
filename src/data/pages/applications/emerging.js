@@ -486,7 +486,7 @@ const emergingApplications = [
     title: 'Layer 4 load balancer for Linux',
     description: `vc5 is an XDP based Direct Server Return (DSR) layer 4 laod balancer with a use case in replacing
     hardware appliances. Service health checks and BGP-based Route Health Injection (RHI) are built in. A web console,
-    JSON stats endpoint, Prometheus metrics, logging with Elasticsearch and alerting with webhooks are included.`,
+    JSON stats endpoint, Prometheus metrics, logging with Elasticsearch, and alerting with webhooks are included.`,
     urls: [
       { label: 'GitHub', url: 'https://github.com/davidcoles/vc5' },
     ],
