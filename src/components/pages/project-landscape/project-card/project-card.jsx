@@ -38,6 +38,7 @@ import llvmLogo from './logos/llvm.svg';
 import merbridgeLogo from './logos/merbridge.svg';
 import netobservLogo from './logos/netobserv.svg';
 import otelLogo from './logos/opentelemetry.svg';
+import vc5Logo from './logos/vc5.svg';
 import parcaLogo from './logos/parca.svg';
 import pcapplusplusLogo from './logos/pcapplusplus.svg';
 import pixieLogo from './logos/pixie.svg';
@@ -77,6 +78,7 @@ const logos = {
   llvmLogo,
   ebpfForWindowsLogo,
   otelLogo,
+  vc5Logo,
   hbpfLogo,
   gccLogo,
   rbpfLogo,
