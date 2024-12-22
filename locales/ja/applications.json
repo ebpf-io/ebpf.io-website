@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "eBPF アプリケーションの概観",
+    "description": "eBPF を利用したオープンソースアプリケーションの一覧",
+    "keywords": "ebpf, bpf, landscape, directory, open source"
+  },
+  "Major Applications": "主要アプリケーション",
+  "Emerging": "新規アプリケーション"
+}
