@@ -1,7 +1,7 @@
 ---
-title: eBPF Documentation
-ogTitle: What is eBPF? An Introduction and Deep Dive into the eBPF Technology
-ogDescription: A detailed step by step introduction to the eBPF technology with lots of references for further reading.
+title: eBPF ドキュメント
+ogTitle: eBPF とは？eBPF への入門と探求
+ogDescription: eBPF のステップごとの詳しい紹介と多くの参考資料
 ogKeywords: ebpf, bpf, xdp, introduction, tutorial, what is, deep dive, documentation
 ---
 
@@ -235,9 +235,9 @@ libbpf ライブラリは clang/LLVM から生成された eBPF オブジェク�
 - [BCC, libbpf and BPF CO-RE Tutorials](https://facebookmicrosites.github.io/bpf/blog/), Facebook's BPF Blog, 2020
 - [eBPF Tutorial: Learning eBPF Step by Step with Examples](https://github.com/eunomia-bpf/bpf-developer-tutorial), Various authors, 2024
 
-### Talks
+### 発表
 
-#### Generic
+#### 一般
 
 - [eBPF and Kubernetes: Little Helper Minions for Scaling Microservices](https://www.youtube.com/watch?v=99jUcLt3rSk) ([Slides](https://kccnceu20.sched.com/event/ZemQ/ebpf-and-kubernetes-little-helper-minions-for-scaling-microservices-daniel-borkmann-cilium)), Daniel Borkmann, KubeCon EU, Aug 2020
 - [eBPF - Rethinking the Linux Kernel](https://www.infoq.com/presentations/facebook-google-bpf-linux-kernel/) ([Slides](https://docs.google.com/presentation/d/1AcB4x7JCWET0ysDr0gsX-EIdQSTyBtmi6OAW7bE0jm0)), Thomas Graf, QCon London, April 2020
@@ -246,7 +246,7 @@ libbpf ライブラリは clang/LLVM から生成された eBPF オブジェク�
 - [BPF: A New Type of Software](https://youtu.be/7pmXdG8-7WU?t=8) ([Slides](https://www.slideshare.net/brendangregg/um2019-bpf-a-new-type-of-software)), Brendan Gregg, Ubuntu Masters, Oct 2019
 - [The ubiquity but also the necessity of eBPF as a technology](https://www.youtube.com/watch?v=mFxs3VXABPU), David S. Miller, Kernel Recipes, Oct 2019
 
-#### Deep Dives
+#### 探求
 
 - [BPF and Spectre: Mitigating transient execution attacks](https://www.youtube.com/watch?v=6N30Yp5f9c4) ([Slides](https://ebpf.io/summit-2021-slides/eBPF_Summit_2021-Keynote-Daniel_Borkmann-BPF_and_Spectre.pdf))
   , Daniel Borkmann, eBPF Summit, Aug 2021
@@ -268,7 +268,7 @@ libbpf ライブラリは clang/LLVM から生成された eBPF オブジェク�
 
 - [Hubble - eBPF Based Observability for Kubernetes](https://static.sched.com/hosted_files/kccnceu20/1b/Aug19-Hubble-eBPF_Based_Observability_for_Kubernetes_Sebastian_Wicki.pdf), Sebastian Wicki, KubeCon EU, Aug 2020
 
-### Books
+### 書籍
 
 - [Learning eBPF](https://isovalent.com/books/learning-ebpf/?utm_source=website-ebpf&utm_medium=referral&utm_campaign=partner), Liz Rice, O'Reilly, 2023
 - [Security Observability with eBPF](https://isovalent.com/books/ebpf-security/?utm_source=website-ebpf&utm_medium=referral&utm_campaign=partner), Natália Réka Ivánkó and Jed Salazar, O'Reilly, 2022
@@ -277,7 +277,7 @@ libbpf ライブラリは clang/LLVM から生成された eBPF オブジェク�
 - [BPF Performance Tools](http://www.brendangregg.com/bpf-performance-tools-book.html), Brendan Gregg, Addison-Wesley Professional Computing Series, Dec 2019
 - [Linux Observability with BPF](https://www.oreilly.com/library/view/linux-observability-with/9781492050193/), David Calavera, Lorenzo Fontana, O'Reilly, Nov 2019
 
-### Articles & Blogs
+### 記事とブログ
 
 - [BPF for security - and chaos - in Kubernetes](https://lwn.net/Articles/790684/), Sean Kerner, LWN, Jun 2019
 - [Linux Technology for the New Year: eBPF](https://thenewstack.io/linux-technology-for-the-new-year-ebpf/), Joab Jackson, Dec 2018

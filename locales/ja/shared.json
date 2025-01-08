@@ -18,11 +18,12 @@
   "Blog": "ブログ",
   "Branding": "ブランド",
   "Case Studies": "ケーススタディ",
-  "Children's Guide to eBPF": "Children's Guide to eBPF",
+  "Children's Guide to eBPF": "子供向け eBPF ガイド",
   "Community": "コミュニティ",
   "Contribute": "貢献",
   "eBPF - Introduction, Tutorials & Community Resources": "'eBPF - 導入とチュートリアル ＆ コミュニティによる資料",
   "eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.": "eBPF はカーネルのソースコードの修正やカーネルモジュールのロードなしに Linux カーネルのサンドボックス内でプログラムを実行できる革新的な技術です。",
+  "eBPF Tech Talks": "eBPF の発表",
   "Events": "イベント",
   "Foundation": "組織",
   "Get Started": "eBPFを始める",
@@ -38,6 +39,6 @@
   "What is eBPF?": "eBPFとは？",
   "<0>Subscribe</0> to bi-weekly eCHO News": "週刊の eCHO News - eBPF <0>を購読する</0>",
   "Keep up on the latest news and information from the eBPF and Cilium": "eBPF と Cilium コミュニティからの最新ニュースや情報を入手する。",
-  "Email address...": "Email address...",
+  "Email address...": "メールアドレス",
   "Subscribe": "購読"
 }

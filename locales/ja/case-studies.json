@@ -12,12 +12,12 @@
       "description": "<strong>Google</strong> は eBPF をセキュリティ監査やパケット処理、パフォーマンス監視に活用しています",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://www.youtube.com/watch?v=XFJw37Vwzcc&t=657s"
         },
         {
-          "text": "Talk",
-          "to": "https://legacy.netdevconf.info/0x14/session.html?talk-replacing-HTB-with-EDT-and-BPF"
+          "text": "発表",
+          "to": "https://legacy.netdevconf.info/0x14/session.html?発表-replacing-HTB-with-EDT-and-BPF"
         }
       ]
     },
@@ -30,7 +30,7 @@
           "to": "https://netflixtechblog.com/how-netflix-uses-ebpf-flow-logs-at-scale-for-network-insight-e3ea997dca96"
         },
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://www.youtube.com/watch?v=16slh29iN1g"
         }
       ]
@@ -40,8 +40,8 @@
       "description": "<strong>Android</strong> は eBPF を通信量やバッテリー、メモリのプロファイルに活用しています。",
       "links": [
         {
-          "text": "Docs",
-          "to": "https://source.android.com/docs/core/architecture/kernel/bpf"
+          "text": "ドキュメント",
+          "to": "https://source.android.com/ドキュメント/core/architecture/kernel/bpf"
         }
       ]
     },
@@ -50,7 +50,7 @@
       "description": "<strong>S&P Global</strong> は eBPF を Cilium を用いて複数のクラウドとオンプレミス間のネットワーキングに活用しています。",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://www.youtube.com/watch?v=6CZ_SSTqb4g"
         }
       ]
@@ -60,7 +60,7 @@
       "description": "<strong>Shopify</strong> は eBPF を Falco を用いた侵入検知に活用しています。",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://www.youtube.com/watch?v=6pVci31Mb6Q"
         }
       ]
@@ -74,8 +74,8 @@
           "to": "https://blog.cloudflare.com/tag/ebpf/"
         },
         {
-          "text": "Talk",
-          "to": "https://legacy.netdevconf.info/0x13/session.html?talk-XDP-based-DDoS-mitigation"
+          "text": "発表",
+          "to": "https://legacy.netdevconf.info/0x13/session.html?発表-XDP-based-DDoS-mitigation"
         }
       ]
     },
@@ -84,7 +84,7 @@
       "description": "<strong>Microsoft</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=ilcYXPDSgu8&list=PLj6h78yzYM2Pm5nF_GmNQHMyt9CUZr2uQ&index=5"
         }
       ]
@@ -94,7 +94,7 @@
       "description": "<strong>Samsung</strong> uses eBPF in their android devices for networking",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/live/EViAho-6qoc?t=5220&si=shsfjYQ5X5lnL5cL"
         }
       ]
@@ -104,7 +104,7 @@
       "description": "<strong>Ikea</strong> uses eBPF through Cilium for networking and load balancing in their private cloud",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://www.youtube.com/watch?v=sg-F_R-ZVNc"
         }
       ]
@@ -114,7 +114,7 @@
       "description": "<strong>Apple</strong> uses eBPF through Falco for kernel security monitoring",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://www.youtube.com/watch?v=ZBlJSr6XkN8"
         }
       ]
@@ -124,7 +124,7 @@
       "description": "<strong>Meta</strong> uses eBPF to process and load balance every packet coming into their data centers",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://www.youtube.com/watch?v=ZYBXZFKPS28"
         },
         {
@@ -132,7 +132,7 @@
           "to": "https://engineering.fb.com/2018/05/22/open-source/open-sourcing-katran-a-scalable-network-load-balancer/"
         },
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://lpc.events/event/16/contributions/1363/"
         }
       ]
@@ -152,7 +152,7 @@
       "description": "<strong>Datadog</strong> uses eBPF for networking and security in their SaaS product",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://datadogon.datadoghq.com/episodes/datadog-on-ebpf/"
         },
         {
@@ -160,7 +160,7 @@
           "to": "https://www.datadoghq.com/blog/network-performance-monitoring/"
         },
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=6nlv_VCsjpQ"
         }
       ]
@@ -174,7 +174,7 @@
           "to": "https://www.alibabacloud.com/blog/how-does-alibaba-cloud-build-high-performance-cloud-native-pod-networks-in-production-environments_596590"
         },
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=Z4qxd5yYoP4"
         }
       ]
@@ -184,7 +184,7 @@
       "description": "<strong>Red Hat</strong> uses eBPF at scale for load balancing and tracing in their private cloud",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://youtu.be/xxRAppnmirY?si=OSxhLJ8S1B2-Z-9T"
         }
       ]
@@ -194,7 +194,7 @@
       "description": "eBPF is the technlogy that powers <b>Isovalent</b>'s enterpise networking, observability and security solutions",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=Xs3MBK17kCk"
         },
         {
@@ -212,7 +212,7 @@
           "to": "https://cilium.io/blog/2022/04/12/cilium-standalone-L4LB-XDP/"
         },
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=xwjZF3alO7g"
         }
       ]
@@ -226,7 +226,7 @@
           "to": "https://cilium.io/blog/2020/02/05/how-trip-com-uses-cilium/"
         },
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=NIsU4I950l4"
         }
       ]
@@ -236,7 +236,7 @@
       "description": "<strong>Bell</strong> Canada uses eBPF to moderize telco networking with SRv6",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=fNtG0iHYne4"
         }
       ]
@@ -250,7 +250,7 @@
           "to": "https://cilium.io/blog/2020/09/03/wildlife-studios-multi-cluster-gaming-platform"
         },
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=_1t3bXzptP0"
         }
       ]
@@ -260,7 +260,7 @@
       "description": "<strong>Capital One</strong> uses eBPF to secure their cloud infrastructure",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=hwOpCKBaJ-w&ab_channel=eBPFSummit"
         }
       ]
@@ -270,7 +270,7 @@
       "description": "<strong>Sky</strong> uses eBPF through Cilium for cloud networking",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=u-4naOMfs_w"
         }
       ]
@@ -280,7 +280,7 @@
       "description": "<strong>Walmart</strong> uses eBPF for edge cloud load balancing",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://youtu.be/thmAcyix8FM"
         },
         {
@@ -294,7 +294,7 @@
       "description": "<strong>Palantir</strong> uses eBPF to debug networking problems",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://youtu.be/0RDp1IPxbg0"
         }
       ]
@@ -304,7 +304,7 @@
       "description": "<strong>Cruise</strong> uses eBPF to monitor GPU performance",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://youtu.be/7bdy2AkRjqE"
         }
       ]
@@ -314,7 +314,7 @@
       "description": "<strong>Digital Ocean</strong> uses eBPF to monitor GPU performance",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://youtu.be/gcHxfhDT-I4"
         }
       ]
@@ -324,11 +324,11 @@
       "description": "<strong>Yahoo</strong> uses eBPF for load balancing and performance analysis",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://youtu.be/-C86fBMcp5Q"
         },
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.usenix.org/conference/lisa21/presentation/jones-zachary"
         }
       ]
@@ -348,12 +348,12 @@
       "description": "<strong>F5</strong> BIG-IP integration with Cilium VTEP feature",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://youtu.be/EfmdjrQLFFg"
         },
         {
           "text": "Guide",
-          "to": "https://github.com/f5devcentral/f5-ci-docs/blob/master/docs/cilium/cilium-bigip-info.rst"
+          "to": "https://github.com/f5devcentral/f5-ci-ドキュメント/blob/master/ドキュメント/cilium/cilium-bigip-info.rst"
         }
       ]
     },
@@ -372,7 +372,7 @@
       "description": "<strong>The New York Times</strong> uses eBPF for networking",
       "links": [
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://www.youtube.com/watch?v=qmrHONqsV2M&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D"
         }
       ]
@@ -412,8 +412,8 @@
       "description": "<strong>Akita</strong> uses eBPF at scale for API observability",
       "links": [
         {
-          "text": "Docs",
-          "to": "https://docs.akita.software/docs/how-akita-works#what-makes-akita-different"
+          "text": "ドキュメント",
+          "to": "https://ドキュメント.akita.software/ドキュメント/how-akita-works#what-makes-akita-different"
         }
       ]
     },
@@ -426,11 +426,11 @@
           "to": "https://www.groundcover.com/how-it-works"
         },
         {
-          "text": "Docs",
-          "to": "https://www.groundcover.com/docs"
+          "text": "ドキュメント",
+          "to": "https://www.groundcover.com/ドキュメント"
         },
         {
-          "text": "Video",
+          "text": "動画",
           "to": "https://youtu.be/73wait5RR7c?si=vZKzrQpwHmyIeM3k"
         }
       ]
@@ -440,7 +440,7 @@
       "description": "<strong>Line Corporation</strong> uses eBPF at scale for load balancing and tracing in their private cloud",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=cxfVpBYlol4"
         }
       ]
@@ -450,7 +450,7 @@
       "description": "<strong>Exein</strong> uses eBPF in their open source runtime security framework for IoT",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=vmRQXRit-sY&list=PLDg_GiBbAx-mAwr1P5H4xFEn7X-qWZ2V_&index=16"
         }
       ]
@@ -460,7 +460,7 @@
       "description": "<strong>Ant Group</strong> uses eBPF in their cloud native security platform for vulnerability live-patching, and system anomaly detection",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://youtu.be/TXlxgDvxcoY?si=lvC1HqNl4jXNyfD0"
         }
       ]
@@ -470,7 +470,7 @@
       "description": "<strong>Sysdig</strong> uses eBPF to enable high-performance system call tracing, facilitate container-aware troubleshooting, conduct security auditing, and provide rich insights and data from the kernel",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=BxoKztfHnYY&list=PLDg_GiBbAx-mAwr1P5H4xFEn7X-qWZ2V_&index=28"
         },
         {
@@ -494,7 +494,7 @@
       "description": "<strong>Cycode</strong> uses eBPF for CI/CD security",
       "links": [
         {
-          "text": "Talk",
+          "text": "発表",
           "to": "https://www.youtube.com/watch?v=pcBGRFvSrvY"
         },
         {
@@ -558,8 +558,8 @@
       "description": "<strong>Levo</strong> uses eBPF for API discovery and documentation",
       "links": [
         {
-          "text": "Docs",
-          "to": "https://docs.levo.ai/api-observability/concepts#ebpf-sensor"
+          "text": "ドキュメント",
+          "to": "https://ドキュメント.levo.ai/api-observability/concepts#ebpf-sensor"
         }
       ]
     },

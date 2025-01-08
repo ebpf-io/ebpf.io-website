@@ -56,11 +56,11 @@
   },
   "books": {
     "title": "業界の専門家が書いた eBPF の本から学ぶ",
-    "linkTitle": "Learn More"
+    "linkTitle": "詳細"
   },
   "tutorials": {
     "title": "業界の専門家のチュートリアルから eBPF 技術を学ぶ",
-    "linkTitle": "More tutorials",
+    "linkTitle": "他のチュートリアル",
     "items": [
       {
         "title": "eBPF トレーシングチュートリアル",
@@ -90,5 +90,5 @@
     "title": "コミュニティの記事で更にeBPFについて学ぶ",
     "linkTitle": "記事"
   },
-  "Meet some of our community members": "Meet some of our community members"
+  "Meet some of our community members": "コミュニティメンバーに会う"
 }
