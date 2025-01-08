@@ -71,7 +71,7 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, fullWidthBottomBorder, pageUr
                               <Link
                                 className="flex whitespace-nowrap px-5 py-2.5 text-[15px] font-medium leading-none lg:text-sm"
                                 theme="black"
-                                to={t(to)}
+                                to={to.startsWith('/') ? t(to) : to}
                                 target={target || null}
                                 rel={target ? 'noopener noreferrer' : null}
                               >
