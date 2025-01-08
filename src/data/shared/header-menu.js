@@ -79,8 +79,8 @@ const headerMenu = [
         to: 'https://ebpf.io/slack',
       },
       {
-        title: 'eBPF Meetup',
-        to: 'https://www.meetup.com/ebpf-user-group/',
+        title: 'eBPF Research Papers',
+        to: 'https://pchaigno.github.io/bpf/2025/01/07/research-papers-bpf.html',
         target: '_blank',
       },
       {
@@ -101,7 +101,6 @@ const headerMenu = [
       {
         title: 'Wikipedia',
         to: 'https://en.wikipedia.org/wiki/EBPF',
-        target: '_blank',
       },
       {
         title: 'eCHO',
