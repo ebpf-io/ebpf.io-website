@@ -12,7 +12,7 @@ en: {
 
 2. The `en` folder from `locales` should be duplicated and renamed to match the language code. Please translate all strings in these files.
 
-3. Finally, navigate to the `static-pages/what-is-ebpf` directory and duplicate the `index.md` file. Rename your copy to include your language code, such as `index.fr-fr.md`. Translate the entire file. Please note that the page title is located in the meta block at the top of the file.
+3. Finally, navigate to the `content/static-pages/what-is-ebpf` directory and duplicate the `index.md` file. Rename your copy to include your language code, such as `index.fr-fr.md`. Translate the entire file. Please note that the page title is located in the meta block at the top of the file.
 
 ## Additional Instructions
 

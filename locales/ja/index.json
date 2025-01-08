@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "title": "効率的なネットワーキング・オブザーバビリティ・トレーシング・セキュリティを実現するカーネル拡張手法",
+    "items": [
+      "プログラムは安全性を検証された上で実行されます",
+      "カーネル内のあらゆる処理をフックして動作を変更できます",
+      "JITコンパイラによりネイティブコードに近い速度で実行されます",
+      "動作中のオペレーティングシステムに機能を追加できます"
+    ]
+  },
+  "caseStudies": {
+    "title": "eBPF をプロダクション環境で活用している様々な分野の組織",
+    "linkText": "他の事例"
+  },
+  "whyEbpf": {
+    "title": "なぜ eBPF なのか？",
+    "items": [
+      {
+        "title": "パフォーマンス",
+        "description": "eBPF は JIT コンパイルとカーネル内での直接実行によって、処理性能を劇的に向上させます。"
+      },
+      {
+        "title": "セキュリティ",
+        "description": "eBPF プログラムはカーネルをクラッシュさせないか検証され、特権ユーザだけが変更できます。"
+      },
+      {
+        "title": "柔軟性",
+        "description": "カーネルの再起動やパッチの適用なしに、機能の追加や動作の変更ができます。"
+      }
+    ]
+  },
+  "film": {
+    "title": "Unlocking the Kernel",
+    "description": "eBPFの起源を深く掘り下げ、業界に変革をもたらしたこの技術のこれまでの物語や困難、成果をまとめたドキュメンタリーです。Meta・Intel・Isovalent・Google・RedHat・NetflixといったeBPFの成功と普及を牽引した素晴らしい技術者たちの声を聞くことができます。",
+    "buttonText": "eBPF ドキュメンタリー Webサイト"
+  },
+  "testimonials": {
+    "items": [
+      {
+        "company": "Microsoft Azure",
+        "review": "eBPF は問題を簡単に診断し、開発を加速させ、オペレーティングシステムの機能拡張を可能にする新世代のツールを開発者にもたらしました。",
+        "author": "Mark Russinovich",
+        "role": "Chief Technology Officer at Microsoft Azure, 2021"
+      },
+      {
+        "company": "Google",
+        "review": "eBPF は Linux カーネルにおけるネットワーキングの未来であり、Google は eBPF がもたらす Linux カーネルの進化の一端を担えることを喜ばしく思います。",
+        "author": "Chris DiBona",
+        "role": "Director of Open Source at Google, 2021"
+      },
+      {
+        "company": "Isovalent",
+        "review": "eBPF はすでに数えきれないほどの企業の本番環境に導入されていますが、これはまだ eBPF がもたらすイノベーションの始まりにすぎません。",
+        "author": "Thomas Graf",
+        "role": "Chief Technology Officer at Isovalent, 2021"
+      },
+      {
+        "company": "Meta",
+        "review": "長年にわたり、eBPF はカーネル開発の促進に大きな役割を果たしてきました。私たちは eBPF コミュニティの活動や、次世代の Linux のシステム開発に必要なツールの開発を支援できることに興奮しています。",
+        "author": "Chris Mason",
+        "role": "Kernel Maintainer and Engineering Director at Facebook, 2021"
+      },
+      {
+        "company": "Netflix",
+        "review": "eBPF はネットワーキング、パフォーマンス、そしてセキュリティ技術のビジネスを生み出す大きな力を与える新しい形のソフトウェアです。Netflix は eBPF は可観測性に活用した先駆者で、以前は計測が困難または法外にコストがかかる数えきれないほどの領域に観測性をもたらしました。eBPF は私たちのアプリケーションのレイテンシ削減やコスト削減に役立っています。",
+        "author": "Brendan Gregg",
+        "role": "Senior performance engineer at Netflix, 2021"
+      }
+    ]
+  },
+  "features": {
+    "title": "eBPF で何ができるか？",
+    "items": [
+      {
+        "image": "networking",
+        "title": "ネットワーキング",
+        "description": "カーネル空間を離れることなくパケット処理を高速化します。新しくプロトコルパーサを追加したり、変化する要件に合わせて転送ロジックを容易にプログラムできます。"
+      },
+      {
+        "image": "observability",
+        "title": "オブザーバビリティ",
+        "description": "カスタムメトリクスをカーネル内で収集、集計し、イベントやさまざまなデータ構造の形で出力できます。オーバーヘッドの大きいサンプル出力は必要ありません。"
+      },
+      {
+        "image": "tracingAndProfiling",
+        "title": "トレース & プロファイリング",
+        "description": "eBPF プログラムをカーネルやユーザーアプリケーションの probe ポイントにアタッチすることで、システム内部の詳細な観測や、性能問題の解決のための情報が得られます。"
+      },
+      {
+        "image": "security",
+        "title": "セキュリティ",
+        "description": "全てのシステムコールを検知・把握し、全ての通信パケットとソケットレベルの観測結果を組み合わせることで、より多くのコンテキストを持ち、より多くをコントロールできるセキュリティシステムを構築できます。"
+      }
+    ]
+  },
+  "eBPF Community Talks": "eBPF コミュニティによるトーク"
+}

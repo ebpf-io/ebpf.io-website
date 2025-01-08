@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "eBPF に貢献する方法'",
+    "description": "eBPF に貢献する方法を知りたいですか？eBPF のプロジェクトへの貢献の始め方を学びましょう。",
+    "keywords": "ebpf, bpf, contribute, getting started, community"
+  },
+  "hero": {
+    "title": "eBPF への貢献の仕方",
+    "description": "eBPF は Linux カーネルの eBPF ランタイムや様々な開発用 SDK やライブラリ、eBPF を利用した数々の大規模 ロジェクト、多くの小規模なプロジェクトやツールを含む様々なコミュニティによって構成されます。 そのため、eBPF コミュニティに参加し、貢献する方法もたくさんあります。 以下のリストはあなたがコミュニティへの参加し、貢献を始めるための方法を示してくれるでしょう。",
+    "card": {
+      "title": "Linux カーネルの eBPF ランタイムに貢献する",
+      "description": "Linux カーネルコミュニティは全ての開発者の貢献を管理するために、eBPF サブシステムの Git ツリーを複数に分けて管理しています。 Git ツリーは以下の二人によって管理されています。",
+      "secondDescription": "eBPF ランタイムは数百万ものシステムやデバイス上で動作するソフトウェアの基礎を構築しているので、このコミュニティで活動することは非常に名誉なことです。 活動は新しいフックやプログラムタイプの追加や、eBPF 検証器の改善、新しい CPU アーキテクチャへの JIT のサポートの追加、BPF ヘルパー関数の追加、BPF のテストへの新たなテストケースの追加、bpftool や libbpf の改善といった幅広い活動が含まれます。",
+      "authors": [
+        {
+          "name": "Alexei Starovoitov",
+          "company": "Facebook"
+        },
+        {
+          "name": "Daniel Borkmann",
+          "company": "Cilium/Isovalent"
+        }
+      ],
+      "links": [
+        {
+          "text": "Git ツリー",
+          "to": "https://git.kernel.org/?q=BPF+Group"
+        },
+        {
+          "text": "Linux カーネル eBPF ランタイム",
+          "to": "/infrastructure/#linux-kernel"
+        }
+      ]
+    }
+  },
+  "howToContribute": {
+    "items": [
+      {
+        "icon": "file",
+        "title": "eBPF プロジェクトに貢献する",
+        "description": "<p>eBPF を用いたプロジェクトのリストは長く、現在も追加され続けています。 eBPF を用いたプロジェクトの概要は eBPF ランドスケープで確認できます。 興味を惹くプロジェクトを見つけられるでしょう。</p><p>リストにある多くの eBPF を用いたプロジェクトは good-first-issue ラベルがついたタスクリストを持っています。このタスクはプロジェクトに精通している必要なく、実践的な経験が積める良い機会を与えてくれます。</p>",
+        "links": [
+          {
+            "text": "eBPF ランドスケープ",
+            "to": "/applications"
+          }
+        ]
+      },
+      {
+        "icon": "gear",
+        "title": "eBPF 開発ツールチェインに貢献する",
+        "description": "<p>Linux カーネルは eBPF を直接扱うための最低限のライブラリと API を提供していますが、多くのプロジェクトでは eBPF 開発ツールチェインを活用して eBPF の利用を簡単にしたり、他のプロジェクトと共通のコードを共有したりしています。</p><p>この分野のプロジェクトのリストで eBPF 開発ツールチェインを確認してみてください。各プロジェクトのウェブサイトからプロジェクトへの参加方法を直接確認できます。</p>",
+        "links": [
+          {
+            "text": "eBPF 開発ツールチェイン",
+            "to": "/what-is-ebpf/#development-toolchains"
+          }
+        ]
+      },
+      {
+        "icon": "pen",
+        "title": "ebpf.io に貢献する",
+        "description": "<p>文章を書くことに自信がありますか？あるいは図を描くのが得意ですか？ebpf.io ウェブサイトのコンテンツは Creative Commons Attribution 4.0 International License の下で公開されています。もし興味があれば、GitHub リポジトリを覗いてみてください。また、ドキュメントに関わっているチームメンバーと連絡を取るためには Slack の #ebpf-website チャンネルに参加してください。学んだことを活かしてドキュメントを改善したり、追加のチュートリアルを書いたりしてみましょう。</p>",
+        "links": [
+          {
+            "text": "ライセンス",
+            "to": "https://creativecommons.org/licenses/by/4.0/",
+            "target": "_blank"
+          },
+          {
+            "text": "GitHub リポジトリ",
+            "to": "https://github.com/ebpf-io/ebpf.io-website",
+            "target": "_blank"
+          },
+          {
+            "text": "Slack",
+            "to": "https://ebpf.io/slack"
+          }
+        ]
+      }
+    ]
+  }
+}
