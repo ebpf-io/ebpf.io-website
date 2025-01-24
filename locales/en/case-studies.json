@@ -90,6 +90,16 @@
       ]
     },
     {
+      "title": "Polar Signals",
+      "description": "<strong>Polar Signals</strong> uses eBPF to monitor and measure cross-zone network traffic",
+      "links": [
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/case-study-polar-signals-uses-ebpf-to-monitor-internal-cross-zone-network-traffic-on-kubernetes-reducing-these-operating-costs-by-50/"
+        }
+      ]
+    },
+    {
       "title": "Samsung",
       "description": "<strong>Samsung</strong> uses eBPF in their android devices for networking",
       "links": [
@@ -620,16 +630,6 @@
         {
           "text": "Blog",
           "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
-        }
-      ]
-    },
-    {
-      "title": "Polar Signals",
-      "description": "<strong>Polar Signals</strong> uses eBPF to monitor and measure cross-zone network traffic",
-      "links": [
-        {
-          "text": "Case Study",
-          "to": "https://ebpf.foundation/case-study-polar-signals-uses-ebpf-to-monitor-internal-cross-zone-network-traffic-on-kubernetes-reducing-these-operating-costs-by-50/"
         }
       ]
     }
