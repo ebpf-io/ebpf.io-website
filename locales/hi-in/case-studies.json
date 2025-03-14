@@ -131,7 +131,7 @@
     },
     {
       "title": "Meta",
-      "description": "<strong>Meta</strong> uses eBPF to process and load balance every packet coming into their data centers",
+      "description": "<strong>Meta</strong> अपने डेटा सेंटर्स में आने वाले हर पैकेट को प्रोसेस और लोड बैलेंस करने के लिए eBPF का उपयोग करता है।",
       "links": [
         {
           "text": "वीडियो",
@@ -149,7 +149,7 @@
     },
     {
       "title": "DoorDash",
-      "description": "<strong>DoorDash</strong> uses eBPF through BPFAgent for kernel level monitoring",
+      "description": "<strong>DoorDash</strong> कर्नेल स्तर की मॉनिटरिंग के लिए BPFAgent के माध्यम से eBPF का उपयोग करता है।",
       "links": [
         {
           "text": "ब्लॉग",
@@ -159,7 +159,7 @@
     },
     {
       "title": "Datadog",
-      "description": "<strong>Datadog</strong> uses eBPF for networking and security in their SaaS product",
+      "description": "<strong>Datadog</strong> अपने SaaS प्रोडक्ट में नेटवर्किंग और सिक्योरिटी के लिए eBPF का उपयोग करता है।",
       "links": [
         {
           "text": "वीडियो",
@@ -177,7 +177,7 @@
     },
     {
       "title": "Alibaba",
-      "description": "<strong>Alibaba</strong> uses eBPF through Cilium to provide networking in their cloud",
+      "description": "<strong>Alibaba</strong> अपने क्लाउड में नेटवर्किंग प्रदान करने के लिए Cilium के माध्यम से eBPF का उपयोग करता है।",
       "links": [
         {
           "text": "ब्लॉग",
@@ -191,7 +191,7 @@
     },
     {
       "title": "Red Hat",
-      "description": "<strong>Red Hat</strong> uses eBPF at scale for load balancing and tracing in their private cloud",
+      "description": "<strong>Red Hat</strong> अपने प्राइवेट क्लाउड में लोड बैलेंसिंग और ट्रेसिंग के लिए बड़े पैमाने पर eBPF का उपयोग करता है।",
       "links": [
         {
           "text": "वार्ता",
