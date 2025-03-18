@@ -8,7 +8,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      sans: ['Elza', 'Elza Fallback', ...defaultTheme.fontFamily.sans],
+      sans: ['Elza', 'Elza Fallback', 'Mukta', 'Mukta Fallback', ...defaultTheme.fontFamily.sans],
       text: ['Elza Text', 'Elza Text Fallback', ...defaultTheme.fontFamily.sans],
     },
     colors: ({ colors }) => ({
