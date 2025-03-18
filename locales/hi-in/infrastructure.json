@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "eBPF कोर इंफ्रास्ट्रक्चर परिदृश्य",
+    "description": "eBPF-आधारित कोर इंफ्रास्ट्रक्चर की निर्देशिका",
+    "keywords": "eBPF, BPF, परिदृश्य, निर्देशिका, ओपन सोर्स"
+  },
+  "Major Infrastructure": "प्रमुख इंफ्रास्ट्रक्चर",
+  "Emerging": "उभरता हुआ",
+  "eBPF Auxiliary Libraries": "eBPF सहायक लाइब्रेरीज़",
+  "eBPF Libraries": "eBPF लाइब्रेरीज़"
+}
