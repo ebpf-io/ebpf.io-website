@@ -350,6 +350,10 @@
         {
           "text": "Blog",
           "to": "https://inf.news/en/tech/3313635d67f796ae38e7ef64061bc7c4.html"
+        },
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/case-study-bytedance-uses-ebpf-to-enhance-networking-performance/"
         }
       ]
     },
