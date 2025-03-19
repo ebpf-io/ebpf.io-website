@@ -11,6 +11,7 @@ const majorApplications = [
     around LLVM, and front-ends in Python and Lua. It also provides a
     high-level library for direct integration into applications.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/iovisor/bcc' }],
+    githubStars: 21100,
   },
   {
     logoUrl: 'https://github.com/cilium/cilium',
@@ -26,6 +27,7 @@ const majorApplications = [
       { label: 'GitHub', url: 'https://github.com/cilium/cilium' },
       { label: 'Website', url: 'https://cilium.io' },
     ],
+    githubStars: 21200,
   },
   {
     logoUrl: 'https://github.com/iovisor/bpftrace',
@@ -42,6 +44,7 @@ const majorApplications = [
       { label: 'GitHub', url: 'https://github.com/iovisor/bpftrace' },
       { label: 'Website', url: 'https://bpftrace.org/' },
     ],
+    githubStars: 1400,
   },
   {
     logoUrl: 'https://github.com/falcosecurity/falco',
@@ -58,6 +61,7 @@ const majorApplications = [
       { label: 'GitHub', url: 'https://github.com/falcosecurity/falco' },
       { label: 'Website', url: 'https://falco.org/' },
     ],
+    githubStars: 7700,
   },
   {
     logoUrl: 'https://github.com/pixie-io/pixie',
@@ -75,6 +79,7 @@ const majorApplications = [
       { label: 'GitHub', url: 'https://github.com/pixie-io/pixie' },
       { label: 'Website', url: 'https://px.dev' },
     ],
+    githubStars: 5900,
   },
   {
     logoUrl: 'https://github.com/projectcalico/calico',
@@ -89,6 +94,7 @@ const majorApplications = [
       { label: 'GitHub', url: 'https://github.com/projectcalico/calico' },
       { label: 'Website', url: 'https://tigera.io/project-calico' },
     ],
+    githubStars: 6300,
   },
   {
     logoUrl: 'https://github.com/facebookincubator/katran',
@@ -108,6 +114,7 @@ const majorApplications = [
         url: 'https://engineering.fb.com/open-source/open-sourcing-katran-a-scalable-network-load-balancer/',
       },
     ],
+    githubStars: 4900,
   },
   {
     logoUrl: 'https://github.com/parca-dev/parca',
@@ -124,6 +131,7 @@ const majorApplications = [
       { label: 'GitHub', url: 'https://github.com/parca-dev/parca' },
       { label: 'Website', url: 'https://parca.dev' },
     ],
+    githubStars: 4300,
   },
   {
     logoUrl: 'https://github.com/cilium/tetragon',
@@ -142,6 +150,7 @@ const majorApplications = [
       { label: 'GitHub', url: 'https://github.com/cilium/tetragon' },
       { label: 'Website', url: 'https://tetragon.io/' },
     ],
+    githubStars: 3900,
   },
 ];
 
