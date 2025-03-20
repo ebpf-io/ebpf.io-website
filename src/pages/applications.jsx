@@ -26,12 +26,12 @@ const ApplicationsPage = () => {
       <ProjectsList
         className="pt-[72px] lg:pt-16 md:pt-12"
         title={t('Major Applications')}
-        items={majorApplications}
+        items={majorApplications.sort((a, b) => b.githubStars - a.githubStars)}
       />
       <ProjectsList
         className="pt-32 lg:pt-28 md:pt-20 sm:pt-16"
         title={t('Emerging')}
-        items={emergingApplications}
+        items={emergingApplications.sort((a, b) => b.githubStars - a.githubStars)}
       />
       <FAQ />
     </Layout>
