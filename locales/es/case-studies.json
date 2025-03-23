@@ -398,6 +398,16 @@
       ]
     },
     {
+      "title": "Odigos",
+      "description": "<strong>Odigos</strong> utiliza eBPF para instrumentar automáticamente cualquier aplicación, incluida la propagación automática del contexto.",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://odigos.io/blog/how-odigos-uses-ebpf"
+        }
+      ]
+    },
+    {
       "title": "Oligo Security",
       "description": "<strong>Oligo Security</strong> uses eBPF for application security observability and protection",
       "links": [
