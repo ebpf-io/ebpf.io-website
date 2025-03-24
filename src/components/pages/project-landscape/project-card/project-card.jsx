@@ -156,7 +156,7 @@ const logos = {
     />
   ),
   odigosLogo: (
-    <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" width={116} height={116} />
+    <StaticImage src="./logos/odigos.svg" alt="Odigos" loading="lazy" width={116} height={116} />
   ),
   ingressNodeFirewallLogo,
   beylaLogo,
