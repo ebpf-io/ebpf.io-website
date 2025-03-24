@@ -408,6 +408,16 @@
       ]
     },
     {
+      "title": "Odigos",
+      "description": "<strong>Odigos</strong> किसी भी एप्लिकेशन को स्वचालित रूप से इंस्ट्रूमेंट करने के लिए eBPF का उपयोग करता है, जिसमें स्वचालित कॉन्टेक्स्ट प्रोपेगेशन शामिल है।",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://odigos.io/blog/how-odigos-uses-ebpf"
+        }
+      ]
+    },
+    {
       "title": "Oligo Security",
       "description": "<strong>Oligo Security</strong> एप्लिकेशन सुरक्षा अवलोकन और संरक्षण के लिए eBPF का उपयोग करता है",
       "links": [

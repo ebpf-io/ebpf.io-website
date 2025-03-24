@@ -394,6 +394,16 @@
       ]
     },
     {
+      "title": "Odigos",
+      "description": "<strong>Odigos</strong> utilise eBPF pour instrumenter automatiquement toute application, y compris la propagation automatique du contexte",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://odigos.io/blog/how-odigos-uses-ebpf"
+        }
+      ]
+    },
+    {
       "title": "Akita",
       "description": "<strong>Akita</strong> uses eBPF at scale for API observability.",
       "links": [

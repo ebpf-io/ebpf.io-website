@@ -40,6 +40,7 @@ import Meta from './logos/meta.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
+import Odigos from './logos/odigos.inline.svg'
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
 import PolarSignals from './logos/polarsignals.inline.svg';
@@ -95,6 +96,7 @@ const logos = {
   microsoft: Microsoft,
   netflix: Netflix,
   'the new york times': NYT,
+  'odigos': Odigos,
   'oligo security': Oligo,
   palantir: Palantir,
   protectai: ProtectAI,

@@ -398,6 +398,16 @@
       ]
     },
     {
+      "title": "Odigos",
+      "description": "<strong>Odigos</strong> は、eBPF を使用してあらゆるアプリケーションを自動的にインストゥルメントし、自動コンテキスト伝播も行います",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://odigos.io/blog/how-odigos-uses-ebpf"
+        }
+      ]
+    },
+    {
       "title": "Oligo Security",
       "description": "<strong>Oligo Security</strong> uses eBPF for application security observability and protection",
       "links": [

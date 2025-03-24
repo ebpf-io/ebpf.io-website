@@ -384,6 +384,16 @@
       ]
     },
     {
+      "title": "Odigos",
+      "description": "<strong>Odigos</strong> 使用 eBPF 自動監測任何應用程式，包括自動上下文傳遞",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://odigos.io/blog/how-odigos-uses-ebpf"
+        }
+      ]
+    },
+    {
       "title": "Akita",
       "description": "<strong>Akita</strong> uses eBPF at scale for API observability",
       "links": [
