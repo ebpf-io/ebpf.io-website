@@ -399,7 +399,7 @@
     },
     {
       "title": "Odigos",
-      "description": "<strong>Odigos</strong> 는 eBPF를 사용하여 모든 애플리케이션을 자동으로 계측하며, 자동 컨텍스트 전파도 포함됩니다.",
+      "description": "<strong>Odigos</strong> 는 eBPF를 사용하여 모든 애플리케이션을 자동으로 계측하며, 자동 컨텍스트 전파도 포함됩니다",
       "links": [
         {
           "text": "Blog",

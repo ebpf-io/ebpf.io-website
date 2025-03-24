@@ -417,7 +417,7 @@
     },
     {
       "title": "Odigos",
-      "description": "<strong>Odigos</strong> uses eBPF to automatically instrument any application, including automatic context propagation.",
+      "description": "<strong>Odigos</strong> uses eBPF to automatically instrument any application, including automatic context propagation",
       "links": [
         {
           "text": "Blog",

@@ -385,7 +385,7 @@
     },
     {
       "title": "Odigos",
-      "description": "<strong>Odigos</strong> 使用 eBPF 自动检测任何应用程序，包括自动上下文传播。",
+      "description": "<strong>Odigos</strong> 使用 eBPF 自动检测任何应用程序，包括自动上下文传播",
       "links": [
         {
           "text": "Blog",
