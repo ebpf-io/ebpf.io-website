@@ -570,6 +570,16 @@
           "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
         }
       ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong> Upwind Security </strong> 利用 eBPF 提供大规模的实时/运行时云安全。",
+      "links": [
+        {
+          "text": "博客",
+          "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+        }
+      ]
     }
   ]
 }

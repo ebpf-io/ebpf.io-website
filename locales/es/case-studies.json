@@ -632,6 +632,16 @@
           "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
         }
       ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong> Upwind Security </strong> aprovecha eBPF para ofrecer seguridad en la nube profunda en tiempo real/durante la ejecución a escala.",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+        }
+      ]
     }
   ]
 }
