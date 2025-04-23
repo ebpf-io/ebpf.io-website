@@ -550,6 +550,16 @@
           "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
         }
       ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong>Upwind Security</strong> inatumia eBPF kutoa usalama wa wingu wa kina kwa wakati halisi/wakati wa utekelezaji kwa kiwango kikubwa.",
+      "links": [
+        {
+          "text": "Blogu",
+          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }
+      ]
     }
   ]
 }
