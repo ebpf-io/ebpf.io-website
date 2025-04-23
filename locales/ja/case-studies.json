@@ -632,6 +632,16 @@
           "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
         }
       ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong>Upwind Security</strong> は、eBPFを活用して大規模なリアルタイム/ランタイムのクラウドセキュリティを提供します。",
+      "links": [
+        {
+          "text": "ブログ",
+          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,7 @@ import React from 'react';
 import Link from 'components/shared/link';
 
 import Akita from './logos/akita.inline.svg';
+import Akto from './logos/akto.inline.svg';
 import Alibaba from './logos/alibaba.inline.svg';
 import Android from './logos/android.inline.svg';
 import AntGroup from './logos/ant-group.inline.svg';
@@ -34,13 +35,12 @@ import Ikea from './logos/ikea.inline.svg';
 import Isovalent from './logos/isovalent.inline.svg';
 import Kodem from './logos/kodemsec.inline.svg';
 import Levo from './logos/levo.inline.svg';
-import Akto from './logos/akto.inline.svg';
 import LineCoporation from './logos/line-corp.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
 import Meta from './logos/meta.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
-import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
+import Netflix from './logos/netflix.inline.svg';
 import Odigos from './logos/odigos.inline.svg'
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
@@ -58,6 +58,7 @@ import Sysdig from './logos/sysdig.inline.svg';
 import Threatx from './logos/threatX.inline.svg';
 import Traceable from './logos/traceable.inline.svg';
 import Trip from './logos/trip.inline.svg';
+import Upwind from './logos/upwind.inline.svg';
 import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
 import Wiz from './logos/wiz.inline.svg';
@@ -65,13 +66,15 @@ import Yahoo from './logos/yahoo.inline.svg';
 
 const logos = {
   akita: Akita,
+  akto: Akto,
   alibaba: Alibaba,
   android: Android,
   'ant group': AntGroup,
   apple: Apple,
   'aqua security': Aqua,
-  bell: Bell,
   arvancloud: ArvanCloud,
+  attribute: Attribute,
+  bell: Bell,
   bytedance: Bytedance,
   'capital one': CapitalOne,
   cloudflare: Cloudflare,
@@ -100,27 +103,26 @@ const logos = {
   'odigos': Odigos,
   'oligo security': Oligo,
   palantir: Palantir,
+  'polar signals': PolarSignals,
   protectai: ProtectAI,
   qpoint: Qpoint,
   'rad security': RADSecurity,
   'red hat': Redhat,
+  's&p global': Global,
   samsung: Samsung,
   sentinelone: SentinelOne,
   seznam: Seznam,
   shopify: Shopify,
   sky: Sky,
-  's&p global': Global,
+  sysdig: Sysdig,
   threatx: Threatx,
   traceable: Traceable,
-  sysdig: Sysdig,
   'trip.com': Trip,
+  'upwind security': Upwind,
   walmart: Walmart,
   'wildlife studios': Wildlife,
-  'polar signals': PolarSignals,
   wiz: Wiz,
   yahoo: Yahoo,
-  attribute: Attribute,
-  akto: Akto,
 };
 
 const CaseStudiesList = ({ className, items, linkUrl, linkText }) => {

@@ -580,6 +580,16 @@
           "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
         }
       ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong>Upwind Security</strong> 利用 eBPF 提供大規模的即時/執行時間雲端安全",
+      "links": [
+        {
+          "text": "博客",
+          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }
+      ]
     }
   ]
 }

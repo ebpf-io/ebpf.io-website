@@ -660,6 +660,16 @@
           "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
         }
       ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong>Upwind Security</strong> leverages eBPF to deliver deep real-time/runtime cloud security at scale",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }
+      ]
     }
   ]
 }
