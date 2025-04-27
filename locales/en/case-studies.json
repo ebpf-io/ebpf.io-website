@@ -90,6 +90,16 @@
       ]
     },
     {
+      "title": "Polar Signals",
+      "description": "<strong>Polar Signals</strong> uses eBPF to monitor and measure cross-zone network traffic",
+      "links": [
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/case-study-polar-signals-uses-ebpf-to-monitor-internal-cross-zone-network-traffic-on-kubernetes-reducing-these-operating-costs-by-50/"
+        }
+      ]
+    },
+    {
       "title": "Samsung",
       "description": "<strong>Samsung</strong> uses eBPF in their android devices for networking",
       "links": [
@@ -123,6 +133,10 @@
       "title": "Meta",
       "description": "<strong>Meta</strong> uses eBPF to process and load balance every packet coming into their data centers",
       "links": [
+        {
+          "text": "Case Study", 
+          "to": "https://ebpf.foundation/case-study-metas-strobelight-leverages-ebpf-to-reduce-cpu-cycles-and-server-demands-by-up-to-20/"
+        },
         {
           "text": "Video",
           "to": "https://www.youtube.com/watch?v=ZYBXZFKPS28"
@@ -340,6 +354,10 @@
         {
           "text": "Blog",
           "to": "https://inf.news/en/tech/3313635d67f796ae38e7ef64061bc7c4.html"
+        },
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/case-study-bytedance-uses-ebpf-to-enhance-networking-performance/"
         }
       ]
     },
@@ -394,6 +412,16 @@
         {
           "text": "Blog",
           "to": "https://blog.aquasec.com/linux-vulnerabilitie-tracee"
+        }
+      ]
+    },
+    {
+      "title": "Odigos",
+      "description": "<strong>Odigos</strong> uses eBPF to automatically instrument any application, including automatic context propagation",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://odigos.io/blog/how-odigos-uses-ebpf"
         }
       ]
     },

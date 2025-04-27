@@ -43,7 +43,7 @@ const footerMenu = [
       },
       {
         title: 'Swag Shop',
-        to: 'https://cilium.myspreadshop.net/',
+        to: 'https://ebpf-foundation.myspreadshop.com/',
       },
       {
         title: 'Branding',

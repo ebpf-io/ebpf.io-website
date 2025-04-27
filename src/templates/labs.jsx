@@ -99,7 +99,7 @@ export const query = graphql`
       }
       limit: $limit
       skip: $skip
-      sort: { frontmatter: { date: DESC } }
+      sort: { frontmatter: { index: DESC } }
     ) {
       nodes {
         frontmatter {

@@ -384,6 +384,16 @@
       ]
     },
     {
+      "title": "Odigos",
+      "description": "<strong>Odigos</strong> hutumia eBPF kuwekea vifaa kiotomatiki programu yoyote, ikijumuisha usambazaji wa muktadha kiotomatiki",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://odigos.io/blog/how-odigos-uses-ebpf"
+        }
+      ]
+    },
+    {
       "title": "Akita",
       "description": "<strong>Akita</strong> uses eBPF at scale for API observability",
       "links": [

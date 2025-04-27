@@ -12,6 +12,7 @@ import AntGroup from './logos/ant-group.inline.svg';
 import Apple from './logos/apple.inline.svg';
 import Aqua from './logos/aqua.inline.svg';
 import ArvanCloud from './logos/arvancloud.inline.svg';
+import Attribute from './logos/attribute.inline.svg';
 import Bell from './logos/bell.inline.svg';
 import Bytedance from './logos/byte-dance.inline.svg';
 import CapitalOne from './logos/capital-one.inline.svg';
@@ -39,8 +40,10 @@ import Meta from './logos/meta.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
+import Odigos from './logos/odigos.inline.svg'
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
+import PolarSignals from './logos/polarsignals.inline.svg';
 import ProtectAI from './logos/protectai.inline.svg';
 import Qpoint from './logos/qpoint.inline.svg';
 import RADSecurity from './logos/rad-security.inline.svg';
@@ -58,7 +61,6 @@ import Walmart from './logos/walmart.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
 import Wiz from './logos/wiz.inline.svg';
 import Yahoo from './logos/yahoo.inline.svg';
-import Attribute from './logos/attribute.inline.svg';
 
 const logos = {
   akita: Akita,
@@ -94,6 +96,7 @@ const logos = {
   microsoft: Microsoft,
   netflix: Netflix,
   'the new york times': NYT,
+  'odigos': Odigos,
   'oligo security': Oligo,
   palantir: Palantir,
   protectai: ProtectAI,
@@ -112,6 +115,7 @@ const logos = {
   'trip.com': Trip,
   walmart: Walmart,
   'wildlife studios': Wildlife,
+  'polar signals': PolarSignals,
   wiz: Wiz,
   yahoo: Yahoo,
   attribute: Attribute,

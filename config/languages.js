@@ -5,6 +5,11 @@ module.exports = {
       shortName: 'Eng',
       code: 'en',
     },
+    'hi-in': {
+      name: 'हिन्दी',
+      shortName: 'Hin',
+      code: 'hi-in',
+    },
     'fr-fr': {
       name: 'Français',
       shortName: 'Fra',

@@ -112,4 +112,80 @@
     line-gap-override: 0%;
     size-adjust: 101.35%;
   }
+
+  @font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/mukta/mukta-light.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Mukta Fallback';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Arial');
+    ascent-override: 122.86%;
+    descent-override: 57.84%;
+    line-gap-override: 0%;
+    size-adjust: 91.98%;
+  }
+
+  @font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/mukta/mukta-regular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Mukta Fallback';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arial');
+    ascent-override: 119.61%;
+    descent-override: 56.31%;
+    line-gap-override: 0%;
+    size-adjust: 94.47%;
+  }
+
+  @font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/mukta/mukta-medium.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Mukta Fallback';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Arial');
+    ascent-override: 117.31%;
+    descent-override: 55.23%;
+    line-gap-override: 0%;
+    size-adjust: 96.33%;
+  }
+
+  @font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/mukta/mukta-semibold.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Mukta Fallback';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Arial Bold');
+    ascent-override: 124.66%;
+    descent-override: 58.69%;
+    line-gap-override: 0%;
+    size-adjust: 90.65%;
+  }
 }
