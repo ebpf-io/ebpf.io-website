@@ -31,6 +31,7 @@ import keplerLogo from './logos/kepler.gif';
 import kubeArmorLogo from './logos/kubearmor.svg';
 import kubectlTraceLogo from './logos/kubectl_trace.svg';
 import kubeskoopLogo from './logos/kubeskoop.svg';
+import kubescapeLogo from './logos/kubeskape.svg';
 import kyanosLogo from './logos/kyanos.png';
 import l3afLogo from './logos/l3af.svg';
 import linuxLogo from './logos/linux.svg';
@@ -63,6 +64,7 @@ const logos = {
   bumblebeeLogo,
   plyLogo,
   kubeArmorLogo,
+  kubescapeLogo,
   l3afLogo,
   merbridgeLogo,
   netobservLogo,
