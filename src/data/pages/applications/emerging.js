@@ -532,9 +532,9 @@ const emergingApplications = [
     name: 'Kubescape',
     logoName: 'kubescapeLogo',
     title: 'Kubernetes security from development through runtime',
-    description: `Kubescape is a Kubernetes security posture management platform that proactively identifies and 
+    description: 'Kubescape is a Kubernetes security posture management platform that proactively identifies and 
     mitigates security risks within your clusters. Kubescape leverages eBPF to perform deep, real-time analysis 
-    of the Linux kernel, enabling it to detect security misconfigurations and runtime threats with precision.`,
+    of the Linux kernel, enabling it to detect security misconfigurations and runtime threats with precision.',
     urls: [
       { label: 'GitHub', url: 'https://github.com/kubescape/kubescape' },
       { label: 'Website', url: 'https://kubescape.io/' },
