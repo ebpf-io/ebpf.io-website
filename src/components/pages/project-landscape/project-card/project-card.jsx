@@ -48,7 +48,7 @@ import rbpfLogo from './logos/rbpf.svg';
 import retinaLogo from './logos/retina.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
-import qtapLogo from './logos/qpoint.svg';
+import qtapLogo from './logos/qpoint.png';
 
 const logos = {
   bccLogo,
