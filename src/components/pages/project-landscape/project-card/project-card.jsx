@@ -48,6 +48,7 @@ import rbpfLogo from './logos/rbpf.svg';
 import retinaLogo from './logos/retina.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
+import qtapLogo from './logos/qpoint.svg';
 
 const logos = {
   bccLogo,
@@ -86,6 +87,7 @@ const logos = {
   bpftoolLogo,
   corootLogo,
   alazLogo,
+  qtapLogo,
   tetragonLogo: (
     <StaticImage
       src="./logos/tetragon.svg"
