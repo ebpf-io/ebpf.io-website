@@ -335,6 +335,18 @@ const emergingApplications = [
     ],
     githubStars: 564,
   },
+  {
+    logoUrl: 'https://github.com/qpoint-io/qtap',
+    name: 'qtap',
+    logoName: 'qtapLogo',
+    title: 'See through encryption with eBPF',
+    description: `An eBPF agent that captures traffic flowing through the Linux kernel. By attaching to TLS/SSL functions, data is intercepted before and after encryption and then passed to flexible plugins with full visibility along with all of the available context - process/container/host/user/protocol/etc. Qtap makes it possible to understand what's happening with your egress traffic, without modifying apps, installing proxies, or managing certs.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/qpoint-io/qtap' },
+      { label: 'Website', url: 'https://qpoint.io/qtap/' },
+    ],
+    githubStars: 675,
+  },
 
   {
     logoUrl: 'https://github.com/getanteon/alaz',
