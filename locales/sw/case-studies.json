@@ -540,6 +540,16 @@
           "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
         }
       ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong> Upwind Securty </strong> inatumia eBPF kutoa usalama wa wingu wa kina kwa wakati halisi/wakati wa utekelezaji kwa kiwango kikubwa.",
+      "links": [
+        {
+          "text": "Blogu",
+          "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+        }
+      ]
     }
   ]
 }

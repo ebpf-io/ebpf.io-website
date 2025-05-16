@@ -622,6 +622,16 @@
           "to": "https://attrb.io/unlocking-cloud-cost-visibility-with-ebpf-a-game-changer-for-finops/"
         }
       ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong> Upwind Security </strong> は、eBPFを活用して大規模なリアルタイム/ランタイムのクラウドセキュリティを提供します。",
+      "links": [
+        {
+          "text": "ブログ",
+          "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+        }
+      ]
     }
   ]
 }
