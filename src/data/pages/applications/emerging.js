@@ -553,6 +553,19 @@ const emergingApplications = [
     ],
     githubStars: 10700,
   },
+  {
+    logoUrl: 'https://github.com/facebook/bpfilter',
+    name: 'bpfilter',
+    logoName: 'bpfilterLogo',
+    title: 'An eBPF-based packet filtering framework',
+    description:
+      'bpfilter transforms how you control network traffic by leveraging the power of eBPF technology. This framework elegantly translates filtering rules into optimized BPF programs, bringing unparalleled performance and flexibility to your packet filtering needs.',
+    urls: [
+      { label: 'Github', url: 'https://github.com/facebook/bpfilter' },
+      { label: 'Website', url: 'https://bpfilter.io/' },
+    ],
+    githubStars: 224,
+  },
 ];
 
 export default emergingApplications;
