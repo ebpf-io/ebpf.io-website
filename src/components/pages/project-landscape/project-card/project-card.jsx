@@ -10,6 +10,7 @@ import alazLogo from './logos/alaz.svg';
 import bccLogo from './logos/bcc.svg';
 import beylaLogo from './logos/beyla.png';
 import blixtLogo from './logos/blixt.png';
+import bpfilterLogo from './logos/bpfilter.svg';
 import bpfmanLogo from './logos/bpfman.svg';
 import bpftoolLogo from './logos/bpftool.svg';
 import bpftopLogo from './logos/bpftop.png';
@@ -39,17 +40,17 @@ import llvmLogo from './logos/llvm.svg';
 import merbridgeLogo from './logos/merbridge.svg';
 import netobservLogo from './logos/netobserv.svg';
 import otelLogo from './logos/opentelemetry.svg';
-import vc5Logo from './logos/vc5.svg';
 import parcaLogo from './logos/parca.svg';
 import pcapplusplusLogo from './logos/pcapplusplus.svg';
 import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
 import pyroscopeLogo from './logos/pyroscope.svg';
+import qtapLogo from './logos/qpoint.png';
 import rbpfLogo from './logos/rbpf.svg';
 import retinaLogo from './logos/retina.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
-import qtapLogo from './logos/qpoint.png';
+import vc5Logo from './logos/vc5.svg';
 
 const logos = {
   bccLogo,
@@ -90,6 +91,7 @@ const logos = {
   corootLogo,
   alazLogo,
   qtapLogo,
+  bpfilterLogo,
   tetragonLogo: (
     <StaticImage
       src="./logos/tetragon.svg"
