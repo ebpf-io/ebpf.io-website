@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "title": "Programmation dynamique du noyau pour un trafic réseau, une observabilité, une trace et une sécurité efficaces",
+    "altImage": "eBPF diagram",
+    "items": [
+      "Vérification des programmes pour une exécution sécurisée",
+      "Branchement n’importe où dans le noyau pour une modification des fonctionnalités",
+      "Compilateur JIT pour une vitesse d’exécution quasi native",
+      "Accès au fonctions bas niveau du système"
+    ]
+  },
+  "caseStudies": {
+    "title": "Des entreprises de tous type d’industries utilisent eBPF en production",
+    "linkText": "Plus d’études de cas"
+  },
+  "whyEbpf": {
+    "title": "Pourquoi eBPF?",
+    "items": [
+      {
+        "title": "Performance",
+        "description": "eBPF accélère considérablement l’exécution en étant compilé JIT et en s’exécutant directement dans le noyau."
+      },
+      {
+        "title": "Sécurité",
+        "description": "Les programmes eBPF sont vérifiés pour ne pas planter le noyau et ne peuvent être modifiés que par des utilisateurs privilégiés."
+      },
+      {
+        "title": "Flexibilité",
+        "description": "Modification ou ajout de fonctionnalités au noyau, sans le patcher ou le redémarrer."
+      }
+    ]
+  },
+  "film": {
+    "title": "Unlocking the Kernel",
+    "description": "The eBPF Documentary provides an in-depth exploration on the origins of eBPF and showcases the stories, challenges, and rewards of this industry changing technology. You will hear from the best and brightest in the open source world, including key stakeholders from Meta, Intel, Isovalent, Google, Red Hat, and Netflix, who helped shape and build the tools that drove the success and adoption of eBPF.",
+    "buttonText": "eBPF Documentary Website"
+  },
+  "testimonials": {
+    "items": [
+      {
+        "company": "Microsoft Azure",
+        "review": "eBPF a donné naissance à une nouvelle génération d’outils permettant aux développeurs de diagnostiquer facilement les problèmes, d’innover rapidement et d’étendre les fonctionnalités du système d’exploitation.",
+        "author": "Mark Russinovich",
+        "role": "Chief Technology Officer at Microsoft Azure, 2021"
+      },
+      {
+        "company": "Google",
+        "review": "eBPF est l’avenir de la mise en réseau pour le noyau Linux et Google est heureux de faire partie de l’évolution engendrée.",
+        "author": "Chris DiBona",
+        "role": "Director of Open Source at Google, 2021"
+      },
+      {
+        "company": "Isovalent",
+        "review": "Bien qu’eBPF ait déjà trouvé sa place dans les logiciels en production d’innombrables entreprises, l’innovation que représente eBPF, en tant que technologie, ne fait que débuter.",
+        "author": "Thomas Graf",
+        "role": "Chief Technology Officer at Isovalent, 2021"
+      },
+      {
+        "company": "Meta",
+        "review": "Pendant de nombreuses années, eBPF a joué un rôle essentiel dans l’accélération du développement du noyau. Nous sommes ravis de soutenir le travail de la communauté eBPF, en leur permettant de construire les outils nécessaires pour alimenter la prochaine génération du développement Linux.",
+        "author": "Chris Mason",
+        "role": "Kernel Maintainer and Engineering Director at Facebook, 2021"
+      },
+      {
+        "company": "Netflix",
+        "review": "eBPF est une nouvelle façon de programmer qui offre des super-pouvoirs, donnant naissance à une gamme d’applications dans l’industrie du réseau, du suivi de performance et de la sécurité. Netflix a été le premier à utiliser eBPF pour l’observabilité, fournissant des informations dans de nombreux domaines qui étaient auparavant difficiles ou très coûteux à instrumenter. eBPF nous a aidé à réduire la latence des applications et à réduire les coûts.",
+        "author": "Brendan Gregg",
+        "role": "Senior performance engineer at Netflix, 2021"
+      }
+    ]
+  },
+  "features": {
+    "title": "Que peut-on faire avec eBPF?",
+    "items": [
+      {
+        "image": "networking",
+        "title": "Réseau",
+        "description": "Accélérer le traitement des paquets sans même quitter l’espace noyau. Ajouter des parseurs de protocole supplémentaires et programmer facilement n’importe quelle logique de routage pour répondre à des exigences sans cesse en évolution."
+      },
+      {
+        "image": "observability",
+        "title": "Observabilité",
+        "description": "Collecter et agréger des métriques personnalisées dans le noyau en générant des événements de visibilité et en accédant à des structures de données à partir d’un large éventail de sources possibles sans avoir à exporter des échantillons."
+      },
+      {
+        "image": "tracingAndProfiling",
+        "title": "Traçabilité et profilage",
+        "description": "Attacher des programmes eBPF aux points de sonde au niveau kernel mais aussi de l’application utilisateur afin d’offrir de puissantes capacités d’introspection et des informations uniques pour résoudre les problèmes de performances du système."
+      },
+      {
+        "image": "security",
+        "title": "Sécurité",
+        "description": "Associer la visualisation et la compréhension de tous les appels système au niveau des paquets et des sockets de l’ensemble du réseau pour créer des solutions de sécurité fonctionnant sur un contexte plus large avec un meilleur niveau de contrôle."
+      }
+    ]
+  },
+  "eBPF Community Talks": "Présentations de la communauté eBPF"
+}

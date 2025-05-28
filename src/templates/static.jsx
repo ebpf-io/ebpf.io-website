@@ -6,18 +6,14 @@ import TableOfContents from 'components/pages/static/table-of-contents';
 import Content from 'components/shared/content';
 import Layout from 'components/shared/layout/layout';
 import SEO from 'components/shared/seo';
+import createPageUrl from 'utils/create-page-url';
 
-const pageUrls = {
-  'what-is-ebpf': {
-    en: '/what-is-ebpf/',
-    'fr-fr': '/fr-fr/what-is-ebpf/',
-    pt: '/pt/what-is-ebpf/',
-    'pt-br': '/pt-br/what-is-ebpf/',
-    'it-it': '/it-it/what-is-ebpf/',
-    'zh-cn': '/zh-cn/what-is-ebpf/',
-    sw: '/sw/what-is-ebpf/',
-  },
-};
+const pages = ['what-is-ebpf'];
+
+const pageUrls = pages.reduce((acc, page) => {
+  acc[page] = createPageUrl(page);
+  return acc;
+}, {});
 
 const StaticPage = ({
   data: {
@@ -27,7 +23,6 @@ const StaticPage = ({
     },
   },
   children,
-  pageContext,
   location,
 }) => {
   let pageUrl = false;
@@ -39,22 +34,22 @@ const StaticPage = ({
   });
 
   return (
-    <Layout lang={pageContext.language} pageUrls={pageUrl ? pageUrls[pageUrl] : null}>
+    <Layout pageUrls={pageUrl ? pageUrls[pageUrl] : null}>
       <div className="safe-paddings">
-        <div className="container grid-gap-x mb-28 mt-20 grid grid-cols-12 lg:mb-24 lg:mt-16 md:mb-20 md:mt-12">
+        <div className="container grid grid-cols-12 mt-20 grid-gap-x mb-28 lg:mb-24 lg:mt-16 md:mb-20 md:mt-12">
           <TableOfContents
             className="col-span-3 lg:col-span-4 lg:max-w-[300px] md:hidden"
             items={tableOfContents.items}
           />
           <article className="col-start-5 col-end-13 md:col-span-full">
-            <h1 className="heading-10xl font-semibold leading-dense">{title}</h1>
+            <h1 className="font-semibold heading-10xl leading-dense">{title}</h1>
             <TableOfContents
-              className="mt-10 hidden md:block"
+              className="hidden mt-10 md:block"
               title="Table of contents"
               items={tableOfContents.items}
             />
             <Content
-              className="prose-static mt-10"
+              className="mt-10 prose-static"
               title={title}
               items={tableOfContents.items}
               content={children}
@@ -78,6 +73,16 @@ export const pageQuery = graphql`
         ogKeywords
       }
       tableOfContents(maxDepth: 3)
+    }
+
+    locales: allLocale(filter: { ns: { in: ["shared"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
     }
   }
 `;

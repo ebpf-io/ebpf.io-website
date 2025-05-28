@@ -5,6 +5,11 @@ module.exports = {
       shortName: 'Eng',
       code: 'en',
     },
+    'hi-in': {
+      name: 'हिन्दी',
+      shortName: 'Hin',
+      code: 'hi-in',
+    },
     'fr-fr': {
       name: 'Français',
       shortName: 'Fra',
@@ -25,15 +30,35 @@ module.exports = {
       shortName: 'Ita',
       code: 'it-it',
     },
-    'zh-cn': {
+    es: {
+      name: 'Español',
+      shortName: 'Esp',
+      code: 'es',
+    },
+    'zh-hans': {
       name: ' 简体中文',
-      shortName: 'Chi',
-      code: 'zh-cn',
+      shortName: '简中',
+      code: 'zh-hans',
     },
     sw: {
       name: 'Swahili',
       shortName: 'Swa',
       code: 'sw',
+    },
+    'zh-hant': {
+      name: '繁體中文',
+      shortName: '繁中',
+      code: 'zh-hant',
+    },
+    'ko-kr': {
+      name: '한국어',
+      shortName: 'Kor',
+      code: 'ko-kr',
+    },
+    ja: {
+      name: '日本語',
+      shortName: 'Ja',
+      code: 'ja',
     },
   },
   defaultLanguage: 'en',

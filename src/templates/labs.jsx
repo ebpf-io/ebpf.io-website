@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import { graphql } from 'gatsby';
-import { navigate } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
+import { Trans } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import Categories from 'components/pages/labs/categories';
@@ -10,28 +10,12 @@ import Pagination from 'components/shared/pagination';
 import SEO from 'components/shared/seo';
 import SubscriptionForm from 'components/shared/subscription-form';
 import { LABS_BASE_PATH } from 'constants/labs';
-import data from 'data/pages/labs';
-import SEO_DATA from 'data/shared/seo-data';
+import createPageUrl from 'utils/create-page-url';
 
-const pageUrls = {
-  en: '/labs/',
-  'fr-fr': '/fr-fr/labs/',
-  pt: '/pt/labs/',
-  'pt-br': '/pt-br/labs/',
-  'it-it': '/it-it/labs/',
-  'zh-cn': '/zh-cn/labs/',
-  sw: '/sw/labs/',
-};
+const pageUrls = createPageUrl('labs');
 
 const LabsPage = ({
-  pageContext: {
-    labsCategories,
-    pageCount,
-    currentPageIndex,
-    categorySlug,
-    currentCategory,
-    language,
-  },
+  pageContext: { labsCategories, pageCount, currentPageIndex, categorySlug, currentCategory },
   data: {
     allMdx: { nodes: allLabs },
   },
@@ -48,17 +32,17 @@ const LabsPage = ({
   };
 
   return (
-    <Layout lang={language} pageUrls={pageUrls}>
+    <Layout pageUrls={pageUrls}>
       <section className="safe-paddings">
         <div className="container flex flex-col pt-20 lg:pt-16">
           <h1 className="heading-9xl mx-auto max-w-[890px] text-center font-semibold leading-tight">
-            {data[language].title}
+            <Trans>Dig into eBPF with interactive labs</Trans>
           </h1>
         </div>
       </section>
       {labsCategories.length > 2 && (
         <Categories
-          className="mb-10 mt-4"
+          className="mt-4 mb-10"
           categories={labsCategories}
           currentCategory={currentCategory}
         />
@@ -66,19 +50,14 @@ const LabsPage = ({
       <LabsList labs={labs} />
       {pageCount > 1 && (
         <Pagination
-          className="container-md mb-20 lg:mb-16"
+          className="mb-20 container-md lg:mb-16"
           pageCount={pageCount}
           currentPageIndex={currentPageIndex}
           handlePageChange={handlePageChange}
         />
       )}
       <div className="container-md">
-        <SubscriptionForm
-          className="mb-24 lg:mb-20"
-          {...data[language].subscriptionForm}
-          size="md"
-          isVertical
-        />
+        <SubscriptionForm className="mb-24 lg:mb-20" size="md" isVertical />
       </div>
     </Layout>
   );
@@ -86,9 +65,23 @@ const LabsPage = ({
 
 export default LabsPage;
 
-export const Head = ({ location: { pathname }, pageContext: { language } }) => (
-  <SEO pathname={pathname} {...SEO_DATA.home[language]} />
-);
+export const Head = ({ location: { pathname }, pageContext: { language }, data }) => {
+  const t = JSON.parse(
+    data.locales.edges.find((edge) => edge.node.language === language).node.data
+  );
+
+  return (
+    <SEO
+      pathname={pathname}
+      title={t['eBPF - Introduction, Tutorials & Community Resources']}
+      description={
+        t[
+          'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.'
+        ]
+      }
+    />
+  );
+};
 
 export const query = graphql`
   query LabsPageQuery(
@@ -106,7 +99,7 @@ export const query = graphql`
       }
       limit: $limit
       skip: $skip
-      sort: { frontmatter: { date: DESC } }
+      sort: { frontmatter: { index: DESC } }
     ) {
       nodes {
         frontmatter {
@@ -122,6 +115,16 @@ export const query = graphql`
             }
             publicURL
           }
+        }
+      }
+    }
+
+    locales: allLocale(filter: { ns: { in: ["shared", "labs"] } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

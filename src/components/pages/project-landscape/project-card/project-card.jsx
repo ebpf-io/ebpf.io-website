@@ -10,6 +10,7 @@ import alazLogo from './logos/alaz.svg';
 import bccLogo from './logos/bcc.svg';
 import beylaLogo from './logos/beyla.png';
 import blixtLogo from './logos/blixt.png';
+import bpfilterLogo from './logos/bpfilter.svg';
 import bpfmanLogo from './logos/bpfman.svg';
 import bpftoolLogo from './logos/bpftool.svg';
 import bpftopLogo from './logos/bpftop.png';
@@ -30,20 +31,26 @@ import katranLogo from './logos/katran.svg';
 import keplerLogo from './logos/kepler.gif';
 import kubeArmorLogo from './logos/kubearmor.svg';
 import kubectlTraceLogo from './logos/kubectl_trace.svg';
+import kubescapeLogo from './logos/kubescape.png';
+import kubeskoopLogo from './logos/kubeskoop.svg';
+import kyanosLogo from './logos/kyanos.png';
 import l3afLogo from './logos/l3af.svg';
 import linuxLogo from './logos/linux.svg';
 import llvmLogo from './logos/llvm.svg';
 import merbridgeLogo from './logos/merbridge.svg';
 import netobservLogo from './logos/netobserv.svg';
+import otelLogo from './logos/opentelemetry.svg';
 import parcaLogo from './logos/parca.svg';
 import pcapplusplusLogo from './logos/pcapplusplus.svg';
 import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
 import pyroscopeLogo from './logos/pyroscope.svg';
+import qtapLogo from './logos/qpoint.png';
 import rbpfLogo from './logos/rbpf.svg';
-import sshlogLogo from './logos/sshlog.svg';
+import retinaLogo from './logos/retina.svg';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import traceeLogo from './logos/tracee.svg';
+import vc5Logo from './logos/vc5.svg';
 
 const logos = {
   bccLogo,
@@ -59,6 +66,7 @@ const logos = {
   bumblebeeLogo,
   plyLogo,
   kubeArmorLogo,
+  kubescapeLogo,
   l3afLogo,
   merbridgeLogo,
   netobservLogo,
@@ -69,17 +77,21 @@ const logos = {
   blixtLogo,
   daeLogo,
   sysinternalsLogo,
-  sshlogLogo,
   carettaLogo,
   linuxLogo,
   llvmLogo,
   ebpfForWindowsLogo,
+  otelLogo,
+  vc5Logo,
   hbpfLogo,
   gccLogo,
   rbpfLogo,
+  retinaLogo,
   bpftoolLogo,
   corootLogo,
   alazLogo,
+  qtapLogo,
+  bpfilterLogo,
   tetragonLogo: (
     <StaticImage
       src="./logos/tetragon.svg"
@@ -150,12 +162,17 @@ const logos = {
     />
   ),
   odigosLogo: (
-    <StaticImage src="./logos/odigos.png" alt="Odigos" loading="lazy" width={116} height={116} />
+    <StaticImage src="./logos/odigos.svg" alt="Odigos" loading="lazy" width={116} height={116} />
   ),
   ingressNodeFirewallLogo,
   beylaLogo,
   pcapplusplusLogo,
   bpftopLogo,
+  kubeskoopLogo,
+  kflowLogo: (
+    <StaticImage src="./logos/kflow.png" alt="kflow" loading="lazy" width={116} height={116} />
+  ),
+  kyanosLogo,
 };
 
 const Logo = ({ logo, name }) => {

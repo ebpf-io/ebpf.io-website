@@ -1,5 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image';
-import PropTypes from 'prop-types';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import Button from 'components/shared/button/button';
@@ -18,7 +18,8 @@ const items = [
         loading="lazy"
       />
     ),
-    linkUrl: 'https://isovalent.com/ebpf/#form',
+    linkUrl:
+      'https://isovalent.com/books/ebpf/#form?utm_source=website-ebpf&utm_medium=referral&utm_campaign=partner',
     linkText: 'What is eBPF? Liz Rice, O’Reilly, 2022',
   },
   {
@@ -80,44 +81,43 @@ const items = [
         loading="lazy"
       />
     ),
-    linkUrl: 'https://isovalent.com/learning-ebpf/#form',
+    linkUrl:
+      'https://isovalent.com/books/learning-ebpf/#form?utm_source=website-ebpf&utm_medium=referral&utm_campaign=partner',
     linkText: 'Learning eBPF O’Reilly book by Liz Rice',
   },
 ];
 
-const Books = ({ title, linkTitle }) => (
-  <section className="hero safe-paddings mt-32 lg:mt-24 md:mt-16 sm:mt-14" id="books">
-    <div className="container flex flex-col items-center px-3">
-      <h2 className="heading-8xl text-center font-semibold leading-tight">{title}</h2>
+const Books = () => {
+  const { t } = useTranslation();
 
-      <ul className="mt-16 grid w-full grid-cols-5 items-center justify-center gap-8 lg:mt-14 lg:gap-6 md:mt-11 md:flex-wrap sm:mt-8 sm:grid-cols-2 xs:grid-cols-1">
-        {items.map(({ image, linkUrl, linkText }, index) => (
-          <li
-            className="group relative m-auto drop-shadow-book xs:flex xs:max-w-[256px] xs:justify-center"
-            key={index}
-          >
-            <Link to={linkUrl} target="_blank" rel="noreferrer noopener">
-              {image}
-              <span className="sr-only">{linkText}</span>
-              <div className="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center rounded bg-transparent transition-colors duration-200 group-hover:bg-[#000000]/[0.3] ">
-                <Button
-                  className="px-7 py-4 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
-                  theme="primary-yellow-filled"
-                >
-                  {linkTitle}
-                </Button>
-              </div>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-);
+  return (
+    <section className="hero safe-paddings mt-32 lg:mt-24 md:mt-16 sm:mt-14" id="books">
+      <div className="container flex flex-col items-center px-3">
+        <h2 className="heading-8xl text-center font-semibold leading-tight">{t('books.title')}</h2>
 
-Books.propTypes = {
-  title: PropTypes.string.isRequired,
-  linkTitle: PropTypes.string.isRequired,
+        <ul className="mt-16 grid w-full grid-cols-5 items-center justify-center gap-8 lg:mt-14 lg:gap-6 md:mt-11 md:flex-wrap sm:mt-8 sm:grid-cols-2 xs:grid-cols-1">
+          {items.map(({ image, linkUrl, linkText }, index) => (
+            <li
+              className="group relative m-auto drop-shadow-book xs:flex xs:max-w-[256px] xs:justify-center"
+              key={index}
+            >
+              <Link to={linkUrl} target="_blank" rel="noreferrer noopener">
+                {image}
+                <span className="sr-only">{linkText}</span>
+                <div className="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center rounded bg-transparent transition-colors duration-200 group-hover:bg-[#000000]/[0.3] ">
+                  <Button
+                    className="px-7 py-4 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                    theme="primary-yellow-filled"
+                  >
+                    {t('books.linkTitle')}
+                  </Button>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
 };
-
 export default Books;

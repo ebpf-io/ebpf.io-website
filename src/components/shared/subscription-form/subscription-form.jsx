@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { AnimatePresence, LazyMotion, m, domAnimation } from 'framer-motion';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -28,18 +29,10 @@ const ErrorMessage = ({ serverError }) => {
   );
 };
 
-const SubscriptionForm = ({
-  title,
-  afterTitle,
-  description,
-  placeholder,
-  buttonTitle,
-  className,
-  size,
-  isVertical,
-}) => {
+const SubscriptionForm = ({ className, size, isVertical }) => {
   const { formState, isLoading, errorMessage, email, handleInputChange, handleSubmit } =
     useSubscribeForm();
+  const { t } = useTranslation();
 
   const lgSize = size === 'lg';
   const mdSize = size === 'md';
@@ -71,10 +64,13 @@ const SubscriptionForm = ({
               'text-4xl': size === 'sm',
               'text-6xl': mdSize,
               'heading-8xl': lgSize,
+              '[&>span]:text-primary-yellow': mdSize || lgSize,
             })}
           >
-            <span className={clsx({ 'text-primary-yellow': mdSize || lgSize })}>{title}</span>{' '}
-            {afterTitle}
+            <Trans>
+              <span className={clsx({ 'text-primary-yellow': mdSize || lgSize })}>Subscribe</span>{' '}
+              to bi-weekly eCHO News
+            </Trans>
           </h2>
           <p
             className={clsx('mt-1.5', {
@@ -83,7 +79,7 @@ const SubscriptionForm = ({
               'text-lg': lgSize,
             })}
           >
-            {description}
+            <Trans>Keep up on the latest news and information from the eBPF and Cilium</Trans>
           </p>
         </div>
         <form
@@ -106,7 +102,7 @@ const SubscriptionForm = ({
             )}
             type="email"
             name="email"
-            placeholder={placeholder}
+            placeholder={t('Email address...')}
             autoComplete="email"
             readOnly={formState !== 'default'}
             value={email}
@@ -137,7 +133,7 @@ const SubscriptionForm = ({
                 >
                   <span className="sr-only">Subscribe</span>
                   <span className={clsx({ hidden: smSize, 'sm:hidden': mdSize || lgSize })}>
-                    {buttonTitle}
+                    <Trans>Subscribe</Trans>
                   </span>
                   {!isLoading && (
                     <SendIcon
@@ -173,11 +169,6 @@ const SubscriptionForm = ({
 };
 
 SubscriptionForm.propTypes = {
-  title: PropTypes.string.isRequired,
-  afterTitle: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
-  buttonTitle: PropTypes.string.isRequired,
   className: PropTypes.string,
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   isVertical: PropTypes.bool,

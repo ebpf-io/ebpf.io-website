@@ -15,6 +15,7 @@ This is the source code for the website [ebpf.io](https://ebpf.io/). For more in
 
 - [Getting Started](#getting-started)
 - [Usage](#usage)
+  - [Preparation](#preparation)
   - [Run the website](#run-the-website)
   - [Build the website](#build-the-website)
   - [Run the built website](#run-the-built-website)
@@ -34,19 +35,35 @@ This is the source code for the website [ebpf.io](https://ebpf.io/). For more in
 git clone git@github.com:ebpf-io/ebpf.io-website.git
 ```
 
-2. Install dependencies
+2. Build the container image
+
+```bash
+docker build -t ebpf.io .
+```
+
+3. Run the website in a container
+
+```bash
+docker run -p 8000:8000 ebpf.io
+```
+
+## Usage
+
+Here's how to run it locally without Docker.
+
+### Preparation
+
+1. Install dependencies
 
 ```bash
 npm install
 ```
 
-3. Fill environment variables
+2. Fill environment variables
 
 ```bash
 cp .env.example .env
 ```
-
-## Usage
 
 ### Run the website
 

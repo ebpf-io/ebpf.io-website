@@ -1,0 +1,21 @@
+{
+  "title": "Questions fréquemment posées",
+  "items": [
+    {
+      "question": "Ces projets relèvent-ils de la Fondation eBPF ?",
+      "answer": "<ul><li>Cette page répertorie un certain nombre de projets open source qui utilisent eBPF comme technologie de base sous-jacente. Ces projets ne relèvent pas tous de la <a href=\"https://www.ebpf.foundation/\">Fondation eBPF</a> mais sont répertoriés ici en tant qu’étude du paysage actuel des projets eBPF.</li></ul>"
+    },
+    {
+      "question": "Ajoutez votre projet",
+      "answer": "<ol><li>Assurez-vous que le projet répond aux exigences pour être répertorié. Voir ci-dessous.</li><li>Ouvrez une <a href=\"https://github.com/ebpf-io/ebpf.io\" target=\"_blank\" rel=\"noopener noreferrer\">pull request</a> et fournissez les informations requises. Utilisez l'un des projets déjà répertoriés comme modèle. L'ordre des candidatures est basé sur le nombre d'étoiles Github (de haut en bas), mis à jour tous les trimestres.</li><li>La pull request sera examinée par la communauté et fusionnée par l'un des responsables. Si vous avez des questions, n'hésitez pas à les poser sur <a href=\"https://ebpf.io/slack\">Slack</a>.</li></ol>"
+    },
+    {
+      "question": "Vous maintenez un projet répertorié ?",
+      "answer": "<ul><li>Si vous gérez l'un des projets répertoriés et souhaitez ajuster le contenu. Contactez-nous sur <a href=\"https://ebpf.io/slack\">Slack</a> ou ouvrez directement une pull request.</li></ul>"
+    },
+    {
+      "question": "Conditions requises pour qu’un projet soit répertorié",
+      "answer": "<p>Les projets peuvent être répertoriés sur cette page comme « majeurs » ou «émergents». Pour être répertorié comme «émergent», les conditions sont les suivantes:</p><ul><li>Le projet doit être open source. Tout le code source doit être sous licence open source. Toute documentation doit être sous licence open source.</li><li>Le projet doit utiliser eBPF comme technologie de base sous-jacente (en d'autres termes, un projet perdrait son objectif si les parties de l'eBPF étaient supprimées) ou contribuer à accélérer l'adoption de eBPF en production.</li><li>Le projet doit être activement maintenu.</li><li>Le projet doit être ouvert à la collaboration et disposer d'un modèle de gouvernance suivant les meilleures pratiques open source.</li></ul><p>Pour être répertorié comme projet « majeur », un projet doit répondre à toutes les exigences ci-dessus, plus:</p><ul><li>Le projet doit compter plus de 50 contributeurs.</li><li>Le projet doit être utilisé dans des environnements de production avec un nombre important d'utilisateurs. Étant donné que ces informations peuvent ne pas être facilement détectables à partir d'un lien vers le projet, ces informations doivent être incluses dans la description de la pull request.</li></ul>"
+    }
+  ]
+}

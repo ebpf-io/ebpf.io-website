@@ -9,8 +9,12 @@ const data = {
     pt: '/pt/infrastructure/',
     'pt-br': '/pt-br/infrastructure/',
     'it-it': '/it-it/infrastructure/',
-    'zh-cn': '/zh-cn/infrastructure/',
+    es: '/es/infrastructure/',
+    'zh-hans': '/zh-hans/infrastructure/',
     sw: '/sw/infrastructure/',
+    'tw-cn': '/tw-cn/infrastructure/',
+    'zh-hant': '/zh-hant/infrastructure/',
+    'ko-kr': '/ko-kr/infrastructure/',
   },
   en: {
     title: 'Infrastructure',
@@ -152,17 +156,45 @@ const data = {
       items: auxiliaryLibraries,
     },
   },
-  'zh-cn': {
+  es: {
+    title: 'Infraestructura',
+    hero: {
+      items: [
+        {
+          text: 'Aplicaciones',
+          to: '/es/applications/',
+        },
+        {
+          text: 'Infraestructura',
+          to: '/es/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: 'Infraestructura Mayor',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: 'Emergente',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'Bibliotecas auxiliares eBPF',
+      items: auxiliaryLibraries,
+    },
+  },
+  'zh-hans': {
     title: '基础设施',
     hero: {
       items: [
         {
           text: '应用项目',
-          to: '/zh-cn/applications/',
+          to: '/zh-hans/applications/',
         },
         {
           text: '基础设施',
-          to: '/zh-cn/infrastructure/',
+          to: '/zh-hans/infrastructure/',
         },
       ],
     },
@@ -205,6 +237,62 @@ const data = {
     },
     auxiliaryLibrariesProps: {
       title: 'Maktaba za eBPF za Kubadiliana',
+      items: auxiliaryLibraries,
+    },
+  },
+  'zh-hant': {
+    title: '基礎設施',
+    hero: {
+      items: [
+        {
+          text: '應用專案',
+          to: '/zh-hant/applications/',
+        },
+        {
+          text: '基礎設施',
+          to: '/zh-hant/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: '主要基礎設施',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: '新興基礎設施',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'eBPF 輔助函式庫',
+      items: auxiliaryLibraries,
+    },
+  },
+  'ko-kr': {
+    title: '인프라',
+    hero: {
+      items: [
+        {
+          text: '애플리케이션',
+          to: '/ko-kr/applications/',
+        },
+        {
+          text: '인프라',
+          to: '/ko-kr/infrastructure/',
+        },
+      ],
+    },
+    majorInfrastructureProps: {
+      titleTag: 'h2',
+      title: '주요 인프라',
+      items: majorInfrastructure,
+    },
+    emergingInfrastructureProps: {
+      title: '새로운',
+      items: emergingInfrastructure,
+    },
+    auxiliaryLibrariesProps: {
+      title: 'eBPF 보조 라이브러리',
       items: auxiliaryLibraries,
     },
   },

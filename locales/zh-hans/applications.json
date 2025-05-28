@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "eBPF 应用项目概览",
+    "description": "基于 eBPF 的开源应用项目目录",
+    "keywords": "ebpf, bpf, 概览, 目录, 开源"
+  },
+  "Major Applications": "主要項目",
+  "Emerging": "新興項目"
+}

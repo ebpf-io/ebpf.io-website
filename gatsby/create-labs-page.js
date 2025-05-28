@@ -1,6 +1,5 @@
 const path = require('path');
 
-const { languages, defaultLanguage } = require('../config/languages');
 const { LABS_BASE_PATH, LABS_PER_PAGE } = require('../src/constants/labs');
 const slugifyCategory = require('../src/utils/slugify-category');
 
@@ -61,18 +60,15 @@ module.exports = async ({ graphql, actions }) => {
   Array.from({ length: pageCount }).forEach((_, i) => {
     const pagePath = i === 0 ? LABS_BASE_PATH : `${LABS_BASE_PATH}/${i + 1}`;
 
-    Object.values(languages).forEach(({ code }) => {
-      createPage({
-        path: code === defaultLanguage ? pagePath : `/${code}${pagePath}`,
-        component: path.resolve('./src/templates/labs.jsx'),
-        context: {
-          currentPageIndex: i,
-          pageCount,
-          skip: i * LABS_PER_PAGE,
-          ...context,
-          language: code,
-        },
-      });
+    createPage({
+      path: pagePath,
+      component: path.resolve('./src/templates/labs.jsx'),
+      context: {
+        currentPageIndex: i,
+        pageCount,
+        skip: i * LABS_PER_PAGE,
+        ...context,
+      },
     });
   });
 
@@ -93,21 +89,18 @@ module.exports = async ({ graphql, actions }) => {
     Array.from({ length: categoryPageCount }).forEach((_, i) => {
       const pagePath = i === 0 ? slug : `${slug}/${i + 1}`;
 
-      Object.values(languages).forEach(({ code }) => {
-        createPage({
-          path: code === defaultLanguage ? pagePath : `/${code}${pagePath}`,
-          component: path.resolve('./src/templates/labs.jsx'),
-          context: {
-            category: name,
-            categorySlug: slug,
-            currentPageIndex: i,
-            currentCategory: name,
-            pageCount: categoryPageCount,
-            skip: i * LABS_PER_PAGE,
-            ...context,
-            language: code,
-          },
-        });
+      createPage({
+        path: pagePath,
+        component: path.resolve('./src/templates/labs.jsx'),
+        context: {
+          category: name,
+          categorySlug: slug,
+          currentPageIndex: i,
+          currentCategory: name,
+          pageCount: categoryPageCount,
+          skip: i * LABS_PER_PAGE,
+          ...context,
+        },
       });
     });
   });

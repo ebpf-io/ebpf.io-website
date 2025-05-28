@@ -15,6 +15,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/pyroscope-io/pyroscope' },
       { label: 'Website', url: 'https://pyroscope.io/' },
     ],
+    githubStars: 10400,
   },
   {
     logoUrl: 'https://github.com/gojue/ecapture',
@@ -30,6 +31,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/gojue/ecapture' },
       { label: 'Website', url: 'https://ecapture.cc/' },
     ],
+    githubStars: 14000,
   },
   {
     logoUrl: 'https://github.com/coroot/coroot',
@@ -42,6 +44,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/coroot/coroot' },
       { label: 'Website', url: 'https://coroot.com/' },
     ],
+    githubStars: 5700,
   },
   {
     logoUrl: 'https://github.com/cilium/hubble',
@@ -57,6 +60,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/cilium/hubble' },
       { label: 'Website', url: 'https://cilium.io/' },
     ],
+    githubStars: 3700,
   },
   {
     logoUrl: 'https://github.com/aquasecurity/tracee',
@@ -67,7 +71,9 @@ const emergingApplications = [
     events, helping you expose security insights, detect suspicious
     behavior, and capture forensic indicators.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/aquasecurity/tracee' }],
+    githubStars: 3800,
   },
+
   {
     logoUrl: 'https://github.com/keyval-dev/odigos',
     name: 'Odigos',
@@ -80,6 +86,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/keyval-dev/odigos' },
       { label: 'Website', url: 'https://odigos.io' },
     ],
+    githubStars: 3400,
   },
   {
     logoUrl: 'https://github.com/cilium/pwru',
@@ -89,7 +96,9 @@ const emergingApplications = [
     description:
       'pwru is an eBPF-based tool for tracing network packets in the Linux kernel with advanced filtering capabilities. It allows fine-grained introspection of kernel state to facilitate debugging network connectivity issues.',
     urls: [{ label: 'GitHub', url: 'https://github.com/cilium/pwru' }],
+    githubStars: 3200,
   },
+
   {
     logoUrl: 'https://github.com/deepflowys/deepflow',
     name: 'DeepFlow',
@@ -100,6 +109,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/deepflowys/deepflow' },
       { label: 'Website', url: 'https://deepflow.yunshan.net/community.html' },
     ],
+    githubStars: 3200,
   },
   {
     logoUrl: 'https://github.com/iovisor/kubectl-trace',
@@ -113,6 +123,7 @@ const emergingApplications = [
     programs. When pointed to a cluster, it schedules a temporary job
     called trace-runner that executes bpftrace.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/iovisor/kubectl-trace' }],
+    githubStars: 2100,
   },
   {
     logoUrl: 'https://github.com/daeuniverse/dae',
@@ -121,6 +132,35 @@ const emergingApplications = [
     title: 'Linux high-performance transparent proxy solution',
     description: `dae, means goose, is a high-performance transparent proxy solution. To enhance traffic split performance as much as possible, dae employs the transparent proxy and traffic split suite within the Linux kernel using eBPF. As a result, dae can enable direct traffic to bypass the proxy application's forwarding, facilitating genuine direct traffic passage. Through this remarkable feat, there is minimal performance loss and negligible additional resource consumption for direct traffic.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/daeuniverse/dae' }],
+    githubStars: 3800,
+  },
+  {
+    logoUrl: 'https://github.com/microsoft/retina',
+    name: 'Retina',
+    logoName: 'retinaLogo',
+    title: 'eBPF distributed networking observability tool for Kubernetes',
+    description: `Retina is a cloud-agnostic, eBPF-based open source Kubernetes network observability platform providing a centralized hub for monitoring application and network health and security. Retina collects customizable telemetry, which can be exported to multiple storage options and visualized in a variety of ways.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/microsoft/retina' },
+      { label: 'Website', url: 'https://retina.sh' },
+    ],
+    githubStars: 2900,
+  },
+  {
+    logoUrl: 'https://github.com/hengyoush/kyanos',
+    name: 'kyanos',
+    logoName: 'kyanosLogo',
+    title: 'eBPF based networking analysis command line tool',
+    description: `Kyanos uses eBPF to collect network traffic events 
+    at both the application layer and the kernel. From these eBPF events, 
+    it visualizes the time consumption of network data in the kernel and 
+    calculates various aggregated metrics on the network flow, making 
+    troubleshooting more efficient.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/hengyoush/kyanos' },
+      { label: 'Website', url: 'https://kyanos.io' },
+    ],
+    githubStars: 4000,
   },
   {
     logoUrl: 'https://github.com/kinvolk/inspektor-gadget',
@@ -138,6 +178,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/kinvolk/inspektor-gadget' },
       { label: 'Website', url: 'https://www.inspektor-gadget.io/' },
     ],
+    githubStars: 2400,
   },
   {
     logoUrl: 'https://github.com/Sysinternals/SysmonForLinux',
@@ -148,6 +189,7 @@ const emergingApplications = [
     connections, file system writes, and more. Sysmon works across reboots and supports advanced filtering to help identify
     malicious activity as well as how intruders and malware operate on your network.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/Sysinternals/SysmonForLinux' }],
+    githubStars: 1800,
   },
   {
     logoUrl: 'https://github.com/groundcover-com/caretta',
@@ -158,6 +200,7 @@ const emergingApplications = [
     It can be used to visualize the network traffic between services in a Kubernetes cluster,
     and gain additional insights into the network traffic and the relationships between services.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/groundcover-com/caretta' }],
+    githubStars: 1900,
   },
   {
     logoUrl: 'https://github.com/solo-io/bumblebee',
@@ -172,6 +215,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/solo-io/bumblebee' },
       { label: 'Website', url: 'https://bumblebee.io/' },
     ],
+    githubStars: 1300,
   },
   {
     logoUrl: 'https://github.com/kubearmor/KubeArmor',
@@ -186,6 +230,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/kubearmor/KubeArmor' },
       { label: 'Website', url: 'https://kubearmor.com' },
     ],
+    githubStars: 1700,
   },
   {
     logoUrl: 'https://github.com/grafana/beyla',
@@ -202,6 +247,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/grafana/beyla' },
       { label: 'Website', url: 'https://grafana.com/oss/beyla-ebpf/' },
     ],
+    githubStars: 1600,
   },
   {
     logoUrl: 'https://github.com/iovisor/ply',
@@ -218,6 +264,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/iovisor/ply' },
       { label: 'Website', url: 'https://wkz.github.io/ply/' },
     ],
+    githubStars: 996,
   },
   {
     logoUrl: 'https://github.com/sustainable-computing-io/kepler',
@@ -234,6 +281,7 @@ const emergingApplications = [
       },
       { label: 'Website', url: 'https://sustainable-computing.io' },
     ],
+    githubStars: 1300,
   },
   {
     logoUrl: 'https://github.com/Exein-io/pulsar',
@@ -249,6 +297,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/Exein-io/pulsar' },
       { label: 'Website', url: 'https://pulsar.sh/' },
     ],
+    githubStars: 993,
   },
   {
     logoUrl: 'https://github.com/merbridge/merbridge',
@@ -260,6 +309,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/merbridge/merbridge' },
       { label: 'Website', url: 'https://merbridge.io/' },
     ],
+    githubStars: 771,
   },
   {
     logoUrl: 'https://github.com/kindlingproject/kindling',
@@ -271,6 +321,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/kindlingproject/kindling' },
       { label: 'Website', url: 'http://kindling.harmonycloud.cn' },
     ],
+    githubStars: 1000,
   },
   {
     logoUrl: 'https://github.com/rubrikinc/wachy',
@@ -282,17 +333,30 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/rubrikinc/wachy' },
       { label: 'Website', url: 'https://rubrikinc.github.io/wachy/' },
     ],
+    githubStars: 564,
+  },
+  {
+    logoUrl: 'https://github.com/qpoint-io/qtap',
+    name: 'qtap',
+    logoName: 'qtapLogo',
+    title: 'See through encryption with eBPF',
+    description: `An eBPF agent that captures traffic flowing through the Linux kernel. By attaching to TLS/SSL functions, data is intercepted before and after encryption and then passed to flexible plugins with full visibility along with all of the available context - process/container/host/user/protocol/etc. Qtap makes it possible to understand what's happening with your egress traffic, without modifying apps, installing proxies, or managing certs.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/qpoint-io/qtap' },
+      { label: 'Website', url: 'https://qpoint.io/qtap/' },
+    ],
+    githubStars: 675,
   },
 
   {
-    logoUrl: 'https://github.com/ddosify/alaz',
+    logoUrl: 'https://github.com/getanteon/alaz',
     name: 'Alaz',
     logoName: 'alazLogo',
     title: 'Effortless, Low-Overhead, eBPF-based Kubernetes Monitoring',
-    description: `Alaz is an open source Ddosify eBPF agent that can inspect and collect Kubernetes service traffic
+    description: `Alaz is an open source Anteon eBPF agent that can inspect and collect Kubernetes service traffic
     without the need for code instrumentation, sidecars, or service restarts.
     Alaz uses eBPF to create a Service Map that helps identify golden signals and problems like high latencies, 5xx errors, zombie services, slow HTTP requests, and SQL queries.`,
-    urls: [{ label: 'GitHub', url: 'https://github.com/ddosify/alaz' }],
+    urls: [{ label: 'GitHub', url: 'https://github.com/getanteon/alaz' }],
   },
   {
     logoUrl: 'https://github.com/eunomia-bpf/eunomia-bpf',
@@ -309,6 +373,20 @@ const emergingApplications = [
     ],
   },
   {
+    logoUrl: 'https://github.com/alibaba/kubeskoop',
+    name: 'KubeSkoop',
+    logoName: 'kubeskoopLogo',
+    title: 'Network monitoring & diagnosis suite for Kubernetes',
+    description: `KubeSkoop is a toolset designed to assist users in monitoring and diagnosing network-related
+    issues within Kubernetes environments. It uses eBPF to provide pod-level kernel metrics and anomaly events, enabling
+    users quickly detect and solve network issues in their Kubernetes clusters.`,
+    urls: [
+      { label: 'Github', url: 'https://github.com/alibaba/kubeskoop' },
+      { label: 'Website', url: 'https://kubeskoop.io' },
+    ],
+    githubStars: 678,
+  },
+  {
     logoUrl: 'https://github.com/l3af-project',
     name: 'L3AF',
     logoName: 'l3afLogo',
@@ -323,6 +401,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/l3af-project' },
       { label: 'Website', url: 'https://l3af.io' },
     ],
+    githubStars: 726,
   },
   {
     logoUrl: 'https://skywalking.apache.org/',
@@ -338,30 +417,19 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/apache/skywalking-rover' },
       { label: 'Website', url: 'https://skywalking.apache.org/' },
     ],
+    githubStars: 216,
   },
   {
-    logoUrl: 'https://github.com/loxilb-io',
+    logoUrl: 'https://github.com/loxilb-io/loxilb',
     name: 'LoxiLB',
     logoName: 'loxiLBLogo',
     title: 'eBPF based cloud-native load-balancer for 5G Edge',
     description: `LoxiLB is an open-source cloud-native "external" service load-balancer for cloud-native 5G/edge workloads written from scratch using eBPF as its core-engine and based on Go Language. LoxiLB turns Kubernetes network load balancing for 5G/Edge services into high speed, flexible and programmable LB services.`,
     urls: [
-      { label: 'GitHub', url: 'https://github.com/loxilb-io' },
+      { label: 'GitHub', url: 'https://github.com/loxilb-io/loxilb' },
       { label: 'Website', url: 'https://www.loxilb.io/' },
     ],
-  },
-  {
-    logoUrl: 'https://github.com/sshlog/agent/',
-    name: 'SSHLog',
-    logoName: 'sshlogLogo',
-    title: 'eBPF SSH session monitoring',
-    description: `SSHLog is a Linux daemon written in C++ and Python that monitors OpenSSH servers via eBPF.  The agent
-    passively records all SSH session activity (commands and output) to log files for any connecting user.  Administrators can also share an SSH session with
-    any logged in user.  Actions may be triggered based on SSH behavior such as posting a Slack message when a remote user attempts to gain root access.`,
-    urls: [
-      { label: 'GitHub', url: 'https://github.com/sshlog/agent/' },
-      { label: 'Website', url: 'http://www.sshlog.com/' },
-    ],
+    githubStars: 1600,
   },
   {
     logoUrl: 'https://github.com/bpfman/bpfman',
@@ -378,6 +446,7 @@ const emergingApplications = [
       { label: 'GitHub', url: 'https://github.com/bpfman/bpfman' },
       { label: 'Website', url: 'https://bpfman.io' },
     ],
+    githubStars: 593,
   },
   {
     logoUrl: 'https://github.com/kong/blixt',
@@ -387,6 +456,7 @@ const emergingApplications = [
     description: `Blixt is a layer 4 load-balancer for Kubernetes. It has a control-plane
     implemented using Gateway API and a data-plane built using eBPF and Rust.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/kong/blixt' }],
+    githubStars: 397,
   },
   {
     logoUrl: 'https://github.com/netobserv/netobserv-ebpf-agent',
@@ -404,6 +474,7 @@ const emergingApplications = [
     These captured packets are stored in the widely supported .pcap format,
     facilitating easy post-analysis and compatibility with various network analysis tools.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/netobserv/netobserv-ebpf-agent' }],
+    githubStars: 157,
   },
   {
     logoUrl: 'https://github.com/openshift/ingress-node-firewall',
@@ -414,6 +485,7 @@ const emergingApplications = [
     firewall rules at the node level. The stateless Ingress node firewall is achieved through the utilization of an eBPF
      XDP kernel plugin.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/openshift/ingress-node-firewall' }],
+    githubStars: 52,
   },
   {
     logoUrl: 'https://github.com/Netflix/bpftop',
@@ -424,6 +496,75 @@ const emergingApplications = [
     events per second, and estimated total CPU % for each program. It also provides graphical views of these statistics over time. 
     This tool minimizes overhead by enabling performance statistics only while it is active.`,
     urls: [{ label: 'GitHub', url: 'https://github.com/Netflix/bpftop' }],
+    githubStars: 2400,
+  },
+  {
+    logoUrl: 'https://github.com/tarsal-oss/kflowd',
+    name: 'kflow',
+    logoName: 'kflowLogo',
+    title: 'Process Monitoring on Linux Endpoints via eBPF',
+    description: ` kflow is an open source project that implements Process
+    Monitoring on Linux Endpoints for File System, TCP, and UDP Networking
+    Events via the eBPF Subsystem.
+    kflow is built with libbpf+CO-RE and runs on Linux kernels 5.10+.
+    `,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/tarsal-oss/kflowd' },
+      { label: 'Website', url: 'https://tarsal.co/kflow/' },
+    ],
+    githubStars: 58,
+  },
+  {
+    logoUrl: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler',
+    name: 'OpenTelemetry eBPF Profiler',
+    logoName: 'otelLogo',
+    title: 'Whole-system, cross-language continuous profiler for Linux',
+    description: `The Open Telemetry eBPF-based continuous profiler offers comprehensive, low-overhead whole-system profiling for
+    Linux systems. It supports a wide range of programming languages, including native code without debug symbols, and provides
+    deep insights into application behavior. By leveraging the experimental OTel profiling signals, this project empowers developers
+    to identify performance bottlenecks and optimize their applications efficiently.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler' },
+    ],
+    githubStars: 2700,
+  },
+  {
+    logoUrl: 'https://github.com/davidcoles/vc5',
+    name: 'vc5',
+    logoName: 'vc5Logo',
+    title: 'Layer 4 load balancer for Linux',
+    description: `vc5 is an XDP based Direct Server Return (DSR) layer 4 load balancer with a use case in replacing
+    hardware appliances. Service health checks and BGP-based Route Health Injection (RHI) are built in. A web console,
+    JSON stats endpoint, Prometheus metrics, logging with Elasticsearch, and alerting with webhooks are included.`,
+    urls: [{ label: 'GitHub', url: 'https://github.com/davidcoles/vc5' }],
+    githubStars: 83,
+  },
+  {
+    logoUrl: 'https://github.com/kubescape/kubescape',
+    name: 'Kubescape',
+    logoName: 'kubescapeLogo',
+    title: 'Kubernetes security from development through runtime',
+    description: `Kubescape is a Kubernetes security posture management platform that proactively identifies and 
+    mitigates security risks within your clusters. Kubescape leverages eBPF to perform deep, real-time analysis 
+    of the Linux kernel, enabling it to detect security misconfigurations and runtime threats with precision.`,
+    urls: [
+      { label: 'GitHub', url: 'https://github.com/kubescape/kubescape' },
+      { label: 'Website', url: 'https://kubescape.io/' },
+    ],
+    githubStars: 10700,
+  },
+  {
+    logoUrl: 'https://github.com/facebook/bpfilter',
+    name: 'bpfilter',
+    logoName: 'bpfilterLogo',
+    title: 'An eBPF-based packet filtering framework',
+    description:
+      'bpfilter transforms how you control network traffic by leveraging the power of eBPF technology. This framework elegantly translates filtering rules into optimized BPF programs, bringing unparalleled performance and flexibility to your packet filtering needs.',
+    urls: [
+      { label: 'Github', url: 'https://github.com/facebook/bpfilter' },
+      { label: 'Website', url: 'https://bpfilter.io/' },
+    ],
+    githubStars: 224,
   },
 ];
 

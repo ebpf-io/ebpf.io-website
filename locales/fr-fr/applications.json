@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "Paysage des applications eBPF",
+    "description": "Un répertoire d’applications open source basées sur eBPF",
+    "keywords": "ebpf, bpf, paysage, répertoire, open source"
+  },
+  "Major Applications": "Applications majeures",
+  "Emerging": "Émergentes"
+}

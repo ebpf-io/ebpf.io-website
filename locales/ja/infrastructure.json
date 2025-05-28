@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "eBPF コアインフラストラクチャの概観",
+    "description": "eBPF ベースのコアインフラストラクチャの一覧",
+    "keywords": "ebpf, bpf, landscape, directory, open source"
+  },
+  "Major Infrastructure": "主要インフラストラクチャ",
+  "Emerging": "新規インフラストラクチャ",
+  "eBPF Auxiliary Libraries": "eBPF 補助ライブラリ",
+  "eBPF Libraries": "eBPF ライブラリ"
+}
