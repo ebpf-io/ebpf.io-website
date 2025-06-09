@@ -175,26 +175,80 @@ const logos = {
   kyanosLogo,
 };
 
-const Logo = ({ logo, name }) => {
+const Logo = ({ logo, name, viewMode }) => {
   const isStaticImage = typeof logo === 'object';
+  const size = viewMode === 'grid' ? { width: 64, height: 64 } : { width: 116, height: 116 };
+
   return isStaticImage ? (
-    logo
+    React.cloneElement(logo, {
+      width: size.width,
+      height: size.height,
+    })
   ) : (
-    <img src={logo} alt={name} loading="lazy" width={116} height={116} />
+    <img src={logo} alt={name} loading="lazy" width={size.width} height={size.height} />
   );
 };
 
 Logo.propTypes = {
   logo: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   name: PropTypes.string.isRequired,
+  viewMode: PropTypes.oneOf(['grid', 'card']),
+};
+
+Logo.defaultProps = {
+  viewMode: 'card',
 };
 
 const Heading = AnchorHeading('h3');
 
-const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
+const ProjectCard = ({ name, logoName, logoUrl, title, description, urls, viewMode }) => {
   const Tag = logoUrl ? Link : 'div';
   const logo = logos[logoName];
   const slug = slugifyCategory(name);
+
+  if (viewMode === 'grid') {
+    return (
+      <div
+        className="bg-white border border-dashed border-gray-80 rounded-lg p-6 hover:shadow-lg transition-shadow duration-200"
+        id={slug}
+      >
+        <div className="flex items-start mb-4">
+          {logo ? (
+            <Tag className="shrink-0 mr-4" to={logoUrl} target="_blank">
+              <Logo logo={logo} name={name} viewMode="grid" />
+            </Tag>
+          ) : (
+            <div className="w-16 h-16 bg-gray-100 rounded-lg shrink-0 mr-4" />
+          )}
+          <div className="min-w-0 flex-1">
+            <h3 className="font-semibold text-lg text-gray-900 mb-1">{name}</h3>
+            {title && <p className="text-sm text-gray-600 font-medium leading-snug">{title}</p>}
+          </div>
+        </div>
+
+        <div
+          className="text-gray-700 text-sm mb-4 leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+
+        {urls && (
+          <div className="flex flex-wrap gap-2">
+            {urls.map(({ label, url }, index) => (
+              <Link
+                key={`${name}-${label}-${index}`}
+                className="inline-flex items-center px-3 py-1 text-xs font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors duration-200"
+                to={url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <li
@@ -207,7 +261,7 @@ const ProjectCard = ({ name, logoName, logoUrl, title, description, urls }) => {
           to={logoUrl}
           target="_blank"
         >
-          <Logo logo={logo} name={name} />
+          <Logo logo={logo} name={name} viewMode="card" />
         </Tag>
       ) : (
         <div className="w-full max-w-[116px] shrink-0 sm:max-w-[90px]" />
@@ -245,19 +299,23 @@ ProjectCard.propTypes = {
   name: PropTypes.string.isRequired,
   logoName: PropTypes.string,
   logoUrl: PropTypes.string,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   description: PropTypes.string.isRequired,
   urls: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
     })
-  ).isRequired,
+  ),
+  viewMode: PropTypes.oneOf(['grid', 'card']),
 };
 
 ProjectCard.defaultProps = {
   logoUrl: null,
   logoName: null,
+  title: null,
+  urls: null,
+  viewMode: 'card',
 };
 
 export default ProjectCard;
