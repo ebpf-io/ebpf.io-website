@@ -11,7 +11,7 @@
         "url": "https://github.com/iovisor/bcc"
       }
     ],
-    "githubStars": 21100
+    "githubStars": 21466
   },
   {
     "logoUrl": "https://github.com/cilium/cilium",
@@ -29,7 +29,7 @@
         "url": "https://cilium.io"
       }
     ],
-    "githubStars": 21200
+    "githubStars": 21796
   },
   {
     "logoUrl": "https://github.com/iovisor/bpftrace",
@@ -47,7 +47,7 @@
         "url": "https://bpftrace.org/"
       }
     ],
-    "githubStars": 1400
+    "githubStars": 9269
   },
   {
     "logoUrl": "https://github.com/falcosecurity/falco",
@@ -65,7 +65,7 @@
         "url": "https://falco.org/"
       }
     ],
-    "githubStars": 7700
+    "githubStars": 7984
   },
   {
     "logoUrl": "https://github.com/pixie-io/pixie",
@@ -83,7 +83,7 @@
         "url": "https://px.dev"
       }
     ],
-    "githubStars": 5900
+    "githubStars": 6048
   },
   {
     "logoUrl": "https://github.com/projectcalico/calico",
@@ -101,7 +101,7 @@
         "url": "https://tigera.io/project-calico"
       }
     ],
-    "githubStars": 6300
+    "githubStars": 6508
   },
   {
     "logoUrl": "https://github.com/facebookincubator/katran",
@@ -119,7 +119,7 @@
         "url": "https://engineering.fb.com/open-source/open-sourcing-katran-a-scalable-network-load-balancer/"
       }
     ],
-    "githubStars": 4900
+    "githubStars": 4964
   },
   {
     "logoUrl": "https://github.com/parca-dev/parca",
@@ -137,7 +137,7 @@
         "url": "https://parca.dev"
       }
     ],
-    "githubStars": 4300
+    "githubStars": 4466
   },
   {
     "logoUrl": "https://github.com/cilium/tetragon",
@@ -155,6 +155,6 @@
         "url": "https://tetragon.io/"
       }
     ],
-    "githubStars": 3900
+    "githubStars": 4013
   }
 ]
