@@ -103,7 +103,7 @@ const ProjectsList = ({ className, titleTag: Tag, title, description, items }) =
       >
         {isLargeScreen && viewMode === 'grid' ? (
           <div className="container mt-12 md:mt-10">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="grid grid-cols-4 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {items.map((item, index) => (
                 <ProjectCard key={index} {...item} viewMode="grid" />
               ))}
