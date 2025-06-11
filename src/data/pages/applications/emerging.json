@@ -465,7 +465,7 @@
     "description": "KubeSkoop is a toolset designed to assist users in monitoring and diagnosing network-related issues within Kubernetes environments. It uses eBPF to provide pod-level kernel metrics and anomaly events, enabling users quickly detect and solve network issues in their Kubernetes clusters.",
     "urls": [
       {
-        "label": "Github",
+        "label": "GitHub",
         "url": "https://github.com/alibaba/kubeskoop"
       },
       {
@@ -484,7 +484,7 @@
     "urls": [
       {
         "label": "GitHub",
-        "url": "https://github.com/l3af-project"
+        "url": "https://github.com/l3af-project/l3afd"
       },
       {
         "label": "Website",
@@ -675,7 +675,7 @@
     "description": "bpfilter transforms how you control network traffic by leveraging the power of eBPF technology. This framework elegantly translates filtering rules into optimized BPF programs, bringing unparalleled performance and flexibility to your packet filtering needs.",
     "urls": [
       {
-        "label": "Github",
+        "label": "GitHub",
         "url": "https://github.com/facebook/bpfilter"
       },
       {
