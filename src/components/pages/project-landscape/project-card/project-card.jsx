@@ -196,7 +196,7 @@ Logo.propTypes = {
 };
 
 Logo.defaultProps = {
-  viewMode: 'card',
+  viewMode: 'grid',
 };
 
 const Heading = AnchorHeading('h3');
