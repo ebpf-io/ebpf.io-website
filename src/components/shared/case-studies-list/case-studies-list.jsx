@@ -34,6 +34,7 @@ import Ikea from './logos/ikea.inline.svg';
 import Isovalent from './logos/isovalent.inline.svg';
 import Kodem from './logos/kodemsec.inline.svg';
 import Levo from './logos/levo.inline.svg';
+import Akto from './logos/akto.inline.svg';
 import LineCoporation from './logos/line-corp.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
 import Meta from './logos/meta.inline.svg';
@@ -119,6 +120,7 @@ const logos = {
   wiz: Wiz,
   yahoo: Yahoo,
   attribute: Attribute,
+  akto: Akto,
 };
 
 const CaseStudiesList = ({ className, items, linkUrl, linkText }) => {
