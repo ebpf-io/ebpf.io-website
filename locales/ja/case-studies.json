@@ -625,7 +625,7 @@
     },
     {
       "title": "Akto",
-      "description": "<strong>Akto</strong> uses eBPF to monitor APIs and their traffic.",
+      "description": "<strong>Akto</strong> uses eBPF to monitor APIs and their traffic",
       "links": [
         {
           "text": "Docs",

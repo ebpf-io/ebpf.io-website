@@ -470,7 +470,7 @@
     },
     {
       "title": "Akto",
-      "description": "<strong>Akto</strong> usa eBPF para monitorar APIs e seu tráfego.",
+      "description": "<strong>Akto</strong> usa eBPF para monitorar APIs e seu tráfego",
       "links": [
         {
           "text": "Docs",
