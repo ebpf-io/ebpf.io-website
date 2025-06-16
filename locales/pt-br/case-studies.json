@@ -467,6 +467,16 @@
           "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
         }
       ]
+    },
+    {
+      "title": "Akto",
+      "description": "<strong>Akto</strong> usa eBPF para monitorar APIs e seu tráfego",
+      "links": [
+        {
+          "text": "Docs",
+          "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
+        }
+      ]
     }
   ]
 }
