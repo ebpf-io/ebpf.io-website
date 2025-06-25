@@ -11,6 +11,7 @@ import bccLogo from './logos/bcc.svg';
 import beylaLogo from './logos/beyla.png';
 import blixtLogo from './logos/blixt.png';
 import bpfilterLogo from './logos/bpfilter.svg';
+import bpfireLogo from './logos/bpfire.png';
 import bpfmanLogo from './logos/bpfman.svg';
 import bpftoolLogo from './logos/bpftool.svg';
 import bpftopLogo from './logos/bpftop.png';
@@ -92,6 +93,7 @@ const logos = {
   alazLogo,
   qtapLogo,
   bpfilterLogo,
+  bpfireLogo,
   tetragonLogo: (
     <StaticImage
       src="./logos/tetragon.svg"
