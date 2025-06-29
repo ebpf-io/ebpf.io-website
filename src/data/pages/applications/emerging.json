@@ -684,5 +684,23 @@
       }
     ],
     "githubStars": 233
+  },
+  {
+    "logoUrl": "https://github.com/vincentmli/bpfire",
+    "name": "BPFire",
+    "logoName": "bpfireLogo",
+    "title": "An Open Source firewall with eBPF applications addon",
+    "description": "BPFire is a hardened, versatile, state-of-the-art Open Source firewall based on Linux. BPFire enables kernel eBPF feature to improve firewall programmability, observability, and performance. It makes eBPF easily consumable for home users or organizations to secure their network.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/vincentmli/bpfire"
+      },
+      {
+        "label": "Website",
+        "url": "https://www.bpfire.net/"
+      }
+    ],
+    "githubStars": 58
   }
 ]
