@@ -1,3 +1,4 @@
+import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 
