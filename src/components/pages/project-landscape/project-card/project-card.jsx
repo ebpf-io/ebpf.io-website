@@ -290,9 +290,7 @@ const ProjectModal = ({ project, onClose }) => {
     return logo ? (
       <img src={logo} alt={project.name} loading="lazy" width={80} height={80} />
     ) : (
-      <div className="w-20 h-20 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center">
-        <span className="text-2xl font-bold text-gray-400">{project.name.charAt(0)}</span>
-      </div>
+      <></>
     );
   };
 
@@ -365,16 +363,20 @@ const ProjectModal = ({ project, onClose }) => {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                   <svg
-                    className="w-6 h-6 mr-3 text-green-600"
+                    className="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
                     fill="none"
-                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      stroke="currentColor"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.102m0 0l4-4a4 4 0 105.656-5.656l-4 4m-1.102 1.102l-2.828 2.828"
+                      strokeWidth="2"
+                      d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"
                     />
                   </svg>
                   Resources
@@ -624,17 +626,7 @@ const ProjectCard = ({
             {name}
           </Heading>
           {title && <h4 className="mt-0.5 font-sans text-lg font-medium leading-snug">{title}</h4>}
-
           <p className="mt-2.5" dangerouslySetInnerHTML={{ __html: description }} />
-
-          {githubStars && (
-            <div className="flex items-center mt-3 text-sm text-gray-600">
-              <svg className="w-4 h-4 mr-1 fill-current text-yellow-500" viewBox="0 0 20 20">
-                <path d="M10 1l2.5 6.5h6.5l-5.25 4 2 6.5-5.25-4-5.25 4 2-6.5L1 7.5h6.5z" />
-              </svg>
-              {githubStars.toLocaleString()} stars
-            </div>
-          )}
 
           {urls && (
             <div className="mt-3.5 flex flex-wrap gap-x-5 gap-y-3.5">
