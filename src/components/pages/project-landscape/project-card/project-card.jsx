@@ -64,6 +64,34 @@ import traceeLogo from './logos/tracee.svg';
 import vc5Logo from './logos/vc5.svg';
 import wachyLogo from './logos/wachy.png';
 
+// Global hover modal manager
+const createHoverModalManager = () => {
+  let activeCardId = null;
+  const listeners = new Set();
+
+  const subscribe = (callback) => {
+    listeners.add(callback);
+    return () => listeners.delete(callback);
+  };
+
+  const setActiveCard = (cardId) => {
+    if (activeCardId === cardId) return;
+    activeCardId = cardId;
+    listeners.forEach((listener) => {
+      try {
+        listener(cardId);
+      } catch (error) {
+        console.error('Error in hover modal listener:', error);
+      }
+    });
+  };
+
+  const getActiveCard = () => activeCardId;
+
+  return { subscribe, setActiveCard, getActiveCard };
+};
+
+const hoverModalManager = createHoverModalManager();
 const logos = {
   alazLogo,
   bccLogo,
@@ -147,6 +175,78 @@ Logo.propTypes = {
 
 Logo.defaultProps = {
   viewMode: 'grid',
+};
+
+// Helper function to get icon for different link types
+const getLinkIcon = (label) => {
+  const lowerLabel = label.toLowerCase();
+
+  if (lowerLabel.includes('github')) {
+    return (
+      <svg className="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
+        <path
+          fillRule="evenodd"
+          d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+          clipRule="evenodd"
+        />
+      </svg>
+    );
+  }
+
+  if (
+    lowerLabel.includes('website') ||
+    lowerLabel.includes('site') ||
+    lowerLabel.includes('home')
+  ) {
+    return (
+      <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+        />
+      </svg>
+    );
+  }
+
+  if (lowerLabel.includes('doc') || lowerLabel.includes('documentation')) {
+    return (
+      <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+        />
+      </svg>
+    );
+  }
+
+  if (lowerLabel.includes('download') || lowerLabel.includes('release')) {
+    return (
+      <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+        />
+      </svg>
+    );
+  }
+
+  // Default external link icon
+  return (
+    <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+      />
+    </svg>
+  );
 };
 
 // ProjectModal Component
@@ -289,48 +389,7 @@ const ProjectModal = ({ project, onClose }) => {
                       className="group flex items-center space-x-4 p-5 border-2 border-gray-200 hover:border-blue-400 rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-blue-100/50 hover:scale-105 hover:-translate-y-1 transform"
                     >
                       <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300">
-                        {label.toLowerCase().includes('github') ? (
-                          <svg
-                            className="w-6 h-6 text-gray-700"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        ) : label.toLowerCase().includes('website') ||
-                          label.toLowerCase().includes('site') ? (
-                          <svg
-                            className="w-6 h-6 text-gray-700"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                            />
-                          </svg>
-                        ) : (
-                          <svg
-                            className="w-6 h-6 text-gray-700"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                            />
-                          </svg>
-                        )}
+                        {getLinkIcon(label)}
                       </div>
                       <div className="flex-1 min-w-0">
                         <span className="font-semibold text-gray-900 group-hover:text-blue-700 transition-colors duration-300 text-lg">
@@ -394,8 +453,10 @@ const ProjectCard = ({
 }) => {
   const logo = logos[logoName];
   const slug = slugifyCategory(name);
+  const cardId = `${name}-${slug}`; // this is a unique identifier for card item to isolate their behaviours
   const projectData = { name, logoName, logoUrl, title, description, urls, githubStars };
   const [showModal, setShowModal] = useState(false);
+  const [showHoverModal, setShowHoverModal] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
@@ -409,14 +470,33 @@ const ProjectCard = ({
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
+  useEffect(() => {
+    const unsubscribe = hoverModalManager.subscribe((activeCardId) => {
+      setShowHoverModal(activeCardId === cardId);
+    });
+
+    return unsubscribe;
+  }, [cardId]);
+
   const handleProjectClick = () => {
     if (isLargeScreen) {
+      hoverModalManager.setActiveCard(null);
       setShowModal(true);
     }
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  const handleMouseEnter = () => {
+    if (isLargeScreen && !showModal) {
+      hoverModalManager.setActiveCard(cardId);
+    }
+  };
+
+  const handleHoverModalMouseLeave = () => {
+    hoverModalManager.setActiveCard(null);
   };
 
   if (viewMode === 'grid') {
@@ -426,6 +506,7 @@ const ProjectCard = ({
           className="group relative bg-white border border-dashed border-gray-80 rounded-lg p-4 hover:shadow-lg transition-all duration-200 cursor-pointer h-40 flex flex-col"
           id={slug}
           onClick={handleProjectClick}
+          onMouseEnter={handleMouseEnter}
         >
           <div className="text-center flex-1 flex flex-col justify-between">
             <div className="flex-1 flex flex-col justify-center items-center">
@@ -447,8 +528,12 @@ const ProjectCard = ({
             </div>
           </div>
 
-          {isLargeScreen && (
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white border border-gray-200 rounded-xl shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-[10001] w-80">
+          {/* Hover Modal */}
+          {isLargeScreen && showHoverModal && !showModal && (
+            <div
+              className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white border border-gray-200 rounded-xl shadow-xl z-[10001] w-80"
+              onMouseLeave={handleHoverModalMouseLeave}
+            >
               <div className="p-5">
                 <div className="flex items-start space-x-4 mb-4">
                   {logo ? (
@@ -479,9 +564,30 @@ const ProjectCard = ({
                     }}
                   />
                 </div>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100" />
-              </div>
 
+                {/* Resource Icons */}
+                {urls && urls.length > 0 && (
+                  <div className="mb-4">
+                    <div className="flex items-center space-x-2">
+                      {urls.map(({ label, url }, index) => (
+                        <Link
+                          key={index}
+                          to={url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="group p-2 hover:bg-yellow-100 rounded-lg transition-all duration-200 hover:scale-110"
+                          title={label}
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <div className="group-hover:text-yellow-600 transition-colors duration-200">
+                            {getLinkIcon(label)}
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
               <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-6 border-r-6 border-b-6 border-transparent border-b-white" />
               <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-6 border-r-6 border-b-6 border-transparent border-b-gray-200 translate-y-px" />
             </div>
@@ -494,6 +600,7 @@ const ProjectCard = ({
       </>
     );
   }
+
   return (
     <>
       <li
