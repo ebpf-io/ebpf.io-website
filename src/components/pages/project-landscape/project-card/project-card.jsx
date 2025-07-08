@@ -705,9 +705,7 @@ const ProjectCard = ({
           </div>
         ) : (
           <div className="w-full max-w-[116px] shrink-0 sm:max-w-[90px]">
-            <div className="w-full h-[116px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center">
-              <span className="text-3xl font-bold text-gray-400">{name.charAt(0)}</span>
-            </div>
+            <div className="w-full h-[116px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center" />
           </div>
         )}
         <div className="flex-1 min-w-0">
