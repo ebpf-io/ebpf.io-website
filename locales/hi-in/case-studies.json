@@ -172,6 +172,10 @@
         {
           "text": "वार्ता",
           "to": "https://www.youtube.com/watch?v=6nlv_VCsjpQ"
+        },
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/case-study-datadog-uses-ebpf-to-improve-network-observability-accuracy-and-performance/"
         }
       ]
     },
@@ -660,6 +664,26 @@
         {
           "text": "ब्लॉग",
           "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }
+      ]
+    },
+    {
+      "title": "Canopus",
+      "description": "<strong>Canopus Networks</strong> developed “SuperNetflow,” a powerful observability pipeline that leverages eBPF to monitor and classify traffic at scale",
+      "links": [
+        {
+          "text":"Case Study",
+          "to": "https://ebpf.foundation/case-study-supernetflow-reinventing-network-observability-with-ebpf/"
+        }
+      ]
+    },
+    {
+      "title": "Wikimedia",
+      "description": "<strong>Wikimedia Foundation</strong> developed Liberica, a load balancer that supports multiple forwarding planes including Katran, Meta’s XDP-based load balancer built on eBPF.",
+      "links": [
+        {
+          "text":"Blog",
+          "to": "https://wikitech.wikimedia.org/wiki/Incidents/2025-05-08_Papal_announcement_traffic_surge"
         }
       ]
     }

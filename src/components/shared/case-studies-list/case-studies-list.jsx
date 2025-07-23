@@ -16,6 +16,7 @@ import ArvanCloud from './logos/arvancloud.inline.svg';
 import Attribute from './logos/attribute.inline.svg';
 import Bell from './logos/bell.inline.svg';
 import Bytedance from './logos/byte-dance.inline.svg';
+import Canopus from './logos/canopus.inline.svg';
 import CapitalOne from './logos/capital-one.inline.svg';
 import Cloudflare from './logos/cloudflare.inline.svg';
 import CoreTech from './logos/coretech.inline.svg';
@@ -41,7 +42,7 @@ import Meta from './logos/meta.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
 import NYT from './logos/nyt.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
-import Odigos from './logos/odigos.inline.svg'
+import Odigos from './logos/odigos.inline.svg';
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
 import PolarSignals from './logos/polarsignals.inline.svg';
@@ -60,6 +61,7 @@ import Traceable from './logos/traceable.inline.svg';
 import Trip from './logos/trip.inline.svg';
 import Upwind from './logos/upwind.inline.svg';
 import Walmart from './logos/walmart.inline.svg';
+import Wikimedia from './logos/wikimedia.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
 import Wiz from './logos/wiz.inline.svg';
 import Yahoo from './logos/yahoo.inline.svg';
@@ -76,6 +78,7 @@ const logos = {
   attribute: Attribute,
   bell: Bell,
   bytedance: Bytedance,
+  canopus: Canopus,
   'capital one': CapitalOne,
   cloudflare: Cloudflare,
   'core tech': CoreTech,
@@ -100,7 +103,7 @@ const logos = {
   microsoft: Microsoft,
   netflix: Netflix,
   'the new york times': NYT,
-  'odigos': Odigos,
+  odigos: Odigos,
   'oligo security': Oligo,
   palantir: Palantir,
   'polar signals': PolarSignals,
@@ -120,6 +123,7 @@ const logos = {
   'trip.com': Trip,
   'upwind security': Upwind,
   walmart: Walmart,
+  wikimedia: Wikimedia,
   'wildlife studios': Wildlife,
   wiz: Wiz,
   yahoo: Yahoo,
