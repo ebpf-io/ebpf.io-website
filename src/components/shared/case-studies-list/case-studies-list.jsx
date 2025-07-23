@@ -6,6 +6,7 @@ import React from 'react';
 import Link from 'components/shared/link';
 
 import Akita from './logos/akita.inline.svg';
+import Akto from './logos/akto.inline.svg';
 import Alibaba from './logos/alibaba.inline.svg';
 import Android from './logos/android.inline.svg';
 import AntGroup from './logos/ant-group.inline.svg';
@@ -15,6 +16,7 @@ import ArvanCloud from './logos/arvancloud.inline.svg';
 import Attribute from './logos/attribute.inline.svg';
 import Bell from './logos/bell.inline.svg';
 import Bytedance from './logos/byte-dance.inline.svg';
+import Canopus from './logos/canopus.inline.svg';
 import CapitalOne from './logos/capital-one.inline.svg';
 import Cloudflare from './logos/cloudflare.inline.svg';
 import CoreTech from './logos/coretech.inline.svg';
@@ -34,14 +36,13 @@ import Ikea from './logos/ikea.inline.svg';
 import Isovalent from './logos/isovalent.inline.svg';
 import Kodem from './logos/kodemsec.inline.svg';
 import Levo from './logos/levo.inline.svg';
-import Akto from './logos/akto.inline.svg';
 import LineCoporation from './logos/line-corp.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
 import Meta from './logos/meta.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
-import Odigos from './logos/odigos.inline.svg'
+import Odigos from './logos/odigos.inline.svg';
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
 import PolarSignals from './logos/polarsignals.inline.svg';
@@ -97,7 +98,7 @@ const logos = {
   microsoft: Microsoft,
   netflix: Netflix,
   'the new york times': NYT,
-  'odigos': Odigos,
+  odigos: Odigos,
   'oligo security': Oligo,
   palantir: Palantir,
   protectai: ProtectAI,
@@ -121,6 +122,7 @@ const logos = {
   yahoo: Yahoo,
   attribute: Attribute,
   akto: Akto,
+  canopus: Canopus,
 };
 
 const CaseStudiesList = ({ className, items, linkUrl, linkText }) => {

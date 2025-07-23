@@ -550,6 +550,18 @@
           "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
         }
       ]
+    }, 
+    {
+      "title": "Canopus", 
+      "description": "<strong>Canopus Networks</strong> developed “SuperNetflow,” a powerful observability pipeline that leverages eBPF to monitor and classify traffic at scale", 
+      "links": [
+        {
+          "text":"Case Study", 
+          "to": "https://ebpf.foundation/case-study-supernetflow-reinventing-network-observability-with-ebpf/"
+        }
+        
+      ]
+
     }
   ]
 }
