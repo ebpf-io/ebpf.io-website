@@ -162,6 +162,10 @@
         {
           "text": "Talk",
           "to": " https://www.youtube.com/watch?v=6nlv_VCsjpQ"
+        },
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/case-study-datadog-uses-ebpf-to-improve-network-observability-accuracy-and-performance/"
         }
       ]
     },
