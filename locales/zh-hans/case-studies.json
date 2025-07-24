@@ -578,6 +578,12 @@
         {
           "text": "博客",
           "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+      "title": "Akto",
+      "description": "<strong>Akto</strong> 使用 eBPF 监控 API 和流量",
+      "links": [
+        {
+          "text": "Docs",
+          "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
         }
       ]
     }

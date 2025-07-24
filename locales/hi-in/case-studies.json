@@ -650,6 +650,12 @@
         {
           "text": "ब्लॉग",
           "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+      "title": "Akto",
+      "description": "<strong>Akto</strong> एपीआई और उनके ट्रैफिक की निगरानी के लिए eBPF का उपयोग करता है",
+      "links": [
+        {
+          "text": "दस्तावेज़",
+          "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
         }
       ]
     }

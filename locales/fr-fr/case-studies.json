@@ -606,6 +606,12 @@
         {
           "text": "Blog",
           "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+      "title": "Akto",
+      "description": "<strong>Akto</strong> utilise eBPF pour surveiller les API et leur trafic",
+      "links": [
+        {
+          "text": "Docs",
+          "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
         }
       ]
     }

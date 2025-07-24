@@ -5,9 +5,7 @@
       {
         "card": "lab",
         "title": "Prova il Laboratorio",
-        "description": "Prendendo in prestito l’esempio opensnoop dal report di Liz Rice, questo laboratorio ti insegna a gestire un tool eBPF, osservarlo mentre carica i suoi componenti, e persino aggiungere i tuoi trace all’interno del codice eBPF.",
-        "linkUrl": "https://play.instruqt.com/embed/isovalent/tracks/ebpf-getting-started?token=em_9nxLzhlV41gb3rKM&show_challenges=true",
-        "linkTarget": "_blank"
+        "description": "Prendendo in prestito l’esempio opensnoop dal report di Liz Rice, questo laboratorio ti insegna a gestire un tool eBPF, osservarlo mentre carica i suoi componenti, e persino aggiungere i tuoi trace all’interno del codice eBPF."
       },
       {
         "card": "book",

@@ -1,0 +1,47 @@
+name: "Update GitHub stars count"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run monthly: at 8:07am on the 9th of every month
+    - cron: "7 8 9 * *"
+
+concurrency:
+  group: "${{ github.workflow }}:${{ github.ref }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: "write"
+  id-token: "write"
+  pull-requests: "write"
+
+jobs:
+  update-stars:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Checkout source code"
+        uses: "actions/checkout@v4"
+        with:
+          persist-credentials: "false"
+          fetch-depth: 1
+
+      - name: "Run update-stars.sh script"
+        run: |
+          export GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
+          ./scripts/update-stars.sh
+
+      - name: "Create Pull Request"
+        uses: "peter-evans/create-pull-request@v7"
+        with:
+          branch: "cron/stars-update"
+          title: "chore(applications): update GitHub stars count"
+          body: |
+            Run ./scripts/update-stars.sh to update the stars count in JSON files
+            for major and emerging applications.
+          commit-message: |
+            chore(applications): update GitHub stars count
+
+            Run ./scripts/update-stars.sh to update the stars count in JSON files
+            for major and emerging applications.
+          signoff: "true"
+          sign-commits: "true"
