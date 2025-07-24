@@ -643,21 +643,23 @@
         }
       ]
     },
-    {
+     {
       "title": "Upwind Security",
-      "description": "<strong> Upwind Security </strong> eBPF का उपयोग करके वास्तविक समय/रनटाइम क्लाउड सुरक्षा को बड़े पैमाने पर प्रदान करता है।",
+      "description": "<strong> Upwind Security </strong> leverages eBPF to deliver deep real-time/runtime cloud security at scale",
       "links": [
         {
-          "text": "ब्लॉग",
-          "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+          "text": "Blog",
+          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }]
+    },
+     {
       "title": "Akto",
-      "description": "<strong>Akto</strong> एपीआई और उनके ट्रैफिक की निगरानी के लिए eBPF का उपयोग करता है",
+      "description": "<strong>Akto</strong> uses eBPF to monitor APIs and their traffic",
       "links": [
         {
-          "text": "दस्तावेज़",
+          "text": "Docs",
           "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
         }
       ]
     }
-  ]
 }

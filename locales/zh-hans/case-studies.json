@@ -573,13 +573,16 @@
     },
     {
       "title": "Upwind Security",
-      "description": "<strong> Upwind Security </strong> 利用 eBPF 提供大规模的实时/运行时云安全。",
+      "description": "<strong> Upwind Security </strong> leverages eBPF to deliver deep real-time/runtime cloud security at scale",
       "links": [
         {
-          "text": "博客",
-          "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+          "text": "Blog",
+          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }]
+    },
+     {
       "title": "Akto",
-      "description": "<strong>Akto</strong> 使用 eBPF 监控 API 和流量",
+      "description": "<strong>Akto</strong> uses eBPF to monitor APIs and their traffic",
       "links": [
         {
           "text": "Docs",

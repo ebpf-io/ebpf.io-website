@@ -468,15 +468,18 @@
         }
       ]
     },
-    {
+     {
       "title": "Upwind Security",
-      "description": "<strong> Upwind Security </strong> utiliza eBPF para oferecer segurança em nuvem profunda em tempo real/tempo de execução em grande escala.",
+      "description": "<strong> Upwind Security </strong> leverages eBPF to deliver deep real-time/runtime cloud security at scale",
       "links": [
         {
           "text": "Blog",
-          "to": "https://www.upwind.io/glossary/what-is-ebpf-security#toc-section-0"
+          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }]
+    },
+     {
       "title": "Akto",
-      "description": "<strong>Akto</strong> usa eBPF para monitorar APIs e seu tráfego",
+      "description": "<strong>Akto</strong> uses eBPF to monitor APIs and their traffic",
       "links": [
         {
           "text": "Docs",
