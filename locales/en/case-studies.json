@@ -134,7 +134,7 @@
       "description": "<strong>Meta</strong> uses eBPF to process and load balance every packet coming into their data centers",
       "links": [
         {
-          "text": "Case Study", 
+          "text": "Case Study",
           "to": "https://ebpf.foundation/case-study-metas-strobelight-leverages-ebpf-to-reduce-cpu-cycles-and-server-demands-by-up-to-20/"
         },
         {
@@ -617,7 +617,7 @@
       "links": [
         {
           "text": "Blog",
-          "to": "https://ksoc.com/blog/introducing-rad-security"
+          "to": "https://www.radsecurity.ai/blog/introducing-rad-security"
         }
       ]
     },
