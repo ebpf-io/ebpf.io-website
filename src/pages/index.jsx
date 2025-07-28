@@ -56,6 +56,30 @@ const videoItems = [
     speaker: 'Thomas Graf, Isovalent',
     date: 'Mar 6, 2019',
   },
+  {
+    videoId: 'KhPrMW5Rbbc',
+    title: 'eBPF - Everything You Need to Know in 5 Minutes',
+    speaker: 'Thomas Graf, Isovalent',
+    date: ' Nov 2, 2022',
+  },
+  {
+    videoId: 'tClsqnZMN6I',
+    title: 'eBPF’s Abilities and Limitations: The Truth',
+    speaker: 'Liz Rice & John Fastabend, Isovalent',
+    date: 'Mar 23, 2024',
+  },
+  {
+    videoId: 'TJgxjVTZtfw',
+    title: 'Tutorial: Getting Started with eBPF',
+    speaker: 'Liz Rice, Isovalent',
+    date: 'May 25, 2023',
+  },
+  {
+    videoId: 's1mobd8t_u0',
+    title: 'Fast by Friday: Why eBPF is Essential',
+    speaker: 'Brendan Gregg',
+    date: 'Oct 4, 2023',
+  },
 ];
 
 const HomePage = () => {
