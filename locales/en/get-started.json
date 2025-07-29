@@ -13,6 +13,11 @@
         "description": "Read the “What is eBPF?” and “Learning eBPF” O’Reilly Books by Liz Rice or BPF Performance Tools by Brendan Gregg to get started. Throughout the books, you will learn what eBPF and why it is so powerful, the capabilities it provides."
       },
       {
+        "card": "doc",
+        "title": "Read the Docs",
+        "description": "Dive into the official eBPF documentation, a single, searchable hub built for the entire eBPF community. The docs are interlinked and beginner-friendly, while still extensively covering every aspect of eBPF."
+      },
+      {
         "card": "video",
         "title": "Watch the video",
         "description": "Dive into the history of eBPF with this talk from John Fastabend. Starting in the “early days” of 2014, it covers the main projects, companies, and players that influenced the landscape of Linux networking at the time and how they enabled the creation of eBPF."
