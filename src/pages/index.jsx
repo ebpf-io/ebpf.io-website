@@ -63,6 +63,12 @@ const videoItems = [
     date: ' Nov 2, 2022',
   },
   {
+    videoId: 'eQVjXpuIRw4',
+    title: 'eBPF: Unlocking Innovation in the Linux Kernel',
+    speaker: 'Daniel Borkmann',
+    date: 'Jul 2, 2025',
+  },
+  {
     videoId: 'tClsqnZMN6I',
     title: 'eBPF’s Abilities and Limitations: The Truth',
     speaker: 'Liz Rice & John Fastabend, Isovalent',
