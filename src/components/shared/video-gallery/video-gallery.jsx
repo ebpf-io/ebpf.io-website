@@ -1,6 +1,4 @@
 import clsx from 'clsx';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import shuffle from 'lodash.shuffle';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -15,12 +13,14 @@ import 'swiper/css/navigation';
 
 const VideoGallery = ({ title, items, className }) => {
   const [currentVideo, setCurrentVideo] = useState(null);
-  const [shuffledItems, setShuffledItems] = useState([]);
+  const [sortedItems, setSortedItems] = useState([]);
   const [wrapperRef, isWrapperInView] = useInView({ rootMargin: '500px' });
 
   useEffect(() => {
-    const shuffledArray = shuffle(items);
-    setShuffledItems(shuffledArray);
+    const sortedArray = [...items].sort(
+      (a, b) => new Date(b.date.trim()) - new Date(a.date.trim())
+    );
+    setSortedItems(sortedArray);
   }, [items]);
 
   return (
@@ -78,7 +78,7 @@ const VideoGallery = ({ title, items, className }) => {
           },
         }}
       >
-        {shuffledItems.map(({ videoId, title, speaker, date }) => {
+        {sortedItems.map(({ videoId, title, speaker, date }) => {
           const isCurrent = currentVideo === videoId;
 
           return (
