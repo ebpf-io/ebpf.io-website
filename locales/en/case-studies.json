@@ -56,12 +56,24 @@
       ]
     },
     {
-      "title": "Shopify",
-      "description": "<strong>Shopify</strong> uses eBPF through Falco for intrusion detection",
+      "title": "Meta",
+      "description": "<strong>Meta</strong> uses eBPF to process and load balance every packet coming into their data centers",
       "links": [
         {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/case-study-metas-strobelight-leverages-ebpf-to-reduce-cpu-cycles-and-server-demands-by-up-to-20/"
+        },
+        {
           "text": "Video",
-          "to": "https://www.youtube.com/watch?v=6pVci31Mb6Q"
+          "to": "https://www.youtube.com/watch?v=ZYBXZFKPS28"
+        },
+        {
+          "text": "Blog",
+          "to": "https://engineering.fb.com/2018/05/22/open-source/open-sourcing-katran-a-scalable-network-load-balancer/"
+        },
+        {
+          "text": "Talk",
+          "to": "https://lpc.events/event/16/contributions/1363/"
         }
       ]
     },
@@ -76,6 +88,16 @@
         {
           "text": "Talk",
           "to": "https://legacy.netdevconf.info/0x13/session.html?talk-XDP-based-DDoS-mitigation"
+        }
+      ]
+    },
+    {
+      "title": "Shopify",
+      "description": "<strong>Shopify</strong> uses eBPF through Falco for intrusion detection",
+      "links": [
+        {
+          "text": "Video",
+          "to": "https://www.youtube.com/watch?v=6pVci31Mb6Q"
         }
       ]
     },
@@ -126,28 +148,6 @@
         {
           "text": "Video",
           "to": "https://www.youtube.com/watch?v=ZBlJSr6XkN8"
-        }
-      ]
-    },
-    {
-      "title": "Meta",
-      "description": "<strong>Meta</strong> uses eBPF to process and load balance every packet coming into their data centers",
-      "links": [
-        {
-          "text": "Case Study",
-          "to": "https://ebpf.foundation/case-study-metas-strobelight-leverages-ebpf-to-reduce-cpu-cycles-and-server-demands-by-up-to-20/"
-        },
-        {
-          "text": "Video",
-          "to": "https://www.youtube.com/watch?v=ZYBXZFKPS28"
-        },
-        {
-          "text": "Blog",
-          "to": "https://engineering.fb.com/2018/05/22/open-source/open-sourcing-katran-a-scalable-network-load-balancer/"
-        },
-        {
-          "text": "Talk",
-          "to": "https://lpc.events/event/16/contributions/1363/"
         }
       ]
     },
