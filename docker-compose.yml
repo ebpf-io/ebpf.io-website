@@ -1,0 +1,14 @@
+services:
+  gatsby:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # mounting source files for live editing
+      - .:/website
+      # preserve container directories from host override
+      - /website/node_modules
+      - /website/.cache
+      - /website/public
+    environment:
+      - NODE_ENV=development
