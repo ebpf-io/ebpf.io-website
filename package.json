@@ -30,7 +30,7 @@
     "copy-to-clipboard": "^3.3.3",
     "date-fns": "^3.2.0",
     "framer-motion": "^10.18.0",
-    "gatsby": "^5.14.3",
+    "gatsby": "^5.14.6",
     "gatsby-plugin-canonical-urls": "^5.13.0",
     "gatsby-plugin-feed": "^5.13.0",
     "gatsby-plugin-google-gtag": "^5.13.0",
