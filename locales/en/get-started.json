@@ -15,7 +15,7 @@
       {
         "card": "doc",
         "title": "Read the Docs",
-        "description": "Read the eBPF technical documentation to get started with writing, understanding, and using eBPF programs. The docs are a single, searchable resource built for the eBPF community. Throughout the docs, you’ll find guides on core eBPF concepts, program types, map structures, helper functions, and more. "
+        "description": "Read the eBPF technical documentation to get started with writing, understanding, and using eBPF programs. The docs are a single, searchable resource built for the eBPF community. Throughout the docs, you’ll find guides on core eBPF concepts, program types, map structures, helper functions, and more."
       },
       {
         "card": "video",
