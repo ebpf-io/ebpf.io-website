@@ -11,6 +11,10 @@ const headerMenu = [
         to: '/get-started',
       },
       {
+        title: 'eBPF Docs',
+        to: 'https://docs.ebpf.io/',
+      },
+      {
         title: 'Case Studies',
         to: '/case-studies',
       },

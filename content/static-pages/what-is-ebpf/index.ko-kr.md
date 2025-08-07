@@ -224,6 +224,7 @@ eBPF에 대해서 더 많이 알아보고 싶다면, 다음의 추가 자료를 
 
 ### Documentation
 
+- [eBPF Docs](https://docs.ebpf.io/), Technical documentation for eBPF
 - [BPF & XDP Reference Guide](https://cilium.readthedocs.io/en/stable/bpf/), Cilium Documentation, Aug 2020
 - [BPF Documentation](https://www.kernel.org/doc/html/latest/bpf/index.html), BPF Documentation in the Linux Kernel
 - [BPF Design Q&A](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst), FAQ for kernel-related eBPF questions

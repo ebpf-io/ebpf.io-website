@@ -5,6 +5,7 @@ import React from 'react';
 import Link from 'components/shared/link/link';
 
 import BookSvg from './images/book.inline.svg';
+import DocSvg from './images/doc.inline.svg';
 import LabSvg from './images/lab.inline.svg';
 import VideoSvg from './images/video.inline.svg';
 
@@ -28,6 +29,13 @@ const cards = {
     colorClassName: 'bg-secondary-red-1-light border-secondary-red-1',
     borderClassName: 'border-secondary-red-2',
     linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00',
+    linkTarget: '_blank',
+  },
+  doc: {
+    icon: DocSvg,
+    colorClassName: 'bg-secondary-yellow-1-light border-primary-yellow',
+    borderClassName: 'border-secondary-red-2',
+    linkUrl: 'https://docs.ebpf.io/',
     linkTarget: '_blank',
   },
 };
