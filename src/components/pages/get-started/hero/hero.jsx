@@ -48,7 +48,7 @@ const Hero = () => {
       <div className="container flex flex-col items-center">
         <h1 className="heading-10xl text-center font-semibold leading-tight"> {t('hero.title')}</h1>
 
-        <ul className="mt-16 grid grid-cols-3 gap-8 lg:mt-12 lg:gap-7 md:mt-10 md:grid-cols-1 md:gap-6">
+        <ul className="mt-16 grid grid-cols-2 gap-8 lg:mt-12 lg:gap-7 md:mt-10 md:grid-cols-1 md:gap-6">
           {t('hero.items', { returnObjects: true }).map(({ card, title, description }, index) => {
             const {
               icon: Image,
