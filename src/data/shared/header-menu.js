@@ -11,6 +11,10 @@ const headerMenu = [
         to: '/get-started',
       },
       {
+        title: 'eBPF Docs',
+        to: 'https://docs.ebpf.io/',
+      },
+      {
         title: 'Case Studies',
         to: '/case-studies',
       },
@@ -81,11 +85,6 @@ const headerMenu = [
       {
         title: 'eBPF Research',
         to: 'https://pchaigno.github.io/bpf/2025/01/07/research-papers-bpf.html',
-        target: '_blank',
-      },
-      {
-        title: 'eBPF Docs',
-        to: 'https://docs.ebpf.io/',
         target: '_blank',
       },
       {
