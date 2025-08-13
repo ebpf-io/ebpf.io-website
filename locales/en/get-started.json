@@ -25,7 +25,7 @@
     ]
   },
   "documentation": {
-    "title": "Read the Documentation to learn more about eBPF",
+    "title": "Read more about eBPF", 
     "items": [
       {
         "image": "wikipedia",
