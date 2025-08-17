@@ -40,8 +40,8 @@ import LineCoporation from './logos/line-corp.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
 import Meta from './logos/meta.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
-import NYT from './logos/nyt.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
+import NYT from './logos/nyt.inline.svg';
 import Odigos from './logos/odigos.inline.svg';
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
@@ -49,6 +49,7 @@ import PolarSignals from './logos/polarsignals.inline.svg';
 import ProtectAI from './logos/protectai.inline.svg';
 import Qpoint from './logos/qpoint.inline.svg';
 import RADSecurity from './logos/rad-security.inline.svg';
+import RakutenLogo from './logos/rakuten.inline.svg';
 import Redhat from './logos/redhat.inline.svg';
 import Samsung from './logos/samsung.inline.svg';
 import SentinelOne from './logos/sentinelone.inline.svg';
@@ -127,6 +128,7 @@ const logos = {
   'wildlife studios': Wildlife,
   wiz: Wiz,
   yahoo: Yahoo,
+  'rakuten mobile': RakutenLogo,
 };
 
 const CaseStudiesList = ({ className, items, linkUrl, linkText }) => {
