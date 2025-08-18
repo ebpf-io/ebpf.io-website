@@ -669,7 +669,7 @@
     },
     {
       "title": "Wikimedia",
-      "description": "<strong>Wikimedia Foundation</strong> developed Liberica, a load balancer that supports multiple forwarding planes including Katran, Meta’s XDP-based load balancer built on eBPF.",
+      "description": "<strong>Wikimedia Foundation</strong> developed Liberica, a load balancer that supports multiple forwarding planes including Katran, Meta’s XDP-based load balancer built on eBPF",
       "links": [
         {
           "text":"Blog",
@@ -679,7 +679,7 @@
     },
     {
       "title": "Rakuten Mobile",
-      "description": "<strong>Rakuten Mobile</strong> uses eBPF for anomaly detection and security in cloud native telecom networks.",
+      "description": "<strong>Rakuten Mobile</strong> uses eBPF for anomaly detection and security in cloud native telecom networks",
       "links": [
         {
           "text": "Case Study",
