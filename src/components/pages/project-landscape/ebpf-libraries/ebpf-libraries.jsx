@@ -12,6 +12,10 @@ import ebpfLogo from './images/ebpf-logo.png';
 import GoIcon from './images/go-logo.svg';
 import libbpfLogo from './images/libbpf-logo.png';
 import libbpfgoLogo from './images/libbpfgo-logo.png';
+import LuaIcon from './images/lua-logo.svg';
+import NodeIcon from './images/node-logo.svg';
+import PythonIcon from './images/python-logo.svg';
+import RubyIcon from './images/ruby-logo.svg';
 import RustIcon from './images/rust-logo.svg';
 
 const items = [
@@ -75,6 +79,82 @@ const items = [
         name: 'libbpf-rs',
         linkUrl: 'https://github.com/libbpf/libbpf-rs',
         description: `is a safe, idiomatic, and opinionated wrapper API around libbpf written in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin) allows to write 'compile once run everywhere' (CO-RE) eBPF programs.`,
+      },
+    ],
+  },
+  {
+    name: 'Python',
+    icon: {
+      src: PythonIcon,
+      width: 76,
+      height: 40,
+    },
+    list: [
+      {
+        name: 'BCC (Python frontends)',
+        linkUrl: 'https://github.com/iovisor/bcc',
+        description:
+          'provides Python APIs and tooling for building and running eBPF tracing and networking programs; widely used for observability.',
+      },
+    ],
+  },
+  {
+    name: 'Node.js',
+    icon: {
+      src: NodeIcon,
+      width: 76,
+      height: 40,
+    },
+    list: [
+      {
+        name: 'node_bpf (libbpf bindings)',
+        linkUrl: 'https://github.com/mildsunrise/node_bpf',
+        description:
+          'Node.js bindings enabling loading eBPF programs, attaching to hooks, and interacting with maps via libbpf.',
+      },
+      {
+        name: 'node_bpfcc (BCC bindings)',
+        linkUrl: 'https://github.com/mildsunrise/node_bpfcc',
+        description:
+          'Node.js bindings for BCC to run and interact with BCC-based eBPF programs (requires BCC installed).',
+      },
+    ],
+  },
+  {
+    name: 'Ruby',
+    icon: {
+      src: RubyIcon,
+      width: 60,
+      height: 40,
+    },
+    list: [
+      {
+        name: 'Community explorations',
+        linkUrl: 'https://jvns.ca/blog/2018/01/31/spying-on-a-ruby-process-s-memory-allocations/',
+        description:
+          'Examples of tracing Ruby processes using eBPF tooling; dedicated Ruby bindings are not widely adopted yet.',
+      },
+    ],
+  },
+  {
+    name: 'Lua',
+    icon: {
+      src: LuaIcon,
+      width: 60,
+      height: 40,
+    },
+    list: [
+      {
+        name: 'BCC (Lua frontends)',
+        linkUrl: 'https://github.com/iovisor/bcc',
+        description:
+          'includes Lua frontends to drive and interact with BCC-based eBPF programs for tracing and networking.',
+      },
+      {
+        name: 'XDPLua (research)',
+        linkUrl: 'https://victornogueirario.github.io/xdplua/',
+        description:
+          'experimental work exploring Lua with XDP/eBPF; useful for research and learning rather than production use.',
       },
     ],
   },
