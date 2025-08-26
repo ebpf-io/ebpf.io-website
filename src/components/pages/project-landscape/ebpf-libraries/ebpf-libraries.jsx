@@ -107,16 +107,16 @@ const items = [
     },
     list: [
       {
-        name: 'node_bpf (libbpf bindings)',
-        linkUrl: 'https://github.com/mildsunrise/node_bpf',
+        name: 'eBPF via BCC Python',
+        linkUrl: 'https://github.com/iovisor/bcc',
         description:
-          'Node.js bindings enabling loading eBPF programs, attaching to hooks, and interacting with maps via libbpf.',
+          'While dedicated Node.js eBPF libraries are limited, Node.js applications can leverage eBPF through BCC Python bindings and inter-process communication for observability and monitoring.',
       },
       {
-        name: 'node_bpfcc (BCC bindings)',
-        linkUrl: 'https://github.com/mildsunrise/node_bpfcc',
+        name: 'OpenTelemetry eBPF Profiler',
+        linkUrl: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler',
         description:
-          'Node.js bindings for BCC to run and interact with BCC-based eBPF programs (requires BCC installed).',
+          'Production-scale datacenter profiler supporting Node.js applications through eBPF-based profiling and tracing capabilities.',
       },
     ],
   },
@@ -129,10 +129,16 @@ const items = [
     },
     list: [
       {
-        name: 'Community explorations',
-        linkUrl: 'https://jvns.ca/blog/2018/01/31/spying-on-a-ruby-process-s-memory-allocations/',
+        name: 'eBPF via BCC Python',
+        linkUrl: 'https://github.com/iovisor/bcc',
         description:
-          'Examples of tracing Ruby processes using eBPF tooling; dedicated Ruby bindings are not widely adopted yet.',
+          'Ruby applications can leverage eBPF capabilities through BCC Python bindings and inter-process communication for system-level observability and performance analysis.',
+      },
+      {
+        name: 'OpenTelemetry eBPF Profiler',
+        linkUrl: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler',
+        description:
+          'Production-ready profiling solution that supports Ruby applications through eBPF-based system monitoring and performance analysis.',
       },
     ],
   },
@@ -148,13 +154,13 @@ const items = [
         name: 'BCC (Lua frontends)',
         linkUrl: 'https://github.com/iovisor/bcc',
         description:
-          'includes Lua frontends to drive and interact with BCC-based eBPF programs for tracing and networking.',
+          'includes Lua frontends to drive and interact with BCC-based eBPF programs for tracing and networking; production-ready for observability use cases.',
       },
       {
-        name: 'XDPLua (research)',
-        linkUrl: 'https://victornogueirario.github.io/xdplua/',
+        name: 'OpenTelemetry eBPF Profiler',
+        linkUrl: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler',
         description:
-          'experimental work exploring Lua with XDP/eBPF; useful for research and learning rather than production use.',
+          'Production-scale profiling solution supporting Lua applications through eBPF-based system monitoring and performance analysis.',
       },
     ],
   },
