@@ -12,6 +12,10 @@ import ebpfLogo from './images/ebpf-logo.png';
 import GoIcon from './images/go-logo.svg';
 import libbpfLogo from './images/libbpf-logo.png';
 import libbpfgoLogo from './images/libbpfgo-logo.png';
+import LuaIcon from './images/lua-logo.svg';
+import NodeIcon from './images/node-logo.svg';
+import PythonIcon from './images/python-logo.svg';
+import RubyIcon from './images/ruby-logo.svg';
 import RustIcon from './images/rust-logo.svg';
 
 const items = [
@@ -75,6 +79,88 @@ const items = [
         name: 'libbpf-rs',
         linkUrl: 'https://github.com/libbpf/libbpf-rs',
         description: `is a safe, idiomatic, and opinionated wrapper API around libbpf written in Rust. libbpf-rs, together with libbpf-cargo (libbpf cargo plugin) allows to write 'compile once run everywhere' (CO-RE) eBPF programs.`,
+      },
+    ],
+  },
+  {
+    name: 'Python',
+    icon: {
+      src: PythonIcon,
+      width: 76,
+      height: 40,
+    },
+    list: [
+      {
+        name: 'BCC (Python frontends)',
+        linkUrl: 'https://github.com/iovisor/bcc',
+        description:
+          'provides Python APIs and tooling for building and running eBPF tracing and networking programs; widely used for observability.',
+      },
+    ],
+  },
+  {
+    name: 'Node.js',
+    icon: {
+      src: NodeIcon,
+      width: 76,
+      height: 40,
+    },
+    list: [
+      {
+        name: 'eBPF via BCC Python',
+        linkUrl: 'https://github.com/iovisor/bcc',
+        description:
+          'While dedicated Node.js eBPF libraries are limited, Node.js applications can leverage eBPF through BCC Python bindings and inter-process communication for observability and monitoring.',
+      },
+      {
+        name: 'OpenTelemetry eBPF Profiler',
+        linkUrl: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler',
+        description:
+          'Production-scale datacenter profiler supporting Node.js applications through eBPF-based profiling and tracing capabilities.',
+      },
+    ],
+  },
+  {
+    name: 'Ruby',
+    icon: {
+      src: RubyIcon,
+      width: 60,
+      height: 40,
+    },
+    list: [
+      {
+        name: 'eBPF via BCC Python',
+        linkUrl: 'https://github.com/iovisor/bcc',
+        description:
+          'Ruby applications can leverage eBPF capabilities through BCC Python bindings and inter-process communication for system-level observability and performance analysis.',
+      },
+      {
+        name: 'OpenTelemetry eBPF Profiler',
+        linkUrl: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler',
+        description:
+          'Production-ready profiling solution that supports Ruby applications through eBPF-based system monitoring and performance analysis.',
+      },
+    ],
+  },
+  {
+    name: 'Lua',
+    icon: {
+      src: LuaIcon,
+      width: 60,
+      height: 40,
+    },
+    list: [
+      {
+        name: 'BCC (Lua frontends)',
+        linkUrl: 'https://github.com/iovisor/bcc',
+        description:
+          'includes Lua frontends to drive and interact with BCC-based eBPF programs for tracing and networking; production-ready for observability use cases.',
+      },
+      {
+        name: 'OpenTelemetry eBPF Profiler',
+        linkUrl: 'https://github.com/open-telemetry/opentelemetry-ebpf-profiler',
+        description:
+          'Production-scale profiling solution supporting Lua applications through eBPF-based system monitoring and performance analysis.',
       },
     ],
   },
