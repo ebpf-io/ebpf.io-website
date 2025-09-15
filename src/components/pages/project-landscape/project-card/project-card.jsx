@@ -9,7 +9,6 @@ import slugifyCategory from 'utils/slugify-category';
 import alazLogo from './logos/alaz.svg';
 import bccLogo from './logos/bcc.svg';
 import beylaLogo from './logos/beyla.png';
-import blixtLogo from './logos/blixt.png';
 import bpfilterLogo from './logos/bpfilter.svg';
 import bpfireLogo from './logos/bpfire.png';
 import bpfmanLogo from './logos/bpfman.svg';
@@ -98,7 +97,6 @@ const logos = {
   alazLogo,
   bccLogo,
   beylaLogo,
-  blixtLogo,
   bpfilterLogo,
   bpfmanLogo,
   bpftoolLogo,
