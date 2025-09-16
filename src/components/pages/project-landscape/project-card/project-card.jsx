@@ -64,6 +64,7 @@ import tetragonLogo from './logos/tetragon.svg';
 import traceeLogo from './logos/tracee.svg';
 import vc5Logo from './logos/vc5.svg';
 import wachyLogo from './logos/wachy.png';
+import trayceLogo from './logos/trayce.svg';
 
 // Global hover modal manager
 const createHoverModalManager = () => {
@@ -149,6 +150,7 @@ const logos = {
   sysinternalsLogo,
   tetragonLogo,
   traceeLogo,
+  trayceLogo,
   vc5Logo,
   wachyLogo,
   bpftoolLogo,

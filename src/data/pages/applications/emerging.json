@@ -688,5 +688,23 @@
       }
     ],
     "githubStars": 58
+  },
+  {
+    "logoUrl": "https://github.com/evanrolfe/trayce_gui",
+    "name": "Trayce",
+    "logoName": "trayceLogo",
+    "title": "The network tab for Docker containers",
+    "description": "Trayce is a desktop application that uses eBPF to let you monitor network traffic in your local Docker containers. It can read TLS-encrypted traffic without needing to configure a CA certificate or proxy. Supports HTTP(S), gRPC, MySQL and Postgres.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/evanrolfe/trayce_gui"
+      },
+      {
+        "label": "Website",
+        "url": "https://trayce.dev/"
+      }
+    ],
+    "githubStars": 446
   }
 ]
