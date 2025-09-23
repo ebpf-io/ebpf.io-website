@@ -69,6 +69,10 @@ const headerMenu = [
         title: 'FOSDEM eBPF Devroom',
         to: '/events?conference=FOSDEM',
       },
+      {
+        title: 'SIGCOMM eBPF Workshop',
+        to: '/events?conference=SIGCOMM%20eBPF%20Workshop',
+      },
     ],
   },
   {
