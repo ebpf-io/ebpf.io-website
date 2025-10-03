@@ -62,9 +62,9 @@ import skywalkingLogo from './logos/skywalking.png';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import tetragonLogo from './logos/tetragon.svg';
 import traceeLogo from './logos/tracee.svg';
+import trayceLogo from './logos/trayce.svg';
 import vc5Logo from './logos/vc5.svg';
 import wachyLogo from './logos/wachy.png';
-import trayceLogo from './logos/trayce.svg';
 
 // Global hover modal manager
 const createHoverModalManager = () => {
