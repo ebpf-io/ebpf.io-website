@@ -161,7 +161,11 @@
         },
         {
           "text": "Talk",
-          "to": " https://www.youtube.com/watch?v=6nlv_VCsjpQ"
+          "to": "https://www.youtube.com/watch?v=6nlv_VCsjpQ"
+        },
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/case-study-datadog-uses-ebpf-to-improve-network-observability-accuracy-and-performance/"
         }
       ]
     },
@@ -592,6 +596,56 @@
         {
           "text": "Blog",
           "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
+        }
+      ]
+    },
+    {
+      "title": "Akto",
+      "description": "<strong>Akto</strong> usa eBPF para monitorar APIs e seu tráfego",
+      "links": [
+        {
+          "text": "Docs",
+          "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
+        }
+      ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong>Upwind Security</strong> utiliza eBPF para oferecer segurança em nuvem profunda em tempo real/tempo de execução em grande escala.",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }
+      ]
+    },
+    {
+      "title": "Canopus",
+      "description": "<strong>Canopus Networks</strong> developed “SuperNetflow,” a powerful observability pipeline that leverages eBPF to monitor and classify traffic at scale",
+      "links": [
+        {
+          "text":"Case Study",
+          "to": "https://ebpf.foundation/case-study-supernetflow-reinventing-network-observability-with-ebpf/"
+        }
+      ]
+    },
+    {
+      "title": "Wikimedia",
+      "description": "<strong>Wikimedia Foundation</strong> developed Liberica, a load balancer that supports multiple forwarding planes including Katran, Meta’s XDP-based load balancer built on eBPF",
+      "links": [
+        {
+          "text":"Blog",
+          "to": "https://wikitech.wikimedia.org/wiki/Incidents/2025-05-08_Papal_announcement_traffic_surge"
+        }
+      ]
+    },
+    {
+      "title": "Rakuten Mobile",
+      "description": "<strong>Rakuten Mobile</strong> uses eBPF for anomaly detection and security in cloud native telecom networks",
+      "links": [
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/rakuten-mobile-adopts-ebpf-to-strengthen-anomaly-detection-and-security-in-cloud-native-telecom-networks/"
         }
       ]
     }

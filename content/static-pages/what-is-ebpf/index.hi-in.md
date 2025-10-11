@@ -243,6 +243,7 @@ libbpf लाइब्रेरी एक C/C++-आधारित सामा�
 
 ### ट्यूटोरियल्स
 
+- [eBPF Docs](https://docs.ebpf.io/), Technical documentation for eBPF
 - [eBPF ट्रेसिंग सीखें: ट्यूटोरियल और उदाहरण](http://www.brendangregg.com/blog/2019-01-01/learn-ebpf-tracing.html), Brendan Gregg का ब्लॉग, जनवरी 2019
 - [XDP practically प्रशिक्षण](https://github.com/xdp-project/xdp-tutorial), विभिन्न लेखक, 2019
 - [BCC, libbpf और BPF CO-RE ट्यूटोरियल्स](https://facebookmicrosites.github.io/bpf/blog/), Facebook का BPF ब्लॉग, 2020

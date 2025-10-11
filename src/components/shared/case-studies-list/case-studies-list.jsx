@@ -6,6 +6,7 @@ import React from 'react';
 import Link from 'components/shared/link';
 
 import Akita from './logos/akita.inline.svg';
+import Akto from './logos/akto.inline.svg';
 import Alibaba from './logos/alibaba.inline.svg';
 import Android from './logos/android.inline.svg';
 import AntGroup from './logos/ant-group.inline.svg';
@@ -15,6 +16,7 @@ import ArvanCloud from './logos/arvancloud.inline.svg';
 import Attribute from './logos/attribute.inline.svg';
 import Bell from './logos/bell.inline.svg';
 import Bytedance from './logos/byte-dance.inline.svg';
+import Canopus from './logos/canopus.inline.svg';
 import CapitalOne from './logos/capital-one.inline.svg';
 import Cloudflare from './logos/cloudflare.inline.svg';
 import CoreTech from './logos/coretech.inline.svg';
@@ -40,13 +42,14 @@ import Meta from './logos/meta.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
-import Odigos from './logos/odigos.inline.svg'
+import Odigos from './logos/odigos.inline.svg';
 import Oligo from './logos/oligosecurity.inline.svg';
 import Palantir from './logos/palantir.inline.svg';
 import PolarSignals from './logos/polarsignals.inline.svg';
 import ProtectAI from './logos/protectai.inline.svg';
 import Qpoint from './logos/qpoint.inline.svg';
 import RADSecurity from './logos/rad-security.inline.svg';
+import RakutenLogo from './logos/rakuten.inline.svg';
 import Redhat from './logos/redhat.inline.svg';
 import Samsung from './logos/samsung.inline.svg';
 import SentinelOne from './logos/sentinelone.inline.svg';
@@ -57,21 +60,26 @@ import Sysdig from './logos/sysdig.inline.svg';
 import Threatx from './logos/threatX.inline.svg';
 import Traceable from './logos/traceable.inline.svg';
 import Trip from './logos/trip.inline.svg';
+import Upwind from './logos/upwind.inline.svg';
 import Walmart from './logos/walmart.inline.svg';
+import Wikimedia from './logos/wikimedia.inline.svg';
 import Wildlife from './logos/wildlife.inline.svg';
 import Wiz from './logos/wiz.inline.svg';
 import Yahoo from './logos/yahoo.inline.svg';
 
 const logos = {
   akita: Akita,
+  akto: Akto,
   alibaba: Alibaba,
   android: Android,
   'ant group': AntGroup,
   apple: Apple,
   'aqua security': Aqua,
-  bell: Bell,
   arvancloud: ArvanCloud,
+  attribute: Attribute,
+  bell: Bell,
   bytedance: Bytedance,
+  canopus: Canopus,
   'capital one': CapitalOne,
   cloudflare: Cloudflare,
   'core tech': CoreTech,
@@ -96,29 +104,31 @@ const logos = {
   microsoft: Microsoft,
   netflix: Netflix,
   'the new york times': NYT,
-  'odigos': Odigos,
+  odigos: Odigos,
   'oligo security': Oligo,
   palantir: Palantir,
+  'polar signals': PolarSignals,
   protectai: ProtectAI,
   qpoint: Qpoint,
   'rad security': RADSecurity,
   'red hat': Redhat,
+  's&p global': Global,
   samsung: Samsung,
   sentinelone: SentinelOne,
   seznam: Seznam,
   shopify: Shopify,
   sky: Sky,
-  's&p global': Global,
+  sysdig: Sysdig,
   threatx: Threatx,
   traceable: Traceable,
-  sysdig: Sysdig,
   'trip.com': Trip,
+  'upwind security': Upwind,
   walmart: Walmart,
+  wikimedia: Wikimedia,
   'wildlife studios': Wildlife,
-  'polar signals': PolarSignals,
   wiz: Wiz,
   yahoo: Yahoo,
-  attribute: Attribute,
+  'rakuten mobile': RakutenLogo,
 };
 
 const CaseStudiesList = ({ className, items, linkUrl, linkText }) => {

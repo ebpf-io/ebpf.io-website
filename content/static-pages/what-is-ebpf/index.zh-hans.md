@@ -224,6 +224,7 @@ libbpf 库是一个基于 C/ c++ 的通用 eBPF 库，它可以帮助解耦将 c
 
 ### 相关文档
 
+- [eBPF Docs](https://docs.ebpf.io/), Technical documentation for eBPF
 - [BPF & XDP Reference Guide](https://cilium.readthedocs.io/en/stable/bpf/), Cilium Documentation, Aug 2020
 - [BPF Documentation](https://www.kernel.org/doc/html/latest/bpf/index.html), BPF Documentation in the Linux Kernel
 - [BPF Design Q&A](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/bpf/bpf_design_QA.rst), FAQ for kernel-related eBPF questions

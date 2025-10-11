@@ -5,6 +5,7 @@ import React from 'react';
 import Link from 'components/shared/link/link';
 
 import BookSvg from './images/book.inline.svg';
+import DocSvg from './images/doc.inline.svg';
 import LabSvg from './images/lab.inline.svg';
 import VideoSvg from './images/video.inline.svg';
 
@@ -30,6 +31,13 @@ const cards = {
     linkUrl: 'https://www.youtube.com/watch?v=sYxUOKi3Q00',
     linkTarget: '_blank',
   },
+  doc: {
+    icon: DocSvg,
+    colorClassName: 'bg-secondary-yellow-1-light border-primary-yellow',
+    borderClassName: 'border-secondary-red-2',
+    linkUrl: 'https://docs.ebpf.io/',
+    linkTarget: '_blank',
+  },
 };
 
 const Hero = () => {
@@ -40,7 +48,7 @@ const Hero = () => {
       <div className="container flex flex-col items-center">
         <h1 className="heading-10xl text-center font-semibold leading-tight"> {t('hero.title')}</h1>
 
-        <ul className="mt-16 grid grid-cols-3 gap-8 lg:mt-12 lg:gap-7 md:mt-10 md:grid-cols-1 md:gap-6">
+        <ul className="mt-16 grid grid-cols-2 gap-8 lg:mt-12 lg:gap-7 md:mt-10 md:grid-cols-1 md:gap-6">
           {t('hero.items', { returnObjects: true }).map(({ card, title, description }, index) => {
             const {
               icon: Image,
