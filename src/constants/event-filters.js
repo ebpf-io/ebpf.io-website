@@ -36,6 +36,9 @@ const eventFilters = [
       {
         name: 'BPF Meetups at IETF',
       },
+      {
+        name: 'SIGCOMM eBPF Workshop',
+      },
     ],
   },
   {

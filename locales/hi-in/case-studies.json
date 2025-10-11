@@ -172,6 +172,10 @@
         {
           "text": "वार्ता",
           "to": "https://www.youtube.com/watch?v=6nlv_VCsjpQ"
+        },
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/case-study-datadog-uses-ebpf-to-improve-network-observability-accuracy-and-performance/"
         }
       ]
     },
@@ -609,7 +613,7 @@
       "links": [
         {
           "text": "ब्लॉग",
-          "to": "https://ksoc.com/blog/introducing-rad-security"
+          "to": "https://www.radsecurity.ai/blog/introducing-rad-security"
         }
       ]
     },
@@ -640,6 +644,56 @@
         {
           "text": "ब्लॉग",
           "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
+        }
+      ]
+    },
+    {
+      "title": "Akto",
+      "description": "<strong>Akto</strong> एपीआई और उनके ट्रैफिक की निगरानी के लिए eBPF का उपयोग करता है",
+      "links": [
+        {
+          "text": "दस्तावेज़",
+          "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
+        }
+      ]
+    },
+    {
+      "title": "Upwind Security",
+      "description": "<strong>Upwind Security</strong> eBPF का उपयोग करके वास्तविक समय/रनटाइम क्लाउड सुरक्षा को बड़े पैमाने पर प्रदान करता है।",
+      "links": [
+        {
+          "text": "ब्लॉग",
+          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
+        }
+      ]
+    },
+    {
+      "title": "Canopus",
+      "description": "<strong>Canopus Networks</strong> developed “SuperNetflow,” a powerful observability pipeline that leverages eBPF to monitor and classify traffic at scale",
+      "links": [
+        {
+          "text":"Case Study",
+          "to": "https://ebpf.foundation/case-study-supernetflow-reinventing-network-observability-with-ebpf/"
+        }
+      ]
+    },
+    {
+      "title": "Wikimedia",
+      "description": "<strong>Wikimedia Foundation</strong> developed Liberica, a load balancer that supports multiple forwarding planes including Katran, Meta’s XDP-based load balancer built on eBPF",
+      "links": [
+        {
+          "text":"Blog",
+          "to": "https://wikitech.wikimedia.org/wiki/Incidents/2025-05-08_Papal_announcement_traffic_surge"
+        }
+      ]
+    },
+    {
+      "title": "Rakuten Mobile",
+      "description": "<strong>Rakuten Mobile</strong> uses eBPF for anomaly detection and security in cloud native telecom networks",
+      "links": [
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/rakuten-mobile-adopts-ebpf-to-strengthen-anomaly-detection-and-security-in-cloud-native-telecom-networks/"
         }
       ]
     }
