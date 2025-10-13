@@ -696,6 +696,16 @@
           "to": "https://ebpf.foundation/rakuten-mobile-adopts-ebpf-to-strengthen-anomaly-detection-and-security-in-cloud-native-telecom-networks/"
         }
       ]
+    },
+    {
+      "title": "free5GC",
+      "description": "<strong>free5GC</strong> uses eBPF for improving the data plane latency on Kubernetes deployment",
+      "links": [
+        {
+          "text": "Read Blog",
+          "to": "https://free5gc.org/blog/20250726/index.en/"
+        }
+      ]
     }
   ]
 }
