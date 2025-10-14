@@ -4,7 +4,10 @@
     "description": "जानें कि विभिन्न परियोजनाओं में eBPF का उपयोग कैसे किया जाता है।",
     "keywords": "eBPF, BPF, योगदान, शुरुआत, समुदाय"
   },
-  "eBPF Case Studies": "eBPF केस अध्ययन",
+  "eBPF Case Studies": "eBPF केस अध्ययन",{
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/ant-group-secures-their-platform-with-kata-containers-and-ebpf-for-fine-grained-control/"
+        }
   "Here are some of the organizations that are using eBPF in production. If you’re using eBPF and aren’t on this list, <2>please submit a pull request</2>.": "यहाँ कुछ संगठन दिए गए हैं जो अपने प्रोडक्शन वातावरण में eBPF का उपयोग कर रहे हैं। यदि आपका संगठन भी eBPF का उपयोग कर रहा है और इस सूची में शामिल नहीं है, तो कृपया <2>एक पुल रिक्वेस्ट सबमिट करें</2>।",
   "items": [
     {
@@ -486,6 +489,10 @@
         {
           "text": "वार्ता",
           "to": "https://youtu.be/TXlxgDvxcoY?si=lvC1HqNl4jXNyfD0"
+        }
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/ant-group-secures-their-platform-with-kata-containers-and-ebpf-for-fine-grained-control/"
         }
       ]
     },
