@@ -463,6 +463,10 @@
           "text": "Talk",
           "to": "https://youtu.be/TXlxgDvxcoY?si=iAsbxdWJLlt2p9SV"
         }
+        {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/ant-group-secures-their-platform-with-kata-containers-and-ebpf-for-fine-grained-control/"
+        }
       ]
     },
     {
