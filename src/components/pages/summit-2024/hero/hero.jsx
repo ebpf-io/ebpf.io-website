@@ -3,33 +3,32 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from 'components/shared/button';
+import DevPostIcon from 'icons/devpost.inline.svg';
 import SlackIcon from 'icons/slack.inline.svg';
 
 import illustration from './images/illustration.svg';
 
 const icons = {
   slack: SlackIcon,
+  devpost: DevPostIcon,
 };
 
-const ctaButtons = [
-  {
-    title: 'Watch the recordings on YouTube',
-    theme: 'orange',
-    onclick: null,
-    url: 'https://www.youtube.com/playlist?list=PLDg_GiBbAx-m7yn_FYcc41PNrgtxlISBK',
-  },
-  {
-    onClick: null,
-    url: 'https://ebpf.io/slack',
-    title: 'Join the summit slack',
-    theme: 'gray',
-    iconName: 'slack',
-    target: '_blank',
-  },
-];
+const ctaButtons = [];
 
-const Hero = ({ date, title, time, description }) => (
-  <section className="relative lg:overflow-hidden">
+const DEFAULT_ILLUSTRATION_CLASS =
+  'absolute right-8 top-24 h-auto w-[624px] lg:static lg:mt-12 lg:w-full';
+
+const Hero = ({
+  date,
+  title,
+  time,
+  description,
+  ctaButtons: overrideButtons = ctaButtons,
+  illustrationUrl,
+  illustrationClassName,
+  rootClassName,
+}) => (
+  <section className={`relative lg:overflow-hidden ${rootClassName || ''}`}>
     <div className="absolute -top-20 right-0 -z-10 w-[200px] lg:block md:-right-4 sm:-top-[120px] sm:hidden">
       <StaticImage src="./images/drop-1.jpg" alt="" loading="eager" aria-hidden />
     </div>
@@ -54,7 +53,7 @@ const Hero = ({ date, title, time, description }) => (
           dangerouslySetInnerHTML={{ __html: description }}
         />
         <div className="mt-9 flex space-x-5 lg:justify-center sm:flex-col sm:space-x-0 sm:space-y-3 xs:w-full">
-          {ctaButtons.map(({ title, url, theme, iconName, target }, index) => {
+          {overrideButtons.map(({ title, url, theme, iconName, target }, index) => {
             const Icon = icons[iconName];
 
             return (
@@ -74,8 +73,8 @@ const Hero = ({ date, title, time, description }) => (
         </div>
       </div>
       <img
-        src={illustration}
-        className="absolute right-8 top-24 h-auto w-[624px] lg:static lg:mt-12 lg:w-full"
+        src={illustrationUrl || illustration}
+        className={illustrationClassName || DEFAULT_ILLUSTRATION_CLASS}
         alt="Illustration"
         width={624}
         height={404}
@@ -91,7 +90,10 @@ Hero.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
-  hubspotFormId: PropTypes.string.isRequired,
+  ctaButtons: PropTypes.array,
+  illustrationUrl: PropTypes.string,
+  illustrationClassName: PropTypes.string,
+  rootClassName: PropTypes.string,
 };
 
 export default Hero;
