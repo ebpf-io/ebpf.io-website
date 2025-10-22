@@ -710,9 +710,9 @@
   {
     "logoUrl": "https://github.com/Gthulhu/Gthulhu",
     "name": "Gthulhu",
-    "logoName": "GthulhuLogo",
-    "title": "Gthulhu, a system scheduler dedicated to cloud-native workloads",
-    "description": "Gthulhu optimizes cloud-native workloads using the Linux Scheduler Extension for different application scenarios.",
+    "logoName": "gthulhuLogo",
+    "title": "Gthulhu, a system scheduler dedicated to cloud native workloads",
+    "description": "Gthulhu optimizes cloud native workloads using the Linux Scheduler Extension for different application scenarios.",
     "urls": [
       {
         "label": "GitHub",
@@ -723,6 +723,6 @@
         "url": "https://gthulhu.github.io/docs/"
       }
     ],
-    "githubStars": 232
+    "githubStars": 244
   }
 ]
