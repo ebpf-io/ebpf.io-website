@@ -22,6 +22,7 @@ import ciliumLogo from './logos/cilium-with-text.svg';
 import corootLogo from './logos/coroot.svg';
 import daeLogo from './logos/dae.png';
 import deepflowLogo from './logos/deepflow.png';
+import ebpfcatLogo from './logos/ebpfcat.svg';
 import ebpfForWindowsLogo from './logos/ebpf-windows.svg';
 import ecaptureLogo from './logos/ecapture.svg';
 import eunomiaLogo from './logos/eunomia.png';
@@ -111,6 +112,7 @@ const logos = {
   corootLogo,
   daeLogo,
   deepflowLogo,
+  ebpfcatLogo,
   ebpfForWindowsLogo,
   ecaptureLogo,
   eunomiaLogo,
