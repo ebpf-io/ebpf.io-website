@@ -729,8 +729,8 @@
     "logoUrl": "https://github.com/tecki/ebpfcat",
     "name": "EBPFCat",
     "logoName": "ebpfcatLogo",
-    "title": "EBPFCat, an EtherCAT master and Python-EBPF code generator",
-    "description": "EBPFCat is a controller for the industrial field bus EtherCAT, written entirely in Python, that uses EPBF and XDP to achieve real-time response times. The EBPF code is generated on-the-fly using a built-in code generator, which can also be used for other purposes.",
+    "title": "EBPFCat, an EtherCAT master and Python-eBPF code generator",
+    "description": "EBPFCat is a controller for the industrial field bus EtherCAT, written entirely in Python, that uses ePBF and XDP to achieve real-time responses. The eBPF code is generated on-the-fly using a built-in code generator, which can also be used for other purposes.",
     "urls": [
       {
         "label": "GitHub",
