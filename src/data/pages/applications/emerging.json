@@ -742,5 +742,23 @@
       }
     ],
     "githubStars": 20
+  },
+  {
+    "logoUrl": "https://github.com/pythops/oryx/tree/main/assets",
+    "name": "Oryx",
+    "logoName": "logo",
+    "title": "A TUI for sniffing network traffic using eBPF on Linux",
+    "description": "Oryx is a powerful Terminal User Interface (TUI) application for Linux that utilizes eBPF to provide real-time network traffic sniffing, comprehensive statistics and firewall functionalities.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/pythops/oryx"
+      },
+      {
+        "label": "Website",
+        "url": "https://github.com/pythops/oryx"
+      }
+    ],
+    "githubStars": 2181
   }
 ]
