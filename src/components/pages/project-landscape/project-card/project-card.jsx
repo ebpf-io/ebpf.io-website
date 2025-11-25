@@ -48,6 +48,7 @@ import loxiLBLogo from './logos/loxilb.png';
 import merbridgeLogo from './logos/merbridge.svg';
 import netobservLogo from './logos/netobserv.svg';
 import odigosLogo from './logos/odigos.svg';
+import oryxLogo from './logos/oryx.svg';
 import otelLogo from './logos/opentelemetry.svg';
 import parcaLogo from './logos/parca.svg';
 import pcapplusplusLogo from './logos/pcapplusplus.svg';
@@ -138,6 +139,7 @@ const logos = {
   merbridgeLogo,
   netobservLogo,
   odigosLogo,
+  oryxLogo,
   otelLogo,
   parcaLogo,
   pcapplusplusLogo,
