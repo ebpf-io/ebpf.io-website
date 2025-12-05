@@ -261,6 +261,21 @@ const Summit2025 = () => (
         </ul>
       </div>
     </section> */}
+    <style>{`
+      #last-year-summit ul li:last-child span:first-child {
+        font-size: 3rem;
+      }
+      @media (max-width: 1024px) {
+        #last-year-summit ul li:last-child span:first-child {
+          font-size: 2.25rem;
+        }
+      }
+      @media (max-width: 768px) {
+        #last-year-summit ul li:last-child span:first-child {
+          font-size: 1.875rem;
+        }
+      }
+    `}</style>
     <LastYear {...lastYear} />
   </SummitLayout>
 );
