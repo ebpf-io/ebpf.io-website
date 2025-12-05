@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Hero from 'components/pages/summit-2024/hero';
 import ConnectingIcon from 'components/pages/summit-2024/information/images/connecting.inline.svg';
 import SharingIcon from 'components/pages/summit-2024/information/images/sharing.inline.svg';
 import TrendingIcon from 'components/pages/summit-2024/information/images/trending.inline.svg';
 import LastYear from 'components/pages/summit-2024/last-year';
+import Hero from 'components/pages/summit-2025/hero';
 import JoinPanel from 'components/pages/summit-2025/join-panel/join-panel';
 import Judges from 'components/pages/summit-2025/judges/judges';
 import PrizesPanel from 'components/pages/summit-2025/prizes-panel/prizes-panel';
@@ -31,10 +31,7 @@ const hero = {
     },
     { title: 'Join the Slack', url: slackUrl, theme: 'gray', iconName: 'slack', target: '_blank' },
   ],
-  // custom hero illustration (served from /static/images)
   illustrationUrl: '/images/hackathon-hero.png',
-  illustrationClassName:
-    'absolute right-8 top-24 h-auto w-[520px] lg:static lg:mt-12 lg:w-[80%] lg:max-w-[520px]',
   rootClassName: 'pb-24 lg:pb-16',
 };
 
