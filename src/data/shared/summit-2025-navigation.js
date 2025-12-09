@@ -6,4 +6,7 @@ export const navigation = [
 ];
 
 export const devpostUrl = 'https://ebpf-summit-2025.devpost.com/';
+export const devpostGalleryUrl = 'https://ebpf-summit-2025.devpost.com/project-gallery';
 export const slackUrl = 'https://ebpf.io/slack';
+export const echoEpisode199Url =
+  'https://www.meetup.com/ebpf-user-group/events/312315012/?eventOrigin=group_upcoming_events';
