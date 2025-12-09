@@ -4,16 +4,67 @@ import ConnectingIcon from 'components/pages/summit-2024/information/images/conn
 import SharingIcon from 'components/pages/summit-2024/information/images/sharing.inline.svg';
 import TrendingIcon from 'components/pages/summit-2024/information/images/trending.inline.svg';
 import Hero from 'components/pages/summit-2025/hero';
-import JoinPanel from 'components/pages/summit-2025/join-panel/join-panel';
 import Judges from 'components/pages/summit-2025/judges/judges';
 import LastYear from 'components/pages/summit-2025/last-year/last-year';
 import PrizesPanel from 'components/pages/summit-2025/prizes-panel/prizes-panel';
 import SummitLayout from 'components/pages/summit-2025/summit-layout/summit-layout';
 import Button from 'components/shared/button';
 import SEO from 'components/shared/seo';
-import { navigation, devpostUrl, slackUrl } from 'data/shared/summit-2025-navigation';
+import {
+  navigation,
+  devpostUrl,
+  devpostGalleryUrl,
+  slackUrl,
+  echoEpisode199Url,
+} from 'data/shared/summit-2025-navigation';
+import DevPostIcon from 'icons/devpost.inline.svg';
+import SlackIcon from 'icons/slack.inline.svg';
 
 const ogImage = '/images/social-preview-ebpf-summit.jpg';
+
+const judges = [
+  { name: 'Liz Rice', position: 'Chief of Open Source, Isovalent at Cisco' },
+  {
+    name: 'Daniel Borkman',
+    position: 'Distinguished Software Engineer, Isovalent at Cisco and eBPF and Cilium Creator',
+  },
+  { name: 'Bill Mulligan', position: 'Community Pollinator, Isovalent at Cisco' },
+  { name: 'Dylan Reimerink', position: 'Senior Software Engineer, Isovalent at Cisco' },
+  { name: 'Duffie Cooley', position: 'CTO Field, Isovalent at Cisco' },
+  {
+    name: 'John Fastabend',
+    position: 'Principal Director, Isovalent at Cisco and Tetragon Creator',
+  },
+  { name: 'Joe Stringer', position: 'Principal Engineer, Isovalent at Cisco' },
+  { name: 'Constanze b. Roedig', position: 'Independent Researcher and eBPF expert' },
+  { name: 'Nimisha Mehta', position: 'Senior Software Engineer, Confluent' },
+  { name: 'Neha Aggarwal', position: 'Principal Software Engineer Manager, Microsoft' },
+  {
+    name: 'Teodor (Janez) Podobnik',
+    position: 'SRE, Prewave and creator of ebpf chirmp newsletter',
+  },
+];
+
+const tracks = [
+  {
+    emoji: '🧩',
+    title: 'Tools & Projects Using eBPF or Contributing to Cilium',
+    description:
+      "Build or enhance tools using eBPF that aren't based on Isovalent projects. Make direct contributions to Cilium, Tetragon, Hubble, or related tooling and docs.",
+  },
+  {
+    emoji: '🔍',
+    title: 'Using Cilium Technologies in Original Ways',
+    description:
+      'Use Cilium technologies in creative or practical scenarios to solve real problems.',
+  },
+  {
+    emoji: '🌱',
+    title: 'eBPF Starter Track (Beginner-Friendly)',
+    description:
+      'A low-pressure track for newcomers to learn, experiment, and share beginner-level eBPF or Cilium work.',
+  },
+];
 
 // Hackathon edition content for 2025
 const hero = {
@@ -23,8 +74,8 @@ const hero = {
   description: '<p>A global open source hackathon to build, explore, and contribute with eBPF.</p>',
   ctaButtons: [
     {
-      title: 'Join on DevPost',
-      url: devpostUrl,
+      title: 'View Project Gallery',
+      url: devpostGalleryUrl,
       theme: 'orange',
       iconName: 'devpost',
       target: '_blank',
@@ -122,7 +173,7 @@ const Summit2025 = () => (
                   Registration Period
                 </div>
                 <div className="rounded bg-white px-3 py-2 text-gray-1 shadow-sm md:mt-2">
-                  Open now
+                  Closed
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-3 md:grid-cols-1">
@@ -130,13 +181,13 @@ const Summit2025 = () => (
                   Submission Period
                 </div>
                 <div className="rounded bg-white px-3 py-2 text-gray-1 shadow-sm md:mt-2">
-                  Monday, 13 October – Sunday, 30 November
+                  Closed (Monday, 13 October – Sunday, 30 November)
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-3 md:grid-cols-1">
                 <div className="rounded bg-white px-3 py-2 font-bold shadow-sm">Judging Period</div>
                 <div className="rounded bg-white px-3 py-2 text-gray-1 shadow-sm md:mt-2">
-                  Monday, 1 December – Monday, 15 December
+                  In progress (Monday, 1 December – Monday, 15 December)
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-3 md:grid-cols-1">
@@ -144,22 +195,100 @@ const Summit2025 = () => (
                   Winners Announcement
                 </div>
                 <div className="rounded bg-white px-3 py-2 text-gray-1 shadow-sm md:mt-2">
-                  Around Wednesday, 17 December
+                  Wednesday, 17 December
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-6 text-center">
-          <Button
-            className="rounded-lg px-6"
-            size="sm"
-            theme="orange"
-            to={devpostUrl}
-            target="_blank"
-          >
-            Full details & examples on DevPost
-          </Button>
+      </div>
+    </section>
+
+    {/* Section: Project Gallery */}
+    <section className="mt-16">
+      <div className="container">
+        <div className="rounded-xl border border-[#FFD08A] bg-gradient-to-r from-[#FFF0D9] to-[#FFE3B3] px-10 py-12 shadow-sm md:px-6">
+          <h2 className="heading-9xl text-center font-bold leading-none">Explore the Projects</h2>
+          <div className="mt-8 grid grid-cols-2 gap-10 md:grid-cols-1 md:gap-6">
+            <div className="space-y-4">
+              <p className="text-lg">
+                Submissions for the eBPF Summit 2025: Hackathon Edition are now closed. We received{' '}
+                <strong>42 incredible projects</strong> across all three tracks showcasing
+                innovation in eBPF and Cilium technologies!
+              </p>
+              <p className="text-lg">
+                The judging is currently in progress. Winners will be announced on{' '}
+                <strong>Wednesday, December 17th</strong>.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center gap-4 md:mt-2">
+              <Button
+                className="flex items-center gap-3 rounded-lg px-7 py-4 text-base font-extrabold"
+                theme="orange"
+                to={devpostGalleryUrl}
+                target="_blank"
+              >
+                <DevPostIcon className="h-5 w-5" />
+                View Project Gallery
+              </Button>
+              <Button
+                className="flex items-center gap-3 rounded-lg px-7 py-4 text-base font-extrabold"
+                theme="gray"
+                to={slackUrl}
+                target="_blank"
+              >
+                <SlackIcon className="h-5 w-5" />
+                Join the Slack
+              </Button>
+              <p className="mt-1 text-center text-sm text-gray-700">
+                Join us for the winners announcement on December 17th!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Section: Winners Announcement */}
+    <section className="mt-16">
+      <div className="container">
+        <div className="rounded-xl border border-[#FFD08A] bg-gradient-to-r from-[#FFF0D9] to-[#FFE3B3] px-10 py-12 shadow-sm md:px-6">
+          <h2 className="heading-9xl text-center font-bold leading-none">
+            Winners Announcement & eCHO Live Session
+          </h2>
+          <div className="mt-8 grid grid-cols-5 gap-8 items-center md:grid-cols-1">
+            <div className="col-span-3">
+              <p className="text-xl leading-normal md:text-lg">
+                The judging is currently in progress! Winners will be announced on{' '}
+                <strong>Wednesday, December 17th</strong>. Then join us for the{' '}
+                <strong>eCHO Episode 199</strong> on <strong>Friday, December 19th</strong> where
+                judges <strong>Constanze b. Roedig</strong> and{' '}
+                <strong>Teodor (Janez) Podobnik</strong> will share insights into the judging
+                process and showcase the winning projects. We&apos;ll highlight the winners and the
+                best submissions from each track.
+              </p>
+              <div className="mt-6 text-center md:text-center">
+                <Button
+                  className="rounded-lg px-6"
+                  size="sm"
+                  theme="orange"
+                  to={echoEpisode199Url}
+                  target="_blank"
+                >
+                  Register for eCHO Episode 199 →
+                </Button>
+              </div>
+            </div>
+            <div className="col-span-2 flex justify-center md:mt-6">
+              <img
+                src="/images/summit-2025/summit-2025-eCHO-flyer.jpg"
+                alt="eCHO Episode 199: eBPF Summit Hackathon Edition"
+                className="max-w-full h-auto rounded-lg shadow-md"
+                style={{ maxWidth: '400px' }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -169,37 +298,15 @@ const Summit2025 = () => (
       <div className="container">
         <h2 className="heading-9xl text-center font-bold leading-none">Tracks</h2>
         <div className="mt-6 grid grid-cols-3 gap-6 md:grid-cols-1">
-          <div className="rounded-lg border border-gray-94 p-6">
-            <div className="text-3xl" aria-hidden>
-              🧩
+          {tracks.map(({ emoji, title, description }, index) => (
+            <div className="rounded-lg border border-gray-94 p-6" key={index}>
+              <div className="text-3xl" aria-hidden>
+                {emoji}
+              </div>
+              <h3 className="mt-2 text-xl font-bold">{title}</h3>
+              <p className="mt-2">{description}</p>
             </div>
-            <h3 className="mt-2 text-xl font-bold">
-              Tools & Projects Using eBPF or Contributing to Cilium
-            </h3>
-            <p className="mt-2">
-              Build or enhance tools using eBPF that aren&apos;t based on Isovalent projects. Make
-              direct contributions to Cilium, Tetragon, Hubble, or related tooling and docs.
-            </p>
-          </div>
-          <div className="rounded-lg border border-gray-94 p-6">
-            <div className="text-3xl" aria-hidden>
-              🔍
-            </div>
-            <h3 className="mt-2 text-xl font-bold">Using Cilium Technologies in Original Ways</h3>
-            <p className="mt-2">
-              Use Cilium technologies in creative or practical scenarios to solve real problems.
-            </p>
-          </div>
-          <div className="rounded-lg border border-gray-94 p-6">
-            <div className="text-3xl" aria-hidden>
-              🌱
-            </div>
-            <h3 className="mt-2 text-xl font-bold">eBPF Starter Track (Beginner-Friendly)</h3>
-            <p className="mt-2">
-              A low-pressure track for newcomers to learn, experiment, and share beginner-level eBPF
-              or Cilium work.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -211,56 +318,11 @@ const Summit2025 = () => (
       </div>
     </section>
 
-    {/* Section 6: Join */}
-    <section id="join" className="mt-16">
-      <div className="container">
-        <JoinPanel devpostUrl={devpostUrl} slackUrl={slackUrl} />
-      </div>
-    </section>
-
-    {/* Section 7: Judges */}
+    {/* Section 6: Judges */}
     <div id="judges" className="mt-12">
-      <Judges
-        title="Judges"
-        items={[
-          { name: 'Liz Rice', position: 'Chief of Open Source, Isovalent at Cisco' },
-          {
-            name: 'Daniel Borkman',
-            position:
-              'Distinguished Software Engineer, Isovalent at Cisco and eBPF and Cilium Creator',
-          },
-          { name: 'Bill Mulligan', position: 'Community Pollinator, Isovalent at Cisco' },
-          { name: 'Dylan Reimerink', position: 'Senior Software Engineer, Isovalent at Cisco' },
-          { name: 'Duffie Cooley', position: 'CTO Field, Isovalent at Cisco' },
-          {
-            name: 'John Fastabend',
-            position: 'Principal Director, Isovalent at Cisco and Tetragon Creator',
-          },
-          { name: 'Joe Stringer', position: 'Principal Engineer, Isovalent at Cisco' },
-          { name: 'Constanze b. Roedig', position: 'Independent Researcher and eBPF expert' },
-          { name: 'Nimisha Mehta', position: 'Senior Software Engineer, Confluent' },
-          { name: 'Neha Aggarwal', position: 'Principal Software Engineer Manager, Microsoft' },
-          {
-            name: 'Teodor (Janez) Podobnik',
-            position: 'SRE, Prewave and creator of ebpf chirmp newsletter',
-          },
-        ]}
-      />
+      <Judges title="Judges" items={judges} />
     </div>
 
-    {/* Section 8: Highlights & Resources */}
-    {/* <section id="resources" className="mt-12">
-      <div className="container">
-        <h2 className="heading-9xl text-center font-bold leading-none">Highlights from Past Events and Resources</h2>
-        <p className="mt-4 text-center">Looking for inspiration?</p>
-        <ul className="mt-6 grid grid-cols-2 gap-6 md:grid-cols-1">
-          <li><a className="font-bold underline" href="/summit-2024/">eBPF Summit 2024 →</a></li>
-          <li><a className="font-bold underline" href="/summit-2023/">eBPF Summit 2023 →</a></li>
-          <li><a className="font-bold underline" href="/resources">Resources</a></li>
-          <li><a className="font-bold underline" href={slackUrl} target="_blank" rel="noreferrer">Join the Slack →</a></li>
-        </ul>
-      </div>
-    </section> */}
     <style>{`
       #last-year-summit ul li:last-child span:first-child {
         font-size: 3rem;
