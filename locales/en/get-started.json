@@ -80,7 +80,7 @@
       {
         "title": "Compiler Explorer",
         "description": "BPF support to run the compiler interactively in your web browser and explore the assembly",
-        "linkUrl": "https://godbolt.org/"
+        "linkUrl": "https://godbolt.org/z/cnoG33fYY"
       }
     ]
   },
