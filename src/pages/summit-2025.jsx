@@ -15,7 +15,6 @@ import {
   devpostUrl,
   devpostGalleryUrl,
   slackUrl,
-  echoEpisode199Url,
 } from 'data/shared/summit-2025-navigation';
 import DevPostIcon from 'icons/devpost.inline.svg';
 import SlackIcon from 'icons/slack.inline.svg';
@@ -158,46 +157,219 @@ const Summit2025 = () => (
             </p>
           </div>
           <div className="mt-6 text-center">
-            <Button className="rounded-lg px-6" size="sm" theme="orange" to="/blog" target="_blank">
-              Read the blog post announcement
+            <Button
+              className="rounded-lg px-6"
+              size="sm"
+              theme="orange"
+              to="https://isovalent.com/blog/post/ebpf-summit-hackathon-edition-2025/"
+              target="_blank"
+            >
+              Read the recap blog post
             </Button>
           </div>
         </div>
+      </div>
+    </section>
 
+    {/* Section: Winners */}
+    <section className="mt-16">
+      <div className="container">
+        <h2 className="heading-9xl text-center font-bold leading-none">
+          🥇 And the Winners are... 🥁
+        </h2>
+        <div className="mt-8 text-center text-xl leading-normal">
+          <p>
+            Without further ado, let&apos;s announce the winning entries from the three Hackathon
+            categories:
+          </p>
+        </div>
+
+        {/* Winner 1: eBPF Starter Track */}
         <div className="mt-12">
-          <div className="rounded-lg bg-[#FFF0D9] p-6 md:p-5">
-            <h3 className="text-center text-2xl font-bold tracking-wide">Schedule at a glance</h3>
-            <div className="mt-6 space-y-3">
-              <div className="grid grid-cols-2 gap-3 md:grid-cols-1">
-                <div className="rounded bg-white px-3 py-2 font-bold shadow-sm">
-                  Registration Period
-                </div>
-                <div className="rounded bg-white px-3 py-2 text-gray-1 shadow-sm md:mt-2">
-                  Closed
-                </div>
+          <div className="rounded-xl border border-[#FFD08A] bg-gradient-to-r from-[#FFF0D9] to-[#FFE3B3] px-10 py-12 shadow-sm md:px-6">
+            <h3 className="text-2xl font-bold mb-6">eBPF Starter Track for Beginners</h3>
+            <div className="grid grid-cols-2 gap-8 items-start md:grid-cols-1">
+              <div className="relative pb-[56.25%]">
+                <iframe
+                  className="absolute left-0 top-0 h-full w-full rounded-lg"
+                  src="https://www.youtube.com/embed/3Z7UYZ7sJTU"
+                  frameBorder="0"
+                  width={592}
+                  height={333}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  title="SCX_MUS - Mostly Unfair Scheduler"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
               </div>
-              <div className="grid grid-cols-2 gap-3 md:grid-cols-1">
-                <div className="rounded bg-white px-3 py-2 font-bold shadow-sm">
-                  Submission Period
-                </div>
-                <div className="rounded bg-white px-3 py-2 text-gray-1 shadow-sm md:mt-2">
-                  Closed (Monday, 13 October – Sunday, 30 November)
-                </div>
+              <div className="flex flex-col justify-center">
+                <h4 className="text-2xl font-bold mb-4">
+                  <a
+                    href="https://devpost.com/software/scx_mus-mostly-unfair-scheduler"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    SCX_MUS - Mostly Unfair Scheduler
+                  </a>
+                </h4>
+                <p className="text-lg leading-normal mb-6">
+                  A custom Linux scheduler that uses the <code>sched_ext</code> framework to
+                  prioritise containers in Kubernetes. The project provides a simple CLI that
+                  selects a container, extracts its <code>cgroup</code> ID and stores it in a BPF
+                  map. Judges highlighted how impressive it is to see a group of newcomers tackle
+                  such a complex program type:{' '}
+                  <em>
+                    sched_ext is one of the more complicated program types to write … it&apos;s a
+                    great example of eBPF super‑powers.
+                  </em>
+                </p>
+                <Button
+                  className="flex items-center gap-3 rounded-lg px-7 py-4 text-base font-extrabold w-fit"
+                  theme="orange"
+                  to="https://devpost.com/software/scx_mus-mostly-unfair-scheduler"
+                  target="_blank"
+                >
+                  <DevPostIcon className="h-5 w-5" />
+                  View Project on DevPost
+                </Button>
               </div>
-              <div className="grid grid-cols-2 gap-3 md:grid-cols-1">
-                <div className="rounded bg-white px-3 py-2 font-bold shadow-sm">Judging Period</div>
-                <div className="rounded bg-white px-3 py-2 text-gray-1 shadow-sm md:mt-2">
-                  In progress (Monday, 1 December – Monday, 15 December)
-                </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Winner 2: Using eBPF Track */}
+        <div className="mt-12">
+          <div className="rounded-xl border border-[#FFD08A] bg-gradient-to-r from-[#FFF0D9] to-[#FFE3B3] px-10 py-12 shadow-sm md:px-6">
+            <h3 className="text-2xl font-bold mb-6">Using eBPF Track</h3>
+            <div className="grid grid-cols-2 gap-8 items-start md:grid-cols-1">
+              <div className="relative pb-[56.25%]">
+                <iframe
+                  className="absolute left-0 top-0 h-full w-full rounded-lg"
+                  src="https://www.youtube.com/embed/Xr3l-eGaY7c"
+                  frameBorder="0"
+                  width={592}
+                  height={333}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  title="xgotop: Realtime Go Runtime Visualizer"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
               </div>
-              <div className="grid grid-cols-2 gap-3 md:grid-cols-1">
-                <div className="rounded bg-white px-3 py-2 font-bold shadow-sm">
-                  Winners Announcement
-                </div>
-                <div className="rounded bg-white px-3 py-2 text-gray-1 shadow-sm md:mt-2">
-                  Wednesday, 17 December
-                </div>
+              <div className="flex flex-col justify-center">
+                <h4 className="text-2xl font-bold mb-4">
+                  <a
+                    href="https://devpost.com/software/xgotop-go-runtime-observer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    xgotop: Realtime Go Runtime Visualizer
+                  </a>
+                </h4>
+                <p className="text-lg leading-normal mb-6">
+                  A lean but powerful profiler that instruments the Go runtime to visualise
+                  goroutines and memory allocations in real time. With sub‑microsecond overhead and
+                  a polished UI, xgotop was dubbed <em>pprof on steroids</em> by one judge, who also
+                  praised the clear architecture diagrams and demo.
+                </p>
+                <Button
+                  className="flex items-center gap-3 rounded-lg px-7 py-4 text-base font-extrabold w-fit"
+                  theme="orange"
+                  to="https://devpost.com/software/xgotop-go-runtime-observer"
+                  target="_blank"
+                >
+                  <DevPostIcon className="h-5 w-5" />
+                  View Project on DevPost
+                </Button>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Winner 3: Cilium Technologies Track */}
+        <div className="mt-12">
+          <div className="rounded-xl border border-[#FFD08A] bg-gradient-to-r from-[#FFF0D9] to-[#FFE3B3] px-10 py-12 shadow-sm md:px-6">
+            <h3 className="text-2xl font-bold mb-6">Cilium Technologies Track</h3>
+            <div className="grid grid-cols-2 gap-8 items-start md:grid-cols-1">
+              <div className="relative pb-[56.25%]">
+                <iframe
+                  className="absolute left-0 top-0 h-full w-full rounded-lg"
+                  src="https://www.youtube.com/embed/fPq9QCR0M5E"
+                  frameBorder="0"
+                  width={592}
+                  height={333}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  title="Goya"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="flex flex-col justify-center">
+                <h4 className="text-2xl font-bold mb-4">
+                  <a
+                    href="https://devpost.com/software/test-tngojh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Goya
+                  </a>
+                </h4>
+                <p className="text-lg leading-normal mb-6">
+                  A proof‑of‑concept framework that blends the Rust‑based Aya framework for kernel
+                  space with Cilium&apos;s Go libraries for user space. It offers a template for
+                  developers who want to write eBPF kernel code in Rust, while still benefitting
+                  from the ergonomics of Go for their user space code. Judges appreciated the niche
+                  appeal:{' '}
+                  <em>
+                    If anyone ever wanted to do Go + Rust, this is a really good starting point.
+                  </em>
+                </p>
+                <Button
+                  className="flex items-center gap-3 rounded-lg px-7 py-4 text-base font-extrabold w-fit"
+                  theme="orange"
+                  to="https://devpost.com/software/test-tngojh"
+                  target="_blank"
+                >
+                  <DevPostIcon className="h-5 w-5" />
+                  View Project on DevPost
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Section: eCHO Episode 199 */}
+    <section className="mt-16">
+      <div className="container">
+        <div className="rounded-xl border border-[#FFD08A] bg-gradient-to-r from-[#FFF0D9] to-[#FFE3B3] px-10 py-12 shadow-sm md:px-6">
+          <h2 className="heading-9xl text-center font-bold leading-none">
+            eCHO Episode 199: Hackathon Recap
+          </h2>
+          <div className="mt-8 text-center text-xl leading-normal">
+            <p>
+              Watch the eCHO Episode 199 where judges <strong>Constanze b. Roedig</strong> and{' '}
+              <strong>Teodor (Janez) Podobnik</strong> share insights into the judging process and
+              showcase the winning projects. We highlight the winners and the best submissions from
+              each track.
+            </p>
+          </div>
+          <div className="mt-8">
+            <div className="relative pb-[56.25%] max-w-4xl mx-auto">
+              <iframe
+                className="absolute left-0 top-0 h-full w-full rounded-lg"
+                src="https://www.youtube.com/embed/CFEqXwOoB-k"
+                frameBorder="0"
+                width={592}
+                height={333}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                title="eCHO Episode 199: eBPF Summit Hackathon Edition"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
@@ -217,8 +389,9 @@ const Summit2025 = () => (
                 innovation in eBPF and Cilium technologies!
               </p>
               <p className="text-lg">
-                The judging is currently in progress. Winners will be announced on{' '}
-                <strong>Wednesday, December 17th</strong>.
+                Over the course of four weeks, more than <strong>500 participants</strong> from
+                around the world joined the challenge. Explore all the amazing projects in the
+                gallery below!
               </p>
             </div>
 
@@ -241,54 +414,40 @@ const Summit2025 = () => (
                 <SlackIcon className="h-5 w-5" />
                 Join the Slack
               </Button>
-              <p className="mt-1 text-center text-sm text-gray-700">
-                Join us for the winners announcement on December 17th!
-              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    {/* Section: Winners Announcement */}
+    {/* Section: Participant Quotes */}
     <section className="mt-16">
       <div className="container">
-        <div className="rounded-xl border border-[#FFD08A] bg-gradient-to-r from-[#FFF0D9] to-[#FFE3B3] px-10 py-12 shadow-sm md:px-6">
-          <h2 className="heading-9xl text-center font-bold leading-none">
-            Winners Announcement & eCHO Live Session
-          </h2>
-          <div className="mt-8 grid grid-cols-5 gap-8 items-center md:grid-cols-1">
-            <div className="col-span-3">
-              <p className="text-xl leading-normal md:text-lg">
-                The judging is currently in progress! Winners will be announced on{' '}
-                <strong>Wednesday, December 17th</strong>. Then join us for the{' '}
-                <strong>eCHO Episode 199</strong> on <strong>Friday, December 19th</strong> where
-                judges <strong>Constanze b. Roedig</strong> and{' '}
-                <strong>Teodor (Janez) Podobnik</strong> will share insights into the judging
-                process and showcase the winning projects. We&apos;ll highlight the winners and the
-                best submissions from each track.
-              </p>
-              <div className="mt-6 text-center md:text-center">
-                <Button
-                  className="rounded-lg px-6"
-                  size="sm"
-                  theme="orange"
-                  to={echoEpisode199Url}
-                  target="_blank"
-                >
-                  Register for eCHO Episode 199 →
-                </Button>
-              </div>
-            </div>
-            <div className="col-span-2 flex justify-center md:mt-6">
-              <img
-                src="/images/summit-2025/summit-2025-eCHO-flyer.jpg"
-                alt="eCHO Episode 199: eBPF Summit Hackathon Edition"
-                className="max-w-full h-auto rounded-lg shadow-md"
-                style={{ maxWidth: '400px' }}
-              />
-            </div>
-          </div>
+        <h2 className="heading-9xl text-center font-bold leading-none">What Participants Say</h2>
+        <div className="mt-12 grid grid-cols-3 gap-8 md:grid-cols-1">
+          <blockquote className="flex flex-col rounded-lg border border-gray-94 bg-white p-8 shadow-sm">
+            <div className="mb-4 text-4xl leading-none text-primary-orange">&ldquo;</div>
+            <p className="flex-grow text-lg leading-relaxed italic">
+              Great experience! The hackathon motivated me to build something real instead of just
+              reading docs.
+            </p>
+          </blockquote>
+          <blockquote className="flex flex-col rounded-lg border border-gray-94 bg-white p-8 shadow-sm">
+            <div className="mb-4 text-4xl leading-none text-primary-orange">&ldquo;</div>
+            <p className="flex-grow text-lg leading-relaxed italic">
+              All good, I love the idea this year to do something practical. I would never have done
+              this project otherwise.
+            </p>
+          </blockquote>
+          <blockquote className="flex flex-col rounded-lg border border-gray-94 bg-white p-8 shadow-sm">
+            <div className="mb-4 text-4xl leading-none text-primary-orange">&ldquo;</div>
+            <p className="flex-grow text-lg leading-relaxed italic">
+              This hackathon was a great way to explore the Cilium ecosystem. The challenge
+              structure encouraged building something practical, and the documentation and examples
+              were helpful. I enjoyed the open-ended creative format and would love to see more
+              beginner-friendly policy and datapath walkthroughs in future events.
+            </p>
+          </blockquote>
         </div>
       </div>
     </section>
