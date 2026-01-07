@@ -45,15 +45,6 @@ const SummitHeader = ({ navigation, devpostUrl }) => {
                     </a>
                   ))}
                 </div>
-                <Button
-                  className="flex gap-x-2.5 rounded-lg text-base font-extrabold lg:hidden"
-                  size="xs"
-                  theme="black-filled"
-                  to={devpostUrl}
-                  target="_blank"
-                >
-                  <span>Register on DevPost</span>
-                </Button>
               </nav>
             </div>
 
