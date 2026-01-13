@@ -666,6 +666,20 @@
           "to": "https://free5gc.org/blog/20250726/index.en/"
         }
       ]
+    },
+    {
+      "title": "Aurva",
+      "description": "<strong>Aurva</strong> uses eBPF for identity-aware monitoring of data access across humans, services, and AI agents",
+      "links": [
+        {
+          "text": "Case Study",
+          "to": "https://aurva.io/blog/how-outsmarting-a-system-constraint-unlocked-a-1000-performance-gain"
+        },
+        {
+          "text": "Blog",
+          "to": "https://aurva.io/blog/the-ssl-tls-trap-why-your-database-security-goes-blind-in-production"
+        }
+      ]
     }
   ]
 }
