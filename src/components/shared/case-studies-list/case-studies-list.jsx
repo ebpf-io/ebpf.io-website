@@ -14,6 +14,7 @@ import Apple from './logos/apple.inline.svg';
 import Aqua from './logos/aqua.inline.svg';
 import ArvanCloud from './logos/arvancloud.inline.svg';
 import Attribute from './logos/attribute.inline.svg';
+import AurvaLogo from './logos/aurva.inline.svg';
 import Bell from './logos/bell.inline.svg';
 import Bytedance from './logos/byte-dance.inline.svg';
 import Canopus from './logos/canopus.inline.svg';
@@ -77,6 +78,7 @@ const logos = {
   'aqua security': Aqua,
   arvancloud: ArvanCloud,
   attribute: Attribute,
+  aurva: AurvaLogo,
   bell: Bell,
   bytedance: Bytedance,
   canopus: Canopus,

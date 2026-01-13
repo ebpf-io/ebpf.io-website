@@ -9,7 +9,7 @@ import slugifyCategory from 'utils/slugify-category';
 import alazLogo from './logos/alaz.svg';
 import bccLogo from './logos/bcc.svg';
 import beylaLogo from './logos/beyla.png';
-import bombiniLogo from './logos/bombini.png'
+import bombiniLogo from './logos/bombini.png';
 import bpfilterLogo from './logos/bpfilter.svg';
 import bpfireLogo from './logos/bpfire.png';
 import bpfmanLogo from './logos/bpfman.svg';
@@ -23,12 +23,13 @@ import ciliumLogo from './logos/cilium-with-text.svg';
 import corootLogo from './logos/coroot.svg';
 import daeLogo from './logos/dae.png';
 import deepflowLogo from './logos/deepflow.png';
-import ebpfcatLogo from './logos/ebpfcat.svg';
 import ebpfForWindowsLogo from './logos/ebpf-windows.svg';
+import ebpfcatLogo from './logos/ebpfcat.svg';
 import ecaptureLogo from './logos/ecapture.svg';
 import eunomiaLogo from './logos/eunomia.png';
 import falcoLogo from './logos/falco.svg';
 import gccLogo from './logos/gcc.svg';
+import gthulhuLogo from './logos/gthulhu.svg';
 import hbpfLogo from './logos/hbpf.svg';
 import hubbleLogo from './logos/hubble.svg';
 import ingressNodeFirewallLogo from './logos/infw.jpg';
@@ -49,8 +50,8 @@ import loxiLBLogo from './logos/loxilb.png';
 import merbridgeLogo from './logos/merbridge.svg';
 import netobservLogo from './logos/netobserv.svg';
 import odigosLogo from './logos/odigos.svg';
-import oryxLogo from './logos/oryx.svg';
 import otelLogo from './logos/opentelemetry.svg';
+import oryxLogo from './logos/oryx.svg';
 import parcaLogo from './logos/parca.svg';
 import pcapplusplusLogo from './logos/pcapplusplus.svg';
 import pixieLogo from './logos/pixie.svg';
@@ -65,10 +66,9 @@ import skywalkingLogo from './logos/skywalking.png';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import tetragonLogo from './logos/tetragon.svg';
 import traceeLogo from './logos/tracee.svg';
+import trayceLogo from './logos/trayce.svg';
 import vc5Logo from './logos/vc5.svg';
 import wachyLogo from './logos/wachy.png';
-import trayceLogo from './logos/trayce.svg';
-import gthulhuLogo from './logos/gthulhu.svg';
 
 // Global hover modal manager
 const createHoverModalManager = () => {
