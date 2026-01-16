@@ -31,6 +31,7 @@ import falcoLogo from './logos/falco.svg';
 import gccLogo from './logos/gcc.svg';
 import gthulhuLogo from './logos/gthulhu.svg';
 import hbpfLogo from './logos/hbpf.svg';
+import huatuoLogo from './logos/huatuo.jpg';
 import hubbleLogo from './logos/hubble.svg';
 import ingressNodeFirewallLogo from './logos/infw.jpg';
 import inspektorGadgetLogo from './logos/inspektor_gadget.png';
@@ -123,6 +124,7 @@ const logos = {
   gccLogo,
   hbpfLogo,
   hubbleLogo,
+  huatuoLogo,
   ingressNodeFirewallLogo,
   inspektorGadgetLogo,
   katranLogo,

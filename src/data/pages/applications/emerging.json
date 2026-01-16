@@ -774,5 +774,23 @@
       }
     ],
     "githubStars": 35
+  },
+  {
+    "logoUrl": "https://github.com/ccfos/huatuo",
+    "name": "HUATUO",
+    "logoName": "huatuoLogo",
+    "title": "A cloud-native operating system observability project based on eBPF",
+    "description": "By integrating Linux kernel dynamic tracking such as kprobe, tracepoint, ftrace, and eBPF, HUATUO has achieved multi-dimensional kernel observability, including more refined metrics, kernel runtime contexts, and automatic tracking. It has been deployed at scale in production environments and plays a critical role in troubleshooting system failures, enhancing the high availability and performance of cloud-native operating systems.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/ccfos/huatuo"
+      },
+      {
+        "label": "Website",
+        "url": "https://huatuo.tech/"
+      }
+    ],
+    "githubStars": 1030
   }
 ]
