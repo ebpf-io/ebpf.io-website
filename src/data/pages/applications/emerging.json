@@ -774,5 +774,41 @@
       }
     ],
     "githubStars": 35
+  },
+  {
+    "logoUrl": "https://github.com/gen0sec/synapse",
+    "name": "Synapse",
+    "logoName": "gen0secLogo",
+    "title": "Synapse: eBPF-powered XDR with Firewall and Proxy",
+    "description": "Synapse is an XDR solution with an eBPF-powered firewall and proxy designed to protect Linux servers.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/gen0sec/synapse"
+      },
+      {
+        "label": "Website",
+        "url": "https://gen0sec.com/"
+      }
+    ],
+    "githubStars": 61
+  },
+  {
+    "logoUrl": "https://github.com/gen0sec/jailer",
+    "name": "Jailer",
+    "logoName": "gen0secLogo",
+    "title": "Jailer: eBPF-based Process Jailing System",
+    "description": "Jailer is an eBPF-based process jailing system that provides mandatory access control (MAC) for Linux. It tracks processes using BPF task_storage maps and enforces role-based policies on file access, network operations, and process execution.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/gen0sec/jailer"
+      },
+      {
+        "label": "Website",
+        "url": "https://gen0sec.com/"
+      }
+    ],
+    "githubStars": 14
   }
 ]
