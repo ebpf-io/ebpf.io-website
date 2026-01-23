@@ -40,6 +40,7 @@ import Levo from './logos/levo.inline.svg';
 import LineCoporation from './logos/line-corp.inline.svg';
 import LinkedIn from './logos/linkedin.inline.svg';
 import Meta from './logos/meta.inline.svg';
+import Metoro from './logos/metoro.inline.svg';
 import Microsoft from './logos/microsoft.inline.svg';
 import Netflix from './logos/netflix.inline.svg';
 import NYT from './logos/nyt.inline.svg';
@@ -103,6 +104,7 @@ const logos = {
   'line coporation': LineCoporation,
   linkedin: LinkedIn,
   meta: Meta,
+  metoro: Metoro,
   microsoft: Microsoft,
   netflix: Netflix,
   'the new york times': NYT,
