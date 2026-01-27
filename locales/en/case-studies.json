@@ -738,12 +738,8 @@
       "description": "<strong>Metoro</strong> uses eBPF to generate traces and monitor performance of applications running in Kubernetes without requiring code changes.",
       "links": [
         {
-          "text": "Product",
-          "to": "https://metoro.io"
-        },
-        {
-          "text": "Docs",
-          "to": "https://metoro.io/docs/getting-started/architecture"
+          "text": "Blog",
+          "to": "https://metoro.io/blog/how-metoro-uses-ebpf"
         }
       ]
     }
