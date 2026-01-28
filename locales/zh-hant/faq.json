@@ -2,10 +2,6 @@
   "title": "常見問題",
   "items": [
     {
-      "question": "這些項目是否屬於 eBPF 基金會？",
-      "answer": "<ul><li>本頁列出了一些使用 eBPF 作為底層核心技術的開源項目。 這些項目並非全部屬於 <a href=\"https://www.ebpf.foundation/\">eBPF 基金會</a>，但在此列出以展示當前eBPF項目概況。</ul>"
-    },
-    {
       "question": "添加你的項目",
       "answer": "<ol><li>確保項目符合列出的要求。 見下文。</li><li>提交 <a href=\"https://github.com/ebpf-io/ebpf.io\" target=\"_blank\" rel=\"noopener noreferrer\">Pull Request</a> t並提供所需的資訊。 使用一個已列出的項目作為範本。 應用程式的排序基於 Github 星數（從高到低），每季更新一次。</li><li>Pull request將由社群審核並由一位維護者合併。 如果您有任何疑問，請隨時在 <a href=\"https://ebpf.io/slack\">Slack</a> 上提問。</li></ol>"
     },

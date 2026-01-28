@@ -2,10 +2,6 @@
   "title": "よくある質問",
   "items": [
     {
-      "question": "これらは eBPF Foundation 傘下のプロジェクトですか？",
-      "answer": "<ul><li>このページは eBPF を基幹技術として利用している OSS を並べています。これらのプロジェクトはすべて <a href=\"https://www.ebpf.foundation/\">eBPF Foundation</a> 傘下のプロジェクトでありませんが、今日の eBPF プロジェクトの状況の調査としてリストアップされています。</li></ul>"
-    },
-    {
       "question": "あなたのプロジェクトを追加する",
       "answer": "<ol><li>あなたのプロジェクトが以下の条件を満たしているか確認してください。</li><li><a href=\"https://github.com/ebpf-io/ebpf.io\" target=\"_blank\" rel=\"noopener noreferrer\">プルリクエスト</a>を提出して、必要な情報を提供してください。すでにリストアップされているプロジェクトをテンプレートとして利用してください。プロジェクトの表示順序はGitHubのスターの多い順です。四半期ごとに更新されます。</li><li>プルリクエストはコミュニティによってレビューされ、メンテナによりマージされます。もし質問がある場合は <a href=\"https://ebpf.io/slack\">Slack</a> でお気軽に質問してください。</li></ol>"
     },

@@ -2,10 +2,6 @@
   "title": "Maswali Yanayoulizwa Sana",
   "items": [
     {
-      "question": "Je, miradi hii iko chini ya Msingi wa eBPF?",
-      "answer": "<ul><li>Ukurasa huu unataja idadi ya miradi ya chanzo wazi inayotumia eBPF kama teknolojia ya msingi. Miradi hii yote haijarudi chini ya <a href=\"https://www.ebpf.foundation/\">Msingi wa eBPF</a> lakini inatajwa hapa kama utafiti wa taswira ya mradi wa eBPF leo.</li></ul>"
-    },
-    {
       "question": "Ongeza mradi wako",
       "answer": "<ol><li>Hakikisha kuwa mradi unakidhi mahitaji ya kuingizwa. Tazama hapo chini.</li><li>Fungua <a href=\"https://github.com/ebpf-io/ebpf.io\" target=\"_blank\" rel=\"noopener noreferrer\">ombi la uchukuzi</a> na toa habari zinazohitajika. Tumia mradi ulioorodheshwa tayari kama kiolezo. Mpangilio wa maombi unategemea idadi ya Nyota za Github (kutoka juu hadi chini), zinazorekebishwa kila robo.</li><li>Ombi la uchukuzi litapitiwa na jamii na kuunganishwa na mmoja wa wahifadhi. Ikiwa una maswali yoyote, jisikie huru kuuliza kwenye <a href=\"https://ebpf.io/slack\">Slack</a>.</li></ol>"
     },
