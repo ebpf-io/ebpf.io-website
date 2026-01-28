@@ -3,7 +3,7 @@
   "items": [
     {
       "question": "これらは eBPF Foundation 傘下のプロジェクトですか？",
-      "answer": "<ul><li>このページは eBPF を基幹技術として利用している OSS を並べています。これらのプロジェクトはすべて <a href=\"https://www.ebpf.foundation/\">eBPF Foundation</a> 傘下のプロジェクトでありませんが、今日の eBPF プロジェクトの状況の調査としてリストアップされています。</li></ul>"
+      "answer": "<ul><li>いいえ。eBPF FoundationはeBPFの普及とセキュリティおよび信頼性の向上を支援するための様々な取り組みに携わっていますが、現在サードパーティのプロジェクトをホストしていません。詳細については、<a href=\"https://www.ebpf.foundation/\">eBPF.Foundation</a>をご覧ください。</li></ul>"
     },
     {
       "question": "あなたのプロジェクトを追加する",

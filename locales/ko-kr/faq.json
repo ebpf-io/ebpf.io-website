@@ -3,7 +3,7 @@
   "items": [
     {
       "question": "이러한 프로젝트들은 eBPF Foundation 소속인가요?",
-      "answer": "<ul><li>이 페이지는 eBPF를 코어 기술로 사용하는 오픈 소스 프로젝트를 나열하고 있습니다. 이러한 프로젝트들이 모두 <a href=\"https://www.ebpf.foundation/\">eBPF 재단</a> 에서 관리하는 프로젝트는 아니지만, eBPF 프로젝트 큰그림에 대한 조사의 일부로 나열되어있습니다.</li></ul>"
+      "answer": "<ul><li>아니요. eBPF 재단은 eBPF를 홍보하고 보안 및 신뢰성을 강화하기 위한 여러 이니셔티브에 참여하고 있지만, 현재 타사 프로젝트를 호스팅하지는 않습니다. 자세한 내용은 <a href=\"https://www.ebpf.foundation/\">eBPF.Foundation</a>을 참조하십시오.</li></ul>"
     },
     {
       "question": "여러분의 프로젝트를 추가하세요",

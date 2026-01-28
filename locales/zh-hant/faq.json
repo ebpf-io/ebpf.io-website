@@ -3,7 +3,7 @@
   "items": [
     {
       "question": "這些項目是否屬於 eBPF 基金會？",
-      "answer": "<ul><li>本頁列出了一些使用 eBPF 作為底層核心技術的開源項目。 這些項目並非全部屬於 <a href=\"https://www.ebpf.foundation/\">eBPF 基金會</a>，但在此列出以展示當前eBPF項目概況。</ul>"
+      "answer": "<ul><li>否。 eBPF 基金會參與了多項旨在推廣 eBPF 並提升其安全性和可靠性的計劃，但目前不託管第三方專案。更多詳情，請瀏覽 <a href=\"https://www.ebpf.foundation/\">eBPF.Foundation</a>。 </li></ul>"
     },
     {
       "question": "添加你的項目",

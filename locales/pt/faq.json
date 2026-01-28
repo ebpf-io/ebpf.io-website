@@ -3,7 +3,7 @@
   "items": [
     {
       "question": "Esses projetos são da Fundação eBPF?",
-      "answer": "<ul><li>Esta página lista vários projetos de código aberto que usam eBPF como tecnologia central subjacente. Esses projetos não estão todos sob a <a href=\"https://www.ebpf.foundation/\">Fundação eBPF</a>, mas estão listados aqui como uma pesquisa do panorama dos projetos eBPF hoje.</li></ul>"
+      "answer": "<ul><li>Não. A Fundação eBPF está envolvida em diversas iniciativas para ajudar a promover o eBPF e melhorar a sua segurança e fiabilidade, mas atualmente não acolhe projetos de terceiros. Para mais detalhes, aceda a <a href=\"https://www.ebpf.foundation/\">eBPF.Foundation</a>.</li></ul>"
     },
     {
       "question": "Adicione seu projeto",
