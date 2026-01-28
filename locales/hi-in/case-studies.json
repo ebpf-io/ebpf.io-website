@@ -724,6 +724,16 @@
           "to": "https://aurva.io/blog/the-ssl-tls-trap-why-your-database-security-goes-blind-in-production"
         }
       ]
+    },
+    {
+      "title": "metoro",
+      "description": "<strong>Metoro</strong> कोड में बदलाव की आवश्यकता के बिना Kubernetes में चल रहे एप्लिकेशन के ट्रेस जेनरेट करने और प्रदर्शन की निगरानी के लिए eBPF का उपयोग करता है।",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://metoro.io/blog/how-metoro-uses-ebpf"
+        }
+      ]
     }
   ]
 }

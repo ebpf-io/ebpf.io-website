@@ -704,6 +704,16 @@
           "to": "https://aurva.io/blog/the-ssl-tls-trap-why-your-database-security-goes-blind-in-production"
         }
       ]
+    },
+    {
+      "title": "metoro",
+      "description": "<strong>Metoro</strong>はeBPFを使用して、コードの変更なしにKubernetesで実行されるアプリケーションのトレースを生成し、パフォーマンスを監視します。",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://metoro.io/blog/how-metoro-uses-ebpf"
+        }
+      ]
     }
   ]
 }

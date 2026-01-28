@@ -622,6 +622,16 @@
           "to": "https://aurva.io/blog/the-ssl-tls-trap-why-your-database-security-goes-blind-in-production"
         }
       ]
+    },
+    {
+      "title": "metoro",
+      "description": "<strong>Metoro</strong> inatumia eBPF kuzalisha traces na kufuatilia utendaji wa programu zinazoendesha kwenye Kubernetes bila kuhitaji mabadiliko ya msimbo.",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://metoro.io/blog/how-metoro-uses-ebpf"
+        }
+      ]
     }
   ]
 }

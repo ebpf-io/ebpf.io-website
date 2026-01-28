@@ -714,6 +714,16 @@
           "to": "https://aurva.io/blog/the-ssl-tls-trap-why-your-database-security-goes-blind-in-production"
         }
       ]
+    },
+    {
+      "title": "metoro",
+      "description": "<strong>Metoro</strong>는 eBPF를 사용하여 코드 변경 없이 Kubernetes에서 실행되는 애플리케이션의 트레이스를 생성하고 성능을 모니터링합니다.",
+      "links": [
+        {
+          "text": "Blog",
+          "to": "https://metoro.io/blog/how-metoro-uses-ebpf"
+        }
+      ]
     }
   ]
 }
