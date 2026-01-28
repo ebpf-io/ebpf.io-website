@@ -2,10 +2,6 @@
   "title": "Domande Frequenti",
   "items": [
     {
-      "question": "Questi progetti sono sostenuti dalla Fondazione eBPF?",
-      "answer": "<ul><li>Questa pagina elenca alcuni progetti open source che impiegano eBPF come tecnologia fondante. Non tutti questi progetti sono sostenuti dalla <a href=\"https://www.ebpf.foundation/\">Fondazione eBPF</a>, ma l’elenco rappresenta una fotografia del panorama odierno dei progetti eBPF.</li></ul>"
-    },
-    {
       "question": "Aggiungi il tuo progetto",
       "answer": "<ol><li>Assicurati che il tuo progetto rispetti i requisiti richiesti. Vedi qui sotto.</li><li>Apri una <a href=\"https://github.com/ebpf-io/ebpf.io\" target=\"_blank\" rel=\"noopener noreferrer\">pull request</a> e fornisci le informazioni richieste. Utilizza uno dei progetti già presenti come modello. L’ordine di presentazione delle applicazioni è in base ai voti (le stelle ottenute) su Github (discendente), aggiornata ogni trimestre..</li><li>La richiesta di pull verrà valutata dalla community e ne verrà fatto il merge da uno dei manutentori. Chiedi pure su <a href=\"https://ebpf.io/slack\">Slack</a> se avessi domande da porre.</li></ol>"
     },
