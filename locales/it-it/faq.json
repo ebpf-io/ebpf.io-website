@@ -3,7 +3,7 @@
   "items": [
     {
       "question": "Questi progetti sono sostenuti dalla Fondazione eBPF?",
-      "answer": "<ul><li>Questa pagina elenca alcuni progetti open source che impiegano eBPF come tecnologia fondante. Non tutti questi progetti sono sostenuti dalla <a href=\"https://www.ebpf.foundation/\">Fondazione eBPF</a>, ma l’elenco rappresenta una fotografia del panorama odierno dei progetti eBPF.</li></ul>"
+      "answer": "<ul><li>No. La Fondazione eBPF è coinvolta in diverse iniziative per promuovere eBPF e migliorarne la sicurezza e l'affidabilità, ma attualmente non ospita progetti di terze parti. Per maggiori dettagli, consulta <a href=\"https://www.ebpf.foundation/\">eBPF.Foundation</a>.</li></ul>"
     },
     {
       "question": "Aggiungi il tuo progetto",

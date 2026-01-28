@@ -3,7 +3,7 @@
   "items": [
     {
       "question": "Je, miradi hii iko chini ya Msingi wa eBPF?",
-      "answer": "<ul><li>Ukurasa huu unataja idadi ya miradi ya chanzo wazi inayotumia eBPF kama teknolojia ya msingi. Miradi hii yote haijarudi chini ya <a href=\"https://www.ebpf.foundation/\">Msingi wa eBPF</a> lakini inatajwa hapa kama utafiti wa taswira ya mradi wa eBPF leo.</li></ul>"
+      "answer": "<ul><li>Hapana. Wakfu wa eBPF unahusika katika mipango kadhaa ya kusaidia kukuza eBPF na kuongeza usalama na uaminifu wake, lakini kwa sasa hauhifadhi miradi ya watu wengine. Kwa maelezo zaidi, angalia <a href=\"https://www.ebpf.foundation/\">eBPF.Foundation</a>.</li></ul>"
     },
     {
       "question": "Ongeza mradi wako",
