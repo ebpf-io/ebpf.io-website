@@ -29,6 +29,7 @@ import ecaptureLogo from './logos/ecapture.svg';
 import eunomiaLogo from './logos/eunomia.png';
 import falcoLogo from './logos/falco.svg';
 import gccLogo from './logos/gcc.svg';
+import gen0secLogo from './logos/gen0sec.svg';
 import gthulhuLogo from './logos/gthulhu.svg';
 import hbpfLogo from './logos/hbpf.svg';
 import huatuoLogo from './logos/huatuo.jpg';
@@ -122,6 +123,7 @@ const logos = {
   eunomiaLogo,
   falcoLogo,
   gccLogo,
+  gen0secLogo,
   hbpfLogo,
   hubbleLogo,
   huatuoLogo,
