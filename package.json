@@ -46,7 +46,7 @@
     "gatsby-remark-video": "^1.2.5",
     "lodash.get": "^4.4.2",
     "lodash.shuffle": "^4.2.0",
-    "markdown-it": "^14.0.0",
+    "markdown-it": "^14.1.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
