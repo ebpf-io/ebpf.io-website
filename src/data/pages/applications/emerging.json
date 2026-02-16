@@ -792,5 +792,19 @@
       }
     ],
     "githubStars": 1030
+  },
+  {
+    "logoUrl": "https://github.com/ErenAri/Aegis-BPF",
+    "name": "AegisBPF",
+    "logoName": "ebpfLogo",
+    "title": "eBPF CO-RE Runtime Security Enforcement",
+    "description": "AegisBPF is an open source runtime security agent using eBPF CO-RE and BPF LSM to enforce kernel-level security policies with audit-first rollout strategies.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/ErenAri/Aegis-BPF"
+      }
+    ],
+    "githubStars": 2
   }
 ]
