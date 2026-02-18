@@ -726,24 +726,6 @@
     "githubStars": 244
   },
   {
-    "logoUrl": "https://github.com/tecki/ebpfcat",
-    "name": "EBPFCat",
-    "logoName": "ebpfcatLogo",
-    "title": "EBPFCat, an EtherCAT master and Python-eBPF code generator",
-    "description": "EBPFCat is a controller for the industrial field bus EtherCAT, written entirely in Python, that uses ePBF and XDP to achieve real-time responses. The eBPF code is generated on-the-fly using a built-in code generator, which can also be used for other purposes.",
-    "urls": [
-      {
-        "label": "GitHub",
-        "url": "https://github.com/tecki/ebpfcat"
-      },
-      {
-        "label": "Website",
-        "url": "https://ebpfcat.readthedocs.io/en/latest/"
-      }
-    ],
-    "githubStars": 20
-  },
-  {
     "logoUrl": "https://github.com/pythops/oryx",
     "name": "Oryx",
     "logoName": "oryxLogo",
@@ -756,24 +738,6 @@
       }
     ],
     "githubStars": 2186
-  },
-  {
-    "logoUrl": "https://github.com/bombinisecurity/bombini",
-    "name": "Bombini",
-    "logoName": "bombiniLogo",
-    "title": "Bombini: eBPF-based Security Monitoring Agent",
-    "description": "Bombini is an eBPF-based security agent written entirely in Rust using the Aya library and built on LSM (Linux Security Module) BPF hooks. At its core, Bombini employs modular components called Detectors, each responsible for monitoring and reporting specific types of system events.",
-    "urls": [
-      {
-        "label": "GitHub",
-        "url": "https://github.com/bombinisecurity/bombini"
-      },
-      {
-        "label": "Website",
-        "url": "https://bombinisecurity.github.io/bombini/"
-      }
-    ],
-    "githubStars": 35
   },
   {
     "logoUrl": "https://github.com/ccfos/huatuo",
