@@ -2,6 +2,10 @@
   "title": "Frequently Asked Questions",
   "items": [
     {
+      "question": "Are these projects under the eBPF Foundation?",
+      "answer": "<ul><li>No. The eBPF Foundation is involved in a number of iniatives to help promote eBPF and enhance its security and reliability, but it does not currently host third-party projects. For more details, check out <a href=\"https://www.ebpf.foundation/\">eBPF.Foundation</a>.</li></ul>"
+    },
+    {
       "question": "Add your project",
       "answer": "<ol><li>Make sure that the project is meeting the requirements to be listed. See below.</li><li>Open a <a href=\"https://github.com/ebpf-io/ebpf.io\" target=\"_blank\" rel=\"noopener noreferrer\">pull request</a> and provide the required information. Use one of the already listed projects as a template. The ordering of applications is based on the number of Github stars (high to low), updated on a quarterly basis.</li><li>The pull request will be reviewed by the community and merged by one of the maintainers. If you have any questions, feel free to ask on <a href=\"https://ebpf.io/slack\">Slack</a>.</li></ol>"
     },
