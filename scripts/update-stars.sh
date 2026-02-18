@@ -9,6 +9,46 @@ DATA_FILES=(
     "src/data/pages/applications/major.json"
 )
 
+# Build a GraphQL query that fetches stargazerCount for all repos at once.
+# Each repo gets an alias like "repo0", "repo1", etc.
+# Returns a JSON object mapping each alias to its owner/name/stargazerCount.
+build_graphql_query() {
+    local projects="$1"
+    local length
+
+    length=$(echo "${projects}" | jq 'length')
+
+    local query="query {"
+    for ((i = 0; i < length; i++)); do
+        local gh_url owner_repo owner name
+        gh_url=$(echo "${projects}" | jq -r ".[$i].github")
+        owner_repo="${gh_url#https://github.com/}"
+        owner="${owner_repo%%/*}"
+        name="${owner_repo#*/}"
+
+        query+=" repo${i}: repository(owner: \"${owner}\", name: \"${name}\") { stargazerCount }"
+    done
+    query+=" }"
+
+    echo "${query}"
+}
+
+# Run a GraphQL query against the GitHub API and return the JSON response.
+run_graphql_query() {
+    local query="$1"
+    local body
+
+    body=$(jq -n --arg q "${query}" '{ query: $q }')
+
+    curl -f \
+        -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+        -H "Content-Type: application/json" \
+        -X POST \
+        -d "${body}" \
+        https://api.github.com/graphql
+}
+
+# Collect all projects (name + github URL + current stars) from a data file.
 get_projects_from_file() {
     local file="$1"
 
@@ -16,54 +56,7 @@ get_projects_from_file() {
         "${file}"
 }
 
-get_project() {
-    local projects="$1" index="$2"
-
-    echo "${projects}" | jq ".[$index]"
-}
-
-projects_nb() {
-    local project="$1"
-    echo "${project}" | jq 'length'
-}
-
-project_name() {
-    local project="$1"
-    echo "${project}" | jq -r '.name'
-}
-
-project_gh_repo() {
-    local project="$1"
-    echo "${project}" | jq -r '.github'
-}
-
-project_stars() {
-    local project="$1"
-    echo "${project}" | jq -r '.stars'
-}
-
-get_stars_count() {
-    local gh_repo="$1" repo_path
-
-    # Use the 'gh' CLI
-    #repo_path="repos/${gh_repo#https://github.com/}"
-    #gh api "${repo_path}" --jq '.stargazers_count'
-
-    # Use the 'curl' command
-    url="https://api.github.com/repos/${gh_repo#https://github.com/}"
-    headers=(
-        '-H "Accept: application/vnd.github+json"'
-        "-H 'Authorization: Bearer ${GITHUB_TOKEN}'"
-        '-H "X-GitHub-Api-Version: 2022-11-28"'
-    )
-    curl -L "${headers[@]}" "${url}" | jq '.stargazers_count'
-}
-
-print_progress() {
-    local current="$1" total="$2"
-    printf '  [%02u/%02u] ' "${current}" "${total}"
-}
-
+# Update the star count for a single project in a data file.
 update_file() {
     local file="$1" name="$2" stars="$3"
 
@@ -73,35 +66,40 @@ update_file() {
     mv "${file}.tmp" "${file}"
 }
 
-process_project() {
-    local project="$1" file="$2"
-    local name stars gh_repo
-    local stars_update
-
-    name=$(project_name "${project}")
-    stars=$(project_stars "${project}")
-    gh_repo=$(project_gh_repo "${project}")
-
-    echo "  Processing project: ${name}"
-    echo "    repository: ${gh_repo}, stars: ${stars}"
-
-    stars_update=$(get_stars_count "${gh_repo}")
-    echo "    new stars count: ${stars_update}"
-
-    update_file "${file}" "${name}" "${stars_update}"
-}
-
 process_file() {
-    local file="$1" projects_nb
+    local file="$1"
+    local projects projects_nb query response
+
     echo "Processing ${file}"
 
-    projects="$(get_projects_from_file "${file}")"
-    projects_nb="$(projects_nb "${projects}")"
+    projects=$(get_projects_from_file "${file}")
+    projects_nb=$(echo "${projects}" | jq 'length')
+
+    query=$(build_graphql_query "${projects}")
+    echo "  Fetching stars for ${projects_nb} projects with GraphQL query..."
+    response=$(run_graphql_query "${query}")
+
+    # Check for errors in the response
+    errors=$(echo "${response}" | jq '.errors // empty')
+    if [[ -n "${errors}" ]]; then
+        echo "  GraphQL errors:" >&2
+        echo "${errors}" | jq . >&2
+        exit 1
+    fi
 
     for ((i = 0; i < projects_nb; i++)); do
-        project="$(get_project "${projects}" "${i}")"
-        print_progress "$((i + 1))" "${projects_nb}"
-        process_project "${project}" "${file}"
+        local name old_stars new_stars
+        name=$(echo "${projects}" | jq -r ".[$i].name")
+        old_stars=$(echo "${projects}" | jq -r ".[$i].stars")
+        new_stars=$(echo "${response}" | jq ".data.repo${i}.stargazerCount")
+
+        if [[ "${new_stars}" == "null" || -z "${new_stars}" ]]; then
+            echo "  WARNING: could not fetch stars for ${name}, skipping" >&2
+            continue
+        fi
+
+        printf '  [%02u/%02u] %s: %s -> %s\n' "$((i + 1))" "${projects_nb}" "${name}" "${old_stars}" "${new_stars}"
+        update_file "${file}" "${name}" "${new_stars}"
     done
 }
 
