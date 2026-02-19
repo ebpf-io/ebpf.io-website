@@ -573,7 +573,8 @@ const ProjectCard = ({
                     className="text-sm text-gray-700 leading-relaxed line-clamp-3"
                     dangerouslySetInnerHTML={{
                       __html:
-                        description?.substring(0, 150) + (description?.length > 150 ? '...' : ''),
+                        (description?.substring(0, 150) ?? '') +
+                        (description?.length > 150 ? '...' : ''),
                     }}
                   />
                 </div>
