@@ -1,0 +1,32 @@
+name: "Lint"
+
+on:
+  pull_request:
+
+permissions:
+  contents: "read"
+
+jobs:
+  lint:
+    name: "Lint"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
+
+      - name: "Set up Node.js"
+        uses: "actions/setup-node@v4"
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: "Update npm"
+        run: "npm install -g npm@11"
+
+      - name: "Install dependencies"
+        run: "npm ci"
+
+      - name: "Run linters"
+        run: |
+          npm run lint:js -- --max-warnings 0
+          npm run lint:md
