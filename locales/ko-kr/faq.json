@@ -2,10 +2,6 @@
   "title": "자주 묻는 질문들",
   "items": [
     {
-      "question": "이러한 프로젝트들은 eBPF Foundation 소속인가요?",
-      "answer": "<ul><li>이 페이지는 eBPF를 코어 기술로 사용하는 오픈 소스 프로젝트를 나열하고 있습니다. 이러한 프로젝트들이 모두 <a href=\"https://www.ebpf.foundation/\">eBPF 재단</a> 에서 관리하는 프로젝트는 아니지만, eBPF 프로젝트 큰그림에 대한 조사의 일부로 나열되어있습니다.</li></ul>"
-    },
-    {
       "question": "여러분의 프로젝트를 추가하세요",
       "answer": "<ol><li>해당 프로젝트가 후술되는 요구사항을 만족하는지에 대해 확인해주세요, 다음의 내용을 확인해주세요.</li><li><a href=\"https://github.com/ebpf-io/ebpf.io\" target=\"_blank\" rel=\"noopener noreferrer\">Pull request</a> 를 열어주시고 필수 정보를 제공해주세요. 나열된 프로젝트를 예시로 삼아서 사용해주세요. 후술되는 애플리케이션의 순서는 GitHub의 스타 (높은순)으로 나열되어있으며, 이는 매 분기마다 업데이트됩니다.</li><li>Pull request는 커뮤니티에서 검토를 진행하며, eBPF 프로젝트 관리자에 의해서 merge 될 것입니다. 만일 질문이 있으시다면, <a href=\"https://ebpf.io/slack\">Slack</a> 에 자유롭게 질문해주세요.</li></ol>"
     },

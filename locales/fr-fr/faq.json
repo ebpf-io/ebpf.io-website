@@ -2,10 +2,6 @@
   "title": "Questions fréquemment posées",
   "items": [
     {
-      "question": "Ces projets relèvent-ils de la Fondation eBPF ?",
-      "answer": "<ul><li>Cette page répertorie un certain nombre de projets open source qui utilisent eBPF comme technologie de base sous-jacente. Ces projets ne relèvent pas tous de la <a href=\"https://www.ebpf.foundation/\">Fondation eBPF</a> mais sont répertoriés ici en tant qu’étude du paysage actuel des projets eBPF.</li></ul>"
-    },
-    {
       "question": "Ajoutez votre projet",
       "answer": "<ol><li>Assurez-vous que le projet répond aux exigences pour être répertorié. Voir ci-dessous.</li><li>Ouvrez une <a href=\"https://github.com/ebpf-io/ebpf.io\" target=\"_blank\" rel=\"noopener noreferrer\">pull request</a> et fournissez les informations requises. Utilisez l'un des projets déjà répertoriés comme modèle. L'ordre des candidatures est basé sur le nombre d'étoiles Github (de haut en bas), mis à jour tous les trimestres.</li><li>La pull request sera examinée par la communauté et fusionnée par l'un des responsables. Si vous avez des questions, n'hésitez pas à les poser sur <a href=\"https://ebpf.io/slack\">Slack</a>.</li></ol>"
     },
