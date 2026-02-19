@@ -35,7 +35,7 @@ Let's start with some news from companies working on and with eBPF.
 
 {/*2021-01-11*/}
 
-- [_Isovalent Looks to Transform Container Networking With eBPF_](https://containerjournal.com/topics/container-networking/isovalent-container-networking-in-2021-using-ebpf/),
+- [*Isovalent Looks to Transform Container Networking With eBPF*](https://containerjournal.com/topics/container-networking/isovalent-container-networking-in-2021-using-ebpf/),
   from Mike Vizard.  
   This brief, high-level post focuses on the transformations that eBPF brings
   to container networking and, incidentally, how it led to the creation of
@@ -44,7 +44,7 @@ Let's start with some news from companies working on and with eBPF.
 
 {/*2021-01-12*/}
 
-- [Kubernetes Podcast - _Episode #133: Cilium, with Thomas Graf_](https://kubernetespodcast.com/episode/133-cilium/),
+- [Kubernetes Podcast - *Episode #133: Cilium, with Thomas Graf*](https://kubernetespodcast.com/episode/133-cilium/),
   from Craig Box and Adam Glick.  
   Interviewed by Craig and Adam, Thomas Graf recounts the advent of eBPF, and
   how it introduced a new paradigm for network processing at a time when the
@@ -58,30 +58,30 @@ Let's start with some news from companies working on and with eBPF.
 {/*2021-01-18*/}
 
 - Optimyze.cloud [announced in a tweet](https://twitter.com/OptimyzeCloud/status/1351203905850519557)
-  that they are working on a “_Full-system lightweight continuous profiling for
+  that they are working on a “*Full-system lightweight continuous profiling for
   Linux Kernel, C/C++, Rust, Golang, Python, JVM, PHP (with Ruby and Node
-  planned for the future)_”, apparently based on eBPF.
+  planned for the future)*”, apparently based on eBPF.
 
 {/*2021-01-18*/}
 
-- [_Securing Containerized Environments with eBPF_](https://www.tag-cyber.com/advisory/articles/securing-containerized-environments-with-ebpf),
+- [*Securing Containerized Environments with eBPF*](https://www.tag-cyber.com/advisory/articles/securing-containerized-environments-with-ebpf),
   from Adam LeWinter.  
   Following the transition from physical hardware to virtual machines, most
   workflows are now moving to containers. In this context, new challenges in
   terms of visibility and security arise, Adam explains. Cilium leverages eBPF
   to provide network routing and observability. It combines metadata from
   layers 3 and 4 with layer 7 parameters such as the HTTP method, bringing
-  “_visibility and enforcement based on a service, pod, or container
-  identity_”.
+  “*visibility and enforcement based on a service, pod, or container
+  identity*”.
 
 ### Introductory Resources
 
 {/*2020-11-25*/}
 
-- [_BPF: The future of configs_](https://blog.habets.se/2020/11/BPF-the-future-of-configs.html),
+- [*BPF: The future of configs*](https://blog.habets.se/2020/11/BPF-the-future-of-configs.html),
   from Thomas Habets.  
   While many presentations focus on introducing eBPF's technical aspects, this
-  post takes a step back and describes why eBPF is “_such a big deal_”. For
+  post takes a step back and describes why eBPF is “*such a big deal*”. For
   network packet processing in particular, older frameworks (ipfwadm, ipchains,
   iptables, nftables) are all about configuration, about feeding data for the
   tables. By contrast, eBPF is about code and programming. This brings up
@@ -91,7 +91,7 @@ Let's start with some news from companies working on and with eBPF.
 
 {/*2020-12-11*/}
 
-- [_Linux Networking - eBPF, XDP, DPDK, VPP - What does all that mean?_](https://media.ccc.de/v/vnog-4-linux-networking-ebpf-xdp-dpdk-vp),
+- [*Linux Networking - eBPF, XDP, DPDK, VPP - What does all that mean?*](https://media.ccc.de/v/vnog-4-linux-networking-ebpf-xdp-dpdk-vp),
   from Andree Toonk.  
   Definitely oriented towards networking, this video introduces several of the
   frameworks that have been used in the domain of fast networking over the last
@@ -104,10 +104,10 @@ Let's start with some news from companies working on and with eBPF.
 
 {/*2020-12-19*/}
 
-- [_File Integrity Monitoring using eBPF_](https://www.devseccon.com/file-integrity-monitoring-using-ebpf-secadvent-day-19/),
+- [*File Integrity Monitoring using eBPF*](https://www.devseccon.com/file-integrity-monitoring-using-ebpf-secadvent-day-19/),
   from Sylvain Baubeau.  
   After a brief introduction to eBPF, this post explains how it can improve
-  features such as _File Integrity Monitoring_ as implemented in the Datadog
+  features such as *File Integrity Monitoring* as implemented in the Datadog
   Agent. Several challenges came up, such as portability across kernel
   versions, monitoring of all hard links pointing to a given file, or
   performance overhead. eBPF addresses most of them, and provides performance
@@ -115,7 +115,7 @@ Let's start with some news from companies working on and with eBPF.
 
 {/*2021-01-19*/}
 
-- [_Introduction to eBPF_](https://oswalt.dev/2021/01/introduction-to-ebpf/),
+- [*Introduction to eBPF*](https://oswalt.dev/2021/01/introduction-to-ebpf/),
   from Matt Oswalt.  
   This high-level introduction—technical details are left out for follow-up
   posts—explains what eBPF is, how it augments the Linux operating system, and
@@ -132,11 +132,11 @@ Let's start with some news from companies working on and with eBPF.
 
 {/*2020-12-23*/}
 
-- [Cilium documentation on _The Kubernetes Networking Guide_](https://k8s.networkop.co.uk/cni/cilium/),
+- [Cilium documentation on *The Kubernetes Networking Guide*](https://k8s.networkop.co.uk/cni/cilium/),
   from Michael Kashin.  
-  _The Kubernetes Networking Guide_ aims at providing “_an overview of various
+  *The Kubernetes Networking Guide* aims at providing “*an overview of various
   Kubernetes networking components, with a focus on exactly how they implement
-  the required functionality_”. The newly added Cilium's overview is
+  the required functionality*”. The newly added Cilium's overview is
   interesting in that it explains how Cilium deploys and uses eBPF programs and
   maps, and how to manipulate and inspect them. The document also details how
   to track a packet at the different stages of its processing in the datapath.
@@ -145,7 +145,7 @@ Let's start with some news from companies working on and with eBPF.
 
 {/*2020-12-24*/}
 
-- [_How to Trace Linux System Calls in Production with Minimal Impact on Performance_](https://pingcap.com/blog/how-to-trace-linux-system-calls-in-production-with-minimal-impact-on-performance),
+- [*How to Trace Linux System Calls in Production with Minimal Impact on Performance*](https://pingcap.com/blog/how-to-trace-linux-system-calls-in-production-with-minimal-impact-on-performance),
   from Wenbo Zhang.  
   The answer to the question in the title, as you can imagine, is eBPF. The
   post explains that strace is good to inspect system calls, but not usable in
@@ -250,7 +250,7 @@ make them persistent at a time when they have no reference in the kernel (such
 as a detached program or an unused map), another mechanism has been created:
 the eBPF virtual filesystem.
 
-The eBPF virtual (or _pseudo_) filesystem, often called bpffs, is traditionally
+The eBPF virtual (or *pseudo*) filesystem, often called bpffs, is traditionally
 mounted at `/sys/fs/bpf`, but any alternative mount point can work. It is
 possible to pin objects to this virtual filesystem, which is rendered as file
 paths. Calling the `bpf()` system call with its `BPF_OBJ_PIN` subcommand pins
@@ -284,10 +284,10 @@ We can then reuse this map when loading a program:
 # bpftool prog load bee.o /sys/fs/bpf/🐝 map name honeypot pinned /sys/fs/bpf/🍯
 ```
 
-Of course, you do not _have to_ use emojis. More information on the virtual
+Of course, you do not *have to* use emojis. More information on the virtual
 eBPF filesystem is available (although somewhat scattered) in the
-[_BPF and XDP Reference Guide_](https://docs.cilium.io/en/latest/bpf/#object-pinning).
-A post called [_Lifetime of BPF objects_](https://facebookmicrosites.github.io/bpf/blog/2018/08/31/object-lifetime.html),
+[*BPF and XDP Reference Guide*](https://docs.cilium.io/en/latest/bpf/#object-pinning).
+A post called [*Lifetime of BPF objects*](https://facebookmicrosites.github.io/bpf/blog/2018/08/31/object-lifetime.html),
 from Alexei Starovoitov, is an excellent resource to learn more about how eBPF
 objects are managed in the kernel. More information on bpftool usage is
 available from [the dedicated man pages](https://www.mankier.com/8/bpftool).

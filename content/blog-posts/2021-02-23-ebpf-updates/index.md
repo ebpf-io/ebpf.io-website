@@ -80,9 +80,9 @@ held online, and included several presentations related to eBPF.
 
 - [*Deploying eBPF, XDP & AF_XDP for Cloud Native*](https://fosdem.org/2021/schedule/event/sdn_ebpf_afxdp/),
   from Dave Cremins and Gary Loughnane.  
-  As per the abstract, “_This talk will cover an introduction to AF_XDP, why it
+  As per the abstract, “*This talk will cover an introduction to AF_XDP, why it
   is suited to cloud native microservices, how it can be deployed today and the
-  deployment challenges as well as their solutions._” [We could not attend the
+  deployment challenges as well as their solutions.*” [We could not attend the
   presentation, and the video and slides have not been uploaded yet as of this
   writing].
 
