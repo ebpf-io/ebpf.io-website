@@ -8,8 +8,8 @@ import Hero from 'components/pages/project-landscape/hero';
 import ProjectsList from 'components/pages/project-landscape/projects-list';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-import emergingApplications from 'data/pages/applications/emerging';
-import majorApplications from 'data/pages/applications/major';
+import emergingApplications from 'data/pages/applications/emerging.json';
+import majorApplications from 'data/pages/applications/major.json';
 import createPageUrl from 'utils/create-page-url';
 
 const pageUrls = createPageUrl('applications');
