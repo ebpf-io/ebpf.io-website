@@ -46,7 +46,7 @@ module.exports = ({ node, actions }) => {
 
     const slug = node.internal.contentFilePath.replace('.md', '').split('/').slice(index)[0];
 
-    return createNodeField({
+    createNodeField({
       node,
       name: 'slug',
       value: slug,
