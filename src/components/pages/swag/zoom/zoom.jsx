@@ -31,7 +31,6 @@ const Zoom = () => (
         <a
           className="hover:bg-black-hover focus-visible:ring-outline relative mt-5 inline-flex h-[52px] items-center justify-center whitespace-nowrap rounded-md bg-black px-12 font-extrabold leading-none text-white transition-colors duration-200 focus:outline-none focus-visible:ring-2 disabled:pointer-events-none md:h-[44px] sm:w-full"
           href={data.buttonUrl}
-          theme="black"
           download
         >
           {data.buttonText}
