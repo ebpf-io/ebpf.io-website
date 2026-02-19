@@ -2,13 +2,17 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+// eslint-disable-next-line import/no-unresolved
 import { Navigation } from 'swiper/modules';
+// eslint-disable-next-line import/no-unresolved
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import VideoPlayer from 'components/shared/video-player/';
 import ArrowIcon from 'icons/arrow.inline.svg';
 
+// eslint-disable-next-line import/no-unresolved
 import 'swiper/css';
+// eslint-disable-next-line import/no-unresolved
 import 'swiper/css/navigation';
 
 const VideoGallery = ({ title, items, className }) => {
