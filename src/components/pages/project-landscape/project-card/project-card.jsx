@@ -512,12 +512,21 @@ const ProjectCard = ({
     hoverModalManager.setActiveCard(null);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      handleProjectClick();
+    }
+  };
+
   if (viewMode === 'grid') {
     return (
       <>
         <div
+          role="button"
           className="group relative bg-white border border-dashed border-gray-80 rounded-lg p-4 hover:shadow-lg transition-all duration-200 cursor-pointer h-40 flex flex-col"
           id={slug}
+          tabIndex={0}
+          onKeyDown={handleKeyDown}
           onClick={handleProjectClick}
           onMouseEnter={handleMouseEnter}
         >
@@ -617,11 +626,14 @@ const ProjectCard = ({
 
   return (
     <>
-      <li
-        className="flex items-start space-x-8 pb-10 pt-7 sm:flex-col sm:space-x-0 sm:pb-7 sm:pt-6 cursor-pointer transition-colors duration-200 rounded-lg"
-        id={slug}
-        onClick={handleProjectClick}
-      >
+      <li id={slug}>
+        <div
+          role="button"
+          className="flex items-start space-x-8 pb-10 pt-7 sm:flex-col sm:space-x-0 sm:pb-7 sm:pt-6 cursor-pointer transition-colors duration-200 rounded-lg"
+          tabIndex={0}
+          onKeyDown={handleKeyDown}
+          onClick={handleProjectClick}
+        >
         {logo ? (
           <div className="mb-4 w-full max-w-[116px] shrink-0 sm:max-w-[90px] xs:max-w-[80px]">
             <Logo logo={logo} name={name} viewMode="card" />
@@ -656,6 +668,7 @@ const ProjectCard = ({
               ))}
             </div>
           )}
+        </div>
         </div>
       </li>
 
