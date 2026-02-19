@@ -393,9 +393,9 @@ Updates!
 
 - [*BPF binaries: BTF, CO-RE, and the future of BPF perf tools*](http://www.brendangregg.com/blog/2020-11-04/bpf-co-re-btf-libbpf.html),
   from Brendan Gregg.
-  _Catching up: This post is from November 2020, which does not really
+  *Catching up: This post is from November 2020, which does not really
   correspond to the time frame otherwise covered in this issue, but I missed it
-  at the time and it feels important._  
+  at the time and it feels important.*  
   After a brief overview of BTF and CO-RE, the post covers the next steps for
   existing eBPF-based tracing tools. In particular, it announces that the
   Python bindings used with the BCC tools should be considered as deprecated,
@@ -409,8 +409,8 @@ Updates!
 - [*BMC: Accelerating Memcached using Safe In-kernel Caching and Pre-stack Processing*](https://www.usenix.org/conference/nsdi21/presentation/ghigoff)
   ([PDF](https://www.usenix.org/system/files/nsdi21-ghigoff.pdf)),
   from Yoann Ghigoff *et al.*
-  Published at NSDI '21 (USENIX), this paper introduces BMC, the _BPF Memcached
-  Cache_, a first-level in-kernel cache relying on XDP to accelerate Memcached.
+  Published at NSDI '21 (USENIX), this paper introduces BMC, the *BPF Memcached
+  Cache*, a first-level in-kernel cache relying on XDP to accelerate Memcached.
   It improves the response time, by avoiding costly traversals of the network
   stack. The authors provide extensive evaluation of the mechanism and compare
   it to an improved version of Memcached. Paul Chaignon also wrote
@@ -610,8 +610,8 @@ down the changes into categories.
   (Cong Wang,
   [link](https://lore.kernel.org/bpf/20210331023237.41094-1-xiyou.wangcong@gmail.com/t/#u))
 
-- Extend batch map operations (lookup, update, delete) to LPM (_Longest Prefix
-  Match_) maps.
+- Extend batch map operations (lookup, update, delete) to LPM (*Longest Prefix
+  Match*) maps.
   (Pedro Tammela,
   [link](https://lore.kernel.org/bpf/20210323025058.315763-1-pctammela@gmail.com/t/#u))
 
