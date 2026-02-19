@@ -23,6 +23,7 @@ module.exports = {
     'no-unused-vars': 'error',
     'no-shadow': 'off',
     'no-undef': 'error',
+    'no-console': 'off',
     'react/prop-types': 'error',
     'react/no-array-index-key': 'off',
     'react/jsx-props-no-spreading': 'off',
