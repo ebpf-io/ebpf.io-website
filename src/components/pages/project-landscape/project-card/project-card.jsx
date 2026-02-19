@@ -1,4 +1,3 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 
@@ -105,6 +104,7 @@ const logos = {
   beylaLogo,
   bombiniLogo,
   bpfilterLogo,
+  bpfireLogo,
   bpfmanLogo,
   bpftoolLogo,
   bpftopLogo,
@@ -116,15 +116,16 @@ const logos = {
   corootLogo,
   daeLogo,
   deepflowLogo,
-  ebpfcatLogo,
   ebpfForWindowsLogo,
+  ebpfcatLogo,
   ecaptureLogo,
   eunomiaLogo,
   falcoLogo,
   gccLogo,
+  gthulhuLogo,
   hbpfLogo,
-  hubbleLogo,
   huatuoLogo,
+  hubbleLogo,
   ingressNodeFirewallLogo,
   inspektorGadgetLogo,
   katranLogo,
@@ -160,96 +161,8 @@ const logos = {
   tetragonLogo,
   traceeLogo,
   trayceLogo,
-  gthulhuLogo,
   vc5Logo,
   wachyLogo,
-  bpftoolLogo,
-  corootLogo,
-  alazLogo,
-  qtapLogo,
-  bpfilterLogo,
-  bpfireLogo,
-  tetragonLogo: (
-    <StaticImage
-      src="./logos/tetragon.svg"
-      alt="Tetragon"
-      loading="lazy"
-      width={116}
-      height={116}
-    />
-  ),
-  loxiLBLogo: (
-    <StaticImage src="./logos/loxilb.png" alt="Loxi LB" loading="lazy" width={116} height={116} />
-  ),
-  pwruLogo: (
-    <StaticImage src="./logos/pwru.png" alt="pwru" loading="lazy" width={116} height={116} />
-  ),
-  wachyLogo: (
-    <StaticImage src="./logos/wachy.png" alt="wachy" loading="lazy" width={116} height={116} />
-  ),
-  skywalkingLogo: (
-    <StaticImage
-      src="./logos/skywalking.png"
-      alt="SkyWalking"
-      loading="lazy"
-      width={116}
-      height={116}
-    />
-  ),
-  pulsarLogo: (
-    <StaticImage src="./logos/pulsar.png" alt="Pulsar" loading="lazy" width={116} height={116} />
-  ),
-  deepflowLogo: (
-    <StaticImage
-      src="./logos/deepflow.png"
-      alt="DeepFlow"
-      loading="lazy"
-      width={116}
-      height={116}
-    />
-  ),
-  inspektorGadgetLogo: (
-    <StaticImage
-      src="./logos/inspektor_gadget.png"
-      alt="Inspektor Gadget"
-      loading="lazy"
-      width={116}
-      height={116}
-    />
-  ),
-  bpftraceLogo: (
-    <StaticImage
-      src="./logos/bpftrace.png"
-      alt="bpftrace"
-      loading="lazy"
-      width={116}
-      height={116}
-    />
-  ),
-  eunomiaLogo: (
-    <StaticImage src="./logos/eunomia.png" alt="Eunomia" loading="lazy" width={116} height={116} />
-  ),
-  kindlingLogo: (
-    <StaticImage
-      src="./logos/kindling.png"
-      alt="Kindling"
-      loading="lazy"
-      width={116}
-      height={116}
-    />
-  ),
-  odigosLogo: (
-    <StaticImage src="./logos/odigos.svg" alt="Odigos" loading="lazy" width={116} height={116} />
-  ),
-  ingressNodeFirewallLogo,
-  beylaLogo,
-  pcapplusplusLogo,
-  bpftopLogo,
-  kubeskoopLogo,
-  kflowLogo: (
-    <StaticImage src="./logos/kflow.png" alt="kflow" loading="lazy" width={116} height={116} />
-  ),
-  kyanosLogo,
 };
 
 const Logo = ({ logo, name, viewMode }) => {
