@@ -326,6 +326,7 @@ const ProjectModal = ({ project, onClose }) => {
             </div>
           </div>
           <button
+            type="button"
             className="p-3 hover:bg-red-50 hover:text-red-600 rounded-xl transition-all duration-200 shrink-0 text-gray-400"
             aria-label="Close modal"
             onClick={onClose}
