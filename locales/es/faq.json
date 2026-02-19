@@ -3,7 +3,7 @@
   "items": [
     {
       "question": "¿Estos proyectos pertenecen a la Fundación eBPF?",
-    "answer": "<ul><li>No. La Fundación eBPF participa en diversas iniciativas para promover eBPF y mejorar su seguridad y fiabilidad, pero actualmente no alberga proyectos de terceros. Para más información, consulte <a href="https://www.ebpf.foundation/">eBPF.Foundation</a>.</li></ul>"
+    "answer": "<ul><li>No. La Fundación eBPF participa en diversas iniciativas para promover eBPF y mejorar su seguridad y fiabilidad, pero actualmente no alberga proyectos de terceros. Para más información, consulte <a href="https://www.ebpf.foundation/\">eBPF.Foundation</a>.</li></ul>"
 },
     {
       "question": "Añade tu proyecto",
