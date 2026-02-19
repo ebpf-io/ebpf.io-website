@@ -91,7 +91,6 @@ Hero.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
-  hubspotFormId: PropTypes.string.isRequired,
 };
 
 export default Hero;
