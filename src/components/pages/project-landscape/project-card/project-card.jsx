@@ -301,9 +301,7 @@ const ProjectModal = ({ project, onClose }) => {
 
     return logo ? (
       <img src={logo} alt={project.name} loading="lazy" width={80} height={80} />
-    ) : (
-      <></>
-    );
+    ) : null;
   };
 
   return (
