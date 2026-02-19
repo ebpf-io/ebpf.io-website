@@ -21,7 +21,7 @@ const Hero = ({
   title,
   time,
   description,
-  ctaButtons = [],
+  ctaButtons,
   illustrationUrl,
   rootClassName,
 }) => (
@@ -90,6 +90,12 @@ Hero.propTypes = {
   ctaButtons: PropTypes.array,
   illustrationUrl: PropTypes.string,
   rootClassName: PropTypes.string,
+};
+
+Hero.defaultProps = {
+  ctaButtons: [],
+  illustrationUrl: null,
+  rootClassName: null,
 };
 
 export default Hero;
