@@ -756,5 +756,19 @@
       }
     ],
     "githubStars": 1084
+  },
+  {
+    "logoUrl": "https://github.com/AlexZhao/UmbrellaNightsWatch",
+    "name": "UmbrellaNW",
+    "logoName": "umbrellaNWLogo",
+    "title": "eBPF for linux host operating system runtime monitoring, audit, security block, firewall",
+    "description": "UmbrellaNW use eBPF for Linux host runtime security monitoring and measuring, with tracepoint, eBPF LSM and XDP firewall.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/AlexZhao/UmbrellaNightsWatch"
+      }
+    ],
+    "githubStars": 1
   }
 ]
