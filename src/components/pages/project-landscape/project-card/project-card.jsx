@@ -68,6 +68,7 @@ import sysinternalsLogo from './logos/sysinternals.svg';
 import tetragonLogo from './logos/tetragon.svg';
 import traceeLogo from './logos/tracee.svg';
 import trayceLogo from './logos/trayce.svg';
+import umbrellaNWLogo from './logos/umbrellaNW.png';
 import vc5Logo from './logos/vc5.svg';
 import wachyLogo from './logos/wachy.png';
 
@@ -250,6 +251,7 @@ const logos = {
     <StaticImage src="./logos/kflow.png" alt="kflow" loading="lazy" width={116} height={116} />
   ),
   kyanosLogo,
+  umbrellaNWLogo,
 };
 
 const Logo = ({ logo, name, viewMode }) => {
