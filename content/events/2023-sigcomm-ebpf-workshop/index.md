@@ -7,6 +7,6 @@ description: "ACM SIGCOMM is the flagship academic conference in the field of ne
 linkUrl: 'https://conferences.sigcomm.org/sigcomm/2023/workshop-ebpf.html'
 ogImage: ogimage.png
 type: Conference
-conference: 'SIGCOMM eBPF Workshop'
+conference: 'eBPF Workshop'
 isFeatured: false
 ---
