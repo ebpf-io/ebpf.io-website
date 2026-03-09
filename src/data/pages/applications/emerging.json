@@ -15,7 +15,7 @@
         "url": "https://pyroscope.io/"
       }
     ],
-    "githubStars": 11200
+    "githubStars": 11273
   },
   {
     "logoUrl": "https://github.com/gojue/ecapture",
@@ -33,7 +33,7 @@
         "url": "https://ecapture.cc/"
       }
     ],
-    "githubStars": 15001
+    "githubStars": 15032
   },
   {
     "logoUrl": "https://github.com/coroot/coroot",
@@ -51,7 +51,7 @@
         "url": "https://coroot.com/"
       }
     ],
-    "githubStars": 7392
+    "githubStars": 7458
   },
   {
     "logoUrl": "https://github.com/cilium/hubble",
@@ -69,7 +69,7 @@
         "url": "https://cilium.io/"
       }
     ],
-    "githubStars": 4085
+    "githubStars": 4098
   },
   {
     "logoUrl": "https://github.com/aquasecurity/tracee",
@@ -83,7 +83,7 @@
         "url": "https://github.com/aquasecurity/tracee"
       }
     ],
-    "githubStars": 4372
+    "githubStars": 4417
   },
   {
     "logoUrl": "https://github.com/keyval-dev/odigos",
@@ -101,7 +101,7 @@
         "url": "https://odigos.io"
       }
     ],
-    "githubStars": 3626
+    "githubStars": 3634
   },
   {
     "logoUrl": "https://github.com/cilium/pwru",
@@ -115,7 +115,7 @@
         "url": "https://github.com/cilium/pwru"
       }
     ],
-    "githubStars": 3655
+    "githubStars": 3680
   },
   {
     "logoUrl": "https://github.com/deepflowys/deepflow",
@@ -133,7 +133,7 @@
         "url": "https://deepflow.yunshan.net/community.html"
       }
     ],
-    "githubStars": 3704
+    "githubStars": 3761
   },
   {
     "logoUrl": "https://github.com/iovisor/kubectl-trace",
@@ -147,7 +147,7 @@
         "url": "https://github.com/iovisor/kubectl-trace"
       }
     ],
-    "githubStars": 2159
+    "githubStars": 2164
   },
   {
     "logoUrl": "https://github.com/daeuniverse/dae",
@@ -161,7 +161,7 @@
         "url": "https://github.com/daeuniverse/dae"
       }
     ],
-    "githubStars": 5167
+    "githubStars": 5230
   },
   {
     "logoUrl": "https://github.com/microsoft/retina",
@@ -179,7 +179,7 @@
         "url": "https://retina.sh"
       }
     ],
-    "githubStars": 3093
+    "githubStars": 3101
   },
   {
     "logoUrl": "https://github.com/hengyoush/kyanos",
@@ -197,7 +197,7 @@
         "url": "https://kyanos.io"
       }
     ],
-    "githubStars": 4983
+    "githubStars": 4990
   },
   {
     "logoUrl": "https://github.com/kinvolk/inspektor-gadget",
@@ -215,7 +215,7 @@
         "url": "https://www.inspektor-gadget.io/"
       }
     ],
-    "githubStars": 2717
+    "githubStars": 2741
   },
   {
     "logoUrl": "https://github.com/Sysinternals/SysmonForLinux",
@@ -229,7 +229,7 @@
         "url": "https://github.com/Sysinternals/SysmonForLinux"
       }
     ],
-    "githubStars": 2067
+    "githubStars": 2074
   },
   {
     "logoUrl": "https://github.com/groundcover-com/caretta",
@@ -243,7 +243,7 @@
         "url": "https://github.com/groundcover-com/caretta"
       }
     ],
-    "githubStars": 1988
+    "githubStars": 1997
   },
   {
     "logoUrl": "https://github.com/solo-io/bumblebee",
@@ -261,7 +261,7 @@
         "url": "https://bumblebee.io/"
       }
     ],
-    "githubStars": 1294
+    "githubStars": 1295
   },
   {
     "logoUrl": "https://github.com/kubearmor/KubeArmor",
@@ -279,7 +279,7 @@
         "url": "https://kubearmor.com"
       }
     ],
-    "githubStars": 2054
+    "githubStars": 2058
   },
   {
     "logoUrl": "https://github.com/grafana/beyla",
@@ -297,7 +297,7 @@
         "url": "https://grafana.com/oss/beyla-ebpf/"
       }
     ],
-    "githubStars": 1932
+    "githubStars": 1943
   },
   {
     "logoUrl": "https://github.com/iovisor/ply",
@@ -315,7 +315,7 @@
         "url": "https://wkz.github.io/ply/"
       }
     ],
-    "githubStars": 1026
+    "githubStars": 1027
   },
   {
     "logoUrl": "https://github.com/sustainable-computing-io/kepler",
@@ -333,7 +333,7 @@
         "url": "https://sustainable-computing.io"
       }
     ],
-    "githubStars": 1458
+    "githubStars": 1471
   },
   {
     "logoUrl": "https://github.com/Exein-io/pulsar",
@@ -351,7 +351,7 @@
         "url": "https://pulsar.sh/"
       }
     ],
-    "githubStars": 1002
+    "githubStars": 1005
   },
   {
     "logoUrl": "https://github.com/merbridge/merbridge",
@@ -369,7 +369,7 @@
         "url": "https://merbridge.io/"
       }
     ],
-    "githubStars": 804
+    "githubStars": 806
   },
   {
     "logoUrl": "https://github.com/kindlingproject/kindling",
@@ -405,7 +405,7 @@
         "url": "https://rubrikinc.github.io/wachy/"
       }
     ],
-    "githubStars": 580
+    "githubStars": 581
   },
   {
     "logoUrl": "https://github.com/qpoint-io/qtap",
@@ -423,7 +423,7 @@
         "url": "https://qpoint.io/qtap/"
       }
     ],
-    "githubStars": 1415
+    "githubStars": 1418
   },
   {
     "logoUrl": "https://github.com/getanteon/alaz",
@@ -437,7 +437,7 @@
         "url": "https://github.com/getanteon/alaz"
       }
     ],
-    "githubStars": 717
+    "githubStars": 718
   },
   {
     "logoUrl": "https://github.com/eunomia-bpf/eunomia-bpf",
@@ -455,7 +455,7 @@
         "url": "https://eunomia.dev/"
       }
     ],
-    "githubStars": 849
+    "githubStars": 856
   },
   {
     "logoUrl": "https://github.com/alibaba/kubeskoop",
@@ -473,7 +473,7 @@
         "url": "https://kubeskoop.io"
       }
     ],
-    "githubStars": 676
+    "githubStars": 677
   },
   {
     "logoUrl": "https://github.com/l3af-project",
@@ -491,7 +491,7 @@
         "url": "https://l3af.io"
       }
     ],
-    "githubStars": 207
+    "githubStars": 208
   },
   {
     "logoUrl": "https://skywalking.apache.org/",
@@ -509,7 +509,7 @@
         "url": "https://skywalking.apache.org/"
       }
     ],
-    "githubStars": 231
+    "githubStars": 232
   },
   {
     "logoUrl": "https://github.com/loxilb-io/loxilb",
@@ -527,7 +527,7 @@
         "url": "https://www.loxilb.io/"
       }
     ],
-    "githubStars": 1825
+    "githubStars": 1829
   },
   {
     "logoUrl": "https://github.com/bpfman/bpfman",
@@ -545,7 +545,7 @@
         "url": "https://bpfman.io"
       }
     ],
-    "githubStars": 714
+    "githubStars": 723
   },
   {
     "logoUrl": "https://github.com/netobserv/netobserv-ebpf-agent",
@@ -559,7 +559,7 @@
         "url": "https://github.com/netobserv/netobserv-ebpf-agent"
       }
     ],
-    "githubStars": 197
+    "githubStars": 198
   },
   {
     "logoUrl": "https://github.com/openshift/ingress-node-firewall",
@@ -587,7 +587,7 @@
         "url": "https://github.com/Netflix/bpftop"
       }
     ],
-    "githubStars": 2614
+    "githubStars": 2618
   },
   {
     "logoUrl": "https://github.com/tarsal-oss/kflowd",
@@ -619,7 +619,7 @@
         "url": "https://github.com/open-telemetry/opentelemetry-ebpf-profiler"
       }
     ],
-    "githubStars": 3019
+    "githubStars": 3033
   },
   {
     "logoUrl": "https://github.com/davidcoles/vc5",
@@ -651,7 +651,7 @@
         "url": "https://kubescape.io/"
       }
     ],
-    "githubStars": 11191
+    "githubStars": 11226
   },
   {
     "logoUrl": "https://github.com/facebook/bpfilter",
@@ -669,7 +669,7 @@
         "url": "https://bpfilter.io/"
       }
     ],
-    "githubStars": 310
+    "githubStars": 315
   },
   {
     "logoUrl": "https://github.com/vincentmli/bpfire",
@@ -687,7 +687,7 @@
         "url": "https://www.bpfire.net/"
       }
     ],
-    "githubStars": 76
+    "githubStars": 77
   },
   {
     "logoUrl": "https://github.com/evanrolfe/trayce_gui",
@@ -723,7 +723,7 @@
         "url": "https://gthulhu.github.io/docs/"
       }
     ],
-    "githubStars": 370
+    "githubStars": 374
   },
   {
     "logoUrl": "https://github.com/pythops/oryx",
@@ -737,7 +737,7 @@
         "url": "https://github.com/pythops/oryx"
       }
     ],
-    "githubStars": 2384
+    "githubStars": 2404
   },
   {
     "logoUrl": "https://github.com/ccfos/huatuo",
@@ -755,6 +755,6 @@
         "url": "https://huatuo.tech/"
       }
     ],
-    "githubStars": 1084
+    "githubStars": 1121
   }
 ]
