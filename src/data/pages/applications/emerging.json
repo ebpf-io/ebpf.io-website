@@ -756,5 +756,23 @@
       }
     ],
     "githubStars": 1084
+  },
+  {
+    "logoUrl": "https://github.com/mc36/freeRtr",
+    "name": "freerouter",
+    "logoName": "freertrLogo",
+    "title": " freeRouter - networking swiss army knife",
+    "description": "freerouter is an open source project router focusing on routing protocols with one of the fastpaths implemented in bpf"
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/mc36/freeRtr"
+      },
+      {
+        "label": "Website",
+        "url": "http://freertr.org/"
+      }
+    ],
+    "githubStars": 97
   }
 ]
