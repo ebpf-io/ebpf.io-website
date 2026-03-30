@@ -756,5 +756,23 @@
       }
     ],
     "githubStars": 1084
+  },
+  {
+    "logoUrl": "https://github.com/keploy/keploy",
+    "name": "Keploy",
+    "logoName": "keployLogo",
+    "title": "Open-source API and integration testing platform",
+    "description": "Open-source API and integration testing platform that auto-generates tests and data mocks by capturing real traffic using eBPF at the network layer, requiring zero code changes and working with any language or framework.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/keploy/keploy"
+      },
+      {
+        "label": "Website",
+        "url": "https://keploy.io"
+      }
+    ],
+    "githubStars": 16669
   }
 ]
