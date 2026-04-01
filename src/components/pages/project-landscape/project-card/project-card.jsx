@@ -636,43 +636,41 @@ const ProjectCard = ({
           onKeyDown={handleKeyDown}
           onClick={handleProjectClick}
         >
-          {logo ? (
-            <div className="mb-4 w-full max-w-[116px] shrink-0 sm:max-w-[90px] xs:max-w-[80px]">
-              <Logo logo={logo} name={name} viewMode="card" />
-            </div>
-          ) : (
-            <div className="w-full max-w-[116px] shrink-0 sm:max-w-[90px]">
-              <div className="w-full h-[116px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center" />
+        {logo ? (
+          <div className="mb-4 w-full max-w-[116px] shrink-0 sm:max-w-[90px] xs:max-w-[80px]">
+            <Logo logo={logo} name={name} viewMode="card" />
+          </div>
+        ) : (
+          <div className="w-full max-w-[116px] shrink-0 sm:max-w-[90px]">
+            <div className="w-full h-[116px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center" />
+          </div>
+        )}
+        <div className="flex-1 min-w-0">
+          <Heading className="heading-6xl font-semibold" id={slug}>
+            {name}
+          </Heading>
+          {title && <h4 className="mt-0.5 font-sans text-lg font-medium leading-snug">{title}</h4>}
+          <p className="mt-2.5" dangerouslySetInnerHTML={{ __html: description }} />
+
+          {urls && (
+            <div className="mt-3.5 flex flex-wrap gap-x-5 gap-y-3.5">
+              {urls.map(({ label, url }, index) => (
+                <Link
+                  className="relative uppercase leading-none tracking-[0.03em] before:absolute before:-right-3 before:top-1/2 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 last:before:hidden"
+                  size="sm"
+                  theme="black"
+                  to={url}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={index}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {label}
+                </Link>
+              ))}
             </div>
           )}
-          <div className="flex-1 min-w-0">
-            <Heading className="heading-6xl font-semibold" id={slug}>
-              {name}
-            </Heading>
-            {title && (
-              <h4 className="mt-0.5 font-sans text-lg font-medium leading-snug">{title}</h4>
-            )}
-            <p className="mt-2.5" dangerouslySetInnerHTML={{ __html: description }} />
-
-            {urls && (
-              <div className="mt-3.5 flex flex-wrap gap-x-5 gap-y-3.5">
-                {urls.map(({ label, url }, index) => (
-                  <Link
-                    className="relative uppercase leading-none tracking-[0.03em] before:absolute before:-right-3 before:top-1/2 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 last:before:hidden"
-                    size="sm"
-                    theme="black"
-                    to={url}
-                    target="_blank"
-                    rel="noreferrer"
-                    key={index}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+        </div>
         </div>
       </li>
 
