@@ -19,7 +19,7 @@ const items = [
       />
     ),
     linkUrl:
-      'https://isovalent.com/books/ebpf/#form?utm_source=website-ebpf&utm_medium=referral&utm_campaign=partner',
+      'https://www.oreilly.com/library/view/what-is-ebpf/9781492097266/',
     linkText: 'What is eBPF? Liz Rice, O’Reilly, 2022',
   },
   {
@@ -82,7 +82,7 @@ const items = [
       />
     ),
     linkUrl:
-      'https://isovalent.com/books/learning-ebpf/#form?utm_source=website-ebpf&utm_medium=referral&utm_campaign=partner',
+      'https://www.oreilly.com/library/view/learning-ebpf/9781098135119/',
     linkText: 'Learning eBPF O’Reilly book by Liz Rice',
   },
 ];
