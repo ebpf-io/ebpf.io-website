@@ -40,45 +40,50 @@ const PreviousReleases = () => {
     }, {});
 
   const newsletterData = getReleases();
+  const hasReleases = Object.keys(newsletterData).length > 0;
 
-  return Object.keys(newsletterData).length > 0 ? (
+  return (
     <section className="releases safe-paddings mb-32 mt-40 lg:my-32 md:my-24 sm:my-20" id="archive">
       <div className="container">
         <h2 className="heading-9xl text-center font-semibold tracking-[-0.01em]">
           Previous releases of eCHO News
         </h2>
-        <ul className="mt-8 space-y-10">
-          {Object.entries(newsletterData)
-            .reverse()
-            .map(([year, releases], index) => (
-              <li key={index}>
-                <h3 className="text-3xl font-bold leading-snug">{year}</h3>
-                <ul className="mt-8 grid grid-cols-4 gap-8 lg:grid-cols-3 md:mt-6 md:gap-7 sm:grid-cols-2 sm:gap-6 [@media(max-width:500px)]:grid-cols-1">
-                  {releases.map(({ title, number, date, publishedUrl }, index) => (
-                    <li className="flex flex-col" key={index}>
-                      <Link
-                        className="rounded-lg border border-gray-90 p-6 pt-5 transition-colors duration-200 hover:border-gray-70"
-                        to={publishedUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="heading-7xl font-medium leading-none">#{number}</span>
-                        <h4 className="mt-3 text-lg font-medium md:text-base">{title}</h4>
-                        <span className="mt-4 flex items-center space-x-2.5 border-t border-dashed border-gray-80 pt-5">
-                          <CalendarIcon className="h-3.5 w-3.5 shrink-0 text-secondary-blue" />
-                          <span className="text-sm leading-none">{date}</span>
-                        </span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-        </ul>
+        {hasReleases ? (
+          <ul className="mt-8 space-y-10">
+            {Object.entries(newsletterData)
+              .reverse()
+              .map(([year, releases], index) => (
+                <li key={index}>
+                  <h3 className="text-3xl font-bold leading-snug">{year}</h3>
+                  <ul className="mt-8 grid grid-cols-4 gap-8 lg:grid-cols-3 md:mt-6 md:gap-7 sm:grid-cols-2 sm:gap-6 [@media(max-width:500px)]:grid-cols-1">
+                    {releases.map(({ title, number, date, publishedUrl }, index) => (
+                      <li className="flex flex-col" key={index}>
+                        <Link
+                          className="rounded-lg border border-gray-90 p-6 pt-5 transition-colors duration-200 hover:border-gray-70"
+                          to={publishedUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span className="heading-7xl font-medium leading-none">#{number}</span>
+                          <h4 className="mt-3 text-lg font-medium md:text-base">{title}</h4>
+                          <span className="mt-4 flex items-center space-x-2.5 border-t border-dashed border-gray-80 pt-5">
+                            <CalendarIcon className="h-3.5 w-3.5 shrink-0 text-secondary-blue" />
+                            <span className="text-sm leading-none">{date}</span>
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+          </ul>
+        ) : (
+          <p className="mt-8 text-center text-lg text-gray-40">
+            The archive is temporarily unavailable. Please check back later.
+          </p>
+        )}
       </div>
     </section>
-  ) : (
-    <span className="mb-32 block" />
   );
 };
 
