@@ -14,7 +14,7 @@ const items = [
     links: [
       {
         text: 'Explore archive',
-        to: '#archive',
+        to: 'http://youtube.com/playlist?list=PLDg_GiBbAx-mY3VFLPbLHcxo6wUjejAOC',
       },
     ],
   },
