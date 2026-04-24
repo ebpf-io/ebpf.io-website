@@ -171,7 +171,7 @@
     },
     {
       "title": "Alibaba",
-      "description": "<strong>Alibaba</strong> uses eBPF through Cilium to provide networking in their cloud",
+      "description": "<strong>Alibaba</strong> uses eBPF to provide networking in their cloud",
       "links": [
         {
           "text": "Blog",
@@ -180,6 +180,10 @@
         {
           "text": "Talk",
           "to": "https://www.youtube.com/watch?v=Z4qxd5yYoP4"
+        }
+       {
+          "text": "Case Study",
+          "to": "https://ebpf.foundation/alibaba-cloud-leverages-ebpf-for-adaptive-layer-7-load-balancing/"
         }
       ]
     },
