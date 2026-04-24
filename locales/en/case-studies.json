@@ -92,16 +92,6 @@
       ]
     },
     {
-      "title": "Shopify",
-      "description": "<strong>Shopify</strong> uses eBPF through Falco for intrusion detection",
-      "links": [
-        {
-          "text": "Video",
-          "to": "https://www.youtube.com/watch?v=6pVci31Mb6Q"
-        }
-      ]
-    },
-    {
       "title": "Microsoft",
       "description": "<strong>Microsoft</strong> uses eBPF to enhance the observability and inspection of processes within Kubernetes",
       "links": [
@@ -138,16 +128,6 @@
         {
           "text": "Video",
           "to": "https://www.youtube.com/watch?v=sg-F_R-ZVNc"
-        }
-      ]
-    },
-    {
-      "title": "Apple",
-      "description": "<strong>Apple</strong> uses eBPF through Falco for kernel security monitoring",
-      "links": [
-        {
-          "text": "Video",
-          "to": "https://www.youtube.com/watch?v=ZBlJSr6XkN8"
         }
       ]
     },
@@ -260,36 +240,12 @@
       ]
     },
     {
-      "title": "Wildlife Studios",
-      "description": "<strong>Wildlife Studios</strong> uses eBPF through Cilium for high performance game networking",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://cilium.io/blog/2020/09/03/wildlife-studios-multi-cluster-gaming-platform"
-        },
-        {
-          "text": "Talk",
-          "to": "https://www.youtube.com/watch?v=_1t3bXzptP0"
-        }
-      ]
-    },
-    {
       "title": "Capital One",
       "description": "<strong>Capital One</strong> uses eBPF to secure their cloud infrastructure",
       "links": [
         {
           "text": "Talk",
           "to": "https://www.youtube.com/watch?v=hwOpCKBaJ-w&ab_channel=eBPFSummit"
-        }
-      ]
-    },
-    {
-      "title": "Sky",
-      "description": "<strong>Sky</strong> uses eBPF through Cilium for cloud networking",
-      "links": [
-        {
-          "text": "Talk",
-          "to": "https://www.youtube.com/watch?v=u-4naOMfs_w"
         }
       ]
     },
@@ -366,20 +322,6 @@
       ]
     },
     {
-      "title": "F5",
-      "description": "<strong>F5</strong> BIG-IP integration with Cilium VTEP feature",
-      "links": [
-        {
-          "text": "Video",
-          "to": "https://youtu.be/EfmdjrQLFFg"
-        },
-        {
-          "text": "Guide",
-          "to": "https://github.com/f5devcentral/f5-ci-docs/blob/master/docs/cilium/cilium-bigip-info.rst"
-        }
-      ]
-    },
-    {
       "title": "LinkedIn",
       "description": "<strong>LinkedIn</strong> uses eBPF for Infrastructure Observability",
       "links": [
@@ -396,74 +338,6 @@
         {
           "text": "Video",
           "to": "https://www.youtube.com/watch?v=qmrHONqsV2M&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D"
-        }
-      ]
-    },
-    {
-      "title": "SentinelOne",
-      "description": "<strong>SentinelOne</strong> uses eBPF to detect and to respond to runtime threats like ransomware and zero-day exploits in real time.",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://www.sentinelone.com/blog/the-advantages-of-ebpf-for-cwpp-applications/"
-        }
-      ]
-    },
-    {
-      "title": "Aqua Security",
-      "description": "<strong>Aqua Security</strong> uses eBPF to handle runtime detection and forensics",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://blog.aquasec.com/linux-vulnerabilitie-tracee"
-        }
-      ]
-    },
-    {
-      "title": "Odigos",
-      "description": "<strong>Odigos</strong> uses eBPF to automatically instrument any application, including automatic context propagation",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://odigos.io/blog/how-odigos-uses-ebpf"
-        }
-      ]
-    },
-    {
-      "title": "Oligo Security",
-      "description": "<strong>Oligo Security</strong> uses eBPF for application security observability and protection",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://www.oligo.security/blog/scaling-runtime-security-how-ebpf-is-solving-decade-long-challenges"
-        }
-      ]
-    },
-    {
-      "title": "Akita",
-      "description": "<strong>Akita</strong> uses eBPF at scale for API observability",
-      "links": [
-        {
-          "text": "Docs",
-          "to": "https://docs.akita.software/docs/how-akita-works#what-makes-akita-different"
-        }
-      ]
-    },
-    {
-      "title": "groundcover",
-      "description": "<strong>groundcover</strong> uses eBPF to instantly monitor application performance in cloud native environments, at any scale.",
-      "links": [
-        {
-          "text": "Product",
-          "to": "https://www.groundcover.com/how-it-works"
-        },
-        {
-          "text": "Docs",
-          "to": "https://www.groundcover.com/docs"
-        },
-        {
-          "text": "Video",
-          "to": "https://youtu.be/73wait5RR7c?si=vZKzrQpwHmyIeM3k"
         }
       ]
     },
@@ -516,40 +390,6 @@
       ]
     },
     {
-      "title": "Kodem",
-      "description": "<strong>Kodem</strong> uses eBPF for application visibilty and runtime intelligence",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://kodemsec.webflow.io/resources/deep-visibility-with-ebpf"
-        }
-      ]
-    },
-    {
-      "title": "Cycode",
-      "description": "<strong>Cycode</strong> uses eBPF for CI/CD security",
-      "links": [
-        {
-          "text": "Talk",
-          "to": "https://www.youtube.com/watch?v=pcBGRFvSrvY"
-        },
-        {
-          "text": "Blog",
-          "to": "https://cycode.com/blog/introducing-cimon-build-hardening/"
-        }
-      ]
-    },
-    {
-      "title": "Wiz",
-      "description": "<strong>Wiz</strong> uses eBPF to provide real-time threat detection and monitoring within cloud workloads",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://www.wiz.io/blog/wiz-expands-platform-with-the-runtime-sensor-to-provide-unified-cloud-security"
-        }
-      ]
-    },
-    {
       "title": "Core Tech",
       "description": "<strong>Core Tech</strong> uses eBPF to filter out unwanted traffic and mitigate DDoS attacks ",
       "links": [
@@ -560,122 +400,12 @@
       ]
     },
     {
-      "title": "FlowSecurity",
-      "description": "<strong>Flow Security</strong> uses eBPF technology to analyze data in motion for data discovery, classification, risk management, and data violation detection and response",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://www.flowsecurity.com/ebpf-data-security-hype/"
-        }
-      ]
-    },
-    {
-      "title": "Helios",
-      "description": "<strong>Helios</strong> uses eBPF in their runtime analysis tool for observability and security",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://gethelios.dev/blog/introducing-helios-runtime-for-appsec/"
-        }
-      ]
-    },
-    {
-      "title": "ThreatX",
-      "description": "<strong>ThreatX</strong> uses eBPF for securing their runtime environment and delivering real-time blocking for runtime threats",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://www.threatx.com/blog/cisco-acquires-isovalent-creator-of-ebpf-why-it-matters/"
-        }
-      ]
-    },
-    {
-      "title": "Levo",
-      "description": "<strong>Levo</strong> uses eBPF for API discovery and documentation",
-      "links": [
-        {
-          "text": "Docs",
-          "to": "https://docs.levo.ai/api-observability/concepts#ebpf-sensor"
-        }
-      ]
-    },
-    {
-      "title": "Traceable",
-      "description": "<strong>Traceable</strong> uses eBPF for enhanced data collection",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://www.traceable.ai/blog-post/unlocking-the-power-of-ebpf-at-traceable"
-        }
-      ]
-    },
-    {
       "title": "ArvanCloud",
       "description": "<strong>ArvanCloud</strong> uses eBPF for their CDN product",
       "links": [
         {
           "text": "Blog",
           "to": "https://medium.com/@amiremohamadi/we-removed-shared-memory-by-building-an-ebpf-load-balancer-394f9f1b344"
-        }
-      ]
-    },
-    {
-      "title": "RAD Security",
-      "description": "<strong>RAD Security</strong> uses eBPF for runtime threat detection and supply chain verification",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://www.radsecurity.ai/blog/introducing-rad-security"
-        }
-      ]
-    },
-    {
-      "title": "Qpoint",
-      "description": "<strong>Qpoint</strong> uses eBPF to monitor and secure egress traffic to your external vendor APIs",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://www.qpoint.io/resources/tap-into-your-egress-traffic-with-ebpf"
-        }
-      ]
-    },
-    {
-      "title": "Attribute",
-      "description": "<strong>Attribute</strong> uses eBPF to provide real time, no tagging cloud cost visibility and attribution for dynamic environments",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://attrb.io/unlocking-cloud-cost-visibility-with-ebpf-a-game-changer-for-finops/"
-        }
-      ]
-    },
-    {
-      "title": "ProtectAI",
-      "description": "<strong>Protect AI</strong> uses eBPF to secure LLM applications in production at runtime, providing visibility for advanced threat detection and response capabilities",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://protectai.com/blog/how-protect-ai-is-shaping-the-future-of-llm-security-with-ebpf"
-        }
-      ]
-    },
-    {
-      "title": "Akto",
-      "description": "<strong>Akto</strong> uses eBPF to monitor APIs and their traffic",
-      "links": [
-        {
-          "text": "Docs",
-          "to": "https://docs.akto.io/traffic-connector/ebpf/ebpf"
-        }
-      ]
-    },
-    {
-      "title": "Upwind Security",
-      "description": "<strong>Upwind Security</strong> leverages eBPF to deliver deep real-time/runtime cloud security at scale",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://www.upwind.io/feed/how-upwind-uses-ebpf-to-bring-real-time-security-to-cloud-native-environments"
         }
       ]
     },
@@ -716,30 +446,6 @@
         {
           "text": "Read Blog",
           "to": "https://free5gc.org/blog/20250726/index.en/"
-        }
-      ]
-    },
-    {
-      "title": "Aurva",
-      "description": "<strong>Aurva</strong> uses eBPF for identity-aware monitoring of data access across humans, services, and AI agents",
-      "links": [
-        {
-          "text": "Case Study",
-          "to": "https://aurva.io/blog/how-outsmarting-a-system-constraint-unlocked-a-1000-performance-gain"
-        },
-        {
-          "text": "Blog",
-          "to": "https://aurva.io/blog/the-ssl-tls-trap-why-your-database-security-goes-blind-in-production"
-        }
-      ]
-    },
-    {
-      "title": "metoro",
-      "description": "<strong>Metoro</strong> uses eBPF to generate traces and monitor performance of applications running in Kubernetes without requiring code changes.",
-      "links": [
-        {
-          "text": "Blog",
-          "to": "https://metoro.io/blog/how-metoro-uses-ebpf"
         }
       ]
     }
