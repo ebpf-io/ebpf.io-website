@@ -90,7 +90,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.5.2",
     "markdownlint-cli": "^0.38.0",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.10",
     "postcss-import": "^16.1.1",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.5.14",
