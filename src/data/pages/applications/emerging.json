@@ -760,5 +760,18 @@
       }
     ],
     "githubStars": 16669
+  },
+  {
+    "logoUrl": "https://github.com/gma1k/podtrace",
+    "name": "Podtrace",
+    "logoName": "podtraceLogo",
+    "title": "eBPF-driven diagnostic tool for Kubernetes applications",
+    "description": "Podtrace is a lightweight eBPF-driven diagnostic tool for Kubernetes applications, delivering full-stack observability from kernel events to application-layer behavior, activated on demand with no prior configuration or instrumentation. It attaches eBPF programs directly to a container and correlates low-level kernel activity with high-level application operations, surfacing human-readable diagnostic events across network flows, TCP/UDP performance, file system activity, memory behavior, latency, system calls, and application-layer events such as HTTP, DNS, and database queries. Podtrace ships a single binary that runs as a standalone CLI, a DaemonSet agent, or a Kubernetes operator.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/gma1k/podtrace"
+      }
+    ]
   }
 ]
