@@ -57,6 +57,7 @@ import parcaLogo from './logos/parca.svg';
 import pcapplusplusLogo from './logos/pcapplusplus.svg';
 import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
+import podtraceLogo from './logos/podtrace.png';
 import pulsarLogo from './logos/pulsar.png';
 import pwruLogo from './logos/pwru.png';
 import pyroscopeLogo from './logos/pyroscope.svg';
@@ -152,6 +153,7 @@ const logos = {
   pcapplusplusLogo,
   pixieLogo,
   plyLogo,
+  podtraceLogo,
   pulsarLogo,
   pwruLogo,
   pyroscopeLogo,
