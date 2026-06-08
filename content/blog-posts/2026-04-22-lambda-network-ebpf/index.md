@@ -6,4 +6,5 @@ categories:
   - Community
   - Technology
 externalUrl: https://www.allthingsdistributed.com/2026/04/the-invisible-engineering-behind-lambdas-network.html
+ogImage: ogimageaws.png
 ---
