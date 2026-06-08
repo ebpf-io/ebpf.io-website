@@ -22,11 +22,11 @@ const PreviousReleases = () => {
   const items = data.hubspotEmails.objects.filter((item) => item.name.match(/^eCHO news \d{1,3}$/));
 
   items.forEach((item) => {
-    item.year = getYear(Number(item.publishDate));
+    item.year = getYear(item.publishDate);
     item.title = `eCHO News Episode`;
     // eslint-disable-next-line prefer-destructuring
     item.number = item.name.match(/\d{1,3}/)[0];
-    item.date = getMonthAndDay(Number(item.publishDate));
+    item.date = getMonthAndDay(item.publishDate);
   });
 
   const getReleases = () =>
