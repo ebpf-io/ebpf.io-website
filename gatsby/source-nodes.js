@@ -1,67 +1,67 @@
-const fetch = require(`node-fetch`);
-
 async function getHubspotEmails({ actions: { createNode }, createContentDigest }) {
   const getObjects = async () => {
     if (process.env.NODE_ENV !== 'production' || !process.env.HUBSPOT_ACCESS_TOKEN) {
       return [];
     }
 
-    const results = [];
-    let after;
+    let hubspotEmailsData;
 
     try {
-      do {
-        const url = new URL('https://api.hubapi.com/marketing/v3/emails/');
-        url.searchParams.set('limit', '100');
-        url.searchParams.set('isPublished', 'true');
-        if (after) url.searchParams.set('after', after);
+      const searchParams = new URLSearchParams({
+        limit: '100',
+        sort: '-publishDate',
+      });
 
-        // eslint-disable-next-line no-await-in-loop
-        const response = await fetch(url.toString(), {
+      const hubspotEmails = await fetch(
+        `https://api.hubapi.com/marketing/v3/emails?${searchParams}`,
+        {
           method: 'GET',
           headers: {
             Authorization: `Bearer ${process.env.HUBSPOT_ACCESS_TOKEN}`,
             'Content-Type': 'application/json',
           },
-        });
-
-        if (!response.ok) {
-          console.log(`HubSpot emails API returned ${response.status}`);
-          return [];
         }
+      );
 
-        // eslint-disable-next-line no-await-in-loop
-        const data = await response.json();
-        results.push(...(data.results || []));
-        after = data.paging && data.paging.next && data.paging.next.after;
-      } while (after);
+      if (!hubspotEmails.ok) {
+        throw new Error(`HubSpot API responded with status: ${hubspotEmails.status}`);
+      }
+
+      hubspotEmailsData = await hubspotEmails.json();
     } catch (error) {
-      console.log(error);
       return [];
     }
 
-    return results
-      .filter(({ name }) => typeof name === 'string' && /eCHO news/i.test(name))
-      .map(({ name, publishDate, state, publishedUrl, url }) => ({
-        name,
-        publishDate: publishDate ? String(new Date(publishDate).getTime()) : null,
-        isPublished: state === 'PUBLISHED' || state === 'AUTOMATED',
-        publishedUrl: publishedUrl || url || null,
+    const emails = hubspotEmailsData.results || [];
+
+    const eCHOemails = emails
+      .filter((email) => {
+        const hasEchoInName = email.name && email.name.toLowerCase().includes('echo news');
+
+        const isPublished = email.isPublished && email.state === 'PUBLISHED';
+        return hasEchoInName && isPublished;
+      })
+      .map((email) => ({
+        name: email.name,
+        publishDate: email.publishDate,
+        isPublished: true,
+        publishedUrl:
+          email.webversion.url || `isovalent-9197153.hs-sites.com/${email.webversion.slug}`,
       }))
-      .filter(
-        ({ isPublished, publishDate, publishedUrl }) => isPublished && publishDate && publishedUrl
-      );
+      .slice(0, 150);
+
+    return eCHOemails;
   };
 
   const objects = await getObjects();
 
   createNode({
     objects,
-    id: `hubspot-email-data`,
+    id: 'hubspot-email-data',
     parent: null,
     children: [],
     internal: {
-      type: `HubspotEmails`,
+      type: 'HubspotEmails',
       contentDigest: createContentDigest(objects),
     },
   });
