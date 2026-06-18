@@ -8,7 +8,7 @@ async function getHubspotEmails({ actions: { createNode }, createContentDigest }
 
     try {
       const searchParams = new URLSearchParams({
-        limit: '100',
+        limit: '300',
         sort: '-publishDate',
       });
 
