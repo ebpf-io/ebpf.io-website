@@ -26,6 +26,4 @@ We invite you to learn about the journey of eBPF from its inception to the succe
 
 You can watch the eBPF documentary [here](https://www.youtube.com/watch?v=Wb_vD3XZYOA)
 
-<iframe width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-src="https://www.youtube.com/embed/Wb_vD3XZYOA?controls=0">
-</iframe>
+<iframe width="560" height="315" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen src="https://www.youtube.com/embed/Wb_vD3XZYOA?controls=0"></iframe>
