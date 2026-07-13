@@ -218,6 +218,10 @@ The libbpf library is a C/C++-based generic eBPF library which helps the loading
 
 ![Libbpf](libbpf.png)
 
+#### Additional Libraries
+
+For Rust, [aya](https://github.com/aya-rs/aya) allows writing both eBPF programs and userspace code entirely in Rust, while [libbpf-rs](https://github.com/libbpf/libbpf-rs) provides a safe Rust wrapper around libbpf. For Java, [hello-ebpf](https://parttimenerd.github.io/hello-ebpf/) allows writing both kernel-side BPF programs and userspace control code entirely in Java. A full list of libraries is available on the [infrastructure page](/infrastructure#ebpf-libraries).
+
 ## Further Reading
 
 If you would like to learn more about eBPF, continue reading using the following additional materials:
