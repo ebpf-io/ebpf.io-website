@@ -41,7 +41,7 @@ Right now Markdown files accept following frontmatter:
 
 ## Code blocks
 
-[All available languages for code blocks can be found here](https://prismjs.com/index.html#supported-languages).
+[All available languages for code blocks are here](https://prismjs.com/index.html#supported-languages).
 
 ## Images
 
