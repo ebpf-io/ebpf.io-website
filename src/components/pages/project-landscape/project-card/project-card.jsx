@@ -57,6 +57,7 @@ import parcaLogo from './logos/parca.svg';
 import pcapplusplusLogo from './logos/pcapplusplus.svg';
 import pixieLogo from './logos/pixie.svg';
 import plyLogo from './logos/ply.svg';
+import podtraceLogo from './logos/podtrace.png';
 import pulsarLogo from './logos/pulsar.png';
 import pwruLogo from './logos/pwru.png';
 import pyroscopeLogo from './logos/pyroscope.svg';
@@ -152,6 +153,7 @@ const logos = {
   pcapplusplusLogo,
   pixieLogo,
   plyLogo,
+  podtraceLogo,
   pulsarLogo,
   pwruLogo,
   pyroscopeLogo,
@@ -510,8 +512,10 @@ const ProjectCard = ({
     }
   };
 
-  const handleHoverModalMouseLeave = () => {
-    hoverModalManager.setActiveCard(null);
+  const handleMouseLeave = () => {
+    if (isLargeScreen) {
+      hoverModalManager.setActiveCard(null);
+    }
   };
 
   const handleKeyDown = (e) => {
@@ -531,6 +535,7 @@ const ProjectCard = ({
           onKeyDown={handleKeyDown}
           onClick={handleProjectClick}
           onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           <div className="text-center flex-1 flex flex-col justify-between">
             <div className="flex-1 flex flex-col justify-center items-center">
@@ -554,67 +559,72 @@ const ProjectCard = ({
 
           {/* Hover Modal */}
           {isLargeScreen && showHoverModal && !showModal && (
-            <div
-              className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white border border-gray-200 rounded-xl shadow-xl z-[10001] w-80"
-              onMouseLeave={handleHoverModalMouseLeave}
-            >
-              <div className="p-5">
-                <div className="flex items-start space-x-4 mb-4">
-                  {logo ? (
-                    <div className="shrink-0 w-12 h-12">
-                      {typeof logo === 'object' ? (
-                        React.cloneElement(logo, { width: 48, height: 48 })
-                      ) : (
-                        <img src={logo} alt={name} width={48} height={48} className="rounded-lg" />
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 pt-3 z-[10001] w-80">
+              <div className="relative bg-white border border-gray-200 rounded-xl shadow-xl">
+                <div className="p-5">
+                  <div className="flex items-start space-x-4 mb-4">
+                    {logo ? (
+                      <div className="shrink-0 w-12 h-12">
+                        {typeof logo === 'object' ? (
+                          React.cloneElement(logo, { width: 48, height: 48 })
+                        ) : (
+                          <img
+                            src={logo}
+                            alt={name}
+                            width={48}
+                            height={48}
+                            className="rounded-lg"
+                          />
+                        )}
+                      </div>
+                    ) : (
+                      <div className="w-12 h-12 bg-gray-100 rounded-lg shrink-0" />
+                    )}
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-bold text-lg text-gray-900 mb-1">{name}</h4>
+                      {title && (
+                        <p className="text-sm text-gray-600 font-medium leading-relaxed">{title}</p>
                       )}
                     </div>
-                  ) : (
-                    <div className="w-12 h-12 bg-gray-100 rounded-lg shrink-0" />
-                  )}
-                  <div className="min-w-0 flex-1">
-                    <h4 className="font-bold text-lg text-gray-900 mb-1">{name}</h4>
-                    {title && (
-                      <p className="text-sm text-gray-600 font-medium leading-relaxed">{title}</p>
-                    )}
                   </div>
-                </div>
 
-                <div className="mb-4">
-                  <div
-                    className="text-sm text-gray-700 leading-relaxed line-clamp-3"
-                    dangerouslySetInnerHTML={{
-                      __html:
-                        (description?.substring(0, 150) ?? '') +
-                        (description?.length > 150 ? '...' : ''),
-                    }}
-                  />
-                </div>
-
-                {/* Resource Icons */}
-                {urls && urls.length > 0 && (
                   <div className="mb-4">
-                    <div className="flex items-center space-x-2">
-                      {urls.map(({ label, url }, index) => (
-                        <Link
-                          key={index}
-                          to={url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="group p-2 hover:bg-yellow-100 rounded-lg transition-all duration-200 hover:scale-110"
-                          title={label}
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          <div className="group-hover:text-yellow-600 transition-colors duration-200">
-                            {getLinkIcon(label)}
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
+                    <div
+                      className="text-sm text-gray-700 leading-relaxed line-clamp-3"
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          (description?.substring(0, 150) ?? '') +
+                          (description?.length > 150 ? '...' : ''),
+                      }}
+                    />
                   </div>
-                )}
+
+                  {/* Resource Icons */}
+                  {urls && urls.length > 0 && (
+                    <div className="mb-4">
+                      <div className="flex items-center space-x-2">
+                        {urls.map(({ label, url }, index) => (
+                          <Link
+                            key={index}
+                            to={url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="group p-2 hover:bg-yellow-100 rounded-lg transition-all duration-200 hover:scale-110"
+                            title={label}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <div className="group-hover:text-yellow-600 transition-colors duration-200">
+                              {getLinkIcon(label)}
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-6 border-r-6 border-b-6 border-transparent border-b-white" />
+                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-6 border-r-6 border-b-6 border-transparent border-b-gray-200 translate-y-px" />
               </div>
-              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-6 border-r-6 border-b-6 border-transparent border-b-white" />
-              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-6 border-r-6 border-b-6 border-transparent border-b-gray-200 translate-y-px" />
             </div>
           )}
         </div>
@@ -636,41 +646,43 @@ const ProjectCard = ({
           onKeyDown={handleKeyDown}
           onClick={handleProjectClick}
         >
-        {logo ? (
-          <div className="mb-4 w-full max-w-[116px] shrink-0 sm:max-w-[90px] xs:max-w-[80px]">
-            <Logo logo={logo} name={name} viewMode="card" />
-          </div>
-        ) : (
-          <div className="w-full max-w-[116px] shrink-0 sm:max-w-[90px]">
-            <div className="w-full h-[116px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center" />
-          </div>
-        )}
-        <div className="flex-1 min-w-0">
-          <Heading className="heading-6xl font-semibold" id={slug}>
-            {name}
-          </Heading>
-          {title && <h4 className="mt-0.5 font-sans text-lg font-medium leading-snug">{title}</h4>}
-          <p className="mt-2.5" dangerouslySetInnerHTML={{ __html: description }} />
-
-          {urls && (
-            <div className="mt-3.5 flex flex-wrap gap-x-5 gap-y-3.5">
-              {urls.map(({ label, url }, index) => (
-                <Link
-                  className="relative uppercase leading-none tracking-[0.03em] before:absolute before:-right-3 before:top-1/2 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 last:before:hidden"
-                  size="sm"
-                  theme="black"
-                  to={url}
-                  target="_blank"
-                  rel="noreferrer"
-                  key={index}
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {label}
-                </Link>
-              ))}
+          {logo ? (
+            <div className="mb-4 w-full max-w-[116px] shrink-0 sm:max-w-[90px] xs:max-w-[80px]">
+              <Logo logo={logo} name={name} viewMode="card" />
+            </div>
+          ) : (
+            <div className="w-full max-w-[116px] shrink-0 sm:max-w-[90px]">
+              <div className="w-full h-[116px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center" />
             </div>
           )}
-        </div>
+          <div className="flex-1 min-w-0">
+            <Heading className="heading-6xl font-semibold" id={slug}>
+              {name}
+            </Heading>
+            {title && (
+              <h4 className="mt-0.5 font-sans text-lg font-medium leading-snug">{title}</h4>
+            )}
+            <p className="mt-2.5" dangerouslySetInnerHTML={{ __html: description }} />
+
+            {urls && (
+              <div className="mt-3.5 flex flex-wrap gap-x-5 gap-y-3.5">
+                {urls.map(({ label, url }, index) => (
+                  <Link
+                    className="relative uppercase leading-none tracking-[0.03em] before:absolute before:-right-3 before:top-1/2 before:block before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-90 last:before:hidden"
+                    size="sm"
+                    theme="black"
+                    to={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    key={index}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </li>
 

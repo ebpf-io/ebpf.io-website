@@ -10,6 +10,8 @@ import ayaLogo from './images/aya-logo.png';
 import CPlusPlusIcon from './images/cplusplus-logo.svg';
 import ebpfLogo from './images/ebpf-logo.png';
 import GoIcon from './images/go-logo.svg';
+import helloEbpfLogo from './images/hello-ebpf-logo.png';
+import JavaDukeIcon from './images/java-duke-logo.png';
 import libbpfLogo from './images/libbpf-logo.png';
 import libbpfgoLogo from './images/libbpfgo-logo.png';
 import RustIcon from './images/rust-logo.svg';
@@ -53,6 +55,23 @@ const items = [
         logo: libbpfgoLogo,
         description:
           'is a Go wrapper around libbpf. It supports BPF CO-RE and its goal is to be a complete implementation of libbpf APIs. It uses CGo to call into linked versions of libbpf.',
+      },
+    ],
+  },
+  {
+    name: 'Java',
+    icon: {
+      src: JavaDukeIcon,
+      width: 40,
+      height: 40,
+    },
+    list: [
+      {
+        name: 'hello-ebpf',
+        linkUrl: 'https://parttimenerd.github.io/hello-ebpf/',
+        logo: helloEbpfLogo,
+        description:
+          'is a Java library for eBPF that allows both kernel-side BPF programs and userspace control code to be written entirely in Java. It supports multiple eBPF hooks including XDP, TC, kprobes, and tracepoints, and makes it easy to write custom Linux CPU schedulers using sched_ext.',
       },
     ],
   },
@@ -119,7 +138,7 @@ const EbpfLibraries = () => {
                       {logo && (
                         <img
                           src={logo}
-                          className="h-14"
+                          className="h-14 object-contain object-left"
                           width={144}
                           height={56}
                           loading="lazy"
