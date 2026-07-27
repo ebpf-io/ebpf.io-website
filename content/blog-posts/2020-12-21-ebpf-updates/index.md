@@ -277,11 +277,11 @@ growing every day.
 
 - Support for libbpf in iproute2 landed.
   (Hangbin Liu,
-  [link](https://lore.kernel.org/bpf/07bc85b3-3ae0-eaa5-e8a5-921dbd4a4e4f@gmail.com/t/#u))
+  [source](https://lore.kernel.org/bpf/07bc85b3-3ae0-eaa5-e8a5-921dbd4a4e4f@gmail.com/t/#u))
 
 - Amazon's ENA device got support for XDP redirect (`XDP_REDIRECT` action).
   (Shay Agroskin,
-  [link](https://lore.kernel.org/netdev/1606344708-11100-1-git-send-email-akiyano@amazon.com/t/#u))
+  [source](https://lore.kernel.org/netdev/1606344708-11100-1-git-send-email-akiyano@amazon.com/t/#u))
 
 Here are some highlights from the second
 [pull request for the bpf-next tree](https://lore.kernel.org/bpf/20201204021936.85653-1-alexei.starovoitov@gmail.com/)
@@ -291,14 +291,14 @@ for the 5.11 cycle:
   tracing hooks (fentry/fexit/fmod_ret/LSM) available for modules. CO-RE also
   becomes available for programs attached to hooks in modules.
   (Andrii Nakryiko,
-  [link](https://lore.kernel.org/netdev/20201203204634.1325171-1-andrii@kernel.org/t/#u))
+  [source](https://lore.kernel.org/netdev/20201203204634.1325171-1-andrii@kernel.org/t/#u))
 
 - Add a new socket option `SO_PREFER_BUSY_POLL` to switch to a new “heavy
   traffic” busy-polling mode, to enforce the use of busy-polling even on heavy
   loaded NAPI contexts where it might otherwise be prevented. Also allow
   busy-polling to be performed on XDP sockets.
   (Björn Töpel,
-  [link](https://lore.kernel.org/bpf/20201130185205.196029-1-bjorn.topel@gmail.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20201130185205.196029-1-bjorn.topel@gmail.com/t/#u))
 
 - Add a new helper `bpf_ima_inode_hash()` to get the IMA (Integrity Measurement
   Architecture) hash of an inode, which can be useful when using eBPF in a LSM
@@ -306,7 +306,7 @@ for the 5.11 cycle:
   get and store fingerprints of executable files when they are executed, and to
   detect when they attempt to unlink themselves.
   (KP Singh,
-  [link](https://lore.kernel.org/bpf/20201124151210.1081188-1-kpsingh@chromium.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20201124151210.1081188-1-kpsingh@chromium.org/t/#u))
 
 - Add a new helper `bpf_bprm_opts_set()` for use with eBPF in a LSM, to update
   certain bits of the `struct linux_binprm` for a process. The only accessible
@@ -314,7 +314,7 @@ for the 5.11 cycle:
   use of certain environment variables like `LD_PRELOAD` for the dynamic
   linker.
   (KP Singh,
-  [link](https://lore.kernel.org/bpf/20201117232929.2156341-1-kpsingh@chromium.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20201117232929.2156341-1-kpsingh@chromium.org/t/#u))
 
 - Switch from memlock rlimit accounting to cgroup-based memory for the kernel
   memory used by eBPF objects. The rlimit had a number of downsides (refer to
@@ -324,19 +324,19 @@ for the 5.11 cycle:
   actual memory consumption, while this is not necessarily the case with
   rlimit.
   (Roman Gushchin,
-  [link](https://lore.kernel.org/bpf/20201201215900.3569844-1-guro@fb.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20201201215900.3569844-1-guro@fb.com/t/#u))
 
 - Allow `bpf_getsockopt()` and `bpf_setsockopt()` helpers from
   `BPF_CGROUP_INET4_BIND` and `BPF_CGROUP_INET6_BIND` attach hooks, so that the
   listener sockets attached to cgroups can pre-populate some options as needed.
   (Stanislav Fomichev,
-  [link](https://lore.kernel.org/bpf/20201202172516.3483656-1-sdf@google.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20201202172516.3483656-1-sdf@google.com/t/#u))
 
 - Add a new helper `bpf_ktime_get_coarse_ns()` to get a timestamp using the
   `CLOCK_MONOTONIC_COARSE`, which is less accurate but more performant than
   `CLOCK_MONOTONIC` used by `bpf_ktime_get_ns()`.
   (Dmitrii Banshchikov,
-  [link](https://lore.kernel.org/bpf/20201117184549.257280-1-me@ubique.spb.ru/t/#u))
+  [source](https://lore.kernel.org/bpf/20201117184549.257280-1-me@ubique.spb.ru/t/#u))
 
 This was followed by
 [a third pull request](https://lore.kernel.org/bpf/20201214214316.20642-1-daniel@iogearbox.net/),
@@ -346,12 +346,12 @@ for the same tree and cycle, and for which you will find the highlights below:
   iterator programs so that such an eBPF iterator can, for example, initialize
   or delete selected values from a socket local storage.
   (Florent Revest,
-  [link](https://lore.kernel.org/bpf/20201204113609.1850150-3-revest@google.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20201204113609.1850150-3-revest@google.com/t/#u))
 
 - Add AF_XDP selftests based on veth devices, for both SKB and native modes,
   as part of the eBPF selftests suite.
   (Weqaar Janjua,
-  [link](https://lore.kernel.org/bpf/20201207215333.11586-1-weqaar.a.janjua@intel.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20201207215333.11586-1-weqaar.a.janjua@intel.com/t/#u))
 
 - Update libbpf function `bpf_program__set_attach_target()` so it supports
   finding BTF-based kernel attach targets (such as fentry, fexit, BTF-based
@@ -359,19 +359,19 @@ for the same tree and cycle, and for which you will find the highlights below:
   through the ELF section name where the eBPF program is placed, with the
   `SEC()` macro.
   (Andrii Nakryiko,
-  [link](https://lore.kernel.org/bpf/20201211215825.3646154-1-andrii@kernel.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20201211215825.3646154-1-andrii@kernel.org/t/#u))
 
 - Permit pointers on stack for helper calls in the verifier, if the user has
   sufficient permissions. This addresses an issue where the verifier would
   wrongly reject some programs.
   (Yonghong Song,
-  [link](https://lore.kernel.org/bpf/20201210013348.943623-1-yhs@fb.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20201210013348.943623-1-yhs@fb.com/t/#u))
 
 - Add new libbpf API function to retrieve an eBPF ring buffer epoll file
   descriptor. This is to help with the migration from perf buffer to eBPF ring
   buffer.
   (Brendan Jackman,
-  [link](https://lore.kernel.org/bpf/20201214113812.305274-1-jackmanb@google.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20201214113812.305274-1-jackmanb@google.com/t/#u))
 
 Kernel 5.10 was released on the 13th of December, bringing a number of eBPF
 novelties. eBPF iterators with preload at boot time, or sleepable eBPF

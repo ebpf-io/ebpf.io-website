@@ -284,7 +284,7 @@ for the 5.12 cycle.
   on their submission. The objective is to have contributors run the selftests
   on their machine but in the same environment as the CI, to check for
   regressions and reduce the back-and-forth between maintainers and developers.
-  If you send patches to the bpf or bpf-next trees, take note! (KP Singh, [link](https://lore.kernel.org/bpf/20210204194544.3383814-1-kpsingh@kernel.org/t/#u))
+  If you send patches to the bpf or bpf-next trees, take note! (KP Singh, [source](https://lore.kernel.org/bpf/20210204194544.3383814-1-kpsingh@kernel.org/t/#u))
 
 - Support passing pointers to types with known size as arguments to a global
   function. The objective is to overcome the limit on the maximum number of
@@ -294,20 +294,20 @@ for the 5.12 cycle.
   the callee. Passing pointers is not supported for static functions (The
   distinction between global and static functions is conveyed by the BTF
   information loaded alongside the program).
-  (Dmitrii Banshchikov, [link](https://lore.kernel.org/bpf/20210212205642.620788-1-me@ubique.spb.ru/t/#u))
+  (Dmitrii Banshchikov, [source](https://lore.kernel.org/bpf/20210212205642.620788-1-me@ubique.spb.ru/t/#u))
 
 - Add an eBPF iterator for `task_vma` which allows the user to generate
   information similar to what is available from /proc/pid/maps, but customized
   for their needs. For example, when a VMA (Virtual Memory Area) covers mixed
   2MB pages and 4kB pages, one use case is to indicate which address ranges are
   backed by 2MB pages.
-  (Song Liu, [link](https://lore.kernel.org/bpf/20210212183107.50963-1-songliubraving@fb.com/t/#u))
+  (Song Liu, [source](https://lore.kernel.org/bpf/20210212183107.50963-1-songliubraving@fb.com/t/#u))
 
 - Allow `bpf_getsockopt()` and `bpf_setsockopt()` helpers from all
   `sock_addr`-related program hooks, so that listener sockets attached to
   cgroups can query or modify socket options as needed at the various available
   attach points.
-  (Stanislav Fomichev, [link](https://lore.kernel.org/bpf/20210127232853.3753823-1-sdf@google.com/t/#u))
+  (Stanislav Fomichev, [source](https://lore.kernel.org/bpf/20210127232853.3753823-1-sdf@google.com/t/#u))
 
 - In a set containing various improvements, Alexei adds a mechanism to prevent
   recursion on fentry/fexit programs (extendable to sleepable programs in the
@@ -317,17 +317,17 @@ for the 5.12 cycle.
   maps, as well as statistics, for sleepable programs (A few tracing programs
   and eBPF LSM programs can request, at load time, to be sleepable in order to
   call helpers requiring the ability to sleep).
-  (Alexei Starovoitov, [link](https://lore.kernel.org/bpf/20210210033634.62081-1-alexei.starovoitov@gmail.com/t/#u))
+  (Alexei Starovoitov, [source](https://lore.kernel.org/bpf/20210210033634.62081-1-alexei.starovoitov@gmail.com/t/#u))
 
 - Support the use of eBPF ring buffers for sleepable programs.
-  (KP Singh, [link](https://lore.kernel.org/bpf/20210204193622.3367275-1-kpsingh@kernel.org/t/#u))
+  (KP Singh, [source](https://lore.kernel.org/bpf/20210204193622.3367275-1-kpsingh@kernel.org/t/#u))
 
 - Extend the verifier to enable variable offset read and write access to the
   eBPF program stack. For example, if a stack-allocated array is declared in a
   program, it becomes possible (under certain conditions) to read from or write
   to a cell at an index which is not statically known at compile and load time,
   but only determined at runtime.
-  (Andrei Matei, [link](https://lore.kernel.org/bpf/20210207011027.676572-1-andreimatei1@gmail.com/t/#u))
+  (Andrei Matei, [source](https://lore.kernel.org/bpf/20210207011027.676572-1-andreimatei1@gmail.com/t/#u))
 
 - Rework MTU handling in TC and XDP programs. MTU (Maximum Transmission Unit)
   checks performed by the eBPF helpers would sometimes be too conservative in
@@ -336,28 +336,28 @@ for the 5.12 cycle.
   interface. This set lifts some of the limitations, and adds a new
   `bpf_check_mtu()` helper to allow eBPF programs to query a device's MTU and
   run the check themselves.
-  (Jesper Dangaard Brouer, [link](https://lore.kernel.org/bpf/161287779408.790810.15631860742170694244.stgit@firesoul/t/#u))
+  (Jesper Dangaard Brouer, [source](https://lore.kernel.org/bpf/161287779408.790810.15631860742170694244.stgit@firesoul/t/#u))
 
 - Extend the `bpf_get_socket_cookie()` helper to make it available from tracing
   programs, including sleepable ones.
-  (Florent Revest, [link](https://lore.kernel.org/bpf/20210210111406.785541-1-revest@chromium.org/t/#u))
+  (Florent Revest, [source](https://lore.kernel.org/bpf/20210210111406.785541-1-revest@chromium.org/t/#u))
 
 - Clean up and slightly improve the performance for AF_XDP sockets. Also add a
   probe to libbpf (but it should be moved to libxdp in the future) to check
   what features the kernel supports, and pick the most efficient eBPF program
   to load from the library when setting up the socket.
-  (Björn Töpel, [link](https://lore.kernel.org/bpf/20210122105351.11751-1-bjorn.topel@gmail.com/t/#u))
+  (Björn Töpel, [source](https://lore.kernel.org/bpf/20210122105351.11751-1-bjorn.topel@gmail.com/t/#u))
 
 - Allow BTF to contain information on zero-sized .rodata ELF sections. Such
   sections may be formed by certain read-only (`const`) initialized variables,
   that the compiler stores into the .rodata as global variables. Because the
   variable was not initially declared as global, there is no debug information
   to store in the BTF information for that section.
-  (Yonghong Song, [link](https://lore.kernel.org/bpf/20210119153519.3901963-1-yhs@fb.com/t/#u))
+  (Yonghong Song, [source](https://lore.kernel.org/bpf/20210119153519.3901963-1-yhs@fb.com/t/#u))
 
 - Improve XDP performance for the veth by allocating socket buffers in bulks
   for `ndo_xdp_xmit()`.
-  (Lorenzo Bianconi, [link](https://lore.kernel.org/bpf/a14a30d3c06fff24e13f836c733d80efc0bd6eb5.1611957532.git.lorenzo@kernel.org/t/#u))
+  (Lorenzo Bianconi, [source](https://lore.kernel.org/bpf/a14a30d3c06fff24e13f836c733d80efc0bd6eb5.1611957532.git.lorenzo@kernel.org/t/#u))
 
 ## Did You Know? Program size limit
 

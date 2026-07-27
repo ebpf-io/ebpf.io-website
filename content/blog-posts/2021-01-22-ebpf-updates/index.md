@@ -194,14 +194,14 @@ for the 5.12 cycle:
   these atomic operations are likely to prove useful to a number of other
   applications.
   (Brendan Jackman,
-  [link](https://lore.kernel.org/bpf/20210114181751.768687-1-jackmanb@google.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210114181751.768687-1-jackmanb@google.com/t/#u))
 
 - Support for kernel module global variables (`__ksym` externs) in eBPF
   programs. This is a follow-up improvement on the recent support for BTF for
   kernel modules, to have BTF-powered raw tracepoints or tracing hooks
   available for modules.
   (Andrii Nakryiko,
-  [link](https://lore.kernel.org/bpf/20210112075520.4103414-1-andrii@kernel.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20210112075520.4103414-1-andrii@kernel.org/t/#u))
 
 - Generalize eBPF stackmap's [build-id](https://perf.wiki.kernel.org/index.php/Tutorial#Binary_identification_with_build-id)
   retrieval and add support to have build-ids stored in mmap2 event for perf
@@ -209,7 +209,7 @@ for the 5.12 cycle:
   additional information to uniquely identify shared mappings, see
   [`perf_event_open` man page](https://www.man7.org/linux/man-pages/man2/perf_event_open.2.html)).
   (Jiri Olsa,
-  [link](https://lore.kernel.org/bpf/20210114134044.1418404-1-jolsa@kernel.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20210114134044.1418404-1-jolsa@kernel.org/t/#u))
 
 - Support retrieval of more `SOL_SOCKET` level options from `sock_addr` eBPF
   programs, to fill the gap between the list of options that `bpf_setsockopt()`
@@ -221,14 +221,14 @@ for the 5.12 cycle:
   - `SO_BINDTOIFINDEX` (also new for `bpf_setsockopt()`)
 
   (Daniel Borkmann,
-  [link](https://lore.kernel.org/bpf/cba44439b801e5ddc1170e5be787f4dc93a2d7f9.1610406333.git.daniel@iogearbox.net/t/#u))
+  [source](https://lore.kernel.org/bpf/cba44439b801e5ddc1170e5be787f4dc93a2d7f9.1610406333.git.daniel@iogearbox.net/t/#u))
 
 - Improve out-of-tree cross-building for eBPF selftests. Although this adds no
   new feature, it feels interesting to report because it should enable wider
   automated testing on ARM architectures. Selftests are, of course, an
   essential part of the eBPF ecosystem.
   (Jean-Philippe Brucker,
-  [link](https://lore.kernel.org/bpf/20210113163319.1516382-1-jean-philippe@linaro.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20210113163319.1516382-1-jean-philippe@linaro.org/t/#u))
 
 ## Did You Know?: eBPF Virtual Filesystem
 

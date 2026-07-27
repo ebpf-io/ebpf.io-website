@@ -217,42 +217,42 @@ for the 5.11 cycle:
   “split BTF objects”. This is a prerequisite for generating BTF for kernel
   modules.
   (Andrii Nakryiko,
-  [link](https://lore.kernel.org/bpf/20201105043402.2530976-1-andrii@kernel.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20201105043402.2530976-1-andrii@kernel.org/t/#u))
 
 - Support pointers beyond packet end (`ctx->data_end`) to recognize LLVM
   generated patterns on inlined branch conditions and avoid rejecting some
   valid programs.
   (Alexei Starovoitov.
-  [link](https://lore.kernel.org/bpf/20201111031213.25109-1-alexei.starovoitov@gmail.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20201111031213.25109-1-alexei.starovoitov@gmail.com/t/#u))
 
 - Implement a new map type `BPF_MAP_TYPE_TASK_STORAGE`, providing local storage
   for `task_struct` for the eBPF LSM. This also results in the addition of
   three new eBPF helpers: `bpf_task_storage_get()`,
   `bpf_task_storage_delete()`, and `bpf_get_current_task_btf()`.
   (KP Singh,
-  [link](https://lore.kernel.org/bpf/20201106103747.2780972-1-kpsingh@chromium.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20201106103747.2780972-1-kpsingh@chromium.org/t/#u))
 
 - Enable `FENTRY`/`FEXIT`/`RAW_TP` tracing programs to use the infrastructure
   (map and helpers) for per-socket local storage.
   (Martin KaFai Lau,
-  [link](https://lore.kernel.org/bpf/20201112211255.2585961-1-kafai@fb.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20201112211255.2585961-1-kafai@fb.com/t/#u))
 
 - Add XDP bulk APIs that introduce a defer/flush mechanism to optimize the
   `XDP_REDIRECT path`.
   (Lorenzo Bianconi,
-  [link](https://lore.kernel.org/bpf/cover.1605267335.git.lorenzo@kernel.org/t/#u))
+  [source](https://lore.kernel.org/bpf/cover.1605267335.git.lorenzo@kernel.org/t/#u))
 
 - Lift the key size limit for hash tables to accept keys larger than
   `MAX_BPF_STACK` (512 bytes). This improves some use cases where hash table
   keys are values from other per-CPU maps, for example to implement allow/deny
   lists for file paths.
   (Florian Lehner,
-  [link](https://lore.kernel.org/bpf/20201029201442.596690-1-dev@der-flo.net/t/#u))
+  [source](https://lore.kernel.org/bpf/20201029201442.596690-1-dev@der-flo.net/t/#u))
 
 - Fix cross and out-of-tree builds of bpftool and runqslower. This helps build
   these tools for different target architectures on the same source tree.
   (Jean-Philippe Brucker,
-  [link](https://lore.kernel.org/bpf/20201110164310.2600671-1-jean-philippe@linaro.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20201110164310.2600671-1-jean-philippe@linaro.org/t/#u))
 
 ### Libbpf
 

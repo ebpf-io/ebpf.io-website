@@ -515,7 +515,7 @@ down the changes into categories.
   [marked as allowed](https://lore.kernel.org/bpf/20210325015124.1543397-1-kafai@fb.com/t/#mbe914ced14b35921b471345b58905f962baf1905)
   for eBPF programs overriding TCP congestion control.
   (Martin KaFai Lau,
-  [link](https://lore.kernel.org/bpf/20210325015124.1543397-1-kafai@fb.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210325015124.1543397-1-kafai@fb.com/t/#u))
 
 ### XDP
 
@@ -525,13 +525,13 @@ down the changes into categories.
   This, with another improvement on the `xdp_do_redirect()` kernel function,
   led to an improvement of up to 8% in performance.
   (Björn Töpel,
-  [link](https://lore.kernel.org/bpf/20210308112907.559576-1-bjorn.topel@gmail.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210308112907.559576-1-bjorn.topel@gmail.com/t/#u))
 
 - For all drivers implementing XDP, move the drop error path for `XDP_REDIRECT`
   to devmap. This should help implement better queue overflow handling, and
   represents a step towards the addition of an XDP hook on the transmit queue.
   (Lorenzo Bianconi,
-  [link](https://lore.kernel.org/bpf/ed670de24f951cfd77590decf0229a0ad7fd12f6.1615201152.git.lorenzo@kernel.org/t/#u))
+  [source](https://lore.kernel.org/bpf/ed670de24f951cfd77590decf0229a0ad7fd12f6.1615201152.git.lorenzo@kernel.org/t/#u))
 
 - Improve AF_XDP selftests and program loading. AF_XDP sockets need a XDP
   program to filter the packets to redirect to user space. But when multiple
@@ -541,14 +541,14 @@ down the changes into categories.
   selftests, this PR addresses the issue by making libbpf use eBPF “links” to
   properly reference the XDP programs and make them persistent.
   (Maciej Fijalkowski,
-  [link](https://lore.kernel.org/bpf/20210329224316.17793-1-maciej.fijalkowski@intel.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210329224316.17793-1-maciej.fijalkowski@intel.com/t/#u))
 
 - Convert “cpumap” (for redirecting packets to specific CPUs with XDP) to use
   `netif_receive_skb_list()`, which allows to receive a bulk of socket buffers,
   thus improving i-cache usage. This results in a performance improvement of
   about 15% on a test with the `xdp_redirect_cpu` kernel sample program.
   (Lorenzo Bianconi,
-  [link](https://lore.kernel.org/bpf/c729f83e5d7482d9329e0f165bdbe5adcefd1510.1619169700.git.lorenzo@kernel.org/t/))
+  [source](https://lore.kernel.org/bpf/c729f83e5d7482d9329e0f165bdbe5adcefd1510.1619169700.git.lorenzo@kernel.org/t/))
 
 ### eBPF Helper functions
 
@@ -557,7 +557,7 @@ down the changes into categories.
   requires BTF information, and targets arrays, hash maps, LRU hash maps, and
   their per-CPU derivatives.
   (Yonghong Song,
-  [link](https://lore.kernel.org/bpf/20210225073309.4119708-1-yhs@fb.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210225073309.4119708-1-yhs@fb.com/t/#u))
 
 - Implement a new **`bpf_snprintf()`** helper, with a behavior close to the classic
   `snprintf()` function. The signature differs a little:
@@ -569,14 +569,14 @@ down the changes into categories.
   Format specifiers `%s` or `%p` are available, among others. The validation of
   the format string is performed by the verifier.
   (Florent Revest,
-  [link](https://lore.kernel.org/bpf/20210419155243.1632274-1-revest@chromium.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20210419155243.1632274-1-revest@chromium.org/t/#u))
 
 ### Miscellaneous
 
 - Add support for floating point types (float and double) in BTF. The objective
   is to help load programs with BTF information on the s390 architecture.
   (Ilya Leoshkevich,
-  [link](https://lore.kernel.org/bpf/20210226202256.116518-1-iii@linux.ibm.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210226202256.116518-1-iii@linux.ibm.com/t/#u))
 
 - **Document the various sub-commands for the `bpf()` system call** (map
   operations, program load, object pinning, and so on). This documentation is
@@ -588,7 +588,7 @@ down the changes into categories.
   [the kernel's API guide](https://www.kernel.org/doc/html/latest/driver-api/index.html)
   once version 5.13 is out.
   (Joe Stringer,
-  [link](https://lore.kernel.org/bpf/20210302171947.2268128-1-joe@cilium.io/t/#u))
+  [source](https://lore.kernel.org/bpf/20210302171947.2268128-1-joe@cilium.io/t/#u))
 
 - Add support for the `BPF_PROG_TEST_RUN` subcommand to programs of type
   `BPF_PROG_TYPE_SK_LOOKUP`, to be able to “test-run” them and evaluate their
@@ -596,35 +596,35 @@ down the changes into categories.
   UDP flows and overcomes some of the `bind()` limitations in specific use
   cases.
   (Lorenz Bauer,
-  [link](https://lore.kernel.org/bpf/20210303101816.36774-1-lmb@cloudflare.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210303101816.36774-1-lmb@cloudflare.com/t/#u))
 
 - Enable task-local storage for tracing programs (only LSM programs could
   access it so far).
   (Song Liu,
-  [link](https://lore.kernel.org/bpf/20210225234319.336131-1-songliubraving@fb.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210225234319.336131-1-songliubraving@fb.com/t/#u))
 
 - Add UDP support to socket maps (“sockmaps”). Only TCP was supported so far.
   The use case that motivated the change is the need for an efficient solution
   to proxy connections over AF_UNIX sockets for thousands of services
   connected to a daemon, after they have been moved into a VM.
   (Cong Wang,
-  [link](https://lore.kernel.org/bpf/20210331023237.41094-1-xiyou.wangcong@gmail.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210331023237.41094-1-xiyou.wangcong@gmail.com/t/#u))
 
 - Extend batch map operations (lookup, update, delete) to LPM (*Longest Prefix
   Match*) maps.
   (Pedro Tammela,
-  [link](https://lore.kernel.org/bpf/20210323025058.315763-1-pctammela@gmail.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210323025058.315763-1-pctammela@gmail.com/t/#u))
 
 - Extend batch map operations (lookup, update, delete) to per-CPU array maps.
   (Pedro Tammela,
-  [link](https://lore.kernel.org/bpf/20210424214510.806627-1-pctammela@mojatatu.com/t/#u))
+  [source](https://lore.kernel.org/bpf/20210424214510.806627-1-pctammela@mojatatu.com/t/#u))
 
 - Allow to detach and re-attach to eBPF links trampolines associated to
   programs of certain types (for tracing or from the eBPF LSM in particular).
   It makes it possible to reattach such programs after detaching them from
   their hook, as long as they remain loaded in the kernel.
   (Jiri Olsa,
-  [link](https://lore.kernel.org/bpf/20210414195147.1624932-1-jolsa@kernel.org/t/#u))
+  [source](https://lore.kernel.org/bpf/20210414195147.1624932-1-jolsa@kernel.org/t/#u))
 
 ### Tools
 
