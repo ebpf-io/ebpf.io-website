@@ -37,7 +37,7 @@ During the growth of Cloudflare, we had accumulated significant workarounds over
 - **Tens of thousands of IP bindings** in our DNS resolver leading to massive socket overhead just for DDoS protection
 
 eBPF allowed us to replace all of these with cleaner, more maintainable solutions.
- 
+
 ## Why an eBPF Based Platform Approach?
 
 The decision to use eBPF across our entire stack rather than as point solutions came down to architectural reality and operational efficiency.
