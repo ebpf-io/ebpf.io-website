@@ -5,7 +5,7 @@ title: 'Go + eBPF Development'
 description: 'Learn how to use the cilium/ebpf library to build Go applications that leverage eBPF for networking, observability, and tracing. Work with maps, ring buffers, XDP network hooks, and kernel tracing — all from Go code.'
 ogImage: ogImage.png
 linkText: 'Start the lab'
-linkUrl: 'https://isovalent.com/labs/ebpf-go/?utm_source=website-ebpf&utm_medium=referral&utm_campaign=ebpf-lab'
+linkUrl: 'https://labs.isovalent.com/#/lab/ebpf-go'
 category:
   - Programming
   - Networking
