@@ -48,23 +48,23 @@ To resolve the issue, Cloudflare engineers patched the Linux kernel to ensure pa
 
 There is no single "most impressive" achievement. Cloudflare has used eBPF to solve fundamentally different types of problems, from raw packet processing speed to architectural scalability to kernel API design. Five specific achievements stand out as technically groundbreaking for different reasons.
 
-1. Contributing sk_lookup to the Mainline Linux Kernel and Building Tubular
+**1. Contributing sk_lookup to the Mainline Linux Kernel and Building Tubular**
 
 The most architecturally significant achievement is the creation and upstream acceptance of the sk_lookup BPF program type (merged into Linux 5.9), which fundamentally extends the BSD socket API without modifying the kernel's socket lookup code directly. Cloudflare's Anycast architecture requires every server to listen on millions of IPs, something the standard bind() and listen() API, designed 30 years ago, could not scale to support.
 
 The sk_lookup hook allows userspace to program the kernel's socket lookup logic. On top of it, Cloudflare built Tubular, a control plane that binds services (like HTTP or DNS) to millions of IPs or disjoint IP ranges on the fly without restarting applications. Tubular now dispatches traffic on every Cloudflare edge server.
 
-2. "Soft-Unicast" — Solving IPv4 Address Exhaustion
+**2. "Soft-Unicast" — Solving IPv4 Address Exhaustion**
 
 Perhaps the most innovative architectural feat was [decoupling IP addresses from physical servers](https://blog.cloudflare.com/cloudflare-servers-dont-own-ips-anymore/). Cloudflare used eBPF to implement "Soft-unicast," which allows them to assign a single IPv4 address to a data center and slice it across multiple physical servers using port ranges.
 
 Standard networking binds an IP to a single interface. Cloudflare's Unimog load balancer (XDP) inspects the port on incoming packets and dispatches them to the specific machine owning that port slice. This allows a single /32 IP address to be shared among dozens of physical servers, addressing the growing challenge of IPv4 address exhaustion and allowing the fleet to scale without requiring proportionally more IP addresses.
 
-3. Dropping 8 Million Packets Per Second on Commodity Hardware
+**3. Dropping 8 Million Packets Per Second on Commodity Hardware**
 
 In terms of raw engineering performance, the l4drop system (XDP) is a standout achievement. It replaced a proprietary hardware-dependent solution with software that runs on standard Linux kernels. In production, a single server using l4drop [successfully dropped over 8 million packets per second during](https://blog.cloudflare.com/how-cloudflare-auto-mitigated-world-record-3-8-tbps-ddos-attack/) a volumetric attack. Even while incoming packet volume spiked by a factor of 40x, overall CPU usage increased by only ~10%, proving that commodity hardware plus eBPF could outperform specialized proprietary solutions.
 
-4. udpgrm — Solving the Unsolvable: Zero-Downtime UDP Restarts
+**4. udpgrm — Solving the Unsolvable: Zero-Downtime UDP Restarts**
 
 [udpgrm (UDP Graceful Restart Marshal) solves a problem](https://blog.cloudflare.com/quic-restarts-slow-problems-udpgrm-to-the-rescue/) that had been discussed for years across multiple failed attempts. The core difficulty is that UDP is stateless, so there's no equivalent of TCP's listen/accept handoff between old and new processes.
 
@@ -77,7 +77,7 @@ udpgrm hooks into six different BPF attach points simultaneously:
 
 The system manages multiple "generations" of sockets (not just two), maintains a flow table for connection stickiness, and supports two dissection modes: generic flow-hash and QUIC-aware cookie-based routing (where a 3-byte cookie is embedded in the QUIC DCID to directly select the application socket without flow table lookups).
 
-5. Kernel-to-Application Distributed Tracing via ebpf_exporter
+**5. Kernel-to-Application Distributed Tracing via ebpf_exporter**
 
 The [distributed tracing integration in ebpf_exporter](https://github.com/cloudflare/ebpf_exporter/tree/master/tracing) represents a novel bridging of two worlds that traditionally have no connection: kernel-level packet processing and application-level request tracing.
 
