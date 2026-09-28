@@ -14,7 +14,7 @@ By Cloudflare Engineering
 
 In [part 1](https://ebpf.io/blog/cloudflare-replatforming-1/), we covered why Cloudflare bet on eBPF as a platform rather than a collection of point solutions. In [part 2](https://ebpf.io/blog/cloudflare-replatforming-2/), we looked at the places where standard Linux networking APIs couldn't support Cloudflare's requirements, and what the team built to fill those gaps. In this post, we'll dig into the technical challenges the team faces in implementing eBPF.
 
-Building on standard Linux networking APIs only gets you so far, and pushing past those limits requires teams willing to dig deep and persist. From a grueling 13-month organizational odyssey to get our code merged into the mainline Linux kernel, to debugging "impossible" packet corruption in the trenches, this post details the steep setbacks, the dead ends, and ultimately, the five groundbreaking technical achievements that emerged on the other side. 
+Building on standard Linux networking APIs only gets you so far, and pushing past those limits requires teams willing to dig deep and persist. From a grueling 13-month organizational odyssey to get our code merged into the mainline Linux kernel, to debugging "impossible" packet corruption in the trenches, this post details the steep setbacks, the dead ends, and ultimately, the five groundbreaking technical achievements that emerged on the other side.
 
 ## The Hardest Architectural Challenge: A 13-month Upstreaming Organizational Odyssey
 
