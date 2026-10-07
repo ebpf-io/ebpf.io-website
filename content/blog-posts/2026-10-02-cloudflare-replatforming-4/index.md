@@ -99,6 +99,7 @@ As these post-mortems illustrate, the intersection of eBPF and deep kernel traci
 By moving telemetry directly into the kernel and handling threat mitigation autonomously at the edge, Cloudflare has significantly increased the overall reliability of the fleet while reducing CPU overhead. However, operating dynamic BPF tracing tools and BPF LSM security policies across a massive fleet introduces new operational complexities. In the fifth blog, we will examine the deployment mechanics of how Cloudflare manages the lifecycle of these eBPF objects, ensures safe fleet-wide distribution, and operationalizes eBPF at scale.
 
 Catch up on the series so far:
+
 - In [part 1](https://ebpf.io/blog/cloudflare-replatforming-1/), we covered why Cloudflare bet on eBPF as a platform rather than a collection of point solutions.
 - In [part 2](https://ebpf.io/blog/cloudflare-replatforming-2/), we looked at the places where standard Linux networking APIs couldn't support Cloudflare's requirements, and what the team built to fill those gaps.
 - In [part 3](https://ebpf.io/blog/cloudflare-replatforming-3/), we covered the architectural shifts and upstreaming efforts required to build Cloudflare’s eBPF-based network data path.
