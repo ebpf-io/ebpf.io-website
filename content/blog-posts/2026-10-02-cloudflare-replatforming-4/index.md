@@ -12,8 +12,6 @@ By Cloudflare Engineering
 
 > This series chronicles Cloudflare's eight-year journey with eBPF from a specialized DDoS tool to the programmable backbone of their global network. It covers everything from contributing to the Linux kernel and technical challenges to business ROI to advice and operational strategies for other companies adopting eBPF.
 
-In [part 1](https://ebpf.io/blog/cloudflare-replatforming-1/), we covered why Cloudflare bet on eBPF as a platform rather than a collection of point solutions. In [part 2](https://ebpf.io/blog/cloudflare-replatforming-2/), we looked at the places where standard Linux networking APIs couldn't support Cloudflare's requirements, and what the team built to fill those gaps.
-
 In [part 3](https://ebpf.io/blog/cloudflare-replatforming-3/), we covered the architectural shifts and upstreaming efforts required to build Cloudflare’s eBPF-based network data path. Once merged, moving the data path into the kernel alters the operational boundary. When dropping millions of packets directly in the driver via XDP before an sk_buff is even allocated, standard tools like tcpdump are rendered blind. Similarly, user-space counters often mask the micro-bursts of CFS throttling or I/O latency that degrade service reliability. This post details how Cloudflare leverages eBPF to fundamentally improve its operational posture. We will examine how observability had to be rebuilt from the ground up such as implementing custom XDP packet capture (xdpcap) and exporting high-resolution kernel histograms. More importantly, we will explore how these observability gains, combined with autonomous edge-local mitigation (l4drop) and BPF LSM hot-patching, translate directly into measurable reliability improvements and more resilient fleet operations.
 
 ## eBPF Observability Improvements in Practice
@@ -99,3 +97,8 @@ They can block specific syscall patterns that enable privilege escalation (for e
 As these post-mortems illustrate, the intersection of eBPF and deep kernel tracing fundamentally changes Linux operations, reliability, and security. Resolving "impossible" NAPI violations in the veth driver or uncovering IP fragmentation exhaustion via kfree_skb tracepoints demonstrates that eBPF is a critical tool for operations of large scale systems.
 
 By moving telemetry directly into the kernel and handling threat mitigation autonomously at the edge, Cloudflare has significantly increased the overall reliability of the fleet while reducing CPU overhead. However, operating dynamic BPF tracing tools and BPF LSM security policies across a massive fleet introduces new operational complexities. In the fifth blog, we will examine the deployment mechanics of how Cloudflare manages the lifecycle of these eBPF objects, ensures safe fleet-wide distribution, and operationalizes eBPF at scale.
+
+Catch up on the series so far:
+- In [part 1](https://ebpf.io/blog/cloudflare-replatforming-1/), we covered why Cloudflare bet on eBPF as a platform rather than a collection of point solutions.
+- In [part 2](https://ebpf.io/blog/cloudflare-replatforming-2/), we looked at the places where standard Linux networking APIs couldn't support Cloudflare's requirements, and what the team built to fill those gaps.
+- In [part 3](https://ebpf.io/blog/cloudflare-replatforming-3/), we covered the architectural shifts and upstreaming efforts required to build Cloudflare’s eBPF-based network data path.
