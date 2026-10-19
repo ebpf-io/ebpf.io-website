@@ -15,9 +15,7 @@ import bg2 from './images/bg-2.webp';
 
 const TopBanner = () => {
   const handleClick = () => {
-    navigate('https://www.youtube.com/watch?v=Wb_vD3XZYOA', {
-      target: '_blank',
-    });
+    navigate('/summit-2027');
   };
 
   return (
@@ -51,10 +49,10 @@ const TopBanner = () => {
       />
       <div className="relative z-10 flex items-center justify-center space-x-5 xs:flex-col xs:space-x-0 xs:space-y-2.5">
         <span className="font-sans text-3xl font-bold leading-none md:text-xl">
-          eBPF Documentary
+          eBPF Summit 2027: Security Edition
         </span>
         <Button className="h-9 px-4 pb-1 md:text-sm" theme="black-filled" onClick={handleClick}>
-          Watch on Youtube
+          Register here
         </Button>
       </div>
     </div>
