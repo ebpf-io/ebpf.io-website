@@ -6,21 +6,21 @@ import TrendingIcon from 'components/pages/summit-2024/information/images/trendi
 
 const cardItems = [
   {
-    title: 'See what’s really happening',
+    title: 'Connecting technologists',
     description:
-      'Trace processes, files and network calls from inside the kernel, with the context to tell normal behavior from an attack.',
+      'This year’s summit is a half-day virtual event bringing together eBPF experts, contributors, adopters, enthusiasts and the community to explore the technology behind some of today’s most exciting infrastructure tools.',
     iconName: 'connecting',
   },
   {
-    title: 'Detect threats at runtime',
+    title: 'Sharing ideas',
     description:
-      'Learn how people and projects use eBPF to catch suspicious behavior while it’s happening, not hours later in a log review.',
+      'Learn from the experiences, experiments, projects, and ideas from the eBPF community. Explore the numerous possibilities eBPF offers.',
     iconName: 'sharing',
   },
   {
-    title: 'Enforce policy where attacks happen',
+    title: 'Evolving use cases',
     description:
-      'Explore how eBPF blocks malicious actions right at the kernel hook, and where eBPF security is heading next.',
+      'eBPF is enabling a new generation of networking, observability and security tools. You’ll hear about how people and projects leverage eBPF today to solve engineering problems, and how eBPF itself is evolving and growing.',
     iconName: 'trending',
   },
 ];
@@ -35,10 +35,8 @@ const Information = () => (
   <section className="mt-16 md:mt-10" id="information">
     <div className="container">
       <h2 className="heading-9xl text-center font-bold leading-none">About the conference</h2>
-      <p className="mx-auto mt-5 max-w-[860px] text-center text-xl leading-normal md:mt-3">
-        Technical deep dives, hands-on CTF challenges and big-picture talks on where eBPF security
-        is heading. Bring your questions, share what you’ve learned, and leave with new ways to
-        defend what you run.
+      <p className="mt-5 text-center text-xl leading-normal md:mt-3">
+        Back by popular demand, we’re excited to announce the eBPF Summit 2027
       </p>
       <div className="mt-14 mb-14 flex space-x-8 lg:space-x-6 md:mt-10 md:flex-col md:space-x-0 md:space-y-6">
         {cardItems.map(({ iconName, title, description }, index) => {
