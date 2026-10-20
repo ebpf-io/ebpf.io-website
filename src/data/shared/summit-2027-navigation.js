@@ -7,10 +7,8 @@ export const navigation = [
 // TODO: replace with the 2027 HubSpot registration form id
 export const hubspotFormId = 'TODO-summit-2027-hubspot-form-id';
 
-// TODO: replace with the 2027 Sessionize call for proposals url
-export const cfpUrl = 'https://sessionize.com/ebpf-summit-2027/';
+export const cfpUrl = 'https://sessionize.com/ebpf-security-summit-2027';
 
 export const slackUrl = 'https://ebpf.io/slack';
 
-// TODO: update the event date in static/summit-2027.ics once it is confirmed
 export const calendarUrl = '/summit-2027.ics';

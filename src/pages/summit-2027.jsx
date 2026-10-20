@@ -15,14 +15,13 @@ import {
   calendarUrl,
 } from 'data/shared/summit-2027-navigation';
 
-// TODO: replace with a 2027 social preview image
-const ogImage = '/images/social-preview-ebpf-summit.jpg';
+const ogImage = '/images/social-preview-ebpf-summit-2027.jpg';
 
 const hero = {
-  date: '[Month] <strong>[XX]</strong>, 2027',
+  date: 'January <strong>26–27</strong>, 2027',
   title: 'eBPF Summit 2027',
   tagline: 'Security Edition',
-  time: '[Time TBA]',
+  time: 'eBee Quest Jan 26 / Talks Jan 27 / Online',
   hubspotFormId,
   description:
     '<p>The eBPF Summit is back, and this year it’s all about security. Whether you’re new to eBPF or have been writing programs for years, join us for the free virtual conference on what eBPF makes possible: seeing what’s really happening on your systems, detecting threats at runtime, and enforcing policy right where attacks happen.</p>',
@@ -50,8 +49,8 @@ const hero = {
 
 const proposal = {
   title: 'Call for proposals: open now',
-  date1: 'CFP closes: <strong>[XX date]</strong>',
-  date2: 'Full schedule announced: <strong>[XX date]</strong>',
+  date1: 'CFP closes: <strong>November 15</strong>',
+  date2: 'Speaker notifications: <strong>December 15</strong>',
   buttonText: 'Submit a proposal',
   buttonUrl: cfpUrl,
   buttonTarget: '_blank',
@@ -124,7 +123,7 @@ export const Head = ({ location: { pathname } }) => {
   const pageMetadata = {
     title: 'eBPF Summit 2027: Security Edition',
     description:
-      'Register now for eBPF Summit 2027: Security Edition, a free virtual event on using eBPF to observe, detect and stop attacks on your systems.',
+      'Register now for eBPF Summit 2027: Security Edition, January 26–27, 2027, a free virtual event on using eBPF to observe, detect and stop attacks on your systems.',
     image: ogImage,
     pathname,
   };

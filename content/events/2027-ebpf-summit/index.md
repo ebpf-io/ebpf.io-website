@@ -1,8 +1,8 @@
 ---
-date: '2026-10-19T16:30:00.000Z'
+date: '2027-01-26T12:00:00.000Z'
 place: 'Online'
 title: 'eBPF Summit 2027: Security Edition'
-description: 'A free virtual conference on what eBPF makes possible for security: seeing what is really happening on your systems, detecting threats at runtime, and enforcing policy right where attacks happen.'
+description: 'eBPF Summit: Security Edition is a half-day virtual event for security engineers, platform and SRE teams, researchers, and kernel and project developers. Topics span runtime enforcement, network security, threat research, and the security of eBPF itself.'
 linkUrl: '/summit-2027/'
 type: Conference
 conference: eBPF Summit

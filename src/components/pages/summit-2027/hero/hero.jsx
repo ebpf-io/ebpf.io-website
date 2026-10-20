@@ -6,8 +6,8 @@ import FormModal from 'components/shared/form-modal';
 import CalendarIcon from 'icons/calendar.inline.svg';
 import SlackIcon from 'icons/slack.inline.svg';
 
-import hive from './images/hive.svg';
-import illustration from './images/illustration.png';
+import illustration from './images/illustration.webp';
+import pattern from './images/pattern.svg';
 
 const icons = {
   slack: SlackIcon,
@@ -67,22 +67,22 @@ const Hero = ({ date, title, tagline, time, description, ctaButtons, hubspotForm
             })}
           </div>
         </div>
-        <div className="absolute -right-36 top-[calc(50%+16px)] w-[780px] -translate-y-1/2 2xl:-right-24 2xl:w-[700px] xl:-right-12 xl:w-[660px] lg:relative lg:right-auto lg:top-auto lg:mx-auto lg:mt-12 lg:w-full lg:max-w-[700px] lg:translate-y-0">
+        <div className="absolute -right-16 top-[calc(50%+16px)] w-[640px] -translate-y-1/2 2xl:-right-8 2xl:w-[580px] xl:right-0 xl:w-[540px] lg:relative lg:right-auto lg:top-auto lg:mx-auto lg:mt-40 lg:w-full lg:max-w-[600px] lg:translate-y-0 sm:mt-28">
           <img
-            src={hive}
-            className="absolute left-1/2 top-1/2 -z-10 h-auto w-[130%] max-w-none -translate-x-1/2 -translate-y-1/2"
+            src={pattern}
+            className="absolute left-[13%] top-[-67%] -z-10 h-auto w-[125%] max-w-none"
             alt=""
-            width={1100}
-            height={640}
+            width={1043}
+            height={541}
             loading="eager"
             aria-hidden
           />
           <img
             src={illustration}
-            className="mx-auto h-auto w-[82%] lg:pt-6"
+            className="relative h-auto w-full"
             alt="eBPF Summit 2027 lettering made of honey with a Security Edition stamp"
-            width={703}
-            height={303}
+            width={1600}
+            height={702}
             loading="eager"
           />
         </div>
