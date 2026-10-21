@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 
 import Button from 'components/shared/button';
 import FormModal from 'components/shared/form-modal';
-import CalendarIcon from 'icons/calendar.inline.svg';
 import SlackIcon from 'icons/slack.inline.svg';
 
 import illustration from './images/illustration.webp';
@@ -11,7 +10,6 @@ import pattern from './images/pattern.svg';
 
 const icons = {
   slack: SlackIcon,
-  calendar: CalendarIcon,
 };
 
 const Hero = ({ date, title, tagline, time, description, ctaButtons, hubspotFormId }) => {

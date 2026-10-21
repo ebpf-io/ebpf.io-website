@@ -1,19 +1,13 @@
 import React from 'react';
 
-import Hosts from 'components/pages/summit-2024/hosts';
 import Hero from 'components/pages/summit-2027/hero';
+import Hosts from 'components/pages/summit-2027/hosts';
 import Information from 'components/pages/summit-2027/information';
 import LastYear from 'components/pages/summit-2027/last-year';
 import Proposal from 'components/pages/summit-2027/proposal';
 import SummitLayout from 'components/pages/summit-2027/summit-layout';
 import SEO from 'components/shared/seo';
-import {
-  navigation,
-  hubspotFormId,
-  cfpUrl,
-  slackUrl,
-  calendarUrl,
-} from 'data/shared/summit-2027-navigation';
+import { navigation, hubspotFormId, cfpUrl, slackUrl } from 'data/shared/summit-2027-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit-2027.jpg';
 
@@ -37,12 +31,6 @@ const hero = {
       theme: 'gray',
       iconName: 'slack',
       target: '_blank',
-    },
-    {
-      title: 'Add to your calendar',
-      url: calendarUrl,
-      theme: 'gray',
-      iconName: 'calendar',
     },
   ],
 };
