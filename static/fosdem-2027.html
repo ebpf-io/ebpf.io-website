@@ -8,7 +8,7 @@
   <meta property="og:title" content="FOSDEM'27 eBPF Devroom CfP"/>
   <meta
   property="og:description"
-  content="Call for Participation for the eBPF Devroom at FOSDEM'27, on 30-31 January 2027 in Brussels, Belgium."/>
+  content="Call for Participation for the eBPF Devroom at FOSDEM'27, on 30 and 31 January 2027 in Brussels, Belgium."/>
   <meta
   property="og:image"
   content="https://ebpf.io/images/social-preview-fosdem-ebpf.png"/>
@@ -166,19 +166,10 @@
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    ul.task-list{list-style: none;}
   </style>
 </head>
 <body>
@@ -195,7 +186,7 @@ third eBPF Devroom at FOSDEM!</p>
 <li><strong>November 23rd, 2026: Submission deadline</strong></li>
 <li>December 7th, 2026: Announcement of accepted talks and
 schedule</li>
-<li>January 30th, 2027: eBPF Devroom at FOSDEM</li>
+<li>January 30th, 2027 (Saturday): eBPF Devroom at FOSDEM</li>
 </ul>
 <h2 id="ebpf-at-fosdem">eBPF at FOSDEM</h2>
 <p>Originally introduced to make the Linux kernel more programmable,
@@ -229,6 +220,7 @@ to):</p>
 <li>eBPF development: recent or proposed features (on Linux, on other
 platforms, or even cross-platform), such as:
 <ul>
+<li>eBPF arenas, stack improvement, coroutines, improved BTF, etc.</li>
 <li>eBPF program signing and supply chain security</li>
 <li>Profiling eBPF with eBPF</li>
 <li>eBPF-based process schedulers</li>
@@ -237,8 +229,7 @@ platforms, or even cross-platform), such as:
 <li>eBPF for profiling AI workloads</li>
 </ul></li>
 <li>Deep-dives on existing eBPF features</li>
-<li>Working with eBPF: best practices, common mistakes, debugging, and
-so on</li>
+<li>Working with eBPF: best practices, common mistakes, debugging, etc.</li>
 <li>eBPF toolchain, for compiling, managing, debugging, packaging, and
 deploying eBPF programs and related objects</li>
 <li>eBPF libraries, in C/C++, Go, Rust, or other languages</li>
@@ -250,7 +241,9 @@ cross-platform initiatives)</li>
 proposal!</p>
 <h2 id="format">Format</h2>
 <p>FOSDEM 2027 will be an in-person event in Brussels, Belgium. We do
-not accept remote presentations.</p>
+not accept remote presentations.
+(Participants must be able to fund their trip, visa, and accommodation,
+as we do not provide any scholarship or other funding assistance.)</p>
 <p>We’re looking for 20- to 30-minute presentations. The duration should
 include time for questions: allow at least 5 to 10 minutes to answer
 questions from the public.</p>
@@ -258,14 +251,16 @@ questions from the public.</p>
 duration different than the one requested when submitting. If you have
 specific duration requirements, we encourage you to mention them in your
 proposal.</p>
-<p>You can look at <a
-href="https://archive.fosdem.org/2026/schedule/track/ebpf/">last year’s
-schedule</a> for inspiration.</p>
+<p>You can look at the schedule from previous editions for inspiration:</p>
+<ul>
+<li><a href="https://archive.fosdem.org/2026/schedule/track/ebpf/">eBPF Devroom 2026</a></li>
+<li><a href="https://archive.fosdem.org/2025/schedule/track/ebpf/">eBPF Devroom 2025</a></li>
+</ul>
 <h2 id="how-to-submit">How to Submit</h2>
 <p>Please submit your proposals on <a
 href="https://pretalx.fosdem.org/fosdem-2027/cfp">Pretalx</a>, FOSDEM’s
 submissions tool.</p>
-<p>Make sure to <strong>select “eBPF” as the track</strong>.</p>
+<p>Make sure to select “eBPF” as the track.</p>
 <h2 id="code-of-conduct">Code of Conduct</h2>
 <p>All participants at FOSDEM are expected to abide by the <a
 href="https://fosdem.org/2027/practical/conduct/">FOSDEM’s Code of
