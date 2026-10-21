@@ -10,5 +10,3 @@ export const hubspotFormId = 'TODO-summit-2027-hubspot-form-id';
 export const cfpUrl = 'https://sessionize.com/ebpf-security-summit-2027';
 
 export const slackUrl = 'https://ebpf.io/slack';
-
-export const calendarUrl = '/summit-2027.ics';
