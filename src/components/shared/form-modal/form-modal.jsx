@@ -4,6 +4,7 @@ import React from 'react';
 import ReactModal from 'react-modal';
 
 import HubspotForm from 'components/shared/hubspot-form';
+import SplashForm from 'components/shared/splash-form';
 import CloseIcon from 'icons/close.inline.svg';
 
 const customStyles = {
@@ -13,7 +14,7 @@ const customStyles = {
   },
 };
 
-const FormModal = ({ className, isOpen, closeModal, title, hubspotFormId }) => (
+const FormModal = ({ className, isOpen, closeModal, title, hubspotFormId, splashEventId }) => (
   <ReactModal
     style={customStyles}
     isOpen={isOpen}
@@ -30,7 +31,11 @@ const FormModal = ({ className, isOpen, closeModal, title, hubspotFormId }) => (
   >
     <CloseIcon className="absolute right-5 top-4 h-4 w-4" role="button" onClick={closeModal} />
     <h2 className="heading-6xl text-center font-bold">{title}</h2>
-    <HubspotForm className="mt-8 min-h-[400px]" hubspotFormId={hubspotFormId} />
+    {splashEventId ? (
+      <SplashForm className="mt-8 h-[70vh]" splashEventId={splashEventId} />
+    ) : (
+      <HubspotForm className="mt-8 min-h-[400px]" hubspotFormId={hubspotFormId} />
+    )}
   </ReactModal>
 );
 FormModal.propTypes = {
@@ -38,11 +43,14 @@ FormModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   closeModal: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
-  hubspotFormId: PropTypes.string.isRequired,
+  hubspotFormId: PropTypes.string,
+  splashEventId: PropTypes.string,
 };
 
 FormModal.defaultProps = {
   className: null,
+  hubspotFormId: null,
+  splashEventId: null,
 };
 
 export default FormModal;

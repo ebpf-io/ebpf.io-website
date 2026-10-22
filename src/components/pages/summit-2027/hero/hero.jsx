@@ -12,7 +12,7 @@ const icons = {
   slack: SlackIcon,
 };
 
-const Hero = ({ date, title, tagline, time, description, ctaButtons, hubspotFormId }) => {
+const Hero = ({ date, title, tagline, time, description, ctaButtons, splashEventId }) => {
   const [isOpen, setIsOpen] = useState(false);
   const openModal = () => {
     setIsOpen(true);
@@ -89,7 +89,7 @@ const Hero = ({ date, title, tagline, time, description, ctaButtons, hubspotForm
         title="Register for eBPF Summit 2027"
         isOpen={isOpen}
         closeModal={closeModal}
-        hubspotFormId={hubspotFormId}
+        splashEventId={splashEventId}
       />
     </section>
   );
@@ -111,7 +111,7 @@ Hero.propTypes = {
       isRegister: PropTypes.bool,
     })
   ).isRequired,
-  hubspotFormId: PropTypes.string.isRequired,
+  splashEventId: PropTypes.string.isRequired,
 };
 
 Hero.defaultProps = {
