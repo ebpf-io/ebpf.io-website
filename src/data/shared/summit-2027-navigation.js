@@ -4,8 +4,8 @@ export const navigation = [
   { name: `Last year's summit`, href: `/summit-2027/#last-year-summit` },
 ];
 
-// TODO: replace with the 2027 HubSpot registration form id
-export const hubspotFormId = 'TODO-summit-2027-hubspot-form-id';
+// Splash event, registration form at https://events.isovalent.com/ebpfsummit2027
+export const splashEventId = 'ebpfsummit2027';
 
 export const cfpUrl = 'https://sessionize.com/ebpf-security-summit-2027';
 

@@ -7,7 +7,7 @@ import LastYear from 'components/pages/summit-2027/last-year';
 import Proposal from 'components/pages/summit-2027/proposal';
 import SummitLayout from 'components/pages/summit-2027/summit-layout';
 import SEO from 'components/shared/seo';
-import { navigation, hubspotFormId, cfpUrl, slackUrl } from 'data/shared/summit-2027-navigation';
+import { navigation, splashEventId, cfpUrl, slackUrl } from 'data/shared/summit-2027-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit-2027.jpg';
 
@@ -16,7 +16,7 @@ const hero = {
   title: 'eBPF Summit 2027',
   tagline: 'Security Edition',
   time: 'eBee Quest Jan 26 / Talks Jan 27 / Online',
-  hubspotFormId,
+  splashEventId,
   description:
     '<p>The eBPF Summit is back, and this year it’s all about security. Whether you’re new to eBPF or have been writing programs for years, join us for the free virtual conference on what eBPF makes possible: seeing what’s really happening on your systems, detecting threats at runtime, and enforcing policy right where attacks happen.</p>',
   ctaButtons: [
@@ -98,7 +98,7 @@ const lastYear = {
 };
 
 const Summit2027 = () => (
-  <SummitLayout navigation={navigation} hubspotFormId={hubspotFormId}>
+  <SummitLayout navigation={navigation} splashEventId={splashEventId}>
     <Hero {...hero} />
     <Proposal {...proposal} />
     <Information />

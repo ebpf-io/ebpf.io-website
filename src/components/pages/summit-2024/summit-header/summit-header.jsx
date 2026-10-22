@@ -10,7 +10,7 @@ import Link from 'components/shared/link';
 import BeeIcon from 'icons/bee.inline.svg';
 import Logo from 'images/logo.inline.svg';
 
-const SummitHeader = ({ navigation, hubspotFormId }) => {
+const SummitHeader = ({ navigation, hubspotFormId, splashEventId }) => {
   const [isOpen, setIsOpen] = useState(false);
   const openModal = () => {
     setIsOpen(true);
@@ -125,6 +125,7 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
         isOpen={isOpen}
         closeModal={closeModal}
         hubspotFormId={hubspotFormId}
+        splashEventId={splashEventId}
       />
     </div>
   );
@@ -132,7 +133,13 @@ const SummitHeader = ({ navigation, hubspotFormId }) => {
 
 SummitHeader.propTypes = {
   navigation: PropTypes.array.isRequired,
-  hubspotFormId: PropTypes.string.isRequired,
+  hubspotFormId: PropTypes.string,
+  splashEventId: PropTypes.string,
+};
+
+SummitHeader.defaultProps = {
+  hubspotFormId: null,
+  splashEventId: null,
 };
 
 export default SummitHeader;
