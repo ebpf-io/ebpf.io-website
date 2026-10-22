@@ -32,7 +32,7 @@ const FormModal = ({ className, isOpen, closeModal, title, hubspotFormId, splash
     <CloseIcon className="absolute right-5 top-4 h-4 w-4" role="button" onClick={closeModal} />
     <h2 className="heading-6xl text-center font-bold">{title}</h2>
     {splashEventId ? (
-      <SplashForm className="mt-8 h-[70vh]" splashEventId={splashEventId} />
+      <SplashForm className="mt-8" splashEventId={splashEventId} />
     ) : (
       <HubspotForm className="mt-8 min-h-[400px]" hubspotFormId={hubspotFormId} />
     )}

@@ -9,10 +9,13 @@ const SplashForm = ({ splashEventId, className }) => {
     setQuery(window.location.search.slice(1));
   }, []);
 
+  // Sized inline rather than with Tailwind classes: after client-side navigation Gatsby keeps
+  // the previous page's CSS bundle, which may not have new arbitrary classes, and the iframe
+  // falls back to the browser's default 150px height
   return (
-    <div className={className}>
+    <div className={className} style={{ height: '70vh' }}>
       <iframe
-        className="h-full w-full"
+        style={{ width: '100%', height: '100%' }}
         src={`https://events.isovalent.com/${splashEventId}${query ? `?${query}` : ''}`}
         width="100%"
         height="100%"
