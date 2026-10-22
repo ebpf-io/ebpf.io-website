@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
-import LinkedInIcon from 'icons/linkedin.inline.svg';
 
 import hexagonBg from '../../summit-2024/last-year/images/hexagon-background.svg';
 import shape1 from '../../summit-2024/last-year/images/shape-1.svg';
@@ -11,28 +10,32 @@ import shape2 from '../../summit-2024/last-year/images/shape-2.svg';
 import shape3 from '../../summit-2024/last-year/images/shape-3.svg';
 import shape4 from '../../summit-2024/last-year/images/shape-4.svg';
 
-// TODO: replace the placeholders with real LinkedIn posts from 2025 hackathon participants
-const linkedInCards = [
+// Posts about eBPF Summit 2024 (2025 was a hackathon)
+// TODO: add the authors' profile pictures, as the 2024 page did
+const twitterCards = [
   {
-    name: '[Participant name]',
-    role: '[Role, Company]',
-    text: `[Placeholder post] Our team had never written a BPF program before the <marker>#eBPFSummit</marker> hackathon. Four weeks later we had a working tool and a lot of new friends in the eBPF Slack.`,
-    date: '[Month XX, 2025]',
-    url: 'https://www.linkedin.com/',
+    initials: 'KQ',
+    name: 'Kyle Q',
+    nick: '@kcqon',
+    text: `Congrats <marker>@lizrice</marker> and <marker>@mauilion</marker> !!! Another awesome eBPF Summit!`,
+    date: 'Sep 11, 2024',
+    url: 'https://x.com/kcqon/status/1833987782383116389',
   },
   {
-    name: '[Participant name]',
-    role: '[Role, Company]',
-    text: `[Placeholder post] The judges’ feedback alone was worth it. Already planning what to build next, and the <marker>security edition</marker> sounds like the perfect excuse.`,
-    date: '[Month XX, 2025]',
-    url: 'https://www.linkedin.com/',
+    initials: 'TP',
+    name: 'Tanel Poder',
+    nick: '@TanelPoder',
+    text: `New blog: My eBPF Summit video + slides: "Tracking, not Tracing, Linux Thread Activity for Complete System Visibility"`,
+    date: 'Sep 20, 2024',
+    url: 'https://x.com/TanelPoder/status/1837116169636991275',
   },
   {
-    name: '[Participant name]',
-    role: '[Role, Company]',
-    text: `[Placeholder post] Proud to share that our project placed in its track at the <marker>#eBPFSummit</marker> hackathon. Thanks to everyone who answered our questions at 2am.`,
-    date: '[Month XX, 2025]',
-    url: 'https://www.linkedin.com/',
+    initials: 'SK',
+    name: 'Sean Kerner',
+    nick: '@TechJournalist',
+    text: `eBPF is a foundational Linux networking technology and soon it will be coming to Microsoft Windows, too. "eBPF is amazing at enabling rapid innovation for infrastructure and for tooling at the operating system level," <marker>@tgraf__</marker> <marker>@eBPFsummit</marker>`,
+    date: 'Sep 12, 2024',
+    url: 'https://x.com/TechJournalist/status/1834240528164037044',
   },
 ];
 
@@ -117,21 +120,28 @@ const LastYear = ({ title, description, link, items }) => (
           })}
         </ul>
       </div>
-      <div className="mt-32 grid grid-cols-3 place-items-start gap-8 lg:mt-28 lg:grid-cols-1 md:mt-24 sm:mt-20">
-        {linkedInCards.map(({ name, role, text, date, url }, index) => (
+      <h3 className="mt-32 text-2xl font-bold leading-tight lg:mt-28 md:mt-24 sm:mt-20">
+        What people said about eBPF Summit 2024
+      </h3>
+      <div className="mt-8 grid grid-cols-3 place-items-start gap-8 lg:grid-cols-1">
+        {twitterCards.map(({ initials, name, nick, text, date, url }, index) => (
           <Link
             className="flex min-h-[230px] w-full flex-col justify-start rounded-lg border-[1.5px] border-gray-94 bg-white p-8 lg:p-7"
             key={index}
             to={url}
             target="_blank"
           >
-            <div className="flex w-full items-center space-x-3">
-              <div className="h-11 w-11 shrink-0 rounded-full bg-gray-94" aria-hidden />
-              <div className="flex flex-1 flex-col">
+            <div className="flex items-center space-x-3 self-start">
+              <span
+                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gray-94 text-sm font-bold text-gray-40"
+                aria-hidden
+              >
+                {initials}
+              </span>
+              <div className="flex flex-col">
                 <span className="font-bold">{name}</span>
-                <span className="mt-1 text-gray-20">{role}</span>
+                <span className="mt-1 text-gray-20">{nick}</span>
               </div>
-              <LinkedInIcon className="h-6 w-auto shrink-0" aria-hidden />
             </div>
             <p
               className="with-marker-blue mt-5 text-lg leading-normal"
