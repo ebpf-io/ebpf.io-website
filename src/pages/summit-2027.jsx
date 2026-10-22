@@ -67,10 +67,11 @@ const lastYear = {
     title: 'Explore the 2025 projects',
     target: '_self',
   },
-  // TODO: confirm the countries and weeks numbers
+  // Participants, projects and weeks from the 2025 recap:
+  // https://isovalent.com/blog/post/ebpf-summit-hackathon-edition-2025/
   items: [
     {
-      number: '500+',
+      number: '549',
       unit: 'Participants',
       textColor: 'black',
       numberColor: 'orange',
@@ -82,13 +83,13 @@ const lastYear = {
       numberColor: 'white',
     },
     {
-      number: '[XX]',
+      number: '65',
       unit: 'Countries',
       textColor: 'white',
       numberColor: 'orange',
     },
     {
-      number: '[XX]',
+      number: '4',
       unit: 'Weeks',
       textColor: 'black',
       numberColor: 'orange',
