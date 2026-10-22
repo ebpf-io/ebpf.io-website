@@ -11,31 +11,18 @@ import shape3 from '../../summit-2024/last-year/images/shape-3.svg';
 import shape4 from '../../summit-2024/last-year/images/shape-4.svg';
 
 // Posts about eBPF Summit 2024 (2025 was a hackathon)
-// TODO: add the authors' profile pictures, as the 2024 page did
-const twitterCards = [
+const quotes = [
   {
-    initials: 'KQ',
-    name: 'Kyle Q',
-    nick: '@kcqon',
     text: `Congrats <marker>@lizrice</marker> and <marker>@mauilion</marker> !!! Another awesome eBPF Summit!`,
-    date: 'Sep 11, 2024',
-    url: 'https://x.com/kcqon/status/1833987782383116389',
+    name: 'Kyle Q',
   },
   {
-    initials: 'TP',
-    name: 'Tanel Poder',
-    nick: '@TanelPoder',
-    text: `New blog: My eBPF Summit video + slides: "Tracking, not Tracing, Linux Thread Activity for Complete System Visibility"`,
-    date: 'Sep 20, 2024',
-    url: 'https://x.com/TanelPoder/status/1837116169636991275',
+    text: `It's fantastic to see our work recognized, with <marker>@ShwetaHari</marker>, Director of Platform Networking, highlighting our project's importance for <marker>@netflix</marker>[’s] growing use of eBPF during her keynote at the <marker>@eBPFsummit</marker> today!`,
+    name: 'Artem Tkachuk',
   },
   {
-    initials: 'SK',
-    name: 'Sean Kerner',
-    nick: '@TechJournalist',
-    text: `eBPF is a foundational Linux networking technology and soon it will be coming to Microsoft Windows, too. "eBPF is amazing at enabling rapid innovation for infrastructure and for tooling at the operating system level," <marker>@tgraf__</marker> <marker>@eBPFsummit</marker>`,
-    date: 'Sep 12, 2024',
-    url: 'https://x.com/TechJournalist/status/1834240528164037044',
+    text: `Looking Ahead - the eBPF Innovation Roadmap. An amazing talk giving a peek into what the future holds for eBPF <marker>@eBPFsummit</marker> 2024`,
+    name: 'Paul Arah',
   },
 ];
 
@@ -120,37 +107,19 @@ const LastYear = ({ title, description, link, items }) => (
           })}
         </ul>
       </div>
-      <h3 className="mt-32 text-2xl font-bold leading-tight lg:mt-28 md:mt-24 sm:mt-20">
-        What people said about eBPF Summit 2024
-      </h3>
-      <div className="mt-8 grid grid-cols-3 place-items-start gap-8 lg:grid-cols-1">
-        {twitterCards.map(({ initials, name, nick, text, date, url }, index) => (
-          <Link
-            className="flex min-h-[230px] w-full flex-col justify-start rounded-lg border-[1.5px] border-gray-94 bg-white p-8 lg:p-7"
-            key={index}
-            to={url}
-            target="_blank"
-          >
-            <div className="flex items-center space-x-3 self-start">
-              <span
-                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gray-94 text-sm font-bold text-gray-40"
-                aria-hidden
-              >
-                {initials}
-              </span>
-              <div className="flex flex-col">
-                <span className="font-bold">{name}</span>
-                <span className="mt-1 text-gray-20">{nick}</span>
-              </div>
-            </div>
-            <p
-              className="with-marker-blue mt-5 text-lg leading-normal"
-              dangerouslySetInnerHTML={{ __html: text }}
-            />
-            <time className="mt-4 self-start font-sans font-normal leading-normal text-gray-50">
-              {date}
-            </time>
-          </Link>
+      <div className="mt-32 grid grid-cols-3 gap-8 lg:mt-28 lg:grid-cols-1 md:mt-24 sm:mt-20">
+        {quotes.map(({ text, name }, index) => (
+          <figure className="flex flex-col" key={index}>
+            <blockquote>
+              <p
+                className="with-marker-blue text-xl font-semibold leading-snug"
+                dangerouslySetInnerHTML={{ __html: `“${text}”` }}
+              />
+            </blockquote>
+            <figcaption className="mt-4 text-lg leading-normal text-gray-40">
+              <span className="font-bold text-black">{name}</span> on eBPF Summit 2024
+            </figcaption>
+          </figure>
         ))}
       </div>
     </div>
