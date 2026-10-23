@@ -774,5 +774,19 @@
       }
     ],
     "githubStars": 174
+  },
+  {
+    "logoUrl": "https://github.com/retis-org/retis",
+    "name": "Retis",
+    "logoName": "retisLogo",
+    "title": "Tracing packets in the Linux networking stack",
+    "description": "Retis traces packets as they travel through the Linux networking stack using eBPF probes, interfacing with control and data paths such as OVS and Netfilter. It offers advanced filtering and packet tracking, retrieves contextual metadata such as conntrack state, monitors dropped packets, reconstructs packet journeys, and can generate pcap files from collected packets, all without requiring compilation on the target.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/retis-org/retis"
+      }
+    ],
+    "githubStars": 543
   }
 ]

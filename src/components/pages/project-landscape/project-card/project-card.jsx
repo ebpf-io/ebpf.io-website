@@ -64,6 +64,7 @@ import pyroscopeLogo from './logos/pyroscope.svg';
 import qtapLogo from './logos/qpoint.png';
 import rbpfLogo from './logos/rbpf.svg';
 import retinaLogo from './logos/retina.svg';
+import retisLogo from './logos/retis.png';
 import skywalkingLogo from './logos/skywalking.png';
 import sysinternalsLogo from './logos/sysinternals.svg';
 import tetragonLogo from './logos/tetragon.svg';
@@ -160,6 +161,7 @@ const logos = {
   qtapLogo,
   rbpfLogo,
   retinaLogo,
+  retisLogo,
   skywalkingLogo,
   sysinternalsLogo,
   tetragonLogo,
