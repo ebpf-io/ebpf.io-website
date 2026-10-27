@@ -37,8 +37,8 @@ const hero = {
 
 const proposal = {
   title: 'Call for proposals: open now',
-  date1: 'CFP closes: <strong>November 15</strong>',
-  date2: 'Speaker notifications: <strong>December 15</strong>',
+  date1: 'CFP closes: <strong>November 24</strong>',
+  date2: 'Speaker notifications: <strong>December 18</strong>',
   buttonText: 'Submit a proposal',
   buttonUrl: cfpUrl,
   buttonTarget: '_blank',
