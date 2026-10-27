@@ -10,22 +10,6 @@ import shape2 from '../../summit-2024/last-year/images/shape-2.svg';
 import shape3 from '../../summit-2024/last-year/images/shape-3.svg';
 import shape4 from '../../summit-2024/last-year/images/shape-4.svg';
 
-// Posts about eBPF Summit 2024 (2025 was a hackathon)
-const quotes = [
-  {
-    text: `Congrats <marker>@lizrice</marker> and <marker>@mauilion</marker> !!! Another awesome eBPF Summit!`,
-    name: 'Kyle Q',
-  },
-  {
-    text: `It's fantastic to see our work recognized, with <marker>@ShwetaHari</marker>, Director of Platform Networking, highlighting our project's importance for <marker>@netflix</marker>[’s] growing use of eBPF during her keynote at the <marker>@eBPFsummit</marker> today!`,
-    name: 'Artem Tkachuk',
-  },
-  {
-    text: `Looking Ahead - the eBPF Innovation Roadmap. An amazing talk giving a peek into what the future holds for eBPF <marker>@eBPFsummit</marker> 2024`,
-    name: 'Paul Arah',
-  },
-];
-
 const shapes = [shape1, shape2, shape3, shape4];
 const LastYear = ({ title, description, link, items }) => (
   <section
@@ -106,21 +90,6 @@ const LastYear = ({ title, description, link, items }) => (
             );
           })}
         </ul>
-      </div>
-      <div className="mt-32 grid grid-cols-3 gap-8 lg:mt-28 lg:grid-cols-1 md:mt-24 sm:mt-20">
-        {quotes.map(({ text, name }, index) => (
-          <figure className="flex flex-col" key={index}>
-            <blockquote>
-              <p
-                className="with-marker-blue text-xl font-semibold leading-snug"
-                dangerouslySetInnerHTML={{ __html: `“${text}”` }}
-              />
-            </blockquote>
-            <figcaption className="mt-4 text-lg leading-normal text-gray-40">
-              <span className="font-bold text-black">{name}</span> on eBPF Summit 2024
-            </figcaption>
-          </figure>
-        ))}
       </div>
     </div>
   </section>
