@@ -12,7 +12,7 @@ By Cloudflare Engineering
 
 > This series chronicles Cloudflare's eight-year journey with eBPF from a specialized DDoS tool to the programmable backbone of their global network. It covers everything from contributing to the Linux kernel and technical challenges to business ROI to advice and operational strategies for other companies adopting eBPF.
 
-In previous blogs, we examined how Cloudflare utilizes eBPF for everything from bypassing legacy socket API constraints to implementing distributed XDP mitigation pipelines and BPF LSM security policies. However, managing BPF objects on a local test machine is vastly different from operationalizing them across a global fleet of over 330 locations. 
+In previous blogs, we examined how Cloudflare utilizes eBPF for everything from bypassing legacy socket API constraints to implementing distributed XDP mitigation pipelines and BPF LSM security policies. However, managing BPF objects on a local test machine is vastly different from operationalizing them across a global fleet of over 330 locations.
 
 This blog shifts the focus to deployment mechanics and operational safeguards required to run eBPF safely in production. Safely deploying eBPF programs across this global fleet relies on multiple interlocking layers including the kernel's eBPF verifier as a first gate, exhaustive pre-production testing, a multi-day staged rollout through progressively larger traffic tiers, feature flags for decoupling feature activation from binary deployment, atomic program replacement via bpf_link, graceful reload mechanisms that preserve the data plane during upgrades, pinned BPF maps that survive daemon crashes, and configuration management for location-specific logic.
 
@@ -71,7 +71,8 @@ Deploying to hundreds of locations requires handling location-specific rules (e.
 Operating eBPF in a massive, globally distributed environment requires treating eBPF programs and maps with the same rigor as traditional kernel upgrades, but executing them with the speed of user-space deployment cadences. The operational patterns detailed here like relying on the verifier's static analysis, executing atomic swaps via bpf_link, and persisting state via the BPF filesystem fundamentally decouple the data plane's execution from user-space daemon lifecycles.
 By ensuring that a user-space crash or a rolled-back release does not interrupt active socket bindings or XDP packet processing, administrators can safely deploy kernel-level logic continuously without risking partitions. Building this deployment machinery was a multi-year, iterative engineering effort. In the sixth blog, we will examine the actual return on this technical investment, quantifying how moving the network edge into the kernel has paid off in concrete business, operational, and scaling metrics.
 
-## Catch up on the series so far:
+## Catch up on the series so far
+
 - In [part 1](https://ebpf.io/blog/cloudflare-replatforming-1/), we covered why Cloudflare bet on eBPF as a platform rather than a collection of point solutions.
 - In [part 2](https://ebpf.io/blog/cloudflare-replatforming-2/), we looked at the places where standard Linux networking APIs couldn't support Cloudflare's requirements, and what the team built to fill those gaps.
 - In [part 3](https://ebpf.io/blog/cloudflare-replatforming-3/), we covered the architectural shifts and upstreaming efforts required to build Cloudflare’s eBPF-based network data path.
