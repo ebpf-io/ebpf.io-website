@@ -15,7 +15,7 @@ const hero = {
   date: 'January <strong>27</strong>, 2027',
   title: 'eBPF Summit 2027',
   tagline: 'Security Edition',
-  time: 'Free virtual',
+  time: 'Free virtual event',
   splashEventId,
   description:
     '<p>The eBPF Summit is back, and this year it’s all about security. Whether you’re new to eBPF or have been writing programs for years, join us for the free virtual conference on what eBPF makes possible: seeing what’s really happening on your systems, detecting threats at runtime, and enforcing policy right where attacks happen.</p>',
