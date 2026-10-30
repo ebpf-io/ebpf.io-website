@@ -774,5 +774,23 @@
       }
     ],
     "githubStars": 174
+  },
+  {
+    "logoUrl": "https://github.com/kunai-project/kunai",
+    "name": "Kunai",
+    "logoName": "kunaiLogo",
+    "title": "Threat-hunting and security monitoring tool for Linux",
+    "description": "Kunai is a threat-hunting and security monitoring tool for Linux, often described as the Linux counterpart of Sysmon on Windows. Written in Rust on top of Aya, it uses eBPF kernel probes to collect security-relevant events, which its userland component reorders chronologically, enriches and correlates on the host. It is container-aware through Linux namespaces, ships as a single self-contained binary with embedded eBPF probes, and supports detection rules, IoC matching and YARA scanning for malware detection, threat hunting and DFIR.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/kunai-project/kunai"
+      },
+      {
+        "label": "Website",
+        "url": "https://why.kunai.rocks"
+      }
+    ],
+    "githubStars": 1095
   }
 ]

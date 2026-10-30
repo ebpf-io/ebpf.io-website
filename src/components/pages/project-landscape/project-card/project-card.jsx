@@ -43,6 +43,7 @@ import kubeArmorLogo from './logos/kubearmor.svg';
 import kubectlTraceLogo from './logos/kubectl_trace.svg';
 import kubescapeLogo from './logos/kubescape.png';
 import kubeskoopLogo from './logos/kubeskoop.svg';
+import kunaiLogo from './logos/kunai.svg';
 import kyanosLogo from './logos/kyanos.png';
 import l3afLogo from './logos/l3af.svg';
 import linuxLogo from './logos/linux.svg';
@@ -139,6 +140,7 @@ const logos = {
   kubectlTraceLogo,
   kubescapeLogo,
   kubeskoopLogo,
+  kunaiLogo,
   kyanosLogo,
   l3afLogo,
   linuxLogo,
