@@ -729,8 +729,8 @@
     "logoUrl": "https://github.com/ccfos/huatuo",
     "name": "HUATUO",
     "logoName": "huatuoLogo",
-    "title": "eBPF for cloud native operating system observability",
-    "description": "HUATUO uses ftrace, kprobe, tracepoint, and eBPF for cloud native operating system observability focused on more refined metrics, runtime context events, and autotracing.",
+    "title": "eBPF-based observability for Linux kernel & AI Agent sandbox",
+    "description": "HUATUO uses ftrace, kprobes, tracepoints, and eBPF to provide OS observability for cloud-native environments through fine-grained metrics, runtime context events, automated tracing, and continuous profiling.",
     "urls": [
       {
         "label": "GitHub",
