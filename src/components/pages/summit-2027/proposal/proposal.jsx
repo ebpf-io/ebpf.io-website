@@ -27,16 +27,18 @@ const Proposal = ({ title, date1, date2, buttonText, buttonUrl, buttonTarget }) 
             />
           </div>
         </div>
-        <Button
-          className="relative flex gap-x-2.5 rounded-lg text-base font-extrabold"
-          type="button"
-          size="sm"
-          theme="black-filled"
-          to={buttonUrl}
-          target={buttonTarget}
-        >
-          {buttonText}
-        </Button>
+        {buttonText && buttonUrl && (
+          <Button
+            className="relative flex gap-x-2.5 rounded-lg text-base font-extrabold"
+            type="button"
+            size="sm"
+            theme="black-filled"
+            to={buttonUrl}
+            target={buttonTarget}
+          >
+            {buttonText}
+          </Button>
+        )}
       </div>
     </div>
   </section>
@@ -46,9 +48,15 @@ Proposal.propTypes = {
   title: PropTypes.string.isRequired,
   date1: PropTypes.string.isRequired,
   date2: PropTypes.string.isRequired,
-  buttonText: PropTypes.string.isRequired,
-  buttonUrl: PropTypes.string.isRequired,
-  buttonTarget: PropTypes.string.isRequired,
+  buttonText: PropTypes.string,
+  buttonUrl: PropTypes.string,
+  buttonTarget: PropTypes.string,
+};
+
+Proposal.defaultProps = {
+  buttonText: null,
+  buttonUrl: null,
+  buttonTarget: null,
 };
 
 export default Proposal;

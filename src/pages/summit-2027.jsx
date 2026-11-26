@@ -7,7 +7,7 @@ import LastYear from 'components/pages/summit-2027/last-year';
 import Proposal from 'components/pages/summit-2027/proposal';
 import SummitLayout from 'components/pages/summit-2027/summit-layout';
 import SEO from 'components/shared/seo';
-import { navigation, splashEventId, cfpUrl, slackUrl } from 'data/shared/summit-2027-navigation';
+import { navigation, splashEventId, slackUrl } from 'data/shared/summit-2027-navigation';
 
 const ogImage = '/images/social-preview-ebpf-summit-2027.jpg';
 
@@ -36,12 +36,9 @@ const hero = {
 };
 
 const proposal = {
-  title: 'Call for proposals: open now',
-  date1: 'CFP closes: <strong>November 24</strong>',
+  title: 'Call for proposals: closed',
+  date1: 'CFP closed: <strong>November 24</strong>',
   date2: 'Speaker notifications: <strong>December 18</strong>',
-  buttonText: 'Submit a proposal',
-  buttonUrl: cfpUrl,
-  buttonTarget: '_blank',
 };
 
 const hosts = {
