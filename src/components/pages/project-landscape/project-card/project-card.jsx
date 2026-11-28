@@ -66,6 +66,7 @@ import rbpfLogo from './logos/rbpf.svg';
 import retinaLogo from './logos/retina.svg';
 import skywalkingLogo from './logos/skywalking.png';
 import sysinternalsLogo from './logos/sysinternals.svg';
+import schedkitLogo from './logos/schedkit.svg';
 import tetragonLogo from './logos/tetragon.svg';
 import traceeLogo from './logos/tracee.svg';
 import trayceLogo from './logos/trayce.svg';
@@ -162,6 +163,7 @@ const logos = {
   retinaLogo,
   skywalkingLogo,
   sysinternalsLogo,
+  schedkitLogo,
   tetragonLogo,
   traceeLogo,
   trayceLogo,
