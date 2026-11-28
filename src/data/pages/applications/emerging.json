@@ -774,5 +774,19 @@
       }
     ],
     "githubStars": 174
+  },
+  {
+    "logoUrl": "https://github.com/schedkit/schedctl",
+    "name": "schedkit",
+    "logoName": "schedkitLogo",
+    "title": "OCI-packaged eBPF sched_ext plug and play schedulers for fun and profit",
+    "description": "Both schedctl and sked (a Kubernetes controller) let users run OCI-packaged sched_ext schedulers. Schedkit just treats alternative schedulers as OCI artifacts allowing them to be packaged and shipped to any kind of setup, just like any other piece of software.",
+    "urls": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/schedkit/schedctl"
+      }
+    ],
+    "githubStars": 51
   }
 ]
